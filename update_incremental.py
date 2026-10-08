@@ -6,13 +6,13 @@ Usage:
   python3 update_incremental.py                # fetch new only
   python3 update_incremental.py --force URL    # refetch single URL
 """
-import argparse, json, re, pathlib, asyncio, sys
+import argparse, json, os, re, pathlib, asyncio, sys
 from urllib.parse import urlparse, urljoin, urldefrag
-sys.path.insert(0, "/data/opencode/cloudflare")
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import crawl_cloudflare as C
 
 DOCS = C.OUT_ROOT
-STATE = pathlib.Path("/data/opencode/cloudflare/crawl_state.json")
+STATE = C.STATE_FILE
 
 def canon_dev(u):
     abs_u, _ = urldefrag(urljoin("https://developers.cloudflare.com", u.strip()))
