@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/private-origins-dns-routing/",
+  "file": "_subdomains/blog.cloudflare.com/private-origins-dns-routing.md",
+  "title": "Route public traffic to private applications with Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:52.457039+00:00",
+  "html_len": 299268,
+  "md_len": 67980,
+  "depth": 0,
+  "phase": 2
+}

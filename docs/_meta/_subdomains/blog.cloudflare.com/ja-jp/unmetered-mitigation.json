@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/unmetered-mitigation/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/unmetered-mitigation.md",
+  "title": "\u5b9a\u984d\u5236DDoS\u8efd\u6e1b\uff1a\u7121\u5236\u9650\u306eDDoS\u653b\u6483\u5bfe\u7b56 | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:34.645953+00:00",
+  "html_len": 205377,
+  "md_len": 28689,
+  "depth": 0,
+  "phase": 2
+}

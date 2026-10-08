@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/american-holiday-global-thanks/",
+  "file": "_subdomains/blog.cloudflare.com/american-holiday-global-thanks.md",
+  "title": "Global Thanks | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:15.022767+00:00",
+  "html_len": 268585,
+  "md_len": 55657,
+  "depth": 0,
+  "phase": 2
+}

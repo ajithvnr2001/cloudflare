@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/snippets/create-terraform/",
+  "file": "rules/snippets/create-terraform.md",
+  "title": "Configure Snippets using Terraform \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:52.357168+00:00",
+  "html_len": 138631,
+  "md_len": 2745,
+  "depth": 0
+}

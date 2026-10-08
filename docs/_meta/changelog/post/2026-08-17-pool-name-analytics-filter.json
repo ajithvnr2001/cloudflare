@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/changelog/post/2026-08-17-pool-name-analytics-filter/",
+  "file": "changelog/post/2026-08-17-pool-name-analytics-filter.md",
+  "title": "Load balancing analytics now filters by pool name \u00b7 Changelog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:07:08.666824+00:00",
+  "html_len": 61664,
+  "md_len": 2311,
+  "depth": 0
+}

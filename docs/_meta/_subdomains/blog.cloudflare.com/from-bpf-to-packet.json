@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/from-bpf-to-packet/",
+  "file": "_subdomains/blog.cloudflare.com/from-bpf-to-packet.md",
+  "title": "From bytecode to bytes- automated magic packet generation | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:41.083968+00:00",
+  "html_len": 322907,
+  "md_len": 68611,
+  "depth": 0,
+  "phase": 2
+}

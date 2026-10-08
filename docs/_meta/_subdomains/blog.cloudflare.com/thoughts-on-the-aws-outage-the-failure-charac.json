@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/thoughts-on-the-aws-outage-the-failure-charac/",
+  "file": "_subdomains/blog.cloudflare.com/thoughts-on-the-aws-outage-the-failure-charac.md",
+  "title": "Thoughts on the AWS outage: making the cloud more resilient to failure | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:58.099013+00:00",
+  "html_len": 286537,
+  "md_len": 67554,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/announcing-turpentine/",
+  "file": "_subdomains/blog.cloudflare.com/announcing-turpentine.md",
+  "title": "Announcing Project Turpentine: an easy way to get off Varnish | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:04.920367+00:00",
+  "html_len": 279932,
+  "md_len": 59431,
+  "depth": 0,
+  "phase": 2
+}

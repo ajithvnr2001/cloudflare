@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/dmarc-management/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/dmarc-management.md",
+  "title": "Evita la suplantaci\u00f3n de marca con Cloudflare DMARC Management | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:50.452087+00:00",
+  "html_len": 230323,
+  "md_len": 37520,
+  "depth": 0,
+  "phase": 2
+}

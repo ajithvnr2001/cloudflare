@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/organizations-beta/",
+  "file": "_subdomains/blog.cloudflare.com/organizations-beta.md",
+  "title": "How we built Organizations to help enterprises manage Cloudflare at scale | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:37.671711+00:00",
+  "html_len": 289395,
+  "md_len": 62961,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-web-search-api/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-web-search-api.md",
+  "title": "Introducing Web Search API via AI Gateway | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:24.363629+00:00",
+  "html_len": 297623,
+  "md_len": 62844,
+  "depth": 0,
+  "phase": 2
+}

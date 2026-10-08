@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/descaler-program/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/descaler-program.md",
+  "title": "Einfache, problemlose Migration von Zscaler zu Cloudflare One mit dem Descaler-Programm | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:54.359442+00:00",
+  "html_len": 216878,
+  "md_len": 35999,
+  "depth": 0,
+  "phase": 2
+}

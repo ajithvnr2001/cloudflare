@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/he-il/",
+  "file": "_subdomains/blog.cloudflare.com/he-il.md",
+  "title": "Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:05:27.498318+00:00",
+  "html_len": 116679,
+  "md_len": 3813,
+  "depth": 1,
+  "phase": 2
+}

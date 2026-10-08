@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/encrypt-waf-payloads-hpke/",
+  "file": "_subdomains/blog.cloudflare.com/encrypt-waf-payloads-hpke.md",
+  "title": "Encrypting your WAF Payloads with Hybrid Public Key Encryption (HPKE) | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:44.272455+00:00",
+  "html_len": 286469,
+  "md_len": 59510,
+  "depth": 0,
+  "phase": 2
+}

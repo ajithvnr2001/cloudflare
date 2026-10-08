@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/zone/page_shield_events/",
+  "file": "logs/logpush/logpush-job/datasets/zone/page_shield_events.md",
+  "title": "Page Shield events \u00b7 Cloudflare Logs docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:12:14.147368+00:00",
+  "html_len": 123132,
+  "md_len": 2249,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/playtech/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/playtech.md",
+  "title": "Playtech & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:45.057770+00:00",
+  "html_len": 216870,
+  "md_len": 9847,
+  "depth": 0,
+  "phase": 2
+}

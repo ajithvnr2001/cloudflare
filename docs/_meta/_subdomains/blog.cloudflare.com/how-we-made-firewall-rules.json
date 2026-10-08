@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-we-made-firewall-rules/",
+  "file": "_subdomains/blog.cloudflare.com/how-we-made-firewall-rules.md",
+  "title": "How we made Firewall Rules | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:53.893871+00:00",
+  "html_len": 326833,
+  "md_len": 76954,
+  "depth": 0,
+  "phase": 2
+}

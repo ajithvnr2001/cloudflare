@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pingora-saving-compute-1-percent-at-a-time/",
+  "file": "_subdomains/blog.cloudflare.com/pingora-saving-compute-1-percent-at-a-time.md",
+  "title": "A good day to trie-hard: saving compute 1% at a time | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:39.903399+00:00",
+  "html_len": 297225,
+  "md_len": 66740,
+  "depth": 0,
+  "phase": 2
+}

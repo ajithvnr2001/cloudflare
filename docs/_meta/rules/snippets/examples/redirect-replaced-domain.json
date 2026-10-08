@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/snippets/examples/redirect-replaced-domain/",
+  "file": "rules/snippets/examples/redirect-replaced-domain.md",
+  "title": "Redirect from one domain to another \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:53.703578+00:00",
+  "html_len": 126239,
+  "md_len": 1718,
+  "depth": 0
+}

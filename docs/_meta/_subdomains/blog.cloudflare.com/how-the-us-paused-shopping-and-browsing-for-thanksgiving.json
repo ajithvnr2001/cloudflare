@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-the-us-paused-shopping-and-browsing-for-thanksgiving/",
+  "file": "_subdomains/blog.cloudflare.com/how-the-us-paused-shopping-and-browsing-for-thanksgiving.md",
+  "title": "How the US paused shopping (and browsing) for Thanksgiving | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:49.683014+00:00",
+  "html_len": 292097,
+  "md_len": 61640,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/ci-cd/builds/api-reference/",
+  "file": "workers/ci-cd/builds/api-reference.md",
+  "title": "Builds API reference \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:11.616953+00:00",
+  "html_len": 269586,
+  "md_len": 25096,
+  "depth": 0
+}

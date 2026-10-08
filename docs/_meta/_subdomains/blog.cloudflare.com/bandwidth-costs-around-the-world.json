@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/bandwidth-costs-around-the-world/",
+  "file": "_subdomains/blog.cloudflare.com/bandwidth-costs-around-the-world.md",
+  "title": "Bandwidth Costs Around the World | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:29.891349+00:00",
+  "html_len": 317287,
+  "md_len": 73855,
+  "depth": 0,
+  "phase": 2
+}

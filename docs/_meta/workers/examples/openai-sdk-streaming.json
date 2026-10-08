@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/examples/openai-sdk-streaming/",
+  "file": "workers/examples/openai-sdk-streaming.md",
+  "title": "Stream OpenAI API Responses \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:24.194051+00:00",
+  "html_len": 189598,
+  "md_len": 3388,
+  "depth": 0
+}

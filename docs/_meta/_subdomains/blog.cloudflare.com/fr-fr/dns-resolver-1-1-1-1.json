@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/dns-resolver-1-1-1-1/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/dns-resolver-1-1-1-1.md",
+  "title": "Lancement de notre r\u00e9solveur DNS, 1.1.1.1 (et ce n'est pas un poisson d'avril) | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:30.025960+00:00",
+  "html_len": 230963,
+  "md_len": 40681,
+  "depth": 0,
+  "phase": 2
+}

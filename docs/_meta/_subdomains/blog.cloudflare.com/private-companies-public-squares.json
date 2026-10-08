@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/private-companies-public-squares/",
+  "file": "_subdomains/blog.cloudflare.com/private-companies-public-squares.md",
+  "title": "Private Companies, Public Squares | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:04.410872+00:00",
+  "html_len": 272540,
+  "md_len": 64041,
+  "depth": 0,
+  "phase": 2
+}

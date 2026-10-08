@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/post-quantum-tunnel/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/post-quantum-tunnel.md",
+  "title": "Wir pr\u00e4sentieren: Post-Quantum Cloudflare Tunnel | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:10.655059+00:00",
+  "html_len": 226813,
+  "md_len": 35289,
+  "depth": 0,
+  "phase": 2
+}

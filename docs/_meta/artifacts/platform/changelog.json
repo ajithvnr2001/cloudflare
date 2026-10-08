@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/artifacts/platform/changelog/",
+  "file": "artifacts/platform/changelog.md",
+  "title": "Changelog \u00b7 Cloudflare Artifacts docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:05:21.923392+00:00",
+  "html_len": 113765,
+  "md_len": 9130,
+  "depth": 0
+}

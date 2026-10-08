@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/cyber-frontier-models/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/cyber-frontier-models.md",
+  "title": "Project Glasswing: Was Mythos unter Beweis gestellt hat | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:33.986901+00:00",
+  "html_len": 242498,
+  "md_len": 47963,
+  "depth": 0,
+  "phase": 2
+}

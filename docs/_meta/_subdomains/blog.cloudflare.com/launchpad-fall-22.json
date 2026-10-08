@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/launchpad-fall-22/",
+  "file": "_subdomains/blog.cloudflare.com/launchpad-fall-22.md",
+  "title": "Announcing the first Workers Launchpad cohort and growth of the program to $2 billion | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:56.718190+00:00",
+  "html_len": 282698,
+  "md_len": 60532,
+  "depth": 0,
+  "phase": 2
+}

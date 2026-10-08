@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/tag/dogfooding/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/tag/dogfooding.md",
+  "title": "Beitr\u00e4ge mit dem Tag \"Dogfooding (DE)\" \u2014 Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:16:41.671992+00:00",
+  "html_len": 106825,
+  "md_len": 1293,
+  "depth": 1,
+  "phase": 2
+}

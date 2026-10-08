@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/building-urlscanner/",
+  "file": "_subdomains/blog.cloudflare.com/building-urlscanner.md",
+  "title": "Cloudflare\u2019s URL Scanner, new features, and the story of how we built it | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:39.525029+00:00",
+  "html_len": 320668,
+  "md_len": 73838,
+  "depth": 0,
+  "phase": 2
+}

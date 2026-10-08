@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/people-just-liked-it-better-that-way/",
+  "file": "_subdomains/blog.cloudflare.com/people-just-liked-it-better-that-way.md",
+  "title": "People Just Liked It Better That Way! | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:44.578905+00:00",
+  "html_len": 266029,
+  "md_len": 54400,
+  "depth": 0,
+  "phase": 2
+}

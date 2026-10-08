@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/kitesurf-update/",
+  "file": "_subdomains/blog.cloudflare.com/kitesurf-update.md",
+  "title": "The road to the agentic browser: A Kitesurf update | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:33.064109+00:00",
+  "html_len": 306716,
+  "md_len": 69609,
+  "depth": 0,
+  "phase": 2
+}

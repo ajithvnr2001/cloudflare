@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/how-to-connect-your-offices-to-cloudflare-using-sd-wan/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/how-to-connect-your-offices-to-cloudflare-using-sd-wan.md",
+  "title": "SD-WAN\u3092\u4f7f\u3063\u3066\u304a\u5ba2\u69d8\u306e\u30aa\u30d5\u30a3\u30b9\u3068Cloudflare\u3092\u63a5\u7d9a\u3059\u308b\u65b9\u6cd5 | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:17.846748+00:00",
+  "html_len": 200257,
+  "md_len": 27121,
+  "depth": 0,
+  "phase": 2
+}

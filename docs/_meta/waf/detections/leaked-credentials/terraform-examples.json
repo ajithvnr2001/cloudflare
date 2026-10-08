@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/detections/leaked-credentials/terraform-examples/",
+  "file": "waf/detections/leaked-credentials/terraform-examples.md",
+  "title": "Terraform configuration examples \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:42.239922+00:00",
+  "html_len": 150044,
+  "md_len": 5026,
+  "depth": 0
+}

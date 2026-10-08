@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/email-security/what-is-a-mail-server/",
+  "file": "_subdomains/www.cloudflare.com/learning/email-security/what-is-a-mail-server.md",
+  "title": "What is a mail server?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:47.112740+00:00",
+  "html_len": 198253,
+  "md_len": 9288,
+  "depth": 0,
+  "phase": 2
+}

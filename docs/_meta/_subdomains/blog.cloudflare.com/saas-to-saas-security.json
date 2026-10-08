@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/saas-to-saas-security/",
+  "file": "_subdomains/blog.cloudflare.com/saas-to-saas-security.md",
+  "title": "Securing data in SaaS to SaaS applications | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:02.631542+00:00",
+  "html_len": 294473,
+  "md_len": 65765,
+  "depth": 0,
+  "phase": 2
+}

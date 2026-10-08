@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/civil-society-automation/",
+  "file": "_subdomains/blog.cloudflare.com/civil-society-automation.md",
+  "title": "Building for good: How civil society organizations are automating on Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:25.420457+00:00",
+  "html_len": 292496,
+  "md_len": 67814,
+  "depth": 0,
+  "phase": 2
+}

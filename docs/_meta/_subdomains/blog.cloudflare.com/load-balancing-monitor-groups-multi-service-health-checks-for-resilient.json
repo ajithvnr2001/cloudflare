@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/load-balancing-monitor-groups-multi-service-health-checks-for-resilient/",
+  "file": "_subdomains/blog.cloudflare.com/load-balancing-monitor-groups-multi-service-health-checks-for-resilient.md",
+  "title": "Load Balancing Monitor Groups: Multi-Service Health Checks for Resilient Applications | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:01.313248+00:00",
+  "html_len": 291224,
+  "md_len": 64745,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/security/what-is-sso/",
+  "file": "_subdomains/www.cloudflare.com/learning/security/what-is-sso.md",
+  "title": "What is SSO? | How single sign-on works",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:05:14.231213+00:00",
+  "html_len": 247375,
+  "md_len": 26969,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/take-control-of-public-ai-application-security-with-cloudflare-firewall-for-ai/",
+  "file": "_subdomains/blog.cloudflare.com/take-control-of-public-ai-application-security-with-cloudflare-firewall-for-ai.md",
+  "title": "Take control of public AI application security with Cloudflare's Firewall for AI | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:35.226077+00:00",
+  "html_len": 304111,
+  "md_len": 69745,
+  "depth": 0,
+  "phase": 2
+}

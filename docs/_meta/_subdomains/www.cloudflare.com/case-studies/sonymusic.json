@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/sonymusic/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/sonymusic.md",
+  "title": "Sony Music Group (Japan)",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:49.182597+00:00",
+  "html_len": 202579,
+  "md_len": 5810,
+  "depth": 0,
+  "phase": 2
+}

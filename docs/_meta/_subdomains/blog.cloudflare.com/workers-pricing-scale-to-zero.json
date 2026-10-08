@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/workers-pricing-scale-to-zero/",
+  "file": "_subdomains/blog.cloudflare.com/workers-pricing-scale-to-zero.md",
+  "title": "New Workers pricing \u2014 never pay to wait on I/O again | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:11.886622+00:00",
+  "html_len": 314375,
+  "md_len": 75515,
+  "depth": 0,
+  "phase": 2
+}

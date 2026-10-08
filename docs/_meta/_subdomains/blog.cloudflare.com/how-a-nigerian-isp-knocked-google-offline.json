@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-a-nigerian-isp-knocked-google-offline/",
+  "file": "_subdomains/blog.cloudflare.com/how-a-nigerian-isp-knocked-google-offline.md",
+  "title": "How a Nigerian ISP Accidentally Knocked Google Offline | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:24.490815+00:00",
+  "html_len": 274316,
+  "md_len": 59890,
+  "depth": 0,
+  "phase": 2
+}

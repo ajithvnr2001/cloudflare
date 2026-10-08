@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/holiday-season-update-from-lisbon/",
+  "file": "_subdomains/blog.cloudflare.com/holiday-season-update-from-lisbon.md",
+  "title": "Holiday Season Update from Lisbon | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:42.138972+00:00",
+  "html_len": 279716,
+  "md_len": 61607,
+  "depth": 0,
+  "phase": 2
+}

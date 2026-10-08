@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/dig/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/dig.md",
+  "title": "Dig",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:27.055562+00:00",
+  "html_len": 200058,
+  "md_len": 7024,
+  "depth": 0,
+  "phase": 2
+}

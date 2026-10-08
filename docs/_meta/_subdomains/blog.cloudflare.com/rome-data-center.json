@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/rome-data-center/",
+  "file": "_subdomains/blog.cloudflare.com/rome-data-center.md",
+  "title": "Buongiorno, Roma! Cloudflare Data Center CV | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:37.304494+00:00",
+  "html_len": 274413,
+  "md_len": 58027,
+  "depth": 0,
+  "phase": 2
+}

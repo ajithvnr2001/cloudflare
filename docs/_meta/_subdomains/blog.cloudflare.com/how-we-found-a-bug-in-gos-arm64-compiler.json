@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-we-found-a-bug-in-gos-arm64-compiler/",
+  "file": "_subdomains/blog.cloudflare.com/how-we-found-a-bug-in-gos-arm64-compiler.md",
+  "title": "How we found a bug in Go's arm64 compiler | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:44.188262+00:00",
+  "html_len": 325329,
+  "md_len": 79791,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/project-a11y/",
+  "file": "_subdomains/blog.cloudflare.com/project-a11y.md",
+  "title": "Project A11Y: how we upgraded Cloudflare\u2019s dashboard to adhere to industry accessibility standards | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:02.174910+00:00",
+  "html_len": 289604,
+  "md_len": 66088,
+  "depth": 0,
+  "phase": 2
+}

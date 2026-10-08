@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/sad-dns-explained/",
+  "file": "_subdomains/blog.cloudflare.com/sad-dns-explained.md",
+  "title": "SAD DNS Explained | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:49.337230+00:00",
+  "html_len": 304398,
+  "md_len": 75686,
+  "depth": 0,
+  "phase": 2
+}

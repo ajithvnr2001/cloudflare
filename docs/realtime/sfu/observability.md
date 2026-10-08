@@ -1,0 +1,98 @@
+---
+url: https://developers.cloudflare.com/realtime/sfu/observability/
+title: Observability \u00b7 Cloudflare Realtime docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:14:36.689566+00:00
+---
+
+# Observability · Cloudflare Realtime docs
+
+> Source: https://developers.cloudflare.com/realtime/sfu/observability/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Realtime](https://developers.cloudflare.com/realtime/)
+  3. /[Realtime SFU](https://developers.cloudflare.com/realtime/sfu/)
+  4. /Observability
+
+
+
+# Observability
+
+Last updated Sep 22, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/realtime/sfu/observability/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewRecord useful contextCheck the failing layerInspect browser media statisticsHandle lifecycle failuresLearn with an example
+
+Separate application requests, WebRTC connection state, and media delivery when diagnosing an SFU integration. A successful backend response does not by itself prove that media is arriving.
+
+For a returned API error, use the [Error codes reference](https://developers.cloudflare.com/realtime/sfu/observability/error-codes/) to interpret the response and choose the next action.
+
+## Record useful context
+
+Record the operation, time, application resource ID, SFU session or adapter ID, HTTP status, and per-item error codes. On the endpoint, record signaling, connection, and DataChannel state transitions.
+
+Keep App Secrets, endpoint tokens, SDP, ICE credentials, and media payloads out of logs. Sanitize errors before returning them to untrusted clients.
+
+## Check the failing layer
+
+Use the symptom to choose the next observation:
+
+Symptom | Check  
+---|---  
+Application request is denied | Identity, membership, ownership, and the deployed backend's authentication configuration  
+SFU request fails | HTTP status, top-level error, per-item results, and required fields in the [API schema](https://developers.cloudflare.com/realtime/static/realtime-api-2024-05-21.yaml)  
+HTTP `200` but a track is missing | Per-track error fields, publication discovery, publisher session ID, and track name  
+Negotiation remains unstable, or overlapping pulls return `406` | Public errors, outstanding offers, and [per-session ordering](https://developers.cloudflare.com/realtime/sfu/concepts/negotiation/#serialize-mutations-per-session)  
+Connected but no incoming media | Source publication, subscribed tracks, receiver statistics, and browser playback state  
+Video works but audio is silent | Microphone permission, mute state, audio track statistics, and autoplay requirements  
+Publisher messages do not reach a subscriber | Check that each endpoint uses its own [allocated channel ID](https://developers.cloudflare.com/realtime/sfu/features/datachannels/#add-an-application-channel), matching [delivery settings](https://developers.cloudflare.com/realtime/sfu/features/datachannels/#configure-message-delivery), and any required [readiness message](https://developers.cloudflare.com/realtime/sfu/features/datachannels/#wait-for-subscriber-readiness-waitforack).  
+Subscriber controls do not reach the publisher | Check that this subscriber holds [reply access](https://developers.cloudflare.com/realtime/sfu/features/datachannels/#return-to-publisher-canreply). With `waitForAck`, its first message is consumed as readiness; send commands afterward.  
+An adapter cannot connect | Check the service's [WebSocket upgrade, reachability, and authentication](https://developers.cloudflare.com/realtime/sfu/features/media-transport-adapters/websocket-adapter/#troubleshooting).  
+  
+## Inspect browser media statistics
+
+Use `RTCPeerConnection.getStats()` to observe inbound traffic. Compare samples over time; a single cumulative byte count cannot establish that media is still flowing.
+
+In this browser snippet, `pc` is the receiving PeerConnection:
+    
+    
+    const report = await pc.getStats();
+    for (const stat of report.values()) {
+      if (stat.type === "inbound-rtp") {
+        console.log({
+          id: stat.id,
+          kind: stat.kind,
+          bytesReceived: stat.bytesReceived,
+          packetsLost: stat.packetsLost,
+          jitter: stat.jitter,
+        });
+      }
+    }
+
+Check increasing received bytes alongside the application's visible playback state. If packets arrive but the element stays silent, inspect playback permissions and audio output. If packets stop, inspect publication, subscriptions, and connection state.
+
+## Handle lifecycle failures
+
+Use application state and resource results to distinguish these failures:
+
+Symptom | Check and next action  
+---|---  
+Membership remains after media fails | Compare application membership with the PeerConnection state. Use the application's [connection recovery policy](https://developers.cloudflare.com/realtime/sfu/best-practices/#define-recovery-explicitly).  
+An API response is lost or times out | Record the interrupted operation and known resource identifiers. Follow [operation-specific recovery](https://developers.cloudflare.com/realtime/sfu/concepts/negotiation/#retry-and-reconnect) before another mutation.  
+Reconnect restores the wrong tracks | Compare the current session IDs and connection attempt ID with the response being applied. Refer to [replacement connections](https://developers.cloudflare.com/realtime/sfu/concepts/negotiation/#retry-and-reconnect).  
+Leave or stop never finishes | Inspect pending track, channel, and adapter closures and their item errors. [Retain cleanup state](https://developers.cloudflare.com/realtime/sfu/best-practices/#retain-cleanup-state) while retrying failed items.  
+A track disappears after inactivity | Check the source's last incoming media and the [inactivity timeout](https://developers.cloudflare.com/realtime/sfu/platform/limits/#inactivity-timeout).  
+An adapter stops delivering after a disconnect | Check its direction and whether the [stream reconnect window](https://developers.cloudflare.com/realtime/sfu/features/media-transport-adapters/websocket-adapter/#automatic-reconnection-for-streaming) expired. Recreate terminally closed adapters.  
+  
+## Learn with an example
+
+The [video-room troubleshooting guide ↗︎](https://github.com/cloudflare/realtime-examples/blob/main/video-room/TROUBLESHOOTING.md) connects authentication, media, and room lifecycle symptoms to checks. The [cloud-gaming guide ↗︎](https://github.com/cloudflare/realtime-examples/blob/main/cloud-gaming/TROUBLESHOOTING.md) distinguishes Container startup, publisher readiness, media, and control ownership.
+
+For device setup and browser recovery, use [Pocket Radio troubleshooting ↗︎](https://github.com/cloudflare/realtime-examples/blob/main/esp32-radio/TROUBLESHOOTING.md). The [WebSocket adapter reference](https://developers.cloudflare.com/realtime/sfu/features/media-transport-adapters/websocket-adapter/#troubleshooting) explains its public errors and media-format checks.
+
+[PreviousConnection API](https://developers.cloudflare.com/realtime/sfu/api/)[NextError codes](https://developers.cloudflare.com/realtime/sfu/observability/error-codes/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/realtime/sfu/observability/index.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

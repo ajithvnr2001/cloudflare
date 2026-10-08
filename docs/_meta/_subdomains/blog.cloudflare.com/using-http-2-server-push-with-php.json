@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/using-http-2-server-push-with-php/",
+  "file": "_subdomains/blog.cloudflare.com/using-http-2-server-push-with-php.md",
+  "title": "Using HTTP/2 Server Push with PHP | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:37.785373+00:00",
+  "html_len": 307664,
+  "md_len": 63722,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/workers-now-even-more-unbound/",
+  "file": "_subdomains/blog.cloudflare.com/workers-now-even-more-unbound.md",
+  "title": "Workers, Now Even More Unbound: 15 Minutes, 100 Scripts, and No Egress Fees | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:20.241898+00:00",
+  "html_len": 280303,
+  "md_len": 59926,
+  "depth": 0,
+  "phase": 2
+}

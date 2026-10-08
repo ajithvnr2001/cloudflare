@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/http-ddos-managed-rules/",
+  "file": "_subdomains/blog.cloudflare.com/http-ddos-managed-rules.md",
+  "title": "How to customize your HTTP DDoS protection settings | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:04.103219+00:00",
+  "html_len": 303572,
+  "md_len": 69014,
+  "depth": 0,
+  "phase": 2
+}

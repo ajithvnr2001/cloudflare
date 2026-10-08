@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr.md",
+  "title": "Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:05:25.455649+00:00",
+  "html_len": 174190,
+  "md_len": 15715,
+  "depth": 1,
+  "phase": 2
+}

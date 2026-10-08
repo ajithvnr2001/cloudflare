@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tel-aviv/",
+  "file": "_subdomains/blog.cloudflare.com/tel-aviv.md",
+  "title": "Tel Aviv, Israel: Cloudflare's 135th Data Center Now Live! | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:41.309194+00:00",
+  "html_len": 276413,
+  "md_len": 56281,
+  "depth": 0,
+  "phase": 2
+}

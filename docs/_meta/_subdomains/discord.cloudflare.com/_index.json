@@ -1,0 +1,10 @@
+{
+  "url": "https://discord.cloudflare.com",
+  "file": "_subdomains/discord.cloudflare.com/_index.md",
+  "title": "Discord",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (68 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T07:23:12.516130+00:00",
+  "html_len": 63699,
+  "md_len": 1159,
+  "depth": 1
+}

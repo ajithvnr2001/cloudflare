@@ -1,0 +1,48 @@
+---
+url: https://developers.cloudflare.com/changelog/post/2026-08-03-r2-data-catalog-billing-enabled/
+title: Billing is now enabled for R2 Data Catalog \u00b7 Changelog
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:07:06.162772+00:00
+---
+
+# Billing is now enabled for R2 Data Catalog · Changelog
+
+> Source: https://developers.cloudflare.com/changelog/post/2026-08-03-r2-data-catalog-billing-enabled/
+
+# Changelog
+
+New updates and improvements at Cloudflare.
+
+[ View RSS feeds ](https://developers.cloudflare.com/fundamentals/new-features/available-rss-feeds/)[ Subscribe to RSS ](https://developers.cloudflare.com/changelog/rss/index.xml)
+
+[Back to all posts](https://developers.cloudflare.com/changelog)August 3, 2026
+
+## Billing is now enabled for R2 Data Catalog
+
+[Basin Catalog](https://developers.cloudflare.com/basin-catalog/)[Basin](https://developers.cloudflare.com/basin/)[R2](https://developers.cloudflare.com/r2/)
+
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-08-03-r2-data-catalog-billing-enabled/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Billing is now enabled for [R2 Data Catalog](https://developers.cloudflare.com/basin-catalog/) on non-enterprise accounts. R2 Data Catalog usage beyond the included free tier will appear on your next invoice.
+
+R2 Data Catalog charges based on two dimensions, in addition to standard [R2 storage and operations](https://developers.cloudflare.com/r2/pricing/):
+
+  * **Catalog operations** : $9.00 / million operations for metadata requests such as creating tables, reading table metadata, and updating table properties.
+  * **Compaction** : $0.005 / GB processed and $2.00 / million objects processed. These charges only apply when [automatic compaction](https://developers.cloudflare.com/basin-catalog/table-maintenance/) is turned on for a table.
+
+
+
+Each dimension includes a monthly free tier: 1 million catalog operations, 10 GB of compaction data processed, and 1 million compaction objects processed.
+
+For example, a single Iceberg table with 50 GB of data, 500,000 catalog operations per month, and compaction turned on that processes 20 GB across 200,000 files would be billed as follows:
+
+Dimension | Usage | Included | Billable | Cost  
+---|---|---|---|---  
+Catalog operations | 500,000 | 1,000,000 | 0 | $0.00  
+Compaction (data processed) | 20 GB | 10 GB | 10 GB | $0.05  
+Compaction (objects) | 200,000 | 1,000,000 | 0 | $0.00  
+**Total (Data Catalog)** |  |  |  | **$0.05**  
+  
+Standard R2 storage charges ($0.015 / GB-month) apply separately for the 50 GB of data stored.
+
+For full pricing details and billing examples, refer to [R2 Data Catalog pricing](https://developers.cloudflare.com/basin-catalog/platform/pricing/).

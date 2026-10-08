@@ -1,0 +1,137 @@
+---
+url: https://developers.cloudflare.com/rules/custom-errors/reference/parameters/
+title: Custom Errors parameters \u00b7 Cloudflare Rules docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:14:48.914401+00:00
+---
+
+# Custom Errors parameters · Cloudflare Rules docs
+
+> Source: https://developers.cloudflare.com/rules/custom-errors/reference/parameters/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Rules](https://developers.cloudflare.com/rules/)
+  3. /…
+
+[Custom Errors](https://developers.cloudflare.com/rules/custom-errors/)
+
+  4. /Reference
+  5. /Parameters
+
+
+
+# Custom Errors parameters
+
+Last updated Apr 16, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/rules/custom-errors/reference/parameters/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewCustom error rules Response type Response code Asset JSON response / HTML response / Text response / XML responseCustom error assets Asset name Description Asset address
+
+## Custom error rules
+
+[Custom error rules](https://developers.cloudflare.com/rules/custom-errors/#custom-error-rules) define when a custom error gets triggered and the content that is served to visitors. Rule parameters are the following:
+
+### Response type
+
+API name: _N/A_ (handled via `asset_name` and `content_type` parameters)
+
+The content type of the inline response to send to the website visitor (JSON, HTML, Text, or XML), or **Custom error asset** if sending the content of a custom error asset.
+
+When using the API you must either set the `asset_name` or set both the `content_type` and `content` parameters. Refer to JSON response / HTML response / Text response / XML response.
+
+### Response code
+
+API name: **`status_code`** `Integer` Optional
+
+The HTTP status code of the response. If provided, this value will override the current response status code.
+
+The status code must be between `400` and `999`.
+
+### Asset
+
+API name: **`asset_name`** `String` Optional
+
+The name of the custom error asset you previously uploaded (in the dashboard, you can create an asset when creating the rule). The asset may include [error tokens](https://developers.cloudflare.com/rules/custom-errors/reference/error-tokens/) that will be replaced with real values before sending the error response to the visitor.
+
+A custom error rule can only reference an asset defined in the same scope as the rule (that is, in the same zone or account).
+
+In the dashboard, this parameter is only available when you select `Custom error asset` in **Response type**.
+
+When using the API, you must provide either the `asset_name` or the `content` parameter.
+
+### JSON response / HTML response / Text response / XML response
+
+API names: **`content`** `String` Optional and **`content_type`** `String` Required
+
+The response body to return. It can include [error tokens](https://developers.cloudflare.com/rules/custom-errors/reference/error-tokens/) that will be replaced with real values before sending the error response to the visitor.
+
+You must provide either the `asset_name` or the `content` parameter.
+
+The maximum content size is 10 KB.
+
+When using the API you must also set the `content_type` parameter, which defines the content type of the returned response. The value must be one of the following:
+
+  * `text/html`
+  * `text/plain`
+  * `application/json`
+  * `text/xml`
+
+
+
+Caution
+
+If you create an HTML error response, make sure the `referrer` meta tag is not present in the HTML code since it will disrupt [Cloudflare challenges](https://developers.cloudflare.com/cloudflare-challenges/):
+    
+    
+    <meta name="referrer" (...) />
+
+## Custom error assets
+
+A [custom error asset](https://developers.cloudflare.com/rules/custom-errors/#custom-error-assets) corresponds to a web resource such as an HTML web page (including any referenced images, CSS, and JavaScript code) that Cloudflare fetches and saves based on a URL you provide, to be served to visitors as an error page.
+
+Custom error assets have the following parameters:
+
+### Asset name
+
+API name: **`name`** `String` Required
+
+The name of the custom error asset. Example value: `"500_error_template"`.
+
+An asset name can contain the following characters:
+
+  * Uppercase and lowercase letters (`A-Z` and `a-z`)
+  * Numbers (`0-9`)
+  * The underscore (`_`) character
+
+
+
+The maximum length is 200 characters.
+
+### Description
+
+API name: **`description`** `String` Optional
+
+A string describing the custom error asset. Example value: `"Standard 5xx error template page"`.
+
+### Asset address
+
+API name: **`url`** `String` Required
+
+The URL of the page you want Cloudflare to fetch and store, to be served later to visitors as error pages according to the configured custom error rules. Example value: `"https://example.com/errors/500.html"`.
+
+When you create or update an asset and provide a URL, Cloudflare collects any images, CSS, and JavaScript code used in the page, minifies the content, and saves it internally.
+
+The content of the page at the specified URL may include [error tokens](https://developers.cloudflare.com/rules/custom-errors/reference/error-tokens/) that will be replaced with real values before sending the error response to the visitor.
+
+When using the dashboard, you can later trigger another fetch to get the latest version of the page along with its resources, and store it internally.
+
+When using the API, if you update an asset and provide the same URL, Cloudflare will fetch the URL again, along with its resources, and store it internally.
+
+The maximum asset size is 1.5 MB.
+
+[PreviousCommon API calls](https://developers.cloudflare.com/rules/custom-errors/api-calls/)[NextError tokens](https://developers.cloudflare.com/rules/custom-errors/reference/error-tokens/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/rules/custom-errors/reference/parameters.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/picsart-move-to-workers-huge-performance-gains/",
+  "file": "_subdomains/blog.cloudflare.com/picsart-move-to-workers-huge-performance-gains.md",
+  "title": "How Picsart leverages Cloudflare's Developer Platform to build globally performant services | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:53.517476+00:00",
+  "html_len": 337063,
+  "md_len": 79373,
+  "depth": 0,
+  "phase": 2
+}

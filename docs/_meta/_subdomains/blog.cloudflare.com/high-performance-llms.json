@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/high-performance-llms/",
+  "file": "_subdomains/blog.cloudflare.com/high-performance-llms.md",
+  "title": "Building the foundation for running extra-large language models | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:09.155717+00:00",
+  "html_len": 302791,
+  "md_len": 69469,
+  "depth": 0,
+  "phase": 2
+}

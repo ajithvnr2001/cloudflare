@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/concise-post-christmas-cryptographic-challenges/",
+  "file": "_subdomains/blog.cloudflare.com/concise-post-christmas-cryptographic-challenges.md",
+  "title": "Concise (Post-Christmas) Cryptography Challenges | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:31.684053+00:00",
+  "html_len": 292954,
+  "md_len": 62369,
+  "depth": 0,
+  "phase": 2
+}

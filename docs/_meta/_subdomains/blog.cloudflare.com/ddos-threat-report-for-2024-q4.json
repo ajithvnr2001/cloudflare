@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ddos-threat-report-for-2024-q4/",
+  "file": "_subdomains/blog.cloudflare.com/ddos-threat-report-for-2024-q4.md",
+  "title": "Record-breaking 5.6 Tbps DDoS attack and global DDoS trends for 2024 Q4 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:04.533797+00:00",
+  "html_len": 362263,
+  "md_len": 85503,
+  "depth": 0,
+  "phase": 2
+}

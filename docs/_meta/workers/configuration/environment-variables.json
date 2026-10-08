@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/configuration/environment-variables/",
+  "file": "workers/configuration/environment-variables.md",
+  "title": "Environment variables \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:14.639489+00:00",
+  "html_len": 233677,
+  "md_len": 12761,
+  "depth": 0
+}

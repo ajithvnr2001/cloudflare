@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/radar/investigate/",
+  "file": "radar/investigate.md",
+  "title": "Investigate \u00b7 Cloudflare Radar docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:12:50.338997+00:00",
+  "html_len": 97364,
+  "md_len": 1850,
+  "depth": 0
+}

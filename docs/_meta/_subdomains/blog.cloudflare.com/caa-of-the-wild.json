@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/caa-of-the-wild/",
+  "file": "_subdomains/blog.cloudflare.com/caa-of-the-wild.md",
+  "title": "CAA of the Wild: Supporting a New Standard | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:53.661661+00:00",
+  "html_len": 309011,
+  "md_len": 77315,
+  "depth": 0,
+  "phase": 2
+}

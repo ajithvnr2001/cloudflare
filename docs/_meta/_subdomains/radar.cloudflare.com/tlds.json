@@ -1,0 +1,10 @@
+{
+  "url": "https://radar.cloudflare.com/tlds/",
+  "file": "_subdomains/radar.cloudflare.com/tlds.md",
+  "title": "Top-Level Domains | Cloudflare Radar",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:27:07.962666+00:00",
+  "html_len": 177167,
+  "md_len": 1417,
+  "depth": 1
+}

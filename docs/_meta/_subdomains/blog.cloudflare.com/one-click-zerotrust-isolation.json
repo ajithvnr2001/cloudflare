@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/one-click-zerotrust-isolation/",
+  "file": "_subdomains/blog.cloudflare.com/one-click-zerotrust-isolation.md",
+  "title": "One-click data security for your internal and SaaS applications | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:46.464389+00:00",
+  "html_len": 296510,
+  "md_len": 66757,
+  "depth": 0,
+  "phase": 2
+}

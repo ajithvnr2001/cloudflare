@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-pages-goes-full-stack/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-pages-goes-full-stack.md",
+  "title": "Cloudflare Pages Goes Full Stack | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:21.084241+00:00",
+  "html_len": 307427,
+  "md_len": 69194,
+  "depth": 0,
+  "phase": 2
+}

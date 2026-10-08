@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/today-we-mitigated-1-1-1-1/",
+  "file": "_subdomains/blog.cloudflare.com/today-we-mitigated-1-1-1-1.md",
+  "title": "Today we mitigated 1.1.1.1 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:32.332839+00:00",
+  "html_len": 281793,
+  "md_len": 59461,
+  "depth": 0,
+  "phase": 2
+}

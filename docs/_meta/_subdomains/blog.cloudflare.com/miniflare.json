@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/miniflare/",
+  "file": "_subdomains/blog.cloudflare.com/miniflare.md",
+  "title": "Miniflare 2.0: fully-local development and testing for Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:45.504084+00:00",
+  "html_len": 361535,
+  "md_len": 77573,
+  "depth": 0,
+  "phase": 2
+}

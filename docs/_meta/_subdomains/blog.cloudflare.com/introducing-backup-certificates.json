@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-backup-certificates/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-backup-certificates.md",
+  "title": "Introducing: Backup Certificates | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:40:47.630606+00:00",
+  "html_len": 284558,
+  "md_len": 64626,
+  "depth": 0,
+  "phase": 2
+}

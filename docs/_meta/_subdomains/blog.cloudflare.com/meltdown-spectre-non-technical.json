@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/meltdown-spectre-non-technical/",
+  "file": "_subdomains/blog.cloudflare.com/meltdown-spectre-non-technical.md",
+  "title": "An Explanation of the Meltdown/Spectre Bugs for a Non-Technical Audience | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:49.533811+00:00",
+  "html_len": 290037,
+  "md_len": 64241,
+  "depth": 0,
+  "phase": 2
+}

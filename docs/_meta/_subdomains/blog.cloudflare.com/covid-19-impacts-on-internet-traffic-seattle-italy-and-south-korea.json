@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/covid-19-impacts-on-internet-traffic-seattle-italy-and-south-korea/",
+  "file": "_subdomains/blog.cloudflare.com/covid-19-impacts-on-internet-traffic-seattle-italy-and-south-korea.md",
+  "title": "COVID-19 impacts on Internet traffic: Seattle, Northern Italy and South Korea | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:21.488451+00:00",
+  "html_len": 299198,
+  "md_len": 64821,
+  "depth": 0,
+  "phase": 2
+}

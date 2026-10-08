@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/2020-election-security-risks-from-expired-domains/",
+  "file": "_subdomains/blog.cloudflare.com/2020-election-security-risks-from-expired-domains.md",
+  "title": "With 14 days to go, we haven\u2019t nailed the basics: election security risks from expired domains | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:52.519006+00:00",
+  "html_len": 268922,
+  "md_len": 57122,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/magic-transit-network-functions/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/magic-transit-network-functions.md",
+  "title": "Magic Transit: Funciones de la red en la magnitud de Cloudflare | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:12.742265+00:00",
+  "html_len": 222318,
+  "md_len": 37388,
+  "depth": 0,
+  "phase": 2
+}

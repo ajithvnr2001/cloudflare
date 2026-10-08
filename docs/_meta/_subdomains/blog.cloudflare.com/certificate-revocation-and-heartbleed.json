@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/certificate-revocation-and-heartbleed/",
+  "file": "_subdomains/blog.cloudflare.com/certificate-revocation-and-heartbleed.md",
+  "title": "Certificate Revocation and Heartbleed | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:50.008851+00:00",
+  "html_len": 285175,
+  "md_len": 58345,
+  "depth": 0,
+  "phase": 2
+}

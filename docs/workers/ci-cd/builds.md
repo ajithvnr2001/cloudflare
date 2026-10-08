@@ -1,0 +1,141 @@
+---
+url: https://developers.cloudflare.com/workers/ci-cd/builds/
+title: Builds \u00b7 Cloudflare Workers docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:17:10.593827+00:00
+---
+
+# Builds · Cloudflare Workers docs
+
+> Source: https://developers.cloudflare.com/workers/ci-cd/builds/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Workers](https://developers.cloudflare.com/workers/)
+  3. /[CI/CD](https://developers.cloudflare.com/workers/ci-cd/)
+  4. /Builds
+
+
+
+# Builds
+
+Last updated Oct 1, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers/ci-cd/builds/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewGet started Connect a new Worker Connect an existing WorkerAutomatic project configurationView build and Preview URLWorkers with ContainersDisconnecting builds
+
+The Cloudflare [Git integration](https://developers.cloudflare.com/workers/ci-cd/builds/git-integration/) lets you connect a new or existing Worker to a repository hosted by Artifacts, GitHub, or GitLab, enabling automated builds and deployments for your Worker on push.
+
+## Get started
+
+To connect a repository hosted in Artifacts, refer to the [Artifacts integration](https://developers.cloudflare.com/workers/ci-cd/builds/git-integration/artifacts-integration/).
+
+### Connect a new Worker
+
+To create a new Worker and connect it to a GitHub or GitLab repository:
+
+  1. In the Cloudflare dashboard, go to the **Workers & Pages** page.
+
+[ Go to **Workers & Pages** ↗ ](https://dash.cloudflare.com/?to=/:account/workers-and-pages)
+  2. Select **Create application**.
+
+  3. Select **Get started** next to **Import a repository**.
+
+  4. Under **Import a repository** , select a **Git account**.
+
+  5. Select the repository you want to import from the list. You can also use the search bar to narrow the results.
+
+  6. Configure your project and select **Save and Deploy**.
+
+  7. Preview your Worker at its provided [`workers.dev`](https://developers.cloudflare.com/workers/configuration/routing/workers-dev/) subdomain.
+
+
+
+
+### Connect an existing Worker
+
+To connect an existing Worker to a GitHub or GitLab repository:
+
+  1. In the Cloudflare dashboard, go to the **Workers & Pages** page.
+
+[ Go to **Workers & Pages** ↗ ](https://dash.cloudflare.com/?to=/:account/workers-and-pages)
+  2. Select the Worker you want to connect to a repository.
+
+  3. Select **Settings** and then **Builds**.
+
+  4. Select **Connect** and follow the prompts to connect the repository to your Worker and configure your [build settings](https://developers.cloudflare.com/workers/ci-cd/builds/configuration/).
+
+  5. Push a commit to your Git repository to trigger a build and deploy to your Worker.
+
+
+
+
+Caution
+
+When connecting a repository to a Workers project, the Worker name in the Cloudflare dashboard must match the `name` in the Wrangler configuration file in the specified root directory, or the build will fail. This ensures that the Worker deployed from the repository is consistent with the Worker registered in the Cloudflare dashboard. For details, see [Workers name requirement](https://developers.cloudflare.com/workers/ci-cd/builds/troubleshoot/#workers-name-requirement).
+
+## Automatic project configuration
+
+When you connect a repository that does not have a Wrangler configuration file, [autoconfig](https://developers.cloudflare.com/workers/framework-guides/automatic-configuration/) runs to detect your framework and create a [pull request](https://developers.cloudflare.com/workers/ci-cd/builds/automatic-prs/) to configure your project for Cloudflare Workers.
+
+Artifacts does not provide this automatic pull request workflow. Prepare the source code and project configuration before you connect an Artifacts repository.
+
+  1. Autoconfig detects your framework and generates the necessary configuration
+  2. A pull request is created in your repository with the necessary configuration changes
+  3. A preview deployment is generated so you can test before merging
+  4. Once you merge the PR, your project is ready for deployment
+
+
+
+For details about supported frameworks and what files are created, refer to [Deploy an existing project](https://developers.cloudflare.com/workers/framework-guides/automatic-configuration/). For details about the PRs created, refer to [Automatic pull requests](https://developers.cloudflare.com/workers/ci-cd/builds/automatic-prs/).
+
+## View build and Preview URL
+
+You can monitor a build's status and its build logs by navigating to **View build history** at the bottom of the **Deployments** tab of your Worker.
+
+A successful build produces different output depending on the branch:
+
+  * Production branch builds create a new [version](https://developers.cloudflare.com/workers/versions-and-deployments/) under Version History. If the build is configured to deploy, that version is promoted to the Active Deployment.
+  * Preview builds create or update a [Preview](https://developers.cloudflare.com/workers/previews/). Preview builds run for branches that are not your production branch. Find the Preview URL in the **Previews** section of your Worker. Supported external providers can also post the URL as a pull request comment.
+
+
+
+To configure Preview settings such as variables, secrets, bindings, custom domains, or resource isolation, refer to [Previews](https://developers.cloudflare.com/workers/previews/).
+
+Builds, versions, deployments, Previews
+
+Previews are not Worker versions, active deployments, or gradual deployments. A Preview URL serves the latest deployment for one Preview.
+
+## Workers with Containers
+
+For Workers that use [Containers](https://developers.cloudflare.com/containers/), use `wrangler deploy` on the production branch so container images and container instances can update. If you configure preview builds to run `wrangler versions upload`, container images and container instances will not update. Refer to [Deploy Containers](https://developers.cloudflare.com/containers/guides/deploy/#before-production).
+
+## Disconnecting builds
+
+To disconnect a Worker from a repository:
+
+  1. In the Cloudflare dashboard, go to the **Workers & Pages** page.
+
+[ Go to **Workers & Pages** ↗ ](https://dash.cloudflare.com/?to=/:account/workers-and-pages)
+  2. Select the Worker you want to disconnect from a repository.
+
+  3. Select **Settings** and then **Builds**.
+
+  4. Select **Disconnect**.
+
+
+
+
+If you want to switch to a different repository for your Worker, you must first disable builds, then reconnect to select the new repository.
+
+To disable automatic deployments while still allowing builds to run automatically and save as [versions](https://developers.cloudflare.com/workers/versions-and-deployments/) (without promoting them to an active deployment), update your deploy command to: `npx wrangler versions upload`.
+
+Note
+
+Builds that run `wrangler versions upload` create Worker versions and [Version URLs](https://developers.cloudflare.com/workers/versions-and-deployments/version-urls/). Version URLs use the resources configured for that Worker version. They are different from [Previews](https://developers.cloudflare.com/workers/previews/), which are branch-oriented and can use Preview-specific settings.
+
+[PreviousOverview](https://developers.cloudflare.com/workers/ci-cd/)[NextConfiguration](https://developers.cloudflare.com/workers/ci-cd/builds/configuration/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/workers/ci-cd/builds/index.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/refresh-stale-dns-records-on-1-1-1-1/",
+  "file": "_subdomains/blog.cloudflare.com/refresh-stale-dns-records-on-1-1-1-1.md",
+  "title": "Refresh Stale DNS Records on 1.1.1.1 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:26.609918+00:00",
+  "html_len": 274159,
+  "md_len": 55701,
+  "depth": 0,
+  "phase": 2
+}

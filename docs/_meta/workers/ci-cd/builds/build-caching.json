@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/ci-cd/builds/build-caching/",
+  "file": "workers/ci-cd/builds/build-caching.md",
+  "title": "Build caching \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:11.819402+00:00",
+  "html_len": 186829,
+  "md_len": 4145,
+  "depth": 0
+}

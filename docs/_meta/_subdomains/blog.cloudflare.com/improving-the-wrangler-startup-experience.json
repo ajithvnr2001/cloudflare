@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/improving-the-wrangler-startup-experience/",
+  "file": "_subdomains/blog.cloudflare.com/improving-the-wrangler-startup-experience.md",
+  "title": "Improving the Wrangler Startup Experience | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:02.518921+00:00",
+  "html_len": 278731,
+  "md_len": 59856,
+  "depth": 0,
+  "phase": 2
+}

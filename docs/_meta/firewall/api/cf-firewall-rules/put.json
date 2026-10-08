@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/firewall/api/cf-firewall-rules/put/",
+  "file": "firewall/api/cf-firewall-rules/put.md",
+  "title": "PUT examples - Firewall rules \u00b7 Cloudflare Firewall Rules (deprecated) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:11:16.789879+00:00",
+  "html_len": 110832,
+  "md_len": 4691,
+  "depth": 0
+}

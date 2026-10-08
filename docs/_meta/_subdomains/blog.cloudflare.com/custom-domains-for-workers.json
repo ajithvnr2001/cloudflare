@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/custom-domains-for-workers/",
+  "file": "_subdomains/blog.cloudflare.com/custom-domains-for-workers.md",
+  "title": "Introducing Custom Domains for Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:24.887730+00:00",
+  "html_len": 286413,
+  "md_len": 59238,
+  "depth": 0,
+  "phase": 2
+}

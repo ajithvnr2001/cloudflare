@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/magic-wan-connector/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/magic-wan-connector.md",
+  "title": "\u63a8\u51fa Magic WAN \u8fde\u63a5\u5668\uff1a\u6784\u5efa\u4e0b\u4e00\u4ee3\u7f51\u7edc\u7684\u6700\u7b80\u4fbf\u7684\u5165\u53e3 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:05.521626+00:00",
+  "html_len": 202780,
+  "md_len": 27435,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-la/fail-small-resilience-plan/",
+  "file": "_subdomains/blog.cloudflare.com/es-la/fail-small-resilience-plan.md",
+  "title": "C\u00f3digo naranja: fallar en peque\u00f1o, nuestro plan de resiliencia tras incidentes recientes | El blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:41.820867+00:00",
+  "html_len": 186538,
+  "md_len": 24996,
+  "depth": 0,
+  "phase": 2
+}

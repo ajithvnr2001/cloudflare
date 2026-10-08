@@ -1,0 +1,58 @@
+---
+url: https://developers.cloudflare.com/smart-shield/concepts/connection-reuse/
+title: Connection reuse \u00b7 Cloudflare Smart Shield docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:15:31.098457+00:00
+---
+
+# Connection reuse · Cloudflare Smart Shield docs
+
+> Source: https://developers.cloudflare.com/smart-shield/concepts/connection-reuse/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Smart Shield](https://developers.cloudflare.com/smart-shield/)
+  3. /How it works
+  4. /Connection reuse
+
+
+
+# Connection reuse
+
+Last updated May 7, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/smart-shield/concepts/connection-reuse/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewAbout connection reuse Connection coalescing (HTTP/2)Connection reuse and Dedicated CDN Egress IPs
+
+Smart Shield reduces the number of connections between Cloudflare and your origin server by batching multiple requests through shared connections. When requests from an [upper-tier data center](https://developers.cloudflare.com/smart-shield/configuration/smart-tiered-cache/) — the layer of Cloudflare's cache that sits closest to your origin — need to reach your server, Smart Shield sends them over a single connection instead of opening a new connection for each request. This reduces overall connections to your origin by 30% on average, which lowers resource consumption on your origin and reduces the risk of connection exhaustion under high traffic.
+
+For more information, refer to the [Smart Shield announcement blog post ↗︎](https://blog.cloudflare.com/introducing-observatory-and-smart-shield/#protecting-and-accelerating-origins-with-smart-connection-reuse).
+
+## About connection reuse
+
+Every HTTP request requires a TCP connection between a client and a server. Each connection is identified by a pair of network addresses: the source IP address and port, and the destination IP address and port. Opening a new TCP connection has overhead — it requires a handshake between client and server, and a TLS negotiation if the connection is encrypted.
+
+Connection reuse (also called persistent connections or keep-alive) avoids this overhead by sending multiple HTTP requests over a single TCP connection instead of opening a new connection for each request. HTTP/1.1 made this the default behavior.
+
+For example, when a browser opens a connection to `shop.example.com`, the page may reference dozens of additional resources — stylesheets, images, scripts, and other files. Without connection reuse, each resource would require its own TCP connection. With connection reuse, all of these requests flow through the same connection.
+
+### Connection coalescing (HTTP/2)
+
+With HTTP/2, connection reuse extends further through connection coalescing. This allows requests for different hostnames to share a single connection, as long as two conditions are met:
+
+  * The hostnames resolve to the same destination IP address and port.
+  * The TLS certificate on the server covers both hostnames (for example, a certificate that lists both `shop.example.com` and `blog.example.com` in its Subject Alternative Names).
+
+
+
+This means a connection originally opened for `shop.example.com` can also carry requests for `blog.example.com`, reducing the total number of connections to your origin even further.
+
+## Connection reuse and Dedicated CDN Egress IPs
+
+Connection reuse and connection coalescing are also considered when allocating your [Dedicated CDN Egress IPs](https://developers.cloudflare.com/smart-shield/configuration/dedicated-egress-ips/).
+
+[PreviousNetwork diagram](https://developers.cloudflare.com/smart-shield/concepts/network-diagram/)[NextSmart Tiered Cache](https://developers.cloudflare.com/smart-shield/configuration/smart-tiered-cache/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/smart-shield/concepts/connection-reuse.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/a-quick-update-on-page-views/",
+  "file": "_subdomains/blog.cloudflare.com/a-quick-update-on-page-views.md",
+  "title": "A Quick Update on Page Views | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:21.105280+00:00",
+  "html_len": 263355,
+  "md_len": 54073,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/cloud/what-is-cspm/",
+  "file": "_subdomains/www.cloudflare.com/learning/cloud/what-is-cspm.md",
+  "title": "What is cloud security posture management (CSPM)?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:56.772282+00:00",
+  "html_len": 216789,
+  "md_len": 15833,
+  "depth": 0,
+  "phase": 2
+}

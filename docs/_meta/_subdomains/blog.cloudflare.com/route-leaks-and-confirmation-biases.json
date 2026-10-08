@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/route-leaks-and-confirmation-biases/",
+  "file": "_subdomains/blog.cloudflare.com/route-leaks-and-confirmation-biases.md",
+  "title": "BGP security and confirmation biases | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:39.321416+00:00",
+  "html_len": 287354,
+  "md_len": 64172,
+  "depth": 0,
+  "phase": 2
+}

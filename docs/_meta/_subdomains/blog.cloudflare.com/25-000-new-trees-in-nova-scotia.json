@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/25-000-new-trees-in-nova-scotia/",
+  "file": "_subdomains/blog.cloudflare.com/25-000-new-trees-in-nova-scotia.md",
+  "title": "25,000 new trees in Nova Scotia | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:34.064442+00:00",
+  "html_len": 295493,
+  "md_len": 64315,
+  "depth": 0,
+  "phase": 2
+}

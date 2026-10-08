@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/nl-nl/cloudflare-ai-audit-control-ai-content-crawlers/",
+  "file": "_subdomains/blog.cloudflare.com/nl-nl/cloudflare-ai-audit-control-ai-content-crawlers.md",
+  "title": "Pagina niet gevonden \u2014 Cloudflare Blog",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling status 404)",
+  "fetched_at": "2026-10-08T07:23:11.127136+00:00",
+  "html_len": 152810,
+  "md_len": 3942,
+  "depth": 1
+}

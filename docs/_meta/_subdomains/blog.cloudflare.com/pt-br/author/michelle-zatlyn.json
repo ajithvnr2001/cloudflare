@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/author/michelle-zatlyn/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/author/michelle-zatlyn.md",
+  "title": "Michelle Zatlyn - Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:20:12.858781+00:00",
+  "html_len": 120025,
+  "md_len": 3587,
+  "depth": 1,
+  "phase": 2
+}

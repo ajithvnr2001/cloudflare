@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/bgp-leaks-and-crypto-currencies/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/bgp-leaks-and-crypto-currencies.md",
+  "title": "Fugas de BGP y criptomonedas | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:18.223008+00:00",
+  "html_len": 225003,
+  "md_len": 33679,
+  "depth": 0,
+  "phase": 2
+}

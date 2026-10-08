@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/1-billion-served-every-day/",
+  "file": "_subdomains/blog.cloudflare.com/1-billion-served-every-day.md",
+  "title": "1 Billion Served (Every Day) | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:38.846921+00:00",
+  "html_len": 265158,
+  "md_len": 53504,
+  "depth": 0,
+  "phase": 2
+}

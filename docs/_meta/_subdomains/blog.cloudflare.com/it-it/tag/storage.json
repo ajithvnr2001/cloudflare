@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/it-it/tag/storage/",
+  "file": "_subdomains/blog.cloudflare.com/it-it/tag/storage.md",
+  "title": "Post con tag \"Archiviazione\" \u2014 Il blog di Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:22:21.311863+00:00",
+  "html_len": 119026,
+  "md_len": 3091,
+  "depth": 1,
+  "phase": 2
+}

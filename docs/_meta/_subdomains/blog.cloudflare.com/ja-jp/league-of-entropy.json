@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/league-of-entropy/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/league-of-entropy.md",
+  "title": "\u30ea\u30fc\u30b0\u30aa\u30d6\u30a8\u30f3\u30c8\u30ed\u30d4\u30fc\uff1a\u30de\u30f3\u30c8\u3092\u7740\u306a\u3044\u30d2\u30fc\u30ed\u30fc\u3082\u3044\u308b | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:13.252623+00:00",
+  "html_len": 234313,
+  "md_len": 37776,
+  "depth": 0,
+  "phase": 2
+}

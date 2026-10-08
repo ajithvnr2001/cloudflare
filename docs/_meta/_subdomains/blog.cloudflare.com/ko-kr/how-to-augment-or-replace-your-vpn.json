@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/how-to-augment-or-replace-your-vpn/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/how-to-augment-or-replace-your-vpn.md",
+  "title": "Cloudflare\ub85c VPN\uc744 \uac15\ud654\ud558\uac70\ub098 \ub300\uccb4\ud558\ub294 \ubc29\ubc95 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:34.584321+00:00",
+  "html_len": 220365,
+  "md_len": 36416,
+  "depth": 0,
+  "phase": 2
+}

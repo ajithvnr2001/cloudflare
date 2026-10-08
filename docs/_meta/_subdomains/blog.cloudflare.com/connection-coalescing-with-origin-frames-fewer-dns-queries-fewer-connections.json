@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/connection-coalescing-with-origin-frames-fewer-dns-queries-fewer-connections/",
+  "file": "_subdomains/blog.cloudflare.com/connection-coalescing-with-origin-frames-fewer-dns-queries-fewer-connections.md",
+  "title": "Connection coalescing with ORIGIN Frames: fewer DNS queries, fewer connections | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:04.001618+00:00",
+  "html_len": 327595,
+  "md_len": 81643,
+  "depth": 0,
+  "phase": 2
+}

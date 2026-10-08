@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/designing-edge-servers-with-arm-cpus/",
+  "file": "_subdomains/blog.cloudflare.com/designing-edge-servers-with-arm-cpus.md",
+  "title": "Designing Edge Servers with Arm CPUs to Deliver 57% More Performance Per Watt | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:17.667763+00:00",
+  "html_len": 279047,
+  "md_len": 57347,
+  "depth": 0,
+  "phase": 2
+}

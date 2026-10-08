@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/radar/investigate/outages/",
+  "file": "radar/investigate/outages.md",
+  "title": "Outages \u00b7 Cloudflare Radar docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:12:50.779887+00:00",
+  "html_len": 103558,
+  "md_len": 4145,
+  "depth": 0
+}

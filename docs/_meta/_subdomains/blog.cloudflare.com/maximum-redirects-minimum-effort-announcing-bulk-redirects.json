@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/maximum-redirects-minimum-effort-announcing-bulk-redirects/",
+  "file": "_subdomains/blog.cloudflare.com/maximum-redirects-minimum-effort-announcing-bulk-redirects.md",
+  "title": "Maximum redirects, minimum effort: Announcing Bulk Redirects | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:47.351235+00:00",
+  "html_len": 343484,
+  "md_len": 82846,
+  "depth": 0,
+  "phase": 2
+}

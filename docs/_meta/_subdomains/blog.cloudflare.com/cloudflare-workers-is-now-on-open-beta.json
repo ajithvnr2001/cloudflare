@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-workers-is-now-on-open-beta/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-workers-is-now-on-open-beta.md",
+  "title": "Cloudflare Workers is now on Open Beta | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:47.873457+00:00",
+  "html_len": 272144,
+  "md_len": 56355,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-ssl-for-saas/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-ssl-for-saas.md",
+  "title": "Introducing SSL for SaaS | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:15.657412+00:00",
+  "html_len": 305799,
+  "md_len": 71727,
+  "depth": 0,
+  "phase": 2
+}

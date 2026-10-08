@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/tag/zero-day-threats/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/tag/zero-day-threats.md",
+  "title": "Posts com a tag \"Zero Day Threats (PT)\" \u2014 Blog da Cloudflare",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (273 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:07:09.006835+00:00",
+  "html_len": 151068,
+  "md_len": 2899,
+  "depth": 1,
+  "phase": 2
+}

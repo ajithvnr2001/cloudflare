@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-latest-from-cloudflares-seventeen-employee-resource-groups/",
+  "file": "_subdomains/blog.cloudflare.com/the-latest-from-cloudflares-seventeen-employee-resource-groups.md",
+  "title": "The latest from Cloudflare's seventeen Employee Resource Groups | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:49.309365+00:00",
+  "html_len": 289163,
+  "md_len": 67627,
+  "depth": 0,
+  "phase": 2
+}

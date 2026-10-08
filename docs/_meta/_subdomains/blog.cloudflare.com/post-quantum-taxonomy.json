@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/post-quantum-taxonomy/",
+  "file": "_subdomains/blog.cloudflare.com/post-quantum-taxonomy.md",
+  "title": "The post-quantum state: a taxonomy of challenges | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:40.065945+00:00",
+  "html_len": 307522,
+  "md_len": 83367,
+  "depth": 0,
+  "phase": 2
+}

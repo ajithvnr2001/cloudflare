@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/soar-simulation-for-observability-reliability-and-security/",
+  "file": "_subdomains/blog.cloudflare.com/soar-simulation-for-observability-reliability-and-security.md",
+  "title": "Soar: Simulation for Observability, reliAbility, and secuRity | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:40.425347+00:00",
+  "html_len": 306972,
+  "md_len": 77496,
+  "depth": 0,
+  "phase": 2
+}

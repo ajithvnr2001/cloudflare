@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/esni/",
+  "file": "_subdomains/blog.cloudflare.com/esni.md",
+  "title": "Encrypting SNI: Fixing One of the Core Internet Bugs | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:26.806518+00:00",
+  "html_len": 298001,
+  "md_len": 65976,
+  "depth": 0,
+  "phase": 2
+}

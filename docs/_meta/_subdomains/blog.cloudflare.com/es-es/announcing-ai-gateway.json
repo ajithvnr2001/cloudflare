@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/announcing-ai-gateway/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/announcing-ai-gateway.md",
+  "title": "AI Gateway: mejora de la observabilidad, la fiabilidad y la escalabilidad de las aplicaciones de IA | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:41:53.992383+00:00",
+  "html_len": 220503,
+  "md_len": 32577,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/get-started-web3/",
+  "file": "_subdomains/blog.cloudflare.com/get-started-web3.md",
+  "title": "Get started Building Web3 Apps with Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:02.522199+00:00",
+  "html_len": 290219,
+  "md_len": 66491,
+  "depth": 0,
+  "phase": 2
+}

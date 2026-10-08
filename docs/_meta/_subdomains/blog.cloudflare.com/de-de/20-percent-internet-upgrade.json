@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/20-percent-internet-upgrade/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/20-percent-internet-upgrade.md",
+  "title": "Cloudflare ist jetzt schneller und sicherer \u2013 dank Rust. | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:40:57.937376+00:00",
+  "html_len": 259043,
+  "md_len": 51586,
+  "depth": 0,
+  "phase": 2
+}

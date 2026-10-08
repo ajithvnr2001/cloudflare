@@ -1,0 +1,826 @@
+---
+description: Connect to Cloudflare with private network interconnects.
+title: Cloudflare Network Interconnect
+image: https://developers.cloudflare.com/network-interconnect/og.png?v=1819c79e66290684
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-interconnect/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Cloudflare Network Interconnect
+
+Last updated Sep 16, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-interconnect/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Connect your network infrastructure directly to Cloudflare
+
+Enterprise-only
+
+Cloudflare Network Interconnect (CNI) allows you to connect your network infrastructure directly to Cloudflare — rather than using the public Internet — for a more performant and secure experience. With CNI, you can bring Cloudflare's full suite of network functions to your network edge.
+
+## Benefits
+
+Enterprises use CNI to achieve:
+
+- **Enhanced Performance**: Gain lower latency and more consistent network throughput.
+- **Increased Security**: Reduce your network's attack surface by connecting privately and avoiding the public Internet.
+
+## Connection types
+
+Choose the connection type for your infrastructure and operational needs.
+
+|  | Direct Interconnect | Partner Interconnect | Cloud Interconnect |
+| --- | --- | --- | --- |
+| **Port type** | A dedicated physical fiber connection between your network equipment and Cloudflare's hardware in a shared data center. | A virtual connection to Cloudflare established through one of our global connectivity partners. | A private connection between a customer's cloud environments (for example, Amazon Web Services (AWS), Google Cloud) and Cloudflare. |
+| **Operations** | You are responsible for procuring and managing the physical cross-connect to Cloudflare's equipment. | Your partner manages the connection logistics, often through a software-defined networking portal. | Cloudflare connects to cloud providers' dedicated services, and customers establish private virtual circuits from their virtual private clouds. |
+| **Ideal use case** | For customers collocated with Cloudflare who require maximum control, performance, and reliability. | For customers who are not in the same data center as Cloudflare or prefer a managed connectivity solution. | For customers with workloads in public clouds who need secure, reliable connectivity to Cloudflare services. |
+
+## Dataplane
+
+Cloudflare's data centers may support one or more interconnect dataplanes. The dataplane is the type of equipment that terminates your direct connection:
+
+- **Dataplane v1**: A peering connection to a Cloudflare edge data center that supports Generic Routing Encapsulation (GRE) tunnels for connecting with the Cloudflare Virtual Network, with optional GRE-less delivery for Magic Transit Direct Server Return.
+- **Dataplane v2**: Is based on the Customer Connectivity Router (CCR), which is specifically designed for customer connectivity. It provides simplified routing without GRE tunneling and supports a 1,500-byte Maximum Transmission Unit (MTU) bidirectionally.
+
+When you review the [available locations](https://developers.cloudflare.com/network-interconnect/locations/), you can see which dataplane version(s) are available.
+
+## Product use cases
+
+CNI provides a private point-to-point IP connection with Cloudflare. There are two Dataplanes that come with different technical specifications.
+
+|  | Dataplane v1 | Dataplane v2 |
+| --- | --- | --- |
+| **Magic Transit Direct Server Return (DSR)** <br> Distributed Denial of Service (DDoS) protection for all ingress traffic from the Internet to your public network. Send egress traffic via your ISP. | Supported with or without a GRE tunnel established over the interconnect circuit. | Supported. |
+| **Magic Transit with Egress** <br> DDoS protection for all ingress traffic from the Internet to your public network. Send egress traffic via Cloudflare. | Supported with a GRE tunnel established over the interconnect circuit. | Supported. |
+| **Cloudflare WAN and Zero Trust** <br> Build a secure, private network backbone connecting your Zero Trust users and applications with all your sites, data centers, and clouds. | Supported with a GRE tunnel established over the interconnect circuit. | Supported. |
+| **Peering** <br> Exchange public routes with a single Cloudflare PoP (Point of Presence). | Supported. <br><br> All customers connecting with the edge data center will exchange public routes at that PoP with AS13335. Connectivity is established at each individual PoP. Routes for other edge locations in Cloudflare's network may not be available. Routes for customer-advertised prefixes will be available only in the connected PoP. | Not supported. |
+| **Application Security and Performance** <br> Improve the performance and security of your web applications | **Supported via peering**: Customers can use Argo Smart Routing to direct origin traffic via the edge peering connection when it is determined to be the lowest latency option. Customers must maintain a direct Internet connection which will always be used for a portion of traffic and during failure scenarios. <br> **Supported Via Magic Transit**: Customers may configure any product with an origin server IP address that is protected by Magic Transit. Magic Transit will direct this traffic via the overlay and customer can control interconnect next-hops using the Magic Transit Virtual Network routing table. | When the origin IPs are behind Magic Transit over a CNI v2, all Cloudflare services that work with public origins (like Load Balancer, WAF, Cache) will run over the CNI. |
+
+For more details refer to the [prerequisites section](https://developers.cloudflare.com/network-interconnect/get-started/#prerequisites).
+
+### Designing for high availability
+
+To protect against a single point of failure, it is critical to design your CNI deployment for resilience. For business-critical applications, seek Cloudflare locations that support diversity on the device level. This ensures your connections terminate on physically separate hardware.
+
+Refer to [Service Expectations](https://developers.cloudflare.com/network-interconnect/get-started/#service-expectations) for more information.
+
+---
+
+## Related products
+
+[Magic Transit](https://developers.cloudflare.com/magic-transit/)
+
+Magic Transit is a network security and performance solution that offers Distributed Denial of Service (DDoS) protection, traffic acceleration, and more for on-premise, cloud-hosted, and hybrid networks.
+
+[Cloudflare WAN](https://developers.cloudflare.com/cloudflare-wan/)
+
+Improve security and performance for your entire corporate network, reducing cost and operation complexity.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/network-interconnect/#page","headline":"Cloudflare Network Interconnect","description":"Connect to Cloudflare with private network interconnects.","url":"https://developers.cloudflare.com/network-interconnect/","inLanguage":"en","image":"https://developers.cloudflare.com/network-interconnect/og.png?v=1819c79e66290684","dateModified":"2026-09-16","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Connect your network privately to Cloudflare
+title: Get started
+image: https://developers.cloudflare.com/network-interconnect/get-started/og.png?v=d09434c14b7594cf
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-interconnect/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Get started
+
+Last updated Sep 16, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-interconnect/get-started/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+BGP architecture and resiliency
+
+CNI supports BGP peering with the Cloudflare Virtual Network routing table. BGP over CNI is in closed beta and is not currently available to new customers. If you are interested in BGP peering over CNI, contact your account team.
+
+For detailed information about BGP architecture, Edge Resiliency Mode, and route propagation behavior, refer to the BGP reference documentation in [Magic Transit](https://developers.cloudflare.com/magic-transit/reference/traffic-steering/#bgp-information) or [Cloudflare WAN](https://developers.cloudflare.com/cloudflare-wan/reference/traffic-steering/#bgp-information) depending on your use case.
+
+## Prerequisites
+
+### CNI port availability
+
+Your Cloudflare account team determines CNI eligibility and port availability. Notably:
+
+- CNI ports are currently offered at no charge to Enterprise customers.
+  - Non-Enterprise customers (and any third party) may peer with Cloudflare via Internet Exchange according to our [open peering policy ↗︎](https://www.cloudflare.com/peering-policy/).
+- CNI is available at select Cloudflare data centers:
+  - The type of Dataplane offered in that location will determine specifications of the supported connection, such as the MTU.
+  - The diversity offered in the location will vary.
+- Customers must have a BGP session established for CNI v1 to be operational.
+
+### Prefix requirements
+
+To peer with Cloudflare, advertise prefixes with a prefix length of `/24` or shorter for IPv4 and `/48` or shorter for IPv6.
+
+## Product use cases
+
+CNI provides a private point-to-point IP connection with Cloudflare. There are two Dataplanes that come with different technical specifications.
+
+|  | Dataplane v1 | Dataplane v2 |
+| --- | --- | --- |
+| **Magic Transit Direct Server Return (DSR)** <br> Distributed Denial of Service (DDoS) protection for all ingress traffic from the Internet to your public network. Send egress traffic via your ISP. | Supported with or without a GRE tunnel established over the interconnect circuit. | Supported. |
+| **Magic Transit with Egress** <br> DDoS protection for all ingress traffic from the Internet to your public network. Send egress traffic via Cloudflare. | Supported with a GRE tunnel established over the interconnect circuit. | Supported. |
+| **Cloudflare WAN and Zero Trust** <br> Build a secure, private network backbone connecting your Zero Trust users and applications with all your sites, data centers, and clouds. | Supported with a GRE tunnel established over the interconnect circuit. | Supported. |
+| **Peering** <br> Exchange public routes with a single Cloudflare PoP (Point of Presence). | Supported. <br><br> All customers connecting with the edge data center will exchange public routes at that PoP with AS13335. Connectivity is established at each individual PoP. Routes for other edge locations in Cloudflare's network may not be available. Routes for customer-advertised prefixes will be available only in the connected PoP. | Not supported. |
+| **Application Security and Performance** <br> Improve the performance and security of your web applications | **Supported via peering**: Customers can use Argo Smart Routing to direct origin traffic via the edge peering connection when it is determined to be the lowest latency option. Customers must maintain a direct Internet connection which will always be used for a portion of traffic and during failure scenarios. <br> **Supported Via Magic Transit**: Customers may configure any product with an origin server IP address that is protected by Magic Transit. Magic Transit will direct this traffic via the overlay and customer can control interconnect next-hops using the Magic Transit Virtual Network routing table. | When the origin IPs are behind Magic Transit over a CNI v2, all Cloudflare services that work with public origins (like Load Balancer, WAF, Cache) will run over the CNI. |
+
+For more details refer to the [prerequisites section](https://developers.cloudflare.com/network-interconnect/get-started/#prerequisites).
+
+## Technical specifications
+
+- **Supported port types**:
+  - **Dataplane v1**: 10GBASE-LR (single-mode fiber) and 100GBASE-LR (single-mode fiber).
+  - **Dataplane v2**: 10GBASE-LR (single-mode fiber) and 100GBASE-LR4 (single-mode fiber) optics are supported.
+- **Distance limitations:** Cloudflare does not support optical links longer than 10 km. For longer distances, you must use intermediate hardware or a third-party provider to extend the connection.
+- **IP addressing:** All CNI connections and Partner CNI connections use a `/31` subnet for point-to-point IP connectivity between your router and Cloudflare.
+- **VLAN support:**
+  - **Dataplane v1**: CNI ports may be assigned a single 802.1Q VLAN tag.
+  - **Dataplane v2**: VLAN tagging (802.1Q) and QinQ are not yet supported.
+- **MTU considerations:**
+  - **Dataplane v1**: Supports a native 1,500-byte MTU for traffic from Cloudflare to you (ingress), but still requires a 1,476-byte MTU for traffic from you to Cloudflare (egress).
+  - **Dataplane v2**: Supports a maximum MTU of 1,500 bytes bidirectionally with no GRE requirement.
+- **Bidirectional Forwarding Detection (BFD):**
+  - **Dataplane v1**: BFD provides fast failure detection for BGP sessions and is supported on direct connections. To enable BFD, contact your account team. Note that BFD on a CNI does not impact the failover time for IPsec/GRE tunnels, which rely on separate health checks.
+  - **Dataplane v2**: Not yet supported.
+- **Link Aggregation Control Protocol (LACP)**:
+  - **Dataplane v1**: To increase bandwidth and provide link resiliency, Cloudflare supports combining multiple physical CNI ports into a single logical channel using Link Aggregation Control Protocol (LACP). You can bundle multiple connections to increase total throughput and add redundancy to your private connection with Cloudflare.
+  - **Dataplane v2**: Not yet supported. Use ECMP instead.
+
+## Performance characteristics
+
+The following are the maximum throughput rates supported by the CNI connection. Actual performance will depend on your specific use case and configuration.
+
+| Direction (use case) | 10G Circuit | 100G Circuit |
+| --- | --- | --- |
+| From Cloudflare to Customer (all use cases) | Up to 10 Gbps | Up to 100 Gbps |
+| From Customer to Cloudflare (peering use case) | Up to 10 Gbps | Up to 100 Gbps |
+| From Customer to Cloudflare (Magic Transit/WAN) | **v1**: Up to 1 Gbps per GRE tunnel over the CNI <br> **v2**: Up to 1 Gbps per CNI connection | **v1**: Up to 1 Gbps per GRE tunnel over the CNI <br> **v2**: Up to 1 Gbps per CNI connection |
+
+## Service expectations
+
+Consider the following service levels when planning your deployment:
+
+- **No Formal SLA**:
+  - CNI is currently offered at no charge and without a formal [Service Level Agreement (SLA) ↗︎](https://www.cloudflare.com/service-specific-terms-network-services/#cf-network-interconnect-terms).
+  - Cloudflare will work to restore CNI service in the event of a Cloudflare issue. In some Cloudflare data centers the recovery time could be several days. Therefore, we always recommend backup connectivity to a different device or via an Internet tunnel.
+- **Observability**: There is no visibility of the interconnect config/status within the Cloudflare dashboard.
+- **Availability**: Locations that support device-level diversity can maintain connectivity during maintenance when your connections terminate on separate devices. Single-device deployments will experience full service disruption during maintenance.
+- **Backup Connectivity**: You are required to maintain alternative Internet connectivity as a backup for all CNI implementations.
+- **Capacity planning**: You are responsible for capacity planning across your available links to Cloudflare, based on the topology and size of those links.
+
+## Location alignment
+
+### Available locations
+
+Direct connections are available at any Cloudflare data center where you are also located. Make sure to check whether the location of interest has the right dataplane version and diversity requirements for your use case. Refer to [available locations](https://developers.cloudflare.com/network-interconnect/locations/) for details.
+
+### Connectivity partners
+
+Cloudflare partners with leading global providers, including: Console Connect, CoreSite, Digital Realty, Equinix Fabric, Megaport, PacketFabric, and Zayo.
+
+## End-to-end implementation workflow
+
+The process of provisioning a CNI typically takes two to four weeks, depending on the complexity of implementation and third-party provider timelines. The most common delays occur during the physical connection phase, which is outside of Cloudflare's direct control.
+
+1. **Submit request**: Work with your account team to create a CNI request ticket, providing your desired CNI type, location, use case, and technical details. An Implementation Manager will be assigned to guide the process.
+2. **Review configuration**: For the v1 Dataplane, the Implementation Manager will provide a detailed configuration document covering IP addressing, VLANs, and other technical specifications. You must review and approve this document. For the v2 Dataplane, this step is not necessary.
+3. **Order connection**:
+   - For a **Direct Interconnect**, you will receive a Letter of Authorization (LOA) from Cloudflare to order the physical cross-connect from the data center facility operator.
+   - For a **Partner Interconnect**, you will use the provided details to order a virtual circuit from the partner's portal.
+4. **Configure network**: Both Cloudflare and your network team will configure the respective network devices according to the approved document.
+5. **Test and verify**: Once the connection is physically established, teams will perform basic connectivity tests (for example, ping) and, if applicable, verify that the BGP session can be established.
+6. Enable tunnel health checks for [Magic Transit](https://developers.cloudflare.com/magic-transit/how-to/configure-tunnel-endpoints/#add-tunnels) and/or [Cloudflare WAN](https://developers.cloudflare.com/cloudflare-wan/configuration/how-to/configure-tunnel-endpoints/#add-tunnels).
+7. **Activate services**: Configure your Cloudflare products (for example, Magic Transit) to route traffic over the new CNI. The Implementation Manager will verify end-to-end traffic flow before marking the deployment as complete.
+8. [Add maintenance notifications](https://developers.cloudflare.com/network-interconnect/monitoring-and-alerts/#enable-cloudflare-status-maintenance-notification).
+
+## How-to guides
+
+### Provision a Direct Interconnect
+
+1. **Project Kickoff**: In an initial kickoff call, you will confirm the scope and timeline with Cloudflare. Be prepared to provide the following information:
+   - desired colocation facility
+   - required port speeds (10G or 100G)
+   - BGP ASN for Peering/Magic Transit
+   - BGP password (optional)
+2. **Order Cross-Connect**: Cloudflare will issue a Letter of Authorization (LOA). This document grants you permission to order a physical cross-connect between your equipment and a specific port on Cloudflare's hardware within the data center. The end-to-end process for ordering a cross-connect can take one to two weeks or more, depending on the facility provider. Cloudflare's demarcation is the port that is specified in the LOA. You are responsible for the deployment, provisioning, and ongoing support and operation of this connection, and the commercial relationships with the facility provider and any third-party connectivity providers.
+
+### Provision a Partner Interconnect
+
+Cloudflare partners with leading connectivity providers globally. To provision a Partner Interconnect, you will initiate a connection request from your chosen provider's administrative portal. Cloudflare will then review and accept the request to activate the virtual circuit.
+
+### Provision a Cloud Interconnect
+
+Enterprise customers using Cloudflare WAN can get started with Cloud Interconnect by contacting their account team.
+
+#### AWS Direct Connect (beta)
+
+If you are a Cloudflare WAN customer, you can connect to [AWS Direct Connect ↗︎](https://docs.aws.amazon.com/directconnect/) using Cloud Interconnect. Cloud Interconnect supports AWS Dedicated Direct Connect, which provides a full physical port allocation in AWS. AWS Hosted Direct Connect is not yet supported.
+
+For your AWS Dedicated Direct Connect, you can choose between connection speeds of 10 Gbps or 1 Gbps.
+
+To connect to AWS Direct Connect:
+
+1. Contact your account team to start the Cloud Interconnect provisioning process. Your team will let you know of available interconnect locations so you can choose the best one for you, as well as all the details involved in this process.
+2. Log in to your AWS portal and order a Direct Connect.
+3. AWS will provide you a Letter of Authorization (LOA) and a VLAN ID that you need to send to your account team.
+4. Your account team will continue the process of provisioning your Cloud Interconnect with the AWS documents you have provided. Overall, this process should take around four weeks to finish.
+
+#### Google Cloud Interconnect
+
+1. In the Cloudflare dashboard, go to **Interconnects**. [Go to **Interconnects** ↗](https://dash.cloudflare.com/?to=/:account/magic-networks/connections/cni-tunnels)
+2. Select **Create an interconnect**.
+3. Under **Cloud Interconnect**, select **Create new**.
+4. Under **Google Integration**, select **Select integration**.
+5. Give your interconnect a name and optionally a description. Make sure the MTU value matches the MTU configured on the [GCP VLAN attachment ↗︎](https://cloud.google.com/network-connectivity/docs/interconnect/how-to/dedicated/creating-vlan-attachments).
+6. Select **Continue**.
+7. From the **Interface speed** drop-down menu, select an interface speed. GCP will charge you based on the speed of the interconnect that you choose.
+8. Enter your [VLAN attachment pairing key ↗︎](https://cloud.google.com/network-connectivity/docs/interconnect/how-to/partner/creating-vlan-attachments).
+9. Select **Continue**.
+10. Review the details you provided, and select **Confirm order**.
+
+Your Google Cloud Platform (GCP) interconnect will take a few minutes to be available. A BGP session will be established but no routes will be exchanged.
+
+#### GCP next steps
+
+You can now select **View interconnects** for a list of all interconnects on your account. Select the interconnect name to show the interconnect details. The interconnect has a unique **Interconnect ID**.
+
+After you have configured your Google Cloud Interconnect, you will need to add routes to use the interconnect:
+
+- To create routes in the Cloudflare Virtual Network routing table to direct traffic towards GCP:
+  - Add [static routes](https://developers.cloudflare.com/cloudflare-wan/configuration/how-to/configure-routes/#configure-static-routes) to your Cloudflare WAN routing table with [legacy bidirectional tunnel health checks](https://developers.cloudflare.com/cloudflare-wan/configuration/how-to/configure-tunnel-endpoints/#legacy-bidirectional-health-checks) to detect failures and steer traffic to alternative paths.
+  - Note that routes advertised by BGP from GCP Cloud Router will be ignored.
+- To create routes in GCP routing table to direct traffic towards Cloudflare, you must use the GCP Cloud Router:
+  - Add [custom learned routes to Cloud Router ↗︎](https://cloud.google.com/network-connectivity/docs/router/how-to/configure-custom-learned-routes).
+  - Use the BGP session. Reach out to your account team to request a list of one or more prefixes to advertise, and specify the interconnect ID you want to advertise over.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/network-interconnect/get-started/#page","headline":"Get started","description":"Connect your network privately to Cloudflare","url":"https://developers.cloudflare.com/network-interconnect/get-started/","inLanguage":"en","image":"https://developers.cloudflare.com/network-interconnect/get-started/og.png?v=d09434c14b7594cf","dateModified":"2026-09-16","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["AWS","GCP"]}
+```
+
+---
+
+---
+description: Facilities offering Direct Cloudflare Network Interconnect for private connectivity to Cloudflare
+title: Direct CNI locations
+image: https://developers.cloudflare.com/network-interconnect/locations/og.png?v=042b429bcb86a7b0
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-interconnect/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Direct CNI locations
+
+Last updated Sep 17, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-interconnect/locations/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+The following facilities offer **Direct CNI**, a dedicated physical connection between your network equipment and Cloudflare hardware in a shared data center.
+
+Partner CNI and Cloud CNI
+
+Partner CNI availability depends on the locations offered through each connectivity partner's marketplace. This page does not yet list Cloud CNI locations.
+
+For public peering and best-effort interconnection at additional locations, refer to [Cloudflare on PeeringDB ↗︎](https://www.peeringdb.com/net/4224).
+
+## Available locations
+
+The [v1](https://developers.cloudflare.com/network-interconnect/#dataplane) and [v2](https://developers.cloudflare.com/network-interconnect/#dataplane) columns show the Direct CNI dataplanes offered at each facility.
+
+In this table, a metro has *device-level diversity* when at least two devices of the same dataplane provide paths to the rest of the Cloudflare network without a shared single point-of-failure device.
+
+`—` means the dataplane is not offered at this time.
+
+### Locations in diverse metros
+
+Values show whether a dataplane is available through one or two connectivity devices in the site. Device-level redundancy can be achieved across multiple devices in different sites, if they are in the same metro. (Between metros, Cloudflare does not yet coordinate maintenances.)
+
+| Metro | Site | [v1](https://developers.cloudflare.com/network-interconnect/#dataplane) | [v2](https://developers.cloudflare.com/network-interconnect/#dataplane) |
+| --- | --- | --- | --- |
+| **ATL** Atlanta, GA | Digital Realty ATL13 | 1 | 2 |
+| **ATL** Atlanta, GA | Equinix AT1 | 2 | 2 |
+| **CMH** Columbus, OH | Cologix COL3 | 2 | — |
+| **DEN** Denver, CO | CoreSite DE1 | 2 | 2 |
+| **DFW** Dallas, TX | Equinix DA6 | 2 | 2 |
+| **EWR** Newark, NJ | Digital Realty JFK10 | 2 | 1 |
+| **EWR** Newark, NJ | Equinix NY1 | 2 | 1 |
+| **IAD** Ashburn, VA | CoreSite VA1 | 1 | 1 |
+| **IAD** Ashburn, VA | Equinix DC2 | 2 | 2 |
+| **LAX** Los Angeles, CA | CoreSite LA1 | 2 | 2 |
+| **LAX** Los Angeles, CA | Equinix LA1 | 2 | 1 |
+| **MCI** Kansas City, MO | Netrality KC (1102 Grand) | 2 | 2 |
+| **MIA** Miami, FL | Equinix MI1 | 2 | 2 |
+| **MSP** Minneapolis, MN | Cologix MIN1 | 2 | — |
+| **MSP** Minneapolis, MN | EdgeConneX MSP01 | 1 | — |
+| **ORD** Chicago, IL | Equinix CH2 | 2 | 2 |
+| **PDX** Portland, OR | EdgeConneX EDCPOR01 | 1 | 1 |
+| **SEA** Seattle, WA | Digital Realty SEA10 | 2 | 2 |
+| **SEA** Seattle, WA | Equinix SE3 | 1 | — |
+| **SJC** San Jose, CA | Equinix SV5 | 2 | 2 |
+| **YYZ** Toronto, ON | Equinix TR1 | 2 | 2 |
+
+| Metro | Site | [v1](https://developers.cloudflare.com/network-interconnect/#dataplane) | [v2](https://developers.cloudflare.com/network-interconnect/#dataplane) |
+| --- | --- | --- | --- |
+| **GIG** Rio de Janeiro | Equinix RJ2 | 2 | 2 |
+| **GRU** São Paulo | Equinix SP2 | 2 | 2 |
+| **GRU** São Paulo | Equinix SP4 | 2 | — |
+
+#### Europe
+
+| Metro | Site | [v1](https://developers.cloudflare.com/network-interconnect/#dataplane) | [v2](https://developers.cloudflare.com/network-interconnect/#dataplane) |
+| --- | --- | --- | --- |
+| **AMS** Amsterdam | Digital Realty AMS9 | 1 | — |
+| **AMS** Amsterdam | Equinix AM1 | 2 | 2 |
+| **AMS** Amsterdam | Maincubes AMS01 | 1 | — |
+| **ARN** Stockholm | Equinix SK1 | 2 | 2 |
+| **CDG** Paris | Equinix PA2 | 2 | 2 |
+| **CDG** Paris | Telehouse Paris Voltaire TH2 | 1 | — |
+| **DUB** Dublin | Equinix DB2 | 2 | 2 |
+| **FRA** Frankfurt | Digital Realty FRA15 | 1 | — |
+| **FRA** Frankfurt | Equinix FR5 | 2 | 2 |
+| **IST** Istanbul | Equinix IL2 | 1 | 2 |
+| **IST** Istanbul | Radore Istanbul | 1 | — |
+| **IST** Istanbul | Turkcell/Superonline Istanbul | 1 | 2 |
+| **LHR** London | Equinix LD7 | 2 | 1 |
+| **LHR** London | Equinix LD8 | 2 | 1 |
+| **LHR** London | Telehouse North 2 | 1 | 1 |
+| **MAD** Madrid | Digital Realty MAD2 | 2 | 2 |
+| **MRS** Marseille | Digital Realty MRS1 | 2 | — |
+| **MXP** Milan | Retelit Via Caldera | 2 | 2 |
+| **VIE** Vienna | Digital Realty VIE1 | 2 | 2 |
+| **WAW** Warsaw | Equinix WA1 | 2 | 2 |
+
+#### Africa
+
+| Metro | Site | [v1](https://developers.cloudflare.com/network-interconnect/#dataplane) | [v2](https://developers.cloudflare.com/network-interconnect/#dataplane) |
+| --- | --- | --- | --- |
+| **JNB** Johannesburg | Digital Realty (Teraco) JB1 | 2 | 2 |
+
+| Metro | Site | [v1](https://developers.cloudflare.com/network-interconnect/#dataplane) | [v2](https://developers.cloudflare.com/network-interconnect/#dataplane) |
+| --- | --- | --- | --- |
+| **AKL** Auckland | DataCentre220 | 1 | 2 |
+| **AKL** Auckland | Vocus, Albany | 1 | 1 |
+| **BOM** Mumbai | Equinix MB1 | 2 | 2 |
+| **HKG** Hong Kong | China Mobile GNC Hong Kong | 1 | — |
+| **HKG** Hong Kong | Equinix HK2 | 2 | 2 |
+| **ICN** Seoul | Equinix SL1 | 1 | — |
+| **ICN** Seoul | KINX Dogok IDC | 2 | 2 |
+| **KIX** Osaka | Equinix OS1 | 2 | 2 |
+| **MEL** Melbourne | Equinix ME1 | 1 | 2 |
+| **MEL** Melbourne | NextDC (M1) | 1 | 2 |
+| **NRT** Tokyo | AT Tokyo CC1 | 1 | 1 |
+| **NRT** Tokyo | Equinix TY2 | 2 | 1 |
+| **SIN** Singapore | Equinix SG1 | 2 | 2 |
+| **SYD** Sydney | Equinix SY2 | 2 | 2 |
+
+### Locations in non-diverse metros
+
+`✓` means that the dataplane is offered.
+
+| Metro | Site | [v1](https://developers.cloudflare.com/network-interconnect/#dataplane) | [v2](https://developers.cloudflare.com/network-interconnect/#dataplane) |
+| --- | --- | --- | --- |
+| **ABQ** Albuquerque, NM | H5 Data Centers Albuquerque | ✓ | — |
+| **BNA** Nashville, TN | EdgeConneX NAS01 | ✓ | — |
+| **BNA** Nashville, TN | H5 Data Centers NAS1 | ✓ | — |
+| **BOS** Boston, MA | Markley Group One Summer Street Boston | ✓ | ✓ |
+| **BUF** Buffalo, NY | H5 Data Centers BUF2 | ✓ | — |
+| **CLT** Charlotte, NC | Digital Realty CLT10 | ✓ | — |
+| **DTW** Detroit, MI | EdgeConneX DET01 | ✓ | — |
+| **HNL** Honolulu, HI | 1547 DRFortress | ✓ | — |
+| **IAH** Houston, TX | Databank HOU1 | ✓ | — |
+| **IAH** Houston, TX | EdgeConneX HOU01 | ✓ | — |
+| **IND** Indianapolis, IN | Netrality Indy Telcom Center 701 W. Henry | ✓ | — |
+| **JAX** Jacksonville, FL | Cologix JAX1 | ✓ | — |
+| **JAX** Jacksonville, FL | EdgeConneX JAX01 | ✓ | — |
+| **LAS** Las Vegas, NV | EdgeConneX LAS01 | ✓ | — |
+| **MEM** Memphis, TN | EdgeConneX MEM01 | ✓ | — |
+| **MEX** Mexico City | Kio Networks Santa Fe II - MEX2 | ✓ | — |
+| **OKC** Oklahoma City, OK | Rack59 Data Center | ✓ | — |
+| **OMA** Omaha, NE | 1623 Farnam | ✓ | ✓ |
+| **ORF** Norfolk, VA | EdgeConneX NOR01 | ✓ | — |
+| **PHL** Philadelphia, PA | Netrality-PHL | ✓ | ✓ |
+| **PHX** Phoenix, AZ | EdgeConneX EDCPHX01 | ✓ | ✓ |
+| **PIT** Pittsburgh, PA | Databank PIT1 | ✓ | — |
+| **PIT** Pittsburgh, PA | EdgeConneX PIT01 | ✓ | — |
+| **QRO** Queretaro | Kio Networks QRO1 | ✓ | — |
+| **RDU** Raleigh-Durham, NC | CyrusOne DUR1 | ✓ | — |
+| **RIC** Richmond, VA | EdgeConneX RIC01 | ✓ | — |
+| **SAT** San Antonio, TX | H5 Data Centers San Antonio | ✓ | — |
+| **SLC** Salt Lake City, UT | EdgeConneX SLC01 | ✓ | — |
+| **SMF** Sacramento, CA | EdgeConneX SAC01 | ✓ | — |
+| **STL** St. Louis, MO | Netrality Properties St. Louis | ✓ | ✓ |
+| **TLH** Tallahassee, FL | EdgeConneX TAL01 | ✓ | — |
+| **TPA** Tampa, FL | H5 Data Centers TPA1 | ✓ | — |
+| **YUL** Montréal, QC | Cologix MTL3 | ✓ | — |
+| **YUL** Montréal, QC | Cologix MTL7 | ✓ | — |
+| **YVR** Vancouver, BC | Cologix VAN2 | ✓ | — |
+| **YWG** Winnipeg, MB | Les.net YWG2 | ✓ | — |
+| **YXE** Saskatoon, SK | VDC Virtual Data Corp 121RD | ✓ | — |
+| **YYC** Calgary, AB | Cologix CGY1 | ✓ | — |
+
+| Metro | Site | [v1](https://developers.cloudflare.com/network-interconnect/#dataplane) | [v2](https://developers.cloudflare.com/network-interconnect/#dataplane) |
+| --- | --- | --- | --- |
+| **ARI** Arica | Telxius Arica CLS | ✓ | — |
+| **BOG** Bogotá | Equinix BG2 | ✓ | — |
+| **CWB** Curitiba | BRFibra CommCorp IDC Curitiba CTA1 | ✓ | — |
+| **CWB** Curitiba | Cirion Curitiba | ✓ | — |
+| **EZE** Buenos Aires | SyT Suipacha 128 (CABASE) | ✓ | — |
+| **FOR** Fortaleza | BRFibra Commcorp FLA1 | ✓ | ✓ |
+| **LIM** Lima | Cirion Lima | ✓ | — |
+| **LIM** Lima | Telxius Lurin CLS | ✓ | — |
+| **POA** Porto Alegre | BRFibra Commcorp IDC PAE1 | ✓ | — |
+| **SCL** Santiago | Cirion Santiago (SAN1) | ✓ | ✓ |
+| **SCL** Santiago | Telxius Valparaiso CLS | ✓ | ✓ |
+| **SSA** Salvador | Telxius Salvador CLS | ✓ | — |
+
+#### Europe
+
+| Metro | Site | [v1](https://developers.cloudflare.com/network-interconnect/#dataplane) | [v2](https://developers.cloudflare.com/network-interconnect/#dataplane) |
+| --- | --- | --- | --- |
+| **ATH** Athens | Digital Realty (Lamda Hellix) ATH 1/2/3 | ✓ | — |
+| **BCN** Barcelona | Equinix BA1 | ✓ | ✓ |
+| **BEG** Belgrade | BeotelNet ISP | ✓ | — |
+| **BOD** Bordeaux | Equinix BX1 | ✓ | ✓ |
+| **BRU** Brussels | Digital Realty BRU1 | ✓ | — |
+| **BTS** Bratislava | SITELPOP1 | ✓ | — |
+| **BUD** Budapest | T-Systems Dataplex Budapest | ✓ | — |
+| **CPH** Copenhagen | GlobalConnect Taastrup 1 | ✓ | — |
+| **DME** Moscow | IXcellerate MOS1 | ✓ | — |
+| **DME** Moscow | MMTS Moscow M9 | ✓ | — |
+| **DUS** Düsseldorf | Digital Realty DUS2 | ✓ | ✓ |
+| **FCO** Rome | NAMEX/Cineca | ✓ | — |
+| **GOT** Gothenburg | Slakthusgatan 5 - Gothenburg SE | ✓ | — |
+| **GVA** Geneva | Equinix GV2 | ✓ | — |
+| **HAM** Hamburg | Portus IPHH HH2 | ✓ | — |
+| **HEL** Helsinki | Digita Helsinki Pasila DC1 | ✓ | — |
+| **HEL** Helsinki | Equinix HE3 | ✓ | — |
+| **KBP** Kyiv | NewTelco Kiev / NewTelco Ukraine Ltd | ✓ | — |
+| **KEF** Reykjavík | Verne Global | ✓ | — |
+| **KIV** Chișinău | Trabia Network | ✓ | — |
+| **LED** Saint Petersburg | Borovaya 57 | ✓ | — |
+| **LIS** Lisbon | Equinix LS1 | ✓ | — |
+| **LUX** Luxembourg City | LuxConnect DC1.1 | ✓ | — |
+| **LYS** Lyon | FreePro Jaguar Rockefeller | ✓ | — |
+| **LYS** Lyon | SFR NetCentre Venissieux | ✓ | — |
+| **MAN** Manchester | Equinix MA1 | ✓ | ✓ |
+| **MUC** Munich | Equinix MU1 | ✓ | — |
+| **OSL** Oslo | Stack EMEA (Digiplex) Oslo Ulvenveien OSL1 | ✓ | — |
+| **OTP** Bucharest | NXDATA 1 | ✓ | — |
+| **PMO** Palermo | TI Sparkle Sicily Hub | ✓ | — |
+| **PRG** Prague | CE Colo Prague | ✓ | — |
+| **RIX** Riga | LVRTC | ✓ | — |
+| **SKG** Thessaloniki | Synapsecom | ✓ | — |
+| **SOF** Sofia | TELEPOINT Sofia | ✓ | — |
+| **TLL** Tallinn | CITIC Telecom Tallinn | ✓ | — |
+| **TXL** Berlin | CarrierColo Berlin Lützow (I/P/B/ site B) | ✓ | — |
+| **VNO** Vilnius | Data Logistics Center J13 | ✓ | — |
+| **ZAG** Zagreb | Digital Realty ZAG1 | ✓ | — |
+| **ZRH** Zurich | Equinix ZH4 | ✓ | ✓ |
+
+#### Africa
+
+| Metro | Site | [v1](https://developers.cloudflare.com/network-interconnect/#dataplane) | [v2](https://developers.cloudflare.com/network-interconnect/#dataplane) |
+| --- | --- | --- | --- |
+| **CPT** Cape Town | Digital Realty (Teraco) CT1 | ✓ | ✓ |
+| **DUR** Durban | Digital Realty (Teraco) DB1 | ✓ | ✓ |
+| **LOS** Lagos | Equinix LG1 LG2 (MainOne MDX-i) | ✓ | — |
+
+| Metro | Site | [v1](https://developers.cloudflare.com/network-interconnect/#dataplane) | [v2](https://developers.cloudflare.com/network-interconnect/#dataplane) |
+| --- | --- | --- | --- |
+| **ADL** Adelaide | YourDC Hawthorn | ✓ | — |
+| **BLR** Bangalore | Nxtra Data Bangalore | ✓ | — |
+| **BNE** Brisbane | NEXTDC B1 | ✓ | — |
+| **CBR** Canberra | NextDC C1 | ✓ | — |
+| **CGK** Jakarta | NTT Comm JKT2 | ✓ | ✓ |
+| **CHC** Christchurch | Computer Concepts, Ltd (Spark) | ✓ | — |
+| **DEL** New Delhi | Sify Greenfort Noida | ✓ | ✓ |
+| **FUK** Fukuoka | QTnet | ✓ | — |
+| **HBA** Hobart | Tasmanet Hobart DC3 | ✓ | — |
+| **HYD** Hyderabad | Nxtra Data Hyderabad | ✓ | ✓ |
+| **JHB** Johor Bahru | TM ONE IPDC Johor | ✓ | — |
+| **KUL** Kuala Lumpur | Menara AIMS | ✓ | — |
+| **MAA** Chennai | Nxtra Data Chennai | ✓ | ✓ |
+| **OKA** Naha | First Riding Technology Co., Ltd. (FRT) via BBIX | ✓ | — |
+| **PER** Perth | Vocus Communications | ✓ | — |
+| **TPE** Taipei | Chief LY Building Taipei | ✓ | — |
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/network-interconnect/locations/#page","headline":"Direct CNI locations","description":"Facilities offering Direct Cloudflare Network Interconnect for private connectivity to Cloudflare","url":"https://developers.cloudflare.com/network-interconnect/locations/","inLanguage":"en","image":"https://developers.cloudflare.com/network-interconnect/locations/og.png?v=042b429bcb86a7b0","dateModified":"2026-09-17","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Monitor CNI status and configure maintenance alerts
+title: Monitoring and alerts
+image: https://developers.cloudflare.com/network-interconnect/monitoring-and-alerts/og.png?v=e47086e31d241285
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-interconnect/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Monitoring and alerts
+
+Last updated Jul 2, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-interconnect/monitoring-and-alerts/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+## Monitoring
+
+The Cloudflare dashboard shows a list of all previously created interconnects, as well as useful information such as IP addresses, speed, type of interconnect, and status. In the Cloudflare dashboard, go to **Interconnects**.
+
+[Go to **Interconnects** ↗](https://dash.cloudflare.com/?to=/:account/magic-networks/connections/cni-tunnels)
+
+The Status column displays three statuses:
+
+- **Active**: The interconnect port on the Customer Connectivity Router (CCR) is operationally up. This means that the CCR port sees sufficient light levels and has negotiated an Ethernet link.
+- **Unhealthy**: The link operational state at interconnect port is down. This might mean the CCR does not see light, cannot negotiate an Ethernet signal, or the light levels are below -20 dBm. You can take general troubleshooting steps to solve the issue (such as checking cables and status lights for connectivity issues). If you are unable to solve the issue in this way, contact your account team.
+- **Pending**: The link is not yet active. This is expected and can occur for several reasons: the customer has not received a cross-connect, the device is unresponsive, or physical adjustments may be required, such as swapping RX/TX fibers. The **Pending** status will disappear after the customer completes the cross-connect and status moves to **Active**.
+
+## Alerts (v1 dataplane only)
+
+You can configure notifications for upcoming CNI maintenance events using the Notifications feature in the Cloudflare dashboard. It is recommended to subscribe to two types of notifications to stay fully informed.
+
+**CNI Connection Maintenance Alert:** This alert informs you about maintenance events (scheduled, updated, or canceled) that directly impact your CNI circuits used with the Cloudflare Virtual Network only.
+
+- You will receive warnings up to two weeks in advance for maintenance impacting your Magic Transit/WAN CNI connections.
+- You will be notified if the details of a scheduled maintenance change or if it is canceled.
+- For recently added maintenance, notifications are sent after a six-hour delay to prevent alerting fatigue from minor adjustments.
+
+**Cloudflare Status Maintenance Notification:** This alert informs you about maintenance for an entire Cloudflare Point of Presence (PoP). While not specific to your CNI, this maintenance will impact all CNI services in that location. This includes connections used only for peering without Cloudflare Virtual Network.
+
+- You will be warned about potentially disruptive maintenance at the PoP level.
+- By default, you are notified for all event types (Scheduled, Changed, Canceled), but you can filter these.
+- By default, you are notified for all Cloudflare PoPs, but you can filter for only the specific locations where you have CNI circuits.
+
+## How to configure alerts
+
+### Enable CNI Connection Maintenance Alert
+
+1. In the Cloudflare dashboard, go to the **Notifications** page. [Go to **Notifications** ↗](https://dash.cloudflare.com/?to=/:account/notifications)
+2. Select **Add**.
+3. From the product drop-down menu, select *Cloudflare Network Interconnect*.
+4. Select **Connection Maintenance Alert**.
+5. Give your notification a name and an optional description.
+6. Choose your preferred notification method, such as email address.
+7. Select **Save**.
+
+### Enable Cloudflare Status Maintenance Notification
+
+First, identify the PoP code for your CNI circuit:
+
+1. In the Cloudflare dashboard, go to **Interconnects**. [Go to **Interconnects** ↗](https://dash.cloudflare.com/?to=/:account/magic-networks/connections/cni-tunnels)
+2. Select the CNI you want to enable notifications for.
+3. In the menu that appears, note the Data Center code (for example, `gru-b`).
+
+Now, configure the alert:
+
+1. Go to **Notifications** and select **Add**.
+2. From the product drop-down menu, select *Cloudflare Status*.
+3. Select **Maintenance Notification**.
+4. Give your notification a name and choose your notification method.
+5. Select **Next**.
+6. Optionally, use the **Filter on Event Type** to select only the event types you want to be alerted for (Scheduled, Changed, Canceled).
+7. In **Filter on Points of Presence**, enter the three-letter code for your PoP (for example, for `gru-b`, enter `gru`). You can add multiple PoPs, separated by commas.
+8. Select **Create**.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/network-interconnect/monitoring-and-alerts/#page","headline":"Monitoring and alerts","description":"Monitor CNI status and configure maintenance alerts","url":"https://developers.cloudflare.com/network-interconnect/monitoring-and-alerts/","inLanguage":"en","image":"https://developers.cloudflare.com/network-interconnect/monitoring-and-alerts/og.png?v=e47086e31d241285","dateModified":"2026-07-02","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Understand how Cloudflare coordinates maintenance across resilient CNI deployments.
+title: Maintenance
+image: https://developers.cloudflare.com/network-interconnect/maintenance/og.png?v=f2f2908d75583bed
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-interconnect/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Maintenance
+
+Last updated Sep 11, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-interconnect/maintenance/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+## Planned maintenance
+
+Routine CNI-disruptive maintenance is planned work that can interrupt traffic on an affected CNI connection. Cloudflare coordinates this work across resilient Cloudflare Network Interconnect (CNI) deployments, including across CNI locations.
+
+### Timing and scheduling
+
+For Dataplane v2 connectivity in multi-homed PoPs only:
+
+- **Routine maintenance**: Minimum one week notice.
+- **Emergency maintenance**: Best-effort notice, which may be less than one week.
+- Routine maintenance on redundant devices at the same location will occur on different days.
+- Routine maintenance is not rescheduled to accommodate customer schedule preferences.
+
+| CNI deployment | During routine CNI-disruptive maintenance |
+| --- | --- |
+| One CNI connection at one location | The connection can be interrupted. |
+| Two CNI connections on separate devices at one location | One connection remains in service. |
+| Four CNI connections across two coordinated locations, with two connections on separate devices at each location | Three connections remain in service. |
+
+## Emergency and non-routine maintenance
+
+Non-routine maintenance, such as maintenance that affects an entire PoP, can affect all CNI connections at the affected location. For the four-connection deployment with two connections at each of two locations, a full-PoP non-routine event at one location can interrupt two connections, leaving two in service. Cloudflare avoids performing non-routine maintenance at multiple coordinated locations at the same time.
+
+Cloudflare coordinates emergency maintenance across locations where feasible.
+
+## Receive maintenance notifications
+
+To configure circuit-specific or point-of-presence (PoP) maintenance notifications, refer to [Monitoring and alerts](https://developers.cloudflare.com/network-interconnect/monitoring-and-alerts/).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/network-interconnect/maintenance/#page","headline":"Maintenance","description":"Understand how Cloudflare coordinates maintenance across resilient CNI deployments.","url":"https://developers.cloudflare.com/network-interconnect/maintenance/","inLanguage":"en","image":"https://developers.cloudflare.com/network-interconnect/maintenance/og.png?v=f2f2908d75583bed","dateModified":"2026-09-11","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Validate CNI failover and troubleshoot connectivity issues.
+title: Operational guidance
+image: https://developers.cloudflare.com/network-interconnect/operational-guidance/og.png?v=50fdbe58a335bfe9
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-interconnect/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Operational guidance
+
+Last updated Sep 11, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-interconnect/operational-guidance/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+For maintenance expectations and notifications, refer to [Maintenance](https://developers.cloudflare.com/network-interconnect/maintenance/).
+
+## Customer responsibility
+
+Your CNI deployment must tolerate an unplanned outage on any single circuit at any time. This means:
+
+- Traffic failover between redundant circuits must be automatic.
+- If your operations require manual intervention to reroute traffic during maintenance, your configuration needs review.
+- Contact your account team to validate your failover design.
+
+## Troubleshooting
+
+When facing connectivity problems, your first action should be to check for broader service disruptions. Visit [Cloudflare Status ↗︎](https://www.cloudflarestatus.com/) to see if any scheduled maintenance or active incidents are impacting services. This helps determine if the issue originates outside your network. Refer to [Monitoring and alerts](https://developers.cloudflare.com/network-interconnect/monitoring-and-alerts/).
+
+If no system-wide problems are reported, gather the following information before submitting a support case. Providing comprehensive details facilitates a faster resolution:
+
+- **Timeline**: When the issue began and ended (if applicable), including the timezone.
+- **Identification**: The CNI IP address or point-to-point prefix for the impacted CNI. If your CNI is part of a Magic setup, please also provide the name of the Magic Transit/WAN interconnect as listed in your dashboard.
+- **Physical Layer**: Light levels of the CNI link (if applicable).
+- **Service Impact**: Confirmation whether Magic Transit / WAN traffic was affected.
+- **Problem Description**: A clear summary of the issue (for example, CNI down, Border Gateway Protocol (BGP) session down, prefixes withdrawn).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/network-interconnect/operational-guidance/#page","headline":"Operational guidance","description":"Validate CNI failover and troubleshoot connectivity issues.","url":"https://developers.cloudflare.com/network-interconnect/operational-guidance/","inLanguage":"en","image":"https://developers.cloudflare.com/network-interconnect/operational-guidance/og.png?v=50fdbe58a335bfe9","dateModified":"2026-09-11","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Review recent changes to Cloudflare Network Interconnect.
+title: Changelog
+image: https://developers.cloudflare.com/network-interconnect/changelog/og.png?v=33b3f9d568578541
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-interconnect/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Changelog
+
+Last updated Apr 17, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-interconnect/changelog/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+[Subscribe to RSS](https://developers.cloudflare.com/changelog/rss/network-interconnect.xml)
+
+## 2026-03-24
+
+  
+**Interconnects moved to Connectors**  
+
+The top-level **Interconnects** page in the Cloudflare dashboard has been removed. Interconnects are now located under **Connectors** > **Interconnects**.
+
+Your existing configurations and functionality remain the same.
+
+## 2025-06-20
+
+  
+**CNI maintenance alerts**  
+
+Customers using Cloudflare Network Interconnect with the v1 dataplane can now subscribe to maintenance alert emails. These alerts notify you of planned maintenance windows that may affect your CNI circuits.
+
+For more information, refer to [Monitoring and alerts](https://developers.cloudflare.com/network-interconnect/monitoring-and-alerts/).
+
+## 2024-12-17
+
+  
+**Establish BGP peering over Direct CNI circuits**  
+
+Magic WAN and Magic Transit customers can use the Cloudflare dashboard to configure and manage BGP peering between their networks and their Magic routing table when using a Direct CNI on-ramp.
+
+Using BGP peering allows customers to:
+
+- Automate the process of adding or removing networks and subnets.
+- Take advantage of failure detection and session recovery features.
+
+With this functionality, customers can:
+
+- Establish an eBGP session between their devices and the Magic WAN / Magic Transit service when connected via CNI.
+- Secure the session by MD5 authentication to prevent misconfigurations.
+- Exchange routes dynamically between their devices and their Magic routing table.
+
+Refer to [Magic WAN BGP peering](https://developers.cloudflare.com/cloudflare-wan/configuration/how-to/configure-routes/#configure-bgp-routes) or [Magic Transit BGP peering](https://developers.cloudflare.com/magic-transit/how-to/configure-routes/#configure-bgp-routes) to learn more about this feature and how to set it up.
+
+## 2024-10-01
+
+**Early access testing for BGP on Direct CNI circuits**
+
+Customers can exchange routes dynamically with their Magic virtual network overlay via Direct CNI or Cloud CNI based connectivity.
+
+## 2024-09-02
+
+**Interconnect portal displays all available locations in a list**
+
+Customers can now see all available Direct CNI locations when searching for a Cloudflare site in the Interconnects interface.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://developers.cloudflare.com/network-interconnect/changelog/#page","headline":"Changelog","description":"Review recent changes to Cloudflare Network Interconnect.","url":"https://developers.cloudflare.com/network-interconnect/changelog/","inLanguage":"en","image":"https://developers.cloudflare.com/network-interconnect/changelog/og.png?v=33b3f9d568578541","dateModified":"2026-04-17","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```

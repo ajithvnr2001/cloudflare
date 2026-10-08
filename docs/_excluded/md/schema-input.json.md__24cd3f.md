@@ -1,0 +1,12 @@
+---
+url: https://developers.cloudflare.com/ai/models/bria/fibo-edit-1.5/schema-input.json
+title: https://developers.cloudflare.com/ai/models/bria/fibo-edit-1.5/schema-input.json
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:23:33.052431+00:00
+---
+
+# https://developers.cloudflare.com/ai/models/bria/fibo-edit-1.5/schema-input.json
+
+> Source: https://developers.cloudflare.com/ai/models/bria/fibo-edit-1.5/schema-input.json
+
+{"$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","properties":{"images":{"minItems":1,"maxItems":4,"type":"array","items":{"type":"string","minLength":1},"description":"One to four input images, each a public URL or base64-encoded image data (a `data:` URI prefix is accepted). Refer to them in the instruction as \"image 1\", \"image 2\", and so on."},"instruction":{"description":"Edit instruction in natural language. Provide this or `structured_instruction`.","type":"string","minLength":1},"structured_instruction":{"description":"Structured (VGL) edit instruction as a JSON string, as returned by a previous result. Provide this or `instruction`.","type":"string","minLength":1},"mask":{"description":"Black-and-white mask the same size as the input image, a public URL or base64-encoded image data (a `data:` URI prefix is accepted). White areas are edited and black areas are kept. Only allowed with a single input image.","type":"string","minLength":1},"aspect_ratio":{"description":"Output aspect ratio. Defaults to the aspect ratio of the first input image.","type":"string","enum":["1:1","2:3","3:2","3:4","4:3","4:5","5:4","9:16","16:9"]},"seed":{"description":"Seed for reproducible results.","type":"integer","minimum":-9007199254740991,"maximum":9007199254740991},"output_type":{"description":"Output image format. Default png.","type":"string","enum":["png","jpeg"]},"ip_signal":{"description":"When true, the result carries a `warning` if the text input may reference IP-protected content. Default false.","type":"boolean"},"prompt_content_moderation":{"description":"Reject the request if the instruction fails content moderation. Default true.","type":"boolean"},"visual_input_content_moderation":{"description":"Reject the request if an input image or the mask fails content moderation. Default true.","type":"boolean"},"visual_output_content_moderation":{"description":"Fail the request if the edited image fails content moderation. Default true.","type":"boolean"}},"required":["images"],"additionalProperties":false}

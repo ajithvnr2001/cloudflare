@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/quic-restarts-slow-problems-udpgrm-to-the-rescue/",
+  "file": "_subdomains/blog.cloudflare.com/quic-restarts-slow-problems-udpgrm-to-the-rescue.md",
+  "title": "QUIC restarts, slow problems: udpgrm to the rescue | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:16.160038+00:00",
+  "html_len": 325994,
+  "md_len": 73576,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/gateway-swg/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/gateway-swg.md",
+  "title": "Cloudflare Gateway sch\u00fctzt Teams, wo sie auch sind | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:55.842827+00:00",
+  "html_len": 225576,
+  "md_len": 38434,
+  "depth": 0,
+  "phase": 2
+}

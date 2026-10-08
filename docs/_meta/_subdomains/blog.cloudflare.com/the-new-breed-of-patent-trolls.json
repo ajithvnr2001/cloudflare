@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-new-breed-of-patent-trolls/",
+  "file": "_subdomains/blog.cloudflare.com/the-new-breed-of-patent-trolls.md",
+  "title": "The New Breed of Patent Trolls | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:05.222430+00:00",
+  "html_len": 269705,
+  "md_len": 61624,
+  "depth": 0,
+  "phase": 2
+}

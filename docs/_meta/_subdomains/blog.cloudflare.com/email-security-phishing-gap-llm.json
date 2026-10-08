@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/email-security-phishing-gap-llm/",
+  "file": "_subdomains/blog.cloudflare.com/email-security-phishing-gap-llm.md",
+  "title": "From reactive to proactive: closing the phishing gap with LLMs | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:43.476986+00:00",
+  "html_len": 295580,
+  "md_len": 66311,
+  "depth": 0,
+  "phase": 2
+}

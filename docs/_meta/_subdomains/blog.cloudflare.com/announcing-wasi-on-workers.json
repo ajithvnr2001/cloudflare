@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/announcing-wasi-on-workers/",
+  "file": "_subdomains/blog.cloudflare.com/announcing-wasi-on-workers.md",
+  "title": "Announcing support for WASI on Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:15.888050+00:00",
+  "html_len": 305822,
+  "md_len": 64348,
+  "depth": 0,
+  "phase": 2
+}

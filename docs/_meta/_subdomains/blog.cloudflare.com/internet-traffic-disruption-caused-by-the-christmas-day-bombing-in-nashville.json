@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/internet-traffic-disruption-caused-by-the-christmas-day-bombing-in-nashville/",
+  "file": "_subdomains/blog.cloudflare.com/internet-traffic-disruption-caused-by-the-christmas-day-bombing-in-nashville.md",
+  "title": "Internet traffic disruption caused by the Christmas Day bombing in Nashville | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:41.425005+00:00",
+  "html_len": 271353,
+  "md_len": 55684,
+  "depth": 0,
+  "phase": 2
+}

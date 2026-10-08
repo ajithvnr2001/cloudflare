@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/breaking-down-broadband-nutrition-labels/",
+  "file": "_subdomains/blog.cloudflare.com/breaking-down-broadband-nutrition-labels.md",
+  "title": "Breaking down broadband nutrition labels | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:54.506962+00:00",
+  "html_len": 296772,
+  "md_len": 68914,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-we-made-our-dns-stack-3x-faster/",
+  "file": "_subdomains/blog.cloudflare.com/how-we-made-our-dns-stack-3x-faster.md",
+  "title": "How we made our DNS stack 3x faster | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:37.538899+00:00",
+  "html_len": 302051,
+  "md_len": 70174,
+  "depth": 0,
+  "phase": 2
+}

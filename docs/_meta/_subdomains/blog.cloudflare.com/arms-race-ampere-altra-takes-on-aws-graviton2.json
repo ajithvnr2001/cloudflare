@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/arms-race-ampere-altra-takes-on-aws-graviton2/",
+  "file": "_subdomains/blog.cloudflare.com/arms-race-ampere-altra-takes-on-aws-graviton2.md",
+  "title": "ARMs Race: Ampere Altra takes on the AWS Graviton2 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:34.695038+00:00",
+  "html_len": 372733,
+  "md_len": 84749,
+  "depth": 0,
+  "phase": 2
+}

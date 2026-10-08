@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-pages-partners-with-gitlab/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-pages-partners-with-gitlab.md",
+  "title": "Cloudflare Pages now offers GitLab support | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:56.182795+00:00",
+  "html_len": 284498,
+  "md_len": 59307,
+  "depth": 0,
+  "phase": 2
+}

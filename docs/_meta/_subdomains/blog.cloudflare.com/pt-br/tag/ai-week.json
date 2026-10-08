@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/tag/ai-week/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/tag/ai-week.md",
+  "title": "Posts com a tag \"AI Week\" \u2014 Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:06:52.162194+00:00",
+  "html_len": 111948,
+  "md_len": 2472,
+  "depth": 1,
+  "phase": 2
+}

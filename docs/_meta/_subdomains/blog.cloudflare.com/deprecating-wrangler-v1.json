@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/deprecating-wrangler-v1/",
+  "file": "_subdomains/blog.cloudflare.com/deprecating-wrangler-v1.md",
+  "title": "So long, and thanks for all the deployments:  deprecating Wrangler v1 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:44.100070+00:00",
+  "html_len": 275887,
+  "md_len": 58499,
+  "depth": 0,
+  "phase": 2
+}

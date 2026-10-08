@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/agent-readiness/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/agent-readiness.md",
+  "title": "D\u00e9couvrez notre score de pr\u00e9paration aux agents. V\u00e9rifiez si votre site est pr\u00eat pour accueillir es agents | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:08.580376+00:00",
+  "html_len": 290069,
+  "md_len": 63099,
+  "depth": 0,
+  "phase": 2
+}

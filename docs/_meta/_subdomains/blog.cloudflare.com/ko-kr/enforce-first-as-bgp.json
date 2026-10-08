@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/enforce-first-as-bgp/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/enforce-first-as-bgp.md",
+  "title": "BGP AS \uacbd\ub85c\uc758 \uccab \ubc88\uc9f8 AS \uc2dc\ud589 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:04.684302+00:00",
+  "html_len": 244503,
+  "md_len": 40996,
+  "depth": 0,
+  "phase": 2
+}

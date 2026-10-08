@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/deprecating-dns-any-meta-query-type/",
+  "file": "_subdomains/blog.cloudflare.com/deprecating-dns-any-meta-query-type.md",
+  "title": "Deprecating the DNS ANY meta-query type | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:21:23.416515+00:00",
+  "html_len": 274378,
+  "md_len": 58187,
+  "depth": 1
+}

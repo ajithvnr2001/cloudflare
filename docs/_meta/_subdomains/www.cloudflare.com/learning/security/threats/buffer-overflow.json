@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/security/threats/buffer-overflow/",
+  "file": "_subdomains/www.cloudflare.com/learning/security/threats/buffer-overflow.md",
+  "title": "What Is Buffer Overflow?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:39.774866+00:00",
+  "html_len": 237791,
+  "md_len": 21080,
+  "depth": 0,
+  "phase": 2
+}

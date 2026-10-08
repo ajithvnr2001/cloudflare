@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/upgrading-one-of-the-oldest-components-in-cloudflare-software-stack/",
+  "file": "_subdomains/blog.cloudflare.com/upgrading-one-of-the-oldest-components-in-cloudflare-software-stack.md",
+  "title": "Upgrading one of the oldest components in Cloudflare\u2019s software stack | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:36.550979+00:00",
+  "html_len": 290462,
+  "md_len": 64308,
+  "depth": 0,
+  "phase": 2
+}

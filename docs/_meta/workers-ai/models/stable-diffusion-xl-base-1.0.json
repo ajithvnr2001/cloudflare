@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers-ai/models/stable-diffusion-xl-base-1.0/",
+  "file": "workers-ai/models/stable-diffusion-xl-base-1.0.md",
+  "title": "stable-diffusion-xl-base-1.0 (Stability.ai) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:06.641423+00:00",
+  "html_len": 121546,
+  "md_len": 3073,
+  "depth": 0
+}

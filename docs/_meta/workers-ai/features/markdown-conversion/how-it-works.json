@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers-ai/features/markdown-conversion/how-it-works/",
+  "file": "workers-ai/features/markdown-conversion/how-it-works.md",
+  "title": "How it works \u00b7 Cloudflare Workers AI docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:58.345966+00:00",
+  "html_len": 111122,
+  "md_len": 4966,
+  "depth": 0
+}

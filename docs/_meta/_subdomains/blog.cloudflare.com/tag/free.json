@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/free/",
+  "file": "_subdomains/blog.cloudflare.com/tag/free.md",
+  "title": "Posts tagged \"Free\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:09:02.152808+00:00",
+  "html_len": 159631,
+  "md_len": 13042,
+  "depth": 1,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/deep-dives-how-the-internet-works/",
+  "file": "_subdomains/blog.cloudflare.com/deep-dives-how-the-internet-works.md",
+  "title": "Deep dives & how the Internet works | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:09.295160+00:00",
+  "html_len": 293554,
+  "md_len": 75787,
+  "depth": 0,
+  "phase": 2
+}

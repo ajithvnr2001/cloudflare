@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/everydns-magic-data-liberation-tool-redux/",
+  "file": "_subdomains/blog.cloudflare.com/everydns-magic-data-liberation-tool-redux.md",
+  "title": "EveryDNS Magic Data Liberation Bookmarklet | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:23.104971+00:00",
+  "html_len": 267527,
+  "md_len": 55294,
+  "depth": 0,
+  "phase": 2
+}

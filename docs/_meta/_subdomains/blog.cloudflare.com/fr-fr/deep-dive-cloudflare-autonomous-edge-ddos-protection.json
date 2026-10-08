@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/deep-dive-cloudflare-autonomous-edge-ddos-protection/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/deep-dive-cloudflare-autonomous-edge-ddos-protection.md",
+  "title": "Un examen approfondi de la protection autonome contre les attaques DDoS \u00e0 la p\u00e9riph\u00e9rie du r\u00e9seau de Cloudflare | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:33.473953+00:00",
+  "html_len": 224944,
+  "md_len": 35931,
+  "depth": 0,
+  "phase": 2
+}

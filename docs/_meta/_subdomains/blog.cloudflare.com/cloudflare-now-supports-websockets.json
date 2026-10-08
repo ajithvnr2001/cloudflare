@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-now-supports-websockets/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-now-supports-websockets.md",
+  "title": "CloudFlare Now Supports WebSockets | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:17.663129+00:00",
+  "html_len": 288318,
+  "md_len": 68700,
+  "depth": 0,
+  "phase": 2
+}

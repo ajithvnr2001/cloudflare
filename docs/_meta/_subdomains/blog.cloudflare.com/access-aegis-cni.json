@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/access-aegis-cni/",
+  "file": "_subdomains/blog.cloudflare.com/access-aegis-cni.md",
+  "title": "Using Cloudflare Access with CNI | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:41.200386+00:00",
+  "html_len": 288948,
+  "md_len": 64461,
+  "depth": 0,
+  "phase": 2
+}

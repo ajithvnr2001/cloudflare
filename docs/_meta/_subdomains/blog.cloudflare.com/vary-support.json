@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/vary-support/",
+  "file": "_subdomains/blog.cloudflare.com/vary-support.md",
+  "title": "We just shipped support for the ugliest part of HTTP: Vary | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:42.797525+00:00",
+  "html_len": 1261882,
+  "md_len": 1028964,
+  "depth": 0,
+  "phase": 2
+}

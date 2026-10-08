@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/ci-cd/external-cicd/gitlab-cicd/",
+  "file": "workers/ci-cd/external-cicd/gitlab-cicd.md",
+  "title": "GitLab CI/CD \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:13.668623+00:00",
+  "html_len": 187861,
+  "md_len": 4134,
+  "depth": 0
+}

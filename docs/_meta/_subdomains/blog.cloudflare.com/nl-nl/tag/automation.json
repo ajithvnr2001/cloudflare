@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/nl-nl/tag/automation/",
+  "file": "_subdomains/blog.cloudflare.com/nl-nl/tag/automation.md",
+  "title": "Berichten getagd met \"Automatisering\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:05:30.947438+00:00",
+  "html_len": 105165,
+  "md_len": 957,
+  "depth": 1,
+  "phase": 2
+}

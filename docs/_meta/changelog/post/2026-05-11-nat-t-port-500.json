@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/changelog/post/2026-05-11-nat-t-port-500/",
+  "file": "changelog/post/2026-05-11-nat-t-port-500.md",
+  "title": "NAT-T support for IKE on UDP port 500 \u00b7 Changelog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:06:52.889692+00:00",
+  "html_len": 63782,
+  "md_len": 2126,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/dataweavers/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/dataweavers.md",
+  "title": "Dataweavers & Cloudflare | Case Study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:26.330580+00:00",
+  "html_len": 218136,
+  "md_len": 11134,
+  "depth": 0,
+  "phase": 2
+}

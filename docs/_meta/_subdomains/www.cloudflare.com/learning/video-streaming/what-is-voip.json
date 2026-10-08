@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/video-streaming/what-is-voip/",
+  "file": "_subdomains/www.cloudflare.com/learning/video-streaming/what-is-voip.md",
+  "title": "What is voice over Internet Protocol (VoIP)?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:05:17.080562+00:00",
+  "html_len": 204801,
+  "md_len": 15116,
+  "depth": 0,
+  "phase": 2
+}

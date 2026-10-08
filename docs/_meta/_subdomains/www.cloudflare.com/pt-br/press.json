@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/pt-br/press/",
+  "file": "_subdomains/www.cloudflare.com/pt-br/press.md",
+  "title": "Vis\u00e3o geral para imprensa | Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:07:34.995960+00:00",
+  "html_len": 260435,
+  "md_len": 7291,
+  "depth": 1,
+  "phase": 2
+}

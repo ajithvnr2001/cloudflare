@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/empty-ddos-threats-meet-the-armada-collective/",
+  "file": "_subdomains/blog.cloudflare.com/empty-ddos-threats-meet-the-armada-collective.md",
+  "title": "Empty DDoS Threats: Meet the Armada Collective | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:41.570980+00:00",
+  "html_len": 279509,
+  "md_len": 60725,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/custom-rules/use-cases/configure-token-authentication/",
+  "file": "waf/custom-rules/use-cases/configure-token-authentication.md",
+  "title": "Configure token authentication \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:38.849529+00:00",
+  "html_len": 169032,
+  "md_len": 11295,
+  "depth": 0
+}

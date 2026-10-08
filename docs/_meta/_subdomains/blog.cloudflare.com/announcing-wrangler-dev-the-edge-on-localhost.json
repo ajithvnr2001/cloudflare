@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/announcing-wrangler-dev-the-edge-on-localhost/",
+  "file": "_subdomains/blog.cloudflare.com/announcing-wrangler-dev-the-edge-on-localhost.md",
+  "title": "Announcing wrangler dev \u2014 the Edge on localhost | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:01.590050+00:00",
+  "html_len": 276990,
+  "md_len": 59605,
+  "depth": 0,
+  "phase": 2
+}

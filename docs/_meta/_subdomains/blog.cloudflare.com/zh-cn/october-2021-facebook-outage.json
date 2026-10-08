@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/october-2021-facebook-outage/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/october-2021-facebook-outage.md",
+  "title": "\u4e86\u89e3 Facebook \u5982\u4f55\u4ece\u4e92\u8054\u7f51\u4e0a\u6d88\u5931 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:02.104397+00:00",
+  "html_len": 234890,
+  "md_len": 30983,
+  "depth": 0,
+  "phase": 2
+}

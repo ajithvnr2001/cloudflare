@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/network-performance-update-security-week-2023/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/network-performance-update-security-week-2023.md",
+  "title": "Cloudflare Access est le service le plus rapide parmi les proxys Zero Trust | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:48.853843+00:00",
+  "html_len": 260617,
+  "md_len": 49723,
+  "depth": 0,
+  "phase": 2
+}

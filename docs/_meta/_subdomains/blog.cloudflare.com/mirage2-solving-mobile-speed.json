@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/mirage2-solving-mobile-speed/",
+  "file": "_subdomains/blog.cloudflare.com/mirage2-solving-mobile-speed.md",
+  "title": "Mirage 2.0: Solving the Mobile Browsing Speed Challenge | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:36.048738+00:00",
+  "html_len": 274466,
+  "md_len": 60505,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/tag/outage/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/tag/outage.md",
+  "title": "Posts com a tag \"Interrup\u00e7\u00e3o\" \u2014 Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:07:02.481010+00:00",
+  "html_len": 141742,
+  "md_len": 11445,
+  "depth": 1,
+  "phase": 2
+}

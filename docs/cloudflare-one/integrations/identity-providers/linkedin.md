@@ -1,0 +1,99 @@
+---
+url: https://developers.cloudflare.com/cloudflare-one/integrations/identity-providers/linkedin/
+title: LinkedIn \u00b7 Cloudflare One docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:09:04.516749+00:00
+---
+
+# LinkedIn · Cloudflare One docs
+
+> Source: https://developers.cloudflare.com/cloudflare-one/integrations/identity-providers/linkedin/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)
+  3. /…
+
+Integrations
+
+  4. /[Identity providers](https://developers.cloudflare.com/cloudflare-one/integrations/identity-providers/)
+  5. /LinkedIn
+
+
+
+# LinkedIn
+
+Last updated Apr 30, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/cloudflare-one/integrations/identity-providers/linkedin/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewPrerequisitesSet up LinkedIn as an IdPExample API configuration
+
+Cloudflare Access allows your users to use LinkedIn as their identity provider (IdP).
+
+## Prerequisites
+
+Sign in to your LinkedIn account before continuing. Configuring LinkedIn as a Cloudflare Access IdP requires a LinkedIn account.
+
+## Set up LinkedIn as an IdP
+
+To configure LinkedIn as an IdP:
+
+  1. Go to the [LinkedIn Developer Portal ↗︎](https://www.linkedin.com/developers).
+
+  2. Select **Create App**.
+
+  3. On the **Create an app** page, enter an **App name** for your application.
+
+  4. Select a **LinkedIn Page** for your application or select **Create a new LinkedIn page** if you do not have a LinkedIn page.
+
+  5. Select **Upload a logo** and upload your company logo image file.
+
+  6. Select **API Terms of Use** to read the terms of use, and agree to the terms.
+
+  7. Select **Create app**.
+
+  8. In the **Products** tab of your LinkedIn application, select **Request Access** next to the **Sign In with LinkedIn using OpenID Connect** option.
+
+  9. In the **Auth** tab of your LinkedIn application, find the **Client ID** and **Client Secret**.
+
+![LinkedIn account settings where you will copy the Client ID and Client Secret](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1796,height=1068,format=webp/_astro/lin5.ovn9KSN7.png)
+  10. In the [Cloudflare dashboard ↗︎](https://dash.cloudflare.com/), go to **Zero Trust** > **Integrations** > **Identity providers**.
+
+  11. Under **Your identity providers** , select **Add new identity provider**.
+
+  12. Select **LinkedIn** as your IdP.
+
+  13. In the **App ID** field, copy and paste the **Client ID** from step 9. In the **Client secret** field, copy and paste the **Client secret** from step 9.
+
+  14. Select **Save**.
+
+  15. In the **Auth** tab of your LinkedIn application, go to **OAuth 2.0 settings** and select the pencil icon next to **Authorized redirect URLs for your app**.
+
+  16. Enter the following URL:
+         
+         https://<your-team-name>.cloudflareaccess.com/cdn-cgi/access/callback
+
+You can find your team name in the [Cloudflare dashboard ↗︎](https://dash.cloudflare.com) under **Settings** > **Team name and domain** > **Team name**.
+
+
+
+
+To test that your connection is working, go to the [Cloudflare dashboard ↗︎](https://dash.cloudflare.com/) > **Zero Trust** > **Integrations** > **Identity providers** and select **Test** next to your LinkedIn login method.
+
+## Example API configuration
+    
+    
+    {
+    	"config": {
+    		"client_id": "<your client id>",
+    		"client_secret": "<your client secret>"
+    	},
+    	"type": "linkedin",
+    	"name": "my example idp"
+    }
+
+[PreviousKeycloak (SAML)](https://developers.cloudflare.com/cloudflare-one/integrations/identity-providers/keycloak/)[NextMicrosoft Entra ID](https://developers.cloudflare.com/cloudflare-one/integrations/identity-providers/entra-id/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/cloudflare-one/integrations/identity-providers/linkedin.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

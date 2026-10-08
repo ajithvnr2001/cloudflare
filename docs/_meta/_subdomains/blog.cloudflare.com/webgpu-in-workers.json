@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/webgpu-in-workers/",
+  "file": "_subdomains/blog.cloudflare.com/webgpu-in-workers.md",
+  "title": "You can now use WebGPU in Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:12.137920+00:00",
+  "html_len": 337863,
+  "md_len": 78202,
+  "depth": 0,
+  "phase": 2
+}

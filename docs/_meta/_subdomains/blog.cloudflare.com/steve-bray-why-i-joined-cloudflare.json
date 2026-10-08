@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/steve-bray-why-i-joined-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/steve-bray-why-i-joined-cloudflare.md",
+  "title": "Steve Bray: Why I joined Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:05.510646+00:00",
+  "html_len": 267307,
+  "md_len": 55939,
+  "depth": 0,
+  "phase": 2
+}

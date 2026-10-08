@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/announcing-cloudflare-images-beta/",
+  "file": "_subdomains/blog.cloudflare.com/announcing-cloudflare-images-beta.md",
+  "title": "Announcing Cloudflare Images beta to simplify your image pipeline | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:26.884809+00:00",
+  "html_len": 289397,
+  "md_len": 63288,
+  "depth": 0,
+  "phase": 2
+}

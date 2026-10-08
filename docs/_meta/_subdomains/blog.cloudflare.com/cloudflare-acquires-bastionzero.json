@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-acquires-bastionzero/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-acquires-bastionzero.md",
+  "title": "Cloudflare acquires BastionZero to extend Zero Trust access to IT infrastructure | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:23.964747+00:00",
+  "html_len": 290264,
+  "md_len": 64454,
+  "depth": 0,
+  "phase": 2
+}

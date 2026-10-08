@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/confidence-score-rubric/",
+  "file": "_subdomains/blog.cloudflare.com/confidence-score-rubric.md",
+  "title": "Introducing Cloudflare Application Confidence Score For AI Applications | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:49.456250+00:00",
+  "html_len": 307711,
+  "md_len": 75354,
+  "depth": 0,
+  "phase": 2
+}

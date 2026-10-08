@@ -1,0 +1,10 @@
+{
+  "url": "https://graphql.cloudflare.com/",
+  "file": "_subdomains/graphql.cloudflare.com/_index.md",
+  "title": "Cloudflare Analytics - Web Performance and Security Insights",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (79 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T07:23:11.578088+00:00",
+  "html_len": 481707,
+  "md_len": 14435,
+  "depth": 1
+}

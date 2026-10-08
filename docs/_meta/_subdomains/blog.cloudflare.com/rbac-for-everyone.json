@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/rbac-for-everyone/",
+  "file": "_subdomains/blog.cloudflare.com/rbac-for-everyone.md",
+  "title": "Now all customers can share access to their Cloudflare account with Role Based Access Controls | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:49.494289+00:00",
+  "html_len": 273117,
+  "md_len": 58796,
+  "depth": 0,
+  "phase": 2
+}

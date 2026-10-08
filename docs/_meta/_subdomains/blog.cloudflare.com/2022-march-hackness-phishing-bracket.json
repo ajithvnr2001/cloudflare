@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/2022-march-hackness-phishing-bracket/",
+  "file": "_subdomains/blog.cloudflare.com/2022-march-hackness-phishing-bracket.md",
+  "title": "2022 March Hackness: The Return of the Phishing Bracket - What 56 Million Emails Reveal about the Most Impersonated Brands | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:33.641958+00:00",
+  "html_len": 276602,
+  "md_len": 61308,
+  "depth": 0,
+  "phase": 2
+}

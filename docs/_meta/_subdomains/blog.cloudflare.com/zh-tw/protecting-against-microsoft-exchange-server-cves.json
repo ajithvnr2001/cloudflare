@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/protecting-against-microsoft-exchange-server-cves/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/protecting-against-microsoft-exchange-server-cves.md",
+  "title": "\u9632\u7bc4\u6700\u8fd1\u62ab\u9732\u7684 Microsoft Exchange Server \u6f0f\u6d1e\uff1aCVE-2021-26855\u3001CVE-2021-26857\u3001CVE-2021-26858 \u548c CVE-2021-27065 | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:35.861330+00:00",
+  "html_len": 183397,
+  "md_len": 21044,
+  "depth": 0,
+  "phase": 2
+}

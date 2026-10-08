@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-we-used-openbmc-to-support-ai-inference-on-gpus-around-the-world/",
+  "file": "_subdomains/blog.cloudflare.com/how-we-used-openbmc-to-support-ai-inference-on-gpus-around-the-world.md",
+  "title": "How we used OpenBMC to support AI inference on GPUs around the world | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:04.993753+00:00",
+  "html_len": 304327,
+  "md_len": 67685,
+  "depth": 0,
+  "phase": 2
+}

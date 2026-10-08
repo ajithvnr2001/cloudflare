@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/id-id/data-exfiltration-prevention/",
+  "file": "_subdomains/blog.cloudflare.com/id-id/data-exfiltration-prevention.md",
+  "title": "Menggunakan Cloudflare untuk Pencegahan Kehilangan Data | Blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:28.055126+00:00",
+  "html_len": 181100,
+  "md_len": 17691,
+  "depth": 0,
+  "phase": 2
+}

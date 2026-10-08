@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+  "file": "workers-ai/platform/pricing.md",
+  "title": "Pricing \u00b7 Cloudflare Workers AI docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:07.036962+00:00",
+  "html_len": 128779,
+  "md_len": 14474,
+  "depth": 0
+}

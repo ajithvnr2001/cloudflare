@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/security/api/owasp-api-security-top-10/",
+  "file": "_subdomains/www.cloudflare.com/learning/security/api/owasp-api-security-top-10.md",
+  "title": "What is the OWASP API Security Top 10?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:59.044525+00:00",
+  "html_len": 242303,
+  "md_len": 22662,
+  "depth": 0,
+  "phase": 2
+}

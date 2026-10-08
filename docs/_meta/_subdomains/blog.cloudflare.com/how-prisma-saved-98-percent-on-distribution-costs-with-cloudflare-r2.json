@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-prisma-saved-98-percent-on-distribution-costs-with-cloudflare-r2/",
+  "file": "_subdomains/blog.cloudflare.com/how-prisma-saved-98-percent-on-distribution-costs-with-cloudflare-r2.md",
+  "title": "How Prisma saved 98% on distribution costs with Cloudflare R2 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:08.651841+00:00",
+  "html_len": 296802,
+  "md_len": 68313,
+  "depth": 0,
+  "phase": 2
+}

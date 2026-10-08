@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/more-bots-more-trees/",
+  "file": "_subdomains/blog.cloudflare.com/more-bots-more-trees.md",
+  "title": "More bots, more trees | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:07.897968+00:00",
+  "html_len": 282803,
+  "md_len": 61052,
+  "depth": 0,
+  "phase": 2
+}

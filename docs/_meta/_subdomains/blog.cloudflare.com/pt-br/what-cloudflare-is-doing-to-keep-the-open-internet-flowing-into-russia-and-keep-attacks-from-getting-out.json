@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/what-cloudflare-is-doing-to-keep-the-open-internet-flowing-into-russia-and-keep-attacks-from-getting-out/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/what-cloudflare-is-doing-to-keep-the-open-internet-flowing-into-russia-and-keep-attacks-from-getting-out.md",
+  "title": "O que a Cloudflare est\u00e1 fazendo para manter a internet aberta fluindo para a R\u00fassia e para impedir que os ataques saiam | Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:31.615441+00:00",
+  "html_len": 221871,
+  "md_len": 30003,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/gateway-dedicated-egress-policies/",
+  "file": "_subdomains/blog.cloudflare.com/gateway-dedicated-egress-policies.md",
+  "title": "Cloudflare Gateway dedicated egress and egress policies | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:17.504550+00:00",
+  "html_len": 280549,
+  "md_len": 62497,
+  "depth": 0,
+  "phase": 2
+}

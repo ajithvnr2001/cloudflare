@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/munich/",
+  "file": "_subdomains/blog.cloudflare.com/munich.md",
+  "title": "Munich: Cloudflare's fifth data center in Germany | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:17.385773+00:00",
+  "html_len": 267082,
+  "md_len": 55326,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/unlocking-quic-proxying-potential/",
+  "file": "_subdomains/blog.cloudflare.com/unlocking-quic-proxying-potential.md",
+  "title": "Unlocking QUIC\u2019s proxying potential with MASQUE | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:33.256791+00:00",
+  "html_len": 297884,
+  "md_len": 71113,
+  "depth": 0,
+  "phase": 2
+}

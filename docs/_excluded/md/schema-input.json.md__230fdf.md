@@ -1,0 +1,12 @@
+---
+url: https://developers.cloudflare.com/ai/models/openai/tts-1/schema-input.json
+title: https://developers.cloudflare.com/ai/models/openai/tts-1/schema-input.json
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:23:43.743474+00:00
+---
+
+# https://developers.cloudflare.com/ai/models/openai/tts-1/schema-input.json
+
+> Source: https://developers.cloudflare.com/ai/models/openai/tts-1/schema-input.json
+
+{"$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","properties":{"text":{"type":"string","maxLength":4096,"description":"The text to generate audio for. Maximum length is 4096 characters."},"voice":{"default":"alloy","description":"The voice to use when generating the audio. Defaults to alloy.","type":"string","enum":["alloy","echo","fable","onyx","nova","shimmer"]},"response_format":{"default":"mp3","description":"The output format for the audio. Supported formats are mp3, opus, wav, aac and flac.","type":"string","enum":["mp3","opus","wav","aac","flac"]},"speed":{"default":1,"description":"The speed of the generated audio. Select a value from 0.25 to 4.0. 1.0 is the default.","type":"number","minimum":0.25,"maximum":4}},"required":["text","voice","response_format","speed"],"additionalProperties":false}

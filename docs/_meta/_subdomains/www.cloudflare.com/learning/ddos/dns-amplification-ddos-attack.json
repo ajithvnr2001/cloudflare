@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/ddos/dns-amplification-ddos-attack/",
+  "file": "_subdomains/www.cloudflare.com/learning/ddos/dns-amplification-ddos-attack.md",
+  "title": "DNS Amplification DDoS Attack",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:06.036892+00:00",
+  "html_len": 209004,
+  "md_len": 13040,
+  "depth": 0,
+  "phase": 2
+}

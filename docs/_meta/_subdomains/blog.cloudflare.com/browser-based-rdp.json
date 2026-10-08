@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/browser-based-rdp/",
+  "file": "_subdomains/blog.cloudflare.com/browser-based-rdp.md",
+  "title": "RDP without the risk: Cloudflare's browser-based solution for secure third-party access | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:56.813906+00:00",
+  "html_len": 310754,
+  "md_len": 78529,
+  "depth": 0,
+  "phase": 2
+}

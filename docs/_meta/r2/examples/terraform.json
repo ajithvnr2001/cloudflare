@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/r2/examples/terraform/",
+  "file": "r2/examples/terraform.md",
+  "title": "Terraform \u00b7 Cloudflare R2 docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:12:46.475518+00:00",
+  "html_len": 109632,
+  "md_len": 2238,
+  "depth": 0
+}

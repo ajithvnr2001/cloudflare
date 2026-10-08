@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/powering-platforms-on-workers/",
+  "file": "_subdomains/blog.cloudflare.com/powering-platforms-on-workers.md",
+  "title": "How Cloudflare is powering the next generation of platforms with Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:30.483985+00:00",
+  "html_len": 296754,
+  "md_len": 65228,
+  "depth": 0,
+  "phase": 2
+}

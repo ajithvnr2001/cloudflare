@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/core/",
+  "file": "_subdomains/blog.cloudflare.com/tag/core.md",
+  "title": "Posts tagged \"Core\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:08:40.104011+00:00",
+  "html_len": 109567,
+  "md_len": 1369,
+  "depth": 1,
+  "phase": 2
+}

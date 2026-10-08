@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cdn-cache-control/",
+  "file": "_subdomains/blog.cloudflare.com/cdn-cache-control.md",
+  "title": "CDN-Cache-Control: Precision Control for your CDN(s) | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:01.327667+00:00",
+  "html_len": 301231,
+  "md_len": 66030,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/detections/ai-security-for-apps/log-mode-vs-production-mode/",
+  "file": "waf/detections/ai-security-for-apps/log-mode-vs-production-mode.md",
+  "title": "Log mode versus production mode \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:40.085699+00:00",
+  "html_len": 155025,
+  "md_len": 8396,
+  "depth": 0
+}

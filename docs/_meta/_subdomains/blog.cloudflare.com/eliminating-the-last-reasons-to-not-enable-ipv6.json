@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/eliminating-the-last-reasons-to-not-enable-ipv6/",
+  "file": "_subdomains/blog.cloudflare.com/eliminating-the-last-reasons-to-not-enable-ipv6.md",
+  "title": "Eliminating the last reasons to not enable IPv6 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:20.413022+00:00",
+  "html_len": 280253,
+  "md_len": 61851,
+  "depth": 0,
+  "phase": 2
+}

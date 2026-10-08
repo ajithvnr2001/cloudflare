@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-support-portal-gets-an-overhaul/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-support-portal-gets-an-overhaul.md",
+  "title": "Cloudflare Support Portal gets an overhaul | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:09.924234+00:00",
+  "html_len": 283938,
+  "md_len": 62289,
+  "depth": 0,
+  "phase": 2
+}

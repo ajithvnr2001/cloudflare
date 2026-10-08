@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/api/resources/radar/subresources/bgp/subresources/rpki/subresources/aspa/",
+  "file": "api/resources/radar/subresources/bgp/subresources/rpki/subresources/aspa.md",
+  "title": "ASPA | Cloudflare API",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:28:09.042017+00:00",
+  "html_len": 1975893,
+  "md_len": 3603,
+  "depth": 1
+}

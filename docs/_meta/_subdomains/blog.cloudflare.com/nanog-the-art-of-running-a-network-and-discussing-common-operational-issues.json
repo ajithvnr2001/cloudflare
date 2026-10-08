@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/nanog-the-art-of-running-a-network-and-discussing-common-operational-issues/",
+  "file": "_subdomains/blog.cloudflare.com/nanog-the-art-of-running-a-network-and-discussing-common-operational-issues.md",
+  "title": "NANOG - the art of running a network and discussing common operational issues | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:22.454187+00:00",
+  "html_len": 283147,
+  "md_len": 66156,
+  "depth": 0,
+  "phase": 2
+}

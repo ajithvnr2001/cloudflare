@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/speeding-up-apis-ricochet-for-api-gateway/",
+  "file": "_subdomains/blog.cloudflare.com/speeding-up-apis-ricochet-for-api-gateway.md",
+  "title": "Speeding up APIs with Ricochet for API Gateway | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:20.483160+00:00",
+  "html_len": 290415,
+  "md_len": 64507,
+  "depth": 0,
+  "phase": 2
+}

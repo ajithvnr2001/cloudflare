@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/details-of-the-cloudflare-outage-on-july-2-2019/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/details-of-the-cloudflare-outage-on-july-2-2019.md",
+  "title": "\u5173\u4e8e 2019 \u5e74 7 \u6708 2 \u65e5 Cloudflare \u4e2d\u65ad\u7684\u8be6\u60c5 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:00.571534+00:00",
+  "html_len": 267612,
+  "md_len": 43746,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/ci-cd/builds/configuration/",
+  "file": "workers/ci-cd/builds/configuration.md",
+  "title": "Configuration \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:12.500491+00:00",
+  "html_len": 216737,
+  "md_len": 15503,
+  "depth": 0
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/managed-rules/reference/owasp-core-ruleset/concepts/",
+  "file": "waf/managed-rules/reference/owasp-core-ruleset/concepts.md",
+  "title": "OWASP ruleset concepts \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:44.928836+00:00",
+  "html_len": 136312,
+  "md_len": 4015,
+  "depth": 0
+}

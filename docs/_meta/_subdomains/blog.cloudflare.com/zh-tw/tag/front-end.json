@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/tag/front-end/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/tag/front-end.md",
+  "title": "\u6a19\u7c64\u70ba\u300c\u524d\u7aef\u300d\u7684\u6587\u7ae0 \u2014 Cloudflare \u90e8\u843d\u683c",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (690 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:09:50.047029+00:00",
+  "html_len": 113632,
+  "md_len": 3001,
+  "depth": 1,
+  "phase": 2
+}

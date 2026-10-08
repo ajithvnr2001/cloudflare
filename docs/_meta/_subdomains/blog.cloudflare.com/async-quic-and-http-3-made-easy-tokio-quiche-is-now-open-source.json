@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/async-quic-and-http-3-made-easy-tokio-quiche-is-now-open-source/",
+  "file": "_subdomains/blog.cloudflare.com/async-quic-and-http-3-made-easy-tokio-quiche-is-now-open-source.md",
+  "title": "Async QUIC and HTTP:3 made easy- tokio-quiche is now open-source | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:51.223449+00:00",
+  "html_len": 289186,
+  "md_len": 63722,
+  "depth": 0,
+  "phase": 2
+}

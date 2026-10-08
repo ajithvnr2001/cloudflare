@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/tag/legal/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/tag/legal.md",
+  "title": "\u6807\u7b7e\u4e3a\"\u6cd5\u5f8b\u95ee\u9898\"\u7684\u6587\u7ae0 \u2014 Cloudflare \u535a\u5ba2",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (645 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:11:24.646546+00:00",
+  "html_len": 113504,
+  "md_len": 2941,
+  "depth": 1,
+  "phase": 2
+}

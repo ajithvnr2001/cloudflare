@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/argo/",
+  "file": "_subdomains/blog.cloudflare.com/argo.md",
+  "title": "Introducing Argo \u2014 A faster, more reliable, more secure Internet for everyone | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:13.271375+00:00",
+  "html_len": 286880,
+  "md_len": 64033,
+  "depth": 0,
+  "phase": 2
+}

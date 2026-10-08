@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ai-labyrinth/",
+  "file": "_subdomains/blog.cloudflare.com/ai-labyrinth.md",
+  "title": "Trapping misbehaving bots in an AI Labyrinth | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:23.446300+00:00",
+  "html_len": 291226,
+  "md_len": 63998,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/workers-vpc-open-beta/",
+  "file": "_subdomains/blog.cloudflare.com/workers-vpc-open-beta.md",
+  "title": "How Workers VPC Services connects to your regional private networks from anywhere in the world | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:40.141995+00:00",
+  "html_len": 311031,
+  "md_len": 71349,
+  "depth": 0,
+  "phase": 2
+}

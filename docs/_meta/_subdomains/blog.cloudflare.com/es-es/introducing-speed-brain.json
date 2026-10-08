@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/introducing-speed-brain/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/introducing-speed-brain.md",
+  "title": "Presentamos Speed Brain: aceleramos un 45 % la carga de p\u00e1ginas | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:41:08.547133+00:00",
+  "html_len": 266001,
+  "md_len": 65904,
+  "depth": 0,
+  "phase": 2
+}

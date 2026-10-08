@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/workers-ai-bigger-better-faster/",
+  "file": "_subdomains/blog.cloudflare.com/workers-ai-bigger-better-faster.md",
+  "title": "Cloudflare\u2019s bigger, better, faster AI platform | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:37.719090+00:00",
+  "html_len": 386644,
+  "md_len": 77602,
+  "depth": 0,
+  "phase": 2
+}

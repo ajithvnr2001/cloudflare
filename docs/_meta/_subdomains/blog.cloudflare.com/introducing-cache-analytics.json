@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-cache-analytics/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-cache-analytics.md",
+  "title": "Introducing Cache Analytics | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:09.002416+00:00",
+  "html_len": 294380,
+  "md_len": 64688,
+  "depth": 0,
+  "phase": 2
+}

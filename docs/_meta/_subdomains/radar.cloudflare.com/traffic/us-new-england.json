@@ -1,0 +1,10 @@
+{
+  "url": "https://radar.cloudflare.com/traffic/us-new-england/",
+  "file": "_subdomains/radar.cloudflare.com/traffic/us-new-england.md",
+  "title": "Traffic in US New England | Cloudflare Radar",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:27:37.843018+00:00",
+  "html_len": 222082,
+  "md_len": 2304,
+  "depth": 1
+}

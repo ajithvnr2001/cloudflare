@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/gartner/",
+  "file": "_subdomains/blog.cloudflare.com/tag/gartner.md",
+  "title": "Posts tagged \"Gartner\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:09:03.135073+00:00",
+  "html_len": 127110,
+  "md_len": 5613,
+  "depth": 1,
+  "phase": 2
+}

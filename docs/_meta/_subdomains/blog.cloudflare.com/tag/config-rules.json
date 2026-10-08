@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/config-rules/",
+  "file": "_subdomains/blog.cloudflare.com/tag/config-rules.md",
+  "title": "Posts tagged \"Config Rules\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:08:38.427592+00:00",
+  "html_len": 112617,
+  "md_len": 2066,
+  "depth": 1,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/deploy-workers-applications-in-seconds/",
+  "file": "_subdomains/blog.cloudflare.com/deploy-workers-applications-in-seconds.md",
+  "title": "Skip the setup: deploy a Workers application in seconds | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:20.534861+00:00",
+  "html_len": 290834,
+  "md_len": 64189,
+  "depth": 0,
+  "phase": 2
+}

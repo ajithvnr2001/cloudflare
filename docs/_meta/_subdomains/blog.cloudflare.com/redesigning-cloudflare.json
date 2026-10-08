@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/redesigning-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/redesigning-cloudflare.md",
+  "title": "Redesigning CloudFlare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:05.458923+00:00",
+  "html_len": 300994,
+  "md_len": 63763,
+  "depth": 0,
+  "phase": 2
+}

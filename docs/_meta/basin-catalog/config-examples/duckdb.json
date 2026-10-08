@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/basin-catalog/config-examples/duckdb/",
+  "file": "basin-catalog/config-examples/duckdb.md",
+  "title": "DuckDB \u00b7 Cloudflare Basin Catalog docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:05:22.685639+00:00",
+  "html_len": 97369,
+  "md_len": 3473,
+  "depth": 0
+}

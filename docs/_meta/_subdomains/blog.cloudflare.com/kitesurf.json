@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/kitesurf/",
+  "file": "_subdomains/blog.cloudflare.com/kitesurf.md",
+  "title": "Introducing Kitesurf: The agent-first browser that runs in V8 isolates on Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:24:33.632094+00:00",
+  "html_len": 345226,
+  "md_len": 84959,
+  "depth": 1
+}

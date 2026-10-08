@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/intelligent-automatic-restarts-for-unhealthy-kafka-consumers/",
+  "file": "_subdomains/blog.cloudflare.com/intelligent-automatic-restarts-for-unhealthy-kafka-consumers.md",
+  "title": "Intelligent, automatic restarts for unhealthy Kafka consumers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:21.431157+00:00",
+  "html_len": 311000,
+  "md_len": 69213,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://radar.cloudflare.com/bots/directory/cloudflare-ai-search/",
+  "file": "_subdomains/radar.cloudflare.com/bots/directory/cloudflare-ai-search.md",
+  "title": "AI Search Bot Information | Cloudflare Radar",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling status 403)",
+  "fetched_at": "2026-10-08T07:23:14.580103+00:00",
+  "html_len": 188603,
+  "md_len": 1885,
+  "depth": 1
+}

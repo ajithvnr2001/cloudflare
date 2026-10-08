@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/agentic-web/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/agentic-web.md",
+  "title": "Internet cuenta ahora con un nuevo p\u00fablico | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:12.260302+00:00",
+  "html_len": 209417,
+  "md_len": 36382,
+  "depth": 0,
+  "phase": 2
+}

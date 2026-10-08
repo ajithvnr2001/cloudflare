@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-curious-case-of-the-garden-state-imposter/",
+  "file": "_subdomains/blog.cloudflare.com/the-curious-case-of-the-garden-state-imposter.md",
+  "title": "The Curious Case of the Garden State Imposter | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:21.862478+00:00",
+  "html_len": 271595,
+  "md_len": 59613,
+  "depth": 0,
+  "phase": 2
+}

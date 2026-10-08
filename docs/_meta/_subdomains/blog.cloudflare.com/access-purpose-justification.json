@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/access-purpose-justification/",
+  "file": "_subdomains/blog.cloudflare.com/access-purpose-justification.md",
+  "title": "Capturing Purpose Justification in Cloudflare Access | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:11.882570+00:00",
+  "html_len": 288191,
+  "md_len": 63683,
+  "depth": 0,
+  "phase": 2
+}

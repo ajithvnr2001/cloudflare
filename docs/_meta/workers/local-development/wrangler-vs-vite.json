@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/local-development/wrangler-vs-vite/",
+  "file": "workers/local-development/wrangler-vs-vite.md",
+  "title": "Choosing between Wrangler & Vite \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:34.384483+00:00",
+  "html_len": 177406,
+  "md_len": 3584,
+  "depth": 0
+}

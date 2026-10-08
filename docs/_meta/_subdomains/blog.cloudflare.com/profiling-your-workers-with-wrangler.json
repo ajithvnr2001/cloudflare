@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/profiling-your-workers-with-wrangler/",
+  "file": "_subdomains/blog.cloudflare.com/profiling-your-workers-with-wrangler.md",
+  "title": "Profiling Your Workers with Wrangler | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:04.682658+00:00",
+  "html_len": 292893,
+  "md_len": 60417,
+  "depth": 0,
+  "phase": 2
+}

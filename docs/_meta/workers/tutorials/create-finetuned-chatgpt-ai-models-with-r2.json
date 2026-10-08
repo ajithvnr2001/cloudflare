@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/tutorials/create-finetuned-chatgpt-ai-models-with-r2/",
+  "file": "workers/tutorials/create-finetuned-chatgpt-ai-models-with-r2.md",
+  "title": "Create a fine-tuned OpenAI model with R2 \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:18:00.339280+00:00",
+  "html_len": 251888,
+  "md_len": 13345,
+  "depth": 0
+}

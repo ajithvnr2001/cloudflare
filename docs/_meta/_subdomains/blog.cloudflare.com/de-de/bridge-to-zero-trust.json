@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/bridge-to-zero-trust/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/bridge-to-zero-trust.md",
+  "title": "Eine Br\u00fccke zu Zero Trust | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:40:43.345290+00:00",
+  "html_len": 212968,
+  "md_len": 32379,
+  "depth": 0,
+  "phase": 2
+}

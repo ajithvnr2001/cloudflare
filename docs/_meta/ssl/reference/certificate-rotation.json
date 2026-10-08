@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/ssl/reference/certificate-rotation/",
+  "file": "ssl/reference/certificate-rotation.md",
+  "title": "Rotate ACM certificate packs \u00b7 Cloudflare SSL/TLS docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:15:45.238512+00:00",
+  "html_len": 149785,
+  "md_len": 8437,
+  "depth": 0
+}

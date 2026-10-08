@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/multi-path-tcp-revolutionizing-connectivity-one-path-at-a-time/",
+  "file": "_subdomains/blog.cloudflare.com/multi-path-tcp-revolutionizing-connectivity-one-path-at-a-time.md",
+  "title": "Multi-Path TCP: Revolutionizing connectivity, one path at a time | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:26.068584+00:00",
+  "html_len": 316052,
+  "md_len": 70919,
+  "depth": 0,
+  "phase": 2
+}

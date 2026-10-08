@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-cloudflares-architecture-allows-us-to-scale-to-stop-the-largest-attacks/",
+  "file": "_subdomains/blog.cloudflare.com/how-cloudflares-architecture-allows-us-to-scale-to-stop-the-largest-attacks.md",
+  "title": "How Cloudflare's Architecture Allows Us to Scale to Stop the Largest Attacks | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:28.598213+00:00",
+  "html_len": 286719,
+  "md_len": 65756,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/cloudflare-threat-intelligence-platform/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/cloudflare-threat-intelligence-platform.md",
+  "title": "\uc9c4\ud654\ud558\ub294 Cloudflare\uc758 \uc704\ud611 \uc778\ud154\ub9ac\uc804\uc2a4 \ud50c\ub7ab\ud3fc: \uc2e4\ud589 \uac00\ub2a5\ud558\uace0 \ud655\uc7a5 \uac00\ub2a5\ud558\uba70 ETL\uc774 \uc801\uc2b5\ub2c8\ub2e4 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:36.225492+00:00",
+  "html_len": 226922,
+  "md_len": 38424,
+  "depth": 0,
+  "phase": 2
+}

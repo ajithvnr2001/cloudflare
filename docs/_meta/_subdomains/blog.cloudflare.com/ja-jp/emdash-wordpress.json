@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/emdash-wordpress/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/emdash-wordpress.md",
+  "title": "\u30d7\u30e9\u30b0\u30a4\u30f3\u30bb\u30ad\u30e5\u30ea\u30c6\u30a3\u3092\u89e3\u6c7a\u3059\u308bWordPress\u306e\u7cbe\u795e\u306e\u5f8c\u7d99\u3001EmDash\u306e\u7d39\u4ecb | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:38.530409+00:00",
+  "html_len": 238485,
+  "md_len": 40459,
+  "depth": 0,
+  "phase": 2
+}

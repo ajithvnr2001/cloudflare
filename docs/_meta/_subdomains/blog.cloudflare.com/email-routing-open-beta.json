@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/email-routing-open-beta/",
+  "file": "_subdomains/blog.cloudflare.com/email-routing-open-beta.md",
+  "title": "Email Routing is now in open beta, available to everyone | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:41.221981+00:00",
+  "html_len": 274145,
+  "md_len": 56524,
+  "depth": 0,
+  "phase": 2
+}

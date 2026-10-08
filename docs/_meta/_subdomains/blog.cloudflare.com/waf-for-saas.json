@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/waf-for-saas/",
+  "file": "_subdomains/blog.cloudflare.com/waf-for-saas.md",
+  "title": "Security for SaaS providers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:45.453512+00:00",
+  "html_len": 289009,
+  "md_len": 62004,
+  "depth": 0,
+  "phase": 2
+}

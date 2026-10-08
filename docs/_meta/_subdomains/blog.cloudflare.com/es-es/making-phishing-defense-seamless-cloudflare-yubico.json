@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/making-phishing-defense-seamless-cloudflare-yubico/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/making-phishing-defense-seamless-cloudflare-yubico.md",
+  "title": "La clave (de hardware) para la defensa perfecta contra el phishing con Cloudflare Zero Trust y Yubico | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:21.122840+00:00",
+  "html_len": 208360,
+  "md_len": 32326,
+  "depth": 0,
+  "phase": 2
+}

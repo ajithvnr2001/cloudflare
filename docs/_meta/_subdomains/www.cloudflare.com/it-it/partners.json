@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/it-it/partners/",
+  "file": "_subdomains/www.cloudflare.com/it-it/partners.md",
+  "title": "Le nostre partnership | Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:22:23.193431+00:00",
+  "html_len": 281539,
+  "md_len": 9204,
+  "depth": 1,
+  "phase": 2
+}

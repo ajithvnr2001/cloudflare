@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workflows/build/rules-of-workflows/",
+  "file": "workflows/build/rules-of-workflows.md",
+  "title": "Rules of Workflows \u00b7 Cloudflare Workflows docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:18:14.106508+00:00",
+  "html_len": 319952,
+  "md_len": 44930,
+  "depth": 0
+}

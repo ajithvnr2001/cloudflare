@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/examples/logging-headers/",
+  "file": "workers/examples/logging-headers.md",
+  "title": "Logging headers to console \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:23.656049+00:00",
+  "html_len": 205864,
+  "md_len": 6715,
+  "depth": 0
+}

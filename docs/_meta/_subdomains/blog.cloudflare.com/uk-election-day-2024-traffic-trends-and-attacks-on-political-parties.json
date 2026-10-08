@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/uk-election-day-2024-traffic-trends-and-attacks-on-political-parties/",
+  "file": "_subdomains/blog.cloudflare.com/uk-election-day-2024-traffic-trends-and-attacks-on-political-parties.md",
+  "title": "UK election day 2024: traffic trends and attacks on political parties | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:43.905969+00:00",
+  "html_len": 318822,
+  "md_len": 68476,
+  "depth": 0,
+  "phase": 2
+}

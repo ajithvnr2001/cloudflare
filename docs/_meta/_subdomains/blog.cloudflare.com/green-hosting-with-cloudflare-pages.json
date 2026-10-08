@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/green-hosting-with-cloudflare-pages/",
+  "file": "_subdomains/blog.cloudflare.com/green-hosting-with-cloudflare-pages.md",
+  "title": "Green Hosting with Cloudflare Pages | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:01.087005+00:00",
+  "html_len": 277399,
+  "md_len": 58587,
+  "depth": 0,
+  "phase": 2
+}

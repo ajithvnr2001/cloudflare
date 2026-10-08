@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/dedicated-ssl-certificates/",
+  "file": "_subdomains/blog.cloudflare.com/dedicated-ssl-certificates.md",
+  "title": "Introducing Dedicated SSL Certificates | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:30.071554+00:00",
+  "html_len": 290388,
+  "md_len": 68326,
+  "depth": 0,
+  "phase": 2
+}

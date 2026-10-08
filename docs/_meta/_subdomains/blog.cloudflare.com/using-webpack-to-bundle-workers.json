@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/using-webpack-to-bundle-workers/",
+  "file": "_subdomains/blog.cloudflare.com/using-webpack-to-bundle-workers.md",
+  "title": "Using Webpack to bundle your Workers modules | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:29.722045+00:00",
+  "html_len": 325492,
+  "md_len": 64935,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/tag/general-availability/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/tag/general-availability.md",
+  "title": "\"\u5168\u4f53\u7684\u306a\u4f7f\u3044\u3084\u3059\u3055\" \u30bf\u30b0\u306e\u6295\u7a3f \u2014 Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:18:37.575064+00:00",
+  "html_len": 151668,
+  "md_len": 11308,
+  "depth": 1,
+  "phase": 2
+}

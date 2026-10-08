@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/reference-architecture/diagrams/ai/bigquery-workers-ai/",
+  "file": "reference-architecture/diagrams/ai/bigquery-workers-ai.md",
+  "title": "Ingesting BigQuery Data into Workers AI \u00b7 Cloudflare Reference Architecture docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:40.655196+00:00",
+  "html_len": 119525,
+  "md_len": 7852,
+  "depth": 0
+}

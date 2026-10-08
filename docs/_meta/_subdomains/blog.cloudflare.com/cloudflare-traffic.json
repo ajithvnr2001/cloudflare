@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-traffic/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-traffic.md",
+  "title": "Control your traffic at the edge with Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:30.348909+00:00",
+  "html_len": 287133,
+  "md_len": 63700,
+  "depth": 0,
+  "phase": 2
+}

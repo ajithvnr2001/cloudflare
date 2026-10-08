@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/observe-and-manage-cloudflare-tunnel/",
+  "file": "_subdomains/blog.cloudflare.com/observe-and-manage-cloudflare-tunnel.md",
+  "title": "Tunnel: Cloudflare\u2019s Newest Homeowner | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:56.169749+00:00",
+  "html_len": 286405,
+  "md_len": 61140,
+  "depth": 0,
+  "phase": 2
+}

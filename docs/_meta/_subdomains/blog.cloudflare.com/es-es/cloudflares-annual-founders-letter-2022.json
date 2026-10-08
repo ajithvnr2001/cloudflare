@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/cloudflares-annual-founders-letter-2022/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/cloudflares-annual-founders-letter-2022.md",
+  "title": "Carta anual 2022 de los fundadores de Cloudflare | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:24.088682+00:00",
+  "html_len": 226900,
+  "md_len": 39827,
+  "depth": 0,
+  "phase": 2
+}

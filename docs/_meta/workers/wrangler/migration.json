@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/wrangler/migration/",
+  "file": "workers/wrangler/migration.md",
+  "title": "Migrations \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:18:11.843676+00:00",
+  "html_len": 172784,
+  "md_len": 1098,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/apache-struts-s2-057/",
+  "file": "_subdomains/blog.cloudflare.com/apache-struts-s2-057.md",
+  "title": "Protection from Struts Remote Code Execution Vulnerability (S2-057) | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:21.425019+00:00",
+  "html_len": 279207,
+  "md_len": 58527,
+  "depth": 0,
+  "phase": 2
+}

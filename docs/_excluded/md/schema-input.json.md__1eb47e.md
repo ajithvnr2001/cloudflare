@@ -1,0 +1,12 @@
+---
+url: https://developers.cloudflare.com/ai/models/pixverse/v5.6/schema-input.json
+title: https://developers.cloudflare.com/ai/models/pixverse/v5.6/schema-input.json
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:23:43.311162+00:00
+---
+
+# https://developers.cloudflare.com/ai/models/pixverse/v5.6/schema-input.json
+
+> Source: https://developers.cloudflare.com/ai/models/pixverse/v5.6/schema-input.json
+
+{"$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","properties":{"prompt":{"type":"string","maxLength":2048,"description":"Text prompt describing the video to generate"},"negative_prompt":{"description":"Negative text prompt","type":"string","maxLength":2048},"image_input":{"description":"Base64-encoded reference image for image-to-video generation (data:image/...;base64,...). The image will be uploaded to Pixverse automatically.","type":"string"},"duration":{"default":5,"description":"Video duration in seconds","anyOf":[{"type":"number","const":5},{"type":"number","const":8},{"type":"number","const":10}]},"aspect_ratio":{"default":"16:9","description":"Video aspect ratio","type":"string","enum":["16:9","4:3","1:1","3:4","9:16","2:3","3:2","21:9"]},"quality":{"default":"720p","description":"Video quality","type":"string","enum":["360p","540p","720p","1080p"]},"seed":{"description":"Random seed for reproducibility","type":"integer","minimum":0,"maximum":2147483647},"motion_mode":{"description":"Motion mode (fast only available when duration=5; 1080p does not support fast)","type":"string","enum":["normal","fast"]},"generate_audio":{"default":true,"description":"Whether to generate audio with the video","type":"boolean"}},"required":["prompt","duration","aspect_ratio","quality","generate_audio"],"additionalProperties":false}

@@ -1,0 +1,459 @@
+---
+description: Access distributed randomness via the drand beacon.
+title: Cloudflare Randomness Beacon
+image: https://developers.cloudflare.com/randomness-beacon/og.png?v=0a029898132ac80a
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/randomness-beacon/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Cloudflare Randomness Beacon
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/randomness-beacon/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+drand (pronounced "dee-rand") is a distributed randomness beacon daemon written in Golang. Servers running drand can be linked to each other to produce collective, publicly verifiable, unbiased, unpredictable random values at fixed intervals using bilinear pairings and threshold cryptography.
+
+drand is meant to be an Internet infrastructure level service that provides randomness to applications, similar to how NTP provides timing information and Certificate Transparency Logs provide certificate issuance information.
+
+For the most up-to-date documentation on drand, please visit [drand.love ↗︎](https://drand.love).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/randomness-beacon/#page","headline":"Cloudflare Randomness Beacon","description":"Access distributed randomness via the drand beacon.","url":"https://developers.cloudflare.com/randomness-beacon/","inLanguage":"en","image":"https://developers.cloudflare.com/randomness-beacon/og.png?v=0a029898132ac80a","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Learn about the drand randomness-as-a-service project.
+title: About drand
+image: https://developers.cloudflare.com/randomness-beacon/about/og.png?v=eb03507fa0cd0da2
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/randomness-beacon/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# About drand
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/randomness-beacon/about/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+The drand project aims to address the current lack of services providing distributed public randomness. Distributed to increase the resilience and trustworthiness, drand provides a standalone randomness-as-a-service network that is application agnostic. This is similar to how NTP networks serve timing information across the globe.
+
+drand follows the [KISS principle ↗︎](https://en.wikipedia.org/wiki/KISS_principle). It relies on well-researched cryptographic building blocks and open-source software design principles and libraries, such as protobuf and gRPC, to ensure high performance and interoperability. drand also attempts to use sane security defaults, such as having TLS enabled by default.
+
+Beyond that, drand adds new features important for its practical deployment, such as being able to securely add and remove members of the network through [resharing ↗︎](https://ieeexplore.ieee.org/document/1183515) while keeping the same shared public key necessary for randomness verification.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/randomness-beacon/about/#page","headline":"About drand","description":"Learn about the drand randomness-as-a-service project.","url":"https://developers.cloudflare.com/randomness-beacon/about/","inLanguage":"en","image":"https://developers.cloudflare.com/randomness-beacon/about/og.png?v=eb03507fa0cd0da2","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: History and development of the drand project.
+title: Background
+image: https://developers.cloudflare.com/randomness-beacon/about/background/og.png?v=9f3902fc4a44bd5f
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/randomness-beacon/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Background
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/randomness-beacon/about/background/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Over the years, a generation of public randomness (often referred to as *common coins*) has attracted interest from the cryptography research community. Many distributed systems, including various consensus mechanisms, anonymity networks such as Tor, or blockchain systems, assume access to such public randomness. However, it remained a major unsolved issue to generate public randomness in a distributed, scalable, and robust way. Currently, there is no service deployed to produce this type of randomness. The only choice is a centralized, prototype-only randomness beacon run by [NIST ↗︎](https://www.nist.gov/).
+
+Realizing this, [Ewa Syta ↗︎](http://ewa.syta.us/) started a project on [Scalable Bias-Resistant Distributed Randomness ↗︎](https://eprint.iacr.org/2016/1067) during her PhD studies under the supervision of [Michael J. Fischer ↗︎](http://www.cs.yale.edu/homes/fischer/) and [Bryan Ford ↗︎](https://bford.info/) at Yale University. After Bryan moved to EPFL in 2015, the new members of the DEDIS team at EPFL ([Nicolas Gailly ↗︎](https://github.com/nikkolasg/), [Linus Gasser ↗︎](https://people.epfl.ch/linus.gasser), [Philipp Jovanovic ↗︎](https://jovanovic.io/), [Ismail Khoffi ↗︎](https://ismailkhoffi.com/), [Eleftherios Kokoris Kogias ↗︎](https://lefteriskk.github.io/)) joined the project and together published a research paper at the [2017 IEEE Symposium on Security and Privacy ↗︎](https://ieeexplore.ieee.org/abstract/document/7958592).
+
+The paper explored the use of key pairings instead of classical elliptic curve cryptography to generate public randomness as a way to simplify the proposed protocol designs and improve performance in terms of randomness generation and verification.
+
+In early 2017, the [DEDIS ↗︎](https://dedis.epfl.ch/) team at [EPFL ↗︎](https://www.epfl.ch/en/) started collaborating with [DFINITY ↗︎](https://dfinity.org/) on various research topics, including public randomness. The DFINITY architecture is built around a pairing-based randomness beacon sharing similarities to the constructs described in the DEDIS paper. Additionally, DFINITY has already implemented an optimized pairing library in C++. After integrating this implementation into the DEDIS’ crypto library [Kyber ↗︎](https://github.com/dedis/kyber), all major cryptographic components were ready to implement an efficient, distributed randomness generation protocol using pairings.
+
+In September 2017, Nicolas, a PhD student at DEDIS, started coding drand with the help of Philipp to deploy, for the first time, a distributed service providing public randomness in an application-agnostic, secure, and efficient way. A short time later, Cloudflare released an optimized Golang implementation of the BN256 pairing curve, which is now integrated in both Kyber and drand to simplify development and deployment.
+
+As drand gained maturity, an increasing number of organizations (including NIST, Cloudflare, Kudelski Security, the University of Chile, and Protocol Labs) started taking interest, and decided to collectively work on setting up a [drand ↗︎](https://github.com/dedis/drand) network spanning these organizations. To support the use of public randomness in web applications, [Mathilde Raynal ↗︎](https://people.epfl.ch/mathilde.raynal?lang=en), a master student at DEDIS, started developing a JavaScript proof-of-concept frontend, called [drandjs ↗︎](https://github.com/PizzaWhisperer/drandjs), to interact with drand servers.
+
+In spring 2020, a team at Protocol Labs led efforts to take drand from an experimental to production-ready network. These efforts included significant protocol upgrades, establishment of a governance model for the distributed network, and increased operational security of node operators. Check out the [drand blog ↗︎](https://drand.love/blog/2020/08/10/drand-launches-v1-0/) for more details.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/randomness-beacon/about/background/#page","headline":"Background","description":"History and development of the drand project.","url":"https://developers.cloudflare.com/randomness-beacon/about/background/","inLanguage":"en","image":"https://developers.cloudflare.com/randomness-beacon/about/background/og.png?v=9f3902fc4a44bd5f","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Future directions for the drand randomness beacon.
+title: Future of drand
+image: https://developers.cloudflare.com/randomness-beacon/about/future/og.png?v=af2c75f81df2d030
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/randomness-beacon/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Future of drand
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/randomness-beacon/about/future/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+As of spring 2020, the drand network is production-ready and can now be considered foundational Internet infrastructure, much like DNS or BGP.
+
+While the project has reached a mature state, we believe there are several ways for drand to continue to evolve.
+
+- We would like to continue to see reliable partners join the network; the more participants in the network, the stronger the guarantees.
+- We would like to investigate how to generate public randomness in a post-quantum secure way (like, through isogeny, lattice, and so on).
+- We would like to consider standardization of the core drand protocol.
+
+We are proud to be a part of these efforts and hope to see even more adoption of drand in third-party applications and systems.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/randomness-beacon/about/future/#page","headline":"Future of drand","description":"Future directions for the drand randomness beacon.","url":"https://developers.cloudflare.com/randomness-beacon/about/future/","inLanguage":"en","image":"https://developers.cloudflare.com/randomness-beacon/about/future/og.png?v=af2c75f81df2d030","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Understand the cryptography behind drand.
+title: Cryptographic Background
+image: https://developers.cloudflare.com/randomness-beacon/cryptographic-background/og.png?v=378b0a9ba8740510
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/randomness-beacon/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Cryptographic Background
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/randomness-beacon/cryptographic-background/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+drand is an efficient randomness beacon daemon that utilizes pairing-based cryptography, `𝑡-of-𝑛` distributed key generation, and threshold BLS signatures to generate publicly-verifiable, unbiasable, unpredictable, distributed randomness.
+
+This is an overview of the cryptographic building blocks drand uses to generate publicly-verifiable, unbiasable, and unpredictable randomness in a distributed manner.
+
+The drand beacon has two phases: a setup phase and a beacon phase. Generally, we assume that there are *n* participants, out of which at most *f\<n* are malicious. drand relies heavily on threshold cryptography primitives, where (at minimum) a threshold of *t-f+1* nodes work together to successfully execute cryptographic operations.
+
+Threshold cryptography has many applications as it avoids single points of failure. One application is cryptocurrency multi-sig wallets, where *t-of-n* participants are required to sign a transaction using a threshold signature scheme.
+
+Note
+
+This document is intended for a general audience. No cryptographic background knowledge is required to understand these concepts.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/randomness-beacon/cryptographic-background/#page","headline":"Cryptographic Background","description":"Understand the cryptography behind drand.","url":"https://developers.cloudflare.com/randomness-beacon/cryptographic-background/","inLanguage":"en","image":"https://developers.cloudflare.com/randomness-beacon/cryptographic-background/og.png?v=378b0a9ba8740510","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Understand how randomness is generated with BLS signatures.
+title: Randomness Generation
+image: https://developers.cloudflare.com/randomness-beacon/cryptographic-background/randomness-generation/og.png?v=0801140b88034733
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/randomness-beacon/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Randomness Generation
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/randomness-beacon/cryptographic-background/randomness-generation/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+In this section, we describe how to use this collective key pair to generate publicly-verifiable, unbiasable, and unpredictable randomness in a distributed manner.
+
+First, we explain pairing-based cryptography (PBC), which has become quite popular, and is used in many modern consensus protocols or zero-knowledge proofs, such as zk-SNARKs. We will then show how drand uses PBC for the randomness beacon generation phase for threshold Boneh-Lynn-Shacham (BLS) signatures. Finally, we will discuss how drand links the generated threshold BLS signatures into a randomness chain.
+
+## Pairing-based Cryptography
+
+Pairing-based cryptography is based on bilinear groups `(𝔾1,𝔾2,𝔾𝑡)`, where `𝔾1`, `𝔾2`, and `𝔾𝑡` are cyclic groups of prime order `𝑝` with generators `𝑔1`, `𝑔2`, and `𝑔𝑡`, respectively, and a pairing operation `𝑒:𝔾1×𝔾2→𝔾𝑡` with these properties:
+
+- **Bilinearity:** `∀𝑎,𝑏∈ℤ∗𝑝,∀𝑃∈𝔾1,∀𝑄∈𝔾2,` we have `𝑒(𝑎𝑃,𝑏𝑄)=𝑒(𝑃,𝑄)𝑎𝑏`
+- **Non-degeneracy:** `𝑒≠1`
+- **Computability:** There exists an efficient algorithm to compute `𝑒`. drand currently uses the Barreto-Lynn-Scott curve BLS12-381.
+
+## BLS Signatures
+
+To generate publicly-verifiable, unbiasable, distributed randomness, drand utilizes threshold Boneh-Lynn-Shacham (BLS) signatures. First we will describe regular BLS signatures and then the threshold variant.
+
+BLS signatures are short signatures that rely on bilinear pairings and consist only of a single element in `𝔾1`. They are deterministic in the sense they depend only on the message and the signer’s key, unlike other signature schemes, such as ECDSA, that require a fresh random value for each signed message to be secure. Put differently, any two BLS signatures on a given message produced with the same key are identical. In drand, we utilize this property to achieve unbiasability for randomness generation.
+
+The BLS signature scheme consists of the these sub-procedures.
+
+### Key Generation
+
+To generate a key pair, a signer first chooses a private key, `𝑥∈ℤ∗𝑝`, at random, and then computes the corresponding public key as `𝑋=𝑔𝑥2∈𝔾2`.
+
+### Signature Generation
+
+Let `𝐻:{0,1}∗→𝔾1` denote a cryptographic hash function that maps arbitrary bit strings to elements of `𝔾1`. To compute a BLS signature `𝜎` on a message `𝑚`, the signer computes `𝜎=𝑥𝐻(𝑚)∈𝔾1`.
+
+### Signature Verification
+
+To verify that a BLS signature `𝜎` on a message `𝑚` is valid, the verifier checks if `𝑒(𝐻(𝑚),𝑋)=𝑒(𝜎,𝑔2)` holds using the signer’s public key `𝑋`.
+
+Note that this equation holds for valid signatures since `𝑒(𝐻(𝑚),𝑋)=𝑒(𝐻(𝑚),𝑔𝑥2)=𝑒(𝐻(𝑚),𝑔2)𝑥=𝑒(𝑥𝐻(𝑚),𝑔2)=𝑒(𝜎,𝑔2)`.
+
+## Threshold BLS Signature
+
+The goal of a threshold signature scheme is to collectively compute a signature by combining individual partial signatures independently generated by the participants. A threshold BLS signature scheme has the following sub-procedures.
+
+### Key Generation
+
+The `𝑛` participants run a `𝑡-of-𝑛` DKG to setup a collective public key, `𝑆∈𝔾2`, and private key shares `𝑠𝑖∈ℤ∗𝑝` of the unknown collective private key, `𝑠`, as described above.
+
+### Partial Signature Generation
+
+To sign a message, `𝑚`, each `𝑖` uses their private key share, `𝑠𝑖`, to create a partial BLS signature, `𝜎𝑖=𝑠𝑖𝐻(𝑚)`.
+
+### Partial Signature Verification
+
+To verify the correctness of a partial signature, `𝜎𝑖`, on `𝑚`, a verifier uses the public key share, `𝑆𝑖`, generated during the DKG, and verifies that `𝑒(𝐻(𝑚),𝑆𝑖)=𝑒(𝜎𝑖,𝑔2)` holds.
+
+### Signature Reconstruction
+
+To reconstruct the collective BLS signature, `𝜎` on `𝑚`, a verifier first gathers `𝑡` different and valid partial BLS signatures, `𝜎𝑖`, on `𝑚` followed by a Lagrange interpolation.
+
+### Signature Verification
+
+To verify a collective BLS signature, `𝜎`, a verifier checks that `𝑒(𝐻(𝑚),𝑆)=𝑒(𝜎,𝑔2)` holds, where `𝑆` is the collective public key.
+
+Thanks to the properties of Lagrange interpolation, the value of `𝜎` is independent of the subset of `𝑡` valid partial signatures, `𝜎𝑖`, chosen during signature reconstruction. Additionally, Lagrange interpolation also guarantees that no set of less than `𝑡` signers can predict or bias `𝜎`.
+
+In summary, a threshold BLS signature, `𝜎`, exhibits all properties required for publicly-verifiable, unbiasable, unpredictable, and distributed randomness.
+
+### `𝔾1/𝔾2` swap
+
+In the above, `𝔾1` and `𝔾2` could be swapped. The implication is on the relative size of public key and signatures. The first drand chains are constructed as described above, with signatures on `𝔾2` and public keys on `𝔾1`. Signature size is 96 bytes, and public key size is 48 bytes.
+
+Certain applications prefer smaller signatures at the cost of a larger public key. This is why certain drand beacons have signatures on `𝔾1` and public key on `𝔾2`. Such a change is referred to as `𝔾1/𝔾2 swap`.
+
+## Chained Randomness
+
+The drand randomness beacon operates in discrete rounds, `𝑟`. In every round, drand beacons configured to use chained randomness produce a new random value using threshold BLS signatures linked together into a chain of randomness. To extend this chain of randomness, each drand participant, `𝑖`, creates in round `𝑟` the partial BLS signature, `𝜎𝑟𝑖` on the message `𝑚=𝐻(𝑟∥𝜎𝑟−1)` where, `𝜎𝑟−1` denotes the (full) BLS threshold signature from round `𝑟−1` and `𝐻`, a cryptographic hash function.
+
+Once at least `𝑡` participants have broadcasted their partial signatures, `𝜎𝑟𝑖`, on `𝑚`, anyone can recover the full BLS threshold signature, `𝜎𝑟` that corresponds to the random value of round `𝑟`. After this, drand nodes move to round `𝑟+1` and reiterate the process.
+
+For round `𝑟=0`, drand participants sign a seed fixed during drand setup. This process ensures that every new random value depends on all previously generated signatures. Since the signature is deterministic, there is also no possibility for an adversary forking the chain and presenting two distinct signatures `𝜎𝑟` and `𝜎′𝑟` in a given round `𝑟` to generate inconsistencies in the systems relying on public randomness.
+
+## Unchained Randomness
+
+drand beacons can also be configured to use unchained randomness. To extend this chain of randomness, each drand participant, `𝑖`, creates in round `𝑟` the partial BLS signature, `𝜎𝑟𝑖` on the message `𝑚=𝐻(𝑟)` where `𝐻` a cryptographic hash function.
+
+This process allows for a direct precomputation of message `𝑚` for round `𝑟=i`.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/randomness-beacon/cryptographic-background/randomness-generation/#page","headline":"Randomness Generation","description":"Understand how randomness is generated with BLS signatures.","url":"https://developers.cloudflare.com/randomness-beacon/cryptographic-background/randomness-generation/","inLanguage":"en","image":"https://developers.cloudflare.com/randomness-beacon/cryptographic-background/randomness-generation/og.png?v=0801140b88034733","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Learn about the distributed key generation phase.
+title: Setup Phase
+image: https://developers.cloudflare.com/randomness-beacon/cryptographic-background/setup-phase/og.png?v=6ec80bb9e2d039a7
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/randomness-beacon/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Setup Phase
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/randomness-beacon/cryptographic-background/setup-phase/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+In the drand setup phase, you create a collective private and public key pair shared among *𝑛* participants. This is done through a `𝑡-of-𝑛` Distributed Key Generation (DKG) process and results in each participant receiving a copy of the collective public key plus a private key share of the collective private key — no individual node knows the collective **private** key. Each private key share can then be used to perform cryptographic threshold computations, such as generating threshold signatures, where at least `𝑡` contributions produced using the individual private key shares are required to successfully finish the collective operation.
+
+A DKG is performed in a fully distributed manner, avoiding any single points of failure. This is an overview of the different sub-components of the drand DKG implementation.
+
+## Secret Sharing
+
+Secret sharing is an important technique many advanced threshold cryptography mechanisms rely on.
+
+Secret sharing allows you to split a secret value `𝑠` into `𝑛` shares `𝑠1,…,𝑠𝑛` so that `𝑠` can only be reconstructed if a threshold of `𝑡` shares is available.
+
+## Shamir’s Secret Sharing (SSS)
+
+The SSS scheme is one of the most well-known and widely used secret sharing approaches, and a core component of drand. SSS works over an arbitrary finite field, but a simplistic approach uses the integers modulo `𝑝`, denoted by `ℤ𝑝`. Let `𝑠∈ℤ𝑝` denote the secret to share.
+
+### Share Distribution
+
+To share `𝑠`, a dealer first creates a polynomial, `𝑞(𝑥)=𝑎0+𝑎1𝑥+⋯+𝑎𝑡−1𝑥𝑡−1` with `𝑎0=𝑠` and (random) `𝑎𝑖∈ℤ𝑝` for `𝑖=1,…,𝑡−1` and then creates one share 𝑠𝑖 for each participant 𝑖 by evaluating 𝑞(𝑥) at the integer 𝑖 and setting 𝑠𝑖=(𝑖,𝑞(𝑖)).
+
+### Secret Reconstruction
+
+To recover the secret `𝑠`, collect at least `𝑡` shares, then uniquely reconstruct `𝑞(𝑥)` using Lagrange interpolation and obtain `𝑠` as `𝑠=𝑎0=𝑞(0)`.
+
+Note that you can use any subset of `𝑡-of-𝑛` shares to perform Lagrange interpolation and uniquely determine `𝑠`; however, having a subset of less than `𝑡` shares does not allow to learn anything about `𝑠`.
+
+## Verifiable Secret Sharing
+
+SSS scheme assumes that the dealer is honest, but this may not always hold in practice. A Verifiable Secret Sharing (VSS) scheme protects against malicious dealers by enabling participants to verify that their shares are consistent with those dealt to other nodes, ensuring that the shared secret can be correctly reconstructed later.
+
+drand uses Feldman’s VSS scheme, an extension of SSS. Let `𝔾` denote a cyclic group of prime order `𝑝` in which computing discrete logarithms is intractable. A *cyclic group* means there exists a generator, `𝑔`, so that any element `𝑥∈𝔾` can be written as `𝑥=𝑔𝑎` for some `𝑎∈{0,…,𝑝−1}`.
+
+### Share Distribution
+
+In addition to distributing shares of the secret to participants, the dealer also broadcasts commitments to the coefficients of the polynomial `𝑞(𝑥)` of the form `(𝐴0,𝐴1,…,𝐴𝑡−1)=(𝑔𝑠,𝑔𝑎1,…,𝑔𝑎𝑡−1)`. These commitments enable individual participants, `𝑖`, to verify that their share `𝑠𝑖=(𝑖,𝑞(𝑖))` is consistent with respect to the polynomial `𝑞(𝑥)` by checking that `𝑔𝑞(𝑖)=∏𝑡−1𝑗=0(𝐴𝑗)𝑖𝑗` holds.
+
+### Secret Reconstruction
+
+The recovery of secret `𝑠` works the same as regular SSS, except that verified to be valid shares are used.
+
+## Distributed Key Generation (DKG)
+
+Although VSS schemes protect against a malicious dealer, the dealer still knows the secret. To create a collectively shared secret `𝑠` so no individual node gets any information about it, participants can use a DKG protocol. drand uses Pedersen’s DKG scheme, which runs `𝑛` instances of Feldman’s VSS in parallel and on top of additional verification steps.
+
+### Share Distribution
+
+Individual participants, `𝑖`, create a (random) secret, `𝑠𝑖∈ℤ𝑝`, and share it all participants using VSS, sending a share, `𝑠𝑖,𝑗` to each `𝑗` and broadcasts the list of commitments `(𝐴𝑖,0,𝐴𝑖,1,…,𝐴𝑖,𝑡−1)` to everyone.
+
+### Share Verification
+
+`𝑗` verifies the shares received as prescribed by Feldman’s VSS scheme. If `𝑗` receives an invalid share, `𝑠𝑖,𝑗`, from `𝑖`, then `𝑗` broadcasts a complaint. `𝑖` must reveal the correct share `𝑠𝑖,𝑗` or they are considered an invalid dealer.
+
+### Share Finalization
+
+At the end of the protocol, the final share of `𝑖` is `𝑠𝑖=∑𝑗𝑠𝑗,𝑖` for all valid participants `𝑗` , that is, for all `𝑗`s not excluded during the verification phase.
+
+The collective public key associated with the valid shares can be computed as `𝑆=∑𝑗𝐴𝑗,0` for all valid `𝑗`s.
+
+**Note:** Even though the secret created using Pedersen’s DKG can be biased, it is safe to use for threshold signing as shown by Rabin et al.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/randomness-beacon/cryptographic-background/setup-phase/#page","headline":"Setup Phase","description":"Learn about the distributed key generation phase.","url":"https://developers.cloudflare.com/randomness-beacon/cryptographic-background/setup-phase/","inLanguage":"en","image":"https://developers.cloudflare.com/randomness-beacon/cryptographic-background/setup-phase/og.png?v=6ec80bb9e2d039a7","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Guide for consuming randomness from drand.
+title: User Guide
+image: https://developers.cloudflare.com/randomness-beacon/user-guide/og.png?v=a6e82f6bcc055de3
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/randomness-beacon/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# User Guide
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/randomness-beacon/user-guide/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+For the most up-to-date user documentation, please visit [drand.love/developer ↗︎](https://drand.love/developer/).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/randomness-beacon/user-guide/#page","headline":"User Guide","description":"Guide for consuming randomness from drand.","url":"https://developers.cloudflare.com/randomness-beacon/user-guide/","inLanguage":"en","image":"https://developers.cloudflare.com/randomness-beacon/user-guide/og.png?v=a6e82f6bcc055de3","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Guide for running a drand beacon node.
+title: Operator Guide
+image: https://developers.cloudflare.com/randomness-beacon/operator-guide/og.png?v=525346a8fd46ada0
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/randomness-beacon/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Operator Guide
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/randomness-beacon/operator-guide/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+For the most up-to-date operator documentation, please visit [drand.love/operator ↗︎](https://drand.love/operator/).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/randomness-beacon/operator-guide/#page","headline":"Operator Guide","description":"Guide for running a drand beacon node.","url":"https://developers.cloudflare.com/randomness-beacon/operator-guide/","inLanguage":"en","image":"https://developers.cloudflare.com/randomness-beacon/operator-guide/og.png?v=525346a8fd46ada0","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```

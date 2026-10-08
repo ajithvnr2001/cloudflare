@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/observability/export/opentelemetry/axiom/",
+  "file": "observability/export/opentelemetry/axiom.md",
+  "title": "Export to Axiom \u00b7 Cloudflare Observability docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:12:26.265721+00:00",
+  "html_len": 105481,
+  "md_len": 4097,
+  "depth": 0
+}

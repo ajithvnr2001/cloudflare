@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/cloud-connector/examples/serve-static-assets-from-azure/",
+  "file": "rules/cloud-connector/examples/serve-static-assets-from-azure.md",
+  "title": "Serve /static-assets from Azure Blob Storage \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:46.268688+00:00",
+  "html_len": 134356,
+  "md_len": 3597,
+  "depth": 0
+}

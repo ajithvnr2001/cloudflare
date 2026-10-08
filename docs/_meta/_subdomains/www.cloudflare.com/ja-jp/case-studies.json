@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/ja-jp/case-studies/",
+  "file": "_subdomains/www.cloudflare.com/ja-jp/case-studies.md",
+  "title": "Cloudflare\u306e\u304a\u5ba2\u69d8\u306e\u5c0e\u5165\u4e8b\u4f8b\u3067\u306f\u3001\u30b5\u30a4\u30d0\u30fc\u30bb\u30ad\u30e5\u30ea\u30c6\u30a3\u306b\u95a2\u3059\u308b\u304a\u5ba2\u69d8\u306e\u58f0\u3084Web\u30b5\u30a4\u30c8\u306e\u30bb\u30ad\u30e5\u30ea\u30c6\u30a3\uff0f\u30d1\u30d5\u30a9\u30fc\u30de\u30f3\u30b9\u3092\u9ad8\u3081\u308b\u30d7\u30ed\u30c0\u30af\u30c8\u306e\u4f7f\u7528\u4f8b\u3092\u3054\u7d39\u4ecb\u3057\u3066\u3044\u307e\u3059\u3002 | Cloudflare",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (162 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:20:13.479372+00:00",
+  "html_len": 576557,
+  "md_len": 13354,
+  "depth": 1,
+  "phase": 2
+}

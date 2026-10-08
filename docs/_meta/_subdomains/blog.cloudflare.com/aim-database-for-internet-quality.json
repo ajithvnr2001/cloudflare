@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/aim-database-for-internet-quality/",
+  "file": "_subdomains/blog.cloudflare.com/aim-database-for-internet-quality.md",
+  "title": "Measuring network quality to better understand the end-user experience | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:46.320741+00:00",
+  "html_len": 330981,
+  "md_len": 80637,
+  "depth": 0,
+  "phase": 2
+}

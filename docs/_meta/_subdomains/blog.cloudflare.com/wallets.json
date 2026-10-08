@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/wallets/",
+  "file": "_subdomains/blog.cloudflare.com/wallets.md",
+  "title": "Announcing Cloudflare Wallets: The programmable wallet for the agentic Internet | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:15.978718+00:00",
+  "html_len": 289698,
+  "md_len": 64656,
+  "depth": 0,
+  "phase": 2
+}

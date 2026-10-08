@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/making-full-stack-easier-d1-ga-hyperdrive-queues/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/making-full-stack-easier-d1-ga-hyperdrive-queues.md",
+  "title": "\u4f7f\u7528\u6b63\u5f0f\u53d1\u5e03\u7684 D1 \u4ee5\u53ca Hyperdrive\u3001Queues \u548c Workers Analytics Engine \u66f4\u65b0\uff0c\u7b80\u5316\u72b6\u6001\u7ba1\u7406 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:41:32.493052+00:00",
+  "html_len": 249701,
+  "md_len": 34818,
+  "depth": 0,
+  "phase": 2
+}

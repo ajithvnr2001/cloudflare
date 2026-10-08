@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/tag/typescript/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/tag/typescript.md",
+  "title": "\"TypeScript\" \u30bf\u30b0\u306e\u6295\u7a3f \u2014 Cloudflare \u30d6\u30ed\u30b0",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (676 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:19:04.912046+00:00",
+  "html_len": 149974,
+  "md_len": 3123,
+  "depth": 1,
+  "phase": 2
+}

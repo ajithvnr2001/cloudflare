@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-cloudflare-for-campaigns/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-cloudflare-for-campaigns.md",
+  "title": "Introducing Cloudflare for Campaigns | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:28.773850+00:00",
+  "html_len": 289158,
+  "md_len": 66685,
+  "depth": 0,
+  "phase": 2
+}

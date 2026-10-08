@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/private-attestation-token-device-posture/",
+  "file": "_subdomains/blog.cloudflare.com/private-attestation-token-device-posture.md",
+  "title": "Verify Apple devices with no installed software | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:17.817389+00:00",
+  "html_len": 279147,
+  "md_len": 59974,
+  "depth": 0,
+  "phase": 2
+}

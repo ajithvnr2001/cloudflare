@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/multicloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/multicloudflare.md",
+  "title": "MultiCloud... flare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:16.195103+00:00",
+  "html_len": 279709,
+  "md_len": 60292,
+  "depth": 0,
+  "phase": 2
+}

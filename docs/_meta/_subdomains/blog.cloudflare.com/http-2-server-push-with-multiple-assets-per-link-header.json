@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/http-2-server-push-with-multiple-assets-per-link-header/",
+  "file": "_subdomains/blog.cloudflare.com/http-2-server-push-with-multiple-assets-per-link-header.md",
+  "title": "HTTP/2 Server Push with multiple assets per Link header | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:40.413720+00:00",
+  "html_len": 282553,
+  "md_len": 58543,
+  "depth": 0,
+  "phase": 2
+}

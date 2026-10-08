@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/diy-byoip/",
+  "file": "_subdomains/blog.cloudflare.com/diy-byoip.md",
+  "title": "DIY BYOIP- a new way to Bring Your Own IP prefixes to Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:50.016834+00:00",
+  "html_len": 313337,
+  "md_len": 71320,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/mcp-v2/",
+  "file": "_subdomains/blog.cloudflare.com/mcp-v2.md",
+  "title": "The next generation of MCP | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:20.021921+00:00",
+  "html_len": 310159,
+  "md_len": 73915,
+  "depth": 0,
+  "phase": 2
+}

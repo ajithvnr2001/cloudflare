@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/mexico-city/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/mexico-city.md",
+  "title": "Ciudad de M\u00e9xico, centro de datos n\u00famero 134 | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:35.756106+00:00",
+  "html_len": 197295,
+  "md_len": 22476,
+  "depth": 0,
+  "phase": 2
+}

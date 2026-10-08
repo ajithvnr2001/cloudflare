@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/r2/tutorials/",
+  "file": "r2/tutorials.md",
+  "title": "Tutorials \u00b7 Cloudflare R2 docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:12:49.229372+00:00",
+  "html_len": 107440,
+  "md_len": 3004,
+  "depth": 0
+}

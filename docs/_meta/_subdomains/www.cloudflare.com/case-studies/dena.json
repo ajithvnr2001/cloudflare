@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/dena/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/dena.md",
+  "title": "DeNA & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:26.631188+00:00",
+  "html_len": 204500,
+  "md_len": 6899,
+  "depth": 0,
+  "phase": 2
+}

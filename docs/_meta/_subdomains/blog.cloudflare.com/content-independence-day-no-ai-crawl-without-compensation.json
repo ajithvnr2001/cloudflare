@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/content-independence-day-no-ai-crawl-without-compensation/",
+  "file": "_subdomains/blog.cloudflare.com/content-independence-day-no-ai-crawl-without-compensation.md",
+  "title": "Content Independence Day: no AI crawl without compensation! | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:49.498640+00:00",
+  "html_len": 287370,
+  "md_len": 60907,
+  "depth": 0,
+  "phase": 2
+}

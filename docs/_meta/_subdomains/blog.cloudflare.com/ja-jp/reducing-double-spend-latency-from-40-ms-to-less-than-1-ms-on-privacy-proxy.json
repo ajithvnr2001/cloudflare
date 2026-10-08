@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/reducing-double-spend-latency-from-40-ms-to-less-than-1-ms-on-privacy-proxy/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/reducing-double-spend-latency-from-40-ms-to-less-than-1-ms-on-privacy-proxy.md",
+  "title": "\u30d7\u30e9\u30a4\u30d0\u30b7\u30fc\u30d7\u30ed\u30ad\u30b7\u3067\u3001\u9045\u5ef6\u309240\u30df\u30ea\u79d2\u304b\u30891\u30df\u30ea\u79d2\u672a\u6e80\u306b\u4f4e\u6e1b | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:00.004568+00:00",
+  "html_len": 235297,
+  "md_len": 35205,
+  "depth": 0,
+  "phase": 2
+}

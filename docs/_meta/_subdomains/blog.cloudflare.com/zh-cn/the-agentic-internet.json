@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/the-agentic-internet/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/the-agentic-internet.md",
+  "title": "\u6784\u5efa\u5f00\u653e\u7684\u667a\u80fd\u4f53\u5f0f\u4e92\u8054\u7f51\uff1a\u53ef\u8bfb\u3001\u53ef\u53d1\u73b0\u3001\u53ef\u8c03\u7528\u3001\u53ef\u652f\u4ed8 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:57.003284+00:00",
+  "html_len": 208068,
+  "md_len": 28446,
+  "depth": 0,
+  "phase": 2
+}

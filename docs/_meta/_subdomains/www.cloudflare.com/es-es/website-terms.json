@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/es-es/website-terms/",
+  "file": "_subdomains/www.cloudflare.com/es-es/website-terms.md",
+  "title": "Terms of Use | Cloudflare",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (89 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:16:27.888739+00:00",
+  "html_len": 552976,
+  "md_len": 23383,
+  "depth": 1,
+  "phase": 2
+}

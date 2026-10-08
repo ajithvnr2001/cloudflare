@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/cloudflare-for-teams-products/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/cloudflare-for-teams-products.md",
+  "title": "Seguridad en Internet con Cloudflare for Teams | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:39.947502+00:00",
+  "html_len": 226349,
+  "md_len": 45130,
+  "depth": 0,
+  "phase": 2
+}

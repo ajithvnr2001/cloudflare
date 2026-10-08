@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/west-ham-united-football-club/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/west-ham-united-football-club.md",
+  "title": "West Ham United FC | Cloudflare & Skye Cloud Case Study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:55.434329+00:00",
+  "html_len": 208899,
+  "md_len": 8225,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://playground.ai.cloudflare.com/",
+  "file": "_subdomains/playground.ai.cloudflare.com/_index.md",
+  "title": "AI Playground",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (67 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T07:22:23.220556+00:00",
+  "html_len": 26014,
+  "md_len": 1197,
+  "depth": 1
+}

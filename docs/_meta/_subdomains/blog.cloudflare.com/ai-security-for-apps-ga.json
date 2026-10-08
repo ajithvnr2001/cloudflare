@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ai-security-for-apps-ga/",
+  "file": "_subdomains/blog.cloudflare.com/ai-security-for-apps-ga.md",
+  "title": "AI Security for Apps is now generally available | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:22.832656+00:00",
+  "html_len": 304928,
+  "md_len": 67028,
+  "depth": 0,
+  "phase": 2
+}

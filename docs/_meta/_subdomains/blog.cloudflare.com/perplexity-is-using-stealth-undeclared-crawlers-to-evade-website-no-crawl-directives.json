@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/perplexity-is-using-stealth-undeclared-crawlers-to-evade-website-no-crawl-directives/",
+  "file": "_subdomains/blog.cloudflare.com/perplexity-is-using-stealth-undeclared-crawlers-to-evade-website-no-crawl-directives.md",
+  "title": "Perplexity is using stealth, undeclared crawlers to evade website no-crawl directives | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:08.533845+00:00",
+  "html_len": 306337,
+  "md_len": 68506,
+  "depth": 0,
+  "phase": 2
+}

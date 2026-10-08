@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/introducing-cryptographic-attestation-of-personhood/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/introducing-cryptographic-attestation-of-personhood.md",
+  "title": "\u4eba\u7c7b\u6bcf\u5929\u5728 CAPTCHA \u4e0a\u6d6a\u8d39\u5c06\u8fd1 500 \u5e74\u65f6\u95f4\uff0c\u662f\u65f6\u5019\u7ed3\u675f\u8fd9\u79cd\u8822\u4e8b\u4e86 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:33.591271+00:00",
+  "html_len": 217550,
+  "md_len": 32594,
+  "depth": 0,
+  "phase": 2
+}

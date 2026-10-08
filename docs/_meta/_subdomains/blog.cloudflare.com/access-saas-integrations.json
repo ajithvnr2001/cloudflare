@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/access-saas-integrations/",
+  "file": "_subdomains/blog.cloudflare.com/access-saas-integrations.md",
+  "title": "Zero Trust controls for your SaaS applications | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:59.456346+00:00",
+  "html_len": 288668,
+  "md_len": 62497,
+  "depth": 0,
+  "phase": 2
+}

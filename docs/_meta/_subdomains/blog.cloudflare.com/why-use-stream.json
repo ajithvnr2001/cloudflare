@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/why-use-stream/",
+  "file": "_subdomains/blog.cloudflare.com/why-use-stream.md",
+  "title": "Use Cloudflare Stream to build secure, reliable video apps | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:24.887219+00:00",
+  "html_len": 272816,
+  "md_len": 58075,
+  "depth": 0,
+  "phase": 2
+}

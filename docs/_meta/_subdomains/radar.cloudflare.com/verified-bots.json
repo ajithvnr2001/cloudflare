@@ -1,0 +1,10 @@
+{
+  "url": "https://radar.cloudflare.com/verified-bots/",
+  "file": "_subdomains/radar.cloudflare.com/verified-bots.md",
+  "title": "Bots Directory | Cloudflare Radar",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (278 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T07:25:55.315113+00:00",
+  "html_len": 164042,
+  "md_len": 1255,
+  "depth": 1
+}

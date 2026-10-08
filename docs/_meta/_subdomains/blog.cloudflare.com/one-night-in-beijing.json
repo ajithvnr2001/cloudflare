@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/one-night-in-beijing/",
+  "file": "_subdomains/blog.cloudflare.com/one-night-in-beijing.md",
+  "title": "One night in Beijing | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:19.868740+00:00",
+  "html_len": 276004,
+  "md_len": 56358,
+  "depth": 0,
+  "phase": 2
+}

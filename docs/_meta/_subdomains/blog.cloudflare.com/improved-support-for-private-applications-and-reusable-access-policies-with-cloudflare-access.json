@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/improved-support-for-private-applications-and-reusable-access-policies-with-cloudflare-access/",
+  "file": "_subdomains/blog.cloudflare.com/improved-support-for-private-applications-and-reusable-access-policies-with-cloudflare-access.md",
+  "title": "Improved support for private applications and reusable access policies with Cloudflare Access | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:57.548378+00:00",
+  "html_len": 345267,
+  "md_len": 81507,
+  "depth": 0,
+  "phase": 2
+}

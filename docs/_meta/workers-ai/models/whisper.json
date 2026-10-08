@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers-ai/models/whisper/",
+  "file": "workers-ai/models/whisper.md",
+  "title": "whisper (OpenAI) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:06.667737+00:00",
+  "html_len": 113286,
+  "md_len": 1653,
+  "depth": 0
+}

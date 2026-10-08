@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-expanding-the-ipv6-web/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-expanding-the-ipv6-web.md",
+  "title": "CloudFlare Expanding the IPv6 Web | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:12.834890+00:00",
+  "html_len": 265208,
+  "md_len": 53877,
+  "depth": 0,
+  "phase": 2
+}

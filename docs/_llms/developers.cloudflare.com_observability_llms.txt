@@ -1,0 +1,42 @@
+# Cloudflare Observability
+
+Find Cloudflare documentation for logs, traces, analytics, alerts, telemetry export, and dashboards
+
+> Links below point directly to Markdown versions of each page. Any page can also be retrieved as Markdown by sending an `Accept: text/markdown` header to the page's URL without the `index.md` suffix (for example, `curl -H "Accept: text/markdown" https://developers.cloudflare.com/observability/`).
+>
+> For other Cloudflare products, see the [Cloudflare documentation directory](https://developers.cloudflare.com/llms.txt).
+
+## Overview
+
+- [Cloudflare Observability](https://developers.cloudflare.com/observability/index.md): Find Cloudflare tools for observability data and workflows.
+
+## Logs
+
+- [Logs](https://developers.cloudflare.com/observability/logs/index.md): Query and visualize logs from supported Cloudflare products.
+- [Datasets](https://developers.cloudflare.com/observability/logs/datasets/index.md): Review scope, size, and retention for supported Logs datasets.
+
+## Traces
+
+- [Traces](https://developers.cloudflare.com/observability/traces/index.md): Inspect production request paths in Cloudflare Observability.
+- [Configuration](https://developers.cloudflare.com/observability/traces/configuration/index.md): Choose how each domain samples, stores, exports, and connects traces.
+- [Spans](https://developers.cloudflare.com/observability/traces/spans/index.md): Understand spans captured as requests move through Cloudflare.
+- [Workers tracing](https://developers.cloudflare.com/workers/observability/traces/index.md)
+
+## Alerts
+
+- [Alerts](https://developers.cloudflare.com/notifications/index.md)
+
+## Export
+
+- [Export](https://developers.cloudflare.com/observability/export/index.md): Export Cloudflare logs and traces to external destinations.
+- [Logpush](https://developers.cloudflare.com/logs/logpush/index.md)
+- [OpenTelemetry export](https://developers.cloudflare.com/observability/export/opentelemetry/index.md): Export Cloudflare logs and traces to OpenTelemetry destinations.
+- [Export to Axiom](https://developers.cloudflare.com/observability/export/opentelemetry/axiom/index.md): Send Cloudflare traces and logs to Axiom with OpenTelemetry.
+- [Export to Grafana Cloud](https://developers.cloudflare.com/observability/export/opentelemetry/grafana-cloud/index.md): Send Cloudflare traces and logs to Grafana Cloud.
+- [Export to Honeycomb](https://developers.cloudflare.com/observability/export/opentelemetry/honeycomb/index.md): Send Cloudflare traces and logs to Honeycomb with OpenTelemetry.
+- [Export to PostHog](https://developers.cloudflare.com/observability/export/opentelemetry/posthog/index.md): Send Cloudflare logs to PostHog with OpenTelemetry.
+- [Export to Sentry](https://developers.cloudflare.com/observability/export/opentelemetry/sentry/index.md): Send Cloudflare traces and logs to Sentry with OpenTelemetry.
+
+## Pricing
+
+- [Pricing](https://developers.cloudflare.com/observability/pricing/index.md): Understand Cloudflare Observability ingestion and storage pricing.

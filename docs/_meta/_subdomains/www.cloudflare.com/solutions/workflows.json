@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/solutions/workflows/",
+  "file": "_subdomains/www.cloudflare.com/solutions/workflows.md",
+  "title": "Durable Workflows - Multi-Step Application Engine",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:17.795977+00:00",
+  "html_len": 431152,
+  "md_len": 17150,
+  "depth": 0,
+  "phase": 2
+}

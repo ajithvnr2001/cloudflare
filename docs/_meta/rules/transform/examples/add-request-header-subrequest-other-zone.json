@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/transform/examples/add-request-header-subrequest-other-zone/",
+  "file": "rules/transform/examples/add-request-header-subrequest-other-zone.md",
+  "title": "Add a request header for subrequests from other zones \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:55.785338+00:00",
+  "html_len": 132572,
+  "md_len": 2089,
+  "depth": 0
+}

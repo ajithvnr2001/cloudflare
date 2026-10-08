@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zero-trust-sase-and-sse-foundational-concepts-for-your-next-generation-network/",
+  "file": "_subdomains/blog.cloudflare.com/zero-trust-sase-and-sse-foundational-concepts-for-your-next-generation-network.md",
+  "title": "Zero Trust, SASE and SSE: foundational concepts for your next-generation network | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:52.253501+00:00",
+  "html_len": 315698,
+  "md_len": 82244,
+  "depth": 0,
+  "phase": 2
+}

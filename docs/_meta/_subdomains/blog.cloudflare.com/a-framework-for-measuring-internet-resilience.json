@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/a-framework-for-measuring-internet-resilience/",
+  "file": "_subdomains/blog.cloudflare.com/a-framework-for-measuring-internet-resilience.md",
+  "title": "A framework for measuring Internet resilience | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:00.888380+00:00",
+  "html_len": 319825,
+  "md_len": 85603,
+  "depth": 0,
+  "phase": 2
+}

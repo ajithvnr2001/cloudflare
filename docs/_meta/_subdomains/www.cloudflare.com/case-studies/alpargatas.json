@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/alpargatas/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/alpargatas.md",
+  "title": "Alpargatas & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:19.110254+00:00",
+  "html_len": 208532,
+  "md_len": 5807,
+  "depth": 0,
+  "phase": 2
+}

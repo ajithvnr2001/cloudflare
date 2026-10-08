@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/how-we-built-spectrum/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/how-we-built-spectrum.md",
+  "title": "Wie wir die Linux-Firewall missbrauchten, um Spectrum zu bauen | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:25.477410+00:00",
+  "html_len": 244378,
+  "md_len": 36930,
+  "depth": 0,
+  "phase": 2
+}

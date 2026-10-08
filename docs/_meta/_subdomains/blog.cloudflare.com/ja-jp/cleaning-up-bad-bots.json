@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/cleaning-up-bad-bots/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/cleaning-up-bad-bots.md",
+  "title": "\u60aa\u8cea\u30dc\u30c3\u30c8\u306e\u4e00\u6383\uff08\u3068\u6c17\u5019\u306b\u3064\u3044\u3066\uff09 | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:53.520926+00:00",
+  "html_len": 209439,
+  "md_len": 30691,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/handelsblatt-media-group-digital-transformation/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/handelsblatt-media-group-digital-transformation.md",
+  "title": "Handelsblatt Media Group",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:32.807343+00:00",
+  "html_len": 210270,
+  "md_len": 7189,
+  "depth": 0,
+  "phase": 2
+}

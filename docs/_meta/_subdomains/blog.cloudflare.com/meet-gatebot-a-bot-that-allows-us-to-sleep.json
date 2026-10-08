@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/meet-gatebot-a-bot-that-allows-us-to-sleep/",
+  "file": "_subdomains/blog.cloudflare.com/meet-gatebot-a-bot-that-allows-us-to-sleep.md",
+  "title": "Meet Gatebot - a bot that allows us to sleep | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:02.707503+00:00",
+  "html_len": 295083,
+  "md_len": 66291,
+  "depth": 0,
+  "phase": 2
+}

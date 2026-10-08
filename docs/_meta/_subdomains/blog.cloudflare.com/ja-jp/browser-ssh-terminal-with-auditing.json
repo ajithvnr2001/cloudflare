@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/browser-ssh-terminal-with-auditing/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/browser-ssh-terminal-with-auditing.md",
+  "title": "\u304a\u4f7f\u3044\u306eWeb\u30d6\u30e9\u30a6\u30b6\u306bZero Trust\u30bf\u30fc\u30df\u30ca\u30eb\u3092\u5c0e\u5165 | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:29.391782+00:00",
+  "html_len": 217217,
+  "md_len": 33146,
+  "depth": 0,
+  "phase": 2
+}

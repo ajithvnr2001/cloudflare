@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/thoughts-on-abuse/",
+  "file": "_subdomains/blog.cloudflare.com/thoughts-on-abuse.md",
+  "title": "Thoughts on Abuse | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:59.810840+00:00",
+  "html_len": 276288,
+  "md_len": 61273,
+  "depth": 0,
+  "phase": 2
+}

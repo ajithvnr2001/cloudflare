@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cacheing-the-uncacheable-cloudflares-railgun-73454/",
+  "file": "_subdomains/blog.cloudflare.com/cacheing-the-uncacheable-cloudflares-railgun-73454.md",
+  "title": "Caching the uncacheable: CloudFlare's Railgun | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:00.448764+00:00",
+  "html_len": 277616,
+  "md_len": 60037,
+  "depth": 0,
+  "phase": 2
+}

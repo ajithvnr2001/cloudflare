@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cyberattacks-since-the-murder-of-george-floyd/",
+  "file": "_subdomains/blog.cloudflare.com/cyberattacks-since-the-murder-of-george-floyd.md",
+  "title": "Cyberattacks since the murder of George Floyd | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:10.135662+00:00",
+  "html_len": 289947,
+  "md_len": 61417,
+  "depth": 0,
+  "phase": 2
+}

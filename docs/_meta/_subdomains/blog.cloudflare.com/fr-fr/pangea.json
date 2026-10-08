@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/pangea/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/pangea.md",
+  "title": "Annonce du projet Pangea : permettre aux collectivit\u00e9s mal desservies d'acc\u00e9der \u00e0 Internet gratuitement | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:01.073650+00:00",
+  "html_len": 237130,
+  "md_len": 45348,
+  "depth": 0,
+  "phase": 2
+}

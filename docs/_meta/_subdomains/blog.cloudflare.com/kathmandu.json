@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/kathmandu/",
+  "file": "_subdomains/blog.cloudflare.com/kathmandu.md",
+  "title": "Kathmandu, Nepal is data center 123 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:44.984572+00:00",
+  "html_len": 283625,
+  "md_len": 60749,
+  "depth": 0,
+  "phase": 2
+}

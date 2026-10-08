@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/email-routing-subdomains/",
+  "file": "_subdomains/blog.cloudflare.com/email-routing-subdomains.md",
+  "title": "Email Routing subdomain support, new APIs and security protocols | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:07.672861+00:00",
+  "html_len": 342008,
+  "md_len": 77113,
+  "depth": 0,
+  "phase": 2
+}

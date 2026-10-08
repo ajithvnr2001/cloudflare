@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/assembly-within-bpf-tail-calls-on-x86-and-arm/",
+  "file": "_subdomains/blog.cloudflare.com/assembly-within-bpf-tail-calls-on-x86-and-arm.md",
+  "title": "Assembly within! BPF tail calls on x86 and ARM | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:47.817960+00:00",
+  "html_len": 398230,
+  "md_len": 98053,
+  "depth": 0,
+  "phase": 2
+}

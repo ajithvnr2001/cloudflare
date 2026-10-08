@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/amp-optimizer-on-cloudflare-workers/",
+  "file": "_subdomains/blog.cloudflare.com/amp-optimizer-on-cloudflare-workers.md",
+  "title": "Improve your page experience with AMP and Cloudflare Workers Unbound | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:29.355940+00:00",
+  "html_len": 289539,
+  "md_len": 63706,
+  "depth": 0,
+  "phase": 2
+}

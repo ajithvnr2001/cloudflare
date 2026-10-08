@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/id-id/replace-your-hardware-firewalls-with-cloudflare-one/",
+  "file": "_subdomains/blog.cloudflare.com/id-id/replace-your-hardware-firewalls-with-cloudflare-one.md",
+  "title": "Ganti firewall perangkat keras Anda dengan Cloudflare One | Blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:50.851083+00:00",
+  "html_len": 196835,
+  "md_len": 28494,
+  "depth": 0,
+  "phase": 2
+}

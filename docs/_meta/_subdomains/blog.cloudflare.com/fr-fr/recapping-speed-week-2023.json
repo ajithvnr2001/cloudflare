@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/recapping-speed-week-2023/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/recapping-speed-week-2023.md",
+  "title": "R\u00e9capitulatif de la Speed Week 2023 | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:33.525806+00:00",
+  "html_len": 253949,
+  "md_len": 60181,
+  "depth": 0,
+  "phase": 2
+}

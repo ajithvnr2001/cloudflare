@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tunnel-for-everyone/",
+  "file": "_subdomains/blog.cloudflare.com/tunnel-for-everyone.md",
+  "title": "A Boring Announcement: Free Tunnels for Everyone | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:28.073927+00:00",
+  "html_len": 279521,
+  "md_len": 60829,
+  "depth": 0,
+  "phase": 2
+}

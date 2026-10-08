@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/dls-2022/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/dls-2022.md",
+  "title": "Navegar no cen\u00e1rio de localiza\u00e7\u00e3o de dados em constante mudan\u00e7a com o Data Localization Suite da Cloudflare | Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:23.834639+00:00",
+  "html_len": 183743,
+  "md_len": 20170,
+  "depth": 0,
+  "phase": 2
+}

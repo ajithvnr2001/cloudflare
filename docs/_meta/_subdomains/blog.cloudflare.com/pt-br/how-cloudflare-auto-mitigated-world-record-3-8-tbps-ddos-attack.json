@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/how-cloudflare-auto-mitigated-world-record-3-8-tbps-ddos-attack/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/how-cloudflare-auto-mitigated-world-record-3-8-tbps-ddos-attack.md",
+  "title": "Como a Cloudflare mitigou automaticamente um ataque DDoS recorde mundial de 3,8 Tbps | Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:13.389561+00:00",
+  "html_len": 232265,
+  "md_len": 33277,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/building-a-serverless-slack-bot-using-cloudflare-workers/",
+  "file": "_subdomains/blog.cloudflare.com/building-a-serverless-slack-bot-using-cloudflare-workers.md",
+  "title": "Building a serverless Slack bot using Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:30.229136+00:00",
+  "html_len": 340187,
+  "md_len": 73382,
+  "depth": 0,
+  "phase": 2
+}

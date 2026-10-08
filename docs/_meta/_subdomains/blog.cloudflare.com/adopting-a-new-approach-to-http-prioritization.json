@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/adopting-a-new-approach-to-http-prioritization/",
+  "file": "_subdomains/blog.cloudflare.com/adopting-a-new-approach-to-http-prioritization.md",
+  "title": "Adopting a new approach to HTTP prioritization | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:30.510359+00:00",
+  "html_len": 313760,
+  "md_len": 84811,
+  "depth": 0,
+  "phase": 2
+}

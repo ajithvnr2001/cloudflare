@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/improving-html-time-to-first-byte/",
+  "file": "_subdomains/blog.cloudflare.com/improving-html-time-to-first-byte.md",
+  "title": "Improving HTML Time to First Byte | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:25.675500+00:00",
+  "html_len": 311508,
+  "md_len": 69067,
+  "depth": 0,
+  "phase": 2
+}

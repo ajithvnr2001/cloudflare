@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/glossary/",
+  "file": "waf/glossary.md",
+  "title": "Glossary \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:42.916930+00:00",
+  "html_len": 133642,
+  "md_len": 3703,
+  "depth": 0
+}

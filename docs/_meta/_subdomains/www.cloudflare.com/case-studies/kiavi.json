@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/kiavi/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/kiavi.md",
+  "title": "Cloudflare and Kiavi",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:36.039007+00:00",
+  "html_len": 203115,
+  "md_len": 7381,
+  "depth": 0,
+  "phase": 2
+}

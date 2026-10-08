@@ -1,0 +1,10 @@
+{
+  "url": "https://try.cloudflare.com/",
+  "file": "_subdomains/try.cloudflare.com/_index.md",
+  "title": "Cloudflare Quick Tunnels",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:26:29.863042+00:00",
+  "html_len": 49496,
+  "md_len": 2696,
+  "depth": 1
+}

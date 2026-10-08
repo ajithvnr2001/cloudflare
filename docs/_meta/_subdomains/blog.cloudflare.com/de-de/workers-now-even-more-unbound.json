@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/workers-now-even-more-unbound/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/workers-now-even-more-unbound.md",
+  "title": "Workers, jetzt mit noch weniger Einschr\u00e4nkungen: 15 Minuten, 100 Skripte und keine Egress-Geb\u00fchren | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:19.577287+00:00",
+  "html_len": 204102,
+  "md_len": 29020,
+  "depth": 0,
+  "phase": 2
+}

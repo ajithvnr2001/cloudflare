@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-story-of-a-little-dns-easter-egg/",
+  "file": "_subdomains/blog.cloudflare.com/the-story-of-a-little-dns-easter-egg.md",
+  "title": "The story of a little DNS easter egg | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:34.796152+00:00",
+  "html_len": 293549,
+  "md_len": 60621,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/cloudflare-ai-audit-control-ai-content-crawlers/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/cloudflare-ai-audit-control-ai-content-crawlers.md",
+  "title": "Commencez \u00e0 auditer et \u00e0 contr\u00f4ler les mod\u00e8les IA qui acc\u00e8dent \u00e0 votre contenu | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:39:06.023455+00:00",
+  "html_len": 244982,
+  "md_len": 44764,
+  "depth": 0,
+  "phase": 2
+}

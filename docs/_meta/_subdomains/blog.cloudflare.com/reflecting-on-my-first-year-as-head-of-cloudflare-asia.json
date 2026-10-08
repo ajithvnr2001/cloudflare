@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/reflecting-on-my-first-year-as-head-of-cloudflare-asia/",
+  "file": "_subdomains/blog.cloudflare.com/reflecting-on-my-first-year-as-head-of-cloudflare-asia.md",
+  "title": "Reflecting on my first year as Head of Cloudflare Asia | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:19.369349+00:00",
+  "html_len": 286544,
+  "md_len": 61971,
+  "depth": 0,
+  "phase": 2
+}

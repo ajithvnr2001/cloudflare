@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/announcing-the-beta-for-warp-for-macos-and-windows/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/announcing-the-beta-for-warp-for-macos-and-windows.md",
+  "title": "macOS \u3068 Windows\u5411\u3051\u306eWARP\u30d9\u30fc\u30bf\u7248\u306e\u767a\u8868 | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:59.791188+00:00",
+  "html_len": 203214,
+  "md_len": 27070,
+  "depth": 0,
+  "phase": 2
+}

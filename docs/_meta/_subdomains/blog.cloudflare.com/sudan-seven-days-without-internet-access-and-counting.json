@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/sudan-seven-days-without-internet-access-and-counting/",
+  "file": "_subdomains/blog.cloudflare.com/sudan-seven-days-without-internet-access-and-counting.md",
+  "title": "Sudan: seven days without Internet access (and counting) | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:53.014266+00:00",
+  "html_len": 277587,
+  "md_len": 56741,
+  "depth": 0,
+  "phase": 2
+}

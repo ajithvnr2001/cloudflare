@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/sandbox-ga/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/sandbox-ga.md",
+  "title": "Sandboxes \u6b63\u5f0f\u767c\u4f48\uff0c\u70ba\u667a\u6167\u9ad4\u63d0\u4f9b\u5c08\u5c6c\u96fb\u8166 | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:17.465667+00:00",
+  "html_len": 227687,
+  "md_len": 28580,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/botbase-for-operators/",
+  "file": "_subdomains/blog.cloudflare.com/botbase-for-operators.md",
+  "title": "BotBase for Operators: A clearer path to joining Cloudflare's directory of bots and agents | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:38.675954+00:00",
+  "html_len": 293631,
+  "md_len": 66631,
+  "depth": 0,
+  "phase": 2
+}

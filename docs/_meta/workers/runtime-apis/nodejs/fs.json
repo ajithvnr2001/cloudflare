@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/runtime-apis/nodejs/fs/",
+  "file": "workers/runtime-apis/nodejs/fs.md",
+  "title": "fs \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:45.900272+00:00",
+  "html_len": 190642,
+  "md_len": 7189,
+  "depth": 0
+}

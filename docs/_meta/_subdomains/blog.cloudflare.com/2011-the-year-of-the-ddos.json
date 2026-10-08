@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/2011-the-year-of-the-ddos/",
+  "file": "_subdomains/blog.cloudflare.com/2011-the-year-of-the-ddos.md",
+  "title": "2011: The Year of the DDoS | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:13.471932+00:00",
+  "html_len": 268235,
+  "md_len": 54692,
+  "depth": 0,
+  "phase": 2
+}

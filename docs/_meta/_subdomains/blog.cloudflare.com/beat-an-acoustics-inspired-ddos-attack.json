@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/beat-an-acoustics-inspired-ddos-attack/",
+  "file": "_subdomains/blog.cloudflare.com/beat-an-acoustics-inspired-ddos-attack.md",
+  "title": "Beat - An Acoustics Inspired DDoS Attack | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:41.947824+00:00",
+  "html_len": 301313,
+  "md_len": 64389,
+  "depth": 0,
+  "phase": 2
+}

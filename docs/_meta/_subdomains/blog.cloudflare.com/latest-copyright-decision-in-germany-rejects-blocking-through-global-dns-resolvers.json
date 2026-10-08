@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/latest-copyright-decision-in-germany-rejects-blocking-through-global-dns-resolvers/",
+  "file": "_subdomains/blog.cloudflare.com/latest-copyright-decision-in-germany-rejects-blocking-through-global-dns-resolvers.md",
+  "title": "Latest copyright decision in Germany rejects blocking through global DNS resolvers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:05.489354+00:00",
+  "html_len": 286120,
+  "md_len": 67888,
+  "depth": 0,
+  "phase": 2
+}

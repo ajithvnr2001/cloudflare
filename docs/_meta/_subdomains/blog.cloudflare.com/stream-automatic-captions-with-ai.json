@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/stream-automatic-captions-with-ai/",
+  "file": "_subdomains/blog.cloudflare.com/stream-automatic-captions-with-ai.md",
+  "title": "Introducing Stream Generated Captions, powered by Workers AI | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:53.705795+00:00",
+  "html_len": 296394,
+  "md_len": 64505,
+  "depth": 0,
+  "phase": 2
+}

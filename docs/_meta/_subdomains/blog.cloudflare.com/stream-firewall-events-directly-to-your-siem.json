@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/stream-firewall-events-directly-to-your-siem/",
+  "file": "_subdomains/blog.cloudflare.com/stream-firewall-events-directly-to-your-siem.md",
+  "title": "Stream Firewall Events directly to your SIEM | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:14.139579+00:00",
+  "html_len": 380150,
+  "md_len": 80448,
+  "depth": 0,
+  "phase": 2
+}

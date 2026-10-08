@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/changelog/post/2026-05-01-dynamic-workflows/",
+  "file": "changelog/post/2026-05-01-dynamic-workflows.md",
+  "title": "Run Workflows inside Dynamic Workers with the @cloudflare/dynamic-workflows library \u00b7 Changelog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:06:51.139544+00:00",
+  "html_len": 69749,
+  "md_len": 4131,
+  "depth": 0
+}

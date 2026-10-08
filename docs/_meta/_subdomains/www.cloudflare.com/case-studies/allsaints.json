@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/allsaints/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/allsaints.md",
+  "title": "AllSaints",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:18.467342+00:00",
+  "html_len": 208337,
+  "md_len": 7843,
+  "depth": 0,
+  "phase": 2
+}

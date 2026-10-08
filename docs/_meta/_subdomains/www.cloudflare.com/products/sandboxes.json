@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/products/sandboxes/",
+  "file": "_subdomains/www.cloudflare.com/products/sandboxes.md",
+  "title": "Cloudflare Sandboxes - Secure Code Execution",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:06.787127+00:00",
+  "html_len": 340402,
+  "md_len": 10636,
+  "depth": 0,
+  "phase": 2
+}

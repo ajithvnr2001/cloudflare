@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/introducing-agent-lee/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/introducing-agent-lee.md",
+  "title": "Agent Lee\u306e\u7d39\u4ecb - Cloudflare\u30b9\u30bf\u30c3\u30af\u306e\u65b0\u305f\u306a\u30a4\u30f3\u30bf\u30fc\u30d5\u30a7\u30a4\u30b9 | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:11.065099+00:00",
+  "html_len": 223891,
+  "md_len": 33304,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/tag/saas/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/tag/saas.md",
+  "title": "Articles tagu\u00e9s \u00ab Saas (FR) \u00bb \u2014 Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:13:22.645326+00:00",
+  "html_len": 117220,
+  "md_len": 2816,
+  "depth": 1,
+  "phase": 2
+}

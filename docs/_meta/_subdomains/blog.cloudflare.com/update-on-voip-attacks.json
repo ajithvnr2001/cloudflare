@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/update-on-voip-attacks/",
+  "file": "_subdomains/blog.cloudflare.com/update-on-voip-attacks.md",
+  "title": "Update on recent VoIP attacks: What should I do if I\u2019m attacked? | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:01.090921+00:00",
+  "html_len": 284659,
+  "md_len": 60898,
+  "depth": 0,
+  "phase": 2
+}

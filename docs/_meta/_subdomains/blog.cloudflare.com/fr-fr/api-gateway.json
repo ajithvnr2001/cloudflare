@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/api-gateway/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/api-gateway.md",
+  "title": "Annonce de la passerelle pour API de Cloudflare | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:36.582179+00:00",
+  "html_len": 246334,
+  "md_len": 44750,
+  "depth": 0,
+  "phase": 2
+}

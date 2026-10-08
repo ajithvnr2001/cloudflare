@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/managed-rules/check-for-exposed-credentials/test-configuration/",
+  "file": "waf/managed-rules/check-for-exposed-credentials/test-configuration.md",
+  "title": "Test your exposed credentials checks configuration \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:43.618742+00:00",
+  "html_len": 135521,
+  "md_len": 2333,
+  "depth": 0
+}

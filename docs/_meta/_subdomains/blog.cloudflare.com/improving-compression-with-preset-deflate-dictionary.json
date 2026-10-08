@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/improving-compression-with-preset-deflate-dictionary/",
+  "file": "_subdomains/blog.cloudflare.com/improving-compression-with-preset-deflate-dictionary.md",
+  "title": "Improving compression with a preset DEFLATE dictionary | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:06.778499+00:00",
+  "html_len": 325604,
+  "md_len": 64669,
+  "depth": 0,
+  "phase": 2
+}

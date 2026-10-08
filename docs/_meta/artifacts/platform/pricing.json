@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/artifacts/platform/pricing/",
+  "file": "artifacts/platform/pricing.md",
+  "title": "Pricing \u00b7 Cloudflare Artifacts docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:05:21.996825+00:00",
+  "html_len": 98740,
+  "md_len": 2154,
+  "depth": 0
+}

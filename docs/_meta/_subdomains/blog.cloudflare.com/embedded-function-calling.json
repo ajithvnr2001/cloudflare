@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/embedded-function-calling/",
+  "file": "_subdomains/blog.cloudflare.com/embedded-function-calling.md",
+  "title": "Embedded function calling in Workers AI: easier, smarter, faster | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:45.472990+00:00",
+  "html_len": 304984,
+  "md_len": 65642,
+  "depth": 0,
+  "phase": 2
+}

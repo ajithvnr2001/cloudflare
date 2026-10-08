@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/is-cyber-monday-real/",
+  "file": "_subdomains/blog.cloudflare.com/is-cyber-monday-real.md",
+  "title": "Is Cyber Monday Real? | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:14.595941+00:00",
+  "html_len": 263634,
+  "md_len": 55127,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/total-eclipse-internet-traffic-impacts-mexico-us-canada/",
+  "file": "_subdomains/blog.cloudflare.com/total-eclipse-internet-traffic-impacts-mexico-us-canada.md",
+  "title": "Total eclipse of the Internet: traffic impacts in Mexico, the US, and Canada | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:50.021557+00:00",
+  "html_len": 324240,
+  "md_len": 63726,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/squeezing-the-firehose/",
+  "file": "_subdomains/blog.cloudflare.com/squeezing-the-firehose.md",
+  "title": "Squeezing the firehose: getting the most from Kafka compression | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:43.961807+00:00",
+  "html_len": 412440,
+  "md_len": 91591,
+  "depth": 0,
+  "phase": 2
+}

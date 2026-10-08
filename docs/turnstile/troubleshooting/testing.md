@@ -1,0 +1,181 @@
+---
+url: https://developers.cloudflare.com/turnstile/troubleshooting/testing/
+title: Test your Turnstile implementation \u00b7 Cloudflare Turnstile docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:16:08.595523+00:00
+---
+
+# Test your Turnstile implementation · Cloudflare Turnstile docs
+
+> Source: https://developers.cloudflare.com/turnstile/troubleshooting/testing/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Turnstile](https://developers.cloudflare.com/turnstile/)
+  3. /Troubleshooting
+  4. /Testing
+
+
+
+# Test your Turnstile implementation
+
+Last updated May 5, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/turnstile/troubleshooting/testing/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewTest sitekeysTest secret keysImplementation Local development Client-side testing Server-side testing Environment configurationDummy token behavior Token generation Token validation Validation responseTesting scenarios
+
+Use dummy sitekeys and secret keys to test your Turnstile implementation without triggering real challenges that would interfere with automated testing suites.
+
+Automated testing suites (like Selenium, Cypress, or Playwright) are detected as bots by Turnstile, which can cause:
+
+  * Tests to fail when Turnstile blocks automated browsers
+  * Unpredictable test results due to challenge variations
+  * Interference with form submission testing
+  * Difficulty testing complete user flows
+
+
+
+Dummy keys solve this by providing predictable, controlled responses that work with automated testing tools.
+
+## Test sitekeys
+
+Sitekey | Behavior | Widget Type | Use case  
+---|---|---|---  
+`1x00000000000000000000AA` | Always passes | Visible | Test successful form submissions  
+`2x00000000000000000000AB` | Always fails | Visible | Test error handling and retry logic  
+`1x00000000000000000000BB` | Always passes | Invisible | Test invisible widget success flows  
+`2x00000000000000000000BB` | Always fails | Invisible | Test invisible widget error handling  
+`3x00000000000000000000FF` | Forces interactive challenge | Visible | Test user interaction scenarios  
+  
+## Test secret keys
+
+Use these secret keys for server-side validation testing:
+
+Secret key | Behavior | Use case  
+---|---|---  
+`1x0000000000000000000000000000000AA` | Always passes validation | Test successful token validation  
+`2x0000000000000000000000000000000AA` | Always fails validation | Test validation error handling  
+`3x0000000000000000000000000000000AA` | Returns "token already spent" error | Test duplicate token handling  
+  
+* * *
+
+## Implementation
+
+### Local development
+
+Test keys work on any domain, including:
+
+  * `localhost`
+  * `127.0.0.1`
+  * `0.0.0.0`
+  * Any development domain
+
+
+
+Cloudflare recommends that sitekeys used in production do not allow local domains (`localhost` or `127.0.0.1`), but users can choose to add local domains to the list of allowed domains under [Hostname Management](https://developers.cloudflare.com/turnstile/additional-configuration/hostname-management/). Dummy sitekeys can be used from any domain, including on `localhost`.
+
+### Client-side testing
+
+Replace your production sitekey with a test sitekey.
+    
+    
+    <!-- Development/Testing -->
+    <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA"></div>
+    
+    <!-- Production -->
+    <div class="cf-turnstile" data-sitekey="your-real-sitekey"></div>
+
+### Server-side testing
+
+Replace your production secret key with a test secret key.
+    
+    
+    // Environment-based configuration
+    const SECRET_KEY = process.env.NODE_ENV === 'production' 
+      ? process.env.TURNSTILE_SECRET_KEY 
+      : '1x0000000000000000000000000000000AA';
+    
+    // Use in validation
+    const validation = await validateTurnstile(token, SECRET_KEY);
+
+### Environment configuration
+
+Set up different keys for different environments.
+    
+    
+    # .env.development
+    TURNSTILE_SITEKEY=1x00000000000000000000AA
+    TURNSTILE_SECRET_KEY=1x0000000000000000000000000000000AA
+    
+    # .env.test  
+    TURNSTILE_SITEKEY=2x00000000000000000000AB
+    TURNSTILE_SECRET_KEY=2x0000000000000000000000000000000AA
+    
+    # .env.production
+    TURNSTILE_SITEKEY=your-real-sitekey
+    TURNSTILE_SECRET_KEY=your-real-secret-key
+
+* * *
+
+## Dummy token behavior
+
+### Token generation
+
+Test sitekeys generate a dummy token: `XXXX.DUMMY.TOKEN.XXXX`
+
+### Token validation
+
+  * Test secret keys: Only accept the dummy token, reject real tokens.
+  * Production secret keys: Only accept real tokens, reject dummy tokens.
+
+
+
+Note
+
+Production secret keys will reject the dummy token. You must also use a dummy secret key for testing purposes.
+
+### Validation response
+
+Success responsejson
+    
+    
+    {
+      "success": true,
+      "challenge_ts": "2022-02-28T15:14:30.096Z",
+      "hostname": "localhost",
+      "error-codes": [],
+      "action": "test",
+      "cdata": "test-data"
+    }
+
+Failure responsejson
+    
+    
+    {
+      "success": false,
+      "error-codes": ["invalid-input-response"]
+    }
+
+Token already redeemedjson
+    
+    
+    {
+      "success": false,
+      "error-codes": ["timeout-or-duplicate"]
+    }
+
+* * *
+
+## Testing scenarios
+
+Test sitekey | Test secret key | Test case  
+---|---|---  
+`1x00000000000000000000AA` | `1x0000000000000000000000000000000AA` | This combination will always result in successful validation.  
+`2x00000000000000000000AB` | `2x0000000000000000000000000000000AA` | This combination will always fail.  
+`1x00000000000000000000AA` | `3x0000000000000000000000000000000AA` | This combination will always fail with "timeout-or-duplicate" error.  
+  
+[PreviousTutorials](https://developers.cloudflare.com/turnstile/tutorials/)[NextRotate secret key](https://developers.cloudflare.com/turnstile/troubleshooting/rotate-secret-key/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/turnstile/troubleshooting/testing.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

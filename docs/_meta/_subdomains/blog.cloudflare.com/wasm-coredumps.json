@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/wasm-coredumps/",
+  "file": "_subdomains/blog.cloudflare.com/wasm-coredumps.md",
+  "title": "Wasm core dumps and debugging Rust in Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:16.924442+00:00",
+  "html_len": 346984,
+  "md_len": 83824,
+  "depth": 0,
+  "phase": 2
+}

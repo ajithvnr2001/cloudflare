@@ -1,0 +1,10 @@
+{
+  "url": "https://www.cloudflare.com/learning/dns/dns-over-tls/",
+  "file": "_subdomains/www.cloudflare.com/learning/dns/dns-over-tls.md",
+  "title": "DNS over TLS vs. DNS over HTTPS | Secure DNS",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:21:27.280733+00:00",
+  "html_len": 210408,
+  "md_len": 13200,
+  "depth": 1
+}

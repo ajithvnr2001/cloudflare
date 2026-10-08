@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/2021-march-hackness-phishing-champion/",
+  "file": "_subdomains/blog.cloudflare.com/2021-march-hackness-phishing-champion.md",
+  "title": "Area 1 Security Announces the Most Spoofed Brand of 2020 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:31.961391+00:00",
+  "html_len": 277442,
+  "md_len": 59799,
+  "depth": 0,
+  "phase": 2
+}

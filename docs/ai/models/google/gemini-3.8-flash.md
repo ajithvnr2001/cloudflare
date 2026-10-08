@@ -1,0 +1,480 @@
+---
+url: https://developers.cloudflare.com/ai/models/google/gemini-3.8-flash/
+title: Gemini 3.8 Flash (Google) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:04:57.181012+00:00
+---
+
+# Gemini 3.8 Flash (Google) · Cloudflare AI docs · Cloudflare AI docs
+
+> Source: https://developers.cloudflare.com/ai/models/google/gemini-3.8-flash/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[AI](https://developers.cloudflare.com/ai/)
+  3. /[Models](https://developers.cloudflare.com/ai/models/)
+  4. /Models
+
+
+
+![Google logo](https://developers.cloudflare.com/_astro/google.DyXKPTPP.svg)
+
+# Gemini 3.8 Flash
+
+Text Generation • Google
+
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/google/gemini-3.8-flash/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+`google/gemini-3.8-flash`
+
+  * Third-party
+
+
+
+Our most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows.
+
+Model Info|   
+---|---  
+Context Window[ ↗](https://developers.cloudflare.com/workers-ai/platform/glossary/)| 1,048,576 tokens  
+Terms and License| [link ↗](https://ai.google.dev/gemini-api/terms)  
+More information| [link ↗](https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash)  
+Request formats| Chat Completions  
+Pricing| 
+
+  * Input (per 1M tokens)$0.75
+  * Cached input (per 1M tokens)$0.075
+  * Output (per 1M tokens)$3.75
+  * Default (per second)$0.75
+
+  
+  
+## Usage
+    
+    
+    const response = await env.AI.run(
+      'google/gemini-3.8-flash',
+      {
+        contents: [
+          {
+            parts: [
+              {
+                text: 'What are the key differences between optimistic and pessimistic concurrency control in distributed systems?',
+              },
+            ],
+            role: 'user',
+          },
+        ],
+      },
+    )
+    console.log(response)
+    
+    
+    curl https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/run \
+      --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+      --header "Content-Type: application/json" \
+      --data '{
+      "model": "google/gemini-3.8-flash",
+      "input": {
+        "contents": [
+          {
+            "parts": [
+              {
+                "text": "What are the key differences between optimistic and pessimistic concurrency control in distributed systems?"
+              }
+            ],
+            "role": "user"
+          }
+        ]
+      }
+    }'
+    
+    
+    Concurrency control ensures that distributed transactions maintain the **ACID** properties (specifically Isolation and Consistency) when multiple nodes read and write to the same data simultaneously. 
+    
+    The fundamental difference between **Optimistic Concurrency Control (OCC)** and **Pessimistic Concurrency Control (PCC)** lies in **when and how they handle conflicts**.
+    
+    ---
+    
+    ### 1. The Core Philosophy
+    
+    *   **Pessimistic Concurrency Control (PCC):** *"Assume conflicts are likely."* 
+        *   It prevents conflicts **before** they happen by acquiring locks or blocking access to resources.
+    *   **Optimistic Concurrency Control (OCC):** *"Assume conflicts are rare."* 
+        *   It allows transactions to execute concurrently without locks, checking for conflicts only **at the moment of commit**.
+    
+    ---
+    
+    ### 2. How They Work
+    
+    #### A. Pessimistic Concurrency Control (PCC)
+    1. **Lock Phase:** A transaction requests a lock (read/shared or write/exclusive) on the required data partitions or nodes.
+    2. **Execute Phase:** If locks are granted, the transaction reads and writes data. If a lock is unavailable, the transaction waits (blocks).
+    3. **Commit & Release Phase:** Once the transaction completes (often using **Two-Phase Commit / 2PC**), it writes changes and releases the locks.
+    
+    #### B. Optimistic Concurrency Control (OCC)
+    1. **Read/Compute Phase:** The transaction reads data (often locally or from a replica) and buffers its writes without acquiring locks. It notes the version/timestamp of the data it read.
+    2. **Validation Phase:** At commit time, the transaction checks if any other transaction modified the data it read since the start of the transaction.
+    3. **Write/Abort Phase:** 
+       * If **no conflict** is detected: The buffered writes are committed across nodes.
+       * If a **conflict** is detected: The transaction is **aborted and must retry**.
+    
+    ---
+    
+    ### 3. Key Differences in a Distributed Context
+    
+    | Feature | Pessimistic (PCC) | Optimistic (OCC) |
+    | :--- | :--- | :--- |
+    | **Locking Strategy** | Explicit locking (Shared/Exclusive). | Lock-free during execution; validation at commit. |
+    | **Network Latency Impact** | **High.** Multiple round-trips to acquire and release locks across network nodes. | **Low.** Computation happens locally; network round-trips occur mostly during commit/validation. |
+    | **Concurrency & Throughput** | Low to moderate. Transactions block each other. | High, provided conflict rates remain low. |
+    | **Conflict Resolution** | **Blocking / Queuing:** Transactions wait in line. | **Rollback / Retry:** Conflicted transactions abort and rerun. |
+    | **Deadlock Risk** | **High.** Requires complex Distributed Deadlock Detection (wait-for graphs, edge chasing) or timeouts. | **None (or minimal).** Since no long-term locks are held, transactions cannot deadlock, but they can suffer from **starvation/livelock**. |
+    | **Wasted Computation** | Low. If you have the lock, your work is guaranteed to commit (barring system crashes). | High under contention. Work must be discarded and repeated if validation fails. |
+    | **Best Used When...** | Contention is **high**, write-heavy workloads, or abort costs are extremely expensive. | Contention is **low**, read-heavy workloads, or network latency makes locks expensive. |
+    
+    ---
+    
+    ### 4. Distributed Systems Trade-offs
+    
+    #### Network Overhead & Latency
+    *   **PCC suffers from latency compounding:** In a geographically distributed system, holding a distributed lock (e.g., via a Distributed Lock Manager like ZooKeeper) across high-latency WAN links holds up other transactions for tens or hundreds of milliseconds.
+    *   **OCC handles latency better:** By eliminating locks during execution, nodes do not hold resources while waiting on network packets.
+    
+    #### The Cost of Partitions & Node Failures
+    *   **In PCC:** If a node holding a lock crashes or becomes network-partitioned, other transactions waiting for that lock stall indefinitely unless lease/heartbeat mechanisms aggressively revoke locks (which introduces its own consistency risks).
+    *   **In OCC:** If a node fails mid-transaction, no locks are left dangling. The transaction simply times out, aborts, and retries.
+    
+    #### The "Abort Storm" (OCC's Achilles' Heel)
+    In high-contention distributed scenarios (e.g., thousands of users trying to buy the same concert ticket):
+    *   **PCC** gracefully queues requests; throughput slows down, but forward progress continues.
+    *   **OCC** collapses into an **abort storm** (livelock). All transactions validate at the same time, one succeeds, and 999 abort. All 999 retry simultaneously, repeating the cycle and burning massive amounts of CPU and network bandwidth without making progress.
+    
+    ---
+    
+    ### 5. Common Implementations & Real-World Examples
+    
+    *   **Pessimistic Implementations:**
+        *   **Two-Phase Locking (Strict 2PL):** Traditional distributed RDBMS (e.g., MySQL Cluster).
+        *   **Distributed Lock Managers (DLM):** Chubby (Google), Apache ZooKeeper (using ephemeral nodes/recipes for locking).
+    *   **Optimistic Implementations:**
+        *   **MVCC (Multi-Version Concurrency Control):** Used by **CockroachDB**, **Google Cloud Spanner**, and **PostgreSQL**. MVCC is fundamentally an optimistic mechanism where readers do not block writers and writers do not block readers (relying on timestamp ordering).
+        *   **DynamoDB / Cassandra (Conditional Writes):** Uses version attributes or Lightweight Transactions (LWT with Paxos) to perform atomic `Compare-And-Swap` (CAS), which is an OCC pattern.
+    
+    
+    {
+      "candidates": [
+        {
+          "content": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "Concurrency control ensures that distributed transactions maintain the **ACID** properties (specifically Isolation and Consistency) when multiple nodes read and write to the same data simultaneously. \n\nThe fundamental difference between **Optimistic Concurrency Control (OCC)** and **Pessimistic Concurrency Control (PCC)** lies in **when and how they handle conflicts**.\n\n---\n\n### 1. The Core Philosophy\n\n*   **Pessimistic Concurrency Control (PCC):** *\"Assume conflicts are likely.\"* \n    *   It prevents conflicts **before** they happen by acquiring locks or blocking access to resources.\n*   **Optimistic Concurrency Control (OCC):** *\"Assume conflicts are rare.\"* \n    *   It allows transactions to execute concurrently without locks, checking for conflicts only **at the moment of commit**.\n\n---\n\n### 2. How They Work\n\n#### A. Pessimistic Concurrency Control (PCC)\n1. **Lock Phase:** A transaction requests a lock (read/shared or write/exclusive) on the required data partitions or nodes.\n2. **Execute Phase:** If locks are granted, the transaction reads and writes data. If a lock is unavailable, the transaction waits (blocks).\n3. **Commit & Release Phase:** Once the transaction completes (often using **Two-Phase Commit / 2PC**), it writes changes and releases the locks.\n\n#### B. Optimistic Concurrency Control (OCC)\n1. **Read/Compute Phase:** The transaction reads data (often locally or from a replica) and buffers its writes without acquiring locks. It notes the version/timestamp of the data it read.\n2. **Validation Phase:** At commit time, the transaction checks if any other transaction modified the data it read since the start of the transaction.\n3. **Write/Abort Phase:** \n   * If **no conflict** is detected: The buffered writes are committed across nodes.\n   * If a **conflict** is detected: The transaction is **aborted and must retry**.\n\n---\n\n### 3. Key Differences in a Distributed Context\n\n| Feature | Pessimistic (PCC) | Optimistic (OCC) |\n| :--- | :--- | :--- |\n| **Locking Strategy** | Explicit locking (Shared/Exclusive). | Lock-free during execution; validation at commit. |\n| **Network Latency Impact** | **High.** Multiple round-trips to acquire and release locks across network nodes. | **Low.** Computation happens locally; network round-trips occur mostly during commit/validation. |\n| **Concurrency & Throughput** | Low to moderate. Transactions block each other. | High, provided conflict rates remain low. |\n| **Conflict Resolution** | **Blocking / Queuing:** Transactions wait in line. | **Rollback / Retry:** Conflicted transactions abort and rerun. |\n| **Deadlock Risk** | **High.** Requires complex Distributed Deadlock Detection (wait-for graphs, edge chasing) or timeouts. | **None (or minimal).** Since no long-term locks are held, transactions cannot deadlock, but they can suffer from **starvation/livelock**. |\n| **Wasted Computation** | Low. If you have the lock, your work is guaranteed to commit (barring system crashes). | High under contention. Work must be discarded and repeated if validation fails. |\n| **Best Used When...** | Contention is **high**, write-heavy workloads, or abort costs are extremely expensive. | Contention is **low**, read-heavy workloads, or network latency makes locks expensive. |\n\n---\n\n### 4. Distributed Systems Trade-offs\n\n#### Network Overhead & Latency\n*   **PCC suffers from latency compounding:** In a geographically distributed system, holding a distributed lock (e.g., via a Distributed Lock Manager like ZooKeeper) across high-latency WAN links holds up other transactions for tens or hundreds of milliseconds.\n*   **OCC handles latency better:** By eliminating locks during execution, nodes do not hold resources while waiting on network packets.\n\n#### The Cost of Partitions & Node Failures\n*   **In PCC:** If a node holding a lock crashes or becomes network-partitioned, other transactions waiting for that lock stall indefinitely unless lease/heartbeat mechanisms aggressively revoke locks (which introduces its own consistency risks).\n*   **In OCC:** If a node fails mid-transaction, no locks are left dangling. The transaction simply times out, aborts, and retries.\n\n#### The \"Abort Storm\" (OCC's Achilles' Heel)\nIn high-contention distributed scenarios (e.g., thousands of users trying to buy the same concert ticket):\n*   **PCC** gracefully queues requests; throughput slows down, but forward progress continues.\n*   **OCC** collapses into an **abort storm** (livelock). All transactions validate at the same time, one succeeds, and 999 abort. All 999 retry simultaneously, repeating the cycle and burning massive amounts of CPU and network bandwidth without making progress.\n\n---\n\n### 5. Common Implementations & Real-World Examples\n\n*   **Pessimistic Implementations:**\n    *   **Two-Phase Locking (Strict 2PL):** Traditional distributed RDBMS (e.g., MySQL Cluster).\n    *   **Distributed Lock Managers (DLM):** Chubby (Google), Apache ZooKeeper (using ephemeral nodes/recipes for locking).\n*   **Optimistic Implementations:**\n    *   **MVCC (Multi-Version Concurrency Control):** Used by **CockroachDB**, **Google Cloud Spanner**, and **PostgreSQL**. MVCC is fundamentally an optimistic mechanism where readers do not block writers and writers do not block readers (relying on timestamp ordering).\n    *   **DynamoDB / Cassandra (Conditional Writes):** Uses version attributes or Lightweight Transactions (LWT with Paxos) to perform atomic `Compare-And-Swap` (CAS), which is an OCC pattern.",
+                "thoughtSignature": "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
+    ... response truncated ...
+
+## Examples
+
+**Agentic Coding** — Coding task with a system instruction and constrained temperature
+    
+    
+    const response = await env.AI.run(
+      'google/gemini-3.8-flash',
+      {
+        contents: [
+          {
+            parts: [
+              { text: 'Write a Python function that merges two sorted lists into one sorted list.' },
+            ],
+            role: 'user',
+          },
+        ],
+        generationConfig: { temperature: 0.2 },
+        systemInstruction: {
+          parts: [
+            {
+              text: 'You are an expert software engineering agent. Write concise, correct, well-documented code.',
+            },
+          ],
+        },
+      },
+    )
+    console.log(response)
+    
+    
+    curl https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/run \
+      --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+      --header "Content-Type: application/json" \
+      --data '{
+      "model": "google/gemini-3.8-flash",
+      "input": {
+        "contents": [
+          {
+            "parts": [
+              {
+                "text": "Write a Python function that merges two sorted lists into one sorted list."
+              }
+            ],
+            "role": "user"
+          }
+        ],
+        "generationConfig": {
+          "temperature": 0.2
+        },
+        "systemInstruction": {
+          "parts": [
+            {
+              "text": "You are an expert software engineering agent. Write concise, correct, well-documented code."
+            }
+          ]
+        }
+      }
+    }'
+    
+    
+    Here is an efficient, standard two-pointer implementation with $O(n + m)$ time complexity:
+    
+    ```python
+    from typing import Any, List
+    
+    
+    def merge_sorted_lists(list1: List[Any], list2: List[Any]) -> List[Any]:
+        """Merge two already sorted lists into a single sorted list.
+    
+        Time Complexity: O(n + m) where n and m are the lengths of the lists.
+        Space Complexity: O(n + m) to store the merged result.
+    
+        Args:
+            list1: The first sorted list.
+            list2: The second sorted list.
+    
+        Returns:
+            A new list containing all elements from both lists in sorted order.
+        """
+        merged: List[Any] = []
+        i, j = 0, 0
+        len1, len2 = len(list1), len(list2)
+    
+        # Traverse both lists and append the smaller element to `merged`
+        while i < len1 and j < len2:
+            if list1[i] <= list2[j]:
+                merged.append(list1[i])
+                i += 1
+            else:
+                merged.append(list2[j])
+                j += 1
+    
+        # Append any remaining elements from either list
+        merged.extend(list1[i:])
+        merged.extend(list2[j:])
+    
+        return merged
+    
+    
+    # Example usage:
+    if __name__ == "__main__":
+        a = [1, 3, 5, 8]
+        b = [2, 4, 6, 7, 9, 10]
+        print(merge_sorted_lists(a, b))
+        # Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    ```
+    
+    ### Alternative (Standard Library)
+    If you prefer using Python's standard library, `heapq.merge` provides an iterator-based solution that uses $O(1)$ auxiliary space:
+    
+    ```python
+    import heapq
+    
+    
+    def merge_sorted_lists_heapq(list1: list, list2: list) -> list:
+        """Merge using Python's built-in heapq module."""
+        return list(heapq.merge(list1, list2))
+    ```
+    
+    
+    {
+      "candidates": [
+        {
+          "content": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "Here is an efficient, standard two-pointer implementation with $O(n + m)$ time complexity:\n\n```python\nfrom typing import Any, List\n\n\ndef merge_sorted_lists(list1: List[Any], list2: List[Any]) -> List[Any]:\n    \"\"\"Merge two already sorted lists into a single sorted list.\n\n    Time Complexity: O(n + m) where n and m are the lengths of the lists.\n    Space Complexity: O(n + m) to store the merged result.\n\n    Args:\n        list1: The first sorted list.\n        list2: The second sorted list.\n\n    Returns:\n        A new list containing all elements from both lists in sorted order.\n    \"\"\"\n    merged: List[Any] = []\n    i, j = 0, 0\n    len1, len2 = len(list1), len(list2)\n\n    # Traverse both lists and append the smaller element to `merged`\n    while i < len1 and j < len2:\n        if list1[i] <= list2[j]:\n            merged.append(list1[i])\n            i += 1\n        else:\n            merged.append(list2[j])\n            j += 1\n\n    # Append any remaining elements from either list\n    merged.extend(list1[i:])\n    merged.extend(list2[j:])\n\n    return merged\n\n\n# Example usage:\nif __name__ == \"__main__\":\n    a = [1, 3, 5, 8]\n    b = [2, 4, 6, 7, 9, 10]\n    print(merge_sorted_lists(a, b))\n    # Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n```\n\n### Alternative (Standard Library)\nIf you prefer using Python's standard library, `heapq.merge` provides an iterator-based solution that uses $O(1)$ auxiliary space:\n\n```python\nimport heapq\n\n\ndef merge_sorted_lists_heapq(list1: list, list2: list) -> list:\n    \"\"\"Merge using Python's built-in heapq module.\"\"\"\n    return list(heapq.merge(list1, list2))\n```",
+                "thoughtSignature": "AY89a1/czemtyCXGVCK2P4eOWE2RysFkjJ/wuEOJhDOJ3QYU4daigY9JYFCTDRp7ZWJRgp4iPQBoHynLbpqmFI3dZCzKKONibIdXozwqr/Qnh04f0gJCHTERO4oLgUDplOyihnxn/wM/OdhnZZxocCdUpN9apM5qorKwGsl/XFKE/+rQDIe5WSguJihjLnHuQaUIbGx5kJfcnLkoRwHvnEYq0QjaRFQcIHxTIIUBABXzsFq42A3VF/s+KjqKmDVcFf68bEd8Vl64gKGqqFvFUJSxhuQuc0AYh+otH52oSU9gK74vIBBAomffgHojBHmBsB51u6rPSdpwaQN0GLmxWpdh1+6x03mfaqqeFcs7B5BTB8yPtsS5m9fEU9tMRChmYvQ342Ov6s4fU26nHXhI/S6Nkp2W6YS0XiGALK7rIa0WObLJ4IaRJ7pWu5WPBW1iScoDrZnrhOxUYUQ1NrbQhUUWngSy3Vza5BDWKOB300uLZZ2mysY1tYqvhEPsMrVscsNqozm4UvaHVtNHjPna6+L5qHqBQZN2aNpeO8y6caeYSLcoJkLJ75ZRnHQtrjn0X0Q4j2vz0R1t9j1oKE0KO5SL327+HmcB/qA1UGmINSJdsKslCMDixRHTasBfeCY5FK+Y9epbtJvajxD4LXECDtvmhm7aCs7JXX39wb1/fsqH70b+a+lHjd6wHRw9tPmmx7x+xOYXNCjY/atToqZ+X/3gtmxmPYzdl735S5cvAktd2oBvyTYx8rn6lBi6ZP6Lahx7Wcpx2NRhWmRiJ36TgxQV54qf1PjOd1IBKD5wLEqcHQwOC/aq0trIC4vjVd7oR1ygxPD9FmEUxNQMIJbvGpUgGv71k0DwPgPFoLYLti23h2x8M5TwAjCAE2NwC6V/iTvrq0FUP73xA/xv1JzQJmu4F4noFxvErOtI2wIXPdrC9IWS2ybm5YrOZyg6J4giOSwuKal7MP95q13nhBdxfRrEFuXj1o35GOPJ1BR6KohHIubOoCAkGpJoirpcBqKKjqGJNiwE9jgx824VNXd6dOx/s9finT+Asi2kom88E3ijWDukk9QdT6UPZ2ks4JvYAo6RU+kQ/px4LfQKwqOdbjplWqfhFfKZqxLVYLKS4qJ47C96rXLIsTiXHo1EJVs20dmrMvHKonZa5urz+LqLzL/iIm6ARgvoPf1h7/loDePJtYEJgULA0ydPipnEPfgsnkH9cFQtIkahXmxho5ngXdbn1A9Zh9mmKTnqyxpJnRrFNvC6gP9f7EVtJmZIVg4YoQvOkWzDBQelnJFEEvlBHpRdQ/s01Kbr783MeSBAmaiig2yWA9gEjkX4wZ3fAyypZ3x50q62yxf4oOGqPSPVKZylJf8j5yQ+AhCoFU5Pthk4yDn1ESotGjwb+uptmBlU2w0GWBRmgXqWHBujuVWeuvRdAK/QPUVYXim+fiDEJY0p94zidZI48EypvEquFDtOY5EpSEkuJx5inYwsVYDFuEVh3/CzSt1wC+Adq4P7b1C8/kDnFnxkjQFni0eyfGX6vvejB6+qTZikmJj1p5xX0f6oL9SkBAnju6wUt2ypckZjuL2v2nmVZ7jzVCa/mmE7mabFRov+VpMkmLB6mO+LlMsLalXQKIASYC+v4Xgbov+xXCEhQr6moq/IjsuKiC1wI4hb1C9dCvD40xPrEIEzsk/4JsLi4TVpV57XcaIwZQ=="
+              }
+            ]
+          },
+          "finishReason": "STOP",
+          "citationMetadata": {
+            "citations": [
+              {
+                "startIndex": 785,
+                "endIndex": 1106,
+                "uri": "https://github.com/s-m-quadri/geca-labs"
+              }
+            ]
+          }
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 32,
+        "candidatesTokenCount": 519,
+        "totalTokenCount": 887,
+        "trafficType": "ON_DEMAND",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 32
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 519
+          }
+        ],
+        "thoughtsTokenCount": 336
+      },
+      "modelVersion": "gemini-3.8-flash",
+      "createTime": "2026-09-02T16:35:51.064669Z",
+      "responseId": "Z1CYap35A6-prb8Plfe7yAg",
+      "gatewayMetadata": {
+        "keySource": "Unified"
+      }
+    }
+
+## Parameters
+
+Schema variant
+
+Generate ContentChat Completions
+
+▶contents[]
+
+`array`required
+
+▶systemInstruction{}
+
+`object`
+
+▶generationConfig{}
+
+`object`
+
+▶safetySettings[]
+
+`array`
+
+▶tools[]
+
+`array`
+
+toolConfig
+
+``
+
+▶messages[]
+
+`array`required
+
+temperature
+
+`number`minimum: 0maximum: 2
+
+max_tokens
+
+`number`exclusiveMinimum: 0
+
+max_completion_tokens
+
+`number`exclusiveMinimum: 0
+
+top_p
+
+`number`minimum: 0maximum: 1
+
+frequency_penalty
+
+`number`minimum: -2maximum: 2
+
+presence_penalty
+
+`number`minimum: -2maximum: 2
+
+stream
+
+`boolean`
+
+▶stream_options{}
+
+`object`
+
+▶tools[]
+
+`array`
+
+tool_choice
+
+``
+
+response_format
+
+``
+
+▶modalities[]
+
+`array`
+
+▶audio{}
+
+`object`
+
+reasoning_effort
+
+`string`Optional reasoning control; availability and accepted values are model-dependent.
+
+▶candidates[]
+
+`array`
+
+▶usageMetadata{}
+
+`object`
+
+modelVersion
+
+`string`
+
+id
+
+`string`
+
+object
+
+`string`
+
+created
+
+`number`
+
+model
+
+`string`
+
+▶choices[]
+
+`array`
+
+▶usage{}
+
+`object`
+
+## API Schemas (Raw)
+
+Input[](https://developers.cloudflare.com/ai/models/google/gemini-3.8-flash/schema-input.json "Open")[](https://developers.cloudflare.com/ai/models/google/gemini-3.8-flash/schema-input.json "Download")
+
+Output[](https://developers.cloudflare.com/ai/models/google/gemini-3.8-flash/schema-output.json "Open")[](https://developers.cloudflare.com/ai/models/google/gemini-3.8-flash/schema-output.json "Download")
+
+Was this helpful?
+
+YesNo
+
+[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

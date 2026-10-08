@@ -1,0 +1,72 @@
+---
+url: https://developers.cloudflare.com/ssl/client-certificates/enable-mtls/
+title: Enable mTLS \u00b7 Cloudflare SSL/TLS docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:15:37.479959+00:00
+---
+
+# Enable mTLS · Cloudflare SSL/TLS docs
+
+> Source: https://developers.cloudflare.com/ssl/client-certificates/enable-mtls/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[SSL/TLS](https://developers.cloudflare.com/ssl/)
+  3. /[Client certificates (mTLS)](https://developers.cloudflare.com/ssl/client-certificates/)
+  4. /Enable mTLS
+
+
+
+# Enable mTLS
+
+Last updated Apr 17, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ssl/client-certificates/enable-mtls/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewCAs in useNext steps
+
+You can enable mutual Transport Layer Security (mTLS) for any hostname. For more information, refer to the [Client certificates overview](https://developers.cloudflare.com/ssl/client-certificates/).
+
+Cloudflare-issued or BYOCA
+
+The following process only refers to certificates issued from the Cloudflare-managed CA. For hostnames that should be validated using your own CA, refer to the [BYOCA documentation](https://developers.cloudflare.com/ssl/client-certificates/byo-ca/).
+
+To enable mTLS for a host from the Cloudflare dashboard:
+
+  1. In the Cloudflare dashboard, go to the **Client Certificates** page.
+
+[ Go to **Client Certificates** ↗ ](https://dash.cloudflare.com/?to=/:account/:zone/ssl-tls/client-certificates)
+  2. On the **Hosts** section of the **Client Certificates** card, select **Edit**.
+
+  3. Enter the name of a host in your current domain.
+
+Note
+
+The domain (`example.com`) is automatically appended for you. This means that, if you want to enable mTLS for `abc.example.com`, you only need to type `abc`.
+
+  4. Select **Save** to confirm.
+
+
+
+
+## CAs in use
+
+As explained in the [Client certificates overview](https://developers.cloudflare.com/ssl/client-certificates/#how-it-works), Cloudflare validates client certificates against CAs set at account level. This means that these certificates can be used for validation across multiple zones/domains (`example.com`), as long as the zones are under the same Cloudflare account and you have enabled mTLS for the host.
+
+Bring your own CA
+
+If you need to use your own CA (instead of the Cloudflare-managed CA), refer to [BYOCA](https://developers.cloudflare.com/ssl/client-certificates/byo-ca/). This option is available on Enterprise accounts.
+
+## Next steps
+
+After enabling mTLS for your host, you can:
+
+  * Enforce mTLS with a WAF custom rule. Select **Create mTLS Rule** on the dashboard to use a template, or refer to our [mTLS at Cloudflare learning path](https://developers.cloudflare.com/learning-paths/mtls/mtls-app-security/#3-validate-the-client-certificate-in-the-waf) for further guidance.
+  * Enforce mTLS with [API Shield](https://developers.cloudflare.com/api-shield/security/mtls/configure/). While API Shield is **not required** to use mTLS, many teams may use mTLS to protect their APIs.
+
+
+
+[PreviousCreate a client certificate](https://developers.cloudflare.com/ssl/client-certificates/create-a-client-certificate/)[NextBring your own CA (BYOCA)](https://developers.cloudflare.com/ssl/client-certificates/byo-ca/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/ssl/client-certificates/enable-mtls.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

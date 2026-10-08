@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/workers-virtual-private-cloud/",
+  "file": "_subdomains/blog.cloudflare.com/workers-virtual-private-cloud.md",
+  "title": "A global virtual private cloud for building secure cross-cloud apps on Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:54.314095+00:00",
+  "html_len": 314222,
+  "md_len": 73127,
+  "depth": 0,
+  "phase": 2
+}

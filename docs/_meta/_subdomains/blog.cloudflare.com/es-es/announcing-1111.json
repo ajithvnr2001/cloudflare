@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/announcing-1111/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/announcing-1111.md",
+  "title": "Anunciando 1.1.1.1: el servicio DNS para consumidores m\u00e1s r\u00e1pido y centrado en la privacidad | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:19.895336+00:00",
+  "html_len": 215855,
+  "md_len": 37472,
+  "depth": 0,
+  "phase": 2
+}

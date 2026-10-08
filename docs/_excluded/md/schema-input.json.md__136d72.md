@@ -1,0 +1,12 @@
+---
+url: https://developers.cloudflare.com/ai/models/lightricks/ltx-2-5-fast/schema-input.json
+title: https://developers.cloudflare.com/ai/models/lightricks/ltx-2-5-fast/schema-input.json
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:23:39.097369+00:00
+---
+
+# https://developers.cloudflare.com/ai/models/lightricks/ltx-2-5-fast/schema-input.json
+
+> Source: https://developers.cloudflare.com/ai/models/lightricks/ltx-2-5-fast/schema-input.json
+
+{"$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","properties":{"prompt":{"type":"string","minLength":1,"maxLength":10000,"description":"Text prompt describing the video"},"image_uri":{"description":"HTTPS URI for the first frame","type":"string","format":"uri"},"last_frame_uri":{"description":"HTTPS URI for the last frame","type":"string","format":"uri"},"duration":{"default":8,"description":"Video duration in seconds","anyOf":[{"type":"number","const":2},{"type":"number","const":3},{"type":"number","const":4},{"type":"number","const":5},{"type":"number","const":6},{"type":"number","const":8},{"type":"number","const":10},{"type":"number","const":12},{"type":"number","const":14},{"type":"number","const":16},{"type":"number","const":18},{"type":"number","const":20}]},"resolution":{"default":"1920x1080","type":"string","enum":["1280x720","720x1280","1920x1080","1080x1920","2560x1440","1440x2560","3840x2160","2160x3840"]},"fps":{"default":24,"anyOf":[{"type":"number","const":24},{"type":"number","const":25},{"type":"number","const":48},{"type":"number","const":50}]},"generate_audio":{"default":true,"type":"boolean"}},"required":["prompt","duration","resolution","fps","generate_audio"],"additionalProperties":false}

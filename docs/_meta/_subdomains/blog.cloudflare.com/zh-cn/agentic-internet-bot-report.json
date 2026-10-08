@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/agentic-internet-bot-report/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/agentic-internet-bot-report.md",
+  "title": "\u5185\u5bb9\u72ec\u7acb\u65e5\u4e00\u5e74\u540e\u2014\u2014\u6784\u5efa\u667a\u80fd\u4f53\u5f0f\u4e92\u8054\u7f51\u7684\u5546\u4e1a\u6a21\u5f0f | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:38.716845+00:00",
+  "html_len": 218070,
+  "md_len": 30657,
+  "depth": 0,
+  "phase": 2
+}

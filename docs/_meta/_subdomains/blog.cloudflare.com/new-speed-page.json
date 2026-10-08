@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/new-speed-page/",
+  "file": "_subdomains/blog.cloudflare.com/new-speed-page.md",
+  "title": "One more thing... new Speed Page | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:45.589466+00:00",
+  "html_len": 306206,
+  "md_len": 69397,
+  "depth": 0,
+  "phase": 2
+}

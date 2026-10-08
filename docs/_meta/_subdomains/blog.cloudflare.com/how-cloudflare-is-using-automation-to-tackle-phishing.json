@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-cloudflare-is-using-automation-to-tackle-phishing/",
+  "file": "_subdomains/blog.cloudflare.com/how-cloudflare-is-using-automation-to-tackle-phishing.md",
+  "title": "How Cloudflare is using automation to tackle phishing head on | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:57.892546+00:00",
+  "html_len": 290003,
+  "md_len": 65371,
+  "depth": 0,
+  "phase": 2
+}

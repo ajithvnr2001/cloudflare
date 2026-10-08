@@ -1,0 +1,10 @@
+{
+  "url": "https://community.cloudflare.com/.well-known/agent.json",
+  "file": "_subdomains/community.cloudflare.com/.well-known/agent.json.md",
+  "title": "https://community.cloudflare.com/.well-known/agent.json",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:21:36.842267+00:00",
+  "html_len": 1760,
+  "md_len": 1511,
+  "depth": 1
+}

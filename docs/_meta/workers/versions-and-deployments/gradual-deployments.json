@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/versions-and-deployments/gradual-deployments/",
+  "file": "workers/versions-and-deployments/gradual-deployments.md",
+  "title": "Gradual deployments \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:18:03.338685+00:00",
+  "html_len": 239660,
+  "md_len": 8830,
+  "depth": 0
+}

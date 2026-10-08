@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/integrate-cloudflare-zero-trust-with-datadog-cloud-siem/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/integrate-cloudflare-zero-trust-with-datadog-cloud-siem.md",
+  "title": "Int\u00e9grez Cloudflare Zero Trust avec Datadog Cloud SIEM | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:31.286965+00:00",
+  "html_len": 226919,
+  "md_len": 33203,
+  "depth": 0,
+  "phase": 2
+}

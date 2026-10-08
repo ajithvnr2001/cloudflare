@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/custom-rules/use-cases/sequence-custom-rules/",
+  "file": "waf/custom-rules/use-cases/sequence-custom-rules.md",
+  "title": "Build a sequence rule within custom rules \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:39.203077+00:00",
+  "html_len": 141090,
+  "md_len": 3018,
+  "depth": 0
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/custom-rules/use-cases/block-ms-exchange-autodiscover/",
+  "file": "waf/custom-rules/use-cases/block-ms-exchange-autodiscover.md",
+  "title": "Block Microsoft Exchange Autodiscover requests \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:38.529597+00:00",
+  "html_len": 127961,
+  "md_len": 2147,
+  "depth": 0
+}

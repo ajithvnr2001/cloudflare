@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/redirect-users-to-new-destinations-with-cloudflare-for-teams/",
+  "file": "_subdomains/blog.cloudflare.com/redirect-users-to-new-destinations-with-cloudflare-for-teams.md",
+  "title": "Resolve internal hostnames with Cloudflare for Teams | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:11.076266+00:00",
+  "html_len": 283551,
+  "md_len": 61540,
+  "depth": 0,
+  "phase": 2
+}

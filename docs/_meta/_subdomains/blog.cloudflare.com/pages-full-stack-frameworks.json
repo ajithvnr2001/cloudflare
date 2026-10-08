@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pages-full-stack-frameworks/",
+  "file": "_subdomains/blog.cloudflare.com/pages-full-stack-frameworks.md",
+  "title": "Server-side render full stack applications with Pages Functions | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:58.190314+00:00",
+  "html_len": 303379,
+  "md_len": 64341,
+  "depth": 0,
+  "phase": 2
+}

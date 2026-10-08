@@ -1,0 +1,287 @@
+---
+url: https://developers.cloudflare.com/magic-transit/changelog/
+title: Changelog \u00b7 Cloudflare Magic Transit docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:12:17.773250+00:00
+---
+
+# Changelog · Cloudflare Magic Transit docs
+
+> Source: https://developers.cloudflare.com/magic-transit/changelog/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Magic Transit](https://developers.cloudflare.com/magic-transit/)
+  3. /Changelog
+
+
+
+# Changelog
+
+Last updated Apr 17, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/magic-transit/changelog/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Overview2024-10-01
+
+[Subscribe to RSS](https://developers.cloudflare.com/changelog/rss/magic-transit.xml)
+
+## 2026-10-05
+
+  
+**BGP over IPsec and GRE tunnels generally available**  
+
+
+BGP peering over IPsec and GRE tunnels is generally available for Cloudflare WAN and Magic Transit. You can use it for production workloads.
+
+BGP peering exchanges routes dynamically between your devices and your Cloudflare virtual network routing table. You no longer need to update static routes manually as your network changes.
+
+BGP over IPsec and GRE tunnels is available to all accounts that use [Unified Routing](https://developers.cloudflare.com/cloudflare-wan/reference/traffic-steering/#unified-routing). No enablement is required. BGP over CNI remains in closed beta.
+
+For configuration details, refer to:
+
+  * [Configure BGP routes for Cloudflare WAN](https://developers.cloudflare.com/cloudflare-wan/configuration/how-to/configure-routes/#configure-bgp-routes)
+  * [Configure BGP routes for Magic Transit](https://developers.cloudflare.com/magic-transit/how-to/configure-routes/#configure-bgp-routes)
+
+
+
+## 2026-09-25
+
+  
+**Managed Rulesets supported in Unified Routing**  
+
+
+[Cloudflare Advanced Network Firewall](https://developers.cloudflare.com/cloudflare-network-firewall/) Managed Rulesets are now supported for accounts using [Unified Routing](https://developers.cloudflare.com/cloudflare-wan/reference/traffic-steering/#unified-routing) mode.
+
+For the full list of feature availability, refer to [Check feature availability before upgrading](https://developers.cloudflare.com/cloudflare-wan/reference/traffic-steering/#check-feature-availability-before-upgrading).
+
+## 2026-09-18
+
+  
+**Unified Routing generally available**  
+
+
+Unified Routing is generally available for Cloudflare WAN and Magic Transit.
+
+Unified Routing improves the integration between Cloudflare One and the standard connectivity onramps supported by Cloudflare WAN. It is capable of many new features including Automatic Return Routing, BGP and custom client subnets.
+
+We recommend Unified Routing for all new accounts.
+
+For details, refer to [Cloudflare WAN traffic steering](https://developers.cloudflare.com/cloudflare-wan/reference/traffic-steering/#unified-routing) and [Magic Transit traffic steering](https://developers.cloudflare.com/magic-transit/reference/traffic-steering/#unified-routing).
+
+## 2026-08-19
+
+  
+**Threat Intel Lists supported in Unified Routing**  
+
+
+[Cloudflare Advanced Network Firewall](https://developers.cloudflare.com/cloudflare-network-firewall/) Threat Intel Lists are now supported for accounts using [Unified Routing](https://developers.cloudflare.com/cloudflare-wan/reference/traffic-steering/#unified-routing) mode. This feature requires a Cloudflare Advanced Network Firewall subscription.
+
+Support for additional features - Rate Limiting and Managed Rulesets - is planned.
+
+For the full list of current beta limitations, refer to [Traffic steering beta limitations](https://developers.cloudflare.com/cloudflare-wan/reference/traffic-steering/#check-feature-availability-before-upgrading).
+
+## 2026-07-08
+
+  
+**IP lists, IDS, and SIP rules supported in Unified Routing**  
+
+
+[Cloudflare Advanced Network Firewall](https://developers.cloudflare.com/cloudflare-network-firewall/) IP lists, IDS, and SIP rules are now supported for accounts using [Unified Routing](https://developers.cloudflare.com/cloudflare-wan/reference/traffic-steering/#unified-routing) mode. These features require a Cloudflare Advanced Network Firewall subscription.
+
+Support for additional features - Threat Intel Lists, Rate Limiting, and Managed Rulesets - is planned.
+
+For the full list of current beta limitations, refer to [Traffic steering beta limitations](https://developers.cloudflare.com/cloudflare-wan/reference/traffic-steering/#check-feature-availability-before-upgrading).
+
+## 2026-05-18
+
+  
+**Network Analytics support for Unified Routing**  
+
+
+[Network Analytics](https://developers.cloudflare.com/analytics/network-analytics/) is now fully supported for accounts using [Unified Routing](https://developers.cloudflare.com/cloudflare-wan/reference/traffic-steering/#unified-routing) mode. Traffic that traverses Unified Routing onramps and offramps is now visible in Network Analytics with the same dimensions and filters as traffic on the standard data plane.
+
+This closes a parity gap for customers who had moved tunnels onto Unified Routing and lost visibility into their dataplane traffic in the Network Analytics dashboard. No configuration change is required — analytics data is collected automatically for all accounts with Unified Routing enabled.
+
+For the remaining beta limitations, refer to [Traffic steering beta limitations](https://developers.cloudflare.com/cloudflare-wan/reference/traffic-steering/#check-feature-availability-before-upgrading).
+
+## 2026-05-12
+
+  
+**New accounts assigned a single IPv4 anycast address**  
+
+
+New Magic Transit and Cloudflare WAN accounts are now assigned a single IPv4 anycast address by default.
+
+Cloudflare handles failures on its network automatically by advertising your endpoint IP from multiple nodes across many globally distributed data centers. To handle failures on your network, configure two tunnels from separate routers.
+
+To request additional anycast IP addresses for your account, contact your account team.
+
+For tunnel configuration guidance, refer to [Configure tunnel endpoints](https://developers.cloudflare.com/cloudflare-wan/configuration/how-to/configure-tunnel-endpoints/) for Cloudflare WAN or [Configure tunnel endpoints](https://developers.cloudflare.com/magic-transit/how-to/configure-tunnel-endpoints/) for Magic Transit.
+
+## 2026-05-11
+
+  
+**NAT-T support for IKE on UDP port 500**  
+
+
+Cloudflare IPsec now supports the standard NAT traversal (NAT-T) flow, where IKE begins on UDP port `500` and switches to UDP port `4500` after NAT is detected.
+
+Previously, devices behind NAT had to be configured to initiate IKE on UDP port `4500` directly. Devices that started on UDP port `500` could not complete the IKE handshake when NAT was in the path. This required custom configuration on devices such as VeloCloud SD-WAN edges, Cisco IOS-XE routers, and Juniper SRX firewalls, and was not possible on every platform.
+
+What changed:
+
+  * Devices behind NAT can now initiate IKE on either UDP port `500` or UDP port `4500`.
+  * Devices that start IKE on UDP port `500` and switch to UDP port `4500` after NAT detection now complete the handshake successfully.
+  * No configuration change is required on Cloudflare. The change is available for all IPsec tunnels on Cloudflare WAN and Magic Transit.
+
+
+
+This change does not affect existing tunnels:
+
+  * Tunnels using UDP port `500` with no NAT detected continue to operate as before.
+  * Tunnels configured to start IKE on UDP port `4500` continue to operate as before.
+  * NAT detection logic is unchanged.
+
+
+
+For configuration details, refer to [GRE and IPsec tunnels](https://developers.cloudflare.com/cloudflare-wan/reference/gre-ipsec-tunnels/).
+
+## 2026-04-21
+
+  
+**Country rules supported in Unified Routing**  
+
+
+[Cloudflare Advanced Network Firewall](https://developers.cloudflare.com/cloudflare-network-firewall/) Country rules are now supported for accounts using [Unified Routing](https://developers.cloudflare.com/cloudflare-wan/reference/traffic-steering/#unified-routing) mode. This feature requires a Cloudflare Advanced Network Firewall subscription.
+
+You can create firewall rules that match traffic based on source or destination country to enforce geographic access policies across your network.
+
+This is the first of the Cloudflare Advanced Network Firewall features to become available in Unified Routing. Support for additional features - IP Lists, ASN Lists, Threat Intel Lists, IDS, Rate Limiting, SIP, and Managed Rulesets - is planned.
+
+For the full list of current beta limitations, refer to [Traffic steering beta limitations](https://developers.cloudflare.com/cloudflare-wan/reference/traffic-steering/#check-feature-availability-before-upgrading).
+
+## 2026-01-30
+
+  
+**BGP over GRE and IPsec tunnels**  
+
+
+Magic WAN and Magic Transit customers can use the Cloudflare dashboard to configure and manage BGP peering between their networks and their Magic routing table when using IPsec and GRE tunnel on-ramps (beta).
+
+Using BGP peering allows customers to:
+
+  * Automate the process of adding or removing networks and subnets.
+  * Take advantage of failure detection and session recovery features.
+
+
+
+With this functionality, customers can:
+
+  * Establish an eBGP session between their devices and the Magic WAN / Magic Transit service when connected via IPsec and GRE tunnel on-ramps.
+  * Secure the session by MD5 authentication to prevent misconfigurations.
+  * Exchange routes dynamically between their devices and their Magic routing table.
+
+
+
+For configuration details, refer to:
+
+  * [Configure BGP routes for Magic WAN](https://developers.cloudflare.com/cloudflare-wan/configuration/how-to/configure-routes/#configure-bgp-routes)
+  * [Configure BGP routes for Magic Transit](https://developers.cloudflare.com/magic-transit/how-to/configure-routes/#configure-bgp-routes)
+
+
+
+## 2026-01-15
+
+  
+**Network Services navigation update**  
+
+
+The Network Services menu structure in Cloudflare's dashboard has been updated to reflect solutions and capabilities instead of product names. This will make it easier for you to find what you need and better reflects how our services work together.
+
+Your existing configurations will remain the same, and you will have access to all of the same features and functionality.
+
+The changes visible in your dashboard may vary based on the products you use. Overall, changes relate to [Magic Transit ↗︎](https://developers.cloudflare.com/magic-transit/), [Magic WAN ↗︎](https://developers.cloudflare.com/magic-wan/), and [Magic Firewall ↗︎](https://developers.cloudflare.com/cloudflare-network-firewall/).
+
+**Summary of changes:**
+
+  * A new **Overview** page provides access to the most common tasks across Magic Transit and Magic WAN.
+  * Product names have been removed from top-level navigation.
+  * Magic Transit and Magic WAN configuration is now organized under **Routes** and **Connectors**. For example, you will find IP Prefixes under **Routes** , and your GRE/IPsec Tunnels under **Connectors.**
+  * Magic Firewall policies are now called **Firewall Policies.**
+  * Magic WAN Connectors and Connector On-Ramps are now referenced in the dashboard as **Appliances** and **Appliance profiles.** They can be found under **Connectors > Appliances.**
+  * Network analytics, network health, and real-time analytics are now available under **Insights.**
+  * Packet Captures are found under **Insights > Diagnostics.**
+  * You can manage your Sites from **Insights > Network health.**
+  * You can find Magic Network Monitoring under **Insights > Network flow**.
+
+
+
+If you would like to provide feedback, complete [this form ↗︎](https://forms.gle/htWyjRsTjw1usdis5). You can also find these details in the January 7, 2026 email titled **[FYI] Upcoming Network Services Dashboard Navigation Update**.
+
+Preview: ![Networking Navigation](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=3000,height=1052,format=webp/_astro/networking-overview-and-navigation.CeMgEFaZ.png)
+
+## 2025-07-30
+
+  
+**Magic Transit and Magic WAN health check data is fully compatible with the CMB EU setting.**  
+
+
+Today, we are excited to announce that all Magic Transit and Magic WAN customers with CMB EU ([Customer Metadata Boundary - Europe](https://developers.cloudflare.com/data-localization/metadata-boundary/)) enabled in their account will be able to access GRE, IPsec, and CNI health check and traffic volume data in the Cloudflare dashboard and via API.
+
+This ensures that all Magic Transit and Magic WAN customers with CMB EU enabled will be able to access all Magic Transit and Magic WAN features.
+
+Specifically, these two GraphQL endpoints are now compatible with CMB EU:
+
+  * `magicTransitTunnelHealthChecksAdaptiveGroups`
+  * `magicTransitTunnelTrafficAdaptiveGroups`
+
+
+
+## 2025-06-30
+
+  
+**Graceful withdrawal of BYOIP prefixes**  
+
+
+Magic Transit customers can now configure AS prepending on their BYOIP prefixes advertised at the Cloudflare edge. This allows for smoother traffic migration and minimizes packet loss when changing providers.
+
+AS prepending makes the Cloudflare route less preferred by increasing the AS path length. You can use this to gradually shift traffic away from Cloudflare before withdrawing a prefix, avoiding abrupt routing changes.
+
+Prepending can be configured via the API or through BGP community values when peering with the Magic Transit routing table. For more information, refer to [Advertise prefixes](https://developers.cloudflare.com/magic-transit/how-to/advertise-prefixes/).
+
+## 2024-12-17
+
+  
+**Establish BGP peering over Direct CNI circuits**  
+
+
+Magic WAN and Magic Transit customers can use the Cloudflare dashboard to configure and manage BGP peering between their networks and their Magic routing table when using a Direct CNI on-ramp.
+
+Using BGP peering allows customers to:
+
+  * Automate the process of adding or removing networks and subnets.
+  * Take advantage of failure detection and session recovery features.
+
+
+
+With this functionality, customers can:
+
+  * Establish an eBGP session between their devices and the Magic WAN / Magic Transit service when connected via CNI.
+  * Secure the session by MD5 authentication to prevent misconfigurations.
+  * Exchange routes dynamically between their devices and their Magic routing table.
+
+
+
+Refer to [Magic WAN BGP peering](https://developers.cloudflare.com/cloudflare-wan/configuration/how-to/configure-routes/#configure-bgp-routes) or [Magic Transit BGP peering](https://developers.cloudflare.com/magic-transit/how-to/configure-routes/#configure-bgp-routes) to learn more about this feature and how to set it up.
+
+## 2024-10-01
+
+**Early access testing for BGP on CNI 2.0 circuits**
+
+Customers can exchange routes dynamically with their Magic virtual network overlay through Direct CNI or Cloud CNI based connectivity.
+
+[PreviousHow Cloudflare calculates tunnel health alerts](https://developers.cloudflare.com/magic-transit/reference/how-cloudflare-calculates-tunnel-health-alerts/)[NextGlossary](https://developers.cloudflare.com/magic-transit/glossary/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/magic-transit/changelog.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/casb-ai-integrations/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/casb-ai-integrations.md",
+  "title": "Cloudflare CASB\u306b\u3088\u308bChatGPT\u3001Claude\u3001Gemini\u306e\u30bb\u30ad\u30e5\u30ea\u30c6\u30a3\u30b9\u30ad\u30e3\u30f3 | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:48.382846+00:00",
+  "html_len": 210997,
+  "md_len": 31188,
+  "depth": 0,
+  "phase": 2
+}

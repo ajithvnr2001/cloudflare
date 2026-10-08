@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/free-ddos-alerts/",
+  "file": "_subdomains/blog.cloudflare.com/free-ddos-alerts.md",
+  "title": "Cloudflare customers on Free plans can now also get real-time DDoS alerts | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:43.806265+00:00",
+  "html_len": 278509,
+  "md_len": 59668,
+  "depth": 0,
+  "phase": 2
+}

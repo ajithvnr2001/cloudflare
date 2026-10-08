@@ -1,0 +1,12 @@
+---
+url: https://developers.cloudflare.com/ai/models/minimax/speech-2.8-hd/schema-input.json
+title: https://developers.cloudflare.com/ai/models/minimax/speech-2.8-hd/schema-input.json
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:23:40.417405+00:00
+---
+
+# https://developers.cloudflare.com/ai/models/minimax/speech-2.8-hd/schema-input.json
+
+> Source: https://developers.cloudflare.com/ai/models/minimax/speech-2.8-hd/schema-input.json
+
+{"$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","properties":{"text":{"type":"string","maxLength":10000,"description":"The text to convert to speech. Maximum 10,000 characters."},"voice_id":{"default":"English_expressive_narrator","description":"The voice ID to use for synthesis","type":"string"},"speed":{"default":1,"description":"Speech speed (0.5 to 2)","type":"number","minimum":0.5,"maximum":2},"volume":{"default":1,"description":"Speech volume (0 to 10)","type":"number","minimum":0,"maximum":10},"pitch":{"default":0,"description":"Pitch adjustment (-12 to 12)","type":"integer","minimum":-12,"maximum":12},"emotion":{"description":"Emotion control for synthesized speech","type":"string","enum":["happy","sad","angry","fearful","disgusted","surprised","calm","fluent"]},"format":{"default":"mp3","description":"Output audio format","type":"string","enum":["mp3","flac","wav"]},"sample_rate":{"description":"Audio sample rate","anyOf":[{"type":"number","const":8000},{"type":"number","const":16000},{"type":"number","const":22050},{"type":"number","const":24000},{"type":"number","const":32000},{"type":"number","const":44100}]}},"required":["text","voice_id","speed","volume","pitch","format"],"additionalProperties":false}

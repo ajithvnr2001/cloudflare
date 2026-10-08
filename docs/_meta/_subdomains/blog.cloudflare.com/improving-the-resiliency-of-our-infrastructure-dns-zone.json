@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/improving-the-resiliency-of-our-infrastructure-dns-zone/",
+  "file": "_subdomains/blog.cloudflare.com/improving-the-resiliency-of-our-infrastructure-dns-zone.md",
+  "title": "Improving the Resiliency of Our Infrastructure DNS Zone | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:46.979424+00:00",
+  "html_len": 299180,
+  "md_len": 68695,
+  "depth": 0,
+  "phase": 2
+}

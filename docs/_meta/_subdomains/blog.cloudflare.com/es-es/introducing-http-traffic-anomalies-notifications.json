@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/introducing-http-traffic-anomalies-notifications/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/introducing-http-traffic-anomalies-notifications.md",
+  "title": "Novedad: Notificaciones de anomal\u00edas de tr\u00e1fico HTTP | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:41:43.589790+00:00",
+  "html_len": 213373,
+  "md_len": 31170,
+  "depth": 0,
+  "phase": 2
+}

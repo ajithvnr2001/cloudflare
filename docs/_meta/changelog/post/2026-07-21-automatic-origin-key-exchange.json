@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/changelog/post/2026-07-21-automatic-origin-key-exchange/",
+  "file": "changelog/post/2026-07-21-automatic-origin-key-exchange.md",
+  "title": "Faster and more secure TLS handshakes to your origins, automatically \u00b7 Changelog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:07:03.902208+00:00",
+  "html_len": 61735,
+  "md_len": 2167,
+  "depth": 0
+}

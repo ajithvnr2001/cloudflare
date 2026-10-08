@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/nl-nl/tag/internet-traffic/",
+  "file": "_subdomains/blog.cloudflare.com/nl-nl/tag/internet-traffic.md",
+  "title": "Berichten getagd met \"Internetverkeer\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:05:38.610469+00:00",
+  "html_len": 128553,
+  "md_len": 6739,
+  "depth": 1,
+  "phase": 2
+}

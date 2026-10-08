@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ssl-tls-recommender/",
+  "file": "_subdomains/blog.cloudflare.com/ssl-tls-recommender.md",
+  "title": "Introducing SSL/TLS Recommender | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:58.976874+00:00",
+  "html_len": 310210,
+  "md_len": 74722,
+  "depth": 0,
+  "phase": 2
+}

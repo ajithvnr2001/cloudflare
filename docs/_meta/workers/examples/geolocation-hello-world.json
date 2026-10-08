@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/examples/geolocation-hello-world/",
+  "file": "workers/examples/geolocation-hello-world.md",
+  "title": "Geolocation: Hello World \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:23.274453+00:00",
+  "html_len": 211745,
+  "md_len": 7855,
+  "depth": 0
+}

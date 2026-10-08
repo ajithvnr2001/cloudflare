@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/how-the-brazilian-presidential-elections-affected-internet-traffic/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/how-the-brazilian-presidential-elections-affected-internet-traffic.md",
+  "title": "\u5df4\u897f\u603b\u7edf\u9009\u4e3e\u5982\u4f55\u5f71\u54cd\u4e92\u8054\u7f51\u6d41\u91cf | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:24.533344+00:00",
+  "html_len": 241900,
+  "md_len": 33591,
+  "depth": 0,
+  "phase": 2
+}

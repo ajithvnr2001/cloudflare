@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/bot-preference-sync/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/bot-preference-sync.md",
+  "title": "\u4e00\u6b21\u8a2d\u5b9a\uff0c\u8655\u8655\u751f\u6548\uff1aBot Preference Sync \u6b63\u5f0f\u63a8\u51fa | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:44.444731+00:00",
+  "html_len": 189217,
+  "md_len": 21860,
+  "depth": 0,
+  "phase": 2
+}

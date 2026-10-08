@@ -1,0 +1,224 @@
+---
+url: https://developers.cloudflare.com/agents/harnesses/think/client-tools/
+title: Client tools \u00b7 Cloudflare Agents docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:04:12.637065+00:00
+---
+
+# Client tools · Cloudflare Agents docs
+
+> Source: https://developers.cloudflare.com/agents/harnesses/think/client-tools/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Agents](https://developers.cloudflare.com/agents/)
+  3. /…
+
+[Harnesses](https://developers.cloudflare.com/agents/harnesses/)
+
+  4. /[Think](https://developers.cloudflare.com/agents/harnesses/think/)
+  5. /Client tools
+
+
+
+# Client tools
+
+Last updated Aug 20, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/agents/harnesses/think/client-tools/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewDefining client toolsClient tools over the sub-agent RPC chat() path Behavior notesApproval flowAuto-continuationSurvive restarts while waiting for a humanMessage concurrencyMulti-tab broadcast
+
+Think supports tools that execute in the browser. The client sends serializable tool schemas in the chat request body, Think merges them with server tools, and when the LLM calls a client tool, the call is routed to the client for execution.
+
+## Defining client tools
+
+For dynamic client-side tools, pass `tools` to `useAgentChat`. Tools with an `execute` function are registered with the server as client-executed tools:
+    
+    
+    const { messages, sendMessage } = useAgentChat({
+    	agent,
+    	tools: {
+    		getUserTimezone: {
+    			description: "Get the user's timezone from their browser",
+    			parameters: {},
+    			execute: async () => {
+    				return Intl.DateTimeFormat().resolvedOptions().timeZone;
+    			},
+    		},
+    		getClipboard: {
+    			description: "Read text from the user's clipboard",
+    			parameters: {},
+    			execute: async () => {
+    				return navigator.clipboard.readText();
+    			},
+    		},
+    	},
+    });
+    
+    
+    const { messages, sendMessage } = useAgentChat({
+    	agent,
+    	tools: {
+    		getUserTimezone: {
+    			description: "Get the user's timezone from their browser",
+    			parameters: {},
+    			execute: async () => {
+    				return Intl.DateTimeFormat().resolvedOptions().timeZone;
+    			},
+    		},
+    		getClipboard: {
+    			description: "Read text from the user's clipboard",
+    			parameters: {},
+    			execute: async () => {
+    				return navigator.clipboard.readText();
+    			},
+    		},
+    	},
+    });
+
+Client tools are tools without an `execute` function on the server — they only have a schema. When the LLM produces a tool call for one, Think routes it to the client.
+
+For most apps, prefer defining tools on the server and using `onToolCall` for browser-only execution. The `tools` option is most useful for SDKs or platforms where the browser decides the available tool surface at runtime.
+
+## Client tools over the sub-agent RPC `chat()` path
+
+When a parent agent delegates to a Think sub-agent over RPC with `chat()` (rather than the browser WebSocket), there is no WebSocket to carry `clientTools` or to send tool results back. Pass them through `ChatOptions` instead:
+    
+    
+    await child.chat(message, callback, {
+    	signal,
+    	clientTools: [
+    		{
+    			name: "get_user_timezone",
+    			description: "Get the caller's timezone",
+    			parameters: { type: "object" },
+    		},
+    	],
+    	onClientToolCall: async ({ toolName, input }) => {
+    		// Run the client tool wherever the parent can — return its output.
+    		return runClientTool(toolName, input);
+    	},
+    });
+    
+    
+    await child.chat(message, callback, {
+    	signal,
+    	clientTools: [
+    		{
+    			name: "get_user_timezone",
+    			description: "Get the caller's timezone",
+    			parameters: { type: "object" },
+    		},
+    	],
+    	onClientToolCall: async ({ toolName, input }) => {
+    		// Run the client tool wherever the parent can — return its output.
+    		return runClientTool(toolName, input);
+    	},
+    });
+
+  * `clientTools` registers the tool schemas for the turn, exactly like the WebSocket `clientTools` field.
+  * `onClientToolCall` executes a client-tool call and returns its output. The model can call a client tool, receive the result, and continue — all within the single `chat()` call.
+
+
+
+If you omit `onClientToolCall`, the tools are registered but have no result: the model's call is surfaced through the stream callback and the turn ends with a dangling tool call (the RPC stream callback has no inbound result channel of its own). Supply `onClientToolCall` whenever you want the round trip to complete.
+
+### Behavior notes
+
+  * **Recovery:** the schemas and `onClientToolCall` executor are per-turn only and are never persisted (the executor is a live RPC reference that dies with the isolate, and unlike the WebSocket path there is no client to replay a `tool-result` after an eviction). If an eviction interrupts the turn while a client-tool call is mid-flight, chat recovery errors the orphaned call (treating it like a server tool) and the model proceeds. To re-run cleanly, the parent re-invokes `chat()` with the `clientTools` and `onClientToolCall` again.
+  * **Errors:** if `onClientToolCall` throws, the failure is surfaced to the model as a tool error (`output-error`) and the turn continues — it does not crash the turn.
+  * **Serialization:** the value returned from `onClientToolCall` becomes the tool output, so it must be JSON-serializable (it travels back over RPC and into the model context).
+  * **No approval gate:** RPC client tools execute immediately through `onClientToolCall`. The WebSocket approval flow (`needsApproval`) does not apply on this path — gate execution inside your executor if you need it.
+  * **Name precedence:** client tools are merged after server tools, so a client tool that shares a name with a server tool (for example a workspace tool) overrides it for that turn — the same as the WebSocket path.
+  * **Abort:** aborting the turn via `signal` stops the loop, but an in-flight `onClientToolCall` is not itself cancelled; the turn ends after the current call resolves.
+
+
+
+## Approval flow
+
+Handle browser-side tool execution on the client with `onToolCall`:
+    
+    
+    useAgentChat({
+    	agent,
+    	onToolCall: async ({ toolCall, addToolOutput }) => {
+    		if (toolCall.toolName === "read") {
+    			const result = await readFromBrowser(toolCall.input);
+    			addToolOutput({
+    				toolCallId: toolCall.toolCallId,
+    				output: result,
+    			});
+    		}
+    	},
+    });
+    
+    
+    useAgentChat({
+    	agent,
+    	onToolCall: async ({ toolCall, addToolOutput }) => {
+    		if (toolCall.toolName === "read") {
+    			const result = await readFromBrowser(toolCall.input);
+    			addToolOutput({
+    				toolCallId: toolCall.toolCallId,
+    				output: result,
+    			});
+    		}
+    	},
+    });
+
+## Auto-continuation
+
+After a client tool result is received, Think automatically continues the conversation without a new user message. The continuation turn has `continuation: true` in the `TurnContext`, which you can use in `beforeTurn` to adjust model or tool selection.
+
+When a turn produces several client tool calls at once, Think waits for **all** of their results before starting a single continuation, instead of starting one continuation per result. An immediate resume request that arrives while a continuation is already pending attaches to that pending continuation rather than starting a duplicate, and server-side `needsApproval` continuations resume reliably once the approval is recorded.
+
+## Survive restarts while waiting for a human
+
+A Durable Object can be evicted at any time, including while a turn is paused on an approval prompt or a client-side tool call. [`Think` durable recovery](https://developers.cloudflare.com/agents/harnesses/think/recovery/) is always on. The SDK treats such a turn as waiting on the human, not stuck. It parks the turn instead of failing it. The user's eventual approval or tool result resumes the conversation.
+
+For which interactions are exempt from recovery budgets, refer to [Turns waiting on a human are not sealed](https://developers.cloudflare.com/agents/communication-channels/chat/chat-agents/#turns-waiting-on-a-human-are-not-sealed).
+
+## Message concurrency
+
+The `messageConcurrency` property controls how overlapping user submits behave when a chat turn is already active.
+
+Strategy | Behavior  
+---|---  
+`"queue"` | Queue every submit and process them in order. Default.  
+`"latest"` | Keep only the latest overlapping submission; superseded submissions still persist their user messages but do not start a model turn  
+`"merge"` | Queue overlapping submissions, then collapse their trailing user messages into one combined turn before the latest queued turn runs  
+`"drop"` | Ignore overlapping submits entirely. Messages are not persisted.  
+`{ strategy: "debounce", debounceMs?: number }` | Trailing-edge latest with a quiet window (default 750ms).  
+      
+    
+    import { Think } from "@cloudflare/think";
+    
+    export class SearchAgent extends Think {
+    	messageConcurrency = "latest";
+    	getModel() {
+    		/* ... */
+    	}
+    }
+    
+    
+    import { Think } from "@cloudflare/think";
+    import type { MessageConcurrency } from "@cloudflare/think";
+    
+    export class SearchAgent extends Think<Env> {
+    	override messageConcurrency: MessageConcurrency = "latest";
+    	getModel() {
+    		/* ... */
+    	}
+    }
+
+## Multi-tab broadcast
+
+Think broadcasts streaming responses to all connected WebSocket clients. When multiple browser tabs are connected to the same agent, all tabs see the streamed response in real time. Tool call states (pending, result, approval) are broadcast to all tabs.
+
+Programmatic `chat()` turns and `clearMessages()` also broadcast message updates to connected `useAgentChat` clients, so browser clients stay in sync without reconnecting.
+
+[PreviousLifecycle hooks](https://developers.cloudflare.com/agents/harnesses/think/lifecycle-hooks/)[NextMessengers](https://developers.cloudflare.com/agents/harnesses/think/messengers/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/agents/harnesses/think/client-tools.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

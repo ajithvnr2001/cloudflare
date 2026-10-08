@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/dmarc/",
+  "file": "_subdomains/blog.cloudflare.com/tag/dmarc.md",
+  "title": "Posts tagged \"DMARC\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:08:50.044905+00:00",
+  "html_len": 112711,
+  "md_len": 2246,
+  "depth": 1,
+  "phase": 2
+}

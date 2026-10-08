@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/dns/manage-dns-records/how-to/managing-dynamic-ip-addresses/",
+  "file": "dns/manage-dns-records/how-to/managing-dynamic-ip-addresses.md",
+  "title": "Dynamically update DNS records \u00b7 Cloudflare DNS docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:10:58.886415+00:00",
+  "html_len": 124602,
+  "md_len": 1794,
+  "depth": 0
+}

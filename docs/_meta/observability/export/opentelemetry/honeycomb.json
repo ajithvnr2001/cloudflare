@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/observability/export/opentelemetry/honeycomb/",
+  "file": "observability/export/opentelemetry/honeycomb.md",
+  "title": "Export to Honeycomb \u00b7 Cloudflare Observability docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:12:26.392990+00:00",
+  "html_len": 110059,
+  "md_len": 4437,
+  "depth": 0
+}

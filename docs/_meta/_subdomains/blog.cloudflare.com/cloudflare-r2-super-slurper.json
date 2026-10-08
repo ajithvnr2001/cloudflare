@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-r2-super-slurper/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-r2-super-slurper.md",
+  "title": "Migrate from S3 easily with the R2 Super Slurper | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:08.202180+00:00",
+  "html_len": 286667,
+  "md_len": 60229,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/a-single-dashboard-for-cloudflare-for-teams/",
+  "file": "_subdomains/blog.cloudflare.com/a-single-dashboard-for-cloudflare-for-teams.md",
+  "title": "A single dashboard for Cloudflare for Teams | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:12.164120+00:00",
+  "html_len": 297567,
+  "md_len": 66115,
+  "depth": 0,
+  "phase": 2
+}

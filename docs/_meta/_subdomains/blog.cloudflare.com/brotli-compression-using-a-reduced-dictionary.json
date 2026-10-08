@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/brotli-compression-using-a-reduced-dictionary/",
+  "file": "_subdomains/blog.cloudflare.com/brotli-compression-using-a-reduced-dictionary.md",
+  "title": "My internship: Brotli compression using a reduced dictionary | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:50.030253+00:00",
+  "html_len": 282485,
+  "md_len": 65994,
+  "depth": 0,
+  "phase": 2
+}

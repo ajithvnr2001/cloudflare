@@ -1,0 +1,12 @@
+---
+url: https://developers.cloudflare.com/ai/models/black-forest-labs/flux-video-upscale/schema-input.json
+title: https://developers.cloudflare.com/ai/models/black-forest-labs/flux-video-upscale/schema-input.json
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:23:32.786733+00:00
+---
+
+# https://developers.cloudflare.com/ai/models/black-forest-labs/flux-video-upscale/schema-input.json
+
+> Source: https://developers.cloudflare.com/ai/models/black-forest-labs/flux-video-upscale/schema-input.json
+
+{"$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","properties":{"input_video":{"type":"string","description":"HTTP(S) URL or base64-encoded MP4 video, up to 20 seconds and 50MB."},"upscale_factor":{"description":"Output scale relative to the source resolution, from 1.5x to 3x.","type":"number","minimum":1.5,"maximum":3},"creativity":{"description":"0 preserves the source precisely; 1 enhances fine detail creatively.","anyOf":[{"type":"number","const":0},{"type":"number","const":1}]},"prompt":{"description":"Optional description of the clip to guide creative detail enhancement.","type":"string"},"safety_tolerance":{"description":"Moderation strictness, from 0 (strictest) to 4.","type":"integer","minimum":0,"maximum":4}},"required":["input_video"],"additionalProperties":false}

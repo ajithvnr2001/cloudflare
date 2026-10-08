@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/cloudflare-images-sourcing-kit/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/cloudflare-images-sourcing-kit.md",
+  "title": "Annonce du Sourcing Kit de Cloudflare Images | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:01.051599+00:00",
+  "html_len": 236590,
+  "md_len": 35199,
+  "depth": 0,
+  "phase": 2
+}

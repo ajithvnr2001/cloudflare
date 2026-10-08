@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/redefining-fleet-management-at-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/redefining-fleet-management-at-cloudflare.md",
+  "title": "Redefining fleet management at Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:55.441959+00:00",
+  "html_len": 294296,
+  "md_len": 67727,
+  "depth": 0,
+  "phase": 2
+}

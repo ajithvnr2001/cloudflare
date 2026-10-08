@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/empowering-your-privacy/",
+  "file": "_subdomains/blog.cloudflare.com/empowering-your-privacy.md",
+  "title": "Empowering Your Privacy | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:28.539794+00:00",
+  "html_len": 280611,
+  "md_len": 68189,
+  "depth": 0,
+  "phase": 2
+}

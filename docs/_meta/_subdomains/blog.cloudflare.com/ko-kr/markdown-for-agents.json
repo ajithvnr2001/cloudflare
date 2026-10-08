@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/markdown-for-agents/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/markdown-for-agents.md",
+  "title": "\uc5d0\uc774\uc804\ud2b8\ub97c \uc704\ud55c Markdown \uc18c\uac1c | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:44.933645+00:00",
+  "html_len": 235722,
+  "md_len": 34857,
+  "depth": 0,
+  "phase": 2
+}

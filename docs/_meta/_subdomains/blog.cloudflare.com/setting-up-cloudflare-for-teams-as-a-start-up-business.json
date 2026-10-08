@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/setting-up-cloudflare-for-teams-as-a-start-up-business/",
+  "file": "_subdomains/blog.cloudflare.com/setting-up-cloudflare-for-teams-as-a-start-up-business.md",
+  "title": "Setting up Cloudflare for Teams as a Start-Up Business | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:12.753279+00:00",
+  "html_len": 286287,
+  "md_len": 64739,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tls-1-3-overview-and-q-and-a/",
+  "file": "_subdomains/blog.cloudflare.com/tls-1-3-overview-and-q-and-a.md",
+  "title": "An overview of TLS 1.3 and Q&A | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:31.078366+00:00",
+  "html_len": 327622,
+  "md_len": 72795,
+  "depth": 0,
+  "phase": 2
+}

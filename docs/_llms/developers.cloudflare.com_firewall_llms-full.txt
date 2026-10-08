@@ -1,0 +1,2218 @@
+---
+description: Create rules to inspect and act on incoming HTTP traffic.
+title: Cloudflare Firewall Rules
+image: https://developers.cloudflare.com/firewall/og.png?v=57363d946c6a43f9
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/firewall/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Cloudflare Firewall Rules
+
+Last updated Aug 14, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/firewall/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Cloudflare Firewall Rules allows you to create rules that inspect incoming traffic and block, challenge, log, or allow specific requests.
+
+Deprecation notice
+
+Cloudflare Firewall Rules has been deprecated. Cloudflare has moved existing firewall rules to [WAF custom rules](https://developers.cloudflare.com/waf/custom-rules/). For more information on this change, refer to the [upgrade guide](https://developers.cloudflare.com/waf/reference/legacy/firewall-rules-upgrade/).
+
+## Main features
+
+- **Rule-based protection**: Use pre-defined rulesets provided by Cloudflare, or define your own firewall rules. Create rules in the Cloudflare dashboard or via API.
+- **Complex custom rules**: Each rule's expression can reference multiple fields from all the available HTTP request parameters and fields, allowing you to create complex rules.
+
+## Availability
+
+This table outlines the Firewall Rules features and entitlements available with each customer plan:
+
+|  | Free | Pro | Business | Enterprise |
+| --- | --- | --- | --- | --- |
+| Availability | Yes | Yes | Yes | Yes |
+| Number of rules | 5 | 20 | 100 | 1,000 |
+| Supported actions | All except Log | All except Log | All except Log | All |
+| Regex support | No | No | Yes | Yes |
+
+## Next steps
+
+- Unless you are already an advanced user, refer to [Expressions](https://developers.cloudflare.com/ruleset-engine/rules-language/expressions/) and [Actions](https://developers.cloudflare.com/firewall/cf-firewall-rules/actions/) to learn more about the basic elements of firewall rules.
+- To start building your own firewall rules, refer to one of the following pages:
+  - [Manage firewall rules in the dashboard](https://developers.cloudflare.com/firewall/cf-dashboard/create-edit-delete-rules/)
+  - [Manage firewall rules via the APIs](https://developers.cloudflare.com/firewall/api/)
+- You can also manage firewall rules through Terraform. For more information, refer to [Getting Started with Terraform ↗︎](https://blog.cloudflare.com/getting-started-with-terraform-and-cloudflare-part-1/).
+
+## Related resources
+
+- [Cloudflare Rules language](https://developers.cloudflare.com/ruleset-engine/rules-language/)
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/firewall/#page","headline":"Cloudflare Firewall Rules","description":"Create rules to inspect and act on incoming HTTP traffic.","url":"https://developers.cloudflare.com/firewall/","inLanguage":"en","image":"https://developers.cloudflare.com/firewall/og.png?v=57363d946c6a43f9","dateModified":"2026-08-14","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Learn how Cloudflare Firewall Rules work.
+title: About
+image: https://developers.cloudflare.com/firewall/cf-firewall-rules/og.png?v=c16c8887cf07d116
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/firewall/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# About
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/firewall/cf-firewall-rules/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Cloudflare Firewall Rules is a flexible and intuitive framework for filtering HTTP requests. It gives you fine-grained control over which requests reach your applications, proactively inspecting incoming site traffic and automatically responding to threats.
+
+Deprecation notice
+
+Cloudflare Firewall Rules has been deprecated. Cloudflare has moved existing firewall rules to [WAF custom rules](https://developers.cloudflare.com/waf/custom-rules/). For more information on this change, refer to the [upgrade guide](https://developers.cloudflare.com/waf/reference/legacy/firewall-rules-upgrade/).
+
+In a firewall rule you define an [expression](https://developers.cloudflare.com/ruleset-engine/rules-language/expressions/) that tells Cloudflare what to look for in a request, and specify the appropriate [action](https://developers.cloudflare.com/firewall/cf-firewall-rules/actions/) to take when those conditions are met. Expressions can reference [IP lists](https://developers.cloudflare.com/waf/tools/lists/custom-lists/#ip-lists) - groups of IP addresses that you can reference collectively by name.
+
+To write firewall rule expressions, use the [Rules language](https://developers.cloudflare.com/ruleset-engine/rules-language/), a powerful expression language inspired in the Wireshark Display Filter language.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/firewall/cf-firewall-rules/#page","headline":"About","description":"Learn how Cloudflare Firewall Rules work.","url":"https://developers.cloudflare.com/firewall/cf-firewall-rules/","inLanguage":"en","image":"https://developers.cloudflare.com/firewall/cf-firewall-rules/og.png?v=c16c8887cf07d116","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Review available actions for firewall rules.
+title: Firewall rules actions
+image: https://developers.cloudflare.com/firewall/cf-firewall-rules/actions/og.png?v=52d3a3f7cbb411cd
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/firewall/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Firewall rules actions
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/firewall/cf-firewall-rules/actions/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+The action of a firewall rule tells Cloudflare how to handle HTTP requests that have matched the rule expression.
+
+Deprecation notice
+
+Cloudflare Firewall Rules has been deprecated. Cloudflare has moved existing firewall rules to [WAF custom rules](https://developers.cloudflare.com/waf/custom-rules/). For more information on this change, refer to the [upgrade guide](https://developers.cloudflare.com/waf/reference/legacy/firewall-rules-upgrade/).
+
+## Supported actions
+
+The table below lists the actions available in firewall rules. These actions are listed in order of precedence. If the same request matches two different rules which have the same priority, precedence determines the action to take.
+
+For example, the *Allow* action takes precedence over the *Block* action. In a case where a request matches a rule with the *Allow* action and another with the *Block* action, precedence resolves the tie, and Cloudflare allows the request.
+
+There are two exceptions to this behavior: the *Log* and *Bypass* actions. Unlike other actions, *Log* and *Bypass* do not terminate further evaluation within firewall rules. This means that if a request matches two different rules and one of those rules specifies the *Log* or *Bypass* action, the second action will be triggered instead, even though *Log*/*Bypass* has precedence.
+
+Note
+
+For reference information on rule actions available for Cloudflare products powered by the Ruleset Engine, refer to [Rules language: Actions](https://developers.cloudflare.com/ruleset-engine/rules-language/actions/).
+
+| Action | Description | Order of precedence |
+| --- | --- | --- |
+| **Log**<br><br>API value:<br> `log` | <ul><li>Records matching requests in the Cloudflare Logs.</li><li>Only available for Enterprise plans.</li><li>Recommended for validating rules before committing to a more severe action.</li></ul> | 1 |
+| **Bypass**<br><br>API value:<br> `bypass` | <ul><li>Allows user to dynamically disable Cloudflare security features for a request.</li><li>Available to all plans.</li><li>Matching requests exempt from evaluation by a user-defined list containing one or more of the following Cloudflare security features:<ul><li>[User Agent Blocking](https://developers.cloudflare.com/waf/tools/user-agent-blocking/)</li><li>[Browser Integrity Check](https://developers.cloudflare.com/waf/tools/browser-integrity-check/)</li><li>[Hotlink Protection](https://developers.cloudflare.com/waf/tools/scrape-shield/hotlink-protection/)</li><li>[Security Level (IP Reputation)](https://developers.cloudflare.com/waf/tools/security-level/)</li><li>[Rate Limiting](https://developers.cloudflare.com/waf/reference/legacy/old-rate-limiting/) (previous version, deprecated)</li><li>[Zone Lockdown](https://developers.cloudflare.com/waf/tools/zone-lockdown/)</li><li>[WAF managed rules](https://developers.cloudflare.com/waf/reference/legacy/old-waf-managed-rules/) (previous version, deprecated)</li></ul>**Notes:**<ul><li>Currently, you cannot bypass Bot Fight Mode. For more information on this product, refer to [Cloudflare bot solutions](https://developers.cloudflare.com/bots/).</li><li>You cannot bypass the new [WAF managed rules](https://developers.cloudflare.com/waf/managed-rules/) using this action, only the previous version of WAF managed rules. To skip one or more managed rules in the new WAF for specific requests, [create an exception](https://developers.cloudflare.com/waf/managed-rules/waf-exceptions/).</li></ul></li><li>Requests which match the *Bypass* action are still subject to evaluation (and thus a challenge or block) within Firewall Rules, based on the order of execution.</li></ul> | 2 |
+| **Allow**<br><br>API value:<br> `allow` | <ul><li>Matching requests are exempt from *Bypass*, *Block*, and challenge actions triggered by other firewall rules.</li><li>The scope of the *Allow* action is limited to firewall rules; matching requests are **not** exempt from action by other Cloudflare security products such as Bot Fight Mode, IP Access Rules, and WAF Managed Rules.</li><li>Matched requests will be mitigated if they are part of a DDoS attack.</li></ul> | 3 |
+| **Interactive Challenge**<br><br>API value:<br> `challenge` | <ul><li>This option is not recommended. Instead, choose **Managed Challenge**, which issues interactive challenges to visitors only when necessary.</li><li>The client that made the request must pass an interactive challenge.</li><li>If successful, Cloudflare accepts the matched request; otherwise, it is blocked.</li><li>For additional information, refer to [Notes about challenge actions](#notes-about-challenge-actions).</li></ul> | 4 |
+| ** Managed Challenge**<br><br>API value:<br> `managed_challenge` | <ul><li>Helps reduce the lifetimes of human time spent solving interactive challenges across the Internet.</li><li>Depending on the characteristics of a request, Cloudflare will dynamically choose the appropriate type of challenge from the following actions based on specific criteria:<ul><li>Show a non-interactive challenge page.</li><li>Show an interactive challenge (such as requiring the visitor to click a button or to perform a task).</li></ul></li><li>For additional information, refer to [Notes about challenge actions](#notes-about-challenge-actions).</li></ul> | 5 |
+| **Non-Interactive Challenge**<br><br>API value:<br> `js_challenge` | <ul><li>Useful for ensuring that bots and spam cannot access the requested resource; browsers, however, are free to satisfy the challenge automatically.</li><li>The client that made the request must pass a Non-Interactive Cloudflare challenge before proceeding.</li><li>If successful, Cloudflare accepts the matched request; otherwise, it is blocked.</li><li>For additional information, refer to [Notes about challenge actions](#notes-about-challenge-actions).</li></ul> | 6 |
+| **Block**<br><br>API value:<br> `block` | Matching requests are denied access to the site. | 7 |
+
+## Notes about challenge actions
+
+When you configure a firewall rule with one of the challenge actions — *Non-Interactive Challenge*, *Managed Challenge*, or *Interactive Challenge* — and a request matches the rule, one of two things can happen:
+
+- The request is blocked if the visitor fails the challenge
+- The request is allowed if the visitor passes the challenge
+
+In this last case, no further firewall rules will be processed. This means that the action of any later rules with a challenge or *Block* action also matching the request will not be applied, and the request will be allowed.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/firewall/cf-firewall-rules/actions/#page","headline":"Firewall rules actions","description":"Review available actions for firewall rules.","url":"https://developers.cloudflare.com/firewall/cf-firewall-rules/actions/","inLanguage":"en","image":"https://developers.cloudflare.com/firewall/cf-firewall-rules/actions/og.png?v=52d3a3f7cbb411cd","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Understand firewall rule evaluation order and priority.
+title: Order and priority
+image: https://developers.cloudflare.com/firewall/cf-firewall-rules/order-priority/og.png?v=9eee108ce0c54a21
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/firewall/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Order and priority
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/firewall/cf-firewall-rules/order-priority/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Cloudflare Firewall Rules, now deprecated, is part of a larger evaluation chain for HTTP requests, as illustrated in the diagram below. For example, Firewall Rules only evaluates requests that first clear IP Access rules. If a request is blocked by a rule at any stage in the chain, Cloudflare does not evaluate the request further.
+
+![Flow chart of request evaluation at Cloudflare for security products that are not powered by the Ruleset Engine](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1600,height=858,format=webp/_astro/firewall-rules-order-and-priority-1.DvL3658y.png)
+
+Caution
+
+- You can use [IP Access rules](https://developers.cloudflare.com/waf/tools/ip-access-rules/) to allowlist requests under certain conditions, effectively excluding these requests from all security checks. However, allowing a given country code will not bypass [WAF Managed Rules](https://developers.cloudflare.com/waf/managed-rules/) or [WAF managed rules (previous version)](https://developers.cloudflare.com/waf/reference/legacy/old-waf-managed-rules/).
+- The execution order diagram does not include products powered by the [Ruleset Engine](https://developers.cloudflare.com/ruleset-engine/) like the [WAF](https://developers.cloudflare.com/waf/) or [Transform Rules](https://developers.cloudflare.com/rules/transform/).
+
+By default, Cloudflare evaluates firewall rules in **list order**, where rules are evaluated in the order they appear in the firewall rules list. List ordering is convenient when working with small numbers of rules because you can manage their order by dragging and dropping them into position. However, as the number of rules grows, managing rules in list order becomes difficult. This is where priority order comes into play.
+
+When **priority ordering** is enabled, Cloudflare evaluates firewall rules in order of their **priority number**, starting with the lowest. If a request matches two rules with the same priority, action precedence is used to resolve the tie. In this case, only the action of the rule with the highest precedence is executed, unless that action is *Log* or *Bypass* (refer to [Firewall rules actions](https://developers.cloudflare.com/firewall/cf-firewall-rules/actions/#supported-actions) for details). Priority ordering makes it a lot easier to manage large numbers of firewall rules, and once the number of rules passes 200, Cloudflare requires it.
+
+## Managing rule evaluation by list order
+
+Users with relatively small numbers of firewall rules (no more than 200) will find that list ordering is enabled by default. When list ordering is enabled, the rules list allows you to drag and drop firewall rules into position, as shown below:
+
+![Animation of a firewall rule being moved into a new position in the rules list to reorder it](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1600,height=1163,format=webp/_astro/firewall-rules-order-and-priority-2.od1TBIqG.gif)
+
+Once there are more than 200 total rules, including inactive rules, you must manage evaluation using priority ordering. When you cross this threshold, the firewall rules interface automatically switches to priority ordering.
+
+## Managing rule evaluation by priority order
+
+Although priority ordering is enabled automatically when the number of active and inactive firewall rules exceeds 200, you can manually enable priority ordering at any time from the rules list.
+
+Cloudflare Firewall Rules does not impose default priorities, and you are not required to set a priority for every rule.
+
+### Enable priority ordering
+
+To manually enable priority ordering:
+
+1. Above the rules list, select **Ordering**.
+2. Select *Priority Numbers*.
+
+Once priority ordering is enabled, you can set a priority number for each firewall rule.
+
+### Set rule priority
+
+To set the priority number for a firewall rule:
+
+1. Locate the desired rule in the rules list and select **Edit** (wrench icon).
+2. In the **Edit firewall rule** panel, enter a positive integer value in **Priority**.![Editing a firewall rule in the dashboard to define its Priority value](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=960,height=720,format=webp/_astro/firewall-rules-order-and-priority-4.BOS_CRyn.png)
+3. Select **Save**.
+
+The **Priority** column in the rules list displays the priority value for each rule.
+
+![When using priority order, the Firewall rules tab displays the priority of each rule (if any) in the first column of the rules list](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1410,height=924,format=webp/_astro/firewall-rules-order-and-priority-5.DaI_uWtJ.png)
+
+## Working with priority ordering
+
+Cloudflare has designed priority ordering to be extremely flexible. This flexibility is particularly useful for managing large rulesets programmatically via the Cloudflare API. Use the Update firewall rules command to set the `priority` property. Refer to [Cloudflare API: Firewall rules](https://developers.cloudflare.com/api/resources/firewall/subresources/rules/methods/list/) for details.
+
+While your priority numbering scheme can be arbitrary, keep the following in mind:
+
+- **The evaluation sequence starts from the lowest priority number** and goes to the highest.
+- **Rules without a priority number are evaluated last**, in order of their action precedence. For example, a rule with the *Log* action is evaluated before a rule that has the *Block* action. For more on action precedence, refer to [Firewall rules actions](https://developers.cloudflare.com/firewall/cf-firewall-rules/actions/).
+- **Avoid using the number `1` as a priority** to make rule order modification easier in the future.
+- **Consider grouping ranges of priority numbers into categories** that have some meaning for your deployment. Here are some examples:
+  - 5000-9999: Trusted IP addresses
+  - 10000-19999: Blocking rules for bad crawlers
+  - 20000-29999: Blocking rules for abusive users/spam
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/firewall/cf-firewall-rules/order-priority/#page","headline":"Order and priority","description":"Understand firewall rule evaluation order and priority.","url":"https://developers.cloudflare.com/firewall/cf-firewall-rules/order-priority/","inLanguage":"en","image":"https://developers.cloudflare.com/firewall/cf-firewall-rules/order-priority/og.png?v=9eee108ce0c54a21","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Create and manage firewall rules in the dashboard.
+title: Manage rules in the dashboard
+image: https://developers.cloudflare.com/firewall/cf-dashboard/og.png?v=a8bf8e92b4017a71
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/firewall/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Manage rules in the dashboard
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/firewall/cf-dashboard/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+To configure firewall rules in the Cloudflare dashboard, open **Firewall rules** in **Security** > **WAF**.
+
+Deprecation notice
+
+Cloudflare Firewall Rules has been deprecated. Cloudflare has moved existing firewall rules to [WAF custom rules](https://developers.cloudflare.com/waf/custom-rules/). For more information on this change, refer to the [upgrade guide](https://developers.cloudflare.com/waf/reference/legacy/firewall-rules-upgrade/).
+
+As depicted in the image below, the **Firewall rules** dashboard interface lets you:
+
+- View the list of existing rules, both enabled and disabled.
+- [Create, edit, and delete](https://developers.cloudflare.com/firewall/cf-dashboard/create-edit-delete-rules/) firewall rules.
+- Enable or disable rules.
+- Search and filter the list of existing rules.
+- Reorder firewall rules when using [list ordering](https://developers.cloudflare.com/firewall/cf-firewall-rules/order-priority/#managing-rule-evaluation-by-list-order).
+
+![The Firewall rules interface, displaying a list of three example firewall rules. This interface allows you to create new firewall rules, manage existing rules, and search and filter the list of rules.](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1161,height=791,format=webp/_astro/cf-firewall-rules-panel.CO2_wOo8.png)
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/firewall/cf-dashboard/#page","headline":"Manage rules in the dashboard","description":"Create and manage firewall rules in the dashboard.","url":"https://developers.cloudflare.com/firewall/cf-dashboard/","inLanguage":"en","image":"https://developers.cloudflare.com/firewall/cf-dashboard/og.png?v=a8bf8e92b4017a71","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Create, edit, and delete firewall rules.
+title: Create, edit, and delete rules
+image: https://developers.cloudflare.com/firewall/cf-dashboard/create-edit-delete-rules/og.png?v=13c052f8960367e7
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/firewall/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Create, edit, and delete rules
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/firewall/cf-dashboard/create-edit-delete-rules/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+A firewall rule has two main attributes: an [expression](https://developers.cloudflare.com/ruleset-engine/rules-language/expressions/) and an [action](https://developers.cloudflare.com/firewall/cf-firewall-rules/actions/).
+
+Deprecation notice
+
+Cloudflare Firewall Rules has been deprecated. Cloudflare has moved existing firewall rules to [WAF custom rules](https://developers.cloudflare.com/waf/custom-rules/). For more information on this change, refer to the [upgrade guide](https://developers.cloudflare.com/waf/reference/legacy/firewall-rules-upgrade/).
+
+When an incoming HTTP request matches a firewall rule expression, Cloudflare performs the specified action. For more information, refer to [Expressions](https://developers.cloudflare.com/ruleset-engine/rules-language/expressions/) and [Actions](https://developers.cloudflare.com/firewall/cf-firewall-rules/actions/).
+
+Note
+
+The maximum length of a rule expression is 4,096 characters.
+
+## Create a firewall rule
+
+1. Log in to the [Cloudflare dashboard ↗︎](https://dash.cloudflare.com/), and select your account and website.
+2. Go to **Security** > **WAF** > **Firewall rules**.
+3. Select **Create a firewall rule**.
+4. In the **Create firewall rule** page that displays, use the **Rule name** input to supply a descriptive name.
+5. Under **When incoming requests match**, use the **Field** drop-down list to choose an HTTP property (refer to the [Fields reference](https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/) for details). For each request, the value of the property you choose for **Field** is compared to the value you specify for **Value**.
+
+   Alternatively, use the [Expression Editor](https://developers.cloudflare.com/ruleset-engine/rules-language/expressions/edit-expressions/#expression-editor) to define the rule expression.![Example firewall rule expression with a selected field, operator, and value](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=983,height=289,format=webp/_astro/firewall-rules-expression-builder-value.Cm4ecLGt.png)
+6. Use the **Operator** drop-down list to choose a comparison operator. For an expression to match, the value of the request **Field** and the value specified in the **Value** input must satisfy the comparison operator.
+7. Next, specify the value to match. If the value is an enumeration, then the **Value** control will be a drop-down list. Otherwise, it will be a text input.
+8. To add a new sub-expression to the rule expression, select **And** or **Or** next to **Value**.
+9. Select an action for your rule in the **Action** drop-down list.
+10. To save and deploy your rule, select **Deploy**. If you are not ready to deploy your rule, select **Save as draft**.
+
+After you choose an option, you return to the rules list, which displays your new rule.
+
+## Manage rules
+
+Use the available options in the rules list to manage firewall rules.
+
+![The rules list interface in the dashboard where you can manage firewall rules](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1152,height=304,format=webp/_astro/cf-firewall-rules-list.Co9nTUAW.png)
+
+### Edit rule
+
+Select **Edit** (wrench icon) located on the right of your rule in the rules list to open the **Edit firewall rule** panel and make the changes you want.
+
+### Enable or disable rule
+
+Use the toggle switch associated with a firewall rule to enable or disable it.
+
+### Delete rule
+
+1. Next to the rule you want to delete, select **Delete** (**X** icon).
+2. In the confirmation dialog, select **Delete** to complete the operation.
+
+### Order rules
+
+By default, Cloudflare evaluates firewall rules in **list order**, where rules are evaluated in the order they appear in the rules list. When list ordering is enabled, the rules list allows you to drag and drop firewall rules into position, as shown below.
+
+![Animation of a user dragging and dropping a rule in the rules list to reorder it](https://developers.cloudflare.com/images/firewall/firewall-rules-expression-builder-10.gif)
+
+Once there are more than 200 total rules (including inactive rules), you must manage evaluation using **priority ordering**, in which Cloudflare evaluates firewall rules in order of their **priority number**, starting with the lowest. When you cross this threshold, the firewall rules interface automatically switches to priority ordering. For more on working with priority ordering, refer to [Order and priority](https://developers.cloudflare.com/firewall/cf-firewall-rules/order-priority/).
+
+## Test firewall rules with Rule Preview
+
+Rule Preview allows customers on an Enterprise plan to understand the potential impact of a new firewall rule, by testing it against a sample of requests drawn from the last 72 hours of traffic.
+
+Rule Preview is built into the **Create firewall rule** and **Edit firewall rule** panels so that you can test a rule as you edit it. For more information, refer to [Preview rules](https://developers.cloudflare.com/firewall/cf-dashboard/rule-preview/).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/firewall/cf-dashboard/create-edit-delete-rules/#page","headline":"Create, edit, and delete rules","description":"Create, edit, and delete firewall rules.","url":"https://developers.cloudflare.com/firewall/cf-dashboard/create-edit-delete-rules/","inLanguage":"en","image":"https://developers.cloudflare.com/firewall/cf-dashboard/create-edit-delete-rules/og.png?v=13c052f8960367e7","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Create a mutual TLS rule in the dashboard.
+title: Create a mTLS rule
+image: https://developers.cloudflare.com/firewall/cf-dashboard/create-mtls-rule/og.png?v=fc120de2706f4efc
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/firewall/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Create a mTLS rule
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/firewall/cf-dashboard/create-mtls-rule/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Use the [Mutual TLS](https://developers.cloudflare.com/api-shield/security/mtls/configure/) Rule interface in the Cloudflare dashboard to create an mTLS rule that requires requests to your API or web application to present a valid client certificate.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/firewall/cf-dashboard/create-mtls-rule/#page","headline":"Create a mTLS rule","description":"Create a mutual TLS rule in the dashboard.","url":"https://developers.cloudflare.com/firewall/cf-dashboard/create-mtls-rule/","inLanguage":"en","image":"https://developers.cloudflare.com/firewall/cf-dashboard/create-mtls-rule/og.png?v=fc120de2706f4efc","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Test firewall rule impact before deployment.
+title: Preview rules
+image: https://developers.cloudflare.com/firewall/cf-dashboard/rule-preview/og.png?v=051caf3c5f0a0f48
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/firewall/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Preview rules
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/firewall/cf-dashboard/rule-preview/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+The expression of a firewall rule can become quite complex. In this situation, you should test your firewall rule before deploying it to ensure that the rule will behave as expected.
+
+Rule Preview helps you understand the potential impact of a firewall rule, by testing the rule against a sample drawn from the last 72 hours of traffic. Rule Preview is built into the firewall rules Expression Editor so that you can test a rule as you edit it.
+
+Caution
+
+Rule Preview is only available to customers on an Enterprise plan.
+
+## Test a firewall rule with Rule Preview
+
+1. Locate the desired rule in the rules list and select **Edit** (wrench icon).
+2. Select **Test rule** to trigger the test.
+
+![The Test Rule button next to the Action drop-down list allows you to check the traffic that would be affected by the current firewall rule](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=800,height=600,format=webp/_astro/firewall-rules-preview-1.D1bW7NGh.png)
+
+The results of the test are displayed in a plot that simulates how many of the total requests in the last 72 hours would have matched the tested expression.
+
+In this screenshot, a rule that matches all User-Agents that contain the string `Mozilla` would block about 8% of requests to the zone:
+
+![Example chart of a rule preview operation, stating that about 8% of the zone requests would be blocked by the current rule](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1999,height=1295,format=webp/_astro/cf-firewall-rules-preview-rule-plot-chart.BW_d_L46.png)
+
+## Important notes
+
+**Consider the results of Firewall Preview an *indication* of traffic levels**, not an exact calculation. The sample rate can be as little as 1% of your total traffic.
+
+**Rule Preview does not take into account other firewall rules** that you have already configured. In effect, Rule Preview tests a single firewall rule in isolation. Security events or any other rules with a higher priority that may have blocked or challenged a request are ignored.
+
+**You cannot test firewall rules that reference [IP lists](https://developers.cloudflare.com/waf/tools/lists/custom-lists/#ip-lists)**.
+
+**Cloudflare does not store the entirety of requests, so only a limited number of fields are available to Rule Preview**. The table below lists the fields that Rule Preview supports (green cells), broken down by operator. Fields and operators that are not supported are not included in this table.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/firewall/cf-dashboard/rule-preview/#page","headline":"Preview rules","description":"Test firewall rule impact before deployment.","url":"https://developers.cloudflare.com/firewall/cf-dashboard/rule-preview/","inLanguage":"en","image":"https://developers.cloudflare.com/firewall/cf-dashboard/rule-preview/og.png?v=051caf3c5f0a0f48","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Manage firewall rules programmatically via APIs.
+title: Manage rules via the APIs
+image: https://developers.cloudflare.com/firewall/api/og.png?v=d8efa61cdf5c94d9
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/firewall/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Manage rules via the APIs
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/firewall/api/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Cloudflare offers APIs that work together to achieve the same effect as the UI-based **Firewall rules** feature under **Security** > **WAF**.
+
+Deprecation notice
+
+Cloudflare Firewall Rules has been deprecated. Cloudflare has moved existing firewall rules to [WAF custom rules](https://developers.cloudflare.com/waf/custom-rules/). For more information on this change, refer to the [upgrade guide](https://developers.cloudflare.com/waf/reference/legacy/firewall-rules-upgrade/).
+
+These APIs are the following:
+
+- [**Firewall Rules API**](https://developers.cloudflare.com/firewall/api/cf-firewall-rules/): Manage firewall rules and their actions, based on criteria separately defined through filters.
+- [**Filters API**](https://developers.cloudflare.com/firewall/api/cf-filters/): Manage the filters that enable rule matching.
+- [**Lists API**](https://developers.cloudflare.com/waf/tools/lists/lists-api/): Manage named lists of items (such as IP addresses) that you can use in the rules of different Cloudflare products.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/firewall/api/#page","headline":"Manage rules via the APIs","description":"Manage firewall rules programmatically via APIs.","url":"https://developers.cloudflare.com/firewall/api/","inLanguage":"en","image":"https://developers.cloudflare.com/firewall/api/og.png?v=d8efa61cdf5c94d9","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Recommended API call sequence for firewall rules.
+title: Call sequence
+image: https://developers.cloudflare.com/firewall/api/call-sequence/og.png?v=e8eb9ef18f528a3a
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/firewall/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Call sequence
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/firewall/api/call-sequence/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+The API call examples in this site illustrate the **recommended sequence** of calling the two APIs (the [Cloudflare Filters API](https://developers.cloudflare.com/firewall/api/cf-filters/) and the [Firewall Rules API](https://developers.cloudflare.com/firewall/api/cf-firewall-rules/)).
+
+Deprecation notice
+
+Cloudflare Firewall Rules has been deprecated. Cloudflare has moved existing firewall rules to [WAF custom rules](https://developers.cloudflare.com/waf/custom-rules/). For more information on this change, refer to the [upgrade guide](https://developers.cloudflare.com/waf/reference/legacy/firewall-rules-upgrade/).
+
+The image below depicts this sequence, which can be applied for creating and editing rules. The reverse would apply for delete operations.
+
+![Recommended flow for calling the Cloudflare Filters API and Firewall Rules API when creating or editing rules](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=441,height=371,format=webp/_astro/recommended-flow.DBuGef-x.png)
+
+Cloudflare recommends this sequence because it facilitates filter reusability and allows working with either API independently. Thanks to the standalone nature of Cloudflare Filters, the same filter can be shared in multiple firewall rules and in other future Cloudflare products and features.
+
+For example, a filter that matches all traffic for your API (that is, `http.request.uri.path matches "^/api/.*$"`) may disable caching, disable human CAPTCHAs, configure JSON custom errors, and appear in a firewall rule. With the recommended sequence above, you would repeat steps 3-6 for every Cloudflare feature to configure against the same filter created in steps 1-2.
+
+However, for a `POST` operation, the **simplified sequence** — shown below — allows you to create both a filter and rule in the same call. In this case, the filter and rule only refer to each other.
+
+![Basic flow for invoking the Firewall Rules API to create both a filter and a rule in a single call](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=441,height=261,format=webp/_astro/simple-flow.DifdHPUG.png)
+
+In this sequence, a single `POST` request to the `/firewall/rules` endpoint takes the filter object in the JSON to create the filter in the Filters API (also via a `POST` request). If successful, the firewall rule is created.
+
+Below is an example call and response using this method:
+
+*Requestbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/firewall/rules" \
+--header "X-Auth-Email: <EMAIL>" \
+--header "X-Auth-Key: <API_KEY>" \
+--header "Content-Type: application/json" \
+--data '[
+  {
+    "filter": {
+      "expression": "http.request.uri.path contains \"/api/\" and ip.src eq 93.184.216.34"
+    },
+    "action": "block"
+  }
+]'
+```
+
+*Responsejson*
+
+```json
+{
+	"result": [
+		{
+			"id": "<RULE_ID>",
+			"paused": false,
+			"action": "block",
+			"priority": null,
+			"filter": {
+				"id": "<FILTER_ID>",
+				"expression": "http.request.uri.path contains \"/api/\" and ip.src eq 93.184.216.34",
+				"paused": false
+			}
+		}
+	],
+	"success": true,
+	"errors": [],
+	"messages": []
+}
+```
+
+However, this approach has some disadvantages:
+
+- The firewall rules client has to implement error and exception handling for every potential failure occurring in both the firewall rules and the filters APIs.
+- To protect against accidentally modifying or deleting filters used by other Cloudflare features, the `PUT` or `DELETE` operations are not allowed.
+
+By default, if either the filter or rule is invalid, neither will be created.
+
+However, one exception applies. If you are about to exceed your rule quota, Cloudflare may create the filter but not the firewall rule. This happens because the rule is only created after the filter in the sequence diagram.
+
+After you resolve the issue of exceeding your quota or requesting a feature that is unavailable to your zone, return to the recommended flow to create a rule that references the filter.
+
+In summary, Cloudflare strongly recommends the sequence with the two API calls. Limit your rule and filter creation using the simplified sequence for emergency situations, and only via `curl` requests.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/firewall/api/call-sequence/#page","headline":"Call sequence","description":"Recommended API call sequence for firewall rules.","url":"https://developers.cloudflare.com/firewall/api/call-sequence/","inLanguage":"en","image":"https://developers.cloudflare.com/firewall/api/call-sequence/og.png?v=e8eb9ef18f528a3a","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Manage filters for firewall rules via the API.
+title: Cloudflare Filters API
+image: https://developers.cloudflare.com/firewall/api/cf-filters/og.png?v=4bd390691a96f95a
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/firewall/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Cloudflare Filters API
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/firewall/api/cf-filters/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+**Cloudflare Filters** is an API-only component of firewall rules for designing complex criteria that rely on boolean operators and other logic to examine incoming HTTP traffic and look for a match.
+
+Deprecation notice
+
+Cloudflare Firewall Rules has been deprecated. Cloudflare has moved existing firewall rules to [WAF custom rules](https://developers.cloudflare.com/waf/custom-rules/). For more information on this change, refer to the [upgrade guide](https://developers.cloudflare.com/waf/reference/legacy/firewall-rules-upgrade/).
+
+For example, a filter matching:
+
+- An HTTP user agent, and
+- The HTTP path, and
+- The source IP address
+
+Associate a filter with a firewall rule to define the scope of that rule.
+
+Use IP lists within a filter to refer collectively to a group of IP addresses. Refer to the [Lists API](https://developers.cloudflare.com/waf/tools/lists/lists-api/) for more information.
+
+Before getting started with the Cloudflare Filters API, familiarize yourself with rule [expressions](https://developers.cloudflare.com/ruleset-engine/rules-language/expressions/). For a complete reference, refer to [Rules language](https://developers.cloudflare.com/ruleset-engine/rules-language/).
+
+## Differences from other Cloudflare APIs
+
+The Firewall Rules API behaves differently from most Cloudflare APIs in two ways:
+
+- API calls accept and return multiple items, and allow applying data changes to multiple items.
+- Although API calls return the [standard response](https://developers.cloudflare.com/fundamentals/api/), the error object follows the [JSON API standard ↗︎](http://jsonapi.org/format/#errors), such that in an error condition, it is clear which item produced the error and why.
+
+To get started, review [What is a filter?](https://developers.cloudflare.com/firewall/api/cf-filters/what-is-a-filter/), followed by the Cloudflare Filters [JSON object](https://developers.cloudflare.com/firewall/api/cf-firewall-rules/json-object/) and [Endpoints](https://developers.cloudflare.com/firewall/api/cf-firewall-rules/endpoints/).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/firewall/api/cf-filters/#page","headline":"Cloudflare Filters API","description":"Manage filters for firewall rules via the API.","url":"https://developers.cloudflare.com/firewall/api/cf-filters/","inLanguage":"en","image":"https://developers.cloudflare.com/firewall/api/cf-filters/og.png?v=4bd390691a96f95a","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Delete filters or rules with DELETE API requests.
+title: DELETE examples
+image: https://developers.cloudflare.com/firewall/api/cf-filters/delete/og.png?v=7424e24a196e746f
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/firewall/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# DELETE examples
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/firewall/api/cf-filters/delete/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+## Delete multiple filters
+
+This example deletes filters with IDs `{filter_id_1}` and `{filter_id_2}`.
+
+*Requestbash*
+
+```bash
+curl --request DELETE \
+"https://api.cloudflare.com/client/v4/zones/{zone_id}/filters?id={filter_id_1}&id={filter_id_2}" \
+--header "X-Auth-Email: <EMAIL>" \
+--header "X-Auth-Key: <API_KEY>"
+```
+
+*Responsejson*
+
+```json
+{
+  "result": [
+    {
+      "id": "<FILTER_ID_1>"
+    },
+    {
+      "id": "<FILTER_ID_2>"
+    }
+  ],
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+```
+
+## Delete a single filter
+
+This example deletes a single filter with ID `{filter_id}`.
+
+*Requestbash*
+
+```bash
+curl --request DELETE \
+"https://api.cloudflare.com/client/v4/zones/{zone_id}/filters/{filter_id}" \
+--header "X-Auth-Email: <EMAIL>" \
+--header "X-Auth-Key: <API_KEY>"
+```
+
+*Responsejson*
+
+```json
+{
+  "result": [
+    {
+      "id": "<FILTER_ID>"
+    }
+  ],
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/firewall/api/cf-filters/delete/#page","headline":"DELETE examples","description":"Delete filters or rules with DELETE API requests.","url":"https://developers.cloudflare.com/firewall/api/cf-filters/delete/","inLanguage":"en","image":"https://developers.cloudflare.com/firewall/api/cf-filters/delete/og.png?v=7424e24a196e746f","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: API endpoints for managing filters and firewall rules.
+title: Endpoints
+image: https://developers.cloudflare.com/firewall/api/cf-filters/endpoints/og.png?v=0541b9f27e384b4a
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/firewall/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Endpoints
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/firewall/api/cf-filters/endpoints/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+To invoke a Cloudflare Filters API operation, append the endpoint to the Cloudflare API base URL:
+
+```txt
+https://api.cloudflare.com/client/v4/
+```
+
+For authentication instructions, refer to [Getting Started: Requests](https://developers.cloudflare.com/fundamentals/api/) in the Cloudflare API documentation.
+
+For help with endpoints and pagination, refer to [Getting Started: Endpoints](https://developers.cloudflare.com/fundamentals/api/).
+
+Note
+
+The Filters API endpoints require a value for `<ZONE_ID>`.
+
+To retrieve a list of zones associated with your account, use the [List Zones](https://developers.cloudflare.com/api/resources/zones/methods/list/) operation and note the Zone ID associated with the domain for which you want to manage filters.
+
+The Cloudflare Filters API supports the operations outlined below. Visit the pages in this section for examples.
+
+| Operation | Method & Endpoint | Notes |
+| --- | --- | --- |
+| [Create filters](https://developers.cloudflare.com/api/resources/filters/methods/create/) | `POST zones/<ZONE_ID>/filters` | Handled as a single transaction. If there is an error, the entire operation fails. |
+| [Get filters](https://developers.cloudflare.com/api/resources/filters/methods/list/) | `GET zones/<ZONE_ID>/filters` | Lists all current filters. Results return paginated with 25 items per page by default. Use optional parameters to narrow results. |
+| [Get a filter](https://developers.cloudflare.com/api/resources/filters/methods/get/) | `GET zones/<ZONE_ID>/filters/<FILTER_ID>` | Retrieve a single filter by ID. |
+| [Update filters](https://developers.cloudflare.com/api/resources/filters/methods/bulk_update/) | `PUT zones/<ZONE_ID>/filters` | Handled as a single transaction. All filters must exist for operation to succeed. If there is an error, the entire operation fails. |
+| [Update a filter](https://developers.cloudflare.com/api/resources/filters/methods/update/) | `PUT zones/<ZONE_ID>/filters/<FILTER_ID>` | Update a single filter by ID. |
+| [Delete filters](https://developers.cloudflare.com/api/resources/filters/methods/bulk_delete/) | `DELETE zones/<ZONE_ID>/filters` | Delete existing filters. Must specify list of filter IDs. Empty requests result in no deletion. Returns HTTP status code 200 if a specified filter does not exist. |
+| [Delete a filter](https://developers.cloudflare.com/api/resources/filters/methods/delete/) | `DELETE zones/<ZONE_ID>/filters/<FILTER_ID>` | Delete a filter by ID. |
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/firewall/api/cf-filters/endpoints/#page","headline":"Endpoints","description":"API endpoints for managing filters and firewall rules.","url":"https://developers.cloudflare.com/firewall/api/cf-filters/endpoints/","inLanguage":"en","image":"https://developers.cloudflare.com/firewall/api/cf-filters/endpoints/og.png?v=0541b9f27e384b4a","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Retrieve filters or rules with GET API requests.
+title: GET examples
+image: https://developers.cloudflare.com/firewall/api/cf-filters/get/og.png?v=86a3b99deb683fef
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/firewall/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# GET examples
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/firewall/api/cf-filters/get/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+## Get all filters
+
+This example returns all filters in zone with ID `{zone_id}`.
+
+*Requestbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/filters" \
+--header "X-Auth-Email: <EMAIL>" \
+--header "X-Auth-Key: <API_KEY>"
+```
+
+*Responsejson*
+
+```json
+{
+  "result": [
+    {
+      "id": "<FILTER_ID_1>",
+      "paused": false,
+      "description": "Login from office",
+      "expression": "ip.src eq 93.184.216.0 and (http.request.uri.path ~ \"^.*/wp-login.php$\" or http.request.uri.path ~ \"^.*/xmlrpc.php$\")"
+    },
+    {
+      "id": "<FILTER_ID_2>",
+      "paused": false,
+      "description": "Login",
+      "expression": "(http.request.uri.path ~ \"^.*/wp-login.php$\" or http.request.uri.path ~ \"^.*/xmlrpc.php$\")"
+    },
+    {
+      "id": "<FILTER_ID_3>",
+      "paused": false,
+      "description": "not /api",
+      "expression": "not http.request.uri.path matches \"^/api/.*$\""
+    },
+    {
+      "id": "<FILTER_ID_4>",
+      "paused": false,
+      "description": "/api",
+      "expression": "http.request.uri.path matches \"^/api/.*$\""
+    },
+    {
+      "id": "<FILTER_ID_5>",
+      "paused": false,
+      "expression": "ip.src eq 93.184.216.0"
+    }
+  ],
+  "success": true,
+  "errors": [],
+  "messages": [],
+  "result_info": {
+    "page": 1,
+    "per_page": 25,
+    "count": 5,
+    "total_count": 5,
+    "total_pages": 1
+  }
+}
+```
+
+## Get by filter ID
+
+This example returns the filter with ID `{filter_id}`.
+
+*Requestbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/filters/{filter_id}" \
+--header "X-Auth-Email: <EMAIL>" \
+--header "X-Auth-Key: <API_KEY>"
+```
+
+*Responsejson*
+
+```json
+{
+  "result": {
+    "id": "<FILTER_ID>",
+    "paused": false,
+    "description": "Login from office",
+    "expression": "ip.src eq 93.184.216.0 and (http.request.uri.path ~ \"^.*/wp-login.php$\" or http.request.uri.path ~ \"^.*/xmlrpc.php$\")"
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/firewall/api/cf-filters/get/#page","headline":"GET examples","description":"Retrieve filters or rules with GET API requests.","url":"https://developers.cloudflare.com/firewall/api/cf-filters/get/","inLanguage":"en","image":"https://developers.cloudflare.com/firewall/api/cf-filters/get/og.png?v=86a3b99deb683fef","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Review the JSON structure for filter and rule objects.
+title: JSON object
+image: https://developers.cloudflare.com/firewall/api/cf-filters/json-object/og.png?v=1fe0f48d265d98ee
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/firewall/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# JSON object
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/firewall/api/cf-filters/json-object/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+## Filter object structure and properties
+
+A JSON response for the [Filters API](https://developers.cloudflare.com/api/resources/filters/methods/list/) has this structure:
+
+```json
+{
+	"id": "6f58318e7fa2477a23112e8118c66f61",
+	"expression": "http.request.uri.path ~ \"^.*/wp-login.php$\" or http.request.uri.path ~ \"^.*/xmlrpc.php$\"",
+	"paused": true,
+	"description": "WordPress login paths",
+	"ref": ""
+}
+```
+
+The following table summarizes the object properties:
+
+| Property | Description | Constraints |
+| --- | --- | --- |
+| `id`<br>`String` | A UUIDv4 identifier generated by Cloudflare. | Unique, read only Length: 32 characters |
+| `expression`<br>`String` | A Rules language expression used to evaluate requests. For more information, refer to [Expressions](https://developers.cloudflare.com/ruleset-engine/rules-language/expressions/). | |
+| `paused`<br>`Boolean` | Returns `true` when the filter is not active. Use `ref` to enable/disable the filter. | Default: `false` |
+| `description`<br>`String` | An informative summary of the filter. | Maximum length: 500 characters |
+| `ref`<br>`String` | A short string for tagging filters. | Maximum length: 50 characters |
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/firewall/api/cf-filters/json-object/#page","headline":"JSON object","description":"Review the JSON structure for filter and rule objects.","url":"https://developers.cloudflare.com/firewall/api/cf-filters/json-object/","inLanguage":"en","image":"https://developers.cloudflare.com/firewall/api/cf-filters/json-object/og.png?v=1fe0f48d265d98ee","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Create filters or rules with a POST API request.
+title: POST example
+image: https://developers.cloudflare.com/firewall/api/cf-filters/post/og.png?v=047b064eb6adf018
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/firewall/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# POST example
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/firewall/api/cf-filters/post/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+This example creates several filters using a single API call.
+
+*Requestbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/filters" \
+--header "X-Auth-Email: <EMAIL>" \
+--header "X-Auth-Key: <API_KEY>" \
+--header "Content-Type: application/json" \
+--data '[
+  {
+    "expression": "ip.src eq 93.184.216.0"
+  },
+  {
+    "expression": "http.request.uri.path matches \"^/api/.*$\"",
+    "description": "/api"
+  },
+  {
+    "expression": "not http.request.uri.path matches \"^/api/.*$\"",
+    "description": "not /api"
+  },
+  {
+    "expression": "(http.request.uri.path ~ \"^.*/wp-login.php$\" or http.request.uri.path ~ \"^.*/xmlrpc.php$\")",
+    "description": "Login"
+  },
+  {
+    "expression": "ip.src eq 93.184.216.0 and (http.request.uri.path ~ \"^.*/wp-login.php$\" or http.request.uri.path ~ \"^.*/xmlrpc.php$\")",
+    "description": "Login from office"
+  }
+]'
+```
+
+*Responsejson*
+
+```json
+{
+  "result": [
+    {
+      "id": "<FILTER_ID_1>",
+      "paused": false,
+      "expression": "ip.src eq 93.184.216.0"
+    },
+    {
+      "id": "<FILTER_ID_2>",
+      "paused": false,
+      "description": "/api",
+      "expression": "http.request.uri.path matches \"^/api/.*$\""
+    },
+    {
+      "id": "<FILTER_ID_3>",
+      "paused": false,
+      "description": "not /api",
+      "expression": "not http.request.uri.path matches \"^/api/.*$\""
+    },
+    {
+      "id": "<FILTER_ID_4>",
+      "paused": false,
+      "description": "Login",
+      "expression": "(http.request.uri.path ~ \"^.*/wp-login.php$\" or http.request.uri.path ~ \"^.*/xmlrpc.php$\")"
+    },
+    {
+      "id": "<FILTER_ID_5>",
+      "paused": false,
+      "description": "Login from office",
+      "expression": "ip.src eq 93.184.216.0 and (http.request.uri.path ~ \"^.*/wp-login.php$\" or http.request.uri.path ~ \"^.*/xmlrpc.php$\")"
+    }
+  ],
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/firewall/api/cf-filters/post/#page","headline":"POST example","description":"Create filters or rules with a POST API request.","url":"https://developers.cloudflare.com/firewall/api/cf-filters/post/","inLanguage":"en","image":"https://developers.cloudflare.com/firewall/api/cf-filters/post/og.png?v=047b064eb6adf018","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Update filters or rules with PUT API requests.
+title: PUT examples
+image: https://developers.cloudflare.com/firewall/api/cf-filters/put/og.png?v=f719bf015b6a6f4c
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/firewall/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# PUT examples
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/firewall/api/cf-filters/put/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+## Update multiple filters
+
+This example updates two filters with IDs `<FILTER_ID_1>` and `<FILTER_ID_2>` using a single API call.
+
+*Requestbash*
+
+```bash
+curl --request PUT \
+"https://api.cloudflare.com/client/v4/zones/{zone_id}/filters" \
+--header "X-Auth-Email: <EMAIL>" \
+--header "X-Auth-Key: <API_KEY>" \
+--header "Content-Type: application/json" \
+--data '[
+  {
+    "id": "<FILTER_ID_1>",
+    "paused": false,
+    "expression": "ip.src eq 93.184.216.0",
+    "description": "IP of example.org"
+  },
+  {
+    "id": "<FILTER_ID_2>",
+    "expression": "http.request.uri.path matches \"^/api/.*$\"",
+    "description": "/api"
+  }
+]'
+```
+
+*Responsejson*
+
+```json
+{
+  "result": [
+    {
+      "id": "<FILTER_ID>",
+      "paused": false,
+      "description": "IP of example.org",
+      "expression": "ip.src eq 93.184.216.0"
+    },
+    {
+      "id": "<FILTER_ID_2>",
+      "paused": false,
+      "description": "/api",
+      "expression": "http.request.uri.path matches \"^/api/.*$\""
+    }
+  ],
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+```
+
+## Update a single filter
+
+This example updates the filter with ID `{filter_id}`.
+
+*Requestbash*
+
+```bash
+curl --request PUT \
+"https://api.cloudflare.com/client/v4/zones/{zone_id}/filters/{filter_id}" \
+--header "X-Auth-Email: <EMAIL>" \
+--header "X-Auth-Key: <API_KEY>" \
+--header "Content-Type: application/json" \
+--data '{
+  "id": "<FILTER_ID>",
+  "paused": false,
+  "description": "Login from office",
+  "expression": "ip.src in {2400:cb00::/32 2a06:98c0::/29} and (http.request.uri.path ~ \"^.*/wp-login.php$\" or http.request.uri.path ~ \"^.*/xmlrpc.php$\")"
+}'
+```
+
+*Responsejson*
+
+```json
+{
+  "result": {
+    "id": "<FILTER_ID>",
+    "paused": false,
+    "description": "Login from office",
+    "expression": "ip.src in {2400:cb00::/32 2a06:98c0::/29} and (http.request.uri.path ~ \"^.*/wp-login.php$\" or http.request.uri.path ~ \"^.*/xmlrpc.php$\")"
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/firewall/api/cf-filters/put/#page","headline":"PUT examples","description":"Update filters or rules with PUT API requests.","url":"https://developers.cloudflare.com/firewall/api/cf-filters/put/","inLanguage":"en","image":"https://developers.cloudflare.com/firewall/api/cf-filters/put/og.png?v=f719bf015b6a6f4c","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Validate firewall rule expressions via the API.
+title: Expression validation
+image: https://developers.cloudflare.com/firewall/api/cf-filters/validation/og.png?v=932666611ac48532
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/firewall/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Expression validation
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/firewall/api/cf-filters/validation/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+The Cloudflare Filters API supports an endpoint for validating expressions.
+
+## Examples
+
+### Validate expression via query string
+
+*Requestbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/filters/validate-expr?expression=ip.src==34" \
+--header "X-Auth-Email: <EMAIL>" \
+--header "X-Auth-Key: <API_KEY>"
+```
+
+*Responsejson*
+
+```json
+{
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "message": "Filter parsing error:\n`ip.src==34`\n          ^^ couldn't parse address in network: invalid IP address syntax\n"
+    }
+  ],
+  "messages": null
+}
+```
+
+Note the validation error in the response. In this example, the error is due to an invalid IP address format:
+
+```txt
+Filter parsing error:
+`ip.src==34`
+          ^^ couldn't parse address in network: invalid IP address syntax
+```
+
+### Validate expression via JSON object
+
+*Requestbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/filters/validate-expr" \
+--header "X-Auth-Email: <EMAIL>" \
+--header "X-Auth-Key: <API_KEY>" \
+--header "Content-Type: application/json" \
+--data '{
+  "expression": "ip.src in {2400:cb00::/32 2405:8100::/2000 2c0f:f248::/32 2a06:98c0::/29}"
+}'
+```
+
+*Responsejson*
+
+```json
+{
+  "result": null,
+  "success": false,
+  "errors": [
+    {
+      "message": "Filter parsing error:\n`ip.src in {2400:cb00::/32 2405:8100::/2000 2c0f:f248::/32 2a06:98c0::/29}`\n                                        ^^^^ number too large to fit in target type while parsing with radix 10\n"
+    }
+  ],
+  "messages": null
+}
+```
+
+Note the validation error in the response. In this example, the value for the subnet mask, `/2000`, is not a valid IPv6 CIDR mask:
+
+```txt
+Filter parsing error:
+`ip.src in {2400:cb00::/32 2405:8100::/2000 2c0f:f248::/32 2a06:98c0::/29}`
+                                       ^^^^ number too large to fit in target type while parsing with radix 10
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/firewall/api/cf-filters/validation/#page","headline":"Expression validation","description":"Validate firewall rule expressions via the API.","url":"https://developers.cloudflare.com/firewall/api/cf-filters/validation/","inLanguage":"en","image":"https://developers.cloudflare.com/firewall/api/cf-filters/validation/og.png?v=932666611ac48532","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: A filter is a way of setting up if (traffic matches certain criteria), then do something.
+title: What is a filter?
+image: https://developers.cloudflare.com/firewall/api/cf-filters/what-is-a-filter/og.png?v=6cf93df9928022fe
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/firewall/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# What is a filter?
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/firewall/api/cf-filters/what-is-a-filter/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+A filter is a way of saying:
+
+```txt
+if (traffic matches certain criteria) then...
+```
+
+A filter contains an expression that would return `true` or `false` when evaluated against traffic passing through Cloudflare.
+
+Filter expressions are human and machine readable, and you can compose complex logic to precisely match the traffic that you are interested in detecting and acting upon.
+
+A filter object typically looks like the following:
+
+```json
+{
+  "id": "<FILTER_ID>",
+  "expression": "(http.request.uri.path ~ \"^.*wp-login.php$\" or http.request.uri.path ~ \"^.*xmlrpc.php$\") and ip.src ne 93.184.216.34",
+  "description": "WordPress login paths via the login page or mobile RPC endpoint"
+}
+```
+
+The expression specified in this example filter is:
+
+```txt
+(http.request.uri.path ~ "^.*wp-login.php$" or http.request.uri.path ~ "^.*xmlrpc.php$") and ip.src ne 93.184.216.34
+```
+
+This filter expression has a `(this or that) and not this` structure designed to:
+
+- Capture two WordPress paths that may be subject to brute force password attacks, and
+- Exclude traffic that comes from the IP address `93.184.216.34`.
+
+Imagine that this is an IP for your office. This expression demonstrates a filter that might be used (in a firewall rule) to block access to the WordPress login when accessed outside the office network.
+
+For more information on rule expressions, refer to [Expressions](https://developers.cloudflare.com/ruleset-engine/rules-language/expressions/) in the Rules language documentation.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/firewall/api/cf-filters/what-is-a-filter/#page","headline":"What is a filter?","description":"A filter is a way of setting up if (traffic matches certain criteria), then do something.","url":"https://developers.cloudflare.com/firewall/api/cf-filters/what-is-a-filter/","inLanguage":"en","image":"https://developers.cloudflare.com/firewall/api/cf-filters/what-is-a-filter/og.png?v=6cf93df9928022fe","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Manage firewall rules via the Firewall Rules API.
+title: Firewall Rules API
+image: https://developers.cloudflare.com/firewall/api/cf-firewall-rules/og.png?v=fb9fd46014f48aa3
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/firewall/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Firewall Rules API
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/firewall/api/cf-firewall-rules/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Use the Firewall Rules API to programmatically manage your rules.
+
+Deprecation notice
+
+Cloudflare Firewall Rules has been deprecated. Cloudflare has moved existing firewall rules to [WAF custom rules](https://developers.cloudflare.com/waf/custom-rules/). For more information on this change, refer to the [upgrade guide](https://developers.cloudflare.com/waf/reference/legacy/firewall-rules-upgrade/).
+
+When working with the Firewall Rules API, refer to these topics for additional context:
+
+- [Firewall rules actions](https://developers.cloudflare.com/firewall/cf-firewall-rules/actions/)
+- [Cloudflare Filters API](https://developers.cloudflare.com/firewall/api/cf-filters/)
+
+To get started with the API, review the Firewall Rules API [JSON object](https://developers.cloudflare.com/firewall/api/cf-firewall-rules/json-object/) and [Endpoints](https://developers.cloudflare.com/firewall/api/cf-firewall-rules/endpoints/).
+
+For more information on the Rules language used to write rule expressions, refer to [Rules language](https://developers.cloudflare.com/ruleset-engine/rules-language/) in the Ruleset Engine documentation.
+
+## Differences from other Cloudflare APIs
+
+The Firewall Rules API behaves differently from most Cloudflare APIs in two ways:
+
+- API calls accept and return multiple items, and allow applying data changes to multiple items.
+- Although API calls return the [standard response](https://developers.cloudflare.com/fundamentals/api/), the error object follows the [JSON API standard ↗︎](http://jsonapi.org/format/#errors), such that in an error condition, it is clear which item produced the error and why.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/firewall/api/cf-firewall-rules/#page","headline":"Firewall Rules API","description":"Manage firewall rules via the Firewall Rules API.","url":"https://developers.cloudflare.com/firewall/api/cf-firewall-rules/","inLanguage":"en","image":"https://developers.cloudflare.com/firewall/api/cf-firewall-rules/og.png?v=fb9fd46014f48aa3","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Delete filters or rules with DELETE API requests.
+title: DELETE examples
+image: https://developers.cloudflare.com/firewall/api/cf-firewall-rules/delete/og.png?v=7424e24a196e746f
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/firewall/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# DELETE examples
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/firewall/api/cf-firewall-rules/delete/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Note
+
+The `DELETE` operation does not delete any filter related to the firewall rule. To delete the filter, use the [Filters API](https://developers.cloudflare.com/firewall/api/cf-filters/).
+
+## Delete multiple rules
+
+This example deletes firewall rules with IDs `{rule_id_1}` and `{rule_id_2}`.
+
+*Requestbash*
+
+```bash
+curl --request DELETE \
+"https://api.cloudflare.com/client/v4/zones/{zone_id}/firewall/rules?id={rule_id_1}&id={rule_id_2}" \
+--header "X-Auth-Email: <EMAIL>" \
+--header "X-Auth-Key: <API_KEY>"
+```
+
+*Responsejson*
+
+```json
+{
+	"result": [
+		{
+			"id": "<RULE_ID_1>"
+		},
+		{
+			"id": "<RULE_ID_2>"
+		}
+	],
+	"success": true,
+	"errors": [],
+	"messages": []
+}
+```
+
+## Delete a single rule
+
+This example deletes the rule with ID `{rule_id}`.
+
+*Requestbash*
+
+```bash
+curl --request DELETE \
+"https://api.cloudflare.com/client/v4/zones/{zone_id}/firewall/rules/{rule_id}" \
+--header "X-Auth-Email: <EMAIL>" \
+--header "X-Auth-Key: <API_KEY>"
+```
+
+*Responsejson*
+
+```json
+{
+	"result": [
+		{
+			"id": "<RULE_ID>"
+		}
+	],
+	"success": true,
+	"errors": [],
+	"messages": []
+}
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/firewall/api/cf-firewall-rules/delete/#page","headline":"DELETE examples","description":"Delete filters or rules with DELETE API requests.","url":"https://developers.cloudflare.com/firewall/api/cf-firewall-rules/delete/","inLanguage":"en","image":"https://developers.cloudflare.com/firewall/api/cf-firewall-rules/delete/og.png?v=7424e24a196e746f","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: API endpoints for managing filters and firewall rules.
+title: Endpoints
+image: https://developers.cloudflare.com/firewall/api/cf-firewall-rules/endpoints/og.png?v=0541b9f27e384b4a
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/firewall/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Endpoints
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/firewall/api/cf-firewall-rules/endpoints/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+To invoke a Cloudflare Firewall Rules API operation, append the endpoint to the Cloudflare API base URL:
+
+```txt
+https://api.cloudflare.com/client/v4/
+```
+
+For authentication instructions, refer to [Getting Started: Requests](https://developers.cloudflare.com/fundamentals/api/) in the Cloudflare API documentation.
+
+For help with endpoints and pagination, refer to [Getting Started: Endpoints](https://developers.cloudflare.com/fundamentals/api/).
+
+Note
+
+The Firewall Rules API endpoints require a value for `<ZONE_ID>`.
+
+To retrieve a list of zones associated with your account, use the [List Zones](https://developers.cloudflare.com/api/resources/zones/methods/list/) operation and note the zone ID associated with the domain whose firewall rules you want to manage.
+
+The Cloudflare Firewall Rules API supports the operations outlined below. Visit the pages in this section for examples.
+
+| Operation | Method & Endpoint | Notes |
+| --- | --- | --- |
+| [Create firewall rules](https://developers.cloudflare.com/api/resources/firewall/subresources/rules/methods/create/) | `POST zones/<ZONE_ID>/firewall/rules` | Handled as a single transaction. If there is an error, the entire operation fails. |
+| [List firewall rules](https://developers.cloudflare.com/api/resources/firewall/subresources/rules/methods/list/) | `GET zones/<ZONE_ID>/firewall/rules` | Lists all current firewall rules. Results return paginated with 25 items per page by default. Use optional parameters to narrow results. |
+| [Get a firewall rule](https://developers.cloudflare.com/api/resources/firewall/subresources/rules/methods/get/) | `GET zones/<ZONE_ID>/firewall/rules/<RULE_ID>` | Retrieve a single firewall rule by ID. |
+| [Update firewall rules](https://developers.cloudflare.com/api/resources/firewall/subresources/rules/methods/bulk_update/) | `PUT zones/<ZONE_ID>/firewall/rules` | Handled as a single transaction. All rules must exist for operation to succeed. If there is an error, the entire operation fails. |
+| [Update a firewall rule](https://developers.cloudflare.com/api/resources/firewall/subresources/rules/methods/update/) | `PUT zones/<ZONE_ID>/firewall/rules/<RULE_ID>` | Update a single firewall rule by ID. |
+| [Delete firewall rules](https://developers.cloudflare.com/api/resources/firewall/subresources/rules/methods/bulk_delete/) | `DELETE zones/<ZONE_ID>/firewall/rules` | Delete existing firewall rules. Must specify list of firewall rule IDs. Empty requests result in no deletion. Returns HTTP status code 200 if a specified rule does not exist. |
+| [Delete a firewall rule](https://developers.cloudflare.com/api/resources/firewall/subresources/rules/methods/delete/) | `DELETE zones/<ZONE_ID>/firewall/rules/<RULE_ID>` | Delete a firewall rule by ID. |
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/firewall/api/cf-firewall-rules/endpoints/#page","headline":"Endpoints","description":"API endpoints for managing filters and firewall rules.","url":"https://developers.cloudflare.com/firewall/api/cf-firewall-rules/endpoints/","inLanguage":"en","image":"https://developers.cloudflare.com/firewall/api/cf-firewall-rules/endpoints/og.png?v=0541b9f27e384b4a","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Retrieve filters or rules with GET API requests.
+title: GET examples
+image: https://developers.cloudflare.com/firewall/api/cf-firewall-rules/get/og.png?v=86a3b99deb683fef
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/firewall/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# GET examples
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/firewall/api/cf-firewall-rules/get/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+## Get all rules
+
+This example returns all the firewall rules in the zone with ID `{zone_id}`.
+
+*Requestbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/firewall/rules" \
+--header "X-Auth-Email: <EMAIL>" \
+--header "X-Auth-Key: <API_KEY>"
+```
+
+*Responsejson*
+
+```json
+{
+  "result": [
+    {
+      "id": "<RULE_ID_1>",
+      "paused": false,
+      "description": "allow API traffic without challenge",
+      "action": "allow",
+      "priority": null,
+      "filter": {
+        "id": "<FILTER_ID_1>",
+        "expression": "http.request.uri.path matches \"^/api/.*$\"",
+        "paused": false,
+        "description": "/api"
+      }
+    },
+    {
+      "id": "<RULE_ID_2>",
+      "paused": false,
+      "description": "do not challenge login from office",
+      "action": "allow",
+      "priority": null,
+      "filter": {
+        "id": "<FILTER_ID_2>",
+        "expression": "ip.src in {2400:cb00::/32 2803:f800::/32 2c0f:f248::/32 2a06:98c0::/29} and (http.request.uri.path ~ \"^.*/wp-login.php$\" or http.request.uri.path ~ \"^.*/xmlrpc.php$\")",
+        "paused": false,
+        "description": "Login from office"
+      }
+    },
+    {
+      "id": "<RULE_ID_3>",
+      "paused": false,
+      "description": "challenge login",
+      "action": "challenge",
+      "priority": null,
+      "filter": {
+        "id": "<FILTER_ID_3>",
+        "expression": "(http.request.uri.path ~ \"^.*/wp-login.php$\" or http.request.uri.path ~ \"^.*/xmlrpc.php$\")",
+        "paused": false,
+        "description": "Login"
+      }
+    },
+    {
+      "id": "<RULE_ID_4>",
+      "paused": false,
+      "description": "Non-interactive challenge site",
+      "action": "js_challenge",
+      "priority": null,
+      "filter": {
+        "id": "<FILTER_ID_4>",
+        "expression": "not http.request.uri.path matches \"^/api/.*$\"",
+        "paused": false,
+        "description": "not /api"
+      }
+    }
+  ],
+  "success": true,
+  "errors": [],
+  "messages": [],
+  "result_info": {
+    "page": 1,
+    "per_page": 25,
+    "count": 4,
+    "total_count": 4,
+    "total_pages": 1
+  }
+}
+```
+
+## Get rule by ID
+
+This example returns the firewall rule with ID `{rule_id}`.
+
+*Requestbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/firewall/rules/{rule_id}" \
+--header "X-Auth-Email: <EMAIL>" \
+--header "X-Auth-Key: <API_KEY>"
+```
+
+*Responsejson*
+
+```json
+{
+  "result": {
+    "id": "<RULE_ID>",
+    "paused": false,
+    "description": "do not challenge login from office",
+    "action": "allow",
+    "priority": null,
+    "filter": {
+      "id": "<FILTER_ID>",
+      "expression": "ip.src in {2400:cb00::/32 2803:f800::/32 2c0f:f248::/32 2a06:98c0::/29} and (http.request.uri.path ~ \"^.*/wp-login.php$\" or http.request.uri.path ~ \"^.*/xmlrpc.php$\")",
+      "paused": false,
+      "description": "Login from office"
+    }
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/firewall/api/cf-firewall-rules/get/#page","headline":"GET examples","description":"Retrieve filters or rules with GET API requests.","url":"https://developers.cloudflare.com/firewall/api/cf-firewall-rules/get/","inLanguage":"en","image":"https://developers.cloudflare.com/firewall/api/cf-firewall-rules/get/og.png?v=86a3b99deb683fef","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Review the JSON structure for filter and rule objects.
+title: JSON object
+image: https://developers.cloudflare.com/firewall/api/cf-firewall-rules/json-object/og.png?v=1fe0f48d265d98ee
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/firewall/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# JSON object
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/firewall/api/cf-firewall-rules/json-object/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+## Firewall rule example JSON response
+
+A JSON response for the [Firewall Rules API](https://developers.cloudflare.com/api/resources/firewall/subresources/rules/methods/list/) has this structure:
+
+```json
+{
+	"id": "772bf1026a72c400ea576db1ffa16407",
+	"filter": {
+		"id": "6f58318e7fa2477a23112e8118c66f61",
+		"expression": "http.request.uri.path ~ \"^.*/wp-login.php$\" or http.request.uri.path ~ \"^.*/xmlrpc.php$\"",
+		"paused": false,
+		"description": "WordPress login paths",
+		"ref": ""
+	},
+	"action": "challenge",
+	"priority": 1000,
+	"paused": false,
+	"description": "Protect blog login page",
+	"ref": ""
+}
+```
+
+This table summarizes the object properties:
+
+| Name | Description | Constraints |
+| --- | --- | --- |
+| `id`<br>`String` | A UUIDv4 identifier generated by Cloudflare. | Unique, read only Length: 32 characters |
+| `filter`<br>`Object` | A [Cloudflare Filter object](https://developers.cloudflare.com/firewall/api/cf-filters/json-object/) that contains an expression for evaluating this rule. | |
+| `action`<br>`String` | The action to take when a request satisfies the filter expression for this rule. | Refer to [Firewall rules actions](https://developers.cloudflare.com/firewall/cf-firewall-rules/actions/) for a list of supported values. |
+| `priority`<br>`Number` | Determines the order of evaluation for the rule relative to others. Lower values indicate greater priority. Rules without a value are evaluated last. For guidance, refer to [Avoiding priority conflicts](#avoiding-priority-conflicts). | Read only Maximum length: 32 |
+| `paused`<br>`Boolean` | Returns `true` when the rule is not active. Use `ref` to enable/disable the rule. | Default: `false` |
+| `description`<br>`String` | An informative summary of the rule. | Maximum length: 500 characters |
+| `ref`<br>`String` | A short string for tagging rules. | Maximum length: 50 characters |
+
+## Avoiding priority conflicts
+
+Priority plays a key role in configuring firewall rules. With Cloudflare Filters, it is possible to construct conflicting rules such as:
+
+- Allow requests from the office IP range, and
+- Block requests with a specific user agent.
+
+Requests from the office IP range using the user agent to block would trigger both rules, but we cannot both allow and block the request. To solve this problem, firewall rules follows a strict ordering depending on action and priority.
+
+Cloudflare prioritizes rules in descending order, such that priority 1 is first and rules with no priority are last. For rules of equal priority, Cloudflare orders them by action according to their [order of precedence](https://developers.cloudflare.com/firewall/cf-firewall-rules/actions/#supported-actions). In the example above, if no priority is set, the rule `allow request from the office IP range` would apply because the *allow* action has a higher precedence than *block*.
+
+To reduce the risk of unintended behavior, it is best to explicitly specify the desired priority for potentially conflicting rules.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/firewall/api/cf-firewall-rules/json-object/#page","headline":"JSON object","description":"Review the JSON structure for filter and rule objects.","url":"https://developers.cloudflare.com/firewall/api/cf-firewall-rules/json-object/","inLanguage":"en","image":"https://developers.cloudflare.com/firewall/api/cf-firewall-rules/json-object/og.png?v=1fe0f48d265d98ee","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Create filters or rules with a POST API request.
+title: POST example
+image: https://developers.cloudflare.com/firewall/api/cf-firewall-rules/post/og.png?v=047b064eb6adf018
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/firewall/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# POST example
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/firewall/api/cf-firewall-rules/post/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+This example creates several firewall rules using a single API call.
+
+Note
+
+To create a firewall rule you need a [filter](https://developers.cloudflare.com/firewall/api/cf-filters/what-is-a-filter/) identifier (`id`). If you have not created a filter yet, refer to the [Cloudflare Filters API documentation](https://developers.cloudflare.com/firewall/api/cf-filters/).
+
+*Requestbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/zones/{zone_id}/firewall/rules" \
+--header "X-Auth-Email: <EMAIL>" \
+--header "X-Auth-Key: <API_KEY>" \
+--header "Content-Type: application/json" \
+--data '[
+  {
+    "filter": {
+      "id": "<FILTER_ID_1>"
+    },
+    "action": "allow",
+    "description": "Do not challenge login from office"
+  },
+  {
+    "filter": {
+      "id": "<FILTER_ID_2>"
+    },
+    "action": "challenge",
+    "description": "Challenge login"
+  },
+  {
+    "filter": {
+      "id": "<FILTER_ID_3>"
+    },
+    "action": "js_challenge",
+    "description": "Non-interactive challenge site"
+  },
+  {
+    "filter": {
+      "id": "<FILTER_ID_4>"
+    },
+    "action": "allow",
+    "description": "Allow API traffic without challenge"
+  }
+]'
+```
+
+*Responsejson*
+
+```json
+{
+  "result": [
+    {
+      "id": "<RULE_ID_1>",
+      "paused": false,
+      "description": "Do not challenge login from office",
+      "action": "allow",
+      "priority": null,
+      "filter": {
+        "id": "<FILTER_ID_1>",
+        "expression": "ip.src in {2400:cb00::/32 2803:f800::/32 2c0f:f248::/32 2a06:98c0::/29} and (http.request.uri.path ~ \"^.*/wp-login.php$\" or http.request.uri.path ~ \"^.*/xmlrpc.php$\")",
+        "paused": false,
+        "description": "Login from office"
+      }
+    },
+    {
+      "id": "<RULE_ID_2>",
+      "paused": false,
+      "description": "Challenge login",
+      "action": "challenge",
+      "priority": null,
+      "filter": {
+        "id": "<FILTER_ID_2>",
+        "expression": "(http.request.uri.path ~ \"^.*/wp-login.php$\" or http.request.uri.path ~ \"^.*/xmlrpc.php$\")",
+        "paused": false,
+        "description": "Login"
+      }
+    },
+    {
+      "id": "<RULE_ID_3>",
+      "paused": false,
+      "description": "Non-interactive challenge site",
+      "action": "js_challenge",
+      "priority": null,
+      "filter": {
+        "id": "<FILTER_ID_3>",
+        "expression": "not http.request.uri.path matches \"^/api/.*$\"",
+        "paused": false,
+        "description": "not /api"
+      }
+    },
+    {
+      "id": "<RULE_ID_4>",
+      "paused": false,
+      "description": "Allow API traffic without challenge",
+      "action": "allow",
+      "priority": null,
+      "filter": {
+        "id": "<FILTER_ID_4>",
+        "expression": "http.request.uri.path matches \"^/api/.*$\"",
+        "paused": false,
+        "description": "/api"
+      }
+    }
+  ],
+  "success": true,
+  "errors": [],
+  "messages": []
+}
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/firewall/api/cf-firewall-rules/post/#page","headline":"POST example","description":"Create filters or rules with a POST API request.","url":"https://developers.cloudflare.com/firewall/api/cf-firewall-rules/post/","inLanguage":"en","image":"https://developers.cloudflare.com/firewall/api/cf-firewall-rules/post/og.png?v=047b064eb6adf018","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Update filters or rules with PUT API requests.
+title: PUT examples
+image: https://developers.cloudflare.com/firewall/api/cf-firewall-rules/put/og.png?v=f719bf015b6a6f4c
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/firewall/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# PUT examples
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/firewall/api/cf-firewall-rules/put/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+## Update multiple rules
+
+This example updates several firewall rules using a single API call.
+
+You can include up to 25 rules in the JSON object array (`-d` flag) to update as a batch. The batch is handled as a transaction.
+
+*Requestbash*
+
+```bash
+curl --request PUT \
+"https://api.cloudflare.com/client/v4/zones/{zone_id}/firewall/rules" \
+--header "X-Auth-Email: <EMAIL>" \
+--header "X-Auth-Key: <API_KEY>" \
+--header "Content-Type: application/json" \
+--data '[
+  {
+    "id": "<RULE_ID>",
+    "paused": false,
+    "description": "Challenge site",
+    "action": "challenge",
+    "priority": null,
+    "filter": {
+      "id": "<FILTER_ID>",
+      "expression": "not http.request.uri.path matches \"^/api/.*$\"",
+      "paused": false,
+      "description": "not /api"
+    }
+  }
+]'
+```
+
+Note
+
+`PUT` does not update the filter specified. It only looks at the filter ID (`<FILTER_ID>`) to update the rule with a new filter.
+
+To update the filter, use the [Filters API](https://developers.cloudflare.com/firewall/api/cf-filters/).
+
+*Responsejson*
+
+```json
+{
+	"result": [
+		{
+			"id": "<RULE_ID>",
+			"paused": false,
+			"description": "Challenge site",
+			"action": "challenge",
+			"priority": null,
+			"filter": {
+				"id": "<FILTER_ID>",
+				"expression": "not http.request.uri.path matches \"^/api/.*$\"",
+				"paused": false,
+				"description": "not /api"
+			}
+		}
+	],
+	"success": true,
+	"errors": [],
+	"messages": []
+}
+```
+
+## Update a single rule
+
+This example updates the firewall rule with ID `{rule_id}`.
+
+You must include the following fields in the request body:
+
+- `id`
+- `action`
+- `filter.id`
+
+All other fields are optional.
+
+*Requestbash*
+
+```bash
+curl --request PUT \
+"https://api.cloudflare.com/client/v4/zones/{zone_id}/firewall/rules/{rule_id}" \
+--header "X-Auth-Email: <EMAIL>" \
+--header "X-Auth-Key: <API_KEY>" \
+--header "Content-Type: application/json" \
+--data '{
+  "id": "<RULE_ID>",
+  "paused": false,
+  "description": "Do not challenge login from office IPv6",
+  "action": "allow",
+  "priority": null,
+  "filter": {
+    "id": "<FILTER_ID>",
+    "expression": "ip.src in {2400:cb00::/32 2803:f800::/32 2c0f:f248::/32 2a06:98c0::/29} and (http.request.uri.path ~ \"^.*/wp-login.php$\" or http.request.uri.path ~ \"^.*/xmlrpc.php$\")",
+    "paused": false,
+    "description": "Login from office"
+  }
+}'
+```
+
+*Responsejson*
+
+```json
+{
+	"result": {
+		"id": "<RULE_ID>",
+		"paused": false,
+		"description": "Do not challenge login from office IPv6",
+		"action": "allow",
+		"priority": null,
+		"filter": {
+			"id": "<FILTER_ID>",
+			"expression": "ip.src in {2400:cb00::/32 2803:f800::/32 2c0f:f248::/32 2a06:98c0::/29} and (http.request.uri.path ~ \"^.*/wp-login.php$\" or http.request.uri.path ~ \"^.*/xmlrpc.php$\")",
+			"paused": false,
+			"description": "Login from office"
+		}
+	},
+	"success": true,
+	"errors": [],
+	"messages": []
+}
+```
+
+Note
+
+`PUT` overwrites fields that are not explicitly passed in the request.
+
+For example, if the request omits `description`, any previously existing `description` value will be erased.
+
+To preserve existing values, issue a `GET` request and based on the response, determine which fields (and respective values) to include in your `PUT` request.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/firewall/api/cf-firewall-rules/put/#page","headline":"PUT examples","description":"Update filters or rules with PUT API requests.","url":"https://developers.cloudflare.com/firewall/api/cf-firewall-rules/put/","inLanguage":"en","image":"https://developers.cloudflare.com/firewall/api/cf-firewall-rules/put/og.png?v=f719bf015b6a6f4c","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Update firewall rules for URL normalization.
+title: Required firewall rule changes to enable URL normalization
+image: https://developers.cloudflare.com/firewall/troubleshooting/required-changes-to-enable-url-normalization/og.png?v=4b6895c2baf6ad19
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/firewall/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Required firewall rule changes to enable URL normalization
+
+Last updated Apr 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/firewall/troubleshooting/required-changes-to-enable-url-normalization/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Deprecation notice
+
+Cloudflare Firewall Rules has been deprecated. Cloudflare has moved existing firewall rules to [WAF custom rules](https://developers.cloudflare.com/waf/custom-rules/). For more information on this change, refer to the [upgrade guide](https://developers.cloudflare.com/waf/reference/legacy/firewall-rules-upgrade/).
+
+On 2021-04-08, Cloudflare announced [URL normalization](https://developers.cloudflare.com/rules/normalization/), a feature that protects zones by normalizing HTTP request URI paths.
+
+Malicious users can craft specific URIs that could be interpreted differently by firewall systems and origin systems. When you enable **Normalize incoming URLs**, all rules filtering on the URI path will receive the URL in a canonical form, which provides an extra layer of protection against these malicious users.
+
+Cloudflare gradually enabled URL normalization for all Cloudflare zones except for those that could be impacted by this change. We determined the impacted zones by analyzing all firewall rules, looking for patterns in HTTP fields that would no longer match when using URL normalization techniques.
+
+These fields are the following:
+
+- `http.request.uri.path`
+- `http.request.full_uri`
+- `http.request.uri`
+
+Cloudflare did not enable URL normalization automatically for zones that would be impacted by these changes to prevent any change in behavior of your existing firewall rules.
+
+## Why URL normalization is important
+
+Cloudflare strongly recommends that you enable **Normalize incoming URLs** in **Rules** > **Overview** > **URL Normalization** to strengthen your zone's security posture. Not doing so leaves your zone at greater risk of a successful attack. Malicious parties could craft the URL in a way that the rules are not accounting for.
+
+For example, a firewall rule with an expression such as `http.request.uri.path contains "/login"` could be bypassed if the malicious actor has encoded the `l` character as `%6C`. In this scenario, and with URL normalization disabled, traffic would not be matched by the firewall rule.
+
+Refer to [How URL normalization works](https://developers.cloudflare.com/rules/normalization/how-it-works/) for more information and additional examples.
+
+---
+
+## Recommended procedure
+
+It is recommended that you:
+
+1. Update any firewall rules impacted by the URL normalization changes.
+2. Enable URL normalization.
+
+These steps will ensure a stronger security posture on your zone(s).
+
+### 1. Review and update firewall rules
+
+Before enabling URL normalization, you should review the affected firewall rules on your zone(s) and take one of the following approaches:
+
+- Edit these firewall rules to remove the parts which will no longer trigger once normalized — for example, any rules that look for `//` or `../` in URL paths. Administrators previously created these rules to perform a limited URL normalization, and these rules can now be safely disabled and then deleted.
+- If you wish to identify visitors with non-normalized URI paths with these firewall rules, you should update them to use the original (or raw) non-normalized fields. These fields are the following:
+  - `raw.http.request.uri.path`
+  - `raw.http.request.full_uri`
+  - `raw.http.request.uri`
+
+### 2. Enable URL normalization
+
+Once you have updated the affected firewall rules, enable URL normalization in **Rules** > **Overview** > **URL Normalization**.
+
+A Cloudflare user must have the [Firewall role](https://developers.cloudflare.com/fundamentals/manage-members/roles/) or one of the Administrator roles to access URL normalization settings in the dashboard.
+
+---
+
+## Related resources
+
+- [URL normalization](https://developers.cloudflare.com/rules/normalization/)
+- [Transform Rules](https://developers.cloudflare.com/rules/transform/)
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/firewall/troubleshooting/required-changes-to-enable-url-normalization/#page","headline":"Required firewall rule changes to enable URL normalization","description":"Update firewall rules for URL normalization.","url":"https://developers.cloudflare.com/firewall/troubleshooting/required-changes-to-enable-url-normalization/","inLanguage":"en","image":"https://developers.cloudflare.com/firewall/troubleshooting/required-changes-to-enable-url-normalization/og.png?v=4b6895c2baf6ad19","dateModified":"2026-04-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```

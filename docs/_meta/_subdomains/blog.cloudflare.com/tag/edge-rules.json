@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/edge-rules/",
+  "file": "_subdomains/blog.cloudflare.com/tag/edge-rules.md",
+  "title": "Posts tagged \"Edge Rules\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:08:54.256326+00:00",
+  "html_len": 120440,
+  "md_len": 3988,
+  "depth": 1,
+  "phase": 2
+}

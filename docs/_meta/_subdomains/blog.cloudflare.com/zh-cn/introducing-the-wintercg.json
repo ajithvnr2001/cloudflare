@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/introducing-the-wintercg/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/introducing-the-wintercg.md",
+  "title": "Web \u4e92\u64cd\u4f5c\u6027 JavaScript \u8fd0\u884c\u65f6\u793e\u533a\u5c0f\u7ec4 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:41.068472+00:00",
+  "html_len": 210644,
+  "md_len": 30525,
+  "depth": 0,
+  "phase": 2
+}

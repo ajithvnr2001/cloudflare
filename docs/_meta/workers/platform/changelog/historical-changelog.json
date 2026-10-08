@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/platform/changelog/historical-changelog/",
+  "file": "workers/platform/changelog/historical-changelog.md",
+  "title": "Historical changelog \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:38.008004+00:00",
+  "html_len": 312265,
+  "md_len": 41633,
+  "depth": 0
+}

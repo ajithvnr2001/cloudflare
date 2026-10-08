@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/radar-2023-year-in-review/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/radar-2023-year-in-review.md",
+  "title": "An\u00e1lise anual de 2023 da Cloudflare | Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:39:40.684840+00:00",
+  "html_len": 332191,
+  "md_len": 89036,
+  "depth": 0,
+  "phase": 2
+}

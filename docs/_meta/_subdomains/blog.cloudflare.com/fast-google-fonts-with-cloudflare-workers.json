@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fast-google-fonts-with-cloudflare-workers/",
+  "file": "_subdomains/blog.cloudflare.com/fast-google-fonts-with-cloudflare-workers.md",
+  "title": "Fast Google Fonts with Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:22.909707+00:00",
+  "html_len": 422454,
+  "md_len": 94724,
+  "depth": 0,
+  "phase": 2
+}

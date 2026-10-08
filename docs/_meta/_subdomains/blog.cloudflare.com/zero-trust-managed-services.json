@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zero-trust-managed-services/",
+  "file": "_subdomains/blog.cloudflare.com/zero-trust-managed-services.md",
+  "title": "Cloudflare Partner Program Now Supports SASE & Zero Trust Managed Services | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:43.055944+00:00",
+  "html_len": 283065,
+  "md_len": 62350,
+  "depth": 0,
+  "phase": 2
+}

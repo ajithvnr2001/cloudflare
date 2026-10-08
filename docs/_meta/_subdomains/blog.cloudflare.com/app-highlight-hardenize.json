@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/app-highlight-hardenize/",
+  "file": "_subdomains/blog.cloudflare.com/app-highlight-hardenize.md",
+  "title": "App Highlight: Hardenize | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:08.459569+00:00",
+  "html_len": 261578,
+  "md_len": 53195,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/impact-of-cache-locality/",
+  "file": "_subdomains/blog.cloudflare.com/impact-of-cache-locality.md",
+  "title": "Impact of Cache Locality | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:26.314810+00:00",
+  "html_len": 301538,
+  "md_len": 65186,
+  "depth": 0,
+  "phase": 2
+}

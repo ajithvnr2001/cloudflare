@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/tag/developers/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/tag/developers.md",
+  "title": "Posts com a tag \"Desenvolvedores\" \u2014 Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:06:42.823483+00:00",
+  "html_len": 151641,
+  "md_len": 11713,
+  "depth": 1,
+  "phase": 2
+}

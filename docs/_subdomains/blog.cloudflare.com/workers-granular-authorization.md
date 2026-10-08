@@ -1,0 +1,998 @@
+---
+url: https://blog.cloudflare.com/workers-granular-authorization/
+title: Give every teammate and agent the right level of access to your Workers | Cloudflare Blog
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:34:45.207677+00:00
+---
+
+# Give every teammate and agent the right level of access to your Workers | Cloudflare Blog
+
+> Source: https://blog.cloudflare.com/workers-granular-authorization/
+
+[Blog](https://blog.cloudflare.com/)
+
+[Developers](https://blog.cloudflare.com/tag/developers/)[Identity](https://blog.cloudflare.com/tag/identity/)[Product News](https://blog.cloudflare.com/tag/product-news/)+2Show 2 more tags
+
+5 TagsShow 5 tags
+
+  * Post Tags
+  * [Developers](https://blog.cloudflare.com/tag/developers/)[Identity](https://blog.cloudflare.com/tag/identity/)[Product News](https://blog.cloudflare.com/tag/product-news/)[Security](https://blog.cloudflare.com/tag/security/)[Workers](https://blog.cloudflare.com/tag/workers-1/)
+  * All tags
+  * Matching tags
+  * No tags found
+  * [1.1.1.1](https://blog.cloudflare.com/tag/1-1-1-1/)
+  * [2FA](https://blog.cloudflare.com/tag/2fa/)
+  * [Abuse](https://blog.cloudflare.com/tag/abuse/)
+  * [Access](https://blog.cloudflare.com/tag/access/)
+  * [Access Control Lists (ACLs)](https://blog.cloudflare.com/tag/access-control-lists-acls/)
+  * [Accessibility](https://blog.cloudflare.com/tag/accessibility/)
+  * [Account Takeover](https://blog.cloudflare.com/tag/account-takeover/)
+  * [Acquisitions](https://blog.cloudflare.com/tag/acquisitions/)
+  * [Addressing](https://blog.cloudflare.com/tag/addressing/)
+  * [Advanced Certificate Manager](https://blog.cloudflare.com/tag/advanced-certificate-manager/)
+  * [Advanced DDoS](https://blog.cloudflare.com/tag/advanced-ddos/)
+  * [Advertising](https://blog.cloudflare.com/tag/advertising/)
+  * [Aegis](https://blog.cloudflare.com/tag/aegis/)
+  * [AEO](https://blog.cloudflare.com/tag/aeo/)
+  * [Africa](https://blog.cloudflare.com/tag/africa/)
+  * [Afroflare](https://blog.cloudflare.com/tag/afroflare/)
+  * [Agent Cloud](https://blog.cloudflare.com/tag/agent-cloud/)
+  * [Agent Development Lifecycle](https://blog.cloudflare.com/tag/agent-development-lifecycle/)
+  * [Agent Readiness](https://blog.cloudflare.com/tag/agent-readiness/)
+  * [Agents](https://blog.cloudflare.com/tag/agents/)
+  * [Agents Week](https://blog.cloudflare.com/tag/agents-week/)
+  * [Agents Week 2026](https://blog.cloudflare.com/tag/agents-week-2026/)
+  * [AI](https://blog.cloudflare.com/tag/ai/)
+  * [AI Bots](https://blog.cloudflare.com/tag/ai-bots/)
+  * [AI Gateway](https://blog.cloudflare.com/tag/ai-gateway/)
+  * [AI Search](https://blog.cloudflare.com/tag/ai-search/)
+  * [AI WAF](https://blog.cloudflare.com/tag/ai-waf/)
+  * [AI Week](https://blog.cloudflare.com/tag/ai-week/)
+  * [AI-SPM](https://blog.cloudflare.com/tag/ai-spm/)
+  * [Alertmanager](https://blog.cloudflare.com/tag/alertmanager/)
+  * [Always Online](https://blog.cloudflare.com/tag/always-online/)
+  * [AMD](https://blog.cloudflare.com/tag/amd/)
+  * [AMP](https://blog.cloudflare.com/tag/amp-tag/)
+  * [Analytics](https://blog.cloudflare.com/tag/analytics/)
+  * [Anonymous](https://blog.cloudflare.com/tag/anonymous/)
+  * [Anti Malware](https://blog.cloudflare.com/tag/anti-malware/)
+  * [Anycast](https://blog.cloudflare.com/tag/anycast/)
+  * [API](https://blog.cloudflare.com/tag/api/)
+  * [API Gateway](https://blog.cloudflare.com/tag/api-gateway/)
+  * [API Security](https://blog.cloudflare.com/tag/api-security/)
+  * [API Shield](https://blog.cloudflare.com/tag/api-shield/)
+  * [APJC](https://blog.cloudflare.com/tag/apjc/)
+  * [Apple](https://blog.cloudflare.com/tag/apple/)
+  * [Application Security](https://blog.cloudflare.com/tag/application-security/)
+  * [Application Services](https://blog.cloudflare.com/tag/application-services/)
+  * [Area 1 Security](https://blog.cloudflare.com/tag/area-1-security/)
+  * [Argo Smart Routing](https://blog.cloudflare.com/tag/argo/)
+  * [ASCII](https://blog.cloudflare.com/tag/ascii/)
+  * [Asia](https://blog.cloudflare.com/tag/asia/)
+  * [Athenian Project](https://blog.cloudflare.com/tag/athenian-project/)
+  * [Atlassian](https://blog.cloudflare.com/tag/atlassian/)
+  * [Attacks](https://blog.cloudflare.com/tag/attacks/)
+  * [Audit Logs](https://blog.cloudflare.com/tag/audit-logs/)
+  * [Austin](https://blog.cloudflare.com/tag/austin/)
+  * [Australia](https://blog.cloudflare.com/tag/australia/)
+  * [Authentication](https://blog.cloudflare.com/tag/authentication/)
+  * [Authy](https://blog.cloudflare.com/tag/authy/)
+  * [Auto Rag](https://blog.cloudflare.com/tag/auto-rag/)
+  * [Automatic HTTPS](https://blog.cloudflare.com/tag/automatic-https/)
+  * [Automatic Platform Optimization](https://blog.cloudflare.com/tag/automatic-platform-optimization/)
+  * [Automation](https://blog.cloudflare.com/tag/automation/)
+  * [AutoMinify](https://blog.cloudflare.com/tag/autominify/)
+  * [Awards](https://blog.cloudflare.com/tag/awards/)
+  * [AWS](https://blog.cloudflare.com/tag/aws/)
+  * [Baidu](https://blog.cloudflare.com/tag/baidu/)
+  * [Bandwidth Alliance](https://blog.cloudflare.com/tag/bandwidth-alliance/)
+  * [Bandwidth Costs](https://blog.cloudflare.com/tag/bandwidth-costs/)
+  * [Best Practices](https://blog.cloudflare.com/tag/best-practices/)
+  * [Beta](https://blog.cloudflare.com/tag/beta/)
+  * [Better Internet](https://blog.cloudflare.com/tag/better-internet/)
+  * [BGP](https://blog.cloudflare.com/tag/bgp/)
+  * [Billing](https://blog.cloudflare.com/tag/billing/)
+  * [Birthday Week](https://blog.cloudflare.com/tag/birthday-week/)
+  * [Black Friday](https://blog.cloudflare.com/tag/black-friday/)
+  * [Blackbird](https://blog.cloudflare.com/tag/blackbird/)
+  * [Bot Fight Mode](https://blog.cloudflare.com/tag/bot-fight-mode/)
+  * [Bot Management](https://blog.cloudflare.com/tag/bot-management/)
+  * [Botnet](https://blog.cloudflare.com/tag/botnet/)
+  * [Bots](https://blog.cloudflare.com/tag/bots/)
+  * [BPF](https://blog.cloudflare.com/tag/bpf/)
+  * [Brand](https://blog.cloudflare.com/tag/brand/)
+  * [Brand Protection](https://blog.cloudflare.com/tag/brand-protection/)
+  * [Brazil](https://blog.cloudflare.com/tag/brazil/)
+  * [Browser Insights](https://blog.cloudflare.com/tag/browser-insights/)
+  * [Browser Rendering](https://blog.cloudflare.com/tag/browser-rendering/)
+  * [Browser Run](https://blog.cloudflare.com/tag/browser-run/)
+  * [Bug Bounty](https://blog.cloudflare.com/tag/bug-bounty/)
+  * [Bugs](https://blog.cloudflare.com/tag/bugs/)
+  * [BYOIP](https://blog.cloudflare.com/tag/byoip/)
+  * [Cache](https://blog.cloudflare.com/tag/cache/)
+  * [Cache Purge](https://blog.cloudflare.com/tag/cache-purge/)
+  * [Cache Reserve](https://blog.cloudflare.com/tag/cache-reserve/)
+  * [Cache Rules](https://blog.cloudflare.com/tag/cache-rules/)
+  * [California](https://blog.cloudflare.com/tag/california/)
+  * [Canada](https://blog.cloudflare.com/tag/canada/)
+  * [Cap'n Proto](https://blog.cloudflare.com/tag/capn-proto/)
+  * [CAPTCHA](https://blog.cloudflare.com/tag/captcha/)
+  * [Careers](https://blog.cloudflare.com/tag/careers/)
+  * [CASB](https://blog.cloudflare.com/tag/casb/)
+  * [Categories](https://blog.cloudflare.com/tag/categories/)
+  * [CDN](https://blog.cloudflare.com/tag/cdn/)
+  * [CDNJS](https://blog.cloudflare.com/tag/cdnjs/)
+  * [Certificate Authority](https://blog.cloudflare.com/tag/certificate-authority/)
+  * [Certificate Pinning](https://blog.cloudflare.com/tag/certificate-pinning/)
+  * [Certificate Transparency](https://blog.cloudflare.com/tag/certificate-transparency/)
+  * [Certification](https://blog.cloudflare.com/tag/certification/)
+  * [CFSSL](https://blog.cloudflare.com/tag/cfssl/)
+  * [Challenge Page](https://blog.cloudflare.com/tag/challenge-page/)
+  * [ChatGPT](https://blog.cloudflare.com/tag/chatgpt/)
+  * [China](https://blog.cloudflare.com/tag/china/)
+  * [China Network](https://blog.cloudflare.com/tag/china-network/)
+  * [Christmas](https://blog.cloudflare.com/tag/christmas/)
+  * [Chrome](https://blog.cloudflare.com/tag/chrome/)
+  * [CIO Week](https://blog.cloudflare.com/tag/cio-week/)
+  * [CISA](https://blog.cloudflare.com/tag/cisa/)
+  * [Claire](https://blog.cloudflare.com/tag/claire/)
+  * [CLI](https://blog.cloudflare.com/tag/cli/)
+  * [ClickHouse](https://blog.cloudflare.com/tag/clickhouse/)
+  * [Clientless](https://blog.cloudflare.com/tag/clientless/)
+  * [Clientless Web Isolation](https://blog.cloudflare.com/tag/clientless-web-isolation/)
+  * [Cloud Connector](https://blog.cloudflare.com/tag/cloud-connector/)
+  * [Cloud Email Security](https://blog.cloudflare.com/tag/cloud-email-security/)
+  * [Cloudflare Access](https://blog.cloudflare.com/tag/cloudflare-access/)
+  * [Cloudflare Apps](https://blog.cloudflare.com/tag/cloudflare-apps/)
+  * [Cloudflare Area 1](https://blog.cloudflare.com/tag/cloudflare-area-1/)
+  * [Cloudflare Calls](https://blog.cloudflare.com/tag/cloudflare-calls/)
+  * [Cloudflare Email Service](https://blog.cloudflare.com/tag/cloudflare-email-services/)
+  * [Cloudflare for Campaigns](https://blog.cloudflare.com/tag/cloudflare-for-campaigns/)
+  * [Cloudflare for SaaS](https://blog.cloudflare.com/tag/cloudflare-for-saas/)
+  * [Cloudflare for Startups](https://blog.cloudflare.com/tag/cloudflare-for-startups/)
+  * [Cloudflare Gateway](https://blog.cloudflare.com/tag/gateway/)
+  * [Cloudflare History](https://blog.cloudflare.com/tag/cloudflare-history/)
+  * [Cloudflare Images](https://blog.cloudflare.com/tag/cloudflare-images/)
+  * [Cloudflare Media Platform](https://blog.cloudflare.com/tag/cloudflare-media-platform/)
+  * [Cloudflare Meetups](https://blog.cloudflare.com/tag/cloudflare-meetups/)
+  * [Cloudflare Network](https://blog.cloudflare.com/tag/cloudflare-network/)
+  * [Cloudflare One](https://blog.cloudflare.com/tag/cloudflare-one/)
+  * [Cloudflare One Client](https://blog.cloudflare.com/tag/cloudflare-one-client/)
+  * [Cloudflare One User Risk Score](https://blog.cloudflare.com/tag/cloudflare-one-user-risk-score/)
+  * [Cloudflare One Week](https://blog.cloudflare.com/tag/cloudflare-one-week/)
+  * [Cloudflare OS](https://blog.cloudflare.com/tag/cloudflare-os/)
+  * [Cloudflare Pages](https://blog.cloudflare.com/tag/cloudflare-pages/)
+  * [Cloudflare Polish](https://blog.cloudflare.com/tag/cloudflare-polish/)
+  * [Cloudflare Queues](https://blog.cloudflare.com/tag/cloudflare-queues/)
+  * [Cloudflare Realtime](https://blog.cloudflare.com/tag/cloudflare-realtime/)
+  * [Cloudflare Stream](https://blog.cloudflare.com/tag/cloudflare-stream/)
+  * [Cloudflare Tunnel](https://blog.cloudflare.com/tag/cloudflare-tunnel/)
+  * [Cloudflare TV](https://blog.cloudflare.com/tag/cloudflare-tv/)
+  * [Cloudflare Workers](https://blog.cloudflare.com/tag/workers/)
+  * [Cloudflare Workers (PT)](https://blog.cloudflare.com/tag/cloudflare-workers-pt/)
+  * [Cloudflare Workers KV](https://blog.cloudflare.com/tag/cloudflare-workers-kv/)
+  * [Cloudflare Workers KV (ES)](https://blog.cloudflare.com/tag/cloudflare-workers-kv-es/)
+  * [Cloudflare Zero Trust](https://blog.cloudflare.com/tag/cloudflare-zero-trust/)
+  * [Cloudforce One](https://blog.cloudflare.com/tag/cloudforce-one/)
+  * [Cloudy](https://blog.cloudflare.com/tag/cloudy/)
+  * [Code Orange](https://blog.cloudflare.com/tag/code-orange/)
+  * [Coinbase](https://blog.cloudflare.com/tag/coinbase/)
+  * [Colombia](https://blog.cloudflare.com/tag/colombia/)
+  * [Community](https://blog.cloudflare.com/tag/community/)
+  * [Compliance](https://blog.cloudflare.com/tag/compliance/)
+  * [Compression](https://blog.cloudflare.com/tag/compression/)
+  * [Config Rules](https://blog.cloudflare.com/tag/config-rules/)
+  * [Configuration Management](https://blog.cloudflare.com/tag/configuration-management/)
+  * [Congestion Control](https://blog.cloudflare.com/tag/congestion-control/)
+  * [Connectivity](https://blog.cloudflare.com/tag/connectivity/)
+  * [Connectivity Cloud](https://blog.cloudflare.com/tag/connectivity-cloud/)
+  * [Consumer Services](https://blog.cloudflare.com/tag/consumer-services/)
+  * [Containers](https://blog.cloudflare.com/tag/containers/)
+  * [Content Independence Day](https://blog.cloudflare.com/tag/content-independence-day/)
+  * [Content Scanning](https://blog.cloudflare.com/tag/content-scanning/)
+  * [Context](https://blog.cloudflare.com/tag/context/)
+  * [Core](https://blog.cloudflare.com/tag/core/)
+  * [COVID-19](https://blog.cloudflare.com/tag/covid-19/)
+  * [Crawler Hints](https://blog.cloudflare.com/tag/crawler-hints/)
+  * [CrowdStrike](https://blog.cloudflare.com/tag/crowdstrike/)
+  * [Crypto Week](https://blog.cloudflare.com/tag/crypto-week/)
+  * [Cryptography](https://blog.cloudflare.com/tag/cryptography/)
+  * [CSAM Reporting](https://blog.cloudflare.com/tag/csam-reporting/)
+  * [Customer Success](https://blog.cloudflare.com/tag/customer-success/)
+  * [Customer Zero](https://blog.cloudflare.com/tag/customer-zero/)
+  * [Customers](https://blog.cloudflare.com/tag/customers/)
+  * [CVE](https://blog.cloudflare.com/tag/cve/)
+  * [CVE-2023-50387](https://blog.cloudflare.com/tag/cve-2023-50387/)
+  * [Cyber Readiness](https://blog.cloudflare.com/tag/cyber-readiness/)
+  * [Cybersecurity](https://blog.cloudflare.com/tag/cybersecurity/)
+  * [D1](https://blog.cloudflare.com/tag/d1/)
+  * [Dashboard](https://blog.cloudflare.com/tag/dashboard-tag/)
+  * [Data](https://blog.cloudflare.com/tag/data/)
+  * [Data Catalog](https://blog.cloudflare.com/tag/data-catalog/)
+  * [Data Center](https://blog.cloudflare.com/tag/data-center/)
+  * [Data Localization](https://blog.cloudflare.com/tag/data-localization/)
+  * [Data Localization Suite](https://blog.cloudflare.com/tag/data-localization-suite/)
+  * [Data Loss](https://blog.cloudflare.com/tag/data-loss/)
+  * [Data Loss Prevention](https://blog.cloudflare.com/tag/data-loss-prevention/)
+  * [Data Platform](https://blog.cloudflare.com/tag/data-platform/)
+  * [Data Privacy Day](https://blog.cloudflare.com/tag/data-privacy-day/)
+  * [Data Protection](https://blog.cloudflare.com/tag/data-protection/)
+  * [Data Sovereignty](https://blog.cloudflare.com/tag/data-sovereignty/)
+  * [Data Transfer Bucket](https://blog.cloudflare.com/tag/data-transfer-bucket/)
+  * [Database](https://blog.cloudflare.com/tag/database/)
+  * [DDoS](https://blog.cloudflare.com/tag/ddos/)
+  * [DDoS Alerts](https://blog.cloudflare.com/tag/ddos-alerts/)
+  * [DDoS Reports](https://blog.cloudflare.com/tag/ddos-reports/)
+  * [Debugging](https://blog.cloudflare.com/tag/debugging/)
+  * [Deep Dive](https://blog.cloudflare.com/tag/deep-dive/)
+  * [Descaler](https://blog.cloudflare.com/tag/descaler/)
+  * [Design](https://blog.cloudflare.com/tag/design/)
+  * [Deskope](https://blog.cloudflare.com/tag/deskope/)
+  * [Developer Documentation](https://blog.cloudflare.com/tag/developer-documentation/)
+  * [Developer Platform](https://blog.cloudflare.com/tag/developer-platform/)
+  * [Developer Spotlight](https://blog.cloudflare.com/tag/developer-spotlight/)
+  * [Developer Week](https://blog.cloudflare.com/tag/developer-week/)
+  * [Developers](https://blog.cloudflare.com/tag/developers/)
+  * [Developers Storage](https://blog.cloudflare.com/tag/developers-storage/)
+  * [Device Security](https://blog.cloudflare.com/tag/device-security/)
+  * [DevOps](https://blog.cloudflare.com/tag/devops/)
+  * [DEX](https://blog.cloudflare.com/tag/dex/)
+  * [Digital Experience Monitoring](https://blog.cloudflare.com/tag/digital-experience-monitoring/)
+  * [Digital Forensics](https://blog.cloudflare.com/tag/digital-forensics/)
+  * [Disrupt](https://blog.cloudflare.com/tag/disrupt/)
+  * [Distributed](https://blog.cloudflare.com/tag/distributed/)
+  * [Distributed Systems](https://blog.cloudflare.com/tag/distributed-systems/)
+  * [Distributed Web](https://blog.cloudflare.com/tag/distributed-web/)
+  * [Diversity](https://blog.cloudflare.com/tag/diversity/)
+  * [DLP](https://blog.cloudflare.com/tag/dlp/)
+  * [DMARC](https://blog.cloudflare.com/tag/dmarc/)
+  * [DNS](https://blog.cloudflare.com/tag/dns/)
+  * [DNS Filtering](https://blog.cloudflare.com/tag/dns-filtering/)
+  * [DNS Flood](https://blog.cloudflare.com/tag/dns-flood/)
+  * [DNS Security](https://blog.cloudflare.com/tag/dns-security/)
+  * [DNSSEC](https://blog.cloudflare.com/tag/dnssec/)
+  * [Dogfooding](https://blog.cloudflare.com/tag/dogfooding/)
+  * [DoH](https://blog.cloudflare.com/tag/doh/)
+  * [Domain Rankings](https://blog.cloudflare.com/tag/domain-rankings/)
+  * [Domain Scoped Roles](https://blog.cloudflare.com/tag/domain-scoped-roles/)
+  * [dosd](https://blog.cloudflare.com/tag/dosd/)
+  * [Drupal](https://blog.cloudflare.com/tag/drupal/)
+  * [Due Process](https://blog.cloudflare.com/tag/due-process/)
+  * [Durable Execution](https://blog.cloudflare.com/tag/durable-execution/)
+  * [Durable Objects](https://blog.cloudflare.com/tag/durable-objects/)
+  * [Early Hints](https://blog.cloudflare.com/tag/early-hints/)
+  * [Earth Day](https://blog.cloudflare.com/tag/earth-day/)
+  * [eBPF](https://blog.cloudflare.com/tag/ebpf/)
+  * [EC2](https://blog.cloudflare.com/tag/ec2/)
+  * [eCommerce](https://blog.cloudflare.com/tag/ecommerce/)
+  * [Edge](https://blog.cloudflare.com/tag/edge/)
+  * [Edge Computing](https://blog.cloudflare.com/tag/edge-computing/)
+  * [Edge Database](https://blog.cloudflare.com/tag/edge-database/)
+  * [Edge Rules](https://blog.cloudflare.com/tag/edge-rules/)
+  * [Education](https://blog.cloudflare.com/tag/education/)
+  * [Egress](https://blog.cloudflare.com/tag/egress/)
+  * [Elastic](https://blog.cloudflare.com/tag/elastic/)
+  * [Election Security](https://blog.cloudflare.com/tag/election-security/)
+  * [Elections](https://blog.cloudflare.com/tag/elections/)
+  * [Elliptic Curves](https://blog.cloudflare.com/tag/elliptic-curves/)
+  * [Email](https://blog.cloudflare.com/tag/email/)
+  * [Email Routing](https://blog.cloudflare.com/tag/email-routing/)
+  * [Email Security](https://blog.cloudflare.com/tag/email-security/)
+  * [Email Workers](https://blog.cloudflare.com/tag/email-workers/)
+  * [EmDash](https://blog.cloudflare.com/tag/emdash/)
+  * [Emissions](https://blog.cloudflare.com/tag/emissions/)
+  * [Employee Resource Groups](https://blog.cloudflare.com/tag/employee-resource-groups/)
+  * [Encrypted SNI](https://blog.cloudflare.com/tag/encrypted-sni/)
+  * [Encryption](https://blog.cloudflare.com/tag/encryption/)
+  * [Engineering](https://blog.cloudflare.com/tag/engineering/)
+  * [Enterprise](https://blog.cloudflare.com/tag/enterprise/)
+  * [Entropy](https://blog.cloudflare.com/tag/entropy/)
+  * [EPYC](https://blog.cloudflare.com/tag/epyc/)
+  * [Ethereum](https://blog.cloudflare.com/tag/ethereum/)
+  * [Europe](https://blog.cloudflare.com/tag/europe/)
+  * [European Union](https://blog.cloudflare.com/tag/european-union/)
+  * [Events](https://blog.cloudflare.com/tag/events/)
+  * [Exploit](https://blog.cloudflare.com/tag/exploit/)
+  * [Facebook](https://blog.cloudflare.com/tag/facebook/)
+  * [Fancy Bear](https://blog.cloudflare.com/tag/fancy-bear/)
+  * [Fast Fonts](https://blog.cloudflare.com/tag/fast-fonts/)
+  * [FCC](https://blog.cloudflare.com/tag/fcc/)
+  * [Feature Flags](https://blog.cloudflare.com/tag/feature-flags/)
+  * [FedRAMP](https://blog.cloudflare.com/tag/fedramp/)
+  * [FedRAMP High](https://blog.cloudflare.com/tag/fedramp-high/)
+  * [FedRAMP Moderate](https://blog.cloudflare.com/tag/fedramp-moderate/)
+  * [Firefox](https://blog.cloudflare.com/tag/firefox/)
+  * [Firewall](https://blog.cloudflare.com/tag/firewall/)
+  * [Firmware](https://blog.cloudflare.com/tag/firmware/)
+  * [Florida](https://blog.cloudflare.com/tag/florida/)
+  * [Football](https://blog.cloudflare.com/tag/football/)
+  * [Formal Methods](https://blog.cloudflare.com/tag/formal-methods/)
+  * [Forrester](https://blog.cloudflare.com/tag/forrester/)
+  * [Fortran](https://blog.cloudflare.com/tag/fortran/)
+  * [Foundation DNS](https://blog.cloudflare.com/tag/foundation-dns/)
+  * [Founders' Letter](https://blog.cloudflare.com/tag/founders-letter/)
+  * [France](https://blog.cloudflare.com/tag/france/)
+  * [Fraud](https://blog.cloudflare.com/tag/fraud/)
+  * [Free](https://blog.cloudflare.com/tag/free/)
+  * [Freedom of Speech](https://blog.cloudflare.com/tag/freedom-of-speech/)
+  * [Front End](https://blog.cloudflare.com/tag/front-end/)
+  * [Full Stack](https://blog.cloudflare.com/tag/full-stack/)
+  * [Full Stack Week](https://blog.cloudflare.com/tag/full-stack-week/)
+  * [Fun](https://blog.cloudflare.com/tag/fun/)
+  * [GA Week](https://blog.cloudflare.com/tag/ga-week/)
+  * [Gartner](https://blog.cloudflare.com/tag/gartner/)
+  * [Gatebot](https://blog.cloudflare.com/tag/gatebot/)
+  * [GDPR](https://blog.cloudflare.com/tag/gdpr/)
+  * [Gen X](https://blog.cloudflare.com/tag/gen-x/)
+  * [General Availability](https://blog.cloudflare.com/tag/general-availability/)
+  * [Generative AI](https://blog.cloudflare.com/tag/generative-ai/)
+  * [Geo Key Manager](https://blog.cloudflare.com/tag/geo-key-manager/)
+  * [Germany](https://blog.cloudflare.com/tag/germany/)
+  * [GitHub](https://blog.cloudflare.com/tag/github/)
+  * [Go](https://blog.cloudflare.com/tag/go/)
+  * [Google](https://blog.cloudflare.com/tag/google/)
+  * [Google Analytics](https://blog.cloudflare.com/tag/google-analytics/)
+  * [Google Cloud](https://blog.cloudflare.com/tag/google-cloud/)
+  * [Google Workspace](https://blog.cloudflare.com/tag/google-workspace/)
+  * [Government Innovation](https://blog.cloudflare.com/tag/government-innovation/)
+  * [Grace Hopper](https://blog.cloudflare.com/tag/grace-hopper/)
+  * [Grafana](https://blog.cloudflare.com/tag/grafana/)
+  * [GraphQL](https://blog.cloudflare.com/tag/graphql/)
+  * [Green](https://blog.cloudflare.com/tag/green/)
+  * [Grinch](https://blog.cloudflare.com/tag/grinch/)
+  * [Growth](https://blog.cloudflare.com/tag/growth/)
+  * [gRPC](https://blog.cloudflare.com/tag/grpc/)
+  * [Guest Post](https://blog.cloudflare.com/tag/guest-post/)
+  * [Hackathon](https://blog.cloudflare.com/tag/hackathon/)
+  * [Halloween](https://blog.cloudflare.com/tag/halloween/)
+  * [Hardware](https://blog.cloudflare.com/tag/hardware/)
+  * [HashiCorp](https://blog.cloudflare.com/tag/hashicorp/)
+  * [Hertzbleed](https://blog.cloudflare.com/tag/hertzbleed/)
+  * [Heuristics](https://blog.cloudflare.com/tag/heuristics/)
+  * [History](https://blog.cloudflare.com/tag/history/)
+  * [Holidays](https://blog.cloudflare.com/tag/holidays/)
+  * [Holocaust](https://blog.cloudflare.com/tag/holocaust/)
+  * [Hong Kong](https://blog.cloudflare.com/tag/hongkong/)
+  * [Hosting Con](https://blog.cloudflare.com/tag/hostingcon/)
+  * [Hostnames](https://blog.cloudflare.com/tag/hostnames/)
+  * [HTTP2](https://blog.cloudflare.com/tag/http2/)
+  * [HTTP3](https://blog.cloudflare.com/tag/http3/)
+  * [HTTPS](https://blog.cloudflare.com/tag/https/)
+  * [Human Rights](https://blog.cloudflare.com/tag/human-rights/)
+  * [Hurricane](https://blog.cloudflare.com/tag/hurricane/)
+  * [Hybrid Cloud](https://blog.cloudflare.com/tag/hybrid-cloud/)
+  * [Hyperdrive](https://blog.cloudflare.com/tag/hyperdrive/)
+  * [I'm Under Attack Mode](https://blog.cloudflare.com/tag/iuam/)
+  * [IBM](https://blog.cloudflare.com/tag/ibm/)
+  * [ICANN](https://blog.cloudflare.com/tag/icann/)
+  * [iCloud Private Relay](https://blog.cloudflare.com/tag/icloud-private-relay/)
+  * [Identity](https://blog.cloudflare.com/tag/identity/)
+  * [IETF](https://blog.cloudflare.com/tag/ietf/)
+  * [IETF Standards](https://blog.cloudflare.com/tag/ietf-standards/)
+  * [IL4](https://blog.cloudflare.com/tag/il4/)
+  * [Image Optimization](https://blog.cloudflare.com/tag/image-optimization/)
+  * [Image Recognition](https://blog.cloudflare.com/tag/image-recognition/)
+  * [Image Resizing](https://blog.cloudflare.com/tag/image-resizing/)
+  * [Image Storage](https://blog.cloudflare.com/tag/image-storage/)
+  * [Impact](https://blog.cloudflare.com/tag/impact/)
+  * [Impact Week](https://blog.cloudflare.com/tag/impact-week/)
+  * [Incident Report](https://blog.cloudflare.com/tag/incident-report/)
+  * [Incident Response](https://blog.cloudflare.com/tag/incident-response/)
+  * [India](https://blog.cloudflare.com/tag/india/)
+  * [Indicators of Compromise](https://blog.cloudflare.com/tag/indicators-of-compromise/)
+  * [Indonesian](https://blog.cloudflare.com/tag/indonesian-id/)
+  * [Inference](https://blog.cloudflare.com/tag/inference/)
+  * [Infrastructure](https://blog.cloudflare.com/tag/infrastructure/)
+  * [Infrastructure as Code](https://blog.cloudflare.com/tag/infrastructure-as-code/)
+  * [Insights](https://blog.cloudflare.com/tag/insights/)
+  * [Intel](https://blog.cloudflare.com/tag/intel/)
+  * [Interconnection](https://blog.cloudflare.com/tag/interconnection/)
+  * [Internal DNS](https://blog.cloudflare.com/tag/internal-dns/)
+  * [Internet Performance](https://blog.cloudflare.com/tag/internet-performance/)
+  * [Internet Quality](https://blog.cloudflare.com/tag/internet-quality/)
+  * [Internet Regulation](https://blog.cloudflare.com/tag/internet-regulation/)
+  * [Internet Shutdown](https://blog.cloudflare.com/tag/internet-shutdown/)
+  * [Internet Summit](https://blog.cloudflare.com/tag/internet-summit/)
+  * [Internet Traffic](https://blog.cloudflare.com/tag/internet-traffic/)
+  * [Internet Trends](https://blog.cloudflare.com/tag/internet-trends/)
+  * [Internship Experience](https://blog.cloudflare.com/tag/internship-experience/)
+  * [Intrusion Detection](https://blog.cloudflare.com/tag/intrusion-detection/)
+  * [Investors](https://blog.cloudflare.com/tag/investors/)
+  * [IoCs](https://blog.cloudflare.com/tag/iocs/)
+  * [iOS](https://blog.cloudflare.com/tag/ios/)
+  * [IoT](https://blog.cloudflare.com/tag/iot/)
+  * [IPFS](https://blog.cloudflare.com/tag/ipfs/)
+  * [IPsec](https://blog.cloudflare.com/tag/ipsec/)
+  * [IPv4](https://blog.cloudflare.com/tag/ipv4/)
+  * [IPv6](https://blog.cloudflare.com/tag/ipv6/)
+  * [IRAP](https://blog.cloudflare.com/tag/irap/)
+  * [Israel](https://blog.cloudflare.com/tag/israel/)
+  * [Italy](https://blog.cloudflare.com/tag/italy/)
+  * [IWD](https://blog.cloudflare.com/tag/iwd/)
+  * [JAMstack](https://blog.cloudflare.com/tag/jamstack/)
+  * [Japan](https://blog.cloudflare.com/tag/japan/)
+  * [JavaScript](https://blog.cloudflare.com/tag/javascript/)
+  * [Jengo](https://blog.cloudflare.com/tag/jengo/)
+  * [Jengo Policy](https://blog.cloudflare.com/tag/jengo-policy/)
+  * [Joomla](https://blog.cloudflare.com/tag/joomla/)
+  * [Judeoflare](https://blog.cloudflare.com/tag/judeoflare/)
+  * [Kafka](https://blog.cloudflare.com/tag/kafka/)
+  * [Kernel](https://blog.cloudflare.com/tag/kernel/)
+  * [Key Value](https://blog.cloudflare.com/tag/key-value/)
+  * [Keyless SSL](https://blog.cloudflare.com/tag/keyless-ssl/)
+  * [KeyTrap](https://blog.cloudflare.com/tag/keytrap/)
+  * [Killnet](https://blog.cloudflare.com/tag/killnet/)
+  * [Korea](https://blog.cloudflare.com/tag/korea/)
+  * [Kubernetes](https://blog.cloudflare.com/tag/kubernetes/)
+  * [LangChain](https://blog.cloudflare.com/tag/langchain/)
+  * [Latency](https://blog.cloudflare.com/tag/latency/)
+  * [Latin America](https://blog.cloudflare.com/tag/latin-america/)
+  * [Latinflare](https://blog.cloudflare.com/tag/latinflare/)
+  * [LavaRand](https://blog.cloudflare.com/tag/lavarand/)
+  * [Lazarus group](https://blog.cloudflare.com/tag/lazarus-group/)
+  * [Leaked Credential Checks](https://blog.cloudflare.com/tag/leaked-credential-checks/)
+  * [Legal](https://blog.cloudflare.com/tag/legal/)
+  * [Legal Patents Sable](https://blog.cloudflare.com/tag/legal-patents-sable/)
+  * [LGBTQIA+](https://blog.cloudflare.com/tag/lgbtqia/)
+  * [Life at Cloudflare](https://blog.cloudflare.com/tag/life-at-cloudflare/)
+  * [Linux](https://blog.cloudflare.com/tag/linux/)
+  * [Lisbon](https://blog.cloudflare.com/tag/lisbon/)
+  * [Live Streaming](https://blog.cloudflare.com/tag/live-streaming/)
+  * [Llama](https://blog.cloudflare.com/tag/llama/)
+  * [LLM](https://blog.cloudflare.com/tag/llm/)
+  * [Load Balancing](https://blog.cloudflare.com/tag/loadbalancing/)
+  * [Localization](https://blog.cloudflare.com/tag/localization/)
+  * [Log Push](https://blog.cloudflare.com/tag/log-push/)
+  * [Log4J](https://blog.cloudflare.com/tag/log4j/)
+  * [Log4Shell](https://blog.cloudflare.com/tag/log4shell/)
+  * [Logging](https://blog.cloudflare.com/tag/logging/)
+  * [Logs](https://blog.cloudflare.com/tag/logs/)
+  * [LUA](https://blog.cloudflare.com/tag/lua/)
+  * [Machine Learning](https://blog.cloudflare.com/tag/machine-learning/)
+  * [Magecart](https://blog.cloudflare.com/tag/magecart/)
+  * [Magic Firewall](https://blog.cloudflare.com/tag/magic-firewall/)
+  * [Magic Network Monitoring](https://blog.cloudflare.com/tag/magic-network-monitoring/)
+  * [Magic Transit](https://blog.cloudflare.com/tag/magic-transit/)
+  * [Magic WAN](https://blog.cloudflare.com/tag/magic-wan/)
+  * [Magic WAN Connector](https://blog.cloudflare.com/tag/magic-wan-connector/)
+  * [Malicious JavaScript](https://blog.cloudflare.com/tag/malicious-javascript/)
+  * [Malware](https://blog.cloudflare.com/tag/malware/)
+  * [Managed Components](https://blog.cloudflare.com/tag/managed-components/)
+  * [Managed Rules](https://blog.cloudflare.com/tag/managed-rules/)
+  * [March of Cloudflare](https://blog.cloudflare.com/tag/march-of-cloudflare/)
+  * [MASQUE](https://blog.cloudflare.com/tag/masque/)
+  * [MCP](https://blog.cloudflare.com/tag/mcp/)
+  * [Meerkat](https://blog.cloudflare.com/tag/meerkat/)
+  * [MeetUp](https://blog.cloudflare.com/tag/meetup/)
+  * [Meris](https://blog.cloudflare.com/tag/meris/)
+  * [Message Protocol](https://blog.cloudflare.com/tag/message-protocol/)
+  * [Mexico](https://blog.cloudflare.com/tag/mexico/)
+  * [Micro-frontends](https://blog.cloudflare.com/tag/micro-frontends/)
+  * [Microsoft](https://blog.cloudflare.com/tag/microsoft/)
+  * [Microsoft 365](https://blog.cloudflare.com/tag/microsoft-365/)
+  * [Microsoft Azure](https://blog.cloudflare.com/tag/microsoft-azure/)
+  * [Middle East](https://blog.cloudflare.com/tag/middle-east/)
+  * [Migration Hub](https://blog.cloudflare.com/tag/migration-hub/)
+  * [Milestones](https://blog.cloudflare.com/tag/milestone/)
+  * [Miniflare](https://blog.cloudflare.com/tag/miniflare/)
+  * [Mirage](https://blog.cloudflare.com/tag/mirage/)
+  * [Mirai](https://blog.cloudflare.com/tag/mirai/)
+  * [Mitel](https://blog.cloudflare.com/tag/mitel/)
+  * [Mitigation](https://blog.cloudflare.com/tag/mitigation/)
+  * [Mixed Content Errors](https://blog.cloudflare.com/tag/mixed-content-errors/)
+  * [MLops](https://blog.cloudflare.com/tag/mlops/)
+  * [Mobile](https://blog.cloudflare.com/tag/mobile/)
+  * [Mobile SDK](https://blog.cloudflare.com/tag/mobile-sdk/)
+  * [Model Context Protocol](https://blog.cloudflare.com/tag/model-context-protocol/)
+  * [Moldova](https://blog.cloudflare.com/tag/moldova/)
+  * [Monitoring](https://blog.cloudflare.com/tag/monitoring/)
+  * [Multi-Cloud](https://blog.cloudflare.com/tag/multi-cloud/)
+  * [Multi-User](https://blog.cloudflare.com/tag/multi-user/)
+  * [MySQL](https://blog.cloudflare.com/tag/mysql/)
+  * [NaaS](https://blog.cloudflare.com/tag/naas/)
+  * [Net Neutrality](https://blog.cloudflare.com/tag/net-neutrality/)
+  * [Network](https://blog.cloudflare.com/tag/network/)
+  * [Network Interconnect](https://blog.cloudflare.com/tag/network-interconnect/)
+  * [Network Performance Update](https://blog.cloudflare.com/tag/network-performance-update/)
+  * [Network Protection](https://blog.cloudflare.com/tag/network-protection/)
+  * [Network Services](https://blog.cloudflare.com/tag/network-services/)
+  * [Networking](https://blog.cloudflare.com/tag/networking/)
+  * [New Year](https://blog.cloudflare.com/tag/new-year/)
+  * [NGINX](https://blog.cloudflare.com/tag/nginx/)
+  * [Ninjas](https://blog.cloudflare.com/tag/ninjas/)
+  * [NIST](https://blog.cloudflare.com/tag/nist/)
+  * [Node.js](https://blog.cloudflare.com/tag/node-js/)
+  * [North America](https://blog.cloudflare.com/tag/north-america/)
+  * [Notebooks](https://blog.cloudflare.com/tag/notebooks/)
+  * [Notifications](https://blog.cloudflare.com/tag/notifications/)
+  * [NSEC3](https://blog.cloudflare.com/tag/nsec3/)
+  * [OAuth](https://blog.cloudflare.com/tag/oauth/)
+  * [Observability](https://blog.cloudflare.com/tag/observability/)
+  * [Oceania](https://blog.cloudflare.com/tag/oceania/)
+  * [OCSP](https://blog.cloudflare.com/tag/ocsp/)
+  * [Offices](https://blog.cloudflare.com/tag/offices/)
+  * [Okta](https://blog.cloudflare.com/tag/okta/)
+  * [Olympics](https://blog.cloudflare.com/tag/olympics/)
+  * [Onboarding](https://blog.cloudflare.com/tag/onboarding/)
+  * [Open API](https://blog.cloudflare.com/tag/open-api/)
+  * [Open Source](https://blog.cloudflare.com/tag/open-source/)
+  * [OpenAI](https://blog.cloudflare.com/tag/openai/)
+  * [OpenBMC](https://blog.cloudflare.com/tag/open-bmc/)
+  * [OpenDNS](https://blog.cloudflare.com/tag/opendns/)
+  * [OpenSSL](https://blog.cloudflare.com/tag/openssl/)
+  * [OpenTelemetry ](https://blog.cloudflare.com/tag/opentelemetry/)
+  * [Optimization](https://blog.cloudflare.com/tag/optimization/)
+  * [Origin Rules](https://blog.cloudflare.com/tag/origin-rules/)
+  * [Outage](https://blog.cloudflare.com/tag/outage/)
+  * [Oxy](https://blog.cloudflare.com/tag/oxy/)
+  * [Pacific Northwest](https://blog.cloudflare.com/tag/pacific-northwest/)
+  * [Page Rules](https://blog.cloudflare.com/tag/page-rules/)
+  * [Page Shield](https://blog.cloudflare.com/tag/page-shield/)
+  * [Parallels](https://blog.cloudflare.com/tag/parallels/)
+  * [Partners](https://blog.cloudflare.com/tag/partners/)
+  * [Partnership](https://blog.cloudflare.com/tag/partnerships/)
+  * [Password-reuse](https://blog.cloudflare.com/tag/password-reuse/)
+  * [Passwords](https://blog.cloudflare.com/tag/passwords/)
+  * [Passwords (PT)](https://blog.cloudflare.com/tag/passwords-pt/)
+  * [Patents](https://blog.cloudflare.com/tag/patents/)
+  * [Pay Per Crawl](https://blog.cloudflare.com/tag/pay-per-crawl/)
+  * [PAYGO](https://blog.cloudflare.com/tag/paygo/)
+  * [Payments](https://blog.cloudflare.com/tag/payments/)
+  * [PCI Certified](https://blog.cloudflare.com/tag/pci-certified/)
+  * [Peering](https://blog.cloudflare.com/tag/peering/)
+  * [Performance](https://blog.cloudflare.com/tag/performance/)
+  * [Performance Optimization](https://blog.cloudflare.com/tag/performance-optimization/)
+  * [Phishing](https://blog.cloudflare.com/tag/phishing/)
+  * [php](https://blog.cloudflare.com/tag/php/)
+  * [Phython](https://blog.cloudflare.com/tag/phython/)
+  * [Pingora](https://blog.cloudflare.com/tag/pingora/)
+  * [Pipelines](https://blog.cloudflare.com/tag/pipelines/)
+  * [PlanetScale](https://blog.cloudflare.com/tag/planetscale/)
+  * [Plans](https://blog.cloudflare.com/tag/plans/)
+  * [Platform Engineering](https://blog.cloudflare.com/tag/platform-engineering/)
+  * [Platform Week](https://blog.cloudflare.com/tag/platform-week/)
+  * [Plesk](https://blog.cloudflare.com/tag/plesk/)
+  * [Policy & Legal](https://blog.cloudflare.com/tag/policy/)
+  * [Politics](https://blog.cloudflare.com/tag/politics/)
+  * [Portugal](https://blog.cloudflare.com/tag/portugal/)
+  * [Post Mortem](https://blog.cloudflare.com/tag/post-mortem/)
+  * [Post-Quantum](https://blog.cloudflare.com/tag/post-quantum/)
+  * [Postgres](https://blog.cloudflare.com/tag/postgres/)
+  * [Precursor](https://blog.cloudflare.com/tag/precursor/)
+  * [Prepared Statements](https://blog.cloudflare.com/tag/prepared-statements/)
+  * [Prisma](https://blog.cloudflare.com/tag/prisma/)
+  * [Privacy](https://blog.cloudflare.com/tag/privacy/)
+  * [Privacy Pass](https://blog.cloudflare.com/tag/privacy-pass/)
+  * [Privacy Week](https://blog.cloudflare.com/tag/privacy-week/)
+  * [Private IP](https://blog.cloudflare.com/tag/private-ip/)
+  * [Private Network](https://blog.cloudflare.com/tag/private-network/)
+  * [Product Design](https://blog.cloudflare.com/tag/product-design/)
+  * [Product News](https://blog.cloudflare.com/tag/product-news/)
+  * [Programming](https://blog.cloudflare.com/tag/programming/)
+  * [Programming (PT)](https://blog.cloudflare.com/tag/programming-pt/)
+  * [Project Fair Shot](https://blog.cloudflare.com/tag/project-fair-shot/)
+  * [Project Galileo](https://blog.cloudflare.com/tag/project-galileo/)
+  * [Project Honey Pot](https://blog.cloudflare.com/tag/project-honey-pot/)
+  * [Project Pangea](https://blog.cloudflare.com/tag/project-pangea/)
+  * [Project Safekeeping](https://blog.cloudflare.com/tag/project-safekeeping/)
+  * [Project Turpentine](https://blog.cloudflare.com/tag/project-turpentine/)
+  * [Prometheus](https://blog.cloudflare.com/tag/prometheus/)
+  * [Protocols](https://blog.cloudflare.com/tag/protocols/)
+  * [Proudflare](https://blog.cloudflare.com/tag/proudflare/)
+  * [Proxying](https://blog.cloudflare.com/tag/proxying/)
+  * [Public Sector](https://blog.cloudflare.com/tag/public-sector/)
+  * [Python](https://blog.cloudflare.com/tag/python/)
+  * [Python Workers](https://blog.cloudflare.com/tag/python-workers/)
+  * [Quantization](https://blog.cloudflare.com/tag/quantization/)
+  * [Queues](https://blog.cloudflare.com/tag/queues/)
+  * [QUIC](https://blog.cloudflare.com/tag/quic/)
+  * [QUICHE](https://blog.cloudflare.com/tag/quiche/)
+  * [Quicksilver](https://blog.cloudflare.com/tag/quicksilver/)
+  * [R2](https://blog.cloudflare.com/tag/r2/)
+  * [R2 Super Slurper](https://blog.cloudflare.com/tag/r2-super-slurper/)
+  * [Radar](https://blog.cloudflare.com/tag/cloudflare-radar/)
+  * [Radar Alerts](https://blog.cloudflare.com/tag/radar-alerts/)
+  * [Radar API](https://blog.cloudflare.com/tag/radar-api/)
+  * [Radar Maps](https://blog.cloudflare.com/tag/radar-maps/)
+  * [Railgun](https://blog.cloudflare.com/tag/railgun/)
+  * [Randomness](https://blog.cloudflare.com/tag/randomness/)
+  * [Ransom Attacks](https://blog.cloudflare.com/tag/ransom-attacks/)
+  * [Rapid Reset](https://blog.cloudflare.com/tag/rapid-reset/)
+  * [Raspberry Pi](https://blog.cloudflare.com/tag/raspberry-pi/)
+  * [Rate Limiting](https://blog.cloudflare.com/tag/rate-limiting/)
+  * [RC4](https://blog.cloudflare.com/tag/rc4/)
+  * [RDDoS](https://blog.cloudflare.com/tag/rddos/)
+  * [React](https://blog.cloudflare.com/tag/react/)
+  * [Reading List](https://blog.cloudflare.com/tag/reading-list/)
+  * [Real-time](https://blog.cloudflare.com/tag/real-time/)
+  * [Recruiting](https://blog.cloudflare.com/tag/recruiting/)
+  * [Regional Services](https://blog.cloudflare.com/tag/regional-services/)
+  * [Registrar](https://blog.cloudflare.com/tag/registrar/)
+  * [Reliability](https://blog.cloudflare.com/tag/reliability/)
+  * [Remote Browser Isolation](https://blog.cloudflare.com/tag/remote-browser-isolation/)
+  * [Remote Desktop Protocol ](https://blog.cloudflare.com/tag/remote-desktop-protocol/)
+  * [Remote Work](https://blog.cloudflare.com/tag/remote-work/)
+  * [Replication](https://blog.cloudflare.com/tag/replication/)
+  * [Research](https://blog.cloudflare.com/tag/research/)
+  * [Resolver](https://blog.cloudflare.com/tag/resolver/)
+  * [Restreaming](https://blog.cloudflare.com/tag/restreaming/)
+  * [Retreat](https://blog.cloudflare.com/tag/retreat/)
+  * [Reverse Engineering](https://blog.cloudflare.com/tag/reverse-engineering/)
+  * [REvil](https://blog.cloudflare.com/tag/revil/)
+  * [Risk Management](https://blog.cloudflare.com/tag/risk-management/)
+  * [Road to Zero Trust](https://blog.cloudflare.com/tag/road-to-zero-trust/)
+  * [Rocket Loader](https://blog.cloudflare.com/tag/rocketloader/)
+  * [RocksDB](https://blog.cloudflare.com/tag/rocksdb/)
+  * [Routing](https://blog.cloudflare.com/tag/routing/)
+  * [Routing Security](https://blog.cloudflare.com/tag/routing-security/)
+  * [RPC](https://blog.cloudflare.com/tag/rpc/)
+  * [RPKI](https://blog.cloudflare.com/tag/rpki/)
+  * [RRDNS](https://blog.cloudflare.com/tag/rrdns/)
+  * [RSA](https://blog.cloudflare.com/tag/rsa/)
+  * [Russia](https://blog.cloudflare.com/tag/russia/)
+  * [Rust](https://blog.cloudflare.com/tag/rust/)
+  * [Rust Workers](https://blog.cloudflare.com/tag/rust-workers/)
+  * [SaaS](https://blog.cloudflare.com/tag/saas/)
+  * [SAAS Security](https://blog.cloudflare.com/tag/saas-security/)
+  * [Sable](https://blog.cloudflare.com/tag/sable/)
+  * [Salt](https://blog.cloudflare.com/tag/salt/)
+  * [Sampling](https://blog.cloudflare.com/tag/sampling/)
+  * [Sandbox](https://blog.cloudflare.com/tag/sandbox/)
+  * [SASE](https://blog.cloudflare.com/tag/sase/)
+  * [Save The Web](https://blog.cloudflare.com/tag/savetheweb/)
+  * [SDK](https://blog.cloudflare.com/tag/sdk/)
+  * [Search Engine](https://blog.cloudflare.com/tag/search-engine/)
+  * [Secrets Store](https://blog.cloudflare.com/tag/secrets-store/)
+  * [Secure Web Gateway](https://blog.cloudflare.com/tag/secure-web-gateway/)
+  * [Security](https://blog.cloudflare.com/tag/security/)
+  * [Security Analytics](https://blog.cloudflare.com/tag/security-analytics/)
+  * [Security Center](https://blog.cloudflare.com/tag/security-center/)
+  * [Security Posture](https://blog.cloudflare.com/tag/security-posture/)
+  * [Security Posture Management](https://blog.cloudflare.com/tag/security-posture-management/)
+  * [Security Service Edge](https://blog.cloudflare.com/tag/security-service-edge/)
+  * [Security Week](https://blog.cloudflare.com/tag/security-week/)
+  * [security.txt](https://blog.cloudflare.com/tag/security-txt/)
+  * [SEO](https://blog.cloudflare.com/tag/seo/)
+  * [Server Push](https://blog.cloudflare.com/tag/server-push/)
+  * [Serverless](https://blog.cloudflare.com/tag/serverless/)
+  * [Serverless (PT)](https://blog.cloudflare.com/tag/serverless-pt/)
+  * [Serverless AI](https://blog.cloudflare.com/tag/serverless-ai/)
+  * [Serverless Week](https://blog.cloudflare.com/tag/serverless-week/)
+  * [Servers](https://blog.cloudflare.com/tag/servers/)
+  * [SIEM](https://blog.cloudflare.com/tag/siem/)
+  * [Signed Exchanges (SXG)](https://blog.cloudflare.com/tag/signed-exchanges/)
+  * [SIM](https://blog.cloudflare.com/tag/sim/)
+  * [Singapore](https://blog.cloudflare.com/tag/singapore/)
+  * [Single Sign On (SSO)](https://blog.cloudflare.com/tag/sso/)
+  * [Smart Placement](https://blog.cloudflare.com/tag/smart-placement/)
+  * [Smart Shield](https://blog.cloudflare.com/tag/smart-shield/)
+  * [Snippets](https://blog.cloudflare.com/tag/snippets/)
+  * [SOC as a Service](https://blog.cloudflare.com/tag/soc-as-a-service/)
+  * [South Africa](https://blog.cloudflare.com/tag/south-africa/)
+  * [South America](https://blog.cloudflare.com/tag/south-america/)
+  * [Spain](https://blog.cloudflare.com/tag/spain/)
+  * [spdy](https://blog.cloudflare.com/tag/spdy/)
+  * [Spectrum](https://blog.cloudflare.com/tag/spectrum/)
+  * [Speed](https://blog.cloudflare.com/tag/speed/)
+  * [Speed & Reliability](https://blog.cloudflare.com/tag/speed-and-reliability/)
+  * [Speed Brain](https://blog.cloudflare.com/tag/speed-brain/)
+  * [Speed Week](https://blog.cloudflare.com/tag/speed-week/)
+  * [Spoofing](https://blog.cloudflare.com/tag/spoofing/)
+  * [Sports](https://blog.cloudflare.com/tag/sports/)
+  * [SQL](https://blog.cloudflare.com/tag/sql/)
+  * [SRE](https://blog.cloudflare.com/tag/sre/)
+  * [SSE](https://blog.cloudflare.com/tag/sse/)
+  * [SSH](https://blog.cloudflare.com/tag/ssh/)
+  * [SSL](https://blog.cloudflare.com/tag/ssl/)
+  * [Standards](https://blog.cloudflare.com/tag/standards/)
+  * [Startup Enterprise Plan](https://blog.cloudflare.com/tag/startup-enterprise-plan/)
+  * [Statistics](https://blog.cloudflare.com/tag/statistics/)
+  * [StopTheHacker](https://blog.cloudflare.com/tag/stopthehacker/)
+  * [Storage](https://blog.cloudflare.com/tag/storage/)
+  * [Sumo Logic](https://blog.cloudflare.com/tag/sumo-logic/)
+  * [Super Bowl](https://blog.cloudflare.com/tag/super-bowl/)
+  * [Supercloud](https://blog.cloudflare.com/tag/supercloud/)
+  * [Supply Chain Attacks](https://blog.cloudflare.com/tag/supply-chain-attacks/)
+  * [Support](https://blog.cloudflare.com/tag/support/)
+  * [Sustainability](https://blog.cloudflare.com/tag/sustainability/)
+  * [SWAG](https://blog.cloudflare.com/tag/swag/)
+  * [SWG](https://blog.cloudflare.com/tag/swg/)
+  * [Swift](https://blog.cloudflare.com/tag/swift/)
+  * [Switzerland](https://blog.cloudflare.com/tag/switzerland/)
+  * [SXSW](https://blog.cloudflare.com/tag/sxsw/)
+  * [SYN](https://blog.cloudflare.com/tag/syn/)
+  * [SYN Flood](https://blog.cloudflare.com/tag/syn-flood/)
+  * [Syria](https://blog.cloudflare.com/tag/syria/)
+  * [TCP](https://blog.cloudflare.com/tag/tcp/)
+  * [Team](https://blog.cloudflare.com/tag/team/)
+  * [Teams Dashboard](https://blog.cloudflare.com/tag/teams-dashboard/)
+  * [Tech Talks](https://blog.cloudflare.com/tag/tech-talks/)
+  * [TechCrunch](https://blog.cloudflare.com/tag/techcrunch/)
+  * [Technical Writing](https://blog.cloudflare.com/tag/technical-writing/)
+  * [Terraform](https://blog.cloudflare.com/tag/terraform/)
+  * [Testimonials](https://blog.cloudflare.com/tag/testimonials/)
+  * [Testing](https://blog.cloudflare.com/tag/testing/)
+  * [Texas](https://blog.cloudflare.com/tag/texas/)
+  * [Thanksgiving](https://blog.cloudflare.com/tag/thanksgiving/)
+  * [The Serverlist Newsletter](https://blog.cloudflare.com/tag/serverlist/)
+  * [Threat Data](https://blog.cloudflare.com/tag/threat-data/)
+  * [Threat Feeds](https://blog.cloudflare.com/tag/threat-feeds/)
+  * [Threat Intelligence](https://blog.cloudflare.com/tag/threat-intelligence/)
+  * [Threat Operations](https://blog.cloudflare.com/tag/threat-operations/)
+  * [Threat Report](https://blog.cloudflare.com/tag/threat-report/)
+  * [Threats](https://blog.cloudflare.com/tag/threats/)
+  * [Tiered Cache](https://blog.cloudflare.com/tag/tiered-cache/)
+  * [TikTok](https://blog.cloudflare.com/tag/tiktok/)
+  * [TLS](https://blog.cloudflare.com/tag/tls/)
+  * [TLS 1.3](https://blog.cloudflare.com/tag/tls-1-3/)
+  * [Tools](https://blog.cloudflare.com/tag/tools/)
+  * [Tor](https://blog.cloudflare.com/tag/tor/)
+  * [Tracing](https://blog.cloudflare.com/tag/tracing/)
+  * [Traffic](https://blog.cloudflare.com/tag/traffic/)
+  * [Transform Rules](https://blog.cloudflare.com/tag/transform-rules/)
+  * [Transparency](https://blog.cloudflare.com/tag/transparency/)
+  * [Trends](https://blog.cloudflare.com/tag/trends/)
+  * [Trust & Safety](https://blog.cloudflare.com/tag/trust-and-safety/)
+  * [TTFB](https://blog.cloudflare.com/tag/ttfb/)
+  * [TTL](https://blog.cloudflare.com/tag/ttl/)
+  * [TURN](https://blog.cloudflare.com/tag/turn/)
+  * [TURN Server](https://blog.cloudflare.com/tag/turn-server/)
+  * [Turnstile](https://blog.cloudflare.com/tag/turnstile/)
+  * [TypeScript](https://blog.cloudflare.com/tag/typescript/)
+  * [UDP](https://blog.cloudflare.com/tag/udp/)
+  * [Ukraine](https://blog.cloudflare.com/tag/ukraine/)
+  * [United Kingdom](https://blog.cloudflare.com/tag/united-kingdom/)
+  * [Universal SSL](https://blog.cloudflare.com/tag/universal-ssl/)
+  * [URL Scanner](https://blog.cloudflare.com/tag/url-scanner/)
+  * [USA](https://blog.cloudflare.com/tag/usa/)
+  * [User Research](https://blog.cloudflare.com/tag/user-research/)
+  * [VDI](https://blog.cloudflare.com/tag/vdi/)
+  * [Vectorize](https://blog.cloudflare.com/tag/vectorize/)
+  * [Vetflare](https://blog.cloudflare.com/tag/vetflare/)
+  * [Video](https://blog.cloudflare.com/tag/video/)
+  * [Visibility](https://blog.cloudflare.com/tag/visibility/)
+  * [Vite](https://blog.cloudflare.com/tag/vite/)
+  * [VoIP](https://blog.cloudflare.com/tag/voip/)
+  * [VPC](https://blog.cloudflare.com/tag/vpc/)
+  * [VPN](https://blog.cloudflare.com/tag/vpn/)
+  * [Vulnerabilities](https://blog.cloudflare.com/tag/vulnerabilities/)
+  * [WAF](https://blog.cloudflare.com/tag/waf/)
+  * [WAF Attack Score](https://blog.cloudflare.com/tag/waf-attack-score/)
+  * [WAF Rules](https://blog.cloudflare.com/tag/waf-rules/)
+  * [Waiting Room](https://blog.cloudflare.com/tag/waiting-room/)
+  * [WARP](https://blog.cloudflare.com/tag/warp/)
+  * [WARP Connector](https://blog.cloudflare.com/tag/warp-connector/)
+  * [WASM](https://blog.cloudflare.com/tag/wasm/)
+  * [Web Application Firewall](https://blog.cloudflare.com/tag/web-application-firewall/)
+  * [Web Asset Discovery](https://blog.cloudflare.com/tag/web-asset-discovery/)
+  * [Web3](https://blog.cloudflare.com/tag/web3/)
+  * [WebAssembly](https://blog.cloudflare.com/tag/webassembly/)
+  * [Webinars](https://blog.cloudflare.com/tag/webinars/)
+  * [WebMCP](https://blog.cloudflare.com/tag/webmcp/)
+  * [WebP](https://blog.cloudflare.com/tag/webp/)
+  * [WebRTC](https://blog.cloudflare.com/tag/webrtc/)
+  * [WebSockets](https://blog.cloudflare.com/tag/websockets/)
+  * [Wildebeest](https://blog.cloudflare.com/tag/wildebeest/)
+  * [Womenflare](https://blog.cloudflare.com/tag/womenflare/)
+  * [WordPress](https://blog.cloudflare.com/tag/wordpress/)
+  * [Workers AI](https://blog.cloudflare.com/tag/workers-ai/)
+  * [Workers Launchpad](https://blog.cloudflare.com/tag/workers-launchpad/)
+  * [Workers Logs](https://blog.cloudflare.com/tag/workers-logs/)
+  * [Workers Observability](https://blog.cloudflare.com/tag/workers-observability/)
+  * [Workers Sites](https://blog.cloudflare.com/tag/workers-sites/)
+  * [Workers Unbound](https://blog.cloudflare.com/tag/workers-unbound/)
+  * [Workers VPC](https://blog.cloudflare.com/tag/workers-vpc/)
+  * [Workflows](https://blog.cloudflare.com/tag/workflows/)
+  * [World IPv6 Day](https://blog.cloudflare.com/tag/world-ipv6-day/)
+  * [Wrangler](https://blog.cloudflare.com/tag/wrangler/)
+  * [x402](https://blog.cloudflare.com/tag/x402/)
+  * [Year in Review](https://blog.cloudflare.com/tag/year-in-review/)
+  * [Z3](https://blog.cloudflare.com/tag/z3/)
+  * [Zaraz](https://blog.cloudflare.com/tag/zaraz/)
+  * [Zero Day Threats](https://blog.cloudflare.com/tag/zero-day-threats/)
+  * [Zero Trust](https://blog.cloudflare.com/tag/zero-trust/)
+  * [Zero Trust Week](https://blog.cloudflare.com/tag/zero-trust-week/)
+  * [Zone Versioning](https://blog.cloudflare.com/tag/zone-versioning/)
+  * [Artificial Intelligence](https://blog.cloudflare.com/tag/artificial-intelligence/)
+  * [Workers](https://blog.cloudflare.com/tag/workers-1/)
+  * [Client-Side Security](https://blog.cloudflare.com/tag/client-side-security/)
+  * [Architecture](https://blog.cloudflare.com/tag/architecture/)
+  * [Multi-tenant Secuity](https://blog.cloudflare.com/tag/multi-tenant-secuity/)
+  * [Multi-tenant Security](https://blog.cloudflare.com/tag/multi-tenant-security/)
+  * [cf](https://blog.cloudflare.com/tag/cf/)
+  * [BEACON](https://blog.cloudflare.com/tag/beacon/)
+
+
+
+[Security](https://blog.cloudflare.com/tag/security/)[Workers](https://blog.cloudflare.com/tag/workers-1/)
+
+[Developers](https://blog.cloudflare.com/tag/developers/)[Identity](https://blog.cloudflare.com/tag/identity/)[Product News](https://blog.cloudflare.com/tag/product-news/)[Security](https://blog.cloudflare.com/tag/security/)[Workers](https://blog.cloudflare.com/tag/workers-1/)
+
+September 15, 2026
+
+# Give every teammate and agent the right level of access to your Workers
+
+![Dina Kozlov](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW49DZ20ZY95S71GB0FPG6GC.jpg&w=64&h=64&f=webp&fit=cover&position=center)![Anthony Oreglia](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01M2FPT3Z3K2863VB1YT41PSSZ.01M2FPT4MEBD6E6KSGMWZPQQA0.webp&w=64&h=64&f=webp&fit=cover&position=center)![Visal In](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01M2FPVS926WFD9QF74SP330QK.01M2FPVSW4YQJD57Q54T6HW9RE.webp&w=64&h=64&f=webp&fit=cover&position=center)
+
+[Dina Kozlov](https://blog.cloudflare.com/author/dina/), [Anthony Oreglia](https://blog.cloudflare.com/author/anthony-oreglia/), and [Visal In](https://blog.cloudflare.com/author/visal-in/)
+
+8 minute read
+
+COPY URL
+
+![BLOG-3216 1](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW448A863P1CW4V1VXP9CBBR.png&w=1999&h=1125&f=webp&fit=cover&position=center)![](data:image/bmp;base64,Qk32BAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAATCwAAEwsAAAAAAAAAAAAA///+//z68/Ly6uvt6+3v8PHx8vDu7uvn//////397/H14+jw4ujy6Oz17O3x7Orq////////7fH53OX02eT24On55+v26+ru////////7/T+2+b51uX73ur+6O777e3z////////9Pn/4ez+3ev/5fH/7vT/8/P5/////////P//6/X/6PT/8fr/+P3/+/v9////////////9Pz/8/3/+///////////////////////9///9///////////////)
+
+As more teams — and now agents — build applications on Cloudflare's Developer Platform, having the right access controls is crucial to allow you to ship safely. After all, the last thing you want is for an agent to make a change in production, just because it was granted more access than it needs. 
+
+Now, you can give a teammate or agent access to a specific Worker, so that they can only make changes to that application and no other resources in your account. Moreover, we’re giving you four new roles, so you can limit exactly what they can do: 
+
+**Role**| **What it allows you to do**| **When to use it**  
+---|---|---  
+Metadata Read-Only| View resource lists, settings, and observability data like metrics, logs, and traces, without access to product content.| When you want to give a team member or agent access to observability data, so it can debug issues.  
+But you don’t want to give them access to your source code.  
+Content Read-Only| Read product content, such as Worker code or D1 database content, without the ability to modify it.| When you want to give a team member or agent access to the source code.  
+But you don’t want them to be able to make any changes to your Worker.  
+Editor| Read and write product content, and update settings. Cannot create or delete resources.| When you want to give a team member, agent, or your CI/CD system the ability to deploy changes to your Worker.  
+But you want to prevent them from being able to delete the Worker.  
+Admin| Full control over resources, including creating, renaming, deleting, and granting access to other users.| When you want to give a team member or agent full access to your Worker, including the ability to delete it.   
+But you don’t want to grant access to any other Workers or resources in your account.  
+  
+The new roles are available today, for all customers. You can assign them to a specific user, so when they log into the dashboard, they will only see the Worker you have given them access to. Or, you can create an API token with the scoped access, which you can give to your agent to ensure they only have access to that one application. 
+
+Here’s an example of how to create an API token with permissions per Worker: 
+
+![](data:image/bmp;base64,Qk32BAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAATCwAAEwsAAAAAAAAAAAAA+Pj38/Pz6+vs5ubn5ubn5+fn4uLj2dnc/Pz8+Pj58PDy7Ozt7e3t7u7u6enq4ODj////////+Pj59PT19vb29/f38vLz6ens/////////////Pz8/v7+////+/v88vL0////////////////////////////+fn7/////////////////////////////v7/////////////////////////////////////////////////////////////////)![image2.png](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01M2FQ89Q8QSPY1AESNKK82RW0.01M2FQ8AJWM34B5ASDNS6H1MWS.png&w=715&h=263&f=webp&fit=cover&position=center)
+
+## Roles designed for how teams build
+
+When defining these roles, we wanted to strike the right balance. Overly broad roles force you to grant more access than intended, undermining the principle of least privilege, while providing too many individual permissions makes it difficult to know which ones to grant. We landed on four roles that reflect the levels of access you may want to give a person or agent: enough to debug a resource without exposing its content, read the content without changing it, make changes without being able to delete the resource, or fully manage it.
+
+We plan to use these same roles as we bring resource-level access controls to other Developer Platform products, including D1, R2, and KV. Each role can be applied at one of three scopes. For example, if you set the “metadata read-only” control, here’s what that would look like at different levels: 
+
+  * Developer Platform level: Access to metadata for all Developer Platform resources.
+  * Product level: Access to metadata for every resource of one product, such as every Worker.
+  * Resource level: Access to metadata for one specific resource, such as one Worker.
+
+
+
+The role and scope determine what someone can do and which resources they can do it to. Let’s take a look at how this would look in some common Workers workflows.
+
+### Debug without exposing source code
+
+To debug an issue, an engineer or agent might need to look at a Worker’s settings, metrics, logs, and traces to understand what went wrong. But they do not need to see the Worker’s code or make changes to it.
+
+**Metadata Read-Only** gives them access to that information without exposing the Worker’s source code. They can query analytics through the GraphQL API, access logs, and inspect traces and other observability data. Those requests only return data for the Workers they have access to. If an agent is scoped to one Worker, it can use the Cloudflare APIs to investigate an issue without seeing data from any other Worker in the account.
+
+![](data:image/bmp;base64,Qk32BAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAATCwAAEwsAAAAAAAAAAAAA/v789/f26unr5OTl6+vq8fHv7Ozt3t7k////+fn57Ozu5ubp7e3s8/Px7e3u3d3m/////v7+8PD06uvu8fHx9/b17+/y3t7q////////9vf68fH09/f3/fz79fT44+Pw/////////v7/+fn7///+/////Pz/7Oz3////////////////////////////9vb+/////////////////////////////v7/////////////////////////////////)![BLOG-3357_Screenshot 2026-09-11 at 1.24.17 PM.png](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01M2FPFHBT9BP1GVNB6MKVEZQZ.01M2FPFKHK646CHA20SB32X4Y6.png&w=715&h=326&f=webp&fit=cover&position=center)
+
+As we bring these roles to more Developer Platform products, we plan to preserve that separation. Someone could inspect settings and observability data for a D1 database or R2 bucket without being able to read the values in the database or the files in the bucket.
+
+### Review code without changing it 
+
+A teammate or code review agent may need to read the code running in a Worker to understand how it works, investigate a bug, or review a proposed change. But that does not mean they should be able to deploy new code or update the Worker’s settings.
+
+**Content Read-Only** provides that separation. It lets them retrieve and review the Worker’s code without being able to modify or deploy it. When scoped to an individual Worker, they can read only that Worker’s code, rather than the code for every Worker in the account.
+
+![](data:image/bmp;base64,Qk32BAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAATCwAAEwsAAAAAAAAAAAAA//z7+/f37u7w5+rr6+3t8vLx8fHw6evr//z7/Pf27ezs5efo6+vs8/Lx8vHw6erq//79/vf37evr5OXl7Ovr9vPz9fLy6+rr//////v68O3t6Ojn8O/v+/f4+vb37+3u////////9/X07+/u9/b2//7///3+9PT0/////////v7+9/n4////////////+/v7/////////////v//////////////////////////////////////////////////)![BLOG-3357_Screenshot 2026-09-11 at 12.50.36 PM.png](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01M2FPFPN127PRRJ6ZVM50G84F.01M2FPFSQQW8DSZT84HSP411M6.png&w=715&h=344&f=webp&fit=cover&position=center)
+
+Once supported for other Developer Platform products, Content Read-Only will work the same way: someone could read the data stored in a D1 database, KV namespace, or R2 bucket without being able to modify it.
+
+### Let CI deploy without giving it full control
+
+A CI/CD workflow only needs access to the application it deploys. It should not be able to change another Worker or delete its own and take the application offline.
+
+With Worker-level access controls, each workflow can have its own API token with the **Editor role** , scoped to one Worker. If the workflow is misconfigured or its token is exposed, the impact remains contained: it can deploy changes to that Worker, but it cannot delete it or touch any other application in your account.
+
+![](data:image/bmp;base64,Qk32BAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAATCwAAEwsAAAAAAAAAAAAA//n4+/b28O/w6u3u7u/x8vLz7+7w5ubp//v6/vj39PLz7vDx8PHy8/Ly8O/v6Ojp//79//v7+fb38/P08vP09PP08fDw6+vr/////////Pr89vb59fX49fX38vLz7e7u/////////v3/9/n+9vj99/f99PX57/Hz/////////v//9/r/9/r/+Pr/9vj/8PP4/////////f//9vv/9/v/+v3/9/r/8PX8/////////f//9vv/9/z/+v7/+Pv/8fX+)![BLOG-3357_Screenshot 2026-09-11 at 12.49.50 PM.png](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01M2FPFNGCV9P3T9MRCX5NK5S5.01M2FPFP7NAJHFD142P53F99ZK.png&w=648&h=314&f=webp&fit=cover&position=center)
+
+### Delete a Worker with Admin access
+
+**Admin** is the highest level of access you can grant. It allows you to delete an application. You can still scope the role to an individual Worker, so that access does not extend to every Worker in the account.
+
+![](data:image/bmp;base64,Qk32BAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAATCwAAEwsAAAAAAAAAAAAA8+/08e7y7e3t7e/t8vPx9PX08PDx5+jq8ez27+zz7e3v7vDu8vTy9fX18PDy6Ons8uv58Oz27u/y8PPx9Pf19/b48vH16uvv9+//9fH88/T39Pn2+fz5+/v99/b77/D0//r//vr/+/z//P/9/////////v3/9vb7/////////////////////////////f7/////////////////////////////////////////////////////////////////)![BLOG-3357_Screenshot 2026-09-11 at 12.49.00 PM.png](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01M2FPFHK9T21FNCTWN33AXAC9.01M2FPFM19DD6F0T78P1NJY0TZ.png&w=715&h=346&f=webp&fit=cover&position=center)
+
+## Routes & Custom Domains 
+
+You can add [_routes_](https://developers.cloudflare.com/workers/configuration/routing/routes/) or [_Custom Domains_](https://developers.cloudflare.com/workers/configuration/routing/custom-domains/) to a Worker to specify which hostnames are routed to that application. For example, this configuration in your Wrangler file sends traffic for [example.com](http://example.com) to the Worker:
+    
+    
+    {
+      "route": {
+        "pattern": "example.com/*",
+        "zone_name": "example.com"
+      }
+    }
+
+Because changing that route could redirect production traffic or take the application offline, access to the Worker alone is not enough. To add, change, or remove a route or Custom Domain, you need both Editor access to the Worker and Workers Routes permission for the zone.
+
+Requiring Workers Routes permission, rather than broader access to the zone, means someone can manage how traffic reaches a Worker without being able to change unrelated settings for the domain.
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![](data:image/png;base64,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pHxPPPFEnv/9998/mP+///3vdNppp6Vbbrll0M8TCUhAAhLofQJ33XVX/k6nXwn30EMPdaXgVf1FVxLufiKmKAEJSEACEpDAOCfwwgsvpP/+97/pD3/4Q7riiivSP//5z/Twww+PcyopPfbYY+lf//pXuummm4ZlQTjc448/PmzYkQ5QVoJyHXlecMEFCbfDDjuoGA0o4+zYVwrRe++9N33xi19Mb3nLW9IXvvCFtMEGG6T3v//96b3vfW+67LLLxtmjs7oS6AYB05CABCQggX4h8MMf/jAdeuihucMwbCzKjYBz6EAZfvSjHw1m/5vf/CZdd911YzYWY0If9/zzzw+WyRMJSEACEhiewDHHHJP3KbzXw+23335pn332SSeddFJ64IEHhk+kQYiq/qJBUL0lIIFRI2BGEpCABCRQJoAse/DBByfGRci5P//5z9P3v//9tP/++yeue1ExitKRRWJ33313uTpdvb7tttvSCSeckKZOnTpsuoQh7O233z5s2JEMgPKT1aAcP/nJT6ZNN900HXjggfmxeM69UIwSdiTLZNq9RaBvFKK33npr+vSnP50uv/zytPjii+eK0bXXXju99rWvTfzxr7vuuunHP/5xb9EdxdJMmzYtHX/88albFr2jWHSzkoAEJDA6BMxFAn1MAMvMG2+8cbAGf/7znwfPx/pkueWWS+973/vSMsssM+pFwZL3kEMOSTiEwlEvwECGDz744MCv/yUgAQn0L4E3vOEN6Z3vfGfukK+feuqp9Pe//z2fGMQouX9rNnzJfYcPz8gQEpCABPqSgIWWQBMELr744ny3o/vuuy8PvdBCC6W3ve1t6RWveEXC4JYVo0ceeWTPrRa94YYb0mGHHZYrbvOC+5MTQLGJMpSxLcpP5io4z28WfvDjHmE4Jw5xC0E8rTGBvlGI/vSnP80Vnx/60IcSKxG+853vpG9961vp97//fUIZ+txzz6Xvfe97NX5UjavGtnlnnnlmrgz9wQ9+kLhuHNo7EpCABCQgAQn0GwGsVhnrfPjDH04IaViDsiqyUT1G0//1r399WmONNXKDtdHMtxfyuuaaa9If//jHxLEXymMZJCABCbRD4FOf+lQuUyNXb7nllmnnnXfODY8xtq3zN5Z4d/sOb6fFGEcCEpCABCTQ/wT49Mt5552XV2TixIlpu+22S9tvv31af/3107bb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WWAJSEACEhh7ApZAAiNPYNq0aWm22WZLCy64YJpjjjlGPkNzGHMCPOd55503f+48/zEvkAWQgAQkIAEJSEACEpDAuCcgAAlIQAISqAsBFaJ1eZLWQwISkIAEJCCB2hBgVSjKUJRjY14pCzDqBHjuzz//fL46eNQzN0MJSEACEpCABCQgAQlIQAISGJ8ErLUEak5AhWjNH7DVk4AEJCABCUig/wg8+uijrgrtv8fW1RKjFKUddDVRExuWgAEkIAEJSEACEpCABCQgAQlIQAISqCeBokK0njW0VhKQgAQkIAEJSKDPCPAdSbZP7bNiW9wuEuD50w66mKRJSUACEigS8FwCEpCABCQgAQlIQAISkMC4IqBCdFw9biv7EgHPJCABCUhAAhKQgAQkIAEJSEACEqg/AWsoAQlIQAISkIAEJCCBlFSI2gokIAEJ1J2A9ZOABCQgAQlIQAISkIAEJCABCUig/gSsoQQkIAEJSEACDQmoEG2IxhsSkIAEJCABCfQbAcsrAQlIQAISkIAEJCABCUhAAhKQQP0JWEMJSEACrRJQIdoqMcNLQAISkIAEJCABCUhg7AlYAglIQAISkIAEJCABCUhAAhKQgATqT8AadolA3yhE//nPf6bzzjsvXXXVVV2q+szJPP/883ke5PPQQw/lAV544YW00UYbpcmTJ6ebbrop92v1p5007rvvvrwsF154YavZdRT+/PPPz/O9//77G6bz5z//OQ/T6FkUOf7973+vTGfatGl5GrB+8MEHK8N04llMH/6dpGVcCUhAAhKQQL8R+M53vpMWX3zxxJGyr7766gnHuU4CEpBA/xGwxCNBAFnt4osvTg888MBIJJ+niRxPHiFf4/nDH/4wbbzxxum///0vly075NENN9wwkW6zkavK0WzcdsI9+eSTefmuu+66IaP/7W9/y8Mh/1cFfO655/L71LXIsBg28moknxfDtnN+5ZVXpssuu6ydqGMeJ9o4/Bo5wjRbUBhfcsklMwTfa6+90rbbbpueeeaZGfy9kIAEJCCB/iJAn01f8Y9//KO/Cm5pJSCBlgj0jUL0mGOOScsvv3zaaqutWqpgK4GfeuqpPA/yueGGG/KoN954Y/r+97+fLr300vSjH/0o92v1p500/vCHP+RlWXnllVNqNcMOwq+44op5vn/6058apvLjH/84D/OZz3wmVSkbiQtD3GabbVaZDiy5v8IKKySEvMpAHXhef/31eRnJ49lnn+0gJaNKQAISkIAE+ovA73//+/T1r389fehDH8oVonHNUaVo9bO86667EhOa1157bXUAfSUgAQnUkMDhhx+e1lprrYT8NlLV+973vpfnEfI1+Rx88MHpF7/4RfrZz37GZcvu5JNPTr/85S/T0Ucf3XTcqnI0HbmNgPfcc09e7wMOOGDI2L/61a/ycKeffvpL4Qpnf/nLX/L7PKezzz67cOelU5SV3D/qqKNe8uzi2ZZbbpnWW2+9LqY4eklFG4dPI0eYZku09dZbp3XWWWcw+O23357gfuqppyYU9XEDY/q//vWvlfMlEcajBCQgAQn0DgGMWtZYY428z11//fV9fxcezcMPP5zo0+6+++6Cr6cS6F8CfaMQHSvESyyxRNptt93Suuuum770pS+1VYxupNFWxiMU6VOf+lSeMpbEWM/kF4Wf3/zmN4NXWFA+/vjjg9dxElaV73nPe9LCCy8c3h4lkEQgAQlIQALtE2BFKEpPlJ+swCEl/FCOoiTFn2v8dS8R+MlPfpKYLD/00ENf8hyhM8ZPKAaqxkcjlKXJSkACEugpAgcddFDaYost0tprr91Wub7yla+kTTbZJO26665txe+lSB//+Mfz4lx++eX5sfzz29/+dtCreD7oOXByxRVXDPymxK5W+Yk/MxFAibnnnnumKse4aaYITXq8+tWvTvvvv3/acccd05JLLjkY68tf/nL65Cc/mTTOHkTS8MQbEpCABHqBADs0Tps2Lb3hDW9I//vf/9LVV1/dC8XqiTIw/qBPY8FYTxTIQkigQwIqRJsAyKD5lFNOSYsttlgToauDdCON6pRH35dJ1XnnnTfPOBSb+cX0n4suuig/m2uuudLTTz+dqoS7iBfK1TyCPxKQgATGFwFrK4GuEghlJ4pP+moSRyla9kchih/3dS8SYDKUVR/bb7/9ix4j+HvmmWem5ZZbLrHqZwSzMWkJSEACPUsAJSBGx6985SvbKuMb3/jGfFX/u971rrbi91Kk9773vWm++ebLJ16RnctlY/Xn3HPPnd75zncmFJ9VOzSFvA3XcnyvXyTAzlSbbrppqnLLLrvsi4Ha/N1ggw0SY4hZZnF6rU2ERpPAeCFgPXuYADsZZlmWYmeHs846q4dLa9EkIIFOtD3yQwAAEABJREFUCPT1iI3tSbAuPeKII3IGWNqz7Q6TWaeddlpi+7P8RsXPI488kthyZrvttktsx3vbbbdVhHrRiy19yOfmm2/OPQ477LDE9e9+97v8uvzDVincJx7f0+Q+5/hFGviFu+OOO/JteaPc1CPuFY9RX9KJdIv32aqFe2wXW/TnnC3gKDdbDn/zm99M5557bqpKg7DDudlnn33Q+pS91YvhEeJCIMMKk3vFFaNcs4UwdeG8rBBFwKOs8EKJjBUK2xYQtuiYyKWubN9LPciDZ3nssccWg1Wes2qVuLjyc2fbZBS6O++8c9p3330TWxhRpnJClI/4bBfA86MNYaXMeYSFBd9IJRyT08cdd1zi2zVx36MEJCABCUigmwRQ6pEefQ5H+koUo1yHEhQFKX5cE2b0XG/n9IpXvCL//tfb3va23i6opZOABCQwwgSQhY488sjE9yqRw1DIIRdNnTo1/fvf/26YOzITuwex0v6QQw5JjWRlEog8kKW4ZrtR8mRlBtdl969//StxH9mKe3zbi+uqrX5bKcdJJ52UzwWQZtkh05LHzTffXL6V+O4n2/Xusssu6cADD0z0t+Q7U8AmPGabbba09NJLJ74Des0118wQAz8+pYMydNKkSenBBx/M8y4GYtcBvoH5mte8Jl/VUrzHM2RrYraE/+lPf5ruv//+4u3BcziceOKJ+TV14xkiD+ceQ/yQPnMQcCo/O+6dc845aY899kjIwTzDclJswUfc888/P/+MDm2NskZZIjwrdZiYJq3vfve7o/I9U2T5Sy+9NJ8ToPzMYUR5ykf4MR+AP+2eOtFGuaa8xWv8cLQXth/kHryZQ6r6lBDpEIbn8uijj+bbTO+4446JeRLS0UlAAhKQQOcE6LPoi+hrP/axj6XFF1880YfRDw+VOn0F4wV2CmDul3EKc9SN4pAP/TL9Gdu1M//dKCz+t956a2KMxDiMee8nnngC75lcsR8q36R89CPF8UyMwyjPUGM97hGXvox0OXJNflwP7bwrgd4l0NcKUf6Yd9hhh3zbEwbPWJiuuuqq6Vvf+la+xe073vGOhHBQxo+Si21aP/e5zyUUW5tvvnnipddoOfxOO+2UyCcGwQg8XCMAldPmer/99svDX3DBBSmsBMtpEA7HNj9ss7LRRhsNlvsjH/lIpbAS9SXvqsFy5FsUpHhZ8q0MLE+xWuSFu88++6SVVlopvfvd70733nsvxWjZsVSeSHAvvuxRNqLQxWqXb4wShpc2x3CXXHJJfvqyl70sUdf8YuAHvghybKOLcnOPAeGJjmjBBRdMsBwIMvifNOGAYI51MVadPEs6sMFAFSd//OMf861riIvCnE4ugiFkLbDAAvmqDTozng11+OhHPzqT8B/PkzZDeWlDCEohZPKsEGz5hil5MSmAwhRhlnJGnh4lIAEJSEAC3SAQCk4UnpEefjgUoihBiwpTxjJxHeEbHX/9618ntie88847E4ZQG264Ydpggw3y77fFGIB8Gct84QtfyLeOw/As0ttzzz3TNttsU7ltHIZIGGvR7xKeb26RF4IbYxT8+WzB3nvvne84EfkRFhdlY1IdAfSrX/3qTJ84uPbaaxNGYXz6gLESaZe3sGOilnzL4w3yID6TlRh6bbvttmmosQZhyYuwfHMNS+PIC4GaPBBoSZf7XMOUa12NCFgVCfQxAQyMeeciU37gAx9IfE8LA2SUMKxA5F1brh4TashtGLuysgIl4ec///lcGVYOy3XkEUayyOzkidKO+2WH0o37KAS5xwp7rlE+cR2u1XIgG9PPRPzikf6APJBRw5+JQbZCZZU/fdsJJ5yQkPOYV6Cv4n6EbeUIV8LTP3EMh2zNZCvP4YMf/GDuXQ4DA5Rr5e1ymZh961vfmjbeeOP8G5fIq8yPIJvmCRV+4EA9mKSlbjxDDI8LQWY6pZ9fc80185W6KHUnTJgwGIZ+DgMjWKEoxCB7mWWWSbvvvnuirGn6P5SoMGbbesLQ1njWzDFMD5LOOOOMhDz+ta99LWH8zFwG4Rhz0K9GuG4e6csp/xe/+MVE26dszDfApyof+EU7YstF6hTh+FvgmjYbfhhlv//978/nJbgHb1awMj/DlvoRjiPxCMO4bbXVVstXuDIHUg5HWJ0EJCABCbRHgHEJfThzwKTAEaMdZE2uqxzz0m9+85sT72bkP+Ruvj1Kf4wisxyn2C/TNyKXMmdMf4ZMXAxPWehj6SuQP+mL+MwA+SF3F8NyXuyHuC66qvEM9aVvGW6sRzkIh9EOaaKL4Jr8uNZJoF8JdF0hOhYgeHEggKCk4yWE8MUqRpRTK6+88gxFwrKOgS2CBQIBA2peSq9//esTk1czBG5wMWXKlPwOA/XiikA8EQxYfcl5hOO8ymFRgbDAPYRHrCwQUCg3Aif+nTrS+cEPfpDmmWeeXFhBGXz88cfn1i6wGK6MjfKHNfcQShmkc47DyoTjUkstlZh85RzLXYRTznGhEEXwm2OOOfBKTGTSESAUI3xgGcrkI0pFLCGZYCWdPHDhB4tZBAgUvChQEUYLt2c4xboSQYNnxETut7/97cH7WFgyUYpQRQd2+umn59a+b3nLW/KtieiIePEPRph+wpY7KHaZ1CT/hRZaKL9D+pSNusAbLnRiTIqi7L3yyivzcP5IQAISkIAEOiWA8IULxSfpcc3kGec47nFECUr/zDX3CYf/UI7+k101mJRkchODIpR4GPr8/Oc/Txgm0bcxJmJswXgGYyyMskg3y7KE4EYcrosO5SKTrjEeYAxEXhgcrbjiivnkJ+nyfU/6YgTHYvxi2RAmmYikfBEGK1bGCBgjIZhGOihhi5Oy9913X75zSHHimzQYixCf4z333JMoKwrhzTbbbIZJXcIW82JcwyQ1xmgwZ+zBOKI4gUl6XLO6h/g6CUhAAr1EALkUmY/3NDIk8jbvMfoB3tVRVibLeC/y/kRmwxCE9x8TZqxq4L0cYRsd6TO4R1yORYesj3yNPFuW7YvhulGOYnpV58wdsGIEY2P6Knb/oW9D2Ye8Rz9QFW84P+RiwpSVncio+H/4wx9OOM7Dj3NcxIk08Dv55JMT/TuyKJOWGAUz+crEKnMQRTmY8DiUk4wNcEyU0t/hX+UwgGbuhAlSjIiRiSMceTNxu+SSSyYUdygXkYdRzqLQLK/+JB7zA4wnkOtpbygg8WdFMgZVbClMW8JoivtMVNMmMEgmXDcdxl/MBzCGQX5nwpsJcdo4YweMtYbKjzDMW7z85S/PgyH3c/3Zz342v2ZehPbOvMcWW2yR70jF38g3vvGNfFU2E96UIQ9c+IlnxspkyhTpFYJ4KgEJSEACbRKI8QfyJ0nEeIOFM1yXHTtiYHDEfDDGPox72NaeMRKGthjuMC6JePSNxX6ZvvGXv/xlou+mP0OWjrDIqBgB0Tcyh03/R1+CHMyuRvTT6CMifCfH4cZ6bNlPH8aYjnxQ/nJN2bnWSaBfCdRCIYrCjJWhWJTy0mDwzmQcD+U///lPwgKPcxx/7ExK/d///V/ihcIqT148CBKsGiXMcA7BkFWdrFLgO1DF8AgPDJ6xkBxKOUdcVgUQlwk+LG0ZECMEMMBloMy9ThwvUb6rwoAbwQ3BAqUjE4ZYs5I228Ag2HLeikOgidWVvKQjLmXnfPLkyelVr3pVWmKJJQa3v8EfF+FRAnONQwDgWU2cODF/LpQVYYKXPLx5ZigsCVt0TDgiYFE/OiEE9eL9OGfFJukw4YnCHOEpy7K4nXgGCNsoqBHcYMYWxggndDgIkRUfj06LLLJIQhBE+CX/xRZbLCFMhqCKMAjvT3ziE/kKYDpAFKcI9IOZeyIBCUhAAhJok0AoNRGMcCQTfpyj/Iwj9+Me59yjX8KPMMM5xioIewhA9H2MBTBgwp/+mglzhENWUSDksbKFNOljOTJO41h0rArJsiyhNCz6Y+DG5C/byTG2QPBCYGRCNwTWYnj6dRS2fDaAyVLuMVnNygzGJBgpMWlN+ZjUZLwWqzkIW+UIgyKV8RzlwLoWhe+qq66aWCWCcBrxynkxfmDswPiGvEmHvh9/xp7EQ0nMNQoErnUSkIAEeokAchyGw8iT7IjDewyFGobFvOOjrLzbmQTEkBXZh+Mb3vCGxKQg72DktQjb6MguOm9/+9sTKxWQ24rheKcjC6IA4j1avFc870Y5iulVnSPTYQzE+xsDYJRe9IUoHQkf/R7nrTiMs1/72tcm+jqUjRGXvhVDb/JCzmQXJuYwipOszGPMOuus+SpK4iHvspsRZWMClklZ5Hb6rlNOOSWX0dlRC2Uu4cPxXJHBkYFZjYrxeNwrHjEgXm+99fJvnjKPEnMahMHQh612aTv0kcw9LLroovnuVMjYlAl5+7HHHiP4oGMVDv3olClTEu2N9sNN+kiOGCGxcpXnz31kb/pSViVzvxkHC+JUOZhFGszH0GZRxKIQRanMbmLI8Kuuumpi7ol5lghfPlJHnhWOe8wbcc6kOdf8TWA8gBIZgzL+tmANS54bRmD4E7bo2DWLMRNjEsrEPETxvucSkIAEJNAegVtuuSXv0xiLRP+DUQ99J3Pm9G3llJmvpr9mdwV2YCAefTSKQ2TfOeecc/CTafQxvN/pH+iL6JfpGzGuoq9k1SdGMvSv5IOszZiG/gEZl/6PuXJkWIx70SegPyBsp47+eqixXpZliT4MR17Rp9kHQaM+jjkedCWM9Tkv1wy/Tu6X0+uF61ooRAGJZQbHcDwotm7hGsGKIy7OmcBjQI0fjpcVLy7Oh3MIHAgBhGPyjWO4uOYFONdcc4X3TEcsRhhMc4PJSI7hUNYiaMV1u8csyxLKOFY7Th5QUBbTQbDiGmHkv//9L6ctOxSMRGKCkSOdAQIa57ywi0cmM7mm3gzyOY/4nCNEc+QZYAHKOS7LssSqDM7ZSgllI+fheAljwRnXVUdWipAXHQxHnhHPMMLS+VEmLF8QRMKfIy97rDQ5r5ow5jmh/OZ+uPnnnz/vMLhGWEaA5xy39dZb51sF0dFyrZNA/xCwpBKQQC8SCEUiCs4oX7G/4j6Oe4QpKkHpo+Ka+8M5xj58noBwbDGPERICIpNzTOTiz3iKXRI4Z2KXI4IW28DFpDZ+OFZGMoagDBEffxxGVSgsY0yAcRLjAa4Z1xCm6Ohf2VIvPlXAPQRIBE8EVYRO/OijmWikH8bQiZ0b8K9yrGSZOHFivsqGfAnD2JGJZMpDfPxwVXkx1mBClcnlT3/60wTTSUACEugbAsjT5cLGigmMS+IeBjKcozwqvoPxw+ADeYrz4RwGqYQpG73ENfI19xu5bpWjUfr4Y5hTnkfAP8uyhHzNrgVct+OQ11F0hlIVuRcjHJTQoUwjDDJ39K/IuayaRGFHf0e+cMDgmb44JjDxxxGGSVzOY16EcxzPDqUz540cSlPSRXYnHYx+imFRlNOvYsgc/WbcZ2IZWZz5BxSC4c8RZThzIJwXHX011yhGi1O1408AABAASURBVKuS4cEW+YwtuN+MYwyCUXiVKxqjUweeJfUrp1vlVw4z3DXGUsxTsZNXOSyKX8YXhCnfgx31Lvt7LYGRI2DKEhgfBGKcgUwbNc6yLDEOoj/FGCX8OTLHyy4/bGdfXOjDPRxz/CwEwtiF66H6Zfob5GEWdoUOIfoAlKj0F6QR7n3ve19ilwSUrGUDsgjTypE6lsNXjfXKYbyuFwEUnjgUorhy7biH4x6u1fvl8L1wXRuFKFubFoGydSnKMvx4WXFE6YW1H+dYFnIsunhZFf0anWO9yD2s/hFCOGeQzkCb87jPeZULIYZVqUz6lcO0UpZy3PI1whSTdggNTMgxMYl1a4RDaInzVo4MygnPakgsVLBORYjDKoYJRO5FGF7wXGNdwxHBGMGHc7adiRc5FjD4FR3Plo4BS0x4F++RV5a9tNKzeC/OEVzjGZ122mkptuWL+2zLxzkre9mOgDIXHatUuF8l4FYJbgiToaBnJQt1pUNhYpeVK6Slk4AEJCCBHibQR0VDmYiLIqMMRQiLa47F+3FOOO7hiudcN3L0x8V7Mc4qKzOxkCUc2+pzxPG5AqxeWUXKNY7t8RiDVE1yMwGMoRLhwjFJyPiNvpRxR/hznDRpEodBx3gEQyoEVeIN3hg4QbBkPER5EGYHvGb6T3xWhWL0hDEXeYZjRwuUnUzoUn7CNsqLhNm9hNWunOskIAEJ9AsBVi2Wyxrv+zDs5T7vSo7lPgI/HCsfOA7nUJ4yMViceKQfwbAWmY9Vi0Ol0a1yDJUH99hViO3t2LoO42PkRmRY+gIUhoRpx8VqR2Rq4nOkr0OW5RoX58jfXKOY5IiilCOOiVeOIWtzXnSsLuQ6wnGOgz0KU86rHPVmjiPkeiZqy+HiUzrs1sUK4bKLSWf61WLccj8d9xiz0O9jdA1jlLGsjmEr3QjT7BFjJnhVuWjXzAcwb4CMD49y2q95zWtSeWxSDjPUNe2DOQXGScxvlMMyj8CKY7bMjXmrCNOIUdz3KAEJSEAC7RFAGZkNzCuvssoqMyTAuAQPjIg5hqOvY346+tPwjyPv8jjnGP1to365HD70BY3Ch3+kSx7tumbHeu2mb7z+IICyM0paNW/R6f1Iu5eOtVGIZtnQSjGgoxDliEMRybHoqvyK94vnCHYM0PHjG50cGeAzMcYgdjiBLcrSKM9G/uTTiottcRDW2FoGwQrLQoSZVtKpCssq0CzLEgpXBvYhmOEf4fmeCpOGCKiEiz8iBMcI87///S9O8y1oBy+mn9A5hABQDDv99rCH4grYKkvMYpoIW2U377zzJhzlHzaz6QHYbuioo45KTNCikGdrPbYPQtGN5S2WsdODepCABCQgAQm0TYBVnyg0QwnK2AShjSOJch/HeYTjGkcc/Djn/nCO/ny4MI3ur7rqqonVo8WJboRPVpBg5VqOx2Rh2Y9r/OlDi303/ig5OYZjK0Amp5nUDL/iMfwZnxT945z4CLqsFEF5WnasyiEsn2Ug7FB5Ea6XnWWTgAQk0AkB3oe8g3mfV6WDoXKVf9mPnQd412J0EpN8bF3O+7XKcKYcv1vlKKdbvEY5y6rFkK3pQ9jKFMMX5MVi2FbP2eWAfhaFHXGR2zmGEpRzJqlQ1MW9kK2LYeiXCBs7OnBedOHP7klF/2bOQ94nLNv+cSy6W2+9Nb9EoccKl7LDEBzHKtc84DA/WZYlvt+JXE2/jVEVuzx85CMfSawoZoXMMEkM3iZfFOtVDqYEJD1WA/FMuS67LMsS7bTs3+w1Sk7aczyDqnhxr53nU5WefhKQgAQk0JgAuyUw7kDuo4993etel8LF6k+MYjF+jVTi/Rzv6/BvdByuXy7HI33GVY36m8iXcOW4XkugGQLlMOzyguNvANft++X0euG6NgrRZmBivYGQQdiyVWIjP/wbOSwUuYcilCMTexzDn/NGDkGKe7x4UaJyXnRV5cuyl5S+WC8Ww/PyLlrqcg+l65QpUxIrIFixyAucMEzu8W0MwnTiUFKi8CMNtvZhUpXzorITK1NWeWDdShgcYaJj4RzrlhBCquqNwBQdCJahxGnFITRhSUocVsqedNJJnA662GqH7fRQXjZyKH0HIw1zkmVZYh95hHmEcyaAV1tttYRy95xzzkmsVB0mCW9LQAISkIAEhiWA4hOFJspNHBHwiz6Ze/jhilvnEhbHfRz3R9KxVS27MDB5y4QgO0PQR2KJW7VKgknJqvLgn2VZGs5wLARFVhdVpcN2vfjHKlfOi44xDtcYwJ155pmpkSMfHGEb5cU9nQQk0BMELMQIEMAYGHmWz5BUJc+Kuyr/Kr/4VAmyE/f5hhbye/Rf+DVy7ZQjy7KEnIorp4sMWvTjmk+1sMqP70BiDMNOQ/QPfHaFycsse0leL8Zt5hy5GdmabXIx/KEfnzBhQmKFZMRH6co3x5jAZcUmhrwoovGLMBjgct6Ie6yuRAYnXCtu6tSpie1r6bd32WWXRDmK8SNNVojSxzdyzFEU4w11jvzMln4oo1FAH3HEEYl8WKmKwfdQcVu9x7a+8AxG5fi0AZS9Zf9mr0mf59wofdLhudHmG624JoxOAhKQgAS6QwBD4kiJhU1lF/eK4eiD8B/qXc79cMP1yxEujoRvZlwV5SBeljU/niG8TgJFAihBUYgy/ua8eI9z/Dq5Txq95saVQpSVkUxs8RCwLuRYdBdccEHxcthztn9jyxSWy6NsvPTSSxODV76pNVzkEFoQqBjcl8NXlYVVERGOjyzHOUe2fCt++wI/hCiEOyYNjz322ISQmGUvCmkIWoTp1IViE2EIh8DCqtBiurFiFKEFwTHLshR+hEOgCqVk1XM577zzEgpfWIcimXjNul133TWxXU8I2FtssUXCwidN/4fCNsuyhOISBfV078EDimWUpIMeTZwQBwGZoEy2shc9Heg666yDV6r6/ll+wx8JSEACEpBAiwRQaKIERcFJ3x/R8Y9z7nFOX0QYrrmPw3803BprrJFPPLPaI8YxjKWq8mZcU/ZnLMB4i619mBQu3y9eo6RkNQiTp0X/OA9/Jp/Dr3ik78ZQiolRVqI0cowth8uL1ayMx4rpey4BCUigLgRCYUffUq7Tww8/nJD/yv6NrlnpyLsbmZDP0fC5lMmTJyfex43ihH875Zg4cWJixV4Y7UZaHDEi5hiOa8Ji3INilP4h7iFHspsQ/VT4tXOkrkyCMq+AofDSSy+dG9QW04IR5bjooosSk7GEQRkbYWKe4YorrgivGY6xArVVQ2N2eVh22WUTE7UHHXRQzg2jawyVIoNIM7b7C/84Ypwd580e77nnnsGgGCuhHMcgHYNqjp0yH0x84CTLslzZyvMs7jI1cCv/z3xHJ/llWZZghFK1at6BNs/fC3NWjC/yTP2RgAQkIIERIUBfyk4UzOMzR3zWWWelssOwh3luFkCxgwAFwWCF+WnGKMzp41d0yJn00SxOwn+4fpn5f/qXkBeHCk8fFOMt+hPSx7UyniG8TgLjncC4UojysJdffnkOiW9I8NLJLwZ+eKHsueeeA2fN/2e1A9aKxMAqlBch6SPE4TeUYzAfLzmUdWFRywvw8MMPTygBy/ERBLEqxP/QQw9NvJg5Z8D+pS99idMZHC9EPFCUMujmHMc1W7py3qmL1aBY7yIEUqfyFjMR5sQTT8wnQpl8pP7FvGNvdqxtUZzGPYQ8VlpyzVazCD6ct+OOPfbYhHCBZSeCFJa3pIOVJsId55QDPpzjYIvQyVYFWLriN5zjO7J8N5TJU7YJivB0tiEcslo5/D2OAAGTlIAEJDDOCKDopMooOjlyHcpO/HBch+KUMFxzHC3HpO1iiy2W6CdxSyyxRD4xWJU/k9MoTov3GEcwXuK7oEX/RufkhwFYfNogwl133XUJPhiKlccsEYYj/Tj9NhPzXIdj/MCYZN999w2v1CgvlKGf+MQnUnE1DGMKIjLxyVEnAQlIoJ8JoMRjsnCvvfZKRZmTOm2//fYJ2YvzZhyTkhjPsDsQ8i6yMVujNhO3nXKEEpXde5DVIh/6CCY045ojW+hxZJcDjuGYnESGjetOjvEdUXY0Il3qVE4P2RS/E044gUOK6/xi4AcDYr51iZV/cb5j4Fa+opOdk+j7llpqKbzacjwj+jWeN3MZKHFJCJ7IwWynWzb6xsAYw2n68NilgThDOQyZSZPPzxTDoSzmeTHvkmUvGnwX73dyHobbX/3qV1NMfpMefT/tmfNmHHNFhGMcwDEcCnXOv/KVr6TgxjVu6623TuwEVvUpAe7rhiDgLQlIQAItEkBpyQ4/bFnfaHt/+hlWx2Gcg7ESWWCExOIg3u/7778/XoOOvgIZm8UwKFm5MVS/zK4AzHmzsIr3P+GZn2bue++9904stsEv3DHHHJPrAigTu0iEP30l582MZwjXqos+DVm81biGl0AvEhh3ClFeVkxwMfjkBcY3JJgQ42XCKj6EsFYeVGyPGysdEAyajY+FCYpBXqKsdlhyySUTL9utttoqrbfeepXJbLPNNrk/E4UoHxE4iDPXXHOl973vffm9+MFaZOJ0q1fOUZqybeub3vSmfKAd4To5MgGIZQzCEOmE8pPzcAhb88wzT6IDwQ/uHIuOb3tiaYtgw8QhZaQ+fCsEoZMJXLa7LcZp9ZzVJAi3lJftbzfbbLPBJPCnk8LyF8UzZVhxxRVzBSodFIwbPZPBRKafwIBnQxujXSHY8u00VpDQIWJNvOGGG04P7UECEpBAZwSMLYEgQF+GgRfKT/pN/OMawQzHPfw45/5oOibMMUhCmMRgqNHqUMrE7g2MeRgfoNBk4nCfffZJ7JbBVviEGc4xOc8Yj50iiE86O++8c0LgRKg77rjjhkyC/LAA3nLLLROToKxEmTp1alp55ZUTilImnCOBcl6ExZCKLYGZUEXQjbBMdLLS5pBDDklMTDP2iHseJSABCfQbAd7XGNtiVIoCj+9poiBEsYRSjO+CtlKn6Bt4R6O4azZ+O+VAsUd/wDsbeZntwDB43mmnnRKGssVyI3ezqxFbv6+55prp+OOPTwcffHDeJ/BNT9Iphm/nHPkXWZF+kvhlZSd+GBdj0BsrPWGOfzj6lzPOOCMxUYrMSR1RLtP3Md/BJOupp56aYBtx2jkyUUt5GVNwThrMSbCFMLI/8yTI9/SFzMEgE/ONUSZ6m8072gLjAdoVfSZ9MumSXxw5H87RJnluVY4+POKjhKXNMU5hLIXRPGMH5j3gzvxEhB3qSFzus4qW9Jm/4ZoyT5kyJR9HoBxm62HyYM4EBfZKK62UxmKMRtl0EpBAfxCwlN0hQN9PSvSNHBs55tG5x+pRjjjkOMYERx99dL4DIouu6GcmT56cMKjCmIs+krBV/TJbvtO3sKgKJSr9AH0n4dkKl+3h2WWDcQBz14w3kCHpT9BjhFEU4XH09YxDqNNw4xnCt+qYL2d8gqEw/THlaTUNw0uglwiMO4XoHHPMkVjNiLUnb0qnAAAQAElEQVQGFiBsVXLjjTfmk2MINUzWtfKAsHJ87Wtfm0chPVYM5BdN/KCs5HuSvAB5QbJEnm1keJFuuummlSkwOOYlywuQAJSXQTvL/DnHLxzXCEoogNnK5pRTTkkoYXk5wiDCdXKk3Ag3kQaCb5zHEea8xOMahWGcF4/wZ+KTFy0rQ5lsRFGM1SmcurFtDGmzApd8EQTJk3MERlblIpygEGWVKkpuFLQoQpmspHMh7HAuy7J0ySWXJJ4hlkO//e1vE8+H7RLgwHNG+T1cOt6XgAQkIAEJtEKAyTfGCaH0JC7nHMOfa85x+I+2i8lN8i1PNuMXjrECQiIrXJigZrXo0ksvnVBINtsfI7TR15MW/TLpoDRGeGVMxDgs8qs6RnyETyYpWbmBcpVJf8YSGJpFvAgbeRGWCWAM3ygDzybCUn6UrUxKI9SykibueZSABCTQjwQw+kCJiAEoE4ZMFLJ7EIYoIbc2Wy8MX/iGF+GZhORdyXkzrtVyYPTCagqUjJSXiURkTt7bVYov6obh7GWXXZboD5gQZJcoPofCRGaWdbZaEdkR2Z26IgcXDW/ww2HAjXKOc1atVvVllJ16MVeBTH3AAQck5gWIx+pTjHeJ34njuSBLx+d5zj777Dw58ua5o/jkG6coSw877LDEN0/322+/VNxdIY8wxA+yM2zZWQH2GEQxn4FiEmNplLxDRJ/hFhPUjAWqHLJ+BGYO5aijjkp8bgf5nclu8oI1Y4dmnzNG7kwas+KH9IrzLzDgPmMHJrXJg3yZ9yAs51EejxKQgAQk0H0CyHPsWMR8dazcb5QLi2WY+0YeZbcDwjFWoJ9FEcl8+7e//e3E2Ic5fWRYrgkXjr6R8NEvIwvStzD/TD9AOhGWI4tq6DvZXZBdEhhv3HLLLQl/jJ7oFwkXrtXxTMRr9sicObs1TR5Q+NKfUR7q3Wz8DsIZVQIjQqBvFKK8WNg2hkF1kEBYwA/HgDz848hWO9wrD5RjcooVi6zYw+qCwS0vNAQa4oQQRlooxfBjkovromOwykuJ+7wMeJkW78d5ozTIBwsLto3hu1iUhQm7qBsD6EgjjqxSYNUiW61hZYnVJVaWfLOSchQn6NiaDotVtgFgf/N77703344XwYmwOF6ckXajcsb9qiOdAungEBCrwpx77rn5d0AJg3BUFQYBkMlDtrJjq1q+24HCGktQlM3FOFhSkhaCXdE/zoMfYcptAytN/HGcRxxWgfKCJ9+bb745sRUPnRkTleX8h+OEcMNWBsRHuUs7o+NEAGP1a+TpUQISkIAEJNBNAig6UfqhgEP5ycoN/DhyzTmulTxZmcGYCoOqYjwMuvBn0rDoj6EY/kyCFv05Z6zFZC5xmUTFr5HDIIkdHTBSoh+lP2aivBi+UdkiDN8CZaKRsQV9MGMtxnwoRSMMR7Zl5Fh2TO5jwctnClixwxHDJlYQlcMW82JVFOEQtBmTlMNiNcz4iUlYJqrL972WQEoykMDIE0BeQe4qGrVi8IFfldKMlXPcY0VouXQoeDAEZWVdONJAiUUc5N6IM1QehMGYlDgYjXBddqzy4z6r/8v3WikHcVlZyvsY2e+GG25IKENZrUf/Qh7FOQAUcSjoCIvxLH0C73nkO87pY0gTR19IfMJz3azD8Id49NuN4jB5SphYdVgVjpUp9JvUiX6Ub1NSlqIxc8Sjv2JOI67Lx0b3kZ/Zmp6yMEkb8SZNmpSY6I0+nL4ONqxYZf4kwjXDiPkF5jmID2vYU2+MlSKdoY7RxiljI4fxVTENlJ6Mmf7yl78k+n4YovBlHgkj6ttvv70YPN+KuMyPXamYFGf+irZRHBMxDsKAgLRhw98LK48JU55PGqqtz1AILyQgAQlIoGkC9Ofs1ojDWHWoiMzv8o5nnpjzCIssy3iG9zjz7rzHkTkxhin2dRG+2C9jbEvfwLipUX+GkpTxEH0Qhlj0t8i19J2RZvHYyniGctMnMk4rpsF5o7FeGFXRt9MnU3/C6yTQjwR6UyE6SiR5QWFtweTcKGXZMBsGzGzrxuC4YaDSDZSgJa+Gl7zsWZXYLy8sJiAnTpzYsD4jfQMLUARb2kgneRGfyVvaGQrfTtIyrgQkIAEJSKAZAqEMZTIP5SeOrWqJyznHsXJM4rKFbFmJ2qg8jIvoj7HKbRSmGX/6Yyxzy0ZSERfhlXNW5HCscqxyYjK06l7Rj7z4PioK0qJ/1TnjsvLkZ1U4/SQgAQn0C4HFF1884Voq7wgEpgy4ZpNmToAtX5sJz6dYmEREIdhM+LEMgwzKPMNY9DX0h+TNCphOGTD3wTfShpu47jSfYvwsy/JP6LAypujf6jntpNH4AzattNNW8za8BCQgAQmMPAHkTOZ+G73riyWgX2b3QvqGLBt+ZwnGHMiWWTZ8WPJpZTxD+FYd5aFPbjWe4SXQSwTGtUK0lx6EZRm/BKy5BCQgAQlIoNsEUHyySpMjaXOO43wsHKss2QEDq1a+mcWKj7EoR1WeG220UTrooIMSk6wYj1WF0U8CEpCABCQgAQl0g4BpSEACEpCABCQgAQmMHQEVomPH3pwlIAEJjDcC1lcCEhiHBNg+ntWqbDeHIpSt8IfCgNVsljVnATtUOs3eYzs7trXluy7NrABtNl3DSUACEpCABCQgAQlIYBwTsOoSkIAEJCCBniOgQrTnHokFkoAEJCABCUig/wlYgyDAtjo33nhj4vtlfFOMbWLjXvnIN+b4Psvmm29evjVi19dff31CGfqe97xnxPIwYQlIQAISkIAEJCABCUhAAhKoKwHrJQEJ9AsBFaL98qQspwQkIAEJSEACEuhTAnwLFNenxbfYwxHwvgQkIAEJSEACEpCABCQgAQlIQAL1J9DnNVQh2ucP0OJLQAISkIAEJCABCUhAAhKQwOgQMBcJSEACEpCABCQgAQlIQAIS6E8CKkT787mNVanNVwISkIAEJCCBUSAw++yzp6effnoUcjKLXiXA86cd9Gr5LJcEJCABCdSegBWUgAQkIAEJSEACEpBArQioEK3V47QyEpBA9wiYkgQkIIGxI8B3Nx999NGxK4A5jzkBFKK0gzEviAWQgAQkIAEJSEACtSdgBSUgAQlIQAISGA8EVIiOh6dsHSUgAQlIQAJDEfBezxGYZ5550iyzzJJUivbcoxmVAvHcn3322UQ7GJUMzUQCEpCABCQgAQlIQAISGB8ErKUEJCCBcUxAheg4fvhWXQISkIAEJCCB3iUwYcKEhFIM5RirBXu3pP1Vsl4uLc/5gQceyJ87z7+Xy2rZJCABCUhAAhKQgAQkIAEJSEACvUzAskmgTECFaJmI1xKQgAQkIAEJSKAHCMw222xp4YUXTnxH8pFHHkl33XWXruYMeM6sCuW58/x7oBlahP4mYOklIAEJSEACEpCABCQgAQlIQAISmE6gxgrR6TX0IAEJSEACEpCABPqYAAqyRRZZJC2++OK6mjPgOfO8+7i5WnQJSEACY0TAbCUgAQlIQAISkIAEJCABCQxNQIXo0Hy8K4H+IGApJSABCUhAAhKQgAQkIAEJSEACEqg/AWsoAQlIQAISkIAEJNAWARWibWEzkgQkIAEJjBUB85WABCQgAQlIQAISkIAEJCABCUig/gSsoQQkIAEJSKCbBFSIdpOmaUlAAhKQgAQkIIHuETAlCUhAAhKQgAQkIAEJSEACEpCABOpPwBpKQAKjQECF6ChANgsJSEACEpCABCQgAQlIYCgC3pOABCQgAQlIQAISkIAEJCABCUig/gTGroYqRMeOvTlLQAISkIAEJCABCUhAAhKQwHgjYH0lIAEJSEACEpCABCQgAQlIYNQJdKQQnWWWF6O/8MILo15wM+xfApZcAhKQgAQkIAEJSEACEpCABCQggfoTsIYSkIAEJCABCUhAAhLoNoHQSYaOstn0X9RoNhu6FG7WWWfNfSLz/MIfCUhAAhIIAh4lIAEJSEACEpCABCQgAQlIQAISqD8BaygBCUhAAhKQwCgRCJ1k6CibzbYjhegcc8yR5/Pcc8/lR38kIAEJSEACEhivBKy3BCQgAQlIQAISkIAEJCABCUhAAvUnYA0lIAEJjC2B0EmGjrLZ0nSkEM2yLM0555zpscceazY/w0lAAhKQgAQkIAEJSKC/CVh6CUhAAhKQgAQkIAEJSEACEpCABOpPwBr2JAF0kugmsyxrqXyztBS6IvDcc8+dHn300RQa2YogeklAAhKQgAQkIAEJSEACEpBAHxKwyBKQgAQkIAEJSEACEpCABCQggV4hgC4SnSS6yVbL1LFCdK655kqzzz57euSRR1rNux/CW0YJSEACEpCABCQgAQlIQAISkIAE6k/AGkpAAhKQgAQkIAEJSEACPU4AXSQ6SXSTrRa1Y4UoGc4333z5KtGnnnqKS50EJNCXBCy0BCQgAQlIQAISkIAEJCABCUhAAvUnYA0lIAEJSEACEpBA/xFAB8nqUHSS7ZS+KwpRPlxKAe699970zDPPtFMO40hAAhKQgARGj4A5SUACEpCABCQgAQlIQAISkIAEJFB/AtZQAhKQgARqQQDdIzpIdJHoJNupVFcUomQ8zzzzJNzdd9+d0NLip5OABCQgAQlIQAISGFsC5i4BCUhAAhKQgAQkIAEJSEACEpBA/QlYQwnUlQA6R3SP6CBx7dazawpRCoBmFoeWdtq0aem5557DWycBCUhAAhKQgAQkIAEJSGCkCZi+BCQgAQlIQAISkIAEJCABCUhAAjUhgI4RXSM6R3SPuOlVa+vQVYUoJUA7u+CCC+arRO+8885EYVnK+vzzz6cXXniBIDoJSEACEpCABCQgAQlIQAISkIAE2iZgRAlIQAISkIAEJCABCUhAAvUigA4RXSI6RXSL6BhZHYrOEd1jp7XtukKUArF/70ILLZQmTJiQf1OUpax33HFHuv3229Ntt92mk0HnbUCGMrQN2AZsA7YB24BtwDZgG7AN2AZsA7YB20D924DP2GdsG7AN2AZsA7YB24BtYFy0AXSI6BLRKaIURceIrhGdI7rHTt2IKESjUHPNNVdaYIEF0iKLLJIf559//jTvvPPqZGAbsA3YBlpoA7437TdsA7YB24BtwDZgG7AN2AZsA7YB24BtwDZQ/zbgM/YZ2wZsA7YB28B4bgPoEIs6RXSMqYv/RlQhGuXMsizNOeec6WUve5lKEJUgtgHbgG3ANmAbsA00agP62zZsA7YB24BtwDZgG7AN2AZsA7YB24BtwDZQ/zbgM/YZ2wZsAzO1AXSI6BKzLAv1YlePs3Q1NROTgAQkIAEJSEACEpCABJogYBAJSEACEpCABCQgAQlIQAISkIAE6k/AGvYKARWivfIkLIcEJCABCUhAAhKQgAQkIIE6ErBOEpCABCQgAQlIQAISkIAEJCCBMSagQnQUHoBZSEACEpCABCQgAQlIQAISkIAEJFB/AtZQAhKQgAQkIAEJSEACEuhNAipEe/O5WCoJ9CsBpTEgxgAAAphJREFUyy0BCUhAAhKQgAQkIAEJSEACEpBA/QlYQwlIQAISkIAEJNBXBFSI9tXjsrASkIAEJNA7BCyJBCQgAQlIQAISkIAEJCABCUhAAvUnYA0lIAEJSKAOBFSI1uEpWgcJSEACEpCABCQwkgRMWwISkIAEJCABCUhAAhKQgAQkIIH6E7CGEqgxARWiNX64Vk0CEpCABCQgAQlIQAISaI2AoSUgAQlIQAISkIAEJCABCUhAAhKoH4GyQrR+NbRGEpCABCQgAQlIQAISkIAEJCABCZQJeC0BCUhAAhKQgAQkIAEJSGDcEFAhOm4etRWdmYA+EpCABCQgAQlIQAISkIAEJCABCdSfgDWUgAQkIAEJSEACEhjvBFSIjvcWYP0lIIHxQcBaSkACEpCABCQgAQlIQAISkIAEJFB/AtZQAhKQgAQkIIFKAipEK7HoKQEJSEACEpBAvxKw3BKQgAQkIAEJSEACEpCABCQgAQnUn4A1lIAEJNAKARWirdAyrAQkIAEJSEACEpCABHqHgCWRgAQkIAEJSEACEpCABCQgAQlIoP4ErGEXCKgQ7QJEk5CABCQgAQlIQAISkIAEJCCBkSRg2hKQgAQkIAEJSEACEpCABCQggfYJqBBtn93oxjQ3CUhAAhKQgAQkIAEJSEACEpCABOpPwBpKQAISkIAEJCABCUhAAl0noEK060hNUAIS6JSA8SUgAQlIQAISkIAEJCABCUhAAhKoPwFrKAEJSEACEpCABEaLgArR0SJtPhKQgAQkIIGZCegjAQlIQAISkIAEJCABCUhAAhKQQP0JWEMJSEACEhhjAipEx/gBmL0EJCABCUhAAhIYHwSspQQkIAEJSEACEpCABCQgAQlIQAL1J2ANJdCbBP4fAAD//+2SOCIAAAAGSURBVAMAUNJR9OoS34IAAAAASUVORK5CYII=)
+
+However, once a route is configured, you can continue deploying new versions of the Worker without access to the connected zone or resource, as long as the deployment does not change that connection. This allows your CI/CD system to deploy the application without also giving it access to your domains, databases, or storage.
+
+## Workers permissions extend to Durable Objects
+
+Durable Objects do not have their own roles or permissions. Instead, access to a Durable Object is determined by your access to the Worker that implements it. To give someone access to a Durable Object, grant them the appropriate role for that Worker.
+
+Metadata Read-Only gives them access to Durable Object metrics, logs, and traces, but not the data stored in the object. Because Durable Objects Data Studio can query and modify that stored data directly, accessing it requires the Editor role.
+
+## Better errors that tell you and your agents which permissions you need
+
+When you give someone narrowly scoped permissions, they may eventually try to perform an operation they do not have access to. When that happens, the error should tell them what permission they need, so they don’t get stuck.
+
+Instead of returning only a generic 403 Forbidden response, [_our APIs now include a link to the relevant API documentation_](https://developers.cloudflare.com/changelog/post/2026-08-20-contextual-403s/), where you can see exactly which permissions are required to make the request. This way, you and your agent can figure out exactly the right level of access that’s needed without granting broader permissions than necessary.
+
+## Available now
+
+Worker-level access controls are available today for all customers. You can configure them in the Cloudflare dashboard, through the API, or with Terraform.
+
+To give a team member access to a specific Worker, go to **Manage Account > Members**, select the member, and create a policy with the role and Worker scope they need.
+
+![](data:image/bmp;base64,Qk32BAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAATCwAAEwsAAAAAAAAAAAAA8/L18e/y7Ons6ebp6Ofq6Ojr5uXo5ODj9/b49fP17+3v6+nr7Ors7ezu7Ors6OXo/fz++vj68/Hz8O3v8e/w8/Hz8vDy7uzu////////+Pf39fLz9/X1+/j5+vj49fP0/////////vz7+vj3/fv6///+//79+vn4/////////////v36///+/////////v77///////////////8///////////////9///////////////9///////////////9)![BLOG-3357_Screenshot 2026-09-11 at 1.09.21 PM.png](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01M2FPFHCE1XFAS2WAZ9RCYT4P.01M2FPFJMZV49JGRPA23DW3D6G.png&w=715&h=362&f=webp&fit=cover&position=center)
+
+### Manage team access with user groups
+
+If several people on the same team or project need the same access, you can create a [_User Group_](https://developers.cloudflare.com/fundamentals/manage-members/user-groups/) instead of assigning permissions to each person individually. Assign the policy to the group, then add the relevant members. Everyone in that group will automatically inherit that policy.
+
+## Replacing legacy permissions for Workers 
+
+Previously, we used the following roles and permissions to manage access to Workers. Now that we are rolling out a consistent set of roles across the Developer Platform, we recommend using the new roles going forward.
+
+**Legacy Role**| **Member/API Token**| **Recommended new role**  
+---|---|---  
+Workers Platform (Read-Only)| Member| Developer Platform Content Read-Only  
+Workers Platform Admin| Member| Developer Platform Admin  
+Workers Scripts Read| API Token| Content Read-Only  
+Workers Scripts Edit| API Token| Editor  
+Workers CI Read| API Token| Content Read-Only  
+Workers CI Edit| API Token| Editor  
+Workers Observability Read| API Token| Metadata Read-Only  
+Workers Observability Edit| API Token| Editor  
+Workers Observability Telemetry Edit| API Token| Editor  
+Workers Tail Read| API Token| Metadata Read-Only  
+  
+There is no deprecation date for the legacy roles and permissions. Existing assignments will continue to work, and we will provide advance notice before any deprecation. That said, we recommend starting to move to the new roles, since they're the ones that support granular, resource-level access. 
+
+## What’s next? 
+
+Worker-level access is the first step toward a more consistent authorization model across Cloudflare's Developer Platform.
+
+Next, we are bringing the same resource-level access controls to more Developer Platform products, including resources like KV namespaces and D1 databases. Instead of granting someone access to every bucket or every database in an account, you will be able to scope access to the specific resource they need and pair that scope with the right role.
+
+The same roles introduced for Workers will apply across these resources.
+
+Check out our [_developer docs_](https://developers.cloudflare.com/workers/authorization/) to get started.
+
+On this page
+
+Discuss Online
+
+[](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Fblog.cloudflare.com%2Fworkers-granular-authorization%2F&t=Give%20every%20teammate%20and%20agent%20the%20right%20level%20of%20access%20to%20your%20Workers)[](https://x.com/intent/post?text=Give+every+teammate+and+agent+the+right+level+of+access+to+your+Workers&url=https%3A%2F%2Fblog.cloudflare.com%2Fworkers-granular-authorization%2F)[](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fblog.cloudflare.com%2Fworkers-granular-authorization%2F)[](https://bsky.app/intent/compose?text=Give+every+teammate+and+agent+the+right+level+of+access+to+your+Workers+https%3A%2F%2Fblog.cloudflare.com%2Fworkers-granular-authorization%2F)[](https://mastodonshare.com/?text=Give+every+teammate+and+agent+the+right+level+of+access+to+your+Workers&url=https%3A%2F%2Fblog.cloudflare.com%2Fworkers-granular-authorization%2F)[](https://www.threads.net/intent/post?text=Give+every+teammate+and+agent+the+right+level+of+access+to+your+Workers+https%3A%2F%2Fblog.cloudflare.com%2Fworkers-granular-authorization%2F)
+
+## Related tags
+
+[Developers](https://blog.cloudflare.com/tag/developers/)[Identity](https://blog.cloudflare.com/tag/identity/)[Product News](https://blog.cloudflare.com/tag/product-news/)[Security](https://blog.cloudflare.com/tag/security/)[Workers](https://blog.cloudflare.com/tag/workers-1/)
+
+Follow on Social Media
+
+  * ![Cloudflare](https://blog.cloudflare.com/images/placeholder__cloudflare.png)Cloudflare
+
+[](https://blog.cloudflare.com/rss/)[](https://x.com/Cloudflare)[](https://www.linkedin.com/company/cloudflare-inc-)[](https://www.youtube.com/cloudflare)[](https://instagram.com/cloudflare)[](https://github.com/cloudflare)[](https://bsky.app/profile/cloudflare.social)[](https://www.threads.com/@cloudflare)[](https://www.tiktok.com/@cloudflare)
+
+  * ![Dina Kozlov](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW49DZ20ZY95S71GB0FPG6GC.jpg&w=64&h=64&f=webp&fit=cover&position=center)[Dina Kozlov](https://blog.cloudflare.com/author/dina/)
+
+[](https://x.com/dinasaur_404)
+
+
+
+
+## Subscribe to receive notifications of new posts
+
+Email address
+
+We’ll never share your email address.
+
+Subscribe
+
+Thanks for subscribing! Check your inbox to confirm.

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/r2/tutorials/summarize-pdf/",
+  "file": "r2/tutorials/summarize-pdf.md",
+  "title": "Use event notification to summarize PDF files on upload \u00b7 Cloudflare R2 docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:12:49.439032+00:00",
+  "html_len": 206460,
+  "md_len": 18335,
+  "depth": 0
+}

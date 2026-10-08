@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-handling-bug-interpreting-ipv4-mapped-ipv6-addresses/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-handling-bug-interpreting-ipv4-mapped-ipv6-addresses.md",
+  "title": "Cloudflare's handling of a bug in interpreting IPv4-mapped IPv6 addresses | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:43.560109+00:00",
+  "html_len": 289784,
+  "md_len": 61600,
+  "depth": 0,
+  "phase": 2
+}

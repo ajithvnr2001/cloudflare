@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/creating-a-single-pane-of-glass-for-your-multi-cloud-kubernetes-workloads-with-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/creating-a-single-pane-of-glass-for-your-multi-cloud-kubernetes-workloads-with-cloudflare.md",
+  "title": "Creating a single pane of glass for your multi-cloud Kubernetes workloads with Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:44.688672+00:00",
+  "html_len": 270843,
+  "md_len": 55794,
+  "depth": 0,
+  "phase": 2
+}

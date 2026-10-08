@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/july-bonus-microsoft-spear-phishing/",
+  "file": "_subdomains/blog.cloudflare.com/july-bonus-microsoft-spear-phishing.md",
+  "title": "July bonus Microsoft spear phishing | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:30.105250+00:00",
+  "html_len": 301868,
+  "md_len": 66811,
+  "depth": 0,
+  "phase": 2
+}

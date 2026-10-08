@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/eu-elections-2024/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/eu-elections-2024.md",
+  "title": "Europawahl 2024: Sicherung demokratischer Prozesse im Angesicht neuer Bedrohungen | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:54.339875+00:00",
+  "html_len": 228438,
+  "md_len": 41839,
+  "depth": 0,
+  "phase": 2
+}

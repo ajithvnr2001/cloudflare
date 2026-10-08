@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/naming-project-galileo/",
+  "file": "_subdomains/blog.cloudflare.com/naming-project-galileo.md",
+  "title": "Naming Project Galileo | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:20.195788+00:00",
+  "html_len": 274252,
+  "md_len": 57158,
+  "depth": 0,
+  "phase": 2
+}

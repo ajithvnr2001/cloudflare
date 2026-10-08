@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/project-think/",
+  "file": "_subdomains/blog.cloudflare.com/project-think.md",
+  "title": "Project Think: building the next generation of AI agents on Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:12.255203+00:00",
+  "html_len": 360634,
+  "md_len": 81964,
+  "depth": 0,
+  "phase": 2
+}

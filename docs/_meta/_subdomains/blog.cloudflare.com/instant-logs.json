@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/instant-logs/",
+  "file": "_subdomains/blog.cloudflare.com/instant-logs.md",
+  "title": "Data at Cloudflare just got a lot faster: Announcing Live-updating Analytics and Instant Logs | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:08.355266+00:00",
+  "html_len": 283617,
+  "md_len": 61632,
+  "depth": 0,
+  "phase": 2
+}

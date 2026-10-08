@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/why-replicate-joining-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/why-replicate-joining-cloudflare.md",
+  "title": "Why Replicate is joining Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:47.883708+00:00",
+  "html_len": 276270,
+  "md_len": 57084,
+  "depth": 0,
+  "phase": 2
+}

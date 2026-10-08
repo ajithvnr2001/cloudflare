@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/data-exfiltration-prevention/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/data-exfiltration-prevention.md",
+  "title": "Cloudflare y la prevenci\u00f3n de la p\u00e9rdida de datos | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:29.847386+00:00",
+  "html_len": 211231,
+  "md_len": 31726,
+  "depth": 0,
+  "phase": 2
+}

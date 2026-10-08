@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/lessons-from-building-an-automated-sdk-pipeline/",
+  "file": "_subdomains/blog.cloudflare.com/lessons-from-building-an-automated-sdk-pipeline.md",
+  "title": "Lessons from building an automated SDK pipeline | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:50.689476+00:00",
+  "html_len": 330151,
+  "md_len": 76052,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,83 @@
+---
+url: https://developers.cloudflare.com/spectrum/
+title: Cloudflare Spectrum \u00b7 Cloudflare Spectrum docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:15:32.183127+00:00
+---
+
+# Cloudflare Spectrum · Cloudflare Spectrum docs
+
+> Source: https://developers.cloudflare.com/spectrum/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /Spectrum
+
+
+
+# Cloudflare Spectrum
+
+Last updated Apr 23, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/spectrum/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Overview:::note Custom TCP/UDP applications require an Enterprise plan with Spectrum as a paid add-on. See Protocols per plan for details, or contact your account team to enable. :::FeaturesRelated productsMore resources
+
+Spectrum provides security and acceleration for any [TCP ↗︎](https://www.cloudflare.com/learning/ddos/glossary/tcp-ip/) or [UDP ↗︎](https://www.cloudflare.com/learning/ddos/glossary/user-datagram-protocol-udp/) based application.
+
+Available on Paid plans
+
+Spectrum allows you to route MQTT, email, file transfer, version control, games, and more over TCP or UDP through Cloudflare to mask the origin and protect it from [DDoS attacks ↗︎](https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/).
+
+Note
+
+Custom TCP/UDP applications require an Enterprise plan with Spectrum as a paid add-on. See [Protocols per plan](https://developers.cloudflare.com/spectrum/protocols-per-plan/) for details, or contact your account team to enable.
+
+* * *
+
+## Features
+
+[Enable Proxy protocol](https://developers.cloudflare.com/spectrum/how-to/enable-proxy-protocol/)
+
+Use a proxy protocol for Cloudflare to pass on the client IP to your service.
+
+Use Enable Proxy protocol
+
+[DDoS Protection for Spectrum](https://developers.cloudflare.com/spectrum/about/ddos-for-spectrum/)
+
+Learn more about what L3/4 DDoS Protection is included as part of the Spectrum service.
+
+Use DDoS Protection for Spectrum
+
+* * *
+
+## Related products
+
+[DDoS Protection](https://developers.cloudflare.com/ddos-protection/)
+
+Cloudflare DDoS protection secures websites, applications, and entire networks while ensuring the performance of legitimate traffic is not compromised.
+
+[BYOIP](https://developers.cloudflare.com/byoip/)
+
+Get Cloudflare's security and performance while using your own IPs. With Bring Your Own IP (BYOIP), Cloudflare announces your IPs in all our locations.
+
+[Load Balancing](https://developers.cloudflare.com/load-balancing/)
+
+Cloudflare Load Balancing distributes traffic across your endpoints, which reduces endpoint strain and latency and improves the experience for end users.
+
+[DNS](https://developers.cloudflare.com/dns/)
+
+Cloudflare's global DNS platform provides speed and resilience. DNS customers also benefit from free DNSSEC, and protection against route leaks and hijacking.
+
+* * *
+
+## More resources
+
+### [Plans](https://www.cloudflare.com/plans/)
+
+Compare available Cloudflare plans.
+
+[NextProtocols per plan](https://developers.cloudflare.com/spectrum/protocols-per-plan/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/spectrum/index.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

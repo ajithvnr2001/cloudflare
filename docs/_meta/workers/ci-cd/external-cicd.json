@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/ci-cd/external-cicd/",
+  "file": "workers/ci-cd/external-cicd.md",
+  "title": "External CI/CD \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:13.487692+00:00",
+  "html_len": 172857,
+  "md_len": 1625,
+  "depth": 0
+}

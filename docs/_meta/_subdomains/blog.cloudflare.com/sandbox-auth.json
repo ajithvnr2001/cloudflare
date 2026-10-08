@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/sandbox-auth/",
+  "file": "_subdomains/blog.cloudflare.com/sandbox-auth.md",
+  "title": "Dynamic, identity-aware, and secure Sandbox auth | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:35.583087+00:00",
+  "html_len": 330452,
+  "md_len": 73024,
+  "depth": 0,
+  "phase": 2
+}

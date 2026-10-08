@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/technical-breakdown-http2-rapid-reset-ddos-attack/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/technical-breakdown-http2-rapid-reset-ddos-attack.md",
+  "title": "HTTP/2 Rapid Reset : anatomie de l'attaque record | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:18.640888+00:00",
+  "html_len": 276269,
+  "md_len": 61417,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/80-percent-lower-cloud-cost-how-baselime-moved-from-aws-to-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/80-percent-lower-cloud-cost-how-baselime-moved-from-aws-to-cloudflare.md",
+  "title": "Moving Baselime from AWS to Cloudflare: simpler architecture, improved performance, over 80% lower cloud costs | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:30.239761+00:00",
+  "html_len": 323997,
+  "md_len": 75955,
+  "depth": 0,
+  "phase": 2
+}

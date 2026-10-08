@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/foundation-dns/",
+  "file": "_subdomains/blog.cloudflare.com/foundation-dns.md",
+  "title": "Announcing Foundation DNS \u2014 Cloudflare\u2019s new premium DNS offering | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:54.385048+00:00",
+  "html_len": 316324,
+  "md_len": 76602,
+  "depth": 0,
+  "phase": 2
+}

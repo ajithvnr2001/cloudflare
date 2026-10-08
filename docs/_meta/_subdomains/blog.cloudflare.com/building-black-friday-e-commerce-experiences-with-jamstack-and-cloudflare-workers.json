@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/building-black-friday-e-commerce-experiences-with-jamstack-and-cloudflare-workers/",
+  "file": "_subdomains/blog.cloudflare.com/building-black-friday-e-commerce-experiences-with-jamstack-and-cloudflare-workers.md",
+  "title": "Building Black Friday e-commerce experiences with JAMstack and Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:47.589700+00:00",
+  "html_len": 293420,
+  "md_len": 63917,
+  "depth": 0,
+  "phase": 2
+}

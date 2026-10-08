@@ -1,0 +1,104 @@
+---
+url: https://developers.cloudflare.com/monetization-gateway/configuration/payment-validation/
+title: Payment validation \u00b7 Cloudflare Monetization Gateway docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:12:21.712618+00:00
+---
+
+# Payment validation · Cloudflare Monetization Gateway docs
+
+> Source: https://developers.cloudflare.com/monetization-gateway/configuration/payment-validation/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Monetization Gateway](https://developers.cloudflare.com/monetization-gateway/)
+  3. /Configuration
+  4. /Payment validation
+
+
+
+# Payment validation
+
+Last updated Sep 30, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/monetization-gateway/configuration/payment-validation/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewValidate the contextRead fixed claimsRead variable claimsReport variable settlement
+
+Your origin receives payment authorization in the `PAYMENT-CONTEXT` header. Validate this context before serving paid content.
+
+## Validate the context
+
+The header contains a JSON Web Token (JWT). Validate it with a recommended JWT library.
+
+Use only the [pinned JSON Web Key Set (JWKS) ↗︎](https://payments.cloudflare.com/certs). Require Ed25519 signatures, and cache keys according to the endpoint's `Cache-Control` header.
+
+Do not parse the token without verifying its signature. Reject requests when JWT validation fails.
+
+Recommended libraries include:
+
+Language | Library  
+---|---  
+JavaScript, TypeScript, and [Cloudflare Workers](https://developers.cloudflare.com/workers/) | `jose`  
+Python | `PyJWT` with `cryptography`  
+Java | Nimbus JOSE + JWT  
+Go | `github.com/golang-jwt/jwt/v5`  
+Rust | `jsonwebtoken`  
+  
+Caution
+
+If `PAYMENT-CONTEXT` is absent, treat the request as unpaid and unverified. Do not serve paid content or set `PAYMENT-SETTLEMENT`.
+
+## Read fixed claims
+
+Fixed pricing uses the x402 `exact` scheme. The following decoded example authorizes 25,000 atomic units for one audience:
+    
+    
+    {
+    	"iat": 1770000000,
+    	"nbf": 1770000000,
+    	"exp": 1770000120,
+    	"aud": "https://api.example.com/premium-data",
+    	"scheme": "exact",
+    	"amount": "25000"
+    }
+
+Do not set `PAYMENT-SETTLEMENT` for fixed pricing. Monetization Gateway settles the signed amount.
+
+## Read variable claims
+
+Variable pricing uses the x402 `upto` scheme. The `amount` claim contains the authorized maximum.
+
+The following decoded example authorizes up to 100,000 atomic units:
+    
+    
+    {
+    	"iat": 1770000000,
+    	"nbf": 1770000000,
+    	"exp": 1770000120,
+    	"aud": "https://api.example.com/generate",
+    	"scheme": "upto",
+    	"amount": "100000"
+    }
+
+Calculate an actual amount where `0 <= actual <= authorized maximum`. Express the amount in atomic units.
+
+If the actual amount exceeds the authorized maximum, Monetization Gateway settles the authorized maximum instead. Nothing will be settled if the specified amount is zero.
+
+## Report variable settlement
+
+Set `PAYMENT-SETTLEMENT` only for a successful `upto` response. Set it before sending response headers.
+
+Use a JSON value containing the actual amount as a string. This standalone example reports 1,000,000 atomic units:
+    
+    
+    { "amount": "1000000" }
+
+Do not set `PAYMENT-SETTLEMENT` when the response status is `400` or greater. Do not create a `PAYMENT-RESPONSE` header.
+
+Monetization Gateway creates the payment receipt after settlement. It removes `PAYMENT-SETTLEMENT` from the response sent to the buyer.
+
+[PreviousMonetization rules](https://developers.cloudflare.com/monetization-gateway/configuration/rules/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/monetization-gateway/configuration/payment-validation.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

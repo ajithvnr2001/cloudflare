@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/from-ip-packets-to-http-the-many-faces-of-our-oxy-framework/",
+  "file": "_subdomains/blog.cloudflare.com/from-ip-packets-to-http-the-many-faces-of-our-oxy-framework.md",
+  "title": "From IP packets to HTTP: the many faces of our Oxy framework | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:37.313053+00:00",
+  "html_len": 295152,
+  "md_len": 75963,
+  "depth": 0,
+  "phase": 2
+}

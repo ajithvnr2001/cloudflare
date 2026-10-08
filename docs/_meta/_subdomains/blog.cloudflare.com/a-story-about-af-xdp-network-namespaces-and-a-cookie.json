@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/a-story-about-af-xdp-network-namespaces-and-a-cookie/",
+  "file": "_subdomains/blog.cloudflare.com/a-story-about-af-xdp-network-namespaces-and-a-cookie.md",
+  "title": "A story about AF_XDP, network namespaces and a cookie | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:12.290928+00:00",
+  "html_len": 389763,
+  "md_len": 87383,
+  "depth": 0,
+  "phase": 2
+}

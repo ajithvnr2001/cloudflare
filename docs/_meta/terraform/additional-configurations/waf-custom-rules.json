@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/terraform/additional-configurations/waf-custom-rules/",
+  "file": "terraform/additional-configurations/waf-custom-rules.md",
+  "title": "WAF custom rules configuration using Terraform \u00b7 Cloudflare Terraform docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:00.508965+00:00",
+  "html_len": 133090,
+  "md_len": 10514,
+  "depth": 0
+}

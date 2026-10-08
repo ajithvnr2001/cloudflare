@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ru-ru/stronger-bridge-to-zero-trust/",
+  "file": "_subdomains/blog.cloudflare.com/ru-ru/stronger-bridge-to-zero-trust.md",
+  "title": "\u041d\u0430\u0434\u0435\u0436\u043d\u044b\u0439 \u043c\u043e\u0441\u0442 \u043d\u0430 \u043f\u0443\u0442\u0438 \u043a Zero Trust | \u0411\u043b\u043e\u0433 Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:41.242965+00:00",
+  "html_len": 170174,
+  "md_len": 14315,
+  "depth": 0,
+  "phase": 2
+}

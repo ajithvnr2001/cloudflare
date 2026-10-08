@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/terraforming-cloudflare-at-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/terraforming-cloudflare-at-cloudflare.md",
+  "title": "How Cloudflare uses Terraform to manage Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:57.200987+00:00",
+  "html_len": 317646,
+  "md_len": 79803,
+  "depth": 0,
+  "phase": 2
+}

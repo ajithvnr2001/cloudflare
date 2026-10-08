@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/what-egypt-shutting-down-the-internet-looks-l/",
+  "file": "_subdomains/blog.cloudflare.com/what-egypt-shutting-down-the-internet-looks-l.md",
+  "title": "What Egypt Shutting Down the Internet Looks Like | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:50.886528+00:00",
+  "html_len": 261139,
+  "md_len": 53400,
+  "depth": 0,
+  "phase": 2
+}

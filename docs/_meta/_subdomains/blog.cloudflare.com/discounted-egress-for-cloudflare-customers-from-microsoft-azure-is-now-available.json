@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/discounted-egress-for-cloudflare-customers-from-microsoft-azure-is-now-available/",
+  "file": "_subdomains/blog.cloudflare.com/discounted-egress-for-cloudflare-customers-from-microsoft-azure-is-now-available.md",
+  "title": "Cloudflare customers can now use Microsoft Azure Data Transfer Routing Preference to enjoy lower data transfer costs | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:21.076687+00:00",
+  "html_len": 290507,
+  "md_len": 62203,
+  "depth": 0,
+  "phase": 2
+}

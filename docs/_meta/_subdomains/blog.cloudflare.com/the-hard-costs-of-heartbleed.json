@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-hard-costs-of-heartbleed/",
+  "file": "_subdomains/blog.cloudflare.com/the-hard-costs-of-heartbleed.md",
+  "title": "The Hidden Costs of Heartbleed | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:22.550355+00:00",
+  "html_len": 277818,
+  "md_len": 58554,
+  "depth": 0,
+  "phase": 2
+}

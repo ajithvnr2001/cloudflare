@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/microsoft-365-spoof-targets-financial-departments/",
+  "file": "_subdomains/blog.cloudflare.com/microsoft-365-spoof-targets-financial-departments.md",
+  "title": "Sophisticated Microsoft Spoof Targets Financial Departments | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:24.058263+00:00",
+  "html_len": 319668,
+  "md_len": 77457,
+  "depth": 0,
+  "phase": 2
+}

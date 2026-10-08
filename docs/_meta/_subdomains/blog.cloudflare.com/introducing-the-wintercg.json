@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-the-wintercg/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-the-wintercg.md",
+  "title": "A Community Group for Web-interoperable JavaScript runtimes | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:43.058027+00:00",
+  "html_len": 302329,
+  "md_len": 69151,
+  "depth": 0,
+  "phase": 2
+}

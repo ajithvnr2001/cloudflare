@@ -1,0 +1,10 @@
+{
+  "url": "https://radar.cloudflare.com/bots/directory/",
+  "file": "_subdomains/radar.cloudflare.com/bots/directory.md",
+  "title": "Bots Directory | Cloudflare Radar",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (279 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T07:23:13.150349+00:00",
+  "html_len": 175154,
+  "md_len": 998,
+  "depth": 1
+}

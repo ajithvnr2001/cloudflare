@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/agents-week-in-review/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/agents-week-in-review.md",
+  "title": "\u30a8\u30fc\u30b8\u30a7\u30f3\u30c6\u30a3\u30c3\u30af\u30af\u30e9\u30a6\u30c9\u306e\u69cb\u7bc9\uff1aAgents Week 2026\u3067\u767a\u8868\u3055\u308c\u305f\u5168\u5185\u5bb9 | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:58.094792+00:00",
+  "html_len": 242165,
+  "md_len": 38934,
+  "depth": 0,
+  "phase": 2
+}

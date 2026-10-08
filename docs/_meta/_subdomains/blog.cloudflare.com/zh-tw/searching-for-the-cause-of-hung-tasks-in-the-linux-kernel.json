@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/searching-for-the-cause-of-hung-tasks-in-the-linux-kernel/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/searching-for-the-cause-of-hung-tasks-in-the-linux-kernel.md",
+  "title": "\u5c0b\u627e Linux \u6838\u5fc3\u4e2d\u639b\u8d77\u5de5\u4f5c\u7684\u539f\u56e0 | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:05.938147+00:00",
+  "html_len": 239728,
+  "md_len": 27587,
+  "depth": 0,
+  "phase": 2
+}

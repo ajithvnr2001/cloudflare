@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/a-note-about-kerckhoffs-principle/",
+  "file": "_subdomains/blog.cloudflare.com/a-note-about-kerckhoffs-principle.md",
+  "title": "A note about Kerckhoff's Principle | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:02.447680+00:00",
+  "html_len": 269320,
+  "md_len": 57262,
+  "depth": 0,
+  "phase": 2
+}

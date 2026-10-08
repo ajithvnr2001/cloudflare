@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/nl-nl/threat-events-platform/",
+  "file": "_subdomains/blog.cloudflare.com/nl-nl/threat-events-platform.md",
+  "title": "Meer context voor de activiteiten van dreigingsactoren dankzij ons Cloudforce One-dreigingsplatform | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:00.030468+00:00",
+  "html_len": 208877,
+  "md_len": 28410,
+  "depth": 0,
+  "phase": 2
+}

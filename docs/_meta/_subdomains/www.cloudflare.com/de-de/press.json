@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/de-de/press/",
+  "file": "_subdomains/www.cloudflare.com/de-de/press.md",
+  "title": "Presse\u00fcbersicht | Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:17:29.710397+00:00",
+  "html_len": 260107,
+  "md_len": 7275,
+  "depth": 1,
+  "phase": 2
+}

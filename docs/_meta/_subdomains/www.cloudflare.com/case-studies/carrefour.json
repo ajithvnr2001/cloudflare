@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/carrefour/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/carrefour.md",
+  "title": "Carrefour & Cloudflare | Case Study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:23.031879+00:00",
+  "html_len": 206635,
+  "md_len": 8817,
+  "depth": 0,
+  "phase": 2
+}

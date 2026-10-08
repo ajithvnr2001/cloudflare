@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/black-lies/",
+  "file": "_subdomains/blog.cloudflare.com/black-lies.md",
+  "title": "Economical With The Truth: Making DNSSEC Answers Cheap | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:34.639550+00:00",
+  "html_len": 331237,
+  "md_len": 73032,
+  "depth": 0,
+  "phase": 2
+}

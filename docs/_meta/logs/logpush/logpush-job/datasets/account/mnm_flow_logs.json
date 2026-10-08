@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/account/mnm_flow_logs/",
+  "file": "logs/logpush/logpush-job/datasets/account/mnm_flow_logs.md",
+  "title": "Magic Network Monitoring Flow Logs \u00b7 Cloudflare Logs docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:12:12.917855+00:00",
+  "html_len": 140721,
+  "md_len": 3758,
+  "depth": 0
+}

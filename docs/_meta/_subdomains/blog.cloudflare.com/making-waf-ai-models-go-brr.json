@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/making-waf-ai-models-go-brr/",
+  "file": "_subdomains/blog.cloudflare.com/making-waf-ai-models-go-brr.md",
+  "title": "Making WAF ML models go brrr: saving decades of processing time | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:42.774797+00:00",
+  "html_len": 425072,
+  "md_len": 91269,
+  "depth": 0,
+  "phase": 2
+}

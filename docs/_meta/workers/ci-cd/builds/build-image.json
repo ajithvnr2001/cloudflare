@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/ci-cd/builds/build-image/",
+  "file": "workers/ci-cd/builds/build-image.md",
+  "title": "Build image \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:11.904210+00:00",
+  "html_len": 197072,
+  "md_len": 6514,
+  "depth": 0
+}

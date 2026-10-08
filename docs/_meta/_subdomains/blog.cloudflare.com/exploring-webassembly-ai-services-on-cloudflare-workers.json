@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/exploring-webassembly-ai-services-on-cloudflare-workers/",
+  "file": "_subdomains/blog.cloudflare.com/exploring-webassembly-ai-services-on-cloudflare-workers.md",
+  "title": "Exploring WebAssembly AI Services on Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:54.322735+00:00",
+  "html_len": 284925,
+  "md_len": 66253,
+  "depth": 0,
+  "phase": 2
+}

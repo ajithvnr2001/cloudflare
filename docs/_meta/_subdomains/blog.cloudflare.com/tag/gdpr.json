@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/gdpr/",
+  "file": "_subdomains/blog.cloudflare.com/tag/gdpr.md",
+  "title": "Posts tagged \"GDPR\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:09:03.466220+00:00",
+  "html_len": 124416,
+  "md_len": 5361,
+  "depth": 1,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/introducing-the-wintercg/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/introducing-the-wintercg.md",
+  "title": "Un groupe communautaire pour les moteurs d'ex\u00e9cution JavaScript interop\u00e9rables sur le Web | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:41.914144+00:00",
+  "html_len": 235483,
+  "md_len": 41538,
+  "depth": 0,
+  "phase": 2
+}

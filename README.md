@@ -60,7 +60,7 @@ cat docs/_manifest.json
 ```
 crawl_cloudflare.py  phase2_crawl.py  phase2_cleanup.py  update_incremental.py
 guide_code/          # coder guide + coder_scrape.py / coder_update.py (runnable)
-docs/                # git-ignored output (regenerate via Run)
+docs/                # full crawl output (committed: 21,256 files, all <15MB)
 tools/               # git-ignored optional clones
 ```
 

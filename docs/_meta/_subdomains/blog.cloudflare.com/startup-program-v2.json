@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/startup-program-v2/",
+  "file": "_subdomains/blog.cloudflare.com/startup-program-v2.md",
+  "title": "Build your next startup on Cloudflare with our comprehensive Startup Plan, v2.0 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:04.443188+00:00",
+  "html_len": 284251,
+  "md_len": 65756,
+  "depth": 0,
+  "phase": 2
+}

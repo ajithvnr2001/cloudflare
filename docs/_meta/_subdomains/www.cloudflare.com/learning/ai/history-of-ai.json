@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/ai/history-of-ai/",
+  "file": "_subdomains/www.cloudflare.com/learning/ai/history-of-ai.md",
+  "title": "What is the history of AI?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:22.004746+00:00",
+  "html_len": 211695,
+  "md_len": 15417,
+  "depth": 0,
+  "phase": 2
+}

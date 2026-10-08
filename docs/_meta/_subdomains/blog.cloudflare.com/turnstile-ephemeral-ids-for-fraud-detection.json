@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/turnstile-ephemeral-ids-for-fraud-detection/",
+  "file": "_subdomains/blog.cloudflare.com/turnstile-ephemeral-ids-for-fraud-detection.md",
+  "title": "Introducing Ephemeral IDs: a new tool for fraud detection | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:38.749781+00:00",
+  "html_len": 296925,
+  "md_len": 65494,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/live-preview-build-and-test-workers-faster-with-wrangler-cli-1-2-0/",
+  "file": "_subdomains/blog.cloudflare.com/live-preview-build-and-test-workers-faster-with-wrangler-cli-1-2-0.md",
+  "title": "Live Preview: Build and Test Workers Faster with Wrangler CLI 1.2.0 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:38.137346+00:00",
+  "html_len": 280007,
+  "md_len": 59832,
+  "depth": 0,
+  "phase": 2
+}

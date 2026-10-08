@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/hyperconnect/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/hyperconnect.md",
+  "title": "Hyperconnect & Cloudflare | Case Study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:34.333394+00:00",
+  "html_len": 207028,
+  "md_len": 8970,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/magic-transit/network-health/check-tunnel-health-dashboard/",
+  "file": "magic-transit/network-health/check-tunnel-health-dashboard.md",
+  "title": "Check tunnel health in the dashboard \u00b7 Cloudflare Magic Transit docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:12:19.028359+00:00",
+  "html_len": 110825,
+  "md_len": 5338,
+  "depth": 0
+}

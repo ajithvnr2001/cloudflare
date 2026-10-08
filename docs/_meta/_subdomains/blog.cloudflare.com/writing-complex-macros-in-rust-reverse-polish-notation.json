@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/writing-complex-macros-in-rust-reverse-polish-notation/",
+  "file": "_subdomains/blog.cloudflare.com/writing-complex-macros-in-rust-reverse-polish-notation.md",
+  "title": "Writing complex macros in Rust: Reverse Polish Notation | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:22.540299+00:00",
+  "html_len": 382744,
+  "md_len": 72687,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/lawrence-berkeley-national-laboratory/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/lawrence-berkeley-national-laboratory.md",
+  "title": "Berkeley Lab Case Study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:37.070077+00:00",
+  "html_len": 206699,
+  "md_len": 9360,
+  "depth": 0,
+  "phase": 2
+}

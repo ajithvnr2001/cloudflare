@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-transform-rules-with-url-rewriting-at-the-edge/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-transform-rules-with-url-rewriting-at-the-edge.md",
+  "title": "Dynamic URL Rewriting at the edge with Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:03.880720+00:00",
+  "html_len": 293203,
+  "md_len": 65732,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/internet-is-back-in-tonga-after-38-days-of-outage/",
+  "file": "_subdomains/blog.cloudflare.com/internet-is-back-in-tonga-after-38-days-of-outage.md",
+  "title": "Internet is back in Tonga after 38 days of outage | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:38.578855+00:00",
+  "html_len": 287328,
+  "md_len": 60438,
+  "depth": 0,
+  "phase": 2
+}

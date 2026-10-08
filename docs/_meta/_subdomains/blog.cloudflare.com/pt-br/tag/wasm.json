@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/tag/wasm/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/tag/wasm.md",
+  "title": "Posts com a tag \"WASM (PT)\" \u2014 Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:07:06.039303+00:00",
+  "html_len": 106863,
+  "md_len": 1425,
+  "depth": 1,
+  "phase": 2
+}

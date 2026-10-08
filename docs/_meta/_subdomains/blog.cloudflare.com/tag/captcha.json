@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/captcha/",
+  "file": "_subdomains/blog.cloudflare.com/tag/captcha.md",
+  "title": "Posts tagged \"CAPTCHA\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:08:26.423612+00:00",
+  "html_len": 157605,
+  "md_len": 12250,
+  "depth": 1,
+  "phase": 2
+}

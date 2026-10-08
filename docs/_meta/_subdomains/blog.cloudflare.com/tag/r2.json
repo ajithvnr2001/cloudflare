@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/r2/",
+  "file": "_subdomains/blog.cloudflare.com/tag/r2.md",
+  "title": "Posts tagged \"R2\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:24:57.231596+00:00",
+  "html_len": 194901,
+  "md_len": 19135,
+  "depth": 1,
+  "phase": 2
+}

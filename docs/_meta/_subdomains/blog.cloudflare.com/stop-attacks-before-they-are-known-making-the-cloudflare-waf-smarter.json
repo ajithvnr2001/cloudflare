@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/stop-attacks-before-they-are-known-making-the-cloudflare-waf-smarter/",
+  "file": "_subdomains/blog.cloudflare.com/stop-attacks-before-they-are-known-making-the-cloudflare-waf-smarter.md",
+  "title": "Stop attacks before they are known: making the Cloudflare WAF smarter | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:52.726806+00:00",
+  "html_len": 299751,
+  "md_len": 67095,
+  "depth": 0,
+  "phase": 2
+}

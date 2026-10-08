@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/it-it/tag/agent-readiness/",
+  "file": "_subdomains/blog.cloudflare.com/it-it/tag/agent-readiness.md",
+  "title": "Post con tag \"Predisposizione agli agenti\" \u2014 Il blog di Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:22:11.553139+00:00",
+  "html_len": 115331,
+  "md_len": 2332,
+  "depth": 1,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/scan-atlassian-casb/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/scan-atlassian-casb.md",
+  "title": "Cloudflare CASB\u3067Atlassian\u3092\u30b9\u30ad\u30e3\u30f3\u3057\u3066\u5b89\u5168\u5f37\u5316 | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:42.085643+00:00",
+  "html_len": 210209,
+  "md_len": 28388,
+  "depth": 0,
+  "phase": 2
+}

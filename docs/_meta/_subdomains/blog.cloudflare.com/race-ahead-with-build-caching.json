@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/race-ahead-with-build-caching/",
+  "file": "_subdomains/blog.cloudflare.com/race-ahead-with-build-caching.md",
+  "title": "Race ahead with Cloudflare Pages build caching | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:11.310757+00:00",
+  "html_len": 288356,
+  "md_len": 60211,
+  "depth": 0,
+  "phase": 2
+}

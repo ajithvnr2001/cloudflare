@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/log-every-request-to-corporate-apps-no-code-changes-required/",
+  "file": "_subdomains/blog.cloudflare.com/log-every-request-to-corporate-apps-no-code-changes-required.md",
+  "title": "Log every request to corporate apps, no code changes required | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:49.728146+00:00",
+  "html_len": 296576,
+  "md_len": 64540,
+  "depth": 0,
+  "phase": 2
+}

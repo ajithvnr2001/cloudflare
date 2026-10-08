@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/apo-post-launch-report/",
+  "file": "_subdomains/blog.cloudflare.com/apo-post-launch-report.md",
+  "title": "Automatic Platform Optimization post-launch report | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:35.751021+00:00",
+  "html_len": 315910,
+  "md_len": 80616,
+  "depth": 0,
+  "phase": 2
+}

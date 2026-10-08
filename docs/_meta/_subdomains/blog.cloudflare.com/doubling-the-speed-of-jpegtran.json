@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/doubling-the-speed-of-jpegtran/",
+  "file": "_subdomains/blog.cloudflare.com/doubling-the-speed-of-jpegtran.md",
+  "title": "Doubling the speed of jpegtran with SIMD | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:53.135766+00:00",
+  "html_len": 306813,
+  "md_len": 63825,
+  "depth": 0,
+  "phase": 2
+}

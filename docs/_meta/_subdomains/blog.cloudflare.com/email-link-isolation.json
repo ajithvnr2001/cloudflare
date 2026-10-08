@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/email-link-isolation/",
+  "file": "_subdomains/blog.cloudflare.com/email-link-isolation.md",
+  "title": "Introducing browser isolation for email links to stop modern phishing threats | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:51.988025+00:00",
+  "html_len": 298368,
+  "md_len": 68077,
+  "depth": 0,
+  "phase": 2
+}

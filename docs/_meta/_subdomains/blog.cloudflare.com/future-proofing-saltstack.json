@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/future-proofing-saltstack/",
+  "file": "_subdomains/blog.cloudflare.com/future-proofing-saltstack.md",
+  "title": "Future-proofing SaltStack | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:32.252634+00:00",
+  "html_len": 289932,
+  "md_len": 66118,
+  "depth": 0,
+  "phase": 2
+}

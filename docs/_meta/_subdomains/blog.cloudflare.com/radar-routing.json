@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/radar-routing/",
+  "file": "_subdomains/blog.cloudflare.com/radar-routing.md",
+  "title": "Routing information now on Cloudflare Radar | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:17.895797+00:00",
+  "html_len": 307504,
+  "md_len": 67903,
+  "depth": 0,
+  "phase": 2
+}

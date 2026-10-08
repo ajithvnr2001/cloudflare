@@ -1,0 +1,38 @@
+# K2
+
+A durable event stream
+
+> Links below point directly to Markdown versions of each page. Any page can also be retrieved as Markdown by sending an `Accept: text/markdown` header to the page's URL without the `index.md` suffix (for example, `curl -H "Accept: text/markdown" https://developers.cloudflare.com/k2/`).
+>
+> For other Cloudflare products, see the [Cloudflare documentation directory](https://developers.cloudflare.com/llms.txt).
+
+## Overview
+
+- [K2](https://developers.cloudflare.com/k2/index.md): Serverless durable logs
+
+## Get started
+
+- [Get started](https://developers.cloudflare.com/k2/get-started/index.md): Create a K2 stream, produce records over HTTP, and consume them through a subscription.
+
+## Concepts
+
+- [Concepts](https://developers.cloudflare.com/k2/concepts/index.md): Learn about the key ideas behind K2, including streams, records, subscriptions, and leases.
+
+## Configuration
+
+- [Configuration](https://developers.cloudflare.com/k2/configuration/index.md): Create, update, and delete K2 streams, and configure their inputs, authentication, CORS, and retention.
+
+## features
+
+- [Consume records](https://developers.cloudflare.com/k2/features/consume/index.md): Read records from a K2 stream through a subscription, and acknowledge them after processing.
+- [Produce records](https://developers.cloudflare.com/k2/features/produce/index.md): Write records to a K2 stream over HTTP or from a Worker with a binding.
+
+## platform
+
+- [Limits](https://developers.cloudflare.com/k2/platform/limits/index.md): Account, stream, record, and consumer limits for Cloudflare K2.
+- [Pricing](https://developers.cloudflare.com/k2/platform/pricing/index.md): K2 pricing for data produced, data consumed, and data retained.
+- [Choose a data or storage product](https://developers.cloudflare.com/workers/platform/storage-options/index.md): Compare Cloudflare storage products including K2, Queues, R2, and Durable Objects to find the right fit.
+
+## reference
+
+- [Delivery guarantees](https://developers.cloudflare.com/k2/reference/delivery-guarantees/index.md): K2 delivers every record to every subscription at least once. Learn how subscriptions, leases, and retention affect delivery.

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/kv/examples/workers-kv-to-serve-assets/",
+  "file": "kv/examples/workers-kv-to-serve-assets.md",
+  "title": "Store and retrieve static assets \u00b7 Cloudflare Workers KV docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:11:41.181908+00:00",
+  "html_len": 147903,
+  "md_len": 12287,
+  "depth": 0
+}

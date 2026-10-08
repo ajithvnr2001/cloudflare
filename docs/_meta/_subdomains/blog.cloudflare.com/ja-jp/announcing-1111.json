@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/announcing-1111/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/announcing-1111.md",
+  "title": "\u30d7\u30e9\u30a4\u30d0\u30b7\u30fc\u512a\u5148\u306e\u6700\u901f\u306e\u6d88\u8cbb\u8005\u5411\u3051DNS\u30b5\u30fc\u30d3\u30b9\u300c1.1.1.1\u300d\u3092\u767a\u8868 | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:19.203691+00:00",
+  "html_len": 212823,
+  "md_len": 34281,
+  "depth": 0,
+  "phase": 2
+}

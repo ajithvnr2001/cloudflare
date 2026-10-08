@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/detections/ai-security-for-apps/example-rules/",
+  "file": "waf/detections/ai-security-for-apps/example-rules.md",
+  "title": "Example mitigation rules \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:40.032911+00:00",
+  "html_len": 153593,
+  "md_len": 8428,
+  "depth": 0
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/content-signals-policy/",
+  "file": "_subdomains/blog.cloudflare.com/content-signals-policy.md",
+  "title": "Giving users choice with Cloudflare\u2019s new Content Signals Policy | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:24:45.109377+00:00",
+  "html_len": 308474,
+  "md_len": 66793,
+  "depth": 1
+}

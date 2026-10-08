@@ -1,0 +1,47 @@
+---
+url: https://developers.cloudflare.com/changelog/post/2026-02-03-r2-local-uploads/
+title: Improve Global Upload Performance with R2 Local Uploads - Now in Open Beta \u00b7 Changelog
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:06:35.754531+00:00
+---
+
+# Improve Global Upload Performance with R2 Local Uploads - Now in Open Beta · Changelog
+
+> Source: https://developers.cloudflare.com/changelog/post/2026-02-03-r2-local-uploads/
+
+# Changelog
+
+New updates and improvements at Cloudflare.
+
+[ View RSS feeds ](https://developers.cloudflare.com/fundamentals/new-features/available-rss-feeds/)[ Subscribe to RSS ](https://developers.cloudflare.com/changelog/rss/index.xml)
+
+[Back to all posts](https://developers.cloudflare.com/changelog)February 3, 2026
+
+## Improve Global Upload Performance with R2 Local Uploads - Now in Open Beta
+
+[R2](https://developers.cloudflare.com/r2/)
+
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-02-03-r2-local-uploads/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+[Local Uploads](https://developers.cloudflare.com/r2/buckets/local-uploads/) is now available in open beta. Enable it on your [R2](https://developers.cloudflare.com/r2/) bucket to improve upload performance when clients upload data from a different region than your bucket. With Local Uploads enabled, object data is written to storage infrastructure near the client, then asynchronously replicated to your bucket. The object is immediately accessible and remains strongly consistent throughout. Refer to [How R2 works](https://developers.cloudflare.com/r2/how-r2-works/) for details on how data is written to your bucket.
+
+In our tests, we observed **up to 75% reduction in Time to Last Byte (TTLB)** for upload requests when Local Uploads is enabled.
+
+![Local Uploads latency comparison showing p50 TTLB dropping from around 2 seconds to 500ms after enabling Local Uploads](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1506,height=596,format=webp/_astro/local-uploads-latency.R4pUgVuI.png)
+
+This feature is ideal when:
+
+  * Your users are globally distributed
+  * Upload performance and reliability is critical to your application
+  * You want to optimize write performance without changing your bucket's primary location
+
+
+
+To enable Local Uploads on your bucket, find **Local Uploads** in your bucket settings in the [Cloudflare Dashboard ↗︎](https://dash.cloudflare.com/?to=/:account/r2/overview), or run:
+    
+    
+    npx wrangler r2 bucket local-uploads enable <BUCKET_NAME>
+
+Enabling Local Uploads on a bucket is seamless: existing uploads will complete as expected and there’s no interruption to traffic. There is no additional cost to enable Local Uploads. Upload requests incur the standard [Class A operation costs](https://developers.cloudflare.com/r2/pricing/) same as upload requests made without Local Uploads.
+
+For more information, refer to [Local Uploads](https://developers.cloudflare.com/r2/buckets/local-uploads/).

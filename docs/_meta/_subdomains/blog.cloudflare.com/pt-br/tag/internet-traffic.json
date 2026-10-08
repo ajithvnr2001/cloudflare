@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/tag/internet-traffic/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/tag/internet-traffic.md",
+  "title": "Posts com a tag \"Tr\u00e1fego da internet\" \u2014 Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:06:59.687783+00:00",
+  "html_len": 131023,
+  "md_len": 8003,
+  "depth": 1,
+  "phase": 2
+}

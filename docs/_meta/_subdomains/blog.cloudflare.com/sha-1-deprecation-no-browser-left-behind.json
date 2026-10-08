@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/sha-1-deprecation-no-browser-left-behind/",
+  "file": "_subdomains/blog.cloudflare.com/sha-1-deprecation-no-browser-left-behind.md",
+  "title": "SHA-1 Deprecation: No Browser Left Behind | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:49.494196+00:00",
+  "html_len": 300234,
+  "md_len": 68058,
+  "depth": 0,
+  "phase": 2
+}

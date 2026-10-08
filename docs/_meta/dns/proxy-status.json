@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/dns/proxy-status/",
+  "file": "dns/proxy-status.md",
+  "title": "Proxy status \u00b7 Cloudflare DNS docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:11:00.687692+00:00",
+  "html_len": 163716,
+  "md_len": 11752,
+  "depth": 0
+}

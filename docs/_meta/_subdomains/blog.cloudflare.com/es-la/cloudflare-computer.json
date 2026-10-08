@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-la/cloudflare-computer/",
+  "file": "_subdomains/blog.cloudflare.com/es-la/cloudflare-computer.md",
+  "title": "Tu agente necesita una computadora, no un contenedor: te presentamos @cloudflare/computer | El blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:21.041026+00:00",
+  "html_len": 227049,
+  "md_len": 28622,
+  "depth": 0,
+  "phase": 2
+}

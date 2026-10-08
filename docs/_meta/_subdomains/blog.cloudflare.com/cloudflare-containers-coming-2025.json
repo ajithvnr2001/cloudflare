@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-containers-coming-2025/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-containers-coming-2025.md",
+  "title": "Simple, scalable, and global: Containers are coming to Cloudflare Workers in June 2025 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:34.527433+00:00",
+  "html_len": 368281,
+  "md_len": 85336,
+  "depth": 0,
+  "phase": 2
+}

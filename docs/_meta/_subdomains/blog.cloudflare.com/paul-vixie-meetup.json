@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/paul-vixie-meetup/",
+  "file": "_subdomains/blog.cloudflare.com/paul-vixie-meetup.md",
+  "title": "Join Us And Paul Vixie On Tuesday To Discuss BIND, Root Servers, And DNS Security | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:36.359626+00:00",
+  "html_len": 267990,
+  "md_len": 55016,
+  "depth": 0,
+  "phase": 2
+}

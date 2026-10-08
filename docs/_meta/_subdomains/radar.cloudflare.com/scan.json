@@ -1,0 +1,10 @@
+{
+  "url": "https://radar.cloudflare.com/scan/",
+  "file": "_subdomains/radar.cloudflare.com/scan.md",
+  "title": "URL Scanner | Cloudflare Radar",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:27:20.698762+00:00",
+  "html_len": 175696,
+  "md_len": 3765,
+  "depth": 1
+}

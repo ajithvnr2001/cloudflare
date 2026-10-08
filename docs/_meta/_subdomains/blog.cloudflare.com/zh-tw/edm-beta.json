@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/edm-beta/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/edm-beta.md",
+  "title": "DLP \u7cbe\u78ba\u8cc7\u6599\u5339\u914d\u6e2c\u8a66\u7248\u73fe\u5df2\u63a8\u51fa | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:31.462245+00:00",
+  "html_len": 191798,
+  "md_len": 20206,
+  "depth": 0,
+  "phase": 2
+}

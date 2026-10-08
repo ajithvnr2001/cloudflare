@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-the-graphql-analytics-api-exactly-the-data-you-need-all-in-one-place/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-the-graphql-analytics-api-exactly-the-data-you-need-all-in-one-place.md",
+  "title": "Introducing the GraphQL Analytics API: exactly the data you need, all in one place | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:45.324440+00:00",
+  "html_len": 302119,
+  "md_len": 65196,
+  "depth": 0,
+  "phase": 2
+}

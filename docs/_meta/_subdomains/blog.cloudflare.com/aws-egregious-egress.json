@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/aws-egregious-egress/",
+  "file": "_subdomains/blog.cloudflare.com/aws-egregious-egress.md",
+  "title": "AWS\u2019s Egregious Egress | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:18.615863+00:00",
+  "html_len": 292970,
+  "md_len": 66093,
+  "depth": 0,
+  "phase": 2
+}

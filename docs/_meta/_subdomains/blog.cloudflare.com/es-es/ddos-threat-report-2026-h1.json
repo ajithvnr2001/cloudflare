@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/ddos-threat-report-2026-h1/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/ddos-threat-report-2026-h1.md",
+  "title": "Informe de Cloudflare sobre las amenazas DDoS del 1.er semestre de 2026 | Los ataques de 1 TB/s se disparan: las tensiones geopol\u00edticas y las inundaciones de DNS desatan una nueva ola de amenazas | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:09.131842+00:00",
+  "html_len": 3936954,
+  "md_len": 3756008,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/armed-to-boot/",
+  "file": "_subdomains/blog.cloudflare.com/armed-to-boot.md",
+  "title": "Armed to Boot: an enhancement to Arm's Secure Boot chain | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:06.640468+00:00",
+  "html_len": 322494,
+  "md_len": 75273,
+  "depth": 0,
+  "phase": 2
+}

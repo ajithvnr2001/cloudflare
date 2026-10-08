@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/introducing-radar-internet-quality-page/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/introducing-radar-internet-quality-page.md",
+  "title": "Presentamos la p\u00e1gina de medida de calidad de Internet en Cloudflare Radar | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:16.114517+00:00",
+  "html_len": 253558,
+  "md_len": 51871,
+  "depth": 0,
+  "phase": 2
+}

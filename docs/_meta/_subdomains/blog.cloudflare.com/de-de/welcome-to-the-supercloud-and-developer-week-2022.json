@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/welcome-to-the-supercloud-and-developer-week-2022/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/welcome-to-the-supercloud-and-developer-week-2022.md",
+  "title": "Willkommen in der Supercloud (und der Developer Week 2022) | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:49.088599+00:00",
+  "html_len": 211479,
+  "md_len": 33552,
+  "depth": 0,
+  "phase": 2
+}

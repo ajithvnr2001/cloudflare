@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/extend-your-security-view-from-the-data-center-to-the-edge/",
+  "file": "_subdomains/blog.cloudflare.com/extend-your-security-view-from-the-data-center-to-the-edge.md",
+  "title": "Extend your security view from the data center to the edge | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:37.875881+00:00",
+  "html_len": 272628,
+  "md_len": 56141,
+  "depth": 0,
+  "phase": 2
+}

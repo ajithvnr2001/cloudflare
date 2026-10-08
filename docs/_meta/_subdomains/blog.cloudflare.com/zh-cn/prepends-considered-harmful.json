@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/prepends-considered-harmful/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/prepends-considered-harmful.md",
+  "title": "\u4e3a\u4ec0\u4e48 BGP \u793e\u533a\u6bd4 AS \u8def\u5f84\u9884\u7f6e\u597d\uff1f | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:14.592746+00:00",
+  "html_len": 228810,
+  "md_len": 31079,
+  "depth": 0,
+  "phase": 2
+}

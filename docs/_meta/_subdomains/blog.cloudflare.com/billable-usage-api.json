@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/billable-usage-api/",
+  "file": "_subdomains/blog.cloudflare.com/billable-usage-api.md",
+  "title": "Introducing the Billable Usage API: programmatic cost visibility for Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:20.253126+00:00",
+  "html_len": 296266,
+  "md_len": 63150,
+  "depth": 0,
+  "phase": 2
+}

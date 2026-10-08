@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-email-security-now-works-with-crowdstrike-falcon-logscale/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-email-security-now-works-with-crowdstrike-falcon-logscale.md",
+  "title": "Cloudflare Email Security now works with CrowdStrike Falcon LogScale | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:14.388388+00:00",
+  "html_len": 287158,
+  "md_len": 60642,
+  "depth": 0,
+  "phase": 2
+}

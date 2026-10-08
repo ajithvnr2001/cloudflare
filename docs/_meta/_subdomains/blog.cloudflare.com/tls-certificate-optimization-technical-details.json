@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tls-certificate-optimization-technical-details/",
+  "file": "_subdomains/blog.cloudflare.com/tls-certificate-optimization-technical-details.md",
+  "title": "TLS Certificate Optimization: The Technical Details behind \"No Browser Left Behind\" | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:44.313849+00:00",
+  "html_len": 308284,
+  "md_len": 74500,
+  "depth": 0,
+  "phase": 2
+}

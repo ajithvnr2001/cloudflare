@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/dogfooding-edge-workers/",
+  "file": "_subdomains/blog.cloudflare.com/dogfooding-edge-workers.md",
+  "title": "Dogfooding Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:34.142338+00:00",
+  "html_len": 299987,
+  "md_len": 66238,
+  "depth": 0,
+  "phase": 2
+}

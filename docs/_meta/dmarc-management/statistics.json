@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/dmarc-management/statistics/",
+  "file": "dmarc-management/statistics.md",
+  "title": "Review DMARC statistics \u00b7 Cloudflare DMARC Management docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:10:55.136709+00:00",
+  "html_len": 88592,
+  "md_len": 2298,
+  "depth": 0
+}

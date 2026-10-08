@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/bgp-origin-attribute/",
+  "file": "_subdomains/blog.cloudflare.com/bgp-origin-attribute.md",
+  "title": "BGP ORIGIN attribute manipulation and its impact on the Internet | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:36.603376+00:00",
+  "html_len": 1130060,
+  "md_len": 894961,
+  "depth": 0,
+  "phase": 2
+}

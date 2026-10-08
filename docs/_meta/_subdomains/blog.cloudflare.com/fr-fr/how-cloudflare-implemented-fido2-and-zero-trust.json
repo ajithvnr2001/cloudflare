@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/how-cloudflare-implemented-fido2-and-zero-trust/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/how-cloudflare-implemented-fido2-and-zero-trust.md",
+  "title": "Comment Cloudflare a d\u00e9ploy\u00e9 des cl\u00e9s physiques prenant en charge la norme FIDO2 et l'approche Zero Trust pour pr\u00e9venir le phishing | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:40:34.389767+00:00",
+  "html_len": 239802,
+  "md_len": 40500,
+  "depth": 0,
+  "phase": 2
+}

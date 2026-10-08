@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/announcing-workers-dev/",
+  "file": "_subdomains/blog.cloudflare.com/announcing-workers-dev.md",
+  "title": "Announcing workers.dev | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:10.573457+00:00",
+  "html_len": 284909,
+  "md_len": 58736,
+  "depth": 0,
+  "phase": 2
+}

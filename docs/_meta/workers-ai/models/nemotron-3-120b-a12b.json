@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers-ai/models/nemotron-3-120b-a12b/",
+  "file": "workers-ai/models/nemotron-3-120b-a12b.md",
+  "title": "nemotron-3-120b-a12b (NVIDIA) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:05.623522+00:00",
+  "html_len": 252521,
+  "md_len": 9342,
+  "depth": 0
+}

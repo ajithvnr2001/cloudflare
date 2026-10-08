@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/welcome-to-developer-week-2024/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/welcome-to-developer-week-2024.md",
+  "title": "Bienvenue dans la Developer Week 2024 | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:39:29.587819+00:00",
+  "html_len": 217298,
+  "md_len": 33599,
+  "depth": 0,
+  "phase": 2
+}

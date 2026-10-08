@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/stream-now-supports-srt-as-a-drop-in-replacement-for-rtmp/",
+  "file": "_subdomains/blog.cloudflare.com/stream-now-supports-srt-as-a-drop-in-replacement-for-rtmp.md",
+  "title": "Stream now supports SRT as a drop-in replacement for RTMP | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:34.605832+00:00",
+  "html_len": 284030,
+  "md_len": 61558,
+  "depth": 0,
+  "phase": 2
+}

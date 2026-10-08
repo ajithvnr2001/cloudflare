@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/xdpcap/",
+  "file": "_subdomains/blog.cloudflare.com/xdpcap.md",
+  "title": "xdpcap: XDP Packet Capture | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:49.217679+00:00",
+  "html_len": 310086,
+  "md_len": 66870,
+  "depth": 0,
+  "phase": 2
+}

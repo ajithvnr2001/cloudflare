@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/terraform/tutorial/use-load-balancing/",
+  "file": "terraform/tutorial/use-load-balancing.md",
+  "title": "Improve performance and reliability \u00b7 Cloudflare Terraform docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:01.865538+00:00",
+  "html_len": 127808,
+  "md_len": 8369,
+  "depth": 0
+}

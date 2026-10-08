@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/subresources/delegations/methods/list/",
+  "file": "api/resources/addressing/subresources/prefixes/subresources/delegations/methods/list.md",
+  "title": "List Prefix Delegations | Cloudflare API",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:25:28.199589+00:00",
+  "html_len": 1985050,
+  "md_len": 5635,
+  "depth": 1
+}

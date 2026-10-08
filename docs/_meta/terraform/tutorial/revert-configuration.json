@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/terraform/tutorial/revert-configuration/",
+  "file": "terraform/tutorial/revert-configuration.md",
+  "title": "Revert configuration \u00b7 Cloudflare Terraform docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:01.692839+00:00",
+  "html_len": 115925,
+  "md_len": 4933,
+  "depth": 0
+}

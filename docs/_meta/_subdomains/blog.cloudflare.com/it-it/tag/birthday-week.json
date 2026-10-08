@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/it-it/tag/birthday-week/",
+  "file": "_subdomains/blog.cloudflare.com/it-it/tag/birthday-week.md",
+  "title": "Post con tag \"Birthday Week\" \u2014 Il blog di Cloudflare",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (240 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:22:22.673570+00:00",
+  "html_len": 115832,
+  "md_len": 2891,
+  "depth": 1,
+  "phase": 2
+}

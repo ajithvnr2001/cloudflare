@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/dns/manage-dns-records/how-to/subdomains-outside-cloudflare/",
+  "file": "dns/manage-dns-records/how-to/subdomains-outside-cloudflare.md",
+  "title": "Delegate subdomains \u00b7 Cloudflare DNS docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:10:59.277669+00:00",
+  "html_len": 141494,
+  "md_len": 4466,
+  "depth": 0
+}

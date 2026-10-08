@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/tag/python/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/tag/python.md",
+  "title": "Articles tagu\u00e9s \u00ab Python (FR) \u00bb \u2014 Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:13:19.860055+00:00",
+  "html_len": 115388,
+  "md_len": 2028,
+  "depth": 1,
+  "phase": 2
+}

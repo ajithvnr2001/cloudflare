@@ -1,0 +1,204 @@
+---
+url: https://developers.cloudflare.com/ai-gateway/features/dynamic-routing/json-configuration/
+title: JSON Configuration \u00b7 Cloudflare AI Gateway docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:04:29.705932+00:00
+---
+
+# JSON Configuration · Cloudflare AI Gateway docs
+
+> Source: https://developers.cloudflare.com/ai-gateway/features/dynamic-routing/json-configuration/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[AI Gateway](https://developers.cloudflare.com/ai-gateway/)
+  3. /…
+
+[Features](https://developers.cloudflare.com/ai-gateway/features/)
+
+  4. /[Dynamic routing](https://developers.cloudflare.com/ai-gateway/features/dynamic-routing/)
+  5. /JSON Configuration
+
+
+
+# JSON Configuration
+
+Last updated Apr 29, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai-gateway/features/dynamic-routing/json-configuration/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewSupported elements Start Element Conditional Element (If/Else) Percentage Split Rate/Budget Limit Model End element
+
+Instead of using the **dashboard editor UI** to define the route graph, you can do it using the REST API. Routes are internally represented using a simple JSON structure:
+    
+    
+    {
+      "id": "<route id>",
+      "name": "<route name>",
+      "elements": [<array of elements>]
+    }
+
+## Supported elements
+
+Dynamic routing supports several types of elements that you can combine to create sophisticated routing flows. Each element has specific inputs, outputs, and configuration options.
+
+### Start Element
+
+Marks the beginning of a route. Every route must start with a Start element.
+
+  * **Inputs** : None
+  * **Outputs** : 
+    * `next`: Forwards the unchanged request to the next element
+
+
+    
+    
+    {
+    	"id": "<id>",
+    	"type": "start",
+    	"outputs": {
+    		"next": { "elementId": "<id>" }
+    	}
+    }
+
+### Conditional Element (If/Else)
+
+Evaluates a condition based on request parameters and routes the request accordingly.
+
+  * **Inputs** : Request
+  * **Outputs** : 
+    * `true`: Forwards request to provided element if condition evaluates to true
+    * `false`: Forwards request to provided element if condition evaluates to false
+
+
+
+`conditions` supports MongoDB-like operators such as `$eq`, `$ne`, `$in`, `$and`, and `$or`.
+    
+    
+    {
+    	"id": "<id>",
+    	"type": "conditional",
+    	"properties": {
+    		"conditions": {
+    			"metadata.plan": { "$eq": "free" }
+    		}
+    	},
+    	"outputs": {
+    		"true": { "elementId": "<id>" },
+    		"false": { "elementId": "<id>" }
+    	}
+    }
+
+### Percentage Split
+
+Routes requests probabilistically across multiple outputs, useful for A/B testing and gradual rollouts.
+
+  * **Inputs** : Request
+  * **Outputs** : Up to 5 named percentage outputs 
+    * Each output key (for example, `"10%"`) is the probability for that branch, and the keys must sum to 100%
+
+
+    
+    
+    {
+    	"id": "<id>",
+    	"type": "percentage",
+    	"outputs": {
+    		"10%": { "elementId": "<id>" },
+    		"40%": { "elementId": "<id>" },
+    		"50%": { "elementId": "<id>" }
+    	}
+    }
+
+### Rate/Budget Limit
+
+Apply limits based on request metadata. Supports both count-based and cost-based limits.
+
+  * **Inputs** : Request
+  * **Outputs** : 
+    * `success`: Forwards request to provided element if request is not rate limited
+    * `fallback`: Optional output for rate-limited requests (route terminates if not provided)
+
+
+
+**Properties** :
+
+  * `limitType`: "count" or "cost"
+  * `key`: Request field to use for rate limiting (e.g. "metadata.user_id")
+  * `limit`: Maximum allowed requests/cost
+  * `window`: Time window in seconds
+
+
+    
+    
+    {
+    	"id": "<id>",
+    	"type": "rate",
+    	"properties": {
+    		"limitType": "count",
+    		"key": "metadata.user_id",
+    		"limit": 100,
+    		"window": 3600
+    	},
+    	"outputs": {
+    		"success": { "elementId": "node_model_workers_ai" },
+    		"fallback": { "elementId": "node_model_openai_mini" }
+    	}
+    }
+
+### Model
+
+Executes inference using a specified model and provider with configurable timeout and retry settings.
+
+  * **Inputs** : Request
+  * **Outputs** : 
+    * `success`: Forwards request to provided element if model successfully starts streaming a response
+    * `fallback`: Optional output if model fails after all retries or times out
+
+
+
+**Properties** :
+
+  * `provider`: AI provider (e.g. "openai", "anthropic")
+  * `model`: Specific model name
+  * `timeout`: Request timeout in milliseconds
+  * `retries`: Number of retry attempts
+
+
+    
+    
+    {
+    	"id": "<id>",
+    	"type": "model",
+    	"properties": {
+    		"provider": "openai",
+    		"model": "gpt-4o-mini",
+    		"timeout": 60000,
+    		"retries": 4
+    	},
+    	"outputs": {
+    		"success": { "elementId": "<id>" },
+    		"fallback": { "elementId": "<id>" }
+    	}
+    }
+
+### End element
+
+Marks the end of a route. Returns the last successful model response, or an error if no model response was generated.
+
+  * **Inputs** : Request
+  * **Outputs** : None (provide an empty `outputs` object)
+
+
+    
+    
+    {
+    	"id": "<id>",
+    	"type": "end",
+    	"outputs": {}
+    }
+
+[PreviousUsing a dynamic route](https://developers.cloudflare.com/ai-gateway/features/dynamic-routing/usage/)[NextOverview](https://developers.cloudflare.com/ai-gateway/features/dlp/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/ai-gateway/features/dynamic-routing/json-configuration.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

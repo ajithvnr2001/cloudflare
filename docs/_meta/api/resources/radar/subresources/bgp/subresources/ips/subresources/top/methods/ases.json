@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/api/resources/radar/subresources/bgp/subresources/ips/subresources/top/methods/ases/",
+  "file": "api/resources/radar/subresources/bgp/subresources/ips/subresources/top/methods/ases.md",
+  "title": "Get top ASes by announced IP space | Cloudflare API",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:26:59.806668+00:00",
+  "html_len": 1956390,
+  "md_len": 3487,
+  "depth": 1
+}

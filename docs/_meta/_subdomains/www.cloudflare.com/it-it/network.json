@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/it-it/network/",
+  "file": "_subdomains/www.cloudflare.com/it-it/network.md",
+  "title": "Rete globale Cloudflare | Cloudflare",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (94 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:23:15.833020+00:00",
+  "html_len": 621172,
+  "md_len": 25862,
+  "depth": 1,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/changelog/post/2026-10-01-pending-io-keep-alive/",
+  "file": "changelog/post/2026-10-01-pending-io-keep-alive.md",
+  "title": "Pending I/O operations allow Durable Objects to continue long-running work without a connected client \u00b7 Changelog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:07:18.301201+00:00",
+  "html_len": 62611,
+  "md_len": 3212,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/serverless-pwa-react-cloudflare-workers/",
+  "file": "_subdomains/blog.cloudflare.com/serverless-pwa-react-cloudflare-workers.md",
+  "title": "Serverless Progressive Web Apps using React with Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:08.296057+00:00",
+  "html_len": 304079,
+  "md_len": 66672,
+  "depth": 0,
+  "phase": 2
+}

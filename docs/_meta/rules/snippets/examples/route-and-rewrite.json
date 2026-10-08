@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/snippets/examples/route-and-rewrite/",
+  "file": "rules/snippets/examples/route-and-rewrite.md",
+  "title": "Change origin and modify paths \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:55.248643+00:00",
+  "html_len": 129960,
+  "md_len": 2460,
+  "depth": 0
+}

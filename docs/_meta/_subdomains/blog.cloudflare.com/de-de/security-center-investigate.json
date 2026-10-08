@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/security-center-investigate/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/security-center-investigate.md",
+  "title": "Untersuchen von Bedrohungen mit dem Cloudflare Security Center | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:39.993247+00:00",
+  "html_len": 213814,
+  "md_len": 33992,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/zero-day-rapid-reset-http2-record-breaking-ddos-attack/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/zero-day-rapid-reset-http2-record-breaking-ddos-attack.md",
+  "title": "HTTP/2 Zero-Day \u6f0f\u6d1e\u5c0e\u81f4\u7834\u7d00\u9304\u7684 DDoS \u653b\u64ca | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:39:49.125157+00:00",
+  "html_len": 195912,
+  "md_len": 24107,
+  "depth": 0,
+  "phase": 2
+}

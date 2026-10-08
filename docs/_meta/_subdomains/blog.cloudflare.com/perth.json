@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/perth/",
+  "file": "_subdomains/blog.cloudflare.com/perth.md",
+  "title": "Perth, Australia: 80th Data Center | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:36.991941+00:00",
+  "html_len": 279017,
+  "md_len": 61210,
+  "depth": 0,
+  "phase": 2
+}

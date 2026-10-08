@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/tag/security-posture/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/tag/security-posture.md",
+  "title": "Entradas etiquetadas con \"Security Posture (ES)\" \u2014 Blog de Cloudflare",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (290 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:15:11.999425+00:00",
+  "html_len": 116533,
+  "md_len": 2941,
+  "depth": 1,
+  "phase": 2
+}

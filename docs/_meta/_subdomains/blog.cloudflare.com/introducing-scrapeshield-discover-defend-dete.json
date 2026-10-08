@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-scrapeshield-discover-defend-dete/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-scrapeshield-discover-defend-dete.md",
+  "title": "Introducing ScrapeShield: Discover, Defend & Deter Content Scraping | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:09.235106+00:00",
+  "html_len": 269974,
+  "md_len": 57783,
+  "depth": 0,
+  "phase": 2
+}

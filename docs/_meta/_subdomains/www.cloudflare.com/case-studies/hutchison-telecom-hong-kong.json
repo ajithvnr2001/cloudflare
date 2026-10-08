@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/hutchison-telecom-hong-kong/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/hutchison-telecom-hong-kong.md",
+  "title": "Hutchison Telecom Hong Kong & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:34.232121+00:00",
+  "html_len": 200903,
+  "md_len": 6868,
+  "depth": 0,
+  "phase": 2
+}

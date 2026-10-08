@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/firewall-rules-priority-and-ordering/",
+  "file": "_subdomains/blog.cloudflare.com/firewall-rules-priority-and-ordering.md",
+  "title": "Firewall Rules - Priority and Ordering | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:03.729293+00:00",
+  "html_len": 274314,
+  "md_len": 57396,
+  "depth": 0,
+  "phase": 2
+}

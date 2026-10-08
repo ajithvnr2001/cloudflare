@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/denver/",
+  "file": "_subdomains/blog.cloudflare.com/denver.md",
+  "title": "Hello, Colorado! CloudFlare's 82nd Data Center is Live in Denver | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:40.907682+00:00",
+  "html_len": 272738,
+  "md_len": 56732,
+  "depth": 0,
+  "phase": 2
+}

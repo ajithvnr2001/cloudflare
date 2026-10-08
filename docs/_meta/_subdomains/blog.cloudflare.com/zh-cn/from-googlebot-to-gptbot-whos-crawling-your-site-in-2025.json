@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/from-googlebot-to-gptbot-whos-crawling-your-site-in-2025/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/from-googlebot-to-gptbot-whos-crawling-your-site-in-2025.md",
+  "title": "\u4ece Googlebot \u5230 GPTBot\uff1a2025 \u5e74\u8c01\u5728\u722c\u53d6\u60a8\u7684\u7f51\u7ad9 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:51.702461+00:00",
+  "html_len": 258802,
+  "md_len": 35904,
+  "depth": 0,
+  "phase": 2
+}

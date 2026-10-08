@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/model-context-protocol/",
+  "file": "_subdomains/blog.cloudflare.com/model-context-protocol.md",
+  "title": "Hi Claude, build an MCP server on Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:28.926575+00:00",
+  "html_len": 304469,
+  "md_len": 64138,
+  "depth": 0,
+  "phase": 2
+}

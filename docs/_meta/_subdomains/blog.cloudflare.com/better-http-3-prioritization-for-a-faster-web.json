@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/better-http-3-prioritization-for-a-faster-web/",
+  "file": "_subdomains/blog.cloudflare.com/better-http-3-prioritization-for-a-faster-web.md",
+  "title": "Introducing HTTP/3 Prioritization | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:44.132125+00:00",
+  "html_len": 308920,
+  "md_len": 72333,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/next-gen-web3-network/",
+  "file": "_subdomains/blog.cloudflare.com/next-gen-web3-network.md",
+  "title": "Proof of Stake and our next experiments in web3 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:22.774734+00:00",
+  "html_len": 279690,
+  "md_len": 63019,
+  "depth": 0,
+  "phase": 2
+}

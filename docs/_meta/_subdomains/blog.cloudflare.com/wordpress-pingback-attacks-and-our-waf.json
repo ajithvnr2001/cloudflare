@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/wordpress-pingback-attacks-and-our-waf/",
+  "file": "_subdomains/blog.cloudflare.com/wordpress-pingback-attacks-and-our-waf.md",
+  "title": "WordPress Pingback Attacks and our WAF | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:25.756065+00:00",
+  "html_len": 267608,
+  "md_len": 55746,
+  "depth": 0,
+  "phase": 2
+}

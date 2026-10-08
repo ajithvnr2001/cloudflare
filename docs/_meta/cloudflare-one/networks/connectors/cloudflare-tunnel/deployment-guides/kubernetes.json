@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/deployment-guides/kubernetes/",
+  "file": "cloudflare-one/networks/connectors/cloudflare-tunnel/deployment-guides/kubernetes.md",
+  "title": "Kubernetes \u00b7 Cloudflare One docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:09:13.515538+00:00",
+  "html_len": 329279,
+  "md_len": 16427,
+  "depth": 0
+}

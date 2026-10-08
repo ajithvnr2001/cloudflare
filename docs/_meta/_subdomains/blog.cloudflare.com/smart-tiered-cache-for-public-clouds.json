@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/smart-tiered-cache-for-public-clouds/",
+  "file": "_subdomains/blog.cloudflare.com/smart-tiered-cache-for-public-clouds.md",
+  "title": "Improving Smart Tiered Cache for Public Cloud Regions | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:05.369785+00:00",
+  "html_len": 295359,
+  "md_len": 66600,
+  "depth": 0,
+  "phase": 2
+}

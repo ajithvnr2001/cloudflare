@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/agentic-internet-bot-report/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/agentic-internet-bot-report.md",
+  "title": "Ein Jahr nach dem ersten Content Independence Day: Aufbau des Gesch\u00e4ftsmodells f\u00fcr ein agentenbasiertes Internet | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:41.216748+00:00",
+  "html_len": 240967,
+  "md_len": 45740,
+  "depth": 0,
+  "phase": 2
+}

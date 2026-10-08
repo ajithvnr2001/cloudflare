@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/cloudflare-one/insights/dex/tests/",
+  "file": "cloudflare-one/insights/dex/tests.md",
+  "title": "Synthetic tests \u00b7 Cloudflare One docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:08:49.890529+00:00",
+  "html_len": 276221,
+  "md_len": 2917,
+  "depth": 0
+}

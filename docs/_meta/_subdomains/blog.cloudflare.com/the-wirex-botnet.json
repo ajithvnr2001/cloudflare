@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-wirex-botnet/",
+  "file": "_subdomains/blog.cloudflare.com/the-wirex-botnet.md",
+  "title": "The WireX Botnet: How Industry Collaboration Disrupted a DDoS Attack | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:07.546510+00:00",
+  "html_len": 351390,
+  "md_len": 83660,
+  "depth": 0,
+  "phase": 2
+}

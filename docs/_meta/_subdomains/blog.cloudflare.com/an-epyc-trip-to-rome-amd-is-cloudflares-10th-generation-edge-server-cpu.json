@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/an-epyc-trip-to-rome-amd-is-cloudflares-10th-generation-edge-server-cpu/",
+  "file": "_subdomains/blog.cloudflare.com/an-epyc-trip-to-rome-amd-is-cloudflares-10th-generation-edge-server-cpu.md",
+  "title": "An EPYC trip to Rome: AMD is Cloudflare's 10th-generation Edge server CPU | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:26.581757+00:00",
+  "html_len": 348223,
+  "md_len": 80877,
+  "depth": 0,
+  "phase": 2
+}

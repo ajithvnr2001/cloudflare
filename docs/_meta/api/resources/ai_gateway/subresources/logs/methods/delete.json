@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/api/resources/ai_gateway/subresources/logs/methods/delete/",
+  "file": "api/resources/ai_gateway/subresources/logs/methods/delete.md",
+  "title": "Delete Gateway Logs | Cloudflare API",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:22:27.307127+00:00",
+  "html_len": 1997362,
+  "md_len": 3114,
+  "depth": 1
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/workers-ai-large-models/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/workers-ai-large-models.md",
+  "title": "\u8d4b\u80fd\u667a\u80fd\u4f53\uff1aWorkers AI \u73b0\u5df2\u8fd0\u884c\u5927\u6a21\u578b\uff0c\u7387\u5148\u652f\u6301 Kimi K2.5 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:41.178985+00:00",
+  "html_len": 211437,
+  "md_len": 28887,
+  "depth": 0,
+  "phase": 2
+}

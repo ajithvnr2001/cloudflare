@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/certificate-pinning/",
+  "file": "_subdomains/blog.cloudflare.com/tag/certificate-pinning.md",
+  "title": "Posts tagged \"Certificate Pinning\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:08:27.719636+00:00",
+  "html_len": 106810,
+  "md_len": 868,
+  "depth": 1,
+  "phase": 2
+}

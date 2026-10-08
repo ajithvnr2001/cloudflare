@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/tag/certificate-transparency/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/tag/certificate-transparency.md",
+  "title": "\"Certificate Transparency\" \u30bf\u30b0\u306e\u6295\u7a3f \u2014 Cloudflare \u30d6\u30ed\u30b0",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (269 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:24:43.122528+00:00",
+  "html_len": 150646,
+  "md_len": 3031,
+  "depth": 1,
+  "phase": 2
+}

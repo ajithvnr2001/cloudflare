@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/faster-workers-kv/",
+  "file": "_subdomains/blog.cloudflare.com/faster-workers-kv.md",
+  "title": "We made Workers KV up to 3x faster \u2014 here\u2019s the data | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:36.676373+00:00",
+  "html_len": 314329,
+  "md_len": 69778,
+  "depth": 0,
+  "phase": 2
+}

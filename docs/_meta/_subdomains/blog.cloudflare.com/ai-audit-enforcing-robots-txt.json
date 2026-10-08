@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ai-audit-enforcing-robots-txt/",
+  "file": "_subdomains/blog.cloudflare.com/ai-audit-enforcing-robots-txt.md",
+  "title": "Robotcop: enforcing your robots.txt policies and stopping bots before they reach your website | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:00.262965+00:00",
+  "html_len": 295164,
+  "md_len": 60858,
+  "depth": 0,
+  "phase": 2
+}

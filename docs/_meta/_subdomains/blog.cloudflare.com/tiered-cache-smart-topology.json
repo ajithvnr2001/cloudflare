@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tiered-cache-smart-topology/",
+  "file": "_subdomains/blog.cloudflare.com/tiered-cache-smart-topology.md",
+  "title": "Tiered Cache Smart Topology | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:08.975384+00:00",
+  "html_len": 292502,
+  "md_len": 67338,
+  "depth": 0,
+  "phase": 2
+}

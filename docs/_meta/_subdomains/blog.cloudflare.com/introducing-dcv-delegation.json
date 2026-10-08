@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-dcv-delegation/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-dcv-delegation.md",
+  "title": "Out now! Auto-renew TLS certificates with DCV Delegation | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:37.744569+00:00",
+  "html_len": 290898,
+  "md_len": 68175,
+  "depth": 0,
+  "phase": 2
+}

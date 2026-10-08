@@ -1,0 +1,342 @@
+---
+url: https://developers.cloudflare.com/ai-search/api/items/workers-binding/
+title: Workers binding \u00b7 Cloudflare AI Search docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:04:37.279495+00:00
+---
+
+# Workers binding · Cloudflare AI Search docs
+
+> Source: https://developers.cloudflare.com/ai-search/api/items/workers-binding/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[AI Search](https://developers.cloudflare.com/ai-search/)
+  3. /…
+
+API
+
+  4. /Items
+  5. /Workers binding
+
+
+
+# Workers binding
+
+Last updated Oct 1, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai-search/api/items/workers-binding/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewConfigure the binding Namespace binding Instance bindingMethods items.upload() items.uploadAndPoll() items.list() items.delete() items.get()
+
+[Workers](https://developers.cloudflare.com/workers/) provides a serverless execution environment that allows you to create new applications or augment existing ones. Use a [Workers binding](https://developers.cloudflare.com/workers/runtime-apis/bindings/) to upload, list, and manage documents in your AI Search instances from a Cloudflare Worker. Access the Items API through the `items` property on an instance handle.
+
+Note
+
+The Items API uploads files to an instance's built-in storage. For more details, refer to [Built-in storage](https://developers.cloudflare.com/ai-search/configuration/data-source/built-in-storage/).
+
+## Configure the binding
+
+To use AI Search with Workers, you must create an AI Search binding. You create bindings by updating your [Wrangler configuration](https://developers.cloudflare.com/workers/wrangler/configuration/). AI Search provides two types of bindings:
+
+  * Namespace binding: `ai_search_namespaces`
+  * Instance binding: `ai_search`
+
+
+
+### Namespace binding
+
+Access all instances within a [namespace](https://developers.cloudflare.com/ai-search/concepts/namespaces/). You can get, create, list, and delete instances at runtime.
+    
+    
+    {
+      "$schema": "./node_modules/wrangler/config-schema.json",
+      "compatibility_date": "2026-03-27",
+      "ai_search_namespaces": [
+        {
+          "binding": "AI_SEARCH",
+          "namespace": "my-namespace"
+        }
+      ]
+    }
+    
+    
+    compatibility_date = "2026-03-27"
+    
+    [[ai_search_namespaces]]
+    binding = "AI_SEARCH"
+    namespace = "my-namespace"
+
+Field | Type | Required | Description  
+---|---|---|---  
+`binding` | string | Yes | The variable name available on `env`. For example, `"AI_SEARCH"` makes it accessible as `env.AI_SEARCH`.  
+`namespace` | string | Yes | The [namespace](https://developers.cloudflare.com/ai-search/concepts/namespaces/) to bind to. A `default` namespace is created automatically for every account. If the namespace does not exist, Wrangler creates it on deploy.  
+`remote` | boolean | No | Set to `true` for local development with `wrangler dev`.  
+  
+### Instance binding
+
+Bind directly to a single instance in the `default` namespace. Use this when you know which instance you need at deploy time.
+    
+    
+    {
+      "$schema": "./node_modules/wrangler/config-schema.json",
+      "compatibility_date": "2026-03-27",
+      "ai_search": [
+        {
+          "binding": "MY_SEARCH",
+          "instance_name": "my-instance"
+        }
+      ]
+    }
+    
+    
+    compatibility_date = "2026-03-27"
+    
+    [[ai_search]]
+    binding = "MY_SEARCH"
+    instance_name = "my-instance"
+
+Field | Type | Required | Description  
+---|---|---|---  
+`binding` | string | Yes | The variable name available on `env`. For example, `"MY_SEARCH"` makes it accessible as `env.MY_SEARCH`.  
+`instance_name` | string | Yes | The name of the AI Search instance. Must exist in the default namespace at deploy time.  
+`remote` | boolean | No | Set to `true` for local development with `wrangler dev`.  
+  
+## Methods
+
+The Items API methods are available on both the `ai_search_namespaces` and `ai_search` bindings. With the namespace binding, call methods on the handle returned by `get()`. With the instance binding, call methods directly on the binding (for example, `env.MY_SEARCH.items.upload()`).
+
+The examples below use the namespace binding.
+    
+    
+    const instance = env.AI_SEARCH.get("my-instance");
+
+### `items.upload()`
+
+Uploads a document for indexing. Returns immediately. The document is queued for processing.
+    
+    
+    // Upload from a string
+    await instance.items.upload(
+    	"faq.md",
+    	"# FAQ\n\nQ: How do I reset my password?\nA: Go to Settings > Security...",
+    );
+    
+    // Upload from a Blob
+    const pdfResponse = await fetch("https://example.com/guide.pdf");
+    const pdfBlob = await pdfResponse.blob();
+    await instance.items.upload("guide.pdf", pdfBlob);
+    
+    // Upload from a ReadableStream
+    await instance.items.upload("doc.txt", request.body);
+
+#### Upload with metadata
+
+Attach [custom metadata](https://developers.cloudflare.com/ai-search/configuration/indexing/metadata/) to a document for filtering in search queries. Custom metadata fields must be defined on the instance first using the [update()](https://developers.cloudflare.com/ai-search/api/instances/workers-binding/#update) method or at creation time.
+    
+    
+    await instance.items.upload("guide.pdf", pdfBlob, {
+    	metadata: {
+    		category: "onboarding",
+    		language: "en",
+    		version: "2.0",
+    	},
+    });
+
+#### Parameters
+
+Parameter | Type | Required | Description  
+---|---|---|---  
+`name` | string | Yes | The filename for the uploaded document. Used as the item key. Maximum 128 characters.  
+`content` | ReadableStream, Blob, or string | Yes | The document content. PDF uploads and plain-text or code files can be up to 10 MiB, but PDFs larger than 4 MiB are indexed only when OCR is enabled. Other supported formats can be up to 4 MiB. Pass a `Blob` for binary files or a `ReadableStream` for streaming uploads.  
+`options.metadata` | Record<string, string> | No | Custom metadata key-value pairs to attach to the item. Use for filtering in search queries. Maximum 5 fields per instance.  
+  
+#### Response
+
+Field | Type | Description  
+---|---|---  
+`id` | string | The unique item identifier.  
+`key` | string | The filename or key of the item.  
+  
+### `items.uploadAndPoll()`
+
+Uploads a document and polls until processing completes or the timeout is reached. Use this when you need to search the document immediately after upload.
+    
+    
+    // Wait for a specific document to finish indexing before searching
+    const item = await instance.items.uploadAndPoll(
+    	"handbook.txt",
+    	handbookContent,
+    );
+    console.log(`handbook.txt status: ${item.status}`); // "completed"
+    
+    // Now search across all uploaded documents
+    const results = await instance.search({
+    	messages: [{ role: "user", content: "password reset policy" }],
+    });
+
+#### Parameters
+
+Same as `items.upload()`, with additional polling options:
+
+Parameter | Type | Required | Description  
+---|---|---|---  
+`options.pollIntervalMs` | number | No | How often to check the item status, in milliseconds. Defaults to `1000`.  
+`options.timeoutMs` | number | No | Maximum time to wait for processing to complete, in milliseconds. Defaults to `120000`. Maximum `300000`.  
+  
+#### Response
+
+Returns the full item object after polling completes:
+
+Field | Type | Description  
+---|---|---  
+`id` | string | The unique item identifier.  
+`key` | string | The filename or key of the item.  
+`status` | string | The processing status: `queued`, `running`, `completed`, `error`, `skipped`, `outdated`.  
+`chunks_count` | number | Number of chunks created from the document.  
+`file_size` | number | Size of the uploaded file in bytes.  
+`metadata` | object | Item metadata including `filename`, `folder`, and `timestamp`.  
+`source_id` | string | The source identifier (for example, `builtin` for uploaded files).  
+`created_at` | string | Timestamp of when the item was created.  
+`last_seen_at` | string | Timestamp of when the item was last seen during indexing.  
+  
+### `items.list()`
+
+Returns a paginated list of items in the instance.
+    
+    
+    const { result, result_info } = await instance.items.list();
+    
+    for (const item of result) {
+    	console.log(`${item.key} (${item.status})`);
+    }
+    // result_info.total_count contains the total number of items
+
+#### Parameters
+
+Parameter | Type | Required | Description  
+---|---|---|---  
+`page` | number | No | The page number to return. Defaults to `1`.  
+`per_page` | number | No | The number of items per page. Defaults to `20`. Maximum `50`.  
+`status` | string | No | Filter by processing status: `queued`, `running`, `completed`, `error`, `skipped`, or `outdated`.  
+`sort_by` | string | No | Sort order for items: `status` (default) or `modified_at`.  
+`search` | string | No | Search item keys.  
+`source` | string | No | Filter by source identifier (for example, `builtin` for uploaded files).  
+`metadata_filter` | string | No | Filter by metadata using a JSON-encoded Vectorize metadata filter.  
+  
+#### Response
+
+Field | Type | Description  
+---|---|---  
+`result` | array | Array of item objects.  
+`result[].id` | string | The unique item identifier.  
+`result[].key` | string | The filename or key of the item.  
+`result[].status` | string | The processing status: `queued`, `running`, `completed`, `error`, `skipped`, `outdated`.  
+`result[].chunks_count` | number | Number of chunks created from the document.  
+`result[].file_size` | number | Size of the uploaded file in bytes.  
+`result[].metadata` | object | Item metadata including `filename`, `folder`, and `timestamp`.  
+`result[].source_id` | string | The source identifier (for example, `builtin` for uploaded files).  
+`result[].created_at` | string | Timestamp of when the item was created.  
+`result[].last_seen_at` | string | Timestamp of when the item was last seen during indexing.  
+`result_info` | object | Pagination metadata.  
+`result_info.count` | number | Number of items in the current page.  
+`result_info.total_count` | number | Total number of items in the instance.  
+`result_info.page` | number | The current page number.  
+`result_info.per_page` | number | Items per page.  
+  
+### `items.delete()`
+
+Deletes an item and its indexed chunks.
+    
+    
+    await instance.items.delete("item-id-123");
+
+#### Parameters
+
+Parameter | Type | Required | Description  
+---|---|---|---  
+`itemId` | string | Yes | The unique identifier of the item to delete.  
+  
+#### Response
+
+Returns `void`. Throws an error if the item does not exist.
+
+### `items.get()`
+
+Returns a handle to a specific item for retrieving its status or downloading the original file.
+
+#### `items.get().info()`
+
+Returns the status and metadata of a specific item.
+    
+    
+    const itemInfo = await instance.items.get("item-id-123").info();
+
+##### Parameters
+
+Parameter | Type | Required | Description  
+---|---|---|---  
+`itemId` | string | Yes | The unique identifier of the item.  
+  
+##### Response
+
+Field | Type | Description  
+---|---|---  
+`id` | string | The unique item identifier.  
+`key` | string | The filename or key of the item.  
+`status` | string | The processing status: `queued`, `running`, `completed`, `error`, `skipped`, `outdated`.  
+`chunks_count` | number | Number of chunks created from the document.  
+`file_size` | number | Size of the uploaded file in bytes.  
+`metadata` | object | Item metadata including `filename`, `folder`, and `timestamp`.  
+`source_id` | string | The source identifier (for example, `builtin` for uploaded files).  
+`created_at` | string | Timestamp of when the item was created.  
+`last_seen_at` | string | Timestamp of when the item was last seen during indexing.  
+  
+#### `items.get().download()`
+
+Downloads the original source file for an item.
+    
+    
+    const file = await instance.items.get("item-id-123").download();
+    // file.body is a ReadableStream
+
+##### Parameters
+
+Parameter | Type | Required | Description  
+---|---|---|---  
+`itemId` | string | Yes | The unique identifier of the item.  
+  
+##### Response
+
+Field | Type | Description  
+---|---|---  
+`filename` | string | The original filename.  
+`contentType` | string | The MIME type of the file (for example, `application/pdf`).  
+`size` | number | The file size in bytes.  
+`body` | ReadableStream | A readable stream of the file contents.  
+  
+#### `items.get().logs()`
+
+Returns processing logs for an item.
+    
+    
+    const logs = await instance.items.get("item-id-123").logs({ limit: 50 });
+
+The options are `limit` (1–100, default `50`) and an opaque pagination `cursor`. The response contains `result` log entries and `result_info` with `count`, `per_page`, `cursor`, and `truncated`.
+
+#### `items.get().chunks()`
+
+Returns indexed chunks for an item.
+    
+    
+    const chunks = await instance.items.get("item-id-123").chunks({
+    	limit: 20,
+    	offset: 0,
+    });
+
+The options are `limit` (1–100, default `20`) and `offset` (default `0`). Each result contains `id`, `text`, `start_byte`, `end_byte`, and optional item details. The response also includes `result_info` with `count`, `total`, `limit`, and `offset`.
+
+[PreviousPublic endpoint](https://developers.cloudflare.com/ai-search/api/search/public-endpoint/)[NextREST API](https://developers.cloudflare.com/ai-search/api/items/rest-api/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/ai-search/api/items/workers-binding.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

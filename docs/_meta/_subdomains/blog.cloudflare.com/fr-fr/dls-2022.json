@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/dls-2022/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/dls-2022.md",
+  "title": "Orientez-vous dans l'environnement changeant de la localisation des donn\u00e9es avec la solution Data Localization Suite de Cloudflare | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:23.767500+00:00",
+  "html_len": 214905,
+  "md_len": 32607,
+  "depth": 0,
+  "phase": 2
+}

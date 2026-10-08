@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/workers-for-platforms/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/workers-for-platforms.md",
+  "title": "Annonce de Workers for Platforms : rendre chaque application sur Internet plus programmable | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:40.584265+00:00",
+  "html_len": 235680,
+  "md_len": 40818,
+  "depth": 0,
+  "phase": 2
+}

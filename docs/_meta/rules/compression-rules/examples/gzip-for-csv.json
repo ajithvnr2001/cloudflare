@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/compression-rules/examples/gzip-for-csv/",
+  "file": "rules/compression-rules/examples/gzip-for-csv.md",
+  "title": "Use Gzip compression for CSV files \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:47.443124+00:00",
+  "html_len": 137084,
+  "md_len": 3985,
+  "depth": 0
+}

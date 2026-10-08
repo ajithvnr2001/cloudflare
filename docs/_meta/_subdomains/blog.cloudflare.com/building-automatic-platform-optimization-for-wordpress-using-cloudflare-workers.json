@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/building-automatic-platform-optimization-for-wordpress-using-cloudflare-workers/",
+  "file": "_subdomains/blog.cloudflare.com/building-automatic-platform-optimization-for-wordpress-using-cloudflare-workers.md",
+  "title": "Building Automatic Platform Optimization for WordPress using Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:55.762347+00:00",
+  "html_len": 313434,
+  "md_len": 73208,
+  "depth": 0,
+  "phase": 2
+}

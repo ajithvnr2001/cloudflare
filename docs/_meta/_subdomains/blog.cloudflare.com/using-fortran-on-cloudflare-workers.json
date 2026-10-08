@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/using-fortran-on-cloudflare-workers/",
+  "file": "_subdomains/blog.cloudflare.com/using-fortran-on-cloudflare-workers.md",
+  "title": "Using Fortran on Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:49.511147+00:00",
+  "html_len": 296109,
+  "md_len": 61667,
+  "depth": 0,
+  "phase": 2
+}

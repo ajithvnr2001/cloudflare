@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cdc-vaccine-phishing/",
+  "file": "_subdomains/blog.cloudflare.com/cdc-vaccine-phishing.md",
+  "title": "Count yourself in for a vaccine phish: new phishing campaign exploits concern over COVID-19 vaccine availability | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:04.544180+00:00",
+  "html_len": 291318,
+  "md_len": 67493,
+  "depth": 0,
+  "phase": 2
+}

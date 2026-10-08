@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/versions-and-deployments/",
+  "file": "workers/versions-and-deployments.md",
+  "title": "Versions & deployments \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:18:02.891847+00:00",
+  "html_len": 191484,
+  "md_len": 5276,
+  "depth": 0
+}

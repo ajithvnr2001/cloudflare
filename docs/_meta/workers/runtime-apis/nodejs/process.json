@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/runtime-apis/nodejs/process/",
+  "file": "workers/runtime-apis/nodejs/process.md",
+  "title": "process \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:46.486476+00:00",
+  "html_len": 200091,
+  "md_len": 7479,
+  "depth": 0
+}

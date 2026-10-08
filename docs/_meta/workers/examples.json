@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/examples/",
+  "file": "workers/examples.md",
+  "title": "Examples \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:19.126392+00:00",
+  "html_len": 677495,
+  "md_len": 9707,
+  "depth": 0
+}

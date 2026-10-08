@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/tag/reading-list/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/tag/reading-list.md",
+  "title": "Articles tagu\u00e9s \u00ab Reading List (FR) \u00bb \u2014 Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:13:21.198369+00:00",
+  "html_len": 110326,
+  "md_len": 937,
+  "depth": 1,
+  "phase": 2
+}

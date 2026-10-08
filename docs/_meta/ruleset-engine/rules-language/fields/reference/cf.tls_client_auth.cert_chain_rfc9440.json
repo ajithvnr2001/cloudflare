@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.tls_client_auth.cert_chain_rfc9440/",
+  "file": "ruleset-engine/rules-language/fields/reference/cf.tls_client_auth.cert_chain_rfc9440.md",
+  "title": "cf.tls_client_auth.cert_chain_rfc9440 \u00b7 Cloudflare Ruleset Engine docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:15:05.995744+00:00",
+  "html_len": 93930,
+  "md_len": 2757,
+  "depth": 0
+}

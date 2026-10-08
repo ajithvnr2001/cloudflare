@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-la/the-agentic-internet/",
+  "file": "_subdomains/blog.cloudflare.com/es-la/the-agentic-internet.md",
+  "title": "Construir una Internet ag\u00e9ntica abierta: que se pueda leer, detectar, llamar y pagar | El blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:57.753881+00:00",
+  "html_len": 200460,
+  "md_len": 26428,
+  "depth": 0,
+  "phase": 2
+}

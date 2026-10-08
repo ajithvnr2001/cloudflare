@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tricky-internet-measurement/",
+  "file": "_subdomains/blog.cloudflare.com/tricky-internet-measurement.md",
+  "title": "The tricky science of Internet measurement | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:55.847587+00:00",
+  "html_len": 317834,
+  "md_len": 80808,
+  "depth": 0,
+  "phase": 2
+}

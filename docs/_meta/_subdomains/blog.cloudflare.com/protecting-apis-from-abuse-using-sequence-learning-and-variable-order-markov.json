@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/protecting-apis-from-abuse-using-sequence-learning-and-variable-order-markov/",
+  "file": "_subdomains/blog.cloudflare.com/protecting-apis-from-abuse-using-sequence-learning-and-variable-order-markov.md",
+  "title": "Protecting APIs from abuse using sequence learning and variable order Markov chains | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:15.842382+00:00",
+  "html_len": 298201,
+  "md_len": 73259,
+  "depth": 0,
+  "phase": 2
+}

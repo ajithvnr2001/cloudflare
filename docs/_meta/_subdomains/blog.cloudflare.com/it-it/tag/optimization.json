@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/it-it/tag/optimization/",
+  "file": "_subdomains/blog.cloudflare.com/it-it/tag/optimization.md",
+  "title": "Post con tag \"Ottimizzazione\" \u2014 Il blog di Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:22:18.843467+00:00",
+  "html_len": 109705,
+  "md_len": 856,
+  "depth": 1,
+  "phase": 2
+}

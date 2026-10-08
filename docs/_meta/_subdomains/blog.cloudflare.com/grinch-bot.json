@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/grinch-bot/",
+  "file": "_subdomains/blog.cloudflare.com/grinch-bot.md",
+  "title": "The Grinch Bot is Stealing Christmas! | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:48.564138+00:00",
+  "html_len": 294090,
+  "md_len": 62967,
+  "depth": 0,
+  "phase": 2
+}

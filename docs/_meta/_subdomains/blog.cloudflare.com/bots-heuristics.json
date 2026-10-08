@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/bots-heuristics/",
+  "file": "_subdomains/blog.cloudflare.com/bots-heuristics.md",
+  "title": "Improved Bot Management flexibility and visibility with new high-precision heuristics | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:23.236474+00:00",
+  "html_len": 305148,
+  "md_len": 69569,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/boringtun-userspace-wireguard-rust/",
+  "file": "_subdomains/blog.cloudflare.com/boringtun-userspace-wireguard-rust.md",
+  "title": "BoringTun, a userspace WireGuard implementation in Rust | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:50.116122+00:00",
+  "html_len": 275382,
+  "md_len": 58765,
+  "depth": 0,
+  "phase": 2
+}

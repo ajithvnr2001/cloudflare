@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-to-save-costs-on-your-api-gateway-solution-using-cloudflare-workers/",
+  "file": "_subdomains/blog.cloudflare.com/how-to-save-costs-on-your-api-gateway-solution-using-cloudflare-workers.md",
+  "title": "How to save costs on your API Gateway solution using Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:25.441784+00:00",
+  "html_len": 278345,
+  "md_len": 63809,
+  "depth": 0,
+  "phase": 2
+}

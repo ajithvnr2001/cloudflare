@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/lessons-learned-from-scaling-up-cloudflare-anomaly-detection-platform/",
+  "file": "_subdomains/blog.cloudflare.com/lessons-learned-from-scaling-up-cloudflare-anomaly-detection-platform.md",
+  "title": "Lessons Learned from Scaling Up Cloudflare\u2019s Anomaly Detection Platform | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:34.450402+00:00",
+  "html_len": 288076,
+  "md_len": 68873,
+  "depth": 0,
+  "phase": 2
+}

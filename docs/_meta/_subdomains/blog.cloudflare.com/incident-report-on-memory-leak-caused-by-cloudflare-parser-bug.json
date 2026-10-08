@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/incident-report-on-memory-leak-caused-by-cloudflare-parser-bug/",
+  "file": "_subdomains/blog.cloudflare.com/incident-report-on-memory-leak-caused-by-cloudflare-parser-bug.md",
+  "title": "Incident report on memory leak caused by Cloudflare parser bug | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:20.405766+00:00",
+  "html_len": 307039,
+  "md_len": 73857,
+  "depth": 0,
+  "phase": 2
+}

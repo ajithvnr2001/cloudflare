@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/umbraco/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/umbraco.md",
+  "title": "Umbraco",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:53.293414+00:00",
+  "html_len": 206068,
+  "md_len": 8499,
+  "depth": 0,
+  "phase": 2
+}

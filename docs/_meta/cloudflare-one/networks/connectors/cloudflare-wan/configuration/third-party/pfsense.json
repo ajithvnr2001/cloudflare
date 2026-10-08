@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-wan/configuration/third-party/pfsense/",
+  "file": "cloudflare-one/networks/connectors/cloudflare-wan/configuration/third-party/pfsense.md",
+  "title": "pfSense \u00b7 Cloudflare One docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:09:35.550031+00:00",
+  "html_len": 312227,
+  "md_len": 11482,
+  "depth": 0
+}

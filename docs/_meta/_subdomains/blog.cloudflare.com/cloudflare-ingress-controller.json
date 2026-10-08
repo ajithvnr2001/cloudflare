@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-ingress-controller/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-ingress-controller.md",
+  "title": "Introducing the Cloudflare Warp Ingress Controller for Kubernetes | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:54.899697+00:00",
+  "html_len": 288591,
+  "md_len": 63349,
+  "depth": 0,
+  "phase": 2
+}

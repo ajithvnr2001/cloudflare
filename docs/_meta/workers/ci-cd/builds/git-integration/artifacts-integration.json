@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/ci-cd/builds/git-integration/artifacts-integration/",
+  "file": "workers/ci-cd/builds/git-integration/artifacts-integration.md",
+  "title": "Cloudflare Artifacts integration \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:12.663218+00:00",
+  "html_len": 190258,
+  "md_len": 4952,
+  "depth": 0
+}

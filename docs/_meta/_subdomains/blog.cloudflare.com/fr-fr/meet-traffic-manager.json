@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/meet-traffic-manager/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/meet-traffic-manager.md",
+  "title": "Comment les syst\u00e8mes de Cloudflare acheminent dynamiquement le trafic \u00e0 travers le monde | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:39:53.516570+00:00",
+  "html_len": 292705,
+  "md_len": 65929,
+  "depth": 0,
+  "phase": 2
+}

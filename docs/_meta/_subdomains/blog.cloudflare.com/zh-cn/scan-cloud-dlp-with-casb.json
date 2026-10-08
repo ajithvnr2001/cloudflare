@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/scan-cloud-dlp-with-casb/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/scan-cloud-dlp-with-casb.md",
+  "title": "\u4f7f\u7528 Cloudflare One \u68c0\u6d4b AWS \u548c GCP \u4e2d\u7684\u654f\u611f\u6570\u636e\u548c\u9519\u8bef\u914d\u7f6e | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:41:03.108264+00:00",
+  "html_len": 209332,
+  "md_len": 26897,
+  "depth": 0,
+  "phase": 2
+}

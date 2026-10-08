@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/detections/ai-security-for-apps/pii-detection/",
+  "file": "waf/detections/ai-security-for-apps/pii-detection.md",
+  "title": "PII detection \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:40.148180+00:00",
+  "html_len": 158774,
+  "md_len": 8806,
+  "depth": 0
+}

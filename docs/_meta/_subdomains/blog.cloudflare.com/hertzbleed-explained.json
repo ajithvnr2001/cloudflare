@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/hertzbleed-explained/",
+  "file": "_subdomains/blog.cloudflare.com/hertzbleed-explained.md",
+  "title": "Hertzbleed explained | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:53.812683+00:00",
+  "html_len": 352420,
+  "md_len": 86445,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/check-out-cloudflares-new-beta-ui/",
+  "file": "_subdomains/blog.cloudflare.com/check-out-cloudflares-new-beta-ui.md",
+  "title": "Check out CloudFlare's New UI | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:59.309021+00:00",
+  "html_len": 265576,
+  "md_len": 55822,
+  "depth": 0,
+  "phase": 2
+}

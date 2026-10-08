@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/edge-side-includes-with-cloudflare-workers/",
+  "file": "_subdomains/blog.cloudflare.com/edge-side-includes-with-cloudflare-workers.md",
+  "title": "Edge-Side-Includes with Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:23.649999+00:00",
+  "html_len": 338718,
+  "md_len": 69406,
+  "depth": 0,
+  "phase": 2
+}

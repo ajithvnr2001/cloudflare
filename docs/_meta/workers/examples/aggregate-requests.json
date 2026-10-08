@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/examples/aggregate-requests/",
+  "file": "workers/examples/aggregate-requests.md",
+  "title": "Aggregate requests \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:19.578291+00:00",
+  "html_len": 192333,
+  "md_len": 3728,
+  "depth": 0
+}

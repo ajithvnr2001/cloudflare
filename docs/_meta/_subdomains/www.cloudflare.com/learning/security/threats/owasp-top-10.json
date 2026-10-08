@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/security/threats/owasp-top-10/",
+  "file": "_subdomains/www.cloudflare.com/learning/security/threats/owasp-top-10.md",
+  "title": "What is OWASP? What Are The OWASP Top 10?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:40.471835+00:00",
+  "html_len": 244976,
+  "md_len": 26321,
+  "depth": 0,
+  "phase": 2
+}

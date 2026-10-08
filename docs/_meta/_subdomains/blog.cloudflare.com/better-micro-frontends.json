@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/better-micro-frontends/",
+  "file": "_subdomains/blog.cloudflare.com/better-micro-frontends.md",
+  "title": "Cloudflare Workers and micro-frontends: made for one another | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:23.544093+00:00",
+  "html_len": 337975,
+  "md_len": 80130,
+  "depth": 0,
+  "phase": 2
+}

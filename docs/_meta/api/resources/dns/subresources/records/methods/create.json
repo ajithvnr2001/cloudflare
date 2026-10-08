@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/api/resources/dns/subresources/records/methods/create/",
+  "file": "api/resources/dns/subresources/records/methods/create.md",
+  "title": "Create DNS Record | Cloudflare API",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:25:39.061428+00:00",
+  "html_len": 3209218,
+  "md_len": 93787,
+  "depth": 1
+}

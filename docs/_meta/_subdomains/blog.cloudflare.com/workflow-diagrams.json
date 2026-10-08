@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/workflow-diagrams/",
+  "file": "_subdomains/blog.cloudflare.com/workflow-diagrams.md",
+  "title": "How we use Abstract Syntax Trees (ASTs) to turn Workflows code into visual diagrams | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:37.992832+00:00",
+  "html_len": 353536,
+  "md_len": 74904,
+  "depth": 0,
+  "phase": 2
+}

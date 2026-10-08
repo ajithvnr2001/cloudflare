@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/ddos/syn-flood-ddos-attack/",
+  "file": "_subdomains/www.cloudflare.com/learning/ddos/syn-flood-ddos-attack.md",
+  "title": "SYN Flood DDoS Attack",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:39.041650+00:00",
+  "html_len": 212450,
+  "md_len": 14745,
+  "depth": 0,
+  "phase": 2
+}

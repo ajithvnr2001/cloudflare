@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/why-randomness-matters/",
+  "file": "_subdomains/blog.cloudflare.com/why-randomness-matters.md",
+  "title": "Why secure systems require random numbers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:52.883934+00:00",
+  "html_len": 286908,
+  "md_len": 63948,
+  "depth": 0,
+  "phase": 2
+}

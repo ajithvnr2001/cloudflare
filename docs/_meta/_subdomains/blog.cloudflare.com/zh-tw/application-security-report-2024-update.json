@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/application-security-report-2024-update/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/application-security-report-2024-update.md",
+  "title": "\u61c9\u7528\u7a0b\u5f0f\u5b89\u5168\u5831\u544a\uff1a2024 \u5e74\u66f4\u65b0 | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:39:12.408197+00:00",
+  "html_len": 225639,
+  "md_len": 31863,
+  "depth": 0,
+  "phase": 2
+}

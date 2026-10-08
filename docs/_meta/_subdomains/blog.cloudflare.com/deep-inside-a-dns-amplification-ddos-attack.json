@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/deep-inside-a-dns-amplification-ddos-attack/",
+  "file": "_subdomains/blog.cloudflare.com/deep-inside-a-dns-amplification-ddos-attack.md",
+  "title": "Deep Inside a DNS Amplification DDoS Attack | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:48.085609+00:00",
+  "html_len": 329257,
+  "md_len": 70060,
+  "depth": 0,
+  "phase": 2
+}

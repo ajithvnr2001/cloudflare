@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/going-global-a-localization-case-study-at-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/going-global-a-localization-case-study-at-cloudflare.md",
+  "title": "Going Global - a Localization Case Study at Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:08.056614+00:00",
+  "html_len": 278158,
+  "md_len": 58258,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers-ai/features/function-calling/embedded/examples/fetch/",
+  "file": "workers-ai/features/function-calling/embedded/examples/fetch.md",
+  "title": "Use fetch() handler \u00b7 Cloudflare Workers AI docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:57.655377+00:00",
+  "html_len": 111419,
+  "md_len": 3722,
+  "depth": 0
+}

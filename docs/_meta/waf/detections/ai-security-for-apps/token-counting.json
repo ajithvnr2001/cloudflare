@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/detections/ai-security-for-apps/token-counting/",
+  "file": "waf/detections/ai-security-for-apps/token-counting.md",
+  "title": "Token counting \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:40.978991+00:00",
+  "html_len": 141883,
+  "md_len": 4252,
+  "depth": 0
+}

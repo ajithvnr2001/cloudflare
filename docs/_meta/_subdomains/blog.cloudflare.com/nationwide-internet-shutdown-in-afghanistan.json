@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/nationwide-internet-shutdown-in-afghanistan/",
+  "file": "_subdomains/blog.cloudflare.com/nationwide-internet-shutdown-in-afghanistan.md",
+  "title": "Nationwide Internet shutdown in Afghanistan extends localized disruptions | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:30.545738+00:00",
+  "html_len": 322765,
+  "md_len": 72630,
+  "depth": 0,
+  "phase": 2
+}

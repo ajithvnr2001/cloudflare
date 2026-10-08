@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/python-workers-advancements/",
+  "file": "_subdomains/blog.cloudflare.com/python-workers-advancements.md",
+  "title": "Python Workers redux: fast cold starts, packages, and a uv-first workflow | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:48.170136+00:00",
+  "html_len": 305740,
+  "md_len": 71858,
+  "depth": 0,
+  "phase": 2
+}

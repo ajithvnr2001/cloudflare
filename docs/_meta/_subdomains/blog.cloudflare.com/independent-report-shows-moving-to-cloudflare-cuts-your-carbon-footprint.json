@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/independent-report-shows-moving-to-cloudflare-cuts-your-carbon-footprint/",
+  "file": "_subdomains/blog.cloudflare.com/independent-report-shows-moving-to-cloudflare-cuts-your-carbon-footprint.md",
+  "title": "Independent report shows: moving to Cloudflare can cut your carbon footprint | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:40:26.164350+00:00",
+  "html_len": 282416,
+  "md_len": 60152,
+  "depth": 0,
+  "phase": 2
+}

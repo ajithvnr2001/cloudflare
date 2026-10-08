@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/framework-guides/web-apps/react/",
+  "file": "workers/framework-guides/web-apps/react.md",
+  "title": "React + Vite \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:29.413288+00:00",
+  "html_len": 368261,
+  "md_len": 18398,
+  "depth": 0
+}

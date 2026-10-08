@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/dns/zone-setups/zone-transfers/",
+  "file": "dns/zone-setups/zone-transfers.md",
+  "title": "DNS Zone transfers \u00b7 Cloudflare DNS docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:11:04.229564+00:00",
+  "html_len": 128717,
+  "md_len": 3987,
+  "depth": 0
+}

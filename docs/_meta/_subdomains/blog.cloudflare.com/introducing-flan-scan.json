@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-flan-scan/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-flan-scan.md",
+  "title": "Introducing Flan Scan: Cloudflare\u2019s Lightweight Network Vulnerability Scanner | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:48.922113+00:00",
+  "html_len": 290157,
+  "md_len": 63952,
+  "depth": 0,
+  "phase": 2
+}

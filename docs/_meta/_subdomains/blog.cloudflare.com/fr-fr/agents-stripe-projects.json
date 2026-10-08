@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/agents-stripe-projects/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/agents-stripe-projects.md",
+  "title": "Les agents peuvent d\u00e9sormais cr\u00e9er des comptes Cloudflare, acheter des domaines et r\u00e9aliser des d\u00e9ploiements | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:03.788069+00:00",
+  "html_len": 240561,
+  "md_len": 39364,
+  "depth": 0,
+  "phase": 2
+}

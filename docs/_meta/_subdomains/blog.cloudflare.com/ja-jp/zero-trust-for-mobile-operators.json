@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/zero-trust-for-mobile-operators/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/zero-trust-for-mobile-operators.md",
+  "title": "\u30e2\u30d0\u30a4\u30eb\u30cd\u30c3\u30c8\u30ef\u30fc\u30af\u4e8b\u696d\u8005\u306b\u300cZero Trust\u300d\u3092\u63d0\u4f9b | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:39.506295+00:00",
+  "html_len": 210884,
+  "md_len": 30970,
+  "depth": 0,
+  "phase": 2
+}

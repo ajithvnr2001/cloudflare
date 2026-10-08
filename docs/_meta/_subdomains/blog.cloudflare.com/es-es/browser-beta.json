@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/browser-beta/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/browser-beta.md",
+  "title": "Novedad: Versi\u00f3n beta del aislamiento de navegador de Cloudflare | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:53.527200+00:00",
+  "html_len": 206847,
+  "md_len": 31562,
+  "depth": 0,
+  "phase": 2
+}

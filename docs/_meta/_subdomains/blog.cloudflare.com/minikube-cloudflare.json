@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/minikube-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/minikube-cloudflare.md",
+  "title": "How To Minikube + Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:27.874683+00:00",
+  "html_len": 301113,
+  "md_len": 65403,
+  "depth": 0,
+  "phase": 2
+}

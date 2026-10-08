@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/yet-another-padding-oracle-in-openssl-cbc-ciphersuites/",
+  "file": "_subdomains/blog.cloudflare.com/yet-another-padding-oracle-in-openssl-cbc-ciphersuites.md",
+  "title": "Yet Another Padding Oracle in OpenSSL CBC Ciphersuites | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:40.141399+00:00",
+  "html_len": 313166,
+  "md_len": 71366,
+  "depth": 0,
+  "phase": 2
+}

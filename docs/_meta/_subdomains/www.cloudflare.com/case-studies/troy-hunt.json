@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/troy-hunt/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/troy-hunt.md",
+  "title": "HaveIBeenPwned? | Case study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:52.963917+00:00",
+  "html_len": 204894,
+  "md_len": 5098,
+  "depth": 0,
+  "phase": 2
+}

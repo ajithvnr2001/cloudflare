@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/account/magic_bgp_logs/",
+  "file": "logs/logpush/logpush-job/datasets/account/magic_bgp_logs.md",
+  "title": "Magic BGP Logs \u00b7 Cloudflare Logs docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:12:12.511209+00:00",
+  "html_len": 119562,
+  "md_len": 2880,
+  "depth": 0
+}

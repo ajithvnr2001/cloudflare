@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-magic-cloud-networking/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-magic-cloud-networking.md",
+  "title": "Magic Cloud Networking simplifies security, connectivity, and management of public clouds | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:39:36.089698+00:00",
+  "html_len": 319368,
+  "md_len": 74355,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/explaining-cloudflares-abr-analytics/",
+  "file": "_subdomains/blog.cloudflare.com/explaining-cloudflares-abr-analytics.md",
+  "title": "Explaining Cloudflare's ABR Analytics | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:23:51.888412+00:00",
+  "html_len": 291644,
+  "md_len": 65564,
+  "depth": 1
+}

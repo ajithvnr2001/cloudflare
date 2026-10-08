@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/stop-the-bots-practical-lessons-in-machine-learning/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/stop-the-bots-practical-lessons-in-machine-learning.md",
+  "title": "\u963b\u6b62Bot\uff1a\u673a\u5668\u5b66\u4e60\u7684\u5b9e\u8df5\u7ecf\u9a8c | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:34.800003+00:00",
+  "html_len": 191743,
+  "md_len": 23707,
+  "depth": 0,
+  "phase": 2
+}

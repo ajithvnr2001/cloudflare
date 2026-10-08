@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-scheduled-deletion-for-cloudflare-stream/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-scheduled-deletion-for-cloudflare-stream.md",
+  "title": "Introducing scheduled deletion for Cloudflare Stream | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:16.574708+00:00",
+  "html_len": 286027,
+  "md_len": 59784,
+  "depth": 0,
+  "phase": 2
+}

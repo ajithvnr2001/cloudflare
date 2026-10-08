@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/platform/infrastructure-as-code/",
+  "file": "workers/platform/infrastructure-as-code.md",
+  "title": "Infrastructure as Code (IaC) \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:39.770380+00:00",
+  "html_len": 338773,
+  "md_len": 38012,
+  "depth": 0
+}

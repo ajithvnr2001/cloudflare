@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/tag/year-in-review/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/tag/year-in-review.md",
+  "title": "Entradas etiquetadas con \"Resumen del a\u00f1o\" \u2014 Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:15:18.309334+00:00",
+  "html_len": 112119,
+  "md_len": 2629,
+  "depth": 1,
+  "phase": 2
+}

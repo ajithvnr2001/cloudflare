@@ -1,0 +1,411 @@
+---
+url: https://developers.cloudflare.com/sandbox/guides/outbound-traffic/
+title: Handle outbound traffic (Sandbox SDK 0.x) \u00b7 Cloudflare Sandboxes docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:27:14.828205+00:00
+---
+
+# Handle outbound traffic (Sandbox SDK 0.x) · Cloudflare Sandboxes docs
+
+> Source: https://developers.cloudflare.com/sandbox/guides/outbound-traffic/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Sandboxes](https://developers.cloudflare.com/sandbox/)
+  3. /…
+
+[Sandbox SDK 0.x](https://developers.cloudflare.com/sandbox/sdk/)
+
+  4. /[How-to guides](https://developers.cloudflare.com/sandbox/sdk/guides/)
+  5. /Handle outbound traffic
+
+
+
+# Handle outbound traffic
+
+Last updated Sep 30, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/sandbox/guides/outbound-traffic/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewBlock outbound trafficBlock or allow traffic by hostDefine outbound handlersSecurely inject credentialsHTTPS trafficNon-HTTP trafficChange policies at runtimeHandler precedenceLocal developmentRelated resources
+
+Note
+
+This page documents Sandbox SDK 0.x for existing applications. For new applications, refer to [Call an authenticated API from a sandbox](https://developers.cloudflare.com/sandbox/network/call-an-authenticated-api/). To move an existing application to `@cloudflare/sandbox` 1.0, refer to [Migrate from Sandbox SDK 0.x](https://developers.cloudflare.com/sandbox/sdk/migrate/).
+
+Outbound handlers let you intercept and modify HTTP traffic from a sandbox with trusted code.
+
+Use them to:
+
+  * Allow or deny specific origin destinations
+  * Safely inject authorization headers or tokens
+  * Transparently reroute traffic
+  * Add custom policy on outbound traffic (such as denying specific HTTP requests)
+  * [Connect to Workers bindings](https://developers.cloudflare.com/sandbox/sdk/guides/workers-connections/) like KV, R2, and Durable Objects
+
+
+
+## Block outbound traffic
+
+Use `enableInternet = false` to block public internet access by default:
+    
+    
+    import { Sandbox } from "@cloudflare/sandbox";
+    
+    export class MySandbox extends Sandbox {
+    	enableInternet = false;
+    }
+    
+    
+    import { Sandbox } from "@cloudflare/sandbox";
+    
+    export class MySandbox extends Sandbox {
+    	enableInternet = false;
+    }
+
+When `enableInternet` is `false`, only traffic you explicitly allow later on this page through `allowedHosts` or outbound handlers can leave the sandbox. Only ports `80`, `443`, and DNS are available, and DNS queries use Cloudflare's DNS servers.
+
+Note
+
+`enableInternet` takes effect when the sandbox starts. Changes to `outbound` handlers and related outbound policies can affect a live-running sandbox without restarting it.
+
+## Block or allow traffic by host
+
+You can filter outbound traffic with the `allowedHosts` and `deniedHosts` properties on the Sandbox class.
+
+Note
+
+Export `ContainerProxy` from your Worker entrypoint for outbound interception to work.
+
+When `allowedHosts` is set, it becomes a deny-by-default allowlist. Any host or IP not in the list is denied, and only matching destinations can reach `outbound` or `outboundByHost` handlers.
+
+`allowedHosts` and `deniedHosts` also support simple glob patterns where `*` matches any sequence of characters.
+
+By default, a Sandbox allows internet access, and you can set `deniedHosts` to disallow specific hosts or IPs:
+    
+    
+    import { Sandbox, ContainerProxy } from "@cloudflare/sandbox";
+    export { ContainerProxy };
+    
+    export class MySandbox extends Sandbox {
+    	deniedHosts = ["some-nefarious-website.com", "141.101.64.0/18"];
+    }
+    
+    
+    import { Sandbox, ContainerProxy } from "@cloudflare/sandbox";
+    export { ContainerProxy };
+    
+    export class MySandbox extends Sandbox {
+    	deniedHosts = ["some-nefarious-website.com", "141.101.64.0/18"];
+    }
+
+You can also disable internet access by default, but allow specific hosts and IPs:
+    
+    
+    import { Sandbox, ContainerProxy } from "@cloudflare/sandbox";
+    export { ContainerProxy };
+    
+    export class MySandbox extends Sandbox {
+    	// default internet access to off unless overridden by 'allowedHosts' or outbound proxy
+    	enableInternet = false;
+    
+    	// overrides enableInternet = false
+    	allowedHosts = ["allowed.com"];
+    }
+    
+    
+    import { Sandbox, ContainerProxy } from "@cloudflare/sandbox";
+    export { ContainerProxy };
+    
+    export class MySandbox extends Sandbox {
+    	// default internet access to off unless overridden by 'allowedHosts' or outbound proxy
+    	enableInternet = false;
+    
+    	// overrides enableInternet = false
+    	allowedHosts = ["allowed.com"];
+    }
+
+## Define outbound handlers
+
+Outbound handlers are programmable egress proxies that run on the same machine as the sandbox. They have access to all Workers bindings.
+
+Use `outbound` to intercept all outbound HTTP and HTTPS traffic:
+    
+    
+    import { Sandbox, ContainerProxy } from "@cloudflare/sandbox";
+    export { ContainerProxy };
+    
+    export class MySandbox extends Sandbox {}
+    
+    MySandbox.outbound = async (request, env, ctx) => {
+    	if (request.method !== "GET") {
+    		console.log(`Blocked ${request.method} to ${request.url}`);
+    		return new Response("Method Not Allowed", { status: 405 });
+    	}
+    	return fetch(request);
+    };
+    
+    
+    import { Sandbox, ContainerProxy } from "@cloudflare/sandbox";
+    export { ContainerProxy };
+    
+    export class MySandbox extends Sandbox {}
+    
+    MySandbox.outbound = async (
+    	request: Request,
+    	env: Env,
+    	ctx: OutboundHandlerContext,
+    ) => {
+    	if (request.method !== "GET") {
+    		console.log(`Blocked ${request.method} to ${request.url}`);
+    		return new Response("Method Not Allowed", { status: 405 });
+    	}
+    	return fetch(request);
+    };
+
+Note
+
+HTTP requests to the outbound handler remain secure because they run on the same machine as the sandbox. You can upgrade requests to HTTPS from the Worker itself to prevent plain-text traffic from reaching the internet.
+
+Use `outboundByHost` to map specific domain names or IP addresses to handler functions:
+    
+    
+    import { Sandbox, ContainerProxy } from "@cloudflare/sandbox";
+    export { ContainerProxy };
+    
+    export class MySandbox extends Sandbox {}
+    
+    MySandbox.outboundByHost = {
+    	"my.worker": async (request, env, ctx) => {
+    		// Run arbitrary Workers logic from this hostname
+    		return await someWorkersFunction(request.body);
+    	},
+    };
+    
+    
+    import { Sandbox, ContainerProxy } from "@cloudflare/sandbox";
+    export { ContainerProxy };
+    
+    export class MySandbox extends Sandbox {}
+    
+    MySandbox.outboundByHost = {
+    	"my.worker": async (
+    		request: Request,
+    		env: Env,
+    		ctx: OutboundHandlerContext,
+    	) => {
+    		// Run arbitrary Workers logic from this hostname
+    		return await someWorkersFunction(request.body);
+    	},
+    };
+
+Calls to `http://my.worker` from the sandbox invoke the handler, which runs inside the Workers runtime, outside the sandbox.
+
+`deniedHosts` and `allowedHosts` are evaluated before any outbound handler. If you use `allowedHosts`, include the hostname there for either `outbound` or `outboundByHost` to run. `outboundByHost` handlers take precedence over catch-all `outbound` handlers.
+
+## Securely inject credentials
+
+Because outbound handlers run in the Workers runtime — outside the sandbox — they can hold secrets that the sandbox itself never sees. The sandbox makes a plain HTTP request, and the handler attaches the credential before forwarding it to the upstream service.
+    
+    
+    export class MySandbox extends Sandbox {}
+    
+    MySandbox.outboundByHost = {
+    	"github.com": (request, env, ctx) => {
+    		const requestWithAuth = new Request(request);
+    		requestWithAuth.headers.set("x-auth-token", env.SECRET);
+    		return fetch(requestWithAuth);
+    	},
+    };
+    
+    
+    export class MySandbox extends Sandbox {}
+    
+    MySandbox.outboundByHost = {
+    	"github.com": (request: Request, env: Env, ctx: OutboundHandlerContext) => {
+    		const requestWithAuth = new Request(request);
+    		requestWithAuth.headers.set("x-auth-token", env.SECRET);
+    		return fetch(requestWithAuth);
+    	},
+    };
+
+This is especially useful for agentic workloads where you cannot fully trust the code running inside the sandbox. With this pattern:
+
+  * **No token is exposed to the sandbox.** The secret lives in the Worker's environment and is never passed into the sandbox.
+  * **No token rotation inside the sandbox.** Rotate the secret in your Worker's environment and every request picks it up immediately.
+  * **Per-host and per-instance rules.** Combine `outboundByHost` with `ctx.containerId` to scope credentials or permissions to a specific sandbox instance.
+
+
+
+Here, `ctx.containerId` looks up a per-instance key from KV:
+    
+    
+    export class MySandbox extends Sandbox {}
+    
+    MySandbox.outboundByHost = {
+    	"my-internal-vcs.dev": async (request, env, ctx) => {
+    		const authKey = await env.KEYS.get(ctx.containerId);
+    
+    		const requestWithAuth = new Request(request);
+    		requestWithAuth.headers.set("x-auth-token", authKey);
+    		return fetch(requestWithAuth);
+    	},
+    };
+    
+    
+    export class MySandbox extends Sandbox {}
+    
+    MySandbox.outboundByHost = {
+    	"my-internal-vcs.dev": async (
+    		request: Request,
+    		env: Env,
+    		ctx: OutboundHandlerContext,
+    	) => {
+    		const authKey = await env.KEYS.get(ctx.containerId);
+    
+    		const requestWithAuth = new Request(request);
+    		requestWithAuth.headers.set("x-auth-token", authKey);
+    		return fetch(requestWithAuth);
+    	},
+    };
+
+## HTTPS traffic
+
+Sandboxes intercept HTTPS traffic only when your class sets `interceptHttps` to `true`. It defaults to `false`, and then `allowedHosts`, `deniedHosts`, and outbound handlers apply to HTTP only. HTTPS requests reach every host while `enableInternet` is `true`, and fail while it is `false`.
+    
+    
+    import { Sandbox, ContainerProxy } from "@cloudflare/sandbox";
+    export { ContainerProxy };
+    
+    export class MySandbox extends Sandbox {
+    	interceptHttps = true;
+    	deniedHosts = ["some-nefarious-website.com"];
+    }
+    
+    
+    import { Sandbox, ContainerProxy } from "@cloudflare/sandbox";
+    export { ContainerProxy };
+    
+    export class MySandbox extends Sandbox {
+    	interceptHttps = true;
+    	deniedHosts = ["some-nefarious-website.com"];
+    }
+
+When HTTPS interception is active, an ephemeral CA file is created at `/etc/cloudflare/certs/cloudflare-containers-ca.crt` once the sandbox starts.
+
+The Sandbox runtime makes a best effort to trust this CA automatically regardless of distro. On startup, it checks common system CA bundle locations across major Linux families and configures common CA environment variables so runtimes like Node.js, `curl`, Python `requests`, and Git trust the certificate automatically.
+
+Note
+
+HTTP communication to the outbound handler is encrypted by the networking stack. For traffic that stays within the Cloudflare Developer Platform, plain HTTP is secure.
+
+## Non-HTTP traffic
+
+Outbound handlers only intercept HTTP and HTTPS traffic. Traffic on ports other than `80` and `443` is never routed through `outbound` or `outboundByHost`.
+
+If you set `enableInternet = false`, that traffic is denied. DNS queries are the one exception, but they only go to Cloudflare's DNS servers. That prevents using arbitrary DNS destinations for data exfiltration.
+
+## Change policies at runtime
+
+Use `outboundHandlers` to define named handlers, then assign them to specific hosts at runtime using `setOutboundByHost()`. You can also apply a handler globally with `setOutboundHandler()`.
+
+You can also manage runtime policy with `setOutboundByHosts()`, `setAllowedHosts()`, `setDeniedHosts()`, `allowHost()`, `denyHost()`, `removeAllowedHost()`, and `removeDeniedHost()`.
+
+This lets a trusted Worker hold credentials without exposing them to an untrusted sandbox:
+    
+    
+    import { Sandbox, ContainerProxy } from "@cloudflare/sandbox";
+    export { ContainerProxy };
+    
+    export class MySandbox extends Sandbox {}
+    
+    MySandbox.outboundHandlers = {
+    	authenticatedGithub: async (request, env, ctx) => {
+    		const githubToken = env.GITHUB_TOKEN;
+    		return authenticateGitHttpsRequest(request, githubToken, ctx.containerId);
+    	},
+    };
+    
+    
+    import { Sandbox, ContainerProxy } from "@cloudflare/sandbox";
+    export { ContainerProxy };
+    
+    export class MySandbox extends Sandbox {}
+    
+    MySandbox.outboundHandlers = {
+    	authenticatedGithub: async (
+    		request: Request,
+    		env: Env,
+    		ctx: OutboundHandlerContext,
+    	) => {
+    		const githubToken = env.GITHUB_TOKEN;
+    		return authenticateGitHttpsRequest(request, githubToken, ctx.containerId);
+    	},
+    };
+
+Apply handlers to hosts programmatically from your Worker:
+    
+    
+    import { Sandbox, ContainerProxy, getSandbox } from "@cloudflare/sandbox";
+    export { ContainerProxy };
+    
+    export default {
+    	async fetch(request, env) {
+    		const sandbox = getSandbox(env.Sandbox, "agent-session");
+    
+    		// Give the sandbox access to github.com during setup
+    		await sandbox.setOutboundByHost("github.com", "authenticatedGithub");
+    		await sandbox.exec("node setup.js");
+    
+    		// Remove access once setup is complete
+    		await sandbox.removeOutboundByHost("github.com");
+    	},
+    };
+    
+    
+    import { Sandbox, ContainerProxy, getSandbox } from "@cloudflare/sandbox";
+    export { ContainerProxy };
+    
+    export default {
+    	async fetch(request: Request, env: Env) {
+    		const sandbox = getSandbox(env.Sandbox, "agent-session");
+    
+    		// Give the sandbox access to github.com during setup
+    		await sandbox.setOutboundByHost("github.com", "authenticatedGithub");
+    		await sandbox.exec("node setup.js");
+    
+    		// Remove access once setup is complete
+    		await sandbox.removeOutboundByHost("github.com");
+    	},
+    };
+
+## Handler precedence
+
+Requests are evaluated in this order:
+
+  1. `deniedHosts` is checked first. Matching hosts or IPs are denied immediately.
+  2. `allowedHosts` is checked next. When it is set, any host or IP not in the list is denied. Matching hosts continue to outbound handlers, or egress to the public internet if no handler is set.
+  3. Instance-level rules set with `setOutboundByHost()` are checked before class-level `outboundByHost` rules.
+  4. Per-host handlers always take precedence over catch-all handlers, so `outboundByHost` runs before `outbound`.
+  5. Instance-level handlers set with `setOutboundHandler()` are checked before the class-level `outbound` handler.
+  6. If no handler matches, the request can still egress to the public internet when it matched `allowedHosts` or `enableInternet = true`. Otherwise, it is denied.
+
+
+
+## Local development
+
+`wrangler dev` supports outbound interception. A sidecar process is spawned inside the sandbox's network namespace. It applies `TPROXY` rules to route matching traffic to the local Workerd instance, mirroring production behavior.
+
+## Related resources
+
+  * [Connect to Workers bindings](https://developers.cloudflare.com/sandbox/sdk/guides/workers-connections/) — Access KV, R2, Durable Objects, and other bindings from a sandbox
+  * [Handle outbound traffic (Containers)](https://developers.cloudflare.com/containers/configuration/outbound-traffic/) — Container SDK API for outbound handlers
+  * [Sandbox options](https://developers.cloudflare.com/sandbox/sdk/configuration/sandbox-options/) — Configure sandbox behavior
+  * [Environment variables](https://developers.cloudflare.com/sandbox/sdk/configuration/environment-variables/) — Configure secrets and environment variables
+
+
+
+[PreviousBackup and restore](https://developers.cloudflare.com/sandbox/sdk/guides/backup-restore/)[NextConnect to Workers bindings](https://developers.cloudflare.com/sandbox/sdk/guides/workers-connections/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/sandbox/sdk/guides/outbound-traffic.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

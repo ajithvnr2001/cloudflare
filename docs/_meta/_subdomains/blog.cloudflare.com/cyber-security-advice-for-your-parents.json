@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cyber-security-advice-for-your-parents/",
+  "file": "_subdomains/blog.cloudflare.com/cyber-security-advice-for-your-parents.md",
+  "title": "Simple Cyber Security Tips (for your Parents) | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:50.436748+00:00",
+  "html_len": 283044,
+  "md_len": 63559,
+  "depth": 0,
+  "phase": 2
+}

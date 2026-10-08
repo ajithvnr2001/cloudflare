@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/http-3-vs-http-2/",
+  "file": "_subdomains/blog.cloudflare.com/http-3-vs-http-2.md",
+  "title": "Comparing HTTP/3 vs. HTTP/2 Performance | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:16.310460+00:00",
+  "html_len": 292316,
+  "md_len": 65467,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/waf-for-saas/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/waf-for-saas.md",
+  "title": "SaaS \u63d0\u4f9b\u5546\u7684\u5b89\u5168\u6027 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:45.971852+00:00",
+  "html_len": 198864,
+  "md_len": 24381,
+  "depth": 0,
+  "phase": 2
+}

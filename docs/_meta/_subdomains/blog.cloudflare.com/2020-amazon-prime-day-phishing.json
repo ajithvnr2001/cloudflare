@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/2020-amazon-prime-day-phishing/",
+  "file": "_subdomains/blog.cloudflare.com/2020-amazon-prime-day-phishing.md",
+  "title": "Spike in Amazon phishing for Prime Day: a new day of deals means new phishing campaigns | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:53.802099+00:00",
+  "html_len": 300661,
+  "md_len": 70354,
+  "depth": 0,
+  "phase": 2
+}

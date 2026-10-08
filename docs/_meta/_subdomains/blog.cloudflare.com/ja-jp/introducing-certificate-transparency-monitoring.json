@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/introducing-certificate-transparency-monitoring/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/introducing-certificate-transparency-monitoring.md",
+  "title": "Certificate Transparency Monitoring\uff08\u8a3c\u660e\u66f8\u306e\u900f\u660e\u6027\u76e3\u8996\uff09\u306e\u5c0e\u5165 | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:00.322705+00:00",
+  "html_len": 229590,
+  "md_len": 34517,
+  "depth": 0,
+  "phase": 2
+}

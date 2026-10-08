@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/framework-guides/mobile-apps/",
+  "file": "workers/framework-guides/mobile-apps.md",
+  "title": "Mobile applications \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:27.015381+00:00",
+  "html_len": 175163,
+  "md_len": 966,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/waf-ml/",
+  "file": "_subdomains/blog.cloudflare.com/waf-ml.md",
+  "title": "Improving the WAF with Machine Learning | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:47.313862+00:00",
+  "html_len": 287954,
+  "md_len": 62166,
+  "depth": 0,
+  "phase": 2
+}

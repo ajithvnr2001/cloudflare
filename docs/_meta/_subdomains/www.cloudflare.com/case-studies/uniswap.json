@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/uniswap/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/uniswap.md",
+  "title": "Uniswap | Cloudflare Video",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:53.614735+00:00",
+  "html_len": 199223,
+  "md_len": 4581,
+  "depth": 0,
+  "phase": 2
+}

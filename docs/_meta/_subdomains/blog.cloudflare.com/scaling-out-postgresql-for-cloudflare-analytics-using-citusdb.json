@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/scaling-out-postgresql-for-cloudflare-analytics-using-citusdb/",
+  "file": "_subdomains/blog.cloudflare.com/scaling-out-postgresql-for-cloudflare-analytics-using-citusdb.md",
+  "title": "Scaling out PostgreSQL for CloudFlare Analytics using CitusDB | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:06.237030+00:00",
+  "html_len": 289244,
+  "md_len": 69205,
+  "depth": 0,
+  "phase": 2
+}

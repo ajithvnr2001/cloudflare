@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/internet-privacy/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/internet-privacy.md",
+  "title": "La notion de confidentialit\u00e9 doit \u00eatre int\u00e9gr\u00e9e \u00e0 Internet | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:51.993681+00:00",
+  "html_len": 211107,
+  "md_len": 33874,
+  "depth": 0,
+  "phase": 2
+}

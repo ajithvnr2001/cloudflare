@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/new-ssl-vulnerabilities-cloudflare-users-prot/",
+  "file": "_subdomains/blog.cloudflare.com/new-ssl-vulnerabilities-cloudflare-users-prot.md",
+  "title": "New \"Lucky Thirteen\" SSL Vulnerabilities: CloudFlare Users Protected | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:41.409713+00:00",
+  "html_len": 270433,
+  "md_len": 56093,
+  "depth": 0,
+  "phase": 2
+}

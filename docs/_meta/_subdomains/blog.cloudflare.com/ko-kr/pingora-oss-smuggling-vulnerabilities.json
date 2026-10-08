@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/pingora-oss-smuggling-vulnerabilities/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/pingora-oss-smuggling-vulnerabilities.md",
+  "title": "Pingora OSS \ubc30\ud3ec \uc2dc \uc694\uccad \ubc00\uc218 \ucde8\uc57d\uc131 \uc218\uc815 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:43.638730+00:00",
+  "html_len": 227045,
+  "md_len": 37623,
+  "depth": 0,
+  "phase": 2
+}

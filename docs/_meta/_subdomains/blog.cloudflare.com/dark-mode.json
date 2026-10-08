@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/dark-mode/",
+  "file": "_subdomains/blog.cloudflare.com/dark-mode.md",
+  "title": "Dark Mode for the Cloudflare Dashboard | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:03.804055+00:00",
+  "html_len": 317481,
+  "md_len": 71591,
+  "depth": 0,
+  "phase": 2
+}

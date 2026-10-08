@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/examples/fetch-html/",
+  "file": "workers/examples/fetch-html.md",
+  "title": "Fetch HTML \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:22.675894+00:00",
+  "html_len": 183766,
+  "md_len": 2443,
+  "depth": 0
+}

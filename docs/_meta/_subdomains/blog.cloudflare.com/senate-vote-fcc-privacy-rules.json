@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/senate-vote-fcc-privacy-rules/",
+  "file": "_subdomains/blog.cloudflare.com/senate-vote-fcc-privacy-rules.md",
+  "title": "Our Response to the Senate Vote on FCC Privacy Rules | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:19.200915+00:00",
+  "html_len": 262506,
+  "md_len": 54090,
+  "depth": 0,
+  "phase": 2
+}

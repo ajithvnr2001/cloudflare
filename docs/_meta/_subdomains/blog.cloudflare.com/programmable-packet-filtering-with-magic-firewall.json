@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/programmable-packet-filtering-with-magic-firewall/",
+  "file": "_subdomains/blog.cloudflare.com/programmable-packet-filtering-with-magic-firewall.md",
+  "title": "How We Used eBPF to Build Programmable Packet Filtering in Magic Firewall | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:16.309558+00:00",
+  "html_len": 304627,
+  "md_len": 65387,
+  "depth": 0,
+  "phase": 2
+}

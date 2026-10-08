@@ -1,0 +1,10 @@
+{
+  "url": "https://speed.cloudflare.com/",
+  "file": "_subdomains/speed.cloudflare.com/_index.md",
+  "title": "Internet Speed Test - Measure Network Performance | Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:27:45.168603+00:00",
+  "html_len": 77100,
+  "md_len": 1740,
+  "depth": 1
+}

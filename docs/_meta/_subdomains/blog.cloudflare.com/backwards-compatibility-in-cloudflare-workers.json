@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/backwards-compatibility-in-cloudflare-workers/",
+  "file": "_subdomains/blog.cloudflare.com/backwards-compatibility-in-cloudflare-workers.md",
+  "title": "Backwards-compatibility in\nCloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:55.572854+00:00",
+  "html_len": 279210,
+  "md_len": 61753,
+  "depth": 0,
+  "phase": 2
+}

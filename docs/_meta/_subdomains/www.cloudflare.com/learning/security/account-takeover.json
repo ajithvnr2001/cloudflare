@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/security/account-takeover/",
+  "file": "_subdomains/www.cloudflare.com/learning/security/account-takeover.md",
+  "title": "What is account takeover?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:57.971501+00:00",
+  "html_len": 246176,
+  "md_len": 26311,
+  "depth": 0,
+  "phase": 2
+}

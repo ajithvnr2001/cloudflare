@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/single-rx-queue-kernel-bypass-with-netmap/",
+  "file": "_subdomains/blog.cloudflare.com/single-rx-queue-kernel-bypass-with-netmap.md",
+  "title": "Single RX queue kernel bypass in Netmap for high packet rate networking | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:43.824308+00:00",
+  "html_len": 295817,
+  "md_len": 62886,
+  "depth": 0,
+  "phase": 2
+}

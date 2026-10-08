@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/route-leak-incident-january-22-2026/",
+  "file": "_subdomains/blog.cloudflare.com/route-leak-incident-january-22-2026.md",
+  "title": "Route leak incident on January 22, 2026 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:30.869194+00:00",
+  "html_len": 344304,
+  "md_len": 69075,
+  "depth": 0,
+  "phase": 2
+}

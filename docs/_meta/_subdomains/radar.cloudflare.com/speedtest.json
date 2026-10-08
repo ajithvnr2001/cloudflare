@@ -1,0 +1,10 @@
+{
+  "url": "https://radar.cloudflare.com/speedtest/",
+  "file": "_subdomains/radar.cloudflare.com/speedtest.md",
+  "title": "Network Quality Test | Cloudflare Radar",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:27:44.928263+00:00",
+  "html_len": 181017,
+  "md_len": 1906,
+  "depth": 1
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/moving-k8s-communication-to-grpc/",
+  "file": "_subdomains/blog.cloudflare.com/moving-k8s-communication-to-grpc.md",
+  "title": "Moving k8s communication to gRPC | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:33.287958+00:00",
+  "html_len": 314121,
+  "md_len": 69503,
+  "depth": 0,
+  "phase": 2
+}

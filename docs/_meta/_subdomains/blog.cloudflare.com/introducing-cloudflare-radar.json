@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-cloudflare-radar/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-cloudflare-radar.md",
+  "title": "Introducing Cloudflare Radar | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:39.214699+00:00",
+  "html_len": 308797,
+  "md_len": 66669,
+  "depth": 0,
+  "phase": 2
+}

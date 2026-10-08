@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/casb-anthropic-integration/",
+  "file": "_subdomains/blog.cloudflare.com/casb-anthropic-integration.md",
+  "title": "Announcing Claude Compliance API support with Cloudflare CASB | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:06.970769+00:00",
+  "html_len": 283653,
+  "md_len": 63119,
+  "depth": 0,
+  "phase": 2
+}

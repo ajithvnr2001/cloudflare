@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/inline-dlp-ga/",
+  "file": "_subdomains/blog.cloudflare.com/inline-dlp-ga.md",
+  "title": "Cloudflare Data Loss Prevention now Generally Available | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:27.301064+00:00",
+  "html_len": 292655,
+  "md_len": 62929,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/introducing-the-wintercg/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/introducing-the-wintercg.md",
+  "title": "Un grupo comunitario para tiempos de ejecuci\u00f3n de JavaScript interoperables en la web | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:42.146763+00:00",
+  "html_len": 224181,
+  "md_len": 38830,
+  "depth": 0,
+  "phase": 2
+}

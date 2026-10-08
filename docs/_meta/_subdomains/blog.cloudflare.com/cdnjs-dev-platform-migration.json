@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cdnjs-dev-platform-migration/",
+  "file": "_subdomains/blog.cloudflare.com/cdnjs-dev-platform-migration.md",
+  "title": "Dogfooding at scale: migrating cdnjs to Cloudflare\u2019s Developer Platform | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:29.115819+00:00",
+  "html_len": 297043,
+  "md_len": 70924,
+  "depth": 0,
+  "phase": 2
+}

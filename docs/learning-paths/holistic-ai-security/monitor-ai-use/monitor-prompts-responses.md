@@ -1,0 +1,43 @@
+---
+url: https://developers.cloudflare.com/learning-paths/holistic-ai-security/monitor-ai-use/monitor-prompts-responses/
+title: Monitor prompts and responses \u00b7 Cloudflare Learning Paths
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:11:49.324148+00:00
+---
+
+# Monitor prompts and responses · Cloudflare Learning Paths
+
+> Source: https://developers.cloudflare.com/learning-paths/holistic-ai-security/monitor-ai-use/monitor-prompts-responses/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Learning Paths](https://developers.cloudflare.com/learning-paths/)
+  3. /…
+
+Holistic Ai Security
+
+  4. /[Monitor AI usage at your organization](https://developers.cloudflare.com/learning-paths/holistic-ai-security/monitor-ai-use/)
+  5. /Monitor prompts and responses
+
+
+
+# Monitor prompts and responses
+
+Last updated Apr 23, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/learning-paths/holistic-ai-security/monitor-ai-use/monitor-prompts-responses/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+When you enable [TLS decryption](https://developers.cloudflare.com/cloudflare-one/traffic-policies/http-policies/tls-decryption/#turn-on-tls-decryption), you can review the prompts and responses for supported AI applications. This allows you to understand three key things about AI application usage:
+
+  * The sanctioned and unsanctioned AI tools your users are engaging with.
+  * How they are interacting with them.
+  * What information they are sharing.
+
+![Log entry for a prompt detected using AI prompt protection.](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=512,height=395,format=webp/_astro/gateway-prompt-log.CZ61RAFw.png)
+
+You can use this in conjunction with [DLP profiles](https://developers.cloudflare.com/cloudflare-one/data-loss-prevention/dlp-profiles/) to detect sensitive data potentially being used in prompts, with or without explicitly blocking the action. You can use DLP to log AI prompt topics by turning on [Capture generative AI prompt content in logs](https://developers.cloudflare.com/cloudflare-one/data-loss-prevention/dlp-policies/logging-options/#turn-on-ai-prompt-content-logging-for-a-dlp-policy) for the policy.
+
+[PreviousReview out-of-band AI use](https://developers.cloudflare.com/learning-paths/holistic-ai-security/monitor-ai-use/review-out-of-band-ai/)[NextOverview](https://developers.cloudflare.com/learning-paths/holistic-ai-security/build-security-policies/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/learning-paths/holistic-ai-security/monitor-ai-use/monitor-prompts-responses.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

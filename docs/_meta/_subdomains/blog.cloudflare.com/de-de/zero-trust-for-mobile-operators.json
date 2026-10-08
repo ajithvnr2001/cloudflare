@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/zero-trust-for-mobile-operators/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/zero-trust-for-mobile-operators.md",
+  "title": "Zero Trust f\u00fcr Mobilfunknetzbetreiber | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:40.461871+00:00",
+  "html_len": 216152,
+  "md_len": 34434,
+  "depth": 0,
+  "phase": 2
+}

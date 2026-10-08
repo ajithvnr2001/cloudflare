@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/making-phishing-defense-seamless-cloudflare-yubico/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/making-phishing-defense-seamless-cloudflare-yubico.md",
+  "title": "Cloudflare Zero Trust\u3068Yubico\u3067\u30b7\u30fc\u30e0\u30ec\u30b9\u306a\u30d5\u30a3\u30c3\u30b7\u30f3\u30b0\u5bfe\u7b56\u3092\u5b9f\u73fe\u3059\u308b\uff08\u30cf\u30fc\u30c9\u30a6\u30a7\u30a2\uff09\u30ad\u30fc | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:21.397318+00:00",
+  "html_len": 206840,
+  "md_len": 31348,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/introducing-the-cold-start/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/introducing-the-cold-start.md",
+  "title": "The Cold Start | Presenta tu startup en directo en Cloudflare Connect | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:18.400844+00:00",
+  "html_len": 207042,
+  "md_len": 29684,
+  "depth": 0,
+  "phase": 2
+}

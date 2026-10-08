@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/service-bindings-ga/",
+  "file": "_subdomains/blog.cloudflare.com/service-bindings-ga.md",
+  "title": "Service Bindings are generally available, with efficient pricing | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:27.496152+00:00",
+  "html_len": 300868,
+  "md_len": 64679,
+  "depth": 0,
+  "phase": 2
+}

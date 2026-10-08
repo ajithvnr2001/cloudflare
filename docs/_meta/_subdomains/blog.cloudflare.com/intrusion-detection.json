@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/intrusion-detection/",
+  "file": "_subdomains/blog.cloudflare.com/intrusion-detection.md",
+  "title": "Next generation intrusion detection: an update on Cloudflare\u2019s IDS capabilities | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:18.313940+00:00",
+  "html_len": 277412,
+  "md_len": 61171,
+  "depth": 0,
+  "phase": 2
+}

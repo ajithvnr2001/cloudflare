@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/prepends-considered-harmful/",
+  "file": "_subdomains/blog.cloudflare.com/prepends-considered-harmful.md",
+  "title": "Why BGP communities are better than AS-path prepends | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:15.980475+00:00",
+  "html_len": 325713,
+  "md_len": 75299,
+  "depth": 0,
+  "phase": 2
+}

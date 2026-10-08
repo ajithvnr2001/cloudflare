@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/cache-purge/",
+  "file": "_subdomains/blog.cloudflare.com/tag/cache-purge.md",
+  "title": "Posts tagged \"Cache Purge\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:08:25.321531+00:00",
+  "html_len": 109595,
+  "md_len": 1315,
+  "depth": 1,
+  "phase": 2
+}

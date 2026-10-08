@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/snippets/examples/override-set-cookies-value/",
+  "file": "rules/snippets/examples/override-set-cookies-value.md",
+  "title": "Override a Set-Cookie header with a certain value \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:53.406444+00:00",
+  "html_len": 131295,
+  "md_len": 2217,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/quic-death-spiral-fix/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/quic-death-spiral-fix.md",
+  "title": "\u300cidle\u300d\u304c\u30a2\u30a4\u30c9\u30eb\u3067\u306f\u306a\u3044\u5834\u5408\uff1aLinux\u30ab\u30fc\u30cd\u30eb\u306e\u6700\u9069\u5316\u304cQUIC\u30d0\u30b0\u306b\u306a\u3063\u305f\u7d4c\u7def | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:37.913345+00:00",
+  "html_len": 243111,
+  "md_len": 40025,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/creative-foot-shooting-with-go-rwmutex/",
+  "file": "_subdomains/blog.cloudflare.com/creative-foot-shooting-with-go-rwmutex.md",
+  "title": "Creative foot-shooting with Go RWMutex | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:44.041664+00:00",
+  "html_len": 278305,
+  "md_len": 56533,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/this-is-brotli-from-origin/",
+  "file": "_subdomains/blog.cloudflare.com/this-is-brotli-from-origin.md",
+  "title": "All the way up to 11: Serve Brotli from origin and Introducing Compression Rules | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:34.396722+00:00",
+  "html_len": 316029,
+  "md_len": 70580,
+  "depth": 0,
+  "phase": 2
+}

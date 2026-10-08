@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/know-your-scm_rights/",
+  "file": "_subdomains/blog.cloudflare.com/know-your-scm_rights.md",
+  "title": "Know your SCM_RIGHTS | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:24.221644+00:00",
+  "html_len": 335620,
+  "md_len": 66322,
+  "depth": 0,
+  "phase": 2
+}

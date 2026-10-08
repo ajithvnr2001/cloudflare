@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/local-tracing/",
+  "file": "_subdomains/blog.cloudflare.com/local-tracing.md",
+  "title": "Your agent can now debug Workers with local tracing | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:35.022563+00:00",
+  "html_len": 295331,
+  "md_len": 62341,
+  "depth": 0,
+  "phase": 2
+}

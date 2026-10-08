@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/forrester/",
+  "file": "_subdomains/blog.cloudflare.com/tag/forrester.md",
+  "title": "Posts tagged \"Forrester\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:09:00.904926+00:00",
+  "html_len": 120378,
+  "md_len": 3966,
+  "depth": 1,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/cloud/what-is-vendor-lock-in/",
+  "file": "_subdomains/www.cloudflare.com/learning/cloud/what-is-vendor-lock-in.md",
+  "title": "What Is Vendor Lock-In? | Vendor Lock-In and Cloud Computing",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:05:16.899499+00:00",
+  "html_len": 214134,
+  "md_len": 13688,
+  "depth": 0,
+  "phase": 2
+}

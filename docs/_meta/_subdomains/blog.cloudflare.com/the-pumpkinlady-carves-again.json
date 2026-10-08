@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-pumpkinlady-carves-again/",
+  "file": "_subdomains/blog.cloudflare.com/the-pumpkinlady-carves-again.md",
+  "title": "The Pumpkin Lady Carves Again | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:48.467311+00:00",
+  "html_len": 266070,
+  "md_len": 56804,
+  "depth": 0,
+  "phase": 2
+}

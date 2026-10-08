@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/using-go-as-a-scripting-language-in-linux/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/using-go-as-a-scripting-language-in-linux.md",
+  "title": "Uso de Go como lenguaje de scripting en Linux | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:20.440682+00:00",
+  "html_len": 222170,
+  "md_len": 33911,
+  "depth": 0,
+  "phase": 2
+}

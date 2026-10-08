@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/containers/faq/",
+  "file": "containers/faq.md",
+  "title": "Frequently Asked Questions \u00b7 Cloudflare Containers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:10:35.266050+00:00",
+  "html_len": 138100,
+  "md_len": 12143,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/serverlist-21st-edition/",
+  "file": "_subdomains/blog.cloudflare.com/serverlist-21st-edition.md",
+  "title": "The Serverlist: Serverless Wasm AI, Building Automatic Platform Optimizations, and more! | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:06.855918+00:00",
+  "html_len": 264958,
+  "md_len": 53596,
+  "depth": 0,
+  "phase": 2
+}

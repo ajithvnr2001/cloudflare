@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/application-profiles/",
+  "file": "_subdomains/blog.cloudflare.com/application-profiles.md",
+  "title": "Enforce positive security with Cloudflare Application Profiles | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:30.389168+00:00",
+  "html_len": 311519,
+  "md_len": 73707,
+  "depth": 0,
+  "phase": 2
+}

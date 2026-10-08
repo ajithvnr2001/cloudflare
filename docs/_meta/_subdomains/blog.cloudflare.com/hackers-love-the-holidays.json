@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/hackers-love-the-holidays/",
+  "file": "_subdomains/blog.cloudflare.com/hackers-love-the-holidays.md",
+  "title": "Hackers love the holidays | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:43.162189+00:00",
+  "html_len": 270433,
+  "md_len": 55600,
+  "depth": 0,
+  "phase": 2
+}

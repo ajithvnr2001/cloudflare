@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/2000-page-views-per-second/",
+  "file": "_subdomains/blog.cloudflare.com/2000-page-views-per-second.md",
+  "title": "2,000 Page Views Per Second | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:24.637559+00:00",
+  "html_len": 265174,
+  "md_len": 53887,
+  "depth": 0,
+  "phase": 2
+}

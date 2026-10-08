@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/ai-platform/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/ai-platform.md",
+  "title": "Cloudflare AI \u5e73\u53f0\uff1a\u4e13\u4e3a\u667a\u80fd\u4f53\u8bbe\u8ba1\u7684\u63a8\u7406\u5c42 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:42.642595+00:00",
+  "html_len": 211938,
+  "md_len": 27295,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/good-and-bad-agentic-behaviors/",
+  "file": "_subdomains/blog.cloudflare.com/good-and-bad-agentic-behaviors.md",
+  "title": "Unveiling good and bad behaviors on the Agentic Internet | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:59.350968+00:00",
+  "html_len": 303278,
+  "md_len": 70387,
+  "depth": 0,
+  "phase": 2
+}

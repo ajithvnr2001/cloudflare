@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/images/platform/",
+  "file": "images/platform.md",
+  "title": "Platform \u00b7 Cloudflare Images docs",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (724 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T07:11:43.223703+00:00",
+  "html_len": 144596,
+  "md_len": 782,
+  "depth": 0
+}

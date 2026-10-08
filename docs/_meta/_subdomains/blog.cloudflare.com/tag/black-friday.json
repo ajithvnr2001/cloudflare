@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/black-friday/",
+  "file": "_subdomains/blog.cloudflare.com/tag/black-friday.md",
+  "title": "Posts tagged \"Black Friday\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:08:22.698772+00:00",
+  "html_len": 108136,
+  "md_len": 1074,
+  "depth": 1,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/cloud-cni/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/cloud-cni.md",
+  "title": "La solution Cloud CNI connecte vos clouds de mani\u00e8re priv\u00e9e \u00e0 Cloudflare | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:02.870527+00:00",
+  "html_len": 233782,
+  "md_len": 40239,
+  "depth": 0,
+  "phase": 2
+}

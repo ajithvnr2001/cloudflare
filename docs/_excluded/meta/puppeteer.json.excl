@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/platform/puppeteer/",
+  "file": "platform/puppeteer.md",
+  "title": "404 - Page Not Found | Cloudflare Docs",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling status 404)",
+  "fetched_at": "2026-10-08T07:25:49.227967+00:00",
+  "html_len": 84944,
+  "md_len": 325,
+  "depth": 1
+}

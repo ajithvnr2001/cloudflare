@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/spectrum-for-udp-ddos-protection-and-firewalling-for-unreliable-protocols/",
+  "file": "_subdomains/blog.cloudflare.com/spectrum-for-udp-ddos-protection-and-firewalling-for-unreliable-protocols.md",
+  "title": "Spectrum for UDP: DDoS protection and firewalling for unreliable protocols | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:51.841057+00:00",
+  "html_len": 283276,
+  "md_len": 59858,
+  "depth": 0,
+  "phase": 2
+}

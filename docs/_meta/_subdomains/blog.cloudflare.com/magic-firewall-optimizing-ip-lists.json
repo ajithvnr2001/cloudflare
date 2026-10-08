@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/magic-firewall-optimizing-ip-lists/",
+  "file": "_subdomains/blog.cloudflare.com/magic-firewall-optimizing-ip-lists.md",
+  "title": "Optimizing Magic Firewall\u2019s IP lists | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:32.776514+00:00",
+  "html_len": 308757,
+  "md_len": 66867,
+  "depth": 0,
+  "phase": 2
+}

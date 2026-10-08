@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/announcing-database-integrations/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/announcing-database-integrations.md",
+  "title": "Annonce de Database Integrations\u00a0: \u00e9tablissez une connexion \u00e0 Neon, PlanetScale et Supabase sur Workers en quelques clics | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:40.107631+00:00",
+  "html_len": 225666,
+  "md_len": 33616,
+  "depth": 0,
+  "phase": 2
+}

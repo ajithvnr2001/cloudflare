@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/tag/wasm/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/tag/wasm.md",
+  "title": "\u6807\u7b7e\u4e3a\"WASM\"\u7684\u6587\u7ae0 \u2014 Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:11:39.367815+00:00",
+  "html_len": 102277,
+  "md_len": 1243,
+  "depth": 1,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/during-the-facebook-outage/",
+  "file": "_subdomains/blog.cloudflare.com/during-the-facebook-outage.md",
+  "title": "What happened on the Internet during the Facebook outage | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:00.021832+00:00",
+  "html_len": 331979,
+  "md_len": 72550,
+  "depth": 0,
+  "phase": 2
+}

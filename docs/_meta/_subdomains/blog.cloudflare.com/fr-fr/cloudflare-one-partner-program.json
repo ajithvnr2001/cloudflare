@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/cloudflare-one-partner-program/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/cloudflare-one-partner-program.md",
+  "title": "Annonce du programme de partenariat Cloudflare One | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:13.989493+00:00",
+  "html_len": 233052,
+  "md_len": 44168,
+  "depth": 0,
+  "phase": 2
+}

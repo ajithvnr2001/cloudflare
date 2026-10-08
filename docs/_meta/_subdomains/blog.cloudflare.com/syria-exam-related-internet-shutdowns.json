@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/syria-exam-related-internet-shutdowns/",
+  "file": "_subdomains/blog.cloudflare.com/syria-exam-related-internet-shutdowns.md",
+  "title": "Syria\u2019s exam-related Internet shutdowns | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:24.697056+00:00",
+  "html_len": 269985,
+  "md_len": 54769,
+  "depth": 0,
+  "phase": 2
+}

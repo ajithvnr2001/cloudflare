@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/examples/cron-trigger/",
+  "file": "workers/examples/cron-trigger.md",
+  "title": "Setting Cron Triggers \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:22.010661+00:00",
+  "html_len": 194630,
+  "md_len": 4037,
+  "depth": 0
+}

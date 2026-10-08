@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/azul-certificate-transparency-log/",
+  "file": "_subdomains/blog.cloudflare.com/azul-certificate-transparency-log.md",
+  "title": "A next-generation Certificate Transparency log built on Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:14.367821+00:00",
+  "html_len": 322223,
+  "md_len": 88540,
+  "depth": 0,
+  "phase": 2
+}

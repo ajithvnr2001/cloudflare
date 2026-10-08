@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/2026-world-cup-internet-traffic/",
+  "file": "_subdomains/blog.cloudflare.com/2026-world-cup-internet-traffic.md",
+  "title": "How the 2026 World Cup affected Internet traffic | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:32.151876+00:00",
+  "html_len": 1092789,
+  "md_len": 846359,
+  "depth": 0,
+  "phase": 2
+}

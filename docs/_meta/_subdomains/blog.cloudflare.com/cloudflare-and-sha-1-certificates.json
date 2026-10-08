@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-and-sha-1-certificates/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-and-sha-1-certificates.md",
+  "title": "CloudFlare and SHA-1 Certificates | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:12.522793+00:00",
+  "html_len": 275569,
+  "md_len": 59175,
+  "depth": 0,
+  "phase": 2
+}

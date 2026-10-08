@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/taming-beast-better-ssl-now-available-across/",
+  "file": "_subdomains/blog.cloudflare.com/taming-beast-better-ssl-now-available-across.md",
+  "title": "Taming BEAST: Faster, Safer SSL now on CloudFlare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:03.957175+00:00",
+  "html_len": 269366,
+  "md_len": 55289,
+  "depth": 0,
+  "phase": 2
+}

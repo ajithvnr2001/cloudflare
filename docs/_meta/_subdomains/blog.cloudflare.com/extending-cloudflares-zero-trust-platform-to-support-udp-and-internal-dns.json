@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/extending-cloudflares-zero-trust-platform-to-support-udp-and-internal-dns/",
+  "file": "_subdomains/blog.cloudflare.com/extending-cloudflares-zero-trust-platform-to-support-udp-and-internal-dns.md",
+  "title": "Extending Cloudflare\u2019s Zero Trust platform to support UDP and Internal DNS | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:13.441628+00:00",
+  "html_len": 295321,
+  "md_len": 66558,
+  "depth": 0,
+  "phase": 2
+}

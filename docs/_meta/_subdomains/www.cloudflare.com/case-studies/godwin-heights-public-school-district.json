@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/godwin-heights-public-school-district/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/godwin-heights-public-school-district.md",
+  "title": "Godwin Heights Public School District",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:31.878155+00:00",
+  "html_len": 200764,
+  "md_len": 7180,
+  "depth": 0,
+  "phase": 2
+}

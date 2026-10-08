@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/it-it/unmetered-mitigation/",
+  "file": "_subdomains/blog.cloudflare.com/it-it/unmetered-mitigation.md",
+  "title": "Mitigazione illimitata: protezione da attacchi DDoS senza limiti | Il blog di Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:34.968071+00:00",
+  "html_len": 186853,
+  "md_len": 16561,
+  "depth": 0,
+  "phase": 2
+}

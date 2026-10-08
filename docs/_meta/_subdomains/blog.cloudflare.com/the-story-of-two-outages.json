@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-story-of-two-outages/",
+  "file": "_subdomains/blog.cloudflare.com/the-story-of-two-outages.md",
+  "title": "The Story of Two Outages | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:06.815706+00:00",
+  "html_len": 296667,
+  "md_len": 60998,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/turnstile/migration/hcaptcha/",
+  "file": "turnstile/migration/hcaptcha.md",
+  "title": "Migrate from hCaptcha \u00b7 Cloudflare Turnstile docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:07.885571+00:00",
+  "html_len": 108502,
+  "md_len": 2473,
+  "depth": 0
+}

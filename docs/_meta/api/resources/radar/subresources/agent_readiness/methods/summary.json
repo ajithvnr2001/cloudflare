@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/api/resources/radar/subresources/agent_readiness/methods/summary/",
+  "file": "api/resources/radar/subresources/agent_readiness/methods/summary.md",
+  "title": "Get agent readiness summary | Cloudflare API",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:27:18.745528+00:00",
+  "html_len": 1985300,
+  "md_len": 4954,
+  "depth": 1
+}

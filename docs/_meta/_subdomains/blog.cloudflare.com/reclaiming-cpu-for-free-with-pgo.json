@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/reclaiming-cpu-for-free-with-pgo/",
+  "file": "_subdomains/blog.cloudflare.com/reclaiming-cpu-for-free-with-pgo.md",
+  "title": "Reclaiming CPU for free with Go's Profile Guided Optimization | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:39.733779+00:00",
+  "html_len": 291408,
+  "md_len": 62960,
+  "depth": 0,
+  "phase": 2
+}

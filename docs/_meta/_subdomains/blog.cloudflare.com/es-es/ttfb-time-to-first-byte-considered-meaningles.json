@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/ttfb-time-to-first-byte-considered-meaningles/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/ttfb-time-to-first-byte-considered-meaningles.md",
+  "title": "Deja de preocuparte por el tiempo hasta el primer byte (TTFB) | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:30.841389+00:00",
+  "html_len": 194114,
+  "md_len": 25117,
+  "depth": 0,
+  "phase": 2
+}

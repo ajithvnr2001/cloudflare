@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/cloudflare-one/tutorials/tunnel-kubectl/",
+  "file": "cloudflare-one/tutorials/tunnel-kubectl.md",
+  "title": "Use Cloudflare Tunnels with Kubernetes client-go credential plugins \u00b7 Cloudflare One docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:10:24.235809+00:00",
+  "html_len": 285210,
+  "md_len": 4677,
+  "depth": 0
+}

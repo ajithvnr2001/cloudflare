@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/eteacher-group/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/eteacher-group.md",
+  "title": "eTeacher Group | Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:29.253267+00:00",
+  "html_len": 206935,
+  "md_len": 8894,
+  "depth": 0,
+  "phase": 2
+}

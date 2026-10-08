@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/email-routing/",
+  "file": "_subdomains/blog.cloudflare.com/tag/email-routing.md",
+  "title": "Posts tagged \"Email Routing\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:08:55.328512+00:00",
+  "html_len": 127173,
+  "md_len": 5401,
+  "depth": 1,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/troubleshooting/blocked-bing-site-scans/",
+  "file": "waf/troubleshooting/blocked-bing-site-scans.md",
+  "title": "Bing's Site Scan blocked by a managed rule \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:49.265463+00:00",
+  "html_len": 135675,
+  "md_len": 3139,
+  "depth": 0
+}

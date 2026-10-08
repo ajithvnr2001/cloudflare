@@ -1,0 +1,594 @@
+---
+url: https://blog.cloudflare.com/ko-kr/ddos-attack-trends-for-2021-q3/
+title: 2021\ub144 3\ubd84\uae30 DDoS \uacf5\uaca9 \ub3d9\ud5a5 | Cloudflare \ube14\ub85c\uadf8
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:44:55.821324+00:00
+---
+
+# 2021년 3분기 DDoS 공격 동향 | Cloudflare 블로그
+
+> Source: https://blog.cloudflare.com/ko-kr/ddos-attack-trends-for-2021-q3/
+
+[블로그](https://blog.cloudflare.com/ko-kr/)
+
+[DDoS](https://blog.cloudflare.com/ko-kr/tag/ddos/)[DDoS 보고서](https://blog.cloudflare.com/ko-kr/tag/ddos-reports/)[Meris (KO)](https://blog.cloudflare.com/ko-kr/tag/meris/)+66개의 태그 더 보기
+
+9개 태그9개 태그 보기
+
+  * 게시물 태그
+  * [DDoS](https://blog.cloudflare.com/ko-kr/tag/ddos/)[DDoS 보고서](https://blog.cloudflare.com/ko-kr/tag/ddos-reports/)[Meris (KO)](https://blog.cloudflare.com/ko-kr/tag/meris/)[Radar](https://blog.cloudflare.com/ko-kr/tag/cloudflare-radar/)[RDDoS (KO)](https://blog.cloudflare.com/ko-kr/tag/rddos/)[VoiP (KO)](https://blog.cloudflare.com/ko-kr/tag/voip/)[공격](https://blog.cloudflare.com/ko-kr/tag/attacks/)[랜섬 공격](https://blog.cloudflare.com/ko-kr/tag/ransom-attacks/)
+  * 모든 태그
+  * 일치하는 태그
+  * 일치하는 태그가 없습니다
+  * [1.1.1.1](https://blog.cloudflare.com/ko-kr/tag/1-1-1-1/)
+  * [Access](https://blog.cloudflare.com/ko-kr/tag/access/)
+  * [접근성](https://blog.cloudflare.com/ko-kr/tag/accessibility/)
+  * [인수](https://blog.cloudflare.com/ko-kr/tag/acquisitions/)
+  * [주소 지정](https://blog.cloudflare.com/ko-kr/tag/addressing/)
+  * [첨단 DDoS](https://blog.cloudflare.com/ko-kr/tag/advanced-ddos/)
+  * [Aegis](https://blog.cloudflare.com/ko-kr/tag/aegis/)
+  * [에이전트 준비도](https://blog.cloudflare.com/ko-kr/tag/agent-readiness/)
+  * [에이전트](https://blog.cloudflare.com/ko-kr/tag/agents/)
+  * [Agents Week](https://blog.cloudflare.com/ko-kr/tag/agents-week/)
+  * [AI](https://blog.cloudflare.com/ko-kr/tag/ai/)
+  * [AI 봇](https://blog.cloudflare.com/ko-kr/tag/ai-bots/)
+  * [AI Gateway](https://blog.cloudflare.com/ko-kr/tag/ai-gateway/)
+  * [AI 검색](https://blog.cloudflare.com/ko-kr/tag/ai-search/)
+  * [AI Week](https://blog.cloudflare.com/ko-kr/tag/ai-week/)
+  * [AI-SPM](https://blog.cloudflare.com/ko-kr/tag/ai-spm/)
+  * [AMD](https://blog.cloudflare.com/ko-kr/tag/amd/)
+  * [Analytics](https://blog.cloudflare.com/ko-kr/tag/analytics/)
+  * [Anonymous (KO)](https://blog.cloudflare.com/ko-kr/tag/anonymous/)
+  * [Anycast (KO)](https://blog.cloudflare.com/ko-kr/tag/anycast/)
+  * [API](https://blog.cloudflare.com/ko-kr/tag/api/)
+  * [API Gateway (KO)](https://blog.cloudflare.com/ko-kr/tag/api-gateway/)
+  * [API 보안](https://blog.cloudflare.com/ko-kr/tag/api-security/)
+  * [응용 프로그램 보안](https://blog.cloudflare.com/ko-kr/tag/application-security/)
+  * [애플리케이션 서비스](https://blog.cloudflare.com/ko-kr/tag/application-services/)
+  * [공격](https://blog.cloudflare.com/ko-kr/tag/attacks/)
+  * [감사 로그](https://blog.cloudflare.com/ko-kr/tag/audit-logs/)
+  * [자동화](https://blog.cloudflare.com/ko-kr/tag/automation/)
+  * [AWS](https://blog.cloudflare.com/ko-kr/tag/aws/)
+  * [Beta (KO)](https://blog.cloudflare.com/ko-kr/tag/beta/)
+  * [더 나은 인터넷](https://blog.cloudflare.com/ko-kr/tag/better-internet/)
+  * [BGP](https://blog.cloudflare.com/ko-kr/tag/bgp/)
+  * [창립기념일 주간](https://blog.cloudflare.com/ko-kr/tag/birthday-week/)
+  * [Black Friday (KO)](https://blog.cloudflare.com/ko-kr/tag/black-friday/)
+  * [봇 관리](https://blog.cloudflare.com/ko-kr/tag/bot-management/)
+  * [Botnet (KO)](https://blog.cloudflare.com/ko-kr/tag/botnet/)
+  * [봇](https://blog.cloudflare.com/ko-kr/tag/bots/)
+  * [BPF](https://blog.cloudflare.com/ko-kr/tag/bpf/)
+  * [브라우저 렌더링](https://blog.cloudflare.com/ko-kr/tag/browser-rendering/)
+  * [Browser Run](https://blog.cloudflare.com/ko-kr/tag/browser-run/)
+  * [Bug Bounty (KO)](https://blog.cloudflare.com/ko-kr/tag/bug-bounty/)
+  * [BYOIP](https://blog.cloudflare.com/ko-kr/tag/byoip/)
+  * [캐시](https://blog.cloudflare.com/ko-kr/tag/cache/)
+  * [캐시 제거](https://blog.cloudflare.com/ko-kr/tag/cache-purge/)
+  * [Cache Reserve (KO)](https://blog.cloudflare.com/ko-kr/tag/cache-reserve/)
+  * [Cache Rules (KO)](https://blog.cloudflare.com/ko-kr/tag/cache-rules/)
+  * [CASB](https://blog.cloudflare.com/ko-kr/tag/casb/)
+  * [CDN](https://blog.cloudflare.com/ko-kr/tag/cdn/)
+  * [Certificate Authority (KO)](https://blog.cloudflare.com/ko-kr/tag/certificate-authority/)
+  * [인증](https://blog.cloudflare.com/ko-kr/tag/certification/)
+  * [인증 질문 페이지](https://blog.cloudflare.com/ko-kr/tag/challenge-page/)
+  * [China (KO)](https://blog.cloudflare.com/ko-kr/tag/china/)
+  * [Chrome](https://blog.cloudflare.com/ko-kr/tag/chrome/)
+  * [CIO Week](https://blog.cloudflare.com/ko-kr/tag/cio-week/)
+  * [CISA (KO)](https://blog.cloudflare.com/ko-kr/tag/cisa/)
+  * [ClickHouse](https://blog.cloudflare.com/ko-kr/tag/clickhouse/)
+  * [클라이언트리스](https://blog.cloudflare.com/ko-kr/tag/clientless/)
+  * [Cloud Email Security](https://blog.cloudflare.com/ko-kr/tag/cloud-email-security/)
+  * [Cloudflare Access](https://blog.cloudflare.com/ko-kr/tag/cloudflare-access/)
+  * [Cloudflare Calls](https://blog.cloudflare.com/ko-kr/tag/cloudflare-calls/)
+  * [스타트업을 위한 Cloudflare](https://blog.cloudflare.com/ko-kr/tag/cloudflare-for-startups/)
+  * [Cloudflare Gateway](https://blog.cloudflare.com/ko-kr/tag/gateway/)
+  * [Cloudflare History (KO)](https://blog.cloudflare.com/ko-kr/tag/cloudflare-history/)
+  * [Cloudflare Images](https://blog.cloudflare.com/ko-kr/tag/cloudflare-images/)
+  * [Cloudflare 미디어 플랫폼](https://blog.cloudflare.com/ko-kr/tag/cloudflare-media-platform/)
+  * [Cloudflare One](https://blog.cloudflare.com/ko-kr/tag/cloudflare-one/)
+  * [Cloudflare 페이지](https://blog.cloudflare.com/ko-kr/tag/cloudflare-pages/)
+  * [Cloudflare Queues](https://blog.cloudflare.com/ko-kr/tag/cloudflare-queues/)
+  * [Cloudflare Stream](https://blog.cloudflare.com/ko-kr/tag/cloudflare-stream/)
+  * [Cloudflare Tunnel](https://blog.cloudflare.com/ko-kr/tag/cloudflare-tunnel/)
+  * [Cloudflare Workers](https://blog.cloudflare.com/ko-kr/tag/workers/)
+  * [Cloudflare Zero Trust](https://blog.cloudflare.com/ko-kr/tag/cloudflare-zero-trust/)
+  * [Cloudforce One](https://blog.cloudflare.com/ko-kr/tag/cloudforce-one/)
+  * [코드 오렌지](https://blog.cloudflare.com/ko-kr/tag/code-orange/)
+  * [규정 준수](https://blog.cloudflare.com/ko-kr/tag/compliance/)
+  * [압축](https://blog.cloudflare.com/ko-kr/tag/compression/)
+  * [구성 관리](https://blog.cloudflare.com/ko-kr/tag/configuration-management/)
+  * [정체 제어](https://blog.cloudflare.com/ko-kr/tag/congestion-control/)
+  * [클라우드 연결성](https://blog.cloudflare.com/ko-kr/tag/connectivity-cloud/)
+  * [소비자 서비스](https://blog.cloudflare.com/ko-kr/tag/consumer-services/)
+  * [컨테이너](https://blog.cloudflare.com/ko-kr/tag/containers/)
+  * [콘텐츠 독립기념일](https://blog.cloudflare.com/ko-kr/tag/content-independence-day/)
+  * [컨텍스트](https://blog.cloudflare.com/ko-kr/tag/context/)
+  * [코어](https://blog.cloudflare.com/ko-kr/tag/core/)
+  * [크롤러 힌트](https://blog.cloudflare.com/ko-kr/tag/crawler-hints/)
+  * [CrowdStrike (KO)](https://blog.cloudflare.com/ko-kr/tag/crowdstrike/)
+  * [암호화](https://blog.cloudflare.com/ko-kr/tag/cryptography/)
+  * [Customer Zero](https://blog.cloudflare.com/ko-kr/tag/customer-zero/)
+  * [CVE-2023-50387 (KO)](https://blog.cloudflare.com/ko-kr/tag/cve-2023-50387/)
+  * [D1](https://blog.cloudflare.com/ko-kr/tag/d1/)
+  * [대시보드](https://blog.cloudflare.com/ko-kr/tag/dashboard-tag/)
+  * [데이터](https://blog.cloudflare.com/ko-kr/tag/data/)
+  * [데이터 플랫폼](https://blog.cloudflare.com/ko-kr/tag/data-platform/)
+  * [데이터베이스](https://blog.cloudflare.com/ko-kr/tag/database/)
+  * [DDoS](https://blog.cloudflare.com/ko-kr/tag/ddos/)
+  * [DDoS 경보](https://blog.cloudflare.com/ko-kr/tag/ddos-alerts/)
+  * [DDoS 보고서](https://blog.cloudflare.com/ko-kr/tag/ddos-reports/)
+  * [디버깅](https://blog.cloudflare.com/ko-kr/tag/debugging/)
+  * [자세히 보기](https://blog.cloudflare.com/ko-kr/tag/deep-dive/)
+  * [설계](https://blog.cloudflare.com/ko-kr/tag/design/)
+  * [개발자 설명서](https://blog.cloudflare.com/ko-kr/tag/developer-documentation/)
+  * [개발자 플랫폼](https://blog.cloudflare.com/ko-kr/tag/developer-platform/)
+  * [Developer Week](https://blog.cloudflare.com/ko-kr/tag/developer-week/)
+  * [개발자](https://blog.cloudflare.com/ko-kr/tag/developers/)
+  * [개발자 스토리지](https://blog.cloudflare.com/ko-kr/tag/developers-storage/)
+  * [DevOps (KO)](https://blog.cloudflare.com/ko-kr/tag/devops/)
+  * [Digital Experience Monitoring (KO)](https://blog.cloudflare.com/ko-kr/tag/digital-experience-monitoring/)
+  * [디지털 포렌식](https://blog.cloudflare.com/ko-kr/tag/digital-forensics/)
+  * [Diversity (KO)](https://blog.cloudflare.com/ko-kr/tag/diversity/)
+  * [DLP](https://blog.cloudflare.com/ko-kr/tag/dlp/)
+  * [DNS](https://blog.cloudflare.com/ko-kr/tag/dns/)
+  * [DNS Flood (KO)](https://blog.cloudflare.com/ko-kr/tag/dns-flood/)
+  * [DNSSEC](https://blog.cloudflare.com/ko-kr/tag/dnssec/)
+  * [Dogfood](https://blog.cloudflare.com/ko-kr/tag/dogfooding/)
+  * [Durable Execution](https://blog.cloudflare.com/ko-kr/tag/durable-execution/)
+  * [Durable Objects](https://blog.cloudflare.com/ko-kr/tag/durable-objects/)
+  * [EC2 (KO)](https://blog.cloudflare.com/ko-kr/tag/ec2/)
+  * [Edge](https://blog.cloudflare.com/ko-kr/tag/edge/)
+  * [에지 컴퓨팅](https://blog.cloudflare.com/ko-kr/tag/edge-computing/)
+  * [송신](https://blog.cloudflare.com/ko-kr/tag/egress/)
+  * [Elastic (KO)](https://blog.cloudflare.com/ko-kr/tag/elastic/)
+  * [이메일](https://blog.cloudflare.com/ko-kr/tag/email/)
+  * [Email Routing (KO)](https://blog.cloudflare.com/ko-kr/tag/email-routing/)
+  * [이메일 보안](https://blog.cloudflare.com/ko-kr/tag/email-security/)
+  * [Emissions](https://blog.cloudflare.com/ko-kr/tag/emissions/)
+  * [Encrypted SNI (KO)](https://blog.cloudflare.com/ko-kr/tag/encrypted-sni/)
+  * [엔지니어링](https://blog.cloudflare.com/ko-kr/tag/engineering/)
+  * [기업](https://blog.cloudflare.com/ko-kr/tag/enterprise/)
+  * [Fast Fonts (KO)](https://blog.cloudflare.com/ko-kr/tag/fast-fonts/)
+  * [기능 플래그](https://blog.cloudflare.com/ko-kr/tag/feature-flags/)
+  * [방화벽](https://blog.cloudflare.com/ko-kr/tag/firewall/)
+  * [Forrester](https://blog.cloudflare.com/ko-kr/tag/forrester/)
+  * [Foundation DNS (KO)](https://blog.cloudflare.com/ko-kr/tag/foundation-dns/)
+  * [창립자 서한](https://blog.cloudflare.com/ko-kr/tag/founders-letter/)
+  * [사기](https://blog.cloudflare.com/ko-kr/tag/fraud/)
+  * [프런트 엔드](https://blog.cloudflare.com/ko-kr/tag/front-end/)
+  * [전체 스택](https://blog.cloudflare.com/ko-kr/tag/full-stack/)
+  * [Gartner (KO)](https://blog.cloudflare.com/ko-kr/tag/gartner/)
+  * [Gatebot (KO)](https://blog.cloudflare.com/ko-kr/tag/gatebot/)
+  * [일반 가용성](https://blog.cloudflare.com/ko-kr/tag/general-availability/)
+  * [생성형 AI](https://blog.cloudflare.com/ko-kr/tag/generative-ai/)
+  * [GitHub](https://blog.cloudflare.com/ko-kr/tag/github/)
+  * [Google](https://blog.cloudflare.com/ko-kr/tag/google/)
+  * [Google Cloud](https://blog.cloudflare.com/ko-kr/tag/google-cloud/)
+  * [하드웨어](https://blog.cloudflare.com/ko-kr/tag/hardware/)
+  * [HTTP2 (KO)](https://blog.cloudflare.com/ko-kr/tag/http2/)
+  * [HTTP3](https://blog.cloudflare.com/ko-kr/tag/http3/)
+  * [하이브리드 클라우드](https://blog.cloudflare.com/ko-kr/tag/hybrid-cloud/)
+  * [Hyperdrive](https://blog.cloudflare.com/ko-kr/tag/hyperdrive/)
+  * [ID](https://blog.cloudflare.com/ko-kr/tag/identity/)
+  * [IETF](https://blog.cloudflare.com/ko-kr/tag/ietf/)
+  * [이미지 최적화](https://blog.cloudflare.com/ko-kr/tag/image-optimization/)
+  * [이미지 크기 조정](https://blog.cloudflare.com/ko-kr/tag/image-resizing/)
+  * [영향](https://blog.cloudflare.com/ko-kr/tag/impact/)
+  * [사고 대응](https://blog.cloudflare.com/ko-kr/tag/incident-response/)
+  * [인프라](https://blog.cloudflare.com/ko-kr/tag/infrastructure/)
+  * [코드형 인프라](https://blog.cloudflare.com/ko-kr/tag/infrastructure-as-code/)
+  * [인사이트](https://blog.cloudflare.com/ko-kr/tag/insights/)
+  * [Intel](https://blog.cloudflare.com/ko-kr/tag/intel/)
+  * [Interconnection](https://blog.cloudflare.com/ko-kr/tag/interconnection/)
+  * [Internet Performance (KO)](https://blog.cloudflare.com/ko-kr/tag/internet-performance/)
+  * [인터넷 품질](https://blog.cloudflare.com/ko-kr/tag/internet-quality/)
+  * [인터넷 셧다운](https://blog.cloudflare.com/ko-kr/tag/internet-shutdown/)
+  * [인터넷 트래픽](https://blog.cloudflare.com/ko-kr/tag/internet-traffic/)
+  * [인터넷 동향](https://blog.cloudflare.com/ko-kr/tag/internet-trends/)
+  * [인턴십 경험](https://blog.cloudflare.com/ko-kr/tag/internship-experience/)
+  * [IPv4](https://blog.cloudflare.com/ko-kr/tag/ipv4/)
+  * [IPv6](https://blog.cloudflare.com/ko-kr/tag/ipv6/)
+  * [IWD (KO)](https://blog.cloudflare.com/ko-kr/tag/iwd/)
+  * [JavaScript](https://blog.cloudflare.com/ko-kr/tag/javascript/)
+  * [Kafka](https://blog.cloudflare.com/ko-kr/tag/kafka/)
+  * [KeyTrap](https://blog.cloudflare.com/ko-kr/tag/keytrap/)
+  * [Killnet (KO)](https://blog.cloudflare.com/ko-kr/tag/killnet/)
+  * [Korea (KO)](https://blog.cloudflare.com/ko-kr/tag/korea/)
+  * [Kubernetes](https://blog.cloudflare.com/ko-kr/tag/kubernetes/)
+  * [LangChain (KO)](https://blog.cloudflare.com/ko-kr/tag/langchain/)
+  * [LavaRand (KO)](https://blog.cloudflare.com/ko-kr/tag/lavarand/)
+  * [Cloudflare에서의 근무 환경](https://blog.cloudflare.com/ko-kr/tag/life-at-cloudflare/)
+  * [Linux](https://blog.cloudflare.com/ko-kr/tag/linux/)
+  * [LLM](https://blog.cloudflare.com/ko-kr/tag/llm/)
+  * [Log4J (KO)](https://blog.cloudflare.com/ko-kr/tag/log4j/)
+  * [Log4Shell (KO)](https://blog.cloudflare.com/ko-kr/tag/log4shell/)
+  * [로깅](https://blog.cloudflare.com/ko-kr/tag/logging/)
+  * [로그](https://blog.cloudflare.com/ko-kr/tag/logs/)
+  * [Magic Transit](https://blog.cloudflare.com/ko-kr/tag/magic-transit/)
+  * [Magic WAN Connector (KO)](https://blog.cloudflare.com/ko-kr/tag/magic-wan-connector/)
+  * [맬웨어](https://blog.cloudflare.com/ko-kr/tag/malware/)
+  * [MCP](https://blog.cloudflare.com/ko-kr/tag/mcp/)
+  * [Meris (KO)](https://blog.cloudflare.com/ko-kr/tag/meris/)
+  * [마이크로 프런트엔드](https://blog.cloudflare.com/ko-kr/tag/micro-frontends/)
+  * [Microsoft Azure](https://blog.cloudflare.com/ko-kr/tag/microsoft-azure/)
+  * [Migration Hub (KO)](https://blog.cloudflare.com/ko-kr/tag/migration-hub/)
+  * [Mirai](https://blog.cloudflare.com/ko-kr/tag/mirai/)
+  * [MLops (KO)](https://blog.cloudflare.com/ko-kr/tag/mlops/)
+  * [모델 컨텍스트 프로토콜,](https://blog.cloudflare.com/ko-kr/tag/model-context-protocol/)
+  * [Multi-Cloud (KO)](https://blog.cloudflare.com/ko-kr/tag/multi-cloud/)
+  * [MySQL](https://blog.cloudflare.com/ko-kr/tag/mysql/)
+  * [네트워크](https://blog.cloudflare.com/ko-kr/tag/network/)
+  * [Network Interconnect (KO)](https://blog.cloudflare.com/ko-kr/tag/network-interconnect/)
+  * [네트워크 성능 업데이트](https://blog.cloudflare.com/ko-kr/tag/network-performance-update/)
+  * [Network Protection (KO)](https://blog.cloudflare.com/ko-kr/tag/network-protection/)
+  * [네트워크 서비스](https://blog.cloudflare.com/ko-kr/tag/network-services/)
+  * [네트워킹](https://blog.cloudflare.com/ko-kr/tag/networking/)
+  * [NGINX](https://blog.cloudflare.com/ko-kr/tag/nginx/)
+  * [Node.js](https://blog.cloudflare.com/ko-kr/tag/node-js/)
+  * [Notifications (KO)](https://blog.cloudflare.com/ko-kr/tag/notifications/)
+  * [NSEC3 (KO)](https://blog.cloudflare.com/ko-kr/tag/nsec3/)
+  * [OAuth](https://blog.cloudflare.com/ko-kr/tag/oauth/)
+  * [Observability](https://blog.cloudflare.com/ko-kr/tag/observability/)
+  * [Okta (KO)](https://blog.cloudflare.com/ko-kr/tag/okta/)
+  * [오픈 소스](https://blog.cloudflare.com/ko-kr/tag/open-source/)
+  * [OpenTelemetry ](https://blog.cloudflare.com/ko-kr/tag/opentelemetry/)
+  * [최적화](https://blog.cloudflare.com/ko-kr/tag/optimization/)
+  * [중단](https://blog.cloudflare.com/ko-kr/tag/outage/)
+  * [파트너](https://blog.cloudflare.com/ko-kr/tag/partners/)
+  * [Peering (KO)](https://blog.cloudflare.com/ko-kr/tag/peering/)
+  * [성능](https://blog.cloudflare.com/ko-kr/tag/performance/)
+  * [피싱](https://blog.cloudflare.com/ko-kr/tag/phishing/)
+  * [Pingora](https://blog.cloudflare.com/ko-kr/tag/pingora/)
+  * [PlanetScale](https://blog.cloudflare.com/ko-kr/tag/planetscale/)
+  * [플랫폼 엔지니어링](https://blog.cloudflare.com/ko-kr/tag/platform-engineering/)
+  * [정책 및 법률](https://blog.cloudflare.com/ko-kr/tag/policy/)
+  * [사후](https://blog.cloudflare.com/ko-kr/tag/post-mortem/)
+  * [포스트 퀀텀](https://blog.cloudflare.com/ko-kr/tag/post-quantum/)
+  * [Postgres](https://blog.cloudflare.com/ko-kr/tag/postgres/)
+  * [개인정보 보호](https://blog.cloudflare.com/ko-kr/tag/privacy/)
+  * [사설 네트워크:](https://blog.cloudflare.com/ko-kr/tag/private-network/)
+  * [제품 설계](https://blog.cloudflare.com/ko-kr/tag/product-design/)
+  * [제품 뉴스](https://blog.cloudflare.com/ko-kr/tag/product-news/)
+  * [Galileo 프로젝트](https://blog.cloudflare.com/ko-kr/tag/project-galileo/)
+  * [Project Safekeeping (KO)](https://blog.cloudflare.com/ko-kr/tag/project-safekeeping/)
+  * [Project Turpentine (KO)](https://blog.cloudflare.com/ko-kr/tag/project-turpentine/)
+  * [Prometheus](https://blog.cloudflare.com/ko-kr/tag/prometheus/)
+  * [프로토콜](https://blog.cloudflare.com/ko-kr/tag/protocols/)
+  * [Python](https://blog.cloudflare.com/ko-kr/tag/python/)
+  * [Queues](https://blog.cloudflare.com/ko-kr/tag/queues/)
+  * [QUIC](https://blog.cloudflare.com/ko-kr/tag/quic/)
+  * [QUICHE](https://blog.cloudflare.com/ko-kr/tag/quiche/)
+  * [R2](https://blog.cloudflare.com/ko-kr/tag/r2/)
+  * [R2 Super Slurper](https://blog.cloudflare.com/ko-kr/tag/r2-super-slurper/)
+  * [Radar](https://blog.cloudflare.com/ko-kr/tag/cloudflare-radar/)
+  * [Radar API (KO)](https://blog.cloudflare.com/ko-kr/tag/radar-api/)
+  * [Randomness (KO)](https://blog.cloudflare.com/ko-kr/tag/randomness/)
+  * [랜섬 공격](https://blog.cloudflare.com/ko-kr/tag/ransom-attacks/)
+  * [Rapid Reset (KO)](https://blog.cloudflare.com/ko-kr/tag/rapid-reset/)
+  * [Rate Limiting](https://blog.cloudflare.com/ko-kr/tag/rate-limiting/)
+  * [RDDoS (KO)](https://blog.cloudflare.com/ko-kr/tag/rddos/)
+  * [Reading List (KO)](https://blog.cloudflare.com/ko-kr/tag/reading-list/)
+  * [실시간](https://blog.cloudflare.com/ko-kr/tag/real-time/)
+  * [등록기관](https://blog.cloudflare.com/ko-kr/tag/registrar/)
+  * [신뢰성](https://blog.cloudflare.com/ko-kr/tag/reliability/)
+  * [연구](https://blog.cloudflare.com/ko-kr/tag/research/)
+  * [Resolver (KO)](https://blog.cloudflare.com/ko-kr/tag/resolver/)
+  * [리버스 엔지니어링](https://blog.cloudflare.com/ko-kr/tag/reverse-engineering/)
+  * [위험 관리](https://blog.cloudflare.com/ko-kr/tag/risk-management/)
+  * [라우팅](https://blog.cloudflare.com/ko-kr/tag/routing/)
+  * [라우팅 보안](https://blog.cloudflare.com/ko-kr/tag/routing-security/)
+  * [RPKI](https://blog.cloudflare.com/ko-kr/tag/rpki/)
+  * [Rust](https://blog.cloudflare.com/ko-kr/tag/rust/)
+  * [Rust Workers](https://blog.cloudflare.com/ko-kr/tag/rust-workers/)
+  * [SaaS 보안](https://blog.cloudflare.com/ko-kr/tag/saas-security/)
+  * [Salt](https://blog.cloudflare.com/ko-kr/tag/salt/)
+  * [샌드박스](https://blog.cloudflare.com/ko-kr/tag/sandbox/)
+  * [SASE](https://blog.cloudflare.com/ko-kr/tag/sase/)
+  * [SDK](https://blog.cloudflare.com/ko-kr/tag/sdk/)
+  * [안전한 웹 게이트웨이](https://blog.cloudflare.com/ko-kr/tag/secure-web-gateway/)
+  * [보안](https://blog.cloudflare.com/ko-kr/tag/security/)
+  * [보안 센터](https://blog.cloudflare.com/ko-kr/tag/security-center/)
+  * [보안 상태](https://blog.cloudflare.com/ko-kr/tag/security-posture/)
+  * [보안 상태 관리](https://blog.cloudflare.com/ko-kr/tag/security-posture-management/)
+  * [Security Service Edge (KO)](https://blog.cloudflare.com/ko-kr/tag/security-service-edge/)
+  * [Security Week](https://blog.cloudflare.com/ko-kr/tag/security-week/)
+  * [서버리스](https://blog.cloudflare.com/ko-kr/tag/serverless/)
+  * [서버](https://blog.cloudflare.com/ko-kr/tag/servers/)
+  * [SIEM](https://blog.cloudflare.com/ko-kr/tag/siem/)
+  * [Smart Shield](https://blog.cloudflare.com/ko-kr/tag/smart-shield/)
+  * [Spectrum](https://blog.cloudflare.com/ko-kr/tag/spectrum/)
+  * [속도](https://blog.cloudflare.com/ko-kr/tag/speed/)
+  * [속도 및 신뢰성](https://blog.cloudflare.com/ko-kr/tag/speed-and-reliability/)
+  * [SQL](https://blog.cloudflare.com/ko-kr/tag/sql/)
+  * [SRE(Systems Reliability Engineer)](https://blog.cloudflare.com/ko-kr/tag/sre/)
+  * [SSE (KO)](https://blog.cloudflare.com/ko-kr/tag/sse/)
+  * [표준](https://blog.cloudflare.com/ko-kr/tag/standards/)
+  * [스토리지](https://blog.cloudflare.com/ko-kr/tag/storage/)
+  * [SYN Flood (KO)](https://blog.cloudflare.com/ko-kr/tag/syn-flood/)
+  * [TCP](https://blog.cloudflare.com/ko-kr/tag/tcp/)
+  * [팀](https://blog.cloudflare.com/ko-kr/tag/team/)
+  * [Teams Dashboard (KO)](https://blog.cloudflare.com/ko-kr/tag/teams-dashboard/)
+  * [Terraform](https://blog.cloudflare.com/ko-kr/tag/terraform/)
+  * [위협 데이터](https://blog.cloudflare.com/ko-kr/tag/threat-data/)
+  * [위협 인텔리전스](https://blog.cloudflare.com/ko-kr/tag/threat-intelligence/)
+  * [위협 운영](https://blog.cloudflare.com/ko-kr/tag/threat-operations/)
+  * [위협](https://blog.cloudflare.com/ko-kr/tag/threats/)
+  * [TLS](https://blog.cloudflare.com/ko-kr/tag/tls/)
+  * [추적](https://blog.cloudflare.com/ko-kr/tag/tracing/)
+  * [트래픽](https://blog.cloudflare.com/ko-kr/tag/traffic/)
+  * [투명성](https://blog.cloudflare.com/ko-kr/tag/transparency/)
+  * [추세](https://blog.cloudflare.com/ko-kr/tag/trends/)
+  * [TURN 서버](https://blog.cloudflare.com/ko-kr/tag/turn-server/)
+  * [Turnstile](https://blog.cloudflare.com/ko-kr/tag/turnstile/)
+  * [TypeScript](https://blog.cloudflare.com/ko-kr/tag/typescript/)
+  * [사용자 연구](https://blog.cloudflare.com/ko-kr/tag/user-research/)
+  * [Vectorize (KO)](https://blog.cloudflare.com/ko-kr/tag/vectorize/)
+  * [VoiP (KO)](https://blog.cloudflare.com/ko-kr/tag/voip/)
+  * [VPC](https://blog.cloudflare.com/ko-kr/tag/vpc/)
+  * [VPN (KO)](https://blog.cloudflare.com/ko-kr/tag/vpn/)
+  * [WAF](https://blog.cloudflare.com/ko-kr/tag/waf/)
+  * [WARP](https://blog.cloudflare.com/ko-kr/tag/warp/)
+  * [WARP Connector (KO)](https://blog.cloudflare.com/ko-kr/tag/warp-connector/)
+  * [WASM](https://blog.cloudflare.com/ko-kr/tag/wasm/)
+  * [웹 애플리케이션 방화벽](https://blog.cloudflare.com/ko-kr/tag/web-application-firewall/)
+  * [WebAssembly](https://blog.cloudflare.com/ko-kr/tag/webassembly/)
+  * [WebRTC](https://blog.cloudflare.com/ko-kr/tag/webrtc/)
+  * [Workers AI](https://blog.cloudflare.com/ko-kr/tag/workers-ai/)
+  * [Workers Launchpad](https://blog.cloudflare.com/ko-kr/tag/workers-launchpad/)
+  * [Workers VPC](https://blog.cloudflare.com/ko-kr/tag/workers-vpc/)
+  * [Workflows](https://blog.cloudflare.com/ko-kr/tag/workflows/)
+  * [Wrangler](https://blog.cloudflare.com/ko-kr/tag/wrangler/)
+  * [검토](https://blog.cloudflare.com/ko-kr/tag/year-in-review/)
+  * [Z3](https://blog.cloudflare.com/ko-kr/tag/z3/)
+  * [Zero Day Threats (KO)](https://blog.cloudflare.com/ko-kr/tag/zero-day-threats/)
+  * [Zero Trust](https://blog.cloudflare.com/ko-kr/tag/zero-trust/)
+
+
+
+[Radar](https://blog.cloudflare.com/ko-kr/tag/cloudflare-radar/)[RDDoS (KO)](https://blog.cloudflare.com/ko-kr/tag/rddos/)[REvil](https://blog.cloudflare.com/ko-kr/tag/revil/)[VoiP (KO)](https://blog.cloudflare.com/ko-kr/tag/voip/)[공격](https://blog.cloudflare.com/ko-kr/tag/attacks/)[랜섬 공격](https://blog.cloudflare.com/ko-kr/tag/ransom-attacks/)
+
+[DDoS](https://blog.cloudflare.com/ko-kr/tag/ddos/)[DDoS 보고서](https://blog.cloudflare.com/ko-kr/tag/ddos-reports/)[Meris (KO)](https://blog.cloudflare.com/ko-kr/tag/meris/)[Radar](https://blog.cloudflare.com/ko-kr/tag/cloudflare-radar/)[RDDoS (KO)](https://blog.cloudflare.com/ko-kr/tag/rddos/)[REvil](https://blog.cloudflare.com/ko-kr/tag/revil/)[VoiP (KO)](https://blog.cloudflare.com/ko-kr/tag/voip/)[공격](https://blog.cloudflare.com/ko-kr/tag/attacks/)[랜섬 공격](https://blog.cloudflare.com/ko-kr/tag/ransom-attacks/)
+
+2021년 11월 4일
+
+# 2021년 3분기 DDoS 공격 동향
+
+![Vivek Ganti](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW47VZHKP8D2C4YBDDSC5QNB.jpeg&w=64&h=64&f=webp&fit=cover&position=center)![Omer Yoachimik](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW485W0MZ0R9VGWD75RQN9ZH.png&w=64&h=64&f=webp&fit=cover&position=center)
+
+[Vivek Ganti](https://blog.cloudflare.com/ko-kr/author/vivek/) 및 [Omer Yoachimik](https://blog.cloudflare.com/ko-kr/author/omer/)
+
+16분 읽기
+
+URL 복사
+
+이 포스트는 다음 언어로도 제공됩니다 [English](https://blog.cloudflare.com/ddos-attack-trends-for-2021-q3/), [Deutsch](https://blog.cloudflare.com/de-de/ddos-attack-trends-for-2021-q3/), [Français](https://blog.cloudflare.com/fr-fr/ddos-attack-trends-for-2021-q3/), [日本語](https://blog.cloudflare.com/ja-jp/ddos-attack-trends-for-2021-q3/), [繁體中文](https://blog.cloudflare.com/zh-tw/ddos-attack-trends-for-2021-q3/) 및 [简体中文](https://blog.cloudflare.com/zh-cn/ddos-attack-trends-for-2021-q3/).
+
+![DDoS Attack Trends for Q4 2021](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW44QXD9FHG3VBTC7MXE7400.png&w=1920&h=1080&f=webp&fit=cover&position=center)![](data:image/bmp;base64,Qk32BAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAATCwAAEwsAAAAAAAAAAAAA+vz69vj17fDr6evl7Ovn7+3r7Orq5eTl/f/9+fv48PLt7O3n7+7p8vDt8O7s6Ofn/////f/89Pbw8PDq8/Ls9/Xx9fLw7ezr////////+vv19vXv+ffx/fr2+vj28vHw///////////7+/r1//34///9//789/b1///////////////8/////////////Pr6/////////////////////////////v39//////////////////////////////7+)
+
+2021년 3분기에는 유달리 많은 DDoS 공격 활동이 관찰되었습니다. Cloudflare는 [기록적인 HTTP DDoS 공격](https://blog.cloudflare.com/cloudflare-thwarts-17-2m-rps-ddos-attack-the-largest-ever-reported/), [테라비트급 네트워크 계층 공격](https://blog.cloudflare.com/cloudflare-thwarts-17-2m-rps-ddos-attack-the-largest-ever-reported/#:~:text=with%20a%20max%20peak%20of%20approximately%201.2%20Tbps), 역대 최대 규모의 봇넷(Meris) 배포 사례를 확인하고 완화한 바 있으며, 최근에는 전 세계 [VoIP(Voice over IP) 서비스 공급자](https://blog.cloudflare.com/update-on-voip-attacks/) 및 해당 [네트워크 인프라에 대한 랜섬 DDoS 공격](https://blog.cloudflare.com/attacks-on-voip-providers/)이 있었습니다.
+
+2021년 3분기에 관찰된 동향의 개요는 다음과 같습니다.
+
+**응용 프로그램 계층(L7) DDoS 공격 동향:**
+
+  * 2021년에는 미국 기반 회사들이 2분기 연속으로 가장 많은 공격이 집중된 대상으로 집계되었습니다.
+  * 2021년에는 영국 기반 및 캐나다 기반 회사에 대한 공격이 급증하여 각각 두 번째와 세 번째로 가장 많이 표적이 된 국가에 처음으로 이름을 올렸습니다.
+  * 컴퓨터 소프트웨어, 게임/도박, IT, 인터넷 회사에 대한 공격은 전 분기 대비 평균 573%나 증가했습니다.
+  * 역대 가장 강력한 봇넷으로 꼽히는 Meris는 다양한 산업과 국가에서 DDoS 캠페인의 시발점 구실을 했습니다.
+
+
+
+**네트워크 계층(L3/4) DDoS 공격 동향:**
+
+  * 전 세계적으로 DDoS 공격이 전 분기 대비 44%만큼 증가했습니다.
+  * 중동과 아프리카는 약 80%라는 가장 높은 평균 공격 증가율을 기록했습니다.
+  * 3분기에 모로코는 패킷 100개 중 3개가 DDoS 공격의 일부일 만큼 전 세계적으로 가장 높은 DDoS 활동을 보였습니다.
+  * 공격자들은 여전히 SYN 및 RST 공격 방식을 주로 사용했지만, Cloudflare는 [DTLS](https://en.wikipedia.org/wiki/Datagram_Transport_Layer_Security) 증폭 공격이 전분기 대비 3,549%만큼 급증한 것을 관찰했습니다.
+  * 공격자들은 SIP 인프라를 다운시키려는 의도로 VoIP 서비스 공급자를 표적으로 한 대규모 DDoS 공격 캠페인을 수행했습니다(올해 4분기까지도 계속 공격 중).
+
+
+
+**데이터 편향 방지와 관련한 참고 사항:** 공격 동향을 분석할 때 계산하는 "DDoS 활동" 비율은 전체 트래픽(공격 트래픽 + 깨끗한 트래픽) 중 공격 트래픽의 비율을 말합니다. 이를 응용 프로그램/네트워크 계층 DDoS 공격 동향의 보고 시 활용하면 데이터 포인트를 정규화할 수 있고, 특정 데이터 센터(예를 들어 원래부터 처리하는 트래픽이 많고 따라서 다른 곳에 위치한 소규모 Cloudflare 데이터 센터와 비교 시 공격도 많을 수밖에 없는 대규모 Cloudflare 데이터 센터)로의 편향을 피할 수 있게 됩니다.
+
+### 응용 프로그램 계층 DDoS 공격
+
+[응용 프로그램 계층 DDoS 공격](https://www.cloudflare.com/learning/ddos/application-layer-ddos-attack/) 중 특히 HTTP DDoS 공격은 주로 웹 서버가 합법적인 사용자 요청을 처리할 수 없도록 하여 웹 서버를 사용 불가능하게 만드는 것을 목표로 합니다. 서버가 처리할 수 있는 양보다 많은 요청이 쏟아질 경우, 해당 서버는 합법적인 요청의 처리를 중단하게 되고, 경우에 따라서는 충돌을 일으켜 성능이 저하되거나 합법적인 사용자의 서비스도 거부하게 됩니다.
+
+**2021년 3분기는 가장 강력한 봇넷으로 손꼽히며 역대 최대 규모의 HTTP DDoS 공격을 수행하기 위해 배포된 Meris가 장악했습니다.**
+
+Cloudflare는 지난 분기에 금융 서비스 업계의 고객을 표적으로 한 1,720만 rps(초당 요청 수)에 달하는 [기록적인 규모의 HTTP 공격](https://blog.cloudflare.com/cloudflare-thwarts-17-2m-rps-ddos-attack-the-largest-ever-reported/)을 관찰했습니다. 지금까지 확인된 가장 강력한 봇넷 중 하나인 Meris가 이러한 공격의 시작 전에 배포된 것으로 알려져 있습니다.
+
+Meris(라트비아어로 전염병)는 최근 전 세계의 네트워크나 조직들을 대상으로 이루어진 DDoS 공격의 시발점으로 지목된 봇넷입니다. Meris 봇넷은 MikroTik라는 라트비아 기반의 회사에서 제조한 라우터 등의 네트워킹 장비를 감염시켰습니다. MikroTik의 블로그에 따르면 MikroTik RouterOS의 취약점(2018년에 확인된 후 패치됨)이 아직 패치가 이루어지지 않은 장치에서 악용되었고, 공격자는 이 지점을 노리고 봇넷을 구축하여 조직적인 DDoS 공격을 감행했습니다.
+
+2016년의 [Mirai 봇넷](https://www.cloudflare.com/learning/ddos/glossary/mirai-botnet/)과 마찬가지로, Meris는 지금까지의 봇넷 중 가장 강력한 종류입니다. Mirai가 스마트 카메라와 같이 계산 능력이 낮은 IoT 장치를 감염시킨 반면, Meris는 IoT 장치보다 훨씬 높은 처리 능력과 데이터 전송 기능을 갖춘 네트워킹 인프라(예: 라우터 및 스위치)를 대단위로 감염시키고 있어 보다 큰 규모에서 더욱 심한 피해가 야기됩니다. 그럼에도 불구하고, Meris는 공격의 볼륨이 반드시 피해의 규모로 이어지지는 않음을 보여주는 예입니다. Meris는 강력하지만, 저희가 아는 한 심각한 영향이나 인터넷 중단을 일으키지는 못했습니다. 반면에 Mirai는 [2016년에 DYN DNS 서비스를 전술적으로 공격](https://en.wikipedia.org/wiki/DDoS_attack_on_Dyn)함으로써 상당한 인터넷 혼란을 야기하는 데 성공했습니다.
+
+### 산업별 응용 프로그램 계층 DDoS 공격
+
+**2021년 3분기에 가장 많이 표적이 된 산업은 기술 및 게임 분야였습니다.**
+
+응용 프로그램 계층 공격 사례를 산업별로 분석해 보면 컴퓨터 소프트웨어 회사가 1위를 차지하고 있습니다. 마찬가지로 온라인 공격의 주된 표적으로 알려진 게임/도박 산업이 근소한 차이로 2위를 차지했으며, 인터넷과 IT 산업이 그 뒤를 이었습니다.
+
+### 공격 출발 국가별 응용 프로그램 계층 DDoS 공격
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![Application-layer DDoS attacks by industry](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW497DX0Y79TASDZ7BF8JXDS.png&w=715&h=358&f=webp&fit=cover&position=center)
+
+HTTP 공격의 출발 지점을 이해하려면 먼저 공격 HTTP 요청을 생성한 클라이언트가 가진 소스 IP 주소의 지리적 위치부터 살펴봐야 합니다. 소스 IP는 네트워크 계층 공격에서와는 달리 HTTP 공격 시 [스푸핑](https://www.cloudflare.com/learning/ddos/glossary/ip-spoofing/)이 어렵습니다. 특정 국가에서 DDoS 활동 비율이 높다는 것은 대개 봇넷이 내부에서 작동 중임을 의미합니다.
+
+2021년 3분기에 있었던 대부분의 공격은 중국, 미국 및 인도의 장치/서버에서 비롯되었습니다. 중국이 여전히 1위를 유지하고는 있지만, 실제로는 중국 IP에서 시작된 공격 건수는 전 분기 대비 30%만큼 감소했습니다. 중국이 출처인 HTTP 요청 200건마다 거의 1건이 HTTP DDoS 공격의 일부였습니다.
+
+또한 브라질과 독일이 출처인 공격은 전 분기 대비 38%만큼 감소했습니다. 미국과 말레이시아에서 비롯된 공격은 각각 40%와 45%만큼 감소했습니다.
+
+### 대상 국가별 응용 프로그램 계층 DDoS 공격
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![BLOG-742 Embedded Image - uFqWeN](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW4538873TCPJ7DKXHG34G3W.png&w=715&h=358&f=webp&fit=cover&position=center)
+
+L7 공격에 가장 많이 표적이 된 국가를 식별하려면 DDoS 활동을 Cloudflare 고객의 청구 국가별로 분류해보면 됩니다.
+
+올해는 미국 내 조직들이 2분기 연속으로 L7 DDoS 공격에 가장 많이 표적이 되었고, 영국과 캐나다가 그 뒤를 이었습니다.
+
+### 네트워크 계층 DDoS 공격
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![BLOG-742 Embedded Image - oUMJVm](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW485HYV0V5M2S70ER078Q1N.png&w=715&h=358&f=webp&fit=cover&position=center)
+
+응용 프로그램 계층 공격이 최종 사용자가 액세스하려는 서비스를 구동하는 응용 프로그램([OSI 모델](https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/)의 계층 7)을 대상으로 하는 반면, [네트워크 계층 공격](https://www.cloudflare.com/learning/ddos/layer-3-ddos-attacks/)은 네트워크 인프라(예: 인라인 라우터 및 서버)와 인터넷 링크 자체를 마비시키는 것을 목표로 합니다.
+
+**Mirai 변종 봇넷의 공격 위력은 1.2Tbps에 육박합니다.**
+
+2021년 3분기는 악명 높은 Mirai가 활동을 재개한 시점이기도 합니다. Mirai 변종 봇넷은 1Tbps 이상의 피크를 여러 번 기록한 10여 건의 UDP 및 TCP 기반 DDoS 공격을 시작했으며, 그 최대치는 약 1.2Tbps에 달했습니다. 이러한 네트워크 계층 공격은 [Magic Transit](https://www.cloudflare.com/magic-transit/)과 [Spectrum](https://www.cloudflare.com/products/cloudflare-spectrum/) 서비스를 이용하는 Cloudflare 고객을 대상으로 이루어졌습니다. 공격 목표 중 하나는 APAC을 기반으로 인터넷 서비스, 통신 및 호스팅을 공급하는 대기업이었고, 다른 하나는 게임 회사였습니다. 두 경우 모두 사람의 개입 없이 공격이 자동으로 감지되고 완화되었습니다.
+
+### 월별 네트워크 계층 DDoS 공격
+
+**9월에는 올해 들어 가장 많은 공격 활동이 기록되었습니다.**
+
+2021년 3분기에는 올 한 해 공격의 38% 이상이 집중되었습니다. 2021년 현재 가장 많은 공격 활동이 기록된 9월에는 한 달 동안 올해 전체 공격의 16퍼센트 이상이 쏟아졌습니다.
+
+### 공격 비율별 네트워크 계층 DDoS 공격
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![BLOG-742 Embedded Image - ir1LxX](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW490R17R3SHB2V26H4H1AV5.png&w=715&h=358&f=webp&fit=cover&position=center)
+
+**대부분의 공격은 '소규모'에 해당하지만, 대규모 공격의 건수는 계속해서 증가하고 있습니다.**
+
+L3/4 DDoS 공격의 규모를 측정하는 방법은 여러 가지입니다. 하나는 공격 트래픽의 양을 비트 전송률(초당 테라비트 또는 초당 기가비트 수)로 측정하는 방법입니다. 또 다른 방법은 총 패킷의 개수를 패킷 전송률(수백만 단위의 초당 패킷 수)로 측정하는 것입니다.
+
+비트 전송률이 높은 공격은 인터넷 링크를 포화시킴으로써 서비스 거부 이벤트를 발생시키려는 시도이며, 패킷 전송률이 높은 공격은 서버, 라우터, 기타 인라인 장비를 마비시키려는 시도입니다. 네트워크 장비는 각각의 패킷을 처리하기 위해 일정량의 메모리와 연산 능력을 할당합니다. 따라서 장비에 많은 패킷을 퍼부으면 처리를 위한 리소스를 완전히 고갈시키는 것이 가능합니다. 이러한 경우에는 패킷의 "드롭(drop)", 즉 해당 장비가 패킷을 처리할 수 없는 상황이 발생합니다. 그 결과 사용자는 서비스 중단 및 서비스 거부를 경험하게 됩니다.
+
+규모(비트 전송률 기준) 및 월별로 분류한 공격 분포가 아래에 나와 있습니다. 흥미롭게도, 400Gbps 이상의 공격은 전부 8월에 발생했으며, 여기에는 피크가 1Tbps 이상인 공격이 다수이고 최대 1.2Tbps에 육박한 지금까지 관찰된 최대 규모의 공격도 포함됩니다.
+
+**패킷 전송률** 이전 분기에서도 확인 가능하듯, 피크가 초당 5만 패킷(pps) 미만인 공격이 전체 공격의 거의 89%에 이르는 등, 2021년 3분기에 관찰된 공격의 대부분은 비교적 소규모였습니다. 대부분의 공격이 소규모였지만, 피크가 1천만 pps 이상인 공격이 전 분기 대비 142%만큼 증가하는 등, 상대적으로 대규모인 공격의 수가 이전 분기보다 증가하고 있음이 확인되었습니다.
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![BLOG-742 Embedded Image - F4U3GT](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW45FGHBX7BDQ8BV0TFNSR4E.png&w=715&h=358&f=webp&fit=cover&position=center)
+
+패킷 전송률이 초당 1백만에서 1천만 패킷 사이인 공격은 이전 분기보다 196% 증가했습니다. 이는 Cloudflare가 지난 분기에 관찰한 내용과도 유사하며, 대규모 공격의 증가 추세를 시사하고 있습니다.
+
+**비트 전송률** 피크가 500Mbps 미만인 공격이 도합 95.4%에 달하는 등, 비트 전송률 측면에서도 유사한 추세가 관찰되었습니다.
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![BLOG-742 Embedded Image - Xj5GMe](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW48BR9K1R2C03ZCQQ7G74CS.png&w=715&h=358&f=webp&fit=cover&position=center)
+
+분기 대비 데이터를 종합해보면, 규모가 500Mbps에서 10Gbps 사이인 공격의 건수가 전 분기에 비해 126%~289% 수준으로 크게 증가한 것으로 나타났습니다. 100Gbps가 넘는 공격은 14% 가까이 감소했습니다.
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![BLOG-742 Embedded Image - 7S8Uto](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW48VH1005Z3RCZA2DNQY8G8.png&w=715&h=283&f=webp&fit=cover&position=center)
+
+비트 전송률이 높은 공격의 건수는 전 분기에 비해 증가했습니다(100Gbps 이상의 공격만이 전 분기 대비 거의 14% 감소). 특히 규모가 500Mbps1Gbps인 공격이 전 분기 대비 289% 급증했고, 1Gbps100Gbps 규모의 공격은 126%만큼 급증했습니다.
+
+이는 일반적으로는 대부분의 공격이 소규모에 해당하지만 "대규모" 공격의 건수는 증가 추세임을 다시 한번 보여줍니다. 따라서 더 큰 공격을 수행하기 위해 더 많은 리소스를 확보하는 공격자가 늘어나고 있다고 볼 수 있습니다.
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![BLOG-742 Embedded Image - XDr0l6](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW458MJEVV2ANH02PRNY3MJM.png&w=715&h=358&f=webp&fit=cover&position=center)
+
+### 지속 시간별 네트워크 계층 DDoS 공격
+
+**대부분의 공격은 지속 시간이 1시간 미만이므로, 자동화된 상시 가동 DDoS 완화 솔루션의 필요성이 다시 한번 강조됩니다.**
+
+Cloudflare는 시스템에서 공격이 처음으로 감지 및 확인된 시점과 해당 공격 서명이 관찰된 마지막 패킷 사이의 간격을 기록하여 공격의 지속 시간을 측정합니다. 이전 분기와 마찬가지로 대부분의 공격은 일시적입니다. 구체적으로는 전체 DDoS 공격의 94.4%가 1시간 미만이었습니다. 반면에 6시간 이상 지속된 공격은 2021년 3분기 전체에서 0.4% 미만을 차지했으며, 1~2시간 지속된 공격의 경우에는 전 분기 대비 165%만큼 증가했습니다. 하지만 공격 지속 시간이 길다고 해서 반드시 더 위험한 것은 아닙니다.
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![BLOG-742 Embedded Image - D6qjcz](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW47P2KQKE7RKGP3PXP7P8WQ.png&w=715&h=358&f=webp&fit=cover&position=center)
+
+짧은 공격은 감지되지 않은 채 지나칠 수 있으며, 막대한 수의 패킷, 바이트 또는 요청을 몇 초 안에 집중시켜 대상을 공격하는 버스트 공격은 특히 감지가 어렵습니다. 이 경우, 보안 분석을 통한 수동 완화에 의존하는 DDoS 방어 서비스로는 적시에 공격을 완화할 방법이 없습니다. 단지 공격 후 분석에서 이를 확인한 다음 해당 공격 지문을 필터링하는 새로운 규칙을 배포하고 다음을 기약할 수 있을 뿐입니다. 마찬가지로, 보안팀이 공격 진행 도중에 트래픽을 DDoS 공급자에게 리디렉션하는 "주문형" 서비스도 해당 트래픽이 주문형 DDoS 공급자에게 라우팅되기 전에 이미 공격이 끝나버리기 때문에 비효율적입니다.
+
+Cloudflare는 짧은 공격도 차단할 수 있을 만큼 빠르게 트래픽을 분석하여 실시간 지문까지 적용 가능한 자동화된 상시 가동 DDoS 방어 서비스를 사용할 것을 권장합니다. Cloudflare는 경로를 벗어난 트래픽을 분석하여 상시 가동 배포 모델에서도 DDoS 완화로 인한 합법적인 트래픽의 대기 시간 증가가 일어나지 않도록 합니다. 공격이 식별되면 Cloudflare의 자동화된 에지 DDoS 방어 시스템([dosd](https://blog.cloudflare.com/deep-dive-cloudflare-autonomous-edge-ddos-protection/))이 실시간 서명을 이용하여 동적으로 정의된 규칙을 생성 및 적용합니다. 알려진 트래픽 패턴에 대한 허용/거부 목록으로 사전 구성된 방화벽 규칙은 즉시 효력을 발휘합니다.
+
+### 공격 벡터
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![BLOG-742 Embedded Image - WYwJSd](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW46VJXEPVQ6CDHRE9SV0BBZ.png&w=715&h=358&f=webp&fit=cover&position=center)
+
+**공격자들이 SYN 폭주를 여전히 애용하고 있는 한편, DTLS를 이용한 공격이 전 분기 대비 3,549%만큼 급증했습니다.**
+
+공격 벡터는 공격자가 서비스 거부 이벤트를 유발하기 위해 동원하는 여러 방법을 설명하는 용어입니다.
+
+이전 분기에서 관찰된 바와 같이 SYN 폭주를 활용한 공격은 가장 널리 사용되고 있는 방식입니다.
+
+[SYN 폭주](https://www.cloudflare.com/learning/ddos/syn-flood-ddos-attack/) 공격이란 TCP 프로토콜의 근간, 즉 3방향 TCP 핸드쉐이크의 일부인 클라이언트와 서버 간의 상태 저장(stateful) TCP 연결을 악용하는 방식의 DDoS 공격을 말합니다. 클라이언트는 TCP 핸드쉐이크의 일부로서 동기화 플래그(SYN)가 포함된 초기 연결 요청 패킷을 전송합니다. 그러면 서버가 동기화된 승인 플래그(SYN-ACK)가 포함된 패킷으로 응답합니다. 마지막으로 클라이언트는 승인(ACK) 패킷으로 응답합니다. 이 시점에서 연결이 이루어지며, 연결이 닫힐 때까지 데이터를 교환할 수 있게 됩니다. 공격자가 이러한 상태 저장 프로세스를 악용할 경우 서비스 거부 이벤트가 유발될 수 있습니다.
+
+공격자는 반복적으로 SYN 패킷을 전송함으로써 TCP 연결 상태를 추적하는 서버 또는 라우터의 연결 테이블을 마비시키려고 시도합니다. 해당 서버는 SYN-ACK 패킷으로 응답하고 각각의 연결마다 일정량의 메모리를 할당한 다음 클라이언트가 최종 ACK로 응답하기를 무한정 기다리게 됩니다. 서버의 메모리를 차지하는 연결이 충분히 많아지면, 해당 서버는 합법적인 클라이언트들에 대해 더 이상 메모리를 할당할 수 없으므로, 서버 정지 상태 또는 합법적인 클라이언트 연결을 처리하지 못하는 상태인 서비스 거부 이벤트로 이어지게 됩니다.
+
+Cloudflare 네트워크 상에서 관찰된 모든 공격의 절반 이상이 SYN 폭주 공격이었으며, RST, ACK 및 UDP 폭주 공격이 그 뒤를 이었습니다.
+
+### 새롭게 부상하는 위협
+
+전반적으로 SYN 및 RST 폭주 방식의 인기가 여전히 높지만, 공격자가 공격 시작 시 어떤 새로운 벡터를 배포하는지 이해하기 위해 최근 유행하는 공격 벡터를 살펴본 결과, [DTLS](https://en.wikipedia.org/wiki/Datagram_Transport_Layer_Security) 증폭 공격이 엄청나게 증가한 것이 확인되었습니다. DTLS 폭주는 전 분기 대비 3,549%만큼 급증했습니다.
+
+Datagram Transport Layer Security (DTLS)는 메시지 위조와 도청 또는 변조를 방지하기 위해 무연결 데이터그램 기반 응용 프로그램에 유사한 형태의 보안을 보장할 수 있도록 설계된 전송 계층 보안([TLS](https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/))과 유사한 프로토콜입니다. 무연결 방식인 DTLS는 [TCP 멜트다운](https://openvpn.net/faq/what-is-tcp-meltdown/)을 걱정할 필요 없이 VPN 연결을 수행할 수 있어서 특히 유용합니다. 재정렬 및 기타 연결 속성은 응용 프로그램이 담당합니다.
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![BLOG-742 Embedded Image - BIQ2RI](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW45BQT131V4468C5WYDXK47.png&w=715&h=358&f=webp&fit=cover&position=center)
+
+대부분의 UDP 기반 프로토콜과 마찬가지로 DTLS는 스푸핑이 가능하므로, 공격자들은 이를 네트워크 게이트웨이를 마비시키는 반사 증폭 공격을 생성하는 용도로 활용합니다.
+
+### 국가별 네트워크 계층 DDoS 공격
+
+**모로코가 네트워크 공격의 비율 측면에서 1위를 기록했지만, 2위인 아시아 국가들과의 차이는 근소합니다.**
+
+네트워크 계층 DDoS 공격을 분석할 때는 소스 IP의 위치가 아닌 트래픽이 유입되는 Cloudflare 에지 데이터 센터의 위치를 기준으로 트래픽을 구분합니다. 이는 공격자가 네트워크 계층 공격을 시작할 때 공격의 출발지를 숨기고 공격 속성에 무작위성을 부여하기 위해 소스 IP 주소를 [스푸핑](https://www.cloudflare.com/learning/ddos/glossary/ip-spoofing/)할 수 있기 때문이며, 이 경우 단순한 DDoS 방어 시스템으로는 공격을 차단하기가 어렵습니다. 따라서 스푸핑된 소스 IP를 기반으로 공격 출발 국가를 파악할 경우에는 결국 스푸핑된 국가를 지목하게 됩니다.
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![BLOG-742 Embedded Image - RI0Pmf](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW48JVYMHXGFSJ881Y2QGA2B.png&w=715&h=358&f=webp&fit=cover&position=center)
+
+Cloudflare는 공격이 관찰된 Cloudflare 데이터 센터의 위치별로 공격 데이터를 표시함으로써 스푸핑된 IP 문제를 극복할 수 있습니다. Cloudflare는 전 세계 [250개 이상의 도시](http://www.cloudflare.com/network)에 데이터 센터를 확보하고 있기 때문에 보고서 작성 시 지리적 정확도가 보장됩니다.
+
+**세계 전체**
+
+모든 지역 및 국가를 보려면 [Radar DDoS Report 대시보드의 대화형 지도](https://radar.cloudflare.com/notebooks/ddos-2021-q3#network-layer-ddos-attacks-by-country)를 이용하시기 바랍니다.
+
+### VoIP 서비스 공급자를 대상으로 한 최근의 공격 및 랜섬 DDoS 공격과 관련한 참고 사항
+
+Cloudflare는 VoIP 서비스 공급자를 대상으로 때로는 랜섬 위협도 수반하여 이루어지고 있는 DDoS 공격의 급증 추세를 [최근에 보고](https://blog.cloudflare.com/attacks-on-voip-providers/)하고 [업데이트를 제공](https://blog.cloudflare.com/update-on-voip-attacks/)한 바 있습니다. 이 공격 캠페인은 2021년 4분기 초인 지금도 여전히 현재 진행형입니다. Cloudflare는 계속해서 VoIP 서비스 공급자를 온보딩하여 해당 응용 프로그램과 네트워크를 보호하기 위해 노력 중입니다.
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![BLOG-742 Embedded Image - wA4LRs](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW45HWJN5NK3GJFAWGC005MG.png&w=715&h=358&f=webp&fit=cover&position=center)
+
+API 게이트웨이 및 공급자의 공식 웹 사이트를 노린 HTTP 공격이 VoIP 인프라를 표적으로 삼은 네트워크 계층 및 전송 계층 공격과 결합되었습니다.
+
+그 예는 다음과 같습니다.
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![May I ask who’s calling, please? A recent rise in VoIP DDoS attacks](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW46RAH2NMEW6Y5WCYG490PV.png&w=715&h=406&f=webp&fit=cover&position=center)
+
+  1. **상태 저장 방화벽을 노린 TCP 폭주:** "시행 착오" 유형의 공격에 사용되는 방식입니다. 전화 통신 인프라에는 그다지 효과적이지 않지만(대부분 UDP이기 때문에) 상태 저장 방화벽을 마비시키는 데는 매우 효과적입니다.
+  2. **SIP 인프라를 노린 UDP 폭주:** 잘 알려진 지문이 없고 중요한 VoIP 서비스를 겨냥하는 UDP 트래픽의 폭주입니다. 이처럼 일반적인 형태의 폭주는 정교하지 않은 필터링 시스템에서는 합법적인 트래픽처럼 보일 수 있습니다.
+  3. **SIP 인프라를 노린 UDP 반사:** SIP 또는 RTP 서비스를 대상으로 삼는 이러한 방식은 세션 경계 컨트롤러(SBC) 및 기타 전화 통신 인프라를 간단히 마비시킬 수 있습니다. 공격자가 이러한 서비스를 높은 정밀도로 공격할 수 있으려면 표적의 인프라에 대한 충분한 학습이 필요한 것으로 보입니다.
+  4. **SIP 프로토콜별 공격:** 응용 프로그램 계층에서의 공격은 네트워크 장치 상에서 필터링하는 것보다 응용 프로그램 오류 생성 시의 리소스 비용이 더 높기 때문에 특히 문제가 됩니다.
+
+
+
+공격하겠다고 위협하며 비트코인을 요구하는 랜섬 노트를 수신하는 경우도 여전히 많습니다. [랜섬웨어](https://www.cloudflare.com/learning/security/ransomware/what-is-ransomware/) 및 [랜섬 DDoS](https://www.cloudflare.com/learning/ddos/ransom-ddos-attack/) 공격은 4분기 연속으로 전 세계의 조직들이 피부로 느끼는 위협이 되고 있습니다.
+
+Cloudflare 제품은 랜섬웨어 감염 및 랜섬 DDoS 공격으로 이어질 수 있는 몇몇 위협 벡터들을 다음과 같이 차단할 수 있습니다.
+
+  * Cloudflare [DNS 필터링](https://www.cloudflare.com/learning/access-management/what-is-dns-filtering/)은 안전하지 않은 웹 사이트를 차단해줍니다.
+  * Cloudflare [브라우저 격리](https://www.cloudflare.com/teams/browser-isolation/)는 드라이브 바이 다운로드 및 기타 브라우저 기반 공격을 방지합니다.
+  * [Zero Trust](https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/) 아키텍처는 랜섬웨어가 네트워크 내부에서 확산되는 것을 방지할 수 있습니다.
+  * [Magic Transit](https://www.cloudflare.com/magic-transit/)은 BGP 경로 재분배를 사용하여 대기 시간에 영향을 주지 않으면서도 조직의 네트워크를 DDoS 공격으로부터 보호해줍니다.
+
+
+
+### 더 나은 인터넷 구축 지원
+
+Cloudflare는 더 나은 인터넷을 구축하는 데 도움이 되겠다는 사명하에 설립되었으며, 여기에는 DDoS 공격으로부터 완전히 자유로운 환경을 구축하는 일도 포함됩니다. 지난 10년 동안 고객의 인터넷 자산을 규모와 종류를 막론한 모든 DDoS 공격으로부터 보호하고자 하는 Cloudflare의 노력에는 흔들림이 없었습니다. [2017](https://blog.cloudflare.com/unmetered-mitigation/)년에는 모든 조직이 보호받고 가용성을 유지할 수 있도록 Free 요금제를 비롯한 모든 Cloudflare 서비스 및 요금제에 무제한 DDoS 방어를 무료로 포함시켰습니다. 지난 몇 년 동안 웹 사이트, 응용 프로그램 및 네트워크가 DDoS 공격으로부터 안전하면서도 빠르고 안정적인 상태를 유지하기를 바라는 크고 작은 수많은 조직이 Cloudflare와 함께했습니다.
+
+그러나 사이버 공격의 형태는 DDoS 공격에 국한되지 않고 다양합니다. 오늘날 규모와 상관없이 전 세계의 조직을 계속해서 괴롭히고 있는 공격의 종류에는 악의적인 봇, 랜섬웨어 공격, 이메일 피싱, VPN/원격 액세스 해킹 등도 있습니다. 이러한 공격은 모든 온라인 비즈니스의 생명줄에 해당하는 웹 사이트, API, 응용 프로그램 및 전체 네트워크를 표적으로 삼습니다. 그래서 Cloudflare 보안 포트폴리오는 인터넷에 연결된 모든 것과 모든 사람을 염두에 두고 설계되었습니다.
+
+[Cloudflare DDoS](http://www.cloudflare.com/ddos) 또는 [네트워크 서비스](https://www.cloudflare.com/network-services/)에 대해 자세히 알아보려면 [계정을 생성](http://dash.cloudflare.com/)하거나 [직접 문의](http://www.cloudflare.com/enterprise)하여 주십시오.
+
+이 페이지의 내용
+
+온라인 토론
+
+[](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Fblog.cloudflare.com%2Fko-kr%2Fddos-attack-trends-for-2021-q3%2F&t=2021%EB%85%84%203%EB%B6%84%EA%B8%B0%20DDoS%20%EA%B3%B5%EA%B2%A9%20%EB%8F%99%ED%96%A5)[](https://x.com/intent/post?text=2021%EB%85%84+3%EB%B6%84%EA%B8%B0+DDoS+%EA%B3%B5%EA%B2%A9+%EB%8F%99%ED%96%A5&url=https%3A%2F%2Fblog.cloudflare.com%2Fko-kr%2Fddos-attack-trends-for-2021-q3%2F)[](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fblog.cloudflare.com%2Fko-kr%2Fddos-attack-trends-for-2021-q3%2F)[](https://bsky.app/intent/compose?text=2021%EB%85%84+3%EB%B6%84%EA%B8%B0+DDoS+%EA%B3%B5%EA%B2%A9+%EB%8F%99%ED%96%A5+https%3A%2F%2Fblog.cloudflare.com%2Fko-kr%2Fddos-attack-trends-for-2021-q3%2F)[](https://mastodonshare.com/?text=2021%EB%85%84+3%EB%B6%84%EA%B8%B0+DDoS+%EA%B3%B5%EA%B2%A9+%EB%8F%99%ED%96%A5&url=https%3A%2F%2Fblog.cloudflare.com%2Fko-kr%2Fddos-attack-trends-for-2021-q3%2F)[](https://www.threads.net/intent/post?text=2021%EB%85%84+3%EB%B6%84%EA%B8%B0+DDoS+%EA%B3%B5%EA%B2%A9+%EB%8F%99%ED%96%A5+https%3A%2F%2Fblog.cloudflare.com%2Fko-kr%2Fddos-attack-trends-for-2021-q3%2F)
+
+## 관련 태그
+
+[DDoS](https://blog.cloudflare.com/ko-kr/tag/ddos/)[DDoS 보고서](https://blog.cloudflare.com/ko-kr/tag/ddos-reports/)[Meris (KO)](https://blog.cloudflare.com/ko-kr/tag/meris/)[Radar](https://blog.cloudflare.com/ko-kr/tag/cloudflare-radar/)[RDDoS (KO)](https://blog.cloudflare.com/ko-kr/tag/rddos/)[REvil](https://blog.cloudflare.com/ko-kr/tag/revil/)[VoiP (KO)](https://blog.cloudflare.com/ko-kr/tag/voip/)[공격](https://blog.cloudflare.com/ko-kr/tag/attacks/)[랜섬 공격](https://blog.cloudflare.com/ko-kr/tag/ransom-attacks/)
+
+소셜 미디어 팔로우
+
+  * ![Cloudflare](https://blog.cloudflare.com/images/placeholder__cloudflare.png)Cloudflare
+
+[](https://blog.cloudflare.com/rss/)[](https://x.com/Cloudflare)[](https://www.linkedin.com/company/cloudflare-inc-)[](https://www.youtube.com/cloudflare)[](https://instagram.com/cloudflare)[](https://github.com/cloudflare)[](https://bsky.app/profile/cloudflare.social)[](https://www.threads.com/@cloudflare)[](https://www.tiktok.com/@cloudflare)
+
+
+
+
+## 새 포스트 알림을 받아보세요
+
+이메일 주소
+
+이메일 주소를 절대 공유하지 않습니다.
+
+구독하기
+
+구독해 주셔서 감사합니다! 확인을 위해 수신함을 확인해 주세요.

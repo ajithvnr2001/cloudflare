@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/account-takeover-protection/",
+  "file": "_subdomains/blog.cloudflare.com/account-takeover-protection.md",
+  "title": "End User Security: Account Takeover Protections with Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:28.432865+00:00",
+  "html_len": 299926,
+  "md_len": 68118,
+  "depth": 0,
+  "phase": 2
+}

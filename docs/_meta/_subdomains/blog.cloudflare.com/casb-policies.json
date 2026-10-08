@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/casb-policies/",
+  "file": "_subdomains/blog.cloudflare.com/casb-policies.md",
+  "title": "Introducing automatic remediation policies with Cloudflare CASB | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:46.986962+00:00",
+  "html_len": 297937,
+  "md_len": 65289,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/chaddg/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/chaddg.md",
+  "title": "Chadd G Creative",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:23.631535+00:00",
+  "html_len": 204773,
+  "md_len": 5086,
+  "depth": 0,
+  "phase": 2
+}

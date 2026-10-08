@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-heartbleed-aftermath-all-cloudflare-certificates-revoked-and-reissued/",
+  "file": "_subdomains/blog.cloudflare.com/the-heartbleed-aftermath-all-cloudflare-certificates-revoked-and-reissued.md",
+  "title": "The Heartbleed Aftermath: all CloudFlare certificates revoked and reissued | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:23.316246+00:00",
+  "html_len": 286016,
+  "md_len": 64707,
+  "depth": 0,
+  "phase": 2
+}

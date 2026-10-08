@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/ddos/ssdp-ddos-attack/",
+  "file": "_subdomains/www.cloudflare.com/learning/ddos/ssdp-ddos-attack.md",
+  "title": "SSDP DDoS Attack",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:38.888191+00:00",
+  "html_len": 206341,
+  "md_len": 10577,
+  "depth": 0,
+  "phase": 2
+}

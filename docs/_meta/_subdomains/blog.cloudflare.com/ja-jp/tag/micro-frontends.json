@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/tag/micro-frontends/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/tag/micro-frontends.md",
+  "title": "\"\u30de\u30a4\u30af\u30ed\u30d5\u30ed\u30f3\u30c8\u30a8\u30f3\u30c9\" \u30bf\u30b0\u306e\u6295\u7a3f \u2014 Cloudflare \u30d6\u30ed\u30b0",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (707 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:18:46.885337+00:00",
+  "html_len": 115241,
+  "md_len": 3100,
+  "depth": 1,
+  "phase": 2
+}

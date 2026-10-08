@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/cloudflare-cf-cli-launch/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/cloudflare-cf-cli-launch.md",
+  "title": "Einf\u00fchrung von cf: die agentenbasierte CLI f\u00fcr die gesamte Cloudflare API | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:17.265373+00:00",
+  "html_len": 245918,
+  "md_len": 38361,
+  "depth": 0,
+  "phase": 2
+}

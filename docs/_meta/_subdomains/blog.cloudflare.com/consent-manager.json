@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/consent-manager/",
+  "file": "_subdomains/blog.cloudflare.com/consent-manager.md",
+  "title": "Consent management made easy and clear with Cloudflare Zaraz | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:40:00.349733+00:00",
+  "html_len": 287895,
+  "md_len": 61285,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,268 @@
+---
+url: https://developers.cloudflare.com/email-service/api/send-emails/workers-api/
+title: Workers API \u00b7 Cloudflare Email Service docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:11:12.471996+00:00
+---
+
+# Workers API · Cloudflare Email Service docs
+
+> Source: https://developers.cloudflare.com/email-service/api/send-emails/workers-api/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Email Service](https://developers.cloudflare.com/email-service/)
+  3. /…
+
+API reference
+
+  4. /Send emails
+  5. /Workers API
+
+
+
+# Workers API
+
+Last updated Sep 16, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/email-service/api/send-emails/workers-api/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewEmail bindingsend() method Interface Basic usage AttachmentsError handlingError codesLegacy EmailMessage APINext steps
+
+The Workers API provides native email sending capabilities directly from your Cloudflare Workers through bindings. If you are not using Workers, you can send emails using the [REST API](https://developers.cloudflare.com/email-service/api/send-emails/rest-api/) instead.
+
+## Email binding
+
+Configure a `send_email` binding in your Wrangler configuration file to enable email sending:
+    
+    
+    {
+    	"send_email": [{ "name": "EMAIL" }],
+    }
+    
+    
+    [[send_email]]
+    name = "EMAIL"
+
+You can restrict which senders and recipients a binding may use. Refer to [Configure send bindings](https://developers.cloudflare.com/email-service/configuration/send-bindings/) for the available restriction attributes and examples.
+
+## `send()` method
+
+Send a single email using the `send()` method on your email binding.
+
+### Interface
+    
+    
+    interface SendEmail {
+    	send(message: EmailMessage | EmailMessageBuilder): Promise<EmailSendResult>;
+    }
+    
+    interface EmailAddress {
+    	email: string;
+    	name?: string;
+    }
+    
+    // Structured email builder (recommended)
+    interface EmailMessageBuilder {
+    	to: string | EmailAddress | (string | EmailAddress)[]; // Max 50 recipients
+    	from: string | EmailAddress;
+    	subject: string;
+    	html?: string;
+    	text?: string;
+    	cc?: string | EmailAddress | (string | EmailAddress)[];
+    	bcc?: string | EmailAddress | (string | EmailAddress)[];
+    	replyTo?: string | EmailAddress;
+    	attachments?: Attachment[];
+    	// Custom headers. See /email-service/reference/headers/
+    	headers?: { [key: string]: string };
+    	// The combined number of addresses in `to`, `cc`, and `bcc` must not
+    	// exceed 50. See /email-service/platform/limits/ for all limits.
+    }
+    
+    interface Attachment {
+    	content: string | ArrayBuffer | ArrayBufferView; // Base64 string or binary content
+    	filename: string;
+    	type: string; // MIME type
+    	disposition: "attachment" | "inline";
+    	contentId?: string; // For inline attachments
+    }
+    
+    interface EmailSendResult {
+    	messageId: string; // Unique email ID
+    }
+    
+    // Errors are thrown as standard Error objects with a `code` property
+    // try { await env.EMAIL.send(...) } catch (e) { console.log(e.code, e.message) }
+
+Local development with binary attachments
+
+When using `wrangler dev` without [remote bindings](https://developers.cloudflare.com/workers/local-development/#remote-bindings), `ArrayBuffer` and `ArrayBufferView` content in attachments cannot be serialized by the local simulator. Refer to [local development for email sending](https://developers.cloudflare.com/email-service/local-development/sending/#known-limitations).
+
+### Basic usage
+    
+    
+    const response = await env.EMAIL.send({
+    	to: "recipient@example.com",
+    	from: "welcome@yourdomain.com",
+    	subject: "Welcome to our service!",
+    	html: "<h1>Welcome!</h1><p>Thanks for signing up.</p>",
+    	text: "Welcome! Thanks for signing up.",
+    });
+
+For multiple recipients, CC/BCC, and named addresses, see [Specify recipients](https://developers.cloudflare.com/email-service/examples/email-sending/recipients/).
+
+### Attachments
+
+Send files by including base64-encoded content in the `attachments` array. The total message size must not exceed 5 MiB (including attachments).
+    
+    
+    const response = await env.EMAIL.send({
+    	to: "customer@example.com",
+    	from: "invoices@yourdomain.com",
+    	subject: "Your Invoice",
+    	html: "<h1>Invoice attached</h1><p>Please find your invoice attached.</p>",
+    	attachments: [
+    		{
+    			content: "JVBERi0xLjQKJeLjz9MKMSAwIG9iag...", // Base64 PDF content
+    			filename: "invoice-12345.pdf",
+    			type: "application/pdf",
+    			disposition: "attachment",
+    		},
+    	],
+    });
+
+For inline images and file uploads, see [Email attachments](https://developers.cloudflare.com/email-service/examples/email-sending/email-attachments/).
+
+## Error handling
+
+Handle email sending errors gracefully:
+    
+    
+    export default {
+    	async fetch(request: Request, env: Env): Promise<Response> {
+    		try {
+    			const response = await env.EMAIL.send({
+    				to: "user@example.com",
+    				from: "noreply@yourdomain.com",
+    				subject: "Test Email",
+    				text: "This is a test email.",
+    			});
+    
+    			return new Response(
+    				JSON.stringify({
+    					success: true,
+    					emailId: response.messageId,
+    				}),
+    			);
+    		} catch (error) {
+    			// Error has .code and .message properties
+    			console.error("Email sending failed:", error.code, error.message);
+    
+    			// Handle specific error types
+    			switch (error.code) {
+    				case "E_SENDER_NOT_VERIFIED":
+    					return new Response(
+    						JSON.stringify({
+    							success: false,
+    							error: "Please verify your sender domain first",
+    						}),
+    						{ status: 400 },
+    					);
+    
+    				case "E_RATE_LIMIT_EXCEEDED":
+    					return new Response(
+    						JSON.stringify({
+    							success: false,
+    							error: "Rate limit exceeded. Please try again later",
+    						}),
+    						{ status: 429 },
+    					);
+    
+    				default:
+    					return new Response(
+    						JSON.stringify({
+    							success: false,
+    							error: error.message,
+    						}),
+    						{ status: 500 },
+    					);
+    			}
+    		}
+    	},
+    };
+
+## Error codes
+
+The following error codes may be returned when sending emails:
+
+Error Code | Description | Common Causes  
+---|---|---  
+`E_VALIDATION_ERROR` | Validation error in the payload | Invalid email format, missing required fields, malformed data  
+`E_FIELD_MISSING` | Required field is missing | Missing `to`, `from`, or `subject` fields  
+`E_TOO_MANY_RECIPIENTS` | Too many recipients in to/cc/bcc arrays | Combined recipients exceed 50 limit  
+`E_TOO_MANY_ATTACHMENTS` | Too many attachments in `attachments` array | `attachments` array exceeds 32 entries  
+`E_SENDER_NOT_VERIFIED` | Sender domain not verified | Attempting to send from unverified domain  
+`E_RECIPIENT_NOT_ALLOWED` | Recipient not in allowed list | Recipient address not in `allowed_destination_addresses`  
+`E_RECIPIENT_SUPPRESSED` | Suppressed recipient while dropping is off | At least one recipient is suppressed and **Drop suppressed recipients** is off  
+`E_SENDER_DOMAIN_NOT_AVAILABLE` | Domain not available for sending | Domain not onboarded to Email Service  
+`E_CONTENT_TOO_LARGE` | Email content exceeds size limit | Total message size exceeds the maximum  
+`E_DELIVERY_FAILED` | Could not deliver the email | SMTP delivery failure, recipient server rejection  
+`E_RATE_LIMIT_EXCEEDED` | Rate limit exceeded | Sending rate limit reached  
+`E_DAILY_LIMIT_EXCEEDED` | Daily limit exceeded | Daily sending quota reached  
+`E_INTERNAL_SERVER_ERROR` | Internal service error | Email Service temporarily unavailable  
+`E_HEADER_NOT_ALLOWED` | Header not allowed | Header is platform-controlled or not on the [allowlist](https://developers.cloudflare.com/email-service/reference/headers/)  
+`E_HEADER_USE_API_FIELD` | Must use API field | Header like `From` must be set via the dedicated API field  
+`E_HEADER_VALUE_INVALID` | Header value invalid | Malformed value, empty, or incorrect format  
+`E_HEADER_VALUE_TOO_LONG` | Header value too long | Value exceeds 2,048 byte limit  
+`E_HEADER_NAME_INVALID` | Header name invalid | Invalid characters or exceeds 100 byte limit  
+`E_HEADERS_TOO_LARGE` | Headers payload too large | Total custom headers exceed 16 KB limit  
+`E_HEADERS_TOO_MANY` | Too many headers | More than 20 allowlisted (non-X) custom headers  
+  
+**Drop suppressed recipients** is off by default. When you [turn on the setting](https://developers.cloudflare.com/email-service/configuration/domains/#drop-suppressed-recipients), Email Service removes suppressed recipients and processes the remaining recipients.
+
+## Legacy `EmailMessage` API
+
+The `EmailMessage` API remains supported for backward compatibility. Use it when you already have a raw [RFC 5322 ↗︎](https://datatracker.ietf.org/doc/html/rfc5322) MIME message to send. For new code, prefer the structured `send()` method above.
+    
+    
+    import { EmailMessage } from "cloudflare:email";
+    import { createMimeMessage } from "mimetext";
+    
+    export default {
+    	async fetch(request: Request, env: Env): Promise<Response> {
+    		const msg = createMimeMessage();
+    		msg.setSender({ name: "Sender", addr: "sender@yourdomain.com" });
+    		msg.setRecipient("recipient@example.com");
+    		msg.setSubject("Legacy Email");
+    		msg.addMessage({
+    			contentType: "text/html",
+    			data: "<h1>Hello from legacy API</h1>",
+    		});
+    
+    		const message = new EmailMessage(
+    			"sender@yourdomain.com",
+    			"recipient@example.com",
+    			msg.asRaw(),
+    		);
+    
+    		await env.EMAIL.send(message);
+    		return new Response("Legacy email sent");
+    	},
+    };
+
+* * *
+
+## Next steps
+
+  * See the [REST API](https://developers.cloudflare.com/email-service/api/send-emails/rest-api/) for sending emails without Workers
+  * See [SMTP](https://developers.cloudflare.com/email-service/api/send-emails/smtp/) for sending from any SMTP-capable application or mail client
+  * See [practical examples](https://developers.cloudflare.com/email-service/examples/) of email sending patterns
+  * Learn about [email routing](https://developers.cloudflare.com/email-service/api/route-emails/) for handling incoming emails
+  * Explore [email authentication](https://developers.cloudflare.com/email-service/concepts/email-authentication/) for better deliverability
+
+
+
+[PreviousManage suppressions](https://developers.cloudflare.com/email-service/configuration/suppressions/)[NextREST API](https://developers.cloudflare.com/email-service/api/send-emails/rest-api/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/email-service/api/send-emails/workers-api.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

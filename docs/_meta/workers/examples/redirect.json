@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/examples/redirect/",
+  "file": "workers/examples/redirect.md",
+  "title": "Redirect \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:24.558994+00:00",
+  "html_len": 206179,
+  "md_len": 4888,
+  "depth": 0
+}

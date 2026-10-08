@@ -1,0 +1,98 @@
+---
+url: https://developers.cloudflare.com/cloudflare-one/email-security/setup/post-delivery-deployment/bcc-journaling/bcc-setup/bcc-microsoft-exchange/
+title: Setup phishing risk assessment for Microsoft Exchange with Email Security \u00b7 Cloudflare One docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:08:39.887318+00:00
+---
+
+# Setup phishing risk assessment for Microsoft Exchange with Email Security · Cloudflare One docs
+
+> Source: https://developers.cloudflare.com/cloudflare-one/email-security/setup/post-delivery-deployment/bcc-journaling/bcc-setup/bcc-microsoft-exchange/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)
+  3. /…
+
+[Email security](https://developers.cloudflare.com/cloudflare-one/email-security/)[Setup](https://developers.cloudflare.com/cloudflare-one/email-security/setup/)Post-delivery deployment[BCC/Journaling](https://developers.cloudflare.com/cloudflare-one/email-security/setup/post-delivery-deployment/bcc-journaling/)
+
+  4. /BCC setup
+  5. /Microsoft Exchange BCC setup
+
+
+
+# Microsoft Exchange BCC setup
+
+Last updated Apr 17, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/cloudflare-one/email-security/setup/post-delivery-deployment/bcc-journaling/bcc-setup/bcc-microsoft-exchange/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewConfigure Inbound RuleEmail processing and reportsNext steps
+
+For customers using Microsoft Exchange, setting up Email security via BCC is quick and easy. You need to configure an inbound rule to send emails to Email security via BCC for processing and detection of potential phishing attacks. The following email flow shows how this works:
+
+![Email flow when setting up a phishing assessment risk for Microsoft Exchange with Email security.](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=744,height=417,format=webp/_astro/Microsoft_Exchange_365.fz8IIJ7m.png)
+
+Auto-moves for Microsoft Exchange customers
+
+Microsoft Exchange customers can auto-move if your email service is on-premise and you are using Microsoft Exchange online.
+
+## Configure Inbound Rule
+
+  1. Access Exchange's **Management Console** , and go to **Organization Configuration** > **Hub Transport**.
+
+![Access Hub transport](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1310,height=726,format=webp/_astro/step1.Cr53r8C4.png)
+  2. On the **Actions** pane, select **New Transport Rule**.
+
+  3. Give the transport rule a name and a description and select **Next**.
+
+![Give transport rule a name and description](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1310,height=726,format=webp/_astro/step3.Bo-0qS8t.png)
+  4. In the **Condition** configuration panel, select the option **from users that are inside or outside the organization** option. In the dropdown that opens, select **Outside the organization**.
+
+![Select scope of transport rule](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1310,height=726,format=webp/_astro/step4.CxndsEWe.png)
+  5. Still in the same **Condition** configuration panel, add a second condition to the transport rule. Select **sent to users that are inside or outside the organization, or partners**. Keep the default value of **Inside the organization**.
+
+![Select where to send emails](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1310,height=726,format=webp/_astro/step5.CFjU-V5M.png)
+  6. Select **Next**.
+
+  7. In the **Action** configuration panel, select **Blind carbon copy (Bcc) the message to addresses**. Edit the **addresses** variable to add the addresses you want to copy as BCC.
+
+![Select BCC and edit email addresses](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1310,height=726,format=webp/_astro/step7.DJeDn5tj.png)
+  8. In **Specify Recipient** , select the **down arrow** next to the **Add** button > **External E-Mail Address**.
+
+![Select external e-mail address](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1310,height=726,format=webp/_astro/step8.D1wRFlWS.png)
+  9. Enter the BCC address provided by Email security. This address is specific to your account.
+
+![Enter the BCC address provided by Email security](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1310,height=726,format=webp/_astro/step9.DnJuKcbu.png)
+  10. Select **OK** > **OK** to return to the main configuration page of the transport rule.
+
+  11. At the main configuration page of the transport rule, select **Next** to continue to the Exception configuration panel.
+
+  12. You do not need to configure an exception rule. Select **Next**.
+
+![You do not need to configure an exception rule](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1310,height=726,format=webp/_astro/step12.CubH_6Qs.png)
+  13. In **Create Rule** , select the **New** button.
+
+![Select the new button](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1310,height=726,format=webp/_astro/step13.Bk-qDQZk.png)
+  14. Select **Finish** to close the transport rule configuration panel. This will return you to the Exchange Management Console.
+
+![Select finish](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1310,height=726,format=webp/_astro/step14.FJuX6pFq.png)
+
+
+
+Note
+
+If you have multiple rules, you may need to change the order of the BCC rule and move it to the right location in your rule sequence. This is needed so you can send BCC messages to Email security. Usually, the Email security BCC rule will be at the top of the ruleset. The configured conditions of the Email security BCC rule will only trigger for inbound messages.
+
+## Email processing and reports
+
+In BCC mode, all emails are put through automated phishing detections by Email security. Emails that trigger phishing detections are logged for reporting via product portal, email and Slack. Emails that do not trigger any detections are deleted.
+
+## Next steps
+
+[Enable logs](https://developers.cloudflare.com/cloudflare-one/insights/logs/logpush/email-security-logs/) to send detection data to an endpoint of your choice.
+
+[PreviousEnable auto-moves](https://developers.cloudflare.com/cloudflare-one/email-security/setup/post-delivery-deployment/bcc-journaling/bcc-setup/gmail-bcc-setup/enable-auto-moves/)[NextMicrosoft 365 journaling setup](https://developers.cloudflare.com/cloudflare-one/email-security/setup/post-delivery-deployment/bcc-journaling/journaling-setup/m365-journaling/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/cloudflare-one/email-security/setup/post-delivery-deployment/bcc-journaling/bcc-setup/bcc-microsoft-exchange.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

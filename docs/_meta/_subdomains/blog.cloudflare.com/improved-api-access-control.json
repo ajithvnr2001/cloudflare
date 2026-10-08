@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/improved-api-access-control/",
+  "file": "_subdomains/blog.cloudflare.com/improved-api-access-control.md",
+  "title": "Improved access controls: API access can now be selectively disabled | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:45.996572+00:00",
+  "html_len": 273515,
+  "md_len": 56556,
+  "depth": 0,
+  "phase": 2
+}

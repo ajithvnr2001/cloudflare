@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-we-built-instant-logs/",
+  "file": "_subdomains/blog.cloudflare.com/how-we-built-instant-logs.md",
+  "title": "How we built Instant Logs | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:08.077152+00:00",
+  "html_len": 293734,
+  "md_len": 66776,
+  "depth": 0,
+  "phase": 2
+}

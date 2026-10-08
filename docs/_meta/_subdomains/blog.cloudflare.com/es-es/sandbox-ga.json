@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/sandbox-ga/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/sandbox-ga.md",
+  "title": "Los agentes tienen sus propios ordenadores con Sandboxes (disponibilidad general) | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:19.093049+00:00",
+  "html_len": 249249,
+  "md_len": 40630,
+  "depth": 0,
+  "phase": 2
+}

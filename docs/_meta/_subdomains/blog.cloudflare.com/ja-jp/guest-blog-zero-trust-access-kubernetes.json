@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/guest-blog-zero-trust-access-kubernetes/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/guest-blog-zero-trust-access-kubernetes.md",
+  "title": "\u30b2\u30b9\u30c8\u30d6\u30ed\u30b0\uff1aKUDELSKI SECURITY\u793e\u3068K8S\u30c8\u30f3\u30cd\u30eb | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:11.410249+00:00",
+  "html_len": 221374,
+  "md_len": 33439,
+  "depth": 0,
+  "phase": 2
+}

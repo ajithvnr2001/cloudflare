@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/the-first-zero-trust-sim/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/the-first-zero-trust-sim.md",
+  "title": "La premi\u00e8re SIM Zero Trust | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:49.750688+00:00",
+  "html_len": 220954,
+  "md_len": 37305,
+  "depth": 0,
+  "phase": 2
+}

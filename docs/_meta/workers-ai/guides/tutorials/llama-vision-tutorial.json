@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers-ai/guides/tutorials/llama-vision-tutorial/",
+  "file": "workers-ai/guides/tutorials/llama-vision-tutorial.md",
+  "title": "Llama 3.2 11B Vision Instruct model on Cloudflare Workers AI \u00b7 Cloudflare Workers AI docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:01.350215+00:00",
+  "html_len": 135473,
+  "md_len": 5633,
+  "depth": 0
+}

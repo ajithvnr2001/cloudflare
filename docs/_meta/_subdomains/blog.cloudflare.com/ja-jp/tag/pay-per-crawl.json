@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/tag/pay-per-crawl/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/tag/pay-per-crawl.md",
+  "title": "\"\u30af\u30ed\u30fc\u30eb\u3054\u3068\u306b\u8ab2\u91d1\" \u30bf\u30b0\u306e\u6295\u7a3f \u2014 Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:18:49.598875+00:00",
+  "html_len": 111487,
+  "md_len": 3048,
+  "depth": 1,
+  "phase": 2
+}

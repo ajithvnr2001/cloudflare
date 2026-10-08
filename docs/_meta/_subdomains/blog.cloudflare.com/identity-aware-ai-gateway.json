@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/identity-aware-ai-gateway/",
+  "file": "_subdomains/blog.cloudflare.com/identity-aware-ai-gateway.md",
+  "title": "Catching rogue AI behavior with identity-aware analytics | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:12.244940+00:00",
+  "html_len": 313858,
+  "md_len": 71394,
+  "depth": 0,
+  "phase": 2
+}

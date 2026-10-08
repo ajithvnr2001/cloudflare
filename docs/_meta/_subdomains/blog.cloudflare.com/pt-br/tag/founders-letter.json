@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/tag/founders-letter/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/tag/founders-letter.md",
+  "title": "Posts com a tag \"Founders' Letter\" \u2014 Blog da Cloudflare",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (256 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:20:17.699610+00:00",
+  "html_len": 153993,
+  "md_len": 3434,
+  "depth": 1,
+  "phase": 2
+}

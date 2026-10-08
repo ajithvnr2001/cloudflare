@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/mpls-to-zerotrust/",
+  "file": "_subdomains/blog.cloudflare.com/mpls-to-zerotrust.md",
+  "title": "MPLS to Zero Trust in 30 days | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:51.644555+00:00",
+  "html_len": 303115,
+  "md_len": 68452,
+  "depth": 0,
+  "phase": 2
+}

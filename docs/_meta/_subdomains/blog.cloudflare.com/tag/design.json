@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/design/",
+  "file": "_subdomains/blog.cloudflare.com/tag/design.md",
+  "title": "Posts tagged \"Design\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:08:46.307413+00:00",
+  "html_len": 136706,
+  "md_len": 7093,
+  "depth": 1,
+  "phase": 2
+}

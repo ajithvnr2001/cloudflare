@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/moltworker-self-hosted-ai-agent/",
+  "file": "_subdomains/blog.cloudflare.com/moltworker-self-hosted-ai-agent.md",
+  "title": "Introducing Moltworker: a self-hosted personal AI agent, minus the minis | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:39.347593+00:00",
+  "html_len": 335341,
+  "md_len": 76214,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/best-practices-sase-for-ai/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/best-practices-sase-for-ai.md",
+  "title": "\u4f7f\u7528 SASE \u4fdd\u8b77\u751f\u6210\u5f0f AI \u7684\u6700\u4f73\u505a\u6cd5 | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:06.950582+00:00",
+  "html_len": 233443,
+  "md_len": 36949,
+  "depth": 0,
+  "phase": 2
+}

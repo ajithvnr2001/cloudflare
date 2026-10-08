@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/new-standards/",
+  "file": "_subdomains/blog.cloudflare.com/new-standards.md",
+  "title": "New standards for a faster and more private Internet | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:36.950628+00:00",
+  "html_len": 374384,
+  "md_len": 104599,
+  "depth": 0,
+  "phase": 2
+}

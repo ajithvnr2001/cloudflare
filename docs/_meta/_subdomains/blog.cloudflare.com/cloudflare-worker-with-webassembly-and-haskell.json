@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-worker-with-webassembly-and-haskell/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-worker-with-webassembly-and-haskell.md",
+  "title": "Let's build a Cloudflare Worker with WebAssembly and Haskell | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:55.010647+00:00",
+  "html_len": 320407,
+  "md_len": 67793,
+  "depth": 0,
+  "phase": 2
+}

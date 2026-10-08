@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/rust-nginx-module/",
+  "file": "_subdomains/blog.cloudflare.com/rust-nginx-module.md",
+  "title": "ROFL with a LOL: rewriting an NGINX module in Rust | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:46.576041+00:00",
+  "html_len": 331025,
+  "md_len": 81488,
+  "depth": 0,
+  "phase": 2
+}

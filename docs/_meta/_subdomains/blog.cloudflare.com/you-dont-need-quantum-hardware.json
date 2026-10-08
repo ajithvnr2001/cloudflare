@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/you-dont-need-quantum-hardware/",
+  "file": "_subdomains/blog.cloudflare.com/you-dont-need-quantum-hardware.md",
+  "title": "You don\u2019t need quantum hardware for post-quantum security | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:51.720797+00:00",
+  "html_len": 307274,
+  "md_len": 76287,
+  "depth": 0,
+  "phase": 2
+}

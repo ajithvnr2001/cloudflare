@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/compression-rules/examples/disable-all-brotli/",
+  "file": "rules/compression-rules/examples/disable-all-brotli.md",
+  "title": "Disable Brotli compression \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:47.265762+00:00",
+  "html_len": 136630,
+  "md_len": 3738,
+  "depth": 0
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/account/magic_ids_detections/",
+  "file": "logs/logpush/logpush-job/datasets/account/magic_ids_detections.md",
+  "title": "Magic IDS Detections \u00b7 Cloudflare Logs docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:12:12.755033+00:00",
+  "html_len": 123847,
+  "md_len": 2786,
+  "depth": 0
+}

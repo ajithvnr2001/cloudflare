@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/keyless-delegation/",
+  "file": "_subdomains/blog.cloudflare.com/keyless-delegation.md",
+  "title": "Delegated Credentials for TLS | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:32.210353+00:00",
+  "html_len": 295149,
+  "md_len": 68849,
+  "depth": 0,
+  "phase": 2
+}

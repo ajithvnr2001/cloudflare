@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/migrating-cdnjs-to-serverless-with-workers-kv/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/migrating-cdnjs-to-serverless-with-workers-kv.md",
+  "title": "\u5229\u7528 Workers KV \u5c06 cdnjs \u8fc1\u79fb\u5230\u65e0\u670d\u52a1\u5668 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:39.025238+00:00",
+  "html_len": 213877,
+  "md_len": 32293,
+  "depth": 0,
+  "phase": 2
+}

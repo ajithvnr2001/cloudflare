@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/attacks-on-voip-providers/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/attacks-on-voip-providers.md",
+  "title": "\uc804\ud654\ud558\ub294 \ubd84\uc774 \ub204\uad6c\uc2dc\uc8e0? \uc99d\uac00\ud558\uace0 \uc788\ub294 VoIP DDoS \uacf5\uaca9 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:58.255017+00:00",
+  "html_len": 240592,
+  "md_len": 38431,
+  "depth": 0,
+  "phase": 2
+}

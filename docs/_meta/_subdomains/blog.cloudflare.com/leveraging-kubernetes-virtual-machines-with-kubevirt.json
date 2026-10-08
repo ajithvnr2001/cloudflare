@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/leveraging-kubernetes-virtual-machines-with-kubevirt/",
+  "file": "_subdomains/blog.cloudflare.com/leveraging-kubernetes-virtual-machines-with-kubevirt.md",
+  "title": "Leveraging Kubernetes virtual machines at Cloudflare with KubeVirt | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:33.996196+00:00",
+  "html_len": 309138,
+  "md_len": 73261,
+  "depth": 0,
+  "phase": 2
+}

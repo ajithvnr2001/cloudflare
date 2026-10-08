@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/friendly-bots/",
+  "file": "_subdomains/blog.cloudflare.com/friendly-bots.md",
+  "title": "Announcing Friendly Bots | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:43.642793+00:00",
+  "html_len": 297935,
+  "md_len": 65275,
+  "depth": 0,
+  "phase": 2
+}

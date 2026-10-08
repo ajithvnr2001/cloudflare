@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/an-all-new-and-improved-autominify/",
+  "file": "_subdomains/blog.cloudflare.com/an-all-new-and-improved-autominify.md",
+  "title": "An All New (and Improved) AutoMinify | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:40.348124+00:00",
+  "html_len": 266809,
+  "md_len": 55893,
+  "depth": 0,
+  "phase": 2
+}

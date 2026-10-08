@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/rethinking-internet-of-things-security/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/rethinking-internet-of-things-security.md",
+  "title": "Das Internet der Dinge sch\u00fctzen | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:23.817738+00:00",
+  "html_len": 214875,
+  "md_len": 35183,
+  "depth": 0,
+  "phase": 2
+}

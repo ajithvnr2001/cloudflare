@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/a-quirk-in-the-sunburst-dga-algorithm/",
+  "file": "_subdomains/blog.cloudflare.com/a-quirk-in-the-sunburst-dga-algorithm.md",
+  "title": "A quirk in the SUNBURST DGA algorithm | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:42.595533+00:00",
+  "html_len": 293752,
+  "md_len": 63238,
+  "depth": 0,
+  "phase": 2
+}

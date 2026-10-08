@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/exported-authenticators-the-long-road-to-rfc/",
+  "file": "_subdomains/blog.cloudflare.com/exported-authenticators-the-long-road-to-rfc.md",
+  "title": "Exported Authenticators: The long road to RFC | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:58.463242+00:00",
+  "html_len": 296042,
+  "md_len": 70106,
+  "depth": 0,
+  "phase": 2
+}

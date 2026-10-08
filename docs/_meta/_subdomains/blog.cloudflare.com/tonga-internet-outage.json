@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tonga-internet-outage/",
+  "file": "_subdomains/blog.cloudflare.com/tonga-internet-outage.md",
+  "title": "Tonga\u2019s likely lengthy Internet outage | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:44.011388+00:00",
+  "html_len": 295577,
+  "md_len": 67418,
+  "depth": 0,
+  "phase": 2
+}

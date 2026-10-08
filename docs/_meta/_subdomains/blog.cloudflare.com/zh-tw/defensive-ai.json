@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/defensive-ai/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/defensive-ai.md",
+  "title": "\u9632\u79a6\u6027 AI\uff1aCloudflare \u7528\u65bc\u62b5\u79a6\u65b0\u4e00\u4ee3\u5a01\u8105\u7684\u67b6\u69cb | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:41:37.638112+00:00",
+  "html_len": 209919,
+  "md_len": 26936,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/revisiting-spectre-attacks-on-workers/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/revisiting-spectre-attacks-on-workers.md",
+  "title": "\u91cd\u65b0\u5be9\u8996\u91dd\u5c0d Cloudflare Workers \u7684\u9060\u7aef Spectre \u653b\u64ca | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:48.726474+00:00",
+  "html_len": 235884,
+  "md_len": 34380,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/bringing-node-js-http-servers-to-cloudflare-workers/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/bringing-node-js-http-servers-to-cloudflare-workers.md",
+  "title": "Cloudflare Workers\u306bNode.js HTTP\u30b5\u30fc\u30d0\u30fc\u3092\u5c0e\u5165 | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:48.059160+00:00",
+  "html_len": 231228,
+  "md_len": 32520,
+  "depth": 0,
+  "phase": 2
+}

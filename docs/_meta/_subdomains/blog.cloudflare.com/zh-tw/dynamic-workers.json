@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/dynamic-workers/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/dynamic-workers.md",
+  "title": "\u6c99\u7bb1\u8655\u7406 AI \u667a\u6167\u9ad4\uff0c\u901f\u5ea6\u63d0\u5347 100 \u500d  | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:41.206786+00:00",
+  "html_len": 228380,
+  "md_len": 34434,
+  "depth": 0,
+  "phase": 2
+}

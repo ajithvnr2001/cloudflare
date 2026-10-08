@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/tag/fraud/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/tag/fraud.md",
+  "title": "\u6a19\u7c64\u70ba\u300c\u8a50\u6b3a\u300d\u7684\u6587\u7ae0 \u2014 Cloudflare \u90e8\u843d\u683c",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (608 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:09:49.509330+00:00",
+  "html_len": 113469,
+  "md_len": 2903,
+  "depth": 1,
+  "phase": 2
+}

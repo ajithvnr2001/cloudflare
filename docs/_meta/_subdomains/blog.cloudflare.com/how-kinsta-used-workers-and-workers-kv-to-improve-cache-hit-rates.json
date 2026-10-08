@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-kinsta-used-workers-and-workers-kv-to-improve-cache-hit-rates/",
+  "file": "_subdomains/blog.cloudflare.com/how-kinsta-used-workers-and-workers-kv-to-improve-cache-hit-rates.md",
+  "title": "How Kinsta used Workers and Workers KV to improve cache hit rates by 56% | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:22.223595+00:00",
+  "html_len": 294432,
+  "md_len": 61807,
+  "depth": 0,
+  "phase": 2
+}

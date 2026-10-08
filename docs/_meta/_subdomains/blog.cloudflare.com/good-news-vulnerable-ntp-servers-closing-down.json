@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/good-news-vulnerable-ntp-servers-closing-down/",
+  "file": "_subdomains/blog.cloudflare.com/good-news-vulnerable-ntp-servers-closing-down.md",
+  "title": "Good News: Vulnerable NTP Servers Closing Down | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:26.997629+00:00",
+  "html_len": 266844,
+  "md_len": 55801,
+  "depth": 0,
+  "phase": 2
+}

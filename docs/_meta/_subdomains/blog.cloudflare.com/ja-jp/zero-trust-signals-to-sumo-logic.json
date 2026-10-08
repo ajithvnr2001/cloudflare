@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/zero-trust-signals-to-sumo-logic/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/zero-trust-signals-to-sumo-logic.md",
+  "title": "Sumo Logic\u306bZero Trust\u4fe1\u53f7\u3092\u8ffd\u52a0\u3057\u3001\u30bb\u30ad\u30e5\u30ea\u30c6\u30a3\u30a4\u30f3\u30b5\u30a4\u30c8\u3092\u5f37\u5316\u3002 | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:56.275185+00:00",
+  "html_len": 206244,
+  "md_len": 29243,
+  "depth": 0,
+  "phase": 2
+}

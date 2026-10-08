@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/observability/export/opentelemetry/posthog/",
+  "file": "observability/export/opentelemetry/posthog.md",
+  "title": "Export to PostHog \u00b7 Cloudflare Observability docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:12:26.605720+00:00",
+  "html_len": 117351,
+  "md_len": 5246,
+  "depth": 0
+}

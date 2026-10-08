@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-agent-seamless-deployment-at-scale/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-agent-seamless-deployment-at-scale.md",
+  "title": "Cloudflare Agent \u2014 Seamless Deployment at Scale | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:48.345542+00:00",
+  "html_len": 295614,
+  "md_len": 66634,
+  "depth": 0,
+  "phase": 2
+}

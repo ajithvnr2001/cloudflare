@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/transform/examples/set-response-header-bot-score/",
+  "file": "rules/transform/examples/set-response-header-bot-score.md",
+  "title": "Set a response header with the current bot score \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:57.153418+00:00",
+  "html_len": 130141,
+  "md_len": 1909,
+  "depth": 0
+}

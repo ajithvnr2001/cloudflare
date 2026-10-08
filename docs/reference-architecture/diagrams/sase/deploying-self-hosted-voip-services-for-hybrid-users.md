@@ -1,0 +1,120 @@
+---
+url: https://developers.cloudflare.com/reference-architecture/diagrams/sase/deploying-self-hosted-voip-services-for-hybrid-users/
+title: Deploy self-hosted VoIP services for hybrid users \u00b7 Cloudflare Reference Architecture docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:14:41.796054+00:00
+---
+
+# Deploy self-hosted VoIP services for hybrid users · Cloudflare Reference Architecture docs
+
+> Source: https://developers.cloudflare.com/reference-architecture/diagrams/sase/deploying-self-hosted-voip-services-for-hybrid-users/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Reference Architecture](https://developers.cloudflare.com/reference-architecture/)
+  3. /…
+
+Reference Architecture Diagrams
+
+  4. /Secure Access Service Edge (SASE)
+  5. /Self-hosted VoIP for hybrid users
+
+
+
+# Deploy self-hosted VoIP services for hybrid users
+
+Last updated Sep 16, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/reference-architecture/diagrams/sase/deploying-self-hosted-voip-services-for-hybrid-users/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewIntroductionBi-directional VoIP traffic flowCall flow examples Remote user calling another remote user Remote user to on-premise userSummaryRelated resources
+
+## Introduction
+
+Traditional VPN solutions create several problems for VoIP deployments, primarily due to their inefficiencies in handling real-time traffic protocols such as [SIP ↗︎](https://en.wikipedia.org/wiki/Session_Initiation_Protocol) and [RTP ↗︎](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol). Legacy VPN deployments introduce high latency and jitter, which negatively impact voice call quality. Additionally, they often struggle with [NAT ↗︎](https://en.wikipedia.org/wiki/Network_address_translation) traversal, leading to connection issues for VoIP calls.
+
+Cloudflare improves over traditional VPN solutions by leveraging its [global network ↗︎](https://www.cloudflare.com/network/) of data centers in over 330 cities to significantly reduce latency for remote users. When using our device agent, remote users are automatically connected to the nearest Cloudflare data center, thus reducing latency.
+
+This document explains how to architect access to a self-hosted VoIP service using Cloudflare. Note the solution below uses [Cloudflare Mesh](https://developers.cloudflare.com/mesh/) (formerly WARP Connector), a small piece of software deployed on a server in the same subnet as the VoIP servers and creates bi-directional traffic flow through Cloudflare to users.
+
+## Bi-directional VoIP traffic flow
+
+![Figure 1: Cloudflare facilitates secure connectivity from user devices to the network where the SIP server is running.](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=906,height=491,format=svg/_astro/figure1.lv12Z4R7.svg)Figure 1: Cloudflare facilitates secure connectivity from user devices to the network where the SIP server is running.
+
+The diagram above shows Cloudflare Mesh and our device agent deployed to establish highly performant, reliable connectivity for private VoIP services. Note that Cloudflare will assign remote users an address from the CGNAT range, which is used for the private network created between device agents. Cloudflare Mesh ensures secure, bidirectional communication between remote users and the on-premise SIP server, without exposing the server to the public Internet. This shields the VoIP infrastructure from potential attacks while maintaining a seamless, encrypted connection for real-time communications.
+
+  1. VoIP server resides on a private network with no public IP.
+  2. Cloudflare Mesh creates a secure tunnel to Cloudflare and is configured as a virtual router in the private network.
+  3. Allow traffic from Cloudflare to reach the VoIP server, but also allow private network initiated traffic, such as an outbound VoIP call from the server, to route over the Cloudflare tunnel. In the above diagram, we add a static route on the default gateway of `100.96.0.0/12` (the WARP CGNAT range) via `10.0.50.10` (Cloudflare Mesh virtual router).
+  4. Traffic passes through our [Secure Web Gateway](https://developers.cloudflare.com/cloudflare-one/traffic-policies/) (SWG), which applies network level firewall rules to both inbound and outbound traffic.
+  5. A device agent is installed on remote user devices. The agent establishes a secure tunnel to Cloudflare, which allows VoIP software to both receive and make calls.
+
+
+
+## Call flow examples
+
+VoIP software running on the remote user's device registers with the VoIP server using SIP. The Cloudflare device agent will be assigned an address from the CGNAT IP range, `100.96.0.0/12`. As routing has been established to Cloudflare for `100.96.0.0/12` and to the on-premise network of `10.0.50.0/24`, call flows will work as normal – both direct and indirect media are supported.
+
+### Remote user calling another remote user
+
+When calls are made from user to user, some traffic flows from user devices through Cloudflare to the on-premise server, while other traffic flows through Cloudflare directly to the other user. Note that the device agent is creating a secure tunnel through which the CGNAT addresses are routed. Both users in this flow have registered their SIP clients with the server.
+
+![Figure 2: For remote user to remote user, not all traffic flows over Cloudflare Mesh to the SIP server.](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=884,height=641,format=svg/_astro/figure2.DATzV5BV.svg)Figure 2: For remote user to remote user, not all traffic flows over Cloudflare Mesh to the SIP server.
+
+The above diagram shows the high level signaling and media paths.
+
+  1. Alice registers directly with the SIP server (`10.0.50.60`) with a Cloudflare assigned CGNAT IP of `100.96.0.12`.
+  2. Bob also registers directly with the SIP server (`10.0.50.60`) with their CGNAT IP of `100.96.0.13`.
+  3. When Alice calls Bob, the SIP server will send a SIP INVITE message to Bob at `100.96.0.13`.
+  4. The default gateway for the SIP server is `10.50.0.1`, but we have defined a static route such that for destination `100.96.0.0/12`, the next hop is the Cloudflare Mesh interface (`10.0.50.10`).
+  5. The SIP INVITE message will be routed across Cloudflare Mesh to the Cloudflare network and then received by Bob.
+  6. Bob accepts and the SIP server will send SIP/SDP messages to both Alice and Bob specifying which parameters to use for the RTP (audio) data.
+  7. For Direct Media paths where the SIP server is not in the audio path and the RTP streams are directly between Alice and Bob, ensure that [**Allow all Cloudflare One traffic to reach enrolled devices**](https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/configure/settings/#allow-all-cloudflare-one-traffic-to-reach-enrolled-devices) has been enabled in Cloudflare. Audio streams in the Direct Media use case will not need to route over Cloudflare Mesh.
+
+
+
+### Remote user to on-premise user
+
+Calls between remote and on-premise users are very similar, but RTP audio will be sent over Cloudflare Mesh in addition to the SIP signaling.
+
+![Figure 3: Remote user to on-premise user has all traffic routed via Cloudflare to SIP server and client.](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=877,height=565,format=svg/_astro/figure3.Bnu64MY9.svg)Figure 3: Remote user to on-premise user has all traffic routed via Cloudflare to SIP server and client.
+
+The high-level signaling and media paths are shown below:
+
+![Figure 4: Both signaling and media \(audio, video etc\) travel via secured tunnels from remote devices to on-premise clients.](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1049,height=606,format=svg/_astro/figure4.pvAsOncQ.svg)Figure 4: Both signaling and media (audio, video etc) travel via secured tunnels from remote devices to on-premise clients.
+
+  1. Alice registers directly with the SIP server (`10.0.50.60`) with her CGNAT IP of `100.96.0.12`.
+  2. Bob also registers directly with the SIP server (`10.0.50.60`) with their LAN IP of `10.0.50.101`.
+  3. When Alice calls Bob, the SIP server will send a SIP INVITE message to Bob at `10.0.50.101`.
+  4. The default gateway for the SIP server is `10.50.0.1`, but we have defined a static route such that for destination `100.96.0.0/12`, the next hop is the Cloudflare Mesh interface (`10.0.50.10`).
+  5. The SIP INVITE message will be sent on the local network to Bob.
+  6. Bob accepts and the SIP server will send SIP/SDP messages to both Alice and Bob specifying which parameters to use for the RTP (audio) data.
+  7. Bob will send audio to Alice at `100.96.0.12`, which will be routed across Cloudflare Mesh to Cloudflare, and Alice will send audio to Bob at `10.0.50.101`, which will be sent from Cloudflare across Cloudflare Mesh to the on-premise local network.
+
+
+
+## Summary
+
+With Cloudflare Mesh, remote users communicating with other remote users or on-premise users via on-premise SIP servers will have a seamless and secure experience for both ends. Key benefits include:
+
+  1. **Bidirectional connectivity** : Cloudflare Mesh supports bidirectional traffic, which is crucial for remote users communicating with on-premise users. Both signaling and media traffic (SIP/RTP) flow securely between the two, regardless of where the user is physically located. This is done via Cloudflare's global network, using an encrypted tunnel, ensuring data integrity and encryption​.
+
+  2. **Private communication over CGNAT** : Cloudflare Mesh assigns Carrier-Grade NAT (CGNAT) IPs to devices, which allows remote users to securely communicate with on-premise users over private networks. This ensures that communication remains isolated from the public Internet, enhancing security. The CGNAT functionality means that remote and on-premise users can communicate as though they are on the same network​.
+
+  3. **No NAT traversal issues** : NAT traversal often poses a challenge in VoIP scenarios, but because Cloudflare Mesh preserves source IP addresses and handles bidirectional traffic without additional NAT boundaries, remote and on-premise users can communicate without issues typically caused by firewalls or NAT devices, improving the overall call setup and quality​.
+
+
+
+
+## Related resources
+
+  * [Set up Cloudflare Mesh](https://developers.cloudflare.com/mesh/)
+  * [Enable Mesh connectivity](https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/configure/settings/#allow-all-cloudflare-one-traffic-to-reach-enrolled-devices)
+  * [About the Cloudflare One Client](https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/)
+
+
+
+[PreviousSecure access to SaaS applications](https://developers.cloudflare.com/reference-architecture/diagrams/sase/secure-access-to-saas-applications-with-sase/)[NextZero Trust and Virtual Desktop Infrastructure](https://developers.cloudflare.com/reference-architecture/diagrams/sase/zero-trust-and-virtual-desktop-infrastructure/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/reference-architecture/diagrams/sase/deploying-self-hosted-VoIP-services-for-hybrid-users.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

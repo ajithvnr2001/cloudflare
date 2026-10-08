@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/cloud-computing-without-containers/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/cloud-computing-without-containers.md",
+  "title": "\u65e0\u9700\u5bb9\u5668\u7684\u4e91\u8ba1\u7b97 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:12.835219+00:00",
+  "html_len": 205763,
+  "md_len": 26659,
+  "depth": 0,
+  "phase": 2
+}

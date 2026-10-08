@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/ai-side-channel-attack-mitigated/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/ai-side-channel-attack-mitigated.md",
+  "title": "Mitigar um ataque de canal lateral do comprimento de um token em nossos produtos de IA | Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:06.062950+00:00",
+  "html_len": 205114,
+  "md_len": 24826,
+  "depth": 0,
+  "phase": 2
+}

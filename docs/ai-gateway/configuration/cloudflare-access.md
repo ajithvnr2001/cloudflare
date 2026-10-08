@@ -1,0 +1,98 @@
+---
+url: https://developers.cloudflare.com/ai-gateway/configuration/cloudflare-access/
+title: Cloudflare Access \u00b7 Cloudflare AI Gateway docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:04:27.864133+00:00
+---
+
+# Cloudflare Access · Cloudflare AI Gateway docs
+
+> Source: https://developers.cloudflare.com/ai-gateway/configuration/cloudflare-access/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[AI Gateway](https://developers.cloudflare.com/ai-gateway/)
+  3. /Configuration
+  4. /Cloudflare Access
+
+
+
+# Cloudflare Access
+
+Last updated Oct 7, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai-gateway/configuration/cloudflare-access/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewHow it worksSet up Access on a gatewayMake a requestLimitations
+
+Protect your gateway with [Cloudflare Access](https://developers.cloudflare.com/cloudflare-one/access-controls/applications/http-apps/) so users authenticate with your identity provider before they can send requests. Putting AI Gateway behind Access gives you identity-aware control over your AI traffic: you decide who can reach the gateway, tie each request to a verified user, and govern usage per user without building your own authentication layer or passing user IDs from the client application.
+
+To put AI Gateway behind Access, you must first [set a custom domain](https://developers.cloudflare.com/ai-gateway/configuration/custom-domains/) on your gateway and have [Cloudflare Access](https://developers.cloudflare.com/cloudflare-one/access-controls/applications/http-apps/) enabled on your account.
+
+## How it works
+
+When a request to a custom domain includes a valid Cloudflare Access JWT, AI Gateway accepts the Access JWT as the request credential. The client does not need to send an AI Gateway token for that request.
+
+AI Gateway also adds the verified Access user ID to request metadata as [`cf.user_id`](https://developers.cloudflare.com/ai-gateway/observability/custom-metadata/#reserved-metadata). This value is the Access JWT `sub` claim, not the user's email address. You can then filter logs, analytics, and spend by the authenticated user.
+
+Before AI Gateway forwards the request to the upstream provider, it removes Cloudflare-only credentials such as the Access JWT and AI Gateway authorization headers.
+
+Once a custom domain is protected by Access, every request to that domain must pass an Access policy. Requests that only include an AI Gateway token, without a valid Access token, are blocked by Access before they reach the gateway. Update existing integrations to authenticate through Access, or keep sending gateway-token traffic to the default `gateway.ai.cloudflare.com` endpoint, which is not protected by Access.
+
+## Set up Access on a gateway
+
+  1. [Set up a custom domain](https://developers.cloudflare.com/ai-gateway/configuration/custom-domains/) for the gateway you want to protect.
+  2. In the [Cloudflare dashboard ↗︎](https://dash.cloudflare.com/), go to **AI** > **AI Gateway**.
+  3. Select the gateway you configured with a custom domain.
+  4. Go to the **Access** tab and set up Cloudflare Access on the gateway.
+  5. Add Access policies that define which users can call the gateway.
+
+
+
+Setting up Access from the **Access** tab configures the Access application for you, so coding agents and other non-browser clients can authenticate by sending the Access token as a bearer token.
+
+After setup, users can make requests to the custom domain after authenticating through Access. Requests with a valid Access user subject include `cf.user_id` in AI Gateway metadata.
+
+## Make a request
+
+After the user authenticates to Access, send requests to the custom domain without the account ID or gateway ID in the path:
+    
+    
+    cloudflared access curl https://ai.example.com/openai/v1/chat/completions -s \
+      --json '{
+        "model": "gpt-4.1-mini",
+        "messages": [
+          {
+            "role": "user",
+            "content": "What is Cloudflare?"
+          }
+        ]
+      }'
+
+Every request must carry an Access token. Browsers attach the token automatically as a cookie after login. Other clients must send it explicitly. [`cloudflared access curl`](https://developers.cloudflare.com/cloudflare-one/access-controls/authenticate-agents/#make-requests-with-cloudflared-access-curl) handles this for command-line requests using [`cloudflared` on the client device](https://developers.cloudflare.com/cloudflare-one/access-controls/applications/non-http/cloudflared-authentication/).
+
+The following request runs a Workers AI model through the OpenAI-compatible endpoint:
+    
+    
+    cloudflared access curl https://ai.example.com/compat/chat/completions -s \\
+      --json '{
+        "model": "workers-ai/@cf/meta/llama-3.1-8b-instruct-fast",
+        "messages": [
+          {"role": "user", "content": "What should I buy for a summer flash sale?"}
+        ]
+      }'
+
+For coding agents, refer to the per-agent setup under [Coding agents](https://developers.cloudflare.com/ai-gateway/integrations/coding-agents/) — for example, [Claude Code](https://developers.cloudflare.com/ai-gateway/integrations/coding-agents/claude-code/#use-with-cloudflare-access) and [OpenAI Codex](https://developers.cloudflare.com/ai-gateway/integrations/coding-agents/openai-codex/#use-with-cloudflare-access).
+
+## Limitations
+
+  * `cf.user_id` is only added when AI Gateway receives a valid Access JWT with a non-empty user subject.
+  * Service-token requests do not include `cf.user_id` because they do not represent an individual Access user.
+  * You may not supply metadata keys that begin with `cf.`. These keys are reserved and are not saved.
+
+
+
+[PreviousCustom domains](https://developers.cloudflare.com/ai-gateway/configuration/custom-domains/)[NextOverview](https://developers.cloudflare.com/ai-gateway/observability/logging/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/ai-gateway/configuration/cloudflare-access.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

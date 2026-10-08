@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-cloudflares-automatic-ipv6-gatewa/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-cloudflares-automatic-ipv6-gatewa.md",
+  "title": "Introducing CloudFlare's Automatic IPv6 Gateway | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:19.289468+00:00",
+  "html_len": 274706,
+  "md_len": 57208,
+  "depth": 0,
+  "phase": 2
+}

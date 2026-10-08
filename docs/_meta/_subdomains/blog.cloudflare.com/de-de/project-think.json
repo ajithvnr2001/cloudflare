@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/project-think/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/project-think.md",
+  "title": "Project Think: Die n\u00e4chste Generation von KI-Agenten auf Cloudflare entwickeln | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:12.574339+00:00",
+  "html_len": 288635,
+  "md_len": 55506,
+  "depth": 0,
+  "phase": 2
+}

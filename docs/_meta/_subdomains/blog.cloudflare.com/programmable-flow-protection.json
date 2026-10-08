@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/programmable-flow-protection/",
+  "file": "_subdomains/blog.cloudflare.com/programmable-flow-protection.md",
+  "title": "Introducing Programmable Flow Protection: custom DDoS mitigation logic for Magic Transit customers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:54.502152+00:00",
+  "html_len": 310471,
+  "md_len": 70231,
+  "depth": 0,
+  "phase": 2
+}

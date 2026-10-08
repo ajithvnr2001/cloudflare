@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/basin-catalog/config-examples/spark-python/",
+  "file": "basin-catalog/config-examples/spark-python.md",
+  "title": "Spark (PySpark) \u00b7 Cloudflare Basin Catalog docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:05:22.983939+00:00",
+  "html_len": 100560,
+  "md_len": 3842,
+  "depth": 0
+}

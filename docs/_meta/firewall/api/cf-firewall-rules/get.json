@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/firewall/api/cf-firewall-rules/get/",
+  "file": "firewall/api/cf-firewall-rules/get.md",
+  "title": "GET examples - Firewall rules \u00b7 Cloudflare Firewall Rules (deprecated) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:11:16.376668+00:00",
+  "html_len": 113116,
+  "md_len": 4417,
+  "depth": 0
+}

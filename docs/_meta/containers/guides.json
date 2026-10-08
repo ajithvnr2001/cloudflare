@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/containers/guides/",
+  "file": "containers/guides.md",
+  "title": "Guides \u00b7 Cloudflare Containers docs",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (655 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T07:10:47.688628+00:00",
+  "html_len": 134713,
+  "md_len": 712,
+  "depth": 0
+}

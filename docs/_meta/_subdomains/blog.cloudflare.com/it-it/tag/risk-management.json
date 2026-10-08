@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/it-it/tag/risk-management/",
+  "file": "_subdomains/blog.cloudflare.com/it-it/tag/risk-management.md",
+  "title": "Post con tag \"Gestione del rischio\" \u2014 Il blog di Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:22:20.313219+00:00",
+  "html_len": 109926,
+  "md_len": 1017,
+  "depth": 1,
+  "phase": 2
+}

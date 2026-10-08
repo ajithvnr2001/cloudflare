@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/snippets/",
+  "file": "_subdomains/blog.cloudflare.com/snippets.md",
+  "title": "Cloudflare Snippets are now Generally Available | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:17.084940+00:00",
+  "html_len": 326287,
+  "md_len": 68122,
+  "depth": 0,
+  "phase": 2
+}

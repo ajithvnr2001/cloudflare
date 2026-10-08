@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/capn-proto/",
+  "file": "_subdomains/blog.cloudflare.com/tag/capn-proto.md",
+  "title": "Posts tagged \"Cap'n Proto\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:08:26.322724+00:00",
+  "html_len": 113725,
+  "md_len": 2632,
+  "depth": 1,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-to-achieve-low-latency/",
+  "file": "_subdomains/blog.cloudflare.com/how-to-achieve-low-latency.md",
+  "title": "How to achieve low latency with 10Gbps Ethernet | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:01.243903+00:00",
+  "html_len": 330386,
+  "md_len": 77379,
+  "depth": 0,
+  "phase": 2
+}

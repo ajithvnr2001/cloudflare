@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/luajit-hacking-getting-next-out-of-the-nyi-list/",
+  "file": "_subdomains/blog.cloudflare.com/luajit-hacking-getting-next-out-of-the-nyi-list.md",
+  "title": "LuaJIT Hacking: Getting next() out of the NYI list | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:21.371742+00:00",
+  "html_len": 358221,
+  "md_len": 79974,
+  "depth": 0,
+  "phase": 2
+}

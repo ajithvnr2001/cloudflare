@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/gateway-authorization-proxy-identity-aware-policies/",
+  "file": "_subdomains/blog.cloudflare.com/gateway-authorization-proxy-identity-aware-policies.md",
+  "title": "Moving from license plates to badges: the Gateway Authorization Proxy | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:27:43.925298+00:00",
+  "html_len": 288094,
+  "md_len": 62876,
+  "depth": 1
+}

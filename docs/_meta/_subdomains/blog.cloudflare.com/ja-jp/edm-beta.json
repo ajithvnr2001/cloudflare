@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/edm-beta/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/edm-beta.md",
+  "title": "DLP Exact Data Match\u30d9\u30fc\u30bf\u7248\u304c\u3001\u73fe\u5728\u5229\u7528\u53ef\u80fd | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:32.192444+00:00",
+  "html_len": 207588,
+  "md_len": 27515,
+  "depth": 0,
+  "phase": 2
+}

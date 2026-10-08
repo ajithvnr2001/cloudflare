@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/phonepe/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/phonepe.md",
+  "title": "PhonePe & Cloudflare | Video",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:44.241944+00:00",
+  "html_len": 212183,
+  "md_len": 9327,
+  "depth": 0,
+  "phase": 2
+}

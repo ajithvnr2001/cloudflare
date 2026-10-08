@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/workers-rust-sdk/",
+  "file": "_subdomains/blog.cloudflare.com/workers-rust-sdk.md",
+  "title": "Native Rust support on Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:09.495026+00:00",
+  "html_len": 284532,
+  "md_len": 58233,
+  "depth": 0,
+  "phase": 2
+}

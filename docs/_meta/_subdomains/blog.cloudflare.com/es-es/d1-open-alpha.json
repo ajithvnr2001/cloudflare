@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/d1-open-alpha/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/d1-open-alpha.md",
+  "title": "UPDATE Supercloud SET status = 'open alpha' WHERE product = 'D1'; | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:25.291123+00:00",
+  "html_len": 234216,
+  "md_len": 34111,
+  "depth": 0,
+  "phase": 2
+}

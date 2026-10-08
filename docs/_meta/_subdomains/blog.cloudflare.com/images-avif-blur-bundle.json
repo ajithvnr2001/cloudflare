@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/images-avif-blur-bundle/",
+  "file": "_subdomains/blog.cloudflare.com/images-avif-blur-bundle.md",
+  "title": "Cloudflare Images introduces AVIF, Blur and Bundle with Stream | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:51.596713+00:00",
+  "html_len": 299967,
+  "md_len": 64684,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/scayle/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/scayle.md",
+  "title": "SCAYLE | Customer Video",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:48.105099+00:00",
+  "html_len": 206940,
+  "md_len": 6803,
+  "depth": 0,
+  "phase": 2
+}

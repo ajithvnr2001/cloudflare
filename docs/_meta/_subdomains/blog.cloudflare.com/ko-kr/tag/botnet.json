@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/tag/botnet/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/tag/botnet.md",
+  "title": "\"Botnet (KO)\" \ud0dc\uadf8\uac00 \uc9c0\uc815\ub41c \uac8c\uc2dc\ubb3c \u2014 Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:20:22.852124+00:00",
+  "html_len": 107625,
+  "md_len": 2311,
+  "depth": 1,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/",
+  "file": "_subdomains/blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive.md",
+  "title": "Build global MySQL apps using Cloudflare Workers and Hyperdrive | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:18.954664+00:00",
+  "html_len": 323884,
+  "md_len": 71464,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/client-dynamic-path-mtu-discovery/",
+  "file": "_subdomains/blog.cloudflare.com/client-dynamic-path-mtu-discovery.md",
+  "title": "Ending the \"silent drop\": how Dynamic Path MTU Discovery makes the Cloudflare One Client more resilient | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:55.153396+00:00",
+  "html_len": 285510,
+  "md_len": 62416,
+  "depth": 0,
+  "phase": 2
+}

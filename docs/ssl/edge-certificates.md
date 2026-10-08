@@ -1,0 +1,73 @@
+---
+url: https://developers.cloudflare.com/ssl/edge-certificates/
+title: Edge certificates \u00b7 Cloudflare SSL/TLS docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:15:37.550555+00:00
+---
+
+# Edge certificates · Cloudflare SSL/TLS docs
+
+> Source: https://developers.cloudflare.com/ssl/edge-certificates/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[SSL/TLS](https://developers.cloudflare.com/ssl/)
+  3. /Edge certificates
+
+
+
+# Edge certificates
+
+Last updated May 6, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ssl/edge-certificates/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewUse cases Simplify issuance and renewal Meet cipher suites requirements Automate domain control validation (DCV)
+
+Edge certificates are the SSL/TLS certificates that Cloudflare presents to visitors connecting to your domain. These certificates secure the encrypted connection between your visitors and Cloudflare.
+
+Use the guidance below to choose the right certificate type for your use case. If you are not familiar with SSL/TLS certificates, refer to [Concepts](https://developers.cloudflare.com/ssl/concepts/).
+
+Note
+
+Occasionally, the Cloudflare dashboard displays a wildcard certificate with only the apex hostname listed (and does not include the wildcard symbol `*`).
+
+This behavior occurs when all of the following conditions are true:
+
+  * The zone is on a [subdomain setup](https://developers.cloudflare.com/dns/zone-setups/subdomain-setup/).
+  * The certificate has a subject or SAN that is a wildcard for the zone's parent domain.
+
+
+
+## Use cases
+
+### Simplify issuance and renewal
+
+Managing certificate issuance, renewal, and expiration tracking can be time-consuming. Cloudflare can handle this for you:
+
+  * [**Universal SSL**](https://developers.cloudflare.com/ssl/edge-certificates/universal-ssl/): Automatic, free certificates for your apex domain and first-level subdomains. Provisioned automatically on [full setups](https://developers.cloudflare.com/dns/zone-setups/full-setup/).
+  * [**Advanced certificates**](https://developers.cloudflare.com/ssl/edge-certificates/advanced-certificate-manager/): Automatic certificates with more control — choose your certificate authority (CA), covered hostnames, and validity period.
+  * [**Custom certificates**](https://developers.cloudflare.com/ssl/edge-certificates/custom-certificates/): Upload your own certificates for full control over the CA and [validation level](https://developers.cloudflare.com/ssl/concepts/#validation-level). You handle issuance and renewal.
+
+
+
+### Meet cipher suites requirements
+
+A cipher suite is a set of encryption algorithms that a visitor's browser and the server negotiate when establishing a secure connection. Some compliance standards (for example, PCI DSS) require specific cipher suites or prohibit older ones.
+
+With [cipher suites customization](https://developers.cloudflare.com/ssl/edge-certificates/additional-options/cipher-suites/customize-cipher-suites/), you can set different cipher suites per hostname. For example, you could allow broader compatibility on `www.example.com` for legacy devices while enforcing stricter [compliance standards](https://developers.cloudflare.com/ssl/edge-certificates/additional-options/cipher-suites/compliance-status/) on `shop.example.com`.
+
+Custom cipher suites apply to any edge certificate serving that hostname. To use this feature, you must [purchase the Advanced Certificate Manager add-on ↗︎](https://dash.cloudflare.com/?to=/:account/:zone/ssl-tls/acm/). Refer to [Customize cipher suites](https://developers.cloudflare.com/ssl/edge-certificates/additional-options/cipher-suites/customize-cipher-suites/) for setup instructions.
+
+### Automate domain control validation (DCV)
+
+Before a certificate authority (CA) issues a certificate, it must verify you control the domain. This process is called [domain control validation (DCV)](https://developers.cloudflare.com/ssl/edge-certificates/changing-dcv-method/).
+
+If Cloudflare runs your authoritative DNS ([full setup](https://developers.cloudflare.com/dns/zone-setups/full-setup/)), DCV happens automatically. If you manage DNS with another provider ([partial setup](https://developers.cloudflare.com/dns/zone-setups/partial-setup/)), you may need to complete DCV manually each time a certificate is issued or renewed.
+
+To automate DCV for partial setups, use [advanced certificates](https://developers.cloudflare.com/ssl/edge-certificates/advanced-certificate-manager/) with [delegated DCV](https://developers.cloudflare.com/ssl/edge-certificates/changing-dcv-method/methods/delegated-dcv/).
+
+[PreviousGet started](https://developers.cloudflare.com/ssl/get-started/)[NextOverview](https://developers.cloudflare.com/ssl/edge-certificates/universal-ssl/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/ssl/edge-certificates/index.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

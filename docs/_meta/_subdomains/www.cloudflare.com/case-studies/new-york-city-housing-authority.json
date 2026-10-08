@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/new-york-city-housing-authority/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/new-york-city-housing-authority.md",
+  "title": "New York City Housing Authority & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:41.402703+00:00",
+  "html_len": 219010,
+  "md_len": 13744,
+  "depth": 0,
+  "phase": 2
+}

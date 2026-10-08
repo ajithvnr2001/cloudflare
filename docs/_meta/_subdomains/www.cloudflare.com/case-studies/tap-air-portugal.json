@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/tap-air-portugal/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/tap-air-portugal.md",
+  "title": "TAP Air Portugal & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:50.776259+00:00",
+  "html_len": 215688,
+  "md_len": 9925,
+  "depth": 0,
+  "phase": 2
+}

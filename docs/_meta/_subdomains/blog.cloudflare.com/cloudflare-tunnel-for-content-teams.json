@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-tunnel-for-content-teams/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-tunnel-for-content-teams.md",
+  "title": "Cloudflare Tunnel for Content Teams | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:54.206541+00:00",
+  "html_len": 300007,
+  "md_len": 64264,
+  "depth": 0,
+  "phase": 2
+}

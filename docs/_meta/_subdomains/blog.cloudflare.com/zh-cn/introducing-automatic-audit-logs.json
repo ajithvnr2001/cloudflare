@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/introducing-automatic-audit-logs/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/introducing-automatic-audit-logs.md",
+  "title": "Automatic Audit Logs\uff1a\u5168\u65b0\u66f4\u65b0\u5e26\u6765\u66f4\u9ad8\u7684\u900f\u660e\u5ea6\u548c\u8d23\u4efb\u8ffd\u7a76\u80fd\u529b | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:06.654855+00:00",
+  "html_len": 209245,
+  "md_len": 28311,
+  "depth": 0,
+  "phase": 2
+}

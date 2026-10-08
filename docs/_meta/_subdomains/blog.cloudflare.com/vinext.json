@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/vinext/",
+  "file": "_subdomains/blog.cloudflare.com/vinext.md",
+  "title": "How we rebuilt Next.js with AI in one week | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:31.196540+00:00",
+  "html_len": 311627,
+  "md_len": 74916,
+  "depth": 0,
+  "phase": 2
+}

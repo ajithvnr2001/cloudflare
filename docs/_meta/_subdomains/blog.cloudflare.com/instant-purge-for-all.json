@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/instant-purge-for-all/",
+  "file": "_subdomains/blog.cloudflare.com/instant-purge-for-all.md",
+  "title": "\u201cYou get Instant Purge, and you get Instant Purge!\u201d \u2014 all purge methods now available to all customers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:50.858326+00:00",
+  "html_len": 294007,
+  "md_len": 66285,
+  "depth": 0,
+  "phase": 2
+}

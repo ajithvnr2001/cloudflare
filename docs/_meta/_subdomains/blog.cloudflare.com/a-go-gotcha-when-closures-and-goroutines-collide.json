@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/a-go-gotcha-when-closures-and-goroutines-collide/",
+  "file": "_subdomains/blog.cloudflare.com/a-go-gotcha-when-closures-and-goroutines-collide.md",
+  "title": "A Go Gotcha: When Closures and Goroutines Collide | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:07.175543+00:00",
+  "html_len": 273863,
+  "md_len": 55008,
+  "depth": 0,
+  "phase": 2
+}

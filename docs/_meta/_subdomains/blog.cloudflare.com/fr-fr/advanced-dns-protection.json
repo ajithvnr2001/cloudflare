@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/advanced-dns-protection/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/advanced-dns-protection.md",
+  "title": "Advanced DNS Protection : att\u00e9nuer les attaques DDoS DNS sophistiqu\u00e9es | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:39:33.525312+00:00",
+  "html_len": 253452,
+  "md_len": 47038,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/frontier-model-defense/",
+  "file": "_subdomains/blog.cloudflare.com/frontier-model-defense.md",
+  "title": "Defend against frontier cyber models: Cloudflare's architecture as customer zero | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:30.633813+00:00",
+  "html_len": 297881,
+  "md_len": 71257,
+  "depth": 0,
+  "phase": 2
+}

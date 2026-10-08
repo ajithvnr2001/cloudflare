@@ -1,0 +1,10 @@
+{
+  "url": "https://workers.cloudflare.com/playground/",
+  "file": "_subdomains/workers.cloudflare.com/playground.md",
+  "title": "Cloudflare Workers Playground",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (88 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T07:25:49.085041+00:00",
+  "html_len": 66979,
+  "md_len": 6661,
+  "depth": 1
+}

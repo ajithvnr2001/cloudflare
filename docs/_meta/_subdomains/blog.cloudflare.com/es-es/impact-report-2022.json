@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/impact-report-2022/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/impact-report-2022.md",
+  "title": "Cerramos 2022 con nuestro \u00faltimo informe Impact | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:08.802736+00:00",
+  "html_len": 193837,
+  "md_len": 22254,
+  "depth": 0,
+  "phase": 2
+}

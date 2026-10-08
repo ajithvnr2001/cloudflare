@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-drown-attack/",
+  "file": "_subdomains/blog.cloudflare.com/the-drown-attack.md",
+  "title": "Staying afloat: the DROWN Attack and CloudFlare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:44.805592+00:00",
+  "html_len": 263696,
+  "md_len": 53538,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/cloudflare-incident-on-january-24th-2023/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/cloudflare-incident-on-january-24th-2023.md",
+  "title": "Incident Cloudflare du 24 janvier 2023 | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:26.238263+00:00",
+  "html_len": 239221,
+  "md_len": 44887,
+  "depth": 0,
+  "phase": 2
+}

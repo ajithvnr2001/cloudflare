@@ -1,0 +1,10 @@
+{
+  "url": "https://api.cloudflare.com/client/v4/accounts/%7BACCOUNT_ID%7D/ai/run/",
+  "file": "_subdomains/api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}/ai/run.md",
+  "title": "https://api.cloudflare.com/client/v4/accounts/%7BACCOUNT_ID%7D/ai/run/",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling status 404)",
+  "fetched_at": "2026-10-08T07:23:11.006962+00:00",
+  "html_len": 353,
+  "md_len": 357,
+  "depth": 1
+}

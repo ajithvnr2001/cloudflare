@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/korzinka/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/korzinka.md",
+  "title": "Korzinka & Cloudflare | Case study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:36.790088+00:00",
+  "html_len": 202878,
+  "md_len": 9029,
+  "depth": 0,
+  "phase": 2
+}

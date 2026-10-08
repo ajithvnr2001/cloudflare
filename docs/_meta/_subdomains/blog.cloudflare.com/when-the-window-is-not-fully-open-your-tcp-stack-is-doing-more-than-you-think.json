@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/when-the-window-is-not-fully-open-your-tcp-stack-is-doing-more-than-you-think/",
+  "file": "_subdomains/blog.cloudflare.com/when-the-window-is-not-fully-open-your-tcp-stack-is-doing-more-than-you-think.md",
+  "title": "When the window is not fully open, your TCP stack is doing more than you think | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:12.782912+00:00",
+  "html_len": 325390,
+  "md_len": 77595,
+  "depth": 0,
+  "phase": 2
+}

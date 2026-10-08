@@ -1,0 +1,10 @@
+{
+  "url": "https://radar.cloudflare.com/routing/",
+  "file": "_subdomains/radar.cloudflare.com/routing.md",
+  "title": "Routing Information Worldwide | Cloudflare Radar",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:26:50.035935+00:00",
+  "html_len": 180401,
+  "md_len": 965,
+  "depth": 1
+}

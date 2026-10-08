@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/cache/how-to/cache-rules/examples/cache-by-hostname-list/",
+  "file": "cache/how-to/cache-rules/examples/cache-by-hostname-list.md",
+  "title": "Cache everything for hostnames in a list \u00b7 Cloudflare Cache (CDN) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:05:42.767909+00:00",
+  "html_len": 110669,
+  "md_len": 2161,
+  "depth": 0
+}

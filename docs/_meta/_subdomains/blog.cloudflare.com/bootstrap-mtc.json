@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/bootstrap-mtc/",
+  "file": "_subdomains/blog.cloudflare.com/bootstrap-mtc.md",
+  "title": "Keeping the Internet fast and secure- introducing Merkle Tree Certificates | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:40.348361+00:00",
+  "html_len": 325584,
+  "md_len": 81939,
+  "depth": 0,
+  "phase": 2
+}

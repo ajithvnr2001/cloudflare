@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/network-flow/rules/s-flow-ddos-attack/",
+  "file": "network-flow/rules/s-flow-ddos-attack.md",
+  "title": "sFlow DDoS attack rule \u00b7 Cloudflare Network Flow docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:12:24.017482+00:00",
+  "html_len": 105407,
+  "md_len": 4153,
+  "depth": 0
+}

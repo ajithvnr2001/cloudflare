@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/ai-search-crawl-refer-ratio-on-radar/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/ai-search-crawl-refer-ratio-on-radar.md",
+  "title": "\u722c\u884c\u6b21\u6578\u9060\u8d85\u5f15\u85a6\u6d41\u91cf\uff1a\u77ad\u89e3 AI \u5c0d\u5167\u5bb9\u63d0\u4f9b\u8005\u7684\u5f71\u97ff | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:40:58.033415+00:00",
+  "html_len": 226444,
+  "md_len": 29551,
+  "depth": 0,
+  "phase": 2
+}

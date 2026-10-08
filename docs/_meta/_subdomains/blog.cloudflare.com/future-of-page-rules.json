@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/future-of-page-rules/",
+  "file": "_subdomains/blog.cloudflare.com/future-of-page-rules.md",
+  "title": "The future of Page Rules | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:11.964424+00:00",
+  "html_len": 290465,
+  "md_len": 65133,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/security/whaling-attack/",
+  "file": "_subdomains/www.cloudflare.com/learning/security/whaling-attack.md",
+  "title": "What is whaling phishing?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:43.289274+00:00",
+  "html_len": 245143,
+  "md_len": 25306,
+  "depth": 0,
+  "phase": 2
+}

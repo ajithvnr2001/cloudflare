@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-the-cloudflare-vite-plugin/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-the-cloudflare-vite-plugin.md",
+  "title": "\u201cJust use Vite\u201d\u2026 with the Workers runtime | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:17.982285+00:00",
+  "html_len": 306430,
+  "md_len": 66799,
+  "depth": 0,
+  "phase": 2
+}

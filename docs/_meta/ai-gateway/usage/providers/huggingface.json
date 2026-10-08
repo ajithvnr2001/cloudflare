@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/ai-gateway/usage/providers/huggingface/",
+  "file": "ai-gateway/usage/providers/huggingface.md",
+  "title": "HuggingFace \u00b7 Cloudflare AI Gateway docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:04:34.583839+00:00",
+  "html_len": 120903,
+  "md_len": 2778,
+  "depth": 0
+}

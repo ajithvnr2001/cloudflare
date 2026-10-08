@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/custom-rules/use-cases/require-specific-http-ports/",
+  "file": "waf/custom-rules/use-cases/require-specific-http-ports.md",
+  "title": "Require specific HTTP ports \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:39.263765+00:00",
+  "html_len": 136148,
+  "md_len": 3043,
+  "depth": 0
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/snippets/examples/remove-response-headers/",
+  "file": "rules/snippets/examples/remove-response-headers.md",
+  "title": "Remove response headers \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:53.841310+00:00",
+  "html_len": 128686,
+  "md_len": 1767,
+  "depth": 0
+}

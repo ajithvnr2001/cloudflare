@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zone-apex-naked-domain-root-domain-cname-supp/",
+  "file": "_subdomains/blog.cloudflare.com/zone-apex-naked-domain-root-domain-cname-supp.md",
+  "title": "Zone Apex / Naked Domain / Root Domain CNAME Support for Amazon EC2, Google App Engine and Other Cloud Hosts | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:44.893440+00:00",
+  "html_len": 268863,
+  "md_len": 56314,
+  "depth": 0,
+  "phase": 2
+}

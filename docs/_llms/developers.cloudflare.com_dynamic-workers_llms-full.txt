@@ -1,0 +1,2704 @@
+---
+description: Spin up isolated Workers on demand to execute code.
+title: Dynamic Workers
+image: https://developers.cloudflare.com/dynamic-workers/og.png?v=51a25a49ca35a178
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/dynamic-workers/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Dynamic Workers
+
+Last updated Apr 21, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/dynamic-workers/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Spin up Workers at runtime to execute code on-demand in a secure, sandboxed environment.
+
+Dynamic Workers let you spin up an unlimited number of Workers to execute arbitrary code specified at runtime. Dynamic Workers can be used as a lightweight alternative to containers for securely sandboxing code you don't trust.
+
+Dynamic Workers are the lowest-level primitive for spinning up a Worker, giving you full control over defining how the Worker is composed, which bindings it receives, whether it can reach the network, and more.
+
+### Get started
+
+Deploy the [Dynamic Workers Playground ↗︎](https://github.com/cloudflare/agents/tree/main/examples/dynamic-workers-playground) to create and run Workers dynamically from code you write or import from GitHub, with real-time logs and observability.
+
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/dinasaur404/dynamic-workers-playground)
+
+## Use Dynamic Workers for
+
+Use this pattern when code needs to run quickly in a secure, isolated environment.
+
+- **AI Agent "Code Mode"**: LLMs are trained to write code. Instead of supplying an agent with tool calls to perform tasks, give it an API and let it write and execute code. Save up to 80% in inference tokens and cost by allowing the agent to programmatically process data instead of sending it all through the LLM.
+- **AI-generated applications / "Vibe Code"**: Run generated code for prototypes, projects, and automations in a secure, isolated sandboxed environment.
+- **Fast development and previews**: Load prototypes, previews, and playgrounds in milliseconds.
+- **Custom automations**: Create custom tools on the fly that execute a task, call an integration, or automate a workflow.
+- **Platforms**: Run applications uploaded by your users.
+
+## Features
+
+Because you compose the Worker that runs the code at runtime, you control how that Worker is configured and what it can access.
+
+- **[Bindings](https://developers.cloudflare.com/dynamic-workers/usage/bindings/)**: Decide which bindings and structured data the dynamic Worker receives.
+- **[Observability](https://developers.cloudflare.com/dynamic-workers/usage/observability/)**: Attach Tail Workers and capture logs for each run.
+- **[Network access](https://developers.cloudflare.com/dynamic-workers/usage/egress-control/)**: Intercept or block Internet access for outbound requests.
+- **[Limits](https://developers.cloudflare.com/dynamic-workers/usage/limits/)**: Enforce custom limits on the dynamic Worker's resource usage.
+- **[Durable Object Facets](https://developers.cloudflare.com/dynamic-workers/usage/durable-object-facets/)**: Run dynamically-loaded code as a Durable Object with its own isolated SQLite storage.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/dynamic-workers/#page","headline":"Dynamic Workers","description":"Spin up isolated Workers on demand to execute code.","url":"https://developers.cloudflare.com/dynamic-workers/","inLanguage":"en","image":"https://developers.cloudflare.com/dynamic-workers/og.png?v=51a25a49ca35a178","dateModified":"2026-04-21","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Load and run a dynamic Worker.
+title: Getting started
+image: https://developers.cloudflare.com/dynamic-workers/getting-started/og.png?v=c5045a7077eea0f8
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/dynamic-workers/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Getting started
+
+Last updated Aug 27, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/dynamic-workers/getting-started/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+You can create a Worker that spins up other Workers, called Dynamic Workers, at runtime to execute code on-demand in a secure, sandboxed environment. You provide the code, choose which bindings the Dynamic Worker can access, and control whether the Dynamic Worker can reach the network.
+
+Dynamic Workers support two loading modes:
+
+- `load(code)` creates a fresh Dynamic Worker for one-time execution.
+- `get(id, callback)` caches a Dynamic Worker by ID so it can stay warm across requests.
+
+`load()` is best for one-time code execution, for example when using [Code Mode](https://developers.cloudflare.com/agents/tools/codemode/). `get(id, callback)` is better when the same code will receive subsequent requests, for example when you are building applications.
+
+### Try it out
+
+#### Dynamic Workers Starter
+
+[![Deploy to Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/agents/tree/main/examples/dynamic-workers)
+
+Use this "hello world" [starter ↗︎](https://github.com/cloudflare/agents/tree/main/examples/dynamic-workers) to get a Worker deployed that can load and execute Dynamic Workers.
+
+#### Dynamic Workers Playground
+
+[![Deploy to Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/agents/tree/main/examples/dynamic-workers-playground)
+
+You can also deploy the [Dynamic Workers Playground ↗︎](https://github.com/cloudflare/agents/tree/main/examples/dynamic-workers-playground), where you can write or import code, bundle it at runtime with `@cloudflare/worker-bundler`, execute it through a Dynamic Worker, and see real-time responses and execution logs.
+
+## Configure Worker Loader
+
+In order for a Worker to be able to create Dynamic Workers, it needs a Worker Loader binding. Unlike most Workers bindings, this binding doesn't point at any external resource in particular; it simply provides access to the Worker Loader API.
+
+Configure it like so, in your Worker's `wrangler.jsonc`:
+
+```jsonc
+{
+	"worker_loaders": [
+		{
+			"binding": "LOADER",
+		},
+	],
+}
+```
+
+```toml
+[[worker_loaders]]
+binding = "LOADER"
+```
+
+Your Worker will then have access to the Worker Loader API via `env.LOADER`.
+
+## Run a Dynamic Worker
+
+Use `env.LOADER.load()` to create a Dynamic Worker and run it:
+
+```js
+export default {
+	async fetch(request, env) {
+		// Load a worker.
+		const worker = env.LOADER.load({
+			compatibilityDate: "2026-10-07",
+
+			mainModule: "src/index.js",
+			modules: {
+				"src/index.js": `
+					export default {
+						fetch(request) {
+							return new Response("Hello from a dynamic Worker");
+						},
+					};
+				`,
+			},
+
+			// Block all outbound network access from the Dynamic Worker.
+			globalOutbound: null,
+		});
+
+		// Get the Dynamic Worker's `export default` entrypoint.
+		// (A Worker can also export separate, named entrypoints.)
+		let entrypoint = worker.getEntrypoint();
+
+		// Forward the HTTP request to it.
+		return entrypoint.fetch(request);
+	},
+};
+```
+
+```ts
+export default {
+	async fetch(request: Request, env: Env): Promise<Response> {
+		// Load a worker.
+		const worker = env.LOADER.load({
+			compatibilityDate: "$today",
+
+			mainModule: "src/index.js",
+			modules: {
+				"src/index.js": `
+					export default {
+						fetch(request) {
+							return new Response("Hello from a dynamic Worker");
+						},
+					};
+				`,
+			},
+
+			// Block all outbound network access from the Dynamic Worker.
+			globalOutbound: null,
+		});
+
+		// Get the Dynamic Worker's `export default` entrypoint.
+		// (A Worker can also export separate, named entrypoints.)
+		let entrypoint = worker.getEntrypoint();
+
+		// Forward the HTTP request to it.
+		return entrypoint.fetch(request);
+	},
+};
+```
+
+In this example, `env.LOADER.load()` creates a Dynamic Worker from the code defined in `modules` and returns a stub that represents it.
+
+`worker.getEntrypoint().fetch(request)` sends the incoming request to the Dynamic Worker's `fetch()` handler, which processes it and returns a response.
+
+### Reusing a Dynamic Worker across requests
+
+If you expect to load the exact same Worker more than once, use [`get(id, callback)`](https://developers.cloudflare.com/dynamic-workers/api-reference/#get) instead of `load()`. The `id` should be a unique string identifying the particular code you intend to load. When the runtime sees the same `id` again, it can reuse the existing Worker instead of creating a new one, if it hasn't been evicted yet.
+
+The callback you provide will only be called if the Worker is not already loaded. This lets you skip loading the code from storage when the Worker is already running.
+
+```js
+const worker = env.LOADER.get("hello-v1", async () => {
+	// Callback only runs if there is not already a warm
+	// instance available.
+
+	// Load code from storage.
+	let code = await env.MY_CODE_STORAGE.get("hello-v1");
+
+	// Return the same format as `env.LOADER.load()` accepts.
+	return {
+		compatibilityDate: "2026-10-07",
+		mainModule: "index.js",
+		modules: { "index.js": code },
+		globalOutbound: null,
+	};
+});
+```
+
+```ts
+const worker = env.LOADER.get("hello-v1", async () => {
+	// Callback only runs if there is not already a warm
+	// instance available.
+
+	// Load code from storage.
+	let code = await env.MY_CODE_STORAGE.get("hello-v1");
+
+	// Return the same format as `env.LOADER.load()` accepts.
+	return {
+		compatibilityDate: "$today",
+		mainModule: "index.js",
+		modules: { "index.js": code, },
+		globalOutbound: null,
+	};
+});
+```
+
+## Supported languages
+
+Dynamic Workers support JavaScript (ES modules and CommonJS), Python, and WebAssembly (Wasm) modules. Pass JavaScript and Python code as strings in the `modules` object. Pass compiled Wasm binaries as `{ wasm: ArrayBuffer }` module objects.
+
+There is no build step, so languages like TypeScript must be compiled to JavaScript before being passed to `load()` or `get()`.
+
+For the full list of supported module types, refer to the [API reference](https://developers.cloudflare.com/dynamic-workers/api-reference/#modules).
+
+### Python Workers
+
+To run Python code in a Dynamic Worker, you must include the `python_workers` compatibility flag. Without this flag, the Dynamic Worker will fail to load the Python runtime.
+
+```js
+const worker = env.LOADER.load({
+	compatibilityDate: "2026-10-07",
+	compatibilityFlags: ["python_workers"],
+	mainModule: "worker.py",
+	modules: {
+		"worker.py": `
+from workers import Response, WorkerEntrypoint
+
+class Default(WorkerEntrypoint):
+    async def fetch(self, request):
+        return Response("Hello from Python!")
+    `,
+	},
+});
+```
+
+```ts
+const worker = env.LOADER.load({
+  compatibilityDate: "$today",
+  compatibilityFlags: ["python_workers"],
+  mainModule: "worker.py",
+  modules: {
+    "worker.py": `
+from workers import Response, WorkerEntrypoint
+
+class Default(WorkerEntrypoint):
+    async def fetch(self, request):
+        return Response("Hello from Python!")
+    `,
+  },
+});
+```
+
+### Using TypeScript and npm dependencies
+
+If your Dynamic Worker needs TypeScript compilation or npm dependencies, the code must be transpiled and bundled before passing to the Worker Loader.
+
+[`@cloudflare/worker-bundler` ↗︎](https://www.npmjs.com/package/@cloudflare/worker-bundler) is a library that handles this for you. Use it to bundle source files into a format that `load()` and `get()` accept:
+
+```js
+import { createWorker } from "@cloudflare/worker-bundler";
+
+const worker = env.LOADER.get("my-worker", async () => {
+	const { mainModule, modules } = await createWorker({
+		files: {
+			"src/index.ts": `
+				import { Hono } from 'hono';
+				const app = new Hono();
+				app.get('/', (c) => c.text('Hello from Hono!'));
+				export default app;
+			`,
+			"package.json": JSON.stringify({
+				dependencies: { hono: "^4.0.0" },
+			}),
+		},
+	});
+
+	return { mainModule, modules, compatibilityDate: "2026-10-07" };
+});
+```
+
+```ts
+import { createWorker } from "@cloudflare/worker-bundler";
+
+const worker = env.LOADER.get("my-worker", async () => {
+	const { mainModule, modules } = await createWorker({
+		files: {
+			"src/index.ts": `
+				import { Hono } from 'hono';
+				const app = new Hono();
+				app.get('/', (c) => c.text('Hello from Hono!'));
+				export default app;
+			`,
+			"package.json": JSON.stringify({
+				dependencies: { hono: "^4.0.0" },
+			}),
+		},
+	});
+
+	return { mainModule, modules, compatibilityDate: "$today" };
+});
+```
+
+`createWorker()` handles TypeScript compilation, dependency resolution from npm, and bundling. It returns `mainModule` and `modules` ready to pass directly to `load()` or `get()`.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/dynamic-workers/getting-started/#page","headline":"Getting started","description":"Load and run a dynamic Worker.","url":"https://developers.cloudflare.com/dynamic-workers/getting-started/","inLanguage":"en","image":"https://developers.cloudflare.com/dynamic-workers/getting-started/og.png?v=c5045a7077eea0f8","dateModified":"2026-08-27","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Reference for the Worker Loader binding and the WorkerCode object.
+title: API reference
+image: https://developers.cloudflare.com/dynamic-workers/api-reference/og.png?v=2dc793a98734e022
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/dynamic-workers/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# API reference
+
+Last updated Sep 10, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/dynamic-workers/api-reference/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+This page describes the Worker Loader binding API, assuming you have [configured such a binding](https://developers.cloudflare.com/dynamic-workers/getting-started/#configure-worker-loader) as `env.LOADER`.
+
+### `load`
+
+`` env.LOADER.load(code `WorkerCode`) `WorkerStub` ``
+
+Loads a Worker from the provided `WorkerCode` and returns a `WorkerStub` which may be used to invoke the Worker.
+
+Unlike `get()`, `load()` does not cache by ID. Each call creates a fresh Worker.
+
+Use `load()` when the code is always new, such as for one-off AI-generated tool calls.
+
+### `get`
+
+`` env.LOADER.get(id `string`, getCodeCallback `() => Promise<WorkerCode>`): `WorkerStub` ``
+
+Loads a Worker with the given ID, returning a `WorkerStub` which may be used to invoke the Worker.
+
+As a convenience, the loader implements caching of isolates. When a new ID is seen the first time, a new isolate is loaded. But, the isolate may be kept warm in memory for a while. If later invocations of the loader request the same ID, the existing isolate may be returned again, rather than create a new one. But there is no guarantee: a later call with the same ID may instead start a new isolate from scratch.
+
+Whenever the system determines it needs to start a new isolate, and it does not already have a copy of the code cached, it will invoke `codeCallback` to get the Worker's code. This is an async callback, so the application can load the code from remote storage if desired. The callback returns a `WorkerCode` object (described below).
+
+Because of the caching, you should ensure that the callback always returns exactly the same content, when called for the same ID. If anything about the content changes, you must use a new ID. But if the content hasn't changed, it's best to reuse the same ID in order to take advantage of caching. If the `WorkerCode` is different every time, you can pass a random ID.
+
+You could, for example, use IDs of the form `<worker-name>:<version-number>`, where the version number increments every time the code changes. Or, you could compute IDs based on a hash of the code and config, so that any change results in a new ID.
+
+`get()` returns a `WorkerStub`, which can be used to send requests to the loaded Worker. Note that the stub is returned synchronously—you do not have to await it. If the Worker is not loaded yet, requests made to the stub will wait for the Worker to load before being delivered. If loading fails, the request will throw an exception.
+
+It is never guaranteed that two requests will go to the same isolate. Even if you use the same `WorkerStub` to make multiple requests, they could execute in different isolates. The callback passed to `loader.get()` could be called any number of times (although it is unusual for it to be called more than once).
+
+### `WorkerCode`
+
+This is the structure returned by `getCodeCallback` to represent a worker.
+
+#### `` compatibilityDate `string` ``
+
+The [compatibility date](https://developers.cloudflare.com/workers/configuration/compatibility-dates/) for the Worker. This has the same meaning as the `compatibility_date` setting in a Wrangler config file.
+
+#### ``compatibilityFlags `string[]` Optional``
+
+An optional list of [compatibility flags](https://developers.cloudflare.com/workers/configuration/compatibility-flags) augmenting the compatibility date. This has the same meaning as the `compatibility_flags` setting in a Wrangler config file.
+
+#### ``allowExperimental `boolean` Optional``
+
+If true, then experimental compatibility flags will be permitted in `compatibilityFlags`. In order to set this, the worker calling the loader must itself have the compatibility flag `"experimental"` set. Experimental flags cannot be enabled in production.
+
+#### `` mainModule `string` ``
+
+The name of the Worker's main module. This must be one of the modules listed in `modules`.
+
+#### `` modules `Record<string, string | Module>` ``
+
+A dictionary object mapping module names to their string contents. If the module content is a plain string, then the module name must have a file extension indicating its type: either `.js` or `.py`.
+
+A module's content can also be specified as an object, in order to specify its type independent from the name. The allowed objects are:
+
+- `{js: string}`: A JavaScript module, using ES modules syntax for imports and exports.
+- `{cjs: string}`: A CommonJS module, using `require()` syntax for imports.
+- `{py: string}`: A [Python module](https://developers.cloudflare.com/workers/languages/python/). See warning below.
+- `{text: string}`: An importable string value.
+- `{data: ArrayBuffer}`: An importable `ArrayBuffer` value.
+- `{wasm: ArrayBuffer}`: A compiled WebAssembly (Wasm) module.
+- `{json: object}`: An importable object. The value must be JSON-serializable. However, note that value is provided as a parsed object, and is delivered as a parsed object; neither side actually sees the JSON serialization.
+
+Warning
+
+While Dynamic Workers support Python, Python Workers are currently much slower to start than JavaScript Workers. For one-off AI-generated code, we strongly recommend using JavaScript. AI can write either language equally well.
+
+#### ``globalOutbound `ServiceStub | null` Optional``
+
+Controls whether the dynamic Worker has access to the network. The global `fetch()` and `connect()` functions (for making HTTP requests and TCP connections, respectively) can be blocked or redirected to isolate the Worker.
+
+If `globalOutbound` is not specified, the default is to inherit the parent's network access, which usually means the dynamic Worker will have full access to the public Internet.
+
+If `globalOutbound` is `null`, then the dynamic Worker will be totally cut off from the network. Both `fetch()` and `connect()` will throw exceptions.
+
+`globalOutbound` can also be set to any service binding, including service bindings in the parent worker's `env` as well as [loopback bindings from `ctx.exports`](https://developers.cloudflare.com/workers/runtime-apis/context/#exports).
+
+Using `ctx.exports` is particularly useful as it allows you to customize the binding further for the specific sandbox, by setting the value of `ctx.props` that should be passed back to it. The `props` can contain information to identify the specific dynamic Worker that made the request.
+
+For example:
+
+```js
+import { WorkerEntrypoint } from "cloudflare:workers";
+
+export class Greeter extends WorkerEntrypoint {
+	fetch(request) {
+		return new Response(`Hello, ${this.ctx.props.name}!`);
+	}
+}
+
+export default {
+	async fetch(request, env, ctx) {
+		let worker = env.LOADER.get("alice", () => {
+			return {
+				// Redirect the worker's global outbound to send all requests
+				// to the `Greeter` class, filling in `ctx.props.name` with
+				// the name "Alice", so that it always responds "Hello, Alice!".
+				globalOutbound: ctx.exports.Greeter({ props: { name: "Alice" } }),
+
+				// ... code ...
+			};
+		});
+
+		return worker.getEntrypoint().fetch(request);
+	},
+};
+```
+
+#### `` env `object` ``
+
+The environment object to provide to the dynamic Worker.
+
+Using this, you can provide custom bindings to the Worker.
+
+`env` is serialized and transferred into the dynamic Worker, where it is used directly as the value of `env` there. It may contain:
+
+- [Structured cloneable types ↗︎](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm).
+- [Service Bindings](https://developers.cloudflare.com/workers/runtime-apis/bindings/service-bindings), including [loopback bindings from `ctx.exports`](https://developers.cloudflare.com/workers/runtime-apis/context/#exports).
+
+The second point is the key to creating custom bindings: you can define a binding with any arbitrary API, by defining a [`WorkerEntrypoint` class](https://developers.cloudflare.com/workers/runtime-apis/bindings/service-bindings/rpc) implementing an RPC API, and then giving it to the dynamic Worker as a Service Binding.
+
+Moreover, by using `ctx.exports` loopback bindings, you can further customize the bindings for the specific dynamic Worker by setting `ctx.props`, just as described for `globalOutbound`, above.
+
+```js
+import { WorkerEntrypoint } from "cloudflare:workers";
+
+// Implement a binding which can be called by the dynamic Worker.
+export class Greeter extends WorkerEntrypoint {
+	greet() {
+		return `Hello, ${this.ctx.props.name}!`;
+	}
+}
+
+export default {
+	async fetch(request, env, ctx) {
+		let worker = env.LOADER.get("alice", () => {
+			return {
+				env: {
+					// Provide a binding which has a method greet() which can be called
+					// to receive a greeting. The binding knows the Worker's name.
+					GREETER: ctx.exports.Greeter({ props: { name: "Alice" } }),
+				},
+
+				// ... code ...
+			};
+		});
+
+		return worker.getEntrypoint().fetch(request);
+	},
+};
+```
+
+#### ``tails `ServiceStub[]` Optional``
+
+You may specify one or more [Tail Workers](https://developers.cloudflare.com/workers/observability/logs/tail-workers/) which will observe console logs, errors, and other details about the dynamically-loaded worker's execution. A tail event will be delivered to the Tail Worker upon completion of a request to the dynamically-loaded Worker. As always, you can implement the Tail Worker as an alternative entrypoint in your parent Worker, referring to it using `ctx.exports`:
+
+```js
+import { WorkerEntrypoint } from "cloudflare:workers";
+
+export default {
+	async fetch(request, env, ctx) {
+		let worker = env.LOADER.get("alice", () => {
+			return {
+				// Send logs, errors, etc. to `LogTailer`. We pass `name` in the
+				// `ctx.props` so that `LogTailer` knows what generated the logs.
+				// (You can pass anything you want in `props`.)
+				tails: [ctx.exports.LogTailer({ props: { name: "alice" } })],
+
+				// ... code ...
+			};
+		});
+
+		return worker.getEntrypoint().fetch(request);
+	},
+};
+
+export class LogTailer extends WorkerEntrypoint {
+	async tail(events) {
+		let name = this.ctx.props.name;
+
+		// Send the logs off to our log endpoint, specifying the worker name in
+		// the URL.
+		//
+		// Note that `events` will always be an array of size 1 in this scenario,
+		// describing the event delivered to the dynamically-loaded Worker.
+		await fetch(`https://example.com/submit-logs/${name}`, {
+			method: "POST",
+			body: JSON.stringify(events),
+		});
+	}
+}
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/dynamic-workers/api-reference/#page","headline":"API reference","description":"Reference for the Worker Loader binding and the WorkerCode object.","url":"https://developers.cloudflare.com/dynamic-workers/api-reference/","inLanguage":"en","image":"https://developers.cloudflare.com/dynamic-workers/api-reference/og.png?v=2dc793a98734e022","dateModified":"2026-09-10","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Dynamic Workers pricing is based on requests, CPU time, and the number of unique Dynamic Workers created per day.
+title: Pricing
+image: https://developers.cloudflare.com/dynamic-workers/pricing/og.png?v=d9d5784bc6bfbb19
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/dynamic-workers/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Pricing
+
+Last updated Jun 11, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/dynamic-workers/pricing/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Dynamic Workers pricing is based on three dimensions: Dynamic Workers created daily, requests, and CPU time.
+
+Dynamic Workers are currently only available on the [Workers Paid plan](https://developers.cloudflare.com/workers/platform/pricing/).
+
+|  | Included | Additional usage |
+| --- | --- | --- |
+| **Dynamic Workers created daily** | 1,000 unique Dynamic Workers per month | +$0.002 per Dynamic Worker per day |
+| **Requests** ¹ | 10 million per month | +$0.30 per million requests |
+| **CPU time** ¹ | 30 million CPU milliseconds per month | +$0.02 per million CPU milliseconds |
+
+¹ Uses [Workers Standard rates](https://developers.cloudflare.com/workers/platform/pricing/#workers) and will appear as part of your existing Workers bill, not as separate Dynamic Workers charges.
+
+Billing
+
+Starting May 26, 2026, Dynamic Workers created daily are billed as part of Dynamic Workers pricing.
+
+Dynamic Workers requests and CPU time are also billed as part of your Workers plan. They count toward your Workers requests and CPU usage.
+
+## Dynamic Workers created daily
+
+You are billed for each unique Dynamic Worker created in a day. A Dynamic Worker is uniquely identified by its **Worker ID** and **code** — if either changes, it counts as a new Dynamic Worker. The count resets daily.
+
+| Scenario | Counted as |
+| --- | --- |
+| Same code, same ID, invoked multiple times | 1 Dynamic Worker |
+| Same code, different IDs | 1 Dynamic Worker per ID |
+| Same ID, different code versions | 1 Dynamic Worker per code version |
+| No ID provided or `.load(code)` used | 1 Dynamic Worker per invocation |
+
+Note
+
+If your application sends multiple requests to the same Worker, use `.get()` with a stable ID to avoid being billed for multiple creations.
+
+## View Dynamic Workers usage
+
+To view the number of billable Dynamic Workers invoked during your billing period, go to **Workers & Pages** > **Overview** in the [Cloudflare dashboard ↗︎](https://dash.cloudflare.com/).
+
+Dynamic Workers usage data only goes back to June 1, 2026.
+
+You can also query this count through the [GraphQL Analytics API](https://developers.cloudflare.com/analytics/graphql-api/) by using `workersInvocationsByOwnerAndScriptGroups` and selecting `distinctDynamicWorkerCount`:
+
+```graphql
+query getDynamicWorkersCount(
+	$accountTag: string!
+	$filter: AccountWorkersInvocationsByOwnerAndScriptGroupsFilter_InputObject
+) {
+	viewer {
+		accounts(filter: { accountTag: $accountTag }) {
+			workersInvocationsByOwnerAndScriptGroups(limit: 10000, filter: $filter) {
+				uniq {
+					distinctDynamicWorkerCount
+				}
+			}
+		}
+	}
+}
+```
+
+Use variables to set the account and billing-period date range:
+
+```json
+{
+	"accountTag": "<ACCOUNT_ID>",
+	"filter": {
+		"date_geq": "2026-06-01",
+		"date_leq": "2026-06-30"
+	}
+}
+```
+
+The `distinctDynamicWorkerCount` field returns the unique Dynamic Workers count for the selected period.
+
+## Requests
+
+Dynamic Workers reuse [Workers Standard request pricing](https://developers.cloudflare.com/workers/platform/pricing/).
+
+A request is counted each time a Dynamic Worker is invoked:
+
+- Each `fetch()` call into a Dynamic Worker
+- Each RPC method call on a Dynamic Worker stub (billed the same way as [Durable Objects](https://developers.cloudflare.com/durable-objects/platform/pricing/))
+
+If an RPC method returns a stub (an object that extends `RpcTarget`), those returned stubs share the same RPC session as the original call. Subsequent calls on the returned stub are not billed as separate requests.
+
+## CPU time
+
+CPU time is billed at the same rate as [Workers Standard](https://developers.cloudflare.com/workers/platform/pricing/).
+
+Unlike standard Workers (where only execution time is billed), Dynamic Workers bill for two components of CPU time:
+
+- **Startup time**: The compute required to initialize the isolate and parse your code.
+- **Execution time**: The compute time your code spends actively processing logic, excluding time spent waiting on I/O.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/dynamic-workers/pricing/#page","headline":"Pricing","description":"Dynamic Workers pricing is based on requests, CPU time, and the number of unique Dynamic Workers created per day.","url":"https://developers.cloudflare.com/dynamic-workers/pricing/","inLanguage":"en","image":"https://developers.cloudflare.com/dynamic-workers/pricing/og.png?v=d9d5784bc6bfbb19","dateModified":"2026-06-11","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Project management chat app demonstrating code-as-tool. The LLM writes and executes JavaScript to orchestrate multiple tools in a single Dynamic Worker sandbox.
+title: Code Mode Example
+image: https://developers.cloudflare.com/dynamic-workers/examples/codemode/og.png?v=93a9d5e7ae8c0a08
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/dynamic-workers/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Code Mode Example
+
+Last updated May 5, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/dynamic-workers/examples/codemode/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+This example shows how to use the [`@cloudflare/codemode` ↗︎](https://www.npmjs.com/package/@cloudflare/codemode) library with the [Agents SDK ↗︎](https://www.npmjs.com/package/agents) to build an agent where the LLM writes code to orchestrate tool calls, instead of calling them one at a time. This approach, called [Code Mode ↗︎](https://blog.cloudflare.com/code-mode/), reduces tokens spent by up to 80%, returns better results, and avoids bloating the context window.
+
+[![Deploy to Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/agents/tree/main/examples/codemode)
+
+This example shows you how to:
+
+- Define tools as plain functions with Zod schemas
+- Use `createCodeTool` to expose your tools to the LLM as a single "write code" tool
+- Use `DynamicWorkerExecutor` to safely run LLM-generated code
+- Wire it all together with `AIChatAgent` to handle chat over WebSockets
+
+## How it works
+
+The agent uses three components from the [`@cloudflare/codemode` ↗︎](https://www.npmjs.com/package/@cloudflare/codemode) library and the [Agents SDK ↗︎](https://www.npmjs.com/package/agents):
+
+- **`AIChatAgent` ( `@cloudflare/ai-chat`)**, your agent's base class. Handles chat over WebSockets, persists messages, and calls the LLM.
+- **`createCodeTool` ( `@cloudflare/codemode/ai`)**, wraps your tools into a single `codemode` tool that accepts `{ code: string }`.
+- **`DynamicWorkerExecutor` ( `@cloudflare/codemode`)**, runs the LLM-generated code in an isolated [Dynamic Worker](https://developers.cloudflare.com/dynamic-workers/).
+
+The flow:
+
+1. User sends a message over WebSocket.
+2. `AIChatAgent` passes it to the LLM with a single tool available: `codemode`.
+3. The LLM writes JavaScript, for example `const projects = await codemode.listProjects()`, instead of making individual tool calls.
+4. `DynamicWorkerExecutor` spins up an isolated Worker and runs the code. Inside the sandbox, `codemode.listProjects()` calls your real `listProjects` implementation.
+5. The result, any console output, and errors are returned to the LLM.
+6. The LLM uses the result to respond to the user, or writes more code if it needs to.
+
+### `DynamicWorkerExecutor`
+
+`DynamicWorkerExecutor` is part of the `@cloudflare/codemode` library. When the LLM writes code that orchestrates your tools, that code needs to run somewhere safe. `DynamicWorkerExecutor` spins up an isolated Dynamic Worker for each execution using the Worker Loader binding. Inside the sandbox:
+
+- A `codemode` proxy object routes calls like `codemode.createTask(...)` back to your real tool implementations over Workers RPC
+- Setting `globalOutbound` to `null` blocks `fetch()`, so the code can only reach the outside world through your tools
+- `console.log` output is captured and returned alongside the result
+- Each execution gets its own Worker instance with a 30-second timeout
+
+```js
+import { DynamicWorkerExecutor } from "@cloudflare/codemode";
+
+const executor = new DynamicWorkerExecutor({
+	loader: env.LOADER, // WorkerLoader binding from wrangler.jsonc
+	timeout: 30000, // default: 30s
+	globalOutbound: null, // null = fetch blocked
+});
+```
+
+```ts
+import { DynamicWorkerExecutor } from "@cloudflare/codemode";
+
+const executor = new DynamicWorkerExecutor({
+	loader: env.LOADER, // WorkerLoader binding from wrangler.jsonc
+	timeout: 30000, // default: 30s
+	globalOutbound: null, // null = fetch blocked
+});
+```
+
+### `createCodeTool`
+
+`createCodeTool` is part of `@cloudflare/codemode`. It takes your tools and an executor, and returns a single AI SDK `tool()`. It:
+
+- Generates TypeScript type declarations from your tools' Zod schemas, so the LLM knows what is available and what the argument shapes look like.
+- Puts those types in the tool's description, so the LLM sees a single tool with parameter `{ code: string }` and a description that includes the full typed API surface.
+- On execution, normalizes the LLM's code (strips markdown fences, wraps bare statements in async functions, auto-returns the last expression), then passes it to the executor.
+
+```js
+import { createCodeTool } from "@cloudflare/codemode/ai";
+
+const codemode = createCodeTool({
+	tools: myTools, // Record<string, tool()> with Zod schemas
+	executor, // DynamicWorkerExecutor
+});
+
+// The LLM sees: one tool called "codemode" with input { code: string }
+// The description includes TypeScript types for all your tools
+```
+
+```ts
+import { createCodeTool } from "@cloudflare/codemode/ai";
+
+const codemode = createCodeTool({
+	tools: myTools, // Record<string, tool()> with Zod schemas
+	executor, // DynamicWorkerExecutor
+});
+
+// The LLM sees: one tool called "codemode" with input { code: string }
+// The description includes TypeScript types for all your tools
+```
+
+The LLM writes an async arrow function. `createCodeTool` normalizes it and hands it to the executor. The executor builds a Worker module with a `codemode` proxy, runs the code, and returns `{ code, result, logs }`.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/dynamic-workers/examples/codemode/#page","headline":"Code Mode Example","description":"Project management chat app demonstrating code-as-tool. The LLM writes and executes JavaScript to orchestrate multiple tools in a single Dynamic Worker sandbox.","url":"https://developers.cloudflare.com/dynamic-workers/examples/codemode/","inLanguage":"en","image":"https://developers.cloudflare.com/dynamic-workers/examples/codemode/og.png?v=93a9d5e7ae8c0a08","dateModified":"2026-05-05","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["AI","AI Agents","JavaScript","TypeScript"]}
+```
+
+---
+
+---
+description: Bundle, execute, and observe Dynamic Workers with real-time logs and timing.
+title: Dynamic Workers Playground
+image: https://developers.cloudflare.com/dynamic-workers/examples/dynamic-workers-playground/og.png?v=b159ff587b640219
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/dynamic-workers/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Dynamic Workers Playground
+
+Last updated May 5, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/dynamic-workers/examples/dynamic-workers-playground/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Try the Dynamic Workers [playground ↗︎](https://github.com/cloudflare/agents/tree/main/examples/dynamic-workers-playground) to write or import code from GitHub, bundle it at runtime, execute it in a Dynamic Worker, and view real-time logs.
+
+[![Deploy to Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/agents/tree/main/examples/dynamic-workers-playground)
+
+![Dynamic Workers Playground UI](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=2324,height=1610,format=webp/_astro/dw-playground.DqwBO_zZ.png)
+
+## What this demo shows
+
+- **Runtime bundling** — Uses [`@cloudflare/worker-bundler` ↗︎](https://www.npmjs.com/package/@cloudflare/worker-bundler) to resolve npm dependencies and compile TypeScript inside a Worker
+- **Dynamic execution** — Loads bundled code into an isolated Dynamic Worker
+- **Caching** — Reuses previously bundled Workers when the source has not changed
+- **Real-time output** — Streams the response body, console logs, execution timing, and bundle metadata back to the client
+
+## Bundling code at runtime
+
+The playground uses [`@cloudflare/worker-bundler` ↗︎](https://www.npmjs.com/package/@cloudflare/worker-bundler) to compile TypeScript, resolve npm dependencies, and produce modules the Worker Loader can execute.
+
+Pass source files and a `package.json` to `createWorker()`, which resolves dependencies and returns bundled modules ready to load as a Dynamic Worker:
+
+```js
+import { createWorker } from "@cloudflare/worker-bundler";
+
+const { mainModule, modules, warnings } = await createWorker({
+	files: {
+		"src/index.ts": userCode,
+		"package.json": JSON.stringify({
+			dependencies: { hono: "^4.0.0" },
+		}),
+	},
+	bundle: true,
+	minify: false,
+});
+```
+
+```ts
+import { createWorker } from "@cloudflare/worker-bundler";
+
+const { mainModule, modules, warnings } = await createWorker({
+	files: {
+		"src/index.ts": userCode,
+		"package.json": JSON.stringify({
+			dependencies: { hono: "^4.0.0" },
+		}),
+	},
+	bundle: true,
+	minify: false,
+});
+```
+
+## Caching Dynamic Workers
+
+`env.LOADER.load()` creates a new Dynamic Worker on every call. To avoid re-bundling unchanged code, use `env.LOADER.get(id, callback)` instead. The runtime returns an existing Worker on a cache hit, or calls your callback to build one on a miss:
+
+```js
+const worker = env.LOADER.get(workerId, async () => {
+	// This callback only runs on cache miss
+	const { mainModule, modules } = await createWorker({ files });
+
+	return {
+		mainModule,
+		modules,
+		compatibilityDate: "2026-05-01",
+		tails: [contextExports.DynamicWorkerTail({ props: { workerId } })],
+	};
+});
+
+const response = await worker.getEntrypoint().fetch(request);
+```
+
+```ts
+const worker = env.LOADER.get(workerId, async () => {
+	// This callback only runs on cache miss
+	const { mainModule, modules } = await createWorker({ files });
+
+	return {
+		mainModule,
+		modules,
+		compatibilityDate: "2026-05-01",
+		tails: [
+			contextExports.DynamicWorkerTail({ props: { workerId } }),
+		],
+	};
+});
+
+const response = await worker.getEntrypoint().fetch(request);
+```
+
+In the playground, you can see this in action — run the same Dynamic Worker twice and the second request shows a cached result with 0ms cold start, since the build and load phases are skipped entirely.
+
+## Observability with Tail Workers
+
+When you run code in the playground, console output from the Dynamic Worker streams back to the browser in real time. Under the hood, this works through a [Tail Worker](https://developers.cloudflare.com/workers/observability/logs/tail-workers/) pipeline:
+
+1. A Tail Worker ( `DynamicWorkerTail`) captures `console.log` output from the Dynamic Worker.
+2. Logs are forwarded to a `LogSession` Durable Object.
+3. The Durable Object streams them to the client over WebSocket.
+
+To wire this up, include the Tail Worker in the `tails` array when creating the Dynamic Worker:
+
+```js
+const worker = env.LOADER.get(workerId, async () => ({
+	mainModule,
+	modules,
+	compatibilityDate: "2026-05-01",
+	tails: [contextExports.DynamicWorkerTail({ props: { workerId } })],
+}));
+```
+
+```ts
+const worker = env.LOADER.get(workerId, async () => ({
+	mainModule,
+	modules,
+	compatibilityDate: "2026-05-01",
+	tails: [contextExports.DynamicWorkerTail({ props: { workerId } })],
+}));
+```
+
+For more information on how to capture and stream logs from Dynamic Workers, refer to [Observability with Dynamic Workers](https://developers.cloudflare.com/dynamic-workers/usage/observability/).
+
+## Running locally
+
+Clone the repo and start the dev server:
+
+```sh
+npm install
+npm run dev
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/dynamic-workers/examples/dynamic-workers-playground/#page","headline":"Dynamic Workers Playground","description":"Bundle, execute, and observe Dynamic Workers with real-time logs and timing.","url":"https://developers.cloudflare.com/dynamic-workers/examples/dynamic-workers-playground/","inLanguage":"en","image":"https://developers.cloudflare.com/dynamic-workers/examples/dynamic-workers-playground/og.png?v=b159ff587b640219","dateModified":"2026-05-05","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["JavaScript","TypeScript","Logging"]}
+```
+
+---
+
+---
+description: A starter template for deploying a Worker that loads and runs Dynamic Workers.
+title: Dynamic Workers Starter
+image: https://developers.cloudflare.com/dynamic-workers/examples/dynamic-workers-starter/og.png?v=9bfa1c960456467d
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/dynamic-workers/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Dynamic Workers Starter
+
+Last updated May 5, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/dynamic-workers/examples/dynamic-workers-starter/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+A [starter template ↗︎](https://github.com/cloudflare/agents/tree/main/examples/dynamic-workers) for deploying a Worker that loads and runs [Dynamic Workers](https://developers.cloudflare.com/dynamic-workers/).
+
+[![Deploy to Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/agents/tree/main/examples/dynamic-workers)
+
+## What it does
+
+This template demonstrates how to use the [Worker Loader API](https://developers.cloudflare.com/workers/runtime-apis/bindings/worker-loader/) to execute code at runtime. The host Worker exposes an `/api/run` endpoint that accepts code from the frontend, loads it into a sandboxed Dynamic Worker, and returns the result.
+
+Use this pattern for AI agents that need to execute a snippet of code to complete an action.
+
+## Configuration
+
+Add a `worker_loaders` binding to your Wrangler file:
+
+```jsonc
+{
+	"worker_loaders": [
+		{
+			"binding": "LOADER"
+		}
+	]
+}
+```
+
+```toml
+[[worker_loaders]]
+binding = "LOADER"
+```
+
+## Loading and executing a Dynamic Worker
+
+In this example:
+
+- `env.LOADER.load()` creates a one-off dynamic isolate
+- `globalOutbound: null` blocks all outbound network access from the Dynamic Worker
+
+```js
+export default {
+	async fetch(request, env) {
+		const { code } = await request.json();
+
+		const worker = env.LOADER.load({
+			compatibilityDate: "2026-05-01",
+			mainModule: "worker.js",
+			modules: {
+				"worker.js": code,
+			},
+			// Block all outbound network access
+			globalOutbound: null,
+		});
+
+		const result = await worker.getEntrypoint().fetch(request);
+		return result;
+	},
+};
+```
+
+```ts
+export default {
+	async fetch(request, env): Promise<Response> {
+		const { code } = await request.json();
+
+		const worker = env.LOADER.load({
+			compatibilityDate: "2026-05-01",
+			mainModule: "worker.js",
+			modules: {
+				"worker.js": code,
+			},
+			// Block all outbound network access
+			globalOutbound: null,
+		});
+
+		const result = await worker.getEntrypoint().fetch(request);
+		return result;
+	},
+} satisfies ExportedHandler;
+```
+
+## Running locally
+
+```sh
+npm install
+npm run dev
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/dynamic-workers/examples/dynamic-workers-starter/#page","headline":"Dynamic Workers Starter","description":"A starter template for deploying a Worker that loads and runs Dynamic Workers.","url":"https://developers.cloudflare.com/dynamic-workers/examples/dynamic-workers-starter/","inLanguage":"en","image":"https://developers.cloudflare.com/dynamic-workers/examples/dynamic-workers-starter/og.png?v=9bfa1c960456467d","dateModified":"2026-05-05","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["JavaScript","TypeScript"]}
+```
+
+---
+
+---
+description: Write workflow logic in JavaScript and watch every step execute with live console.log streaming.
+title: Dynamic Workflows Playground
+image: https://developers.cloudflare.com/dynamic-workers/examples/dynamic-workflows-playground/og.png?v=a8d0d2021fa2c8a7
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/dynamic-workers/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Dynamic Workflows Playground
+
+Last updated May 5, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/dynamic-workers/examples/dynamic-workflows-playground/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Try the [dynamic workflows playground ↗︎](https://github.com/cloudflare/dynamic-workflows/tree/main/examples/basic), write workflow logic in JavaScript, execute it from a Dynamic Worker, and log every step in real time.
+
+This example shows you how to run [Cloudflare Workflows](https://developers.cloudflare.com/workflows/) from a [Dynamic Worker](https://developers.cloudflare.com/dynamic-workers/) to get full durable execution, including step retries, sleep, hibernation, and `waitForEvent`, for any workflow you need to run on demand.
+
+[![Deploy to Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/dynamic-workflows/tree/main/examples/basic)
+
+## How it works
+
+There are two parts:
+
+- **Worker Loader** — The Worker that runs your platform logic. It receives a request, loads the user's workflow code as a Dynamic Worker, and gives it a Workflow binding so it can create and run workflows.
+- **Dynamic Worker** — This is where the workflow is defined. You write the workflow logic here, including which steps need to run, how long it sleeps, and what events it waits for.
+
+The [`@cloudflare/dynamic-workflows` ↗︎](https://www.npmjs.com/package/@cloudflare/dynamic-workflows) library connects the two. When the Dynamic Worker creates a workflow, the library tags it with information about which Dynamic Worker created it. That tag is persisted by the Workflows engine, so when a workflow needs to resume after a sleep, a failure, or a server restart, the engine knows which Dynamic Worker to reload to continue execution.
+
+For a full walkthrough of the library and how to set it up, refer to the [Dynamic Workflows guide](https://developers.cloudflare.com/dynamic-workers/usage/dynamic-workflows/).
+
+## What this playground includes
+
+- **Worker Loader and Dynamic Worker setup** — A full working example of a Worker Loader that loads workflow code at runtime and a Dynamic Worker that runs it with durable execution, using [`@cloudflare/dynamic-workflows` ↗︎](https://www.npmjs.com/package/@cloudflare/dynamic-workflows).
+- **Live log streaming** — Every `console.log()` and `console.warn()` from the Dynamic Worker is captured and streamed to the browser in real time, so you can see what is happening inside each step as it runs.
+- **Source persistence** — The workflow code is saved so that if the workflow pauses (for example, during a `step.sleep()`) and the server recycles the process, it can reload the same code and resume where it left off.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/dynamic-workers/examples/dynamic-workflows-playground/#page","headline":"Dynamic Workflows Playground","description":"Write workflow logic in JavaScript and watch every step execute with live console.log streaming.","url":"https://developers.cloudflare.com/dynamic-workers/examples/dynamic-workflows-playground/","inLanguage":"en","image":"https://developers.cloudflare.com/dynamic-workers/examples/dynamic-workflows-playground/og.png?v=a8d0d2021fa2c8a7","dateModified":"2026-05-05","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["JavaScript","TypeScript"]}
+```
+
+---
+
+---
+description: Limits for concurrent Dynamic Worker requests.
+title: Limits
+image: https://developers.cloudflare.com/dynamic-workers/platform/limits/og.png?v=22cb82f706ad674b
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/dynamic-workers/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Limits
+
+Last updated Aug 27, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/dynamic-workers/platform/limits/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Cloudflare limits the number of distinct Dynamic Workers with in-flight requests. Multiple in-flight requests to the same Dynamic Worker count as one toward this limit.
+
+| Context | Concurrent Dynamic Workers |
+| --- | --- |
+| Worker request | 4 |
+| [Durable Object](https://developers.cloudflare.com/durable-objects/) | 10 (previously 4) |
+
+In a Worker, each request has its own input/output (I/O) context. Each request can therefore have up to four distinct Dynamic Workers with in-flight requests.
+
+A Durable Object shares one I/O context across all concurrent requests to the same object. Those requests can collectively have up to ten distinct Dynamic Workers with in-flight requests. To set lower CPU time or subrequest limits, refer to [Custom resource limits](https://developers.cloudflare.com/dynamic-workers/usage/limits/).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/dynamic-workers/platform/limits/#page","headline":"Limits","description":"Limits for concurrent Dynamic Worker requests.","url":"https://developers.cloudflare.com/dynamic-workers/platform/limits/","inLanguage":"en","image":"https://developers.cloudflare.com/dynamic-workers/platform/limits/og.png?v=22cb82f706ad674b","dateModified":"2026-08-27","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Give Dynamic Workers access to external APIs.
+title: Bindings
+image: https://developers.cloudflare.com/dynamic-workers/usage/bindings/og.png?v=439992d543a1e32f
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/dynamic-workers/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Bindings
+
+Last updated May 5, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/dynamic-workers/usage/bindings/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Bindings let you control what a Dynamic Worker can access. When you create a Dynamic Worker, you decide exactly what resources and operations it can use.
+
+This allows you to:
+
+- **Give each Dynamic Worker its own resources** — Partition a [KV](https://developers.cloudflare.com/kv/) namespace, [R2](https://developers.cloudflare.com/r2/) bucket, or database so each worker only sees its own data.
+- **Expose custom capabilities** — Define your own methods that Dynamic Workers can call — like posting to a chat room, sending an email, or querying an internal service. You design the interface and the Dynamic Worker just calls it.
+- **Restrict and control access** — Inspect, transform, or reject calls before they reach the underlying resource.
+
+## Custom Bindings with Dynamic Workers
+
+With custom bindings, you:
+
+- **Define the binding implementation in your loader Worker**: You create a class with methods. Because this runs in your loader Worker, that's where you can add authentication, logging, scope access per customer.
+- **Pass it to the Dynamic Worker as a binding**: It just calls methods like `this.env.CHAT_ROOM.post("Hello!")` without knowing anything about the implementation behind it.
+
+### How it works
+
+#### Step 1: Define the binding
+
+To create a custom binding, your loader Worker needs to implement a [`WorkerEntrypoint` class](https://developers.cloudflare.com/workers/runtime-apis/bindings/service-bindings/rpc#the-workerentrypoint-class) and export it. The methods you define on this class are the methods the Dynamic Worker will be able to call.
+
+```ts
+import { WorkerEntrypoint } from "cloudflare:workers";
+
+export class ChatRoom extends WorkerEntrypoint {
+  async post(text: string): Promise<void> {
+    // Your implementation here
+  }
+}
+```
+
+#### Step 2: Pass it to the Dynamic Worker
+
+Your loader Worker will then create an instance of the exported class, called a stub, and pass it into the Dynamic Worker's `env`.
+
+```ts
+let chatRoom = ctx.exports.ChatRoom({ props: { roomName: "#bot-chat" } });
+
+let worker = env.LOADER.load({
+  env: { CHAT_ROOM: chatRoom },
+  // ...
+});
+```
+
+From the Dynamic Worker's perspective, `CHAT_ROOM` just looks like a regular binding with methods it can call:
+
+```ts
+// Inside the Dynamic Worker
+await this.env.CHAT_ROOM.post("Hello!");
+```
+
+#### Step 3: Customize per user with props
+
+One class can serve many different Dynamic Workers. Instead of defining a separate class for each user, you pass in `props` when creating the stub, which contains information specific to that user.
+
+```ts
+// Same class, different props per user
+let aliceRoom = ctx.exports.ChatRoom({ props: { roomName: "#alice", apiKey: ALICE_KEY } });
+let bobRoom   = ctx.exports.ChatRoom({ props: { roomName: "#bob", apiKey: BOB_KEY } });
+```
+
+When the Dynamic Worker calls a method on the binding, it's actually making a call back to your loader Worker, that's where the method runs. Inside that method, you can read the `props` via [`this.ctx.props`](https://developers.cloudflare.com/workers/runtime-apis/context#props). Only the loader Worker has access to the props, the Dynamic Worker never sees them.
+
+```ts
+export class ChatRoom extends WorkerEntrypoint<Cloudflare.Env, ChatRoomProps> {
+  async post(text: string): Promise<void> {
+    // Props are set when the stub is created — the Dynamic Worker never sees them
+    let roomName = this.ctx.props.roomName;
+    await postToChat(roomName, text);
+  }
+}
+```
+
+### Example: Chat room agent
+
+Here's a complete example putting it all together. Say you're building a platform where AI agents can post to chat rooms. Each agent should only be able to post to its assigned room and it should never see the API key used to authenticate.
+
+You define a `ChatRoom` class in your parent Worker. This class has a `post` method, the only method the Dynamic Worker can call on this binding. Inside this class, you control which room the message goes to, which API key is used, and what name is attached to the message.
+
+```ts
+import { WorkerEntrypoint } from "cloudflare:workers";
+
+export class ChatRoom extends WorkerEntrypoint<Cloudflare.Env, ChatRoomProps> {
+  async post(text: string): Promise<void> {
+    let { apiKey, botName, roomName } = this.ctx.props;
+
+    // Prefix the message with the bot's name.
+    text = `[${botName}]: ${text}`;
+
+    // Send it to the chat service.
+    await postToChat(apiKey, roomName, text);
+  }
+}
+
+type ChatRoomProps = {
+  apiKey: string;
+  roomName: string;
+  botName: string;
+};
+```
+
+You export one `ChatRoom` class, but each stub you create can have different `props` — a different room name, a different API key, a different bot name. The `props` are set when you create the stub, and the Dynamic Worker never sees them.
+
+Now pass it to a Dynamic Worker:
+
+```ts
+// Create a stub scoped to a specific room.
+let chatRoom = ctx.exports.ChatRoom({
+  props: {
+    apiKey,
+    roomName: "#bot-chat",
+    botName: "Robo",
+  },
+});
+
+let worker = env.LOADER.load({
+  env: {
+    CHAT_ROOM: chatRoom,
+  },
+  compatibilityDate: "$today",
+  mainModule: "index.js",
+  modules: {
+    "index.js": `
+      export class Agent extends WorkerEntrypoint {
+        async run() {
+          // This is all the Dynamic Worker sees.
+          await this.env.CHAT_ROOM.post("Hello!");
+        }
+      }
+    `,
+  },
+  globalOutbound: null,
+});
+
+return worker.getEntrypoint("Agent").run();
+```
+
+The agent just calls `this.env.CHAT_ROOM.post("Hello!")`. It has no way to post to a different room, see or use the API key, or change the bot name attached to its messages.
+
+### Tip: Tell your agent about the types
+
+For an AI agent to write code against your bindings, it needs to know the interface. Give your agent TypeScript type declarations with doc comments describing each method. Modern LLMs understand TypeScript well, making it the most concise way to describe a JavaScript API. This works even if the agent is writing plain JavaScript.
+
+Make sure your `WorkerEntrypoint` class extends the TypeScript type so the declarations stay in sync with the implementation.
+
+## Passing normal Workers bindings
+
+To pass resources like a [KV](https://developers.cloudflare.com/kv/) namespace or [R2](https://developers.cloudflare.com/r2/) bucket to a Dynamic Worker, you need to bind the resource to your loader Worker and create a custom binding that wraps it. You can scope access per customer by prefixing keys and defining only the methods you want to expose.
+
+### Example: Scoping a KV namespace per customer
+
+First, bind the KV namespace to your loader Worker. Then in your loader Worker, export a class that uses the KV binding and defines the methods Dynamic Workers can call:
+
+```ts
+import { WorkerEntrypoint } from "cloudflare:workers";
+
+export class MyStorage extends WorkerEntrypoint<Cloudflare.Env, MyStorageProps> {
+  // Export this class from your loader Worker
+  // The Dynamic Worker will be able to call get() and put()
+  async get(key: string): Promise<string | null> {
+    // Prefix the key so this customer can only access their own data
+    return this.env.MY_KV.get(`${this.ctx.props.prefix}:${key}`);
+  }
+
+  async put(key: string, value: string): Promise<void> {
+    await this.env.MY_KV.put(`${this.ctx.props.prefix}:${key}`, value);
+  }
+}
+
+type MyStorageProps = {
+  prefix: string;
+};
+```
+
+Then pass it to the Dynamic Worker with a customer-specific prefix:
+
+```ts
+// Create a stub scoped to this customer's prefix
+let storage = ctx.exports.MyStorage({
+  props: { prefix: `customer-${customerId}` },
+});
+
+let worker = env.LOADER.load({
+  env: { STORAGE: storage },
+  // ...
+});
+```
+
+The Dynamic Worker just uses it like any other binding:
+
+```ts
+// Inside the Dynamic Worker, it just sees STORAGE with get and put
+let value = await this.env.STORAGE.get("settings");
+await this.env.STORAGE.put("settings", "dark-mode");
+```
+
+This same pattern works for any resource your loader Worker has access to — [R2](https://developers.cloudflare.com/r2/) buckets or [D1](https://developers.cloudflare.com/d1/) databases. Bind the resource to your loader Worker, export a class that uses it, and pass the stub to the Dynamic Worker.
+
+For persistent storage that lives with each Dynamic Worker, see [Durable Object Facets](https://developers.cloudflare.com/dynamic-workers/usage/durable-object-facets/).
+
+## Capability-based Sandboxing
+
+Custom bindings follow a capability-based security model — a Dynamic Worker can only access what you explicitly give it. If it hasn't received a stub for something, it can't access it.
+
+This is powered by Workers RPC, also known as [Cap'n Web ↗︎](https://github.com/cloudflare/capnweb), an RPC system designed to pass object references across security boundaries. When a Dynamic Worker receives a stub, it can call that object's methods and each call is an RPC back to the original object in your loader Worker. Stubs have no global identifier and cannot be forged, the only way to obtain one is to receive it.
+
+Capability-based security is essential to the design of most successful sandboxes, though it's usually hidden as an implementation detail — Android has Binder, Chrome has Mojo, and Cloudflare Workers has Cap'n Web. Dynamic Workers directly expose this power to you, the developer, so that you can build your own strong sandbox.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/dynamic-workers/usage/bindings/#page","headline":"Bindings","description":"Give Dynamic Workers access to external APIs.","url":"https://developers.cloudflare.com/dynamic-workers/usage/bindings/","inLanguage":"en","image":"https://developers.cloudflare.com/dynamic-workers/usage/bindings/og.png?v=439992d543a1e32f","dateModified":"2026-05-05","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Run dynamically-loaded code with isolated persistent storage.
+title: Durable Object Facets
+image: https://developers.cloudflare.com/dynamic-workers/usage/durable-object-facets/og.png?v=94fdf8e0117dba2a
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/dynamic-workers/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Durable Object Facets
+
+Last updated Apr 21, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/dynamic-workers/usage/durable-object-facets/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Durable Object Facets let you load a [Durable Object](https://developers.cloudflare.com/durable-objects/) class from a [Dynamic Worker](https://developers.cloudflare.com/dynamic-workers/) and run it as a child of your own Durable Object. The child (the facet) gets its own isolated SQLite database, while your class acts as a supervisor that controls access.
+
+This is useful when you want dynamically-generated code — for example, code written by an AI agent — to have persistent storage, without giving it direct access to a Durable Object namespace. Your supervisor loads the code, creates the facet, and forwards requests into it. You stay in control of what the dynamic code can do.
+
+## Understand the model
+
+A facet-based setup has three layers:
+
+- **Supervisor class** — A normal Durable Object class that you write and deploy. It is configured with a SQLite storage backend like any other Durable Object.
+- **Dynamic code** — Code loaded at runtime through the [Worker Loader API](https://developers.cloudflare.com/dynamic-workers/getting-started/#configure-worker-loader). This code exports a class that extends `DurableObject`.
+- **Facet** — An instance of the dynamic class, created by calling `this.ctx.facets.get()` inside your supervisor. Each facet has its own SQLite database, separate from the supervisor's.
+
+The supervisor's database and the facet's database are stored together as part of the same overall Durable Object. The dynamic code cannot read the supervisor's database — it only has access to its own.
+
+![Diagram showing the facet architecture: a request flows through the Worker entry point into a Durable Object instance containing a Supervisor with its own SQLite DB, which creates an isolated Facet with a separate SQLite DB via ctx.facets.get() and forwards requests to it via facet.fetch()](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=920,height=510,format=svg/_astro/facet-architecture.AFTtB6W_.svg)
+
+## Configure your Worker
+
+Your Worker needs two things: a Durable Object class with a SQLite storage backend, and a Worker Loader binding.
+
+```jsonc
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  // Set this to today's date
+  "compatibility_date": "2026-10-07",
+  "main": "src/index.ts",
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": [
+        "AppRunner"
+      ]
+    }
+  ],
+  "worker_loaders": [
+    {
+      "binding": "LOADER"
+    }
+  ]
+}
+```
+
+```toml
+# Set this to today's date
+compatibility_date = "2026-10-07"
+main = "src/index.ts"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["AppRunner"]
+
+[[worker_loaders]]
+binding = "LOADER"
+```
+
+## Load and run a dynamic class
+
+The following example shows a supervisor Durable Object (`AppRunner`) that loads dynamic code, creates a facet from it, and forwards HTTP requests to the facet.
+
+The dynamic code is a simple counter app that tracks how many requests it has received, using its own SQLite-backed storage. In a real application, this code would come from an AI agent or user upload rather than a static string.
+
+```js
+import { DurableObject } from "cloudflare:workers";
+
+// In production, this code would come from an AI agent, a database,
+// or user input — not a static string.
+const AGENT_CODE = `
+  import { DurableObject } from "cloudflare:workers";
+
+  export class App extends DurableObject {
+    fetch(request) {
+      // Note: storage.kv provides simple KV storage backed by SQLite,
+			// but you can also use SQL directly via storage.sql. See:
+			// https://developers.cloudflare.com/durable-objects/api/sqlite-storage-api/
+
+			let counter = this.ctx.storage.kv.get("counter") || 0;
+      ++counter;
+      this.ctx.storage.kv.put("counter", counter);
+
+      return new Response("You have made " + counter + " requests.\\n");
+    }
+  }
+`;
+
+// AppRunner is your supervisor. Each instance manages one
+// dynamically-loaded application.
+export class AppRunner extends DurableObject {
+	async fetch(request) {
+		// Get a stub pointing to the "app" facet. If the facet has not
+		// started yet (or has hibernated), the callback runs to tell the
+		// runtime what code to load.
+		const facet = this.ctx.facets.get("app", async () => {
+			const worker = this.#loadDynamicWorker();
+
+			// Extract the Durable Object class named "App" from the
+			// dynamic Worker's exports.
+			const appClass = worker.getDurableObjectClass("App");
+
+			return { class: appClass };
+		});
+
+		// Forward the request to the facet.
+		// You can also call RPC methods on the stub.
+		return await facet.fetch(request);
+	}
+
+	#loadDynamicWorker() {
+		// Use get() so the Worker stays warm across requests.
+		// Each unique code version needs a unique ID.
+		const codeId = "agent-code-v1";
+
+		return this.env.LOADER.get(codeId, async () => {
+			return {
+				compatibilityDate: "2026-04-01",
+				mainModule: "worker.js",
+				modules: { "worker.js": AGENT_CODE },
+				globalOutbound: null, // block network access
+			};
+		});
+	}
+}
+
+export default {
+	async fetch(request, env, ctx) {
+		// Look up the AppRunner instance named "my-app".
+		const obj = ctx.exports.AppRunner.getByName("my-app");
+
+		// Forward the request to it.
+		return await obj.fetch(request);
+	},
+};
+```
+
+```ts
+import { DurableObject } from "cloudflare:workers";
+
+// In production, this code would come from an AI agent, a database,
+// or user input — not a static string.
+const AGENT_CODE = `
+  import { DurableObject } from "cloudflare:workers";
+
+  export class App extends DurableObject {
+    fetch(request) {
+      // Note: storage.kv provides simple KV storage backed by SQLite,
+			// but you can also use SQL directly via storage.sql. See:
+			// https://developers.cloudflare.com/durable-objects/api/sqlite-storage-api/
+
+			let counter = this.ctx.storage.kv.get("counter") || 0;
+      ++counter;
+      this.ctx.storage.kv.put("counter", counter);
+
+      return new Response("You have made " + counter + " requests.\\n");
+    }
+  }
+`;
+
+// AppRunner is your supervisor. Each instance manages one
+// dynamically-loaded application.
+export class AppRunner extends DurableObject<Env> {
+	async fetch(request: Request): Promise<Response> {
+		// Get a stub pointing to the "app" facet. If the facet has not
+		// started yet (or has hibernated), the callback runs to tell the
+		// runtime what code to load.
+		const facet = this.ctx.facets.get("app", async () => {
+			const worker = this.#loadDynamicWorker();
+
+			// Extract the Durable Object class named "App" from the
+			// dynamic Worker's exports.
+			const appClass = worker.getDurableObjectClass("App");
+
+			return { class: appClass };
+		});
+
+		// Forward the request to the facet.
+		// You can also call RPC methods on the stub.
+		return await facet.fetch(request);
+	}
+
+	#loadDynamicWorker() {
+		// Use get() so the Worker stays warm across requests.
+		// Each unique code version needs a unique ID.
+		const codeId = "agent-code-v1";
+
+		return this.env.LOADER.get(codeId, async () => {
+			return {
+				compatibilityDate: "2026-04-01",
+				mainModule: "worker.js",
+				modules: { "worker.js": AGENT_CODE },
+				globalOutbound: null, // block network access
+			};
+		});
+	}
+}
+
+export default {
+	async fetch(
+		request: Request,
+		env: Env,
+		ctx: ExecutionContext,
+	): Promise<Response> {
+		// Look up the AppRunner instance named "my-app".
+		const obj = ctx.exports.AppRunner.getByName("my-app");
+
+		// Forward the request to it.
+		return await obj.fetch(request);
+	},
+};
+```
+
+In this example:
+
+- `AppRunner` is your supervisor Durable Object. You deploy it normally and it owns a Durable Object namespace.
+- The dynamic code exports a class ( `App`) that extends `DurableObject`. This class uses `this.ctx.storage` to read and write data, just like any Durable Object.
+- `this.ctx.facets.get("app", callback)` creates the facet. The `"app"` string names the facet — each name gets its own SQLite database within the parent Durable Object.
+- The facet's database is fully isolated from the supervisor's database. `AppRunner` and `App` each have their own storage that the other cannot access.
+
+## `this.ctx.facets` reference
+
+The `this.ctx.facets` object is available inside any Durable Object class. It provides methods to create, shut down, and delete facets. A single Durable Object can have any number of facets with different names, each with its own independent SQLite database.
+
+### `get`
+
+`` this.ctx.facets.get(name `string`, callback `() => FacetStartupOptions`) `Fetcher` ``
+
+Creates or resumes a facet with the given name and returns a stub you can use to send it requests.
+
+If the facet has not started yet, or has hibernated, the runtime calls `getStartupOptions` to determine what code to load. Otherwise, the existing facet is reused and the callback is not invoked. `callback` can optionally be `async` (i.e. returning `Promise<FacetStartupOptions>`).
+
+The returned stub behaves like a [Durable Object stub](https://developers.cloudflare.com/durable-objects/api/stub/). You can call `.fetch()` on it to send HTTP requests, or call RPC methods directly.
+
+### `abort`
+
+`` this.ctx.facets.abort(name `string`, reason `any`) `void` ``
+
+Shuts down a running facet and invalidates all existing stubs. Any subsequent call on an invalidated stub throws `reason`. The facet's storage is preserved.
+
+After aborting, you can call `get()` again to restart the facet — including with a different class. This makes `abort()` useful for code updates: abort the facet running the old version, then call `get()` with a callback that returns the new class.
+
+### `delete`
+
+`` this.ctx.facets.delete(name `string`) `void` ``
+
+Aborts the facet (if running) and permanently deletes its SQLite database. If you call `get()` with the same name afterward, the facet starts with an empty database.
+
+Use `delete()` to clean up storage for facets that are no longer needed.
+
+### `FacetStartupOptions`
+
+The object returned by the `getStartupOptions` callback.
+
+#### `` class `DurableObjectClass` ``
+
+The Durable Object class to instantiate for the facet. Obtain this by calling `worker.getDurableObjectClass("ClassName")` on a Dynamic Worker stub.
+
+#### ``id `DurableObjectId | string` Optional``
+
+The ID the facet sees as its own `ctx.id`. If omitted, the facet inherits the parent Durable Object's ID.
+
+## Isolate storage
+
+The supervisor and each facet have separate SQLite databases. The dynamic code uses the standard [Durable Object storage APIs](https://developers.cloudflare.com/durable-objects/api/sqlite-storage-api/) with all operations targeting the facet's own database.
+
+This isolation means you do not need to trust the dynamic code with your supervisor's data. You can store metadata, billing counters, or access-control state in the supervisor's database, and the facet cannot read or modify any of it.
+
+In production, you would typically store the dynamic code itself in the supervisor's database and load it in the `#loadDynamicWorker()` method. This keeps the code paired with the Durable Object instance that manages it.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/dynamic-workers/usage/durable-object-facets/#page","headline":"Durable Object Facets","description":"Run dynamically-loaded code with isolated persistent storage.","url":"https://developers.cloudflare.com/dynamic-workers/usage/durable-object-facets/","inLanguage":"en","image":"https://developers.cloudflare.com/dynamic-workers/usage/durable-object-facets/og.png?v=94fdf8e0117dba2a","dateModified":"2026-04-21","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Run different Workflow logic for each user or tenant by combining Workflows with Dynamic Workers.
+title: Dynamic Workflows
+image: https://developers.cloudflare.com/dynamic-workers/usage/dynamic-workflows/og.png?v=41fcebe06e0c8d29
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/dynamic-workers/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Dynamic Workflows
+
+Last updated Jul 22, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/dynamic-workers/usage/dynamic-workflows/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+You can run a Workflow inside a Dynamic Worker to get durable execution for code that is loaded at runtime. Each step in the Workflow survives failures, can sleep for hours or days, can wait for external events, and resumes exactly where it left off — even if the isolate is recycled between steps.
+
+Because Dynamic Workers are created on-demand, you do not have to register each Workflow up front or manage them individually. Load the code when it is needed, and the Workflows engine handles persistence and retries behind the scenes. This works equally well for one-time executions as it does for long-running, multi-step processes.
+
+For example, you might be building:
+
+- A SaaS platform where each tenant defines their own automation — onboarding sequences, approval chains, or billing retry logic — and you need each one to run durably without deploying a separate Workflow per customer.
+- An AI agent framework where agents generate and execute multi-step plans at runtime, and each plan needs to survive restarts, sleep between tool calls, and wait for human approval.
+- A multi-tenant job system where each customer submits their own processing logic — data transforms, webhook chains, scheduled tasks — and you want every step to persist progress and retry on failure without building your own orchestrator.
+
+The `@cloudflare/dynamic-workflows` library connects your Worker Loader to the Workflows engine so that each Dynamic Worker gets the full power of durable steps (`step.do()`, `step.sleep()`, `step.waitForEvent()`) without you having to build the plumbing yourself.
+
+In this guide, you will use the `@cloudflare/dynamic-workflows` library to set up a Worker Loader, write a Dynamic Worker with durable steps, and trigger a Workflow instance.
+
+## Understand the model
+
+This setup has three parts:
+
+- **Worker Loader**: the main Worker you deploy. It receives requests, decides which Dynamic Worker to load, and creates Workflow instances. You write this code.
+- **Dynamic Worker**: the per-tenant code that defines what the Workflow actually does — its steps, sleeps, and event waits. Each Dynamic Worker is loaded on-demand at runtime.
+- **DynamicWorkflow class**: a Workflow entry point created by the library. When the Workflows engine needs to execute a step, this class loads the correct Dynamic Worker for that instance and runs the step inside it.
+
+![Architecture](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1910,height=1598,format=webp/_astro/dynamic-workflows.C7b0JP-O.png)
+
+Here is how they work together:
+
+- The Worker Loader receives a request, loads the tenant's Dynamic Worker, and gives it a Workflow binding tagged with a tenant ID.
+- The Dynamic Worker calls `env.WORKFLOWS.create()` to start a new Workflow instance. The tenant ID is saved with the instance automatically.
+- The Workflows engine runs the steps defined in the Dynamic Worker — `step.do()`, `step.waitForEvent()`, `step.sleep()`. Each step is durable: its result is persisted and will not re-run after it succeeds.
+- If the isolate is recycled between steps (for example, during a sleep or while waiting for an event), the engine reads the tenant ID back from the instance, reloads the same Dynamic Worker through the Worker Loader, and resumes where it left off.
+
+The library provides two functions that handle the wiring between the Worker Loader and the Workflows engine, so you do not have to manually tag requests, parse payloads, or write your own `WorkflowEntrypoint` subclass.
+
+- `wrapWorkflowBinding`: creates a Workflow binding tagged with metadata (like `{ tenantId }`) that you pass to a Dynamic Worker. The library attaches that metadata to every instance the Dynamic Worker creates, so the engine can trace each instance back to the right tenant.
+- `createDynamicWorkflowEntrypoint`: creates the DynamicWorkflow class that reloads the correct Dynamic Worker when the engine resumes. You give it a callback that takes the metadata and returns the tenant's Workflow class, and the library calls that callback whenever a step needs to run.
+
+## Install the library
+
+The library handles the wiring between the Worker Loader and the Workflows engine, so you do not have to manually tag requests, parse payloads, or write your own `WorkflowEntrypoint` subclass.
+
+npmyarnpnpmbun
+
+```
+npm i @cloudflare/dynamic-workflows
+```
+
+```
+yarn add @cloudflare/dynamic-workflows
+```
+
+```
+pnpm add @cloudflare/dynamic-workflows
+```
+
+```
+bun add @cloudflare/dynamic-workflows
+```
+
+## Configure your Worker Loader
+
+Your Worker Loader needs two [bindings](https://developers.cloudflare.com/workers/runtime-apis/bindings/):
+
+- A **Worker Loader** binding ( `LOADER`) to load Dynamic Workers at runtime.
+- A **Workflow binding** ( `WORKFLOWS`) that points to the `DynamicWorkflow` class. This is the entrypoint the Workflows engine uses to route each instance to the correct Dynamic Worker.
+
+```jsonc
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "my-worker-loader",
+  "main": "src/index.ts",
+  // Set this to today's date
+  "compatibility_date": "2026-10-07",
+  "worker_loaders": [
+    {
+      "binding": "LOADER"
+    }
+  ],
+  "workflows": [
+    {
+      "name": "dynamic-workflow",
+      "binding": "WORKFLOWS",
+      "class_name": "DynamicWorkflow"
+    }
+  ]
+}
+```
+
+```toml
+name = "my-worker-loader"
+main = "src/index.ts"
+# Set this to today's date
+compatibility_date = "2026-10-07"
+
+[[worker_loaders]]
+binding = "LOADER"
+
+[[workflows]]
+name = "dynamic-workflow"
+binding = "WORKFLOWS"
+class_name = "DynamicWorkflow"
+```
+
+## Create the Worker Loader
+
+The Worker Loader is where you connect Dynamic Workers to the Workflows engine. In this file, you define:
+
+- How to load a tenant's code: a function that takes a tenant ID, fetches their code, and gives them a Workflow binding. The binding is created with `wrapWorkflowBinding`, which tags every Workflow instance with the tenant ID so the engine can route back to the right code later.
+- How the engine resumes a Workflow: using `createDynamicWorkflowEntrypoint`, you define a callback that the engine calls whenever it needs to run a step. The callback receives the tenant ID from the instance metadata and returns the tenant's Workflow class. This is what makes durable execution work across isolate restarts — the engine knows how to reload the right code.
+
+Note
+
+You must re-export `DynamicWorkflowBinding` from your Worker Loader. The Cloudflare runtime needs this export to build the wrapped binding that Dynamic Workers use. If you forget this line, you will get a runtime error when a Dynamic Worker tries to create a Workflow instance.
+
+```js
+import {
+	createDynamicWorkflowEntrypoint,
+	DynamicWorkflowBinding,
+	wrapWorkflowBinding,
+} from "@cloudflare/dynamic-workflows";
+
+// Required: re-exporting puts the class on cloudflare:workers exports,
+// which is how wrapWorkflowBinding builds per-tenant RPC stubs.
+export { DynamicWorkflowBinding };
+
+function loadTenant(env, tenantId) {
+	return env.LOADER.get(tenantId, async () => ({
+		compatibilityDate: "2026-01-01",
+		mainModule: "index.js",
+		modules: { "index.js": await fetchTenantCode(tenantId) },
+		// The Dynamic Worker uses this exactly like a real Workflow binding;
+		// every create() is tagged with { tenantId } automatically.
+		env: { WORKFLOWS: wrapWorkflowBinding({ tenantId }) },
+	}));
+}
+
+// The entrypoint name must match `class_name` in the workflows binding of your Wrangler config file.
+export const DynamicWorkflow = createDynamicWorkflowEntrypoint(
+	async ({ env, metadata }) => {
+		const stub = loadTenant(env, metadata.tenantId);
+		return stub.getEntrypoint("TenantWorkflow");
+	},
+);
+
+export default {
+	fetch(request, env) {
+		const tenantId = request.headers.get("x-tenant-id");
+		return loadTenant(env, tenantId).getEntrypoint().fetch(request);
+	},
+};
+```
+
+```ts
+import {
+	createDynamicWorkflowEntrypoint,
+	DynamicWorkflowBinding,
+	wrapWorkflowBinding,
+	type WorkflowRunner,
+} from "@cloudflare/dynamic-workflows";
+
+// Required: re-exporting puts the class on cloudflare:workers exports,
+// which is how wrapWorkflowBinding builds per-tenant RPC stubs.
+export { DynamicWorkflowBinding };
+
+interface Env {
+	WORKFLOWS: Workflow;
+	LOADER: WorkerLoader;
+}
+
+function loadTenant(env: Env, tenantId: string) {
+	return env.LOADER.get(tenantId, async () => ({
+		compatibilityDate: "2026-01-01",
+		mainModule: "index.js",
+		modules: { "index.js": await fetchTenantCode(tenantId) },
+		// The Dynamic Worker uses this exactly like a real Workflow binding;
+		// every create() is tagged with { tenantId } automatically.
+		env: { WORKFLOWS: wrapWorkflowBinding({ tenantId }) },
+	}));
+}
+
+// The entrypoint name must match `class_name` in the workflows binding of your Wrangler config file.
+export const DynamicWorkflow = createDynamicWorkflowEntrypoint<Env>(
+	async ({ env, metadata }) => {
+		const stub = loadTenant(env, metadata.tenantId as string);
+		return stub.getEntrypoint("TenantWorkflow") as unknown as WorkflowRunner;
+	},
+);
+
+export default {
+	fetch(request: Request, env: Env) {
+		const tenantId = request.headers.get("x-tenant-id")!;
+		return loadTenant(env, tenantId).getEntrypoint().fetch(request);
+	},
+};
+```
+
+Here is what happens when a request arrives:
+
+1. The `fetch` handler reads the tenant ID from the request header.
+2. `loadTenant` calls `env.LOADER.get()` to load (or reuse) a Dynamic Worker for that tenant. The Dynamic Worker receives `WORKFLOWS: wrapWorkflowBinding({ tenantId })` as a binding, which looks and behaves like a normal Workflow binding.
+3. The request is forwarded to the Dynamic Worker's `fetch` handler, which can now call `env.WORKFLOWS.create()` to start a Workflow instance.
+
+When that Workflow instance later needs to run a step — for example, after a `step.sleep()` or when a new isolate picks it up — the Workflows engine calls `run()` on the `DynamicWorkflow` class. The library reads the `tenantId` back from the metadata stored on the instance and invokes the callback you passed to `createDynamicWorkflowEntrypoint`. That callback loads the Dynamic Worker for that tenant and returns its `TenantWorkflow` class, so the engine can execute the next step in the original code.
+
+## Write the Dynamic Worker
+
+The Dynamic Worker is the code your user writes, and it does not need to know anything about the routing layer. It is a standard Workflow that uses `step.do()`, `step.sleep()`, and `step.waitForEvent()` as normal — from its perspective, `env.WORKFLOWS` is a regular Workflow binding.
+
+Caution
+
+Do not put secrets in the metadata you pass to `wrapWorkflowBinding` (for example, API keys or tokens). The Workflows engine persists the metadata in the event payload, and Dynamic Worker code can read it back via `instance.status()`. Use metadata for routing information like tenant IDs, not for sensitive data.
+
+```js
+import { WorkflowEntrypoint } from "cloudflare:workers";
+
+export class TenantWorkflow extends WorkflowEntrypoint {
+	async run(event, step) {
+		return step.do("greet", async () => `Hello, ${event.payload.name}!`);
+	}
+}
+
+export default {
+	async fetch(request, env) {
+		const instance = await env.WORKFLOWS.create({
+			params: await request.json(),
+		});
+		// instance is an RPC stub — .id is an RpcPromise, so await it.
+		return Response.json({ id: await instance.id });
+	},
+};
+```
+
+```ts
+import { WorkflowEntrypoint } from "cloudflare:workers";
+
+export class TenantWorkflow extends WorkflowEntrypoint {
+	async run(event, step) {
+		return step.do("greet", async () => `Hello, ${event.payload.name}!`);
+	}
+}
+
+export default {
+	async fetch(request, env) {
+		const instance = await env.WORKFLOWS.create({
+			params: await request.json(),
+		});
+		// instance is an RPC stub — .id is an RpcPromise, so await it.
+		return Response.json({ id: await instance.id });
+	},
+};
+```
+
+Normal Workflows behavior still applies. Workflow IDs, `.status()`, `.pause()`, retries, hibernation, and durable steps are unaffected by this architecture. The library only adds the routing between the Worker Loader and the Dynamic Worker.
+
+## Trigger a dynamic workflow
+
+Send a `POST` request to the Worker Loader with a tenant ID header and a JSON payload. The Worker Loader loads the matching Dynamic Worker, which calls `env.WORKFLOWS.create()` and returns the new instance ID.
+
+```bash
+curl -X POST http://localhost:8787/ \
+  -H "x-tenant-id: tenant-42" \
+  -H "Content-Type: application/json" \
+  -d '{"name": "Alice"}'
+```
+
+## Check workflow status
+
+Use the instance ID returned from the previous request to check the Workflow status. For more information on the status API, refer to the [Workers API reference](https://developers.cloudflare.com/workflows/build/workers-api/).
+
+```bash
+curl "http://localhost:8787/api/status?instanceId=YOUR_INSTANCE_ID"
+```
+
+## Related resources
+
+- [`@cloudflare/dynamic-workflows` on GitHub ↗︎](https://github.com/cloudflare/dynamic-workflows)
+- [Workers API](https://developers.cloudflare.com/workflows/build/workers-api/)
+- [Trigger Workflows](https://developers.cloudflare.com/workflows/build/trigger-workflows/)
+- [Events and parameters](https://developers.cloudflare.com/workflows/build/events-and-parameters/)
+- [Dynamic Workers getting started](https://developers.cloudflare.com/dynamic-workers/getting-started/)
+- [Dynamic Worker Loaders](https://developers.cloudflare.com/workers/runtime-apis/bindings/worker-loader/)
+- [Bindings with Dynamic Workers](https://developers.cloudflare.com/dynamic-workers/usage/bindings/)
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/dynamic-workers/usage/dynamic-workflows/#page","headline":"Dynamic Workflows","description":"Run different Workflow logic for each user or tenant by combining Workflows with Dynamic Workers.","url":"https://developers.cloudflare.com/dynamic-workers/usage/dynamic-workflows/","inLanguage":"en","image":"https://developers.cloudflare.com/dynamic-workers/usage/dynamic-workflows/og.png?v=41fcebe06e0c8d29","dateModified":"2026-07-22","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Restrict, intercept, and audit outbound network access for dynamic Workers.
+title: Egress control
+image: https://developers.cloudflare.com/dynamic-workers/usage/egress-control/og.png?v=5cc81b2003e8ce38
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/dynamic-workers/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Egress control
+
+Last updated Sep 29, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/dynamic-workers/usage/egress-control/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+When you run untrusted or AI-generated code in a dynamic Worker, you need to control what it can access on the network. You might want to:
+
+- block all outbound access so the dynamic Worker can only use the [bindings](https://developers.cloudflare.com/dynamic-workers/usage/bindings/) you give it
+- restrict outbound requests to a specific set of allowed destinations
+- inject credentials into outbound requests without exposing secrets to the dynamic Worker
+- log or audit every outbound request for observability
+
+The `globalOutbound` option in the `WorkerCode` object returned by `get()` or passed to `load()` controls all of this. It intercepts every `fetch()` and `connect()` call the dynamic Worker makes.
+
+## Block all outbound access
+
+Set `globalOutbound` to `null` to fully isolate the dynamic Worker from the network:
+
+```js
+return {
+	mainModule: "index.js",
+	modules: { "index.js": code },
+	globalOutbound: null,
+};
+```
+
+This causes any `fetch()` or `connect()` request from the dynamic Worker to throw an exception.
+
+In this mode, you can still give the Dynamic Worker direct access to specific resources and services using [bindings](https://developers.cloudflare.com/dynamic-workers/usage/bindings/). This is the cleanest and most secure way to design your sandbox: block the Internet, then constructively offer specific capabilities via bindings.
+
+That said, if you need to offer compatibility with existing HTTP client libraries running directly inside your Dynamic Worker sandbox, then blocking `fetch()` may be infeasible, and you may prefer to intercept requests instead.
+
+## Intercept outbound requests
+
+To intercept outbound requests, define a `WorkerEntrypoint` class in the loader Worker that acts as a gateway. Every `fetch()` and `connect()` call the dynamic Worker makes goes through this gateway instead of hitting the network directly. Pass the gateway to the dynamic Worker with `globalOutbound` and `ctx.exports`:
+
+```js
+import { WorkerEntrypoint } from "cloudflare:workers";
+
+export class HttpGateway extends WorkerEntrypoint {
+	async fetch(request) {
+		// Every outbound fetch() from the dynamic Worker arrives here.
+		// Inspect, modify, block, or forward the request.
+		return fetch(request);
+	}
+}
+
+export default {
+	async fetch(request, env, ctx) {
+		const worker = env.LOADER.get("my-worker", async () => {
+			return {
+				compatibilityDate: "$today",
+				mainModule: "index.js",
+				modules: { "index.js": code },
+
+				// Pass the gateway as a service binding.
+				// The dynamic Worker's fetch() and connect() calls
+				// are routed through HttpGateway instead of going
+				// to the network directly.
+				globalOutbound: ctx.exports.HttpGateway,
+			};
+		});
+
+		return worker.getEntrypoint().fetch(request);
+	},
+};
+```
+
+From here, you can add any logic to the gateway, such as restricting destinations, injecting credentials, or logging requests.
+
+## Inject credentials
+
+A common pattern is attaching credentials to outbound requests so the dynamic Worker never sees the secret. Similar to [custom bindings](https://developers.cloudflare.com/dynamic-workers/usage/bindings/#custom-bindings-with-dynamic-workers), you can use [`ctx.props`](https://developers.cloudflare.com/workers/runtime-apis/context/#props) to pass per-tenant or per-request context to the gateway.
+
+The dynamic Worker calls `fetch()` normally. `HttpGateway` intercepts the request, attaches the token from the loader Worker's environment, and forwards it. The dynamic Worker never has access to `API_TOKEN`.
+
+```js
+import { WorkerEntrypoint } from "cloudflare:workers";
+
+export class HttpGateway extends WorkerEntrypoint {
+	async fetch(request) {
+		let url = new URL(request.url);
+		const headers = new Headers(request.headers);
+
+		// For requests to api.example.com, inject credentials.
+		if (url.hostname === "api.example.com") {
+			headers.set("Authorization", `Bearer ${this.env.API_TOKEN}`);
+			headers.set("X-Tenant-Id", this.ctx.props.tenantId);
+		}
+
+		return fetch(request, { headers });
+	}
+}
+
+export default {
+	async fetch(request, env, ctx) {
+		const tenantId = getTenantFromRequest(request);
+
+		const worker = env.LOADER.get(`tenant:${tenantId}`, async () => {
+			return {
+				mainModule: "index.js",
+				modules: {
+					"index.js": `
+						export default {
+							async fetch() {
+								const resp = await fetch("https://api.example.com/data");
+								return new Response(await resp.text());
+							},
+						};
+					`,
+				},
+				globalOutbound: ctx.exports.HttpGateway({
+					props: { tenantId },
+				}),
+			};
+		});
+
+		return worker.getEntrypoint().fetch(request);
+	},
+};
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/dynamic-workers/usage/egress-control/#page","headline":"Egress control","description":"Restrict, intercept, and audit outbound network access for dynamic Workers.","url":"https://developers.cloudflare.com/dynamic-workers/usage/egress-control/","inLanguage":"en","image":"https://developers.cloudflare.com/dynamic-workers/usage/egress-control/og.png?v=5cc81b2003e8ce38","dateModified":"2026-09-29","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Set CPU time and subrequest limits.
+title: Custom resource limits
+image: https://developers.cloudflare.com/dynamic-workers/usage/limits/og.png?v=c25998cda17dd5c5
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/dynamic-workers/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Custom resource limits
+
+Last updated Aug 27, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/dynamic-workers/usage/limits/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+By default, each Dynamic Worker invocation uses your Workers plan [limits](https://developers.cloudflare.com/workers/platform/limits/#account-plan-limits) for CPU time and subrequests. Custom limits allow you to programmatically enforce lower limits on the Dynamic Worker's resource usage.
+
+You can set limits for the maximum CPU time and number of subrequests per invocation. If a Dynamic Worker hits either of these limits, it will immediately throw an exception.
+
+## Set custom limits
+
+Custom limits can be specified as part of the worker code:
+
+```js
+const worker = env.LOADER.get("my-worker", async () => {
+  return {
+    compatibilityDate: "$today",
+    mainModule: "index.js",
+    modules: { "index.js": code },
+    limits: { cpuMs: 10, subRequests: 5 },
+  };
+});
+```
+
+They can also be specified as part of the `getEntrypoint()` call:
+
+```js
+// get the worker's default entrypoint with custom limits
+// if limits were already specified as part of the worker code, the lower of the two limits is used
+const entrypoint = worker.getEntrypoint(null, { limits: { cpuMs: 10, subRequests: 5 } });
+await entrypoint.fetch(...);
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/dynamic-workers/usage/limits/#page","headline":"Custom resource limits","description":"Set CPU time and subrequest limits.","url":"https://developers.cloudflare.com/dynamic-workers/usage/limits/","inLanguage":"en","image":"https://developers.cloudflare.com/dynamic-workers/usage/limits/og.png?v=c25998cda17dd5c5","dateModified":"2026-08-27","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Capture, retrieve, and forward logs from dynamic Workers.
+title: Observability
+image: https://developers.cloudflare.com/dynamic-workers/usage/observability/og.png?v=30bf46dbf9bbfd50
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/dynamic-workers/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Observability
+
+Last updated Apr 21, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/dynamic-workers/usage/observability/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Dynamic Workers support logs with `console.log()` calls, exceptions, and request metadata captured during execution. To access those logs, you attach a [Tail Worker](https://developers.cloudflare.com/workers/observability/logs/tail-workers/), a callback that runs after the Dynamic Worker finishes that passes along all the logs, exceptions, and metadata it collected.
+
+This guide will show you how to:
+
+- Store Dynamic Worker logs so you can search, filter, and query them
+- Collect logs during execution and return them in real time, for development and debugging
+
+## Capture logs with Tail Workers
+
+To save logs emitted by a Dynamic Worker, you need to capture them and write them somewhere they can be stored. Setting this up requires three steps:
+
+1. Enabling [Workers Logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/) on the loader Worker so that log output is saved.
+2. Defining a Tail Worker that receives logs from the Dynamic Worker and writes them to Workers Logs.
+3. Attaching the Tail Worker to the Dynamic Worker when you create it.
+
+Note
+
+Tail Workers run asynchronously after the Dynamic Worker has already sent its response, so they do not add latency to the request.
+
+### Enable Workers Logs on the loader Worker
+
+Enable [Workers Logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/) by adding the `observability` setting to the loader Worker's Wrangler configuration. However, Workers Logs only captures log output from the loader Worker itself. Dynamic Workers are separate, so their `console.log()` calls are not included automatically. To get Dynamic Worker logs into Workers Logs, you need to define a Tail Worker that receives logs from the Dynamic Worker and writes them into the loader Worker's Workers Logs.
+
+```jsonc
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  }
+}
+```
+
+```toml
+[observability]
+enabled = true
+head_sampling_rate = 1
+```
+
+### Define the Tail Worker
+
+When a Dynamic Worker runs, the runtime collects all of its `console.log()` calls, exceptions, and request metadata. By default, those logs are discarded after the Dynamic Worker finishes.
+
+To keep them, you define a Tail Worker on the loader Worker. A Tail Worker is a class with a `tail()` method. This is where you write the code that decides what happens with the logs. The runtime will call this method after the Dynamic Worker finishes, passing in everything it collected during execution.
+
+Inside `tail()`, you write each log entry to Workers Logs by calling `console.log()` with a JSON object. Include a `workerId` field in each entry so you can tell which Dynamic Worker produced each log and use it to filter and search the logs by Dynamic Worker later on.
+
+```js
+import { WorkerEntrypoint } from "cloudflare:workers";
+
+export class DynamicWorkerTail extends WorkerEntrypoint {
+	async tail(events) {
+		for (const event of events) {
+			for (const log of event.logs) {
+				console.log({
+					source: "dynamic-worker-tail",
+					workerId: this.ctx.props.workerId,
+					level: log.level,
+					message: log.message,
+				});
+			}
+		}
+	}
+}
+```
+
+The Tail Worker reads `workerId` from `this.ctx.props.workerId`. You set this value when you attach the Tail Worker to the Dynamic Worker in the next step.
+
+Since the Tail Worker is defined within the loader Worker, its `console.log()` output is saved to Workers Logs along with the loader Worker's own logs.
+
+### Attach the Tail Worker to the Dynamic Worker
+
+When you create the Dynamic Worker, pass the Tail Worker in the [`tails`](https://developers.cloudflare.com/dynamic-workers/api-reference/#tails) array. This tells the runtime: after this Dynamic Worker finishes, send its collected logs to the Tail Worker you defined.
+
+To reference the `DynamicWorkerTail` class you defined in the previous step, use [`ctx.exports`](https://developers.cloudflare.com/workers/runtime-apis/context/#exports). `ctx` is the third parameter in the loader Worker's `fetch(request, env, ctx)` handler. `ctx.exports` gives you access to classes that are exported from the loader Worker. Because the Dynamic Worker runs in a separate context and cannot access the class directly, you use `ctx.exports.DynamicWorkerTail()` to create a reference that the runtime can wire up to the Dynamic Worker.
+
+You also need to tell the Tail Worker which Dynamic Worker it is logging for. Since the Tail Worker runs separately from the loader Worker's `fetch()` handler, it does not have access to your local variables. To pass it information, use the [`props`](https://developers.cloudflare.com/workers/runtime-apis/context/#props) option when you create the instance. `props` is a plain object of key-value pairs that you set when attaching the Tail Worker and that the Tail Worker can read at `this.ctx.props` when it runs. In this case, you pass the `workerId` so the Tail Worker knows which Dynamic Worker produced the logs.
+
+```js
+const worker = env.LOADER.get(workerId, () => ({
+	mainModule: WORKER_MAIN,
+	modules: {
+		[WORKER_MAIN]: WORKER_SOURCE,
+	},
+	tails: [
+		ctx.exports.DynamicWorkerTail({
+			props: { workerId },
+		}),
+	],
+}));
+
+return worker.getEntrypoint().fetch(request);
+```
+
+## Return logs in real time
+
+The setup above stores logs for later, but sometimes you need logs right away for real-time development. The challenge is that the Tail Worker and the loader Worker's `fetch()` handler run separately. The Tail Worker has the logs, but the `fetch()` handler is the one building the response. You need a shared place where the Tail Worker can write the logs and the `fetch()` handler can read them.
+
+A [Durable Object](https://developers.cloudflare.com/durable-objects/) works well for this. Both the Tail Worker and the `fetch()` handler can look up the same Durable Object instance by name. The Tail Worker writes logs into it after the Dynamic Worker finishes, and the `fetch()` handler reads them out and includes them in the response.
+
+The pattern works like this:
+
+1. The `fetch()` handler creates a log session in a Durable Object before running the Dynamic Worker.
+2. The Dynamic Worker runs and produces logs.
+3. After the Dynamic Worker finishes, the Tail Worker writes the collected logs to the same Durable Object.
+4. The `fetch()` handler reads the logs from the Durable Object and returns them in the response.
+
+```js
+import { exports } from "cloudflare:workers";
+
+// 1. Create a log session before running the Dynamic Worker.
+const logSession = exports.LogSession.getByName(workerName);
+const logWaiter = await logSession.waitForLogs();
+
+// 2. Run the Dynamic Worker.
+const response = await worker.getEntrypoint().fetch(request);
+
+// 3. Wait up to 1 second for the Tail Worker to deliver logs.
+const logs = await logWaiter.getLogs(1000);
+```
+
+For a full working implementation, refer to the [Dynamic Workers Playground example ↗︎](https://github.com/cloudflare/agents/tree/main/examples/dynamic-workers-playground).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/dynamic-workers/usage/observability/#page","headline":"Observability","description":"Capture, retrieve, and forward logs from dynamic Workers.","url":"https://developers.cloudflare.com/dynamic-workers/usage/observability/","inLanguage":"en","image":"https://developers.cloudflare.com/dynamic-workers/usage/observability/og.png?v=30bf46dbf9bbfd50","dateModified":"2026-04-21","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Serve static files alongside Dynamic Worker code.
+title: Static assets
+image: https://developers.cloudflare.com/dynamic-workers/usage/static-assets/og.png?v=f052a6b97475ea95
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/dynamic-workers/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Static assets
+
+Last updated May 5, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/dynamic-workers/usage/static-assets/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Dynamic Workers can serve static assets like HTML pages, JavaScript bundles, images, and other files alongside your Worker code. This is useful when you need a Dynamic Worker to serve a full-stack application.
+
+Static assets for Dynamic Workers work differently from [static assets in regular Workers](https://developers.cloudflare.com/workers/static-assets/). Instead of uploading assets at deploy time, you provide them at runtime through the Worker Loader `get()` callback, sourcing them from R2, KV, or another storage backend.
+
+## How it works
+
+There are three parts to setting up static assets for Dynamic Workers:
+
+1. **Store the assets** — Upload static files to a KV namespace, keyed by project ID and pathname.
+2. **Define an asset binding in the loader Worker** — Create a class that handles requests for static files by reading them from KV and returning them with the correct headers.
+3. **Pass the binding to the Dynamic Worker** — The Dynamic Worker uses it to serve static files by calling `env.ASSETS.fetch(request)`.
+
+## Store the static assets
+
+Static assets are stored in a KV namespace, separated by project ID so each project's files are isolated from each other:
+
+```plaintext
+project/{projectId}/assets/index.html      →  file content
+project/{projectId}/assets/app.js          →  file content
+project/{projectId}/manifest               →  asset manifest
+```
+
+When a user deploys their project through your platform's upload API, store each file in KV under its pathname:
+
+```ts
+await env.KV_ASSETS.put(`project/${projectId}/assets${pathname}`, fileContent);
+```
+
+You also need to store a manifest, a mapping that tells the asset handler which files exist and what their content types are. Use `buildAssetManifest()` from `@cloudflare/worker-bundler` to generate it from your assets:
+
+```js
+import { buildAssetManifest } from "@cloudflare/worker-bundler";
+
+const assets = {
+	"/index.html": htmlContent,
+	"/app.js": jsContent,
+	"/style.css": cssContent,
+};
+
+const manifest = await buildAssetManifest(assets);
+
+await env.KV_ASSETS.put(
+	`project/${projectId}/manifest`,
+	JSON.stringify(manifest),
+);
+```
+
+```ts
+import { buildAssetManifest } from "@cloudflare/worker-bundler";
+
+const assets = {
+	"/index.html": htmlContent,
+	"/app.js": jsContent,
+	"/style.css": cssContent,
+};
+
+const manifest = await buildAssetManifest(assets);
+
+await env.KV_ASSETS.put(
+	`project/${projectId}/manifest`,
+	JSON.stringify(manifest),
+);
+```
+
+Note
+
+The examples on this page use KV for asset storage, but you can also use [R2](https://developers.cloudflare.com/r2/), which is recommended for larger files like images or videos. A common pattern is to store assets in R2 and use KV as a cache layer for frequently accessed files.
+
+## Add bindings to the loader Worker
+
+Grant the loader Worker access to the KV namespace where you stored the assets:
+
+```jsonc
+{
+	"worker_loaders": [{ "binding": "LOADER" }],
+	"kv_namespaces": [
+		{
+			"binding": "KV_ASSETS",
+			"id": "<your-kv-namespace-id>",
+		},
+	],
+}
+```
+
+```toml
+[[worker_loaders]]
+binding = "LOADER"
+
+[[kv_namespaces]]
+binding = "KV_ASSETS"
+id = "<your-kv-namespace-id>"
+```
+
+## Define the asset binding
+
+Create a class in the loader Worker that extends `WorkerEntrypoint` and define a `fetch()` method. `WorkerEntrypoint` makes this method callable from the Dynamic Worker using RPC. When the Dynamic Worker calls `env.ASSETS.fetch(request)`, it runs this method in the loader Worker, where the KV binding and your asset-serving logic live.
+
+The class takes a `projectId` prop so it knows which project's assets to look up. When `fetch()` is called, it:
+
+1. Loads the project's asset manifest from KV.
+2. Resolves the request pathname to a file.
+3. Fetches the file content from KV.
+4. Returns a `Response` with the correct `Content-Type` header.
+
+### Use `@cloudflare/worker-bundler` to handle static asset serving
+
+Instead of writing your own logic to match request paths to files, detect content types, and set cache headers, use the `@cloudflare/worker-bundler` package to handle static asset serving. In your `fetch()` method, pass `handleAssetRequest()` two things:
+
+- A **manifest**, the path-to-content-type mapping you stored in KV during upload, built with `buildAssetManifest()`. This tells `handleAssetRequest()` which files exist and what their content types are.
+- A **storage object**, tells `handleAssetRequest()` how to read files from your KV namespace. It has one method, `get(pathname)`, which reads and returns the content for a given file path.
+
+`handleAssetRequest()` serves the file if it finds a match in the manifest, with the correct headers for content type and caching.
+
+```js
+import { WorkerEntrypoint } from "cloudflare:workers";
+import { handleAssetRequest } from "@cloudflare/worker-bundler";
+
+export class AssetBinding extends WorkerEntrypoint {
+	async fetch(request) {
+		const { projectId } = this.ctx.props;
+
+		// Load the project's asset manifest from KV
+		const manifest = await this.env.KV_ASSETS.get(
+			`project/${projectId}/manifest`,
+			{ type: "json", cacheTtl: 300 },
+		);
+
+		if (!manifest) {
+			return new Response("No assets found", { status: 404 });
+		}
+
+		// Storage object — handleAssetRequest calls get() to
+		// read file content when it needs to serve an asset
+		const storage = {
+			async get(pathname) {
+				return this.env.KV_ASSETS.get(
+					`project/${projectId}/assets${pathname}`,
+					{ type: "arrayBuffer", cacheTtl: 86_400 },
+				);
+			},
+		};
+
+		const response = await handleAssetRequest(request, manifest, storage);
+		return response ?? new Response("Not Found", { status: 404 });
+	}
+}
+```
+
+```ts
+import { WorkerEntrypoint } from "cloudflare:workers";
+import { handleAssetRequest } from "@cloudflare/worker-bundler";
+
+export class AssetBinding extends WorkerEntrypoint {
+	async fetch(request: Request) {
+		const { projectId } = this.ctx.props;
+
+		// Load the project's asset manifest from KV
+		const manifest = await this.env.KV_ASSETS.get(
+			`project/${projectId}/manifest`,
+			{ type: "json", cacheTtl: 300 },
+		);
+
+		if (!manifest) {
+			return new Response("No assets found", { status: 404 });
+		}
+
+		// Storage object — handleAssetRequest calls get() to
+		// read file content when it needs to serve an asset
+		const storage = {
+			async get(pathname: string) {
+				return this.env.KV_ASSETS.get(
+					`project/${projectId}/assets${pathname}`,
+					{ type: "arrayBuffer", cacheTtl: 86_400 },
+				);
+			},
+		};
+
+		const response = await handleAssetRequest(request, manifest, storage);
+		return response ?? new Response("Not Found", { status: 404 });
+	}
+}
+```
+
+Note
+
+The `cacheTtl` option caches KV results so repeated requests do not hit KV storage every time. The manifest uses a shorter cache (5 minutes) so new deploys are picked up quickly. Asset content uses a longer cache (24 hours) since files at the same path do not change between deploys.
+
+Once `AssetBinding` is exported, it becomes available on `ctx.exports` in the loader Worker's `fetch()` handler. `ctx` is the handler's third parameter, after `request` and `env`. This is how you pass it to the Dynamic Worker in the next step.
+
+## Pass the asset binding to the Dynamic Worker
+
+When you call `get()` to create the Dynamic Worker, include the `AssetBinding` in the `env` object so the Dynamic Worker can use it to serve static files. To reference the `AssetBinding` class you defined in the previous step, use `ctx.exports.AssetBinding()` and pass the `projectId` as a prop so it knows which project's assets to serve. This works the same way as custom bindings — `props` is how you pass information to the class, and the class reads it at `this.ctx.props` when it runs.
+
+```js
+export default {
+	async fetch(request, env, ctx) {
+		const projectId = getProjectIdFromRequest(request);
+
+		const worker = env.LOADER.get(projectId, async () => {
+			const serverCode = await loadServerCode(projectId);
+
+			return {
+				mainModule: "index.js",
+				modules: {
+					"index.js": { js: serverCode },
+				},
+				compatibilityDate: "2026-10-07",
+				env: {
+					ASSETS: ctx.exports.AssetBinding({
+						props: { projectId },
+					}),
+				},
+			};
+		});
+
+		return await worker.getEntrypoint().fetch(request);
+	},
+};
+```
+
+```ts
+export default {
+	async fetch(request: Request, env: Env, ctx: ExecutionContext) {
+		const projectId = getProjectIdFromRequest(request);
+
+		const worker = env.LOADER.get(projectId, async () => {
+			const serverCode = await loadServerCode(projectId);
+
+			return {
+				mainModule: "index.js",
+				modules: {
+					"index.js": { js: serverCode },
+				},
+				compatibilityDate: "$today",
+				env: {
+					ASSETS: ctx.exports.AssetBinding({
+						props: { projectId },
+					}),
+				},
+			};
+		});
+
+		return await worker.getEntrypoint().fetch(request);
+	},
+};
+```
+
+The Dynamic Worker sees `ASSETS` as a binding and can call `env.ASSETS.fetch(request)` because that is the method you defined on `AssetBinding`. When the Dynamic Worker calls that method, it runs in the loader Worker, where your `AssetBinding` class reads the manifest and file content from KV.
+
+## Use the asset binding in the Dynamic Worker
+
+From the Dynamic Worker's perspective, `env.ASSETS` works like any other binding. The user writes their server code and calls `env.ASSETS.fetch()` to serve static files:
+
+```js
+// Inside the Dynamic Worker
+export default {
+	async fetch(request, env) {
+		const url = new URL(request.url);
+
+		// Handle API routes directly
+		if (url.pathname.startsWith("/api/")) {
+			return Response.json({ hello: "world" });
+		}
+
+		// Everything else — serve static assets
+		return env.ASSETS.fetch(request);
+	},
+};
+```
+
+```ts
+// Inside the Dynamic Worker
+export default {
+	async fetch(request: Request, env: Env) {
+		const url = new URL(request.url);
+
+		// Handle API routes directly
+		if (url.pathname.startsWith("/api/")) {
+			return Response.json({ hello: "world" });
+		}
+
+		// Everything else — serve static assets
+		return env.ASSETS.fetch(request);
+	},
+};
+```
+
+When the Dynamic Worker calls `env.ASSETS.fetch(request)`, the call goes through RPC to the loader Worker's `AssetBinding`, which looks up the file in the manifest and reads it from KV. The Dynamic Worker does not need to handle any of this — it calls `env.ASSETS.fetch(request)` and gets back the file with the correct headers, ready to return to the client.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/dynamic-workers/usage/static-assets/#page","headline":"Static assets","description":"Serve static files alongside Dynamic Worker code.","url":"https://developers.cloudflare.com/dynamic-workers/usage/static-assets/","inLanguage":"en","image":"https://developers.cloudflare.com/dynamic-workers/usage/static-assets/og.png?v=f052a6b97475ea95","dateModified":"2026-05-05","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```

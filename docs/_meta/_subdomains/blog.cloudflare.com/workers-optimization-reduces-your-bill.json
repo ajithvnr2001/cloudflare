@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/workers-optimization-reduces-your-bill/",
+  "file": "_subdomains/blog.cloudflare.com/workers-optimization-reduces-your-bill.md",
+  "title": "A Workers optimization\nthat reduces your bill | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:44.224359+00:00",
+  "html_len": 288796,
+  "md_len": 59988,
+  "depth": 0,
+  "phase": 2
+}

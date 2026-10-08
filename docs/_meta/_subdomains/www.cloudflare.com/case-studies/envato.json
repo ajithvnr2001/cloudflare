@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/envato/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/envato.md",
+  "title": "Envato & Cloudflare | Case Study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:29.354425+00:00",
+  "html_len": 212407,
+  "md_len": 9875,
+  "depth": 0,
+  "phase": 2
+}

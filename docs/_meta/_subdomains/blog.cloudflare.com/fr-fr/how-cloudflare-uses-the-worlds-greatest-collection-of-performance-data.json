@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/how-cloudflare-uses-the-worlds-greatest-collection-of-performance-data/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/how-cloudflare-uses-the-worlds-greatest-collection-of-performance-data.md",
+  "title": "Comment Cloudflare utilise la plus vaste collection de donn\u00e9es de performances du monde pour rendre le r\u00e9seau mondial le plus rapide du monde encore plus rapide | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:01.137514+00:00",
+  "html_len": 235266,
+  "md_len": 39363,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/partnership-announcement-db/",
+  "file": "_subdomains/blog.cloudflare.com/partnership-announcement-db.md",
+  "title": "Announcing Cloudflare\u2019s Database Partners | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:29.140588+00:00",
+  "html_len": 306863,
+  "md_len": 70068,
+  "depth": 0,
+  "phase": 2
+}

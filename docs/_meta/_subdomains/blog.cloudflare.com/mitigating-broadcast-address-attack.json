@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/mitigating-broadcast-address-attack/",
+  "file": "_subdomains/blog.cloudflare.com/mitigating-broadcast-address-attack.md",
+  "title": "QUIC action: patching a broadcast address amplification vulnerability | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:58.123685+00:00",
+  "html_len": 320860,
+  "md_len": 71188,
+  "depth": 0,
+  "phase": 2
+}

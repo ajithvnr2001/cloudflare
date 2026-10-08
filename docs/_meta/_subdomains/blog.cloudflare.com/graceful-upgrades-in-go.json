@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/graceful-upgrades-in-go/",
+  "file": "_subdomains/blog.cloudflare.com/graceful-upgrades-in-go.md",
+  "title": "Graceful upgrades in Go | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:13.182368+00:00",
+  "html_len": 301367,
+  "md_len": 65339,
+  "depth": 0,
+  "phase": 2
+}

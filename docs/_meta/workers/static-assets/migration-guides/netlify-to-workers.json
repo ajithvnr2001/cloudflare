@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/static-assets/migration-guides/netlify-to-workers/",
+  "file": "workers/static-assets/migration-guides/netlify-to-workers.md",
+  "title": "Migrate from Netlify to Workers \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:52.367981+00:00",
+  "html_len": 198096,
+  "md_len": 6742,
+  "depth": 0
+}

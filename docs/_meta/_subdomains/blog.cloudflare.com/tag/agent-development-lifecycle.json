@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/agent-development-lifecycle/",
+  "file": "_subdomains/blog.cloudflare.com/tag/agent-development-lifecycle.md",
+  "title": "Posts tagged \"Agent Development Lifecycle\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:08:13.330796+00:00",
+  "html_len": 106936,
+  "md_len": 898,
+  "depth": 1,
+  "phase": 2
+}

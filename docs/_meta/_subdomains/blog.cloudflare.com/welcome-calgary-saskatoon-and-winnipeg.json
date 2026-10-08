@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/welcome-calgary-saskatoon-and-winnipeg/",
+  "file": "_subdomains/blog.cloudflare.com/welcome-calgary-saskatoon-and-winnipeg.md",
+  "title": "Cloudflare Arrives in the Canadian Prairies! Welcome Calgary, Saskatoon and Winnipeg | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:38.792366+00:00",
+  "html_len": 279331,
+  "md_len": 58812,
+  "depth": 0,
+  "phase": 2
+}

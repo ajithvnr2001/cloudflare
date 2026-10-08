@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ddos-packet-forensics-take-me-to-the-hex/",
+  "file": "_subdomains/blog.cloudflare.com/ddos-packet-forensics-take-me-to-the-hex.md",
+  "title": "DDoS Packet Forensics: Take me to the hex! | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:11.277647+00:00",
+  "html_len": 280827,
+  "md_len": 57738,
+  "depth": 0,
+  "phase": 2
+}

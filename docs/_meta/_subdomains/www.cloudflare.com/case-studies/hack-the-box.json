@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/hack-the-box/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/hack-the-box.md",
+  "title": "Hack The Box & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:32.946516+00:00",
+  "html_len": 222610,
+  "md_len": 12519,
+  "depth": 0,
+  "phase": 2
+}

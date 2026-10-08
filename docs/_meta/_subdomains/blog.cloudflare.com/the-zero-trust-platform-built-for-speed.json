@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-zero-trust-platform-built-for-speed/",
+  "file": "_subdomains/blog.cloudflare.com/the-zero-trust-platform-built-for-speed.md",
+  "title": "The Zero Trust platform built for speed | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:05.202994+00:00",
+  "html_len": 304970,
+  "md_len": 71785,
+  "depth": 0,
+  "phase": 2
+}

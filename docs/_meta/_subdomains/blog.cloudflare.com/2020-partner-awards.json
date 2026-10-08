@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/2020-partner-awards/",
+  "file": "_subdomains/blog.cloudflare.com/2020-partner-awards.md",
+  "title": "Congratulations to Cloudflare\u2019s 2020 Partner Award Winners | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:25.681103+00:00",
+  "html_len": 280062,
+  "md_len": 59879,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-apps-with-workers/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-apps-with-workers.md",
+  "title": "Introducing Apps with Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:09.366130+00:00",
+  "html_len": 282030,
+  "md_len": 58140,
+  "depth": 0,
+  "phase": 2
+}

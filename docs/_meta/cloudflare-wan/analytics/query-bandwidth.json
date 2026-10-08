@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/cloudflare-wan/analytics/query-bandwidth/",
+  "file": "cloudflare-wan/analytics/query-bandwidth.md",
+  "title": "Querying Cloudflare WAN IPsec/GRE tunnel bandwidth analytics with GraphQL \u00b7 Cloudflare WAN docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:10:24.959419+00:00",
+  "html_len": 125329,
+  "md_len": 5338,
+  "depth": 0
+}

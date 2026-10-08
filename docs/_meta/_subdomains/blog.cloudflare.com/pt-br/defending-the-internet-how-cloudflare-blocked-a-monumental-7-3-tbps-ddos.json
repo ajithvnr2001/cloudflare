@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/defending-the-internet-how-cloudflare-blocked-a-monumental-7-3-tbps-ddos/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/defending-the-internet-how-cloudflare-blocked-a-monumental-7-3-tbps-ddos.md",
+  "title": "Defender a internet: como a Cloudflare bloqueou um monumental ataque de DDoS de 7,3 Tbps | Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:49.007055+00:00",
+  "html_len": 222288,
+  "md_len": 34390,
+  "depth": 0,
+  "phase": 2
+}

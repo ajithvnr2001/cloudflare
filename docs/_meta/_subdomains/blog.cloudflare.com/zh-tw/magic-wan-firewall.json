@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/magic-wan-firewall/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/magic-wan-firewall.md",
+  "title": "Magic WAN \u8207 Magic Firewall\uff1a\u5b89\u5168\u7db2\u8def\u9023\u7dda\u5373\u670d\u52d9 | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:30.377356+00:00",
+  "html_len": 203107,
+  "md_len": 25919,
+  "depth": 0,
+  "phase": 2
+}

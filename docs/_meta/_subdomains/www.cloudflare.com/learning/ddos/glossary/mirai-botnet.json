@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/ddos/glossary/mirai-botnet/",
+  "file": "_subdomains/www.cloudflare.com/learning/ddos/glossary/mirai-botnet.md",
+  "title": "What is the Mirai Botnet?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:15.453949+00:00",
+  "html_len": 218136,
+  "md_len": 16640,
+  "depth": 0,
+  "phase": 2
+}

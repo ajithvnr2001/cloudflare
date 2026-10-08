@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/1-1-1-1-lookup-failures-on-october-4th-2023/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/1-1-1-1-lookup-failures-on-october-4th-2023.md",
+  "title": "1.1.1.1 Lookup-Fehler am 4. Oktober 2023 | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:41:47.252316+00:00",
+  "html_len": 231137,
+  "md_len": 39599,
+  "depth": 0,
+  "phase": 2
+}

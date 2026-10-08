@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/durable-object-facets-dynamic-workers/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/durable-object-facets-dynamic-workers.md",
+  "title": "Durable Objects au sein des Dynamic Workers\u00a0: donner sa propre base de donn\u00e9es \u00e0 chaque application g\u00e9n\u00e9r\u00e9e par IA | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:16.158265+00:00",
+  "html_len": 240210,
+  "md_len": 37535,
+  "depth": 0,
+  "phase": 2
+}

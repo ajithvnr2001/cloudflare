@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/q1-2025-internet-disruption-summary/",
+  "file": "_subdomains/blog.cloudflare.com/q1-2025-internet-disruption-summary.md",
+  "title": "New year, no shutdowns: the Q1 2025 Internet disruption summary | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:59.280379+00:00",
+  "html_len": 350087,
+  "md_len": 82294,
+  "depth": 0,
+  "phase": 2
+}

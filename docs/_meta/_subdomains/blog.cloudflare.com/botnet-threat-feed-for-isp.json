@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/botnet-threat-feed-for-isp/",
+  "file": "_subdomains/blog.cloudflare.com/botnet-threat-feed-for-isp.md",
+  "title": "Introducing Cloudflare\u2019s free Botnet Threat Feed for service providers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:03.344361+00:00",
+  "html_len": 277315,
+  "md_len": 58720,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-autorag-on-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-autorag-on-cloudflare.md",
+  "title": "Introducing AutoRAG: fully managed Retrieval-Augmented Generation on Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:35.022996+00:00",
+  "html_len": 320992,
+  "md_len": 72816,
+  "depth": 0,
+  "phase": 2
+}

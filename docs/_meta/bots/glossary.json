@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/bots/glossary/",
+  "file": "bots/glossary.md",
+  "title": "Glossary \u00b7 Cloudflare bot solutions docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:05:33.796599+00:00",
+  "html_len": 101715,
+  "md_len": 2560,
+  "depth": 0
+}

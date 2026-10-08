@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/quick-and-dirty-annotations-for-go-stack-traces/",
+  "file": "_subdomains/blog.cloudflare.com/quick-and-dirty-annotations-for-go-stack-traces.md",
+  "title": "Quick and dirty annotations for Go stack traces | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:59.638638+00:00",
+  "html_len": 281746,
+  "md_len": 57158,
+  "depth": 0,
+  "phase": 2
+}

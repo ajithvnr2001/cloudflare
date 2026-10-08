@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/framework-guides/web-apps/",
+  "file": "workers/framework-guides/web-apps.md",
+  "title": "Web applications \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:27.227340+00:00",
+  "html_len": 176805,
+  "md_len": 3055,
+  "depth": 0
+}

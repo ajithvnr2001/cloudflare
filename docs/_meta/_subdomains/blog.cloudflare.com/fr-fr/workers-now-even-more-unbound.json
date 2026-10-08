@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/workers-now-even-more-unbound/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/workers-now-even-more-unbound.md",
+  "title": "La solution Workers Unbound, toujours plus d\u00e9brid\u00e9e :\n15 minutes, 100 scripts et z\u00e9ro frais de trafic | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:19.676706+00:00",
+  "html_len": 212059,
+  "md_len": 30322,
+  "depth": 0,
+  "phase": 2
+}

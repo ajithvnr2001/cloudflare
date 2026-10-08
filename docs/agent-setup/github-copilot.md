@@ -1,0 +1,207 @@
+---
+url: https://developers.cloudflare.com/agent-setup/github-copilot/
+title: GitHub Copilot + Cloudflare \u00b7 Agent setup docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:04:06.071880+00:00
+---
+
+# GitHub Copilot + Cloudflare · Agent setup docs
+
+> Source: https://developers.cloudflare.com/agent-setup/github-copilot/
+
+[All agents](https://developers.cloudflare.com/agent-setup/)
+
+![](https://developers.cloudflare.com/icons/agents/copilot/light.svg)![](https://developers.cloudflare.com/icons/agents/copilot/dark.svg)
+
+GitHub
+
+# GitHub Copilot + Cloudflare
+
+Editor extension and CLI with agent mode, workspace context, and native PR integration. Made by GitHub.
+
+TerminalCloudExtension
+
+[Cloudflare Skills](https://github.com/cloudflare/skills)·[Cloudflare Code Mode API MCP](https://github.com/cloudflare/mcp)·[Cloudflare Domain Specific MCPs](https://github.com/cloudflare/mcp-server-cloudflare)·[GitHub Copilot Docs](https://docs.github.com/en/copilot)
+
+## Quick start
+
+  1. **Install GitHub Copilot**
+
+Install the GitHub Copilot extension in VS Code from the [Visual Studio Marketplace ↗︎](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot). For JetBrains IDEs, Visual Studio, or Xcode, see the [Install the Copilot extension ↗︎](https://docs.github.com/en/copilot/how-tos/set-up/install-copilot-extension) guide.
+
+  2. **Install Cloudflare Skills**
+         
+         npx skills add https://github.com/cloudflare/skills
+
+  3. **Configure the Cloudflare MCP server**
+
+For VS Code, add to `.vscode/mcp.json`. For Copilot CLI, add to `~/.copilot/mcp-config.json` for user-level configuration or `.mcp.json` or `.github/mcp.json` for project-level configuration. For domain-specific MCP servers, refer to [mcp-server-cloudflare ↗︎](https://github.com/cloudflare/mcp-server-cloudflare). For the full Cloudflare API MCP server (Code Mode), refer to [cloudflare/mcp ↗︎](https://github.com/cloudflare/mcp).
+         
+         {
+           "mcpServers": {
+             "cloudflare": { "url": "https://mcp.cloudflare.com/mcp" }
+           }
+         }
+
+Note
+
+In Visual Studio Code, `.vscode/mcp.json` uses `servers` as the root key instead of `mcpServers`. For the Visual Studio Code setup, refer to the [Visual Studio Code guide](https://developers.cloudflare.com/agent-setup/visual-studio-code/).
+
+  4. **Try a prompt**
+
+Open Copilot Chat (**Ctrl+Shift+I**), switch to agent mode, and try a prompt — for example:
+         
+         Set up WAF rules to block SQL injection and XSS attacks on my application.
+
+
+
+
+## Cloudflare platform access
+
+Expand any section to learn more.
+
+Cloudflare Skills
+
+Persistent platform context that teaches the agent how Cloudflare works.
+
+Skills are instructions the agent loads on demand. The [cloudflare/skills](https://github.com/cloudflare/skills) bundle covers every layer of the platform — so the agent knows your conventions without you re-explaining them.
+
+  * agents-sdkBuild, debug, or review Cloudflare Agents SDK applications using the agents package.
+  * basinBuild and troubleshoot Cloudflare Basin analytics workflows with Basin Pipelines, Basin Catalog, and Basin SQL. Use for streaming data into R2 Iceberg tables, managing catalogs, or querying those tables; also use for requests using the former Data Platform, Pipelines, R2 Data Catalog, or R2 SQL names.
+  * cloudflareDiscover and choose Cloudflare products for apps, APIs, AI agents, storage, networking, and security. Use for architecture and product selection, including when the user describes a need without naming a Cloudflare product; then find the relevant skill or documentation.
+  * cloudflare-email-serviceImplement or troubleshoot Cloudflare Email Sending and Email Routing integrations and their delivery configuration.
+  * cloudflare-oneDesign, configure, troubleshoot, or review Cloudflare One Zero Trust and SASE deployments. Use cloudflare-one-migrations for migration planning from other vendors.
+  * cloudflare-one-migrationsAssess and plan migrations from existing VPN, SWG, or SASE platforms to Cloudflare One, including policy mapping, parity gaps, and rollout.
+  * durable-objectsBuild, debug, or review Cloudflare Durable Objects code for persistent state and coordination.
+  * k2Build and troubleshoot Cloudflare K2 or K2 Streams durable logs. Use for stream setup, producing from Workers or HTTP, configuring retention and inputs, and consuming through subscriptions.
+  * nextjs-on-cloudflareBuild, migrate, and deploy Next.js apps on Cloudflare Workers with vinext. Use when starting a Next.js project on Cloudflare, moving an existing app to Workers, choosing between vinext and OpenNext, or setting up vinext for Workers. For setup, migration, or deployment, install vinext's upstream skills with `npx skills add cloudflare/vinext` if missing, then read and follow the applicable skill and docs.
+  * sandbox-migrate-to-nextMigrate Cloudflare Sandbox apps from stable @cloudflare/sandbox to @cloudflare/sandbox@next (SDK 1.0 preview). Use sandbox-next for apps already on the preview.
+  * sandbox-nextBuild or maintain Cloudflare Sandbox apps on @cloudflare/sandbox@next (SDK 1.0 preview). Use sandbox-migrate-to-next when porting a stable app.
+  * sandbox-stableBuild or maintain Cloudflare Sandbox apps on the stable @cloudflare/sandbox package. Use sandbox-next for preview apps and sandbox-migrate-to-next for stable-to-preview migrations.
+  * turnstile-spinSet up, repair, or migrate to Cloudflare Turnstile bot verification in an existing frontend and backend, including server-side Siteverify.
+  * web-perfAudit, diagnose, or optimize website loading and interaction performance, Core Web Vitals, and Lighthouse performance scores.
+  * workers-best-practicesCloudflare Workers best practices for production applications. Use when writing, reviewing, or configuring Workers.
+  * wranglerRun or troubleshoot Wrangler CLI commands and configure Worker projects for local development, Previews, deployment, and Cloudflare resource management.
+
+
+
+MCP servers
+
+Live access to the Cloudflare API, docs, and observability.
+
+MCP servers provide typed tools to call into Cloudflare at runtime. There are two options: [Code Mode](https://blog.cloudflare.com/code-mode-mcp/) — a single server that covers the entire Cloudflare API (2,500+ endpoints in ~1,000 tokens) — or a set of focused, domain-specific servers hosted in the [cloudflare/mcp-server-cloudflare](https://github.com/cloudflare/mcp-server-cloudflare) repo. The full catalog is also in the [MCP servers for Cloudflare](https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/) docs.
+
+  * Code mode APIcode modeBroad access to the full Cloudflare API via code execution, with minimal token overheadhttps://mcp.cloudflare.com/mcp
+  * Code Mode servercode modeBest when you want broad access across Cloudflare's APIs through code executionhttps://mcp.cloudflare.com/mcp
+  * Browser Run serverFetch web pages, convert them to markdown and take screenshotshttps://browser.mcp.cloudflare.com/mcp
+  * Cloudflare Blog serverSearch and read posts from the Cloudflare Bloghttps://blog.mcp.cloudflare.com/mcp
+  * Cloudflare One CASB serverQuickly identify any security misconfigurations for SaaS applications to safeguard users & datahttps://casb.mcp.cloudflare.com/mcp
+  * Container serverSpin up a sandbox development environmenthttps://containers.mcp.cloudflare.com/mcp
+  * Demo Day serverDemonstrate a minimal Cloudflare MCP serverhttps://demo-day.mcp.cloudflare.com/mcp
+  * Digital Experience Monitoring serverGet quick insight on critical applications for your organizationhttps://dex.mcp.cloudflare.com/mcp
+  * Documentation serverGet up-to-date reference information on Cloudflarehttps://docs.mcp.cloudflare.com/mcp
+
+
+
+Wrangler CLI
+
+Local dev, deploys, and Workers-specific commands.
+
+Use [Wrangler](https://developers.cloudflare.com/workers/wrangler/) for local development, deploys, and product-specific commands like `wrangler d1 migrations apply` or `wrangler tail`. The bundled **wrangler** Skill teaches the agent when to reach for it.
+
+Cloudflare CLI (beta)
+
+The [Cloudflare CLI](https://developers.cloudflare.com/cf/), `cf`, covers the public Cloudflare API and prints JSON output. Install it with `npm install -g cf`, then follow [Use cf with AI agents](https://developers.cloudflare.com/cf/agents/).
+
+Agent-friendly docs
+
+Token-efficient references optimized for agents.
+
+Append `/index.md` to any Cloudflare docs URL for a clean markdown version. Every top-level product section also has its own `llms.txt` — a page index sized for a single context window. A few useful ones:
+
+  * [developers.cloudflare.com/llms.txt](https://developers.cloudflare.com/llms.txt) — directory of every Cloudflare product.
+  * [developers.cloudflare.com/workers/llms.txt](https://developers.cloudflare.com/workers/llms.txt)
+  * [developers.cloudflare.com/agents/llms.txt](https://developers.cloudflare.com/agents/llms.txt)
+  * [developers.cloudflare.com/r2/llms.txt](https://developers.cloudflare.com/r2/llms.txt)
+  * [developers.cloudflare.com/d1/llms.txt](https://developers.cloudflare.com/d1/llms.txt)
+
+
+
+For a full overview of how these docs are structured for agents, refer to the [Docs for Agents guide](https://developers.cloudflare.com/docs-for-agents/).
+
+## Example prompts
+    
+    
+    Add a D1 database to my Worker and create a users table with full CRUD endpoints.
+    
+    
+    Build an image upload and transformation service using R2 and Cloudflare Images.
+    
+    
+    Optimize my Worker to serve WebP images with responsive resizing using Cloudflare Images.
+    
+    
+    Create a RAG pipeline using Vectorize and Workers AI to answer questions over my documentation.
+    
+    
+    Build a serverless AI inference endpoint on Workers AI with streaming responses.
+
+## Tips
+
+  * The Cloudflare API MCP server uses Code Mode — Copilot writes JavaScript against a typed API to reach any of 2,500+ endpoints in ~1,000 tokens.
+  * Use `@workspace` in Copilot Chat to give the agent full context of your Workers project before asking it to build or deploy.
+  * Commit a `.github/copilot-instructions.md` file with repository-wide conventions — Copilot loads it automatically on every interaction, complementing Skills which are loaded on demand.
+
+
+
+## FAQ
+
+Does Copilot support Cloudflare Skills?
+
+Yes. GitHub Copilot added Agent Skills support for VS Code agent mode, the Copilot CLI, and the cloud agent. Run `npx skills add https://github.com/cloudflare/skills` to install them. Refer to the [About agent skills ↗︎](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills) guide for details on where Copilot looks for Skills.
+
+Should I use Skills, the MCP server, a CLI, or all of them?
+
+All three. Skills load Cloudflare expertise into every agent-mode session. The Cloudflare API MCP server handles platform operations (DNS, WAF, Zero Trust, R2 buckets). Wrangler runs local dev and deploys in the VS Code terminal. The bundled `wrangler` Skill teaches Copilot when to reach for which. For tasks across the whole Cloudflare API, Copilot can also use the [Cloudflare CLI](https://developers.cloudflare.com/cf/), `cf`.
+
+Can Copilot use the Cloudflare CLI?
+
+Yes. The [Cloudflare CLI](https://developers.cloudflare.com/cf/), `cf`, is in beta and covers the whole Cloudflare API and prints JSON output. Install it with `npm install -g cf`, sign in with `cf auth login`, and tell Copilot to prefer it in `.github/copilot-instructions.md` or `AGENTS.md`. Refer to [Use cf with AI agents](https://developers.cloudflare.com/cf/agents/).
+
+Do I still need .github/copilot-instructions.md?
+
+It's complementary. Use custom instructions for simple repository-wide conventions that apply to almost every task (coding standards, preferred libraries). Use Skills for detailed, situational guidance Copilot should only load when relevant.
+
+Can Copilot deploy to Cloudflare directly?
+
+Yes, via Wrangler or `cf` in the VS Code terminal, or via a GitHub Actions workflow that Copilot can generate for you.
+
+## Troubleshooting
+
+Skills do not load in Copilot
+
+Skills only work in VS Code agent mode, the Copilot CLI, and the cloud agent — not with inline completion or plain chat. Switch Copilot Chat to agent mode. If Skills are still not discovered, refer to [About agent skills ↗︎](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills) for the paths Copilot checks.
+
+MCP server not available in VS Code
+
+Ensure you are using VS Code 1.99+ which supports MCP natively. Add the server configuration to `.vscode/mcp.json`.
+
+Getting outdated information about Cloudflare products
+
+Point the agent directly at [developers.cloudflare.com/llms.txt](https://developers.cloudflare.com/llms.txt) for a directory of every product, or `developers.cloudflare.com/<product>/llms.txt` for a product-specific index.
+
+## Build agents on Cloudflare
+
+Cloudflare is not just a deploy target for agents, it is a full stack for building your own.
+
+[Agents SDKStateful AI agents with state, scheduling, RPC, email, streaming chat — and the Code Mode SDK for token-efficient tool use.Learn more](https://developers.cloudflare.com/agents/)[Build an MCP serverShip a remote MCP server on Workers with OAuth, durable state, and streamable HTTP transport.Learn more](https://developers.cloudflare.com/agents/model-context-protocol/)[Workers AIRun open-source LLMs, embedding models, and image models at the edge. Use it as your agent's model provider.Learn more](https://developers.cloudflare.com/workers-ai/)[Worker LoaderLoad user-generated code into isolated Workers on demand. The secure sandbox behind Code Mode.Learn more](https://developers.cloudflare.com/workers/runtime-apis/bindings/worker-loader/)
+
+## Other agents
+
+[![](https://developers.cloudflare.com/icons/agents/claude/light.svg)![](https://developers.cloudflare.com/icons/agents/claude/dark.svg)AnthropicClaude CodeTerminal-based coding agent that understands your codebase, runs commands, edits files, and manages git. Made by Anthropic.View guide](https://developers.cloudflare.com/agent-setup/claude-code/)[![](https://developers.cloudflare.com/icons/agents/codex/light.svg)![](https://developers.cloudflare.com/icons/agents/codex/dark.svg)OpenAICodexOpenAI coding agent available as a terminal CLI and desktop app. It reads and writes files, runs commands, and browses the web in a sandbox.View guide](https://developers.cloudflare.com/agent-setup/codex/)[![](https://developers.cloudflare.com/icons/agents/cursor/light.svg)![](https://developers.cloudflare.com/icons/agents/cursor/dark.svg)CursorCursorAI-first IDE built on VS Code with multi-file Composer edits and background agents. Made by Cursor.View guide](https://developers.cloudflare.com/agent-setup/cursor/)[![](https://developers.cloudflare.com/icons/agents/opencode/light.svg)![](https://developers.cloudflare.com/icons/agents/opencode/dark.svg)AnomalyOpenCodeOpen-source terminal agent with a rich TUI that works with 75+ LLMs. Made by Anomaly.View guide](https://developers.cloudflare.com/agent-setup/opencode/)[![](https://developers.cloudflare.com/icons/agents/vibe/light.svg)![](https://developers.cloudflare.com/icons/agents/vibe/dark.svg)Mistral AIVibeCoding agent for terminal, IDE, and cloud workflows that reads files, runs commands, writes code, and opens pull requests. Made by Mistral AI.View guide](https://developers.cloudflare.com/agent-setup/vibe/)[![](https://developers.cloudflare.com/icons/agents/devin/light.svg)![](https://developers.cloudflare.com/icons/agents/devin/dark.svg)CognitionDevinA full IDE with an agent manager built in — the command center for managing all your agents in one place. Made by Cognition.View guide](https://developers.cloudflare.com/agent-setup/devin/)[![](https://developers.cloudflare.com/icons/agents/visual-studio-code/light.svg)![](https://developers.cloudflare.com/icons/agents/visual-studio-code/dark.svg)MicrosoftVisual Studio CodeFree, open-source code editor with native Model Context Protocol (MCP) client support and Copilot Chat integration. Made by Microsoft.View guide](https://developers.cloudflare.com/agent-setup/visual-studio-code/)[![](https://developers.cloudflare.com/icons/agents/command-code/light.svg)![](https://developers.cloudflare.com/icons/agents/command-code/dark.svg)Command CodeCommand CodeCommand Code is one of the most used coding agents for open models. It automatically learns your coding taste and self-improves as you work.View guide](https://developers.cloudflare.com/agent-setup/command-code/)[![](https://developers.cloudflare.com/icons/agents/bionic/light.svg)![](https://developers.cloudflare.com/icons/agents/bionic/dark.svg)LM StudioBionicPowerful agent for coding and work. Natively local, with open models in the cloud. By LM Studio.View guide](https://developers.cloudflare.com/agent-setup/bionic/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/agent-setup/github-copilot.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

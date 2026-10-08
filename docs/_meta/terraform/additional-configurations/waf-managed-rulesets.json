@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/terraform/additional-configurations/waf-managed-rulesets/",
+  "file": "terraform/additional-configurations/waf-managed-rulesets.md",
+  "title": "WAF Managed Rules configuration using Terraform \u00b7 Cloudflare Terraform docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:00.441919+00:00",
+  "html_len": 181758,
+  "md_len": 22360,
+  "depth": 0
+}

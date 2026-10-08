@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/video-streaming/how-webrtc-works/",
+  "file": "_subdomains/www.cloudflare.com/learning/video-streaming/how-webrtc-works.md",
+  "title": "How WebRTC works: What is WebRTC used for?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:28.556852+00:00",
+  "html_len": 208635,
+  "md_len": 15543,
+  "depth": 0,
+  "phase": 2
+}

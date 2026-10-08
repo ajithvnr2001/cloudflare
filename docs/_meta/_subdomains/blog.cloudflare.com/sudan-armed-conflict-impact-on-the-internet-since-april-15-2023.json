@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/sudan-armed-conflict-impact-on-the-internet-since-april-15-2023/",
+  "file": "_subdomains/blog.cloudflare.com/sudan-armed-conflict-impact-on-the-internet-since-april-15-2023.md",
+  "title": "Effects of the conflict in Sudan on Internet patterns | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:33.543084+00:00",
+  "html_len": 302772,
+  "md_len": 65916,
+  "depth": 0,
+  "phase": 2
+}

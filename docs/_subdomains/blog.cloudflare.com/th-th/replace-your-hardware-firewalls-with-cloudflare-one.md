@@ -1,0 +1,205 @@
+---
+url: https://blog.cloudflare.com/th-th/replace-your-hardware-firewalls-with-cloudflare-one/
+title: \u0e40\u0e1b\u0e25\u0e35\u0e48\u0e22\u0e19\u0e08\u0e32\u0e01 Firewall \u0e41\u0e1a\u0e1a\u0e2e\u0e32\u0e23\u0e4c\u0e14\u0e41\u0e27\u0e23\u0e4c\u0e40\u0e1b\u0e47\u0e19 Cloudflare One | \u0e1a\u0e25\u0e47\u0e2d\u0e01 Cloudflare
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:44:51.159496+00:00
+---
+
+# เปลี่ยนจาก Firewall แบบฮาร์ดแวร์เป็น Cloudflare One | บล็อก Cloudflare
+
+> Source: https://blog.cloudflare.com/th-th/replace-your-hardware-firewalls-with-cloudflare-one/
+
+[บล็อก](https://blog.cloudflare.com/th-th/)
+
+[CIO Week](https://blog.cloudflare.com/th-th/tag/cio-week/)[Cloudflare Gateway](https://blog.cloudflare.com/th-th/tag/gateway/)[Cloudflare One](https://blog.cloudflare.com/th-th/tag/cloudflare-one/)+3แสดงแท็กเพิ่มเติม 3 รายการ
+
+6 แท็กแสดง 6 แท็ก
+
+  * แท็กของโพสต์
+  * [Cloudflare Gateway](https://blog.cloudflare.com/th-th/tag/gateway/)[Zero Trust](https://blog.cloudflare.com/th-th/tag/zero-trust/)[ความปลอดภัย](https://blog.cloudflare.com/th-th/tag/security/)
+  * แท็กทั้งหมด
+  * แท็กที่ตรงกัน
+  * ไม่พบแท็ก
+  * [AI](https://blog.cloudflare.com/th-th/tag/ai/)
+  * [สัปดาห์เกิด](https://blog.cloudflare.com/th-th/tag/birthday-week/)
+  * [Bot Management](https://blog.cloudflare.com/th-th/tag/bot-management/)
+  * [ไม่ใช้ไคลเอ็นต์](https://blog.cloudflare.com/th-th/tag/clientless/)
+  * [Cloudflare Access](https://blog.cloudflare.com/th-th/tag/cloudflare-access/)
+  * [Cloudflare Gateway](https://blog.cloudflare.com/th-th/tag/gateway/)
+  * [Cloudflare Tunnel](https://blog.cloudflare.com/th-th/tag/cloudflare-tunnel/)
+  * [วิทยาการเข้ารหัสลับ](https://blog.cloudflare.com/th-th/tag/cryptography/)
+  * [DDoS](https://blog.cloudflare.com/th-th/tag/ddos/)
+  * [รายงาน DDoS](https://blog.cloudflare.com/th-th/tag/ddos-reports/)
+  * [นักพัฒนา](https://blog.cloudflare.com/th-th/tag/developers/)
+  * [DNS (TH)](https://blog.cloudflare.com/th-th/tag/dns/)
+  * [dosd (TH)](https://blog.cloudflare.com/th-th/tag/dosd/)
+  * [ผลกระทบ](https://blog.cloudflare.com/th-th/tag/impact/)
+  * [ชีวิตที่ Cloudflare](https://blog.cloudflare.com/th-th/tag/life-at-cloudflare/)
+  * [พันธมิตร](https://blog.cloudflare.com/th-th/tag/partners/)
+  * [นโยบายและกฎหมาย](https://blog.cloudflare.com/th-th/tag/policy/)
+  * [โพสต์ควอนตัม](https://blog.cloudflare.com/th-th/tag/post-quantum/)
+  * [ข่าวผลิตภัณฑ์](https://blog.cloudflare.com/th-th/tag/product-news/)
+  * [Project Galileo](https://blog.cloudflare.com/th-th/tag/project-galileo/)
+  * [Radar](https://blog.cloudflare.com/th-th/tag/cloudflare-radar/)
+  * [ความปลอดภัย](https://blog.cloudflare.com/th-th/tag/security/)
+  * [Security Week](https://blog.cloudflare.com/th-th/tag/security-week/)
+  * [ความเร็วและความน่าเชื่อถือ](https://blog.cloudflare.com/th-th/tag/speed-and-reliability/)
+  * [Zero Trust](https://blog.cloudflare.com/th-th/tag/zero-trust/)
+
+
+
+[Firewall](https://blog.cloudflare.com/th-th/tag/firewall/)[Zero Trust](https://blog.cloudflare.com/th-th/tag/zero-trust/)[ความปลอดภัย](https://blog.cloudflare.com/th-th/tag/security/)
+
+[CIO Week](https://blog.cloudflare.com/th-th/tag/cio-week/)[Cloudflare Gateway](https://blog.cloudflare.com/th-th/tag/gateway/)[Cloudflare One](https://blog.cloudflare.com/th-th/tag/cloudflare-one/)[Firewall](https://blog.cloudflare.com/th-th/tag/firewall/)[Zero Trust](https://blog.cloudflare.com/th-th/tag/zero-trust/)[ความปลอดภัย](https://blog.cloudflare.com/th-th/tag/security/)
+
+6 ธันวาคม 2564
+
+# เปลี่ยนจาก Firewall แบบฮาร์ดแวร์เป็น Cloudflare One
+
+![Ankur Aggarwal](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW47NKH772PAS2QKG6BFKRHR.jpeg&w=64&h=64&f=webp&fit=cover&position=center)![Annika Garbers](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW485D91GWFS302KY7T9FVJF.png&w=64&h=64&f=webp&fit=cover&position=center)
+
+[Ankur Aggarwal](https://blog.cloudflare.com/th-th/author/ankur/)และ[Annika Garbers](https://blog.cloudflare.com/th-th/author/annika/)
+
+อ่าน 4 นาที
+
+คัดลอก URL
+
+โพสต์นี้มีให้อ่านใน [English](https://blog.cloudflare.com/replace-your-hardware-firewalls-with-cloudflare-one/) [Deutsch](https://blog.cloudflare.com/de-de/replace-your-hardware-firewalls-with-cloudflare-one/) [Français](https://blog.cloudflare.com/fr-fr/replace-your-hardware-firewalls-with-cloudflare-one/) [日本語](https://blog.cloudflare.com/ja-jp/replace-your-hardware-firewalls-with-cloudflare-one/) [한국어](https://blog.cloudflare.com/ko-kr/replace-your-hardware-firewalls-with-cloudflare-one/) [简体中文](https://blog.cloudflare.com/zh-cn/replace-your-hardware-firewalls-with-cloudflare-one/) และ[Bahasa Indonesia](https://blog.cloudflare.com/id-id/replace-your-hardware-firewalls-with-cloudflare-one/).
+
+![Replace your hardware firewalls with Cloudflare One](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW46J2RZW4M33CZ0TE40M10J.png&w=1800&h=1013&f=webp&fit=cover&position=center)![](data:image/bmp;base64,Qk32BAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAATCwAAEwsAAAAAAAAAAAAA+/Xf9/Le8e3e7evj7+7p8O/p7enf5uDO/vjk+vXj8/Dj8O7n8fHt8/Lt8O3j6ePT//3p/vro9/To8/Ls9fXy+Pfy9PHo7ejY///u///t+/nt+Pfx+vr2/Pv2+fbs8u3d///x///w//3w/Pv0/v75///5/vvv9vLh///z///y///x//71///6///7//7x+vXi///z///y///x///1///7///7///y/Pfj///z///y///x///1///7///7///y/fjj)
+
+วันนี้ เรามีความยินดีเป็นอย่างยิ่งที่จะประกาศความสามารถใหม่ในการช่วยเหลือลูกค้าให้เปลี่ยนจาก Firewall แบบอุปกรณ์ฮาร์ดแวร์ไปสู่ Firewall ระบบคลาวด์ที่แท้จริงซึ่งสร้างขึ้นสำหรับเครือข่ายในอนาคต Cloudflare One เป็นแพลตฟอร์มที่ปลอดภัย ทำงานได้ยอดเยี่ยม และเป็นแบบ Zero Trust สำหรับผู้ดูแลในการบังคับใช้นโยบายความปลอดภัยที่ทั่วถึงผู้ใช้และทรัพยากรทั้งหมด เราเหมาะสำหรับทุกคน Cloudflare One นั้นพัฒนาต่อยอดมาจากเครือข่ายทั่วโลก คุณจึงไม่ต้องกังวลเรื่องการปรับขนาด การใช้งาน หรือบำรุงรักษาฮาร์ดแวร์รักษาความปลอดภัย
+
+ในฐานะส่วนหนึ่งของประกาศฉบับนี้ Cloudflare ได้เปิดตัว [Oahu](http://cloudflare.com/oahu) แล้วเพื่อช่วยให้ลูกค้าทิ้งฮาร์ดแวร์เดิมๆ ไว้ข้างหลัง ในโพสต์นี้เราจะอธิบายถึงความสามารถใหม่ๆ ที่ช่วยแก้ไขปัญหาของ Firewall แบบเดิมๆ และช่วยประหยัดเวลาและต้นทุนให้กับทีมไอที
+
+## **เรามาถึงตรงนี้ได้อย่างไร**
+
+เพื่อที่จะเข้าใจในจุดที่เรายืนอยู่ในปัจจุบัน เป็นการดีที่เราจะเริ่มต้นด้วยประวัติศาสตร์ฉบับรวบรัดของ Firewall แบบ IP กันเล็กน้อย
+
+### **การกรองแพ็คเก็ตแบบไม่มีสถานะสำหรับเครือข่ายส่วนตัว**
+
+Firewall เครือข่ายรุ่นแรกนั้นได้รับการออกแบบมาเพื่อให้ตอบสนองต่อข้อกำหนดด้านความปลอดภัยของเครือข่ายส่วนตัวเป็นส่วนใหญ่ ซึ่งเริ่มต้นด้วยสถาปัตยกรรมแบบ Castle and Moat ที่เราได้เรียกว่ารุ่นที่ 1 ใน[โพสต์เมื่อวานของเรา](https://blog.cloudflare.com/welcome-to-cio-week/) ผู้ดูแล Firewall สามารถสร้างนโยบายจากสัญญาณที่ชั้นที่ 3 และ 4 ของ[รุ่น OSI](https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/) ได้ (ขั้นต้นคือ IP และพอร์ท) ซึ่งเหมาะอย่างยิ่งสำหรับ (ตัวอย่าง) การอนุญาตให้กลุ่มพนักงานในชั้นหนึ่งของตึกสำนักงานสามารถเข้าถึงเซิร์ฟเวอร์ของอีกชั้นหนึ่งได้ด้วยสาย LAN
+
+ความสามารถในการกรองแพ็คเก็ตนั้นเคยเพียงพอจนกระทั่งเครือข่ายมีความซับซ้อนมากขึ้น ซึ่งรวมถึงจากการเชื่อมต่อกับอินเทอร์เน็ตด้วย ทีมไอทีนั้นเริ่มมีความจำเป็นที่จะต้องปกป้องเครือข่ายของบริษัทจากผู้ไม่หวังดีจากภายนอก ซึ่งจำเป็นต้องมีนโยบายที่เหมาะสมกว่าเดิม
+
+### **การป้องกันที่ดีขึ้นด้วยการตรวจสอบแพ็คเก็ตอย่างมีสถานะและลงลึกกว่าเดิม**
+
+Firewall แบบฮาร์ดแวร์นั้นพัฒนาขึ้นเพื่อให้มีการตรวจสอบแพ็คเก็ตแบบมีสถานะและเป็นจุดเริ่มต้นของการตรวจสอบแพ็คเก็ตเชิงลึก เป็นการขยายแนวความคิดดั้งเดิมของ Firewall โดยการตรวจสอบสถานะของการเชื่อมต่อที่ผ่าน Firewall นั้น ซึ่งทำให้ผู้ดูแลสามารถ (ตัวอย่าง) บล็อกแพ็คเก็ตขาเข้าทั้งหมดที่ไม่ได้ผูกกับการเชื่อมต่อขาออกอยู่แล้ว
+
+ความสามารถใหม่นี้ทำให้ป้องกันผู้โจมตีได้ดีขึ้น แต่ความก้าวหน้านี้ก็มีราคาที่ต้องจ่าย: การรักษาความปลอดภัยในระดับที่สูงขึ้นนี้ก็ต้องใช้แหล่งการประมวลผลและแหล่งความจำมากขึ้น สิ่งนี้ทำให้ทีมความปลอดภัยและเครือข่ายต้องวางแผนขีดความสามารถที่ต้องใช้สำหรับอุปกรณ์ใหม่แต่ละเครื่องให้ดีขึ้น และแลกกันระหว่างข้อดีข้อเสียด้านต้นทุนกับการมีระบบซ้ำซ้อนสำหรับเครือข่ายของพวกเขา
+
+นอกเหนือจากการแลกมาด้วยข้อดีด้านต้นทุนแล้ว Firewall ใหม่เหล่านี้นั้นจะให้ข้อมูลเชิงลึกเกี่ยวกับการใช้งานเครือข่ายเพียงบางส่วนเท่านั้น คุณสามารถรู้ได้ว่าผู้ใช้นั้นเข้าถึง 198.51.100.10 ที่พอร์ต 80 แต่ในการสืบเสาะเพิ่มเติมว่าผู้ใช้นั้นเข้าถึงสิ่งใด คุณจะต้องย้อนกลับไปดูที่ IP address การดำเนินการดังกล่าวนั้นจะพาคุณไปยังหน้าแรกของผู้ให้บริการเท่านั้น โดยไม่ทราบว่าที่จริงแล้วผู้ใช้เข้าถึงสิ่งใด รวมถึงชื่อของโดเมน/Host หรือข้อมูลอื่นๆ ที่ช่วยตอบคำถามที่ว่า "นี่เป็นเหตุการณ์ความปลอดภัยที่ฉันควรตรวจสอบต่อไปหรือไม่" การระบุที่มาเองก็อาจเป็นเรื่องยากเช่นกัน เนื่องจากต้องใช้ IP address ส่วนตัวที่ได้รับมาผ่าน DHCP ด้วยอุปกรณ์ร่วมด้วยและจากนั้นคือผู้ใช้ (หากคุณจำได้ว่าตั้งค่า Lease Time ไว้นานและไม่เคยแชร์อุปกรณ์)
+
+### **การรับรู้ใน Application ด้วย Firewall เจนเนอเรชั่นใหม่**
+
+เพื่อช่วยแก้ปัญหาดังกล่าว อุตสาหกรรมของเราได้เปิดตัว [Next Generation Firewall](https://www.cloudflare.com/learning/security/what-is-next-generation-firewall-ngfw/) (NGFW). ซึ่งเป็นสิ่งที่ใช้กันมายาวนาน และในบางกรณีก็นับเป็นอุปกรณ์ความปลอดภัยสำหรับบริษัทที่เป็นมาตรฐานอุตสาหกรรม ซึ่งรูปแบบใหม่นี้มีความสามารถทั้งหมดเหมือนกับรุ่นเก่า และเพิ่มการรับรู้ใน Application เพื่อช่วยให้ผู้ดูแลสามารถควบคุมสิ่งที่ผ่านพารามิเตอร์ความปลอดภัยเข้ามา NGFW นั้นมีคอนเซปต์ของระบบอัจฉริยะที่ให้บริการโดยผู้จำหน่ายหรือให้บริการโดยภายนอก และความสามารถในการระบุการใช้งานของบุคคลจากลักษณะการรับส่งข้อมูล ระบบอัจฉริยะที่เข้ากับนโยบายที่ระบุว่าผู้ใช้สามารถทำหรือไม่ทำสิ่งใดกับ Application ได้
+
+ยิ่งมี Application ที่ย้ายไปสู่ระบบคลาวด์มากเท่าใด ผู้จำหน่าย NGFW ก็ยิ่งสามารถสร้างอุปกรณ์ของตนในเวอร์ชันเสมือนได้ ซึ่งทำให้ผู้ดูแลไม่ต้องกังวลเรื่องเวลานำการเชื่อมต่อสำหรับฮาร์ดแวร์เวอร์ชันถัดไป และทำให้เกิดความยืดหยุ่นมากขึ้นเมื่อใช้งานจากหลายพื้นที่
+
+เมื่อเวลาผ่านไป เมื่อภัยคุกคามพัฒนามากขึ้นและเครือข่ายมีความซับซ้อนยิ่งขึ้น NGFW นั้นก็เริ่มมือความสามารถในการรักษาความปลอดภัยเพิ่มเติม ซึ่งบ้างก็ช่วยควบรวมอุปกรณ์หลายตัวเข้าด้วยกัน โดยขึ้นอยู่กับผู้จำหน่าย สิ่งนี้ประกอบไปด้วย VPN Gateways, IDS/IPS, Web Application Firewalls และแม้กระทั่งอย่าง Bot Management และการป้องกัน DDoS แต่ถึงแม้จะมีฟีเจอร์เหล่านี้ NGFW เองก็มีข้อเสีย เนื่องจากผู้ดูแลเองก็ยังต้องใช้เวลาในการออกแบบและกำหนดค่าอุปกรณ์ที่ซ้ำกัน (อย่างน้อยคืออุปกรณ์หลัก/รอง) เช่นเดียวกับการเลือกตำแหน่งที่มี Firewall และการสูญเสียประสิทธิภาพจากการส่งกลับข้อมูลจากตำแหน่งอื่น และถึงอย่างนั้น ก็ยังจำเป็นต้องมีการจัดการ IP address เมื่อสร้างนโยบายและใช้อัตลักษณ์แฝง
+
+### **การเพิ่มการควบคุมระดับผู้ใช้เพื่อก้าวไปสู่ Zero Trust**
+
+เมื่อผู้จำหน่าย Firewall เพิ่มการควบคุมให้มากขึ้นแล้ว ในขณะเดียวกัน การปรับเปลี่ยนกระบวนทัศน์สำหรับสถาปัตยกรรมเครือข่ายก็เกิดขึ้นเพื่อชี้ให้เห็นถึงปัญหาด้านความปลอดภัยที่เกิดขึ้นจากการที่ Application และผู้ใช้นั้นออกจาก "ปราการ" ขององค์กรเพื่อไปสู่อินเทอร์เน็ต [ความปลอดภัยแบบ Zero Trust](https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/) หมายความว่าไม่มีใครที่ได้รับการเชื่อถือตามค่าเริ่มต้นจากทั้งในหรือนอกเครือข่าย และจะต้องมีการตรวจสอบความถูกต้องบุคคลทุกคนที่ต้องการเข้าถึงแหล่งข้อมูลในเครือข่าย Firewalls เริ่มใช้หลักการ Zero Trust ด้วยการร่วมกับผู้ให้บริการพิสูจน์และยืนยันตัวตน (IdP) และให้ผู้ใช้สามารถกำหนดนโยบายให้กับกลุ่มผู้ใช้ได้ — “ฝ่ายการเงินและฝ่ายบุคคลเท่านั้นที่สามารถเข้าถึงระบบจ่ายเงินเดือนได้” — ทำให้เกิดเป็นการควบคุมที่ละเอียดยิ่งขึ้นและลดความจำเป็นในการใช้ที่อยู่ IP ในการระบุตัวตน
+
+นโยบายนี้ได้ช่วยองค์กรต่างๆ ในการล็อกดาวน์เครือข่ายและเข้าใกล้การเป็น Zero Trust มากขึ้น แต่ CIO นั้นก็ยังคงมีปัญหาว่าจะทำอย่างไรหากพวกเขาต้องการร่วมงานกับผู้ให้บริการพิสูจน์และยืนยันตัวตนเจ้าอื่น จะมอบสิทธิ์การเข้าถึงแหล่งข้อมูลขององค์กรให้กับผู้ร่วมสัญญาอย่างปลอดภัยได้อย่างไร การควบคุมรูปแบบใหม่นี้ไม่ได้ชี้ให้เห็นปัญหาพื้นฐานในการจัดการฮาร์ดแวร์ ซึ่งยังคงอยู่และซับซ้อนมากขึ้นเมื่อบริษัทต่างๆ มีการเปลี่ยนแปลงรูปแบบการทำธุรกิจ เช่น การเพิ่มและลบตำแหน่ง และการทำงานแบบไฮบริด CIO จำเป็นต้องมีโซลูชันที่เหมาะกับเครือข่ายในอนาคตของบริษัท แทนที่จะพยายามเอาโซลูชันต่างๆ มายึดโยงกันที่จะช่วยแก้ปัญหาที่พวกเขาต้องการได้เพียงบางมุมเท่านั้น
+
+## **Firewall แบบระบบคลาวด์เพื่อเครือข่ายแห่งอนาคต**
+
+Cloudflare นั้นกำลังช่วยเหลือลูกค้าในการสร้างอนาคตให้กับเครือข่ายบริษัทของพวกเขาโดยการรวมการเชื่อมต่อเครือข่ายให้เป็นหนึ่งเดียวและความปลอดภัยแบบ Zero Trust ลูกค้าที่ใช้งานแพลตฟอร์ม Cloudflare One และเลิกใช้ Firewall ฮาร์ดแวร์เพื่อการทำงานแบบระบบคลาวด์เต็มตัว ทำให้ทีมไอทีทำงานได้ง่ายขึ้นในการแก้ไขปัญหาของรุ่นก่อน
+
+### **การเชื่อมโยงแหล่งข้อมูลหรือปลายทางด้วยการเชื่อมต่อที่ยืดหยุ่น**
+
+แทนที่จะบริหารจัดการอุปกรณ์แต่ละเครื่องสำหรับกรณีการใช้งานแต่ละแบบ การรับส่งข้อมูลทั่วทั้งเครือข่ายของคุณ ตั้งแต่ศูนย์ข้อมูล สำนักงาน ระบบคลาวด์ และอุปกรณ์ของผู้ใช้ นั้นควรที่จะดำเนินการผ่าน Firewall เดึยว Cloudflare One ให้คุณเชื่อมต่อได้ผ่านเครือข่าย Cloudflare พร้อมตัวเลือกในการเชื่อมต่ออย่างยืดหยุ่นที่หลากหลาย ทั้งในชั้นเครือข่าย (GRE หรือ [IPsec](https://blog.cloudflare.com/anycast-ipsec/) Tunnel) หรือ [ชั้น Application](https://www.cloudflare.com/products/tunnel/) Tunnel [การเชื่อมต่อโดยตรง](https://www.cloudflare.com/network-interconnect/), [BYOIP](https://blog.cloudflare.com/bringing-your-own-ips-to-cloudflare-byoip/) และ[ไคลเอนต์อุปกรณ์](https://blog.cloudflare.com/warp-for-desktop/) การเชื่อมต่อกับ Cloudflare นั้นเท่ากับการเชื่อมโยงกับเครือข่ายทั่วโลกของเรา ซึ่งจะช่วยขจัดปัญหาที่มีกับฮาร์ดแวร์ทั้งแบบจริงหรือแบบเสมือน:
+
+  * **ไม่ต้องวางแผนขีดความสามารถอีกต่อไป:** ขีดความสามารถของ Firewall คือขีดความสามารถของเครือข่ายทั่วโลกของ Cloudflare (ปัจจุบันคือ >100Tbp และกำลังเติบโตขึ้นเรื่อยๆ)
+  * **ไม่ต้องวางแผนตำแหน่งอีกต่อไป:** สถาปัตยกรรม Anycast network ของ Cloudflare นั้นทำให้การรับส่งข้อมูลเชื่อมต่อกับตำแหน่งที่อยู่ใกล้กับแหล่งที่มาที่สุดโดยอัตโนมัติ ไม่ต้องเลือกสถานที่หรือกังวลว่าอุปกรณ์หลัก/สำรองของคุณจะอยู่ที่ไหนอีกต่อไป Redundancy และ Failover นั้นจะถูกสร้างขึ้นโดยค่าเริ่มต้นเอง
+  * **ไม่ต้องหยุดการทำงานเนื่องจากบำรุงรักษา:** เช่นเดียวกับผลิตภัณฑ์อื่นๆ ของเรา สิ่งที่ปรับปรุงเพิ่มให้กับความสามารถ Firewall ของ Cloudflare คือการใช้งานได้อย่างต่อเนื่องทั่วทั้งเครือข่าย Edge ทั่วโลก
+  * **การป้องกัน DDoS ในตัว:** ไม่ต้องกังวลเกี่ยวกับโจมตี DDoS ที่จะทำให้ Firewall ของคุณรับภาระหนัก เครือข่ายของ Cloudflare นั้นบล็อกการโจมตีที่อยู่ใกล้กับแหล่งโดยอัตโนมัติ และปล่อยให้เพียงการรับส่งข้อมูลที่สะอาดมุ่งไปสู่ปลายทางเท่านั้น
+
+
+
+### **ปรับแต่งนโยบายที่ครอบคลุม ตั้งแต่การกรองแพ็คเก็ตไปจนถึง Zero Trust**
+
+นโยบาย Cloudflare One นั้นใช้เพื่อการรักษาความปลอดภัยและจัดเส้นทางการรับส่งข้อมูลทั่วเส้นทางติดต่อการรับข้อมูลต่างๆ ทั้งหมด โดยสามารถปรับแต่งนโยบายเหล่านี้ให้เหมาะสมได้โดยใช้องค์ประกอบที่มีอยู่เดิมใน NGFW แบบเดิม พร้อมไปกับการเพิ่มเติมเพื่อให้มี[องค์ประกอบ Zero Trust](https://developers.cloudflare.com/cloudflare-one/identity) เช่นกัน องค์ประกอบ Zero Trust นี้อาจมี IdP หรือผู้ให้บริการความปลอดภัยที่เอนด์พอยต์หนึ่งรายหรือมากกว่า
+
+เมื่อมองให้ถี่ถ้วนที่ระดับที่ 3 จนถึง 5 ของรุ่น OSI นโยบายนั้นสามารถมีพื้นฐานจาก IP, พอร์ท, โปรโตคอล และองค์ประกอบอื่นๆ ทั้งในแบบที่[ไม่มีสถานะ](https://developers.cloudflare.com/magic-firewall/reference/magic-firewall-fields)และ[มีสถานะ](https://developers.cloudflare.com/cloudflare-one/policies/filtering/network-policies#expressions) องค์ประกอบเหล่านี้ยังสามารถใช้ในการสร้างเครือข่ายส่วนตัวบน Cloudflare ได้อีกด้วย เมื่อใช้ร่วมกับองค์ประกอบข้อมูลประจำตัวและอุปกรณ์ไคลเอนต์ Cloudflare
+
+นอกจากนั้น เพื่อช่วยลดภาระงานของการจัดการรายการ IP ที่อนุญาต/บล็อก Cloudflare นั้นมีรายการที่จัดการที่สามารถใช้ได้กับทั้งนโยบายแบบมีสถานะและไม่มีสถานะ และยิ่งกว่านั้นในปลายทางที่ดีขึ้น คุณยังสามารถ[ตรวจสอบแพ็คเก็ตเชิงลึก](https://developers.cloudflare.com/magic-firewall/reference/magic-firewall-functions)และ[เขียนตัวกรองแพ็คเก็ตแบบทำโปรแกรมได้](https://blog.cloudflare.com/programmable-packet-filtering-with-magic-firewall/)เพื่อบังคับใช้โมเดลความปลอดภัยที่ดีและขัดขวางการโจมตีที่ใหญ่ที่สุด
+
+ความอัจฉริยะของ Cloudflare นั้นมอบความสามารถให้กับ Application ของเราและประเภทของเนื้อหาสำหรับนโยบายเลเยอร์ที่ 7 ซึ่งใช้ในการปกป้องผู้ใช้จากภัยคุกคามความปลอดภัย ป้องกันการรั่วไหลของข้อมูล และตรวจสอบการใช้งานแหล่งทรัพยากรของบริษัทได้ ซึ่งเริ่มต้นที่ตัวแก้ไข DNS ที่ได้รับการป้องกัน ซึ่งสร้างขึ้นต่อจากบริการ 1.1.1.1. ชี้นำประสิทธิภาพสำหรับลูกค้า DNS ที่ได้รับการป้องกันนั้นทำให้ผู้ดูแลสามารถปกป้องผู้ใช้จากการทำให้เกิดหรือการแก้ไขปัญหา[ความเสี่ยงด้านความปลอดภัย](https://developers.cloudflare.com/cloudflare-one/policies/filtering/dns-policies-builder/dns-categories)ที่ทราบอยู่แล้วหรืออาจเกิดขึ้นได้ เมื่อแก้ไขปัญหาโดเมนแล้ว ผู้ดูแลสามารถใช้นโยบาย HTTP ในการสกัดกั้น ตรวจสอบ และกรองการรับส่งข้อมูลของผู้ใช้ได้ และหากเว็บ Application นั้นเป็นแบบเซลฟ์โฮสต์หรือเป็น SaaS คุณสามารถปกป้องผู้ใช้ด้วยการใช้ยโยบาย Cloudflare Access ซึ่งจะทำหน้าที่เป็นพร็อกซีระบุตัวตนบนเว็บได้อีกด้วย
+
+สุดท้ายแต่ไม่ท้ายสุด เพื่อป้องกันข้อมูลรั่วไหล ผู้ดูแลสามารถล็อคดาวน์การเข้าถึง Application HTTP ภายนอกโดยการใช้[Remote Browser Isolation](https://developers.cloudflare.com/cloudflare-one/policies/browser-isolation) และในอีกไม่นานนี้ ผู้ดูแลจะสามารถบันทึกและกรองได้ว่าผู้ใช้สามารถสั่งการหรือดำเนินการสิ่งใดได้ผ่าน SSH Session
+
+### **ลดความยุ่งยากในการบริหารจัดการนโยบาย: คลิกเดียวเพื่อเผยแพร่กฎไปทั่วทุกที่**
+
+Firewall ทั่วไปนั้นต้องมีการใช้งานนโยบายในอุปกรณ์แต่ละเครื่อง หรือการตั้งค่าและบำรุงรักษาอุปกรณ์เพื่อกระบวนการดังกล่าว แต่ในทางกลับกัน Cloudflare นั้นทำให้คุณสามารถจัดการนโยบายต่างๆ ทั่วทั้งเครือข่ายจาก Dashboard หรือ API ได้อย่างง่ายๆ หรือใช้ Terraform ในการใช้โครงสร้างพื้นฐานเป็นโค้ด เปลี่ยนการเผยแพร่ทั่ว Edge ในไม่กี่วินาที ทั้งหมดนี้ต้องขอบคุณเทคโนโลยี [Quicksilver](https://blog.cloudflare.com/introducing-quicksilver-configuration-distribution-at-internet-scale/) ผู้ใช้จะสามารถมองเห็นการรับส่งข้อมูลผ่าน Firewall ด้วยบันทึก ซึ่งสามารถ[กำหนดค่าได้แล้วตอนนี้](https://blog.cloudflare.com/pii-and-selective-logging-controls-for-cloudflares-zero-trust-platform/)
+
+## **รวม Firewall มากมายเป็นกรณีการใช้งานเดียวในแพลตฟอร์มเดียว**
+
+[Firewalls](https://www.cloudflare.com/learning/security/what-is-a-firewall/) นั้นเป็นสิ่งจำเป็นในการปกป้องกระแสการรับส่งข้อมูลมากมายเพื่อตอบสนองต่อความจำเป็นด้านความปลอดภัยหลากหลายประการ ทั้งการบล็อกการรับส่งข้อมูลขาเข้าที่ไม่พึงประสงค์ การกรองการเชื่อมต่อขาออกเพื่อให้แน่ใจว่าพนักงานและ Application นั้นเชื่อมต่อกับแหล่งที่ปลอดภัยเท่านั้น และการตรวจสอบการรับส่งข้อมูลภายใน (“ตะวันออก/ตะวันตก”) เพื่อให้สมคุณสมบัติ Zero Trust ฮาร์ดแวร์ต่างๆ นั้นครอบคลุมการใช้งานในกรณีหนึ่งหรือหลากหลายกรณีในหลากหลายตำแหน่ง แต่เราคิดว่าการควบรวมสิ่งเหล่านี้ให้เป็นหนึ่งมากที่สุดเพื่อการใช้งานที่ง่ายขึ้นและสร้างนโยบาย Firewall ที่เป็นหนึ่งเดียวนั้นเป็นสิ่งที่เหมาะสม เรามาดูกรณีการใช้งานบางกรณีที่แต่เดิมเคยพึงพอใจกับ Firewall แบบฮาร์ดแวร์ และอธิบายว่าทำไมทีมไอทีถึงพึงพอใจใน Cloudflare One กันดีกว่า
+
+### **ปกป้องสำนักงานสาขา**
+
+แต่เดิมแล้ว ทีมไอทีจะต้องใช้ฮาร์ดแวร์ Firewall อย่างน้อยหนึ่งฮาร์ดแวร์ต่อหนึ่งสำนักงาน (และมากกว่าหนึ่งฮาร์ดแวร์สำหรับระบบซ้ำซ้อน) ซึ่งจำเป็นจะต้องคาดการณ์จำนวนการรับส่งข้อมูลของแต่ละสาขา และสั่งออเดอร์ ติดตั้ง และบำรุงรักษาอุปกรณ์ดังกล่าว ในตอนนี้ ลูกค้าสามารถเชื่อมโยงการรับส่งข้อมูลของสำนักงานสาขาเข้ากับ Cloudflare ได้จากฮาร์ดแวร์ใดๆ ที่มีอยู่แต่เดิม หรือเราเตอร์ธรรมดาแบบใดก็ได้ที่รองรับ GRE หรือ IPsec และควบคุมนโยบายการกรองการรับส่งข้อมูลทั้งหมดจาก Dashboard ของ Cloudflare
+
+**ขั้นตอนที่ 1: สร้าง GRE หรือ IPsec Tunnel**
+
+ผู้ให้บริการฮาร์ดแวร์หลักๆ ส่วนใหญ่นั้นรองรับ GRE และ/หรือ IPsec เป็นวิธีการ Tunnel Cloudflare จะมอบ Anycast IP address ให้ใช้ในฐานะเอนด์พอยท์ของ Tunnel ในฝั่งของเรา และคุณจะต้องกำหนดค่า GRE หรือ IPsec Tunnel พื้นฐานโดยไม่ต้องใช้ขั้นตอนเพิ่มเติม โดย Anycast IP จะเชื่อมต่ออัตโนมัติกับศูนย์ข้อมูล Cloudflare
+
+**ขั้นตอนที่ 2: กำหนดกฎ Firewall ในเลเยอร์เครือข่าย**
+
+การรับส่งข้อมูล IP ทั้งหมดสามารถกรองได้ด้วย Magic Firewall ซึ่งมีความสามารถในการสร้างนโยบายจากอัตลักษณ์ของแพ็คเก็ต เช่น IP ต้นทางหรือปลายทาง หรือบิตฟิลด์ที่ตรงกัน และ Magic Firewall ยังคงทำงานร่วมกับ [IP Lists](https://blog.cloudflare.com/introducing-ip-lists/) และมีความสามารถที่นำสมัยอื่นๆ อย่าง[การกรองแพ็คเก็ตที่สามารถโปรแกรมได้](https://blog.cloudflare.com/programmable-packet-filtering-with-magic-firewall/)อีกด้วย
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![Before: deploying hardware firewalls at every branch; managing different models and sometimes different vendors. After: traffic connected to global Anycast network; firewall policies deployed in one place propagate globally](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW449FSHPFQNR31GRXMNN2RY.png&w=715&h=289&f=webp&fit=cover&position=center)
+
+**ขั้นตอนที่ 3: อัปเกรดการรับส่งข้อมูลสำหรับกฎ Firewall ในระดับ Application**
+
+เมื่อการส่งข้อมูลดำเนินการผ่าน Magic Firewall การส่งข้อมูล TCP และ UDP นั้นสามารถ "อัปเกรด" ได้เพื่อการคัดกรองที่ละเอียดกว่าเดิมผ่านเกตเวย์ของ Cloudflare การอัปเกรดนี้จดปลดล็อกความสามารถในการกรองแบบครบถ้วน ที่รวมทั้งการรับรู้ Application และเนื้อหา ข้อมูลประจำตัว พร็อกซี่ SSH/HTTP และ DLPanku
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![Before: traffic through the data center needed to flow through expensive appliance\(s\) that could keep up with volume. After: traffic balanced across thousands of commodity servers; malicious traffic blocked close to its source](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW47KN3HJDNFV1M8WKGPHES2.png&w=715&h=283&f=webp&fit=cover&position=center)
+
+### **การป้องกันศูนย์ข้อมูลหรือ VPC ที่มีการรับส่งข้อมูลจำนวนมาก**
+
+Firewall ที่ใช้ในการประมวลผลข้อมูลที่สำนักงานใหญ่หรือศูนย์ข้อมูลที่มีการรับส่งข้อมูลจำนวนมากนั้นอาจเป็นส่วนที่ทำให้เกิดค่าใช้จ่ายมากที่สุดในงบประมาณของทีมไอที แต่เดิมแล้ว ศูนย์ข้อมูลนั้นมักได้รับการรักษาความปลอดภัยด้วยอุปกรณ์ที่เทอะทะ ซึ่งสามารถรองรับข้อมูลจำนวนมากได้โดยง่ายทำให้เกิดค่าใช้จ่ายที่มากขึ้น ด้วยโครงสร้างสถาปัตยกรรมของ Cloudflare เนื่องจากทุกเซิร์ฟเวอร์ในเครือข่ายของเราสามารถแบ่งปันภาระงานในการประมวลผลการรับส่งข้อมูลของลูกค้าร่วมกันได้ จึงไม่มีอุปกรณ์ใดอุปกรณ์หนึ่งที่กลายเป็นจุดคอขวดหรือต้องใช้องค์ประกอบพิเศษที่มีราคาแพง ลูกค้าสามารถเชื่อมต่อการรับส่งข้อมูลไปยัง Cloudflare ด้วย BYOIP ซึ่งเป็นกลไก Tunnel พื้นฐาน หรือการเชื่อมต่อกับเครือข่าย Cloudflare และประมวลผลการรับส่งข้อมูลได้สูงสุดเทระบิตต่อวินาทีผ่านกฎของ Firewall อย่างไม่มีสะดุด
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![Before: user traffic backhauled to firewall device over VPN; after: policy enforced at the edge location closest to the user.](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW45ZSRQDMNV40BDEAQ883DR.png&w=715&h=196&f=webp&fit=cover&position=center)
+
+### **การรักษาความปลอดภัยพนักงานที่เดินทางหรือทำงานแบบไฮบริด**
+
+เพื่อที่จะเชื่อมต่อกับทรัพยากรของบริษัทหรือเข้าถึงอินเทอร์เน็ตอย่างปลอดภัย ผู้ใช้ในสถาปัตยกรรมเครือข่ายแบบเดิมนั้นใช้การเชื่อมต่อ VPN จากอุปกรณ์ของพวกเขาในการเชื่อมต่อไปยังตำแหน่งกลางที่มี Firewall และเมื่อถึง Firewall การรับส่งข้อมูลนั้นจะถูกประมวลผลก่อนที่จะปล่อยผ่านไปยังปลายทาง สถาปัตยกรรมเช่นนี้จะทำให้มีการสูญเสียประสิทธิภาพ และถึงแม้ Firewall รูปแบบใหม่นั้นจะมีการควบคุมในระดับผู้ใช้ แต่ก็ไม่ได้หมายความว่าจะเป็นแบบ Zero Trust เสมอไป Cloudflare นั้นให้ลูกค้าสามารถใช้ไคลเอนต์ของอุปกรณ์เป็นสิ่งที่เชื่อมโยงไปสู่นโยบาย Zero Trust ได้ โปรดติดต่ออัปเดตเพิ่มเติมอีกครั้งในสัปดาห์นี้ว่าด้วยการใช้งานไคลเอนต์ในสเกล
+
+## **มีอะไรใหม่บ้าง**
+
+เรารอไม่ไหวแล้วที่จะพัฒนาแพลตฟอร์มนี้ต่อไปเพื่อตอบรับกับกรณีการใช้งานใหม่ๆ เราได้ยินจากลูกค้าที่สนใจในฟังก์ชั่นการขยายเกตเวย์ NAT ด้วย Cloudflare One ผู้ที่ต้องการการวิเคราะห์ การรายงาน และประสบการณ์ของผู้ใช้ที่ยอดเยี่ยมกว่าเดิมให้ทั่วทั้งแง่ความสามารถของ Firewall ของเรา และผู้ที่ตื่นเต้นที่จะใช้งานฟีเจอร์ DLP อยากครบชุดกับการรับส่งข้อมูลของพวกเขาผ่านเครือข่ายของ Cloudflare การอัปเดตในด้านต่างๆ เหล่านี้และอีกมากมายจะมาพบกับคุณในไม่ช้า (ห้ามพลาด)
+
+ความสามารถใหม่ของ Firewall ของ Cloudflare นั้นพร้อมให้บริการแก่ลูกค้าระดับองค์กรแล้ววันนี้ ดูข้อมูลเพิ่มเติม[ที่นี่](https://www.cloudflare.com/magic-firewall/)และดู[โปรแกรม Oahu](http://cloudflare.com/oahu) เพื่อเรียนรู้ว่าคุณสามารถโยกย้ายจากการใช้ฮาร์ดแวร์ Firewall มาเป็น Zero Trust ได้อย่างไร หรือพูดคุยกับทีมบัญชีของคุณเพื่อเริ่มต้นเลยวันนี้
+
+ในหน้านี้
+
+สนทนาออนไลน์
+
+[](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Fblog.cloudflare.com%2Fth-th%2Freplace-your-hardware-firewalls-with-cloudflare-one%2F&t=%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%E0%B8%88%E0%B8%B2%E0%B8%81%20Firewall%20%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%AE%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B9%81%E0%B8%A7%E0%B8%A3%E0%B9%8C%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%20Cloudflare%20One)[](https://x.com/intent/post?text=%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%E0%B8%88%E0%B8%B2%E0%B8%81+Firewall+%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%AE%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B9%81%E0%B8%A7%E0%B8%A3%E0%B9%8C%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99+Cloudflare+One&url=https%3A%2F%2Fblog.cloudflare.com%2Fth-th%2Freplace-your-hardware-firewalls-with-cloudflare-one%2F)[](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fblog.cloudflare.com%2Fth-th%2Freplace-your-hardware-firewalls-with-cloudflare-one%2F)[](https://bsky.app/intent/compose?text=%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%E0%B8%88%E0%B8%B2%E0%B8%81+Firewall+%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%AE%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B9%81%E0%B8%A7%E0%B8%A3%E0%B9%8C%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99+Cloudflare+One+https%3A%2F%2Fblog.cloudflare.com%2Fth-th%2Freplace-your-hardware-firewalls-with-cloudflare-one%2F)[](https://mastodonshare.com/?text=%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%E0%B8%88%E0%B8%B2%E0%B8%81+Firewall+%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%AE%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B9%81%E0%B8%A7%E0%B8%A3%E0%B9%8C%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99+Cloudflare+One&url=https%3A%2F%2Fblog.cloudflare.com%2Fth-th%2Freplace-your-hardware-firewalls-with-cloudflare-one%2F)[](https://www.threads.net/intent/post?text=%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%E0%B8%88%E0%B8%B2%E0%B8%81+Firewall+%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%AE%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B9%81%E0%B8%A7%E0%B8%A3%E0%B9%8C%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99+Cloudflare+One+https%3A%2F%2Fblog.cloudflare.com%2Fth-th%2Freplace-your-hardware-firewalls-with-cloudflare-one%2F)
+
+## แท็กที่เกี่ยวข้อง
+
+[CIO Week](https://blog.cloudflare.com/th-th/tag/cio-week/)[Cloudflare Gateway](https://blog.cloudflare.com/th-th/tag/gateway/)[Cloudflare One](https://blog.cloudflare.com/th-th/tag/cloudflare-one/)[Firewall](https://blog.cloudflare.com/th-th/tag/firewall/)[Zero Trust](https://blog.cloudflare.com/th-th/tag/zero-trust/)[ความปลอดภัย](https://blog.cloudflare.com/th-th/tag/security/)
+
+ติดตามบนโซเชียลมีเดีย
+
+  * ![Cloudflare](https://blog.cloudflare.com/images/placeholder__cloudflare.png)Cloudflare
+
+[](https://blog.cloudflare.com/rss/)[](https://x.com/Cloudflare)[](https://www.linkedin.com/company/cloudflare-inc-)[](https://www.youtube.com/cloudflare)[](https://instagram.com/cloudflare)[](https://github.com/cloudflare)[](https://bsky.app/profile/cloudflare.social)[](https://www.threads.com/@cloudflare)[](https://www.tiktok.com/@cloudflare)
+
+
+
+
+## สมัครรับการแจ้งเตือนโพสต์ใหม่
+
+อีเมล
+
+เราจะไม่เปิดเผยอีเมลของคุณ
+
+สมัคร
+
+ขอบคุณที่สมัครรับข่าวสาร! โปรดตรวจสอบกล่องจดหมายเพื่อยืนยัน

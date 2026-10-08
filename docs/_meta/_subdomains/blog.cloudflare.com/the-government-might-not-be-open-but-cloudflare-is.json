@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-government-might-not-be-open-but-cloudflare-is/",
+  "file": "_subdomains/blog.cloudflare.com/the-government-might-not-be-open-but-cloudflare-is.md",
+  "title": "How I created the viral sensation: isthegovernmentopen.com | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:30.956932+00:00",
+  "html_len": 276643,
+  "md_len": 60676,
+  "depth": 0,
+  "phase": 2
+}

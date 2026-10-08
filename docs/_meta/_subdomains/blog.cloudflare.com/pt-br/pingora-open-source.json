@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/pingora-open-source/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/pingora-open-source.md",
+  "title": "Pingora com c\u00f3digo aberto: nossa estrutura Rust para criar servi\u00e7os de rede program\u00e1veis | Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:09.640327+00:00",
+  "html_len": 211450,
+  "md_len": 25594,
+  "depth": 0,
+  "phase": 2
+}

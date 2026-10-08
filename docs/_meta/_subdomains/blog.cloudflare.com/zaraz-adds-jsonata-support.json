@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zaraz-adds-jsonata-support/",
+  "file": "_subdomains/blog.cloudflare.com/zaraz-adds-jsonata-support.md",
+  "title": "Cloudflare Zaraz supports JSONata | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:22.034254+00:00",
+  "html_len": 284419,
+  "md_len": 59312,
+  "depth": 0,
+  "phase": 2
+}

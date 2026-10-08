@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/pii-and-selective-logging-controls-for-cloudflares-zero-trust-platform/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/pii-and-selective-logging-controls-for-cloudflares-zero-trust-platform.md",
+  "title": "Cloudflare\u306eZero Trust\u30d7\u30e9\u30c3\u30c8\u30d5\u30a9\u30fc\u30e0\u3067\u3001PII\uff08\u500b\u4eba\u8b58\u5225\u60c5\u5831\uff09\u3068\u9078\u629e\u7684\u30ed\u30b0\u306e\u5236\u5fa1 | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:18.826364+00:00",
+  "html_len": 206403,
+  "md_len": 29810,
+  "depth": 0,
+  "phase": 2
+}

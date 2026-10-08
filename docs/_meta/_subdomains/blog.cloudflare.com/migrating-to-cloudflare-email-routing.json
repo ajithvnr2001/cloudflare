@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/migrating-to-cloudflare-email-routing/",
+  "file": "_subdomains/blog.cloudflare.com/migrating-to-cloudflare-email-routing.md",
+  "title": "Migrating to Cloudflare Email Routing | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:41.513475+00:00",
+  "html_len": 286086,
+  "md_len": 60547,
+  "depth": 0,
+  "phase": 2
+}

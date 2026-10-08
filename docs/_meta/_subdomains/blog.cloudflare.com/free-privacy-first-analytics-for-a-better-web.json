@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/free-privacy-first-analytics-for-a-better-web/",
+  "file": "_subdomains/blog.cloudflare.com/free-privacy-first-analytics-for-a-better-web.md",
+  "title": "Free, privacy-first analytics for a better web | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:57.151494+00:00",
+  "html_len": 281003,
+  "md_len": 61970,
+  "depth": 0,
+  "phase": 2
+}

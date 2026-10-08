@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/scan-atlassian-casb/",
+  "file": "_subdomains/blog.cloudflare.com/scan-atlassian-casb.md",
+  "title": "Scan and secure Atlassian with Cloudflare CASB | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:43.171892+00:00",
+  "html_len": 287909,
+  "md_len": 59982,
+  "depth": 0,
+  "phase": 2
+}

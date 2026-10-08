@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/do-hackers-eat-turkey-and-other-thanksgiving-internet-trends/",
+  "file": "_subdomains/blog.cloudflare.com/do-hackers-eat-turkey-and-other-thanksgiving-internet-trends.md",
+  "title": "Do hackers eat turkey? And other Thanksgiving Internet trends | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:41.781035+00:00",
+  "html_len": 332742,
+  "md_len": 68747,
+  "depth": 0,
+  "phase": 2
+}

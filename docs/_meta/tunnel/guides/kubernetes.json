@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/tunnel/guides/kubernetes/",
+  "file": "tunnel/guides/kubernetes.md",
+  "title": "Kubernetes \u00b7 Cloudflare Docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:04.859069+00:00",
+  "html_len": 155873,
+  "md_len": 15758,
+  "depth": 0
+}

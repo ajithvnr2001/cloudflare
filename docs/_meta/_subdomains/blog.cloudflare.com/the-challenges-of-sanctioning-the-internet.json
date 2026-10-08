@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-challenges-of-sanctioning-the-internet/",
+  "file": "_subdomains/blog.cloudflare.com/the-challenges-of-sanctioning-the-internet.md",
+  "title": "The challenges of sanctioning the Internet | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:52.016502+00:00",
+  "html_len": 280374,
+  "md_len": 66284,
+  "depth": 0,
+  "phase": 2
+}

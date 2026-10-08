@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ocsp-stapling-how-cloudflare-just-made-ssl-30/",
+  "file": "_subdomains/blog.cloudflare.com/ocsp-stapling-how-cloudflare-just-made-ssl-30.md",
+  "title": "OCSP Stapling: How CloudFlare Just Made SSL 30% Faster | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:47.800566+00:00",
+  "html_len": 276041,
+  "md_len": 59668,
+  "depth": 0,
+  "phase": 2
+}

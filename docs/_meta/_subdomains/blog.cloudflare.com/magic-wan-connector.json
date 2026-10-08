@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/magic-wan-connector/",
+  "file": "_subdomains/blog.cloudflare.com/magic-wan-connector.md",
+  "title": "Announcing the Magic WAN Connector: the easiest on-ramp to your next generation network | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:07.202550+00:00",
+  "html_len": 293485,
+  "md_len": 65586,
+  "depth": 0,
+  "phase": 2
+}

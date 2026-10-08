@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/introducing-concurrent-streaming-acceleration/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/introducing-concurrent-streaming-acceleration.md",
+  "title": "Live-Videos sind gerade \u201eliver\u201c geworden: Einf\u00fchrung von Concurrent Streaming Acceleration | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:08.264544+00:00",
+  "html_len": 228991,
+  "md_len": 36182,
+  "depth": 0,
+  "phase": 2
+}

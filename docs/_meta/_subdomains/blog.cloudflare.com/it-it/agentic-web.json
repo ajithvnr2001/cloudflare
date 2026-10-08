@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/it-it/agentic-web/",
+  "file": "_subdomains/blog.cloudflare.com/it-it/agentic-web.md",
+  "title": "Internet ha un secondo pubblico | Il blog di Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:12.325651+00:00",
+  "html_len": 189770,
+  "md_len": 24062,
+  "depth": 0,
+  "phase": 2
+}

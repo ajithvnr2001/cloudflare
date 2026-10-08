@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/api/resources/alerting/subresources/available_alerts/methods/list/",
+  "file": "api/resources/alerting/subresources/available_alerts/methods/list.md",
+  "title": "Get Alert Types | Cloudflare API",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:18:34.105405+00:00",
+  "html_len": 1960424,
+  "md_len": 5082,
+  "depth": 0
+}

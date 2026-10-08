@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/starting-as-an-engineering-manager/",
+  "file": "_subdomains/blog.cloudflare.com/starting-as-an-engineering-manager.md",
+  "title": "Starting as an Engineering Manager | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:44.156672+00:00",
+  "html_len": 271660,
+  "md_len": 58365,
+  "depth": 0,
+  "phase": 2
+}

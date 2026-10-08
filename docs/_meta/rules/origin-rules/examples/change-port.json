@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/origin-rules/examples/change-port/",
+  "file": "rules/origin-rules/examples/change-port.md",
+  "title": "Change the destination port \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:50.056454+00:00",
+  "html_len": 146070,
+  "md_len": 4461,
+  "depth": 0
+}

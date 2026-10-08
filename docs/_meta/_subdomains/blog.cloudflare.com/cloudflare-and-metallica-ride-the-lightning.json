@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-and-metallica-ride-the-lightning/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-and-metallica-ride-the-lightning.md",
+  "title": "CloudFlare and Metallica 'Ride the Lightning' | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:25.329114+00:00",
+  "html_len": 267456,
+  "md_len": 55681,
+  "depth": 0,
+  "phase": 2
+}

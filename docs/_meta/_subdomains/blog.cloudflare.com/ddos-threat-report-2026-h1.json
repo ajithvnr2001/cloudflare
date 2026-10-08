@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ddos-threat-report-2026-h1/",
+  "file": "_subdomains/blog.cloudflare.com/ddos-threat-report-2026-h1.md",
+  "title": "Cloudflare DDoS Threat Report H1 2026: 1 Tbps attacks soar as DNS floods and geopolitical tensions drive a new wave | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:04.831688+00:00",
+  "html_len": 4012184,
+  "md_len": 3786148,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/cloudflare-computer/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/cloudflare-computer.md",
+  "title": "\u60a8\u7684\u667a\u80fd\u4f53\u9700\u8981\u8ba1\u7b97\u673a\uff0c\u800c\u4e0d\u662f\u5bb9\u5668\u2014\u2014\u9686\u91cd\u63a8\u51fa @cloudflare/computer | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:22.467629+00:00",
+  "html_len": 236901,
+  "md_len": 32711,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/it-it/agent-readiness/",
+  "file": "_subdomains/blog.cloudflare.com/it-it/agent-readiness.md",
+  "title": "Introduzione del punteggio di predisposizione agli agenti. Verifica se il tuo sito \u00e8 predisposto per gli agenti | Il blog di Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:08.227041+00:00",
+  "html_len": 256246,
+  "md_len": 45159,
+  "depth": 0,
+  "phase": 2
+}

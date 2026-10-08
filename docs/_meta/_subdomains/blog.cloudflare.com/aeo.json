@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/aeo/",
+  "file": "_subdomains/blog.cloudflare.com/aeo.md",
+  "title": "From ranking to recommended: get your site ready to thrive in the age of AI agents | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:09.582669+00:00",
+  "html_len": 304987,
+  "md_len": 67834,
+  "depth": 0,
+  "phase": 2
+}

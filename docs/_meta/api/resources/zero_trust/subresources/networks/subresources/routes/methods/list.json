@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/networks/subresources/routes/methods/list/",
+  "file": "api/resources/zero_trust/subresources/networks/subresources/routes/methods/list.md",
+  "title": "List tunnel routes | Cloudflare API",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:26:24.735775+00:00",
+  "html_len": 2029507,
+  "md_len": 7874,
+  "depth": 1
+}

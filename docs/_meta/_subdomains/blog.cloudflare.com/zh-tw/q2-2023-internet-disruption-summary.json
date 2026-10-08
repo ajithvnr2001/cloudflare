@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/q2-2023-internet-disruption-summary/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/q2-2023-internet-disruption-summary.md",
+  "title": "2023 \u5e74\u7b2c\u4e8c\u5b63\u5ea6\u7db2\u969b\u7db2\u8def\u4e2d\u65b7\u6458\u8981 | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:07.137036+00:00",
+  "html_len": 229322,
+  "md_len": 39071,
+  "depth": 0,
+  "phase": 2
+}

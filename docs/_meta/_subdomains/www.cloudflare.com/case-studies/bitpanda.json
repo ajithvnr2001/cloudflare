@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/bitpanda/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/bitpanda.md",
+  "title": "Bitpanda",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:20.818566+00:00",
+  "html_len": 210112,
+  "md_len": 8051,
+  "depth": 0,
+  "phase": 2
+}

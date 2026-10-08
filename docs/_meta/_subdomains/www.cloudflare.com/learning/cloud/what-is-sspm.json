@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/cloud/what-is-sspm/",
+  "file": "_subdomains/www.cloudflare.com/learning/cloud/what-is-sspm.md",
+  "title": "What is SaaS security posture management (SSPM)?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:05:14.539344+00:00",
+  "html_len": 212014,
+  "md_len": 12287,
+  "depth": 0,
+  "phase": 2
+}

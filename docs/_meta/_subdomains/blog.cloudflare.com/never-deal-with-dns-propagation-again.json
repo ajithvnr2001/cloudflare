@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/never-deal-with-dns-propagation-again/",
+  "file": "_subdomains/blog.cloudflare.com/never-deal-with-dns-propagation-again.md",
+  "title": "Never Deal With DNS Propagation Again | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:05.447468+00:00",
+  "html_len": 264195,
+  "md_len": 54590,
+  "depth": 0,
+  "phase": 2
+}

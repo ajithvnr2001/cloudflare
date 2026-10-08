@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/examples/return-json/",
+  "file": "workers/examples/return-json.md",
+  "title": "Return JSON \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:25.256026+00:00",
+  "html_len": 187181,
+  "md_len": 2519,
+  "depth": 0
+}

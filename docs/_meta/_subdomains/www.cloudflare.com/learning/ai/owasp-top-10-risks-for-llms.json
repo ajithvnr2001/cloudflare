@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/ai/owasp-top-10-risks-for-llms/",
+  "file": "_subdomains/www.cloudflare.com/learning/ai/owasp-top-10-risks-for-llms.md",
+  "title": "What are the OWASP Top 10 risks for LLMs?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:32.828616+00:00",
+  "html_len": 220628,
+  "md_len": 21082,
+  "depth": 0,
+  "phase": 2
+}

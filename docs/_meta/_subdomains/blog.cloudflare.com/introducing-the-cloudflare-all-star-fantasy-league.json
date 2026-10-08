@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-the-cloudflare-all-star-fantasy-league/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-the-cloudflare-all-star-fantasy-league.md",
+  "title": "Introducing: The Cloudflare All-Stars Fantasy League | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:28.959803+00:00",
+  "html_len": 295661,
+  "md_len": 61759,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-websockets-in-workers/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-websockets-in-workers.md",
+  "title": "Introducing WebSockets Support in Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:29.663142+00:00",
+  "html_len": 298421,
+  "md_len": 64588,
+  "depth": 0,
+  "phase": 2
+}

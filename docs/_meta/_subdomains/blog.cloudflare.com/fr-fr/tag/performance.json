@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/tag/performance/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/tag/performance.md",
+  "title": "Articles tagu\u00e9s \u00ab Performances \u00bb \u2014 Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:13:18.414473+00:00",
+  "html_len": 125575,
+  "md_len": 4427,
+  "depth": 1,
+  "phase": 2
+}

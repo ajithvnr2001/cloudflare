@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/partial-cloudflare-outage-on-october-25-2022/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/partial-cloudflare-outage-on-october-25-2022.md",
+  "title": "Panne partielle de Cloudflare le 25 octobre 2022 | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:18.257423+00:00",
+  "html_len": 221273,
+  "md_len": 32980,
+  "depth": 0,
+  "phase": 2
+}

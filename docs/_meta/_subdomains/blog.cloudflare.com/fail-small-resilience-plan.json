@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fail-small-resilience-plan/",
+  "file": "_subdomains/blog.cloudflare.com/fail-small-resilience-plan.md",
+  "title": "Code Orange: Fail Small \u2014 our resilience plan following recent incidents | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:42.305454+00:00",
+  "html_len": 286610,
+  "md_len": 66391,
+  "depth": 0,
+  "phase": 2
+}

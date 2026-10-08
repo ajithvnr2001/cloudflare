@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/reference-architecture/diagrams/sase/sase-clientless-access-private-dns/",
+  "file": "reference-architecture/diagrams/sase/sase-clientless-access-private-dns.md",
+  "title": "Access to private apps without having to deploy client agents \u00b7 Cloudflare Reference Architecture docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:42.196093+00:00",
+  "html_len": 116208,
+  "md_len": 6615,
+  "depth": 0
+}

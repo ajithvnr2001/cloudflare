@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/migrating-from-vpn-to-access/",
+  "file": "_subdomains/blog.cloudflare.com/migrating-from-vpn-to-access.md",
+  "title": "Migrating from VPN to Access | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:19.022147+00:00",
+  "html_len": 277176,
+  "md_len": 58877,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/api/resources/radar/subresources/http/methods/summary_v2/",
+  "file": "api/resources/radar/subresources/http/methods/summary_v2.md",
+  "title": "Get HTTP requests summary by dimension | Cloudflare API",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:27:16.614161+00:00",
+  "html_len": 2162609,
+  "md_len": 11704,
+  "depth": 1
+}

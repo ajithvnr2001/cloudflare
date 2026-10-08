@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/web-summit-2021-internet/",
+  "file": "_subdomains/blog.cloudflare.com/web-summit-2021-internet.md",
+  "title": "Heard in the halls of Web Summit 2021 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:49.487658+00:00",
+  "html_len": 295402,
+  "md_len": 69080,
+  "depth": 0,
+  "phase": 2
+}

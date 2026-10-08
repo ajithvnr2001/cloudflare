@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/cloud-connector/examples/route-images-to-s3/",
+  "file": "rules/cloud-connector/examples/route-images-to-s3.md",
+  "title": "Route /images to an S3 Bucket \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:46.106169+00:00",
+  "html_len": 134756,
+  "md_len": 4019,
+  "depth": 0
+}

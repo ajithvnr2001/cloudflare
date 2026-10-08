@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-outage-on-june-21-2022/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-outage-on-june-21-2022.md",
+  "title": "Cloudflare outage on June 21, 2022 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:16.475641+00:00",
+  "html_len": 305594,
+  "md_len": 66208,
+  "depth": 0,
+  "phase": 2
+}

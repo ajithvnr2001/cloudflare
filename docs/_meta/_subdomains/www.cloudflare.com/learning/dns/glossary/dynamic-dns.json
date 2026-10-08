@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/dns/glossary/dynamic-dns/",
+  "file": "_subdomains/www.cloudflare.com/learning/dns/glossary/dynamic-dns.md",
+  "title": "Dynamic DNS",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:12.957492+00:00",
+  "html_len": 208957,
+  "md_len": 11065,
+  "depth": 0,
+  "phase": 2
+}

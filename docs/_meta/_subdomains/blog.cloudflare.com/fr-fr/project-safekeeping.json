@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/project-safekeeping/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/project-safekeeping.md",
+  "title": "Projet Safekeeping : prot\u00e9ger les infrastructures les plus vuln\u00e9rables du monde gr\u00e2ce au Zero Trust | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:40:26.706340+00:00",
+  "html_len": 219557,
+  "md_len": 32818,
+  "depth": 0,
+  "phase": 2
+}

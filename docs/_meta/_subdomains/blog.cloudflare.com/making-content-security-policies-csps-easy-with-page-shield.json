@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/making-content-security-policies-csps-easy-with-page-shield/",
+  "file": "_subdomains/blog.cloudflare.com/making-content-security-policies-csps-easy-with-page-shield.md",
+  "title": "Making Content Security Policies (CSPs) easy with Page Shield | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:14.606107+00:00",
+  "html_len": 311020,
+  "md_len": 69911,
+  "depth": 0,
+  "phase": 2
+}

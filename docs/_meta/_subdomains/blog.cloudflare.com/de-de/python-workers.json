@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/python-workers/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/python-workers.md",
+  "title": "Python f\u00fcr Workers\u00a0\u2013 mit Pyodide und WebAssembly | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:25.911329+00:00",
+  "html_len": 272161,
+  "md_len": 63172,
+  "depth": 0,
+  "phase": 2
+}

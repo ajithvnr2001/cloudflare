@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/api-sequence-analytics/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/api-sequence-analytics.md",
+  "title": "\uc2dc\ud000\uc2a4 \ubd84\uc11d\uc744 \uc774\uc6a9\ud55c \uc790\ub3d9 API \ub0a8\uc6a9 \uac10\uc9c0 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:19.971629+00:00",
+  "html_len": 229719,
+  "md_len": 36699,
+  "depth": 0,
+  "phase": 2
+}

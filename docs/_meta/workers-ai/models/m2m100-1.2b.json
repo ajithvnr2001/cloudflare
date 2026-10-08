@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers-ai/models/m2m100-1.2b/",
+  "file": "workers-ai/models/m2m100-1.2b.md",
+  "title": "m2m100-1.2b (Meta) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:05.459572+00:00",
+  "html_len": 133506,
+  "md_len": 3991,
+  "depth": 0
+}

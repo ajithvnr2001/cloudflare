@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-ipfs-safe-mode/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-ipfs-safe-mode.md",
+  "title": "How Cloudflare provides tools to help keep IPFS users safe | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:02.302123+00:00",
+  "html_len": 297072,
+  "md_len": 64313,
+  "depth": 0,
+  "phase": 2
+}

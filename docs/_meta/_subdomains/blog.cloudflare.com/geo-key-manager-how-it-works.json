@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/geo-key-manager-how-it-works/",
+  "file": "_subdomains/blog.cloudflare.com/geo-key-manager-how-it-works.md",
+  "title": "Geo Key Manager: How It Works | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:02.019803+00:00",
+  "html_len": 314547,
+  "md_len": 73822,
+  "depth": 0,
+  "phase": 2
+}

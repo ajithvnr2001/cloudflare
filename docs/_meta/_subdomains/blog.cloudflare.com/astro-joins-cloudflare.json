@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/astro-joins-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/astro-joins-cloudflare.md",
+  "title": "Astro is joining Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:13.020152+00:00",
+  "html_len": 299183,
+  "md_len": 65497,
+  "depth": 0,
+  "phase": 2
+}

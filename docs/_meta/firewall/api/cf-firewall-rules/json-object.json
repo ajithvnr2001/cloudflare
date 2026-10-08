@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/firewall/api/cf-firewall-rules/json-object/",
+  "file": "firewall/api/cf-firewall-rules/json-object.md",
+  "title": "Firewall rules JSON object \u00b7 Cloudflare Firewall Rules (deprecated) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:11:16.443750+00:00",
+  "html_len": 109341,
+  "md_len": 4198,
+  "depth": 0
+}

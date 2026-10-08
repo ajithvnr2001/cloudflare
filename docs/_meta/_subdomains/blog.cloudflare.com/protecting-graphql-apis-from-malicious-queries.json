@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/protecting-graphql-apis-from-malicious-queries/",
+  "file": "_subdomains/blog.cloudflare.com/protecting-graphql-apis-from-malicious-queries.md",
+  "title": "Protecting GraphQL APIs from malicious queries | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:23:59.004254+00:00",
+  "html_len": 304867,
+  "md_len": 68041,
+  "depth": 1
+}

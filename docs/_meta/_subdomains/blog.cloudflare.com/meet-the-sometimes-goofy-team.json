@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/meet-the-sometimes-goofy-team/",
+  "file": "_subdomains/blog.cloudflare.com/meet-the-sometimes-goofy-team.md",
+  "title": "Meet the (Sometimes Goofy) CloudFlare Team | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:49.745300+00:00",
+  "html_len": 267903,
+  "md_len": 53945,
+  "depth": 0,
+  "phase": 2
+}

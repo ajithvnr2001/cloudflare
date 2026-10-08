@@ -1,0 +1,12 @@
+---
+url: https://developers.cloudflare.com/ai/models/pruna/p-video-replace/schema-input.json
+title: https://developers.cloudflare.com/ai/models/pruna/p-video-replace/schema-input.json
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:23:44.410577+00:00
+---
+
+# https://developers.cloudflare.com/ai/models/pruna/p-video-replace/schema-input.json
+
+> Source: https://developers.cloudflare.com/ai/models/pruna/p-video-replace/schema-input.json
+
+{"$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","properties":{"video":{"type":"string","description":"Source RGB video (.mp4) used as the motion and audio source. HTTP(S) URL or data URI."},"images":{"minItems":1,"maxItems":3,"type":"array","items":{"type":"string"},"description":"Identity reference image(s), 1 to 3, to place into the video. Each entry is an HTTP(S) URL or a data URI."},"turbo":{"default":false,"description":"Turbo mode: faster generation for slightly lower quality.","type":"boolean"},"resolution":{"default":"720p","description":"Target resolution.","type":"string","enum":["720p","1080p"]},"save_audio":{"default":true,"description":"Save the video with audio.","type":"boolean"},"ignore_audio":{"default":false,"description":"Ignore source audio during generation.","type":"boolean"},"target_fps":{"default":"original","description":"Target FPS for the working video.","type":"string","enum":["24","48","original"]},"instruction_prompt":{"default":"","description":"Further instruction on how to place people from the reference images into the scene.","type":"string"},"seed":{"description":"Random seed for reproducible generation.","type":"integer","minimum":-9007199254740991,"maximum":9007199254740991},"disable_safety_checker":{"default":false,"description":"Disable safety checker for generated videos.","type":"boolean"}},"required":["video","images","turbo","resolution","save_audio","ignore_audio","target_fps","instruction_prompt","disable_safety_checker"],"additionalProperties":{}}

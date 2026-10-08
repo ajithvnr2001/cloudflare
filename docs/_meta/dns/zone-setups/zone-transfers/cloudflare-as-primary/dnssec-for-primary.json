@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/dns/zone-setups/zone-transfers/cloudflare-as-primary/dnssec-for-primary/",
+  "file": "dns/zone-setups/zone-transfers/cloudflare-as-primary/dnssec-for-primary.md",
+  "title": "Set up multi-signer DNSSEC with outgoing zone transfers \u00b7 Cloudflare DNS docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:11:04.662173+00:00",
+  "html_len": 134958,
+  "md_len": 4846,
+  "depth": 0
+}

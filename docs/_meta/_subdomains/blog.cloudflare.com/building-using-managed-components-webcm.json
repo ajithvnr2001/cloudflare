@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/building-using-managed-components-webcm/",
+  "file": "_subdomains/blog.cloudflare.com/building-using-managed-components-webcm.md",
+  "title": "Building and using Managed Components with WebCM | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:11.981107+00:00",
+  "html_len": 307997,
+  "md_len": 70368,
+  "depth": 0,
+  "phase": 2
+}

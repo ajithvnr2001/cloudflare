@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/kubernetes/",
+  "file": "_subdomains/blog.cloudflare.com/tag/kubernetes.md",
+  "title": "Posts tagged \"Kubernetes\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:09:22.802363+00:00",
+  "html_len": 145521,
+  "md_len": 10566,
+  "depth": 1,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/magic-wan-firewall/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/magic-wan-firewall.md",
+  "title": "Magic WAN y Magic Firewall: conexi\u00f3n de red segura como servicio | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:30.687734+00:00",
+  "html_len": 226578,
+  "md_len": 40585,
+  "depth": 0,
+  "phase": 2
+}

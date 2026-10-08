@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/reducing-double-spend-latency-from-40-ms-to-less-than-1-ms-on-privacy-proxy/",
+  "file": "_subdomains/blog.cloudflare.com/reducing-double-spend-latency-from-40-ms-to-less-than-1-ms-on-privacy-proxy.md",
+  "title": "Reducing double spend latency from 40 ms to < 1 ms on privacy proxy | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:59.891266+00:00",
+  "html_len": 314826,
+  "md_len": 68870,
+  "depth": 0,
+  "phase": 2
+}

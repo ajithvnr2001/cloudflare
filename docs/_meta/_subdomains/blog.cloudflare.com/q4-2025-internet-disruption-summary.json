@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/q4-2025-internet-disruption-summary/",
+  "file": "_subdomains/blog.cloudflare.com/q4-2025-internet-disruption-summary.md",
+  "title": "Cable cuts, storms, and DNS: a look at Internet disruptions in Q4 2025 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:44.403165+00:00",
+  "html_len": 335221,
+  "md_len": 83954,
+  "depth": 0,
+  "phase": 2
+}

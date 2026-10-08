@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/neon-is-the-new-black/",
+  "file": "_subdomains/blog.cloudflare.com/neon-is-the-new-black.md",
+  "title": "NEON is the new black: fast JPEG optimization on ARM server | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:36.173099+00:00",
+  "html_len": 360380,
+  "md_len": 82170,
+  "depth": 0,
+  "phase": 2
+}

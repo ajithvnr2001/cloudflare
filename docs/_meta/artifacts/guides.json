@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/artifacts/guides/",
+  "file": "artifacts/guides.md",
+  "title": "Guides \u00b7 Cloudflare Artifacts docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:05:21.291117+00:00",
+  "html_len": 93874,
+  "md_len": 1401,
+  "depth": 0
+}

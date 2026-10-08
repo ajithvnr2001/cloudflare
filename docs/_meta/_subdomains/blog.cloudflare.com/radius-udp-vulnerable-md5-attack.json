@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/radius-udp-vulnerable-md5-attack/",
+  "file": "_subdomains/blog.cloudflare.com/radius-udp-vulnerable-md5-attack.md",
+  "title": "RADIUS/UDP vulnerable to improved MD5 collision attack | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:39.038872+00:00",
+  "html_len": 334120,
+  "md_len": 88747,
+  "depth": 0,
+  "phase": 2
+}

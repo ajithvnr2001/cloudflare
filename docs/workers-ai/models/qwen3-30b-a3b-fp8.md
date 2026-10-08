@@ -1,0 +1,334 @@
+---
+url: https://developers.cloudflare.com/workers-ai/models/qwen3-30b-a3b-fp8/
+title: qwen3-30b-a3b-fp8 (Qwen) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:17:06.106171+00:00
+---
+
+# qwen3-30b-a3b-fp8 (Qwen) · Cloudflare AI docs · Cloudflare Workers AI docs
+
+> Source: https://developers.cloudflare.com/workers-ai/models/qwen3-30b-a3b-fp8/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Workers AI](https://developers.cloudflare.com/workers-ai/)
+  3. /Models
+
+
+
+![Qwen logo](https://developers.cloudflare.com/_astro/qwen.ByCZjtXU.svg)
+
+# qwen3-30b-a3b-fp8
+
+Text Generation • Qwen
+
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers-ai/models/qwen3-30b-a3b-fp8/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+`@cf/qwen/qwen3-30b-a3b-fp8`
+
+  * Cloudflare-hosted
+  * Batch
+  * Function calling
+  * Reasoning
+
+
+
+Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support.
+
+Model Info|   
+---|---  
+Context Window[ ↗](https://developers.cloudflare.com/workers-ai/platform/glossary/)| 32,768 tokens  
+Function calling [ ↗](https://developers.cloudflare.com/workers-ai/function-calling/)| Yes  
+Reasoning| Yes  
+Batch| Yes  
+Unit Pricing| $0.0509 per M input tokens, $0.335 per M output tokens  
+  
+## Playground
+
+Try out this model with Workers AI LLM Playground. It does not require any setup or authentication and is an instant way to preview and test a model directly in the browser.
+
+[ Launch the LLM Playground ](https://playground.ai.cloudflare.com/?model=@cf/qwen/qwen3-30b-a3b-fp8)
+
+## Usage
+    
+    
+    export interface Env {
+      AI: Ai;
+    }
+    
+    export default {
+      async fetch(request, env): Promise<Response> {
+    
+        const messages = [
+          { role: "system", content: "You are a friendly assistant" },
+          {
+            role: "user",
+            content: "What is the origin of the phrase Hello, World",
+          },
+        ];
+    
+        const stream = await env.AI.run("@cf/qwen/qwen3-30b-a3b-fp8", {
+          messages,
+          stream: true,
+        });
+    
+        return new Response(stream, {
+          headers: { "content-type": "text/event-stream" },
+        });
+      },
+    } satisfies ExportedHandler<Env>;
+    
+    
+    export interface Env {
+      AI: Ai;
+    }
+    
+    export default {
+      async fetch(request, env): Promise<Response> {
+    
+        const messages = [
+          { role: "system", content: "You are a friendly assistant" },
+          {
+            role: "user",
+            content: "What is the origin of the phrase Hello, World",
+          },
+        ];
+        const response = await env.AI.run("@cf/qwen/qwen3-30b-a3b-fp8", { messages });
+    
+        return Response.json(response);
+      },
+    } satisfies ExportedHandler<Env>;
+    
+    
+    import os
+    import requests
+    
+    ACCOUNT_ID = "your-account-id"
+    AUTH_TOKEN = os.environ.get("CLOUDFLARE_AUTH_TOKEN")
+    
+    prompt = "Tell me all about PEP-8"
+    response = requests.post(
+      f"https://api.cloudflare.com/client/v4/accounts/{ACCOUNT_ID}/ai/run/@cf/qwen/qwen3-30b-a3b-fp8",
+        headers={"Authorization": f"Bearer {AUTH_TOKEN}"},
+        json={
+          "messages": [
+            {"role": "system", "content": "You are a friendly assistant"},
+            {"role": "user", "content": prompt}
+          ]
+        }
+    )
+    result = response.json()
+    print(result)
+    
+    
+    curl https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/run/@cf/qwen/qwen3-30b-a3b-fp8 \
+      -X POST \
+      -H "Authorization: Bearer $CLOUDFLARE_AUTH_TOKEN" \
+      -d '{ "messages": [{ "role": "system", "content": "You are a friendly assistant" }, { "role": "user", "content": "Why is pizza so good" }]}'
+
+OpenAI compatible endpoints
+
+Workers AI also supports OpenAI compatible API endpoints for `/v1/chat/completions` and `/v1/embeddings`. For more details, refer to [Configurations](https://developers.cloudflare.com/workers-ai/configuration/open-ai-compatibility/) . 
+
+## Parameters
+
+Synchronous — Send a request and receive a complete response
+
+prompt
+
+`string`requiredminLength: 1The input text prompt for the model to generate a response.
+
+lora
+
+`string`Name of the LoRA (Low-Rank Adaptation) model to fine-tune the base model.
+
+▶response_format{}
+
+`object`
+
+raw
+
+`boolean`default: falseIf true, a chat template is not applied and you must adhere to the specific model's expected formatting.
+
+stream
+
+`boolean`default: falseIf true, the response will be streamed back incrementally using SSE, Server Sent Events.
+
+max_tokens
+
+`integer`default: 2000The maximum number of tokens to generate in the response.
+
+temperature
+
+`number`default: 0.6minimum: 0maximum: 5Controls the randomness of the output; higher values produce more random results.
+
+top_p
+
+`number`minimum: 0.001maximum: 1Adjusts the creativity of the AI's responses by controlling how many possible words it considers. Lower values make outputs more predictable; higher values allow for more varied and creative responses.
+
+top_k
+
+`integer`minimum: 1maximum: 50Limits the AI to choose from the top 'k' most probable words. Lower values make responses more focused; higher values introduce more variety and potential surprises.
+
+seed
+
+`integer`minimum: 1maximum: 9999999999Random seed for reproducibility of the generation.
+
+repetition_penalty
+
+`number`minimum: 0maximum: 2Penalty for repeated tokens; higher values discourage repetition.
+
+frequency_penalty
+
+`number`minimum: -2maximum: 2Decreases the likelihood of the model repeating the same lines verbatim.
+
+presence_penalty
+
+`number`minimum: -2maximum: 2Increases the likelihood of the model introducing new topics.
+
+id
+
+`string`Unique identifier for the completion
+
+object
+
+`string`enum: chat.completionObject type identifier
+
+created
+
+`number`Unix timestamp of when the completion was created
+
+model
+
+`string`Model used for the completion
+
+▶choices[]
+
+`array`List of completion choices
+
+▶usage{}
+
+`object`Usage statistics for the inference request
+
+prompt_logprobs{}
+
+`object`Log probabilities for the prompt (if requested)
+
+Streaming — Send a request with `stream: true` and receive server-sent events
+
+prompt
+
+`string`requiredminLength: 1The input text prompt for the model to generate a response.
+
+lora
+
+`string`Name of the LoRA (Low-Rank Adaptation) model to fine-tune the base model.
+
+▶response_format{}
+
+`object`
+
+raw
+
+`boolean`default: falseIf true, a chat template is not applied and you must adhere to the specific model's expected formatting.
+
+stream
+
+`boolean`default: falseIf true, the response will be streamed back incrementally using SSE, Server Sent Events.
+
+max_tokens
+
+`integer`default: 2000The maximum number of tokens to generate in the response.
+
+temperature
+
+`number`default: 0.6minimum: 0maximum: 5Controls the randomness of the output; higher values produce more random results.
+
+top_p
+
+`number`minimum: 0.001maximum: 1Adjusts the creativity of the AI's responses by controlling how many possible words it considers. Lower values make outputs more predictable; higher values allow for more varied and creative responses.
+
+top_k
+
+`integer`minimum: 1maximum: 50Limits the AI to choose from the top 'k' most probable words. Lower values make responses more focused; higher values introduce more variety and potential surprises.
+
+seed
+
+`integer`minimum: 1maximum: 9999999999Random seed for reproducibility of the generation.
+
+repetition_penalty
+
+`number`minimum: 0maximum: 2Penalty for repeated tokens; higher values discourage repetition.
+
+frequency_penalty
+
+`number`minimum: -2maximum: 2Decreases the likelihood of the model repeating the same lines verbatim.
+
+presence_penalty
+
+`number`minimum: -2maximum: 2Increases the likelihood of the model introducing new topics.
+
+type
+
+`string`
+
+contentType
+
+`text/event-stream`
+
+format
+
+`binary`
+
+Batch — Send multiple requests in a single API call
+
+▶requests[]
+
+`array`required
+
+id
+
+`string`Unique identifier for the completion
+
+object
+
+`string`enum: chat.completionObject type identifier
+
+created
+
+`number`Unix timestamp of when the completion was created
+
+model
+
+`string`Model used for the completion
+
+▶choices[]
+
+`array`List of completion choices
+
+▶usage{}
+
+`object`Usage statistics for the inference request
+
+prompt_logprobs{}
+
+`object`Log probabilities for the prompt (if requested)
+
+## API Schemas (Raw)
+
+SynchronousInput[](https://developers.cloudflare.com/workers-ai/models/qwen3-30b-a3b-fp8/sync-input.json "Open")[](https://developers.cloudflare.com/workers-ai/models/qwen3-30b-a3b-fp8/sync-input.json "Download")
+
+SynchronousOutput[](https://developers.cloudflare.com/workers-ai/models/qwen3-30b-a3b-fp8/sync-output.json "Open")[](https://developers.cloudflare.com/workers-ai/models/qwen3-30b-a3b-fp8/sync-output.json "Download")
+
+StreamingInput[](https://developers.cloudflare.com/workers-ai/models/qwen3-30b-a3b-fp8/streaming-input.json "Open")[](https://developers.cloudflare.com/workers-ai/models/qwen3-30b-a3b-fp8/streaming-input.json "Download")
+
+StreamingOutput[](https://developers.cloudflare.com/workers-ai/models/qwen3-30b-a3b-fp8/streaming-output.json "Open")[](https://developers.cloudflare.com/workers-ai/models/qwen3-30b-a3b-fp8/streaming-output.json "Download")
+
+BatchInput[](https://developers.cloudflare.com/workers-ai/models/qwen3-30b-a3b-fp8/batch-input.json "Open")[](https://developers.cloudflare.com/workers-ai/models/qwen3-30b-a3b-fp8/batch-input.json "Download")
+
+BatchOutput[](https://developers.cloudflare.com/workers-ai/models/qwen3-30b-a3b-fp8/batch-output.json "Open")[](https://developers.cloudflare.com/workers-ai/models/qwen3-30b-a3b-fp8/batch-output.json "Download")
+
+Was this helpful?
+
+YesNo
+
+[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

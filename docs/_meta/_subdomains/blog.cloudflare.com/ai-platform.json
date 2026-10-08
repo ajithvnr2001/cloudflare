@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ai-platform/",
+  "file": "_subdomains/blog.cloudflare.com/ai-platform.md",
+  "title": "Cloudflare\u2019s AI Platform: an inference layer designed for agents | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:42.083875+00:00",
+  "html_len": 304855,
+  "md_len": 65676,
+  "depth": 0,
+  "phase": 2
+}

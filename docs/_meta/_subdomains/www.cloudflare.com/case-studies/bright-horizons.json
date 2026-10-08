@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/bright-horizons/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/bright-horizons.md",
+  "title": "Bright Horizons & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:22.203831+00:00",
+  "html_len": 204813,
+  "md_len": 6623,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/technical-details-of-why-cloudflare-chose-amd-epyc-for-gen-x-servers/",
+  "file": "_subdomains/blog.cloudflare.com/technical-details-of-why-cloudflare-chose-amd-epyc-for-gen-x-servers.md",
+  "title": "Why Cloudflare Chose AMD EPYC for Gen X Servers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:24.339249+00:00",
+  "html_len": 277589,
+  "md_len": 58393,
+  "depth": 0,
+  "phase": 2
+}

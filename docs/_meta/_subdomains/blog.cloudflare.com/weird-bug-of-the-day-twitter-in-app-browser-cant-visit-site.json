@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/weird-bug-of-the-day-twitter-in-app-browser-cant-visit-site/",
+  "file": "_subdomains/blog.cloudflare.com/weird-bug-of-the-day-twitter-in-app-browser-cant-visit-site.md",
+  "title": "Weird bug of the day: Twitter in-app browser can't visit site | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:44.353714+00:00",
+  "html_len": 276449,
+  "md_len": 56998,
+  "depth": 0,
+  "phase": 2
+}

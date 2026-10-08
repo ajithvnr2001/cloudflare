@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/reference-architecture/diagrams/ai/ai-asset-creation/",
+  "file": "reference-architecture/diagrams/ai/ai-asset-creation.md",
+  "title": "Content-based asset creation \u00b7 Cloudflare Reference Architecture docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:40.442588+00:00",
+  "html_len": 114682,
+  "md_len": 4203,
+  "depth": 0
+}

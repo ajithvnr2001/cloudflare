@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-folly-of-charging-by-bandwidth/",
+  "file": "_subdomains/blog.cloudflare.com/the-folly-of-charging-by-bandwidth.md",
+  "title": "The Folly of Charging by Bandwidth | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:23.308682+00:00",
+  "html_len": 268013,
+  "md_len": 56375,
+  "depth": 0,
+  "phase": 2
+}

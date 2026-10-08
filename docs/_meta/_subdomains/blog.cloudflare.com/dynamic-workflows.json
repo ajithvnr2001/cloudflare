@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/dynamic-workflows/",
+  "file": "_subdomains/blog.cloudflare.com/dynamic-workflows.md",
+  "title": "Introducing Dynamic Workflows: durable execution that follows the tenant | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:39.318220+00:00",
+  "html_len": 325367,
+  "md_len": 75414,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/more-consistent-luajit-performance/",
+  "file": "_subdomains/blog.cloudflare.com/more-consistent-luajit-performance.md",
+  "title": "More consistent LuaJIT performance | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:06.144203+00:00",
+  "html_len": 348970,
+  "md_len": 77975,
+  "depth": 0,
+  "phase": 2
+}

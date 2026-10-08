@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/products/workflows/",
+  "file": "_subdomains/www.cloudflare.com/products/workflows.md",
+  "title": "Cloudflare Workflows - Durable Execution Engine",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:07.351277+00:00",
+  "html_len": 366666,
+  "md_len": 12449,
+  "depth": 0,
+  "phase": 2
+}

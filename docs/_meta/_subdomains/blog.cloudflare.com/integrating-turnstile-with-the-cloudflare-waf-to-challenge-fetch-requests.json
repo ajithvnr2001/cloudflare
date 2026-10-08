@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/integrating-turnstile-with-the-cloudflare-waf-to-challenge-fetch-requests/",
+  "file": "_subdomains/blog.cloudflare.com/integrating-turnstile-with-the-cloudflare-waf-to-challenge-fetch-requests.md",
+  "title": "Integrating Turnstile with the Cloudflare WAF to challenge fetch requests | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:04.680823+00:00",
+  "html_len": 333780,
+  "md_len": 71024,
+  "depth": 0,
+  "phase": 2
+}

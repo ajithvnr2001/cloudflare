@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/asynchronous-htmlrewriter-for-cloudflare-workers/",
+  "file": "_subdomains/blog.cloudflare.com/asynchronous-htmlrewriter-for-cloudflare-workers.md",
+  "title": "Asynchronous HTMLRewriter for Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:01.365073+00:00",
+  "html_len": 292973,
+  "md_len": 60557,
+  "depth": 0,
+  "phase": 2
+}

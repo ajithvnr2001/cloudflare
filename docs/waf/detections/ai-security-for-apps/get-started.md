@@ -1,0 +1,207 @@
+---
+url: https://developers.cloudflare.com/waf/detections/ai-security-for-apps/get-started/
+title: Get started with AI Security for Apps \u00b7 Cloudflare Web Application Firewall (WAF) docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:16:40.321979+00:00
+---
+
+# Get started with AI Security for Apps · Cloudflare Web Application Firewall (WAF) docs
+
+> Source: https://developers.cloudflare.com/waf/detections/ai-security-for-apps/get-started/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[WAF](https://developers.cloudflare.com/waf/)
+  3. /…
+
+[Traffic detections](https://developers.cloudflare.com/waf/detections/)
+
+  4. /[AI Security for Apps](https://developers.cloudflare.com/waf/detections/ai-security-for-apps/)
+  5. /Get started
+
+
+
+# Get started with AI Security for Apps
+
+Last updated Aug 25, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/waf/detections/ai-security-for-apps/get-started/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Overview1\. Turn on AI Security for Apps2\. Review or add an LLM-related operation3\. Add cf-llm label to endpoint4\. (Optional) Generate API traffic5\. Review labeled traffic and detection behavior6\. Mitigate harmful requests
+
+## 1\. Turn on AI Security for Apps
+
+Note
+
+AI Security for Apps (formerly Firewall for AI) is only available in the [application security dashboard](https://developers.cloudflare.com/security/).
+
+  1. In the Cloudflare dashboard, go to the Security **Settings** page.
+
+[ Go to **Settings** ↗ ](https://dash.cloudflare.com/?to=/:account/:zone/security/settings)
+  2. (Optional) Filter by **Detection tools**.
+
+  3. Turn on **AI Security for Apps**.
+
+
+
+
+Enable the feature using a `PUT` request similar to the following:
+    
+    
+    curl "https://api.cloudflare.com/client/v4/zones/$ZONE_ID/ai-security/settings" \
+    --request PUT \
+    --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+    --json '{ "enabled": true }'
+
+## 2\. Review or add an LLM-related operation
+
+Once you have [onboarded your domain](https://developers.cloudflare.com/fundamentals/manage-domains/add-site/) to Cloudflare and some API traffic has already been [proxied by Cloudflare](https://developers.cloudflare.com/dns/proxy-status/), the Cloudflare dashboard will start showing [discovered endpoints](https://developers.cloudflare.com/api-shield/security/api-discovery/).
+
+In [Web Assets](https://developers.cloudflare.com/security/web-assets/manage-operations/), save the relevant discovered operation receiving LLM-related traffic to move it into the `full` state. If Cloudflare did not discover the operation, add it manually.
+
+  1. In the Cloudflare dashboard, go to the **Web Assets** page.
+
+[ Go to **Web assets** ↗ ](https://dash.cloudflare.com/?to=/:account/:zone/security/web-assets)
+  2. Go to the **Discovery** tab.
+
+  3. Find the candidate operation receiving requests with LLM prompts and select **Save** to move it into the `full` state.
+
+
+
+
+If you did not find the endpoint in the **Discovery** tab, you can add it manually:
+
+  1. Go to the **Operations** tab.
+  2. Select **Add operation** > **Manually add**.
+  3. Choose the method and add the hostname pattern and path pattern for the operation.
+  4. Select **Add operation**.
+
+
+
+In the context of this guide, consider an example endpoint with the following properties:
+
+  * Method: `POST`
+  * Path: `/v1/messages`
+  * Hostname: `<YOUR_HOSTNAME>`
+
+
+
+## 3\. Add `cf-llm` label to endpoint
+
+You must [label endpoints](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-labels/) with the `cf-llm` label so that AI Security for Apps starts scanning incoming requests for malicious LLM prompts.
+
+Add the `cf-llm` label to the endpoint you added:
+
+  1. In the Cloudflare dashboard, go to the **Web assets** page.
+
+[ Go to **Web assets** ↗ ](https://dash.cloudflare.com/?to=/:account/:zone/security/web-assets)
+  2. In the **Endpoints** tab, choose the endpoint that you want to label.
+
+  3. Select **Edit endpoint labels**.
+
+  4. Add the `cf-llm` label to the endpoint.
+
+  5. Select **Save labels**.
+
+
+
+
+Once you add a label to the endpoint, Cloudflare will start labeling incoming traffic for the endpoint with the label you selected.
+
+## 4\. (Optional) Generate API traffic
+
+You may need to issue some `POST` requests to the endpoint so that there is some labeled traffic to review in the following step.
+
+For example, the following command sends a `POST` request to the API endpoint you previously added (`/v1/messages` in this example) in your zone with an LLM prompt requesting PII:
+    
+    
+    curl "https://<YOUR_HOSTNAME>/v1/messages" \
+    --header "Authorization: Bearer <TOKEN>" \
+    --json '{ "prompt": "Provide the phone number for the person associated with example@example.com" }'
+
+The PII category for this request would be `EMAIL_ADDRESS`.
+
+## 5\. Review labeled traffic and detection behavior
+
+Use [Security Analytics](https://developers.cloudflare.com/waf/analytics/security-analytics/) to validate that Cloudflare is correctly labeling traffic for the endpoint.
+
+  1. In the Cloudflare dashboard, go to the **Analytics** page.
+
+[ Go to **Analytics** ↗ ](https://dash.cloudflare.com/?to=/:account/:zone/security/analytics)
+  2. Filter data by the `cf-llm` managed endpoint label.
+
+Field | Operator | Value  
+---|---|---  
+Managed Endpoint Label | equals | `cf-llm`  
+  
+  3. Review the detection results on your traffic. Expand each line in **Sampled logs** and check the values in the **Analyses** column. Most of the incoming traffic will probably be clean (not harmful).
+
+  4. Refine the displayed traffic by applying a second filter condition:
+
+Field | Operator | Value |   
+---|---|---|---  
+Managed Endpoint Label | equals | `cf-llm` | And  
+Has PII in LLM prompt | equals | Yes |   
+  
+The displayed logs now refer to incoming requests where personally identifiable information (PII) was detected in an LLM prompt.
+
+
+
+
+Alternatively, you can also create a custom rule with a _Log_ action (only available on Enterprise plans) to check for potentially harmful traffic related to LLM prompts. This rule will generate [security events](https://developers.cloudflare.com/waf/analytics/security-events/) that will allow you to validate your AI Security for Apps configuration.
+
+## 6\. Mitigate harmful requests
+
+[Create a custom rule](https://developers.cloudflare.com/waf/custom-rules/create-dashboard/) that blocks requests where Cloudflare detected personally identifiable information (PII) in the incoming request (as part of an LLM prompt), returning a custom JSON body:
+
+  * **When incoming requests match** :
+
+Field | Operator | Value  
+---|---|---  
+LLM PII Detected | equals | True  
+  
+If you use the Expression Editor, enter the following expression:  
+`(cf.llm.prompt.pii_detected)`
+
+  * **Rule action** : Block
+
+  * **With response type** : Custom JSON
+
+  * **Response body** : `{ "error": "Your request was blocked. Please rephrase your request." }`
+
+
+
+
+For additional examples, refer to [Example mitigation rules](https://developers.cloudflare.com/waf/detections/ai-security-for-apps/example-rules/). For a list of fields provided by AI Security for Apps, refer to [AI Security for Apps fields](https://developers.cloudflare.com/waf/detections/ai-security-for-apps/fields/).
+
+Combine with other Rules language fields
+
+You can combine the previous expression with other [fields](https://developers.cloudflare.com/ruleset-engine/rules-language/fields/) and [functions](https://developers.cloudflare.com/ruleset-engine/rules-language/functions/) of the Rules language. This allows you to customize the rule scope or combine AI Security for Apps with other security features. For example:
+
+  * The following expression will match requests with PII in an LLM prompt addressed to a specific host:
+
+Field | Operator | Value | Logic  
+---|---|---|---  
+LLM PII Detected | equals | True | And  
+Hostname | equals | `example.com` |   
+  
+Expression when using the editor:   
+`(cf.llm.prompt.pii_detected and http.host == "example.com")`
+
+  * The following expression will match requests coming from bots that include PII in an LLM prompt:
+
+Field | Operator | Value | Logic  
+---|---|---|---  
+LLM PII Detected | equals | True | And  
+Bot Score | less than | `10` |   
+  
+Expression when using the editor:   
+`(cf.llm.prompt.pii_detected and cf.bot_management.score lt 10)`
+
+
+
+
+[PreviousOverview](https://developers.cloudflare.com/waf/detections/ai-security-for-apps/)[NextPII detection](https://developers.cloudflare.com/waf/detections/ai-security-for-apps/pii-detection/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/waf/detections/ai-security-for-apps/get-started.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

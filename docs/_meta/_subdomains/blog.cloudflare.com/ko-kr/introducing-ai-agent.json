@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/introducing-ai-agent/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/introducing-ai-agent.md",
+  "title": "\ubcf5\uc7a1\ud55c \uad6c\uc131\uc744 \ub2e8\uc21c\ud654\ud558\ub294 Cloudflare\uc758 AI \uc5d0\uc774\uc804\ud2b8, Cloudy \uc18c\uac1c | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:09.878126+00:00",
+  "html_len": 227202,
+  "md_len": 36054,
+  "depth": 0,
+  "phase": 2
+}

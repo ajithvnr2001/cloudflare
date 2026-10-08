@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/permissions-best-practices/",
+  "file": "_subdomains/blog.cloudflare.com/permissions-best-practices.md",
+  "title": "Cloudflare account permissions, how to use them, and best practices | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:13.144907+00:00",
+  "html_len": 290356,
+  "md_len": 63546,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/sudan-internet-back-25-days/",
+  "file": "_subdomains/blog.cloudflare.com/sudan-internet-back-25-days.md",
+  "title": "Sudan was cut off from the Internet for 25 days | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:51.181989+00:00",
+  "html_len": 290966,
+  "md_len": 60295,
+  "depth": 0,
+  "phase": 2
+}

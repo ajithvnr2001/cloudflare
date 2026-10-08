@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/how-we-built-spectrum/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/how-we-built-spectrum.md",
+  "title": "\ub9ac\ub205\uc2a4 \ubc29\ud654\ubcbd\uc744 \ub0a8\uc6a9\ud558\uae30: Spectrum \uc744 \ub9cc\ub4e4 \uc218 \uc788\uc5c8\ub358 \u200b\ud574\ud0b9\u200b | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:24.629279+00:00",
+  "html_len": 244569,
+  "md_len": 36942,
+  "depth": 0,
+  "phase": 2
+}

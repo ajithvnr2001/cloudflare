@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/extract-audio-from-your-videos-with-cloudflare-stream/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/extract-audio-from-your-videos-with-cloudflare-stream.md",
+  "title": "Cloudflare Stream\uc73c\ub85c \ub3d9\uc601\uc0c1\uc5d0\uc11c \uc624\ub514\uc624 \ucd94\ucd9c | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:15.796611+00:00",
+  "html_len": 221758,
+  "md_len": 34041,
+  "depth": 0,
+  "phase": 2
+}

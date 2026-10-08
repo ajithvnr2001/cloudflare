@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ebpf-cant-count/",
+  "file": "_subdomains/blog.cloudflare.com/ebpf-cant-count.md",
+  "title": "eBPF can't count?! | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:20.908815+00:00",
+  "html_len": 342655,
+  "md_len": 72912,
+  "depth": 0,
+  "phase": 2
+}

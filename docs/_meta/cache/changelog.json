@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/cache/changelog/",
+  "file": "cache/changelog.md",
+  "title": "Changelog \u00b7 Cloudflare Cache (CDN) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:05:41.105508+00:00",
+  "html_len": 225683,
+  "md_len": 45691,
+  "depth": 0
+}

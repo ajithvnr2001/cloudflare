@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/products/cdn/",
+  "file": "_subdomains/www.cloudflare.com/products/cdn.md",
+  "title": "Cloudflare CDN - Global Content Delivery Network",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:09.805298+00:00",
+  "html_len": 288325,
+  "md_len": 7649,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/nl-nl/workers-virtual-private-cloud/",
+  "file": "_subdomains/blog.cloudflare.com/nl-nl/workers-virtual-private-cloud.md",
+  "title": "Een wereldwijde virtuele private cloud voor het bouwen van beveiligde cross-cloud-apps op Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:52.967529+00:00",
+  "html_len": 219080,
+  "md_len": 32771,
+  "depth": 0,
+  "phase": 2
+}

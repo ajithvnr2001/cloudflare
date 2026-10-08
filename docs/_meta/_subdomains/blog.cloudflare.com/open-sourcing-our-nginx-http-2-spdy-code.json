@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/open-sourcing-our-nginx-http-2-spdy-code/",
+  "file": "_subdomains/blog.cloudflare.com/open-sourcing-our-nginx-http-2-spdy-code.md",
+  "title": "Open sourcing our NGINX HTTP/2 + SPDY code | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:38.248471+00:00",
+  "html_len": 274854,
+  "md_len": 56888,
+  "depth": 0,
+  "phase": 2
+}

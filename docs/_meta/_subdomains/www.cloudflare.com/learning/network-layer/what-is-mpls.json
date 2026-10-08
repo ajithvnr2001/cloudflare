@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/network-layer/what-is-mpls/",
+  "file": "_subdomains/www.cloudflare.com/learning/network-layer/what-is-mpls.md",
+  "title": "What is MPLS (multiprotocol label switching)?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:05:06.656195+00:00",
+  "html_len": 208326,
+  "md_len": 14169,
+  "depth": 0,
+  "phase": 2
+}

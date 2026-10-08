@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/waf-mitigations-spring4shell/",
+  "file": "_subdomains/blog.cloudflare.com/waf-mitigations-spring4shell.md",
+  "title": "WAF mitigations for Spring4Shell | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:31.797569+00:00",
+  "html_len": 277316,
+  "md_len": 57340,
+  "depth": 0,
+  "phase": 2
+}

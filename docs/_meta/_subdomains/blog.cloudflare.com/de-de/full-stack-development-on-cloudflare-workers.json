@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/full-stack-development-on-cloudflare-workers/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/full-stack-development-on-cloudflare-workers.md",
+  "title": "Ihr Frontend, Backend und Ihre Datenbank \u2013 jetzt in einem Cloudflare Worker | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:59.430498+00:00",
+  "html_len": 269605,
+  "md_len": 54731,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/registrar/faq/",
+  "file": "registrar/faq.md",
+  "title": "FAQ \u00b7 Cloudflare Registrar docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:44.050968+00:00",
+  "html_len": 181405,
+  "md_len": 25001,
+  "depth": 0
+}

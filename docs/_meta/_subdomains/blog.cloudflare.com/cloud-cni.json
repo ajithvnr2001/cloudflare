@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloud-cni/",
+  "file": "_subdomains/blog.cloudflare.com/cloud-cni.md",
+  "title": "Cloud CNI privately connects your clouds to Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:04.186382+00:00",
+  "html_len": 301546,
+  "md_len": 68843,
+  "depth": 0,
+  "phase": 2
+}

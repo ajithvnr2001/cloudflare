@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/cloudflare-one/tutorials/access-workers/",
+  "file": "cloudflare-one/tutorials/access-workers.md",
+  "title": "Create custom headers for Cloudflare Access-protected origins with Workers \u00b7 Cloudflare One docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:10:20.183480+00:00",
+  "html_len": 282837,
+  "md_len": 3966,
+  "depth": 0
+}

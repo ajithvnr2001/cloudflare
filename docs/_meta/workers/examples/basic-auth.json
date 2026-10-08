@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/examples/basic-auth/",
+  "file": "workers/examples/basic-auth.md",
+  "title": "HTTP Basic Authentication \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:20.315097+00:00",
+  "html_len": 238594,
+  "md_len": 13410,
+  "depth": 0
+}

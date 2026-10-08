@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tunnel-hostname-routing/",
+  "file": "_subdomains/blog.cloudflare.com/tunnel-hostname-routing.md",
+  "title": "Connect and secure any private or public app by hostname, not IP \u2014 free for everyone in Cloudflare One | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:03.908926+00:00",
+  "html_len": 334166,
+  "md_len": 84209,
+  "depth": 0,
+  "phase": 2
+}

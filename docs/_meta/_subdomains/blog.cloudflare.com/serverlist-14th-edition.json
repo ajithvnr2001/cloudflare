@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/serverlist-14th-edition/",
+  "file": "_subdomains/blog.cloudflare.com/serverlist-14th-edition.md",
+  "title": "The Serverlist: Built with Workers, Single-Tenant Architecture, and more! | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:18.520080+00:00",
+  "html_len": 264774,
+  "md_len": 53480,
+  "depth": 0,
+  "phase": 2
+}

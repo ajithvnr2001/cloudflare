@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/access-external-validation-rules/",
+  "file": "_subdomains/blog.cloudflare.com/access-external-validation-rules.md",
+  "title": "Infinitely extensible Access policies | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:57.796386+00:00",
+  "html_len": 282726,
+  "md_len": 58919,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://radar.cloudflare.com/cloud-observatory/amazon/",
+  "file": "_subdomains/radar.cloudflare.com/cloud-observatory/amazon.md",
+  "title": "Cloud Observatory for Amazon Web Services | Cloudflare Radar",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:27:02.291432+00:00",
+  "html_len": 192837,
+  "md_len": 2506,
+  "depth": 1
+}

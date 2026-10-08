@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/replace-your-hardware-firewalls-with-cloudflare-one/",
+  "file": "_subdomains/blog.cloudflare.com/replace-your-hardware-firewalls-with-cloudflare-one.md",
+  "title": "Replace your hardware firewalls with Cloudflare One | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:52.309045+00:00",
+  "html_len": 308820,
+  "md_len": 75083,
+  "depth": 0,
+  "phase": 2
+}

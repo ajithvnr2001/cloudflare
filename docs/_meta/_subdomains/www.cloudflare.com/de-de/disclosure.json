@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/de-de/disclosure/",
+  "file": "_subdomains/www.cloudflare.com/de-de/disclosure.md",
+  "title": "Richtlinie zur Offenlegung von Schwachstellen | Cloudflare",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (119 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:18:18.283552+00:00",
+  "html_len": 536569,
+  "md_len": 8021,
+  "depth": 1,
+  "phase": 2
+}

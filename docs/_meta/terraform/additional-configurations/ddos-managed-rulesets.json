@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/terraform/additional-configurations/ddos-managed-rulesets/",
+  "file": "terraform/additional-configurations/ddos-managed-rulesets.md",
+  "title": "DDoS managed rulesets configuration using Terraform \u00b7 Cloudflare Terraform docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:06.159218+00:00",
+  "html_len": 160184,
+  "md_len": 20132,
+  "depth": 0
+}

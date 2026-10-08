@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-stacks-are-handled-in-go/",
+  "file": "_subdomains/blog.cloudflare.com/how-stacks-are-handled-in-go.md",
+  "title": "How Stacks are Handled in Go | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:16.052437+00:00",
+  "html_len": 276136,
+  "md_len": 61781,
+  "depth": 0,
+  "phase": 2
+}

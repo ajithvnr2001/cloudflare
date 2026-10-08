@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/wrangler-oauth/",
+  "file": "_subdomains/blog.cloudflare.com/wrangler-oauth.md",
+  "title": "Bringing OAuth 2.0 to Wrangler | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:02.997298+00:00",
+  "html_len": 279328,
+  "md_len": 60261,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-and-why-the-leap-second-affected-cloudflare-dns/",
+  "file": "_subdomains/blog.cloudflare.com/how-and-why-the-leap-second-affected-cloudflare-dns.md",
+  "title": "How and why the leap second affected Cloudflare DNS | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:23.103701+00:00",
+  "html_len": 282329,
+  "md_len": 61154,
+  "depth": 0,
+  "phase": 2
+}

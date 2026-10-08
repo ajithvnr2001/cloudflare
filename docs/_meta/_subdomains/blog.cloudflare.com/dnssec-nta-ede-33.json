@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/dnssec-nta-ede-33/",
+  "file": "_subdomains/blog.cloudflare.com/dnssec-nta-ede-33.md",
+  "title": "A broken DNSSEC rollover took down .AL. Now 1.1.1.1 tells you when validation is bypassed | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:21:25.910860+00:00",
+  "html_len": 297119,
+  "md_len": 67400,
+  "depth": 1
+}

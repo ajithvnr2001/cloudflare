@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/transform/examples/add-request-header-static-value/",
+  "file": "rules/transform/examples/add-request-header-static-value.md",
+  "title": "Add request header with a static value \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:55.556399+00:00",
+  "html_len": 132126,
+  "md_len": 1726,
+  "depth": 0
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/networks/subresources/routes/methods/delete/",
+  "file": "api/resources/zero_trust/subresources/networks/subresources/routes/methods/delete.md",
+  "title": "Delete a tunnel route | Cloudflare API",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:26:16.477194+00:00",
+  "html_len": 1974728,
+  "md_len": 5416,
+  "depth": 1
+}

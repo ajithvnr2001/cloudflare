@@ -1,0 +1,89 @@
+---
+url: https://developers.cloudflare.com/security/web-assets/get-started/
+title: Get started \u00b7 Security dashboard docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:15:30.851219+00:00
+---
+
+# Get started · Security dashboard docs
+
+> Source: https://developers.cloudflare.com/security/web-assets/get-started/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Security dashboard](https://developers.cloudflare.com/security/)
+  3. /[Web Assets](https://developers.cloudflare.com/security/web-assets/)
+  4. /Get started
+
+
+
+# Get started
+
+Last updated Aug 19, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/security/web-assets/get-started/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewReview operationsAdd or refine operationsReview labeled operationsReview traffic matched to operationsUse learned schemasDefine security protectionsReview risks
+
+You do not need to complete a fixed setup flow before discovered operations can be used for protection. Use this page to choose the capability that matches your task.
+
+## Review operations
+
+Review operations to understand the parts of your application that receive traffic, such as login, sign-up, checkout, upload, and AI-powered flows.
+
+Discovered operations can be used for matching and downstream security detections before you manually refine them. For more information, refer to [Manage operations](https://developers.cloudflare.com/security/web-assets/manage-operations/).
+
+## Add or refine operations
+
+Add an operation when traffic you want to protect does not appear, or when you want to define the operation structure yourself.
+
+Manual creation and editing only update operation inventory. Refine an operation when its method, hostname pattern, or path pattern does not match your intended grouping.
+
+For more information, refer to [Manage operations](https://developers.cloudflare.com/security/web-assets/manage-operations/).
+
+## Review labeled operations
+
+Labels describe what an operation does. Detections can use labels to focus on traffic for a specific use case.
+
+Refine labels when the current label set does not describe the operation correctly. For example, add `cf-llm` to operations that receive Large Language Model (LLM) prompts so [AI Security for Apps](https://developers.cloudflare.com/waf/detections/ai-security-for-apps/) can scan incoming prompts for threats such as prompt injection.
+
+For more information, refer to [Label operations](https://developers.cloudflare.com/security/web-assets/label-operations/).
+
+## Review traffic matched to operations
+
+Use [Security Analytics](https://developers.cloudflare.com/waf/analytics/security-analytics/) to review traffic matched to individual operations or labels.
+
+[ Go to **Analytics** ↗ ](https://dash.cloudflare.com/?to=/:account/:zone/security/analytics)
+
+For individual operations, use the operation ID or operation details to review matched traffic and logs. For labeled traffic, filter by managed labels such as `cf-llm` or `cf-log-in`.
+
+Certain metrics, such as latency, may not populate when a request is handled by [Cloudflare Workers](https://developers.cloudflare.com/workers/) or a product built on Workers, such as [Waiting Room](https://developers.cloudflare.com/waiting-room/). You can also export operation and label fields through Logpush or query them through the GraphQL Analytics API. For more information, refer to [Use labels in analytics and logs](https://developers.cloudflare.com/security/web-assets/label-operations/#use-labels-in-analytics-and-logs/).
+
+## Use learned schemas
+
+Discovered operations do not automatically start profile learning. To learn a Schema Profile, select **Learn profile** from the operation overflow menu.
+
+After the profile becomes available, select **View details**. Review the learned schema under **Security overview**.
+
+If you already maintain OpenAPI schemas, you can upload them to create operations and use them with API Shield [Schema Validation](https://developers.cloudflare.com/api-shield/security/schema-validation/).
+
+For the complete workflow, refer to [Application Profiles](https://developers.cloudflare.com/waf/detections/application-profiles/) and [Schema learning](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-management/schema-learning/).
+
+## Define security protections
+
+After traffic is matched to the relevant operation, define relevant security rules to act on that traffic.
+
+For example, AI Security for Apps scans requests to operations labeled with `cf-llm`. You can then create rules that log or block requests with unsafe LLM prompt signals.
+
+For more information, refer to [Define security protections](https://developers.cloudflare.com/security/web-assets/define-security-protections/).
+
+## Review risks
+
+Web Assets can show risks on operations that may need attention. A corresponding [Security Center](https://developers.cloudflare.com/security-center/) Insight may also be raised.
+
+For the current risk reference, refer to [API endpoint risks](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-labels/#risk-labels).
+
+[PreviousOverview](https://developers.cloudflare.com/security/web-assets/)[NextManage operations](https://developers.cloudflare.com/security/web-assets/manage-operations/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/security/web-assets/get-started.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

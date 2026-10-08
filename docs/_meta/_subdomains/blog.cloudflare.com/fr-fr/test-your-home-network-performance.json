@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/test-your-home-network-performance/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/test-your-home-network-performance.md",
+  "title": "Testez les performances de votre r\u00e9seau domestique | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:21.087634+00:00",
+  "html_len": 221984,
+  "md_len": 32642,
+  "depth": 0,
+  "phase": 2
+}

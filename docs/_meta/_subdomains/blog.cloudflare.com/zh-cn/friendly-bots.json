@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/friendly-bots/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/friendly-bots.md",
+  "title": "\u9686\u91cd\u63a8\u51fa\u53cb\u597d\u673a\u5668\u4eba | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:43.897821+00:00",
+  "html_len": 206084,
+  "md_len": 25985,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/making-home-internet-faster/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/making-home-internet-faster.md",
+  "title": "\u4f18\u5316\u5bb6\u5ead\u7f51\u7edc\u6027\u80fd\uff0c\u4e0e\u201c\u901f\u5ea6\u201d\u6ca1\u591a\u5927\u5173\u7cfb | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:14.292219+00:00",
+  "html_len": 212420,
+  "md_len": 29283,
+  "depth": 0,
+  "phase": 2
+}

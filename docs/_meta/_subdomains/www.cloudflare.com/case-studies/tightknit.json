@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/tightknit/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/tightknit.md",
+  "title": "Tightknit and Cloudflare | Customer story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:52.466793+00:00",
+  "html_len": 207913,
+  "md_len": 4999,
+  "depth": 0,
+  "phase": 2
+}

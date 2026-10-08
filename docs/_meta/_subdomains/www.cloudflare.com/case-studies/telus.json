@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/telus/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/telus.md",
+  "title": "TELUS & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:51.123545+00:00",
+  "html_len": 212486,
+  "md_len": 9569,
+  "depth": 0,
+  "phase": 2
+}

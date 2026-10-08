@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cape-town-south-africa/",
+  "file": "_subdomains/blog.cloudflare.com/cape-town-south-africa.md",
+  "title": "Cape Town (South Africa): Cloudflare Data Center #113 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:14.154270+00:00",
+  "html_len": 274876,
+  "md_len": 57078,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/dispelling-the-generative-ai-fear-how-cloudflare-secures-inboxes-against-ai-enhanced-phishing/",
+  "file": "_subdomains/blog.cloudflare.com/dispelling-the-generative-ai-fear-how-cloudflare-secures-inboxes-against-ai-enhanced-phishing.md",
+  "title": "Dispelling the Generative AI fear: how Cloudflare secures inboxes against AI-enhanced phishing | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:59.525999+00:00",
+  "html_len": 299761,
+  "md_len": 73678,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/examples/return-html/",
+  "file": "workers/examples/return-html.md",
+  "title": "Return small HTML page \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:25.161983+00:00",
+  "html_len": 185887,
+  "md_len": 3177,
+  "depth": 0
+}

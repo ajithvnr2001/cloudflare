@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-the-cold-start/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-the-cold-start.md",
+  "title": "Introducing The Cold Start: pitch your startup live at Cloudflare Connect | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:16.981106+00:00",
+  "html_len": 288462,
+  "md_len": 62622,
+  "depth": 0,
+  "phase": 2
+}

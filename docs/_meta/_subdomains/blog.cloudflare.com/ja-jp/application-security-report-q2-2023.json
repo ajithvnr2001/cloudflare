@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/application-security-report-q2-2023/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/application-security-report-q2-2023.md",
+  "title": "\u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3\u30bb\u30ad\u30e5\u30ea\u30c6\u30a3\u30ec\u30dd\u30fc\u30c8\uff1a2023\u5e74\u7b2c2\u56db\u534a\u671f | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:29.257795+00:00",
+  "html_len": 278246,
+  "md_len": 42232,
+  "depth": 0,
+  "phase": 2
+}

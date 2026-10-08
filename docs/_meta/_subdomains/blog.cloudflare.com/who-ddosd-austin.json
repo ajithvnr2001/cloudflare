@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/who-ddosd-austin/",
+  "file": "_subdomains/blog.cloudflare.com/who-ddosd-austin.md",
+  "title": "Dogfooding Magic Transit by DDoSing our Austin office | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:17.035174+00:00",
+  "html_len": 298196,
+  "md_len": 65354,
+  "depth": 0,
+  "phase": 2
+}

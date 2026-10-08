@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/products/advanced-certificate-manager/",
+  "file": "_subdomains/www.cloudflare.com/products/advanced-certificate-manager.md",
+  "title": "Advanced Certificate Manager - Simplify TLS Certificate Management",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:09.453558+00:00",
+  "html_len": 654302,
+  "md_len": 8192,
+  "depth": 0,
+  "phase": 2
+}

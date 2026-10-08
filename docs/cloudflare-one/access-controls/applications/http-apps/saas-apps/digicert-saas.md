@@ -1,0 +1,86 @@
+---
+url: https://developers.cloudflare.com/cloudflare-one/access-controls/applications/http-apps/saas-apps/digicert-saas/
+title: Digicert \u00b7 Cloudflare One docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:08:14.366390+00:00
+---
+
+# Digicert · Cloudflare One docs
+
+> Source: https://developers.cloudflare.com/cloudflare-one/access-controls/applications/http-apps/saas-apps/digicert-saas/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)
+  3. /…
+
+[Access controls](https://developers.cloudflare.com/cloudflare-one/access-controls/)[Applications](https://developers.cloudflare.com/cloudflare-one/access-controls/applications/)[Add web applications](https://developers.cloudflare.com/cloudflare-one/access-controls/applications/http-apps/)
+
+  4. /[SaaS applications](https://developers.cloudflare.com/cloudflare-one/access-controls/applications/http-apps/saas-apps/)
+  5. /Digicert
+
+
+
+# Digicert
+
+Last updated May 6, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/cloudflare-one/access-controls/applications/http-apps/saas-apps/digicert-saas/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewPrerequisites1\. Add a SaaS application to Cloudflare One2\. Add a SAML SSO provider in Digicert3\. Test and Enable SSO in Digicert
+
+This guide covers how to configure [Digicert ↗︎](https://docs.digicert.com/en/certcentral/manage-account/saml-admin-single-sign-on-guide/configure-saml-single-sign-on.html) as a SAML application in Cloudflare One.
+
+## Prerequisites
+
+  * An [identity provider](https://developers.cloudflare.com/cloudflare-one/integrations/identity-providers/) configured in Cloudflare One
+  * Admin access to a Digicert account
+  * [SAML ↗︎](https://docs.digicert.com/en/certcentral/manage-account/saml-admin-single-sign-on-guide/saml-single-sign-on-prerequisites.html) enabled in your Digicert account
+
+
+
+## 1\. Add a SaaS application to Cloudflare One
+
+  1. In the [Cloudflare dashboard ↗︎](https://dash.cloudflare.com/), go to **Zero Trust** > **Access controls** > **Applications**.
+  2. Select **Create new application** > **SaaS application**.
+  3. For **Application** , enter `Digicert` and select the corresponding textbox that appears.
+  4. For the authentication protocol, select **SAML**.
+  5. Select **Add application**.
+  6. Fill in the following fields: 
+     * **Entity ID** : `https://www.digicert.com/account/sso/metadata`
+     * **Assertion Consumer Service URL** : `https://www.digicert.com/account/sso/`
+     * **Name ID format** : _Email_
+  7. Copy the **SAML Metadata endpoint**.
+  8. Configure [Access policies](https://developers.cloudflare.com/cloudflare-one/access-controls/policies/) for the application.
+  9. Save the application.
+
+
+
+## 2\. Add a SAML SSO provider in Digicert
+
+  1. In Digicert, select **Settings** > **Single Sign-On** > **Set up SAML**.
+  2. Under **How will you send data from your IDP?** , turn on **Use a dynamic URL**.
+  3. Under **Use a dynamic URL** , paste the SAML Metadata endpoint from application configuration in Cloudflare One.
+  4. Under **How will you identify a user?** , turn on **NameID**.
+  5. Under **Federation Name** , enter a name (for example, `Cloudflare Access`). Your users will select this name when signing in.
+  6. Select **Save SAML Settings**.
+
+
+
+## 3\. Test and Enable SSO in Digicert
+
+  1. In Digicert, select **Settings** > **Single Sign-On**.
+  2. Copy the **SP Initiated Custom SSO URL**.
+  3. Paste the URL into an incognito browser window and sign in. Upon successful sign in, SAML SSO is fully enabled.
+  4. (Optional) By default, users can choose to sign in directly or with SSO. To require SSO sign in, go to **Account** > **Users**. Turn on **Only allow this user to log in through SAML/OIDC SSO** in the user details of the desired user.
+
+
+
+Note
+
+Users can sign in using service provider initiated SSO by using the **SP Initiated Custom SSO URL**. Alternatively, users can go to `www.digicert.com/account`, select **Sign in with SSO** , and enter the name of the identity provider configured in step 2\. Add a SAML SSO provider in Digicert.
+
+[PreviousCoupa](https://developers.cloudflare.com/cloudflare-one/access-controls/applications/http-apps/saas-apps/coupa-saas/)[NextDocuSign](https://developers.cloudflare.com/cloudflare-one/access-controls/applications/http-apps/saas-apps/docusign-access/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/cloudflare-one/access-controls/applications/http-apps/saas-apps/digicert-saas.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

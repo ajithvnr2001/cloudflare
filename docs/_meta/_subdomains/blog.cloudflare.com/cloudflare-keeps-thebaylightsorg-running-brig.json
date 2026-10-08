@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-keeps-thebaylightsorg-running-brig/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-keeps-thebaylightsorg-running-brig.md",
+  "title": "Cloudflare Keeps TheBayLights.org Running Bright | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:39.858614+00:00",
+  "html_len": 273696,
+  "md_len": 58010,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/democratizing-access-to-zero-trust-with-project-galileo/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/democratizing-access-to-zero-trust-with-project-galileo.md",
+  "title": "Demokratisierung des Zugangs zu Zero Trust mit dem Projekt Galileo | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:32.556045+00:00",
+  "html_len": 218783,
+  "md_len": 34866,
+  "depth": 0,
+  "phase": 2
+}

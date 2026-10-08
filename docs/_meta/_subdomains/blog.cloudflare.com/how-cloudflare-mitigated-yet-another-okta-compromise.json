@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-cloudflare-mitigated-yet-another-okta-compromise/",
+  "file": "_subdomains/blog.cloudflare.com/how-cloudflare-mitigated-yet-another-okta-compromise.md",
+  "title": "How Cloudflare mitigated yet another Okta compromise | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:32.889846+00:00",
+  "html_len": 284430,
+  "md_len": 60214,
+  "depth": 0,
+  "phase": 2
+}

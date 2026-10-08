@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/gateway-casb-in-action/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/gateway-casb-in-action.md",
+  "title": "Gateway + CASB\uff1a\u62fc\u51fa\u66f4\u597d SaaS \u5b89\u5168\u6027\u7684\u5b57\u6bcd\u610f\u9762 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:10.774017+00:00",
+  "html_len": 203313,
+  "md_len": 25461,
+  "depth": 0,
+  "phase": 2
+}

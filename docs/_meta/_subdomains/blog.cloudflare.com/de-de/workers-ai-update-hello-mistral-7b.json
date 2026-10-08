@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/workers-ai-update-hello-mistral-7b/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/workers-ai-update-hello-mistral-7b.md",
+  "title": "Workers AI Update: Hallo Mistral 7B | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:39:44.264414+00:00",
+  "html_len": 230070,
+  "md_len": 36941,
+  "depth": 0,
+  "phase": 2
+}

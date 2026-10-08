@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/welcome-to-birthday-week-2020/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/welcome-to-birthday-week-2020.md",
+  "title": "Bienvenue \u00e0 la semaine anniversaire 2020 | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:14.713729+00:00",
+  "html_len": 229178,
+  "md_len": 32167,
+  "depth": 0,
+  "phase": 2
+}

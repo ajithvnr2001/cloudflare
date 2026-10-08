@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/flow-based-monitoring-for-magic-transit/",
+  "file": "_subdomains/blog.cloudflare.com/flow-based-monitoring-for-magic-transit.md",
+  "title": "Flow-based monitoring for Magic Transit | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:08.272263+00:00",
+  "html_len": 292568,
+  "md_len": 62179,
+  "depth": 0,
+  "phase": 2
+}

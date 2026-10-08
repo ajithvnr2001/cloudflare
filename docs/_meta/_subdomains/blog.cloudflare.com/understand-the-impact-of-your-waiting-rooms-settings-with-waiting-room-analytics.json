@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/understand-the-impact-of-your-waiting-rooms-settings-with-waiting-room-analytics/",
+  "file": "_subdomains/blog.cloudflare.com/understand-the-impact-of-your-waiting-rooms-settings-with-waiting-room-analytics.md",
+  "title": "Understand the impact of Waiting Room settings with Waiting Room Analytics | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:26.143850+00:00",
+  "html_len": 337314,
+  "md_len": 89215,
+  "depth": 0,
+  "phase": 2
+}

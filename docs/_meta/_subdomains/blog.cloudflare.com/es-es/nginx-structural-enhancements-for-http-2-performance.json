@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/nginx-structural-enhancements-for-http-2-performance/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/nginx-structural-enhancements-for-http-2-performance.md",
+  "title": "Mejoras estructurales de NGINX para optimizar el rendimiento de HTTP/2 | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:17.033908+00:00",
+  "html_len": 242946,
+  "md_len": 44062,
+  "depth": 0,
+  "phase": 2
+}

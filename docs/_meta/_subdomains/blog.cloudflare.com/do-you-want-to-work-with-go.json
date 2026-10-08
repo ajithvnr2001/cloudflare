@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/do-you-want-to-work-with-go/",
+  "file": "_subdomains/blog.cloudflare.com/do-you-want-to-work-with-go.md",
+  "title": "Do you want to work with Go? | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:46.576968+00:00",
+  "html_len": 266783,
+  "md_len": 54369,
+  "depth": 0,
+  "phase": 2
+}

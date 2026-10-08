@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/ci-cd/builds/build-watch-paths/",
+  "file": "workers/ci-cd/builds/build-watch-paths.md",
+  "title": "Build watch paths \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:11.976745+00:00",
+  "html_len": 181730,
+  "md_len": 3747,
+  "depth": 0
+}

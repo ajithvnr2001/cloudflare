@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/black-elephant-in-the-room/",
+  "file": "_subdomains/blog.cloudflare.com/black-elephant-in-the-room.md",
+  "title": "The Black Elephant in the Room | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:59.692157+00:00",
+  "html_len": 269241,
+  "md_len": 56315,
+  "depth": 0,
+  "phase": 2
+}

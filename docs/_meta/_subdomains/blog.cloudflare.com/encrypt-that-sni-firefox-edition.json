@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/encrypt-that-sni-firefox-edition/",
+  "file": "_subdomains/blog.cloudflare.com/encrypt-that-sni-firefox-edition.md",
+  "title": "Encrypt that SNI: Firefox edition | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:11.607470+00:00",
+  "html_len": 293062,
+  "md_len": 63440,
+  "depth": 0,
+  "phase": 2
+}

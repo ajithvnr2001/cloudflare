@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/happy-holidays/",
+  "file": "_subdomains/blog.cloudflare.com/happy-holidays.md",
+  "title": "Happy Holidays! | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:15.068612+00:00",
+  "html_len": 268389,
+  "md_len": 53991,
+  "depth": 0,
+  "phase": 2
+}

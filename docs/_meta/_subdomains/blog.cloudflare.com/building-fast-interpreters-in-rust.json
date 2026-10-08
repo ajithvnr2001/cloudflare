@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/building-fast-interpreters-in-rust/",
+  "file": "_subdomains/blog.cloudflare.com/building-fast-interpreters-in-rust.md",
+  "title": "Building fast interpreters in Rust | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:20.132279+00:00",
+  "html_len": 363401,
+  "md_len": 81125,
+  "depth": 0,
+  "phase": 2
+}

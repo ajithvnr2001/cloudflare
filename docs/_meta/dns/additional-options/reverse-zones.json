@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/dns/additional-options/reverse-zones/",
+  "file": "dns/additional-options/reverse-zones.md",
+  "title": "Reverse zones and PTR records \u00b7 Cloudflare DNS docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:10:55.442073+00:00",
+  "html_len": 141331,
+  "md_len": 5538,
+  "depth": 0
+}

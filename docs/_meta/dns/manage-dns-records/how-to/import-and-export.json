@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/dns/manage-dns-records/how-to/import-and-export/",
+  "file": "dns/manage-dns-records/how-to/import-and-export.md",
+  "title": "Import and export records \u00b7 Cloudflare DNS docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:10:58.941986+00:00",
+  "html_len": 157998,
+  "md_len": 9356,
+  "depth": 0
+}

@@ -1,0 +1,1005 @@
+---
+url: https://blog.cloudflare.com/ai-driven-cryptography-discovery/
+title: Using AI to chart a course for our post-quantum migration | Cloudflare Blog
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:34:29.635195+00:00
+---
+
+# Using AI to chart a course for our post-quantum migration | Cloudflare Blog
+
+> Source: https://blog.cloudflare.com/ai-driven-cryptography-discovery/
+
+[Blog](https://blog.cloudflare.com/)
+
+[AI](https://blog.cloudflare.com/tag/ai/)[Birthday Week](https://blog.cloudflare.com/tag/birthday-week/)[Cloudflare Workers](https://blog.cloudflare.com/tag/workers/)+5Show 5 more tags
+
+8 TagsShow 8 tags
+
+  * Post Tags
+  * [AI](https://blog.cloudflare.com/tag/ai/)[Birthday Week](https://blog.cloudflare.com/tag/birthday-week/)[Cloudflare Workers](https://blog.cloudflare.com/tag/workers/)[Cryptography](https://blog.cloudflare.com/tag/cryptography/)[Developer Platform](https://blog.cloudflare.com/tag/developer-platform/)[Internship Experience](https://blog.cloudflare.com/tag/internship-experience/)[Post-Quantum](https://blog.cloudflare.com/tag/post-quantum/)[Security](https://blog.cloudflare.com/tag/security/)
+  * All tags
+  * Matching tags
+  * No tags found
+  * [1.1.1.1](https://blog.cloudflare.com/tag/1-1-1-1/)
+  * [2FA](https://blog.cloudflare.com/tag/2fa/)
+  * [Abuse](https://blog.cloudflare.com/tag/abuse/)
+  * [Access](https://blog.cloudflare.com/tag/access/)
+  * [Access Control Lists (ACLs)](https://blog.cloudflare.com/tag/access-control-lists-acls/)
+  * [Accessibility](https://blog.cloudflare.com/tag/accessibility/)
+  * [Account Takeover](https://blog.cloudflare.com/tag/account-takeover/)
+  * [Acquisitions](https://blog.cloudflare.com/tag/acquisitions/)
+  * [Addressing](https://blog.cloudflare.com/tag/addressing/)
+  * [Advanced Certificate Manager](https://blog.cloudflare.com/tag/advanced-certificate-manager/)
+  * [Advanced DDoS](https://blog.cloudflare.com/tag/advanced-ddos/)
+  * [Advertising](https://blog.cloudflare.com/tag/advertising/)
+  * [Aegis](https://blog.cloudflare.com/tag/aegis/)
+  * [AEO](https://blog.cloudflare.com/tag/aeo/)
+  * [Africa](https://blog.cloudflare.com/tag/africa/)
+  * [Afroflare](https://blog.cloudflare.com/tag/afroflare/)
+  * [Agent Cloud](https://blog.cloudflare.com/tag/agent-cloud/)
+  * [Agent Development Lifecycle](https://blog.cloudflare.com/tag/agent-development-lifecycle/)
+  * [Agent Readiness](https://blog.cloudflare.com/tag/agent-readiness/)
+  * [Agents](https://blog.cloudflare.com/tag/agents/)
+  * [Agents Week](https://blog.cloudflare.com/tag/agents-week/)
+  * [Agents Week 2026](https://blog.cloudflare.com/tag/agents-week-2026/)
+  * [AI](https://blog.cloudflare.com/tag/ai/)
+  * [AI Bots](https://blog.cloudflare.com/tag/ai-bots/)
+  * [AI Gateway](https://blog.cloudflare.com/tag/ai-gateway/)
+  * [AI Search](https://blog.cloudflare.com/tag/ai-search/)
+  * [AI WAF](https://blog.cloudflare.com/tag/ai-waf/)
+  * [AI Week](https://blog.cloudflare.com/tag/ai-week/)
+  * [AI-SPM](https://blog.cloudflare.com/tag/ai-spm/)
+  * [Alertmanager](https://blog.cloudflare.com/tag/alertmanager/)
+  * [Always Online](https://blog.cloudflare.com/tag/always-online/)
+  * [AMD](https://blog.cloudflare.com/tag/amd/)
+  * [AMP](https://blog.cloudflare.com/tag/amp-tag/)
+  * [Analytics](https://blog.cloudflare.com/tag/analytics/)
+  * [Anonymous](https://blog.cloudflare.com/tag/anonymous/)
+  * [Anti Malware](https://blog.cloudflare.com/tag/anti-malware/)
+  * [Anycast](https://blog.cloudflare.com/tag/anycast/)
+  * [API](https://blog.cloudflare.com/tag/api/)
+  * [API Gateway](https://blog.cloudflare.com/tag/api-gateway/)
+  * [API Security](https://blog.cloudflare.com/tag/api-security/)
+  * [API Shield](https://blog.cloudflare.com/tag/api-shield/)
+  * [APJC](https://blog.cloudflare.com/tag/apjc/)
+  * [Apple](https://blog.cloudflare.com/tag/apple/)
+  * [Application Security](https://blog.cloudflare.com/tag/application-security/)
+  * [Application Services](https://blog.cloudflare.com/tag/application-services/)
+  * [Area 1 Security](https://blog.cloudflare.com/tag/area-1-security/)
+  * [Argo Smart Routing](https://blog.cloudflare.com/tag/argo/)
+  * [ASCII](https://blog.cloudflare.com/tag/ascii/)
+  * [Asia](https://blog.cloudflare.com/tag/asia/)
+  * [Athenian Project](https://blog.cloudflare.com/tag/athenian-project/)
+  * [Atlassian](https://blog.cloudflare.com/tag/atlassian/)
+  * [Attacks](https://blog.cloudflare.com/tag/attacks/)
+  * [Audit Logs](https://blog.cloudflare.com/tag/audit-logs/)
+  * [Austin](https://blog.cloudflare.com/tag/austin/)
+  * [Australia](https://blog.cloudflare.com/tag/australia/)
+  * [Authentication](https://blog.cloudflare.com/tag/authentication/)
+  * [Authy](https://blog.cloudflare.com/tag/authy/)
+  * [Auto Rag](https://blog.cloudflare.com/tag/auto-rag/)
+  * [Automatic HTTPS](https://blog.cloudflare.com/tag/automatic-https/)
+  * [Automatic Platform Optimization](https://blog.cloudflare.com/tag/automatic-platform-optimization/)
+  * [Automation](https://blog.cloudflare.com/tag/automation/)
+  * [AutoMinify](https://blog.cloudflare.com/tag/autominify/)
+  * [Awards](https://blog.cloudflare.com/tag/awards/)
+  * [AWS](https://blog.cloudflare.com/tag/aws/)
+  * [Baidu](https://blog.cloudflare.com/tag/baidu/)
+  * [Bandwidth Alliance](https://blog.cloudflare.com/tag/bandwidth-alliance/)
+  * [Bandwidth Costs](https://blog.cloudflare.com/tag/bandwidth-costs/)
+  * [Best Practices](https://blog.cloudflare.com/tag/best-practices/)
+  * [Beta](https://blog.cloudflare.com/tag/beta/)
+  * [Better Internet](https://blog.cloudflare.com/tag/better-internet/)
+  * [BGP](https://blog.cloudflare.com/tag/bgp/)
+  * [Billing](https://blog.cloudflare.com/tag/billing/)
+  * [Birthday Week](https://blog.cloudflare.com/tag/birthday-week/)
+  * [Black Friday](https://blog.cloudflare.com/tag/black-friday/)
+  * [Blackbird](https://blog.cloudflare.com/tag/blackbird/)
+  * [Bot Fight Mode](https://blog.cloudflare.com/tag/bot-fight-mode/)
+  * [Bot Management](https://blog.cloudflare.com/tag/bot-management/)
+  * [Botnet](https://blog.cloudflare.com/tag/botnet/)
+  * [Bots](https://blog.cloudflare.com/tag/bots/)
+  * [BPF](https://blog.cloudflare.com/tag/bpf/)
+  * [Brand](https://blog.cloudflare.com/tag/brand/)
+  * [Brand Protection](https://blog.cloudflare.com/tag/brand-protection/)
+  * [Brazil](https://blog.cloudflare.com/tag/brazil/)
+  * [Browser Insights](https://blog.cloudflare.com/tag/browser-insights/)
+  * [Browser Rendering](https://blog.cloudflare.com/tag/browser-rendering/)
+  * [Browser Run](https://blog.cloudflare.com/tag/browser-run/)
+  * [Bug Bounty](https://blog.cloudflare.com/tag/bug-bounty/)
+  * [Bugs](https://blog.cloudflare.com/tag/bugs/)
+  * [BYOIP](https://blog.cloudflare.com/tag/byoip/)
+  * [Cache](https://blog.cloudflare.com/tag/cache/)
+  * [Cache Purge](https://blog.cloudflare.com/tag/cache-purge/)
+  * [Cache Reserve](https://blog.cloudflare.com/tag/cache-reserve/)
+  * [Cache Rules](https://blog.cloudflare.com/tag/cache-rules/)
+  * [California](https://blog.cloudflare.com/tag/california/)
+  * [Canada](https://blog.cloudflare.com/tag/canada/)
+  * [Cap'n Proto](https://blog.cloudflare.com/tag/capn-proto/)
+  * [CAPTCHA](https://blog.cloudflare.com/tag/captcha/)
+  * [Careers](https://blog.cloudflare.com/tag/careers/)
+  * [CASB](https://blog.cloudflare.com/tag/casb/)
+  * [Categories](https://blog.cloudflare.com/tag/categories/)
+  * [CDN](https://blog.cloudflare.com/tag/cdn/)
+  * [CDNJS](https://blog.cloudflare.com/tag/cdnjs/)
+  * [Certificate Authority](https://blog.cloudflare.com/tag/certificate-authority/)
+  * [Certificate Pinning](https://blog.cloudflare.com/tag/certificate-pinning/)
+  * [Certificate Transparency](https://blog.cloudflare.com/tag/certificate-transparency/)
+  * [Certification](https://blog.cloudflare.com/tag/certification/)
+  * [CFSSL](https://blog.cloudflare.com/tag/cfssl/)
+  * [Challenge Page](https://blog.cloudflare.com/tag/challenge-page/)
+  * [ChatGPT](https://blog.cloudflare.com/tag/chatgpt/)
+  * [China](https://blog.cloudflare.com/tag/china/)
+  * [China Network](https://blog.cloudflare.com/tag/china-network/)
+  * [Christmas](https://blog.cloudflare.com/tag/christmas/)
+  * [Chrome](https://blog.cloudflare.com/tag/chrome/)
+  * [CIO Week](https://blog.cloudflare.com/tag/cio-week/)
+  * [CISA](https://blog.cloudflare.com/tag/cisa/)
+  * [Claire](https://blog.cloudflare.com/tag/claire/)
+  * [CLI](https://blog.cloudflare.com/tag/cli/)
+  * [ClickHouse](https://blog.cloudflare.com/tag/clickhouse/)
+  * [Clientless](https://blog.cloudflare.com/tag/clientless/)
+  * [Clientless Web Isolation](https://blog.cloudflare.com/tag/clientless-web-isolation/)
+  * [Cloud Connector](https://blog.cloudflare.com/tag/cloud-connector/)
+  * [Cloud Email Security](https://blog.cloudflare.com/tag/cloud-email-security/)
+  * [Cloudflare Access](https://blog.cloudflare.com/tag/cloudflare-access/)
+  * [Cloudflare Apps](https://blog.cloudflare.com/tag/cloudflare-apps/)
+  * [Cloudflare Area 1](https://blog.cloudflare.com/tag/cloudflare-area-1/)
+  * [Cloudflare Calls](https://blog.cloudflare.com/tag/cloudflare-calls/)
+  * [Cloudflare Email Service](https://blog.cloudflare.com/tag/cloudflare-email-services/)
+  * [Cloudflare for Campaigns](https://blog.cloudflare.com/tag/cloudflare-for-campaigns/)
+  * [Cloudflare for SaaS](https://blog.cloudflare.com/tag/cloudflare-for-saas/)
+  * [Cloudflare for Startups](https://blog.cloudflare.com/tag/cloudflare-for-startups/)
+  * [Cloudflare Gateway](https://blog.cloudflare.com/tag/gateway/)
+  * [Cloudflare History](https://blog.cloudflare.com/tag/cloudflare-history/)
+  * [Cloudflare Images](https://blog.cloudflare.com/tag/cloudflare-images/)
+  * [Cloudflare Media Platform](https://blog.cloudflare.com/tag/cloudflare-media-platform/)
+  * [Cloudflare Meetups](https://blog.cloudflare.com/tag/cloudflare-meetups/)
+  * [Cloudflare Network](https://blog.cloudflare.com/tag/cloudflare-network/)
+  * [Cloudflare One](https://blog.cloudflare.com/tag/cloudflare-one/)
+  * [Cloudflare One Client](https://blog.cloudflare.com/tag/cloudflare-one-client/)
+  * [Cloudflare One User Risk Score](https://blog.cloudflare.com/tag/cloudflare-one-user-risk-score/)
+  * [Cloudflare One Week](https://blog.cloudflare.com/tag/cloudflare-one-week/)
+  * [Cloudflare OS](https://blog.cloudflare.com/tag/cloudflare-os/)
+  * [Cloudflare Pages](https://blog.cloudflare.com/tag/cloudflare-pages/)
+  * [Cloudflare Polish](https://blog.cloudflare.com/tag/cloudflare-polish/)
+  * [Cloudflare Queues](https://blog.cloudflare.com/tag/cloudflare-queues/)
+  * [Cloudflare Realtime](https://blog.cloudflare.com/tag/cloudflare-realtime/)
+  * [Cloudflare Stream](https://blog.cloudflare.com/tag/cloudflare-stream/)
+  * [Cloudflare Tunnel](https://blog.cloudflare.com/tag/cloudflare-tunnel/)
+  * [Cloudflare TV](https://blog.cloudflare.com/tag/cloudflare-tv/)
+  * [Cloudflare Workers](https://blog.cloudflare.com/tag/workers/)
+  * [Cloudflare Workers (PT)](https://blog.cloudflare.com/tag/cloudflare-workers-pt/)
+  * [Cloudflare Workers KV](https://blog.cloudflare.com/tag/cloudflare-workers-kv/)
+  * [Cloudflare Workers KV (ES)](https://blog.cloudflare.com/tag/cloudflare-workers-kv-es/)
+  * [Cloudflare Zero Trust](https://blog.cloudflare.com/tag/cloudflare-zero-trust/)
+  * [Cloudforce One](https://blog.cloudflare.com/tag/cloudforce-one/)
+  * [Cloudy](https://blog.cloudflare.com/tag/cloudy/)
+  * [Code Orange](https://blog.cloudflare.com/tag/code-orange/)
+  * [Coinbase](https://blog.cloudflare.com/tag/coinbase/)
+  * [Colombia](https://blog.cloudflare.com/tag/colombia/)
+  * [Community](https://blog.cloudflare.com/tag/community/)
+  * [Compliance](https://blog.cloudflare.com/tag/compliance/)
+  * [Compression](https://blog.cloudflare.com/tag/compression/)
+  * [Config Rules](https://blog.cloudflare.com/tag/config-rules/)
+  * [Configuration Management](https://blog.cloudflare.com/tag/configuration-management/)
+  * [Congestion Control](https://blog.cloudflare.com/tag/congestion-control/)
+  * [Connectivity](https://blog.cloudflare.com/tag/connectivity/)
+  * [Connectivity Cloud](https://blog.cloudflare.com/tag/connectivity-cloud/)
+  * [Consumer Services](https://blog.cloudflare.com/tag/consumer-services/)
+  * [Containers](https://blog.cloudflare.com/tag/containers/)
+  * [Content Independence Day](https://blog.cloudflare.com/tag/content-independence-day/)
+  * [Content Scanning](https://blog.cloudflare.com/tag/content-scanning/)
+  * [Context](https://blog.cloudflare.com/tag/context/)
+  * [Core](https://blog.cloudflare.com/tag/core/)
+  * [COVID-19](https://blog.cloudflare.com/tag/covid-19/)
+  * [Crawler Hints](https://blog.cloudflare.com/tag/crawler-hints/)
+  * [CrowdStrike](https://blog.cloudflare.com/tag/crowdstrike/)
+  * [Crypto Week](https://blog.cloudflare.com/tag/crypto-week/)
+  * [Cryptography](https://blog.cloudflare.com/tag/cryptography/)
+  * [CSAM Reporting](https://blog.cloudflare.com/tag/csam-reporting/)
+  * [Customer Success](https://blog.cloudflare.com/tag/customer-success/)
+  * [Customer Zero](https://blog.cloudflare.com/tag/customer-zero/)
+  * [Customers](https://blog.cloudflare.com/tag/customers/)
+  * [CVE](https://blog.cloudflare.com/tag/cve/)
+  * [CVE-2023-50387](https://blog.cloudflare.com/tag/cve-2023-50387/)
+  * [Cyber Readiness](https://blog.cloudflare.com/tag/cyber-readiness/)
+  * [Cybersecurity](https://blog.cloudflare.com/tag/cybersecurity/)
+  * [D1](https://blog.cloudflare.com/tag/d1/)
+  * [Dashboard](https://blog.cloudflare.com/tag/dashboard-tag/)
+  * [Data](https://blog.cloudflare.com/tag/data/)
+  * [Data Catalog](https://blog.cloudflare.com/tag/data-catalog/)
+  * [Data Center](https://blog.cloudflare.com/tag/data-center/)
+  * [Data Localization](https://blog.cloudflare.com/tag/data-localization/)
+  * [Data Localization Suite](https://blog.cloudflare.com/tag/data-localization-suite/)
+  * [Data Loss](https://blog.cloudflare.com/tag/data-loss/)
+  * [Data Loss Prevention](https://blog.cloudflare.com/tag/data-loss-prevention/)
+  * [Data Platform](https://blog.cloudflare.com/tag/data-platform/)
+  * [Data Privacy Day](https://blog.cloudflare.com/tag/data-privacy-day/)
+  * [Data Protection](https://blog.cloudflare.com/tag/data-protection/)
+  * [Data Sovereignty](https://blog.cloudflare.com/tag/data-sovereignty/)
+  * [Data Transfer Bucket](https://blog.cloudflare.com/tag/data-transfer-bucket/)
+  * [Database](https://blog.cloudflare.com/tag/database/)
+  * [DDoS](https://blog.cloudflare.com/tag/ddos/)
+  * [DDoS Alerts](https://blog.cloudflare.com/tag/ddos-alerts/)
+  * [DDoS Reports](https://blog.cloudflare.com/tag/ddos-reports/)
+  * [Debugging](https://blog.cloudflare.com/tag/debugging/)
+  * [Deep Dive](https://blog.cloudflare.com/tag/deep-dive/)
+  * [Descaler](https://blog.cloudflare.com/tag/descaler/)
+  * [Design](https://blog.cloudflare.com/tag/design/)
+  * [Deskope](https://blog.cloudflare.com/tag/deskope/)
+  * [Developer Documentation](https://blog.cloudflare.com/tag/developer-documentation/)
+  * [Developer Platform](https://blog.cloudflare.com/tag/developer-platform/)
+  * [Developer Spotlight](https://blog.cloudflare.com/tag/developer-spotlight/)
+  * [Developer Week](https://blog.cloudflare.com/tag/developer-week/)
+  * [Developers](https://blog.cloudflare.com/tag/developers/)
+  * [Developers Storage](https://blog.cloudflare.com/tag/developers-storage/)
+  * [Device Security](https://blog.cloudflare.com/tag/device-security/)
+  * [DevOps](https://blog.cloudflare.com/tag/devops/)
+  * [DEX](https://blog.cloudflare.com/tag/dex/)
+  * [Digital Experience Monitoring](https://blog.cloudflare.com/tag/digital-experience-monitoring/)
+  * [Digital Forensics](https://blog.cloudflare.com/tag/digital-forensics/)
+  * [Disrupt](https://blog.cloudflare.com/tag/disrupt/)
+  * [Distributed](https://blog.cloudflare.com/tag/distributed/)
+  * [Distributed Systems](https://blog.cloudflare.com/tag/distributed-systems/)
+  * [Distributed Web](https://blog.cloudflare.com/tag/distributed-web/)
+  * [Diversity](https://blog.cloudflare.com/tag/diversity/)
+  * [DLP](https://blog.cloudflare.com/tag/dlp/)
+  * [DMARC](https://blog.cloudflare.com/tag/dmarc/)
+  * [DNS](https://blog.cloudflare.com/tag/dns/)
+  * [DNS Filtering](https://blog.cloudflare.com/tag/dns-filtering/)
+  * [DNS Flood](https://blog.cloudflare.com/tag/dns-flood/)
+  * [DNS Security](https://blog.cloudflare.com/tag/dns-security/)
+  * [DNSSEC](https://blog.cloudflare.com/tag/dnssec/)
+  * [Dogfooding](https://blog.cloudflare.com/tag/dogfooding/)
+  * [DoH](https://blog.cloudflare.com/tag/doh/)
+  * [Domain Rankings](https://blog.cloudflare.com/tag/domain-rankings/)
+  * [Domain Scoped Roles](https://blog.cloudflare.com/tag/domain-scoped-roles/)
+  * [dosd](https://blog.cloudflare.com/tag/dosd/)
+  * [Drupal](https://blog.cloudflare.com/tag/drupal/)
+  * [Due Process](https://blog.cloudflare.com/tag/due-process/)
+  * [Durable Execution](https://blog.cloudflare.com/tag/durable-execution/)
+  * [Durable Objects](https://blog.cloudflare.com/tag/durable-objects/)
+  * [Early Hints](https://blog.cloudflare.com/tag/early-hints/)
+  * [Earth Day](https://blog.cloudflare.com/tag/earth-day/)
+  * [eBPF](https://blog.cloudflare.com/tag/ebpf/)
+  * [EC2](https://blog.cloudflare.com/tag/ec2/)
+  * [eCommerce](https://blog.cloudflare.com/tag/ecommerce/)
+  * [Edge](https://blog.cloudflare.com/tag/edge/)
+  * [Edge Computing](https://blog.cloudflare.com/tag/edge-computing/)
+  * [Edge Database](https://blog.cloudflare.com/tag/edge-database/)
+  * [Edge Rules](https://blog.cloudflare.com/tag/edge-rules/)
+  * [Education](https://blog.cloudflare.com/tag/education/)
+  * [Egress](https://blog.cloudflare.com/tag/egress/)
+  * [Elastic](https://blog.cloudflare.com/tag/elastic/)
+  * [Election Security](https://blog.cloudflare.com/tag/election-security/)
+  * [Elections](https://blog.cloudflare.com/tag/elections/)
+  * [Elliptic Curves](https://blog.cloudflare.com/tag/elliptic-curves/)
+  * [Email](https://blog.cloudflare.com/tag/email/)
+  * [Email Routing](https://blog.cloudflare.com/tag/email-routing/)
+  * [Email Security](https://blog.cloudflare.com/tag/email-security/)
+  * [Email Workers](https://blog.cloudflare.com/tag/email-workers/)
+  * [EmDash](https://blog.cloudflare.com/tag/emdash/)
+  * [Emissions](https://blog.cloudflare.com/tag/emissions/)
+  * [Employee Resource Groups](https://blog.cloudflare.com/tag/employee-resource-groups/)
+  * [Encrypted SNI](https://blog.cloudflare.com/tag/encrypted-sni/)
+  * [Encryption](https://blog.cloudflare.com/tag/encryption/)
+  * [Engineering](https://blog.cloudflare.com/tag/engineering/)
+  * [Enterprise](https://blog.cloudflare.com/tag/enterprise/)
+  * [Entropy](https://blog.cloudflare.com/tag/entropy/)
+  * [EPYC](https://blog.cloudflare.com/tag/epyc/)
+  * [Ethereum](https://blog.cloudflare.com/tag/ethereum/)
+  * [Europe](https://blog.cloudflare.com/tag/europe/)
+  * [European Union](https://blog.cloudflare.com/tag/european-union/)
+  * [Events](https://blog.cloudflare.com/tag/events/)
+  * [Exploit](https://blog.cloudflare.com/tag/exploit/)
+  * [Facebook](https://blog.cloudflare.com/tag/facebook/)
+  * [Fancy Bear](https://blog.cloudflare.com/tag/fancy-bear/)
+  * [Fast Fonts](https://blog.cloudflare.com/tag/fast-fonts/)
+  * [FCC](https://blog.cloudflare.com/tag/fcc/)
+  * [Feature Flags](https://blog.cloudflare.com/tag/feature-flags/)
+  * [FedRAMP](https://blog.cloudflare.com/tag/fedramp/)
+  * [FedRAMP High](https://blog.cloudflare.com/tag/fedramp-high/)
+  * [FedRAMP Moderate](https://blog.cloudflare.com/tag/fedramp-moderate/)
+  * [Firefox](https://blog.cloudflare.com/tag/firefox/)
+  * [Firewall](https://blog.cloudflare.com/tag/firewall/)
+  * [Firmware](https://blog.cloudflare.com/tag/firmware/)
+  * [Florida](https://blog.cloudflare.com/tag/florida/)
+  * [Football](https://blog.cloudflare.com/tag/football/)
+  * [Formal Methods](https://blog.cloudflare.com/tag/formal-methods/)
+  * [Forrester](https://blog.cloudflare.com/tag/forrester/)
+  * [Fortran](https://blog.cloudflare.com/tag/fortran/)
+  * [Foundation DNS](https://blog.cloudflare.com/tag/foundation-dns/)
+  * [Founders' Letter](https://blog.cloudflare.com/tag/founders-letter/)
+  * [France](https://blog.cloudflare.com/tag/france/)
+  * [Fraud](https://blog.cloudflare.com/tag/fraud/)
+  * [Free](https://blog.cloudflare.com/tag/free/)
+  * [Freedom of Speech](https://blog.cloudflare.com/tag/freedom-of-speech/)
+  * [Front End](https://blog.cloudflare.com/tag/front-end/)
+  * [Full Stack](https://blog.cloudflare.com/tag/full-stack/)
+  * [Full Stack Week](https://blog.cloudflare.com/tag/full-stack-week/)
+  * [Fun](https://blog.cloudflare.com/tag/fun/)
+  * [GA Week](https://blog.cloudflare.com/tag/ga-week/)
+  * [Gartner](https://blog.cloudflare.com/tag/gartner/)
+  * [Gatebot](https://blog.cloudflare.com/tag/gatebot/)
+  * [GDPR](https://blog.cloudflare.com/tag/gdpr/)
+  * [Gen X](https://blog.cloudflare.com/tag/gen-x/)
+  * [General Availability](https://blog.cloudflare.com/tag/general-availability/)
+  * [Generative AI](https://blog.cloudflare.com/tag/generative-ai/)
+  * [Geo Key Manager](https://blog.cloudflare.com/tag/geo-key-manager/)
+  * [Germany](https://blog.cloudflare.com/tag/germany/)
+  * [GitHub](https://blog.cloudflare.com/tag/github/)
+  * [Go](https://blog.cloudflare.com/tag/go/)
+  * [Google](https://blog.cloudflare.com/tag/google/)
+  * [Google Analytics](https://blog.cloudflare.com/tag/google-analytics/)
+  * [Google Cloud](https://blog.cloudflare.com/tag/google-cloud/)
+  * [Google Workspace](https://blog.cloudflare.com/tag/google-workspace/)
+  * [Government Innovation](https://blog.cloudflare.com/tag/government-innovation/)
+  * [Grace Hopper](https://blog.cloudflare.com/tag/grace-hopper/)
+  * [Grafana](https://blog.cloudflare.com/tag/grafana/)
+  * [GraphQL](https://blog.cloudflare.com/tag/graphql/)
+  * [Green](https://blog.cloudflare.com/tag/green/)
+  * [Grinch](https://blog.cloudflare.com/tag/grinch/)
+  * [Growth](https://blog.cloudflare.com/tag/growth/)
+  * [gRPC](https://blog.cloudflare.com/tag/grpc/)
+  * [Guest Post](https://blog.cloudflare.com/tag/guest-post/)
+  * [Hackathon](https://blog.cloudflare.com/tag/hackathon/)
+  * [Halloween](https://blog.cloudflare.com/tag/halloween/)
+  * [Hardware](https://blog.cloudflare.com/tag/hardware/)
+  * [HashiCorp](https://blog.cloudflare.com/tag/hashicorp/)
+  * [Hertzbleed](https://blog.cloudflare.com/tag/hertzbleed/)
+  * [Heuristics](https://blog.cloudflare.com/tag/heuristics/)
+  * [History](https://blog.cloudflare.com/tag/history/)
+  * [Holidays](https://blog.cloudflare.com/tag/holidays/)
+  * [Holocaust](https://blog.cloudflare.com/tag/holocaust/)
+  * [Hong Kong](https://blog.cloudflare.com/tag/hongkong/)
+  * [Hosting Con](https://blog.cloudflare.com/tag/hostingcon/)
+  * [Hostnames](https://blog.cloudflare.com/tag/hostnames/)
+  * [HTTP2](https://blog.cloudflare.com/tag/http2/)
+  * [HTTP3](https://blog.cloudflare.com/tag/http3/)
+  * [HTTPS](https://blog.cloudflare.com/tag/https/)
+  * [Human Rights](https://blog.cloudflare.com/tag/human-rights/)
+  * [Hurricane](https://blog.cloudflare.com/tag/hurricane/)
+  * [Hybrid Cloud](https://blog.cloudflare.com/tag/hybrid-cloud/)
+  * [Hyperdrive](https://blog.cloudflare.com/tag/hyperdrive/)
+  * [I'm Under Attack Mode](https://blog.cloudflare.com/tag/iuam/)
+  * [IBM](https://blog.cloudflare.com/tag/ibm/)
+  * [ICANN](https://blog.cloudflare.com/tag/icann/)
+  * [iCloud Private Relay](https://blog.cloudflare.com/tag/icloud-private-relay/)
+  * [Identity](https://blog.cloudflare.com/tag/identity/)
+  * [IETF](https://blog.cloudflare.com/tag/ietf/)
+  * [IETF Standards](https://blog.cloudflare.com/tag/ietf-standards/)
+  * [IL4](https://blog.cloudflare.com/tag/il4/)
+  * [Image Optimization](https://blog.cloudflare.com/tag/image-optimization/)
+  * [Image Recognition](https://blog.cloudflare.com/tag/image-recognition/)
+  * [Image Resizing](https://blog.cloudflare.com/tag/image-resizing/)
+  * [Image Storage](https://blog.cloudflare.com/tag/image-storage/)
+  * [Impact](https://blog.cloudflare.com/tag/impact/)
+  * [Impact Week](https://blog.cloudflare.com/tag/impact-week/)
+  * [Incident Report](https://blog.cloudflare.com/tag/incident-report/)
+  * [Incident Response](https://blog.cloudflare.com/tag/incident-response/)
+  * [India](https://blog.cloudflare.com/tag/india/)
+  * [Indicators of Compromise](https://blog.cloudflare.com/tag/indicators-of-compromise/)
+  * [Indonesian](https://blog.cloudflare.com/tag/indonesian-id/)
+  * [Inference](https://blog.cloudflare.com/tag/inference/)
+  * [Infrastructure](https://blog.cloudflare.com/tag/infrastructure/)
+  * [Infrastructure as Code](https://blog.cloudflare.com/tag/infrastructure-as-code/)
+  * [Insights](https://blog.cloudflare.com/tag/insights/)
+  * [Intel](https://blog.cloudflare.com/tag/intel/)
+  * [Interconnection](https://blog.cloudflare.com/tag/interconnection/)
+  * [Internal DNS](https://blog.cloudflare.com/tag/internal-dns/)
+  * [Internet Performance](https://blog.cloudflare.com/tag/internet-performance/)
+  * [Internet Quality](https://blog.cloudflare.com/tag/internet-quality/)
+  * [Internet Regulation](https://blog.cloudflare.com/tag/internet-regulation/)
+  * [Internet Shutdown](https://blog.cloudflare.com/tag/internet-shutdown/)
+  * [Internet Summit](https://blog.cloudflare.com/tag/internet-summit/)
+  * [Internet Traffic](https://blog.cloudflare.com/tag/internet-traffic/)
+  * [Internet Trends](https://blog.cloudflare.com/tag/internet-trends/)
+  * [Internship Experience](https://blog.cloudflare.com/tag/internship-experience/)
+  * [Intrusion Detection](https://blog.cloudflare.com/tag/intrusion-detection/)
+  * [Investors](https://blog.cloudflare.com/tag/investors/)
+  * [IoCs](https://blog.cloudflare.com/tag/iocs/)
+  * [iOS](https://blog.cloudflare.com/tag/ios/)
+  * [IoT](https://blog.cloudflare.com/tag/iot/)
+  * [IPFS](https://blog.cloudflare.com/tag/ipfs/)
+  * [IPsec](https://blog.cloudflare.com/tag/ipsec/)
+  * [IPv4](https://blog.cloudflare.com/tag/ipv4/)
+  * [IPv6](https://blog.cloudflare.com/tag/ipv6/)
+  * [IRAP](https://blog.cloudflare.com/tag/irap/)
+  * [Israel](https://blog.cloudflare.com/tag/israel/)
+  * [Italy](https://blog.cloudflare.com/tag/italy/)
+  * [IWD](https://blog.cloudflare.com/tag/iwd/)
+  * [JAMstack](https://blog.cloudflare.com/tag/jamstack/)
+  * [Japan](https://blog.cloudflare.com/tag/japan/)
+  * [JavaScript](https://blog.cloudflare.com/tag/javascript/)
+  * [Jengo](https://blog.cloudflare.com/tag/jengo/)
+  * [Jengo Policy](https://blog.cloudflare.com/tag/jengo-policy/)
+  * [Joomla](https://blog.cloudflare.com/tag/joomla/)
+  * [Judeoflare](https://blog.cloudflare.com/tag/judeoflare/)
+  * [Kafka](https://blog.cloudflare.com/tag/kafka/)
+  * [Kernel](https://blog.cloudflare.com/tag/kernel/)
+  * [Key Value](https://blog.cloudflare.com/tag/key-value/)
+  * [Keyless SSL](https://blog.cloudflare.com/tag/keyless-ssl/)
+  * [KeyTrap](https://blog.cloudflare.com/tag/keytrap/)
+  * [Killnet](https://blog.cloudflare.com/tag/killnet/)
+  * [Korea](https://blog.cloudflare.com/tag/korea/)
+  * [Kubernetes](https://blog.cloudflare.com/tag/kubernetes/)
+  * [LangChain](https://blog.cloudflare.com/tag/langchain/)
+  * [Latency](https://blog.cloudflare.com/tag/latency/)
+  * [Latin America](https://blog.cloudflare.com/tag/latin-america/)
+  * [Latinflare](https://blog.cloudflare.com/tag/latinflare/)
+  * [LavaRand](https://blog.cloudflare.com/tag/lavarand/)
+  * [Lazarus group](https://blog.cloudflare.com/tag/lazarus-group/)
+  * [Leaked Credential Checks](https://blog.cloudflare.com/tag/leaked-credential-checks/)
+  * [Legal](https://blog.cloudflare.com/tag/legal/)
+  * [Legal Patents Sable](https://blog.cloudflare.com/tag/legal-patents-sable/)
+  * [LGBTQIA+](https://blog.cloudflare.com/tag/lgbtqia/)
+  * [Life at Cloudflare](https://blog.cloudflare.com/tag/life-at-cloudflare/)
+  * [Linux](https://blog.cloudflare.com/tag/linux/)
+  * [Lisbon](https://blog.cloudflare.com/tag/lisbon/)
+  * [Live Streaming](https://blog.cloudflare.com/tag/live-streaming/)
+  * [Llama](https://blog.cloudflare.com/tag/llama/)
+  * [LLM](https://blog.cloudflare.com/tag/llm/)
+  * [Load Balancing](https://blog.cloudflare.com/tag/loadbalancing/)
+  * [Localization](https://blog.cloudflare.com/tag/localization/)
+  * [Log Push](https://blog.cloudflare.com/tag/log-push/)
+  * [Log4J](https://blog.cloudflare.com/tag/log4j/)
+  * [Log4Shell](https://blog.cloudflare.com/tag/log4shell/)
+  * [Logging](https://blog.cloudflare.com/tag/logging/)
+  * [Logs](https://blog.cloudflare.com/tag/logs/)
+  * [LUA](https://blog.cloudflare.com/tag/lua/)
+  * [Machine Learning](https://blog.cloudflare.com/tag/machine-learning/)
+  * [Magecart](https://blog.cloudflare.com/tag/magecart/)
+  * [Magic Firewall](https://blog.cloudflare.com/tag/magic-firewall/)
+  * [Magic Network Monitoring](https://blog.cloudflare.com/tag/magic-network-monitoring/)
+  * [Magic Transit](https://blog.cloudflare.com/tag/magic-transit/)
+  * [Magic WAN](https://blog.cloudflare.com/tag/magic-wan/)
+  * [Magic WAN Connector](https://blog.cloudflare.com/tag/magic-wan-connector/)
+  * [Malicious JavaScript](https://blog.cloudflare.com/tag/malicious-javascript/)
+  * [Malware](https://blog.cloudflare.com/tag/malware/)
+  * [Managed Components](https://blog.cloudflare.com/tag/managed-components/)
+  * [Managed Rules](https://blog.cloudflare.com/tag/managed-rules/)
+  * [March of Cloudflare](https://blog.cloudflare.com/tag/march-of-cloudflare/)
+  * [MASQUE](https://blog.cloudflare.com/tag/masque/)
+  * [MCP](https://blog.cloudflare.com/tag/mcp/)
+  * [Meerkat](https://blog.cloudflare.com/tag/meerkat/)
+  * [MeetUp](https://blog.cloudflare.com/tag/meetup/)
+  * [Meris](https://blog.cloudflare.com/tag/meris/)
+  * [Message Protocol](https://blog.cloudflare.com/tag/message-protocol/)
+  * [Mexico](https://blog.cloudflare.com/tag/mexico/)
+  * [Micro-frontends](https://blog.cloudflare.com/tag/micro-frontends/)
+  * [Microsoft](https://blog.cloudflare.com/tag/microsoft/)
+  * [Microsoft 365](https://blog.cloudflare.com/tag/microsoft-365/)
+  * [Microsoft Azure](https://blog.cloudflare.com/tag/microsoft-azure/)
+  * [Middle East](https://blog.cloudflare.com/tag/middle-east/)
+  * [Migration Hub](https://blog.cloudflare.com/tag/migration-hub/)
+  * [Milestones](https://blog.cloudflare.com/tag/milestone/)
+  * [Miniflare](https://blog.cloudflare.com/tag/miniflare/)
+  * [Mirage](https://blog.cloudflare.com/tag/mirage/)
+  * [Mirai](https://blog.cloudflare.com/tag/mirai/)
+  * [Mitel](https://blog.cloudflare.com/tag/mitel/)
+  * [Mitigation](https://blog.cloudflare.com/tag/mitigation/)
+  * [Mixed Content Errors](https://blog.cloudflare.com/tag/mixed-content-errors/)
+  * [MLops](https://blog.cloudflare.com/tag/mlops/)
+  * [Mobile](https://blog.cloudflare.com/tag/mobile/)
+  * [Mobile SDK](https://blog.cloudflare.com/tag/mobile-sdk/)
+  * [Model Context Protocol](https://blog.cloudflare.com/tag/model-context-protocol/)
+  * [Moldova](https://blog.cloudflare.com/tag/moldova/)
+  * [Monitoring](https://blog.cloudflare.com/tag/monitoring/)
+  * [Multi-Cloud](https://blog.cloudflare.com/tag/multi-cloud/)
+  * [Multi-User](https://blog.cloudflare.com/tag/multi-user/)
+  * [MySQL](https://blog.cloudflare.com/tag/mysql/)
+  * [NaaS](https://blog.cloudflare.com/tag/naas/)
+  * [Net Neutrality](https://blog.cloudflare.com/tag/net-neutrality/)
+  * [Network](https://blog.cloudflare.com/tag/network/)
+  * [Network Interconnect](https://blog.cloudflare.com/tag/network-interconnect/)
+  * [Network Performance Update](https://blog.cloudflare.com/tag/network-performance-update/)
+  * [Network Protection](https://blog.cloudflare.com/tag/network-protection/)
+  * [Network Services](https://blog.cloudflare.com/tag/network-services/)
+  * [Networking](https://blog.cloudflare.com/tag/networking/)
+  * [New Year](https://blog.cloudflare.com/tag/new-year/)
+  * [NGINX](https://blog.cloudflare.com/tag/nginx/)
+  * [Ninjas](https://blog.cloudflare.com/tag/ninjas/)
+  * [NIST](https://blog.cloudflare.com/tag/nist/)
+  * [Node.js](https://blog.cloudflare.com/tag/node-js/)
+  * [North America](https://blog.cloudflare.com/tag/north-america/)
+  * [Notebooks](https://blog.cloudflare.com/tag/notebooks/)
+  * [Notifications](https://blog.cloudflare.com/tag/notifications/)
+  * [NSEC3](https://blog.cloudflare.com/tag/nsec3/)
+  * [OAuth](https://blog.cloudflare.com/tag/oauth/)
+  * [Observability](https://blog.cloudflare.com/tag/observability/)
+  * [Oceania](https://blog.cloudflare.com/tag/oceania/)
+  * [OCSP](https://blog.cloudflare.com/tag/ocsp/)
+  * [Offices](https://blog.cloudflare.com/tag/offices/)
+  * [Okta](https://blog.cloudflare.com/tag/okta/)
+  * [Olympics](https://blog.cloudflare.com/tag/olympics/)
+  * [Onboarding](https://blog.cloudflare.com/tag/onboarding/)
+  * [Open API](https://blog.cloudflare.com/tag/open-api/)
+  * [Open Source](https://blog.cloudflare.com/tag/open-source/)
+  * [OpenAI](https://blog.cloudflare.com/tag/openai/)
+  * [OpenBMC](https://blog.cloudflare.com/tag/open-bmc/)
+  * [OpenDNS](https://blog.cloudflare.com/tag/opendns/)
+  * [OpenSSL](https://blog.cloudflare.com/tag/openssl/)
+  * [OpenTelemetry ](https://blog.cloudflare.com/tag/opentelemetry/)
+  * [Optimization](https://blog.cloudflare.com/tag/optimization/)
+  * [Origin Rules](https://blog.cloudflare.com/tag/origin-rules/)
+  * [Outage](https://blog.cloudflare.com/tag/outage/)
+  * [Oxy](https://blog.cloudflare.com/tag/oxy/)
+  * [Pacific Northwest](https://blog.cloudflare.com/tag/pacific-northwest/)
+  * [Page Rules](https://blog.cloudflare.com/tag/page-rules/)
+  * [Page Shield](https://blog.cloudflare.com/tag/page-shield/)
+  * [Parallels](https://blog.cloudflare.com/tag/parallels/)
+  * [Partners](https://blog.cloudflare.com/tag/partners/)
+  * [Partnership](https://blog.cloudflare.com/tag/partnerships/)
+  * [Password-reuse](https://blog.cloudflare.com/tag/password-reuse/)
+  * [Passwords](https://blog.cloudflare.com/tag/passwords/)
+  * [Passwords (PT)](https://blog.cloudflare.com/tag/passwords-pt/)
+  * [Patents](https://blog.cloudflare.com/tag/patents/)
+  * [Pay Per Crawl](https://blog.cloudflare.com/tag/pay-per-crawl/)
+  * [PAYGO](https://blog.cloudflare.com/tag/paygo/)
+  * [Payments](https://blog.cloudflare.com/tag/payments/)
+  * [PCI Certified](https://blog.cloudflare.com/tag/pci-certified/)
+  * [Peering](https://blog.cloudflare.com/tag/peering/)
+  * [Performance](https://blog.cloudflare.com/tag/performance/)
+  * [Performance Optimization](https://blog.cloudflare.com/tag/performance-optimization/)
+  * [Phishing](https://blog.cloudflare.com/tag/phishing/)
+  * [php](https://blog.cloudflare.com/tag/php/)
+  * [Phython](https://blog.cloudflare.com/tag/phython/)
+  * [Pingora](https://blog.cloudflare.com/tag/pingora/)
+  * [Pipelines](https://blog.cloudflare.com/tag/pipelines/)
+  * [PlanetScale](https://blog.cloudflare.com/tag/planetscale/)
+  * [Plans](https://blog.cloudflare.com/tag/plans/)
+  * [Platform Engineering](https://blog.cloudflare.com/tag/platform-engineering/)
+  * [Platform Week](https://blog.cloudflare.com/tag/platform-week/)
+  * [Plesk](https://blog.cloudflare.com/tag/plesk/)
+  * [Policy & Legal](https://blog.cloudflare.com/tag/policy/)
+  * [Politics](https://blog.cloudflare.com/tag/politics/)
+  * [Portugal](https://blog.cloudflare.com/tag/portugal/)
+  * [Post Mortem](https://blog.cloudflare.com/tag/post-mortem/)
+  * [Post-Quantum](https://blog.cloudflare.com/tag/post-quantum/)
+  * [Postgres](https://blog.cloudflare.com/tag/postgres/)
+  * [Precursor](https://blog.cloudflare.com/tag/precursor/)
+  * [Prepared Statements](https://blog.cloudflare.com/tag/prepared-statements/)
+  * [Prisma](https://blog.cloudflare.com/tag/prisma/)
+  * [Privacy](https://blog.cloudflare.com/tag/privacy/)
+  * [Privacy Pass](https://blog.cloudflare.com/tag/privacy-pass/)
+  * [Privacy Week](https://blog.cloudflare.com/tag/privacy-week/)
+  * [Private IP](https://blog.cloudflare.com/tag/private-ip/)
+  * [Private Network](https://blog.cloudflare.com/tag/private-network/)
+  * [Product Design](https://blog.cloudflare.com/tag/product-design/)
+  * [Product News](https://blog.cloudflare.com/tag/product-news/)
+  * [Programming](https://blog.cloudflare.com/tag/programming/)
+  * [Programming (PT)](https://blog.cloudflare.com/tag/programming-pt/)
+  * [Project Fair Shot](https://blog.cloudflare.com/tag/project-fair-shot/)
+  * [Project Galileo](https://blog.cloudflare.com/tag/project-galileo/)
+  * [Project Honey Pot](https://blog.cloudflare.com/tag/project-honey-pot/)
+  * [Project Pangea](https://blog.cloudflare.com/tag/project-pangea/)
+  * [Project Safekeeping](https://blog.cloudflare.com/tag/project-safekeeping/)
+  * [Project Turpentine](https://blog.cloudflare.com/tag/project-turpentine/)
+  * [Prometheus](https://blog.cloudflare.com/tag/prometheus/)
+  * [Protocols](https://blog.cloudflare.com/tag/protocols/)
+  * [Proudflare](https://blog.cloudflare.com/tag/proudflare/)
+  * [Proxying](https://blog.cloudflare.com/tag/proxying/)
+  * [Public Sector](https://blog.cloudflare.com/tag/public-sector/)
+  * [Python](https://blog.cloudflare.com/tag/python/)
+  * [Python Workers](https://blog.cloudflare.com/tag/python-workers/)
+  * [Quantization](https://blog.cloudflare.com/tag/quantization/)
+  * [Queues](https://blog.cloudflare.com/tag/queues/)
+  * [QUIC](https://blog.cloudflare.com/tag/quic/)
+  * [QUICHE](https://blog.cloudflare.com/tag/quiche/)
+  * [Quicksilver](https://blog.cloudflare.com/tag/quicksilver/)
+  * [R2](https://blog.cloudflare.com/tag/r2/)
+  * [R2 Super Slurper](https://blog.cloudflare.com/tag/r2-super-slurper/)
+  * [Radar](https://blog.cloudflare.com/tag/cloudflare-radar/)
+  * [Radar Alerts](https://blog.cloudflare.com/tag/radar-alerts/)
+  * [Radar API](https://blog.cloudflare.com/tag/radar-api/)
+  * [Radar Maps](https://blog.cloudflare.com/tag/radar-maps/)
+  * [Railgun](https://blog.cloudflare.com/tag/railgun/)
+  * [Randomness](https://blog.cloudflare.com/tag/randomness/)
+  * [Ransom Attacks](https://blog.cloudflare.com/tag/ransom-attacks/)
+  * [Rapid Reset](https://blog.cloudflare.com/tag/rapid-reset/)
+  * [Raspberry Pi](https://blog.cloudflare.com/tag/raspberry-pi/)
+  * [Rate Limiting](https://blog.cloudflare.com/tag/rate-limiting/)
+  * [RC4](https://blog.cloudflare.com/tag/rc4/)
+  * [RDDoS](https://blog.cloudflare.com/tag/rddos/)
+  * [React](https://blog.cloudflare.com/tag/react/)
+  * [Reading List](https://blog.cloudflare.com/tag/reading-list/)
+  * [Real-time](https://blog.cloudflare.com/tag/real-time/)
+  * [Recruiting](https://blog.cloudflare.com/tag/recruiting/)
+  * [Regional Services](https://blog.cloudflare.com/tag/regional-services/)
+  * [Registrar](https://blog.cloudflare.com/tag/registrar/)
+  * [Reliability](https://blog.cloudflare.com/tag/reliability/)
+  * [Remote Browser Isolation](https://blog.cloudflare.com/tag/remote-browser-isolation/)
+  * [Remote Desktop Protocol ](https://blog.cloudflare.com/tag/remote-desktop-protocol/)
+  * [Remote Work](https://blog.cloudflare.com/tag/remote-work/)
+  * [Replication](https://blog.cloudflare.com/tag/replication/)
+  * [Research](https://blog.cloudflare.com/tag/research/)
+  * [Resolver](https://blog.cloudflare.com/tag/resolver/)
+  * [Restreaming](https://blog.cloudflare.com/tag/restreaming/)
+  * [Retreat](https://blog.cloudflare.com/tag/retreat/)
+  * [Reverse Engineering](https://blog.cloudflare.com/tag/reverse-engineering/)
+  * [REvil](https://blog.cloudflare.com/tag/revil/)
+  * [Risk Management](https://blog.cloudflare.com/tag/risk-management/)
+  * [Road to Zero Trust](https://blog.cloudflare.com/tag/road-to-zero-trust/)
+  * [Rocket Loader](https://blog.cloudflare.com/tag/rocketloader/)
+  * [RocksDB](https://blog.cloudflare.com/tag/rocksdb/)
+  * [Routing](https://blog.cloudflare.com/tag/routing/)
+  * [Routing Security](https://blog.cloudflare.com/tag/routing-security/)
+  * [RPC](https://blog.cloudflare.com/tag/rpc/)
+  * [RPKI](https://blog.cloudflare.com/tag/rpki/)
+  * [RRDNS](https://blog.cloudflare.com/tag/rrdns/)
+  * [RSA](https://blog.cloudflare.com/tag/rsa/)
+  * [Russia](https://blog.cloudflare.com/tag/russia/)
+  * [Rust](https://blog.cloudflare.com/tag/rust/)
+  * [Rust Workers](https://blog.cloudflare.com/tag/rust-workers/)
+  * [SaaS](https://blog.cloudflare.com/tag/saas/)
+  * [SAAS Security](https://blog.cloudflare.com/tag/saas-security/)
+  * [Sable](https://blog.cloudflare.com/tag/sable/)
+  * [Salt](https://blog.cloudflare.com/tag/salt/)
+  * [Sampling](https://blog.cloudflare.com/tag/sampling/)
+  * [Sandbox](https://blog.cloudflare.com/tag/sandbox/)
+  * [SASE](https://blog.cloudflare.com/tag/sase/)
+  * [Save The Web](https://blog.cloudflare.com/tag/savetheweb/)
+  * [SDK](https://blog.cloudflare.com/tag/sdk/)
+  * [Search Engine](https://blog.cloudflare.com/tag/search-engine/)
+  * [Secrets Store](https://blog.cloudflare.com/tag/secrets-store/)
+  * [Secure Web Gateway](https://blog.cloudflare.com/tag/secure-web-gateway/)
+  * [Security](https://blog.cloudflare.com/tag/security/)
+  * [Security Analytics](https://blog.cloudflare.com/tag/security-analytics/)
+  * [Security Center](https://blog.cloudflare.com/tag/security-center/)
+  * [Security Posture](https://blog.cloudflare.com/tag/security-posture/)
+  * [Security Posture Management](https://blog.cloudflare.com/tag/security-posture-management/)
+  * [Security Service Edge](https://blog.cloudflare.com/tag/security-service-edge/)
+  * [Security Week](https://blog.cloudflare.com/tag/security-week/)
+  * [security.txt](https://blog.cloudflare.com/tag/security-txt/)
+  * [SEO](https://blog.cloudflare.com/tag/seo/)
+  * [Server Push](https://blog.cloudflare.com/tag/server-push/)
+  * [Serverless](https://blog.cloudflare.com/tag/serverless/)
+  * [Serverless (PT)](https://blog.cloudflare.com/tag/serverless-pt/)
+  * [Serverless AI](https://blog.cloudflare.com/tag/serverless-ai/)
+  * [Serverless Week](https://blog.cloudflare.com/tag/serverless-week/)
+  * [Servers](https://blog.cloudflare.com/tag/servers/)
+  * [SIEM](https://blog.cloudflare.com/tag/siem/)
+  * [Signed Exchanges (SXG)](https://blog.cloudflare.com/tag/signed-exchanges/)
+  * [SIM](https://blog.cloudflare.com/tag/sim/)
+  * [Singapore](https://blog.cloudflare.com/tag/singapore/)
+  * [Single Sign On (SSO)](https://blog.cloudflare.com/tag/sso/)
+  * [Smart Placement](https://blog.cloudflare.com/tag/smart-placement/)
+  * [Smart Shield](https://blog.cloudflare.com/tag/smart-shield/)
+  * [Snippets](https://blog.cloudflare.com/tag/snippets/)
+  * [SOC as a Service](https://blog.cloudflare.com/tag/soc-as-a-service/)
+  * [South Africa](https://blog.cloudflare.com/tag/south-africa/)
+  * [South America](https://blog.cloudflare.com/tag/south-america/)
+  * [Spain](https://blog.cloudflare.com/tag/spain/)
+  * [spdy](https://blog.cloudflare.com/tag/spdy/)
+  * [Spectrum](https://blog.cloudflare.com/tag/spectrum/)
+  * [Speed](https://blog.cloudflare.com/tag/speed/)
+  * [Speed & Reliability](https://blog.cloudflare.com/tag/speed-and-reliability/)
+  * [Speed Brain](https://blog.cloudflare.com/tag/speed-brain/)
+  * [Speed Week](https://blog.cloudflare.com/tag/speed-week/)
+  * [Spoofing](https://blog.cloudflare.com/tag/spoofing/)
+  * [Sports](https://blog.cloudflare.com/tag/sports/)
+  * [SQL](https://blog.cloudflare.com/tag/sql/)
+  * [SRE](https://blog.cloudflare.com/tag/sre/)
+  * [SSE](https://blog.cloudflare.com/tag/sse/)
+  * [SSH](https://blog.cloudflare.com/tag/ssh/)
+  * [SSL](https://blog.cloudflare.com/tag/ssl/)
+  * [Standards](https://blog.cloudflare.com/tag/standards/)
+  * [Startup Enterprise Plan](https://blog.cloudflare.com/tag/startup-enterprise-plan/)
+  * [Statistics](https://blog.cloudflare.com/tag/statistics/)
+  * [StopTheHacker](https://blog.cloudflare.com/tag/stopthehacker/)
+  * [Storage](https://blog.cloudflare.com/tag/storage/)
+  * [Sumo Logic](https://blog.cloudflare.com/tag/sumo-logic/)
+  * [Super Bowl](https://blog.cloudflare.com/tag/super-bowl/)
+  * [Supercloud](https://blog.cloudflare.com/tag/supercloud/)
+  * [Supply Chain Attacks](https://blog.cloudflare.com/tag/supply-chain-attacks/)
+  * [Support](https://blog.cloudflare.com/tag/support/)
+  * [Sustainability](https://blog.cloudflare.com/tag/sustainability/)
+  * [SWAG](https://blog.cloudflare.com/tag/swag/)
+  * [SWG](https://blog.cloudflare.com/tag/swg/)
+  * [Swift](https://blog.cloudflare.com/tag/swift/)
+  * [Switzerland](https://blog.cloudflare.com/tag/switzerland/)
+  * [SXSW](https://blog.cloudflare.com/tag/sxsw/)
+  * [SYN](https://blog.cloudflare.com/tag/syn/)
+  * [SYN Flood](https://blog.cloudflare.com/tag/syn-flood/)
+  * [Syria](https://blog.cloudflare.com/tag/syria/)
+  * [TCP](https://blog.cloudflare.com/tag/tcp/)
+  * [Team](https://blog.cloudflare.com/tag/team/)
+  * [Teams Dashboard](https://blog.cloudflare.com/tag/teams-dashboard/)
+  * [Tech Talks](https://blog.cloudflare.com/tag/tech-talks/)
+  * [TechCrunch](https://blog.cloudflare.com/tag/techcrunch/)
+  * [Technical Writing](https://blog.cloudflare.com/tag/technical-writing/)
+  * [Terraform](https://blog.cloudflare.com/tag/terraform/)
+  * [Testimonials](https://blog.cloudflare.com/tag/testimonials/)
+  * [Testing](https://blog.cloudflare.com/tag/testing/)
+  * [Texas](https://blog.cloudflare.com/tag/texas/)
+  * [Thanksgiving](https://blog.cloudflare.com/tag/thanksgiving/)
+  * [The Serverlist Newsletter](https://blog.cloudflare.com/tag/serverlist/)
+  * [Threat Data](https://blog.cloudflare.com/tag/threat-data/)
+  * [Threat Feeds](https://blog.cloudflare.com/tag/threat-feeds/)
+  * [Threat Intelligence](https://blog.cloudflare.com/tag/threat-intelligence/)
+  * [Threat Operations](https://blog.cloudflare.com/tag/threat-operations/)
+  * [Threat Report](https://blog.cloudflare.com/tag/threat-report/)
+  * [Threats](https://blog.cloudflare.com/tag/threats/)
+  * [Tiered Cache](https://blog.cloudflare.com/tag/tiered-cache/)
+  * [TikTok](https://blog.cloudflare.com/tag/tiktok/)
+  * [TLS](https://blog.cloudflare.com/tag/tls/)
+  * [TLS 1.3](https://blog.cloudflare.com/tag/tls-1-3/)
+  * [Tools](https://blog.cloudflare.com/tag/tools/)
+  * [Tor](https://blog.cloudflare.com/tag/tor/)
+  * [Tracing](https://blog.cloudflare.com/tag/tracing/)
+  * [Traffic](https://blog.cloudflare.com/tag/traffic/)
+  * [Transform Rules](https://blog.cloudflare.com/tag/transform-rules/)
+  * [Transparency](https://blog.cloudflare.com/tag/transparency/)
+  * [Trends](https://blog.cloudflare.com/tag/trends/)
+  * [Trust & Safety](https://blog.cloudflare.com/tag/trust-and-safety/)
+  * [TTFB](https://blog.cloudflare.com/tag/ttfb/)
+  * [TTL](https://blog.cloudflare.com/tag/ttl/)
+  * [TURN](https://blog.cloudflare.com/tag/turn/)
+  * [TURN Server](https://blog.cloudflare.com/tag/turn-server/)
+  * [Turnstile](https://blog.cloudflare.com/tag/turnstile/)
+  * [TypeScript](https://blog.cloudflare.com/tag/typescript/)
+  * [UDP](https://blog.cloudflare.com/tag/udp/)
+  * [Ukraine](https://blog.cloudflare.com/tag/ukraine/)
+  * [United Kingdom](https://blog.cloudflare.com/tag/united-kingdom/)
+  * [Universal SSL](https://blog.cloudflare.com/tag/universal-ssl/)
+  * [URL Scanner](https://blog.cloudflare.com/tag/url-scanner/)
+  * [USA](https://blog.cloudflare.com/tag/usa/)
+  * [User Research](https://blog.cloudflare.com/tag/user-research/)
+  * [VDI](https://blog.cloudflare.com/tag/vdi/)
+  * [Vectorize](https://blog.cloudflare.com/tag/vectorize/)
+  * [Vetflare](https://blog.cloudflare.com/tag/vetflare/)
+  * [Video](https://blog.cloudflare.com/tag/video/)
+  * [Visibility](https://blog.cloudflare.com/tag/visibility/)
+  * [Vite](https://blog.cloudflare.com/tag/vite/)
+  * [VoIP](https://blog.cloudflare.com/tag/voip/)
+  * [VPC](https://blog.cloudflare.com/tag/vpc/)
+  * [VPN](https://blog.cloudflare.com/tag/vpn/)
+  * [Vulnerabilities](https://blog.cloudflare.com/tag/vulnerabilities/)
+  * [WAF](https://blog.cloudflare.com/tag/waf/)
+  * [WAF Attack Score](https://blog.cloudflare.com/tag/waf-attack-score/)
+  * [WAF Rules](https://blog.cloudflare.com/tag/waf-rules/)
+  * [Waiting Room](https://blog.cloudflare.com/tag/waiting-room/)
+  * [WARP](https://blog.cloudflare.com/tag/warp/)
+  * [WARP Connector](https://blog.cloudflare.com/tag/warp-connector/)
+  * [WASM](https://blog.cloudflare.com/tag/wasm/)
+  * [Web Application Firewall](https://blog.cloudflare.com/tag/web-application-firewall/)
+  * [Web Asset Discovery](https://blog.cloudflare.com/tag/web-asset-discovery/)
+  * [Web3](https://blog.cloudflare.com/tag/web3/)
+  * [WebAssembly](https://blog.cloudflare.com/tag/webassembly/)
+  * [Webinars](https://blog.cloudflare.com/tag/webinars/)
+  * [WebMCP](https://blog.cloudflare.com/tag/webmcp/)
+  * [WebP](https://blog.cloudflare.com/tag/webp/)
+  * [WebRTC](https://blog.cloudflare.com/tag/webrtc/)
+  * [WebSockets](https://blog.cloudflare.com/tag/websockets/)
+  * [Wildebeest](https://blog.cloudflare.com/tag/wildebeest/)
+  * [Womenflare](https://blog.cloudflare.com/tag/womenflare/)
+  * [WordPress](https://blog.cloudflare.com/tag/wordpress/)
+  * [Workers AI](https://blog.cloudflare.com/tag/workers-ai/)
+  * [Workers Launchpad](https://blog.cloudflare.com/tag/workers-launchpad/)
+  * [Workers Logs](https://blog.cloudflare.com/tag/workers-logs/)
+  * [Workers Observability](https://blog.cloudflare.com/tag/workers-observability/)
+  * [Workers Sites](https://blog.cloudflare.com/tag/workers-sites/)
+  * [Workers Unbound](https://blog.cloudflare.com/tag/workers-unbound/)
+  * [Workers VPC](https://blog.cloudflare.com/tag/workers-vpc/)
+  * [Workflows](https://blog.cloudflare.com/tag/workflows/)
+  * [World IPv6 Day](https://blog.cloudflare.com/tag/world-ipv6-day/)
+  * [Wrangler](https://blog.cloudflare.com/tag/wrangler/)
+  * [x402](https://blog.cloudflare.com/tag/x402/)
+  * [Year in Review](https://blog.cloudflare.com/tag/year-in-review/)
+  * [Z3](https://blog.cloudflare.com/tag/z3/)
+  * [Zaraz](https://blog.cloudflare.com/tag/zaraz/)
+  * [Zero Day Threats](https://blog.cloudflare.com/tag/zero-day-threats/)
+  * [Zero Trust](https://blog.cloudflare.com/tag/zero-trust/)
+  * [Zero Trust Week](https://blog.cloudflare.com/tag/zero-trust-week/)
+  * [Zone Versioning](https://blog.cloudflare.com/tag/zone-versioning/)
+  * [Artificial Intelligence](https://blog.cloudflare.com/tag/artificial-intelligence/)
+  * [Workers](https://blog.cloudflare.com/tag/workers-1/)
+  * [Client-Side Security](https://blog.cloudflare.com/tag/client-side-security/)
+  * [Architecture](https://blog.cloudflare.com/tag/architecture/)
+  * [Multi-tenant Secuity](https://blog.cloudflare.com/tag/multi-tenant-secuity/)
+  * [Multi-tenant Security](https://blog.cloudflare.com/tag/multi-tenant-security/)
+  * [cf](https://blog.cloudflare.com/tag/cf/)
+  * [BEACON](https://blog.cloudflare.com/tag/beacon/)
+
+
+
+[Cryptography](https://blog.cloudflare.com/tag/cryptography/)[Developer Platform](https://blog.cloudflare.com/tag/developer-platform/)[Internship Experience](https://blog.cloudflare.com/tag/internship-experience/)[Post-Quantum](https://blog.cloudflare.com/tag/post-quantum/)[Security](https://blog.cloudflare.com/tag/security/)
+
+[AI](https://blog.cloudflare.com/tag/ai/)[Birthday Week](https://blog.cloudflare.com/tag/birthday-week/)[Cloudflare Workers](https://blog.cloudflare.com/tag/workers/)[Cryptography](https://blog.cloudflare.com/tag/cryptography/)[Developer Platform](https://blog.cloudflare.com/tag/developer-platform/)[Internship Experience](https://blog.cloudflare.com/tag/internship-experience/)[Post-Quantum](https://blog.cloudflare.com/tag/post-quantum/)[Security](https://blog.cloudflare.com/tag/security/)
+
+September 29, 2026
+
+# Using AI to chart a course for our post-quantum migration
+
+![Sharon Goldberg](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW488S3YN4RV24QXC7PM57EC.png&w=64&h=64&f=webp&fit=cover&position=center)![Tiago Silva](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01M34Y5PD1JFD5WXM3SY93FQ3Q.01M34Y5PYATEYXM7BF3DB95FPM.webp&w=64&h=64&f=webp&fit=cover&position=center)
+
+[Sharon Goldberg](https://blog.cloudflare.com/author/goldbe/) and [Tiago Silva](https://blog.cloudflare.com/author/tiago-silva/)
+
+15 minute read
+
+COPY URL
+
+![](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01M3NF5CE1NWTNNCSR9EKXSF87.01M3NF5CZVBP4EQSN6G4FQQC3S.png&w=1999&h=1132&f=webp&fit=cover&position=center)![](data:image/bmp;base64,Qk32BAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAATCwAAEwsAAAAAAAAAAAAAMQAANQARPRszRTdISERRRUFOPSs7MgAVNAAEPQAdUDE7YUtSaVdeZVRbVT9JOwMkNwAWRBsmXj9BdFlZgGdofGRnZ01UQhwuOQAdRyApYkNCe15biGxrhWlsbVJZRiMyOgAcRRgkXDw6cldUf2VmfWNpaE5XQx0vOgAWPgAZSykqW0RFZ1RaZ1RgWEBPPAYlOQAMNgAENAAROiozRT1NSUBVQy1GNAAYOAAHMwAAJwAAIxgpLjFGNzVPOCJBMAAQ)
+
+As laboratories around the world race to build out a [_cryptographically relevant quantum computer_](https://blog.cloudflare.com/the-quantum-menace/), we at Cloudflare are racing towards a [_2029 target deadline for full post-quantum readiness_](https://blog.cloudflare.com/post-quantum-roadmap/). While we’ve already transitioned many of our [_products_](https://developers.cloudflare.com/ssl/post-quantum-cryptography/pqc-cloudflare-products/) to post-quantum encryption, we still have work to do to support [_post-quantum authentication_](https://blog.cloudflare.com/ml-dsa-will-have-to-do/) and achieve full post-quantum readiness across our platform.
+
+We’re taking a maximalist stance (“PQ everything!”), because as an infrastructure provider to the world, we want to give our customers the peace of mind that using Cloudflare ensures that their traffic is future-proofed against quantum adversaries.
+
+But how does one accomplish such a massive migration at an organization of our size and scale? After all, cryptography is the base layer for almost all of the world’s digital systems, including the software services and the networking protocols that power our platform.
+
+To drive our PQ migration, we have three key goals.
+
+First, we want to help our product and engineering teams understand how cryptography is being used and how they should be upgrading it. This should cover both the upgrades to post-quantum encryption and to post-quantum authentication. Many of our products have already been upgraded to [_post-quantum encryption_](https://developers.cloudflare.com/ssl/post-quantum-cryptography/pqc-cloudflare-products/) over [_TLS_](https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/) 1.3, but we still want to cover the long tail of TLS connections, as well as upgrade any other uses of public-key encryption. Meanwhile, it’s still [_early_](https://blog.cloudflare.com/post-quantum-authentication-to-origins/) [days](http://blog.cloudflare.com/pq-ca-with-mtcs/) for our deployment of post-quantum authentication.
+
+Next, we want to provide progress metrics for the migration. These might include per-repository and per-product counts of the use of classical and post-quantum cryptography.
+
+Finally, we want to surface prerequisites early. If our products or platform rely on protocols that don’t yet have a PQ migration plan (because PQ variants of the system have not yet been considered, because PQ standards do not exist or lack consensus, or because software libraries or other key ecosystem components do not yet have PQ support), then we need to know now. That way we can work with the relevant stakeholders, standards bodies and ecosystems to help drive their PQ migration plans, so that we can meet our own 2029 PQ migration timeline.
+
+This post is the story of how we’re going about this. We explain how we turned to AI to help us solve some of our problems and how we’re developing an internal tool called **CryptoLabe** to help us. CryptoLabe is named after the mariner’s astrolabe, a navigation instrument refined by Portuguese navigators. Just as an astrolabe helped sailors determine where they were and chart a course, CryptoLabe helps us discover cryptography in our code, understand how it is used, and chart a path to post-quantum migration.
+
+CryptoLabe is highly specialized to our internal systems (our repositories, our ticketing systems, and internal documentation processes) and still evolving as we continue its development, so we aren’t making it available to customers. Nevertheless, we are sharing our learnings so that other organizations can build upon our efforts as they work through their own PQ migration journey.
+
+## The scale of the problem
+
+The software that powers most Cloudflare products lives inside our single centralized source control management platform. This means we can find most uses of cryptography across our platform by just looking through our codebase.
+
+While the centralization of our codebase is a marked advantage for us, we still need to contend with three challenges that come with the scale of this problem. First, our code is spread across many repositories. Second, cryptography rarely announces itself plainly in the code. Instead, it hides in
+
+  * shared libraries that a repository imports but may or may not actually call
+  * upstream and protocol defaults, like a TLS 1.3 listener that is configured to negotiate a classical key exchange such as X25519 rather than post-quantum X25519MLKEM768
+  * configuration files that select algorithms far away from the code that uses them, like a TLS responder whose key exchange protocols are pinned in a YAML file stored in a different repository
+  * code paths that are dead, test-only, or on a path to being deprecated
+
+
+
+Third, cryptography discovery is about more than just pattern matching. Grepping for certain algorithm names (e.g. “RSA” or “X25519”) overcounts, because it finds cryptography in unused code. Grepping also undercounts, because it misses defaults and indirect uses in dependencies and configuration. Most importantly, it can't tell you how the cryptography is used. A classical [_ECDSA_](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm) signature could be part of a [_JWT_](https://www.rfc-editor.org/info/rfc7519/), [_IPsec_](https://www.cloudflare.com/learning/network-layer/what-is-ipsec/#how-does-ipsec-work), [_TLS_](https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/), or [_SSH_](https://www.cloudflare.com/learning/access-management/what-is-ssh/), and each has a completely different migration path. Many uses also depend on the other side of the connection: a TLS server may support both post-quantum key exchange and classical key exchange; the one it chooses to use would depend on the client.
+
+## Turning to AI
+
+It turns out that AI is pretty good at doing more than just grepping. A model can search a codebase, follow evidence across files, and return structured analysis. It can also enrich findings by pulling information from other sources, like our internal documentation and ticketing systems. In fact, AI can even explain how cryptography is being used and how it should be updated. We’ve been putting that idea to the test as we develop CryptoLabe.
+
+As we said before, our first two goals are to (1) discover and understand the use of cryptography in our codebase, and also (2) to get metrics on the state of our PQ migration. Towards these goals, our current implementation of CryptoLabe performs scans in two stages, as shown in the figure below.
+
+![](data:image/bmp;base64,Qk32BAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAATCwAAEwsAAAAAAAAAAAAA///////9+Pjz8/Pv9PTz9vb38vLz6urq////////+fn29PTy9fX29/f68/P26+vs////////+/v69vb2+Pj6+fn+9fX67e3w////////////+vr7+/v//Pz/+Pj/8fH1/////////////v7//////////f3/9fX6////////////////////////////+fn9/////////////////////////////Pz//////////////////////////////f3/)![](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01M3NESS5M04DZSXCZCVK7CC8Y.png&w=715&h=430&f=webp&fit=cover&position=center)
+
+The first “discovery” stage starts by mapping the repository. It then searches for cryptography through source, configuration, manifests, lockfiles, scripts, tests, and documentation. Among other things, the scan looks for the use of cryptography like key agreement, signatures, asymmetric encryption, [_PKI_](https://en.wikipedia.org/wiki/Public_key_infrastructure), tokens, credentials, hardware security module integrations, and more. This discovery stage produces a set of "raw observations."
+
+Each raw observation feeds a run of the second stage. This “analysis” stage first re-checks the observation against the source code. It then investigates how the cryptographic operation is used at runtime, what role the repository plays, and which internal or external parties it depends on. When necessary, it can inspect related code in other repositories to complete the analysis. Finally, it takes a pass over its own conclusions, searching for missing or conflicting evidence such as configuration overrides, test-only code, or incorrect assumptions about runtime behavior.
+
+Next, the model assigns a classification to the finding. If there is not enough evidence to assign a classification, the model assigns _More evidence needed_ , _External dependency_ , or _Unknown_ rather than guessing.
+
+This is the current list of classifications used by CryptoLabe, containing catch-all classifiers which will likely be refined as we proceed through our migration. (As an example, we could refine our classifiers by splitting the “encryption” classifier into [_key agreement_](https://www.rfc-editor.org/info/rfc10024/) and [_HPKE_](https://blog.cloudflare.com/hybrid-public-key-encryption/); you get the idea.)
+
+**Classification**| **Examples**  
+---|---  
+Classical encryption| This is a catch-all category that finds cases of elliptic-curve [Diffie-Hellman key exchange (ECDHE)](https://en.wikipedia.org/wiki/Elliptic-curve_Diffie%E2%80%93Hellman) (e.g., X25519, P-256, P-384), RSA key agreement or other uses of public-key encryption (e.g., [_HPKE_](https://www.rfc-editor.org/info/rfc9180/)). These are broken by a quantum computer running [Shor's algorithm](https://en.wikipedia.org/wiki/Shor%27s_algorithm), which puts them at risk of [harvest-now-decrypt-later attacks](https://blog.cloudflare.com/the-quantum-menace/).  
+Classical signature| This is a catch-all category that finds use of an RSA signature or elliptic-curve (ECDSA) signature in anything, for example a certificate, a TLS handshake, another protocol handshake. These signatures are broken by Shor's algorithm.  
+Classical token| We found a lot of [RS256 or ES256 JWT tokens](https://en.wikipedia.org/wiki/JSON_Web_Token), so we created a special classification for them. These are JWTs that use classical RSA and ECDSA signatures; [RFC 9964](https://www.rfc-editor.org/info/rfc9964) defines a post-quantum replacement using [_ML-DSA_](https://blog.cloudflare.com/ml-dsa-will-have-to-do/).  
+PQ-ready hybrid key exchange| Finds hybrid post-quantum key exchange in TLS 1.3, i.e. [X25519MLKEM768](https://datatracker.ietf.org/doc/rfc10024/). This is the most prevalent use of PQ encryption in our codebase.  
+PQ-ready| Finds other uses of post-quantum cryptography that are not [X25519MLKEM768](https://datatracker.ietf.org/doc/rfc10024/) in TLS 1.3, like [ML-DSA](https://csrc.nist.gov/pubs/fips/204/final).  
+  
+Finally, it generates a report that serves two audiences: (1) product managers who need to understand what the migration means for their product, and (2) engineers that need enough detail to execute the migration. 
+
+Here’s a (cropped) view of one of our reports:
+
+![](data:image/bmp;base64,Qk32BAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAATCwAAEwsAAAAAAAAAAAAA+vv+9/j68vLz8fDw9PT09/b49PP07Ozs/f3/+vn78/Pz8fDw9PPz9/b39PT07u3t/////Pv79fTz8vHw9PPz9/b39fT17+7u/////fz89/X18/Lx9fT0+Pf49/X28vDw/v7/+/z99/f39fT09/b3+vn6+Pf49PPz+fz/+Pv/9vj69/f4+vn6/Pv9+vr79vb39fr/9fn/9fj8+Pn7/Pz9/f3/+/z99/j58/n/8/n/9fn8+fr8/P3+/v7//Pz++Pn6)![](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01M3NESR0TET6ZRYP60MWHEK7W.png&w=715&h=348&f=webp&fit=cover&position=center)
+
+While we’ve been iteratively reviewing findings against the source code and with relevant engineers, we do not yet have a ground-truth dataset for reproducibly comparing different versions of the prompts we’ve tried for CryptoLabe.
+
+## Built on Cloudflare’s Developer Platform
+
+We built CryptoLabe on [_Cloudflare's Developer Platform_](https://developers.cloudflare.com/). Here’s the architecture:
+
+![](data:image/bmp;base64,Qk32BAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAATCwAAEwsAAAAAAAAAAAAA/f3/+fn78fHx7ezt7+/y8/L37+/z5+fp/v7/+vr98fHz7u3u8fHz9vb58/P26+vs/////Pz/8/P28PDx9fX2+vr8+Pj68PDw////////+Pj69fX2+vr7/////f3/9fX1/////////////Pv8////////////+vr6/////////////////////////////f3/////////////////////////////////////////////////////////////////)![](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01M3NESPT874M5F4BP58M87WXB.png&w=715&h=367&f=webp&fit=cover&position=center)
+
+CryptoLabe runs across two Cloudflare [_Workers_](https://www.cloudflare.com/products/workers/). There’s a scanner Worker that runs the scans. And there’s an inventory Worker that serves the dashboard, exposes the API, and stores everything in a [_D1_](https://developers.cloudflare.com/d1/) database. The two communicate through [_Service Bindings_](https://developers.cloudflare.com/workers/runtime-apis/service-bindings/). A scan starts when someone requests it from the dashboard, and the inventory Worker passes the request to the scanner.
+
+### Orchestrating a scan
+
+We need a way to keep a scan alive and on track from start to finish, without building our own job orchestration system. We did this with [_Agents SDK_](https://developers.cloudflare.com/agents/). Each repository gets its own persistent coordinator built on a [_Durable Object (DO)_](https://developers.cloudflare.com/durable-objects/). A bounded queue in front of the coordinators limits how many scans run at once. When a scan's turn comes, the coordinator tracks its progress and handles cancellation, retries, and recovery.
+
+The coordinator doesn't do the analysis itself. It hands the work to [_Cloudflare Workflows_](https://developers.cloudflare.com/workflows/), so that they can persist progress and automatically retry failed steps. The coordinator moves each repository through four stages:
+
+  1. discovery Workflow (the first scanning stage that produces raw observations)
+  2. deep analysis Workflow (the second stage, run on each raw observation)
+  3. merge Workflow (that builds a list of findings for a given repository, including combining repeated or similar finds)
+  4. publish workflow (that hands results back to the inventory Worker)
+
+
+
+The first two workflows need the model to have access to the repository's code. We want this access to be isolated, so we don’t risk damaging the codebase. That’s why CryptoLabe downloads the repository once, at an exact commit, at the start of each scan, and then stores that snapshot in [_R2_](https://developers.cloudflare.com/r2/). Each Workflow then restores the snapshot into a fresh, short-lived [_Cloudflare Sandbox_](https://developers.cloudflare.com/sandbox/), an isolated container. The model then works with the Sandbox through a small set of read-only tools on an immutable snapshot of the code, even if the codebase changes while the scan is still running.
+
+### Calling the model at scale
+
+If we want to scan through all of our (many!) repositories, we have to worry about both cost and capacity.
+
+For cost, the model loop sends its requests through [_AI Gateway_](https://developers.cloudflare.com/ai-gateway/) to cost-effective open-weight models hosted on [_Workers AI_](https://developers.cloudflare.com/workers-ai/). Putting the model behind AI Gateway also makes it easy to switch models as better or cheaper ones become available. 
+
+Capacity became a problem once we scanned many repositories at once. Bursts of model requests began triggering HTTP 429 (rate limit) responses from AI Gateway, and scans retrying independently only made the bursts worse. We solved this with a single, global Durable Object that paces every model request across all scans, including retries. When any scan hits a rate limit, the cooldown is shared and all scans back off together, so concurrent scans share the available capacity instead of competing for it.
+
+## Prerequisites and hard cases
+
+Let’s now get into our third goal: surfacing prerequisites and hard cases early.
+
+A lot of ink has been spilled about _ecosystem readiness_ for the PQ migration, and we are now going to spill some more. As everyone knows, a PQ migration cannot happen in a vacuum. For migration to succeed, post-quantum cryptography must be supported in relevant software libraries (e.g. BoringSSL) and across parties that participate in the ecosystem (e.g. clients, browsers, origins, cloud proxies, certificate authorities, etc.). Standards are also an important indicator of ecosystem support, although a standard that is still in “draft” state does not necessarily mean deployment cannot proceed. As an example, we deployed X25519MLKEM768 in TLS 1.3 back in 2022 when it was still a “draft” at the Internet Engineering Task Force ([_IETF_](https://www.ietf.org/)) while it was only finalized as [_RFC 10024_](https://www.rfc-editor.org/info/rfc10024/) in 2026.
+
+Either way, our point is that in order to upgrade a system to PQ cryptography, we need to understand its dependencies and level of ecosystem support. 
+
+That’s why CryptoLabe uses the concept of “prerequisites” to highlight findings that cannot be immediately remediated by an individual product team working alone.
+
+A prerequisite can be something as straightforward as “we are currently blocked on migrating to post-quantum JWTs.” We say this is straightforward because there is already a standard ([_RFC 9964_](https://www.rfc-editor.org/info/rfc9964/)) for post-quantum JWTs. Nevertheless, if our software libraries don’t yet support validating post-quantum JWTs, or if we’re using a token issuer that does not yet issue post-quantum JWTs, we can’t go company-wide and ask each of our product teams to start PQ-ing their JWTs. This migration is blocked until we solve its core prerequisites. CryptoLabe lets us group together findings that (likely) have the same prerequisite, which also helps us decide how to prioritize resolving these prerequisites.
+
+For example, the snapshot below shows the six findings from CryptoLabe that have post-quantum [_SAML_](https://www.cloudflare.com/learning/access-management/what-is-saml/) as a prerequisite. (SAML is a protocol for single sign-on ([_SSO_](https://www.cloudflare.com/learning/access-management/what-is-sso/)).)
+
+![](data:image/bmp;base64,Qk32BAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAATCwAAEwsAAAAAAAAAAAAAy87OxMbGtLS0qqOjrKCgs6ens66urbGxxsnJv8HBrq2topubo5aWqZ6eqaWlo6ioyczMwcPDsa+vpJyco5eXqJ6eqaWlpKen2dzc0tTUw8HBt7Cwt66uvLW1vbq6ubu79fj47/Dw4t/f2dLS2tPT39ra4N/f3d7e////////////+/X1/fj4////////////////////////////////////////////////////////////////////////////)![](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01M3NEST48TEP90AW1RRDTS5H5.png&w=715&h=123&f=webp&fit=cover&position=center)
+
+On the other hand, there may be uses of cryptography that lack even a basic level of ecosystem support. We’ve been calling these “hard cases.” To find them, we wrote a separate prompt that ignores “vanilla” uses of cryptography (e.g. ordinary TLS between internal systems) and instead looks for custom cryptographic protocols, keys, or signatures used in size-constrained fields, cryptography built into hardware, specialized cryptographic constructions (like [_blind signatures_](https://en.wikipedia.org/wiki/Blind_signature)), protocols without a PQ standard, and dependencies on external parties that do not yet support PQ cryptography.
+
+This prompt is shorter and simpler than those used for CryptoLabe, since its only job is to find hard cases. In our qualitative review, we found that it got better results when it ran in one fell swoop against all our repositories, while also taking in context from our internal ticketing and documentation system. 
+
+Here’s an example of a “hard case” we found: a certificate carried in an HTTP header. Post-quantum certificates and signatures are larger than their classical counterparts, so if the header (or an intermediary, or the application processing the header) assumes a certificate has a certain size, changing the signature algorithm may break the system. Our next step is to determine whether this code will remain in use in the long term. If it will, we need to measure the relevant size limits and decide how to accommodate the larger certificate.
+
+An important lesson here is that no single scan finds everything. Our repository-by-repository scans were effective at discovering common uses of cryptography. Meanwhile, this targeted scan worked better for “hard cases” because it ignored well-understood cryptography and had more context about each product and its dependencies.
+
+The bottom line is that different approaches find different things, and every finding still needs to be checked by the engineers who understand how the system actually works.
+
+## Sharing our prompts
+
+We’ve been messing around with the best way to write prompts for CryptoLabe for the last several months. We don’t yet have a ground-truth dataset for comparing one prompt’s performance against another, and we are not convinced we have 100% coverage of all uses of cryptography in our codebase. Instead, we have iterated by running scans, reviewing findings with the engineers that maintain the repositories, investigating misses that came up during these reviews and revising the prompts. Nevertheless, we decided to publish [_selected prompts_](https://github.com/cloudflare/crypto-discovery-prompts/), so other teams can learn from and adapt our approach. These prompts are starting points, not a standalone version of CryptoLabe, and the quality of their results will depend on the model, tools, context, and engineering review available.
+
+## Thinking through your own PQ migration
+
+At Cloudflare, we’re taking a maximalist approach to our PQ migration because of our goal of acting as a provider of post-quantum cryptography for customers and the Internet at large. But most organizations [do not need](https://blog.cloudflare.com/post-quantum-eo-2026/) to start by finding every use of cryptography in every repository in every one of their products. In fact, most organizations should not be doing this, because at this time it's a waste of precious resources.
+
+Before scanning a single repository, you can protect traffic in bulk wherever possible. If your websites run through Cloudflare, we protect your data in transit with post-quantum encryption [_already today_](https://developers.cloudflare.com/ssl/post-quantum-cryptography/pqc-cloudflare-products/); check this out with our [_new PQ visibility features_](https://blog.cloudflare.com/post-quantum-visibility). Our [_SASE_](https://www.cloudflare.com/learning/access-management/what-is-sase/) platform, [_Cloudflare One_](https://blog.cloudflare.com/post-quantum-sase/), provides post-quantum encryption for private network traffic. Post-quantum encryption is provided at [_no additional cost_](https://blog.cloudflare.com/post-quantum-crypto-should-be-free/) and without requiring you to upgrade every origin server or private application on your enterprise network. This gives you a compensating control while you work through discovering and understanding the use of cryptography inside your own systems.
+
+An exhaustive cryptographic inventory is not a prerequisite for action. Instead, organizations should first identify the systems whose compromise would matter most, discover their use of cryptography, and then PQ that cryptography in priority order. Here is one way to begin:
+
+  1. **Choose a repository for one important system.** Start with something that handles sensitive or long-lived data, authenticates users or software, or is exposed to the public Internet.
+  2. **Run cryptography discovery against that repository.** We hope our description of CryptoLabe will be helpful to this effort!
+  3. **Validate the results.** Ask the team who owns the system to validate the results of cryptography discovery and confirm that the cryptography finding is needed long term and needs to be upgraded to PQ. It’s important to remember that it might _not_ need to be immediately upgraded to PQ if there is another compensating control in place.
+  4. **Prioritize action.** Figure out what upgrades you can make now and what upgrades are blocked. Record shared prerequisites that need help from a library, vendor, standards group, or another part of your organization. Prioritize your findings and make a plan for addressing the highest-impact systems and prerequisites first.
+
+
+
+That gives you the beginning of a PQ transition plan, without requiring a complete map of every cryptographic operation in your organization. CryptoLabe is still ever-evolving, but its scans and results have been illuminating to us as we plan our migration. We hope these shared learnings will be useful as you continue to work through your own PQ migration.
+
+_Acknowledgements: Many people across Cloudflare provided feedback on and contributed to CryptoLabe, including Davide Marquês, Peter Wu, Phil Schmieder, JP Aumasson, Andrew Galloni, Christopher Patton, Luke Valenta, Mari Galicer, Vânia Gonçalves, and the[ _Client_](https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/download/), [_Tunnel_](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/) and [_Gateway_](https://www.cloudflare.com/zero-trust/products/gateway/) teams who reviewed reports produced by the tool._
+
+On this page
+
+Discuss Online
+
+[](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Fblog.cloudflare.com%2Fai-driven-cryptography-discovery%2F&t=Using%20AI%20to%20chart%20a%20course%20for%20our%20post-quantum%20migration)[](https://x.com/intent/post?text=Using+AI+to+chart+a+course+for+our+post-quantum+migration&url=https%3A%2F%2Fblog.cloudflare.com%2Fai-driven-cryptography-discovery%2F)[](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fblog.cloudflare.com%2Fai-driven-cryptography-discovery%2F)[](https://bsky.app/intent/compose?text=Using+AI+to+chart+a+course+for+our+post-quantum+migration+https%3A%2F%2Fblog.cloudflare.com%2Fai-driven-cryptography-discovery%2F)[](https://mastodonshare.com/?text=Using+AI+to+chart+a+course+for+our+post-quantum+migration&url=https%3A%2F%2Fblog.cloudflare.com%2Fai-driven-cryptography-discovery%2F)[](https://www.threads.net/intent/post?text=Using+AI+to+chart+a+course+for+our+post-quantum+migration+https%3A%2F%2Fblog.cloudflare.com%2Fai-driven-cryptography-discovery%2F)
+
+## Related tags
+
+[AI](https://blog.cloudflare.com/tag/ai/)[Birthday Week](https://blog.cloudflare.com/tag/birthday-week/)[Cloudflare Workers](https://blog.cloudflare.com/tag/workers/)[Cryptography](https://blog.cloudflare.com/tag/cryptography/)[Developer Platform](https://blog.cloudflare.com/tag/developer-platform/)[Internship Experience](https://blog.cloudflare.com/tag/internship-experience/)[Post-Quantum](https://blog.cloudflare.com/tag/post-quantum/)[Security](https://blog.cloudflare.com/tag/security/)
+
+Follow on Social Media
+
+  * ![Cloudflare](https://blog.cloudflare.com/images/placeholder__cloudflare.png)Cloudflare
+
+[](https://blog.cloudflare.com/rss/)[](https://x.com/Cloudflare)[](https://www.linkedin.com/company/cloudflare-inc-)[](https://www.youtube.com/cloudflare)[](https://instagram.com/cloudflare)[](https://github.com/cloudflare)[](https://bsky.app/profile/cloudflare.social)[](https://www.threads.com/@cloudflare)[](https://www.tiktok.com/@cloudflare)
+
+  * ![Sharon Goldberg](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW488S3YN4RV24QXC7PM57EC.png&w=64&h=64&f=webp&fit=cover&position=center)[Sharon Goldberg](https://blog.cloudflare.com/author/goldbe/)
+
+[](https://x.com/goldbe)
+
+  * ![Tiago Silva](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01M34Y5PD1JFD5WXM3SY93FQ3Q.01M34Y5PYATEYXM7BF3DB95FPM.webp&w=64&h=64&f=webp&fit=cover&position=center)[Tiago Silva](https://blog.cloudflare.com/author/tiago-silva/)
+
+[](https://www.cloudflare.com)
+
+
+
+
+## Subscribe to receive notifications of new posts
+
+Email address
+
+We’ll never share your email address.
+
+Subscribe
+
+Thanks for subscribing! Check your inbox to confirm.

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-cursor-the-ai-assistant-for-docs/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-cursor-the-ai-assistant-for-docs.md",
+  "title": "Introducing Cursor: the Cloudflare AI Assistant | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:32.860635+00:00",
+  "html_len": 289388,
+  "md_len": 63620,
+  "depth": 0,
+  "phase": 2
+}

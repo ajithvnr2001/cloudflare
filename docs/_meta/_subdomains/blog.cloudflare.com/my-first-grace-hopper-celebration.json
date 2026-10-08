@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/my-first-grace-hopper-celebration/",
+  "file": "_subdomains/blog.cloudflare.com/my-first-grace-hopper-celebration.md",
+  "title": "My First Grace Hopper Celebration | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:24.911194+00:00",
+  "html_len": 282252,
+  "md_len": 61329,
+  "depth": 0,
+  "phase": 2
+}

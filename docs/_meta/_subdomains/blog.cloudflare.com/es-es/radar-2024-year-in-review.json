@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/radar-2024-year-in-review/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/radar-2024-year-in-review.md",
+  "title": "Resumen del A\u00f1o de Cloudflare 2024 | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:16.189306+00:00",
+  "html_len": 432631,
+  "md_len": 130478,
+  "depth": 0,
+  "phase": 2
+}

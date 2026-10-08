@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/evenly-distributed-future/",
+  "file": "_subdomains/blog.cloudflare.com/evenly-distributed-future.md",
+  "title": "Evenly Distributed Future | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:32.926329+00:00",
+  "html_len": 290892,
+  "md_len": 68026,
+  "depth": 0,
+  "phase": 2
+}

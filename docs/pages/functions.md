@@ -1,0 +1,52 @@
+---
+url: https://developers.cloudflare.com/pages/functions/
+title: Functions \u00b7 Cloudflare Pages docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:12:31.633679+00:00
+---
+
+# Functions · Cloudflare Pages docs
+
+> Source: https://developers.cloudflare.com/pages/functions/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Pages](https://developers.cloudflare.com/pages/)
+  3. /Functions
+
+
+
+# Functions
+
+Last updated Apr 21, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/pages/functions/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Pages Functions allows you to build full-stack applications by executing code on the Cloudflare network with [Cloudflare Workers](https://developers.cloudflare.com/workers/). With Functions, you can introduce application aspects such as authenticating, handling form submissions, or working with middleware. [Workers runtime features](https://developers.cloudflare.com/workers/runtime-apis/) are configurable on Pages Functions, including [compatibility with a subset of Node.js APIs](https://developers.cloudflare.com/workers/runtime-apis/nodejs) and the ability to set a [compatibility date or compatibility flag](https://developers.cloudflare.com/workers/configuration/compatibility-dates/). Use Functions to deploy server-side code to enable dynamic functionality without running a dedicated server.
+
+To provide feedback or ask questions on Functions, join the [Cloudflare Developers Discord ↗︎](https://discord.com/invite/cloudflaredev) and connect with the Cloudflare team in the [#functions channel ↗︎](https://discord.com/channels/595317990191398933/910978223968518144).
+
+  * [Get started](https://developers.cloudflare.com/pages/functions/get-started/)
+  * [Routing](https://developers.cloudflare.com/pages/functions/routing/)
+  * [API reference](https://developers.cloudflare.com/pages/functions/api-reference/)
+  * [Examples](https://developers.cloudflare.com/pages/functions/examples/)
+  * [Middleware](https://developers.cloudflare.com/pages/functions/middleware/)
+  * [Configuration](https://developers.cloudflare.com/pages/functions/wrangler-configuration/)
+  * [Local development](https://developers.cloudflare.com/pages/functions/local-development/)
+  * [Bindings](https://developers.cloudflare.com/pages/functions/bindings/)
+  * [TypeScript](https://developers.cloudflare.com/pages/functions/typescript/)
+  * [Advanced mode](https://developers.cloudflare.com/pages/functions/advanced-mode/)
+  * [Pages Plugins](https://developers.cloudflare.com/pages/functions/plugins/)
+  * [Metrics](https://developers.cloudflare.com/pages/functions/metrics/)
+  * [Debugging and logging](https://developers.cloudflare.com/pages/functions/debugging-and-logging/)
+  * [Pricing](https://developers.cloudflare.com/pages/functions/pricing/)
+  * [Module support](https://developers.cloudflare.com/pages/functions/module-support/)
+  * [Smart Placement](https://developers.cloudflare.com/pages/functions/smart-placement/)
+  * [Source maps and stack traces](https://developers.cloudflare.com/pages/functions/source-maps/)
+
+
+
+[PreviousServing Pages](https://developers.cloudflare.com/pages/configuration/serving-pages/)[NextGet started](https://developers.cloudflare.com/pages/functions/get-started/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/pages/functions/index.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

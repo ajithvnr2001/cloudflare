@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/r2-super-slurper-ga/",
+  "file": "_subdomains/blog.cloudflare.com/r2-super-slurper-ga.md",
+  "title": "The S3 to R2 Super Slurper is now Generally Available | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:31.820040+00:00",
+  "html_len": 279722,
+  "md_len": 59518,
+  "depth": 0,
+  "phase": 2
+}

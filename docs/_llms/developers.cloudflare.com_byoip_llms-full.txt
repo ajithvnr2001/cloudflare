@@ -1,0 +1,2260 @@
+---
+description: Get Cloudflare's security and performance while using your own IPs.
+title: Cloudflare BYOIP
+image: https://developers.cloudflare.com/byoip/og.png?v=9f1a399416bdc846
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/byoip/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Cloudflare BYOIP
+
+Last updated Apr 30, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/byoip/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Get Cloudflare's security and performance while using your own IPs.
+
+Enterprise-only
+
+When you use Cloudflare as a [reverse proxy](https://developers.cloudflare.com/fundamentals/concepts/how-cloudflare-works/), Cloudflare responds to DNS queries for proxied records with Cloudflare-owned IP addresses<sup>[1](#user-content-fn-1)</sup>. For some organizations, it is important to keep their website or application associated with IP addresses they already own rather than using Cloudflare's.
+
+With Bring Your Own IP (BYOIP), Cloudflare announces your IP prefixes in all our locations. Use your IPs with [Magic Transit](https://developers.cloudflare.com/magic-transit/), [Spectrum](https://developers.cloudflare.com/spectrum/), [CDN services](https://developers.cloudflare.com/cache/), or Gateway [DNS locations](https://developers.cloudflare.com/cloudflare-one/networks/resolvers-and-proxies/dns/locations/) and [dedicated egress IPs](https://developers.cloudflare.com/cloudflare-one/traffic-policies/egress-policies/dedicated-egress-ips/).
+
+Learn how to [get started](https://developers.cloudflare.com/byoip/get-started/).
+
+---
+
+## Features
+
+[Service bindings](https://developers.cloudflare.com/byoip/service-bindings/)
+
+Control whether traffic destined for a given IP address is routed to Magic Transit, CDN, or Spectrum.
+
+Use Service bindings
+
+[Address maps](https://developers.cloudflare.com/byoip/address-maps/)
+
+Specify which IP addresses should be mapped to DNS records when they are proxied through Cloudflare.
+
+Use Address maps
+
+---
+
+## More resources
+
+### [RPKI blog post](https://blog.cloudflare.com/rpki/)
+
+An overview of BGP, RPKI, and other important aspects of Internet routing.
+
+### [Reference Architectures](https://developers.cloudflare.com/reference-architecture/)
+
+Explore how you can leverage Cloudflare's platform to create solutions based on your business needs.
+
+## Footnotes
+
+1. Without BYOIP, when your domain's records are `proxied`, Cloudflare responds with a Cloudflare-owned [anycast IP address](https://developers.cloudflare.com/fundamentals/concepts/cloudflare-ip-addresses/). [↩](#user-content-fnref-1)
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/byoip/#page","headline":"Cloudflare BYOIP","description":"Get Cloudflare's security and performance while using your own IPs.","url":"https://developers.cloudflare.com/byoip/","inLanguage":"en","image":"https://developers.cloudflare.com/byoip/og.png?v=9f1a399416bdc846","dateModified":"2026-04-30","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Onboard your IP prefixes to Cloudflare with BYOIP.
+title: Get started
+image: https://developers.cloudflare.com/byoip/get-started/og.png?v=813afd9184592636
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/byoip/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Get started
+
+Last updated Sep 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/byoip/get-started/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+To use your own IP addresses with Cloudflare, please check with your account team to confirm your contract covers this functionality. You will need to configure settings specific to the services you want to use, as well as meet some standard requirements for all BYOIP customers.
+
+Once your account configurations are in place, consider the sections below to learn how to set up your BYOIP prefixes. Also make sure to review the [BYOIP Service-Specific Terms ↗︎](https://www.cloudflare.com/service-specific-terms-network-services/#bring-your-own-ip-terms).
+
+Magic Transit
+
+The process described on this page does not support onboarding IP prefixes for use with [Cloudflare Magic Transit](https://developers.cloudflare.com/magic-transit/). For further guidance, refer to the [Magic Transit get started](https://developers.cloudflare.com/magic-transit/get-started/).
+
+## Before you begin
+
+- Your prefix must be registered under one of the Regional Internet Registries (RIRs):
+  - [AFRINIC ↗︎](https://afrinic.net/)
+  - [APNIC ↗︎](https://www.apnic.net/)
+  - [ARIN ↗︎](https://www.arin.net/)
+  - [LACNIC ↗︎](https://lacnic.net/)
+  - [RIPE ↗︎](https://www.ripe.net/)
+- Also verify that your [Internet Routing Registry (IRR)](https://developers.cloudflare.com/byoip/concepts/irr-entries/) records are up to date and contain:
+  - `route` or `route6` objects matching the exact prefixes you want to onboard
+  - `origin` matching the correct ASN you want to onboard
+
+  Use Cloudflare's ASN
+
+  The process described on this page only supports using Cloudflare's ASN (AS13335). If you must announce the prefixes under your own ASN, contact your account team.
+- You must use [Resource Public Key Infrastructure (RPKI) validation](https://developers.cloudflare.com/byoip/concepts/route-filtering-rpki/) and make sure your ROAs are accurate. You can use [Cloudflare's RPKI Portal ↗︎](https://rpki.cloudflare.com/?view=validator) and a second source such as [Routinator ↗︎](https://rpki-validator.ripe.net/ui/) to double-check your prefixes.
+- If you are not familiar with how Cloudflare API works, refer to [Fundamentals](https://developers.cloudflare.com/fundamentals/api/). Make sure you have the necessary permissions and that you have your account ID.
+
+---
+
+## 1. Set up your prefixes
+
+### Add your prefix
+
+1. Use the [Add Prefix endpoint](https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/methods/create/) to create a prefix in the Cloudflare account that should own the BYOIP prefix.
+
+Use Cloudflare's ASN
+
+The process described on this page only supports using Cloudflare's ASN (AS13335). If you must announce the prefixes under your own ASN, contact your account team.
+
+*Add Prefixbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/addressing/prefixes" \
+	--request POST \
+	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+	--json '{
+		"cidr": "203.0.113.0/24",
+		"asn": 13335,
+		"delegate_loa_creation": true
+	}'
+```
+
+*Responsejson*
+
+```json
+"result": {
+	 "id": "72823e95d6c64d48a8111fec81179816",
+    "created_at": "2025-02-25T00:34:11.423722Z",
+    "modified_at": "2025-02-25T00:34:11.423722Z",
+    "cidr": "203.0.113.0/24",
+    "account_id": "654c5f71c324478cc9f68d60065d4620",
+    "description": "",
+    "approved": "P",
+    "on_demand_enabled": false,
+    "on_demand_locked": false,
+    "advertised": null,
+    "advertised_modified_at": null,
+    "loa_document_id": "b9ff4afe312246a8b2e7324d98f40b23",
+    "asn": 13335,
+    "ownership_validation_token": "<OWNERSHIP_VALIDATION_TOKEN>",
+    "delegate_loa_creation" : true,
+    "irr_validation_state": "pending",
+    "rpki_validation_state": "pending",
+    "ownership_validation_state": "pending",
+  }
+```
+
+2. Take note of the `id` assigned to the prefix you added. It will be used in future steps.
+
+Letter of Agency (LOA)
+
+The process described on this page leverages automated [LOA](https://developers.cloudflare.com/byoip/concepts/loa/) generation. If you set `delegate_loa_creation` to `false`, you have to manually upload your LOA, make a [PATCH request](https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/methods/edit/) once the prefix is approved, and contact your account team - which is more prone to error and increases the onboarding time.
+
+### Validate prefix ownership
+
+1. Validate prefix ownership using one of the following methods:
+   1. Copy the `ownership_validation_token` returned by the API call.
+   2. On the IRR record of the prefix you are onboarding, add the following string in either a `description` or `remarks` field in the `route` or `route6` object. Replace `<OWNERSHIP_VALIDATION_TOKEN>` by the actual token you copied in the previous step.
+
+   ```plaintext
+   cf-validation: <OWNERSHIP_VALIDATION_TOKEN>
+   ```
+
+   Note
+
+   The exact steps to update your IRR record will depend on the registry you are using. Refer to [Internet Routing Registry (IRR)](https://developers.cloudflare.com/byoip/concepts/irr-entries/best-practices/) for details.
+   1. Consider the size of the prefix you are bringing to Cloudflare. Since the standard `in-addr.arpa` tree assumes delegations on octet or nibble boundaries, if you onboard prefixes that are not aligned with those, you will have to split up the prefix into subnets and create the corresponding reverse DNS zones for each.<details><summary>
+
+   Example</summary>
+
+To calculate how many smaller subnets you need, use the following formula:
+
+   ```plaintext
+   2^(next boundary - current netmask)
+   ```
+
+   For <code>1.1.0.0/23</code>, you would setup two (<code>2^(24-23)</code>) reverse DNS zones, one for <code>1.1.0.0/24</code> and another for <code>1.1.1.0/24</code>.
+
+   For <code>2001:0db8::/34</code>, you would setup four (<code>2^(36-34)</code>) reverse DNS zones, for <code>2001:0db8::/36</code>, <code>2001:0db8:1:/36</code>, <code>2001:0db8:2::/36</code>, and <code>2001:0db8:3::/36</code>.</details>
+
+   2. Set up a reverse DNS zone. If you use Cloudflare for DNS, refer to [Reverse DNS zones](https://developers.cloudflare.com/dns/additional-options/reverse-zones/#set-up-a-reverse-zone). If you use a different DNS provider, follow their instructions.
+   3. Create TXT records using `cf-validation` as their `name`. They should look like the following example:
+
+   ```plaintext
+   cf-validation.<REVERSE_ZONE_ADDRESS> IN TXT <TOKEN>
+   ```
+
+
+   4. Update nameservers at your Regional Internet Registry (RIR). The exact steps to update your nameservers will depend on the registry you are using.
+2. After applying the necessary changes, use the Validate Prefix endpoint to trigger the validation checks.<details><summary>
+
+   Required API token permissions</summary>
+
+At least one of the following <a href="https://developers.cloudflare.com/fundamentals/api/reference/permissions/">token permissions</a> is required:
+   - <code>Magic Transit Write</code>
+   - <code>IP Prefixes: Write</code></details>
+
+   *Validate Prefixbash*
+
+   
+
+   ```bash
+   curl "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/addressing/prefixes/$PREFIX_ID/validate" \
+   	--request POST \
+   	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
+   ```
+
+
+
+Once the ownership validation is successful, you can remove the token.
+
+When all validations pass - RPKI, IRR, and ownership - the `approved` field in your prefix will return `"V"`. This means you can proceed to create IP address service bindings<sup>[1](#user-content-fn-1)</sup>.
+
+If needed, you can use the [Prefix Details endpoint](https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/methods/get/) to check if any issues were found during validation. If so, proceed with the necessary changes and make a request to restart validation. Refer to [Prefix validation checks](https://developers.cloudflare.com/byoip/troubleshooting/prefix-validation/) for details.
+
+### (Optional) Delegate your BYOIP prefixes
+
+You can allow other accounts to use part or all of your BYOIP prefix. Refer to [Prefix delegations](https://developers.cloudflare.com/byoip/concepts/prefix-delegations/) for details.
+
+<details>
+
+<summary>
+
+Required API token permissions
+
+</summary>
+
+At least one of the following <a href="https://developers.cloudflare.com/fundamentals/api/reference/permissions/">token permissions</a> is required:
+
+- <code>IP Prefixes: Write</code>
+
+</details>
+
+*Create Prefix Delegationbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/addressing/prefixes/$PREFIX_ID/delegations" \
+	--request POST \
+	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+	--json '{
+		"cidr": "<IP_PREFIX_TO_DELEGATE>",
+		"delegated_account_id": "<ACCOUNT_ID>"
+	}'
+```
+
+Note
+
+Although you can delegate IPs to other accounts, the IP address service bindings are still created and managed on the parent account - meaning the Cloudflare account where you added the prefix in step 1.
+
+---
+
+## 2. Create service bindings
+
+In IP address management, service bindings map the traffic destined for a given IP address to the Cloudflare service that it should be routed through.
+
+### Default service binding
+
+When you onboard your IP prefixes to Cloudflare, there must be one service binding that spans across your entire prefix. Traffic destined for a given IP address will be routed to this service by default. You can also configure [additional service bindings](#optional-additional-bindings) as described in the next step.
+
+1. Make a `GET` request to the [List Services](https://developers.cloudflare.com/api/resources/addressing/subresources/services/methods/list/) endpoint and take note of the `id` associated with the service you want to use.
+
+CDN egress
+
+[Dedicated CDN Egress IPs](https://developers.cloudflare.com/smart-shield/configuration/dedicated-egress-ips/) (formerly known as Aegis) is only available for Enterprise. If you are interested, reach out to your account team. Also note that a single BYOIP prefix can be used for either CDN ingress or CDN egress, but not both.
+
+2. (Optional) If needed, use the [List Prefixes](https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/methods/list/) endpoint to get or confirm the `id` associated with your prefix.
+3. Make a `POST` request to the [Create service binding](https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/subresources/service_bindings/methods/create/) endpoint, indicating the entire BYOIP prefix that you are onboarding and the service that should be used for your default binding.
+
+<details>
+
+<summary>
+
+Required API token permissions
+
+</summary>
+
+At least one of the following <a href="https://developers.cloudflare.com/fundamentals/api/reference/permissions/">token permissions</a> is required:
+
+- <code>IP Prefixes: Write</code>
+
+</details>
+
+*Create Service Bindingbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/addressing/prefixes/$PREFIX_ID/bindings" \
+	--request POST \
+	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+	--json '{
+		"cidr": "203.0.113.0/24",
+		"service_id": "<DEFAULT_SERVICE>"
+	}'
+```
+
+A corresponding BGP prefix will be created automatically. Allow five hours before you advertise the prefix.
+
+### (Optional) Additional bindings
+
+If you want to selectively route traffic on a per-IP address basis to CDN or Spectrum, you can create additional service bindings.
+
+Note
+
+The steps below only cover assigning specific IPs to additional services. For guidance that includes CDN or Spectrum setup steps, refer to [Service bindings](https://developers.cloudflare.com/byoip/service-bindings/).
+
+1. Plan for what IP(s) will get the additional binding. Cloudflare **strongly** recommends implementing service bindings through an **aggregated** CIDR block, as it is more efficient than adding discrete bindings for non-contiguous CIDR blocks.
+
+<details>
+
+<summary>
+
+Example
+
+</summary>
+
+**Spectrum protected prefix:** <code>203.0.113.0/24</code>
+
+**IPs to upgrade to CDN:**
+
+<code>203.0.113.16</code><br> <code>203.0.113.17</code><br> <code>203.0.113.18</code><br> <code>203.0.113.19</code><br> <code>203.0.113.20</code><br> <code>203.0.113.21</code><br> <code>203.0.113.22</code><br> <code>203.0.113.23</code>
+
+Add one discrete CDN service binding for <code>203.0.113.16</code> with a <code>/29</code> netmask.
+
+</details>
+
+2. Make a `POST` request to the [Create service binding](https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/subresources/service_bindings/methods/create/) endpoint, indicating the IP address you want to bind to the CDN or Spectrum. Specify the **corresponding network mask** as needed.
+
+<details>
+
+<summary>
+
+Required API token permissions
+
+</summary>
+
+At least one of the following <a href="https://developers.cloudflare.com/fundamentals/api/reference/permissions/">token permissions</a> is required:
+
+- <code>IP Prefixes: Write</code>
+
+</details>
+
+*Create Service Bindingbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/addressing/prefixes/$PREFIX_ID/bindings" \
+	--request POST \
+	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+	--json '{
+		"cidr": "203.0.113.16/29",
+		"service_id": "<SERVICE_ID>"
+	}'
+```
+
+In the response body, the initial provisioning state should be `provisioning`.
+
+```json
+   {
+     "errors": [],
+     "messages": [],
+     "success": true,
+     "result": {
+       "cidr": "203.0.113.16/29",
+       "id": "<SERVICE_BINDING_ID>",
+       "provisioning": {
+         "state": "provisioning"
+         },
+       "service_id": "<SERVICE_ID>",
+       "service_name": "<SERVICE_NAME>"
+     }
+   }
+```
+
+Once a service binding is created (or deleted), it will take **four to six hours** to propagate across Cloudflare's global network.
+
+Note
+
+Magic Transit can only be used as default binding, spanning across your entire prefix. For more details, refer to [Service bindings scope](https://developers.cloudflare.com/byoip/service-bindings/#scope).
+
+---
+
+## 3. Advertise the BGP prefix
+
+Once automatically created (following [step 2](#2-create-service-bindings)), BGP prefixes are initially withdrawn. After all your configurations are in place - including [address maps](https://developers.cloudflare.com/byoip/address-maps/)<sup>[2](#user-content-fn-2)</sup> if you will use CDN service -, proceed to advertise the BGP route for your prefix.
+
+1. Use the [Update BGP prefix](https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/subresources/bgp_prefixes/methods/edit/) endpoint to start the advertisement.
+
+<details>
+
+<summary>
+
+Required API token permissions
+
+</summary>
+
+At least one of the following <a href="https://developers.cloudflare.com/fundamentals/api/reference/permissions/">token permissions</a> is required:
+
+- <code>Magic Transit Write</code>
+- <code>IP Prefixes: Write</code>
+- <code>IP Prefixes: BGP On Demand Write</code>
+
+</details>
+
+*Update BGP Prefixbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/addressing/prefixes/$PREFIX_ID/bgp/prefixes/$BGP_PREFIX_ID" \
+	--request PATCH \
+	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+	--json '{
+		"on_demand": {
+				"advertised": true
+		}
+	}'
+```
+
+## Footnotes
+
+1. Mappings that control through which pipeline traffic destined for a given IP address will be routed. [↩](#user-content-fnref-1)
+2. Mappings that specify which IP addresses should be used when Cloudflare responds to DNS queries for proxied hostnames. [↩](#user-content-fnref-2)
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/byoip/get-started/#page","headline":"Get started","description":"Onboard your IP prefixes to Cloudflare with BYOIP.","url":"https://developers.cloudflare.com/byoip/get-started/","inLanguage":"en","image":"https://developers.cloudflare.com/byoip/get-started/og.png?v=813afd9184592636","dateModified":"2026-09-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["DNS"]}
+```
+
+---
+
+---
+description: Map IP prefixes to zones and accounts with address maps.
+title: About address maps
+image: https://developers.cloudflare.com/byoip/address-maps/og.png?v=254e8d979ef2b452
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/byoip/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# About address maps
+
+Last updated May 6, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/byoip/address-maps/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Address map is a data structure enabling customers with BYOIP prefixes or account-level static IPs to specify which IP addresses should be mapped to DNS records when they are proxied through Cloudflare.
+
+By default, Cloudflare responds to DNS queries for proxied hostnames with Cloudflare-owned [anycast IP addresses](https://developers.cloudflare.com/fundamentals/concepts/cloudflare-ip-addresses/). Address maps allow you to override this behavior — when a zone or account is associated with an address map, Cloudflare responds with the IP addresses you specify instead.
+
+To use address maps, you must first have [BYOIP](https://developers.cloudflare.com/byoip/) prefixes or [static IPs](https://developers.cloudflare.com/byoip/concepts/static-ips/) configured on your account. You can [customize the IPs Cloudflare uses](https://developers.cloudflare.com/fundamentals/concepts/cloudflare-ip-addresses/#customize-cloudflare-ip-addresses) through either approach. If you are interested in address maps but do not yet have BYOIP or static IPs, contact your account manager.
+
+Note
+
+Both IPv4 and IPv6 addresses are supported.
+
+---
+
+## How Address Maps works
+
+For zones using [Cloudflare's authoritative DNS](https://developers.cloudflare.com/dns/), Cloudflare typically responds to DNS queries for proxied hostnames with [anycast IPs](https://developers.cloudflare.com/fundamentals/concepts/cloudflare-ip-addresses/). However, if you [customize the IPs Cloudflare uses](https://developers.cloudflare.com/fundamentals/concepts/cloudflare-ip-addresses/#customize-cloudflare-ip-addresses) and use Address Maps, Cloudflare will respond with the IP address(es) on the address map.
+
+Address maps do not change [how Cloudflare reaches the configured origin](https://developers.cloudflare.com/fundamentals/concepts/how-cloudflare-works/#cloudflare-as-a-reverse-proxy). The IP addresses defined on your zone's [DNS Records ↗︎](https://dash.cloudflare.com/?to=/:account/:zone/dns/records) continue to instruct Cloudflare how to reach the origin.
+
+Caution
+
+Depending on whether you use static IPs or BYOIP, the process to [create an address map](https://developers.cloudflare.com/byoip/address-maps/setup/) is different.
+
+### Static IPs or BYOIP
+
+Leased static IPs allow you to use a set of specifically assigned Cloudflare IPs to ensure they do not change. Cloudflare creates an address map with your static IPs that you may edit. You cannot create another map using your static IPs.
+
+With BYOIP, you use your IPs by bringing an address space that you lease or own and creating an address map.
+
+---
+
+## Immutable address maps
+
+Some customers may only proxy zones through BYOIP addresses, and are prohibited from using Cloudflare IP addresses for proxied DNS names. In this case, Cloudflare will create an immutable, account-wide address map to ensure all zones in your account receive BYOIP addresses as a fallback. These address maps cannot be deleted.
+
+It is still possible to create more specific zone-level address maps with specific BYOIPs, but DNS will fall back to the account-wide address map without one.
+
+To specify different addresses for certain zones, [create a new address map](https://developers.cloudflare.com/byoip/address-maps/setup/).
+
+---
+
+## Spectrum compatibility
+
+You can use address maps to set up [non-SNI support](https://developers.cloudflare.com/byoip/address-maps/setup/#spectrum-https-applications) for Spectrum HTTPS applications.
+
+However, to control what IP address Cloudflare will use when responding to requests for your Spectrum applications, you should first refer to their respective configuration and set the `edge_ips` field as `static`, e.g.:
+
+```json
+"edge_ips": {
+  "type": "static",
+  "ips": ["1.2.3.4"]
+}
+```
+
+For details, refer to the [Spectrum API](https://developers.cloudflare.com/api/resources/spectrum#%28resource%29%20spectrum%20%3E%20%28model%29%20edge_ips%20%3E%20%28schema%29%20%3E%20%28variant%29%201).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/byoip/address-maps/#page","headline":"About address maps","description":"Map IP prefixes to zones and accounts with address maps.","url":"https://developers.cloudflare.com/byoip/address-maps/","inLanguage":"en","image":"https://developers.cloudflare.com/byoip/address-maps/og.png?v=254e8d979ef2b452","dateModified":"2026-05-06","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["DNS"]}
+```
+
+---
+
+---
+description: Create and configure address maps for your IP prefixes.
+title: Set up address maps
+image: https://developers.cloudflare.com/byoip/address-maps/setup/og.png?v=29a85a2131605e19
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/byoip/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Set up address maps
+
+Last updated May 6, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/byoip/address-maps/setup/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Consider the sections below to learn how to set up address maps.
+
+Note
+
+There is **no expected downtime** when setting up or updating your address maps.
+
+## Create address maps
+
+If you are using BYOIP, refer to the following steps. If you have [static IPs](https://developers.cloudflare.com/byoip/concepts/static-ips/), Cloudflare creates an address map during the static IP onboarding process, meaning you may only [edit](#manage-address-maps) the Cloudflare-created map.
+
+1. In the Cloudflare dashboard, go to the **Address Maps** page. [Go to **Address maps** ↗](https://dash.cloudflare.com/?to=/:account/ip-addresses/proxy-ips)
+2. Select **Create an address map**.
+3. Choose the scope of the address map.
+4. Add the zones and IP addresses that you want to map.
+5. Name your address map.
+6. Review the information and select **Save and Deploy**.
+
+Note
+
+Creating an address map does not automatically change DNS configuration. DNS responses only begin to change when a zone or account is added to a map. Additionally, address maps that are not yet enabled will not take effect in DNS responses.
+
+<details>
+
+<summary>
+
+Required API token permissions
+
+</summary>
+
+At least one of the following <a href="https://developers.cloudflare.com/fundamentals/api/reference/permissions/">token permissions</a> is required:
+
+- <code>Address Maps Write</code>
+
+</details>
+
+*Create Address Mapbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/addressing/address_maps" \
+	--request POST \
+	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+	--json '{
+		"description": "Example address map",
+		"enabled": true,
+		"ips": [
+				"203.0.113.1",
+				"203.0.113.2"
+		],
+		"memberships": [
+				{
+						"identifier": "<ZONE_ID>",
+						"kind": "zone"
+				}
+		]
+	}'
+```
+
+Note
+
+A zone membership will take priority over an account membership.
+
+## Manage address maps
+
+1. In the Cloudflare dashboard, go to the **Address Maps** page. [Go to **Address maps** ↗](https://dash.cloudflare.com/?to=/:account/ip-addresses/proxy-ips)
+2. Go to your address map and select **Review**.
+3. Edit your address map.
+4. Review the information and select **Save**.
+
+Note
+
+You can also enable, disable, and delete address maps. This will likely change the IP addresses used for your zones.
+
+Use the following API endpoints depending on what you want to achieve:
+
+- [Modify the properties of an address map](https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/methods/edit/)
+- [Add or remove IP addresses](https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/subresources/ips/)
+- [Add or remove accounts](https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/subresources/accounts/)
+- [Add or remove zones](https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/subresources/zones/)
+
+Note
+
+A zone membership will take priority over an account membership.
+
+## Non-SNI support
+
+If your visitors use devices that have not been updated since 2011, they may not have Server Name Indication (SNI) support. For further context, refer to [browser compatibility](https://developers.cloudflare.com/ssl/reference/browser-compatibility/#non-sni-support).
+
+Use address maps to specify a hostname as default SNI. This will be used whenever Cloudflare receives a non-SNI TLS handshake.
+
+Note
+
+Setting up a default SNI is currently only supported via API.
+
+1. If you have not already, create an address map. Refer to the [section above](#create-address-maps) or to the [Create Address Map](https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/methods/create/) API endpoint.
+2. Take note of the address map `id`. If needed, you can use the [List Address Maps](https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/methods/list/) endpoint to get it.
+3. Make sure you add the desired IPs to the address map. Cloudflare will respond with the default SNI on those IPs. Use the dashboard or refer to [Add An IP To An Address Map](https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/subresources/ips/methods/update/).
+4. Configure the `default_sni` value on the address map created in step 1. Refer to the [Update Address Map](https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/methods/edit/) API endpoint for details. The default SNI can be any valid domain or subdomain owned by your account.
+
+### Spectrum HTTPS applications
+
+Default SNI for Spectrum can only be created via API using the [Create Address Map](https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/methods/create/) endpoint.
+
+Do not include any membership in your command. Your API command should resemble the following:
+
+<details>
+
+<summary>
+
+Required API token permissions
+
+</summary>
+
+At least one of the following <a href="https://developers.cloudflare.com/fundamentals/api/reference/permissions/">token permissions</a> is required:
+
+- <code>Address Maps Write</code>
+
+</details>
+
+*Create Address Mapbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/addressing/address_maps" \
+	--request POST \
+	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+	--json '{
+		"description": "default_sni",
+		"default_sni": "sni.example.com",
+		"enabled": false,
+		"ips": [
+				"192.0.0.1"
+		],
+		"memberships": []
+	}'
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/byoip/address-maps/setup/#page","headline":"Set up address maps","description":"Create and configure address maps for your IP prefixes.","url":"https://developers.cloudflare.com/byoip/address-maps/setup/","inLanguage":"en","image":"https://developers.cloudflare.com/byoip/address-maps/setup/og.png?v=29a85a2131605e19","dateModified":"2026-05-06","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["DNS"]}
+```
+
+---
+
+---
+description: In IP address management, service binding refers to the association of IPs to specific Cloudflare services. Review the available options and the API endpoints to set up service bindings.
+title: IP address service bindings
+image: https://developers.cloudflare.com/byoip/service-bindings/og.png?v=bfc73f982787b58d
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/byoip/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# IP address service bindings
+
+Last updated Apr 30, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/byoip/service-bindings/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+In the context of BYOIP, service bindings map traffic destined for IP addresses to the Cloudflare service it should be routed through - such as Magic Transit, CDN, or Spectrum. A default binding covering the entire prefix is required when you first [onboard](https://developers.cloudflare.com/byoip/get-started/#2-create-service-bindings), and additional bindings can be created at any time to route specific IP addresses or CIDR ranges to a different service.
+
+For example, you could set Magic Transit as the default service for Layer 3 DDoS protection across the entire prefix, while directing specific IPs to the CDN for Layer 7 processing. Refer to [Scope](#scope) for the available combinations.
+
+Note
+
+**API-only**: Service binding operations are currently only available via API. You can find all endpoints and their specifications in the [Cloudflare API documentation](https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/subresources/service_bindings/). For detailed guidance, refer to the sections and tutorials linked below.
+
+**Time to propagate**: Service bindings take four to six hours to propagate across Cloudflare's global network after being created or deleted. Services for the IP addresses in scope are likely disrupted during this window.
+
+## Scope
+
+Customers using BYOIP with Magic Transit, [CDN services](https://developers.cloudflare.com/cache/), or [Spectrum](https://developers.cloudflare.com/spectrum/) can leverage the [service binding API endpoints](https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/subresources/service_bindings/) to selectively route traffic through the CDN <sup>[1](#user-content-fn-1)</sup> or Spectrum <sup>[2](#user-content-fn-2)</sup> pipelines on a per-IP address basis. This means:
+
+- You can upgrade individual IPs within a Magic Transit prefix to either a CDN IP or a Spectrum IP. For example, if you have a Magic Transit prefix `203.0.113.0/24`, you can upgrade `203.0.113.1` to CDN and `203.0.113.2` to Spectrum.
+- You can upgrade individual IPs within a CDN prefix to a Spectrum IP. For example, if you have a CDN prefix `203.0.113.0/24`, you can upgrade `203.0.113.1` to Spectrum.
+- You can upgrade individual IPs within a Spectrum prefix to a CDN IP. For example, if you have a Spectrum prefix `203.0.113.0/24`, you can upgrade `203.0.113.1` to CDN.
+
+Refer to [Magic Transit with CDN](https://developers.cloudflare.com/byoip/service-bindings/magic-transit-with-cdn/) or [CDN and Spectrum](https://developers.cloudflare.com/byoip/service-bindings/cdn-and-spectrum/) for detailed guidance.
+
+Caution
+
+Magic Transit customers must ensure that their contract includes CDN and/or Spectrum according to their needs.
+
+### CDN (Cache)
+
+When a service binding of type `CDN` is applied, once the change has propagated across Cloudflare's global network (four to six hours), any HTTP requests are directed into the CDN pipeline for Layer 7 processing.
+
+### Spectrum
+
+When a service binding of type `Spectrum` is applied, once the change has propagated across Cloudflare's global network (four to six hours), any TCP/HTTP requests are directed into the Spectrum pipeline for Layer 4 or Layer 7 processing.
+
+UDP applications
+
+Spectrum UDP applications are supported with BYOIP, including [CDN and Spectrum service bindings](https://developers.cloudflare.com/byoip/service-bindings/cdn-and-spectrum/). However, they are [not currently supported with Magic Transit service bindings](https://developers.cloudflare.com/spectrum/reference/limitations/#udp).
+
+### Magic Transit
+
+Note
+
+Magic Transit can only be used as default binding, spanning across your entire prefix. You can then add CDN or Spectrum for smaller subnets but not the other way around.
+
+The entire BYOIP prefix is primarily announced for Magic Transit, providing layer 3 DDoS protection and acceleration. Traffic not explicitly bound to CDN will flow through Magic Transit.
+
+Also, traffic egressing to an IP in the prefix will always go to Magic Transit, even if there is an overlapping binding for CDN or Spectrum. This allows customers who want to use the same IP as ingress IP and as origin IP to do so.
+
+```
+flowchart LR
+        accTitle: Cloudflare as a reverse proxy
+        accDescr: Diagram showing Cloudflare's network between clients and the origin server.
+        A[Client] --ingress--> B((Cloudflare))--egress--> C[(Origin server)]
+
+```
+
+When adding a service binding for a given IP address, it must be either a CDN service binding or a Spectrum service binding. It is not possible (or necessary) to bind both services.
+
+### CDN egress
+
+[Dedicated CDN Egress IPs](https://developers.cloudflare.com/smart-shield/configuration/dedicated-egress-ips/) (formerly known as Aegis) is only available for Enterprise. If you are interested, reach out to your account team. Also note that a single BYOIP prefix can be used for either CDN ingress or CDN egress, but not both.
+
+## Tutorials
+
+- [Use BYOIP with Magic Transit and CDN](https://developers.cloudflare.com/byoip/service-bindings/magic-transit-with-cdn/)
+- [Use BYOIP with CDN and Spectrum](https://developers.cloudflare.com/byoip/service-bindings/cdn-and-spectrum/)
+
+## Footnotes
+
+1. Layer 7 HTTP-based [↩](#user-content-fnref-1)
+2. Layer 4 or Layer 7 HTTP with custom ports [↩](#user-content-fnref-2)
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/byoip/service-bindings/#page","headline":"IP address service bindings","description":"In IP address management, service binding refers to the association of IPs to specific Cloudflare services. Review the available options and the API endpoints to set up service bindings.","url":"https://developers.cloudflare.com/byoip/service-bindings/","inLanguage":"en","image":"https://developers.cloudflare.com/byoip/service-bindings/og.png?v=bfc73f982787b58d","dateModified":"2026-04-30","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["Bindings"]}
+```
+
+---
+
+---
+description: Cloudflare allows users to use their Cloudflare prefix to route traffic to a different service. Service bindings must be created on the parent account of the prefix.
+title: Use BYOIP with CDN and Spectrum
+image: https://developers.cloudflare.com/byoip/service-bindings/cdn-and-spectrum/og.png?v=5802cf6385249cbf
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/byoip/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Use BYOIP with CDN and Spectrum
+
+Last updated May 6, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/byoip/service-bindings/cdn-and-spectrum/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+With [service bindings](https://developers.cloudflare.com/byoip/service-bindings/), CDN<sup>[1](#user-content-fn-1)</sup> customers using BYOIP can take the same prefix they have onboarded to Cloudflare and use it to selectively route traffic on a per-IP address basis to [Spectrum](https://developers.cloudflare.com/spectrum/)<sup>[2](#user-content-fn-2)</sup>, or vice versa. This means:
+
+- You can upgrade individual IPs within a CDN prefix to a Spectrum IP. For example, if you have a CDN prefix 203.0.113.0/24, you can upgrade 203.0.113.1 to Spectrum.
+- You can upgrade individual IPs within a Spectrum prefix to a CDN IP. For example, if you have a Spectrum prefix 203.0.113.0/24, you can upgrade 203.0.113.1 to CDN.
+
+This guide will use the first example and consider a prefix that was onboarded to the CDN, with a few IPs upgraded to Spectrum.
+
+## Before you begin
+
+Cloudflare **strongly** recommends implementing service bindings through an **aggregated** CIDR block, as it is more efficient than adding discrete bindings for non-contiguous CIDR blocks.
+
+<details>
+
+<summary>
+
+Example
+
+</summary>
+
+**CDN protected prefix:** <code>203.0.113.0/24</code>
+
+**IPs to upgrade to Spectrum:**
+
+<code>203.0.113.16</code><br> <code>203.0.113.17</code><br> <code>203.0.113.18</code><br> <code>203.0.113.19</code><br> <code>203.0.113.20</code><br> <code>203.0.113.21</code><br> <code>203.0.113.22</code><br> <code>203.0.113.23</code>
+
+Add one discrete Spectrum service binding for <code>203.0.113.16</code> with a <code>/29</code> netmask.
+
+</details>
+
+Once a service binding is created (or deleted), it will take **four to six hours** to propagate across Cloudflare's global network. Services for the IP addresses in scope will likely be disrupted during this window.
+
+Note
+
+This guide assumes that the prefix is tied to a single Cloudflare account that has both CDN and Spectrum properties. If you are using [prefix delegations](https://developers.cloudflare.com/byoip/concepts/prefix-delegations/), the service bindings must be [created](#2-create-service-bindings) on the parent account.
+
+---
+
+## Prepare your IPs
+
+### 1. Get account information
+
+1. Log in to your Cloudflare account and get your [account ID](https://developers.cloudflare.com/fundamentals/account/find-account-and-zone-ids/) and [authentication key or token](https://developers.cloudflare.com/fundamentals/api/get-started/). If using an [API token](https://developers.cloudflare.com/fundamentals/api/get-started/create-token/), the permissions should include `Account` - `IP Prefixes` - `Edit`.
+2. Make a `GET` request to the [List Services](https://developers.cloudflare.com/api/resources/addressing/subresources/services/methods/list/) endpoint and take note of the `id` associated with the Spectrum service.
+3. Use the [List Prefixes](https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/methods/list/) endpoint and take note of the `id` associated with the prefix ( `cidr`) you will configure.
+
+At this point, continuing the [example](#before-you-begin), you should have a mapping similar to the following:
+
+| Variables | Description |
+| --- | --- |
+| `{service_id}` | The ID of the Spectrum service within Cloudflare. <br><br> Example: `969xxxxxxxx000xxx0000000x00001bf` |
+| `{prefix_id}` | The ID of the CDN prefix (`203.0.113.0/24`) you want to configure. <br><br> Example: `6b25xxxxxxx000xxx0000000x0000cfc` |
+
+4. To confirm you currently have a CDN service binding and that it spans across your entire prefix, make a `GET` request to the [List Service Bindings](https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/subresources/service_bindings/methods/list/) endpoint. Replace the `{prefix_id}` in the URI path by the actual prefix ID you got from the previous step.
+
+<details>
+
+<summary>
+
+Required API token permissions
+
+</summary>
+
+At least one of the following <a href="https://developers.cloudflare.com/fundamentals/api/reference/permissions/">token permissions</a> is required:
+
+- <code>IP Prefixes: Write</code>
+- <code>IP Prefixes: Read</code>
+
+</details>
+
+*List Service Bindingsbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/addressing/prefixes/$PREFIX_ID/bindings" \
+	--request GET \
+	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
+```
+
+### 2. Create service bindings
+
+Caution
+
+Once a service binding is created (or deleted), it will take **four to six hours** to propagate across Cloudflare's global network. Services for the IP addresses in scope will likely be disrupted during this window.
+
+1. Make a `POST` request to the [Create service binding](https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/subresources/service_bindings/methods/create/) endpoint, indicating the IP address you want to bind to Spectrum. Specify the **corresponding network mask** as needed.
+
+Continuing the example, `203.0.113.100/32` designates an IP address that is within the CDN prefix `203.0.113.0/24`.
+
+Replace the `{prefix_id}` in the URI with your prefix ID from previous steps. Within the request body, the `cidr` value should correspond to the IP address or subnet that you are configuring for use with Spectrum.
+
+<details>
+
+<summary>
+
+Required API token permissions
+
+</summary>
+
+At least one of the following <a href="https://developers.cloudflare.com/fundamentals/api/reference/permissions/">token permissions</a> is required:
+
+- <code>IP Prefixes: Write</code>
+
+</details>
+
+*Create Service Bindingbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/addressing/prefixes/$PREFIX_ID/bindings" \
+	--request POST \
+	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+	--json '{
+		"cidr": "203.0.113.100/32",
+		"service_id": "<SERVICE_ID>"
+	}'
+```
+
+In the response body, the initial provisioning state should be `provisioning`.
+
+```json
+{
+  "errors": [],
+  "messages": [],
+  "success": true,
+  "result": {
+    "cidr": "203.0.113.100/32",
+    "id": "<SERVICE_BINDING_ID>",
+    "provisioning": {
+      "state": "provisioning"
+      },
+    "service_id": "<SERVICE_ID>",
+    "service_name": "<SERVICE_NAME>"
+  }
+}
+```
+
+You can periodically check the service binding status using the [List Service Bindings](https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/subresources/service_bindings/methods/list/) endpoint.
+
+### 3. Verify all service bindings
+
+After the propagation time (four to six hours), the [List Service Bindings](https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/subresources/service_bindings/methods/get/) endpoint should return all service bindings that are part of the prefix - in this case, CDN and Spectrum.
+
+<details>
+
+<summary>
+
+Required API token permissions
+
+</summary>
+
+At least one of the following <a href="https://developers.cloudflare.com/fundamentals/api/reference/permissions/">token permissions</a> is required:
+
+- <code>IP Prefixes: Write</code>
+- <code>IP Prefixes: Read</code>
+
+</details>
+
+*List Service Bindingsbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/addressing/prefixes/$PREFIX_ID/bindings" \
+	--request GET \
+	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
+```
+
+---
+
+## Set up your Cloudflare services
+
+### CDN
+
+If you already use BYOIP with CDN, you might be able to skip this step. However, if you are using this guide to upgrade a few IPs from a Spectrum prefix to the CDN, consider the following sections on [address maps](#address-maps) and [DNS records](#dns-records).
+
+Note
+
+As described below, address maps and DNS records do not apply to Spectrum. To set up your Spectrum application with BYOIP, refer to [Spectrum](#spectrum).
+
+#### Address maps
+
+Use [address maps](https://developers.cloudflare.com/byoip/address-maps/) to specify which IPs should be used by Cloudflare in DNS responses when a record is [proxied](https://developers.cloudflare.com/dns/proxy-status/).
+
+You can choose between two different scopes:
+
+- Account-level: uses the address map for all proxied DNS records across all of the zones within an account.
+- Zone-level: uses the address map for all proxied DNS records within a zone.
+
+Note
+
+If you need to map only specific subdomains (and not all proxied DNS records) to specific IP addresses, you can use a [Subdomain setup](https://developers.cloudflare.com/dns/zone-setups/subdomain-setup/).
+
+1. In the Cloudflare dashboard, go to the **Address Maps** page. [Go to **Address maps** ↗](https://dash.cloudflare.com/?to=/:account/ip-addresses/proxy-ips)
+2. Select **Create an address map**.
+3. Choose the scope of the address map.
+4. Add the zones and IP addresses that you want to map.
+5. Name your address map.
+6. Review the information and select **Save and Deploy**.
+
+Use the [Create Address Map](https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/methods/create/) endpoint.
+
+Make sure you have the correct Key/Token and permissions.
+
+#### DNS records
+
+While the DNS record proxy status and address map will determine how Cloudflare's authoritative DNS responds to requests for your hostnames, the IP addresses specified in `A`/`AAAA` records will determine [how Cloudflare reaches the configured origin](https://developers.cloudflare.com/fundamentals/concepts/how-cloudflare-works/#cloudflare-as-a-reverse-proxy).
+
+Note
+
+As you create the necessary DNS records, [Total TLS](https://developers.cloudflare.com/ssl/edge-certificates/additional-options/total-tls/) can help making sure that you have SSL/TLS certificates in place for all your hostnames.
+
+To create a DNS record in the dashboard:
+
+1. In the Cloudflare dashboard, go to the **DNS Records** page. [Go to **Records** ↗](https://dash.cloudflare.com/?to=/:account/:zone/dns/records)
+2. Select **Add record**.
+3. Choose an address ( `A`/ `AAAA`) [record type](https://developers.cloudflare.com/dns/manage-dns-records/reference/dns-record-types/).
+4. Complete the required fields, setting the **Proxy status** to **proxied**.
+5. Select **Save**.
+
+To create records with the API, use a [POST request](https://developers.cloudflare.com/api/resources/dns/subresources/records/methods/create/). For field definitions, select a record type under the request body specification.
+
+<details>
+
+<summary>
+
+Example
+
+</summary>
+
+| Type | Name | IP address | Proxy status | TTL |
+| --- | --- | --- | --- | --- |
+| <code>A</code> | <code>www</code> | <code>203.0.113.150</code> | <code>Proxied</code> | <code>Auto</code> |
+
+At this point, if an address map for a zone <code>example.com</code> specifies that Cloudflare should use <code>203.0.113.100</code> for proxied records and the above record exists in the same zone, you can expect the following:
+
+1. Cloudflare responds to DNS requests for <code>www.example.com</code> with <code>203.0.113.100</code>.
+2. Cloudflare proxies requests through the CDN and then routes the requests to the origin server <code>203.0.113.150</code>.
+3. As the HTTP response egresses the Cloudflare network back to the client side, the source IP address of the response becomes <code>203.0.113.100</code> (the IP address that the HTTP request originally landed on).
+
+</details>
+
+Note
+
+Having the same IP address as ingress IP (defined in the address map) and origin IP (listed in the DNS record) will not cause any loops.
+
+<details>
+
+<summary>
+
+Example
+
+</summary>
+
+Assuming <code>203.0.113.100</code> was also the origin IP, the DNS record would look like the following:
+
+| Type | Name | IP address | Proxy status | TTL |
+| --- | --- | --- | --- | --- |
+| <code>A</code> | <code>www</code> | <code>203.0.113.100</code> | <code>Proxied</code> | <code>Auto</code> |
+
+</details>
+
+### Spectrum
+
+UDP applications
+
+Spectrum UDP applications are supported with BYOIP, including [CDN and Spectrum service bindings](https://developers.cloudflare.com/byoip/service-bindings/cdn-and-spectrum/). However, they are [not currently supported with Magic Transit service bindings](https://developers.cloudflare.com/spectrum/reference/limitations/#udp).
+
+Configuring Spectrum to use your own IP address is only possible via the [Cloudflare API](https://developers.cloudflare.com/api/resources/spectrum/).
+
+The `origin_direct` field takes the origin IP address, while `edge_ips` allows you to define which IP address from your BYOIP prefix Cloudflare should use to process requests for your Spectrum application.
+
+<details>
+
+<summary>
+
+Required API token permissions
+
+</summary>
+
+At least one of the following <a href="https://developers.cloudflare.com/fundamentals/api/reference/permissions/">token permissions</a> is required:
+
+- <code>Zone Settings Write</code>
+
+</details>
+
+*Create Spectrum application using a name for the originbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/zones/$ZONE_ID/spectrum/apps" \
+	--request POST \
+	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+	--json '[
+		{
+				"protocol": "tcp/22",
+				"dns": {
+						"type": "CNAME",
+						"name": "ssh.example.com"
+				},
+				"origin_direct": [
+						"tcp://192.0.2.1:22"
+				],
+				"proxy_protocol": "off",
+				"ip_firewall": true,
+				"tls": "full",
+				"edge_ips": {
+						"type": "static",
+						"ips": [
+								"203.0.113.18"
+						]
+				},
+				"traffic_type": "direct"
+		}
+	]'
+```
+
+---
+
+## (Optional) Add layer 7 functionality
+
+Leverage other features according to your needs. For example:
+
+- [Cache](https://developers.cloudflare.com/cache/)
+- [WAF custom rules](https://developers.cloudflare.com/waf/custom-rules/)
+- [Security analytics](https://developers.cloudflare.com/waf/analytics/security-analytics/)
+
+## Footnotes
+
+1. Layer 7 HTTP-based [↩](#user-content-fnref-1)
+2. Layer 4 or Layer 7 HTTP with custom ports [↩](#user-content-fnref-2)
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/byoip/service-bindings/cdn-and-spectrum/#page","headline":"Use BYOIP with CDN and Spectrum","description":"Cloudflare allows users to use their Cloudflare prefix to route traffic to a different service. Service bindings must be created on the parent account of the prefix.","url":"https://developers.cloudflare.com/byoip/service-bindings/cdn-and-spectrum/","inLanguage":"en","image":"https://developers.cloudflare.com/byoip/service-bindings/cdn-and-spectrum/og.png?v=5802cf6385249cbf","dateModified":"2026-05-06","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["DNS","Integration"]}
+```
+
+---
+
+---
+description: Service bindings allow BYOIP customers to selectively route traffic on a per-IP address basis to the CDN pipeline. It is important to note that traffic routed to the CDN pipeline is protected at Layers 3 and 4 by the inherent DDoS protection capabilities.
+title: Use BYOIP with Magic Transit and CDN
+image: https://developers.cloudflare.com/byoip/service-bindings/magic-transit-with-cdn/og.png?v=61c932dae64ac09e
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/byoip/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Use BYOIP with Magic Transit and CDN
+
+Last updated May 6, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/byoip/service-bindings/magic-transit-with-cdn/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+[Magic Transit](https://developers.cloudflare.com/magic-transit/) customers using BYOIP can also benefit from the performance, reliability, and security that Cloudflare offers for HTTP-based applications. [Service bindings](https://developers.cloudflare.com/byoip/service-bindings/) allow BYOIP customers to selectively route traffic on a per-IP address basis to the CDN pipeline (which includes [Cache](https://developers.cloudflare.com/cache/), [Web Application Firewall (WAF)](https://developers.cloudflare.com/waf/), and more).
+
+This guide covers using the Cloudflare API to configure Magic Transit with CDN. It is also possible to define service bindings to route traffic to the Spectrum pipeline selectively. Refer to [scope](https://developers.cloudflare.com/byoip/service-bindings/#scope) for the full list of possible configurations and other available guides.
+
+It is important to note that traffic routed to the CDN pipeline is protected at Layers 3 and 4 by the inherent DDoS protection capabilities native to the CDN pipeline.
+
+## Before you begin
+
+- Make sure your contract includes CDN according to your needs. If you find any issues related to subscription when following the steps below, reach out to your account team.
+- Plan for what IPs will be used:
+
+  Cloudflare **strongly** recommends implementing service bindings through an **aggregated** CIDR block, as it is more efficient than adding discrete bindings for non-contiguous CIDR blocks.<details><summary>
+
+  Example</summary>
+
+**Magic Transit protected prefix:** <code>203.0.113.0/24</code>
+
+  **IPs to upgrade to CDN:**
+
+  <code>203.0.113.16</code><br> <code>203.0.113.17</code><br> <code>203.0.113.18</code><br> <code>203.0.113.19</code><br> <code>203.0.113.20</code><br> <code>203.0.113.21</code><br> <code>203.0.113.22</code><br> <code>203.0.113.23</code>
+
+  Add one discrete CDN service binding for <code>203.0.113.16</code> with a <code>/29</code> netmask.</details>
+
+Once a service binding is created (or deleted), it will take **four to six hours** to propagate across Cloudflare's global network. Services for the IP addresses in scope will likely be disrupted during this window.
+
+  Note
+
+  This guide assumes that the prefix is tied to a single Cloudflare account that has both Magic Transit and CDN properties. If you are using [prefix delegations](https://developers.cloudflare.com/byoip/concepts/prefix-delegations/), the service bindings must be [created](#2-create-service-bindings) on the parent account.
+
+## 1. Get account information
+
+1. Log in to your Cloudflare account and get your [account ID](https://developers.cloudflare.com/fundamentals/account/find-account-and-zone-ids/) and [authentication key or token](https://developers.cloudflare.com/fundamentals/api/get-started/). If using an [API token](https://developers.cloudflare.com/fundamentals/api/get-started/create-token/), the permissions should include `Account` - `IP Prefixes` - `Edit`.
+2. Make a `GET` request to the [List Services](https://developers.cloudflare.com/api/resources/addressing/subresources/services/methods/list/) endpoint and take note of the `id` associated with the CDN service.
+3. Use the [List Prefixes](https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/methods/list/) endpoint and take note of the `id` associated with the prefix ( `cidr`) you will configure.
+
+At this point, continuing the [example](#before-you-begin), you should have a mapping similar to the following:
+
+| Variables | Description |
+| --- | --- |
+| `{service_id}` | The ID of the CDN service within Cloudflare. <br><br> Example: `969xxxxxxxx000xxx0000000x00001bf` |
+| `{prefix_id}` | The ID of the Magic Transit prefix (`203.0.113.0/24`) you want to configure. <br><br> Example: `6b25xxxxxxx000xxx0000000x0000cfc` |
+
+4. To confirm you currently have a Magic Transit service binding and that it spans across your entire prefix, make a `GET` request to the [List Service Bindings](https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/subresources/service_bindings/methods/list/) endpoint. Replace the `{prefix_id}` in the URI path by the actual prefix ID you got from the previous step.
+
+<details>
+
+<summary>
+
+Required API token permissions
+
+</summary>
+
+At least one of the following <a href="https://developers.cloudflare.com/fundamentals/api/reference/permissions/">token permissions</a> is required:
+
+- <code>IP Prefixes: Write</code>
+- <code>IP Prefixes: Read</code>
+
+</details>
+
+*List Service Bindingsbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/addressing/prefixes/$PREFIX_ID/bindings" \
+	--request GET \
+	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
+```
+
+## 2. Create service bindings
+
+Caution
+
+Once a service binding is created (or deleted), it will take **four to six hours** to propagate across Cloudflare's global network. Services for the IP addresses in scope will likely be disrupted during this window.
+
+1. Make a `POST` request to the [Create service binding](https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/subresources/service_bindings/methods/create/) endpoint, indicating the IP address you want to bind to CDN. Specify the **corresponding network mask** as needed.
+
+Continuing the example, `203.0.113.100/32` designates an IP address that is within the Magic Transit prefix `203.0.113.0/24`.
+
+Replace the `{prefix_id}` in the URI with your prefix ID from previous steps. Within the request body, the `cidr` value should correspond to the IP address or subnet that you are configuring for use with CDN.
+
+<details>
+
+<summary>
+
+Required API token permissions
+
+</summary>
+
+At least one of the following <a href="https://developers.cloudflare.com/fundamentals/api/reference/permissions/">token permissions</a> is required:
+
+- <code>IP Prefixes: Write</code>
+
+</details>
+
+*Create Service Bindingbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/addressing/prefixes/$PREFIX_ID/bindings" \
+	--request POST \
+	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+	--json '{
+		"cidr": "203.0.113.100/32",
+		"service_id": "<SERVICE_ID>"
+	}'
+```
+
+In the response body, the initial provisioning state should be `provisioning`.
+
+```json
+{
+  "errors": [],
+  "messages": [],
+  "success": true,
+  "result": {
+    "cidr": "203.0.113.100/32",
+    "id": "<SERVICE_BINDING_ID>",
+    "provisioning": {
+      "state": "provisioning"
+      },
+    "service_id": "<SERVICE_ID>",
+    "service_name": "<SERVICE_NAME>"
+  }
+}
+```
+
+You can periodically check the service binding status using the [List Service Bindings](https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/subresources/service_bindings/methods/list/) endpoint.
+
+## 3. Create address maps
+
+Once you have configured your IPs to have CDN service, you can use [address maps](https://developers.cloudflare.com/byoip/address-maps/) to specify which IPs should be used by Cloudflare in DNS responses when a record is [proxied](https://developers.cloudflare.com/dns/proxy-status/).
+
+You can choose between two different scopes:
+
+- Account-level: uses the address map for all proxied DNS records across all of the zones within an account.
+- Zone-level: uses the address map for all proxied DNS records within a zone.
+
+Tip
+
+If you need to map only specific subdomains (and not all proxied DNS records) to specific IP addresses, you can use a zone on [Subdomain setup](https://developers.cloudflare.com/dns/zone-setups/subdomain-setup/).
+
+1. In the Cloudflare dashboard, go to the **Address Maps** page. [Go to **Address maps** ↗](https://dash.cloudflare.com/?to=/:account/ip-addresses/proxy-ips)
+2. Select **Create an address map**.
+3. Choose the scope of the address map.
+4. Add the zones and IP addresses that you want to map.
+5. Name your address map.
+6. Review the information and select **Save and Deploy**.
+
+Use the [Create Address Map](https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/methods/create/) endpoint.
+
+Make sure you have the correct Key/Token and permissions.
+
+## 4. Create DNS records
+
+To create a DNS record in the dashboard:
+
+1. In the Cloudflare dashboard, go to the **DNS Records** page. [Go to **Records** ↗](https://dash.cloudflare.com/?to=/:account/:zone/dns/records)
+2. Select **Add record**.
+3. Choose an address ( `A`/ `AAAA`) [record type](https://developers.cloudflare.com/dns/manage-dns-records/reference/dns-record-types/).
+4. Complete the required fields, setting the **Proxy status** to **proxied**.
+5. Select **Save**.
+
+To create records with the API, use a [POST request](https://developers.cloudflare.com/api/resources/dns/subresources/records/methods/create/). For field definitions, select a record type under the request body specification.
+
+Tip
+
+As you create the necessary DNS records, [Total TLS](https://developers.cloudflare.com/ssl/edge-certificates/additional-options/total-tls/) can help making sure that you have SSL/TLS certificates in place for all your hostnames.
+
+While the DNS record proxy status and address map will determine how Cloudflare's authoritative DNS responds to requests for your hostnames, the IP addresses specified in `A`/`AAAA` records will determine [how Cloudflare reaches the configured origin](https://developers.cloudflare.com/fundamentals/concepts/how-cloudflare-works/#cloudflare-as-a-reverse-proxy).
+
+<details>
+
+<summary>
+
+Example
+
+</summary>
+
+| Type | Name | IP address | Proxy status | TTL |
+| --- | --- | --- | --- | --- |
+| <code>A</code> | <code>www</code> | <code>203.0.113.150</code> | <code>Proxied</code> | <code>Auto</code> |
+
+At this point, if an address map for a zone <code>example.com</code> specifies that Cloudflare should use <code>203.0.113.100</code> for proxied records and the above record exists in the same zone, you can expect the following:
+
+1. Cloudflare responds to DNS requests with <code>203.0.113.100</code>.
+2. Cloudflare proxies requests through the CDN and then routes the requests via <a href="https://developers.cloudflare.com/magic-transit/reference/gre-ipsec-tunnels/">GRE</a> or <a href="https://developers.cloudflare.com/magic-transit/network-interconnect/">CNI</a> to the origin server <code>203.0.113.150</code> (which is within the Magic Transit protected prefix).
+3. Depending on whether Magic Transit is implemented with <a href="https://developers.cloudflare.com/magic-transit/how-to/configure-tunnel-endpoints/#bidirectional-vs-unidirectional-health-checks">direct server return model or with Magic Transit egress</a>, the origin server responds back to Cloudflare either:
+   - Directly over the Internet in a Magic Transit direct server return model
+   - Back through the Magic GRE tunnel(s) in a Magic Transit egress model
+4. As the HTTP response egresses the Cloudflare network back to the client side, the source IP address of the response becomes <code>203.0.113.100</code> (the IP address that the HTTP request originally landed on).
+
+</details>
+
+Note
+
+Having the same IP address as ingress IP (defined in the address map) and origin IP (listed in the DNS record) will not cause any loops.
+
+<details>
+
+<summary>
+
+Example
+
+</summary>
+
+Assuming <code>203.0.113.100</code> was also the origin IP, the DNS record would look like the following:
+
+| Type | Name | IP address | Proxy status | TTL |
+| --- | --- | --- | --- | --- |
+| <code>A</code> | <code>www</code> | <code>203.0.113.100</code> | <code>Proxied</code> | <code>Auto</code> |
+
+</details>
+
+## 5. (Optional) Add layer 7 functionality
+
+Leverage other features according to your needs. For example:
+
+- [Cache](https://developers.cloudflare.com/cache/)
+- [WAF custom rules](https://developers.cloudflare.com/waf/custom-rules/)
+- [Security analytics](https://developers.cloudflare.com/waf/analytics/security-analytics/)
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/byoip/service-bindings/magic-transit-with-cdn/#page","headline":"Use BYOIP with Magic Transit and CDN","description":"Service bindings allow BYOIP customers to selectively route traffic on a per-IP address basis to the CDN pipeline. It is important to note that traffic routed to the CDN pipeline is protected at Layers 3 and 4 by the inherent DDoS protection capabilities.","url":"https://developers.cloudflare.com/byoip/service-bindings/magic-transit-with-cdn/","inLanguage":"en","image":"https://developers.cloudflare.com/byoip/service-bindings/magic-transit-with-cdn/og.png?v=61c932dae64ac09e","dateModified":"2026-05-06","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["DNS","Integration"]}
+```
+
+---
+
+---
+description: Detect unauthorized advertisement of your IP prefixes.
+title: Route Leak Detection
+image: https://developers.cloudflare.com/byoip/route-leak-detection/og.png?v=8ca61d5d0525a4fa
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/byoip/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Route Leak Detection
+
+Last updated Apr 16, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/byoip/route-leak-detection/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Route Leak Detection protects your routes on the Internet by notifying you when your traffic is routed somewhere it should not go, which could indicate a possible attack. Route Leak Detection also reduces the amount of time needed to mitigate leaks by providing you with timely notifications.
+
+Cloudflare detects route leaks by using several sources of routing data to create a synthesis of how the Internet sees routes to BYOIP users. Cloudflare then watches these views to track any sudden changes that occur on the Internet. If the changes can be correlated to actions Cloudflare has taken, no further action is required. However, if changes have not been made, Cloudflare notifies you to inform you that your routes and users may be at risk.
+
+## Enable Route Leak Detection
+
+<details>
+
+<summary>
+
+Route Leak Detection Alert
+
+</summary>
+
+**Who is it for?**
+
+<a href="https://developers.cloudflare.com/byoip/">BYOIP customers</a> who want to receive a notification when their prefixes are advertised in places they should not be.
+
+**Other options / filters**
+
+None.
+
+**Included with**
+
+Purchase of BYOIP.
+
+**What should you do if you receive one?**
+
+Confirm your traffic is healthy. Reach out to your transit providers to ensure you are behaving as expected and ask them to follow up with any providers accepting the unauthorized routes.
+
+</details>
+
+You must be a user who has brought your own IP address to Cloudflare, which includes Magic Transit, Spectrum, and WAF users. Only prefixes advertised by Cloudflare qualify for Route Leak Detection.
+
+1. In the Cloudflare dashboard, go to the **Notifications** page. [Go to **Notifications** ↗](https://dash.cloudflare.com/?to=/:account/notifications)
+2. Select **Add**.
+3. Locate **Route Leak Detection** from the list > **Select**.
+4. Enter a name and description for the notification.
+5. Enter one or more email addresses to receive the notifications.
+6. Select **Save**.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/byoip/route-leak-detection/#page","headline":"Route Leak Detection","description":"Detect unauthorized advertisement of your IP prefixes.","url":"https://developers.cloudflare.com/byoip/route-leak-detection/","inLanguage":"en","image":"https://developers.cloudflare.com/byoip/route-leak-detection/og.png?v=8ca61d5d0525a4fa","dateModified":"2026-04-16","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Review common troubleshooting scenarios for BYOIP.
+title: Troubleshooting
+image: https://developers.cloudflare.com/byoip/troubleshooting/og.png?v=ca40803108f463c7
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/byoip/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Troubleshooting
+
+Last updated May 6, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/byoip/troubleshooting/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+The following topics are useful for troubleshooting BYOIP issues.
+
+## uRPF filtering and packet loss
+
+Routers receive IP packets and forward the packets to the destination IP address. Unicast Reverse Path Forwarding (uRPF) is a security feature that can prevent spoofing attacks. uRPF operates under two modes: strict and loose mode.
+
+Under **strict mode**, the router performs two checks on incoming packets to look for a matching entry in the source routing table and to determine whether the interface that received the packet can be used to reach the source. If the incoming IP packets pass both checks, the packets are forwarded; if the checks do not pass, the packets are dropped.
+
+When uRPF is set to loose mode, the router performs a single check when it receives an IP packet to look for a source's matching entry in the routing table.
+
+If you are experiencing packet loss as a result of an upstream ISP implementing uRPF filtering, contact your ISP and request the link be set to **loose mode**.
+
+## Non-SNI support
+
+Currently, BYOIP cannot be used with [legacy custom certificates](https://developers.cloudflare.com/ssl/edge-certificates/custom-certificates/uploading/) to support [non-SNI](https://developers.cloudflare.com/ssl/reference/browser-compatibility/#non-sni-support) requests.
+
+Instead, you can use Address Maps to set a default SNI for IPs on your account or zone. Refer to [Setup](https://developers.cloudflare.com/byoip/address-maps/setup/#non-sni-support) for further guidance.
+
+## Self-serve onboarding API errors
+
+When onboarding BYOIP prefixes via the API, you may encounter the following errors:
+
+| Error code | Meaning | Resolution |
+| --- | --- | --- |
+| `prefix_not_valid_and_approved` | The prefix has not passed IRR validation, RPKI validation, and ownership verification (or manual approval). | Verify all three validation steps have completed. If one or more are failing, check prefix registration with your Regional Internet Registry (RIR) and your RPKI ROA configuration. If validation is passing but you are still seeing this error, contact support for manual approval. |
+| `incomplete_bgp_deployment` | Cannot create a BGP prefix without a default edge service binding configured. | Configure a default edge service binding before creating BGP prefixes. |
+| `advertise_state_locked` | Cannot create a BGP prefix — the default edge service binding is still deploying. | Wait for the edge service binding deployment to complete, then retry. |
+
+Note
+
+Self-serve BYOIP onboarding is not supported when BYOIP is used as a Magic Transit on-ramp configuration. For more information, refer to [Magic Transit with CDN](https://developers.cloudflare.com/byoip/service-bindings/magic-transit-with-cdn/).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/byoip/troubleshooting/#page","headline":"Troubleshooting","description":"Review common troubleshooting scenarios for BYOIP.","url":"https://developers.cloudflare.com/byoip/troubleshooting/","inLanguage":"en","image":"https://developers.cloudflare.com/byoip/troubleshooting/og.png?v=ca40803108f463c7","dateModified":"2026-05-06","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["Debugging"]}
+```
+
+---
+
+---
+description: Resolve prefix validation errors during BYOIP onboarding.
+title: Troubleshoot prefix validation
+image: https://developers.cloudflare.com/byoip/troubleshooting/prefix-validation/og.png?v=7aa8c8eda5466ca4
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/byoip/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Troubleshoot prefix validation
+
+Last updated Apr 16, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/byoip/troubleshooting/prefix-validation/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+1. Use the [Prefix Details endpoint](https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/methods/get/) to check if any issues were found during validation.<details><summary>
+
+   Required API token permissions</summary>
+
+At least one of the following <a href="https://developers.cloudflare.com/fundamentals/api/reference/permissions/">token permissions</a> is required:
+   - <code>Magic Transit Read</code>
+   - <code>Magic Transit Write</code>
+   - <code>IP Prefixes: Write</code>
+   - <code>IP Prefixes: Read</code>
+   - <code>IP Prefixes: BGP On Demand Write</code>
+   - <code>IP Prefixes: BGP On Demand Read</code></details>
+
+   *Prefix Detailsbash*
+
+   
+
+   ```bash
+   curl "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/addressing/prefixes/$PREFIX_ID" \
+   	--request GET \
+   	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
+   ```
+
+   *Responsejson*
+
+   
+
+   ```json
+   "result": {
+       "id": "72823e95d6c64d48a8111fec81179816",
+       "created_at": "2025-02-25T00:34:11.423722Z",
+       "modified_at": "2025-02-25T00:34:11.423722Z",
+       "cidr": "203.0.113.0/24",
+       "account_id": "654c5f71c324478cc9f68d60065d4620",
+       "description": "",
+       "approved": "P",
+       "on_demand_enabled": false,
+       "on_demand_locked": false,
+       "advertised": null,
+       "advertised_modified_at": null,
+       "loa_document_id": "b9ff4afe312246a8b2e7324d98f40b23",
+       "asn": 13335,
+       "ownership_validation_token": "<OWNERSHIP_VALIDATION_TOKEN>",
+       "delegate_loa_creation" : true,
+       "irr_validation_state": "valid",
+       "rpki_validation_state": "valid",
+       "ownership_validation_state": "missing",
+     }
+   ```
+
+
+2. Consider the states returned in the API response (for example, `missing`, `invalid`, `mismatch_asn`) and review your IRR record, ROA, and ownership validation method accordingly.
+   - Information in the IRR and ROA records should meet the [onboarding prerequisites](https://developers.cloudflare.com/byoip/get-started/#before-you-begin).
+   - [Ownership validation](https://developers.cloudflare.com/byoip/get-started/#validate-prefix-ownership) requires a matching ROA and the correct validation token found in all DNS TXT records or in the IRR record.
+3. After applying the necessary changes, use the Validate Prefix endpoint to trigger the validation checks.<details><summary>
+
+   Required API token permissions</summary>
+
+At least one of the following <a href="https://developers.cloudflare.com/fundamentals/api/reference/permissions/">token permissions</a> is required:
+   - <code>Magic Transit Write</code>
+   - <code>IP Prefixes: Write</code></details>
+
+   *Validate Prefixbash*
+
+   
+
+   ```bash
+   curl "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/addressing/prefixes/$PREFIX_ID/validate" \
+   	--request POST \
+   	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
+   ```
+
+
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/byoip/troubleshooting/prefix-validation/#page","headline":"Troubleshoot prefix validation","description":"Resolve prefix validation errors during BYOIP onboarding.","url":"https://developers.cloudflare.com/byoip/troubleshooting/prefix-validation/","inLanguage":"en","image":"https://developers.cloudflare.com/byoip/troubleshooting/prefix-validation/og.png?v=7aa8c8eda5466ca4","dateModified":"2026-04-16","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Definitions for terms used across BYOIP documentation.
+title: Glossary
+image: https://developers.cloudflare.com/byoip/glossary/og.png?v=093df182db48c231
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/byoip/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Glossary
+
+Last updated Apr 16, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/byoip/glossary/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Review the definitions for terms used across Cloudflare's BYOIP documentation.
+
+| Term | Definition |
+| --- | --- |
+| address map | A data structure enabling customers with BYOIP prefixes or account-level static IPs to specify which IP addresses should be mapped to DNS records when they are proxied through Cloudflare. |
+| autonomous system numbers (ASNs) | A large network or group of networks that has a unified routing policy. Every computer or device that connects to the Internet is connected to an autonomous system. |
+| Border Gateway Protocol (BGP) | The routing protocol for the Internet, which is responsible for picking the most efficient routes to deliver Internet traffic. |
+| Internet Routing Registry (IRR) | A globally distributed database of routing information which contains announced routes and routing policies in a common format. Network operators use this information, as well as [RPKI](https://developers.cloudflare.com/byoip/concepts/route-filtering-rpki/), to configure backbone routers. |
+| Resource Public Key Infrastructure (RPKI) | A cryptographic method of signing records that associate a route with an originating autonomous system number. |
+| Route Origin Authorization (ROA) | The RPKI-signed object that states an autonomous system is authorized to originate a particular IP address prefix or set of prefixes. |
+| Unicast Reverse Path Forwarding (uRPF) | A security feature that can prevent spoofing attacks. |
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/byoip/glossary/#page","headline":"Glossary","description":"Definitions for terms used across BYOIP documentation.","url":"https://developers.cloudflare.com/byoip/glossary/","inLanguage":"en","image":"https://developers.cloudflare.com/byoip/glossary/og.png?v=093df182db48c231","dateModified":"2026-04-16","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Track the latest updates and changes to BYOIP features.
+title: Changelog
+image: https://developers.cloudflare.com/byoip/changelog/og.png?v=c7121bad559a5123
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/byoip/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Changelog
+
+Last updated Apr 16, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/byoip/changelog/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+[Subscribe to RSS](https://developers.cloudflare.com/byoip/changelog/index.xml)
+
+## 2024-07-02
+
+**Address Maps for BYOIP and Static IPs**
+
+Address Maps is available via [API](https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/methods/list/) and via [dashboard](https://dash.cloudflare.com/?to=/:account/ip-addresses/proxy-ips). Address Maps allows customers with BYOIP prefixes or account-level Static IPs to specify which IP addresses should be mapped to DNS records when they are proxied through Cloudflare. Refer to the [documentation](https://developers.cloudflare.com/byoip/address-maps/) for details.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://developers.cloudflare.com/byoip/changelog/#page","headline":"Changelog","description":"Track the latest updates and changes to BYOIP features.","url":"https://developers.cloudflare.com/byoip/changelog/","inLanguage":"en","image":"https://developers.cloudflare.com/byoip/changelog/og.png?v=c7121bad559a5123","dateModified":"2026-04-16","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Advertise and withdraw IP prefixes on demand through the API or dashboard.
+title: Dynamic advertisement
+image: https://developers.cloudflare.com/byoip/concepts/dynamic-advertisement/og.png?v=b217d29af6874481
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/byoip/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Dynamic advertisement
+
+Last updated Apr 30, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/byoip/concepts/dynamic-advertisement/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Dynamic advertisement allows you to control when Cloudflare announces your IP prefixes via BGP. When a prefix is advertised, Cloudflare announces it to the Internet so that traffic destined for those IPs can be routed to Cloudflare. When a prefix is withdrawn, Cloudflare stops announcing it — traffic will then follow whatever other BGP routes exist for that prefix.
+
+You can advertise and withdraw prefixes on demand using the [Cloudflare API](https://developers.cloudflare.com/byoip/concepts/dynamic-advertisement/best-practices/#via-the-api) or the [IP Prefixes page](https://developers.cloudflare.com/byoip/concepts/dynamic-advertisement/best-practices/#via-the-cloudflare-dashboard) in the Cloudflare dashboard. Enabling advertisement typically takes two to seven minutes, and disabling advertisement takes approximately 15 minutes.
+
+When using the API, you can authorize the call with your email and API key or create a service token for this purpose. A successful API response indicates the service registered the request.
+
+Both the API and the Cloudflare dashboard support [prefix delegations](https://developers.cloudflare.com/byoip/concepts/prefix-delegations/), which allow other Cloudflare accounts to interact with your prefix. The effect of a delegation is service-specific.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/byoip/concepts/dynamic-advertisement/#page","headline":"Dynamic advertisement","description":"Advertise and withdraw IP prefixes on demand through the API or dashboard.","url":"https://developers.cloudflare.com/byoip/concepts/dynamic-advertisement/","inLanguage":"en","image":"https://developers.cloudflare.com/byoip/concepts/dynamic-advertisement/og.png?v=b217d29af6874481","dateModified":"2026-04-30","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Best practices for managing dynamic IP prefix advertisement.
+title: Best practices
+image: https://developers.cloudflare.com/byoip/concepts/dynamic-advertisement/best-practices/og.png?v=796d1adb35b6ab66
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/byoip/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Best practices
+
+Last updated Sep 28, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/byoip/concepts/dynamic-advertisement/best-practices/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+## Prerequisites
+
+To prevent issues and simplify the advertisement process during an attack scenario, complete the following tasks.
+
+- Assign appropriate user roles. Ensure that users assigned to manage the status of IP prefix advertisement have the **Administrator** or **Super Administrator** role in your Cloudflare account. For more information, refer to [Setting up Multi-user accounts on Cloudflare](https://developers.cloudflare.com/fundamentals/manage-members/).
+- Get a list of the prefix IDs that you want to manage. Maintain a list of Cloudflare prefix IDs to simplify dynamic advertisement management and operations. You can [obtain prefix IDs](#obtain-prefix-ids) via the Cloudflare dashboard or use the [list prefixes](https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/methods/list/) operation in the Cloudflare API. Refer to these prefix IDs when managing prefix advertisement.
+
+## Enable prefix advertisement
+
+You can avoid latency and the possibility of dropped routes by enabling prefix advertisement from Cloudflare before you withdraw the advertisement from your data center.
+
+1. Refer to [configure dynamic advertisement](#configure-dynamic-advertisement). This operation requires your account ID, prefix IDs, and API key.
+2. Verify the advertisement using a looking glass of your choice, such as [Hurricane Electric Internet Services ↗︎](https://lg.he.net/). Use the Cloudflare ASN ( `13335`) to track the advertisement route.
+3. Remove the prefix advertisement that originates from your data center.
+
+Note
+
+If you do not remove the advertisement from your data center, some of your traffic may not route through Cloudflare for protection, depending on which routes your ISP prefers.
+
+If you want to continue advertising from your data center while using [Magic Transit](https://developers.cloudflare.com/magic-transit/), one option is to advertise a less specific route and have Cloudflare advertise more specific routes.
+
+Enablement takes approximately five to seven minutes.
+
+## Disable or withdraw prefix advertisement
+
+1. Add the prefix advertisement to your data center.
+2. (Optional) Verify the advertisement using a looking glass of your choice, such as [Hurricane Electric Internet Services ↗︎](https://lg.he.net/).
+3. Refer to [configure dynamic advertisement](#configure-dynamic-advertisement). This operation requires your account ID, prefix IDs, and API key.
+
+Disablement takes approximately 15 minutes.
+
+## Configure dynamic advertisement
+
+Rate limit
+
+After you change a prefix's advertisement status, wait at least 15 minutes before changing it again. Requests made during this interval return a `429` response with error code `1004` (`rate_limit_exceeded`).
+
+### Via the Cloudflare dashboard
+
+1. Log in to your [Cloudflare dashboard ↗︎](https://dash.cloudflare.com/) and select your account.
+2. Go to **IP Addresses** > **BYOIP Prefixes**.
+3. Select **Edit** at the end of the entry.
+4. From **Edit IP Prefixes**, select **Advertised** or **Withdrawn** under **Status**.
+5. Select **Save** to commit your changes.
+
+After saving your changes, it takes between two to seven minutes to enable advertisement and approximately 15 minutes to disable or withdraw advertisement.
+
+### Via the API
+
+To configure prefix advertisement with the Cloudflare API, use the [IP Address Management and Dynamic Advertisement](https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/subresources/advertisement_status/methods/edit/) API.
+
+Most dynamic advertisement operations require that you supply the Cloudflare ID for any prefix you want to access with the Cloudflare API. The following section outlines how to obtain prefix IDs.
+
+## Obtain prefix IDs
+
+1. Log in to your [Cloudflare dashboard ↗︎](https://dash.cloudflare.com/) and select your account.
+2. Go to **IP Addresses** > **BYOIP Prefixes**.
+3. Find the CIDR for which you want the prefix ID, and select the arrow next to it.
+4. Under **Prefix ID**, select **Copy** to add the value to your clipboard.
+
+To obtain prefix IDs using the API, refer to the [list prefixes](https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/methods/list/) operation in the Cloudflare API.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/byoip/concepts/dynamic-advertisement/best-practices/#page","headline":"Best practices","description":"Best practices for managing dynamic IP prefix advertisement.","url":"https://developers.cloudflare.com/byoip/concepts/dynamic-advertisement/best-practices/","inLanguage":"en","image":"https://developers.cloudflare.com/byoip/concepts/dynamic-advertisement/best-practices/og.png?v=796d1adb35b6ab66","dateModified":"2026-09-28","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: How Internet Routing Registry entries validate prefix ownership.
+title: Internet Routing Registry (IRR)
+image: https://developers.cloudflare.com/byoip/concepts/irr-entries/og.png?v=c76a5b0b29238f78
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/byoip/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Internet Routing Registry (IRR)
+
+Last updated Apr 30, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/byoip/concepts/irr-entries/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+The [Internet Routing Registry (IRR)](http://www.irr.net/index.html) is a globally distributed database of routing information which contains announced routes and routing policies in a common format. Network operators use this information, as well as [RPKI](https://developers.cloudflare.com/byoip/concepts/route-filtering-rpki/), to configure backbone routers.
+
+IRR entries serve as a public record of which networks are authorized to announce specific IP prefixes. When Cloudflare advertises your IP prefixes on your behalf, other networks check IRR records to verify that Cloudflare has permission to do so. Without accurate IRR entries, your traffic may not be properly routed on the Internet.
+
+The IRR consists of many individual [routing registries ↗︎](http://www.irr.net/docs/list.html), some managed by regional entities such as the American Registry for Internet Numbers (ARIN) and the Regional Internet Registry for Europe, Middle East and Central Asia (RIPE). Each routing registry contains IRR entries that provide information about IP prefixes and the [autonomous systems ↗︎](https://www.cloudflare.com/learning/network-layer/what-is-an-autonomous-system/) authorized to announce them.
+
+To announce your IP prefixes through Cloudflare, you must have accurate IRR entries for your prefixes and autonomous system numbers (ASNs).
+
+When you configure network infrastructure for services such as [Magic Transit](https://developers.cloudflare.com/magic-transit/about/), or before onboarding your IPs to Cloudflare, [verify your IRR entries](https://developers.cloudflare.com/byoip/concepts/irr-entries/best-practices/#verify-an-irr-entry).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/byoip/concepts/irr-entries/#page","headline":"Internet Routing Registry (IRR)","description":"How Internet Routing Registry entries validate prefix ownership.","url":"https://developers.cloudflare.com/byoip/concepts/irr-entries/","inLanguage":"en","image":"https://developers.cloudflare.com/byoip/concepts/irr-entries/og.png?v=c76a5b0b29238f78","dateModified":"2026-04-30","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Create and maintain IRR entries for your IP prefixes.
+title: Manage IRR entries
+image: https://developers.cloudflare.com/byoip/concepts/irr-entries/best-practices/og.png?v=3fdb70fd9f9b4763
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/byoip/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Manage IRR entries
+
+Last updated Apr 16, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/byoip/concepts/irr-entries/best-practices/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+You must keep your [Internet Routing Registry (IRR)](https://developers.cloudflare.com/byoip/concepts/irr-entries/) entries up to date so that it is public information that Cloudflare has permission to advertise your prefix or prefixes, and to ensure that your traffic can be properly routed on the Internet.
+
+## Configure an IRR entry
+
+You can add or update an IRR entry by following the directions of your routing registry. Each routing registry has its own set of instructions to configure an IRR entry.
+
+The recommended registries are AFRINIC, APNIC, ARIN, LACNIC, and RIPE. Refer to the table below for more information.
+
+| Route registry | URL |
+| --- | --- |
+| AFRINIC | [https://afrinic.net/internet-routing-registry#guide ↗︎](https://afrinic.net/internet-routing-registry#guide) |
+| APNIC | [https://www.apnic.net/manage-ip/apnic-services/routing-registry/ ↗︎](https://www.apnic.net/manage-ip/apnic-services/routing-registry/) |
+| ARIN | [https://www.arin.net/resources/manage/irr/quickstart/ ↗︎](https://www.arin.net/resources/manage/irr/quickstart/) |
+| LACNIC | [https://lacnic.zendesk.com/hc/articles/360038667154-What-are-a-route-and-a-route-6-objects ↗︎](https://lacnic.zendesk.com/hc/articles/360038667154-What-are-a-route-and-a-route-6-objects) |
+| RIPE | [https://www.ripe.net/manage-ips-and-asns/db/support/managing-route-objects-in-the-irr ↗︎](https://www.ripe.net/manage-ips-and-asns/db/support/managing-route-objects-in-the-irr) |
+
+## Verify an IRR entry
+
+Verify your Internet Routing Registry (IRR) entries to ensure that the IP prefixes Cloudflare advertises for you match the correct autonomous system numbers (ASNs).
+
+Each IRR entry record must include the following information:
+
+- **Route**: Each IP prefix Cloudflare advertises for you.
+- **Origin ASN**: The Cloudflare ASN (AS13335) or your own ASN.
+- **Source**: The name of the routing registry (for example, ARIN).
+
+Add or update IRR entries when they meet any of these criteria:
+
+- The entry is missing.
+- The entry is incomplete or inaccurate — for example, when the route object does not show the correct origin.
+- The entry is complete but requires updating — for example, when they correspond to supernets but need to correspond to subnets used in Magic Transit.
+
+### Subnet prefix verification
+
+Use [IRR Explorer ↗︎](https://irrexplorer.nlnog.net) to verify which ASN is associated with a subnet prefix.
+
+**Method:** Search for the subnet prefix IP, for example, `162.211.156.0/24`.
+
+**Output:** List of ASN numbers, source (route registry), and any associated errors.
+
+### ASN verification
+
+Use [IRR Explorer ↗︎](https://irrexplorer.nlnog.net) to verify which prefixes are associated with an ASN.
+
+**Method:** Search for the ASN, for example `AS13335`.
+
+**Output:** List of prefixes, source, and any associated errors.
+
+### WHOIS lookup
+
+Use WHOIS lookup to verify your origin ASN and routing data.
+
+**Method:** In a terminal, use the following `whois` command, replacing `<NETWORK_PREFIX>` with your network prefix. The host `rr.ntt.net` is the primary server for the Global IP network.
+
+```sh
+whois -h rr.ntt.net <NETWORK_PREFIX>
+```
+
+**Output:** IRR route, origin, and source information.
+
+<details>
+
+<summary>
+
+WHOIS output example
+
+</summary>
+
+The <code>&lt;IRR entry section&gt;</code> in the WHOIS output shows the correct IRR entry information for the specified network. In this example, the network prefix is <code>1.1.1.0/24</code>, and the output includes the route, origin ASN, and route registry, which in this example is APNIC:
+
+*Exampletxt*
+
+```txt
+user@xxt32z conduit-qs-config % whois -h rr.ntt.net 1.1.1.0/24
+route:          1.1.1.0/24
+<RPKI section>
+descr:          RPKI ROA for 1.1.1.0/24
+remarks:        This route object represents routing data retrieved from the RPKI
+remarks:        The original data can be found here: https://rpki.gin.ntt.net/r/AS13335/1.1.1.0/24
+remarks:        This route object is the result of an automated RPKI-to-IRR conversion process.
+remarks:        maxLength 24
+origin:         AS13335
+mnt-by:         MAINT-NTTCOM-RPKI
+changed:        job@ntt.net 20200913
+source:         RPKI  # Trust Anchor: apnic
+
+<IRR entry section>
+route:          1.1.1.0/24
+origin:         AS13335
+descr:          APNIC Research and Development
+                6 Cordelia St
+mnt-by:         MAINT-AU-APNIC-GM85-AP
+last-modified:  2018-03-16T16:58:06Z
+source:         APNIC
+```
+
+</details>
+
+Note
+
+WHOIS output also shows the RPKI entry information for prefix IP addresses. When your WHOIS output only contains an RPKI entry, you must add the IRR entry.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/byoip/concepts/irr-entries/best-practices/#page","headline":"Manage IRR entries","description":"Create and maintain IRR entries for your IP prefixes.","url":"https://developers.cloudflare.com/byoip/concepts/irr-entries/best-practices/","inLanguage":"en","image":"https://developers.cloudflare.com/byoip/concepts/irr-entries/best-practices/og.png?v=3fdb70fd9f9b4763","dateModified":"2026-04-16","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Letter of Agency requirements for onboarding IP prefixes to Cloudflare.
+title: Letter of Agency
+image: https://developers.cloudflare.com/byoip/concepts/loa/og.png?v=208284e7bc682460
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/byoip/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Letter of Agency
+
+Last updated Apr 30, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/byoip/concepts/loa/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+A Letter of Agency (LOA), sometimes referred to as a Letter of Authorization, is a document that authorizes Cloudflare to announce your IP prefixes on your behalf. Cloudflare's transit providers — the upstream networks that Cloudflare peers with to exchange routing information — require an LOA before they will accept the routes Cloudflare advertises for you.
+
+The LOA must specify the prefixes you are authorizing Cloudflare to announce and the autonomous system number (ASN) they will be announced under. You can use your own ASN or Cloudflare's ASN (AS13335).
+
+## Requirements
+
+- For all future onboardings, if using the Cloudflare ASN, you must use AS13335. Current customers who are already using Cloudflare's AS209242 do not need to make any changes and can continue using that ASN.
+- Cloudflare accepts digital signatures on an LOA, as long as it is clear who is signing the LOA.
+- An LOA is a formal document which should be on company letterhead and contain a wet signature. The Letter of Agency must be a PDF. Transit providers may reject the LOA if it is in a JPG or PNG format.
+
+## Auto-generated LOA
+
+If you are onboarding your own IPs via the [self-serve flow](https://developers.cloudflare.com/byoip/get-started/), you can set `delegate_loa_creation` (in the [Add Prefix API call](https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/methods/create/)) to `true` . This will allow Cloudflare to automatically generate the LOA, speeding up the process.
+
+Auto-generated LOAs rely on [RPKI-signed ROAs](https://developers.cloudflare.com/byoip/concepts/route-filtering-rpki/) and [ownership validation](https://developers.cloudflare.com/byoip/get-started/#validate-prefix-ownership) checks.
+
+## Template
+
+If you need to create an LOA document, you can use the template below.
+
+*Letter of Agency templatetxt*
+
+```txt
+[COMPANY LETTERHEAD]
+
+LETTER OF AGENCY ("LOA")
+
+[DATE]
+
+
+To whom it may concern:
+
+[COMPANY NAME] (the "Company") authorizes Cloudflare, Inc. with AS13335 to advertise the following IP address blocks / originating ASNs:
+
+- - - - - - - - - - - - - - - - - - -
+[Subnet & Originating ASN]
+[Subnet & Originating ASN]
+[Subnet & Originating ASN]
+- - - - - - - - - - - - - - - - - - -
+
+As a representative of the Company that is the owner of the aforementioned IP address blocks / originating ASNs, I hereby declare that I am authorized to sign this LOA on the Company’s behalf.
+
+Should you have any questions please email me at [E-MAIL ADDRESS], or call: [TELEPHONE NUMBER]
+
+Regards,
+
+
+[SIGNATURE]
+
+
+[NAME TYPED]
+[TITLE]
+[COMPANY NAME]
+[COMPANY ADDRESS]
+[COMPANY STAMP]
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/byoip/concepts/loa/#page","headline":"Letter of Agency","description":"Letter of Agency requirements for onboarding IP prefixes to Cloudflare.","url":"https://developers.cloudflare.com/byoip/concepts/loa/","inLanguage":"en","image":"https://developers.cloudflare.com/byoip/concepts/loa/og.png?v=208284e7bc682460","dateModified":"2026-04-30","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Delegate IP prefixes to other Cloudflare accounts.
+title: Prefix delegations
+image: https://developers.cloudflare.com/byoip/concepts/prefix-delegations/og.png?v=81e3d6b8d95daaa8
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/byoip/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Prefix delegations
+
+Last updated Apr 30, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/byoip/concepts/prefix-delegations/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Prefix delegations allow a prefix owner (Account A) to grant another Cloudflare account (Account B) permission to use all or part of their BYOIP prefix. The original prefix remains managed by Account A, but Account B can use the delegated IPs with CDN services (including Cloudflare for SaaS) or Spectrum. Refer to [service bindings](https://developers.cloudflare.com/byoip/service-bindings/) for more information on the services an IP can be bound to.
+
+## CDN
+
+CDN delegations allow you to use the IP(s) with [Address Maps](https://developers.cloudflare.com/byoip/address-maps/) or [Cloudflare for SaaS](https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/) customers.
+
+Address Maps allows you to assign IPs either at the account level or zone level.
+
+In the Cloudflare for SaaS example, Account A is using BYOIP + CDN and Cloudflare for SaaS. Account A can validate and serve traffic for a custom hostname on any of the IPs in its prefix. If Account A delegates some or all of the prefix to Account B, Account B may also validate and serve traffic for custom hostnames on those IPs as well. This is very useful if you use Cloudflare for SaaS but manage different configurations in different accounts. All the accounts can use the IPs through a delegation.
+
+## Spectrum
+
+If Account A delegates use of part or all of a prefix to Account B via a prefix delegation, Account B can also use the [Spectrum API](https://developers.cloudflare.com/spectrum/about/byoip/) with the IPs it was delegated access to.
+
+**Example:** Account A is the primary owner of prefix 1.2.3.0/24. Account A delegates the use of 1.2.3.0/32 to Account B. Account B can now use the Spectrum API to create a Spectrum app with 1.2.3.0/32.
+
+## API calls for prefix delegations
+
+API calls for delegations can be found at [Prefix Delegations](https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/subresources/delegations/methods/list/).
+
+Note
+
+The dashboard only supports delegation of an entire prefix. If you want to delegate less than the entire prefix, use the API.
+
+To bind an IP from one service to another, use the API.
+
+## Configure prefix delegations
+
+1. Log in to the [Cloudflare dashboard ↗︎](https://dash.cloudflare.com/) and select your account.
+2. Go to **IP Addresses** > **BYOIP Prefixes**.
+3. Select **Edit** to modify a prefix. **Edit IP Prefixes** displays.
+4. At the bottom of the page, select **Add Delegation**. Other accounts that your user is a part of will auto-load when you create the delegation.
+5. Select **Save**.
+6. Bind IPs to a service via the [Service Bindings API](https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/subresources/service_bindings/) as needed.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/byoip/concepts/prefix-delegations/#page","headline":"Prefix delegations","description":"Delegate IP prefixes to other Cloudflare accounts.","url":"https://developers.cloudflare.com/byoip/concepts/prefix-delegations/","inLanguage":"en","image":"https://developers.cloudflare.com/byoip/concepts/prefix-delegations/og.png?v=81e3d6b8d95daaa8","dateModified":"2026-04-30","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: How route filtering and RPKI protect against route hijacking.
+title: Route filtering and RPKI
+image: https://developers.cloudflare.com/byoip/concepts/route-filtering-rpki/og.png?v=b413c76cacd35f5f
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/byoip/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Route filtering and RPKI
+
+Last updated Apr 30, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/byoip/concepts/route-filtering-rpki/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Network operators rely on [IRR records](https://developers.cloudflare.com/byoip/concepts/irr-entries/) to determine which autonomous systems (ASNs) are authorized to announce specific IP prefixes. Based on these records, operators configure filtering policies on their routers to block unauthorized announcements — a practice known as route filtering.
+
+However, IRR records alone are not cryptographically verified, which means they can be inaccurate or outdated. Resource Public Key Infrastructure (RPKI) addresses this gap by adding cryptographic validation. With RPKI, the association between an IP prefix and its authorized ASN is signed and verifiable, allowing network operators to confirm that a route announcement is legitimate before accepting it.
+
+When you register your prefix with one of the five Regional Internet Registries (RIRs)<sup>[1](#user-content-fn-1)</sup>, you can create a Route Origin Authorization (ROA) — a cryptographically signed object that declares which ASN is authorized to originate your prefix. ROAs are publicly verifiable, and you can check your prefixes using [Cloudflare's RPKI Portal ↗︎](https://rpki.cloudflare.com/?view=validator) or other sources such as [Routinator ↗︎](https://rpki-validator.ripe.net/ui/).
+
+## Footnotes
+
+1. AFRINIC, APNIC, ARIN, LACNIC, and RIPE. [↩](#user-content-fnref-1)
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/byoip/concepts/route-filtering-rpki/#page","headline":"Route filtering and RPKI","description":"How route filtering and RPKI protect against route hijacking.","url":"https://developers.cloudflare.com/byoip/concepts/route-filtering-rpki/","inLanguage":"en","image":"https://developers.cloudflare.com/byoip/concepts/route-filtering-rpki/og.png?v=b413c76cacd35f5f","dateModified":"2026-04-30","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Assign static IPs from your prefix to specific Cloudflare services.
+title: Static IPs
+image: https://developers.cloudflare.com/byoip/concepts/static-ips/og.png?v=51d3fd5862be3a0a
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/byoip/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Static IPs
+
+Last updated Apr 30, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/byoip/concepts/static-ips/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+When you use Cloudflare as a [reverse proxy](https://developers.cloudflare.com/fundamentals/concepts/how-cloudflare-works/), Cloudflare assigns shared [anycast IP addresses](https://developers.cloudflare.com/fundamentals/concepts/cloudflare-ip-addresses/) to proxied DNS records by default. These IPs can change at any time. Static IPs give you a set of specifically assigned Cloudflare IP addresses — Cloudflare will not change them without notifying you, and will typically only do so at your request.
+
+Static IPs are useful when you need to allowlist your IPs or communicate them to third parties in advance.
+
+Note
+
+Although BYOIP and static IPs are different offerings, both can be managed using [Address Maps](https://developers.cloudflare.com/byoip/address-maps/).
+
+Static IPs are allocated at the account level but can be assigned to a single zone, meaning multiple zones can share the same static IPs. You can specify which zones are mapped to your static IPs and control when the IPs for your zones change.
+
+## Availability
+
+Static IPs are available as an add-on purchase for Enterprise plans.
+
+## Check Static IPs
+
+You can find your leased Static IPs for CDN Ingress on the dashboard under [**Address space** > **Leased IPs** ↗︎](https://dash.cloudflare.com/?to=/:account/ip-addresses/address-space).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/byoip/concepts/static-ips/#page","headline":"Static IPs","description":"Assign static IPs from your prefix to specific Cloudflare services.","url":"https://developers.cloudflare.com/byoip/concepts/static-ips/","inLanguage":"en","image":"https://developers.cloudflare.com/byoip/concepts/static-ips/og.png?v=51d3fd5862be3a0a","dateModified":"2026-04-30","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```

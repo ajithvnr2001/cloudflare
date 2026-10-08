@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/serverlist-3rd-edition/",
+  "file": "_subdomains/blog.cloudflare.com/serverlist-3rd-edition.md",
+  "title": "The Serverlist: Benchmarks, Workers.dev, security implications of serverless, and more | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:20.315686+00:00",
+  "html_len": 269909,
+  "md_len": 54704,
+  "depth": 0,
+  "phase": 2
+}

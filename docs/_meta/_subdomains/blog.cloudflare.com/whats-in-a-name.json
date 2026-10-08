@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/whats-in-a-name/",
+  "file": "_subdomains/blog.cloudflare.com/whats-in-a-name.md",
+  "title": "What's in a name? | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:28.127182+00:00",
+  "html_len": 262077,
+  "md_len": 54134,
+  "depth": 0,
+  "phase": 2
+}

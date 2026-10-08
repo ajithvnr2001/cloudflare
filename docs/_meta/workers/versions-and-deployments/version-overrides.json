@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/versions-and-deployments/version-overrides/",
+  "file": "workers/versions-and-deployments/version-overrides.md",
+  "title": "Version overrides \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:18:03.719856+00:00",
+  "html_len": 202515,
+  "md_len": 7980,
+  "depth": 0
+}

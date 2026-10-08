@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/why-i-joined-cloudflare-as-chief-security-officer/",
+  "file": "_subdomains/blog.cloudflare.com/why-i-joined-cloudflare-as-chief-security-officer.md",
+  "title": "Why I joined Cloudflare as Chief Security Officer | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:34.949907+00:00",
+  "html_len": 272268,
+  "md_len": 57687,
+  "depth": 0,
+  "phase": 2
+}

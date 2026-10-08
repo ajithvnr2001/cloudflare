@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/league-of-entropy/",
+  "file": "_subdomains/blog.cloudflare.com/league-of-entropy.md",
+  "title": "League of Entropy: Not All Heroes Wear Capes | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:15.156137+00:00",
+  "html_len": 318840,
+  "md_len": 74271,
+  "depth": 0,
+  "phase": 2
+}

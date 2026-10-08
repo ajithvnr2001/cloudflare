@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/why-iot-is-insecure/",
+  "file": "_subdomains/blog.cloudflare.com/why-iot-is-insecure.md",
+  "title": "TLS 1.3 is going to save us all, and other reasons why IoT is still insecure | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:50.649844+00:00",
+  "html_len": 298483,
+  "md_len": 66198,
+  "depth": 0,
+  "phase": 2
+}

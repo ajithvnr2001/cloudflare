@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/non-latinutf8-domains-now-fully-supported/",
+  "file": "_subdomains/blog.cloudflare.com/non-latinutf8-domains-now-fully-supported.md",
+  "title": "Non-Latin/UTF8 International Domains (IDNs) Now Fully Supported | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:08.334116+00:00",
+  "html_len": 267899,
+  "md_len": 56403,
+  "depth": 0,
+  "phase": 2
+}

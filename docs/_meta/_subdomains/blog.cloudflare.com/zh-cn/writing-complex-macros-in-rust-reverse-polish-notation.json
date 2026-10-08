@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/writing-complex-macros-in-rust-reverse-polish-notation/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/writing-complex-macros-in-rust-reverse-polish-notation.md",
+  "title": "\u5728Rust\u4e2d\u7f16\u5199\u590d\u6742\u7684\u5b8f\uff1a\u9006\u6ce2\u5170\u5f0f | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:21.016659+00:00",
+  "html_len": 291404,
+  "md_len": 33311,
+  "depth": 0,
+  "phase": 2
+}

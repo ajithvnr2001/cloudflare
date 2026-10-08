@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/secure-certificate-issuance/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/secure-certificate-issuance.md",
+  "title": "S\u00e9curisation de l'\u00e9mission d'un certificat \u00e0 l'aide de la validation de contr\u00f4le de domaine par chemins multiples | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:03.986343+00:00",
+  "html_len": 249652,
+  "md_len": 49134,
+  "depth": 0,
+  "phase": 2
+}

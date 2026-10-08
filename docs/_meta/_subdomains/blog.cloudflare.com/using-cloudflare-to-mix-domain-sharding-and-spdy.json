@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/using-cloudflare-to-mix-domain-sharding-and-spdy/",
+  "file": "_subdomains/blog.cloudflare.com/using-cloudflare-to-mix-domain-sharding-and-spdy.md",
+  "title": "Using CloudFlare to mix domain sharding and SPDY | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:28.801751+00:00",
+  "html_len": 287756,
+  "md_len": 63846,
+  "depth": 0,
+  "phase": 2
+}

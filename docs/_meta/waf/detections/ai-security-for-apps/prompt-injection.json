@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/detections/ai-security-for-apps/prompt-injection/",
+  "file": "waf/detections/ai-security-for-apps/prompt-injection.md",
+  "title": "Prompt injection detection \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:40.390026+00:00",
+  "html_len": 150069,
+  "md_len": 5828,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-history-of-email/",
+  "file": "_subdomains/blog.cloudflare.com/the-history-of-email.md",
+  "title": "The History of Email | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:34.063836+00:00",
+  "html_len": 318993,
+  "md_len": 74448,
+  "depth": 0,
+  "phase": 2
+}

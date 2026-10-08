@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-crowdstrike-partnership/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-crowdstrike-partnership.md",
+  "title": "Cloudflare and CrowdStrike partner to give CISOs secure control across devices, applications, and corporate networks | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:35.811753+00:00",
+  "html_len": 305155,
+  "md_len": 66223,
+  "depth": 0,
+  "phase": 2
+}

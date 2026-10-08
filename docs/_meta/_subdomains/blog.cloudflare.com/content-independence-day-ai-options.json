@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/content-independence-day-ai-options/",
+  "file": "_subdomains/blog.cloudflare.com/content-independence-day-ai-options.md",
+  "title": "Your site, your rules: new AI traffic options for all customers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:37.983150+00:00",
+  "html_len": 312119,
+  "md_len": 74061,
+  "depth": 0,
+  "phase": 2
+}

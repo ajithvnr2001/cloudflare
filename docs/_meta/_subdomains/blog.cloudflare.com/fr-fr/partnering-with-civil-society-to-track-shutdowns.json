@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/partnering-with-civil-society-to-track-shutdowns/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/partnering-with-civil-society-to-track-shutdowns.md",
+  "title": "Collaborer avec la soci\u00e9t\u00e9 civile pour assurer un suivi des interruptions d'Internet \u00e0 l'aide des alertes et de l'API de Radar. | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:40:23.784099+00:00",
+  "html_len": 233925,
+  "md_len": 41319,
+  "depth": 0,
+  "phase": 2
+}

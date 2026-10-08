@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ssl-week-means-less-weak-ssl/",
+  "file": "_subdomains/blog.cloudflare.com/ssl-week-means-less-weak-ssl.md",
+  "title": "SSL Week Means Less Weak SSL | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:48.104905+00:00",
+  "html_len": 270631,
+  "md_len": 55561,
+  "depth": 0,
+  "phase": 2
+}

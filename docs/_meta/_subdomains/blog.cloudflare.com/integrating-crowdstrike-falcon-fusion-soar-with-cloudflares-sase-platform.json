@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/integrating-crowdstrike-falcon-fusion-soar-with-cloudflares-sase-platform/",
+  "file": "_subdomains/blog.cloudflare.com/integrating-crowdstrike-falcon-fusion-soar-with-cloudflares-sase-platform.md",
+  "title": "Integrating CrowdStrike Falcon Fusion SOAR with Cloudflare\u2019s SASE platform | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:04.544578+00:00",
+  "html_len": 293471,
+  "md_len": 63136,
+  "depth": 0,
+  "phase": 2
+}

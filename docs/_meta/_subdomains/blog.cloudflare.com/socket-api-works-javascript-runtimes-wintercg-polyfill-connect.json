@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/socket-api-works-javascript-runtimes-wintercg-polyfill-connect/",
+  "file": "_subdomains/blog.cloudflare.com/socket-api-works-javascript-runtimes-wintercg-polyfill-connect.md",
+  "title": "A Socket API that works across JavaScript runtimes \u2014 announcing a WinterCG spec and Node.js implementation of connect() | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:12.945997+00:00",
+  "html_len": 303071,
+  "md_len": 63351,
+  "depth": 0,
+  "phase": 2
+}

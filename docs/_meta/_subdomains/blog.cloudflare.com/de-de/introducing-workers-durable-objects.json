@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/introducing-workers-durable-objects/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/introducing-workers-durable-objects.md",
+  "title": "Dauerhafte Objekte f\u00fcr Workers, Betaversion: ein neuer Ansatz f\u00fcr Stateful Serverless | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:14.607816+00:00",
+  "html_len": 238922,
+  "md_len": 49915,
+  "depth": 0,
+  "phase": 2
+}

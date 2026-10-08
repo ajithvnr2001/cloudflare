@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/serverlist-1st-edition/",
+  "file": "_subdomains/blog.cloudflare.com/serverlist-1st-edition.md",
+  "title": "Introducing The Serverlist: Cloudflare's New Serverless Newsletter | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:58.132381+00:00",
+  "html_len": 269969,
+  "md_len": 54705,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/cloudflare-fraud-detection/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/cloudflare-fraud-detection.md",
+  "title": "Annonce de Cloudflare Fraud Detection | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:52.247422+00:00",
+  "html_len": 228670,
+  "md_len": 40288,
+  "depth": 0,
+  "phase": 2
+}

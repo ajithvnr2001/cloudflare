@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/announcing-the-ibm-qradar-direct-log-integration/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/announcing-the-ibm-qradar-direct-log-integration.md",
+  "title": "IBM QRadar SIEM\uc744 \ud65c\uc6a9\ud558\uc5ec Cloudflare \ub85c\uadf8\uc5d0\uc11c \ud1b5\ucc30\ub825 \ud655\ubcf4 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:40:45.413809+00:00",
+  "html_len": 208488,
+  "md_len": 29308,
+  "depth": 0,
+  "phase": 2
+}

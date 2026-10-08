@@ -1,0 +1,102 @@
+---
+url: https://www.cloudflare.com/learning/security/glossary/data-at-rest/
+title: What is data at rest?
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T08:04:12.143307+00:00
+---
+
+# What is data at rest?
+
+> Source: https://www.cloudflare.com/learning/security/glossary/data-at-rest/
+
+[ Learning Center ](https://www.cloudflare.com/learning/) / web application security
+
+##  What is data at rest? 
+
+Data at rest is the state of data when it is stored, rather than moving from one place to another (in transit) or loaded into memory for use by a software program (in use). 
+
+[Learning Center](https://www.cloudflare.com/learning)/web application security/[What is account takeover?](https://www.cloudflare.com/learning/security/account-takeover/)[How do APIs work?](https://www.cloudflare.com/learning/security/api/how-do-apis-work/)[What is the OWASP API Security Top 10?](https://www.cloudflare.com/learning/security/api/owasp-api-security-top-10/)[What is a cloud API?](https://www.cloudflare.com/learning/security/api/what-is-a-cloud-api/)[What is an API?](https://www.cloudflare.com/learning/security/api/what-is-an-api/)[What is an API Gateway?](https://www.cloudflare.com/learning/security/api/what-is-an-api-gateway/)[What is an API call?](https://www.cloudflare.com/learning/security/api/what-is-api-call/)[What is API discovery?](https://www.cloudflare.com/learning/security/api/what-is-api-discovery/)[What is an API endpoint?](https://www.cloudflare.com/learning/security/api/what-is-api-endpoint/)[What is API security?](https://www.cloudflare.com/learning/security/api/what-is-api-security/)[What is a shadow API?](https://www.cloudflare.com/learning/security/api/what-is-shadow-api/)[Authn vs. authz: How are they different?](https://www.cloudflare.com/learning/security/authn-vs-authz/)[What is the castle-and-moat network security model?](https://www.cloudflare.com/learning/security/castle-and-moat-network-security/)[What is coffee shop networking?](https://www.cloudflare.com/learning/security/coffee-shop-networking/)[How to eliminate cybersecurity complexity through consolidation](https://www.cloudflare.com/learning/security/eliminate-cybersecurity-complexity-with-consolidation/)[The GDPR and working from home | GDPR remote access policy](https://www.cloudflare.com/learning/security/gdpr-remote-access/)[The global DNS hijacking threat](https://www.cloudflare.com/learning/security/global-dns-hijacking-threat/)[What is an attack vector?](https://www.cloudflare.com/learning/security/glossary/attack-vector/)[What is BGP hijacking?](https://www.cloudflare.com/learning/security/glossary/bgp-hijacking/)[What is data at rest?](https://www.cloudflare.com/learning/security/glossary/data-at-rest/)[What is endpoint security? | Endpoint protection](https://www.cloudflare.com/learning/security/glossary/endpoint-security/)[What is IoT security? | IoT device security](https://www.cloudflare.com/learning/security/glossary/iot-security/)[What is a malicious payload?](https://www.cloudflare.com/learning/security/glossary/malicious-payload/)[What is secrets management?](https://www.cloudflare.com/learning/security/glossary/secrets-management/)[What is a threat intelligence feed?](https://www.cloudflare.com/learning/security/glossary/threat-intelligence-feed/)[What Is Transport Layer Security (TLS)?](https://www.cloudflare.com/learning/security/glossary/transport-layer-security-tls2/)[Website security guide: A 10-step checklist ](https://www.cloudflare.com/learning/security/glossary/website-security-checklist/)[What is a security operations center (SOC)?](https://www.cloudflare.com/learning/security/glossary/what-is-a-security-operations-center-soc/)[What is BGP? | BGP routing explained](https://www.cloudflare.com/learning/security/glossary/what-is-bgp/)[What is defense in depth? | Layered security](https://www.cloudflare.com/learning/security/glossary/what-is-defense-in-depth/)[What is an endpoint?](https://www.cloudflare.com/learning/security/glossary/what-is-endpoint/)[What is lateral movement?](https://www.cloudflare.com/learning/security/glossary/what-is-lateral-movement/)[What is penetration testing? | What is pen testing?](https://www.cloudflare.com/learning/security/glossary/what-is-penetration-testing/)[What is swatting? | How to prevent swatting](https://www.cloudflare.com/learning/security/glossary/what-is-swatting/)[What is threat hunting?](https://www.cloudflare.com/learning/security/glossary/what-is-threat-hunting/)[What is threat intelligence?](https://www.cloudflare.com/learning/security/glossary/what-is-threat-intelligence/)[What is threat modeling?](https://www.cloudflare.com/learning/security/glossary/what-is-threat-modeling/)[Zero Trust security | What is a Zero Trust network?](https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/)[How to improve WordPress security](https://www.cloudflare.com/learning/security/how-to-improve-wordpress-security/)[How to prevent XSS attacks](https://www.cloudflare.com/learning/security/how-to-prevent-xss-attacks/)[How to secure a website](https://www.cloudflare.com/learning/security/how-to-secure-a-website/)[What is a phishing attack?](https://www.cloudflare.com/learning/security/phishing-attack/)[How to prevent ransomware attacks](https://www.cloudflare.com/learning/security/ransomware/how-to-prevent-ransomware/)[What is Maze ransomware?](https://www.cloudflare.com/learning/security/ransomware/maze-ransomware/)[What are Petya and NotPetya?](https://www.cloudflare.com/learning/security/ransomware/petya-notpetya-ransomware/)[What is ransomware-as-a-service (RaaS)?](https://www.cloudflare.com/learning/security/ransomware/ransomware-as-a-service/)[What is Ryuk ransomware?](https://www.cloudflare.com/learning/security/ransomware/ryuk-ransomware/)[What was the WannaCry ransomware attack?](https://www.cloudflare.com/learning/security/ransomware/wannacry-ransomware/)[What is ransomware? | Ransomware meaning](https://www.cloudflare.com/learning/security/ransomware/what-is-ransomware/)[What are the security risks of RDP? | RDP vulnerabilities](https://www.cloudflare.com/learning/security/rdp-security-risks/)[How to apply security policies for remote workforces](https://www.cloudflare.com/learning/security/remote-workforce-security/)[What is risk-based authentication?](https://www.cloudflare.com/learning/security/risk-based-authentication/)[What is role-based access control (RBAC)?](https://www.cloudflare.com/learning/security/role-based-access-control-rbac/)[What is smishing?](https://www.cloudflare.com/learning/security/smishing/)[What is spear phishing?](https://www.cloudflare.com/learning/security/spear-phishing/)[TEST What is a DDoS attack? (1)](https://www.cloudflare.com/learning/security/test-lc-video/)[What is buffer overflow?](https://www.cloudflare.com/learning/security/threats/buffer-overflow/)[Common cyber attacks: A guide to detection and prevention](https://www.cloudflare.com/learning/security/threats/common-cyber-attacks/)[What is cross-site request forgery?](https://www.cloudflare.com/learning/security/threats/cross-site-request-forgery/)[What is cross-site scripting?](https://www.cloudflare.com/learning/security/threats/cross-site-scripting/)[How to prevent SQL injection](https://www.cloudflare.com/learning/security/threats/how-to-prevent-sql-injection/)[What is Meltdown/Spectre?](https://www.cloudflare.com/learning/security/threats/meltdown-spectre/)[What is an on-path attacker?](https://www.cloudflare.com/learning/security/threats/on-path-attack/)[What is OWASP? What is the OWASP Top 10?](https://www.cloudflare.com/learning/security/threats/owasp-top-10/)[What is a social engineering attack?](https://www.cloudflare.com/learning/security/threats/social-engineering-attack/)[What is SQL injection?](https://www.cloudflare.com/learning/security/threats/sql-injection/)[What is passwordless authentication?](https://www.cloudflare.com/learning/security/threats/what-is-passwordless-authentication/)[What is a zero-day exploit?](https://www.cloudflare.com/learning/security/threats/zero-day-exploit/)[What is token-based authentication?](https://www.cloudflare.com/learning/security/token-based-authentication/)[VPN security: How VPNs help secure data and control access](https://www.cloudflare.com/learning/security/vpn-security/)[How VPNs affect Internet speed](https://www.cloudflare.com/learning/security/vpn-speed/)[What is whaling phishing?](https://www.cloudflare.com/learning/security/whaling-attack/)[What are indicators of compromise (IoC)?](https://www.cloudflare.com/learning/security/what-are-indicators-of-compromise/)[What is a business VPN? │ Business VPN uses and limitations](https://www.cloudflare.com/learning/security/what-is-a-business-vpn/)[What is a DDoS Attack? (1)](https://www.cloudflare.com/learning/security/what-is-a-ddos-attack-test-page/)[What is a firewall? How network firewalls work](https://www.cloudflare.com/learning/security/what-is-a-firewall/)[What is a KRACK attack? | How to protect against KRACK attacks](https://www.cloudflare.com/learning/security/what-is-a-krack-attack/)[What is a secure web gateway (SWG)?](https://www.cloudflare.com/learning/security/what-is-a-secure-web-gateway/)[What is a supply chain attack?](https://www.cloudflare.com/learning/security/what-is-a-supply-chain-attack/)[What is a VPN?](https://www.cloudflare.com/learning/security/what-is-a-vpn/)[What is a WAF? | Web Application Firewall explained (1)](https://www.cloudflare.com/learning/security/what-is-a-waf-or-web-application-firewall-explained-1/)[What is access control? | Authorization vs authentication](https://www.cloudflare.com/learning/security/what-is-access-control/)[What is an attack surface?](https://www.cloudflare.com/learning/security/what-is-an-attack-surface/)[What is an identity provider (IdP)?](https://www.cloudflare.com/learning/security/what-is-an-identity-provider/)[What is an insider threat?](https://www.cloudflare.com/learning/security/what-is-an-insider-threat/)[What is authentication?](https://www.cloudflare.com/learning/security/what-is-authentication/)[What is blockchain? How does blockchain work?](https://www.cloudflare.com/learning/security/what-is-blockchain/)[So what is Cloudflare?](https://www.cloudflare.com/learning/security/what-is-cloudflare/)[What is cryptocurrency? Cryptocurrency definition](https://www.cloudflare.com/learning/security/what-is-cryptocurrency/)[How to increase cyber resilience](https://www.cloudflare.com/learning/security/what-is-cyber-resilience/)[What is cyber security?](https://www.cloudflare.com/learning/security/what-is-cyber-security/)[What is data exfiltration?](https://www.cloudflare.com/learning/security/what-is-data-exfiltration/)[What is DNS filtering? | Secure DNS servers](https://www.cloudflare.com/learning/security/what-is-dns-filtering/)[What is HTTPS inspection?](https://www.cloudflare.com/learning/security/what-is-https-inspection/)[What is digital identity?](https://www.cloudflare.com/learning/security/what-is-identity/)[What is identity and access management (IAM)? ](https://www.cloudflare.com/learning/security/what-is-identity-and-access-management/)[What is identity-as-a-service (IDaaS)?](https://www.cloudflare.com/learning/security/what-is-identity-as-a-service/)[What is information security?](https://www.cloudflare.com/learning/security/what-is-information-security/)[What is multi-factor authentication (MFA)?](https://www.cloudflare.com/learning/security/what-is-multi-factor-authentication/)[What is mutual authentication? | Two-way authentication](https://www.cloudflare.com/learning/security/what-is-mutual-authentication/)[What is network segmentation?](https://www.cloudflare.com/learning/security/what-is-network-segmentation/)[What is a next-generation firewall (NGFW)?](https://www.cloudflare.com/learning/security/what-is-next-generation-firewall-ngfw/)[What is OAuth? | SAML vs. OAuth](https://www.cloudflare.com/learning/security/what-is-oauth/)[What is quishing?](https://www.cloudflare.com/learning/security/what-is-quishing/)[What is remote access security?](https://www.cloudflare.com/learning/security/what-is-remote-access-security/)[What is remote code execution?](https://www.cloudflare.com/learning/security/what-is-remote-code-execution/)[What is SAML? | How SAML authentication works](https://www.cloudflare.com/learning/security/what-is-saml/)[What is shadow IT?](https://www.cloudflare.com/learning/security/what-is-shadow-it/)[What is SIEM (security information and event management)?](https://www.cloudflare.com/learning/security/what-is-siem/)[What is SSH? | Secure Shell (SSH) protocol](https://www.cloudflare.com/learning/security/what-is-ssh/)[What is SSO? | How single sign-on works](https://www.cloudflare.com/learning/security/what-is-sso/)[ What is STIX/TAXII?](https://www.cloudflare.com/learning/security/what-is-stix-and-taxii/)[What is the network perimeter?](https://www.cloudflare.com/learning/security/what-is-the-network-perimeter/)[What is the Remote Desktop Protocol (RDP)? ](https://www.cloudflare.com/learning/security/what-is-the-remote-desktop-protocol/)[What is two-factor authentication? | 2 step verification explained](https://www.cloudflare.com/learning/security/what-is-two-factor-authentication/)[What is UEBA?](https://www.cloudflare.com/learning/security/what-is-ueba/)[What is URL filtering? | Web filtering](https://www.cloudflare.com/learning/security/what-is-url-filtering/)[What is web application security?](https://www.cloudflare.com/learning/security/what-is-web-application-security/)[What is web application security? - TEST new subnav](https://www.cloudflare.com/learning/security/what-is-web-application-security-test/)[What is a data breach?](https://www.cloudflare.com/learning/security/what-is-a-data-breach/)[What is a brute force attack?](https://www.cloudflare.com/learning/security/brute-force-attack/)
+
+######  Learning objectives 
+
+After reading this article you will be able to: 
+
+  * Define data at rest 
+  * Differentiate between data at rest, data in transit, and data in use 
+  * Describe security measures for protecting data at rest 
+
+
+
+Related content  [ What is a data breach? ](https://www.cloudflare.com/learning/security/what-is-a-data-breach/)
+
+On this page
+
+  * What is data at rest?
+
+  * What dangers does data at rest face?
+
+  * What is data at rest encryption?
+
+  * How does identity and access management protect data at rest?
+
+  * Why is protecting data at rest important in cloud computing?
+
+
+
+
+## What is data at rest?
+
+"Data at rest" is data currently in storage, typically on a computer's or server's hard disk. Data at rest contrasts with data in transit — also called data in motion — which is the state of data as it travels from one place to another. It also contrasts with data in use — data loaded into memory and actively in use by a software program.
+
+Type Where is it?
+
+Data at rest Storage
+
+Data in transit Traveling over networks
+
+Data in use Memory
+
+Suppose Bob wants to send Alice a picture of a cheeseburger. Bob took the picture on his smartphone, which has stored it ever since — the cheeseburger photo is currently data at rest. Bob views the photo and attaches it to an email, which loads the photo into memory — it becomes data in use (specifically by his phone's photo viewer and email applications). Bob taps "Send," and the email with the attached photo travels over the Internet to Alice's email service; it has become data in transit.
+
+## What dangers does data at rest face?
+
+Each state of data — at rest, in transit, in use — faces the risk of discovery or exposure by a malicious party. However, the risks are not the same across all of these states. For instance, data in transit can be intercepted by an unauthorized party, while data at rest cannot, because it does not move.
+
+Data at rest still makes an attractive target for attackers, who may aim to encrypt the data and hold it for ransom, steal the data, or corrupt or wipe the data.
+
+No matter the method, the end goal is to access the data at rest and take malicious action, often with financial gain in mind:
+
+  * **Ransomware** is a type of malware that, once it enters a system, encrypts data at rest, rendering it unusable. [Ransomware](https://www.cloudflare.com/learning/security/ransomware/what-is-ransomware/) attackers decrypt the data once the victim pays a fee.
+
+  * A **data breach** can occur if data at rest is moved or leaked into an unsecured environment. [Data breaches](https://www.cloudflare.com/learning/security/what-is-a-data-breach/) can be intentional, as when an external attacker or [malicious insider](https://www.cloudflare.com/learning/access-management/what-is-an-insider-threat/) purposefully accesses the data to copy or leak it. They can also be accidental, such as when a server is left exposed to the public Internet, leaking the data stored within.
+
+  * **Unauthorized or excessive access** to data at rest also puts it at risk. Attackers may fake or steal credentials to gain access.
+
+  * **Physical theft** can impact data at rest if someone steals the laptop, tablet, smartphone, or other device on which the data at rest lives.
+
+
+
+
+## What is data at rest encryption?
+
+[Encryption](https://www.cloudflare.com/learning/ssl/what-is-encryption/) is the process of scrambling data in such a way that it can only be unscrambled by using a [key](https://www.cloudflare.com/learning/ssl/what-is-a-cryptographic-key/) (a key is a string of randomized values, like "FFBD29F83C2DA1427BD"). Hard disk encryption is the technology used to encrypt data at rest.
+
+Data at rest encryption is like locking away important papers in a safe. Only those with the key can access the stored papers; similarly, only parties with the encryption key can access data at rest.
+
+Encrypting data at rest protects it from negative outcomes like data breaches, unauthorized access, and physical theft. Without the key, the data is useless.
+
+(Note that encryption is also crucial for protecting data in transit. The main technology for encrypting data in transit is Transport Layer Security/TLS — [learn more about TLS here](https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/).)
+
+## How does identity and access management (IAM) protect data at rest?
+
+Restricting who can access data is a crucial part of protecting it. The more people who can access data, the greater the chances of a breach. And without strong [access controls](https://www.cloudflare.com/learning/access-management/what-is-access-control/), unauthorized parties may be able to alter, copy, steal, or destroy data at rest. In fact, many ransomware attacks use [lateral movement](https://www.cloudflare.com/learning/security/glossary/what-is-lateral-movement/) to acquire the credentials they need to access, and then alter, data at rest.
+
+[Identity and access management (IAM)](https://www.cloudflare.com/learning/access-management/what-is-identity-and-access-management/) is the practice of managing a user's identity and what they are allowed to do. IAM helps keep data at rest secure by [authenticating](https://www.cloudflare.com/learning/access-management/what-is-authentication/) users and checking their authorization for viewing and editing data at rest.
+
+## Why is protecting data at rest important in cloud computing?
+
+Before the Internet and [cloud computing](https://www.cloudflare.com/learning/cloud/what-is-the-cloud/), data at rest was kept on a user's computer or on an organization's on-premise servers. However, as many organizations move to the cloud, data at rest is stored on remote servers managed by an external vendor. Without direct access to the data, organizations that use cloud infrastructure should evaluate their providers' [cloud storage](https://www.cloudflare.com/learning/cloud/what-is-cloud-storage/) security measures and make sure their cloud deployments are configured correctly.
+
+[Cloud security posture management (CSPM)](https://www.cloudflare.com/learning/cloud/what-is-cspm/) tools can help automate the process of identifying security misconfigurations that could compromise data at rest.
+
+Additionally, Cloudflare Zero Trust protects data at rest whether it is stored locally or remotely in the cloud. [Learn more about how Cloudflare Zero Trust](https://www.cloudflare.com/zero-trust/) helps control access, filter out malicious web traffic, and verify devices for better organizational security.

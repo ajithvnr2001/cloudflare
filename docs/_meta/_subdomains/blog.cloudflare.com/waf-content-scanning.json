@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/waf-content-scanning/",
+  "file": "_subdomains/blog.cloudflare.com/waf-content-scanning.md",
+  "title": "How Cloudflare can help stop malware before it reaches your app | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:47.231962+00:00",
+  "html_len": 289920,
+  "md_len": 65318,
+  "depth": 0,
+  "phase": 2
+}

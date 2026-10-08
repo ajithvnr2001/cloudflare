@@ -1,0 +1,10 @@
+{
+  "url": "https://www.cloudflare.com/solutions/ai/",
+  "file": "_subdomains/www.cloudflare.com/solutions/ai.md",
+  "title": "Cloudflare AI Cloud",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:20:48.895087+00:00",
+  "html_len": 416071,
+  "md_len": 16420,
+  "depth": 1
+}

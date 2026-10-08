@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/workerd-open-source-workers-runtime/",
+  "file": "_subdomains/blog.cloudflare.com/workerd-open-source-workers-runtime.md",
+  "title": "Introducing workerd: the Open Source Workers runtime | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:03.593095+00:00",
+  "html_len": 294762,
+  "md_len": 71634,
+  "depth": 0,
+  "phase": 2
+}

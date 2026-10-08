@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/this-holidays-biggest-online-shopping-day-was-black-friday/",
+  "file": "_subdomains/blog.cloudflare.com/this-holidays-biggest-online-shopping-day-was-black-friday.md",
+  "title": "This holiday's biggest online shopping day was... Black Friday | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:30.771312+00:00",
+  "html_len": 266839,
+  "md_len": 55077,
+  "depth": 0,
+  "phase": 2
+}

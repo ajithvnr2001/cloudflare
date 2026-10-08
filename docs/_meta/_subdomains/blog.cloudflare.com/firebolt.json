@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/firebolt/",
+  "file": "_subdomains/blog.cloudflare.com/firebolt.md",
+  "title": "Firebolt: the fastest, safest ads on the web | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:22.904675+00:00",
+  "html_len": 276084,
+  "md_len": 57462,
+  "depth": 0,
+  "phase": 2
+}

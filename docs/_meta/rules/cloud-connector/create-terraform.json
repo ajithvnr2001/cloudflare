@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/cloud-connector/create-terraform/",
+  "file": "rules/cloud-connector/create-terraform.md",
+  "title": "Configure Cloud Connector rules using Terraform \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:45.737006+00:00",
+  "html_len": 143028,
+  "md_len": 3528,
+  "depth": 0
+}

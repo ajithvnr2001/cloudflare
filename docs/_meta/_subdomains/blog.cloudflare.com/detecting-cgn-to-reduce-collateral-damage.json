@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/detecting-cgn-to-reduce-collateral-damage/",
+  "file": "_subdomains/blog.cloudflare.com/detecting-cgn-to-reduce-collateral-damage.md",
+  "title": "One IP address, many users: Detecting CGNAT to reduce collateral effects | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:00.438818+00:00",
+  "html_len": 322870,
+  "md_len": 81502,
+  "depth": 0,
+  "phase": 2
+}

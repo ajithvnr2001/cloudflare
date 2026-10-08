@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/unweight-tensor-compression/",
+  "file": "_subdomains/blog.cloudflare.com/unweight-tensor-compression.md",
+  "title": "Unweight: how we compressed an LLM 22% without sacrificing quality | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:35.544336+00:00",
+  "html_len": 320573,
+  "md_len": 78846,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/improved-developer-security/",
+  "file": "_subdomains/blog.cloudflare.com/improved-developer-security.md",
+  "title": "Securing non-human identities: automated revocation, OAuth, and scoped permissions | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:27:15.132495+00:00",
+  "html_len": 298398,
+  "md_len": 70111,
+  "depth": 1
+}

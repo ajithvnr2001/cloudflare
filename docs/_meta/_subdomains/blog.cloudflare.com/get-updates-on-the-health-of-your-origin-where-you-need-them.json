@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/get-updates-on-the-health-of-your-origin-where-you-need-them/",
+  "file": "_subdomains/blog.cloudflare.com/get-updates-on-the-health-of-your-origin-where-you-need-them.md",
+  "title": "Get updates on the health of your origin where you need them | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:34.010886+00:00",
+  "html_len": 358785,
+  "md_len": 79251,
+  "depth": 0,
+  "phase": 2
+}

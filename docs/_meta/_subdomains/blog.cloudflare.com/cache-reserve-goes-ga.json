@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cache-reserve-goes-ga/",
+  "file": "_subdomains/blog.cloudflare.com/cache-reserve-goes-ga.md",
+  "title": "Cache Reserve goes GA: enhanced control to minimize egress costs | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:42.002761+00:00",
+  "html_len": 295335,
+  "md_len": 68088,
+  "depth": 0,
+  "phase": 2
+}

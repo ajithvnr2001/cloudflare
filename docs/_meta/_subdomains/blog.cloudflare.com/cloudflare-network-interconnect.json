@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-network-interconnect/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-network-interconnect.md",
+  "title": "Introducing Cloudflare Network Interconnect | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:31.620894+00:00",
+  "html_len": 304081,
+  "md_len": 73135,
+  "depth": 0,
+  "phase": 2
+}

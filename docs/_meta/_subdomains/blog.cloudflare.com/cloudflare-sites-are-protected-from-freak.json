@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-sites-are-protected-from-freak/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-sites-are-protected-from-freak.md",
+  "title": "No upgrade needed: CloudFlare sites already protected from FREAK | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:08.075598+00:00",
+  "html_len": 268865,
+  "md_len": 55535,
+  "depth": 0,
+  "phase": 2
+}

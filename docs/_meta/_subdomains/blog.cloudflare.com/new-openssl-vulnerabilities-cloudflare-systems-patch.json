@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/new-openssl-vulnerabilities-cloudflare-systems-patch/",
+  "file": "_subdomains/blog.cloudflare.com/new-openssl-vulnerabilities-cloudflare-systems-patch.md",
+  "title": "New OpenSSL vulnerabilities: CloudFlare systems patched | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:49.331692+00:00",
+  "html_len": 265188,
+  "md_len": 54390,
+  "depth": 0,
+  "phase": 2
+}

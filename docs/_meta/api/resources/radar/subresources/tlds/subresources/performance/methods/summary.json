@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/api/resources/radar/subresources/tlds/subresources/performance/methods/summary/",
+  "file": "api/resources/radar/subresources/tlds/subresources/performance/methods/summary.md",
+  "title": "Get TLD Performance Summary | Cloudflare API",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:27:10.803202+00:00",
+  "html_len": 2076165,
+  "md_len": 9252,
+  "depth": 1
+}

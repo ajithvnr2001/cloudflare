@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-tale-of-a-single-register-value/",
+  "file": "_subdomains/blog.cloudflare.com/the-tale-of-a-single-register-value.md",
+  "title": "The tale of a single register value | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:52.510046+00:00",
+  "html_len": 378152,
+  "md_len": 85584,
+  "depth": 0,
+  "phase": 2
+}

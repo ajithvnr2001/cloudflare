@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/protests-internet-disruption-ir/",
+  "file": "_subdomains/blog.cloudflare.com/protests-internet-disruption-ir.md",
+  "title": "Protests spur Internet disruptions in Iran | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:05.946395+00:00",
+  "html_len": 299834,
+  "md_len": 64122,
+  "depth": 0,
+  "phase": 2
+}

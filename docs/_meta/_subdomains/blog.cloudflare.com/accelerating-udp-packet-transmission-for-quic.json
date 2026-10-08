@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/accelerating-udp-packet-transmission-for-quic/",
+  "file": "_subdomains/blog.cloudflare.com/accelerating-udp-packet-transmission-for-quic.md",
+  "title": "Accelerating UDP packet transmission for QUIC | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:29.835982+00:00",
+  "html_len": 306258,
+  "md_len": 66001,
+  "depth": 0,
+  "phase": 2
+}

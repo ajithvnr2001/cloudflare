@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/best-practices/workers-best-practices/",
+  "file": "workers/best-practices/workers-best-practices.md",
+  "title": "Workers Best Practices \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:09.071639+00:00",
+  "html_len": 482062,
+  "md_len": 55352,
+  "depth": 0
+}

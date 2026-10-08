@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/project-cybersafe-schools/",
+  "file": "_subdomains/blog.cloudflare.com/project-cybersafe-schools.md",
+  "title": "Project Cybersafe Schools: Bringing security tools for free to small K-12 school districts in the US | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:17.669278+00:00",
+  "html_len": 275919,
+  "md_len": 60916,
+  "depth": 0,
+  "phase": 2
+}

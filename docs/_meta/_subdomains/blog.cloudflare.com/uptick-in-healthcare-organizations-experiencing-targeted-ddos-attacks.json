@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/uptick-in-healthcare-organizations-experiencing-targeted-ddos-attacks/",
+  "file": "_subdomains/blog.cloudflare.com/uptick-in-healthcare-organizations-experiencing-targeted-ddos-attacks.md",
+  "title": "Uptick in healthcare organizations experiencing targeted DDoS attacks | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:20.030049+00:00",
+  "html_len": 281891,
+  "md_len": 59918,
+  "depth": 0,
+  "phase": 2
+}

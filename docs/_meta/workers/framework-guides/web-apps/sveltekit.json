@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/framework-guides/web-apps/sveltekit/",
+  "file": "workers/framework-guides/web-apps/sveltekit.md",
+  "title": "SvelteKit \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:29.510455+00:00",
+  "html_len": 229299,
+  "md_len": 4422,
+  "depth": 0
+}

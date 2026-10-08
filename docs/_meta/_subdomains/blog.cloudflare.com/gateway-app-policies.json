@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/gateway-app-policies/",
+  "file": "_subdomains/blog.cloudflare.com/gateway-app-policies.md",
+  "title": "Control web applications with two-clicks in Cloudflare Gateway | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:04.286869+00:00",
+  "html_len": 292492,
+  "md_len": 63197,
+  "depth": 0,
+  "phase": 2
+}

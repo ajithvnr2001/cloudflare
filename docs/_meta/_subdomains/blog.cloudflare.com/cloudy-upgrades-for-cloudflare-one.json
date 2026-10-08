@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudy-upgrades-for-cloudflare-one/",
+  "file": "_subdomains/blog.cloudflare.com/cloudy-upgrades-for-cloudflare-one.md",
+  "title": "How Cloudy translates complex security into human action | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:56.502772+00:00",
+  "html_len": 304494,
+  "md_len": 72279,
+  "depth": 0,
+  "phase": 2
+}

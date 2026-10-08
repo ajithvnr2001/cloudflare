@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/a-solution-to-compression-oracles-on-the-web/",
+  "file": "_subdomains/blog.cloudflare.com/a-solution-to-compression-oracles-on-the-web.md",
+  "title": "A Solution to Compression Oracles on the Web | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:39.550545+00:00",
+  "html_len": 278664,
+  "md_len": 61156,
+  "depth": 0,
+  "phase": 2
+}

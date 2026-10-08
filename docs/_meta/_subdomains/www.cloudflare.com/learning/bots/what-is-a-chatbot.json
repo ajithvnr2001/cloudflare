@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/bots/what-is-a-chatbot/",
+  "file": "_subdomains/www.cloudflare.com/learning/bots/what-is-a-chatbot.md",
+  "title": "What is a Chatbot?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:45.368844+00:00",
+  "html_len": 200611,
+  "md_len": 10139,
+  "depth": 0,
+  "phase": 2
+}

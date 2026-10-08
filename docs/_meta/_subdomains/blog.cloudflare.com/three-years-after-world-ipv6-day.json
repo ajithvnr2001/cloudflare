@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/three-years-after-world-ipv6-day/",
+  "file": "_subdomains/blog.cloudflare.com/three-years-after-world-ipv6-day.md",
+  "title": "Three years after World IPv6 Day | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:21.046309+00:00",
+  "html_len": 274572,
+  "md_len": 57254,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/custom-alert-features-anomaly-detection/",
+  "file": "_subdomains/blog.cloudflare.com/custom-alert-features-anomaly-detection.md",
+  "title": "Get notified about the most relevant events with Advanced HTTP Alerts | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:44.600566+00:00",
+  "html_len": 274903,
+  "md_len": 57275,
+  "depth": 0,
+  "phase": 2
+}

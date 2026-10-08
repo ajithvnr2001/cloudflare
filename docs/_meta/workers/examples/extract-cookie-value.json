@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/examples/extract-cookie-value/",
+  "file": "workers/examples/extract-cookie-value.md",
+  "title": "Cookie parsing \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:22.489783+00:00",
+  "html_len": 190474,
+  "md_len": 3616,
+  "depth": 0
+}

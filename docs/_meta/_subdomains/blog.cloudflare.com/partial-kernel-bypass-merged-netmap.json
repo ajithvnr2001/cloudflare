@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/partial-kernel-bypass-merged-netmap/",
+  "file": "_subdomains/blog.cloudflare.com/partial-kernel-bypass-merged-netmap.md",
+  "title": "Partial kernel bypass merged into netmap main | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:48.815723+00:00",
+  "html_len": 270635,
+  "md_len": 55384,
+  "depth": 0,
+  "phase": 2
+}

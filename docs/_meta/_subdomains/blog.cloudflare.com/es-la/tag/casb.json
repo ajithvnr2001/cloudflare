@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-la/tag/casb/",
+  "file": "_subdomains/blog.cloudflare.com/es-la/tag/casb.md",
+  "title": "Publicaciones etiquetadas con \"CASB\" \u2014 El blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:23:18.654012+00:00",
+  "html_len": 108697,
+  "md_len": 1638,
+  "depth": 1,
+  "phase": 2
+}

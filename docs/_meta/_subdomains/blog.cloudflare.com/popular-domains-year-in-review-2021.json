@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/popular-domains-year-in-review-2021/",
+  "file": "_subdomains/blog.cloudflare.com/popular-domains-year-in-review-2021.md",
+  "title": "In 2021, the Internet went for TikTok, space and beyond | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:48.305026+00:00",
+  "html_len": 345644,
+  "md_len": 85551,
+  "depth": 0,
+  "phase": 2
+}

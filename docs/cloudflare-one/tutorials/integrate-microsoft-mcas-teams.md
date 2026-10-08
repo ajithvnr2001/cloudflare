@@ -1,0 +1,110 @@
+---
+url: https://developers.cloudflare.com/cloudflare-one/tutorials/integrate-microsoft-mcas-teams/
+title: Integrate Microsoft MCAS with Cloudflare Zero Trust \u00b7 Cloudflare One docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:10:22.440805+00:00
+---
+
+# Integrate Microsoft MCAS with Cloudflare Zero Trust · Cloudflare One docs
+
+> Source: https://developers.cloudflare.com/cloudflare-one/tutorials/integrate-microsoft-mcas-teams/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)
+  3. /[Tutorials](https://developers.cloudflare.com/cloudflare-one/tutorials/)
+  4. /Integrate Microsoft Mcas Teams
+
+
+
+# Integrate Microsoft MCAS with Cloudflare Zero Trust
+
+Last updated Apr 17, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/cloudflare-one/tutorials/integrate-microsoft-mcas-teams/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewBasic configurationUsing the API to query banned applications Processing the outputUsing the API to query allowed applicationsAdding a hostname list in Cloudflare OneCreating an HTTP policy
+
+Many security teams rely on Microsoft MCAS (Microsoft Cloud App Security), Microsoft's CASB solution, to identify and block threats on the Internet, as well as allow or block access to cloud applications. This tutorial covers how to integrate MCAS with Cloudflare Zero Trust, and create Gateway HTTP policies to ensure visibility and control over data.
+
+Microsoft provides an MCAS API endpoint to allow queries to see which applications have been marked as blocked or allowed. With an MCAS API call, you can manage a URL category that contains the blocked URLs returned by the API query, and use the output to create a Hostname List that can be used by Gateway HTTP policies to block them.
+
+**Time to complete:**
+
+20 minutes
+
+## Basic configuration
+
+In your Microsoft account, you first need to create an API token and URL endpoint to use to query the URLs blocked by MCAS. Follow the guide for [Managing API tokens for Microsoft Cloud App Security ↗︎](https://learn.microsoft.com/defender-cloud-apps/api-authentication) to generate a new API token and a custom API URL for the API endpoint.
+
+## Using the API to query banned applications
+
+Once you have the API token and API URL, use curl to get the list of banned applications from Microsoft MCAS:
+    
+    
+    curl -v "https://<MCAS API URL>/api/discovery_block_scripts/?format=120&type=banned" -H "Authorization: Token <API token>"
+
+This will return a list of banned hostnames. In this case, Angie's List is the banned application.
+
+![Banned hostnames](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1766,height=922,format=webp/_astro/mcas-domains.CtUPNlL_.png)
+
+### Processing the output
+
+As you can see, the banned hostnames are preceded by a `.`. To use this output for a Zero Trust List, we need to do some text processing.
+
+  1. Run the curl API call and direct the output to a file, in this case `mcas.txt`:
+         
+         curl -v "https://<MCAS API URL>/api/discovery_block_scripts/?format=120&type=banned" -H "Authorization: Token <API token>" > mcas.txt
+
+  2. Remove the leading `.`, for example by running `sed` from the CLI:
+         
+         sed -i 's/^.//' mcas.txt
+
+  3. This will give you the list of hostnames without leading `.`.
+
+  4. Replace the file's `.txt` extension with `.csv`. The file can now be imported into Cloudflare Zero Trust as a Hostname list.
+
+
+
+
+## Using the API to query allowed applications
+
+If you would like to get a list of all of the MCAS allowed applications, you can use the same API query, but instead of using `type=banned`, use `type=allowed`. This will return a much larger list.
+    
+    
+    curl -v "https://<MCAS API URL>/api/discovery_block_scripts/?format=120&type=allowed" -H "Authorization: Token <API token>"
+
+## Adding a hostname list in Cloudflare One
+
+  1. In [Cloudflare One ↗︎](https://one.dash.cloudflare.com), go to **Reusable components** > **Lists**
+  2. Select **Upload CSV**. Even though the hostname list is not in CSV format, it will work with no issues.
+  3. Add a name for the list, specify _Hostnames_ as the list type, and give it a description.
+  4. Drag and drop your MCAS output file created via the API call, or you can select **Select a file**.
+  5. Select **Create**. You will see the list of hostnames that have been added to the list.
+  6. Save the list.
+
+
+
+Your list is now ready to be referenced by Gateway HTTP policies.
+
+## Creating an HTTP policy
+
+  1. Go to **Traffic policies** > **Traffic policies** > **HTTP**.
+
+  2. Select **Add a policy**.
+
+  3. Create the following policy.
+
+Selector | Operator | Value | Action  
+---|---|---|---  
+Host | in list | <NEW_HOSTNAME_LIST> | Block  
+  
+
+
+
+Now when trying to visit one of the MCAS defined sites, the user will be blocked.
+
+![Access Restricted](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1870,height=1128,format=webp/_astro/mcas-block-page.Bgzcx6ig.png)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/cloudflare-one/tutorials/integrate-microsoft-mcas-teams.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

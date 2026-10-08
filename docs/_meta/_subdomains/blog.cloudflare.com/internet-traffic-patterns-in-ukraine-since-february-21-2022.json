@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/internet-traffic-patterns-in-ukraine-since-february-21-2022/",
+  "file": "_subdomains/blog.cloudflare.com/internet-traffic-patterns-in-ukraine-since-february-21-2022.md",
+  "title": "Internet traffic patterns in Ukraine since February 21, 2022 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:54.819075+00:00",
+  "html_len": 360798,
+  "md_len": 76271,
+  "depth": 0,
+  "phase": 2
+}

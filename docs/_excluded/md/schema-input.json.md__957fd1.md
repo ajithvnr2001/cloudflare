@@ -1,0 +1,12 @@
+---
+url: https://developers.cloudflare.com/ai/models/black-forest-labs/flux-1-kontext-pro/schema-input.json
+title: https://developers.cloudflare.com/ai/models/black-forest-labs/flux-1-kontext-pro/schema-input.json
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:23:32.111446+00:00
+---
+
+# https://developers.cloudflare.com/ai/models/black-forest-labs/flux-1-kontext-pro/schema-input.json
+
+> Source: https://developers.cloudflare.com/ai/models/black-forest-labs/flux-1-kontext-pro/schema-input.json
+
+{"$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","properties":{"prompt":{"type":"string","description":"Text prompt for image generation or editing."},"input_image":{"description":"Optional base64 encoded image or URL to edit.","type":["string","null"]},"aspect_ratio":{"description":"Output aspect ratio, from 3:7 to 7:3. Defaults to 1:1.","type":["string","null"]},"seed":{"description":"Optional seed for reproducible generation.","anyOf":[{"type":"integer","minimum":-9007199254740991,"maximum":9007199254740991},{"type":"null"}]},"prompt_upsampling":{"description":"Whether to upsample the prompt. Defaults to false.","type":"boolean"},"safety_tolerance":{"description":"Moderation tolerance. 0 is strictest and 6 is most permissive.","type":"integer","minimum":0,"maximum":6},"output_format":{"description":"Output image format. Defaults to jpeg.","type":"string","enum":["jpeg","png"]}},"required":["prompt"],"additionalProperties":false}

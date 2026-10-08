@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/edge-computing/",
+  "file": "_subdomains/blog.cloudflare.com/tag/edge-computing.md",
+  "title": "Posts tagged \"Edge Computing\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:08:53.362415+00:00",
+  "html_len": 117425,
+  "md_len": 3186,
+  "depth": 1,
+  "phase": 2
+}

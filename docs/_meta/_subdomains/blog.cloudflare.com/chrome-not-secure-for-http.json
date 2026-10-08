@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/chrome-not-secure-for-http/",
+  "file": "_subdomains/blog.cloudflare.com/chrome-not-secure-for-http.md",
+  "title": "T-25 days until Chrome starts flagging HTTP sites as \"Not Secure\" | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:29.339856+00:00",
+  "html_len": 294361,
+  "md_len": 66052,
+  "depth": 0,
+  "phase": 2
+}

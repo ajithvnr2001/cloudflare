@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/tag/team/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/tag/team.md",
+  "title": "Posts com a tag \"A equipe\" \u2014 Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:07:04.521001+00:00",
+  "html_len": 105343,
+  "md_len": 1130,
+  "depth": 1,
+  "phase": 2
+}

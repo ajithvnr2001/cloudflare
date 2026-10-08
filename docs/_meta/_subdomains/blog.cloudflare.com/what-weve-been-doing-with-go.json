@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/what-weve-been-doing-with-go/",
+  "file": "_subdomains/blog.cloudflare.com/what-weve-been-doing-with-go.md",
+  "title": "What we've been doing with Go | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:31.950659+00:00",
+  "html_len": 280909,
+  "md_len": 61614,
+  "depth": 0,
+  "phase": 2
+}

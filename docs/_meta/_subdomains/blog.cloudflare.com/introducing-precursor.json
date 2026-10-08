@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-precursor/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-precursor.md",
+  "title": "Introducing Precursor: detecting agentic behavior with continuous client-side signals | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:26:08.314761+00:00",
+  "html_len": 289396,
+  "md_len": 64996,
+  "depth": 1
+}

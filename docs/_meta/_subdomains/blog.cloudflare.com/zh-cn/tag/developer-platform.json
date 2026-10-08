@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/tag/developer-platform/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/tag/developer-platform.md",
+  "title": "\u6807\u7b7e\u4e3a\"\u5f00\u53d1\u4eba\u5458\u5e73\u53f0\"\u7684\u6587\u7ae0 \u2014 Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:11:15.225450+00:00",
+  "html_len": 173666,
+  "md_len": 14944,
+  "depth": 1,
+  "phase": 2
+}

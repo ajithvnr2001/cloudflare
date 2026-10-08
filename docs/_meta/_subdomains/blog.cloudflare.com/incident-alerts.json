@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/incident-alerts/",
+  "file": "_subdomains/blog.cloudflare.com/incident-alerts.md",
+  "title": "Announcing Cloudflare Incident Alerts | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:38.421463+00:00",
+  "html_len": 282006,
+  "md_len": 60186,
+  "depth": 0,
+  "phase": 2
+}

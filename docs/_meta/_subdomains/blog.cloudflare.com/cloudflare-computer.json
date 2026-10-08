@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-computer/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-computer.md",
+  "title": "Your agent needs a computer, not a container \u2014 introducing @cloudflare/computer | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:27:06.499216+00:00",
+  "html_len": 329933,
+  "md_len": 70970,
+  "depth": 1
+}

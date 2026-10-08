@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/porting-our-software-to-arm64/",
+  "file": "_subdomains/blog.cloudflare.com/porting-our-software-to-arm64.md",
+  "title": "Porting Our Software to ARM64 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:25.944815+00:00",
+  "html_len": 297207,
+  "md_len": 67134,
+  "depth": 0,
+  "phase": 2
+}

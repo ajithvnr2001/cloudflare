@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/cloudflare-wan/configuration/appliance/network-options/dhcp/dhcp-server/",
+  "file": "cloudflare-wan/configuration/appliance/network-options/dhcp/dhcp-server.md",
+  "title": "DHCP server \u00b7 Cloudflare WAN docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:10:26.825592+00:00",
+  "html_len": 122322,
+  "md_len": 3267,
+  "depth": 0
+}

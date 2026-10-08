@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/http-3-from-root-to-tip/",
+  "file": "_subdomains/blog.cloudflare.com/http-3-from-root-to-tip.md",
+  "title": "HTTP/3: From root to tip | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:00.613273+00:00",
+  "html_len": 329929,
+  "md_len": 91447,
+  "depth": 0,
+  "phase": 2
+}

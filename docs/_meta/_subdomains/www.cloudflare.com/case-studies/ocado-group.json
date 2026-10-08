@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/ocado-group/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/ocado-group.md",
+  "title": "Ocado Group & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:42.408745+00:00",
+  "html_len": 216808,
+  "md_len": 10242,
+  "depth": 0,
+  "phase": 2
+}

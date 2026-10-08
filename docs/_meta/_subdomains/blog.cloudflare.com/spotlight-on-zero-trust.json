@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/spotlight-on-zero-trust/",
+  "file": "_subdomains/blog.cloudflare.com/spotlight-on-zero-trust.md",
+  "title": "Spotlight on Zero Trust: we're fastest and here's the proof | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:37.096445+00:00",
+  "html_len": 377740,
+  "md_len": 77668,
+  "depth": 0,
+  "phase": 2
+}

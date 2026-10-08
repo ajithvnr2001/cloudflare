@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/china-silicon-valley-china/",
+  "file": "_subdomains/blog.cloudflare.com/china-silicon-valley-china.md",
+  "title": "China | Silicon Valley | China: A path less traveled | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:49.865115+00:00",
+  "html_len": 361709,
+  "md_len": 97140,
+  "depth": 0,
+  "phase": 2
+}

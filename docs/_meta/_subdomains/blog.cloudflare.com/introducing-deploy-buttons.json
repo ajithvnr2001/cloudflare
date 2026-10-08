@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-deploy-buttons/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-deploy-buttons.md",
+  "title": "Introducing Deploy Buttons | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:08.800612+00:00",
+  "html_len": 287084,
+  "md_len": 60385,
+  "depth": 0,
+  "phase": 2
+}

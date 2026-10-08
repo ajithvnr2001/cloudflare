@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/casb-adds-salesforce-and-box-integrations/",
+  "file": "_subdomains/blog.cloudflare.com/casb-adds-salesforce-and-box-integrations.md",
+  "title": "Cloudflare's CASB integration with Salesforce and Box | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:48.490620+00:00",
+  "html_len": 281150,
+  "md_len": 60342,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cache-api-for-cloudflare-workers-is-now-in-beta/",
+  "file": "_subdomains/blog.cloudflare.com/cache-api-for-cloudflare-workers-is-now-in-beta.md",
+  "title": "Cache API for Cloudflare Workers is now in Beta! | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:18.902774+00:00",
+  "html_len": 286345,
+  "md_len": 59531,
+  "depth": 0,
+  "phase": 2
+}

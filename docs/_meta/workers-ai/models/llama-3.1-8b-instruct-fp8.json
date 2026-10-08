@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers-ai/models/llama-3.1-8b-instruct-fp8/",
+  "file": "workers-ai/models/llama-3.1-8b-instruct-fp8.md",
+  "title": "llama-3.1-8b-instruct-fp8 (Meta) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:04.476163+00:00",
+  "html_len": 157218,
+  "md_len": 6901,
+  "depth": 0
+}

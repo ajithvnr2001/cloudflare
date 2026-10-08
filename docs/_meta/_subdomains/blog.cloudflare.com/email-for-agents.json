@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/email-for-agents/",
+  "file": "_subdomains/blog.cloudflare.com/email-for-agents.md",
+  "title": "Email for agents - Cloudflare Email Service now in public beta | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:35.002103+00:00",
+  "html_len": 314523,
+  "md_len": 68899,
+  "depth": 0,
+  "phase": 2
+}

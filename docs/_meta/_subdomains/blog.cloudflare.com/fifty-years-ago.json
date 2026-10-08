@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fifty-years-ago/",
+  "file": "_subdomains/blog.cloudflare.com/fifty-years-ago.md",
+  "title": "Fifty Years Ago #HappyBirthdayInternet | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:34.019688+00:00",
+  "html_len": 280356,
+  "md_len": 64097,
+  "depth": 0,
+  "phase": 2
+}

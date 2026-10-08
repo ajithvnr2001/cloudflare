@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/legal/",
+  "file": "_subdomains/blog.cloudflare.com/tag/legal.md",
+  "title": "Posts tagged \"Legal\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:09:23.556982+00:00",
+  "html_len": 110265,
+  "md_len": 1663,
+  "depth": 1,
+  "phase": 2
+}

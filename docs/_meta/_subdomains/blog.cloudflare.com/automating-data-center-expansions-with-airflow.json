@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/automating-data-center-expansions-with-airflow/",
+  "file": "_subdomains/blog.cloudflare.com/automating-data-center-expansions-with-airflow.md",
+  "title": "Automating data center expansions with Airflow | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:39.505640+00:00",
+  "html_len": 296788,
+  "md_len": 67611,
+  "depth": 0,
+  "phase": 2
+}

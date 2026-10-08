@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/new-cloudflare-waf/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/new-cloudflare-waf.md",
+  "title": "\u5168\u65b0 Cloudflare Web Application Firewall\uff08Web \u61c9\u7528\u7a0b\u5f0f\u9632\u706b\u7246\uff0cWAF\uff09 | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:45.363552+00:00",
+  "html_len": 205112,
+  "md_len": 25468,
+  "depth": 0,
+  "phase": 2
+}

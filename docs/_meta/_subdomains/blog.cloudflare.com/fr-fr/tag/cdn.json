@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/tag/cdn/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/tag/cdn.md",
+  "title": "Articles tagu\u00e9s \u00ab R\u00e9seau de diffusion de contenu (CDN) \u00bb \u2014 Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:12:56.624043+00:00",
+  "html_len": 111928,
+  "md_len": 1219,
+  "depth": 1,
+  "phase": 2
+}

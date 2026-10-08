@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ai-era-framework/",
+  "file": "_subdomains/blog.cloudflare.com/ai-era-framework.md",
+  "title": "Adaptive application security for the AI era: how Cloudflare connects code, traffic, and intelligence to stop attacks | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:29.052322+00:00",
+  "html_len": 302667,
+  "md_len": 76209,
+  "depth": 0,
+  "phase": 2
+}

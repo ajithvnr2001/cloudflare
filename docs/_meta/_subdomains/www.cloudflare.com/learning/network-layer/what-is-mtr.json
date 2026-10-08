@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/network-layer/what-is-mtr/",
+  "file": "_subdomains/www.cloudflare.com/learning/network-layer/what-is-mtr.md",
+  "title": "What is My Traceroute (MTR)?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:05:07.008460+00:00",
+  "html_len": 210703,
+  "md_len": 15600,
+  "depth": 0,
+  "phase": 2
+}

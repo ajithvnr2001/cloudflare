@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/auto-router/",
+  "file": "_subdomains/blog.cloudflare.com/auto-router.md",
+  "title": "Cut your AI spend with AI Gateway's Auto Router | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:27.512191+00:00",
+  "html_len": 291196,
+  "md_len": 64784,
+  "depth": 0,
+  "phase": 2
+}

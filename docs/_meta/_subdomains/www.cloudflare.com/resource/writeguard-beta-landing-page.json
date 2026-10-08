@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/resource/writeguard-beta-landing-page/",
+  "file": "_subdomains/www.cloudflare.com/resource/writeguard-beta-landing-page.md",
+  "title": "WriteGuard closed beta",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:05:21.696365+00:00",
+  "html_len": 226753,
+  "md_len": 3440,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/html-parsing-2/",
+  "file": "_subdomains/blog.cloudflare.com/html-parsing-2.md",
+  "title": "Rust streaming HTML parser/rewriter | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:33.273860+00:00",
+  "html_len": 331605,
+  "md_len": 78685,
+  "depth": 0,
+  "phase": 2
+}

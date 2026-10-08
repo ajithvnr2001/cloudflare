@@ -1,0 +1,1008 @@
+---
+url: https://blog.cloudflare.com/introducing-certificate-transparency-and-nimbus/
+title: Introducing Certificate Transparency and Nimbus | Cloudflare Blog
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:58:39.343014+00:00
+---
+
+# Introducing Certificate Transparency and Nimbus | Cloudflare Blog
+
+> Source: https://blog.cloudflare.com/introducing-certificate-transparency-and-nimbus/
+
+[Blog](https://blog.cloudflare.com/)
+
+[Certificate Authority](https://blog.cloudflare.com/tag/certificate-authority/)[Certificate Transparency](https://blog.cloudflare.com/tag/certificate-transparency/)[Cryptography](https://blog.cloudflare.com/tag/cryptography/)+4Show 4 more tags
+
+7 TagsShow 7 tags
+
+  * Post Tags
+  * [Certificate Authority](https://blog.cloudflare.com/tag/certificate-authority/)[Certificate Transparency](https://blog.cloudflare.com/tag/certificate-transparency/)[Cryptography](https://blog.cloudflare.com/tag/cryptography/)[HTTPS](https://blog.cloudflare.com/tag/https/)[Research](https://blog.cloudflare.com/tag/research/)[Security](https://blog.cloudflare.com/tag/security/)[SSL](https://blog.cloudflare.com/tag/ssl/)
+  * All tags
+  * Matching tags
+  * No tags found
+  * [1.1.1.1](https://blog.cloudflare.com/tag/1-1-1-1/)
+  * [2FA](https://blog.cloudflare.com/tag/2fa/)
+  * [Abuse](https://blog.cloudflare.com/tag/abuse/)
+  * [Access](https://blog.cloudflare.com/tag/access/)
+  * [Access Control Lists (ACLs)](https://blog.cloudflare.com/tag/access-control-lists-acls/)
+  * [Accessibility](https://blog.cloudflare.com/tag/accessibility/)
+  * [Account Takeover](https://blog.cloudflare.com/tag/account-takeover/)
+  * [Acquisitions](https://blog.cloudflare.com/tag/acquisitions/)
+  * [Addressing](https://blog.cloudflare.com/tag/addressing/)
+  * [Advanced Certificate Manager](https://blog.cloudflare.com/tag/advanced-certificate-manager/)
+  * [Advanced DDoS](https://blog.cloudflare.com/tag/advanced-ddos/)
+  * [Advertising](https://blog.cloudflare.com/tag/advertising/)
+  * [Aegis](https://blog.cloudflare.com/tag/aegis/)
+  * [AEO](https://blog.cloudflare.com/tag/aeo/)
+  * [Africa](https://blog.cloudflare.com/tag/africa/)
+  * [Afroflare](https://blog.cloudflare.com/tag/afroflare/)
+  * [Agent Cloud](https://blog.cloudflare.com/tag/agent-cloud/)
+  * [Agent Development Lifecycle](https://blog.cloudflare.com/tag/agent-development-lifecycle/)
+  * [Agent Readiness](https://blog.cloudflare.com/tag/agent-readiness/)
+  * [Agents](https://blog.cloudflare.com/tag/agents/)
+  * [Agents Week](https://blog.cloudflare.com/tag/agents-week/)
+  * [Agents Week 2026](https://blog.cloudflare.com/tag/agents-week-2026/)
+  * [AI](https://blog.cloudflare.com/tag/ai/)
+  * [AI Bots](https://blog.cloudflare.com/tag/ai-bots/)
+  * [AI Gateway](https://blog.cloudflare.com/tag/ai-gateway/)
+  * [AI Search](https://blog.cloudflare.com/tag/ai-search/)
+  * [AI WAF](https://blog.cloudflare.com/tag/ai-waf/)
+  * [AI Week](https://blog.cloudflare.com/tag/ai-week/)
+  * [AI-SPM](https://blog.cloudflare.com/tag/ai-spm/)
+  * [Alertmanager](https://blog.cloudflare.com/tag/alertmanager/)
+  * [Always Online](https://blog.cloudflare.com/tag/always-online/)
+  * [AMD](https://blog.cloudflare.com/tag/amd/)
+  * [AMP](https://blog.cloudflare.com/tag/amp-tag/)
+  * [Analytics](https://blog.cloudflare.com/tag/analytics/)
+  * [Anonymous](https://blog.cloudflare.com/tag/anonymous/)
+  * [Anti Malware](https://blog.cloudflare.com/tag/anti-malware/)
+  * [Anycast](https://blog.cloudflare.com/tag/anycast/)
+  * [API](https://blog.cloudflare.com/tag/api/)
+  * [API Gateway](https://blog.cloudflare.com/tag/api-gateway/)
+  * [API Security](https://blog.cloudflare.com/tag/api-security/)
+  * [API Shield](https://blog.cloudflare.com/tag/api-shield/)
+  * [APJC](https://blog.cloudflare.com/tag/apjc/)
+  * [Apple](https://blog.cloudflare.com/tag/apple/)
+  * [Application Security](https://blog.cloudflare.com/tag/application-security/)
+  * [Application Services](https://blog.cloudflare.com/tag/application-services/)
+  * [Area 1 Security](https://blog.cloudflare.com/tag/area-1-security/)
+  * [Argo Smart Routing](https://blog.cloudflare.com/tag/argo/)
+  * [ASCII](https://blog.cloudflare.com/tag/ascii/)
+  * [Asia](https://blog.cloudflare.com/tag/asia/)
+  * [Athenian Project](https://blog.cloudflare.com/tag/athenian-project/)
+  * [Atlassian](https://blog.cloudflare.com/tag/atlassian/)
+  * [Attacks](https://blog.cloudflare.com/tag/attacks/)
+  * [Audit Logs](https://blog.cloudflare.com/tag/audit-logs/)
+  * [Austin](https://blog.cloudflare.com/tag/austin/)
+  * [Australia](https://blog.cloudflare.com/tag/australia/)
+  * [Authentication](https://blog.cloudflare.com/tag/authentication/)
+  * [Authy](https://blog.cloudflare.com/tag/authy/)
+  * [Auto Rag](https://blog.cloudflare.com/tag/auto-rag/)
+  * [Automatic HTTPS](https://blog.cloudflare.com/tag/automatic-https/)
+  * [Automatic Platform Optimization](https://blog.cloudflare.com/tag/automatic-platform-optimization/)
+  * [Automation](https://blog.cloudflare.com/tag/automation/)
+  * [AutoMinify](https://blog.cloudflare.com/tag/autominify/)
+  * [Awards](https://blog.cloudflare.com/tag/awards/)
+  * [AWS](https://blog.cloudflare.com/tag/aws/)
+  * [Baidu](https://blog.cloudflare.com/tag/baidu/)
+  * [Bandwidth Alliance](https://blog.cloudflare.com/tag/bandwidth-alliance/)
+  * [Bandwidth Costs](https://blog.cloudflare.com/tag/bandwidth-costs/)
+  * [Best Practices](https://blog.cloudflare.com/tag/best-practices/)
+  * [Beta](https://blog.cloudflare.com/tag/beta/)
+  * [Better Internet](https://blog.cloudflare.com/tag/better-internet/)
+  * [BGP](https://blog.cloudflare.com/tag/bgp/)
+  * [Billing](https://blog.cloudflare.com/tag/billing/)
+  * [Birthday Week](https://blog.cloudflare.com/tag/birthday-week/)
+  * [Black Friday](https://blog.cloudflare.com/tag/black-friday/)
+  * [Blackbird](https://blog.cloudflare.com/tag/blackbird/)
+  * [Bot Fight Mode](https://blog.cloudflare.com/tag/bot-fight-mode/)
+  * [Bot Management](https://blog.cloudflare.com/tag/bot-management/)
+  * [Botnet](https://blog.cloudflare.com/tag/botnet/)
+  * [Bots](https://blog.cloudflare.com/tag/bots/)
+  * [BPF](https://blog.cloudflare.com/tag/bpf/)
+  * [Brand](https://blog.cloudflare.com/tag/brand/)
+  * [Brand Protection](https://blog.cloudflare.com/tag/brand-protection/)
+  * [Brazil](https://blog.cloudflare.com/tag/brazil/)
+  * [Browser Insights](https://blog.cloudflare.com/tag/browser-insights/)
+  * [Browser Rendering](https://blog.cloudflare.com/tag/browser-rendering/)
+  * [Browser Run](https://blog.cloudflare.com/tag/browser-run/)
+  * [Bug Bounty](https://blog.cloudflare.com/tag/bug-bounty/)
+  * [Bugs](https://blog.cloudflare.com/tag/bugs/)
+  * [BYOIP](https://blog.cloudflare.com/tag/byoip/)
+  * [Cache](https://blog.cloudflare.com/tag/cache/)
+  * [Cache Purge](https://blog.cloudflare.com/tag/cache-purge/)
+  * [Cache Reserve](https://blog.cloudflare.com/tag/cache-reserve/)
+  * [Cache Rules](https://blog.cloudflare.com/tag/cache-rules/)
+  * [California](https://blog.cloudflare.com/tag/california/)
+  * [Canada](https://blog.cloudflare.com/tag/canada/)
+  * [Cap'n Proto](https://blog.cloudflare.com/tag/capn-proto/)
+  * [CAPTCHA](https://blog.cloudflare.com/tag/captcha/)
+  * [Careers](https://blog.cloudflare.com/tag/careers/)
+  * [CASB](https://blog.cloudflare.com/tag/casb/)
+  * [Categories](https://blog.cloudflare.com/tag/categories/)
+  * [CDN](https://blog.cloudflare.com/tag/cdn/)
+  * [CDNJS](https://blog.cloudflare.com/tag/cdnjs/)
+  * [Certificate Authority](https://blog.cloudflare.com/tag/certificate-authority/)
+  * [Certificate Pinning](https://blog.cloudflare.com/tag/certificate-pinning/)
+  * [Certificate Transparency](https://blog.cloudflare.com/tag/certificate-transparency/)
+  * [Certification](https://blog.cloudflare.com/tag/certification/)
+  * [CFSSL](https://blog.cloudflare.com/tag/cfssl/)
+  * [Challenge Page](https://blog.cloudflare.com/tag/challenge-page/)
+  * [ChatGPT](https://blog.cloudflare.com/tag/chatgpt/)
+  * [China](https://blog.cloudflare.com/tag/china/)
+  * [China Network](https://blog.cloudflare.com/tag/china-network/)
+  * [Christmas](https://blog.cloudflare.com/tag/christmas/)
+  * [Chrome](https://blog.cloudflare.com/tag/chrome/)
+  * [CIO Week](https://blog.cloudflare.com/tag/cio-week/)
+  * [CISA](https://blog.cloudflare.com/tag/cisa/)
+  * [Claire](https://blog.cloudflare.com/tag/claire/)
+  * [CLI](https://blog.cloudflare.com/tag/cli/)
+  * [ClickHouse](https://blog.cloudflare.com/tag/clickhouse/)
+  * [Clientless](https://blog.cloudflare.com/tag/clientless/)
+  * [Clientless Web Isolation](https://blog.cloudflare.com/tag/clientless-web-isolation/)
+  * [Cloud Connector](https://blog.cloudflare.com/tag/cloud-connector/)
+  * [Cloud Email Security](https://blog.cloudflare.com/tag/cloud-email-security/)
+  * [Cloudflare Access](https://blog.cloudflare.com/tag/cloudflare-access/)
+  * [Cloudflare Apps](https://blog.cloudflare.com/tag/cloudflare-apps/)
+  * [Cloudflare Area 1](https://blog.cloudflare.com/tag/cloudflare-area-1/)
+  * [Cloudflare Calls](https://blog.cloudflare.com/tag/cloudflare-calls/)
+  * [Cloudflare Email Service](https://blog.cloudflare.com/tag/cloudflare-email-services/)
+  * [Cloudflare for Campaigns](https://blog.cloudflare.com/tag/cloudflare-for-campaigns/)
+  * [Cloudflare for SaaS](https://blog.cloudflare.com/tag/cloudflare-for-saas/)
+  * [Cloudflare for Startups](https://blog.cloudflare.com/tag/cloudflare-for-startups/)
+  * [Cloudflare Gateway](https://blog.cloudflare.com/tag/gateway/)
+  * [Cloudflare History](https://blog.cloudflare.com/tag/cloudflare-history/)
+  * [Cloudflare Images](https://blog.cloudflare.com/tag/cloudflare-images/)
+  * [Cloudflare Media Platform](https://blog.cloudflare.com/tag/cloudflare-media-platform/)
+  * [Cloudflare Meetups](https://blog.cloudflare.com/tag/cloudflare-meetups/)
+  * [Cloudflare Network](https://blog.cloudflare.com/tag/cloudflare-network/)
+  * [Cloudflare One](https://blog.cloudflare.com/tag/cloudflare-one/)
+  * [Cloudflare One Client](https://blog.cloudflare.com/tag/cloudflare-one-client/)
+  * [Cloudflare One User Risk Score](https://blog.cloudflare.com/tag/cloudflare-one-user-risk-score/)
+  * [Cloudflare One Week](https://blog.cloudflare.com/tag/cloudflare-one-week/)
+  * [Cloudflare OS](https://blog.cloudflare.com/tag/cloudflare-os/)
+  * [Cloudflare Pages](https://blog.cloudflare.com/tag/cloudflare-pages/)
+  * [Cloudflare Polish](https://blog.cloudflare.com/tag/cloudflare-polish/)
+  * [Cloudflare Queues](https://blog.cloudflare.com/tag/cloudflare-queues/)
+  * [Cloudflare Realtime](https://blog.cloudflare.com/tag/cloudflare-realtime/)
+  * [Cloudflare Stream](https://blog.cloudflare.com/tag/cloudflare-stream/)
+  * [Cloudflare Tunnel](https://blog.cloudflare.com/tag/cloudflare-tunnel/)
+  * [Cloudflare TV](https://blog.cloudflare.com/tag/cloudflare-tv/)
+  * [Cloudflare Workers](https://blog.cloudflare.com/tag/workers/)
+  * [Cloudflare Workers (PT)](https://blog.cloudflare.com/tag/cloudflare-workers-pt/)
+  * [Cloudflare Workers KV](https://blog.cloudflare.com/tag/cloudflare-workers-kv/)
+  * [Cloudflare Workers KV (ES)](https://blog.cloudflare.com/tag/cloudflare-workers-kv-es/)
+  * [Cloudflare Zero Trust](https://blog.cloudflare.com/tag/cloudflare-zero-trust/)
+  * [Cloudforce One](https://blog.cloudflare.com/tag/cloudforce-one/)
+  * [Cloudy](https://blog.cloudflare.com/tag/cloudy/)
+  * [Code Orange](https://blog.cloudflare.com/tag/code-orange/)
+  * [Coinbase](https://blog.cloudflare.com/tag/coinbase/)
+  * [Colombia](https://blog.cloudflare.com/tag/colombia/)
+  * [Community](https://blog.cloudflare.com/tag/community/)
+  * [Compliance](https://blog.cloudflare.com/tag/compliance/)
+  * [Compression](https://blog.cloudflare.com/tag/compression/)
+  * [Config Rules](https://blog.cloudflare.com/tag/config-rules/)
+  * [Configuration Management](https://blog.cloudflare.com/tag/configuration-management/)
+  * [Congestion Control](https://blog.cloudflare.com/tag/congestion-control/)
+  * [Connectivity](https://blog.cloudflare.com/tag/connectivity/)
+  * [Connectivity Cloud](https://blog.cloudflare.com/tag/connectivity-cloud/)
+  * [Consumer Services](https://blog.cloudflare.com/tag/consumer-services/)
+  * [Containers](https://blog.cloudflare.com/tag/containers/)
+  * [Content Independence Day](https://blog.cloudflare.com/tag/content-independence-day/)
+  * [Content Scanning](https://blog.cloudflare.com/tag/content-scanning/)
+  * [Context](https://blog.cloudflare.com/tag/context/)
+  * [Core](https://blog.cloudflare.com/tag/core/)
+  * [COVID-19](https://blog.cloudflare.com/tag/covid-19/)
+  * [Crawler Hints](https://blog.cloudflare.com/tag/crawler-hints/)
+  * [CrowdStrike](https://blog.cloudflare.com/tag/crowdstrike/)
+  * [Crypto Week](https://blog.cloudflare.com/tag/crypto-week/)
+  * [Cryptography](https://blog.cloudflare.com/tag/cryptography/)
+  * [CSAM Reporting](https://blog.cloudflare.com/tag/csam-reporting/)
+  * [Customer Success](https://blog.cloudflare.com/tag/customer-success/)
+  * [Customer Zero](https://blog.cloudflare.com/tag/customer-zero/)
+  * [Customers](https://blog.cloudflare.com/tag/customers/)
+  * [CVE](https://blog.cloudflare.com/tag/cve/)
+  * [CVE-2023-50387](https://blog.cloudflare.com/tag/cve-2023-50387/)
+  * [Cyber Readiness](https://blog.cloudflare.com/tag/cyber-readiness/)
+  * [Cybersecurity](https://blog.cloudflare.com/tag/cybersecurity/)
+  * [D1](https://blog.cloudflare.com/tag/d1/)
+  * [Dashboard](https://blog.cloudflare.com/tag/dashboard-tag/)
+  * [Data](https://blog.cloudflare.com/tag/data/)
+  * [Data Catalog](https://blog.cloudflare.com/tag/data-catalog/)
+  * [Data Center](https://blog.cloudflare.com/tag/data-center/)
+  * [Data Localization](https://blog.cloudflare.com/tag/data-localization/)
+  * [Data Localization Suite](https://blog.cloudflare.com/tag/data-localization-suite/)
+  * [Data Loss](https://blog.cloudflare.com/tag/data-loss/)
+  * [Data Loss Prevention](https://blog.cloudflare.com/tag/data-loss-prevention/)
+  * [Data Platform](https://blog.cloudflare.com/tag/data-platform/)
+  * [Data Privacy Day](https://blog.cloudflare.com/tag/data-privacy-day/)
+  * [Data Protection](https://blog.cloudflare.com/tag/data-protection/)
+  * [Data Sovereignty](https://blog.cloudflare.com/tag/data-sovereignty/)
+  * [Data Transfer Bucket](https://blog.cloudflare.com/tag/data-transfer-bucket/)
+  * [Database](https://blog.cloudflare.com/tag/database/)
+  * [DDoS](https://blog.cloudflare.com/tag/ddos/)
+  * [DDoS Alerts](https://blog.cloudflare.com/tag/ddos-alerts/)
+  * [DDoS Reports](https://blog.cloudflare.com/tag/ddos-reports/)
+  * [Debugging](https://blog.cloudflare.com/tag/debugging/)
+  * [Deep Dive](https://blog.cloudflare.com/tag/deep-dive/)
+  * [Descaler](https://blog.cloudflare.com/tag/descaler/)
+  * [Design](https://blog.cloudflare.com/tag/design/)
+  * [Deskope](https://blog.cloudflare.com/tag/deskope/)
+  * [Developer Documentation](https://blog.cloudflare.com/tag/developer-documentation/)
+  * [Developer Platform](https://blog.cloudflare.com/tag/developer-platform/)
+  * [Developer Spotlight](https://blog.cloudflare.com/tag/developer-spotlight/)
+  * [Developer Week](https://blog.cloudflare.com/tag/developer-week/)
+  * [Developers](https://blog.cloudflare.com/tag/developers/)
+  * [Developers Storage](https://blog.cloudflare.com/tag/developers-storage/)
+  * [Device Security](https://blog.cloudflare.com/tag/device-security/)
+  * [DevOps](https://blog.cloudflare.com/tag/devops/)
+  * [DEX](https://blog.cloudflare.com/tag/dex/)
+  * [Digital Experience Monitoring](https://blog.cloudflare.com/tag/digital-experience-monitoring/)
+  * [Digital Forensics](https://blog.cloudflare.com/tag/digital-forensics/)
+  * [Disrupt](https://blog.cloudflare.com/tag/disrupt/)
+  * [Distributed](https://blog.cloudflare.com/tag/distributed/)
+  * [Distributed Systems](https://blog.cloudflare.com/tag/distributed-systems/)
+  * [Distributed Web](https://blog.cloudflare.com/tag/distributed-web/)
+  * [Diversity](https://blog.cloudflare.com/tag/diversity/)
+  * [DLP](https://blog.cloudflare.com/tag/dlp/)
+  * [DMARC](https://blog.cloudflare.com/tag/dmarc/)
+  * [DNS](https://blog.cloudflare.com/tag/dns/)
+  * [DNS Filtering](https://blog.cloudflare.com/tag/dns-filtering/)
+  * [DNS Flood](https://blog.cloudflare.com/tag/dns-flood/)
+  * [DNS Security](https://blog.cloudflare.com/tag/dns-security/)
+  * [DNSSEC](https://blog.cloudflare.com/tag/dnssec/)
+  * [Dogfooding](https://blog.cloudflare.com/tag/dogfooding/)
+  * [DoH](https://blog.cloudflare.com/tag/doh/)
+  * [Domain Rankings](https://blog.cloudflare.com/tag/domain-rankings/)
+  * [Domain Scoped Roles](https://blog.cloudflare.com/tag/domain-scoped-roles/)
+  * [dosd](https://blog.cloudflare.com/tag/dosd/)
+  * [Drupal](https://blog.cloudflare.com/tag/drupal/)
+  * [Due Process](https://blog.cloudflare.com/tag/due-process/)
+  * [Durable Execution](https://blog.cloudflare.com/tag/durable-execution/)
+  * [Durable Objects](https://blog.cloudflare.com/tag/durable-objects/)
+  * [Early Hints](https://blog.cloudflare.com/tag/early-hints/)
+  * [Earth Day](https://blog.cloudflare.com/tag/earth-day/)
+  * [eBPF](https://blog.cloudflare.com/tag/ebpf/)
+  * [EC2](https://blog.cloudflare.com/tag/ec2/)
+  * [eCommerce](https://blog.cloudflare.com/tag/ecommerce/)
+  * [Edge](https://blog.cloudflare.com/tag/edge/)
+  * [Edge Computing](https://blog.cloudflare.com/tag/edge-computing/)
+  * [Edge Database](https://blog.cloudflare.com/tag/edge-database/)
+  * [Edge Rules](https://blog.cloudflare.com/tag/edge-rules/)
+  * [Education](https://blog.cloudflare.com/tag/education/)
+  * [Egress](https://blog.cloudflare.com/tag/egress/)
+  * [Elastic](https://blog.cloudflare.com/tag/elastic/)
+  * [Election Security](https://blog.cloudflare.com/tag/election-security/)
+  * [Elections](https://blog.cloudflare.com/tag/elections/)
+  * [Elliptic Curves](https://blog.cloudflare.com/tag/elliptic-curves/)
+  * [Email](https://blog.cloudflare.com/tag/email/)
+  * [Email Routing](https://blog.cloudflare.com/tag/email-routing/)
+  * [Email Security](https://blog.cloudflare.com/tag/email-security/)
+  * [Email Workers](https://blog.cloudflare.com/tag/email-workers/)
+  * [EmDash](https://blog.cloudflare.com/tag/emdash/)
+  * [Emissions](https://blog.cloudflare.com/tag/emissions/)
+  * [Employee Resource Groups](https://blog.cloudflare.com/tag/employee-resource-groups/)
+  * [Encrypted SNI](https://blog.cloudflare.com/tag/encrypted-sni/)
+  * [Encryption](https://blog.cloudflare.com/tag/encryption/)
+  * [Engineering](https://blog.cloudflare.com/tag/engineering/)
+  * [Enterprise](https://blog.cloudflare.com/tag/enterprise/)
+  * [Entropy](https://blog.cloudflare.com/tag/entropy/)
+  * [EPYC](https://blog.cloudflare.com/tag/epyc/)
+  * [Ethereum](https://blog.cloudflare.com/tag/ethereum/)
+  * [Europe](https://blog.cloudflare.com/tag/europe/)
+  * [European Union](https://blog.cloudflare.com/tag/european-union/)
+  * [Events](https://blog.cloudflare.com/tag/events/)
+  * [Exploit](https://blog.cloudflare.com/tag/exploit/)
+  * [Facebook](https://blog.cloudflare.com/tag/facebook/)
+  * [Fancy Bear](https://blog.cloudflare.com/tag/fancy-bear/)
+  * [Fast Fonts](https://blog.cloudflare.com/tag/fast-fonts/)
+  * [FCC](https://blog.cloudflare.com/tag/fcc/)
+  * [Feature Flags](https://blog.cloudflare.com/tag/feature-flags/)
+  * [FedRAMP](https://blog.cloudflare.com/tag/fedramp/)
+  * [FedRAMP High](https://blog.cloudflare.com/tag/fedramp-high/)
+  * [FedRAMP Moderate](https://blog.cloudflare.com/tag/fedramp-moderate/)
+  * [Firefox](https://blog.cloudflare.com/tag/firefox/)
+  * [Firewall](https://blog.cloudflare.com/tag/firewall/)
+  * [Firmware](https://blog.cloudflare.com/tag/firmware/)
+  * [Florida](https://blog.cloudflare.com/tag/florida/)
+  * [Football](https://blog.cloudflare.com/tag/football/)
+  * [Formal Methods](https://blog.cloudflare.com/tag/formal-methods/)
+  * [Forrester](https://blog.cloudflare.com/tag/forrester/)
+  * [Fortran](https://blog.cloudflare.com/tag/fortran/)
+  * [Foundation DNS](https://blog.cloudflare.com/tag/foundation-dns/)
+  * [Founders' Letter](https://blog.cloudflare.com/tag/founders-letter/)
+  * [France](https://blog.cloudflare.com/tag/france/)
+  * [Fraud](https://blog.cloudflare.com/tag/fraud/)
+  * [Free](https://blog.cloudflare.com/tag/free/)
+  * [Freedom of Speech](https://blog.cloudflare.com/tag/freedom-of-speech/)
+  * [Front End](https://blog.cloudflare.com/tag/front-end/)
+  * [Full Stack](https://blog.cloudflare.com/tag/full-stack/)
+  * [Full Stack Week](https://blog.cloudflare.com/tag/full-stack-week/)
+  * [Fun](https://blog.cloudflare.com/tag/fun/)
+  * [GA Week](https://blog.cloudflare.com/tag/ga-week/)
+  * [Gartner](https://blog.cloudflare.com/tag/gartner/)
+  * [Gatebot](https://blog.cloudflare.com/tag/gatebot/)
+  * [GDPR](https://blog.cloudflare.com/tag/gdpr/)
+  * [Gen X](https://blog.cloudflare.com/tag/gen-x/)
+  * [General Availability](https://blog.cloudflare.com/tag/general-availability/)
+  * [Generative AI](https://blog.cloudflare.com/tag/generative-ai/)
+  * [Geo Key Manager](https://blog.cloudflare.com/tag/geo-key-manager/)
+  * [Germany](https://blog.cloudflare.com/tag/germany/)
+  * [GitHub](https://blog.cloudflare.com/tag/github/)
+  * [Go](https://blog.cloudflare.com/tag/go/)
+  * [Google](https://blog.cloudflare.com/tag/google/)
+  * [Google Analytics](https://blog.cloudflare.com/tag/google-analytics/)
+  * [Google Cloud](https://blog.cloudflare.com/tag/google-cloud/)
+  * [Google Workspace](https://blog.cloudflare.com/tag/google-workspace/)
+  * [Government Innovation](https://blog.cloudflare.com/tag/government-innovation/)
+  * [Grace Hopper](https://blog.cloudflare.com/tag/grace-hopper/)
+  * [Grafana](https://blog.cloudflare.com/tag/grafana/)
+  * [GraphQL](https://blog.cloudflare.com/tag/graphql/)
+  * [Green](https://blog.cloudflare.com/tag/green/)
+  * [Grinch](https://blog.cloudflare.com/tag/grinch/)
+  * [Growth](https://blog.cloudflare.com/tag/growth/)
+  * [gRPC](https://blog.cloudflare.com/tag/grpc/)
+  * [Guest Post](https://blog.cloudflare.com/tag/guest-post/)
+  * [Hackathon](https://blog.cloudflare.com/tag/hackathon/)
+  * [Halloween](https://blog.cloudflare.com/tag/halloween/)
+  * [Hardware](https://blog.cloudflare.com/tag/hardware/)
+  * [HashiCorp](https://blog.cloudflare.com/tag/hashicorp/)
+  * [Hertzbleed](https://blog.cloudflare.com/tag/hertzbleed/)
+  * [Heuristics](https://blog.cloudflare.com/tag/heuristics/)
+  * [History](https://blog.cloudflare.com/tag/history/)
+  * [Holidays](https://blog.cloudflare.com/tag/holidays/)
+  * [Holocaust](https://blog.cloudflare.com/tag/holocaust/)
+  * [Hong Kong](https://blog.cloudflare.com/tag/hongkong/)
+  * [Hosting Con](https://blog.cloudflare.com/tag/hostingcon/)
+  * [Hostnames](https://blog.cloudflare.com/tag/hostnames/)
+  * [HTTP2](https://blog.cloudflare.com/tag/http2/)
+  * [HTTP3](https://blog.cloudflare.com/tag/http3/)
+  * [HTTPS](https://blog.cloudflare.com/tag/https/)
+  * [Human Rights](https://blog.cloudflare.com/tag/human-rights/)
+  * [Hurricane](https://blog.cloudflare.com/tag/hurricane/)
+  * [Hybrid Cloud](https://blog.cloudflare.com/tag/hybrid-cloud/)
+  * [Hyperdrive](https://blog.cloudflare.com/tag/hyperdrive/)
+  * [I'm Under Attack Mode](https://blog.cloudflare.com/tag/iuam/)
+  * [IBM](https://blog.cloudflare.com/tag/ibm/)
+  * [ICANN](https://blog.cloudflare.com/tag/icann/)
+  * [iCloud Private Relay](https://blog.cloudflare.com/tag/icloud-private-relay/)
+  * [Identity](https://blog.cloudflare.com/tag/identity/)
+  * [IETF](https://blog.cloudflare.com/tag/ietf/)
+  * [IETF Standards](https://blog.cloudflare.com/tag/ietf-standards/)
+  * [IL4](https://blog.cloudflare.com/tag/il4/)
+  * [Image Optimization](https://blog.cloudflare.com/tag/image-optimization/)
+  * [Image Recognition](https://blog.cloudflare.com/tag/image-recognition/)
+  * [Image Resizing](https://blog.cloudflare.com/tag/image-resizing/)
+  * [Image Storage](https://blog.cloudflare.com/tag/image-storage/)
+  * [Impact](https://blog.cloudflare.com/tag/impact/)
+  * [Impact Week](https://blog.cloudflare.com/tag/impact-week/)
+  * [Incident Report](https://blog.cloudflare.com/tag/incident-report/)
+  * [Incident Response](https://blog.cloudflare.com/tag/incident-response/)
+  * [India](https://blog.cloudflare.com/tag/india/)
+  * [Indicators of Compromise](https://blog.cloudflare.com/tag/indicators-of-compromise/)
+  * [Indonesian](https://blog.cloudflare.com/tag/indonesian-id/)
+  * [Inference](https://blog.cloudflare.com/tag/inference/)
+  * [Infrastructure](https://blog.cloudflare.com/tag/infrastructure/)
+  * [Infrastructure as Code](https://blog.cloudflare.com/tag/infrastructure-as-code/)
+  * [Insights](https://blog.cloudflare.com/tag/insights/)
+  * [Intel](https://blog.cloudflare.com/tag/intel/)
+  * [Interconnection](https://blog.cloudflare.com/tag/interconnection/)
+  * [Internal DNS](https://blog.cloudflare.com/tag/internal-dns/)
+  * [Internet Performance](https://blog.cloudflare.com/tag/internet-performance/)
+  * [Internet Quality](https://blog.cloudflare.com/tag/internet-quality/)
+  * [Internet Regulation](https://blog.cloudflare.com/tag/internet-regulation/)
+  * [Internet Shutdown](https://blog.cloudflare.com/tag/internet-shutdown/)
+  * [Internet Summit](https://blog.cloudflare.com/tag/internet-summit/)
+  * [Internet Traffic](https://blog.cloudflare.com/tag/internet-traffic/)
+  * [Internet Trends](https://blog.cloudflare.com/tag/internet-trends/)
+  * [Internship Experience](https://blog.cloudflare.com/tag/internship-experience/)
+  * [Intrusion Detection](https://blog.cloudflare.com/tag/intrusion-detection/)
+  * [Investors](https://blog.cloudflare.com/tag/investors/)
+  * [IoCs](https://blog.cloudflare.com/tag/iocs/)
+  * [iOS](https://blog.cloudflare.com/tag/ios/)
+  * [IoT](https://blog.cloudflare.com/tag/iot/)
+  * [IPFS](https://blog.cloudflare.com/tag/ipfs/)
+  * [IPsec](https://blog.cloudflare.com/tag/ipsec/)
+  * [IPv4](https://blog.cloudflare.com/tag/ipv4/)
+  * [IPv6](https://blog.cloudflare.com/tag/ipv6/)
+  * [IRAP](https://blog.cloudflare.com/tag/irap/)
+  * [Israel](https://blog.cloudflare.com/tag/israel/)
+  * [Italy](https://blog.cloudflare.com/tag/italy/)
+  * [IWD](https://blog.cloudflare.com/tag/iwd/)
+  * [JAMstack](https://blog.cloudflare.com/tag/jamstack/)
+  * [Japan](https://blog.cloudflare.com/tag/japan/)
+  * [JavaScript](https://blog.cloudflare.com/tag/javascript/)
+  * [Jengo](https://blog.cloudflare.com/tag/jengo/)
+  * [Jengo Policy](https://blog.cloudflare.com/tag/jengo-policy/)
+  * [Joomla](https://blog.cloudflare.com/tag/joomla/)
+  * [Judeoflare](https://blog.cloudflare.com/tag/judeoflare/)
+  * [Kafka](https://blog.cloudflare.com/tag/kafka/)
+  * [Kernel](https://blog.cloudflare.com/tag/kernel/)
+  * [Key Value](https://blog.cloudflare.com/tag/key-value/)
+  * [Keyless SSL](https://blog.cloudflare.com/tag/keyless-ssl/)
+  * [KeyTrap](https://blog.cloudflare.com/tag/keytrap/)
+  * [Killnet](https://blog.cloudflare.com/tag/killnet/)
+  * [Korea](https://blog.cloudflare.com/tag/korea/)
+  * [Kubernetes](https://blog.cloudflare.com/tag/kubernetes/)
+  * [LangChain](https://blog.cloudflare.com/tag/langchain/)
+  * [Latency](https://blog.cloudflare.com/tag/latency/)
+  * [Latin America](https://blog.cloudflare.com/tag/latin-america/)
+  * [Latinflare](https://blog.cloudflare.com/tag/latinflare/)
+  * [LavaRand](https://blog.cloudflare.com/tag/lavarand/)
+  * [Lazarus group](https://blog.cloudflare.com/tag/lazarus-group/)
+  * [Leaked Credential Checks](https://blog.cloudflare.com/tag/leaked-credential-checks/)
+  * [Legal](https://blog.cloudflare.com/tag/legal/)
+  * [Legal Patents Sable](https://blog.cloudflare.com/tag/legal-patents-sable/)
+  * [LGBTQIA+](https://blog.cloudflare.com/tag/lgbtqia/)
+  * [Life at Cloudflare](https://blog.cloudflare.com/tag/life-at-cloudflare/)
+  * [Linux](https://blog.cloudflare.com/tag/linux/)
+  * [Lisbon](https://blog.cloudflare.com/tag/lisbon/)
+  * [Live Streaming](https://blog.cloudflare.com/tag/live-streaming/)
+  * [Llama](https://blog.cloudflare.com/tag/llama/)
+  * [LLM](https://blog.cloudflare.com/tag/llm/)
+  * [Load Balancing](https://blog.cloudflare.com/tag/loadbalancing/)
+  * [Localization](https://blog.cloudflare.com/tag/localization/)
+  * [Log Push](https://blog.cloudflare.com/tag/log-push/)
+  * [Log4J](https://blog.cloudflare.com/tag/log4j/)
+  * [Log4Shell](https://blog.cloudflare.com/tag/log4shell/)
+  * [Logging](https://blog.cloudflare.com/tag/logging/)
+  * [Logs](https://blog.cloudflare.com/tag/logs/)
+  * [LUA](https://blog.cloudflare.com/tag/lua/)
+  * [Machine Learning](https://blog.cloudflare.com/tag/machine-learning/)
+  * [Magecart](https://blog.cloudflare.com/tag/magecart/)
+  * [Magic Firewall](https://blog.cloudflare.com/tag/magic-firewall/)
+  * [Magic Network Monitoring](https://blog.cloudflare.com/tag/magic-network-monitoring/)
+  * [Magic Transit](https://blog.cloudflare.com/tag/magic-transit/)
+  * [Magic WAN](https://blog.cloudflare.com/tag/magic-wan/)
+  * [Magic WAN Connector](https://blog.cloudflare.com/tag/magic-wan-connector/)
+  * [Malicious JavaScript](https://blog.cloudflare.com/tag/malicious-javascript/)
+  * [Malware](https://blog.cloudflare.com/tag/malware/)
+  * [Managed Components](https://blog.cloudflare.com/tag/managed-components/)
+  * [Managed Rules](https://blog.cloudflare.com/tag/managed-rules/)
+  * [March of Cloudflare](https://blog.cloudflare.com/tag/march-of-cloudflare/)
+  * [MASQUE](https://blog.cloudflare.com/tag/masque/)
+  * [MCP](https://blog.cloudflare.com/tag/mcp/)
+  * [Meerkat](https://blog.cloudflare.com/tag/meerkat/)
+  * [MeetUp](https://blog.cloudflare.com/tag/meetup/)
+  * [Meris](https://blog.cloudflare.com/tag/meris/)
+  * [Message Protocol](https://blog.cloudflare.com/tag/message-protocol/)
+  * [Mexico](https://blog.cloudflare.com/tag/mexico/)
+  * [Micro-frontends](https://blog.cloudflare.com/tag/micro-frontends/)
+  * [Microsoft](https://blog.cloudflare.com/tag/microsoft/)
+  * [Microsoft 365](https://blog.cloudflare.com/tag/microsoft-365/)
+  * [Microsoft Azure](https://blog.cloudflare.com/tag/microsoft-azure/)
+  * [Middle East](https://blog.cloudflare.com/tag/middle-east/)
+  * [Migration Hub](https://blog.cloudflare.com/tag/migration-hub/)
+  * [Milestones](https://blog.cloudflare.com/tag/milestone/)
+  * [Miniflare](https://blog.cloudflare.com/tag/miniflare/)
+  * [Mirage](https://blog.cloudflare.com/tag/mirage/)
+  * [Mirai](https://blog.cloudflare.com/tag/mirai/)
+  * [Mitel](https://blog.cloudflare.com/tag/mitel/)
+  * [Mitigation](https://blog.cloudflare.com/tag/mitigation/)
+  * [Mixed Content Errors](https://blog.cloudflare.com/tag/mixed-content-errors/)
+  * [MLops](https://blog.cloudflare.com/tag/mlops/)
+  * [Mobile](https://blog.cloudflare.com/tag/mobile/)
+  * [Mobile SDK](https://blog.cloudflare.com/tag/mobile-sdk/)
+  * [Model Context Protocol](https://blog.cloudflare.com/tag/model-context-protocol/)
+  * [Moldova](https://blog.cloudflare.com/tag/moldova/)
+  * [Monitoring](https://blog.cloudflare.com/tag/monitoring/)
+  * [Multi-Cloud](https://blog.cloudflare.com/tag/multi-cloud/)
+  * [Multi-User](https://blog.cloudflare.com/tag/multi-user/)
+  * [MySQL](https://blog.cloudflare.com/tag/mysql/)
+  * [NaaS](https://blog.cloudflare.com/tag/naas/)
+  * [Net Neutrality](https://blog.cloudflare.com/tag/net-neutrality/)
+  * [Network](https://blog.cloudflare.com/tag/network/)
+  * [Network Interconnect](https://blog.cloudflare.com/tag/network-interconnect/)
+  * [Network Performance Update](https://blog.cloudflare.com/tag/network-performance-update/)
+  * [Network Protection](https://blog.cloudflare.com/tag/network-protection/)
+  * [Network Services](https://blog.cloudflare.com/tag/network-services/)
+  * [Networking](https://blog.cloudflare.com/tag/networking/)
+  * [New Year](https://blog.cloudflare.com/tag/new-year/)
+  * [NGINX](https://blog.cloudflare.com/tag/nginx/)
+  * [Ninjas](https://blog.cloudflare.com/tag/ninjas/)
+  * [NIST](https://blog.cloudflare.com/tag/nist/)
+  * [Node.js](https://blog.cloudflare.com/tag/node-js/)
+  * [North America](https://blog.cloudflare.com/tag/north-america/)
+  * [Notebooks](https://blog.cloudflare.com/tag/notebooks/)
+  * [Notifications](https://blog.cloudflare.com/tag/notifications/)
+  * [NSEC3](https://blog.cloudflare.com/tag/nsec3/)
+  * [OAuth](https://blog.cloudflare.com/tag/oauth/)
+  * [Observability](https://blog.cloudflare.com/tag/observability/)
+  * [Oceania](https://blog.cloudflare.com/tag/oceania/)
+  * [OCSP](https://blog.cloudflare.com/tag/ocsp/)
+  * [Offices](https://blog.cloudflare.com/tag/offices/)
+  * [Okta](https://blog.cloudflare.com/tag/okta/)
+  * [Olympics](https://blog.cloudflare.com/tag/olympics/)
+  * [Onboarding](https://blog.cloudflare.com/tag/onboarding/)
+  * [Open API](https://blog.cloudflare.com/tag/open-api/)
+  * [Open Source](https://blog.cloudflare.com/tag/open-source/)
+  * [OpenAI](https://blog.cloudflare.com/tag/openai/)
+  * [OpenBMC](https://blog.cloudflare.com/tag/open-bmc/)
+  * [OpenDNS](https://blog.cloudflare.com/tag/opendns/)
+  * [OpenSSL](https://blog.cloudflare.com/tag/openssl/)
+  * [OpenTelemetry ](https://blog.cloudflare.com/tag/opentelemetry/)
+  * [Optimization](https://blog.cloudflare.com/tag/optimization/)
+  * [Origin Rules](https://blog.cloudflare.com/tag/origin-rules/)
+  * [Outage](https://blog.cloudflare.com/tag/outage/)
+  * [Oxy](https://blog.cloudflare.com/tag/oxy/)
+  * [Pacific Northwest](https://blog.cloudflare.com/tag/pacific-northwest/)
+  * [Page Rules](https://blog.cloudflare.com/tag/page-rules/)
+  * [Page Shield](https://blog.cloudflare.com/tag/page-shield/)
+  * [Parallels](https://blog.cloudflare.com/tag/parallels/)
+  * [Partners](https://blog.cloudflare.com/tag/partners/)
+  * [Partnership](https://blog.cloudflare.com/tag/partnerships/)
+  * [Password-reuse](https://blog.cloudflare.com/tag/password-reuse/)
+  * [Passwords](https://blog.cloudflare.com/tag/passwords/)
+  * [Passwords (PT)](https://blog.cloudflare.com/tag/passwords-pt/)
+  * [Patents](https://blog.cloudflare.com/tag/patents/)
+  * [Pay Per Crawl](https://blog.cloudflare.com/tag/pay-per-crawl/)
+  * [PAYGO](https://blog.cloudflare.com/tag/paygo/)
+  * [Payments](https://blog.cloudflare.com/tag/payments/)
+  * [PCI Certified](https://blog.cloudflare.com/tag/pci-certified/)
+  * [Peering](https://blog.cloudflare.com/tag/peering/)
+  * [Performance](https://blog.cloudflare.com/tag/performance/)
+  * [Performance Optimization](https://blog.cloudflare.com/tag/performance-optimization/)
+  * [Phishing](https://blog.cloudflare.com/tag/phishing/)
+  * [php](https://blog.cloudflare.com/tag/php/)
+  * [Phython](https://blog.cloudflare.com/tag/phython/)
+  * [Pingora](https://blog.cloudflare.com/tag/pingora/)
+  * [Pipelines](https://blog.cloudflare.com/tag/pipelines/)
+  * [PlanetScale](https://blog.cloudflare.com/tag/planetscale/)
+  * [Plans](https://blog.cloudflare.com/tag/plans/)
+  * [Platform Engineering](https://blog.cloudflare.com/tag/platform-engineering/)
+  * [Platform Week](https://blog.cloudflare.com/tag/platform-week/)
+  * [Plesk](https://blog.cloudflare.com/tag/plesk/)
+  * [Policy & Legal](https://blog.cloudflare.com/tag/policy/)
+  * [Politics](https://blog.cloudflare.com/tag/politics/)
+  * [Portugal](https://blog.cloudflare.com/tag/portugal/)
+  * [Post Mortem](https://blog.cloudflare.com/tag/post-mortem/)
+  * [Post-Quantum](https://blog.cloudflare.com/tag/post-quantum/)
+  * [Postgres](https://blog.cloudflare.com/tag/postgres/)
+  * [Precursor](https://blog.cloudflare.com/tag/precursor/)
+  * [Prepared Statements](https://blog.cloudflare.com/tag/prepared-statements/)
+  * [Prisma](https://blog.cloudflare.com/tag/prisma/)
+  * [Privacy](https://blog.cloudflare.com/tag/privacy/)
+  * [Privacy Pass](https://blog.cloudflare.com/tag/privacy-pass/)
+  * [Privacy Week](https://blog.cloudflare.com/tag/privacy-week/)
+  * [Private IP](https://blog.cloudflare.com/tag/private-ip/)
+  * [Private Network](https://blog.cloudflare.com/tag/private-network/)
+  * [Product Design](https://blog.cloudflare.com/tag/product-design/)
+  * [Product News](https://blog.cloudflare.com/tag/product-news/)
+  * [Programming](https://blog.cloudflare.com/tag/programming/)
+  * [Programming (PT)](https://blog.cloudflare.com/tag/programming-pt/)
+  * [Project Fair Shot](https://blog.cloudflare.com/tag/project-fair-shot/)
+  * [Project Galileo](https://blog.cloudflare.com/tag/project-galileo/)
+  * [Project Honey Pot](https://blog.cloudflare.com/tag/project-honey-pot/)
+  * [Project Pangea](https://blog.cloudflare.com/tag/project-pangea/)
+  * [Project Safekeeping](https://blog.cloudflare.com/tag/project-safekeeping/)
+  * [Project Turpentine](https://blog.cloudflare.com/tag/project-turpentine/)
+  * [Prometheus](https://blog.cloudflare.com/tag/prometheus/)
+  * [Protocols](https://blog.cloudflare.com/tag/protocols/)
+  * [Proudflare](https://blog.cloudflare.com/tag/proudflare/)
+  * [Proxying](https://blog.cloudflare.com/tag/proxying/)
+  * [Public Sector](https://blog.cloudflare.com/tag/public-sector/)
+  * [Python](https://blog.cloudflare.com/tag/python/)
+  * [Python Workers](https://blog.cloudflare.com/tag/python-workers/)
+  * [Quantization](https://blog.cloudflare.com/tag/quantization/)
+  * [Queues](https://blog.cloudflare.com/tag/queues/)
+  * [QUIC](https://blog.cloudflare.com/tag/quic/)
+  * [QUICHE](https://blog.cloudflare.com/tag/quiche/)
+  * [Quicksilver](https://blog.cloudflare.com/tag/quicksilver/)
+  * [R2](https://blog.cloudflare.com/tag/r2/)
+  * [R2 Super Slurper](https://blog.cloudflare.com/tag/r2-super-slurper/)
+  * [Radar](https://blog.cloudflare.com/tag/cloudflare-radar/)
+  * [Radar Alerts](https://blog.cloudflare.com/tag/radar-alerts/)
+  * [Radar API](https://blog.cloudflare.com/tag/radar-api/)
+  * [Radar Maps](https://blog.cloudflare.com/tag/radar-maps/)
+  * [Railgun](https://blog.cloudflare.com/tag/railgun/)
+  * [Randomness](https://blog.cloudflare.com/tag/randomness/)
+  * [Ransom Attacks](https://blog.cloudflare.com/tag/ransom-attacks/)
+  * [Rapid Reset](https://blog.cloudflare.com/tag/rapid-reset/)
+  * [Raspberry Pi](https://blog.cloudflare.com/tag/raspberry-pi/)
+  * [Rate Limiting](https://blog.cloudflare.com/tag/rate-limiting/)
+  * [RC4](https://blog.cloudflare.com/tag/rc4/)
+  * [RDDoS](https://blog.cloudflare.com/tag/rddos/)
+  * [React](https://blog.cloudflare.com/tag/react/)
+  * [Reading List](https://blog.cloudflare.com/tag/reading-list/)
+  * [Real-time](https://blog.cloudflare.com/tag/real-time/)
+  * [Recruiting](https://blog.cloudflare.com/tag/recruiting/)
+  * [Regional Services](https://blog.cloudflare.com/tag/regional-services/)
+  * [Registrar](https://blog.cloudflare.com/tag/registrar/)
+  * [Reliability](https://blog.cloudflare.com/tag/reliability/)
+  * [Remote Browser Isolation](https://blog.cloudflare.com/tag/remote-browser-isolation/)
+  * [Remote Desktop Protocol ](https://blog.cloudflare.com/tag/remote-desktop-protocol/)
+  * [Remote Work](https://blog.cloudflare.com/tag/remote-work/)
+  * [Replication](https://blog.cloudflare.com/tag/replication/)
+  * [Research](https://blog.cloudflare.com/tag/research/)
+  * [Resolver](https://blog.cloudflare.com/tag/resolver/)
+  * [Restreaming](https://blog.cloudflare.com/tag/restreaming/)
+  * [Retreat](https://blog.cloudflare.com/tag/retreat/)
+  * [Reverse Engineering](https://blog.cloudflare.com/tag/reverse-engineering/)
+  * [REvil](https://blog.cloudflare.com/tag/revil/)
+  * [Risk Management](https://blog.cloudflare.com/tag/risk-management/)
+  * [Road to Zero Trust](https://blog.cloudflare.com/tag/road-to-zero-trust/)
+  * [Rocket Loader](https://blog.cloudflare.com/tag/rocketloader/)
+  * [RocksDB](https://blog.cloudflare.com/tag/rocksdb/)
+  * [Routing](https://blog.cloudflare.com/tag/routing/)
+  * [Routing Security](https://blog.cloudflare.com/tag/routing-security/)
+  * [RPC](https://blog.cloudflare.com/tag/rpc/)
+  * [RPKI](https://blog.cloudflare.com/tag/rpki/)
+  * [RRDNS](https://blog.cloudflare.com/tag/rrdns/)
+  * [RSA](https://blog.cloudflare.com/tag/rsa/)
+  * [Russia](https://blog.cloudflare.com/tag/russia/)
+  * [Rust](https://blog.cloudflare.com/tag/rust/)
+  * [Rust Workers](https://blog.cloudflare.com/tag/rust-workers/)
+  * [SaaS](https://blog.cloudflare.com/tag/saas/)
+  * [SAAS Security](https://blog.cloudflare.com/tag/saas-security/)
+  * [Sable](https://blog.cloudflare.com/tag/sable/)
+  * [Salt](https://blog.cloudflare.com/tag/salt/)
+  * [Sampling](https://blog.cloudflare.com/tag/sampling/)
+  * [Sandbox](https://blog.cloudflare.com/tag/sandbox/)
+  * [SASE](https://blog.cloudflare.com/tag/sase/)
+  * [Save The Web](https://blog.cloudflare.com/tag/savetheweb/)
+  * [SDK](https://blog.cloudflare.com/tag/sdk/)
+  * [Search Engine](https://blog.cloudflare.com/tag/search-engine/)
+  * [Secrets Store](https://blog.cloudflare.com/tag/secrets-store/)
+  * [Secure Web Gateway](https://blog.cloudflare.com/tag/secure-web-gateway/)
+  * [Security](https://blog.cloudflare.com/tag/security/)
+  * [Security Analytics](https://blog.cloudflare.com/tag/security-analytics/)
+  * [Security Center](https://blog.cloudflare.com/tag/security-center/)
+  * [Security Posture](https://blog.cloudflare.com/tag/security-posture/)
+  * [Security Posture Management](https://blog.cloudflare.com/tag/security-posture-management/)
+  * [Security Service Edge](https://blog.cloudflare.com/tag/security-service-edge/)
+  * [Security Week](https://blog.cloudflare.com/tag/security-week/)
+  * [security.txt](https://blog.cloudflare.com/tag/security-txt/)
+  * [SEO](https://blog.cloudflare.com/tag/seo/)
+  * [Server Push](https://blog.cloudflare.com/tag/server-push/)
+  * [Serverless](https://blog.cloudflare.com/tag/serverless/)
+  * [Serverless (PT)](https://blog.cloudflare.com/tag/serverless-pt/)
+  * [Serverless AI](https://blog.cloudflare.com/tag/serverless-ai/)
+  * [Serverless Week](https://blog.cloudflare.com/tag/serverless-week/)
+  * [Servers](https://blog.cloudflare.com/tag/servers/)
+  * [SIEM](https://blog.cloudflare.com/tag/siem/)
+  * [Signed Exchanges (SXG)](https://blog.cloudflare.com/tag/signed-exchanges/)
+  * [SIM](https://blog.cloudflare.com/tag/sim/)
+  * [Singapore](https://blog.cloudflare.com/tag/singapore/)
+  * [Single Sign On (SSO)](https://blog.cloudflare.com/tag/sso/)
+  * [Smart Placement](https://blog.cloudflare.com/tag/smart-placement/)
+  * [Smart Shield](https://blog.cloudflare.com/tag/smart-shield/)
+  * [Snippets](https://blog.cloudflare.com/tag/snippets/)
+  * [SOC as a Service](https://blog.cloudflare.com/tag/soc-as-a-service/)
+  * [South Africa](https://blog.cloudflare.com/tag/south-africa/)
+  * [South America](https://blog.cloudflare.com/tag/south-america/)
+  * [Spain](https://blog.cloudflare.com/tag/spain/)
+  * [spdy](https://blog.cloudflare.com/tag/spdy/)
+  * [Spectrum](https://blog.cloudflare.com/tag/spectrum/)
+  * [Speed](https://blog.cloudflare.com/tag/speed/)
+  * [Speed & Reliability](https://blog.cloudflare.com/tag/speed-and-reliability/)
+  * [Speed Brain](https://blog.cloudflare.com/tag/speed-brain/)
+  * [Speed Week](https://blog.cloudflare.com/tag/speed-week/)
+  * [Spoofing](https://blog.cloudflare.com/tag/spoofing/)
+  * [Sports](https://blog.cloudflare.com/tag/sports/)
+  * [SQL](https://blog.cloudflare.com/tag/sql/)
+  * [SRE](https://blog.cloudflare.com/tag/sre/)
+  * [SSE](https://blog.cloudflare.com/tag/sse/)
+  * [SSH](https://blog.cloudflare.com/tag/ssh/)
+  * [SSL](https://blog.cloudflare.com/tag/ssl/)
+  * [Standards](https://blog.cloudflare.com/tag/standards/)
+  * [Startup Enterprise Plan](https://blog.cloudflare.com/tag/startup-enterprise-plan/)
+  * [Statistics](https://blog.cloudflare.com/tag/statistics/)
+  * [StopTheHacker](https://blog.cloudflare.com/tag/stopthehacker/)
+  * [Storage](https://blog.cloudflare.com/tag/storage/)
+  * [Sumo Logic](https://blog.cloudflare.com/tag/sumo-logic/)
+  * [Super Bowl](https://blog.cloudflare.com/tag/super-bowl/)
+  * [Supercloud](https://blog.cloudflare.com/tag/supercloud/)
+  * [Supply Chain Attacks](https://blog.cloudflare.com/tag/supply-chain-attacks/)
+  * [Support](https://blog.cloudflare.com/tag/support/)
+  * [Sustainability](https://blog.cloudflare.com/tag/sustainability/)
+  * [SWAG](https://blog.cloudflare.com/tag/swag/)
+  * [SWG](https://blog.cloudflare.com/tag/swg/)
+  * [Swift](https://blog.cloudflare.com/tag/swift/)
+  * [Switzerland](https://blog.cloudflare.com/tag/switzerland/)
+  * [SXSW](https://blog.cloudflare.com/tag/sxsw/)
+  * [SYN](https://blog.cloudflare.com/tag/syn/)
+  * [SYN Flood](https://blog.cloudflare.com/tag/syn-flood/)
+  * [Syria](https://blog.cloudflare.com/tag/syria/)
+  * [TCP](https://blog.cloudflare.com/tag/tcp/)
+  * [Team](https://blog.cloudflare.com/tag/team/)
+  * [Teams Dashboard](https://blog.cloudflare.com/tag/teams-dashboard/)
+  * [Tech Talks](https://blog.cloudflare.com/tag/tech-talks/)
+  * [TechCrunch](https://blog.cloudflare.com/tag/techcrunch/)
+  * [Technical Writing](https://blog.cloudflare.com/tag/technical-writing/)
+  * [Terraform](https://blog.cloudflare.com/tag/terraform/)
+  * [Testimonials](https://blog.cloudflare.com/tag/testimonials/)
+  * [Testing](https://blog.cloudflare.com/tag/testing/)
+  * [Texas](https://blog.cloudflare.com/tag/texas/)
+  * [Thanksgiving](https://blog.cloudflare.com/tag/thanksgiving/)
+  * [The Serverlist Newsletter](https://blog.cloudflare.com/tag/serverlist/)
+  * [Threat Data](https://blog.cloudflare.com/tag/threat-data/)
+  * [Threat Feeds](https://blog.cloudflare.com/tag/threat-feeds/)
+  * [Threat Intelligence](https://blog.cloudflare.com/tag/threat-intelligence/)
+  * [Threat Operations](https://blog.cloudflare.com/tag/threat-operations/)
+  * [Threat Report](https://blog.cloudflare.com/tag/threat-report/)
+  * [Threats](https://blog.cloudflare.com/tag/threats/)
+  * [Tiered Cache](https://blog.cloudflare.com/tag/tiered-cache/)
+  * [TikTok](https://blog.cloudflare.com/tag/tiktok/)
+  * [TLS](https://blog.cloudflare.com/tag/tls/)
+  * [TLS 1.3](https://blog.cloudflare.com/tag/tls-1-3/)
+  * [Tools](https://blog.cloudflare.com/tag/tools/)
+  * [Tor](https://blog.cloudflare.com/tag/tor/)
+  * [Tracing](https://blog.cloudflare.com/tag/tracing/)
+  * [Traffic](https://blog.cloudflare.com/tag/traffic/)
+  * [Transform Rules](https://blog.cloudflare.com/tag/transform-rules/)
+  * [Transparency](https://blog.cloudflare.com/tag/transparency/)
+  * [Trends](https://blog.cloudflare.com/tag/trends/)
+  * [Trust & Safety](https://blog.cloudflare.com/tag/trust-and-safety/)
+  * [TTFB](https://blog.cloudflare.com/tag/ttfb/)
+  * [TTL](https://blog.cloudflare.com/tag/ttl/)
+  * [TURN](https://blog.cloudflare.com/tag/turn/)
+  * [TURN Server](https://blog.cloudflare.com/tag/turn-server/)
+  * [Turnstile](https://blog.cloudflare.com/tag/turnstile/)
+  * [TypeScript](https://blog.cloudflare.com/tag/typescript/)
+  * [UDP](https://blog.cloudflare.com/tag/udp/)
+  * [Ukraine](https://blog.cloudflare.com/tag/ukraine/)
+  * [United Kingdom](https://blog.cloudflare.com/tag/united-kingdom/)
+  * [Universal SSL](https://blog.cloudflare.com/tag/universal-ssl/)
+  * [URL Scanner](https://blog.cloudflare.com/tag/url-scanner/)
+  * [USA](https://blog.cloudflare.com/tag/usa/)
+  * [User Research](https://blog.cloudflare.com/tag/user-research/)
+  * [VDI](https://blog.cloudflare.com/tag/vdi/)
+  * [Vectorize](https://blog.cloudflare.com/tag/vectorize/)
+  * [Vetflare](https://blog.cloudflare.com/tag/vetflare/)
+  * [Video](https://blog.cloudflare.com/tag/video/)
+  * [Visibility](https://blog.cloudflare.com/tag/visibility/)
+  * [Vite](https://blog.cloudflare.com/tag/vite/)
+  * [VoIP](https://blog.cloudflare.com/tag/voip/)
+  * [VPC](https://blog.cloudflare.com/tag/vpc/)
+  * [VPN](https://blog.cloudflare.com/tag/vpn/)
+  * [Vulnerabilities](https://blog.cloudflare.com/tag/vulnerabilities/)
+  * [WAF](https://blog.cloudflare.com/tag/waf/)
+  * [WAF Attack Score](https://blog.cloudflare.com/tag/waf-attack-score/)
+  * [WAF Rules](https://blog.cloudflare.com/tag/waf-rules/)
+  * [Waiting Room](https://blog.cloudflare.com/tag/waiting-room/)
+  * [WARP](https://blog.cloudflare.com/tag/warp/)
+  * [WARP Connector](https://blog.cloudflare.com/tag/warp-connector/)
+  * [WASM](https://blog.cloudflare.com/tag/wasm/)
+  * [Web Application Firewall](https://blog.cloudflare.com/tag/web-application-firewall/)
+  * [Web Asset Discovery](https://blog.cloudflare.com/tag/web-asset-discovery/)
+  * [Web3](https://blog.cloudflare.com/tag/web3/)
+  * [WebAssembly](https://blog.cloudflare.com/tag/webassembly/)
+  * [Webinars](https://blog.cloudflare.com/tag/webinars/)
+  * [WebMCP](https://blog.cloudflare.com/tag/webmcp/)
+  * [WebP](https://blog.cloudflare.com/tag/webp/)
+  * [WebRTC](https://blog.cloudflare.com/tag/webrtc/)
+  * [WebSockets](https://blog.cloudflare.com/tag/websockets/)
+  * [Wildebeest](https://blog.cloudflare.com/tag/wildebeest/)
+  * [Womenflare](https://blog.cloudflare.com/tag/womenflare/)
+  * [WordPress](https://blog.cloudflare.com/tag/wordpress/)
+  * [Workers AI](https://blog.cloudflare.com/tag/workers-ai/)
+  * [Workers Launchpad](https://blog.cloudflare.com/tag/workers-launchpad/)
+  * [Workers Logs](https://blog.cloudflare.com/tag/workers-logs/)
+  * [Workers Observability](https://blog.cloudflare.com/tag/workers-observability/)
+  * [Workers Sites](https://blog.cloudflare.com/tag/workers-sites/)
+  * [Workers Unbound](https://blog.cloudflare.com/tag/workers-unbound/)
+  * [Workers VPC](https://blog.cloudflare.com/tag/workers-vpc/)
+  * [Workflows](https://blog.cloudflare.com/tag/workflows/)
+  * [World IPv6 Day](https://blog.cloudflare.com/tag/world-ipv6-day/)
+  * [Wrangler](https://blog.cloudflare.com/tag/wrangler/)
+  * [x402](https://blog.cloudflare.com/tag/x402/)
+  * [Year in Review](https://blog.cloudflare.com/tag/year-in-review/)
+  * [Z3](https://blog.cloudflare.com/tag/z3/)
+  * [Zaraz](https://blog.cloudflare.com/tag/zaraz/)
+  * [Zero Day Threats](https://blog.cloudflare.com/tag/zero-day-threats/)
+  * [Zero Trust](https://blog.cloudflare.com/tag/zero-trust/)
+  * [Zero Trust Week](https://blog.cloudflare.com/tag/zero-trust-week/)
+  * [Zone Versioning](https://blog.cloudflare.com/tag/zone-versioning/)
+  * [Artificial Intelligence](https://blog.cloudflare.com/tag/artificial-intelligence/)
+  * [Workers](https://blog.cloudflare.com/tag/workers-1/)
+  * [Client-Side Security](https://blog.cloudflare.com/tag/client-side-security/)
+  * [Architecture](https://blog.cloudflare.com/tag/architecture/)
+  * [Multi-tenant Secuity](https://blog.cloudflare.com/tag/multi-tenant-secuity/)
+  * [Multi-tenant Security](https://blog.cloudflare.com/tag/multi-tenant-security/)
+  * [cf](https://blog.cloudflare.com/tag/cf/)
+  * [BEACON](https://blog.cloudflare.com/tag/beacon/)
+
+
+
+[HTTPS](https://blog.cloudflare.com/tag/https/)[Research](https://blog.cloudflare.com/tag/research/)[Security](https://blog.cloudflare.com/tag/security/)[SSL](https://blog.cloudflare.com/tag/ssl/)
+
+[Certificate Authority](https://blog.cloudflare.com/tag/certificate-authority/)[Certificate Transparency](https://blog.cloudflare.com/tag/certificate-transparency/)[Cryptography](https://blog.cloudflare.com/tag/cryptography/)[HTTPS](https://blog.cloudflare.com/tag/https/)[Research](https://blog.cloudflare.com/tag/research/)[Security](https://blog.cloudflare.com/tag/security/)[SSL](https://blog.cloudflare.com/tag/ssl/)
+
+March 23, 2018
+
+# Introducing Certificate Transparency and Nimbus
+
+![Nick Sullivan](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW44NXK9203HP874YB09STY7.jpg&w=64&h=64&f=webp&fit=cover&position=center)
+
+[Nick Sullivan](https://blog.cloudflare.com/author/nick-sullivan/)
+
+16 minute read
+
+COPY URL
+
+![Introducing Certificate Transparency and Nimbus](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW44BPD8QBW59GFHESM4DDVV.png&w=714&h=332&f=webp&fit=cover&position=center)![](data:image/bmp;base64,Qk32BAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAATCwAAEwsAAAAAAAAAAAAA4Of/3eb71+Pz0uLu0uTw1OTz0uHvz9vm2eX/1uT80eHzzd/szN7ry93tytrqx9bj1eb/1OX/0OP1zd/rydvoxtfpw9TnwdLi3e7/3O7/2+v51+bv0eDry9rrx9bqxdXm8P3/8Pz/7/n/6/T44+312+b11uHz1N/v////////////////+P3/7/b/6fD/5+36////////////////////////+fz/9/j//////////////////////////v///fz/)
+
+Certificate Transparency (CT) is an ambitious project to help improve security online by bringing accountability to the system that protects HTTPS. Cloudflare is announcing support for this project by introducing two new public-good services:
+
+  * _Nimbus_ : A free and open certificate transparency log
+  * [ _Merkle Town_](https://ct.cloudflare.com): A dashboard for exploring the certificate transparency ecosystem
+
+
+
+In this blog post we’ll explain what Certificate Transparency is and how it will become a critical tool for ensuring user safety online. It’s important for website operators and certificate authorities to learn about CT as soon as possible, because participating in CT becomes mandatory in Chrome for all certificates issued after April 2018. We’ll also explain how Nimbus works and how CT uses a structure called a Merkle tree to scale to the point of supporting all trusted certificates on the Internet. For more about Merkle Town, read the [follow up post](https://blog.cloudflare.com/a-tour-through-merkle-town-cloudflares-ct-ecosystem-dashboard/) by my colleague Patrick Donahue.
+
+### Trust and Accountability
+
+Everything we do online requires a baseline level of trust. When you use a browser to visit your bank’s website or your favorite social media site, you expect that the server on the other side of the connection is operated by the organization indicated in the address bar. This expectation is based on trust, and this trust is supported by a system called the web [Public Key Infrastructure](https://en.wikipedia.org/wiki/Public_key_infrastructure) (web PKI).
+
+From a high level, a PKI is similar to a system of notaries who can grant servers the authority to serve websites by giving them a signed object called a digital certificate. This certificate contains the name of the website, the name of the organization that requested the certificate, how long it’s valid for, and a public key. For each public key, there is an associated private key. In order to serve an HTTPS site with a given certificate, the server needs to prove ownership of the associated private key.
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![image8](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW44A7CPFQVY7S09WHM348BJ.png&w=715&h=650&f=webp&fit=cover&position=center)
+
+Sites obtain digital certificates from trusted third parties called Certificate Authorities (CAs). CAs validate the operator’s ownership of a domain before issuing them a certificate. If the issuing CA for a certificate is trusted by the browser, then that certificate can be used to serve content over HTTPS to visitors of the site. All this happens under the hood of the browser and is only surfaced to user by the little green lock in your address bar, or a nasty error message if things go wrong.
+
+The Web’s PKI is an elaborate and complicated system. There are dozens of organizations that operate the certificate authorities trusted by popular browsers. Different browsers manage their own “root programs” in which they choose which certificate authorities are trusted. Becoming a trusted CA often requires passing an audit ([WebTrust for CAs](https://cabforum.org/webtrust-for-cas/)) and promising to follow a set of rules called the [Baseline Requirements](https://cabforum.org/baseline-requirements-documents/). These rules are set by a standards body called the CA/Browser forum, which consists of browsers and CAs. Each root program has their own application process and program-specific guidelines.
+
+This system works great, until it doesn’t. As a system of trust, there are many ways for the PKI to fail. One of the risks inherent in the web PKI is that any certificate authority can issue any certificate for any website. That means that the [Hong Kong Post Office](https://bugzilla.mozilla.org/show_bug.cgi?id=408949) can issue a certificate valid for gmail.com or facebook.com, and every browser will trust it. This forces users to put a lot of faith in certificate authorities and hope they don’t misbehave by issuing a certificate to the wrong person. Even worse, if a CA gets hacked, then an attacker could issue any certificate without the CA knowing, putting users at an even greater risk.
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![image11](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW454J1K6WRG25GB4P3PC1TA.png&w=715&h=1177&f=webp&fit=cover&position=center)
+
+If someone manages to get a certificate for a site that isn’t theirs, they can impersonate that site to its visitors and steal their information. To get a sense of how many CAs are trusted by popular browsers, [here’s the list](https://ccadb-public.secure.force.com/mozilla/IncludedCACertificateReport) of the 160 trusted CAs in Firefox. Microsoft and Apple maintain their own lists, which are comparably long (Cloudflare keeps track of these lists in our [cfssl_trust](https://github.com/cloudflare/cfssl_trust) repository). By trusting all of these organizations implicitly when you browse the internet, users bear the risk of certificate authority misbehavior.
+
+What’s missing from the PKI is accountability. If a mis-issued certificate is used to target an individual, there is no feedback mechanism to let anyone know that the CA misbehaved.
+
+This is not a theoretical situation. In 2011, DigiNotar, a Dutch CA, [was hacked](https://threatpost.com/final-report-diginotar-hack-shows-total-compromise-ca-servers-103112/77170/). The hacker used their access to the CA to issue a certificate for *.google.com. They then attempted to use this certificate to impersonate Gmail and targeted users in Iran in an attempt to compromise their personal information.
+
+The attack was detected by Google using a technique called public key pinning. Key pinning is a [risky technique](https://blog.qualys.com/ssllabs/2016/09/06/is-http-public-key-pinning-dead) and only viable for very technically savvy organizations. The value provided by key pinning is usually overshadowed by the operational risk it introduces. It’s often considered the canonical example of a “foot gun” mechanism. Key pinning is being [deprecated by browsers](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/he9tr7p3rZ8).
+
+If key pinning is not the solution, what can be done to detect CA malfeasance? This is where Certificate Transparency comes in. The goal of CT is to make all certificates public so that mis-issued certificates can be detected and appropriate action taken. This helps bring accountability to balance the trust we collectively place in the fragile web PKI.
+
+### Shining a light
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![image12](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW45801HYSG0RH7NKSWV5MHA.jpg&w=715&h=478&f=webp&fit=cover&position=center)
+
+[Creative Commons Zero (CC0) - angele-j](https://www.pexels.com/@angele-j-35172)
+
+If all certificates are public, then so are mis-issued certificates. Certificate Transparency brings accountability to the web PKI using a technology called a blockchain an append-only public ledger, an ordered list. It puts trusted certificates into a list and makes that list available to anyone. That sounds easy, but given the decentralized nature of the internet, there are many challenges in making this a reliable bedrock for accountability.
+
+The CT ecosystem is an extension of the PKI that introduces additional participants and roles. Along with browsers and CAs, new parties are introduced to play a role in the overall health of the system. These parties are:
+
+  * Log operators
+  * Auditors
+  * Monitors
+
+
+
+At a high level, a _log operator_ is someone who manages the list of certificates than can only be added to. If someone submits a browser-trusted certificate to a log, it must be incorporated into the list within a pre-set grace period called a maximum merge delay (MMD), which is usually 24 hours. The log gives the submitter back a receipt, called a Signed Certificate Timestamp (SCT). An SCT is a promise to include the certificate in the log within the grace period. You can interact with a CT log via the CT API (defined in [RFC 6962](https://tools.ietf.org/html/rfc6962)).
+
+An _auditor_ is a third party that keeps log operators honest. They query logs from various vantage points on the internet and [gossip](https://tools.ietf.org/html/draft-ietf-trans-gossip-05) with each other about what order certificates are in. They’re like the paparazzi of the PKI. They also keep track of whether an SCT has been honored or not by measuring the time it took between the SCT’s timestamp and the corresponding certificate showing up in the log. Along with being a dashboard, the Merkle Town backend is also an auditor; it has even [detected issues in other logs](https://groups.google.com/a/chromium.org/forum/#!msg/ct-policy/92HIh2vG6GA/hBEHxcpoCgAJ).
+
+A _monitor_ is a service that helps alert websites of mis-issuance. It crawls logs for new certificates and alerts website owners if a new certificate is found for their domain. Popular monitors include SSLMate’s [CertSpotter](https://sslmate.com/certspotter/) and Facebook’s [Certificate Transparency Monitoring](https://developers.facebook.com/tools/ct/). Cloudflare is planning on offering a free log monitoring service integrated into the Cloudflare dashboard for customers by the end of the year.
+
+#### Letting browsers know that certificates are logged
+
+One way to push the web to adopt CT is for browsers to start requiring website certificates to be logged. Validating that a certificate is logged by querying logs directly when a connection is made is a potential privacy issue (exposing browser history to a third party), and adds latency. Instead, a better way to ensure that a certificate is logged is to require the server to present SCTs, the inclusion receipts described in the last section.
+
+There are multiple ways that an SCT can be presented to the client. The most popular way to is to embed the SCTs into the certificate when it’s issued. This involves the CA submitting a pre-certificate, a precursor to a certificate, to various CT logs to obtain SCTs before finalizing the certificate.
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![image10](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW44MG6J0FBDCREY8KZR8HCS.png&w=715&h=581&f=webp&fit=cover&position=center)
+
+For certificates that don’t have SCTs embedded, a server has other mechanisms to transmit SCTs to the client. SCTs can be included in the connection as a [TLS extension](https://medium.com/@davetempleton/enabling-a-certificate-transparency-tls-extension-in-nginx-489b3b804f89), or in a [stapled OCSP response](https://en.wikipedia.org/wiki/OCSP_stapling). These mechanisms are more difficult to do reliably, but they allow any certificate to be included in CT.
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![image14](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW48T0P8VBPYVCV6EPREEEKC.png&w=715&h=650&f=webp&fit=cover&position=center)
+
+A certificate with embedded SCTs
+
+#### Browser CT requirements
+
+Not all logs are created equally. A malicious CA could collude with a set of logs to create a certificate and a set of SCTs and not ever incorporate the certificate into the logs. This certificate could then be used to attack users. To protect the ecosystem from collusion risks, the browsers that support CT have chosen to only accept SCTs from a list of vetted logs that are actively audited. There are also diversity requirements: logs should be managed by different entities on different infrastructures to avoid collusion and shared outages. Connections are said to be “CT Qualified” if they provide the client with enough SCTs from vetted logs to suit the risk profile of the certificate.
+
+In order for a connection to be CT qualified in Chrome, it has to follow Chrome’s [CT Policy](https://github.com/chromium/ct-policy/blob/master/ct_policy.md). For most certificates, this means an SCT needs to be presented for at least one Google and one non-Google log trusted by Chrome. Long-lived certificates more than two SCTs.
+
+In order to become trusted by Chrome, a CT log must submit itself for inclusion and pass a 90 day monitoring period in which it must pass some stringent requirements including the following:
+
+  * Have no outage that exceeds an MMD (maximum merge delay) of more than 24 hours
+  * Have 99% uptime, with no outage lasting longer than the MMD (as measured by Google)
+  * Incorporate a certificate for which an SCT has been issued by the Log within the MMD
+  * Maintain the append-only property of the of the Log by providing consistent views of the Merkle Tree at all times and to all parties
+
+
+
+The full policy is [here](https://github.com/chromium/ct-policy/blob/master/log_policy.md). The complete list of vetted logs is available [here](https://www.gstatic.com/ct/log_list/log_list.json). Nimbus, Cloudflare’s family of CT logs, was included in Chrome 65, which is the current stable version of the Browser.
+
+#### All or nothing
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![image2](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW45FJ2MP1NRJ7B1C115Y85X.jpg&w=715&h=477&f=webp&fit=cover&position=center)
+
+[Creative Commons Attribution-Share Alike 3.0 - Gorskiya](https://commons.wikimedia.org/wiki/File:CISV_trust_game.JPG)
+
+CT only protects users if all certificates are logged. If a CA issues a certificate that is not logged in CT and will be trusted by browsers, then users can still be subject to targeted attacks.
+
+For the last few years, Chrome has [required all Extended Validation (EV) certificates](https://www.certificate-transparency.org/ev-ct-plan) to be CT qualified. Cloudflare has been making sure all that connections to Cloudflare are CT Qualified for Chrome and have been since May 2017. This is done using an automatic submission service related to our recent OCSP [stapling project](https://blog.cloudflare.com/high-reliability-ocsp-stapling/) and the SCT TLS extension. We monitor whether or not the set of SCTs we provide is conformant with browser policies using the [Expect-CT header](https://tools.ietf.org/html/draft-ietf-httpbis-expect-ct-03), which reports client errors back to our servers. Expect CT is included in every HTTPS response Cloudflare serves.
+
+This isn’t enough. As long as there are certificates that are trusted by browsers that are not required to be CT Qualified, then users are at risk. This is why the Chrome team announced that they will require Certificate Transparency for all newly issued, publicly trusted certificates starting in [April 2018](https://groups.google.com/a/chromium.org/forum/#!topic/ct-policy/sz_3W_xKBNY).
+
+#### Changes for Certificate Authorities
+
+The safest way to make sure a certificate is always CT qualified when shown to a browser is to embed enough SCTs from vetted logs to conform to the browser’s policy. This is a big operational change for some CAs, because
+
+  * It adds the additional step of having to understand which SCTs are required for different browsers’ CT policies and keeping up to date with policy changes
+  * It adds a step in the issuance process where pre-certificates are to different logs before the certificate is issued
+  * Some CT logs may have outages or be slow to respond, so fallback strategies may be required to not delay issuance
+
+
+
+If you’re a CA operator and are struggling to implement this or worried about the additional delay caused by submitting pre-certificates to logs, Cloudflare can help. We’re offering an experimental API for CAs that takes pre-certificates and returns a valid set of SCTs for a given certificate. This API handles sorting out the browser policies and leverages [Argo Smart Routing](https://www.cloudflare.com/argo/) to return SCTs with as little delay as possible. Please contact our CT team at [ct-logs@cloudflare.com](mailto:ct-logs@cloudflare.com) if you have any interest in this offering.
+
+### Building a verifiable globally consistent log
+
+The PKI is huge. The [industry-wide push for HTTPS](https://blog.cloudflare.com/https-or-bust-chromes-plan-to-label-sites-as-not-secure/) has introduced millions of new certificates into the web PKI. There are over a quarter-billion(!) certificates logged in CT, and this number is growing by almost a million per day. This number is sure to grow as we approach Chrome’s April deadline. Managing a high availability database of this size that you can only add to (a property called append-only) is a substantial engineering challenge.
+
+The naïve data structure to use for an append-only database is a hash chain. In a hash chain, elements are aligned in order and combined using a [one-way hash function](https://simple.wikipedia.org/wiki/Cryptographic_hash_function) like SHA-256. The diagram below describes how a hash chain is created from a list of values d1 to d8. Start with the first element, d1, which is hashed to a value a, which then becomes the head of the chain. Every time an element is added to the chain, a hash function is computed over two inputs: the current chain head and the new element. This hash value become the new chain head. Because one-way hash functions can’t be reversed, it’s computationally infeasible to change a value without it changing the entire chain that has been computed from it. This makes a hash chain’s history very difficult to modify maliciously.
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![image7](https://blog.cloudflare.com/_emdash/api/media/file/01KW45MY3R4N9ZBTBKKKB0FBSR.gif)
+
+A hash chain is the optimal data structure for inserting new elements: only one hash needs to be computed for each element added. However, it is not an efficient data structure for validating whether an element is correctly included in a chain given a chain head. In the example below, there are six additional elements (b, d4-d8) needed to validate that d3 is correct on a chain of 8 values. You need approximately n/2 elements to verify an average element in a chain of length n. In computer science terms, this is called “linear scaling.”
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![image4](https://blog.cloudflare.com/_emdash/api/media/file/01KW47M29HZEBFPBBWVMR9ARSN.gif)
+
+When building a system, it’s best to try to reduce complexity for the participants involved. For CT, the main participants we care about are the log operator and the auditor. If we were to choose a hash chain as our data structure, the job of the log operator would be easy but that of the auditor would be very hard. We can do better.
+
+When you ask a computer scientist how to optimize an algorithm, nine out of ten times, the solution they will suggest is to use a tree (the other 1/10 times, they’ll suggest a [Bloom filter](https://en.wikipedia.org/wiki/Bloom_filter)). That’s exactly what we can do here. Specifically, we can use a data structure called a Merkle Tree. It’s like a hash chain, but rather than hashing elements in a line, you hash them in pairs.
+
+For each new element, instead of hashing it into a running total, you arrange the elements into a [balanced binary tree](https://en.wikipedia.org/wiki/Binary_tree) and compute the hash of the element with its sibling. This gives you half as many hashes as elements. These hashes are then arranged in pairs and hashed together to create the next level of the tree. This continues until you have one element, the top of the tree; this is called the tree head. Adding a new value to a Merkle tree requires the modification of at most one hash per level in the tree, following the path from the element up to the tree head.
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![image11](https://blog.cloudflare.com/_emdash/api/media/file/01KW451120ZYB6G8VFYZRZTCG6.gif)
+
+The depth of a binary tree is [logarithmic](https://en.wikipedia.org/wiki/Logarithmic_scale) with respect to the number of elements. Roughly speaking, if the tree size is 8 = 2^3, then the depth is 4 (= 3+1), if it’s 1024 = 2^10 then the tree depth is 11 (= 10+1), for 1048576 = 2^20 the tree size is 21 (= 20+1). The cost of insertion is at most log_2(size), which is worse than in a hash chain, but generally not too bad.
+
+What makes the Merkle tree so useful is the efficiency of element validation. Instead of having to compute n/2 hashes like in a hash chain, you only need the elements in the tree that lead you to the root. This is called the co-path. In the diagram below, the co-path is computed for d3.
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![image5](https://blog.cloudflare.com/_emdash/api/media/file/01KW45YW7MR6S36XMASSR5Q7XG.gif)
+
+The copath consists of one value per level of the tree. The computation necessary to prove that an element is correct (an inclusion proof) is therefore logarithmic, not linear as in the case of a hash tree. Both insertion and validation are cheap relative to the size of the tree, making a Merkle tree the ideal data structure for CT.
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![image6](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW455DMV3VME1QQ6FDMMKCJG.png&w=715&h=491&f=webp&fit=cover&position=center)
+
+A certificate transparency log is a Merkle tree where the leaf elements are certificates. Each log has a private key that it uses to sign the current tree head at regular intervals. Some CT logs are huge with over a hundred million entries, but because of the efficiency of Merkle trees, inclusion proofs only require around 30 hashes. This structure provides a good balance between the cost to the log operator of adding certificates and the cost to the auditor of validating its consistency.
+
+### Nimbus
+
+Our own addition to the log ecosystem is Nimbus. Nimbus is a family of Certificate Transparency logs with an open acceptance policy. Nimbus accepts any certificate that is signed by a CA from our [cfssl_trust](https://github.com/cloudflare/cfssl_trust) root store. The logs are organized by year, e.g. Nimbus 2018, Nimbus 2019, etc. with each log only accepting certificates that expire in that year.
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![image8-1](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW45PGMXT24638ECAPYZHBT5.png&w=376&h=492&f=webp&fit=cover&position=center)
+
+Nimbus is built with [Trillian](https://github.com/google/trillian), a Go-based implementation of a scalable Merkle tree. The data backend is custom, re-using components from Cloudflare’s high [capacity logging infrastructure](https://blog.cloudflare.com/how-cloudflare-analyzes-1m-dns-queries-per-second/), which runs entirely on Cloudflare’s bare metal infrastructure. Having a high-reliability and completely open log that is not dependent on shared cloud infrastructure adds insurance in case of outages. Nimbus is intended to bring diversity and stability to the CT ecosystem, and in the end, make the internet safer for everyone.
+
+On this page
+
+Discuss Online
+
+[](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Fblog.cloudflare.com%2Fintroducing-certificate-transparency-and-nimbus%2F&t=Introducing%20Certificate%20Transparency%20and%20Nimbus)[](https://x.com/intent/post?text=Introducing+Certificate+Transparency+and+Nimbus&url=https%3A%2F%2Fblog.cloudflare.com%2Fintroducing-certificate-transparency-and-nimbus%2F)[](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fblog.cloudflare.com%2Fintroducing-certificate-transparency-and-nimbus%2F)[](https://bsky.app/intent/compose?text=Introducing+Certificate+Transparency+and+Nimbus+https%3A%2F%2Fblog.cloudflare.com%2Fintroducing-certificate-transparency-and-nimbus%2F)[](https://mastodonshare.com/?text=Introducing+Certificate+Transparency+and+Nimbus&url=https%3A%2F%2Fblog.cloudflare.com%2Fintroducing-certificate-transparency-and-nimbus%2F)[](https://www.threads.net/intent/post?text=Introducing+Certificate+Transparency+and+Nimbus+https%3A%2F%2Fblog.cloudflare.com%2Fintroducing-certificate-transparency-and-nimbus%2F)
+
+## Related tags
+
+[Certificate Authority](https://blog.cloudflare.com/tag/certificate-authority/)[Certificate Transparency](https://blog.cloudflare.com/tag/certificate-transparency/)[Cryptography](https://blog.cloudflare.com/tag/cryptography/)[HTTPS](https://blog.cloudflare.com/tag/https/)[Research](https://blog.cloudflare.com/tag/research/)[Security](https://blog.cloudflare.com/tag/security/)[SSL](https://blog.cloudflare.com/tag/ssl/)
+
+Follow on Social Media
+
+  * ![Cloudflare](https://blog.cloudflare.com/images/placeholder__cloudflare.png)Cloudflare
+
+[](https://blog.cloudflare.com/rss/)[](https://x.com/Cloudflare)[](https://www.linkedin.com/company/cloudflare-inc-)[](https://www.youtube.com/cloudflare)[](https://instagram.com/cloudflare)[](https://github.com/cloudflare)[](https://bsky.app/profile/cloudflare.social)[](https://www.threads.com/@cloudflare)[](https://www.tiktok.com/@cloudflare)
+
+  * ![Nick Sullivan](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW44NXK9203HP874YB09STY7.jpg&w=64&h=64&f=webp&fit=cover&position=center)[Nick Sullivan](https://blog.cloudflare.com/author/nick-sullivan/)
+
+[](https://crypto.dance)[](https://x.com/grittygrease)
+
+
+
+
+## Subscribe to receive notifications of new posts
+
+Email address
+
+We’ll never share your email address.
+
+Subscribe
+
+Thanks for subscribing! Check your inbox to confirm.

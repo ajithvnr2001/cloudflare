@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/timescaledb-art/",
+  "file": "_subdomains/blog.cloudflare.com/timescaledb-art.md",
+  "title": "How TimescaleDB helped us scale analytics and reporting | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:10.363066+00:00",
+  "html_len": 345744,
+  "md_len": 86718,
+  "depth": 0,
+  "phase": 2
+}

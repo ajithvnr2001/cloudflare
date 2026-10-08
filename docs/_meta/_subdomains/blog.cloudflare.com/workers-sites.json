@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/workers-sites/",
+  "file": "_subdomains/blog.cloudflare.com/workers-sites.md",
+  "title": "Workers Sites: Deploy Your Website Directly on our Network | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:06.538602+00:00",
+  "html_len": 294277,
+  "md_len": 63925,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/end-cloudflare-captcha/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/end-cloudflare-captcha.md",
+  "title": "La fin de la route pour les CAPTCHA de Cloudflare | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:45.066595+00:00",
+  "html_len": 234504,
+  "md_len": 38366,
+  "depth": 0,
+  "phase": 2
+}

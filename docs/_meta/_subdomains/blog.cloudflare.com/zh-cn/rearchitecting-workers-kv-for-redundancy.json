@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/rearchitecting-workers-kv-for-redundancy/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/rearchitecting-workers-kv-for-redundancy.md",
+  "title": "\u91cd\u65b0\u8bbe\u8ba1 Workers KV\uff0c\u4ee5\u63d0\u9ad8\u53ef\u7528\u6027\u548c\u66f4\u5feb\u7684\u6027\u80fd | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:58.349652+00:00",
+  "html_len": 210706,
+  "md_len": 30912,
+  "depth": 0,
+  "phase": 2
+}

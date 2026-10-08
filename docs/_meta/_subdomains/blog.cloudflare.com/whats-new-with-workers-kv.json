@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/whats-new-with-workers-kv/",
+  "file": "_subdomains/blog.cloudflare.com/whats-new-with-workers-kv.md",
+  "title": "What\u2019s new with Workers KV? | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:33.561512+00:00",
+  "html_len": 315854,
+  "md_len": 65374,
+  "depth": 0,
+  "phase": 2
+}

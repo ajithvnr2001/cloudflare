@@ -1,0 +1,107 @@
+---
+url: https://developers.cloudflare.com/agent-memory/
+title: Cloudflare Agent Memory docs \u00b7 Cloudflare Agent Memory docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:04:05.193416+00:00
+---
+
+# Cloudflare Agent Memory docs · Cloudflare Agent Memory docs
+
+> Source: https://developers.cloudflare.com/agent-memory/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /Agent Memory
+
+
+
+# Agent Memory
+
+Last updated Jun 2, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/agent-memory/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewFeaturesRelated productsMore resources
+
+Persistent, scoped memory for agents that need to remember users, organizations, and domain-specific context across conversations.
+
+Note
+
+Agent Memory is in private beta. To understand the memory model, refer to [How Agent Memory works](https://developers.cloudflare.com/agent-memory/concepts/how-agent-memory-works/).
+
+Agent Memory gives agents durable memory across conversations without requiring you to build your own extraction, storage, search, and summarization pipeline. Ingest conversations to extract memories automatically, or explicitly remember information when your application already knows what to store.
+
+Use Agent Memory to remember user preferences, company operating rules, support history, project state, or the state of a specific object.
+
+**Agent Memory gives you:**
+
+  * Isolated profiles for users, agents, tenants, teams, or application entities
+  * Namespaces for separating applications, environments, or memory layers
+  * Automatic extraction of facts, events, instructions, and tasks from conversations
+  * APIs to add, list, recall, and delete memories
+  * Profile summaries for observing what Agent Memory remembers
+
+[Get started](https://developers.cloudflare.com/agent-memory/get-started/) [Learn how it works](https://developers.cloudflare.com/agent-memory/concepts/how-agent-memory-works/)
+
+* * *
+
+## Features
+
+[Scoped memory profiles](https://developers.cloudflare.com/agent-memory/concepts/namespaces-profiles/)
+
+Store memories in isolated profiles for users, agents, teams, tenants, or application entities. Use namespaces to separate applications, environments, or memory layers.
+
+Learn about profiles
+
+[Automatic memory extraction](https://developers.cloudflare.com/agent-memory/api/workers-api/#ingest-conversations)
+
+Ingest conversations to extract memories automatically, or explicitly add important information when your agent already knows what should be remembered.
+
+Review the API
+
+[Recall memories across agent executions](https://developers.cloudflare.com/agent-memory/api/workers-api/#recall-memories)
+
+Retrieve relevant memory when an agent needs durable context that is not present in the current prompt, conversation, or execution.
+
+Recall memories
+
+* * *
+
+## Related products
+
+[Workers](https://developers.cloudflare.com/workers/)
+
+Agent Memory is accessed through a Worker binding. Build serverless applications that use persistent memory.
+
+[Agents](https://developers.cloudflare.com/agents/)
+
+Build AI-powered agents with persistent state, tool use, and real-time communication.
+
+* * *
+
+## More resources
+
+### [Get started](https://developers.cloudflare.com/agent-memory/get-started/)
+
+Add durable memory recall and ingestion to an agent.
+
+### [How Agent Memory works](https://developers.cloudflare.com/agent-memory/concepts/how-agent-memory-works/)
+
+Learn how Agent Memory extracts, classifies, and retrieves knowledge from conversations.
+
+### [Workers API](https://developers.cloudflare.com/agent-memory/api/workers-api/)
+
+Use Agent Memory from a Worker through an `agent_memory` binding.
+
+### [HTTP API](https://developers.cloudflare.com/agent-memory/api/http-api/)
+
+Use Agent Memory from services that call the Cloudflare API directly.
+
+### [Limits](https://developers.cloudflare.com/agent-memory/platform/limits/)
+
+Review validation limits and constraints for Agent Memory.
+
+[NextGet started](https://developers.cloudflare.com/agent-memory/get-started/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/agent-memory/index.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

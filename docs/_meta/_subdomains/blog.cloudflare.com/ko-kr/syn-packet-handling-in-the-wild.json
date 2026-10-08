@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/syn-packet-handling-in-the-wild/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/syn-packet-handling-in-the-wild.md",
+  "title": "SYN \ud328\ud0b7 \ucc98\ub9ac \uc2e4\uc81c\u200b | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:33.247113+00:00",
+  "html_len": 244867,
+  "md_len": 39523,
+  "depth": 0,
+  "phase": 2
+}

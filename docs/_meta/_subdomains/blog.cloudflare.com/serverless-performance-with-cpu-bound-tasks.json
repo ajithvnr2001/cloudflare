@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/serverless-performance-with-cpu-bound-tasks/",
+  "file": "_subdomains/blog.cloudflare.com/serverless-performance-with-cpu-bound-tasks.md",
+  "title": "Comparing Serverless Performance for CPU Bound Tasks | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:27.652551+00:00",
+  "html_len": 300925,
+  "md_len": 66688,
+  "depth": 0,
+  "phase": 2
+}

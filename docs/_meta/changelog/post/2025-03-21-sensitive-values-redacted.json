@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/changelog/post/2025-03-21-sensitive-values-redacted/",
+  "file": "changelog/post/2025-03-21-sensitive-values-redacted.md",
+  "title": "Cloudflare Terraform Provider now properly redacts sensitive values \u00b7 Changelog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:06:08.450722+00:00",
+  "html_len": 61445,
+  "md_len": 1756,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/dublin-ireland-cloudflares-38th-data-center/",
+  "file": "_subdomains/blog.cloudflare.com/dublin-ireland-cloudflares-38th-data-center.md",
+  "title": "Dublin, Ireland: CloudFlare's 38th data center | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:45.356797+00:00",
+  "html_len": 268358,
+  "md_len": 55633,
+  "depth": 0,
+  "phase": 2
+}

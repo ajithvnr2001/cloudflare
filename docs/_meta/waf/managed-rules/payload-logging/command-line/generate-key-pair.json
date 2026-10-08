@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/managed-rules/payload-logging/command-line/generate-key-pair/",
+  "file": "waf/managed-rules/payload-logging/command-line/generate-key-pair.md",
+  "title": "Generate a key pair in the command line \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:44.191947+00:00",
+  "html_len": 136743,
+  "md_len": 2826,
+  "depth": 0
+}

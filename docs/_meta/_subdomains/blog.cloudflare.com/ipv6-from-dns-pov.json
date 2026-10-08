@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ipv6-from-dns-pov/",
+  "file": "_subdomains/blog.cloudflare.com/ipv6-from-dns-pov.md",
+  "title": "Using DNS to estimate the worldwide state of IPv6 adoption | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:41.544185+00:00",
+  "html_len": 307079,
+  "md_len": 72592,
+  "depth": 0,
+  "phase": 2
+}

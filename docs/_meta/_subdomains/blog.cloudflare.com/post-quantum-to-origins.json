@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/post-quantum-to-origins/",
+  "file": "_subdomains/blog.cloudflare.com/post-quantum-to-origins.md",
+  "title": "Cloudflare now uses post-quantum cryptography to talk to your origin server | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:10.014311+00:00",
+  "html_len": 332161,
+  "md_len": 79102,
+  "depth": 0,
+  "phase": 2
+}

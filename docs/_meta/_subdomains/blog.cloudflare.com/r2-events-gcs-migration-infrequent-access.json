@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/r2-events-gcs-migration-infrequent-access/",
+  "file": "_subdomains/blog.cloudflare.com/r2-events-gcs-migration-infrequent-access.md",
+  "title": "R2 adds event notifications, support for migrations from Google Cloud Storage, and an infrequent access storage tier | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:30.644314+00:00",
+  "html_len": 297519,
+  "md_len": 62919,
+  "depth": 0,
+  "phase": 2
+}

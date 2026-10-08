@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/enjoy-a-slice-of-quic-and-rust/",
+  "file": "_subdomains/blog.cloudflare.com/enjoy-a-slice-of-quic-and-rust.md",
+  "title": "Enjoy a slice of QUIC, and Rust! | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:01.480597+00:00",
+  "html_len": 273435,
+  "md_len": 59454,
+  "depth": 0,
+  "phase": 2
+}

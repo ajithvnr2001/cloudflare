@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/observability/issues/investigate/",
+  "file": "workers/observability/issues/investigate.md",
+  "title": "Investigate issues \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:35.323538+00:00",
+  "html_len": 192991,
+  "md_len": 5453,
+  "depth": 0
+}

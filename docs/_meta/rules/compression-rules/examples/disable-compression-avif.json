@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/compression-rules/examples/disable-compression-avif/",
+  "file": "rules/compression-rules/examples/disable-compression-avif.md",
+  "title": "Disable compression for AVIF images \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:47.346557+00:00",
+  "html_len": 137120,
+  "md_len": 3944,
+  "depth": 0
+}

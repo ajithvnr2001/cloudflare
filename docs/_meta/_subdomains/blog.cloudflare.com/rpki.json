@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/rpki/",
+  "file": "_subdomains/blog.cloudflare.com/rpki.md",
+  "title": "RPKI - The required cryptographic upgrade to BGP routing | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:25:07.628952+00:00",
+  "html_len": 324621,
+  "md_len": 81155,
+  "depth": 1
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/training-a-million-models-per-day-to-save-customers-of-all-sizes-from-ddos/",
+  "file": "_subdomains/blog.cloudflare.com/training-a-million-models-per-day-to-save-customers-of-all-sizes-from-ddos.md",
+  "title": "Training a million models per day to save customers of all sizes from DDoS attacks | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:33.391435+00:00",
+  "html_len": 297598,
+  "md_len": 69569,
+  "depth": 0,
+  "phase": 2
+}

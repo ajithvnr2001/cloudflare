@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/wa-technology/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/wa-technology.md",
+  "title": "WA.Technology & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:55.054673+00:00",
+  "html_len": 214309,
+  "md_len": 9714,
+  "depth": 0,
+  "phase": 2
+}

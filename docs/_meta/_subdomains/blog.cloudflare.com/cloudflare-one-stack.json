@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-one-stack/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-one-stack.md",
+  "title": "Introducing the Cloudflare One stack- agent-powered deployment | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:45.958953+00:00",
+  "html_len": 281844,
+  "md_len": 62007,
+  "depth": 0,
+  "phase": 2
+}

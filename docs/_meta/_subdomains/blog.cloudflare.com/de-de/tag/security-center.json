@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/tag/security-center/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/tag/security-center.md",
+  "title": "Beitr\u00e4ge mit dem Tag \"Security Center\" \u2014 Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:17:00.244920+00:00",
+  "html_len": 117918,
+  "md_len": 4038,
+  "depth": 1,
+  "phase": 2
+}

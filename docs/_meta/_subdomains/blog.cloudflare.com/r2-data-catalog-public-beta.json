@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/r2-data-catalog-public-beta/",
+  "file": "_subdomains/blog.cloudflare.com/r2-data-catalog-public-beta.md",
+  "title": "R2 Data Catalog: Managed Apache Iceberg tables with zero egress fees | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:15.456301+00:00",
+  "html_len": 314895,
+  "md_len": 65786,
+  "depth": 0,
+  "phase": 2
+}

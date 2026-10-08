@@ -1,0 +1,162 @@
+---
+url: https://blog.cloudflare.com/zh-cn/tag/developer-platform/
+title: \u6807\u7b7e\u4e3a\"\u5f00\u53d1\u4eba\u5458\u5e73\u53f0\"\u7684\u6587\u7ae0 \u2014 Cloudflare \u535a\u5ba2
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T08:11:15.225146+00:00
+---
+
+# 标签为"开发人员平台"的文章 — Cloudflare 博客
+
+> Source: https://blog.cloudflare.com/zh-cn/tag/developer-platform/
+
+标签
+
+# 开发人员平台
+
+[订阅 开发人员平台 RSS 源](https://blog.cloudflare.com/zh-cn/tag/developer-platform/rss)
+
+2026年9月29日## [Cloudflare 2026年度创始人致函](https://blog.cloudflare.com/zh-cn/cloudflares-2026-annual-founders-letter/)
+
+自 2010 年 9 月 27 日 Cloudflare 成立以来，互联网经历了前所未有的变化。随着自动化流量超过人类活动，我们思考 AI 智能体的崛起、新一代创作者的出现，以及我们如何帮助 Web 构建一个公平、可持续的未来。
+
+![Matthew Prince](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW44KQ4Z9PY1TR0ERGW96HZR.jpeg&w=64&h=64&f=webp&fit=cover&position=center)![Michelle Zatlyn](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW48BFVBX36HA6NMPMG9SE5F.png&w=64&h=64&f=webp&fit=cover&position=center)
+
+[Matthew Prince](https://blog.cloudflare.com/zh-cn/author/matthew-prince/)和[Michelle Zatlyn](https://blog.cloudflare.com/zh-cn/author/michelle-zatlyn/)
+
+2026年9月29日## [当扫描器漏掉攻击时：Cloudflare Client-Side Security 如何保护网店](https://blog.cloudflare.com/zh-cn/client-side-security-finds-4-malicious-campaigns/)
+
+现代网店的页面看起来可能一切正常，而恶意 JavaScript 却在暗中悄然窃取收益、劫持点击或篡改 Analytics 数据。了解 Cloudflare 的机器学习 (ML) 模型如何揭示隐蔽的客户端攻击，以供分析师深入调查。
+
+![Juan Miguel Cejuela \(Juanmi\)](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01M2NNGNXWKEB20VGBSJG0NW3S.01M2NNGPWD0KA2CVW0JDYVNXRG.png&w=64&h=64&f=webp&fit=cover&position=center)![Zhiyuan Zheng](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW44H03CGFSDPVGKTC145T2G.jpg&w=64&h=64&f=webp&fit=cover&position=center)![Denzil Correa](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW48B6V73R1DF1YQBSAN5YFJ.png&w=64&h=64&f=webp&fit=cover&position=center)
+
+[Juan Miguel Cejuela (Juanmi)](https://blog.cloudflare.com/zh-cn/author/juan-miguel-cejuela/)、[Zhiyuan Zheng](https://blog.cloudflare.com/zh-cn/author/xmflsct/)和[Denzil Correa](https://blog.cloudflare.com/zh-cn/author/denzil-correa/)
+
+2026年9月9日## [从全有或全无到基于任务的 OAuth 授权](https://blog.cloudflare.com/zh-cn/task-based-oauth-consent/)
+
+Cloudflare OAuth 现已支持可选范围，让用户对应用程序的访问权限拥有更多控制权，同时帮助开发者围绕具体任务构建安全的授权流程。
+
+![Miller Vargas](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01M0E2HM2Z37MDHV3RTS1N280R.jpg&w=64&h=64&f=webp&fit=cover&position=center)![Adam Bouhmad](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW46V48CPK64MWTYNSCVTA3E.webp&w=64&h=64&f=webp&fit=cover&position=center)![José Enrique Rodríguez](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01M0E2KF6STNPG58C7R3CDSF28.jpg&w=64&h=64&f=webp&fit=cover&position=center)
+
+[Miller Vargas](https://blog.cloudflare.com/zh-cn/author/miller-vargas/)、[Adam Bouhmad](https://blog.cloudflare.com/zh-cn/author/adam-bouhmad/)和[José Enrique Rodríguez](https://blog.cloudflare.com/zh-cn/author/jose-enrique-rodriguez/)
+
+2026年9月9日## [一键保护所有内部应用，无论是否经过“氛围编码”](https://blog.cloudflare.com/zh-cn/workers-protected-by-access/)
+
+全新推出 Cloudflare Access for Workers。将 Access 策略直接绑定到 Worker，即可在该 Worker 运行的所有位置自动生效——路由、自定义域、workers.dev 及预览环境，全面覆盖。
+
+![Chythra Malapati](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KZW0HX4HHXGH027XF9NKB8X0.jpg&w=64&h=64&f=webp&fit=cover&position=center)![Matt Rothenberg](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KZW0HWV9Q9VTDJZXEVZDWDCP.webp&w=64&h=64&f=webp&fit=cover&position=center)![Matt Provost](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KZW0HZ5QA2K86ATYSMSAQXYC.jpg&w=64&h=64&f=webp&fit=cover&position=center)
+
+[Chythra Malapati](https://blog.cloudflare.com/zh-cn/author/chythra-malapati/)、[Matt Rothenberg](https://blog.cloudflare.com/zh-cn/author/matt-rothenberg/)和[Matt Provost](https://blog.cloudflare.com/zh-cn/author/matt-provost/)
+
+2026年8月13日## [Agents Week 总结](https://blog.cloudflare.com/zh-cn/agents-week-review-august-2026/)
+
+我们最新的 Agents Week 已圆满结束。本文回顾期间发布的所有公告：从 Wallets 到 Radar。
+
+![Shelley Jones](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW48R153ZF4GWNZYC0QQPY6F.png&w=64&h=64&f=webp&fit=cover&position=center)![Ann Ming Samborski](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW46MY1PMDMM9JK9SM0E02KA.png&w=64&h=64&f=webp&fit=cover&position=center)![Kathy Liao](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW45CCSZ168NDHJPTF31M9JS.png&w=64&h=64&f=webp&fit=cover&position=center)
+
+[Shelley Jones](https://blog.cloudflare.com/zh-cn/author/shelley/)、[Ann Ming Samborski](https://blog.cloudflare.com/zh-cn/author/ann-ming-samborski/)和[Kathy Liao](https://blog.cloudflare.com/zh-cn/author/kathy/)
+
+2026年8月10日## [构建开放的智能体式互联网：可读、可发现、可调用、可支付](https://blog.cloudflare.com/zh-cn/the-agentic-internet/)
+
+智能体（agnet）是一种新型的访客。它们不渲染 CSS 或点击广告，但另一端有付费的人类用户。阻止他们就是阻止您的客户。我们正在打造开放的工具和协议，以便内容发布者和智能体能够合作而不是相互冲突。
+
+![Jack Galilee](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KZA3MX64PMX25X6GHJWTCKYT.jpg&w=64&h=64&f=webp&fit=cover&position=center)![Will Papper](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KWW2PWAJT5VPPRZ9Y73A1FEB.webp&w=64&h=64&f=webp&fit=cover&position=center)![Andrew Galloni](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW467820APNFQVPB01C3445A.jpg&w=64&h=64&f=webp&fit=cover&position=center)
+
+[Jack Galilee](https://blog.cloudflare.com/zh-cn/author/jack-galilee/)、[Will Papper](https://blog.cloudflare.com/zh-cn/author/will-papper/)和[Andrew Galloni](https://blog.cloudflare.com/zh-cn/author/andrew-galloni/)
+
+2026年8月10日## [利用身份感知分析检测异常 AI 行为](https://blog.cloudflare.com/zh-cn/identity-aware-ai-gateway/)
+
+身份感知 AI Gateway 现已开放测试版。User Insights 将这些流量转化为每个人和智能体的行为基线，并在内部风险出现时立即标记。
+
+![Ming Lu](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW449KZ4869TJZZSHHFJXPTB.png&w=64&h=64&f=webp&fit=cover&position=center)![Kenny Johnson](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW471W94YNK8KYMJEK8P7RHD.jpeg&w=64&h=64&f=webp&fit=cover&position=center)![Ayush Kumar](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW449VZTK4C95VB94E47SS8C.png&w=64&h=64&f=webp&fit=cover&position=center)
+
+[Ming Lu](https://blog.cloudflare.com/zh-cn/author/ming-lu/)、[Kenny Johnson](https://blog.cloudflare.com/zh-cn/author/kenny/)和[Ayush Kumar](https://blog.cloudflare.com/zh-cn/author/ayush/)
+
+2026年8月10日## [Cloudflare OS：面向智能体、应用和工作的开放平台](https://blog.cloudflare.com/zh-cn/cloudflare-os/)
+
+Cloudflare OS 是一个开源平台，根据组织的知识体系与运作方式定制，让其中每位成员都能构建应用、自动化工作流并安全访问内部系统
+
+![Phillip Jones](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW47CA63Q819PPAR7M8DTNQ3.jpg&w=64&h=64&f=webp&fit=cover&position=center)![Dan Carter](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW46BJJATPEKV6ZZ0N22HHVH.png&w=64&h=64&f=webp&fit=cover&position=center)
+
+[Phillip Jones](https://blog.cloudflare.com/zh-cn/author/phillip/)和[Dan Carter](https://blog.cloudflare.com/zh-cn/author/dan-carter/)
+
+2026年8月7日## [Cloudflare 现已推出 Agent Development Lifecycle（智能体开发生命周期）](https://blog.cloudflare.com/zh-cn/agent-development-lifecycle/)
+
+智能体能够以更快速度生成代码，而团队往往不能及时进行审查、部署与维护。今天，我们推出智能体开发生命周期（Agent Development Lifecycle，ADLC），以及支撑它的 Cloudflare 原语。
+
+![Brendan Irvine-Broque](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW49H9641F9RZN2BA8BPX7HK.JPG&w=64&h=64&f=webp&fit=cover&position=center)
+
+[Brendan Irvine-Broque](https://blog.cloudflare.com/zh-cn/author/brendan-irvine-broque/)
+
+2026年8月7日## [Cloudflare Wallets 正式发布：为智能体式互联网打造的可编程钱包](https://blog.cloudflare.com/zh-cn/wallets/)
+
+Cloudflare Wallets 将为 AI 智能体面向 Web 的原生支付和可验证身份。使用 x402 协议，智能体可以在明确的安全护栏内自主购买 API 和内容。 
+
+![Will Papper](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KWW2PWAJT5VPPRZ9Y73A1FEB.webp&w=64&h=64&f=webp&fit=cover&position=center)
+
+[Will Papper](https://blog.cloudflare.com/zh-cn/author/will-papper/)
+
+2026年8月4日## [欢迎参加 Agents Week](https://blog.cloudflare.com/zh-cn/agents-week-welcome/)
+
+Agents Week 探讨云基础设施必须如何演进，以服务于自主智能体而非人类用户。欢迎加入我们，一同深入探讨智能体原生网络所需的存储、执行与安全基础组件。
+
+![Rita Kozlov](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW4775C0A7PYM3T9XKH4PH9J.png&w=64&h=64&f=webp&fit=cover&position=center)
+
+[Rita Kozlov](https://blog.cloudflare.com/zh-cn/author/rita/)
+
+2026年6月24日## [使用面向所有客户的 OAuth，解锁 Cloudflare 应用生态系统的潜力](https://blog.cloudflare.com/zh-cn/oauth-for-all/)
+
+自托管 OAuth 现已面向所有 Cloudflare 开发人员开放。以下是我们执行核心 OAuth 引擎零停机时间迁移，以实现目标的具体做法。
+
+![Sam Cabell](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW9WMQHZ06NRJ1P977MAN3W6.webp&w=64&h=64&f=webp&fit=cover&position=center)![Mike Escalante](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW49ABPBC57VY77RQCNPXWNP.jpg&w=64&h=64&f=webp&fit=cover&position=center)![Adam Bouhmad](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW46V48CPK64MWTYNSCVTA3E.webp&w=64&h=64&f=webp&fit=cover&position=center)![Nick Comer](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW9WMBJG5ZDTS3AWWAWA2DVW.webp&w=64&h=64&f=webp&fit=cover&position=center)
+
+[Sam Cabell](https://blog.cloudflare.com/zh-cn/author/sam-cabell/)、[Mike Escalante](https://blog.cloudflare.com/zh-cn/author/mike-escalante/)、[Adam Bouhmad](https://blog.cloudflare.com/zh-cn/author/adam-bouhmad/)和[Nick Comer](https://blog.cloudflare.com/zh-cn/author/nick-comer/)
+
+2026年5月21日## [宣布 Cloudflare CASB 支持 Claude Compliance API](https://blog.cloudflare.com/zh-cn/casb-anthropic-integration/)
+
+Cloudflare 现已与 Claude Compliance API 集成，安全团队可以直接在 Cloudflare 仪表板中监控 Claude Enterprise 活动。 
+
+![Abe Carryl](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW46JJ6YPQY3M4A69P72QXE8.jpeg&w=64&h=64&f=webp&fit=cover&position=center)
+
+[Abe Carryl](https://blog.cloudflare.com/zh-cn/author/abe/)
+
+2026年5月13日## [Browser Run：现已在 Cloudflare Containers 上运行，更快速且更具可扩展性](https://blog.cloudflare.com/zh-cn/browser-run-containers/)
+
+我们基于 Cloudflare Containers 重构了 Browser Run 产品，从而提高了使用限制、改善了性能、提高了可靠性并加快了交付速度。具体做法如下所述。
+
+![Ruskin Constant](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW47BW07W83PCRTM6JP4W61R.webp&w=64&h=64&f=webp&fit=cover&position=center)![Rui Figueira](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW44VN7XMZ4WCQMGQSPJ2B3Q.webp&w=64&h=64&f=webp&fit=cover&position=center)![Sofia Cardita](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW45KK928BT8XZG73456ZPJB.png&w=64&h=64&f=webp&fit=cover&position=center)
+
+[Ruskin Constant](https://blog.cloudflare.com/zh-cn/author/ruskin-constant/)、[Rui Figueira](https://blog.cloudflare.com/zh-cn/author/rui-figueira/)和[Sofia Cardita](https://blog.cloudflare.com/zh-cn/author/sofia-cardita/)
+
+2026年4月22日## [提高 Rust Workers 可靠性：wasm-bindgen 中的 panic 错误与中止恢复机制](https://blog.cloudflare.com/zh-cn/making-rust-workers-reliable/)
+
+过去，Rust Workers 中的 panic 会产生致命影响，污染整个实例。通过 wasm-bindgen 项目方面的上游合作，Rust Workers 现在支持韧性关键错误恢复，包括使用 WebAssembly Exception Handling 进行 panic unwind 处理。
+
+![Guy Bedford](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW46EK56GG251YRHAXKS587V.jpeg&w=64&h=64&f=webp&fit=cover&position=center)![Hood Chatham](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW47DGCR56ZBCN9NTBRE18MF.webp&w=64&h=64&f=webp&fit=cover&position=center)![Logan Gatlin](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW47MBZXTSY5013HEJC8611B.png&w=64&h=64&f=webp&fit=cover&position=center)
+
+[Guy Bedford](https://blog.cloudflare.com/zh-cn/author/guy-bedford/)、[Hood Chatham](https://blog.cloudflare.com/zh-cn/author/hood/)和[Logan Gatlin](https://blog.cloudflare.com/zh-cn/author/logan-gatlin/)
+
+2026年4月20日## [构建智能体云：我们在 Agents Week 2026 期间发布的所有产品与功能](https://blog.cloudflare.com/zh-cn/agents-week-in-review/)
+
+Agents Week 2026 圆满结束。让我们看看我们宣布的所有内容，从计算和安全性，到智能体工具箱、平台工具，以及新兴的智能体 Web。我们为智能体云发布的所有产品和功能。 
+
+![Ming Lu](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW449KZ4869TJZZSHHFJXPTB.png&w=64&h=64&f=webp&fit=cover&position=center)![Anni Wang](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW4618C573MJFB0RNKW6K68R.png&w=64&h=64&f=webp&fit=cover&position=center)
+
+[Ming Lu](https://blog.cloudflare.com/zh-cn/author/ming-lu/)和[Anni Wang](https://blog.cloudflare.com/zh-cn/author/anni/)
+
+2026年4月20日## [大规模编排 AI 代码审查](https://blog.cloudflare.com/zh-cn/ai-code-review/)
+
+了解 Cloudflare 如何利用 OpenCode 构建原生持续集成 AI 代码审查器，帮助我们的工程师交付更优质、更安全的代码。
+
+![Ryan Skidmore](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW4736HQYPXSX6SERG1KRMXW.jpg&w=64&h=64&f=webp&fit=cover&position=center)
+
+[Ryan Skidmore](https://blog.cloudflare.com/zh-cn/author/ryan-skidmore/)
+
+2026年4月16日## [Cloudflare AI 平台：专为智能体设计的推理层](https://blog.cloudflare.com/zh-cn/ai-platform/)
+
+我们正努力将 AI Gateway 构建成统一的 AI 推理层，让开发人员能够调用来自 14 个以上服务提供商的模型。新增功能包括 Workers AI 绑定集成，以及支持多模态模型的扩展目录。 
+
+![Ming Lu](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW449KZ4869TJZZSHHFJXPTB.png&w=64&h=64&f=webp&fit=cover&position=center)![Michelle Chen](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW44R95PPSQQ82Z92P51M550.jpg&w=64&h=64&f=webp&fit=cover&position=center)
+
+[Ming Lu](https://blog.cloudflare.com/zh-cn/author/ming-lu/)和[Michelle Chen](https://blog.cloudflare.com/zh-cn/author/michelle/)
+
+加载更多

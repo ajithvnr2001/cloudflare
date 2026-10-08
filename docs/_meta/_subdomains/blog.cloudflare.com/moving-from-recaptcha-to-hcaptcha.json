@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/moving-from-recaptcha-to-hcaptcha/",
+  "file": "_subdomains/blog.cloudflare.com/moving-from-recaptcha-to-hcaptcha.md",
+  "title": "Moving from reCAPTCHA to hCaptcha | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:41.053391+00:00",
+  "html_len": 295186,
+  "md_len": 66042,
+  "depth": 0,
+  "phase": 2
+}

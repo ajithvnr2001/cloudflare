@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/lavarand-in-production-the-nitty-gritty-technical-details/",
+  "file": "_subdomains/blog.cloudflare.com/lavarand-in-production-the-nitty-gritty-technical-details.md",
+  "title": "LavaRand in Production: The Nitty-Gritty Technical Details | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:56.952369+00:00",
+  "html_len": 292520,
+  "md_len": 72320,
+  "depth": 0,
+  "phase": 2
+}

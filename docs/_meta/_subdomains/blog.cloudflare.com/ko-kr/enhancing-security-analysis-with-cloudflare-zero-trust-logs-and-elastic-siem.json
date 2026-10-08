@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/enhancing-security-analysis-with-cloudflare-zero-trust-logs-and-elastic-siem/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/enhancing-security-analysis-with-cloudflare-zero-trust-logs-and-elastic-siem.md",
+  "title": "Cloudflare Zero Trust \ub85c\uadf8 \ubc0f Elastic SIEM\uc744 \ud1b5\ud55c \ubcf4\uc548 \ubd84\uc11d \uac15\ud654 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:27.640322+00:00",
+  "html_len": 226548,
+  "md_len": 34900,
+  "depth": 0,
+  "phase": 2
+}

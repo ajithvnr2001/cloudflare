@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/adaptive-access-user-risk-scoring/",
+  "file": "_subdomains/blog.cloudflare.com/adaptive-access-user-risk-scoring.md",
+  "title": "Stop reacting to breaches and start preventing them with User Risk Scoring | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:56.262529+00:00",
+  "html_len": 284587,
+  "md_len": 61896,
+  "depth": 0,
+  "phase": 2
+}

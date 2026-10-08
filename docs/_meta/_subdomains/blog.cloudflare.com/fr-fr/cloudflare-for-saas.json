@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/cloudflare-for-saas/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/cloudflare-for-saas.md",
+  "title": "Annonce de mise \u00e0 disposition de Cloudflare pour SaaS pour tout le monde | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:25.608162+00:00",
+  "html_len": 228142,
+  "md_len": 40885,
+  "depth": 0,
+  "phase": 2
+}

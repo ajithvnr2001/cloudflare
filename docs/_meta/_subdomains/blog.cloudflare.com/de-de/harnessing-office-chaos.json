@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/harnessing-office-chaos/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/harnessing-office-chaos.md",
+  "title": "Das Chaos in den Cloudflare-B\u00fcros nutzen | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:39:32.275323+00:00",
+  "html_len": 273645,
+  "md_len": 56287,
+  "depth": 0,
+  "phase": 2
+}

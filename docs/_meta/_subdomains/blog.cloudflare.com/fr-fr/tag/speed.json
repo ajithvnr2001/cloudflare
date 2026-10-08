@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/tag/speed/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/tag/speed.md",
+  "title": "Articles tagu\u00e9s \u00ab Rapidit\u00e9 \u00bb \u2014 Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:13:25.848718+00:00",
+  "html_len": 138029,
+  "md_len": 7551,
+  "depth": 1,
+  "phase": 2
+}

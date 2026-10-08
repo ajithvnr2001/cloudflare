@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/response-to-salesloft-drift-incident/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/response-to-salesloft-drift-incident.md",
+  "title": "Salesloft Drift \u6570\u636e\u6cc4\u9732\u5bf9 Cloudflare \u548c\u6211\u4eec\u5ba2\u6237\u7684\u5f71\u54cd | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:29.778786+00:00",
+  "html_len": 209715,
+  "md_len": 32460,
+  "depth": 0,
+  "phase": 2
+}

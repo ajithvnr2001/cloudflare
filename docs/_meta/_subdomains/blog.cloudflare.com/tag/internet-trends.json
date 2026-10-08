@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/internet-trends/",
+  "file": "_subdomains/blog.cloudflare.com/tag/internet-trends.md",
+  "title": "Posts tagged \"Internet Trends\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:09:17.487805+00:00",
+  "html_len": 134145,
+  "md_len": 7853,
+  "depth": 1,
+  "phase": 2
+}

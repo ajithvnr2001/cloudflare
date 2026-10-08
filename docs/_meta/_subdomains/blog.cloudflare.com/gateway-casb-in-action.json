@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/gateway-casb-in-action/",
+  "file": "_subdomains/blog.cloudflare.com/gateway-casb-in-action.md",
+  "title": "Gateway + CASB: alphabetti spaghetti that spells better SaaS security | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:11.383807+00:00",
+  "html_len": 290714,
+  "md_len": 62078,
+  "depth": 0,
+  "phase": 2
+}

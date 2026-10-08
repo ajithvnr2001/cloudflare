@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/magic-hdmi-cable/",
+  "file": "_subdomains/blog.cloudflare.com/magic-hdmi-cable.md",
+  "title": "Stream with sub-second latency is like a magical HDMI cable to the cloud | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:23.915925+00:00",
+  "html_len": 281831,
+  "md_len": 62406,
+  "depth": 0,
+  "phase": 2
+}

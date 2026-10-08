@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/super-bowl-lviii/",
+  "file": "_subdomains/blog.cloudflare.com/super-bowl-lviii.md",
+  "title": "A look at Internet traffic trends during Super Bowl LVIII | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:01.966697+00:00",
+  "html_len": 321341,
+  "md_len": 74536,
+  "depth": 0,
+  "phase": 2
+}

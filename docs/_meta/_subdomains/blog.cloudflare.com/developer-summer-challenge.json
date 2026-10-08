@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/developer-summer-challenge/",
+  "file": "_subdomains/blog.cloudflare.com/developer-summer-challenge.md",
+  "title": "Cloudflare Developer Summer Challenge | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:12.409615+00:00",
+  "html_len": 288144,
+  "md_len": 64391,
+  "depth": 0,
+  "phase": 2
+}

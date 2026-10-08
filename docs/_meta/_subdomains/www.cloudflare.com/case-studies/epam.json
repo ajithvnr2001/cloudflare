@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/epam/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/epam.md",
+  "title": "EPAM & Cloudflare | Case Study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:28.688730+00:00",
+  "html_len": 210052,
+  "md_len": 10185,
+  "depth": 0,
+  "phase": 2
+}

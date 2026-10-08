@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/code-mode-mcp/",
+  "file": "_subdomains/blog.cloudflare.com/code-mode-mcp.md",
+  "title": "Code Mode: give agents an entire API in 1,000 tokens | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:21:29.455841+00:00",
+  "html_len": 328872,
+  "md_len": 70874,
+  "depth": 1
+}

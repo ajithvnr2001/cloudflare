@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/shopyy/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/shopyy.md",
+  "title": "Shopyy | Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:48.243476+00:00",
+  "html_len": 211242,
+  "md_len": 7211,
+  "depth": 0,
+  "phase": 2
+}

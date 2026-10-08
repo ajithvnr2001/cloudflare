@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/changelog/post/2025-10-16-header-limit-increase/",
+  "file": "changelog/post/2025-10-16-header-limit-increase.md",
+  "title": "Increased HTTP header size limit to 128 KB \u00b7 Changelog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:06:26.241886+00:00",
+  "html_len": 65365,
+  "md_len": 2364,
+  "depth": 0
+}

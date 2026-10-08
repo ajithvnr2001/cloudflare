@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/introducing-r2-object-storage/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/introducing-r2-object-storage.md",
+  "title": "Annonce de Cloudflare R2 Storage, une solution de stockage d\u2019objets rapide et fiable, sans frais de trafic sortant | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:29.360194+00:00",
+  "html_len": 222693,
+  "md_len": 35414,
+  "depth": 0,
+  "phase": 2
+}

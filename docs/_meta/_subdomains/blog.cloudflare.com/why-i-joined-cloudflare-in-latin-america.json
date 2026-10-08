@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/why-i-joined-cloudflare-in-latin-america/",
+  "file": "_subdomains/blog.cloudflare.com/why-i-joined-cloudflare-in-latin-america.md",
+  "title": "Why I joined Cloudflare in Latin America | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:38.434125+00:00",
+  "html_len": 276653,
+  "md_len": 60125,
+  "depth": 0,
+  "phase": 2
+}

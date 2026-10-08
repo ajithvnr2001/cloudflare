@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/origin-rules/examples/change-http-host-header/",
+  "file": "rules/origin-rules/examples/change-http-host-header.md",
+  "title": "Change the HTTP Host header and DNS record \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:49.621518+00:00",
+  "html_len": 147960,
+  "md_len": 5311,
+  "depth": 0
+}

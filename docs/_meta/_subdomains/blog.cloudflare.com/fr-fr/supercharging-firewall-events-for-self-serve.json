@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/supercharging-firewall-events-for-self-serve/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/supercharging-firewall-events-for-self-serve.md",
+  "title": "Un Journal des \u00e9v\u00e9nements du pare-feu r\u00e9vis\u00e9 en libre-service | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:58.468660+00:00",
+  "html_len": 215289,
+  "md_len": 28686,
+  "depth": 0,
+  "phase": 2
+}

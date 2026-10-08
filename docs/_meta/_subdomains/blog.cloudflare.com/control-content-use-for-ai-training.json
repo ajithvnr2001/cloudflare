@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/control-content-use-for-ai-training/",
+  "file": "_subdomains/blog.cloudflare.com/control-content-use-for-ai-training.md",
+  "title": "Control content use for AI training with Cloudflare\u2019s managed robots.txt and blocking for monetized content | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:11.342036+00:00",
+  "html_len": 336727,
+  "md_len": 83686,
+  "depth": 0,
+  "phase": 2
+}

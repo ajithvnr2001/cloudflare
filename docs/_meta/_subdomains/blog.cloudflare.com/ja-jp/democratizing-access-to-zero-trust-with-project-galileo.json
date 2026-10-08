@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/democratizing-access-to-zero-trust-with-project-galileo/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/democratizing-access-to-zero-trust-with-project-galileo.md",
+  "title": "Project Galileo\u306b\u3088\u308bZero Trust\u3078\u306e\u30a2\u30af\u30bb\u30b9\u306e\u6c11\u4e3b\u5316 | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:32.310062+00:00",
+  "html_len": 212820,
+  "md_len": 30875,
+  "depth": 0,
+  "phase": 2
+}

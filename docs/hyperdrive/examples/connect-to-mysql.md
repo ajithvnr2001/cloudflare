@@ -1,0 +1,331 @@
+---
+url: https://developers.cloudflare.com/hyperdrive/examples/connect-to-mysql/
+title: Connect to MySQL \u00b7 Cloudflare Hyperdrive docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:11:29.982045+00:00
+---
+
+# Connect to MySQL · Cloudflare Hyperdrive docs
+
+> Source: https://developers.cloudflare.com/hyperdrive/examples/connect-to-mysql/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Hyperdrive](https://developers.cloudflare.com/hyperdrive/)
+  3. /Examples
+  4. /Connect to MySQL
+
+
+
+# Connect to MySQL
+
+Last updated Aug 10, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/hyperdrive/examples/connect-to-mysql/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewCreate a HyperdriveSupported drivers Database drivers and Node.js compatibilitySupported TLS (SSL) modesDriver examples mysql2 mysqlIdentify connections from HyperdriveNext steps
+
+Hyperdrive supports MySQL and MySQL-compatible databases, popular drivers, and Object Relational Mapper (ORM) libraries that use those drivers.
+
+## Create a Hyperdrive
+
+Note
+
+New to Hyperdrive? Refer to the [Get started guide](https://developers.cloudflare.com/hyperdrive/get-started/) to learn how to set up your first Hyperdrive.
+
+To create a Hyperdrive that connects to an existing MySQL database, use the [Wrangler](https://developers.cloudflare.com/workers/wrangler/install-and-update/) CLI or the [Cloudflare dashboard ↗︎](https://dash.cloudflare.com/?to=/:account/workers/hyperdrive).
+
+When using Wrangler, replace the placeholder value provided to `--connection-string` with the connection string for your database:
+    
+    
+    # wrangler v3.11 and above required
+    npx wrangler hyperdrive create my-first-hyperdrive --connection-string="mysql://user:password@database.host.example.com:3306/databasenamehere"
+
+The command above will output the ID of your Hyperdrive, which you will need to set in the [Wrangler configuration file](https://developers.cloudflare.com/workers/wrangler/configuration/) for your Workers project:
+    
+    
+    {
+    	// required for database drivers to function
+    	"compatibility_flags": [
+    		"nodejs_compat"
+    	],
+    	// Set this to today's date
+    	"compatibility_date": "2026-10-08",
+    	"hyperdrive": [
+    		{
+    			"binding": "HYPERDRIVE",
+    			"id": "<your-hyperdrive-id-here>"
+    		}
+    	]
+    }
+    
+    
+    compatibility_flags = [ "nodejs_compat" ]
+    # Set this to today's date
+    compatibility_date = "2026-10-08"
+    
+    [[hyperdrive]]
+    binding = "HYPERDRIVE"
+    id = "<your-hyperdrive-id-here>"
+
+This will allow Hyperdrive to generate a dynamic connection string within your Worker that you can pass to your existing database driver. Refer to Driver examples to learn how to set up a database driver with Hyperdrive.
+
+Refer to the [Examples documentation](https://developers.cloudflare.com/hyperdrive/examples/) for step-by-step guides on how to set up Hyperdrive with several popular database providers.
+
+## Supported drivers
+
+Hyperdrive uses Workers [TCP socket support](https://developers.cloudflare.com/workers/runtime-apis/tcp-sockets/#connect) to support TCP connections to databases. The following table lists the supported database drivers and the minimum version that works with Hyperdrive:
+
+Driver | Documentation | Minimum Version Required | Notes  
+---|---|---|---  
+mysql2 (**recommended**) | [mysql2 documentation ↗︎](https://github.com/sidorares/node-mysql2) | `mysql2@3.13.0` | Supported in both Workers & Pages. Using the Promise API is recommended.  
+mysql | [mysql documentation ↗︎](https://github.com/mysqljs/mysql) | `mysql@2.18.0` | Requires `compatibility_flags = ["nodejs_compat"]` and `compatibility_date = "2024-09-23"` \- refer to [Node.js compatibility](https://developers.cloudflare.com/workers/runtime-apis/nodejs). Requires wrangler `3.78.7` or later.  
+Drizzle | [Drizzle documentation ↗︎](https://orm.drizzle.team/) | Requires `mysql2@3.13.0` |   
+Kysely | [Kysely documentation ↗︎](https://kysely.dev/) | Requires `mysql2@3.13.0` |   
+  
+^ _The marked libraries can use either mysql or mysql2 as a dependency._
+
+Other drivers and ORMs not listed may also be supported: this list is not exhaustive.
+
+### Database drivers and Node.js compatibility
+
+[Node.js compatibility](https://developers.cloudflare.com/workers/runtime-apis/nodejs/) is required for database drivers, including mysql and mysql2, and needs to be configured for your Workers project.
+
+For compatibility dates of `2026-08-04` or later, Workers and Pages projects enable both `nodejs_compat` and `nodejs_compat_v2` by default. Built-in runtime APIs and polyfills are available without additional configuration. These flags are not used for these compatibility dates. Existing projects do not need to remove them when updating their compatibility date.
+
+If your compatibility date is before `2026-08-04`, add the [`nodejs_compat`](https://developers.cloudflare.com/workers/configuration/compatibility-flags/#nodejs-compatibility-flag) [compatibility flag](https://developers.cloudflare.com/workers/configuration/compatibility-flags/#nodejs-compatibility-flag) to your [Wrangler configuration file](https://developers.cloudflare.com/workers/wrangler/configuration/) to opt in:
+    
+    
+    {
+    	"compatibility_flags": [
+    		"nodejs_compat"
+    	]
+    }
+    
+    
+    compatibility_flags = [ "nodejs_compat" ]
+
+To turn off [Node.js compatibility](https://developers.cloudflare.com/workers/runtime-apis/nodejs/) completely for a compatibility date of `2026-08-04` or later, remove the positive flags if present. Then add both `no_nodejs_compat` and `no_nodejs_compat_v2`. For configuration examples, refer to the [Node.js compatibility flag](https://developers.cloudflare.com/workers/configuration/compatibility-flags/#nodejs-compatibility-flag).
+
+## Supported TLS (SSL) modes
+
+Hyperdrive supports the following MySQL TLS/SSL connection modes when connecting to your origin database:
+
+Mode | Supported | Details  
+---|---|---  
+`DISABLED` | No | Hyperdrive does not support insecure plain text connections.  
+`PREFERRED` | No (use `REQUIRED`) | Hyperdrive will always use TLS.  
+`REQUIRED` | Yes (default) | TLS is required, and server certificates are validated (based on WebPKI).  
+`VERIFY_CA` | Yes | Verifies the server's TLS certificate is signed by a root CA on the client.  
+`VERIFY_IDENTITY` | Yes | In addition to `VERIFY_CA` checks, Hyperdrive requires the database hostname to match a Subject Alternative Name (SAN) or Common Name (CN) on the certificate.  
+  
+Refer to [SSL/TLS certificates](https://developers.cloudflare.com/hyperdrive/configuration/tls-ssl-certificates-for-hyperdrive/) documentation for details on how to configure `VERIFY_CA` or `VERIFY_IDENTITY` TLS (SSL) modes for Hyperdrive.
+
+## Driver examples
+
+The following examples show you how to:
+
+  1. Create a database client with a database driver.
+  2. Pass the Hyperdrive connection string and connect to the database.
+  3. Query your database via Hyperdrive.
+
+
+
+### `mysql2`
+
+The following Workers code shows you how to use [mysql2 ↗︎](https://github.com/sidorares/node-mysql2) with Hyperdrive using the Promise API.
+
+Install the [mysql2 ↗︎](https://github.com/sidorares/node-mysql2) driver:
+
+npmyarnpnpmbun
+    
+    
+    npm i mysql2@>3.13.0
+    
+    
+    yarn add mysql2@>3.13.0
+    
+    
+    pnpm add mysql2@>3.13.0
+    
+    
+    bun add mysql2@>3.13.0
+
+Note
+
+`mysql2` v3.13.0 or later is required
+
+Add the required Node.js compatibility flags and Hyperdrive binding to your `wrangler.jsonc` file:
+    
+    
+    {
+    	// required for database drivers to function
+    	"compatibility_flags": [
+    		"nodejs_compat"
+    	],
+    	// Set this to today's date
+    	"compatibility_date": "2026-10-08",
+    	"hyperdrive": [
+    		{
+    			"binding": "HYPERDRIVE",
+    			"id": "<your-hyperdrive-id-here>"
+    		}
+    	]
+    }
+    
+    
+    compatibility_flags = [ "nodejs_compat" ]
+    # Set this to today's date
+    compatibility_date = "2026-10-08"
+    
+    [[hyperdrive]]
+    binding = "HYPERDRIVE"
+    id = "<your-hyperdrive-id-here>"
+
+Create a new `connection` instance and pass the Hyperdrive parameters:
+    
+    
+    // mysql2 v3.13.0 or later is required
+    import { createConnection } from "mysql2/promise";
+    
+    export default {
+    	async fetch(request, env, ctx): Promise<Response> {
+    		// Create a new connection on each request. Hyperdrive maintains the underlying
+    		// database connection pool, so creating a new connection is fast.
+    		const connection = await createConnection({
+    			host: env.HYPERDRIVE.host,
+    			user: env.HYPERDRIVE.user,
+    			password: env.HYPERDRIVE.password,
+    			database: env.HYPERDRIVE.database,
+    			port: env.HYPERDRIVE.port,
+    
+    			// Required to enable mysql2 compatibility for Workers
+    			disableEval: true,
+    		});
+    
+    		try {
+    			// Sample query
+    			const [results, fields] = await connection.query("SHOW tables;");
+    
+    			// Return result rows as JSON
+    			return Response.json({ results, fields });
+    		} catch (e) {
+    			console.error(e);
+    			return Response.json(
+    				{ error: e instanceof Error ? e.message : e },
+    				{ status: 500 },
+    			);
+    		}
+    	},
+    } satisfies ExportedHandler<Env>;
+
+Note
+
+The minimum version of `mysql2` required for Hyperdrive is `3.13.0`.
+
+### `mysql`
+
+The following Workers code shows you how to use [mysql ↗︎](https://github.com/mysqljs/mysql) with Hyperdrive.
+
+Install the [mysql ↗︎](https://github.com/mysqljs/mysql) driver:
+
+npmyarnpnpmbun
+    
+    
+    npm i mysql
+    
+    
+    yarn add mysql
+    
+    
+    pnpm add mysql
+    
+    
+    bun add mysql
+
+Add the required Node.js compatibility flags and Hyperdrive binding to your `wrangler.jsonc` file:
+    
+    
+    {
+    	// required for database drivers to function
+    	"compatibility_flags": [
+    		"nodejs_compat"
+    	],
+    	// Set this to today's date
+    	"compatibility_date": "2026-10-08",
+    	"hyperdrive": [
+    		{
+    			"binding": "HYPERDRIVE",
+    			"id": "<your-hyperdrive-id-here>"
+    		}
+    	]
+    }
+    
+    
+    compatibility_flags = [ "nodejs_compat" ]
+    # Set this to today's date
+    compatibility_date = "2026-10-08"
+    
+    [[hyperdrive]]
+    binding = "HYPERDRIVE"
+    id = "<your-hyperdrive-id-here>"
+
+Create a new connection and pass the Hyperdrive parameters:
+    
+    
+    import { createConnection } from "mysql";
+    
+    export default {
+    	async fetch(request, env, ctx): Promise<Response> {
+    		const result = await new Promise<any>((resolve) => {
+    			// Create a connection using the mysql driver with the Hyperdrive credentials (only accessible from your Worker).
+    			const connection = createConnection({
+    				host: env.HYPERDRIVE.host,
+    				user: env.HYPERDRIVE.user,
+    				password: env.HYPERDRIVE.password,
+    				database: env.HYPERDRIVE.database,
+    				port: env.HYPERDRIVE.port,
+    			});
+    
+    			connection.connect((error: { message: string }) => {
+    				if (error) {
+    					throw new Error(error.message);
+    				}
+    
+    				// Sample query
+    				connection.query("SHOW tables;", [], (error, rows, fields) => {
+    					resolve({ fields, rows });
+    				});
+    			});
+    		});
+    
+    		// Return result  as JSON
+    		return new Response(JSON.stringify(result), {
+    			headers: {
+    				"Content-Type": "application/json",
+    			},
+    		});
+    	},
+    } satisfies ExportedHandler<Env>;
+
+## Identify connections from Hyperdrive
+
+To identify active connections to your MySQL database server from Hyperdrive:
+
+  * Hyperdrive's connections to your database will show up with `Cloudflare Hyperdrive` in the `PROGRAM_NAME` column in the `performance_schema.threads` table.
+  * Run `SELECT DISTINCT USER, HOST, PROGRAM_NAME FROM performance_schema.threads WHERE PROGRAM_NAME = 'Cloudflare Hyperdrive'` to show whether Hyperdrive is currently holding a connection (or connections) open to your database.
+
+
+
+## Next steps
+
+  * Refer to the list of [supported database integrations](https://developers.cloudflare.com/workers/databases/connecting-to-databases/) to understand other ways to connect to existing databases.
+  * Learn more about how to use the [Socket API](https://developers.cloudflare.com/workers/runtime-apis/tcp-sockets) in a Worker.
+  * Understand the [protocols supported by Workers](https://developers.cloudflare.com/workers/reference/protocols/).
+
+
+
+[PreviousPrisma ORM](https://developers.cloudflare.com/hyperdrive/examples/connect-to-postgres/postgres-drivers-and-libraries/prisma-orm/)[NextPlanetScale](https://developers.cloudflare.com/hyperdrive/examples/connect-to-mysql/mysql-database-providers/planetscale/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/hyperdrive/examples/connect-to-mysql/index.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

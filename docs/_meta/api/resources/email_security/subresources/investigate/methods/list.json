@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/api/resources/email_security/subresources/investigate/methods/list/",
+  "file": "api/resources/email_security/subresources/investigate/methods/list.md",
+  "title": "Search email messages | Cloudflare API",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:27:24.042843+00:00",
+  "html_len": 2272591,
+  "md_len": 17365,
+  "depth": 1
+}

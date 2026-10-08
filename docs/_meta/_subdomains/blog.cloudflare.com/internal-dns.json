@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/internal-dns/",
+  "file": "_subdomains/blog.cloudflare.com/internal-dns.md",
+  "title": "Cloudflare Internal DNS is now generally available | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:34.418001+00:00",
+  "html_len": 732273,
+  "md_len": 506033,
+  "depth": 0,
+  "phase": 2
+}

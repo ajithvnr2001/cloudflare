@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/magic-in-minutes-how-to-build-a-chatgpt-plugin-with-cloudflare-workers/",
+  "file": "_subdomains/blog.cloudflare.com/magic-in-minutes-how-to-build-a-chatgpt-plugin-with-cloudflare-workers.md",
+  "title": "Magic in minutes: how to build a ChatGPT plugin with Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:32.037491+00:00",
+  "html_len": 302510,
+  "md_len": 66188,
+  "depth": 0,
+  "phase": 2
+}

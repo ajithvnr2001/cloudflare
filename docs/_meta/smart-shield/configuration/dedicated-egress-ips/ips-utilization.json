@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/smart-shield/configuration/dedicated-egress-ips/ips-utilization/",
+  "file": "smart-shield/configuration/dedicated-egress-ips/ips-utilization.md",
+  "title": "IPs utilization \u00b7 Cloudflare Smart Shield docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:15:31.698131+00:00",
+  "html_len": 116802,
+  "md_len": 5875,
+  "depth": 0
+}

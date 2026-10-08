@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/terraform/advanced-topics/import-cloudflare-resources/",
+  "file": "terraform/advanced-topics/import-cloudflare-resources.md",
+  "title": "Import Cloudflare resources \u00b7 Cloudflare Terraform docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:00.797136+00:00",
+  "html_len": 141051,
+  "md_len": 16212,
+  "depth": 0
+}

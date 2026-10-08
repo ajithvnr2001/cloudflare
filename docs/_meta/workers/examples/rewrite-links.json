@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/examples/rewrite-links/",
+  "file": "workers/examples/rewrite-links.md",
+  "title": "Rewrite links \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:26.253502+00:00",
+  "html_len": 203891,
+  "md_len": 5947,
+  "depth": 0
+}

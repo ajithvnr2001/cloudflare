@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/tutorials/using-prisma-postgres-with-workers/",
+  "file": "workers/tutorials/using-prisma-postgres-with-workers.md",
+  "title": "Set up and use a Prisma Postgres database \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:18:02.811139+00:00",
+  "html_len": 250851,
+  "md_len": 9978,
+  "depth": 0
+}

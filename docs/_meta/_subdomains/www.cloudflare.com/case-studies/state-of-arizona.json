@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/state-of-arizona/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/state-of-arizona.md",
+  "title": "Cloudflare & State of Arizona Department of Homeland Security | Video",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:49.748633+00:00",
+  "html_len": 217637,
+  "md_len": 9929,
+  "depth": 0,
+  "phase": 2
+}

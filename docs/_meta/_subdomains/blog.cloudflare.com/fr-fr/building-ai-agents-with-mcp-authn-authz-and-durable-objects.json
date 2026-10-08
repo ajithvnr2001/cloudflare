@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/building-ai-agents-with-mcp-authn-authz-and-durable-objects/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/building-ai-agents-with-mcp-authn-authz-and-durable-objects.md",
+  "title": "R\u00e9unir toutes les pi\u00e8ces du puzzle des agents\u00a0: MCP, authentification/autorisation et offre gratuite pour Durable Objects | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:02.199100+00:00",
+  "html_len": 266237,
+  "md_len": 51812,
+  "depth": 0,
+  "phase": 2
+}

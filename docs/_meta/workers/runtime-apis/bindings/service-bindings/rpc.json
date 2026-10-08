@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/runtime-apis/bindings/service-bindings/rpc/",
+  "file": "workers/runtime-apis/bindings/service-bindings/rpc.md",
+  "title": "Service bindings - RPC (WorkerEntrypoint) \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:42.466516+00:00",
+  "html_len": 262963,
+  "md_len": 15424,
+  "depth": 0
+}

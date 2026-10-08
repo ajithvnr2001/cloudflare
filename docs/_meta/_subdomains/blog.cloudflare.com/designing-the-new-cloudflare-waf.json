@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/designing-the-new-cloudflare-waf/",
+  "file": "_subdomains/blog.cloudflare.com/designing-the-new-cloudflare-waf.md",
+  "title": "Designing the new Cloudflare Web Application Firewall | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:02.663677+00:00",
+  "html_len": 291239,
+  "md_len": 65868,
+  "depth": 0,
+  "phase": 2
+}

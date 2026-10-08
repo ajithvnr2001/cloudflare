@@ -1,0 +1,184 @@
+---
+url: https://developers.cloudflare.com/workers-ai/guides/tutorials/llama-vision-tutorial/
+title: Llama 3.2 11B Vision Instruct model on Cloudflare Workers AI \u00b7 Cloudflare Workers AI docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:17:01.349840+00:00
+---
+
+# Llama 3.2 11B Vision Instruct model on Cloudflare Workers AI · Cloudflare Workers AI docs
+
+> Source: https://developers.cloudflare.com/workers-ai/guides/tutorials/llama-vision-tutorial/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Workers Ai](https://developers.cloudflare.com/workers-ai/)
+  3. /…
+
+[Guides](https://developers.cloudflare.com/workers-ai/guides/)
+
+  4. /[Tutorials](https://developers.cloudflare.com/workers-ai/guides/tutorials/)
+  5. /Llama Vision Tutorial
+
+
+
+# Llama 3.2 11B Vision Instruct model on Cloudflare Workers AI
+
+Last updated Aug 25, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers-ai/guides/tutorials/llama-vision-tutorial/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewPrerequisites1\. Agree to Meta's license2\. Set up your Cloudflare Worker3\. Write the Worker code4\. Bind Workers AI to your Worker5\. Deploy the Worker6\. Test Your Worker7\. Verify the response
+
+## Prerequisites
+
+Before you begin, ensure you have the following:
+
+  1. A [Cloudflare account ↗︎](https://dash.cloudflare.com/sign-up) with Workers and Workers AI enabled.
+  2. Your `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_AUTH_TOKEN`. 
+     * You can generate an API token in your Cloudflare dashboard under API Tokens.
+  3. Node.js installed for working with Cloudflare Workers (optional but recommended).
+
+
+
+## 1\. Agree to Meta's license
+
+The first time you use the [Llama 3.2 11B Vision Instruct](https://developers.cloudflare.com/workers-ai/models/llama-3.2-11b-vision-instruct) model, you need to agree to Meta's License and Acceptable Use Policy.
+
+curlbash
+    
+    
+    curl https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/run/@cf/meta/llama-3.2-11b-vision-instruct \
+      -X POST \
+      -H "Authorization: Bearer $CLOUDFLARE_AUTH_TOKEN" \
+      -d '{ "prompt": "agree" }'
+
+Replace `$CLOUDFLARE_ACCOUNT_ID` and `$CLOUDFLARE_AUTH_TOKEN` with your actual account ID and token.
+
+## 2\. Set up your Cloudflare Worker
+
+  1. Create a Worker Project You will create a new Worker project using the `create-cloudflare` CLI (`C3`). This tool simplifies setting up and deploying new applications to Cloudflare.
+
+Run the following command in your terminal:
+
+
+
+
+npmyarnpnpm
+    
+    
+    npm create cloudflare@latest -- llama-vision-tutorial
+    
+    
+    yarn create cloudflare llama-vision-tutorial
+    
+    
+    pnpm create cloudflare@latest llama-vision-tutorial
+
+For setup, select the following options:
+
+  * For _What would you like to start with?_ , choose `Hello World example`.
+  * For _Which template would you like to use?_ , choose `Worker only`.
+  * For _Which language do you want to use?_ , choose `JavaScript`.
+  * For _Do you want to use git for version control?_ , choose `Yes`.
+  * For _Do you want to deploy your application?_ , choose `No` (we will be making some changes before deploying).
+
+
+
+After completing the setup, a new directory called `llama-vision-tutorial` will be created.
+
+  2. Navigate to your application directory Change into the project directory:
+         
+         cd llama-vision-tutorial
+
+  3. Project structure Your `llama-vision-tutorial` directory will include:
+
+     * A "Hello World" Worker at `src/index.ts`.
+     * A `wrangler.json` configuration file for managing deployment settings.
+
+
+
+## 3\. Write the Worker code
+
+Edit the `src/index.ts` (or `index.js` if you are not using TypeScript) file and replace the content with the following code:
+    
+    
+    export interface Env {
+      AI: Ai;
+    }
+    
+    export default {
+      async fetch(request, env): Promise<Response> {
+        const messages = [
+          { role: "system", content: "You are a helpful assistant." },
+          { role: "user", content: "Describe the image I'm providing." },
+        ];
+    
+        // Replace this with your image data encoded as base64 or a URL
+        const imageBase64 = "data:image/png;base64,IMAGE_DATA_HERE";
+    
+        const response = await env.AI.run("@cf/meta/llama-3.2-11b-vision-instruct", {
+          messages,
+          image: imageBase64,
+        });
+    
+        return Response.json(response);
+      },
+    } satisfies ExportedHandler<Env>;
+
+## 4\. Bind Workers AI to your Worker
+
+  1. Open the [Wrangler configuration file](https://developers.cloudflare.com/workers/wrangler/configuration/) and add the following configuration:
+
+
+    
+    
+    {
+    	"env": {},
+    	"ai": {
+    		"binding": "AI"
+    	}
+    }
+    
+    
+    env = { }
+    
+    [ai]
+    binding = "AI"
+
+  2. Save the file.
+
+
+
+## 5\. Deploy the Worker
+
+Run the following command to deploy your Worker:
+    
+    
+    wrangler deploy
+
+## 6\. Test Your Worker
+
+  1. After deployment, you will receive a unique URL for your Worker (e.g., `https://llama-vision-tutorial.<your-subdomain>.workers.dev`).
+  2. Use a tool like `curl` or Postman to send a request to your Worker:
+
+
+    
+    
+    curl -X POST https://llama-vision-tutorial.<your-subdomain>.workers.dev \
+      -d '{ "image": "BASE64_ENCODED_IMAGE" }'
+
+Replace `BASE64_ENCODED_IMAGE` with an actual base64-encoded image string.
+
+## 7\. Verify the response
+
+The response will include the output from the model, such as a description or answer to your prompt based on the image provided.
+
+Example response:
+    
+    
+    {
+    	"result": "This is a golden retriever sitting in a grassy park."
+    }
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/workers-ai/guides/tutorials/llama-vision-tutorial.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

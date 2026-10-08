@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/products/artifacts/",
+  "file": "_subdomains/www.cloudflare.com/products/artifacts.md",
+  "title": "Cloudflare Artifacts - Versioned Git-compatible storage for agents",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:06.134052+00:00",
+  "html_len": 331662,
+  "md_len": 10499,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/moderizing-cloudflare-pages-builds-toolbox/",
+  "file": "_subdomains/blog.cloudflare.com/moderizing-cloudflare-pages-builds-toolbox.md",
+  "title": "Modernizing the toolbox for Cloudflare Pages builds | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:30.775267+00:00",
+  "html_len": 295711,
+  "md_len": 67083,
+  "depth": 0,
+  "phase": 2
+}

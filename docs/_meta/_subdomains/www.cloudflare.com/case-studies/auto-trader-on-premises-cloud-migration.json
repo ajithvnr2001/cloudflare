@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/auto-trader-on-premises-cloud-migration/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/auto-trader-on-premises-cloud-migration.md",
+  "title": "Auto Trader UK",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:20.410889+00:00",
+  "html_len": 205238,
+  "md_len": 6993,
+  "depth": 0,
+  "phase": 2
+}

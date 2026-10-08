@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-la/author/steve-goldsmith/",
+  "file": "_subdomains/blog.cloudflare.com/es-la/author/steve-goldsmith.md",
+  "title": "Steve Goldsmith - El blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:23:26.946791+00:00",
+  "html_len": 118519,
+  "md_len": 3452,
+  "depth": 1,
+  "phase": 2
+}

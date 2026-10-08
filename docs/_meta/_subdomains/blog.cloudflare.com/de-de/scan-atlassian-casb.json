@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/scan-atlassian-casb/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/scan-atlassian-casb.md",
+  "title": "Atlassian mit Cloudflare CASB scannen und sichern | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:42.340916+00:00",
+  "html_len": 212864,
+  "md_len": 28961,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/amp-validator-api/",
+  "file": "_subdomains/blog.cloudflare.com/amp-validator-api.md",
+  "title": "An AMP validator you can cURL | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:20.967058+00:00",
+  "html_len": 275759,
+  "md_len": 57128,
+  "depth": 0,
+  "phase": 2
+}

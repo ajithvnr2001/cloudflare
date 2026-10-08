@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/understanding-our-cache-and-the-web-cache-deception-attack/",
+  "file": "_subdomains/blog.cloudflare.com/understanding-our-cache-and-the-web-cache-deception-attack.md",
+  "title": "Understanding Our Cache and the Web Cache Deception Attack | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:16.894291+00:00",
+  "html_len": 295807,
+  "md_len": 65952,
+  "depth": 0,
+  "phase": 2
+}

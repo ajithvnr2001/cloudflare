@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/http-2-prioritization-with-nginx/",
+  "file": "_subdomains/blog.cloudflare.com/http-2-prioritization-with-nginx.md",
+  "title": "Optimizing HTTP/2 prioritization with BBR and tcp_notsent_lowat | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:12.430320+00:00",
+  "html_len": 333448,
+  "md_len": 79894,
+  "depth": 0,
+  "phase": 2
+}

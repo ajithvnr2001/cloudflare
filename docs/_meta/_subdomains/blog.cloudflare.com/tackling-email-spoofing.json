@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tackling-email-spoofing/",
+  "file": "_subdomains/blog.cloudflare.com/tackling-email-spoofing.md",
+  "title": "Tackling Email Spoofing and Phishing | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:32.600839+00:00",
+  "html_len": 336318,
+  "md_len": 76514,
+  "depth": 0,
+  "phase": 2
+}

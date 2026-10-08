@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/performance/static-site-generator/",
+  "file": "_subdomains/www.cloudflare.com/learning/performance/static-site-generator.md",
+  "title": "What is a static site generator?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:39.074852+00:00",
+  "html_len": 206890,
+  "md_len": 11717,
+  "depth": 0,
+  "phase": 2
+}

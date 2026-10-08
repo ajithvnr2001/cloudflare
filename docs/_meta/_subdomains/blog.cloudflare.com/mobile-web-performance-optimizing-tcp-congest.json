@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/mobile-web-performance-optimizing-tcp-congest/",
+  "file": "_subdomains/blog.cloudflare.com/mobile-web-performance-optimizing-tcp-congest.md",
+  "title": "Mobile Web Performance: Optimizing TCP Congestion Control Algorithms | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:04.358836+00:00",
+  "html_len": 274029,
+  "md_len": 58111,
+  "depth": 0,
+  "phase": 2
+}

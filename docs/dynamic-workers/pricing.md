@@ -1,0 +1,124 @@
+---
+url: https://developers.cloudflare.com/dynamic-workers/pricing/
+title: Pricing \u00b7 Cloudflare Dynamic Workers docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:11:11.090607+00:00
+---
+
+# Pricing · Cloudflare Dynamic Workers docs
+
+> Source: https://developers.cloudflare.com/dynamic-workers/pricing/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Dynamic Workers](https://developers.cloudflare.com/dynamic-workers/)
+  3. /Pricing
+
+
+
+# Pricing
+
+Last updated Jun 11, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/dynamic-workers/pricing/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewDynamic Workers created dailyView Dynamic Workers usageRequestsCPU time
+
+Dynamic Workers pricing is based on three dimensions: Dynamic Workers created daily, requests, and CPU time.
+
+Dynamic Workers are currently only available on the [Workers Paid plan](https://developers.cloudflare.com/workers/platform/pricing/).
+
+| Included | Additional usage  
+---|---|---  
+**Dynamic Workers created daily** | 1,000 unique Dynamic Workers per month | +$0.002 per Dynamic Worker per day  
+**Requests** ¹ | 10 million per month | +$0.30 per million requests  
+**CPU time** ¹ | 30 million CPU milliseconds per month | +$0.02 per million CPU milliseconds  
+  
+¹ Uses [Workers Standard rates](https://developers.cloudflare.com/workers/platform/pricing/#workers) and will appear as part of your existing Workers bill, not as separate Dynamic Workers charges.
+
+Billing
+
+Starting May 26, 2026, Dynamic Workers created daily are billed as part of Dynamic Workers pricing.
+
+Dynamic Workers requests and CPU time are also billed as part of your Workers plan. They count toward your Workers requests and CPU usage.
+
+## Dynamic Workers created daily
+
+You are billed for each unique Dynamic Worker created in a day. A Dynamic Worker is uniquely identified by its **Worker ID** and **code** — if either changes, it counts as a new Dynamic Worker. The count resets daily.
+
+Scenario | Counted as  
+---|---  
+Same code, same ID, invoked multiple times | 1 Dynamic Worker  
+Same code, different IDs | 1 Dynamic Worker per ID  
+Same ID, different code versions | 1 Dynamic Worker per code version  
+No ID provided or `.load(code)` used | 1 Dynamic Worker per invocation  
+  
+Note
+
+If your application sends multiple requests to the same Worker, use `.get()` with a stable ID to avoid being billed for multiple creations.
+
+## View Dynamic Workers usage
+
+To view the number of billable Dynamic Workers invoked during your billing period, go to **Workers & Pages** > **Overview** in the [Cloudflare dashboard ↗︎](https://dash.cloudflare.com/).
+
+Dynamic Workers usage data only goes back to June 1, 2026.
+
+You can also query this count through the [GraphQL Analytics API](https://developers.cloudflare.com/analytics/graphql-api/) by using `workersInvocationsByOwnerAndScriptGroups` and selecting `distinctDynamicWorkerCount`:
+    
+    
+    query getDynamicWorkersCount(
+    	$accountTag: string!
+    	$filter: AccountWorkersInvocationsByOwnerAndScriptGroupsFilter_InputObject
+    ) {
+    	viewer {
+    		accounts(filter: { accountTag: $accountTag }) {
+    			workersInvocationsByOwnerAndScriptGroups(limit: 10000, filter: $filter) {
+    				uniq {
+    					distinctDynamicWorkerCount
+    				}
+    			}
+    		}
+    	}
+    }
+
+Use variables to set the account and billing-period date range:
+    
+    
+    {
+    	"accountTag": "<ACCOUNT_ID>",
+    	"filter": {
+    		"date_geq": "2026-06-01",
+    		"date_leq": "2026-06-30"
+    	}
+    }
+
+The `distinctDynamicWorkerCount` field returns the unique Dynamic Workers count for the selected period.
+
+## Requests
+
+Dynamic Workers reuse [Workers Standard request pricing](https://developers.cloudflare.com/workers/platform/pricing/).
+
+A request is counted each time a Dynamic Worker is invoked:
+
+  * Each `fetch()` call into a Dynamic Worker
+  * Each RPC method call on a Dynamic Worker stub (billed the same way as [Durable Objects](https://developers.cloudflare.com/durable-objects/platform/pricing/))
+
+
+
+If an RPC method returns a stub (an object that extends `RpcTarget`), those returned stubs share the same RPC session as the original call. Subsequent calls on the returned stub are not billed as separate requests.
+
+## CPU time
+
+CPU time is billed at the same rate as [Workers Standard](https://developers.cloudflare.com/workers/platform/pricing/).
+
+Unlike standard Workers (where only execution time is billed), Dynamic Workers bill for two components of CPU time:
+
+  * **Startup time** : The compute required to initialize the isolate and parse your code.
+  * **Execution time** : The compute time your code spends actively processing logic, excluding time spent waiting on I/O.
+
+
+
+[PreviousAPI reference](https://developers.cloudflare.com/dynamic-workers/api-reference/)[NextLimits](https://developers.cloudflare.com/dynamic-workers/platform/limits/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/dynamic-workers/pricing.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

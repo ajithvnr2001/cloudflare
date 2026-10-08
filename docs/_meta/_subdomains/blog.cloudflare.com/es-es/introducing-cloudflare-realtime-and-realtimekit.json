@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/introducing-cloudflare-realtime-and-realtimekit/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/introducing-cloudflare-realtime-and-realtimekit.md",
+  "title": "Crea aplicaciones realmente interactivas con Cloudflare Realtime y RealtimeKit  | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:54.402583+00:00",
+  "html_len": 225183,
+  "md_len": 38209,
+  "depth": 0,
+  "phase": 2
+}

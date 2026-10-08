@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-automatic-audit-logs/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-automatic-audit-logs.md",
+  "title": "Automatic Audit Logs: new updates deliver increased transparency and accountability | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:06.381645+00:00",
+  "html_len": 299474,
+  "md_len": 67494,
+  "depth": 0,
+  "phase": 2
+}

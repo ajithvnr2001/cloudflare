@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ddr4-memory-organization-and-how-it-affects-memory-bandwidth/",
+  "file": "_subdomains/blog.cloudflare.com/ddr4-memory-organization-and-how-it-affects-memory-bandwidth.md",
+  "title": "DDR4 memory organization and how it affects memory bandwidth | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:34.703158+00:00",
+  "html_len": 311207,
+  "md_len": 69434,
+  "depth": 0,
+  "phase": 2
+}

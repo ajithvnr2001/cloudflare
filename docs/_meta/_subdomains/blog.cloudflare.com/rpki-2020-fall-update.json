@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/rpki-2020-fall-update/",
+  "file": "_subdomains/blog.cloudflare.com/rpki-2020-fall-update.md",
+  "title": "The Internet is Getting Safer: Fall 2020 RPKI Update | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:49.605382+00:00",
+  "html_len": 298733,
+  "md_len": 67349,
+  "depth": 0,
+  "phase": 2
+}

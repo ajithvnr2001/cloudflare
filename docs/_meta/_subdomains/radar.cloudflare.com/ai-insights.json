@@ -1,0 +1,10 @@
+{
+  "url": "https://radar.cloudflare.com/ai-insights/",
+  "file": "_subdomains/radar.cloudflare.com/ai-insights.md",
+  "title": "AI Insights | Cloudflare Radar",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:26:25.789076+00:00",
+  "html_len": 233380,
+  "md_len": 4307,
+  "depth": 1
+}

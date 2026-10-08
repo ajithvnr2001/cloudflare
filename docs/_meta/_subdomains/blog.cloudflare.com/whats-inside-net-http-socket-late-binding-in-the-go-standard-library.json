@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/whats-inside-net-http-socket-late-binding-in-the-go-standard-library/",
+  "file": "_subdomains/blog.cloudflare.com/whats-inside-net-http-socket-late-binding-in-the-go-standard-library.md",
+  "title": "What's inside net/http? Late binding in the Go standard library | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:43.042279+00:00",
+  "html_len": 277858,
+  "md_len": 57635,
+  "depth": 0,
+  "phase": 2
+}

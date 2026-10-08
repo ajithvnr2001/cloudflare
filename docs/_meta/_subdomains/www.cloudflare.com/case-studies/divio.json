@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/divio/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/divio.md",
+  "title": "Divio | Case Study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:27.262797+00:00",
+  "html_len": 210248,
+  "md_len": 10305,
+  "depth": 0,
+  "phase": 2
+}

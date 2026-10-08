@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/data-exfiltration-prevention/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/data-exfiltration-prevention.md",
+  "title": "\ub370\uc774\ud130 \uc190\uc2e4 \ubc29\uc9c0\ub97c \uc704\ud55c Cloudflare \uc0ac\uc6a9 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:28.597198+00:00",
+  "html_len": 213866,
+  "md_len": 32406,
+  "depth": 0,
+  "phase": 2
+}

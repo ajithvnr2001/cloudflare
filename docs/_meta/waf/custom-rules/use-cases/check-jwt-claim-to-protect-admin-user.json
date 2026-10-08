@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/custom-rules/use-cases/check-jwt-claim-to-protect-admin-user/",
+  "file": "waf/custom-rules/use-cases/check-jwt-claim-to-protect-admin-user.md",
+  "title": "Issue challenge for admin user in JWT claim based on attack score \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:38.920540+00:00",
+  "html_len": 131307,
+  "md_len": 2403,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/the-relative-cost-of-bandwidth-around-the-world/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/the-relative-cost-of-bandwidth-around-the-world.md",
+  "title": "Le co\u00fbt relatif de la bande passante dans le monde entier | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:29.240372+00:00",
+  "html_len": 240424,
+  "md_len": 43768,
+  "depth": 0,
+  "phase": 2
+}

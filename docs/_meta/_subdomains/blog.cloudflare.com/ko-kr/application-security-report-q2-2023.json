@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/application-security-report-q2-2023/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/application-security-report-q2-2023.md",
+  "title": "\uc560\ud50c\ub9ac\ucf00\uc774\uc158 \ubcf4\uc548 \ubcf4\uace0\uc11c: Q2 2023 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:29.593929+00:00",
+  "html_len": 282299,
+  "md_len": 44013,
+  "depth": 0,
+  "phase": 2
+}

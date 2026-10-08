@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/our-docs-as-code-approach/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/our-docs-as-code-approach.md",
+  "title": "\u516c\u5f00\u5de5\u4f5c \u2014 \u6211\u4eec\u7684 docs-as-code \u65b9\u6cd5 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:32.418971+00:00",
+  "html_len": 188559,
+  "md_len": 22770,
+  "depth": 0,
+  "phase": 2
+}

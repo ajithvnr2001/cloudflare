@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/reference-architecture/design-guides/network-vpn-migration/",
+  "file": "reference-architecture/design-guides/network-vpn-migration.md",
+  "title": "Network-focused migration from VPN concentrators to Zero Trust Network Access \u00b7 Cloudflare Reference Architecture docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:39.939452+00:00",
+  "html_len": 171605,
+  "md_len": 36091,
+  "depth": 0
+}

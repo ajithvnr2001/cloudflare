@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/securing-memory-at-epyc-scale/",
+  "file": "_subdomains/blog.cloudflare.com/securing-memory-at-epyc-scale.md",
+  "title": "Securing Memory at EPYC Scale | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:26.103363+00:00",
+  "html_len": 309764,
+  "md_len": 67479,
+  "depth": 0,
+  "phase": 2
+}

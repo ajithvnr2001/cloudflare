@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflares-first-year-in-lisbon/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflares-first-year-in-lisbon.md",
+  "title": "Cloudflare's first year in Lisbon | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:06.121820+00:00",
+  "html_len": 279364,
+  "md_len": 58996,
+  "depth": 0,
+  "phase": 2
+}

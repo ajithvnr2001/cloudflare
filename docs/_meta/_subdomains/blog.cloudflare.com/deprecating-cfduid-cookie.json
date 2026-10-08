@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/deprecating-cfduid-cookie/",
+  "file": "_subdomains/blog.cloudflare.com/deprecating-cfduid-cookie.md",
+  "title": "Deprecating the __cfduid cookie | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:24:32.055992+00:00",
+  "html_len": 273609,
+  "md_len": 56106,
+  "depth": 1
+}

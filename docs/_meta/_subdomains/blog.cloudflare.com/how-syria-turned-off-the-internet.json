@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-syria-turned-off-the-internet/",
+  "file": "_subdomains/blog.cloudflare.com/how-syria-turned-off-the-internet.md",
+  "title": "How Syria Turned Off the Internet | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:54.193325+00:00",
+  "html_len": 274611,
+  "md_len": 58797,
+  "depth": 0,
+  "phase": 2
+}

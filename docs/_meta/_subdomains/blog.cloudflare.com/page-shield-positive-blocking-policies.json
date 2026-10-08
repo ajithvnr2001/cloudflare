@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/page-shield-positive-blocking-policies/",
+  "file": "_subdomains/blog.cloudflare.com/page-shield-positive-blocking-policies.md",
+  "title": "Locking down your JavaScript: positive blocking with Page Shield policies | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:40:18.067325+00:00",
+  "html_len": 307329,
+  "md_len": 67668,
+  "depth": 0,
+  "phase": 2
+}

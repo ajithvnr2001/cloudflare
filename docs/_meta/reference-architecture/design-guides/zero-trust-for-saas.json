@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/reference-architecture/design-guides/zero-trust-for-saas/",
+  "file": "reference-architecture/design-guides/zero-trust-for-saas.md",
+  "title": "Using a zero trust framework to secure SaaS applications \u00b7 Cloudflare Reference Architecture docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:40.255916+00:00",
+  "html_len": 173796,
+  "md_len": 38570,
+  "depth": 0
+}

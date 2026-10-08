@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/bank-of-cyprus/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/bank-of-cyprus.md",
+  "title": "Bank of Cyprus & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:20.239302+00:00",
+  "html_len": 210832,
+  "md_len": 8374,
+  "depth": 0,
+  "phase": 2
+}

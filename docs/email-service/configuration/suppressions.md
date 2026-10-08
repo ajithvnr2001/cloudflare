@@ -1,0 +1,142 @@
+---
+url: https://developers.cloudflare.com/email-service/configuration/suppressions/
+title: Manage suppressions \u00b7 Cloudflare Email Service docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:11:14.103060+00:00
+---
+
+# Manage suppressions · Cloudflare Email Service docs
+
+> Source: https://developers.cloudflare.com/email-service/configuration/suppressions/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Email Service](https://developers.cloudflare.com/email-service/)
+  3. /Configuration
+  4. /Manage suppressions
+
+
+
+# Manage suppressions
+
+Last updated Sep 25, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/email-service/configuration/suppressions/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewView suppressionsAdd a suppressionImport suppressionsRemove a suppressionUse the API Add a suppression for one sending domain List suppressions by scope Change the scope of an entryLimits
+
+Manage recipients that Email Service must not contact. For suppression scope, triggers, and expiration rules, refer to [Suppression lists](https://developers.cloudflare.com/email-service/concepts/suppressions/).
+
+Each suppression has a scope. An `account` suppression applies to every sending domain and subdomain in the account. A `sending_domain` suppression applies to one sending domain only. For details, refer to [Suppression scope](https://developers.cloudflare.com/email-service/concepts/suppressions/#suppression-scope).
+
+## View suppressions
+
+  1. In the Cloudflare dashboard, go to **Compute** > **Email Service** > **Email Sending**.
+
+[ Go to **Email Sending** ↗ ](https://dash.cloudflare.com/?to=/:account/email-service/sending)
+  2. Select **Suppressions**.
+
+
+
+
+The table displays each recipient, reason, scope, creation time, and expiration. **Never** means the entry has no scheduled expiration.
+
+## Add a suppression
+
+  1. In **Suppressions** , enter the recipient email address.
+  2. Select an expiration preset, a custom future time, or **Never**.
+  3. In **Scope** , select **Account** or **Sending domain**. For **Sending domain** , select one of your sending domains or enter a domain.
+  4. Select **Add**.
+
+
+
+Entries created in the dashboard have the `manual` reason. You cannot change the scope of an existing entry. To change it, delete the entry and add a new one.
+
+## Import suppressions
+
+You can paste addresses or upload `.csv`, `.json`, or `.txt` files. Supported file contents are:
+
+  * `.csv` or `.txt`: Put one entry on each line as `<EMAIL_ADDRESS>`, `<EMAIL_ADDRESS>,<EXPIRATION_TIMESTAMP>`, or `<EMAIL_ADDRESS>,<EXPIRATION_TIMESTAMP>,<SCOPE>`. Use an [RFC 3339 ↗︎](https://datatracker.ietf.org/doc/html/rfc3339) timestamp and omit the header row. `<SCOPE>` is `account` or a sending domain.
+  * `.json`: Use an array of address strings or objects. Each object requires `email` and can include an RFC 3339 `expires_at` timestamp and a `scope`. `scope` is `account`, a sending domain, or a scope object such as `{ "type": "sending_domain", "value": "mail.myappexample.com" }`.
+
+
+
+  1. In **Suppressions** , select **Import**.
+  2. Upload a supported file or paste the addresses.
+  3. In **Defaults** , choose an expiration and a scope for entries that do not set their own.
+  4. Select **Import**. Larger imports run in batches, so keep the dialog open until every batch finishes.
+
+
+
+## Remove a suppression
+
+To remove a mutable entry, select **Delete** for that recipient. Read-only entries do not provide a delete action.
+
+Deleting an entry permits future delivery attempts. Verify that the recipient should receive mail before deleting an automatic suppression.
+
+## Use the API
+
+The [account Email Sending suppression management REST API](https://developers.cloudflare.com/api/resources/email_sending/subresources/suppressions/) supports listing, adding, importing, updating, and deleting entries. Requests require an [API token](https://developers.cloudflare.com/fundamentals/api/get-started/create-token/) with the **Email Sending: Edit** permission.
+
+API clients must use `read_only` to determine whether an entry is mutable. Do not infer mutability from the `reason` value.
+
+Every entry in an API response includes a `scope` object:
+    
+    
+    { "type": "account" }
+    
+    
+    { "type": "sending_domain", "value": "mail.myappexample.com" }
+
+### Add a suppression for one sending domain
+
+To add an entry for one sending domain, include `scope` in the request body. If you omit `scope`, the API creates an `account` entry.
+    
+    
+    curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email/sending/suppressions \
+      --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+      --header "Content-Type: application/json" \
+      --data '{
+        "email": "user@example.net",
+        "scope": { "type": "sending_domain", "value": "mail.myappexample.com" }
+      }'
+
+The API lowercases `value` and removes trailing dots. The value can contain letters, digits, `.`, `-`, and `_`, up to 253 characters. For an internationalized domain, use its ASCII (`xn--`) form. Other values return `400` with the `invalid_scope_value` error code.
+
+The API does not check that your account sends from the domain. An entry for a domain that you do not send from never blocks mail.
+
+Bulk imports accept the same optional `scope` on each item. The API removes duplicate items that have the same address and scope.
+
+### List suppressions by scope
+
+The list returns `sending_domain` entries first, then `account` entries. Entries are sorted newest first within each scope. To list one scope only, use these query parameters:
+
+Parameter | Description  
+---|---  
+`scope_type` | `account` or `sending_domain`.  
+`scope_value` | One sending domain. Requires `scope_type=sending_domain`.  
+      
+    
+    curl "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email/sending/suppressions?scope_type=sending_domain&scope_value=mail.myappexample.com" \
+      --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
+
+A `scope_value` without `scope_type=sending_domain` returns `400` with the `scope_value_requires_type` error code.
+
+To find every suppression for one address, use the `email` parameter. The results can include one `account` suppression and one `sending_domain` suppression for each sending domain.
+
+### Change the scope of an entry
+
+You cannot change the scope of an existing entry. A `PATCH` request that includes `scope` returns `400` with the `scope_immutable` error code. To change the scope, delete the entry and create a new one.
+
+Caution
+
+Deleting a hard-bounce or complaint suppression permits delivery attempts to an address that already failed or reported your mail as spam. Verify the recipient before deleting the entry.
+
+## Limits
+
+Each address can have one active `account` suppression and one active `sending_domain` suppression for each sending domain. For page size, import, and rate limits, refer to [Suppression list limits](https://developers.cloudflare.com/email-service/platform/limits/#suppression-list-limits).
+
+[PreviousConfigure send bindings](https://developers.cloudflare.com/email-service/configuration/send-bindings/)[NextWorkers API](https://developers.cloudflare.com/email-service/api/send-emails/workers-api/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/email-service/configuration/suppressions.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

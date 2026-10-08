@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/news-from-cloudflare-labs-javascript-preloade/",
+  "file": "_subdomains/blog.cloudflare.com/news-from-cloudflare-labs-javascript-preloade.md",
+  "title": "News From CloudFlare Labs: Javascript Preloader Research | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:46.144564+00:00",
+  "html_len": 266448,
+  "md_len": 54732,
+  "depth": 0,
+  "phase": 2
+}

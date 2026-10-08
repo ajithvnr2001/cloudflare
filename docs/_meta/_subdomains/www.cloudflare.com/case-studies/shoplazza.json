@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/shoplazza/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/shoplazza.md",
+  "title": "Currently, Cloudflare's product portfolio provides all-round support for SHOPLAZZA's 360,000+ global merchants",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:48.139858+00:00",
+  "html_len": 204855,
+  "md_len": 6469,
+  "depth": 0,
+  "phase": 2
+}

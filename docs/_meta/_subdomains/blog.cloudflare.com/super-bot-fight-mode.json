@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/super-bot-fight-mode/",
+  "file": "_subdomains/blog.cloudflare.com/super-bot-fight-mode.md",
+  "title": "Introducing Super Bot Fight Mode | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:31.020773+00:00",
+  "html_len": 298000,
+  "md_len": 64381,
+  "depth": 0,
+  "phase": 2
+}

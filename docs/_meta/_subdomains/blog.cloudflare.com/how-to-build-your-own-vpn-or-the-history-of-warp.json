@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-to-build-your-own-vpn-or-the-history-of-warp/",
+  "file": "_subdomains/blog.cloudflare.com/how-to-build-your-own-vpn-or-the-history-of-warp.md",
+  "title": "How to build your own VPN, or- the history of WARP | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:53.189096+00:00",
+  "html_len": 299846,
+  "md_len": 68778,
+  "depth": 0,
+  "phase": 2
+}

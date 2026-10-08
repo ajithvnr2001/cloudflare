@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/secure-agentic-commerce/",
+  "file": "_subdomains/blog.cloudflare.com/secure-agentic-commerce.md",
+  "title": "Securing agentic commerce: helping AI Agents transact with Visa and Mastercard | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:41.608650+00:00",
+  "html_len": 303672,
+  "md_len": 67568,
+  "depth": 0,
+  "phase": 2
+}

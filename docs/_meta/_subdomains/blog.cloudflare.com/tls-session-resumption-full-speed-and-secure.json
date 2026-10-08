@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/tls-session-resumption-full-speed-and-secure/",
+  "file": "_subdomains/blog.cloudflare.com/tls-session-resumption-full-speed-and-secure.md",
+  "title": "TLS Session Resumption: Full-speed and Secure | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:24:16.070456+00:00",
+  "html_len": 288956,
+  "md_len": 64382,
+  "depth": 1
+}

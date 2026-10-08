@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/courage-to-change-things/",
+  "file": "_subdomains/blog.cloudflare.com/courage-to-change-things.md",
+  "title": "Courage to change things | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:18.367431+00:00",
+  "html_len": 262784,
+  "md_len": 54607,
+  "depth": 0,
+  "phase": 2
+}

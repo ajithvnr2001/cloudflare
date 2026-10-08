@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/eurovision/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/eurovision.md",
+  "title": "Cloudflare | Case Study | Eurovision",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:29.600209+00:00",
+  "html_len": 203281,
+  "md_len": 5689,
+  "depth": 0,
+  "phase": 2
+}

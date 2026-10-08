@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/ninetailed/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/ninetailed.md",
+  "title": "Ninetailed & Cloudflare | Case Study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:41.586041+00:00",
+  "html_len": 203164,
+  "md_len": 7594,
+  "depth": 0,
+  "phase": 2
+}

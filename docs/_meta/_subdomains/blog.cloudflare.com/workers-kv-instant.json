@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/workers-kv-instant/",
+  "file": "_subdomains/blog.cloudflare.com/workers-kv-instant.md",
+  "title": "Introducing Workers KV Instant \u2014 powered by Quicksilver | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:25.943562+00:00",
+  "html_len": 285137,
+  "md_len": 61081,
+  "depth": 0,
+  "phase": 2
+}

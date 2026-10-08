@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pages-workers-integrations-monorepos-nextjs-wrangler/",
+  "file": "_subdomains/blog.cloudflare.com/pages-workers-integrations-monorepos-nextjs-wrangler.md",
+  "title": "Announcing Pages support for monorepos, wrangler.toml, database integrations and more! | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:52.298434+00:00",
+  "html_len": 303848,
+  "md_len": 71258,
+  "depth": 0,
+  "phase": 2
+}

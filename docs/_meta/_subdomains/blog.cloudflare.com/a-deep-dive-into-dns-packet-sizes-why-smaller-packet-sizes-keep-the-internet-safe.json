@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/a-deep-dive-into-dns-packet-sizes-why-smaller-packet-sizes-keep-the-internet-safe/",
+  "file": "_subdomains/blog.cloudflare.com/a-deep-dive-into-dns-packet-sizes-why-smaller-packet-sizes-keep-the-internet-safe.md",
+  "title": "A Deep Dive Into DNS Packet Sizes: Why Smaller Packet Sizes Keep The Internet Safe | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:44.562958+00:00",
+  "html_len": 280779,
+  "md_len": 60303,
+  "depth": 0,
+  "phase": 2
+}

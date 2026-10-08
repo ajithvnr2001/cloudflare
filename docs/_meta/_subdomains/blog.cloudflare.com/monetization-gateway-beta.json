@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/monetization-gateway-beta/",
+  "file": "_subdomains/blog.cloudflare.com/monetization-gateway-beta.md",
+  "title": "Monetization Gateway beta: charge AI agents for consumption with HTTP 402 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:26:49.111484+00:00",
+  "html_len": 297935,
+  "md_len": 68879,
+  "depth": 1
+}

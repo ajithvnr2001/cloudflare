@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/ai-search-agent-primitive/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/ai-search-agent-primitive.md",
+  "title": "AI Search\uff1a\u9069\u7528\u65bc\u667a\u6167\u9ad4\u7684\u641c\u5c0b\u57fa\u5143 | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:10.108981+00:00",
+  "html_len": 244955,
+  "md_len": 32291,
+  "depth": 0,
+  "phase": 2
+}

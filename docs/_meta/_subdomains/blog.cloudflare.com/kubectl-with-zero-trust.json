@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/kubectl-with-zero-trust/",
+  "file": "_subdomains/blog.cloudflare.com/kubectl-with-zero-trust.md",
+  "title": "Kubectl with Cloudflare Zero Trust | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:56.303858+00:00",
+  "html_len": 306867,
+  "md_len": 64835,
+  "depth": 0,
+  "phase": 2
+}

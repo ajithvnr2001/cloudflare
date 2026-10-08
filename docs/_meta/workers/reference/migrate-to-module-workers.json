@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/reference/migrate-to-module-workers/",
+  "file": "workers/reference/migrate-to-module-workers.md",
+  "title": "Migrate from Service Workers to ES Modules \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:41.134204+00:00",
+  "html_len": 247349,
+  "md_len": 17324,
+  "depth": 0
+}

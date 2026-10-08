@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/changelog/post/2026-09-25-custom-span-apis/",
+  "file": "changelog/post/2026-09-25-custom-span-apis.md",
+  "title": "Workers tracing \u2014 new getActiveSpan(), recordException(), startSpan(), and setAttributes() APIs \u00b7 Changelog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:07:16.245642+00:00",
+  "html_len": 74702,
+  "md_len": 3285,
+  "depth": 0
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/ssl/reference/migration-guides/digicert-g1-distrust/",
+  "file": "ssl/reference/migration-guides/digicert-g1-distrust.md",
+  "title": "DigiCert Legacy Root (G1) distrust by major browsers \u00b7 Cloudflare SSL/TLS docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:15:45.530963+00:00",
+  "html_len": 128053,
+  "md_len": 3795,
+  "depth": 0
+}

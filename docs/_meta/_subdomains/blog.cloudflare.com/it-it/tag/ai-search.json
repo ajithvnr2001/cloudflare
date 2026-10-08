@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/it-it/tag/ai-search/",
+  "file": "_subdomains/blog.cloudflare.com/it-it/tag/ai-search.md",
+  "title": "Post con tag \"AI Search\" \u2014 Il blog di Cloudflare",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (220 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:22:16.006863+00:00",
+  "html_len": 152881,
+  "md_len": 3226,
+  "depth": 1,
+  "phase": 2
+}

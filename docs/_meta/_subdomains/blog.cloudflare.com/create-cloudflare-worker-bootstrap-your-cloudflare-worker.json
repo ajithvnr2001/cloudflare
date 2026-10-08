@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/create-cloudflare-worker-bootstrap-your-cloudflare-worker/",
+  "file": "_subdomains/blog.cloudflare.com/create-cloudflare-worker-bootstrap-your-cloudflare-worker.md",
+  "title": "create-cloudflare-worker: Bootstrap your Cloudflare Worker | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:01.291838+00:00",
+  "html_len": 278854,
+  "md_len": 58796,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/front-end/",
+  "file": "_subdomains/blog.cloudflare.com/tag/front-end.md",
+  "title": "Posts tagged \"Front End\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:09:02.173257+00:00",
+  "html_len": 108884,
+  "md_len": 1440,
+  "depth": 1,
+  "phase": 2
+}

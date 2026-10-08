@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/extending-the-life-of-hardware/",
+  "file": "_subdomains/blog.cloudflare.com/extending-the-life-of-hardware.md",
+  "title": "How we\u2019re making Cloudflare\u2019s infrastructure more sustainable | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:48.717248+00:00",
+  "html_len": 289056,
+  "md_len": 70453,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/armed-to-boot/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/armed-to-boot.md",
+  "title": "\u84c4\u52e2\u5f85\u6a5f\uff1a\u5f37\u608d\u6539\u9032 Arm \u5b89\u5168\u958b\u6a5f\u93c8\u7d50 | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:07.355791+00:00",
+  "html_len": 222250,
+  "md_len": 29331,
+  "depth": 0,
+  "phase": 2
+}

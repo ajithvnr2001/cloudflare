@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/single-process-serverless/",
+  "file": "_subdomains/blog.cloudflare.com/single-process-serverless.md",
+  "title": "How Serverless Platforms are Changing to Enable New Applications (video) | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:01.912872+00:00",
+  "html_len": 271068,
+  "md_len": 55586,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/tag/cli/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/tag/cli.md",
+  "title": "Articles tagu\u00e9s \u00ab CLI \u00bb \u2014 Le blog Cloudflare",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (192 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:24:49.389110+00:00",
+  "html_len": 115605,
+  "md_len": 2853,
+  "depth": 1,
+  "phase": 2
+}

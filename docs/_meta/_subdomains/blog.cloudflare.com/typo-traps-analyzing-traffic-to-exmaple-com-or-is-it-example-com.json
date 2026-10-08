@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/typo-traps-analyzing-traffic-to-exmaple-com-or-is-it-example-com/",
+  "file": "_subdomains/blog.cloudflare.com/typo-traps-analyzing-traffic-to-exmaple-com-or-is-it-example-com.md",
+  "title": "Typo traps: analyzing traffic to exmaple.com (or is it example.com?) | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:14.127961+00:00",
+  "html_len": 340924,
+  "md_len": 83838,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/transform/examples/rewrite-path-object-storage/",
+  "file": "rules/transform/examples/rewrite-path-object-storage.md",
+  "title": "Rewrite path for object storage bucket \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:56.143835+00:00",
+  "html_len": 132318,
+  "md_len": 2211,
+  "depth": 0
+}

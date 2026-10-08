@@ -1,0 +1,112 @@
+---
+url: https://developers.cloudflare.com/bots/bot-analytics/
+title: Cloudflare Bot Analytics \u00b7 Cloudflare bot solutions docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:05:32.877845+00:00
+---
+
+# Cloudflare Bot Analytics · Cloudflare bot solutions docs
+
+> Source: https://developers.cloudflare.com/bots/bot-analytics/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Bots](https://developers.cloudflare.com/bots/)
+  3. /Bot Analytics
+
+
+
+# Bot Analytics
+
+Last updated Aug 3, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/bots/bot-analytics/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewBusiness and Enterprise Access Features Common usesEnterprise Bot Management Access Features Common uses API
+
+## Business and Enterprise
+
+Business and Enterprise customers without Bot Management can use **Bot Analytics** to dynamically examine bot traffic. These dashboards offer less functionality than Bot Management for Enterprise but still help you understand bot traffic on your domain.
+
+### Access
+
+You can access Bot Analytics by going to the [Cloudflare dashboard ↗︎](https://dash.cloudflare.com/login), and selecting your account and domain.
+
+Go to **Security** > **Analytics** > **Bot analysis**.
+
+![View Bot Analytics in the Cloudflare dashboard. For more details, keep reading.](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=2062,height=1450,format=webp/_astro/bot-analytics-dashboard-biz.RDfO3DgS.png)
+
+### Features
+
+For a full tour of Bot Analytics, see [our blog post ↗︎](https://blog.cloudflare.com/introducing-bot-analytics/). At a high level, the tool includes:
+
+  * **Requests by traffic type** : View your total domain traffic segmented vertically by traffic type. Keep an eye on _automated_ and _likely automated_ traffic.
+  * **Requests by detection source** : Identify the most common detection engines used to score your traffic. Hover over a tooltip to learn more about each engine.
+  * **Top requests by attribute** : View more detailed information on specific IP addresses and other characteristics.
+
+
+
+Bot Analytics shows up to 72 hours of data at a time and can display data up to 30 days old. Bot Analytics displays data in real time in most cases.
+
+Cloudflare uses adaptive bitrate technology to show sampled data — most customers will see a 1-10% sample depending on how much information they are trying to view. Tooltips on the page will display the current sample rate.
+
+### Common uses
+
+Business and Enterprise customers without Bot Management can use Bot Analytics to:
+
+  * Understand bot traffic
+  * Study recent attacks to find trends and detailed information
+  * Learn more about Cloudflare’s detection engines with real data
+
+
+
+For more details and granular control over bot traffic, consider upgrading to [Bot Management for Enterprise](https://developers.cloudflare.com/bots/bot-analytics/#enterprise-bot-management).
+
+## Enterprise Bot Management
+
+Enterprise customers with Bot Management can use **Bot Analytics** to dynamically examine bot traffic.
+
+### Access
+
+You can access Bot Analytics by going to the [Cloudflare dashboard ↗︎](https://dash.cloudflare.com/login), and selecting your account and domain.
+
+Go to **Security** > **Analytics** > **Bot analysis**.
+
+![View Bot Analytics in the Cloudflare dashboard. For more details, keep reading.](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=2070,height=1394,format=webp/_astro/bot-analytics-dashboard-ent.DA4XLihG.png)
+
+### Features
+
+For a full tour of Bot Analytics, see [our blog post ↗︎](https://blog.cloudflare.com/introducing-bot-analytics/). At a high level, the tool includes:
+
+  * **Requests by bot score** : View your total domain traffic and segment it vertically by traffic type. Keep an eye on _automated_ and _likely automated_ traffic.
+  * **Bot score distribution** : View the number of requests assigned a bot score 1 through 99.
+  * **Bot score source** : Identify the most common detection engines used to score your traffic. Hover over a tooltip to learn more about each engine.
+  * **Top requests by attribute** : View more detailed information on specific IP addresses and other characteristics.
+
+
+
+Bot Analytics shows up to one week of data at a time and can display data up to 30 days old. Bot Analytics displays data in real time in most cases.
+
+Cloudflare uses adaptive bitrate technology to show sampled data — most customers will see a 1-10% sample depending on how much information they are trying to view. Tooltips on the page will display the current sample rate.
+
+### Common uses
+
+Bot Management customers can use Bot Analytics to:
+
+  * Understand traffic during [your onboarding phase](https://developers.cloudflare.com/bots/get-started/bot-management/).
+  * Tune WAF custom rules to be effective but not overly aggressive.
+  * Study recent attacks to find trends and detailed information.
+  * Learn more about Cloudflare’s detection engines with real data.
+
+
+
+### API
+
+Data from Bot Analytics is also available via the GraphQL API. You can access bot scores, bot sources, [bot tags](https://developers.cloudflare.com/bots/concepts/bot-tags/), and bot _decisions_ (_automated_ , _likely automated_ , etc.), and more.
+
+Read the [GraphQL Analytics API documentation](https://developers.cloudflare.com/analytics/graphql-api/) for more information about GraphQL and basic querying.
+
+[PreviousStatic resource protection](https://developers.cloudflare.com/bots/additional-configurations/static-resources/)[NextBotBase](https://developers.cloudflare.com/bots/botbase/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/bots/bot-analytics.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/65gbps-ddos-no-problem/",
+  "file": "_subdomains/blog.cloudflare.com/65gbps-ddos-no-problem.md",
+  "title": "How to Launch a 65Gbps DDoS, and How to Stop One | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:49.187285+00:00",
+  "html_len": 283681,
+  "md_len": 63585,
+  "depth": 0,
+  "phase": 2
+}

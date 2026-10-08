@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/compression-rules/examples/only-brotli-url-path/",
+  "file": "rules/compression-rules/examples/only-brotli-url-path.md",
+  "title": "Use only Brotli compression for a specific path \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:47.613975+00:00",
+  "html_len": 136991,
+  "md_len": 3928,
+  "depth": 0
+}

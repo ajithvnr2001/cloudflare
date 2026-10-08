@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/email-routing-leaves-beta/",
+  "file": "_subdomains/blog.cloudflare.com/email-routing-leaves-beta.md",
+  "title": "Email Routing leaves Beta | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:27.889857+00:00",
+  "html_len": 321423,
+  "md_len": 73018,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/ai-side-channel-attack-mitigated/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/ai-side-channel-attack-mitigated.md",
+  "title": "\u7f13\u89e3 Cloudflare AI \u4ea7\u54c1\u4e2d\u7684\u4ee4\u724c\u957f\u5ea6\u4fa7\u4fe1\u9053\u653b\u51fb | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:07.674556+00:00",
+  "html_len": 212184,
+  "md_len": 27451,
+  "depth": 0,
+  "phase": 2
+}

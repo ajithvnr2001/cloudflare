@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/steps-taken-around-cloudflares-services-in-ukraine-belarus-and-russia/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/steps-taken-around-cloudflares-services-in-ukraine-belarus-and-russia.md",
+  "title": "Ukraine, Belarus und Russland: Diese Schritte haben wir rund um die Cloudflare-Dienste gesetzt | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:19.728637+00:00",
+  "html_len": 212301,
+  "md_len": 34365,
+  "depth": 0,
+  "phase": 2
+}

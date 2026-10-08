@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/agent-registry/",
+  "file": "_subdomains/blog.cloudflare.com/agent-registry.md",
+  "title": "Beyond IP lists- a registry format for bots and agents | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:52.461469+00:00",
+  "html_len": 298477,
+  "md_len": 64929,
+  "depth": 0,
+  "phase": 2
+}

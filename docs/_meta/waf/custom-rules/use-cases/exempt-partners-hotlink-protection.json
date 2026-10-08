@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/custom-rules/use-cases/exempt-partners-hotlink-protection/",
+  "file": "waf/custom-rules/use-cases/exempt-partners-hotlink-protection.md",
+  "title": "Exempt partners from Hotlink Protection \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:38.983488+00:00",
+  "html_len": 134467,
+  "md_len": 2972,
+  "depth": 0
+}

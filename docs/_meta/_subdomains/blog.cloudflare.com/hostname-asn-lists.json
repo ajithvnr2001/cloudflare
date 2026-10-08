@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/hostname-asn-lists/",
+  "file": "_subdomains/blog.cloudflare.com/hostname-asn-lists.md",
+  "title": "Introducing hostname and ASN lists to simplify WAF rule creation | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:06.804425+00:00",
+  "html_len": 279070,
+  "md_len": 60122,
+  "depth": 0,
+  "phase": 2
+}

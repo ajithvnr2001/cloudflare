@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/building-many-private-virtual-networks-through-cloudflare-zero-trust/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/building-many-private-virtual-networks-through-cloudflare-zero-trust.md",
+  "title": "Cloudflare Zero Trust\ub97c \ud1b5\ud574 \uc5ec\ub7ec \uac1c\uc758 \uc0ac\uc124 \uac00\uc0c1 \ub124\ud2b8\uc6cc\ud06c \uad6c\ucd95 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:02.226452+00:00",
+  "html_len": 224006,
+  "md_len": 33761,
+  "depth": 0,
+  "phase": 2
+}

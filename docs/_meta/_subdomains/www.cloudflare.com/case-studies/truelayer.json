@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/truelayer/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/truelayer.md",
+  "title": "TrueLayer | Cloudflare Case Study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:52.824620+00:00",
+  "html_len": 207055,
+  "md_len": 9062,
+  "depth": 0,
+  "phase": 2
+}

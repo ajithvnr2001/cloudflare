@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/tag/real-time/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/tag/real-time.md",
+  "title": "Articles tagu\u00e9s \u00ab Temps r\u00e9el \u00bb \u2014 Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:13:21.420423+00:00",
+  "html_len": 113175,
+  "md_len": 1435,
+  "depth": 1,
+  "phase": 2
+}

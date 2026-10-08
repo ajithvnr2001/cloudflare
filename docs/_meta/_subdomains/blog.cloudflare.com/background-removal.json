@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/background-removal/",
+  "file": "_subdomains/blog.cloudflare.com/background-removal.md",
+  "title": "Evaluating image segmentation models for background removal for Images | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:53.059006+00:00",
+  "html_len": 352203,
+  "md_len": 84513,
+  "depth": 0,
+  "phase": 2
+}

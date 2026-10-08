@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/ja-jp/resource-hub/",
+  "file": "_subdomains/www.cloudflare.com/ja-jp/resource-hub.md",
+  "title": "\u30ea\u30bd\u30fc\u30b9\u30cf\u30d6 | Cloudflare",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (82 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:20:17.595260+00:00",
+  "html_len": 556920,
+  "md_len": 10189,
+  "depth": 1,
+  "phase": 2
+}

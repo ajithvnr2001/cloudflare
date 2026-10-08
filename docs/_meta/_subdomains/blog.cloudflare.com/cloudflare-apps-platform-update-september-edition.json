@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-apps-platform-update-september-edition/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-apps-platform-update-september-edition.md",
+  "title": "Cloudflare Apps Platform Update: September Edition | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:01.374031+00:00",
+  "html_len": 301738,
+  "md_len": 67627,
+  "depth": 0,
+  "phase": 2
+}

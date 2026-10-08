@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/domain-scoped-roles-ga/",
+  "file": "_subdomains/blog.cloudflare.com/domain-scoped-roles-ga.md",
+  "title": "Improved Access Control: Domain Scoped Roles are now generally available | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:50.256216+00:00",
+  "html_len": 279574,
+  "md_len": 58797,
+  "depth": 0,
+  "phase": 2
+}

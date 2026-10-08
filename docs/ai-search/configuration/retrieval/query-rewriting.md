@@ -1,0 +1,66 @@
+---
+url: https://developers.cloudflare.com/ai-search/configuration/retrieval/query-rewriting/
+title: Query rewriting \u00b7 Cloudflare AI Search docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:04:40.802568+00:00
+---
+
+# Query rewriting · Cloudflare AI Search docs
+
+> Source: https://developers.cloudflare.com/ai-search/configuration/retrieval/query-rewriting/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[AI Search](https://developers.cloudflare.com/ai-search/)
+  3. /…
+
+[Configuration](https://developers.cloudflare.com/ai-search/configuration/)
+
+  4. /Retrieval
+  5. /Query rewriting
+
+
+
+# Query rewriting
+
+Last updated Jun 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai-search/configuration/retrieval/query-rewriting/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewWhy use query rewriting?How it worksExampleConsiderations
+
+Query rewriting is an optional step in the AI Search pipeline that improves retrieval quality for follow-up queries. It applies to both [Search](https://developers.cloudflare.com/ai-search/api/search/workers-binding/#search) and [Chat Completions](https://developers.cloudflare.com/ai-search/api/search/workers-binding/#chatcompletions) requests.
+
+## Why use query rewriting?
+
+The wording of a user's question may not match how your documents are written. Query rewriting helps bridge this gap by:
+
+  * Rephrasing informal or vague queries into precise, information-dense terms
+  * Adding synonyms or related keywords
+  * Removing filler words or irrelevant details
+  * Resolving follow-up queries that reference previous messages (for example, "tell me more about that" becomes a specific query based on conversation history)
+
+
+
+This leads to more relevant search matches, which improves the accuracy of results and generated responses.
+
+## How it works
+
+Query rewriting requires the `messages` format and does not apply when using the `query` format. The first message is always used as-is. For follow-up queries, AI Search sends the conversation history, the latest user message, and the [query rewrite system prompt](https://developers.cloudflare.com/ai-search/configuration/retrieval/system-prompt/) to the configured LLM. The rewritten query is then embedded and used to perform the search.
+
+## Example
+
+**First message:** `What is Cloudflare Workers?` (used as-is, no rewriting)
+
+**Follow-up message:** `How do I deploy one?` **Rewritten query:** `deploy Cloudflare Worker getting started`
+
+The follow-up "How do I deploy one?" is vague on its own. Query rewriting uses the conversation context to understand "one" refers to a Cloudflare Worker. How the query is rewritten depends on your [query rewrite system prompt](https://developers.cloudflare.com/ai-search/configuration/retrieval/system-prompt/#query-rewriting-system-prompt).
+
+## Considerations
+
+Enabling query rewriting adds an extra LLM call to the query pipeline, which may increase latency.
+
+[PreviousFiltering](https://developers.cloudflare.com/ai-search/configuration/retrieval/filtering/)[NextRelevance boosting](https://developers.cloudflare.com/ai-search/configuration/retrieval/boosting/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/ai-search/configuration/retrieval/query-rewriting.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

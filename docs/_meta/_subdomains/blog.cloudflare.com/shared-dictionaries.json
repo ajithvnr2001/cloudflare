@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/shared-dictionaries/",
+  "file": "_subdomains/blog.cloudflare.com/shared-dictionaries.md",
+  "title": "Shared Dictionaries: compression that keeps up with the agentic web | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:40.268383+00:00",
+  "html_len": 314557,
+  "md_len": 75461,
+  "depth": 0,
+  "phase": 2
+}

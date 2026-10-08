@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/adguard/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/adguard.md",
+  "title": "AdGuard",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:18.098250+00:00",
+  "html_len": 204478,
+  "md_len": 5042,
+  "depth": 0,
+  "phase": 2
+}

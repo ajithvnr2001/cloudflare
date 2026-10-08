@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/bots/what-is-a-spambot/",
+  "file": "_subdomains/www.cloudflare.com/learning/bots/what-is-a-spambot.md",
+  "title": "What Is a Spam Bot? | How Spam Messages Spread",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:49.809543+00:00",
+  "html_len": 205427,
+  "md_len": 13305,
+  "depth": 0,
+  "phase": 2
+}

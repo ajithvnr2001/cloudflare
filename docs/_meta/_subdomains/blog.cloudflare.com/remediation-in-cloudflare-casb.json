@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/remediation-in-cloudflare-casb/",
+  "file": "_subdomains/blog.cloudflare.com/remediation-in-cloudflare-casb.md",
+  "title": "See risk, fix risk: introducing Remediation in Cloudflare CASB | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:57.930467+00:00",
+  "html_len": 290667,
+  "md_len": 64458,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/helping-to-make-luajit-faster/",
+  "file": "_subdomains/blog.cloudflare.com/helping-to-make-luajit-faster.md",
+  "title": "Helping to make LuaJIT faster | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:59.079576+00:00",
+  "html_len": 271816,
+  "md_len": 61624,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/realtime-threat-intel-waf-rules/",
+  "file": "_subdomains/blog.cloudflare.com/realtime-threat-intel-waf-rules.md",
+  "title": "Turning Cloudflare\u2019s threat indicators into real-time WAF rules | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:47.659582+00:00",
+  "html_len": 297559,
+  "md_len": 65595,
+  "depth": 0,
+  "phase": 2
+}

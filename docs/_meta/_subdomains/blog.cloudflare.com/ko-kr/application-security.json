@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/application-security/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/application-security.md",
+  "title": "\uc560\ud50c\ub9ac\ucf00\uc774\uc158 \ubcf4\uc548: Cloudflare\uc758 \uad00\uc810 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:06.446902+00:00",
+  "html_len": 231764,
+  "md_len": 39130,
+  "depth": 0,
+  "phase": 2
+}

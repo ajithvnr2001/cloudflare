@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/taiwans-national-medical-institutions/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/taiwans-national-medical-institutions.md",
+  "title": "Taiwan's National medical institutions & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:50.335402+00:00",
+  "html_len": 200594,
+  "md_len": 7480,
+  "depth": 0,
+  "phase": 2
+}

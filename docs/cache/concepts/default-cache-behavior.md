@@ -1,0 +1,135 @@
+---
+url: https://developers.cloudflare.com/cache/concepts/default-cache-behavior/
+title: Default Cache Behavior \u00b7 Cloudflare Cache (CDN) docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:05:41.598712+00:00
+---
+
+# Default Cache Behavior · Cloudflare Cache (CDN) docs
+
+> Source: https://developers.cloudflare.com/cache/concepts/default-cache-behavior/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Cache / CDN](https://developers.cloudflare.com/cache/)
+  3. /Concepts
+  4. /Default cache behavior
+
+
+
+# Default cache behavior
+
+Last updated Sep 14, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/cache/concepts/default-cache-behavior/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewClient-side range requestsRequest collapsingDefault cached file extensionsEdge TTLCustomization options and limits Upload limits Cacheable size limitsWhen does Cloudflare cache successfully?
+
+Cloudflare respects the origin web server’s cache headers in the following order unless an [Edge Cache TTL cache rule](https://developers.cloudflare.com/cache/how-to/cache-rules/settings/#edge-ttl) overrides the headers. Refer to the [Edge TTL](https://developers.cloudflare.com/cache/how-to/configure-cache-status-code/#edge-ttl) section for details on default TTL behavior.
+
+  * Cloudflare **does not** cache the resource when: 
+    * The `Cache-Control` header is set to `private`, `no-store`, `no-cache`, or `max-age=0`.
+    * The [Set-Cookie header](https://developers.cloudflare.com/cache/concepts/cache-behavior/#interaction-of-set-cookie-response-header-with-cache) exists.
+    * The HTTP request method is anything other than a `GET`.
+  * Cloudflare **does** cache the resource when: 
+    * The `Cache-Control` header is set to `public` and `max-age` is greater than 0.
+    * The `Expires` header is set to a future date.
+
+
+
+Note
+
+Cloudflare does cache the resource even if there is no `Cache-Control` header based on [status codes](https://developers.cloudflare.com/cache/how-to/configure-cache-status-code/#edge-ttl).
+
+Note
+
+If both `max-age` and an `Expires` header are set, `max-age` will be used by Cloudflare.
+
+When [Origin Cache Control](https://developers.cloudflare.com/cache/concepts/cache-control/) is enabled on an Enterprise customer’s website, it indicates that Cloudflare should strictly respect `Cache-Control` directives received from the origin server. Free, Pro and Business customers have this feature enabled by default. For a list of directives and behaviors when Origin Cache-Control is enabled or disabled, refer to [Cache-Control directives](https://developers.cloudflare.com/cache/concepts/cache-control/#cache-control-directives).
+
+## Client-side range requests
+
+Clients can use the HTTP `Range` header to request part of a file. Cloudflare can serve these requests from complete or partial cached files. Response behavior depends on the request method, range syntax, conditional headers, content encoding, and cache eligibility.
+
+For complete response and origin requirements, refer to [Range request behavior](https://developers.cloudflare.com/cache/reference/range-requests/).
+
+## Request collapsing
+
+When multiple requests arrive simultaneously at a single Cloudflare data center for the same asset that is not in cache (a cache miss), Cloudflare uses a cache lock to avoid sending duplicate requests to your origin. Only the first request is forwarded to the origin to fetch the asset. The remaining requests wait for the first request to complete, after which the response is [streamed ↗︎](https://blog.cloudflare.com/introducing-concurrent-streaming-acceleration/) to all waiting requests.
+
+The cache lock ensures that Cloudflare only sends one request at a time to the origin for a given asset from a single location in Cloudflare's network, preventing the origin from receiving excessive traffic.
+
+## Default cached file extensions
+
+Cloudflare only caches based on file extension and not by MIME type. The Cloudflare CDN does not cache HTML or JSON by default. Additionally, by default Cloudflare caches a website's robots.txt.
+
+7Z | CSV | GIF | MIDI | PNG | TIF | ZIP  
+---|---|---|---|---|---|---  
+AVI | DOC | GZ | MKV | PPT | TIFF | ZST  
+AVIF | DOCX | ICO | MP3 | PPTX | TTF |   
+APK | DMG | ISO | MP4 | PS | WEBM |   
+BIN | EJS | JAR | OGG | RAR | WEBP |   
+BMP | EOT | JPG | OTF | SVG | WOFF |   
+BZ2 | EPS | JPEG | PDF | SVGZ | WOFF2 |   
+CLASS | EXE | JS | PICT | SWF | XLS |   
+CSS | FLAC | MID | PLS | TAR | XLSX |   
+  
+To cache additional content, refer to [Cache Rules](https://developers.cloudflare.com/cache/how-to/cache-rules/) to create a rule to cache everything.
+
+## Edge TTL
+
+By default, Cloudflare caches certain HTTP response codes with the following Edge Cache TTL when a `cache-control` directive or `expires` response header are not present.
+
+HTTP status code | Default TTL  
+---|---  
+200, 206, 301 | 120m  
+302, 303 | 20m  
+404, 410 | 3m  
+  
+All other status codes are not cached by default.
+
+## Customization options and limits
+
+Cloudflare’s CDN provides several cache customization options:
+
+  * Caching behavior for individual URLs via [Cache Rules](https://developers.cloudflare.com/cache/how-to/cache-rules/)
+
+[ Go to **Cache Rules** ↗ ](https://dash.cloudflare.com/?to=/:account/:zone/caching/cache-rules)
+
+  * Customize caching with [Cloudflare Workers](https://developers.cloudflare.com/workers/reference/how-the-cache-works/)
+  * Adjust caching level, cache TTL, and more in the Caching page in the Cloudflare dashboard:
+
+[ Go to **Configuration** ↗ ](https://dash.cloudflare.com/?to=/:account/:zone/caching/configuration)
+
+### Upload limits
+
+| Free | Pro | Business | Enterprise  
+---|---|---|---|---  
+Availability | Yes | Yes | Yes | Yes  
+Max upload size | 100 MB | 100 MB | 200 MB | Up to 5 GB  
+  
+Customers can adjust the **Maximum Upload Size** from the zone's **Network** page. Enterprise customers can self-serve any value up to 5 GB. Uploads larger than 5 GB require additional configuration — contact your account team or [Cloudflare Support](https://developers.cloudflare.com/support/contacting-cloudflare-support/).
+
+Note
+
+Very large uploads take longer to transfer. Requests that exceed the connection or read timeout can fail mid-upload before reaching the size limit — a failure that may look unrelated to **Maximum Upload Size**. If you raise the limit substantially, make sure your clients and origin allow enough time for the full transfer.
+
+If you require a larger upload, you can group requests into smaller chunks, upload the full resource through a [DNS-only (unproxied) DNS record](https://developers.cloudflare.com/dns/proxy-status/) or [upgrade your plan](https://developers.cloudflare.com/billing/manage/change-plan/).
+
+### Cacheable size limits
+
+Cloudflare cacheable file limits:
+
+  * Free, Pro and Business customers have a limit of 512 MB.
+  * For Enterprise customers the default maximum cacheable file size is 5 GB. Contact your account team or [Cloudflare Support](https://developers.cloudflare.com/support/contacting-cloudflare-support/) to request a limit increase.
+
+
+
+## When does Cloudflare cache successfully?
+
+The connection status between visitors and Cloudflare can vary, affecting whether Cloudflare caches the content or not. If Cloudflare has already established a connection to the origin and started fetching the content, it will continue to retrieve and cache the entire content, even if the visitor disconnects midway. However, if a visitor disconnects before the origin responds to Cloudflare's request, no content will have been fetched yet, so Cloudflare will not start caching the content.
+
+[PreviousCustomize cache](https://developers.cloudflare.com/cache/concepts/customize-cache/)[NextHead Requests and Set-Cookie Headers](https://developers.cloudflare.com/cache/concepts/cache-behavior/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/cache/concepts/default-cache-behavior.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

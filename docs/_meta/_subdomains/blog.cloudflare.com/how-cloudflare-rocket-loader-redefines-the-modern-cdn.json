@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-cloudflare-rocket-loader-redefines-the-modern-cdn/",
+  "file": "_subdomains/blog.cloudflare.com/how-cloudflare-rocket-loader-redefines-the-modern-cdn.md",
+  "title": "How CloudFlare Rocket Loader Redefines the Modern CDN | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:41.657255+00:00",
+  "html_len": 276214,
+  "md_len": 60151,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/hpack-the-silent-killer-feature-of-http-2/",
+  "file": "_subdomains/blog.cloudflare.com/hpack-the-silent-killer-feature-of-http-2.md",
+  "title": "HPACK: the silent killer (feature) of HTTP/2 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:39.059211+00:00",
+  "html_len": 296371,
+  "md_len": 67642,
+  "depth": 0,
+  "phase": 2
+}

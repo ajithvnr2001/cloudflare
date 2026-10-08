@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/ml-api-discovery-and-schema-learning/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/ml-api-discovery-and-schema-learning.md",
+  "title": "Identificaci\u00f3n autom\u00e1tica de puntos finales de la API y generaci\u00f3n de esquemas mediante el aprendizaje autom\u00e1tico | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:40:13.648849+00:00",
+  "html_len": 238983,
+  "md_len": 45756,
+  "depth": 0,
+  "phase": 2
+}

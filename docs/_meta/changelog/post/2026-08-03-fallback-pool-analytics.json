@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/changelog/post/2026-08-03-fallback-pool-analytics/",
+  "file": "changelog/post/2026-08-03-fallback-pool-analytics.md",
+  "title": "See fallback pool traffic separately in load balancing analytics \u00b7 Changelog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:07:05.900713+00:00",
+  "html_len": 64035,
+  "md_len": 2308,
+  "depth": 0
+}

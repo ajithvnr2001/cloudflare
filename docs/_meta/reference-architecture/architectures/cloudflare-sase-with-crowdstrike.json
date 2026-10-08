@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/reference-architecture/architectures/cloudflare-sase-with-crowdstrike/",
+  "file": "reference-architecture/architectures/cloudflare-sase-with-crowdstrike.md",
+  "title": "CrowdStrike and Cloudflare - A unified security ecosystem for automated, risk-based protection \u00b7 Cloudflare Reference Architecture docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:39.281099+00:00",
+  "html_len": 185175,
+  "md_len": 20839,
+  "depth": 0
+}

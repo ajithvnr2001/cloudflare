@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/real-world-serverless/",
+  "file": "_subdomains/blog.cloudflare.com/real-world-serverless.md",
+  "title": "Working out Backend Knots and Building Routers (Austin Real World Serverless Video Recap) | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:07.512420+00:00",
+  "html_len": 269753,
+  "md_len": 55611,
+  "depth": 0,
+  "phase": 2
+}

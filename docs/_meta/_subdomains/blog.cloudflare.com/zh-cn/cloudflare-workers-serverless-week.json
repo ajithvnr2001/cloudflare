@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/cloudflare-workers-serverless-week/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/cloudflare-workers-serverless-week.md",
+  "title": "\u8fb9\u7f18\u8ba1\u7b97\u673a\u9047\uff1a\u5e76\u975e\u5982\u60a8\u6240\u60f3 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:16.262747+00:00",
+  "html_len": 227235,
+  "md_len": 34690,
+  "depth": 0,
+  "phase": 2
+}

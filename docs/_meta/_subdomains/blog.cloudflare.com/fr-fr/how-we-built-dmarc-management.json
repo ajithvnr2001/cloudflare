@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/how-we-built-dmarc-management/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/how-we-built-dmarc-management.md",
+  "title": "Le d\u00e9veloppement de la solution DMARC Management \u00e0 l'aide de Cloudflare Workers | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:18.378923+00:00",
+  "html_len": 256453,
+  "md_len": 44330,
+  "depth": 0,
+  "phase": 2
+}

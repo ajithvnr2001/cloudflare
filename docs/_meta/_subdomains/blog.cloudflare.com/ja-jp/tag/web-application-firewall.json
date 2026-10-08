@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/tag/web-application-firewall/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/tag/web-application-firewall.md",
+  "title": "\"Web\u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3\n\u30d5\u30a1\u30a4\u30a2\u30a6\u30a9\u30fc\u30eb\" \u30bf\u30b0\u306e\u6295\u7a3f \u2014 Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:19:06.012518+00:00",
+  "html_len": 100657,
+  "md_len": 811,
+  "depth": 1,
+  "phase": 2
+}

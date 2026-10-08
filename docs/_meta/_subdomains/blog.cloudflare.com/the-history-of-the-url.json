@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-history-of-the-url/",
+  "file": "_subdomains/blog.cloudflare.com/the-history-of-the-url.md",
+  "title": "The History of the URL | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:24.679973+00:00",
+  "html_len": 366147,
+  "md_len": 104694,
+  "depth": 0,
+  "phase": 2
+}

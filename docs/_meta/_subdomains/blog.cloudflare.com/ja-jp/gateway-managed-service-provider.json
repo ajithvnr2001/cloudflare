@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/gateway-managed-service-provider/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/gateway-managed-service-provider.md",
+  "title": "\u30de\u30cd\u30fc\u30b8\u30c9\u30b5\u30fc\u30d3\u30b9\u30d7\u30ed\u30d0\u30a4\u30c0\u30fc\u5411\u3051Cloudflare Zero Trust | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:29.379344+00:00",
+  "html_len": 218677,
+  "md_len": 35180,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/october-2021-facebook-outage/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/october-2021-facebook-outage.md",
+  "title": "C\u00f3mo Facebook se desconect\u00f3 de Internet | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:01.968034+00:00",
+  "html_len": 246373,
+  "md_len": 37129,
+  "depth": 0,
+  "phase": 2
+}

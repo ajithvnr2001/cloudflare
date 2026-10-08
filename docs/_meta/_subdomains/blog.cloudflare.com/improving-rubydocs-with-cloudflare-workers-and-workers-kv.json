@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/improving-rubydocs-with-cloudflare-workers-and-workers-kv/",
+  "file": "_subdomains/blog.cloudflare.com/improving-rubydocs-with-cloudflare-workers-and-workers-kv.md",
+  "title": "Improving RubyDocs with Cloudflare Workers and Workers KV | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:11.220619+00:00",
+  "html_len": 285830,
+  "md_len": 61480,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-migration-of-legacy-applications-to-workers/",
+  "file": "_subdomains/blog.cloudflare.com/the-migration-of-legacy-applications-to-workers.md",
+  "title": "The Migration of Legacy Applications to Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:04.998548+00:00",
+  "html_len": 323715,
+  "md_len": 74318,
+  "depth": 0,
+  "phase": 2
+}

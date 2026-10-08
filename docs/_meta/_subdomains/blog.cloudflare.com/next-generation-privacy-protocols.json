@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/next-generation-privacy-protocols/",
+  "file": "_subdomains/blog.cloudflare.com/next-generation-privacy-protocols.md",
+  "title": "Helping build the next generation of privacy-preserving protocols | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:45.992538+00:00",
+  "html_len": 308353,
+  "md_len": 75988,
+  "depth": 0,
+  "phase": 2
+}

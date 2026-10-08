@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/epbf_sockets_hop_distance/",
+  "file": "_subdomains/blog.cloudflare.com/epbf_sockets_hop_distance.md",
+  "title": "eBPF, Sockets, Hop Distance and manually writing eBPF assembly | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:39.884498+00:00",
+  "html_len": 330891,
+  "md_len": 72602,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/crawler-hints-how-cloudflare-is-reducing-the-environmental-impact-of-web-searches/",
+  "file": "_subdomains/blog.cloudflare.com/crawler-hints-how-cloudflare-is-reducing-the-environmental-impact-of-web-searches.md",
+  "title": "Crawler Hints: How Cloudflare Is Reducing The Environmental Impact Of Web Searches | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:17.152345+00:00",
+  "html_len": 286316,
+  "md_len": 67228,
+  "depth": 0,
+  "phase": 2
+}

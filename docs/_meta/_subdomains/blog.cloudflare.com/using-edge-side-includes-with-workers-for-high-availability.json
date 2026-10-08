@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/using-edge-side-includes-with-workers-for-high-availability/",
+  "file": "_subdomains/blog.cloudflare.com/using-edge-side-includes-with-workers-for-high-availability.md",
+  "title": "Using Edge-Side Includes with Workers for High Availability | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:22.415317+00:00",
+  "html_len": 302744,
+  "md_len": 63696,
+  "depth": 0,
+  "phase": 2
+}

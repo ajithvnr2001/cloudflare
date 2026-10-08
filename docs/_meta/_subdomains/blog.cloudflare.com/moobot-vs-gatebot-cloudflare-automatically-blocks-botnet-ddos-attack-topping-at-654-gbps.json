@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/moobot-vs-gatebot-cloudflare-automatically-blocks-botnet-ddos-attack-topping-at-654-gbps/",
+  "file": "_subdomains/blog.cloudflare.com/moobot-vs-gatebot-cloudflare-automatically-blocks-botnet-ddos-attack-topping-at-654-gbps.md",
+  "title": "Moobot vs. Gatebot: Cloudflare Automatically Blocks Botnet DDoS Attack Topping At 654 Gbps | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:28.672464+00:00",
+  "html_len": 305722,
+  "md_len": 69376,
+  "depth": 0,
+  "phase": 2
+}

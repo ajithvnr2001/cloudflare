@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/advancing-privacy-protection-with-the-gdpr/",
+  "file": "_subdomains/blog.cloudflare.com/advancing-privacy-protection-with-the-gdpr.md",
+  "title": "Advancing Privacy Protection with the GDPR | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:08.247613+00:00",
+  "html_len": 272886,
+  "md_len": 60262,
+  "depth": 0,
+  "phase": 2
+}

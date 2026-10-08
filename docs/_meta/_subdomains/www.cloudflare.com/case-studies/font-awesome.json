@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/font-awesome/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/font-awesome.md",
+  "title": "Font Awesome",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:30.347532+00:00",
+  "html_len": 204646,
+  "md_len": 6939,
+  "depth": 0,
+  "phase": 2
+}

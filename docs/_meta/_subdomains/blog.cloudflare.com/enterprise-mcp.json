@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/enterprise-mcp/",
+  "file": "_subdomains/blog.cloudflare.com/enterprise-mcp.md",
+  "title": "Scaling MCP adoption: Our reference architecture for simpler, safer and cheaper enterprise deployments of MCP | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:34.501634+00:00",
+  "html_len": 330017,
+  "md_len": 78639,
+  "depth": 0,
+  "phase": 2
+}

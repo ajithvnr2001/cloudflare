@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/ai/models/xai/grok-voice/schema-input.json",
+  "file": "ai/models/xai/grok-voice/schema-input.json.md",
+  "title": "https://developers.cloudflare.com/ai/models/xai/grok-voice/schema-input.json",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling empty html)",
+  "fetched_at": "2026-10-08T07:23:50.946642+00:00",
+  "html_len": 497,
+  "md_len": 513,
+  "depth": 1
+}

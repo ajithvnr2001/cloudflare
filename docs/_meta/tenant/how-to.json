@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/tenant/how-to/",
+  "file": "tenant/how-to.md",
+  "title": "How to \u00b7 Cloudflare Tenant docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:15:59.493297+00:00",
+  "html_len": 93093,
+  "md_len": 1175,
+  "depth": 0
+}

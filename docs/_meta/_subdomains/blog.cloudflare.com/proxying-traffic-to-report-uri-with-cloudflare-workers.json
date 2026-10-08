@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/proxying-traffic-to-report-uri-with-cloudflare-workers/",
+  "file": "_subdomains/blog.cloudflare.com/proxying-traffic-to-report-uri-with-cloudflare-workers.md",
+  "title": "Proxying traffic to Report URI with Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:27.501438+00:00",
+  "html_len": 299628,
+  "md_len": 66071,
+  "depth": 0,
+  "phase": 2
+}

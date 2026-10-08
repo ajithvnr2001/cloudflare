@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/automating-cloudflare-tunnel-with-terraform/",
+  "file": "_subdomains/blog.cloudflare.com/automating-cloudflare-tunnel-with-terraform.md",
+  "title": "Automating Cloudflare Tunnel with Terraform | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:25.897890+00:00",
+  "html_len": 335222,
+  "md_len": 75538,
+  "depth": 0,
+  "phase": 2
+}

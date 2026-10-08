@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-cryptographic-attestation-of-personhood/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-cryptographic-attestation-of-personhood.md",
+  "title": "Humanity wastes about 500 years per day on CAPTCHAs. It\u2019s time to end this madness | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:35.523717+00:00",
+  "html_len": 316352,
+  "md_len": 77248,
+  "depth": 0,
+  "phase": 2
+}

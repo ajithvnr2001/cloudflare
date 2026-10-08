@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/tag/snippets/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/tag/snippets.md",
+  "title": "Entradas etiquetadas con \"Snippets (ES)\" \u2014 Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:15:12.332530+00:00",
+  "html_len": 104443,
+  "md_len": 907,
+  "depth": 1,
+  "phase": 2
+}

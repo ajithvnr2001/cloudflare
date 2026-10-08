@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers-ai/models/llama-3.2-3b-instruct/",
+  "file": "workers-ai/models/llama-3.2-3b-instruct.md",
+  "title": "llama-3.2-3b-instruct (Meta) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:04.661330+00:00",
+  "html_len": 155515,
+  "md_len": 6964,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/govtech-procurement/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/govtech-procurement.md",
+  "title": "GovTech Procurement & Cloudflare | Case Study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:32.782204+00:00",
+  "html_len": 211061,
+  "md_len": 10314,
+  "depth": 0,
+  "phase": 2
+}

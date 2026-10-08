@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/major-data-center-power-failure-again-cloudflare-code-orange-tested/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/major-data-center-power-failure-again-cloudflare-code-orange-tested.md",
+  "title": "Coupure de courant (encore une) dans un datacenter essentiel : test de Cloudflare Code Orange | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:18.660399+00:00",
+  "html_len": 238279,
+  "md_len": 43735,
+  "depth": 0,
+  "phase": 2
+}

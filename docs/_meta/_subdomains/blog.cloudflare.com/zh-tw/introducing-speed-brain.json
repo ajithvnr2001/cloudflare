@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/introducing-speed-brain/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/introducing-speed-brain.md",
+  "title": "\u9686\u91cd\u63a8\u51fa Speed Brain\uff1a\u5354\u52a9\u5c07\u7db2\u9801\u8f09\u5165\u901f\u5ea6\u63d0\u9ad8 45% | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:41:08.809840+00:00",
+  "html_len": 229499,
+  "md_len": 37325,
+  "depth": 0,
+  "phase": 2
+}

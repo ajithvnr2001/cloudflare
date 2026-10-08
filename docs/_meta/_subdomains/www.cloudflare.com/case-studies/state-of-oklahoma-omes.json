@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/state-of-oklahoma-omes/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/state-of-oklahoma-omes.md",
+  "title": "Cloudflare & State of Oklahoma OMES | Case Study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:49.915729+00:00",
+  "html_len": 213693,
+  "md_len": 10939,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/shopline/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/shopline.md",
+  "title": "SHOPLINE & Cloudflare | Case Study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:47.899269+00:00",
+  "html_len": 204418,
+  "md_len": 10601,
+  "depth": 0,
+  "phase": 2
+}

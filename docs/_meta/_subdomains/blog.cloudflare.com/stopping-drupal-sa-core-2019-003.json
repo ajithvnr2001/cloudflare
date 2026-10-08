@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/stopping-drupal-sa-core-2019-003/",
+  "file": "_subdomains/blog.cloudflare.com/stopping-drupal-sa-core-2019-003.md",
+  "title": "Stopping Drupal\u2019s SA-CORE-2019-003 Vulnerability | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:54.106597+00:00",
+  "html_len": 279612,
+  "md_len": 59953,
+  "depth": 0,
+  "phase": 2
+}

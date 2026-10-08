@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/tutorials/workers-kv-from-rust/",
+  "file": "workers/tutorials/workers-kv-from-rust.md",
+  "title": "Use Workers KV directly from Rust \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:18:03.011319+00:00",
+  "html_len": 216528,
+  "md_len": 7819,
+  "depth": 0
+}

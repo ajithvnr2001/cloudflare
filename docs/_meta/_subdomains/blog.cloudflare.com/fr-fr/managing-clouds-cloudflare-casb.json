@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/managing-clouds-cloudflare-casb/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/managing-clouds-cloudflare-casb.md",
+  "title": "Gestion des clouds : le CASB de Cloudflare et notre plan \u00ab pas si secret \u00bb pour l'avenir | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:40:44.630298+00:00",
+  "html_len": 216913,
+  "md_len": 31536,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/experience-of-data-at-scale/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/experience-of-data-at-scale.md",
+  "title": "Cloudflare\u898f\u6a21\u306e\u30c7\u30fc\u30bf - 1,111\u4eba\u306e\u30a4\u30f3\u30bf\u30fc\u30f3\u306e\u6e2c\u5b9a\u306b\u95a2\u3059\u308b\u30a4\u30f3\u30b5\u30a4\u30c8 | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:55.279923+00:00",
+  "html_len": 207047,
+  "md_len": 32579,
+  "depth": 0,
+  "phase": 2
+}

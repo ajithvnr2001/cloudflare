@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/workers-ai/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/workers-ai.md",
+  "title": "Workers AI\uff1aCloudflare \u5168\u5c40\u7f51\u7edc\u7684\u65e0\u670d\u52a1\u5668 GPU \u9a71\u52a8\u63a8\u7406 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:41:51.028020+00:00",
+  "html_len": 231471,
+  "md_len": 31918,
+  "depth": 0,
+  "phase": 2
+}

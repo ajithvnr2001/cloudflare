@@ -1,0 +1,80 @@
+---
+url: https://developers.cloudflare.com/learning-paths/surge-readiness/concepts/
+title: Prerequisites \u00b7 Cloudflare Learning Paths
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:12:00.340305+00:00
+---
+
+# Prerequisites · Cloudflare Learning Paths
+
+> Source: https://developers.cloudflare.com/learning-paths/surge-readiness/concepts/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Learning Paths](https://developers.cloudflare.com/learning-paths/)
+  3. /Surge Readiness
+  4. /Prerequisites
+
+
+
+# Prerequisites
+
+Last updated Sep 9, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/learning-paths/surge-readiness/concepts/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewRegister your usersConfirm user and domain administrationAdditional items
+
+Reach out to your account team at least 30 days prior to the expected traffic surge to schedule a Security Optimization walkthrough with your Customer Solution Engineer.
+
+To learn more about our service offerings, refer to [Customer Success offerings ↗︎](https://www.cloudflare.com/success-offerings/).
+
+## Register your users
+
+For the security and protection of your account, be sure to register all account users.
+
+  1. In the Cloudflare dashboard, go to the **Manage Account** > **Members** page.
+
+[ Go to **Members** ↗ ](https://dash.cloudflare.com/?to=/:account/members)
+  2. Select more than one Super Administrator to ensure appropriate access when needed.
+
+
+
+
+Note
+
+Refer to [Manage members](https://developers.cloudflare.com/fundamentals/manage-members/) to learn how to review and update registered account users.
+
+Failure to register account users can create issues with our ticketing system. Unverified users who contact support will be funneled to the self-serve queue rather than the Enterprise queue which can result in long wait times.
+
+We strongly advise against credential-sharing which can jeopardize the trust and safety of your account.
+
+## Confirm user and domain administration
+
+  * **Multi-User:** Provide role-based permissions to a group of users to better control the administration of your domains. Each user has their own role and limited API key.
+  * **Enforce 2FA:** Ensure your entire dashboard is secure by [enforcing 2-factor authentication](https://developers.cloudflare.com/fundamentals/user-profiles/2fa/) for your organization. 
+    * To disable 2FA, submit a support ticket and allow 1-2 business days to validate your request.
+  * **Leverage API Access:** Work easily with our system programmatically using our [API ↗︎](https://api.cloudflare.com).
+
+
+
+## Additional items
+
+  * Check when your [SSL Certificates expire (only custom and origin certificates)](https://developers.cloudflare.com/ssl/edge-certificates/custom-certificates/renewing/)
+
+Note
+
+Certificates managed by Cloudflare are auto-renewed.
+
+  * Review your Operational and Disaster recovery preparedness 
+    * Enable Load Balancing with smart cache strategies: Use [Cloudflare Load Balancing](https://developers.cloudflare.com/reference-architecture/architectures/load-balancing) to distribute traffic across multiple healthy origins, and increase cache-hit ratios by leveraging [custom cache rules](https://developers.cloudflare.com/cache/performance-review/cache-analytics) and [edge compute ↗︎](https://www.cloudflare.com/learning/cdn/caching-static-and-dynamic-content/) (e.g., Cloudflare Workers) to offload origin traffic during high-demand periods.
+    * Configure failover pools and back up DNS with a playbook: Set up [Cloudflare Load Balancer failover pools](https://developers.cloudflare.com/reference-architecture/architectures/load-balancing) to automatically redirect traffic to healthy origins if one fails. Export DNS records for safekeeping and prepare a clear [incident response plan ↗︎](https://www.cloudflare.com/learning/performance/preventing-downtime) that includes steps for re-routing or recovery.
+  * Review and update your current users' access
+  * Check your domain registry validity
+
+
+
+[NextCustom pages](https://developers.cloudflare.com/learning-paths/surge-readiness/concepts/custom-pages/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/learning-paths/surge-readiness/concepts/index.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

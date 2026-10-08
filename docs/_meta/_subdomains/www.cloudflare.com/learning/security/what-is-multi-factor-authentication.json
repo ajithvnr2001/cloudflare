@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/security/what-is-multi-factor-authentication/",
+  "file": "_subdomains/www.cloudflare.com/learning/security/what-is-multi-factor-authentication.md",
+  "title": "What is multi-factor authentication (MFA)?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:05:07.056316+00:00",
+  "html_len": 244081,
+  "md_len": 25342,
+  "depth": 0,
+  "phase": 2
+}

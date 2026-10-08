@@ -1,0 +1,95 @@
+---
+url: https://developers.cloudflare.com/changelog/post/2025-05-14-python-worker-durable-object/
+title: Durable Objects are now supported in Python Workers \u00b7 Changelog
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:06:12.363332+00:00
+---
+
+# Durable Objects are now supported in Python Workers · Changelog
+
+> Source: https://developers.cloudflare.com/changelog/post/2025-05-14-python-worker-durable-object/
+
+# Changelog
+
+New updates and improvements at Cloudflare.
+
+[ View RSS feeds ](https://developers.cloudflare.com/fundamentals/new-features/available-rss-feeds/)[ Subscribe to RSS ](https://developers.cloudflare.com/changelog/rss/index.xml)
+
+[Back to all posts](https://developers.cloudflare.com/changelog)May 16, 2025
+
+## Durable Objects are now supported in Python Workers
+
+[Workers](https://developers.cloudflare.com/workers/)[Durable Objects](https://developers.cloudflare.com/durable-objects/)
+
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-05-14-python-worker-durable-object/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+You can now create [Durable Objects](https://developers.cloudflare.com/durable-objects/) using [Python Workers](https://developers.cloudflare.com/workers/languages/python/). A Durable Object is a special kind of Cloudflare Worker which uniquely combines compute with storage, enabling stateful long-running applications which run close to your users. For more info see [here](https://developers.cloudflare.com/durable-objects/concepts/what-are-durable-objects/).
+
+You can define a Durable Object in Python in a similar way to JavaScript:
+    
+    
+    from workers import DurableObject, Response, WorkerEntrypoint
+    
+    from urllib.parse import urlparse
+    
+    class MyDurableObject(DurableObject):
+        def __init__(self, ctx, env):
+            self.ctx = ctx
+            self.env = env
+    
+        def fetch(self, request):
+            result = self.ctx.storage.sql.exec("SELECT 'Hello, World!' as greeting").one()
+            return Response(result.greeting)
+    
+    class Default(WorkerEntrypoint):
+        async def fetch(self, request):
+            url = urlparse(request.url)
+            id = env.MY_DURABLE_OBJECT.idFromName(url.path)
+            stub = env.MY_DURABLE_OBJECT.get(id)
+            greeting = await stub.fetch(request.url)
+            return greeting
+
+Define the Durable Object in your Wrangler configuration file:
+    
+    
+    {
+    	"durable_objects": {
+    		"bindings": [
+    			{
+    				"name": "MY_DURABLE_OBJECT",
+    				"class_name": "MyDurableObject"
+    			}
+    		]
+    	}
+    }
+    
+    
+    [[durable_objects.bindings]]
+    name = "MY_DURABLE_OBJECT"
+    class_name = "MyDurableObject"
+
+Then define the storage backend for your Durable Object:
+    
+    
+    {
+    	"migrations": [
+    		{
+    			"tag": "v1", // Should be unique for each entry
+    			"new_sqlite_classes": [ // Array of new classes
+    				"MyDurableObject"
+    			]
+    		}
+    	]
+    }
+    
+    
+    [[migrations]]
+    tag = "v1"
+    new_sqlite_classes = [ "MyDurableObject" ]
+
+Then test your new Durable Object locally by running `wrangler dev`:
+    
+    
+    npx wrangler dev
+
+Consult the [Durable Objects documentation](https://developers.cloudflare.com/durable-objects/) for more details.

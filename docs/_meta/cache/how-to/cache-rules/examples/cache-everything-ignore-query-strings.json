@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/cache/how-to/cache-rules/examples/cache-everything-ignore-query-strings/",
+  "file": "cache/how-to/cache-rules/examples/cache-everything-ignore-query-strings.md",
+  "title": "Cache Everything while ignoring query strings \u00b7 Cloudflare Cache (CDN) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:05:43.117806+00:00",
+  "html_len": 110962,
+  "md_len": 2242,
+  "depth": 0
+}

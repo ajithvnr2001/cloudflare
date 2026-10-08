@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/zh-tw/plans/",
+  "file": "_subdomains/www.cloudflare.com/zh-tw/plans.md",
+  "title": "\u6211\u5011\u7684\u7db2\u8def\u5b89\u5168\u65b9\u6848\u53ca\u5b9a\u50f9 | Cloudflare",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (81 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:10:26.151029+00:00",
+  "html_len": 636840,
+  "md_len": 13305,
+  "depth": 1,
+  "phase": 2
+}

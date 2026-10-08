@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/sudans-exam-related-internet-shutdowns/",
+  "file": "_subdomains/blog.cloudflare.com/sudans-exam-related-internet-shutdowns.md",
+  "title": "Sudan's exam-related Internet shutdowns | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:22.057968+00:00",
+  "html_len": 271365,
+  "md_len": 55448,
+  "depth": 0,
+  "phase": 2
+}

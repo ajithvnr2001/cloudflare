@@ -1,0 +1,179 @@
+---
+url: https://developers.cloudflare.com/waf/detections/ai-security-for-apps/example-rules/
+title: Example mitigation rules \u00b7 Cloudflare Web Application Firewall (WAF) docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:16:40.032734+00:00
+---
+
+# Example mitigation rules · Cloudflare Web Application Firewall (WAF) docs
+
+> Source: https://developers.cloudflare.com/waf/detections/ai-security-for-apps/example-rules/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[WAF](https://developers.cloudflare.com/waf/)
+  3. /…
+
+[Traffic detections](https://developers.cloudflare.com/waf/detections/)
+
+  4. /[AI Security for Apps](https://developers.cloudflare.com/waf/detections/ai-security-for-apps/)
+  5. /Example mitigation rules
+
+
+
+# Example mitigation rules
+
+Last updated Sep 24, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/waf/detections/ai-security-for-apps/example-rules/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewReturn a custom error for violent or hateful contentBlock prompt injection attempts from automated sources outside your countryAllow financial PII only from your internal networkHandle block responses in your application Set a fallback message Display custom error messages from the WAF
+
+## Return a custom error for violent or hateful content
+
+A customer support chatbot should not engage with prompts about violence or hate speech. This [custom rule](https://developers.cloudflare.com/waf/custom-rules/create-dashboard/) blocks the request and returns a JSON response that your application can parse and display to the user.
+
+  * **When incoming requests match** :
+
+Field | Operator | Value  
+---|---|---  
+LLM Unsafe topic categories | is in | `VIOLENCE_AND_WEAPONS` `HATE_AND_DISCRIMINATION`  
+  
+Expression when using the editor:  
+`(any(cf.llm.prompt.unsafe_topic_categories[*] in {"VIOLENCE_AND_WEAPONS" "HATE_AND_DISCRIMINATION"}))`
+
+  * **Action** : _Block_
+
+  * **With response type** : Custom JSON
+
+  * **Response body** :
+        
+        { "error": "content_policy", "message": "Your message could not be processed because it touches on a topic outside this assistant's scope. Please rephrase your question." }
+
+
+
+
+Your application can check for a non-200 response and display the `message` field to the user, keeping the experience conversational instead of showing a raw block page.
+
+## Block prompt injection attempts from automated sources outside your country
+
+This rule combines AI Security for Apps's [injection score](https://developers.cloudflare.com/waf/detections/ai-security-for-apps/prompt-injection/) with [Bot Management](https://developers.cloudflare.com/bots/get-started/) and the request's country to focus on high-confidence attacks from automated sources. This layered approach significantly reduces false positives compared to using any single signal alone.
+
+  * **When incoming requests match** :
+
+Enter the following expression in the editor:  
+`(cf.llm.prompt.injection_score lt 25 and cf.bot_management.score lt 10 and ip.geoip.country ne "US")`
+
+  * **Action** : _Block_
+
+
+
+
+The rule targets requests that are simultaneously:
+
+  1. Likely prompt injection attempts (score below 25).
+  2. Coming from automated tooling, not a real browser (bot score below 10).
+  3. Originating from outside the US — adjust the country code to match where your users are.
+
+
+
+Any single signal might produce false positives on its own. Together, they identify a pattern strongly associated with automated prompt injection attacks.
+
+## Allow financial PII only from your internal network
+
+A financial services application legitimately handles credit card and bank account numbers from internal agents, but should block those PII types from external users. This rule uses the request's [autonomous system number (ASN)](https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/ip.src.asnum/) to distinguish internal traffic from public traffic.
+
+  * **When incoming requests match** :
+
+Enter the following expression in the editor:  
+`(any(cf.llm.prompt.pii_categories[*] in {"CREDIT_CARD" "BANK_ACCOUNT"}) and ip.src.asnum ne 13335)`
+
+Replace `13335` with your organization's ASN.
+
+  * **Action** : _Block_
+
+  * **With response type** : Custom JSON
+
+  * **Response body** :
+        
+        { "error": "pii_blocked", "message": "Financial account information cannot be submitted from external networks. If you are an internal agent, connect to the corporate network and try again." }
+
+
+
+
+Internal agents on your corporate network (identified by ASN) can submit financial PII to the AI assistant as part of their workflow, while external users are blocked. You could further refine this by combining with [Access](https://developers.cloudflare.com/cloudflare-one/access-controls/policies/) service tokens or [mTLS](https://developers.cloudflare.com/ssl/client-certificates/) for stronger identity verification.
+
+## Handle block responses in your application
+
+When a WAF rule blocks a request, Cloudflare sends the block response back to your application — not to the end user. Your application needs to handle that response and decide what to show. Without error handling, your users may see a raw HTML error page or a broken UI.
+
+Here are two things you can do to keep the experience smooth.
+
+### Set a fallback message
+
+Define a friendly default message that your application displays whenever it receives a non-successful response. This works regardless of how the block rule is configured — including the default Cloudflare block page, which returns HTML that would otherwise break a JSON-based chat UI.
+    
+    
+    // Define a user-friendly fallback message. This is what the user will see
+    // any time the request is blocked or something unexpected happens.
+    const FALLBACK = "Sorry, I can't process that request. Please try rephrasing.";
+    
+    const resp = await fetch("/api/chat", {
+    	method: "POST",
+    	headers: { "Content-Type": "application/json" },
+    	body: JSON.stringify({ prompt: userMessage }),
+    });
+    
+    // If the response is not 2xx, show the fallback instead of trying to parse
+    // the body. This safely handles the default Cloudflare block page (which is
+    // HTML) without breaking your UI.
+    if (!resp.ok) {
+    	await resp.text(); // consume the body so the connection is released
+    	showError(FALLBACK);
+    	return;
+    }
+    
+    const data = await resp.json();
+    showMessage(data.message);
+
+### Display custom error messages from the WAF
+
+For more control, configure your block rules with a [custom JSON response](https://developers.cloudflare.com/waf/custom-rules/create-dashboard/#configure-a-custom-response-for-blocked-requests) — for example, `{ "message": "That question is outside this assistant's scope." }`. Your application can then parse the response and show the custom message when available, falling back to the default when it is not.
+    
+    
+    const FALLBACK = "Sorry, I can't process that request. Please try rephrasing.";
+    
+    const resp = await fetch("/api/chat", {
+    	method: "POST",
+    	headers: { "Content-Type": "application/json" },
+    	body: JSON.stringify({ prompt: userMessage }),
+    });
+    
+    if (!resp.ok) {
+    	// Check the content type to determine if the response contains a custom
+    	// JSON error from your WAF rule, or something else (like the default
+    	// Cloudflare HTML block page, or a DDoS / Bot Management challenge).
+    	const ct = (resp.headers.get("content-type") || "").toLowerCase();
+    
+    	if (ct.includes("application/json")) {
+    		// The WAF returned your custom JSON response. Parse it and show the
+    		// message you configured in the rule. Fall back to the default if the
+    		// field is missing or empty.
+    		const data = await resp.json();
+    		showError(data.message || FALLBACK);
+    	} else {
+    		// The response is not JSON — most likely the default Cloudflare HTML
+    		// block page. Discard the body and show the friendly fallback.
+    		await resp.text();
+    		showError(FALLBACK);
+    	}
+    	return;
+    }
+    
+    const data = await resp.json();
+    showMessage(data.message);
+
+[PreviousToken counting](https://developers.cloudflare.com/waf/detections/ai-security-for-apps/token-counting/)[NextLog mode vs production mode](https://developers.cloudflare.com/waf/detections/ai-security-for-apps/log-mode-vs-production-mode/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/waf/detections/ai-security-for-apps/example-rules.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

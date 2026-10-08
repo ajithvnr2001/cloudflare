@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/generative-ai/",
+  "file": "_subdomains/blog.cloudflare.com/tag/generative-ai.md",
+  "title": "Posts tagged \"Generative AI\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:09:04.001104+00:00",
+  "html_len": 146819,
+  "md_len": 9409,
+  "depth": 1,
+  "phase": 2
+}

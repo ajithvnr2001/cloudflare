@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/todays-system-wide-upgrade/",
+  "file": "_subdomains/blog.cloudflare.com/todays-system-wide-upgrade.md",
+  "title": "Today's System-Wide Upgrade | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:42.280599+00:00",
+  "html_len": 279525,
+  "md_len": 61989,
+  "depth": 0,
+  "phase": 2
+}

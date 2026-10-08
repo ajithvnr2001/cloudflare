@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/dutch-political-websites-hit-by-cyber-attacks-as-eu-voting-starts/",
+  "file": "_subdomains/blog.cloudflare.com/dutch-political-websites-hit-by-cyber-attacks-as-eu-voting-starts.md",
+  "title": "Dutch political websites hit by cyber attacks as EU voting starts | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:47.320077+00:00",
+  "html_len": 286917,
+  "md_len": 60391,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/bgp-route-leak-venezuela/",
+  "file": "_subdomains/blog.cloudflare.com/bgp-route-leak-venezuela.md",
+  "title": "A closer look at a BGP anomaly in Venezuela | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:30.261632+00:00",
+  "html_len": 305902,
+  "md_len": 71215,
+  "depth": 0,
+  "phase": 2
+}

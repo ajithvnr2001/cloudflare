@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/esni/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/esni.md",
+  "title": "\u52a0\u5bc6SNI\uff1a\u4fee\u590d\u5176\u4e2d\u4e00\u4e2a\u6838\u5fc3Internet\u6f0f\u6d1e | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:26.151523+00:00",
+  "html_len": 206819,
+  "md_len": 27100,
+  "depth": 0,
+  "phase": 2
+}

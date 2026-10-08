@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/real-time-issue-detection/",
+  "file": "_subdomains/blog.cloudflare.com/real-time-issue-detection.md",
+  "title": "Detect and send production issues straight to your agent | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:27.314989+00:00",
+  "html_len": 312558,
+  "md_len": 65273,
+  "depth": 0,
+  "phase": 2
+}

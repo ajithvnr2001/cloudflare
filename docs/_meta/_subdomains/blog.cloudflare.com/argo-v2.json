@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/argo-v2/",
+  "file": "_subdomains/blog.cloudflare.com/argo-v2.md",
+  "title": "Argo 2.0: Smart Routing Learns New Tricks | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:07.127798+00:00",
+  "html_len": 291431,
+  "md_len": 66512,
+  "depth": 0,
+  "phase": 2
+}

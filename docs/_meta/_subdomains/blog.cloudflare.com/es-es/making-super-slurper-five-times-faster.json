@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/making-super-slurper-five-times-faster/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/making-super-slurper-five-times-faster.md",
+  "title": "Super Slurper es cinco veces m\u00e1s r\u00e1pido con Workers, Durable Objects y Queues | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:41:01.576929+00:00",
+  "html_len": 230158,
+  "md_len": 39877,
+  "depth": 0,
+  "phase": 2
+}

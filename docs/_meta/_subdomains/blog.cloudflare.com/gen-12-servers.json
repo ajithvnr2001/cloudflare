@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/gen-12-servers/",
+  "file": "_subdomains/blog.cloudflare.com/gen-12-servers.md",
+  "title": "Cloudflare\u2019s 12th Generation servers \u2014 145% more performant and 63% more efficient  | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:38.179024+00:00",
+  "html_len": 329417,
+  "md_len": 77102,
+  "depth": 0,
+  "phase": 2
+}

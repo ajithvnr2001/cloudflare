@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/tag/bug-bounty/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/tag/bug-bounty.md",
+  "title": "Posts com a tag \"Bug Bounty (PT)\" \u2014 Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:06:54.264297+00:00",
+  "html_len": 105546,
+  "md_len": 1256,
+  "depth": 1,
+  "phase": 2
+}

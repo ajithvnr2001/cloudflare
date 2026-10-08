@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/accelerated-mobile/",
+  "file": "_subdomains/blog.cloudflare.com/accelerated-mobile.md",
+  "title": "Introducing Accelerated Mobile Links: Making the Mobile Web App-Quick | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:38.235636+00:00",
+  "html_len": 277759,
+  "md_len": 59560,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/fixing-the-mixed-content-problem-with-automatic-https-rewrites/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/fixing-the-mixed-content-problem-with-automatic-https-rewrites.md",
+  "title": "\u4f7f\u7528\u81ea\u52a8HTTPS\u91cd\u5199\u4fee\u590d\u6df7\u5408\u5185\u5bb9\u95ee\u9898 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:27.312112+00:00",
+  "html_len": 218031,
+  "md_len": 32155,
+  "depth": 0,
+  "phase": 2
+}

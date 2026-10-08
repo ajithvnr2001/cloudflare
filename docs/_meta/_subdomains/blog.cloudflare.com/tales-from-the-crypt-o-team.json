@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tales-from-the-crypt-o-team/",
+  "file": "_subdomains/blog.cloudflare.com/tales-from-the-crypt-o-team.md",
+  "title": "Tales from the Crypt(o team) | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:36.541648+00:00",
+  "html_len": 271872,
+  "md_len": 55858,
+  "depth": 0,
+  "phase": 2
+}

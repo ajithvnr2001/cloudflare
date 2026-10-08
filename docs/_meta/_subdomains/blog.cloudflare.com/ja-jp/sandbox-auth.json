@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/sandbox-auth/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/sandbox-auth.md",
+  "title": "\u52d5\u7684\u3067ID\u8a8d\u8b58\u578b\u306e\u30bb\u30ad\u30e5\u30a2\u306a\u30b5\u30f3\u30c9\u30dc\u30c3\u30af\u30b9\u8a8d\u8a3c | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:34.966903+00:00",
+  "html_len": 247912,
+  "md_len": 38242,
+  "depth": 0,
+  "phase": 2
+}

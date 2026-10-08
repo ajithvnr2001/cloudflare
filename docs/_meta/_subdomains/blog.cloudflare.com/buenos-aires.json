@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/buenos-aires/",
+  "file": "_subdomains/blog.cloudflare.com/buenos-aires.md",
+  "title": "CloudFlare's Buenos Aires data center now online | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:06.449567+00:00",
+  "html_len": 275317,
+  "md_len": 59733,
+  "depth": 0,
+  "phase": 2
+}

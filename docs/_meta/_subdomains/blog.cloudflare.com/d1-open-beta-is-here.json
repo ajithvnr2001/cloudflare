@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/d1-open-beta-is-here/",
+  "file": "_subdomains/blog.cloudflare.com/d1-open-beta-is-here.md",
+  "title": "D1: open beta is here | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:00.770679+00:00",
+  "html_len": 313830,
+  "md_len": 70311,
+  "depth": 0,
+  "phase": 2
+}

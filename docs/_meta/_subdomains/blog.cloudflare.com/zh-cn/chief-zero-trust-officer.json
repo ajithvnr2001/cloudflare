@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/chief-zero-trust-officer/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/chief-zero-trust-officer.md",
+  "title": "\u9996\u5e2d Zero Trust \u5b98\uff1a\u7f51\u7edc\u5b89\u5168\u65b0\u65f6\u4ee3\u7684\u65b0\u89d2\u8272 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:33.046081+00:00",
+  "html_len": 193641,
+  "md_len": 24466,
+  "depth": 0,
+  "phase": 2
+}

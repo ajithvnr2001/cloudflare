@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/workers-javascript-modules/",
+  "file": "_subdomains/blog.cloudflare.com/workers-javascript-modules.md",
+  "title": "JavaScript modules are now supported on Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:58.728540+00:00",
+  "html_len": 315149,
+  "md_len": 65501,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/recycling-memory-buffers-in-go/",
+  "file": "_subdomains/blog.cloudflare.com/recycling-memory-buffers-in-go.md",
+  "title": "Recycling memory buffers in Go | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:33.803198+00:00",
+  "html_len": 306640,
+  "md_len": 64775,
+  "depth": 0,
+  "phase": 2
+}

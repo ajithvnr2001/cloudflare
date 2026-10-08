@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/application-security-2023/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/application-security-2023.md",
+  "title": "El estado de la seguridad de las aplicaciones en 2023 | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:40:14.928265+00:00",
+  "html_len": 267909,
+  "md_len": 51431,
+  "depth": 0,
+  "phase": 2
+}

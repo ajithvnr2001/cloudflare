@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-spdy/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-spdy.md",
+  "title": "Introducing SPDY | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:02.636218+00:00",
+  "html_len": 274281,
+  "md_len": 59568,
+  "depth": 0,
+  "phase": 2
+}

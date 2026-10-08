@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/it-it/consequences-of-ip-blocking/",
+  "file": "_subdomains/blog.cloudflare.com/it-it/consequences-of-ip-blocking.md",
+  "title": "Le conseguenze indesiderate del blocco degli indirizzi IP | Il blog di Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:06.277356+00:00",
+  "html_len": 225898,
+  "md_len": 42608,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/delivering-a-serverless-api-in-10-minutes-using-workers/",
+  "file": "_subdomains/blog.cloudflare.com/delivering-a-serverless-api-in-10-minutes-using-workers.md",
+  "title": "Delivering a Serverless API in 10 minutes using Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:28.684942+00:00",
+  "html_len": 300753,
+  "md_len": 64423,
+  "depth": 0,
+  "phase": 2
+}

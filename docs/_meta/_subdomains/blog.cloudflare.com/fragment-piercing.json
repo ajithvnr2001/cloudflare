@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fragment-piercing/",
+  "file": "_subdomains/blog.cloudflare.com/fragment-piercing.md",
+  "title": "Incremental adoption of micro-frontends with Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:49.234007+00:00",
+  "html_len": 334198,
+  "md_len": 79457,
+  "depth": 0,
+  "phase": 2
+}

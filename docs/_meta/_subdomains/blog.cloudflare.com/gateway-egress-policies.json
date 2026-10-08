@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/gateway-egress-policies/",
+  "file": "_subdomains/blog.cloudflare.com/gateway-egress-policies.md",
+  "title": "Manage and control the use of dedicated egress IPs with Cloudflare Zero Trust | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:22.860217+00:00",
+  "html_len": 292788,
+  "md_len": 63632,
+  "depth": 0,
+  "phase": 2
+}

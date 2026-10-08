@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/teams-plans/",
+  "file": "_subdomains/blog.cloudflare.com/teams-plans.md",
+  "title": "Zero Trust For Everyone | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:55.702853+00:00",
+  "html_len": 286287,
+  "md_len": 61036,
+  "depth": 0,
+  "phase": 2
+}

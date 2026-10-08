@@ -1,0 +1,208 @@
+---
+url: https://developers.cloudflare.com/tunnel/guides/update-cloudflared/
+title: Update cloudflared \u00b7 Cloudflare Docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:16:04.938182+00:00
+---
+
+# Update cloudflared · Cloudflare Docs
+
+> Source: https://developers.cloudflare.com/tunnel/guides/update-cloudflared/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Cloudflare Tunnel](https://developers.cloudflare.com/tunnel/)
+  3. /[Guides](https://developers.cloudflare.com/tunnel/guides/)
+  4. /Update cloudflared
+
+
+
+# Update cloudflared
+
+Last updated Sep 11, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/tunnel/guides/update-cloudflared/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewUpdate the cloudflared serviceUpdate with Cloudflare Load BalancerUpdate with multiple cloudflared instances Run multiple instances in Windows
+
+Updates will cause `cloudflared` to restart which will impact traffic currently being served. You can perform zero-downtime upgrades by using Cloudflare's Load Balancer product or by using multiple `cloudflared` instances.
+
+## Update the `cloudflared` service
+
+Refer to the following commands to update `cloudflared` for a remotely-managed tunnel or a locally-managed tunnel. Locally-managed tunnels must be set up to [run as a service](https://developers.cloudflare.com/tunnel/features/locally-managed-tunnels/as-a-service/) for the following commands to execute successfully.
+
+Run the following command:
+    
+    
+    cloudflared update
+
+After running `cloudflared update` to update `cloudflared`, you must restart the service for it to take effect. Run:
+    
+    
+    net start cloudflared
+
+  1. Update the `cloudflared` package:
+
+
+    
+    
+    brew upgrade cloudflared
+
+  2. Restart the service:
+
+
+    
+    
+    sudo launchctl stop com.cloudflare.cloudflared
+    sudo launchctl unload /Library/LaunchDaemons/com.cloudflare.cloudflared.plist
+    sudo launchctl load /Library/LaunchDaemons/com.cloudflare.cloudflared.plist
+    sudo launchctl start com.cloudflare.cloudflared
+
+**If installed via apt:**
+
+  1. Update the `cloudflared` package:
+
+
+    
+    
+    sudo apt-get update && sudo apt-get install --only-upgrade cloudflared
+
+  2. Restart the service:
+
+
+    
+    
+    sudo systemctl restart cloudflared.service
+
+**If installed via`dpkg -i`:**
+
+Use the following commands if you installed `cloudflared` using the `dpkg` package manager. 
+
+You can check if `cloudflared` was installed by a package manager by running `ls -la /usr/local/etc/cloudflared/` and looking for `.installedFromPackageManager` in the output.
+
+  1. Update the `cloudflared` package:
+
+
+    
+    
+    curl --location --output cloudflared.deb "https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-$(dpkg --print-architecture).deb" && sudo dpkg -i cloudflared.deb
+
+  2. Restart the service:
+
+
+    
+    
+    sudo systemctl restart cloudflared.service
+
+  1. Update the `cloudflared` package:
+
+
+    
+    
+    sudo yum update cloudflared
+
+  2. Restart the service:
+
+
+    
+    
+    sudo systemctl restart cloudflared.service
+
+**If you created a remotely-managed tunnel using the dashboard:**
+
+  1. In the Cloudflare dashboard, go to **Networking** > **Tunnels**.
+
+[ Go to **Tunnels** ↗ ](https://dash.cloudflare.com/?to=/:account/tunnels)
+  2. Select your tunnel to open its detail page.
+
+  3. On the **Overview** tab, copy the Docker installation command. The copied command will contain your token.
+
+  4. Paste this command into a terminal window.
+
+
+
+
+This command creates a new container from the latest `cloudflared` image. You can now delete the old container.
+
+Caution
+
+Cloudflare recommends creating remotely-managed tunnels when working with Docker.
+
+**If you created a remotely or locally-managed tunnel using the API, run the following command:**
+    
+    
+     docker run --pull always cloudflare/cloudflared:latest tunnel --no-autoupdate run --token <TOKEN>
+
+**If you created a locally-managed tunnel using the CLI:**
+
+  1. Mount your local `.cloudflared` directory into the Docker container using a volume.
+
+  2. Run the following command to update `cloudflared`:
+         
+         docker run --pull always -v <PATH-TO-YOUR-LOCAL-CLOUDFLARED>:/home/nonroot/.cloudflared cloudflare/cloudflared:latest tunnel --no-autoupdate run <TUNNEL-ID>
+
+
+
+
+If you installed `cloudflared` from GitHub-provided binaries or from source, run the following command:
+    
+    
+    cloudflared update
+
+If you installed `cloudflared` with a package manager, you must update it using the same package manager. 
+
+You can check if `cloudflared` was installed by a package manager by running `ls -la /usr/local/etc/cloudflared/` and looking for `.installedFromPackageManager` in the output.
+
+## Update with Cloudflare Load Balancer
+
+You can update `cloudflared` without downtime by using Cloudflare's Load Balancer product with your Cloudflare Tunnel deployment.
+
+  1. Install a new instance of `cloudflared` and [create](https://developers.cloudflare.com/tunnel/get-started/) a new Tunnel.
+  2. Configure the instance to point traffic to the same locally-available service as your current, active instance of `cloudflared`.
+  3. [Add the address](https://developers.cloudflare.com/tunnel/concepts/routing/#add-a-tunnel-to-a-load-balancer-pool) of the new instance of `cloudflared` into your Load Balancer pool as priority 2.
+  4. Swap the priority such that the new instance is now priority 1 and monitor to confirm traffic is being served.
+  5. Once confirmed, you can remove the older version from the Load Balancer pool.
+
+
+
+## Update with multiple `cloudflared` instances
+
+If you are not using Cloudflare's Load Balancer, you can use multiple instances of `cloudflared` to update without the risk of downtime.
+
+  1. Install a new instance of `cloudflared` and [create](https://developers.cloudflare.com/tunnel/get-started/) a new Tunnel.
+  2. Configure the instance to point traffic to the same locally-available service as your current, active instance of `cloudflared`.
+  3. In the Cloudflare DNS dashboard, [replace](https://developers.cloudflare.com/tunnel/concepts/routing/#dns-records) the address of the current instance of `cloudflared` with the address of the new instance. Save the record.
+  4. Remove the now-inactive instance of `cloudflared`.
+
+
+
+Traffic handling
+
+When the old replica is stopped, it will drop long-lived HTTP requests (for example, WebSocket) and TCP connections (for example, SSH). UDP flows will also be dropped, as they are modeled based on timeouts. When the new replica connects, it will handle all new traffic, including new HTTP requests, TCP connections, and UDP flows.
+
+### Run multiple instances in Windows
+
+Windows systems require services to have a unique name and display name. You can run multiple instances of `cloudflared` by creating `cloudflared` services with unique names.
+
+  1. Install and configure `cloudflared`.
+  2. Next, create a service with a unique name and point to the `cloudflared` executable and configuration file.
+
+
+    
+    
+    sc.exe create <unique-name> binPath='<path-to-exe>' --config '<path-to-config>' displayname="Unique Name"
+
+  3. Proceed to create additional services with unique names.
+
+  4. You can now start each unique service.
+
+
+
+    
+    
+    sc.exe start <unique-name>
+
+[PreviousTerraform](https://developers.cloudflare.com/tunnel/guides/terraform/)[NextGranular permissions](https://developers.cloudflare.com/tunnel/guides/granular-permissions/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/tunnel/guides/update-cloudflared.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

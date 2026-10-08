@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/workflows-v2/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/workflows-v2.md",
+  "title": "\uc5d0\uc774\uc804\ud2f1 \uc2dc\ub300\uc5d0 \ub9de\uac8c Workflows \uc81c\uc5b4\ud310 \uc7ac\uad6c\ucd95 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:37.187090+00:00",
+  "html_len": 230279,
+  "md_len": 37823,
+  "depth": 0,
+  "phase": 2
+}

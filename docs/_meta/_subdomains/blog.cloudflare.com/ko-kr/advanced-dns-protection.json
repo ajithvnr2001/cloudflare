@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/advanced-dns-protection/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/advanced-dns-protection.md",
+  "title": "Advanced DNS Protection: \uc815\uad50\ud55c DNS DDoS \uacf5\uaca9 \uc644\ud654 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:39:33.136579+00:00",
+  "html_len": 240029,
+  "md_len": 40181,
+  "depth": 0,
+  "phase": 2
+}

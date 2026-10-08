@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/tag/traffic/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/tag/traffic.md",
+  "title": "Posts com a tag \"Acelera\u00e7\u00e3o\" \u2014 Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:07:05.531838+00:00",
+  "html_len": 111594,
+  "md_len": 2648,
+  "depth": 1,
+  "phase": 2
+}

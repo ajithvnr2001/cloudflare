@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/gen13-config/",
+  "file": "_subdomains/blog.cloudflare.com/gen13-config.md",
+  "title": "Inside Gen 13- how we built our most powerful server yet | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:53.564346+00:00",
+  "html_len": 314336,
+  "md_len": 77745,
+  "depth": 0,
+  "phase": 2
+}

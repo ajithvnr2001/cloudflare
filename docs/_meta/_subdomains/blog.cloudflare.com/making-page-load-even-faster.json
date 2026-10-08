@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/making-page-load-even-faster/",
+  "file": "_subdomains/blog.cloudflare.com/making-page-load-even-faster.md",
+  "title": "How we made our page-load optimisations even faster | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:31.046063+00:00",
+  "html_len": 310134,
+  "md_len": 69068,
+  "depth": 0,
+  "phase": 2
+}

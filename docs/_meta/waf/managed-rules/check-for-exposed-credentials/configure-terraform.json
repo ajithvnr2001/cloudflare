@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/managed-rules/check-for-exposed-credentials/configure-terraform/",
+  "file": "waf/managed-rules/check-for-exposed-credentials/configure-terraform.md",
+  "title": "Configure exposed credentials checks using Terraform \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:43.959269+00:00",
+  "html_len": 150214,
+  "md_len": 5253,
+  "depth": 0
+}

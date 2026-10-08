@@ -1,0 +1,91 @@
+---
+url: https://developers.cloudflare.com/workers/ci-cd/external-cicd/gitlab-cicd/
+title: GitLab CI/CD \u00b7 Cloudflare Workers docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:17:13.668425+00:00
+---
+
+# GitLab CI/CD · Cloudflare Workers docs
+
+> Source: https://developers.cloudflare.com/workers/ci-cd/external-cicd/gitlab-cicd/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Workers](https://developers.cloudflare.com/workers/)
+  3. /…
+
+[CI/CD](https://developers.cloudflare.com/workers/ci-cd/)
+
+  4. /[External CI/CD](https://developers.cloudflare.com/workers/ci-cd/external-cicd/)
+  5. /GitLab CI/CD
+
+
+
+# GitLab CI/CD
+
+Last updated Apr 30, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers/ci-cd/external-cicd/gitlab-cicd/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Overview1\. Authentication Cloudflare account ID API token2\. Set up CI GitLab Pipelines
+
+You can deploy Workers with [GitLab CI/CD ↗︎](https://docs.gitlab.com/ee/ci/pipelines/index.html). Here is how you can set up your Gitlab CI/CD pipeline.
+
+## 1\. Authentication
+
+When running Wrangler locally, authentication to the Cloudflare API happens via the [`wrangler login`](https://developers.cloudflare.com/workers/wrangler/commands/general/#login) command, which initiates an interactive authentication flow. Since CI/CD environments are non-interactive, Wrangler requires a [Cloudflare API token](https://developers.cloudflare.com/fundamentals/api/get-started/create-token/) and [account ID](https://developers.cloudflare.com/fundamentals/account/find-account-and-zone-ids/) to authenticate with the Cloudflare API.
+
+### Cloudflare account ID
+
+To find your Cloudflare account ID, refer to [Find account and zone IDs](https://developers.cloudflare.com/fundamentals/account/find-account-and-zone-ids/).
+
+### API token
+
+To create an API token to authenticate Wrangler in your CI job:
+
+  1. In the Cloudflare dashboard, go to the **Account API tokens** page.
+
+[ Go to **Account API tokens** ↗ ](https://dash.cloudflare.com/?to=/:account/api-tokens)
+  2. Select **Create Token**.
+
+  3. Under **Permission policies** , open the **Custom** dropdown and select **Edit Cloudflare Workers**.
+
+  4. Customize your token name.
+
+  5. Scope your token.
+
+
+
+
+You will need to choose the account and zone resources that the generated API token will have access to. We recommend scoping these down as much as possible to limit the access of your token. For example, if you have access to three different Cloudflare accounts, you should restrict the generated API token to only the account on which you will be deploying a Worker.
+
+## 2\. Set up CI
+
+The method for running Wrangler in your CI/CD environment will depend on the specific setup for your project (whether you use GitHub Actions/Jenkins/GitLab or something else entirely).
+
+To set up your CI:
+
+  1. Go to your CI platform and add the following as secrets:
+
+
+  * `CLOUDFLARE_ACCOUNT_ID`: Set to the Cloudflare account ID for the account on which you want to deploy your Worker.
+  * `CLOUDFLARE_API_TOKEN`: Set to the Cloudflare API token you generated.
+
+
+
+Caution
+
+Don't store the value of `CLOUDFLARE_API_TOKEN` in your repository, as it gives access to deploy Workers on your account. Instead, you should utilize your CI/CD provider's support for storing secrets.
+
+  2. Create a workflow that will be responsible for deploying the Worker. This workflow should run `wrangler deploy`. Review an example [GitHub Actions ↗︎](https://docs.github.com/en/actions/using-workflows/about-workflows) workflow in the following section.
+
+
+
+### GitLab Pipelines
+
+Refer to [GitLab's blog ↗︎](https://about.gitlab.com/blog/2022/11/21/deploy-remix-with-gitlab-and-cloudflare/) for an example pipeline. Under the `script` key, replace `npm run deploy` with [`npx wrangler deploy`](https://developers.cloudflare.com/workers/wrangler/commands/general/#deploy).
+
+[PreviousGitHub Actions](https://developers.cloudflare.com/workers/ci-cd/external-cicd/github-actions/)[NextOverview](https://developers.cloudflare.com/workers/cache/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/workers/ci-cd/external-cicd/gitlab-cicd.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

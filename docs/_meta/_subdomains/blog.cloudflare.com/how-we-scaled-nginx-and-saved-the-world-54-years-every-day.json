@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-we-scaled-nginx-and-saved-the-world-54-years-every-day/",
+  "file": "_subdomains/blog.cloudflare.com/how-we-scaled-nginx-and-saved-the-world-54-years-every-day.md",
+  "title": "How we scaled nginx and saved the world 54 years every day | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:29.810871+00:00",
+  "html_len": 306213,
+  "md_len": 65548,
+  "depth": 0,
+  "phase": 2
+}

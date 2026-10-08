@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-cloudflares-client-side-security-made-the-npm-supply-chain-attack-a-non/",
+  "file": "_subdomains/blog.cloudflare.com/how-cloudflares-client-side-security-made-the-npm-supply-chain-attack-a-non.md",
+  "title": "How Cloudflare\u2019s client-side security made the npm supply chain attack a non-event | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:42.380990+00:00",
+  "html_len": 322399,
+  "md_len": 67798,
+  "depth": 0,
+  "phase": 2
+}

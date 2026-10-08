@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/compression-rules/examples/enable-zstandard/",
+  "file": "rules/compression-rules/examples/enable-zstandard.md",
+  "title": "Enable Zstandard compression for default content types \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:47.392704+00:00",
+  "html_len": 139612,
+  "md_len": 6133,
+  "depth": 0
+}

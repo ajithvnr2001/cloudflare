@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/getting-started-with-cloudflare-apps/",
+  "file": "_subdomains/blog.cloudflare.com/getting-started-with-cloudflare-apps.md",
+  "title": "Getting started with Cloudflare Apps | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:10.777063+00:00",
+  "html_len": 281918,
+  "md_len": 58881,
+  "depth": 0,
+  "phase": 2
+}

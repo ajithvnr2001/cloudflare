@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/macau/",
+  "file": "_subdomains/blog.cloudflare.com/macau.md",
+  "title": "Macau: Cloudflare Data Center 127 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:42.218357+00:00",
+  "html_len": 272487,
+  "md_len": 56556,
+  "depth": 0,
+  "phase": 2
+}

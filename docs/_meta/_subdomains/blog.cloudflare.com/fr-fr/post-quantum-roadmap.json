@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/post-quantum-roadmap/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/post-quantum-roadmap.md",
+  "title": "Cloudflare cible l\u2019ann\u00e9e\u00a02029 pour le d\u00e9ploiement d\u2019une s\u00e9curit\u00e9 post-quantique totale | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:42.875804+00:00",
+  "html_len": 229053,
+  "md_len": 44528,
+  "depth": 0,
+  "phase": 2
+}

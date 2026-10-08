@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/tag/post-mortem/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/tag/post-mortem.md",
+  "title": "Posts com a tag \"Post Mortem\" \u2014 Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:07:02.667471+00:00",
+  "html_len": 123939,
+  "md_len": 6365,
+  "depth": 1,
+  "phase": 2
+}

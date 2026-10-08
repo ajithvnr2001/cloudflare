@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ai-prompt-protection/",
+  "file": "_subdomains/blog.cloudflare.com/ai-prompt-protection.md",
+  "title": "Beyond the ban: A better way to secure generative AI applications | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:08.337539+00:00",
+  "html_len": 321542,
+  "md_len": 77238,
+  "depth": 0,
+  "phase": 2
+}

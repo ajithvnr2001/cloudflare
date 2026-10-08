@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/benchmarking-edge-network-performance/",
+  "file": "_subdomains/blog.cloudflare.com/benchmarking-edge-network-performance.md",
+  "title": "Benchmarking Edge Network Performance: Akamai, Cloudflare, Amazon CloudFront, Fastly, and Google | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:57.499890+00:00",
+  "html_len": 349304,
+  "md_len": 81373,
+  "depth": 0,
+  "phase": 2
+}

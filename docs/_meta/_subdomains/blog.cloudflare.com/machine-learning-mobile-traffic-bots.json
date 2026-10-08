@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/machine-learning-mobile-traffic-bots/",
+  "file": "_subdomains/blog.cloudflare.com/machine-learning-mobile-traffic-bots.md",
+  "title": "Evolving our machine learning to stop mobile bots | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:42.977146+00:00",
+  "html_len": 289611,
+  "md_len": 65774,
+  "depth": 0,
+  "phase": 2
+}

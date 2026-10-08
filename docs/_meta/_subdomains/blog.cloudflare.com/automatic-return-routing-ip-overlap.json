@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/automatic-return-routing-ip-overlap/",
+  "file": "_subdomains/blog.cloudflare.com/automatic-return-routing-ip-overlap.md",
+  "title": "How Automatic Return Routing solves IP overlap | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:55.494343+00:00",
+  "html_len": 298160,
+  "md_len": 67529,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/firewall-for-ai/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/firewall-for-ai.md",
+  "title": "Cloudflare \u5ba3\u5e03\u63a8\u51fa Firewall for AI | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:41:35.543049+00:00",
+  "html_len": 203094,
+  "md_len": 27774,
+  "depth": 0,
+  "phase": 2
+}

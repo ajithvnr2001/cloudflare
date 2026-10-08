@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-radar-researcher/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-radar-researcher.md",
+  "title": "Introducing Radar Researcher: An AI tool for exploring Internet data in plain language | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:18.506942+00:00",
+  "html_len": 308893,
+  "md_len": 73544,
+  "depth": 0,
+  "phase": 2
+}

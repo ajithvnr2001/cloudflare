@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/transform-rules-requests-transform-and-roll-out/",
+  "file": "_subdomains/blog.cloudflare.com/transform-rules-requests-transform-and-roll-out.md",
+  "title": "Transform Rules:\"Requests, Transform and Roll Out!\" | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:20.898163+00:00",
+  "html_len": 306922,
+  "md_len": 67638,
+  "depth": 0,
+  "phase": 2
+}

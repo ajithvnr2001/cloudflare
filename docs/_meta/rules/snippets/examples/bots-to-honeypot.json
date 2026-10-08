@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/snippets/examples/bots-to-honeypot/",
+  "file": "rules/snippets/examples/bots-to-honeypot.md",
+  "title": "Send suspect bots to a honeypot \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:52.955896+00:00",
+  "html_len": 127671,
+  "md_len": 1509,
+  "depth": 0
+}

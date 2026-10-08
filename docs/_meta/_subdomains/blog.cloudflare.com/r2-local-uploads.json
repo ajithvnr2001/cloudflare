@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/r2-local-uploads/",
+  "file": "_subdomains/blog.cloudflare.com/r2-local-uploads.md",
+  "title": "Improve global upload performance with R2 Local Uploads | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:37.960193+00:00",
+  "html_len": 309405,
+  "md_len": 68268,
+  "depth": 0,
+  "phase": 2
+}

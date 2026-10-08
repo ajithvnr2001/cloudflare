@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/internet-traffic-patterns-in-israel-and-palestine-following-the-october-2023-attacks/",
+  "file": "_subdomains/blog.cloudflare.com/internet-traffic-patterns-in-israel-and-palestine-following-the-october-2023-attacks.md",
+  "title": "Internet traffic patterns in Israel and Palestine following the October 2023 attacks | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:09.100314+00:00",
+  "html_len": 321488,
+  "md_len": 68648,
+  "depth": 0,
+  "phase": 2
+}

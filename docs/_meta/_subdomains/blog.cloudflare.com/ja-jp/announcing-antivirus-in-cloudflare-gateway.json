@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/announcing-antivirus-in-cloudflare-gateway/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/announcing-antivirus-in-cloudflare-gateway.md",
+  "title": "Cloudflare Gateway\u3067\u30a6\u30a4\u30eb\u30b9\u5bfe\u7b56\u3092\u767a\u8868 | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:35.056495+00:00",
+  "html_len": 209522,
+  "md_len": 30431,
+  "depth": 0,
+  "phase": 2
+}

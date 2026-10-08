@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/today-chrome-takes-another-step-forward-in-addressing-the-design-flaw-that-is-an-unencrypted-web/",
+  "file": "_subdomains/blog.cloudflare.com/today-chrome-takes-another-step-forward-in-addressing-the-design-flaw-that-is-an-unencrypted-web.md",
+  "title": "Today, Chrome Takes Another Step Forward in Addressing the Design Flaw That is an Unencrypted Web | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:26.100704+00:00",
+  "html_len": 288745,
+  "md_len": 65361,
+  "depth": 0,
+  "phase": 2
+}

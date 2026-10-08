@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/protecting-election-groups-during-the-2022-us-midterm-elections/",
+  "file": "_subdomains/blog.cloudflare.com/protecting-election-groups-during-the-2022-us-midterm-elections.md",
+  "title": "Protecting election groups during the 2022 US midterm elections | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:00.663768+00:00",
+  "html_len": 283044,
+  "md_len": 63864,
+  "depth": 0,
+  "phase": 2
+}

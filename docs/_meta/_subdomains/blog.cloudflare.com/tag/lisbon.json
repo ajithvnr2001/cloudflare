@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/lisbon/",
+  "file": "_subdomains/blog.cloudflare.com/tag/lisbon.md",
+  "title": "Posts tagged \"Lisbon\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:09:24.203684+00:00",
+  "html_len": 119810,
+  "md_len": 4222,
+  "depth": 1,
+  "phase": 2
+}

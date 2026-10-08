@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/how-waiting-room-queues/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/how-waiting-room-queues.md",
+  "title": "Wie Waiting Room Entscheidungen zur Warteschlangenbildung im hochgradig dezentralen Netzwerk von Cloudflare trifft | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:27.088530+00:00",
+  "html_len": 282206,
+  "md_len": 66293,
+  "depth": 0,
+  "phase": 2
+}

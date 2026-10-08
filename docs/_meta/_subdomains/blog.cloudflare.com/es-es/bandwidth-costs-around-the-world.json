@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/bandwidth-costs-around-the-world/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/bandwidth-costs-around-the-world.md",
+  "title": "Los costes del ancho de banda en el mundo | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:28.381245+00:00",
+  "html_len": 237958,
+  "md_len": 42285,
+  "depth": 0,
+  "phase": 2
+}

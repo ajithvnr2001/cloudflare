@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/bringing-ai-to-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/bringing-ai-to-cloudflare.md",
+  "title": "AI \u65e0\u5904\u4e0d\u5728\uff1aWAF \u89c4\u5219\u6784\u5efa\u52a9\u624b\u3001Cloudflare Radar AI \u6d1e\u5bdf\u548c\u66f4\u65b0\u7684 AI \u673a\u5668\u4eba\u4fdd\u62a4 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:21.550808+00:00",
+  "html_len": 229703,
+  "md_len": 32645,
+  "depth": 0,
+  "phase": 2
+}

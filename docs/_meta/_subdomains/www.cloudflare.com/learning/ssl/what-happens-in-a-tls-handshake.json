@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/ssl/what-happens-in-a-tls-handshake/",
+  "file": "_subdomains/www.cloudflare.com/learning/ssl/what-happens-in-a-tls-handshake.md",
+  "title": "What Happens in a TLS Handshake? | SSL Handshake",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:44.092249+00:00",
+  "html_len": 209572,
+  "md_len": 14187,
+  "depth": 0,
+  "phase": 2
+}

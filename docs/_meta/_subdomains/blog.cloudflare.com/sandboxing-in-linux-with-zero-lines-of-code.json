@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/sandboxing-in-linux-with-zero-lines-of-code/",
+  "file": "_subdomains/blog.cloudflare.com/sandboxing-in-linux-with-zero-lines-of-code.md",
+  "title": "Sandboxing in Linux with zero lines of code | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:07.279779+00:00",
+  "html_len": 370339,
+  "md_len": 88591,
+  "depth": 0,
+  "phase": 2
+}

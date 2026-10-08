@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/announcing-the-new-cloudflare-partner-platform/",
+  "file": "_subdomains/blog.cloudflare.com/announcing-the-new-cloudflare-partner-platform.md",
+  "title": "Announcing the New Cloudflare Partner Platform | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:19.154358+00:00",
+  "html_len": 320156,
+  "md_len": 71030,
+  "depth": 0,
+  "phase": 2
+}

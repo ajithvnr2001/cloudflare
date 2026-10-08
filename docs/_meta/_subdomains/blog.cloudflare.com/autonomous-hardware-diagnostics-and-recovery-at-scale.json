@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/autonomous-hardware-diagnostics-and-recovery-at-scale/",
+  "file": "_subdomains/blog.cloudflare.com/autonomous-hardware-diagnostics-and-recovery-at-scale.md",
+  "title": "Autonomous hardware diagnostics and recovery at scale | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:54.019672+00:00",
+  "html_len": 287226,
+  "md_len": 67820,
+  "depth": 0,
+  "phase": 2
+}

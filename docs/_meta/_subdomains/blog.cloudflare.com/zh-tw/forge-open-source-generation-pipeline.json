@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/forge-open-source-generation-pipeline/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/forge-open-source-generation-pipeline.md",
+  "title": "\u9686\u91cd\u63a8\u51fa Forge\uff1a\u7528\u65bc\u751f\u6210 SDK\u3001CLI\u3001\u6587\u4ef6\u7b49\u7684\u958b\u6e90\u751f\u6210\u6d41\u6c34\u7dda | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:18.543323+00:00",
+  "html_len": 209910,
+  "md_len": 25679,
+  "depth": 0,
+  "phase": 2
+}

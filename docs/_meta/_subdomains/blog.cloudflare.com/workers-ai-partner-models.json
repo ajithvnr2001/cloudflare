@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/workers-ai-partner-models/",
+  "file": "_subdomains/blog.cloudflare.com/workers-ai-partner-models.md",
+  "title": "State-of-the-art image generation Leonardo models and text-to-speech Deepgram models now available in Workers AI | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:07.880187+00:00",
+  "html_len": 299320,
+  "md_len": 63719,
+  "depth": 0,
+  "phase": 2
+}

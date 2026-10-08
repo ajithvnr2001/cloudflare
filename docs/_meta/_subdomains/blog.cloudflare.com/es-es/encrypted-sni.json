@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/encrypted-sni/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/encrypted-sni.md",
+  "title": "Cifrar o perder: c\u00f3mo funciona la indicaci\u00f3n de nombre de servidor (SNI) cifrada | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:23.175371+00:00",
+  "html_len": 216316,
+  "md_len": 33840,
+  "depth": 0,
+  "phase": 2
+}

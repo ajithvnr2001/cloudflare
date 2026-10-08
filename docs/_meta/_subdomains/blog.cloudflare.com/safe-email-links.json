@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/safe-email-links/",
+  "file": "_subdomains/blog.cloudflare.com/safe-email-links.md",
+  "title": "Click Here! (safely): Automagical Browser Isolation for potentially unsafe links in email | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:02.697373+00:00",
+  "html_len": 296561,
+  "md_len": 66872,
+  "depth": 0,
+  "phase": 2
+}

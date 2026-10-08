@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/magic-firewall-gets-smarter/",
+  "file": "_subdomains/blog.cloudflare.com/magic-firewall-gets-smarter.md",
+  "title": "Magic Firewall gets Smarter | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:57.009354+00:00",
+  "html_len": 279967,
+  "md_len": 61171,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/products/kv/",
+  "file": "_subdomains/www.cloudflare.com/products/kv.md",
+  "title": "Cloudflare KV - Global Key-Value Database",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:16.836253+00:00",
+  "html_len": 420918,
+  "md_len": 12454,
+  "depth": 0,
+  "phase": 2
+}

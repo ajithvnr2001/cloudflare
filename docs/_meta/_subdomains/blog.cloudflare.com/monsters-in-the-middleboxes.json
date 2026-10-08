@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/monsters-in-the-middleboxes/",
+  "file": "_subdomains/blog.cloudflare.com/monsters-in-the-middleboxes.md",
+  "title": "Monsters in the Middleboxes: Introducing Two New Tools for Detecting HTTPS Interception | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:52.230942+00:00",
+  "html_len": 327408,
+  "md_len": 76969,
+  "depth": 0,
+  "phase": 2
+}

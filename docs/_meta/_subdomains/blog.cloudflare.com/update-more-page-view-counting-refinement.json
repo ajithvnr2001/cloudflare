@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/update-more-page-view-counting-refinement/",
+  "file": "_subdomains/blog.cloudflare.com/update-more-page-view-counting-refinement.md",
+  "title": "Update: More Page View Counting Refinement | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:04.574076+00:00",
+  "html_len": 266632,
+  "md_len": 56454,
+  "depth": 0,
+  "phase": 2
+}

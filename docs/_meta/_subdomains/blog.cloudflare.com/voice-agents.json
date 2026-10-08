@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/voice-agents/",
+  "file": "_subdomains/blog.cloudflare.com/voice-agents.md",
+  "title": "Add voice to your agent  | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:39.300463+00:00",
+  "html_len": 352766,
+  "md_len": 74691,
+  "depth": 0,
+  "phase": 2
+}

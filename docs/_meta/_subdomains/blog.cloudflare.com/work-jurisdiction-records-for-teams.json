@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/work-jurisdiction-records-for-teams/",
+  "file": "_subdomains/blog.cloudflare.com/work-jurisdiction-records-for-teams.md",
+  "title": "Announcing Workplace Records for Cloudflare for Teams | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:44.866612+00:00",
+  "html_len": 298765,
+  "md_len": 64959,
+  "depth": 0,
+  "phase": 2
+}

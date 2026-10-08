@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/a-free-argo-tunnel-for-your-next-project/",
+  "file": "_subdomains/blog.cloudflare.com/a-free-argo-tunnel-for-your-next-project.md",
+  "title": "A free Argo Tunnel for your next project | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:44.481819+00:00",
+  "html_len": 279905,
+  "md_len": 59873,
+  "depth": 0,
+  "phase": 2
+}

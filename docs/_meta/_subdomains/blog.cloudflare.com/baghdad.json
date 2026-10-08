@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/baghdad/",
+  "file": "_subdomains/blog.cloudflare.com/baghdad.md",
+  "title": "Baghdad, Iraq: Cloudflare's 128th Data Center | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:30.287982+00:00",
+  "html_len": 273420,
+  "md_len": 55446,
+  "depth": 0,
+  "phase": 2
+}

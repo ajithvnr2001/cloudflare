@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/nts-is-now-rfc/",
+  "file": "_subdomains/blog.cloudflare.com/nts-is-now-rfc.md",
+  "title": "NTS is now an RFC | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:56.232165+00:00",
+  "html_len": 275520,
+  "md_len": 57105,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/categories/",
+  "file": "_subdomains/blog.cloudflare.com/tag/categories.md",
+  "title": "Posts tagged \"Categories\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:08:27.763300+00:00",
+  "html_len": 111024,
+  "md_len": 1535,
+  "depth": 1,
+  "phase": 2
+}

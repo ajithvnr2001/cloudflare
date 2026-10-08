@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-realtime-voice-ai/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-realtime-voice-ai.md",
+  "title": "Cloudflare is the best place to build realtime voice agents | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:52.217501+00:00",
+  "html_len": 316011,
+  "md_len": 70434,
+  "depth": 0,
+  "phase": 2
+}

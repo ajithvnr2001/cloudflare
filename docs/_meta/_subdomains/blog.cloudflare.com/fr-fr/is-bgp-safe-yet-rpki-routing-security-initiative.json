@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/is-bgp-safe-yet-rpki-routing-security-initiative/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/is-bgp-safe-yet-rpki-routing-security-initiative.md",
+  "title": "Le BGP est-il devenu s\u00fbr\u00a0? Non. Mais nous suivons de pr\u00e8s son \u00e9volution | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:24.263898+00:00",
+  "html_len": 222085,
+  "md_len": 31230,
+  "depth": 0,
+  "phase": 2
+}

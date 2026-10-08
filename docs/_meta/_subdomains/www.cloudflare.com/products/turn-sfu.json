@@ -1,0 +1,10 @@
+{
+  "url": "https://www.cloudflare.com/products/turn-sfu/",
+  "file": "_subdomains/www.cloudflare.com/products/turn-sfu.md",
+  "title": "Cloudflare TURN/SFU - Managed WebRTC Infrastructure",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:26:49.954019+00:00",
+  "html_len": 288344,
+  "md_len": 8668,
+  "depth": 1
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/manage-cloudflare-records-with-salt/",
+  "file": "_subdomains/blog.cloudflare.com/manage-cloudflare-records-with-salt.md",
+  "title": "Manage Cloudflare records with Salt | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:25.411207+00:00",
+  "html_len": 276887,
+  "md_len": 56764,
+  "depth": 0,
+  "phase": 2
+}

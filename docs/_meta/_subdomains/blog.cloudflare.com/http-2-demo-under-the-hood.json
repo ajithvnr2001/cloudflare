@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/http-2-demo-under-the-hood/",
+  "file": "_subdomains/blog.cloudflare.com/http-2-demo-under-the-hood.md",
+  "title": "HTTP/2 Demo: Under the Hood | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:43.235293+00:00",
+  "html_len": 275442,
+  "md_len": 58759,
+  "depth": 0,
+  "phase": 2
+}

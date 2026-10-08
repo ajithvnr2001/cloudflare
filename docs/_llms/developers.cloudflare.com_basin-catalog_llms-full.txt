@@ -1,0 +1,2494 @@
+---
+description: A managed Apache Iceberg data catalog built directly into R2 buckets.
+title: Basin Catalog
+image: https://developers.cloudflare.com/basin-catalog/og.png?v=c6a88a025de15231
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-catalog/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Basin Catalog
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-catalog/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Basin Catalog is a managed [Apache Iceberg ↗︎](https://iceberg.apache.org/) data catalog built directly into your R2 bucket. It exposes a standard Iceberg REST catalog interface, so you can connect the engines you already use, like [Spark](https://developers.cloudflare.com/basin-catalog/config-examples/spark-scala/), [Snowflake](https://developers.cloudflare.com/basin-catalog/config-examples/snowflake/), and [PyIceberg](https://developers.cloudflare.com/basin-catalog/config-examples/pyiceberg/).
+
+Basin Catalog is now Generally Available
+
+Basin Catalog, formerly known as R2 Data Catalog, is now Generally Available. Existing configurations and APIs continue to work and will be deprecated in the future.
+
+To report bugs or give feedback, go to the [**#basin-catalog Discord channel** ↗︎](https://discord.cloudflare.com/). If you are having issues with Wrangler, report issues in the [**Wrangler GitHub repository** ↗︎](https://github.com/cloudflare/workers-sdk/issues/new/choose).
+
+Basin Catalog makes it easy to turn an R2 bucket into a data warehouse or lakehouse for a variety of analytical workloads including log analytics, business intelligence, and data pipelines. R2's zero-egress fee model means that data users and consumers can access and analyze data from different clouds, data platforms, or regions without incurring transfer costs.
+
+To get started with Basin Catalog, refer to the [Basin Catalog: Getting started](https://developers.cloudflare.com/basin-catalog/get-started/).
+
+## What is Apache Iceberg?
+
+[Apache Iceberg ↗︎](https://iceberg.apache.org/) is an open table format designed to handle large-scale analytics datasets stored in object storage. Key features include:
+
+- ACID transactions - Ensures reliable, concurrent reads and writes with full data integrity.
+- Optimized metadata - Avoids costly full table scans by using indexed metadata for faster queries.
+- Full schema evolution - Allows adding, renaming, and deleting columns without rewriting data.
+
+Iceberg is already [widely supported ↗︎](https://iceberg.apache.org/vendors/) by engines like Apache Spark, Trino, Snowflake, DuckDB, and ClickHouse, with a fast-growing community behind it.
+
+## Why do you need a data catalog?
+
+Although the Iceberg data and metadata files themselves live directly in object storage (like [R2](https://developers.cloudflare.com/r2/)), the list of tables and pointers to the current metadata need to be tracked centrally by a data catalog.
+
+Think of a data catalog as a library's index system. While books (your data) are physically distributed across shelves (object storage), the index provides a single source of truth about what books exist, their locations, and their latest editions. Without this index, readers (query engines) would waste time searching for books, might access outdated versions, or could accidentally shelve new books in ways that make them unfindable.
+
+Similarly, data catalogs ensure consistent, coordinated access, which allows multiple query engines to safely read from and write to the same tables without conflicts or data corruption.
+
+## Learn more
+
+### [Get started](https://developers.cloudflare.com/basin-catalog/get-started/)
+
+Learn how to enable the Basin Catalog on your bucket, load sample data, and run your first query.
+
+### [Managing catalogs](https://developers.cloudflare.com/basin-catalog/manage-catalogs/)
+
+Enable or disable Basin Catalog on your bucket, retrieve configuration details, and authenticate your Iceberg engine.
+
+### [Connect to Iceberg engines](https://developers.cloudflare.com/basin-catalog/config-examples/)
+
+Find detailed setup instructions for Apache Spark and other common query engines.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/basin-catalog/#page","headline":"Basin Catalog","description":"A managed Apache Iceberg data catalog built directly into R2 buckets.","url":"https://developers.cloudflare.com/basin-catalog/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-catalog/og.png?v=c6a88a025de15231","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Learn how to enable the Basin Catalog on your bucket, load sample data, and run your first query.
+title: Getting started
+image: https://developers.cloudflare.com/basin-catalog/get-started/og.png?v=59ca79981771be63
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-catalog/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Getting started
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-catalog/get-started/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+This guide will instruct you through:
+
+- Creating your first [R2 bucket](https://developers.cloudflare.com/r2/buckets/) and enabling its [data catalog](https://developers.cloudflare.com/basin-catalog/).
+- Creating an [API token](https://developers.cloudflare.com/r2/api/tokens/) needed for query engines to authenticate with your data catalog.
+- Using [PyIceberg ↗︎](https://py.iceberg.apache.org/) to create your first Iceberg table in a [marimo ↗︎](https://marimo.io/) Python notebook.
+- Using [PyIceberg ↗︎](https://py.iceberg.apache.org/) to load sample data into your table and query it.
+
+## Prerequisites
+
+1. Sign up for a [Cloudflare account ↗︎](https://dash.cloudflare.com/sign-up/workers-and-pages).
+2. Install [`Node.js` ↗︎](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+
+<details>
+
+<summary>
+
+Node.js version manager
+
+</summary>
+
+Use a Node version manager like <a href="https://volta.sh/">Volta ↗︎</a> or <a href="https://github.com/nvm-sh/nvm">nvm ↗︎</a> to avoid permission issues and change Node.js versions. <a href="https://developers.cloudflare.com/workers/wrangler/install-and-update/">Wrangler</a>, discussed later in this guide, requires a Node version of <code>16.17.0</code> or later.
+
+</details>
+
+## 1. Create an R2 bucket and enable the data catalog
+
+1. If not already logged in, run:npmyarnpnpm
+
+   ```
+   npx wrangler login
+   ```
+
+   ```
+   yarn wrangler login
+   ```
+
+   ```
+   pnpm wrangler login
+   ```
+
+
+2. Create an R2 bucket:npmyarnpnpm
+
+   ```
+   npx wrangler r2 bucket create r2-data-catalog-tutorial
+   ```
+
+   ```
+   yarn wrangler r2 bucket create r2-data-catalog-tutorial
+   ```
+
+   ```
+   pnpm wrangler r2 bucket create r2-data-catalog-tutorial
+   ```
+
+
+3. Enable the catalog on your bucket:npmyarnpnpm
+
+   ```
+   npx wrangler basin catalog enable r2-data-catalog-tutorial
+   ```
+
+   ```
+   yarn wrangler basin catalog enable r2-data-catalog-tutorial
+   ```
+
+   ```
+   pnpm wrangler basin catalog enable r2-data-catalog-tutorial
+   ```
+
+   When you run this command, take note of the **Warehouse** and **Catalog URI**. You will need these later.
+
+1. In the Cloudflare dashboard, go to the **Basin Catalog** page. [Go to **Basin Catalog** ↗](https://dash.cloudflare.com/?to=/:account/data-catalog/overview)
+2. Select **Create catalog**.
+3. Enter the bucket name `r2-data-catalog-tutorial`. The wizard creates the bucket automatically if it does not already exist. Optionally choose a location hint.
+4. Review the configuration and select **Create catalog**.
+5. Once created, the catalog detail page displays your **Catalog URI** and **Warehouse name**. Note these values for later.
+
+## 2. Create an API token
+
+Iceberg clients (including [PyIceberg ↗︎](https://py.iceberg.apache.org/)) must authenticate to the catalog with an [R2 API token](https://developers.cloudflare.com/r2/api/tokens/) that has both R2 and catalog permissions.
+
+1. In the Cloudflare dashboard, go to the **R2 object storage** page. [Go to **Overview** ↗](https://dash.cloudflare.com/?to=/:account/r2/overview)
+2. Select **Manage API tokens**.
+3. Select **Create API token**.
+4. Select the **R2 Token** text to edit your API token name.
+5. Under **Permissions**, choose the **Admin Read & Write** permission. This guide creates and writes to tables, so it requires read and write access. For query-only clients, you can instead use an **Admin Read only** token. For details on choosing the right permission level, refer to [Authenticate your Iceberg engine](https://developers.cloudflare.com/basin-catalog/manage-catalogs/#authenticate-your-iceberg-engine).
+6. Select **Create API Token**.
+7. Note the **Token value**.
+
+## 3. Install uv
+
+You need to install a Python package manager. In this guide, use [uv ↗︎](https://docs.astral.sh/uv/). If you do not already have uv installed, follow the [installing uv guide ↗︎](https://docs.astral.sh/uv/getting-started/installation/).
+
+## 4. Install marimo and set up your project with uv
+
+We will use [marimo ↗︎](https://github.com/marimo-team/marimo) as a Python notebook.
+
+1. Create a directory where our notebook will be stored:
+
+   ```bash
+   mkdir r2-data-catalog-notebook
+   ```
+
+
+2. Change into our new directory:
+
+   ```bash
+   cd r2-data-catalog-notebook
+   ```
+
+
+3. Initialize a new uv project (this creates a `.venv` and a `pyproject.toml`):
+
+   ```plaintext
+   uv init
+   ```
+
+
+4. Add marimo and required dependencies:
+
+   ```py
+   uv add marimo pyiceberg pyarrow pandas
+   ```
+
+
+
+## 5. Create a Python notebook to interact with the data warehouse
+
+1. Create a file called `r2-data-catalog-tutorial.py`.
+2. Paste the following code snippet into your `r2-data-catalog-tutorial.py` file:
+
+   ```py
+   import marimo
+
+   __generated_with = "0.11.31"
+   app = marimo.App(width="medium")
+
+
+   @app.cell
+   def _():
+   		import marimo as mo
+   		return (mo,)
+
+
+   @app.cell
+   def _():
+   		import pandas
+   		import pyarrow as pa
+   		import pyarrow.compute as pc
+   		import pyarrow.parquet as pq
+
+   		from pyiceberg.catalog.rest import RestCatalog
+
+   		# Define catalog connection details (replace variables)
+   		WAREHOUSE = "<WAREHOUSE>"
+   		TOKEN = "<TOKEN>"
+   		CATALOG_URI = "<CATALOG_URI>"
+
+           # Connect to Basin Catalog
+   		catalog = RestCatalog(
+   				name="my_catalog",
+   				warehouse=WAREHOUSE,
+   				uri=CATALOG_URI,
+   				token=TOKEN,
+   		)
+   		return (
+   				CATALOG_URI,
+   				RestCatalog,
+   				TOKEN,
+   				WAREHOUSE,
+   				catalog,
+   				pa,
+   				pandas,
+   				pc,
+   				pq,
+   		)
+
+
+   @app.cell
+   def _(catalog):
+   		# Create default namespace if needed
+   		catalog.create_namespace_if_not_exists("default")
+   		return
+
+
+   @app.cell
+   def _(pa):
+   		# Create simple PyArrow table
+   		df = pa.table({
+   				"id": [1, 2, 3],
+   				"name": ["Alice", "Bob", "Charlie"],
+   				"score": [80.0, 92.5, 88.0],
+   		})
+   		return (df,)
+
+
+   @app.cell
+   def _(catalog, df):
+   		# Create or load Iceberg table
+   		test_table = ("default", "people")
+   		if not catalog.table_exists(test_table):
+   				print(f"Creating table: {test_table}")
+   				table = catalog.create_table(
+   						test_table,
+   						schema=df.schema,
+   				)
+   		else:
+   				table = catalog.load_table(test_table)
+   		return table, test_table
+
+
+   @app.cell
+   def _(df, table):
+   		# Append data
+   		table.append(df)
+   		return
+
+
+   @app.cell
+   def _(table):
+   		print("Table contents:")
+   		scanned = table.scan().to_arrow()
+   		print(scanned.to_pandas())
+   		return (scanned,)
+
+
+   @app.cell
+   def _():
+   		# Optional cleanup. To run uncomment and run cell
+   		# print(f"Deleting table: {test_table}")
+   		# catalog.drop_table(test_table)
+   		# print("Table dropped.")
+   		return
+
+
+   if __name__ == "__main__":
+   		app.run()
+   ```
+
+
+3. Replace the `CATALOG_URI`, `WAREHOUSE`, and `TOKEN` variables with your values from sections **1** and **2** respectively.
+4. Launch the notebook editor in your browser:
+
+   ```plaintext
+   uv run marimo edit r2-data-catalog-tutorial.py
+   ```
+
+   Once your notebook connects to the catalog, the catalog along with its namespaces and tables will appear in the Datasources panel in marimo.
+
+In the Python notebook above, you:
+
+1. Connect to your catalog.
+2. Create the `default` namespace.
+3. Create a simple PyArrow table.
+4. Create (or load) the `people` table in the `default` namespace.
+5. Append sample data to the table.
+6. Print the contents of the table.
+7. (Optional) Drop the `people` table we created for this tutorial.
+
+## Learn more
+
+### [Managing catalogs](https://developers.cloudflare.com/basin-catalog/manage-catalogs/)
+
+Enable or disable Basin Catalog on your bucket, retrieve configuration details, and authenticate your Iceberg engine.
+
+### [Connect to Iceberg engines](https://developers.cloudflare.com/basin-catalog/config-examples/)
+
+Find detailed setup instructions for Apache Spark and other common query engines.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/basin-catalog/get-started/#page","headline":"Getting started","description":"Learn how to enable the Basin Catalog on your bucket, load sample data, and run your first query.","url":"https://developers.cloudflare.com/basin-catalog/get-started/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-catalog/get-started/og.png?v=59ca79981771be63","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Understand how to manage Iceberg REST catalogs associated with R2 buckets
+title: Manage catalogs
+image: https://developers.cloudflare.com/basin-catalog/manage-catalogs/og.png?v=b56be5e9a67ac7cf
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-catalog/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Manage catalogs
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-catalog/manage-catalogs/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Learn how to:
+
+- Enable and disable [Basin Catalog](https://developers.cloudflare.com/basin-catalog/) on your buckets.
+- Enable and disable [table maintenance](https://developers.cloudflare.com/basin-catalog/table-maintenance/) features like compaction and snapshot expiration.
+- Authenticate Iceberg engines using API tokens.
+
+## Enable Basin Catalog on a bucket
+
+Enabling the catalog on a bucket turns on the REST catalog interface and provides a **Catalog URI** and **Warehouse name** required by Iceberg clients. Once enabled, you can create and manage Iceberg tables in that bucket.
+
+1. In the Cloudflare dashboard, go to the **Basin Catalog** page. [Go to **Basin Catalog** ↗](https://dash.cloudflare.com/?to=/:account/data-catalog/overview)
+2. Select **Create catalog**.
+3. Enter an R2 bucket name. You can select an existing bucket or enter a new bucket name to create one. If creating a new bucket, optionally select a location hint.
+4. Select **Next** to configure table maintenance. Optionally enable [compaction](https://developers.cloudflare.com/basin-catalog/table-maintenance/) and [snapshot expiration](https://developers.cloudflare.com/basin-catalog/table-maintenance/) during setup.
+5. Review your configuration and select **Create catalog**.
+6. Once created, the catalog detail page displays your **Catalog URI** and **Warehouse name**.
+
+To enable the catalog on your bucket, run the `basin catalog enable` command:
+
+npmyarnpnpm
+
+```
+npx wrangler basin catalog enable <BUCKET_NAME>
+```
+
+```
+yarn wrangler basin catalog enable <BUCKET_NAME>
+```
+
+```
+pnpm wrangler basin catalog enable <BUCKET_NAME>
+```
+
+After enabling, Wrangler will return your catalog URI and warehouse name.
+
+## Disable Basin Catalog on a bucket
+
+When you disable the catalog on a bucket, it immediately stops serving requests from the catalog interface. Any Iceberg table references stored in that catalog become inaccessible until you re-enable it.
+
+1. In the Cloudflare dashboard, go to the **Basin Catalog** page. [Go to **Basin Catalog** ↗](https://dash.cloudflare.com/?to=/:account/data-catalog/overview)
+2. Select the catalog you want to disable.
+3. Go to the **Settings** tab and scroll to the **Disable** section.
+4. Select **Disable** and confirm.
+
+To disable the catalog on your bucket, run the `basin catalog disable` command:
+
+npmyarnpnpm
+
+```
+npx wrangler basin catalog disable <BUCKET_NAME>
+```
+
+```
+yarn wrangler basin catalog disable <BUCKET_NAME>
+```
+
+```
+pnpm wrangler basin catalog disable <BUCKET_NAME>
+```
+
+## Enable compaction
+
+Compaction improves query performance by combining the many small files created during data ingestion into fewer, larger files according to the set `target file size`. For more information about compaction and why it is valuable, refer to [About compaction](https://developers.cloudflare.com/basin-catalog/table-maintenance/).
+
+API token permission requirements
+
+Table maintenance operations such as compaction and snapshot expiration require a Cloudflare API token with both R2 storage and Basin Catalog read/write permissions to act as a service credential.
+
+Refer to [Authenticate your Iceberg engine](#authenticate-your-iceberg-engine) for details on creating a token with the required permissions.
+
+1. In the Cloudflare dashboard, go to the **Basin Catalog** page. [Go to **Basin Catalog** ↗](https://dash.cloudflare.com/?to=/:account/data-catalog/overview)
+2. Select the catalog you want to enable compaction on.
+3. Go to the **Settings** tab and scroll to the **Table Maintenance** section.
+4. Select **Enable** or **Edit** next to compaction.
+5. Toggle compaction on and optionally set a target file size. The default is 128 MB.
+6. Select **Save**.
+
+Note
+
+If no service credential has been generated for this catalog, the dashboard will prompt you to generate one. Compaction requires a credential to access and rewrite files in your bucket.
+
+To enable the compaction on your catalog, run the `basin catalog compaction enable` command:
+
+Enable catalog-level compaction:
+
+npmyarnpnpm
+
+```
+npx wrangler basin catalog compaction enable <BUCKET_NAME> --target-size 128 --token <API_TOKEN>
+```
+
+```
+yarn wrangler basin catalog compaction enable <BUCKET_NAME> --target-size 128 --token <API_TOKEN>
+```
+
+```
+pnpm wrangler basin catalog compaction enable <BUCKET_NAME> --target-size 128 --token <API_TOKEN>
+```
+
+Enable compaction for a specific table:
+
+npmyarnpnpm
+
+```
+npx wrangler basin catalog compaction enable <BUCKET_NAME> <NAMESPACE> <TABLE> --target-size 128
+```
+
+```
+yarn wrangler basin catalog compaction enable <BUCKET_NAME> <NAMESPACE> <TABLE> --target-size 128
+```
+
+```
+pnpm wrangler basin catalog compaction enable <BUCKET_NAME> <NAMESPACE> <TABLE> --target-size 128
+```
+
+Table-level vs Catalog-level compaction
+
+- **Catalog-level**: Applies to all tables in the bucket; requires an API token as a service credential.
+- **Table-level**: Applies to a specific table only.
+
+Once enabled, compaction applies retroactively to all existing tables (for catalog-level compaction) or the specified table (for table-level compaction).
+
+## Disable compaction
+
+Disabling compaction will prevent the process from running for all tables (catalog level) or a specific table (table level). You can re-enable it at any time.
+
+1. In the Cloudflare dashboard, go to the **Basin Catalog** page. [Go to **Basin Catalog** ↗](https://dash.cloudflare.com/?to=/:account/data-catalog/overview)
+2. Select the catalog you want to disable compaction on.
+3. Go to the **Settings** tab and scroll to the **Table Maintenance** section.
+4. Select **Edit** next to compaction.
+5. Toggle compaction off.
+6. Select **Save**.
+
+To disable the compaction on your catalog, run the `basin catalog compaction disable` command:
+
+Disable catalog-level compaction:
+
+npmyarnpnpm
+
+```
+npx wrangler basin catalog compaction disable <BUCKET_NAME>
+```
+
+```
+yarn wrangler basin catalog compaction disable <BUCKET_NAME>
+```
+
+```
+pnpm wrangler basin catalog compaction disable <BUCKET_NAME>
+```
+
+Disable compaction for a specific table:
+
+npmyarnpnpm
+
+```
+npx wrangler basin catalog compaction disable <BUCKET_NAME> <NAMESPACE> <TABLE>
+```
+
+```
+yarn wrangler basin catalog compaction disable <BUCKET_NAME> <NAMESPACE> <TABLE>
+```
+
+```
+pnpm wrangler basin catalog compaction disable <BUCKET_NAME> <NAMESPACE> <TABLE>
+```
+
+## Enable snapshot expiration
+
+Snapshot expiration automatically removes old table snapshots and any unreferenced data files to reduce metadata overhead and storage costs. You can configure:
+
+- **Max snapshot age** - Snapshots older than this duration are expired. Specify a value followed by a unit ( `d` for days, `h` for hours, `m` for minutes, `s` for seconds). For example, `7d` expires snapshots older than 7 days.
+- **Min snapshots to keep** - The minimum number of snapshots to retain, regardless of age.
+
+1. In the Cloudflare dashboard, go to the **Basin Catalog** page. [Go to **Basin Catalog** ↗](https://dash.cloudflare.com/?to=/:account/data-catalog/overview)
+2. Select the catalog you want to enable snapshot expiration on.
+3. Go to the **Settings** tab and scroll to the **Table Maintenance** section.
+4. Select **Enable** or **Edit** next to snapshot expiration.
+5. Toggle snapshot expiration on.
+6. Set the **Max snapshot age** and **Min snapshots to keep** values.
+7. Select **Save**.
+
+Note
+
+Snapshot expiration commands are available as of Wrangler version 4.56.0.
+
+To enable snapshot expiration on your catalog, run the `basin catalog snapshot-expiration enable` command:
+
+Enable catalog-level snapshot expiration:
+
+npmyarnpnpm
+
+```
+npx wrangler basin catalog snapshot-expiration enable <BUCKET_NAME> --token <API_TOKEN> --older-than-days 7 --retain-last 10
+```
+
+```
+yarn wrangler basin catalog snapshot-expiration enable <BUCKET_NAME> --token <API_TOKEN> --older-than-days 7 --retain-last 10
+```
+
+```
+pnpm wrangler basin catalog snapshot-expiration enable <BUCKET_NAME> --token <API_TOKEN> --older-than-days 7 --retain-last 10
+```
+
+Enable snapshot expiration for a specific table:
+
+npmyarnpnpm
+
+```
+npx wrangler basin catalog snapshot-expiration enable <BUCKET_NAME> <NAMESPACE> <TABLE> --older-than-days 2 --retain-last 5
+```
+
+```
+yarn wrangler basin catalog snapshot-expiration enable <BUCKET_NAME> <NAMESPACE> <TABLE> --older-than-days 2 --retain-last 5
+```
+
+```
+pnpm wrangler basin catalog snapshot-expiration enable <BUCKET_NAME> <NAMESPACE> <TABLE> --older-than-days 2 --retain-last 5
+```
+
+## Disable snapshot expiration
+
+Disabling snapshot expiration prevents the process from running for all tables (catalog level) or a specific table (table level). You can re-enable snapshot expiration at any time.
+
+1. In the Cloudflare dashboard, go to the **Basin Catalog** page. [Go to **Basin Catalog** ↗](https://dash.cloudflare.com/?to=/:account/data-catalog/overview)
+2. Select the catalog you want to disable snapshot expiration on.
+3. Go to the **Settings** tab and scroll to the **Table Maintenance** section.
+4. Select **Edit** next to snapshot expiration.
+5. Toggle snapshot expiration off.
+6. Select **Save**.
+
+Disable catalog-level snapshot expiration:
+
+npmyarnpnpm
+
+```
+npx wrangler basin catalog snapshot-expiration disable <BUCKET_NAME>
+```
+
+```
+yarn wrangler basin catalog snapshot-expiration disable <BUCKET_NAME>
+```
+
+```
+pnpm wrangler basin catalog snapshot-expiration disable <BUCKET_NAME>
+```
+
+Disable snapshot expiration for a specific table:
+
+npmyarnpnpm
+
+```
+npx wrangler basin catalog snapshot-expiration disable <BUCKET_NAME> <NAMESPACE> <TABLE>
+```
+
+```
+yarn wrangler basin catalog snapshot-expiration disable <BUCKET_NAME> <NAMESPACE> <TABLE>
+```
+
+```
+pnpm wrangler basin catalog snapshot-expiration disable <BUCKET_NAME> <NAMESPACE> <TABLE>
+```
+
+## Authenticate your Iceberg engine
+
+To connect your Iceberg engine to Basin Catalog, you must provide a Cloudflare API token with **both** Basin Catalog permissions and R2 storage permissions. Iceberg engines interact with Basin Catalog to perform table operations. The catalog also provides engines with SigV4 credentials, which are required to access the underlying data files stored in R2.
+
+Basin Catalog supports both read-only and read-write tokens:
+
+- **Read-only** operations (for example, listing namespaces, loading tables, and querying data) require a token with read access to Basin Catalog and R2 storage.
+- **Write** operations (for example, creating or dropping tables and committing transactions) require a token with read and write access to Basin Catalog and R2 storage.
+
+Use a read-only token for query engines and clients that only read data (such as Basin SQL, DuckDB, or PyIceberg readers), and a read-write token for engines and pipelines that create tables or write data.
+
+Vended credentials inherit your token's R2 storage permissions
+
+When an engine loads credentials from the catalog, Basin Catalog returns SigV4 credentials that inherit the R2 storage permissions of the API token used to authenticate. A token with read-only Basin Catalog access but read-write R2 storage access can still be used to write objects (including catalog metadata files) to the underlying bucket. To ensure read-only access to your data, scope the R2 storage permission to read-only as well.
+
+### Create API token in the dashboard
+
+Create an [R2 API token](https://developers.cloudflare.com/r2/api/tokens/#permissions) with the permissions matching your workload:
+
+- **Admin Read & Write** — for engines and pipelines that read and write data. Includes read and write access to both Basin Catalog and R2 storage.
+- **Admin Read only** — for query engines and clients that only read data. Includes read access to both Basin Catalog and R2 storage.
+
+Providing the resulting token value to your Iceberg engine gives it the ability to manage catalog metadata and handle data operations (reads or writes to R2).
+
+### Create API token via API
+
+To create an API token programmatically for use with Basin Catalog, you need to specify both Basin Catalog and R2 storage permission groups in your [Access Policy](https://developers.cloudflare.com/r2/api/tokens/#access-policy).
+
+#### Example read-write Access Policy
+
+Use read and write permission groups for engines and pipelines that create tables or write data:
+
+```json
+[
+	{
+		"id": "f267e341f3dd4697bd3b9f71dd96247f",
+		"effect": "allow",
+		"resources": {
+			"com.cloudflare.edge.r2.bucket.4793d734c0b8e484dfc37ec392b5fa8a_default_my-bucket": "*",
+			"com.cloudflare.edge.r2.bucket.4793d734c0b8e484dfc37ec392b5fa8a_eu_my-eu-bucket": "*"
+		},
+		"permission_groups": [
+			{
+				"id": "d229766a2f7f4d299f20eaa8c9b1fde9",
+				"name": "Workers R2 Data Catalog Write"
+			},
+			{
+				"id": "2efd5506f9c8494dacb1fa10a3e7d5b6",
+				"name": "Workers R2 Storage Bucket Item Write"
+			}
+		]
+	}
+]
+```
+
+#### Example read-only Access Policy
+
+Use read permission groups for query engines and clients that only read data:
+
+```json
+[
+	{
+		"id": "f267e341f3dd4697bd3b9f71dd96247f",
+		"effect": "allow",
+		"resources": {
+			"com.cloudflare.edge.r2.bucket.4793d734c0b8e484dfc37ec392b5fa8a_default_my-bucket": "*",
+			"com.cloudflare.edge.r2.bucket.4793d734c0b8e484dfc37ec392b5fa8a_eu_my-eu-bucket": "*"
+		},
+		"permission_groups": [
+			{
+				"id": "45db74139a62490b9b60eb7c4f34994b",
+				"name": "Workers R2 Data Catalog Read"
+			},
+			{
+				"id": "6a018a9f2fc74eb6b293b0c548f38b39",
+				"name": "Workers R2 Storage Bucket Item Read"
+			}
+		]
+	}
+]
+```
+
+To learn more about how to create API tokens for Basin Catalog using the API, including required permission groups and usage examples, refer to the [Create API tokens via API documentation](https://developers.cloudflare.com/r2/api/tokens/#create-api-tokens-via-api).
+
+## R2 Local Uploads
+
+[Local Uploads](https://developers.cloudflare.com/r2/buckets/local-uploads/) writes object data to a nearby location, then asynchronously copies it to your bucket. Data is queryable immediately and remains strongly consistent. This can significantly improve latency of writes from Apache Iceberg clients outside of the region of the respective Basin Catalog bucket.
+
+To enable R2 Local Uploads, you can use the following Wrangler command:
+
+npmyarnpnpm
+
+```
+npx wrangler r2 bucket local-uploads enable <BUCKET_NAME>
+```
+
+```
+yarn wrangler r2 bucket local-uploads enable <BUCKET_NAME>
+```
+
+```
+pnpm wrangler r2 bucket local-uploads enable <BUCKET_NAME>
+```
+
+## Limitations
+
+- Basin Catalog does not currently support R2 buckets in a non-default jurisdiction.
+
+## Learn more
+
+### [Get started](https://developers.cloudflare.com/basin-catalog/get-started/)
+
+Learn how to enable the Basin Catalog on your bucket, load sample data, and run your first query.
+
+### [Connect to Iceberg engines](https://developers.cloudflare.com/basin-catalog/config-examples/)
+
+Find detailed setup instructions for Apache Spark and other common query engines.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/basin-catalog/manage-catalogs/#page","headline":"Manage catalogs","description":"Understand how to manage Iceberg REST catalogs associated with R2 buckets","url":"https://developers.cloudflare.com/basin-catalog/manage-catalogs/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-catalog/manage-catalogs/og.png?v=b56be5e9a67ac7cf","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Learn how Basin Catalog automates table maintenance
+title: Table maintenance
+image: https://developers.cloudflare.com/basin-catalog/table-maintenance/og.png?v=5c86b428b084f346
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-catalog/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Table maintenance
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-catalog/table-maintenance/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Table maintenance encompasses a set of operations that keep your Apache Iceberg tables performant and cost-efficient over time. As data is written, updated, and deleted, tables accumulate metadata and files that can degrade query performance over time.
+
+Basin Catalog automates two critical maintenance operations:
+
+- **Compaction**: Combines small data files into larger, more efficient files to improve query performance
+- **Snapshot expiration**: Removes old table snapshots and any unreferenced data files to reduce metadata overhead and storage costs
+
+Without regular maintenance, tables can suffer from:
+
+- **Query performance degradation**: More files to scan means slower queries and higher compute costs
+- **Increased storage costs**: Accumulation of small files and old snapshots consumes unnecessary storage
+- **Metadata overhead**: Large metadata files slow down query planning and table operations
+
+By enabling automatic table maintenance, Basin Catalog ensures your tables remain optimized without having to manually run them yourself.
+
+## View and queue table maintenance
+
+The **Maintenance** tab for each table shows the compaction and snapshot expiration configuration, schedule, and next eligibility time. It also provides a paginated history of maintenance runs with their status and duration.
+
+1. In the Cloudflare dashboard, go to **Basin Catalog**. [Go to **Basin Catalog** ↗](https://dash.cloudflare.com/?to=/:account/data-catalog/overview)
+2. Select a catalog, then select the **Explorer** tab. The **Explorer** tab opens by default.
+3. Select a table.
+4. Select the **Maintenance** tab.
+
+![Maintenance tab for a Basin Catalog table showing schedules and recent runs](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1850,height=1544,format=webp/_astro/table-maintenance-view.C7KRSK-K.png)
+
+The **Recent runs** section displays five runs per page. Expand a run to view metrics for its manifest rewrite, compaction, and snapshot expiration operations. For manually queued runs, the expanded details include a searchable `request_id`.
+
+### Queue compaction manually
+
+Manual queueing requests compaction for the selected table. The request enters the same queue used by automatic maintenance and starts when the scheduler next polls for eligible work.
+
+1. From the table's **Maintenance** tab, select **Queue maintenance**.
+2. In the confirmation dialog, select **Queue maintenance**.
+
+The dashboard checks your permissions before accepting the request. Queueing can also return the following errors:
+
+- `40903`: A maintenance executor conflict prevents the request from being queued.
+- `42901`: The daily accepted-request limit has been reached.
+
+## Why do I need compaction?
+
+Every write operation in [Apache Iceberg ↗︎](https://iceberg.apache.org/), no matter how small or large, results in a series of new files being generated. As time goes on, the number of files can grow unbounded. This can lead to:
+
+- Slower queries and increased I/O operations: Without compaction, query engines will have to open and read each individual file, resulting in longer query times and increased costs.
+- Increased metadata overhead: Query engines must scan metadata files to determine which ones to read. With thousands of small files, query planning takes longer even before data is accessed.
+- Reduced compression efficiency: Smaller files compress less efficiently than larger files, leading to higher storage costs and more data to transfer during queries.
+
+## Basin Catalog automatic compaction
+
+Basin Catalog can now [manage compaction](https://developers.cloudflare.com/basin-catalog/manage-catalogs/) for Apache Iceberg tables stored in R2. When enabled, compaction runs automatically and combines new files that have not been compacted yet.
+
+Compacted files are prefixed with `compacted-` in the `/data/` directory of a respective table.
+
+### Examples
+
+Enable catalog-level compaction:
+
+npmyarnpnpm
+
+```
+npx wrangler basin catalog compaction enable my-bucket --target-size 128 --token $R2_CATALOG_TOKEN
+```
+
+```
+yarn wrangler basin catalog compaction enable my-bucket --target-size 128 --token $R2_CATALOG_TOKEN
+```
+
+```
+pnpm wrangler basin catalog compaction enable my-bucket --target-size 128 --token $R2_CATALOG_TOKEN
+```
+
+Enable compaction for a specific table:
+
+npmyarnpnpm
+
+```
+npx wrangler basin catalog compaction enable my-bucket my-namespace my-table --target-size 256
+```
+
+```
+yarn wrangler basin catalog compaction enable my-bucket my-namespace my-table --target-size 256
+```
+
+```
+pnpm wrangler basin catalog compaction enable my-bucket my-namespace my-table --target-size 256
+```
+
+Disable catalog-level compaction:
+
+npmyarnpnpm
+
+```
+npx wrangler basin catalog compaction disable my-bucket
+```
+
+```
+yarn wrangler basin catalog compaction disable my-bucket
+```
+
+```
+pnpm wrangler basin catalog compaction disable my-bucket
+```
+
+Disable compaction for a specific table:
+
+npmyarnpnpm
+
+```
+npx wrangler basin catalog compaction disable my-bucket my-namespace my-table
+```
+
+```
+yarn wrangler basin catalog compaction disable my-bucket my-namespace my-table
+```
+
+```
+pnpm wrangler basin catalog compaction disable my-bucket my-namespace my-table
+```
+
+For more details on managing compaction, refer to [Manage catalogs](https://developers.cloudflare.com/basin-catalog/manage-catalogs/).
+
+### Choose the right target file size
+
+You can configure the target file size for compaction. Currently, the minimum is 64 MB and the maximum is 512 MB.
+
+Different compute engines have different optimal file sizes, so check their documentation.
+
+Performance tradeoffs depend on your use case. For example, queries that return small amounts of data may perform better with smaller files, as larger files could result in reading unnecessary data.
+
+- For workloads that are more latency sensitive, consider a smaller target file size (for example, 64 MB - 128 MB)
+- For streaming ingest workloads, consider medium file sizes (for example, 128 MB - 256 MB)
+- For OLAP style queries that need to scan a lot of data, consider larger file sizes (for example, 256 MB - 512 MB)
+
+## Why do I need snapshot expiration?
+
+Every write to an Iceberg table—whether an insert, update, or delete—creates a new snapshot. Over time, these snapshots can accumulate and cause performance issues:
+
+- **Metadata overhead**: Each snapshot adds entries to the table's metadata files. As the number of snapshots grows, metadata files become larger, slowing down query planning and table operations
+- **Increased storage costs**: Old snapshots reference data files that may no longer be needed. Without snapshot expiration, these files continue consuming unnecessary storage
+- **Slower table operations**: Operations like listing snapshots or accessing table history become slower over time
+
+## Basin Catalog automatic snapshot expiration
+
+### Configure snapshot expiration
+
+Snapshot expiration uses two parameters to determine which snapshots to remove:
+
+- `--older-than-days`: Remove snapshots older than this many days (default: 30 days)
+- `--retain-last`: Always keep this minimum number of recent snapshots (default: 5 snapshots)
+
+Both conditions must be met for a snapshot to be expired. This ensures you always retain recent snapshots even if they are older than the age threshold.
+
+### Examples
+
+Enable snapshot expiration for the catalog. This example keeps at least 10 snapshots and expires snapshots older than seven days:
+
+npmyarnpnpm
+
+```
+npx wrangler basin catalog snapshot-expiration enable my-bucket --token $R2_CATALOG_TOKEN --older-than-days 7 --retain-last 10
+```
+
+```
+yarn wrangler basin catalog snapshot-expiration enable my-bucket --token $R2_CATALOG_TOKEN --older-than-days 7 --retain-last 10
+```
+
+```
+pnpm wrangler basin catalog snapshot-expiration enable my-bucket --token $R2_CATALOG_TOKEN --older-than-days 7 --retain-last 10
+```
+
+Enable snapshot expiration for a table. This example keeps at least five snapshots and expires snapshots older than two days:
+
+npmyarnpnpm
+
+```
+npx wrangler basin catalog snapshot-expiration enable my-bucket my-namespace my-table --token $R2_CATALOG_TOKEN --older-than-days 2 --retain-last 5
+```
+
+```
+yarn wrangler basin catalog snapshot-expiration enable my-bucket my-namespace my-table --token $R2_CATALOG_TOKEN --older-than-days 2 --retain-last 5
+```
+
+```
+pnpm wrangler basin catalog snapshot-expiration enable my-bucket my-namespace my-table --token $R2_CATALOG_TOKEN --older-than-days 2 --retain-last 5
+```
+
+Disable snapshot expiration for a catalog:
+
+npmyarnpnpm
+
+```
+npx wrangler basin catalog snapshot-expiration disable my-bucket
+```
+
+```
+yarn wrangler basin catalog snapshot-expiration disable my-bucket
+```
+
+```
+pnpm wrangler basin catalog snapshot-expiration disable my-bucket
+```
+
+### Choose the right retention policy
+
+Different workloads require different snapshot retention strategies:
+
+- **Development/testing tables**: Shorter retention (2-7 days, 5 snapshots) to minimize storage costs
+- **Production analytics tables**: Medium retention (7-30 days, 10-20 snapshots) for debugging and analysis
+- **Compliance/audit tables**: Longer retention (30-90 days, 50+ snapshots) to meet regulatory requirements
+- **High-frequency ingest**: Higher minimum snapshot count to preserve more granular history
+
+These are generic recommendations, make sure to consider:
+
+- Time travel requirements
+- Compliance requirements
+- Storage costs
+
+## Current limitations
+
+- Only data files stored in parquet format are currently supported with compaction.
+- Files that were not previously referenced by a snapshot will not be cleaned up (orphaned files).
+- Minimum target file size for compaction is 64 MB and maximum is 512 MB.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/basin-catalog/table-maintenance/#page","headline":"Table maintenance","description":"Learn how Basin Catalog automates table maintenance","url":"https://developers.cloudflare.com/basin-catalog/table-maintenance/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-catalog/table-maintenance/og.png?v=5c86b428b084f346","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: How to properly delete data from Basin Catalog
+title: Deleting data
+image: https://developers.cloudflare.com/basin-catalog/deleting-data/og.png?v=f886b1a77673ac06
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-catalog/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Deleting data
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-catalog/deleting-data/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Deleting data from Basin Catalog or any Apache Iceberg catalog requires that operations are done in a transaction through the catalog itself. Manually deleting metadata or data files directly can lead to data catalog corruption.
+
+## Automatic table maintenance
+
+Basin Catalog can automatically manage table maintenance operations such as snapshot expiration and compaction. These continuous operations help keep latency and storage costs down.
+
+- **Snapshot expiration**: Automatically removes old snapshots and the respective unreferenced data files. This reduces both metadata overhead and storage costs.
+- **Compaction**: Merges small data files into larger ones. This optimizes read performance and reduces the number of files read during queries.
+
+Without enabling automatic maintenance, you need to manually handle these operations.
+
+Learn more in the [table maintenance](https://developers.cloudflare.com/basin-catalog/table-maintenance/) documentation.
+
+## Examples of enabling automatic table maintenance in Basin Catalog
+
+Enable automatic snapshot expiration for the catalog:
+
+npmyarnpnpm
+
+```
+npx wrangler basin catalog snapshot-expiration enable my-bucket --older-than-days 30 --retain-last 5
+```
+
+```
+yarn wrangler basin catalog snapshot-expiration enable my-bucket --older-than-days 30 --retain-last 5
+```
+
+```
+pnpm wrangler basin catalog snapshot-expiration enable my-bucket --older-than-days 30 --retain-last 5
+```
+
+Enable automatic compaction for the catalog:
+
+npmyarnpnpm
+
+```
+npx wrangler basin catalog compaction enable my-bucket --target-size 256
+```
+
+```
+yarn wrangler basin catalog compaction enable my-bucket --target-size 256
+```
+
+```
+pnpm wrangler basin catalog compaction enable my-bucket --target-size 256
+```
+
+Refer to additional examples in the [manage catalogs](https://developers.cloudflare.com/basin-catalog/manage-catalogs/) documentation.
+
+## Manually deleting and removing data
+
+You need to manually delete data for:
+
+- Complying with data retention policies such as GDPR or CCPA.
+- Selective based deletes using conditional logic.
+- Removing stale or unreferenced files that Basin Catalog does not manage.
+
+The following are basic examples using PySpark but similar operations can be performed using other Iceberg-compatible engines. To configure PySpark, refer to our [example](https://developers.cloudflare.com/basin-catalog/config-examples/spark-python/) or the official [PySpark documentation ↗︎](https://spark.apache.org/docs/latest/api/python/getting_started/index.html).
+
+### Deleting rows from a table
+
+```py
+# Creates new snapshots and marks old files for cleanup
+spark.sql("""
+	DELETE FROM r2dc.namespace.table_name
+	WHERE column_name = 'value'
+""")
+
+# The following is effectively a TRUNCATE operation
+spark.sql("DELETE FROM r2dc.namespace.table_name")
+
+# For large deletes, use partitioned tables and delete entire partitions for faster performance:
+spark.sql("""
+    DELETE FROM r2dc.namespace.table_name
+    WHERE date_partition < '2024-01-01'
+""")
+```
+
+### Dropping tables and namespaces
+
+```py
+# Removes table from catalog but keeps data files in R2 storage
+spark.sql("DROP TABLE r2dc.namespace.table_name")
+
+# ⚠️  DANGER: Permanently deletes all data files from R2
+# This operation cannot be undone
+spark.sql("DROP TABLE r2dc.namespace.table_name PURGE")
+
+# Use CASCADE to drop all tables within the namespace
+spark.sql("DROP NAMESPACE r2dc.namespace_name CASCADE")
+
+# You will need to PURGE the tables before running CASCADE to permanently delete data files
+# This can be done with a loop over all tables in the namespace
+tables = spark.sql("SHOW TABLES IN r2dc.namespace_name").collect()
+for row in tables:
+    table_name = row['tableName']
+    spark.sql(f"DROP TABLE r2dc.namespace_name.{table_name} PURGE")
+spark.sql("DROP NAMESPACE r2dc.namespace_name CASCADE")
+```
+
+Data loss warning
+
+`DROP TABLE ... PURGE` permanently deletes all data files from R2 storage. This operation cannot be undone and bypasses time-travel capabilities.
+
+### Manual maintenance operations
+
+```py
+# Remove old metadata and data files marked for deletion
+# The following retains the last 5 snapshots and deletes files older than Nov 28, 2024
+spark.sql("""
+	CALL r2dc.system.expire_snapshots(
+    table => 'r2dc.namespace_name.table_name',
+    older_than => TIMESTAMP '2024-11-28 00:00:00',
+     retain_last => 5
+  )
+""")
+
+# Removes unreferenced data files from R2 storage (orphan files)
+spark.sql("""
+  CALL r2dc.system.remove_orphan_files(
+    table => 'namespace.table_name'
+  )
+""")
+
+# Rewrite data files with a target file size (e.g., 512 MB)
+spark.sql("""
+  CALL r2dc.system.rewrite_data_files(
+    table => 'r2dc.namespace_name.table_name',
+    options => map('target-file-size-bytes', '536870912')
+  )
+""")
+```
+
+## About Apache Iceberg metadata
+
+Apache Iceberg uses a layered metadata structure to manage table data efficiently. Here are the key components and file structure:
+
+- **metadata.json**: Top-level JSON file pointing to the current snapshot
+- **snapshot-\***: Immutable table state for a given point in time
+- **manifest-list-\*.avro**: An Avro file listing all manifest files for a given snapshot
+- **manifest-file-\*.avro**: An Avro file tracking data files and their statistics
+- **data-\*.parquet**: Parquet files containing actual table data
+- **Note**: Unchanged manifest files are reused across snapshots
+
+Caution
+
+Manually modifying or deleting any of these files directly can lead to data catalog corruption.
+
+- metadata.json **Metadata File** - Points to current snapshot
+  - Table Schema
+  - Partition Spec
+  - Sort Order
+  - Snapshots
+    - snapshot-3051729675574597004.avro **Snapshot 1** (Historical)
+      - manifest-list-abc123.avro **Manifest List**
+        - manifest-file-001.avro **Manifest File**
+          - data-00001.parquet (10 MB, 50K rows)
+          - data-00002.parquet (12 MB, 60K rows)
+          - data-00003.parquet (11 MB, 55K rows)
+        - manifest-file-002.avro
+          - data-00004.parquet (9 MB, 45K rows)
+          - data-00005.parquet (10 MB, 50K rows)
+    - snapshot-3051729675574597005.avro **Snapshot 2** (Current)
+      - manifest-list-def456.avro **Manifest List**
+        - manifest-file-001.avro *(reused from Snapshot 1)*
+          - data-00001.parquet
+          - data-00002.parquet
+          - data-00003.parquet
+        - manifest-file-003.avro *(new)*
+          - data-00006.parquet (11 MB, 53K rows)
+          - data-00007.parquet (10 MB, 51K rows)
+          - data-00008.parquet (12 MB, 58K rows)
+
+### What happens during deletion
+
+Apache Iceberg supports two deletion modes: **Copy-on-Write (COW)** and **Merge-on-Read (MOR)**. Both create a new snapshot and mark old files for cleanup, but handle the deletion differently:
+
+| Aspect | Copy-on-Write (COW) | Merge-on-Read (MOR) |
+| --- | --- | --- |
+| **How deletes work** | Rewrites data files without deleted rows | Creates delete files marking rows to skip |
+| **Query performance** | Fast (no merge needed) | Slower (requires read-time merge) |
+| **Write performance** | Slower (rewrites data files) | Fast (only writes delete markers) |
+| **Storage impact** | Creates new data files immediately | Accumulates delete files over time |
+| **Maintenance needs** | Snapshot expiration | Snapshot expiration + compaction (`rewrite_data_files`) |
+| **Best for** | Read-heavy workloads | Write-heavy workloads with frequent small mutations |
+
+Important for all deletion modes
+
+- Deleted data is **not immediately removed** from R2 - files are marked for cleanup
+- Enable [snapshot expiration](https://developers.cloudflare.com/basin-catalog/table-maintenance/) in Basin Catalog to automatically clean up old snapshots and files
+
+### Common deletion operations
+
+These operations work the same way for both COW and MOR tables:
+
+| Operation | What it does | Data deleted? | Reversible? |
+| --- | --- | --- | --- |
+| `DELETE FROM` | Removes rows matching condition | No (marked for cleanup) | Via time travel<sup>[1](#user-content-fn-1)</sup> |
+| `DROP TABLE` | Removes table from catalog | No | Yes (if data files exist) |
+| `DROP TABLE ... PURGE` | Removes table and deletes data | **Yes** | **No** |
+| `expire_snapshots` | Cleans up old snapshots/files | **Yes** | **No** |
+| `remove_orphan_files` | Removes unreferenced files | **Yes** | **No** |
+
+### MOR-specific operations
+
+For Merge-on-Read tables, you may need to manually apply deletes for performance:
+
+| Operation | What it does | When to use |
+| --- | --- | --- |
+| `rewrite_data_files` (compaction) | Applies deletes and consolidates files | When query performance degrades due to many delete files |
+
+Note
+
+Basin Catalog can automate [rewriting data files](https://developers.cloudflare.com/basin-catalog/table-maintenance/) for you.
+
+## Related resources
+
+- [Table maintenance](https://developers.cloudflare.com/basin-catalog/table-maintenance/) - Learn about automatic maintenance operations
+- [Basin Catalog](https://developers.cloudflare.com/basin-catalog/) - Overview and getting started guide
+- [Query data](https://developers.cloudflare.com/basin-sql/query-data/) - Query tables with Basin SQL
+- [Apache Iceberg Maintenance ↗︎](https://iceberg.apache.org/docs/latest/maintenance/) - Official Iceberg documentation on table maintenance
+
+## Footnotes
+
+1. Time travel available until `expire_snapshots` is called [↩](#user-content-fnref-1)
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/basin-catalog/deleting-data/#page","headline":"Deleting data","description":"How to properly delete data from Basin Catalog","url":"https://developers.cloudflare.com/basin-catalog/deleting-data/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-catalog/deleting-data/og.png?v=f886b1a77673ac06","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Basin Catalog platform details including pricing.
+title: Platform
+image: https://developers.cloudflare.com/basin-catalog/platform/og.png?v=62ec4e451aaff68a
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-catalog/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Platform
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-catalog/platform/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/basin-catalog/platform/#page","headline":"Platform","description":"Basin Catalog platform details including pricing.","url":"https://developers.cloudflare.com/basin-catalog/platform/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-catalog/platform/og.png?v=62ec4e451aaff68a","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Basin Catalog pricing for catalog operations, compaction, and included usage details.
+title: Pricing
+image: https://developers.cloudflare.com/basin-catalog/platform/pricing/og.png?v=7e03c8906b175ca8
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-catalog/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Pricing
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-catalog/platform/pricing/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Note
+
+Basin Catalog requires an active [R2 subscription](https://developers.cloudflare.com/r2/get-started/). Your account must also have a [linked payment card](https://developers.cloudflare.com/billing/get-started/create-billing-profile/).
+
+Basin Catalog charges based on two dimensions in addition to standard [R2 storage and operations](https://developers.cloudflare.com/r2/pricing/):
+
+1. **Catalog operations**: Metadata operations such as creating tables, reading table metadata, and updating table properties.
+2. **Compaction data processed**: The volume of data processed and objects compacted when [automatic table compaction](https://developers.cloudflare.com/basin-catalog/table-maintenance/) is turned on.
+
+All included usage is on a monthly basis.
+
+## Basin Catalog pricing
+
+|  | Pricing |
+| --- | --- |
+| **Catalog operations** | |
+| Included | 1 million operations / month |
+| Additional | $9.00 / million operations |
+| **Data processed (Compaction)** <sup>[1](#user-content-fn-1)</sup> | |
+| Included | 10 GB / month |
+| Additional (data processed) | $0.005 / GB processed |
+| **Objects processed (Compaction)** <sup>[1](#user-content-fn-1)</sup> | |
+| Included | 1 million objects / month |
+| Additional | $2.00 / million objects |
+
+### Catalog operations
+
+Catalog operations are metadata requests made to the Iceberg REST catalog, such as creating a table, retrieving table metadata, updating table properties, and listing tables in a namespace. These operations do not scan or move data.
+
+### Compaction
+
+When you turn on [automatic compaction](https://developers.cloudflare.com/basin-catalog/table-maintenance/), Basin Catalog periodically rewrites small data files into larger, optimized files. This improves query performance and reduces the number of files in your table. Compaction is billed on two sub-dimensions:
+
+- **Data processed**: The total bytes read and rewritten during compaction.
+- **Objects processed**: The number of data files compacted.
+
+Compaction charges only apply when compaction is turned on for a table. If you have not turned on compaction, you will not incur any compaction charges.
+
+Note
+
+Current compaction pricing is based on binpacking, the simplest form of compaction. More compute-intensive compaction algorithms (such as sort or z-order) may be priced differently in the future.
+
+### Snapshot Expiration
+
+When you turn on [automatic snapshot expiration](https://developers.cloudflare.com/basin-catalog/table-maintenance/#why-do-i-need-snapshot-expiration), Basin Catalog automatically deletes old snapshots and their associated data files after a specified retention period. Snapshot expiration is free of charge and does not incur any additional costs outside of the standard R2 storage and data catalog operations charges.
+
+## Billing examples
+
+### Example 1: Low-volume analytics table
+
+A user maintains a single Iceberg table with 50 GB of data. They make 500,000 catalog operations per month and have compaction turned on, which processes 20 GB across 200,000 files.
+
+| Dimension | Usage | Included | Billable | Cost |
+| --- | --- | --- | --- | --- |
+| Catalog operations | 500,000 | 1,000,000 | 0 | $0.00 |
+| Compaction (data processed) | 20 GB | 10 GB | 10 GB | $0.05 |
+| Compaction (objects) | 200,000 | 1,000,000 | 0 | $0.00 |
+| **Total (Data Catalog)** |  |  |  | **$0.05** |
+
+Standard R2 storage charges ($0.015 / GB-month) apply separately for the 50 GB of data stored.
+
+### Example 2: Streaming ingest at 20 MB/s
+
+A user streams data into an Iceberg table at 20 MB/s using [Basin Pipelines](https://developers.cloudflare.com/basin-pipelines/). Over a month (\~30 days) this produces approximately 50,625 GB (\~49 TB) of data, 347,000 catalog operations, and compaction processes roughly 50,625 GB across 43,200 files.
+
+| Dimension | Usage | Included | Billable | Cost |
+| --- | --- | --- | --- | --- |
+| R2 storage | 50,625 GB-month | 10 GB-month | 50,615 GB-month | $759.23 |
+| Catalog operations | 347,000 | 1,000,000 | 0 | $0.00 |
+| Compaction (data processed) | 50,625 GB | 10 GB | 50,615 GB | $253.08 |
+| Compaction (objects) | 43,200 | 1,000,000 | 0 | $0.00 |
+| **Total** |  |  |  | **$1,012.31** |
+
+For large-scale use cases, storage costs are typically the largest component of the bill.
+
+## Cloudflare billing policy
+
+To learn more about how usage is billed, refer to [Cloudflare Billing Policy](https://developers.cloudflare.com/billing/understand/billing-policy/).
+
+## Footnotes
+
+1. Only applies when compaction is enabled for a table. [↩](#user-content-fnref-1) [↩<sup>2</sup>](#user-content-fnref-1-2)
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/basin-catalog/platform/pricing/#page","headline":"Pricing","description":"Basin Catalog pricing for catalog operations, compaction, and included usage details.","url":"https://developers.cloudflare.com/basin-catalog/platform/pricing/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-catalog/platform/pricing/og.png?v=7e03c8906b175ca8","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Connect DuckDB to Basin Catalog to query and manage Iceberg tables.
+title: DuckDB
+image: https://developers.cloudflare.com/basin-catalog/config-examples/duckdb/og.png?v=9c709b4d966a5902
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-catalog/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# DuckDB
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-catalog/config-examples/duckdb/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Below is an example of using [DuckDB ↗︎](https://duckdb.org/) to connect to Basin Catalog. For more information on connecting to Basin Catalog with DuckDB, refer to [DuckDB documentation ↗︎](https://duckdb.org/docs/stable/core_extensions/iceberg/iceberg_rest_catalogs#r2-catalog).
+
+## Prerequisites
+
+- Sign up for a [Cloudflare account ↗︎](https://dash.cloudflare.com/sign-up/workers-and-pages).
+- [Create an R2 bucket](https://developers.cloudflare.com/r2/buckets/create-buckets/) and [enable the data catalog](https://developers.cloudflare.com/basin-catalog/manage-catalogs/#enable-basin-catalog-on-a-bucket).
+- [Create an R2 API token](https://developers.cloudflare.com/r2/api/tokens/) with both [R2 and data catalog permissions](https://developers.cloudflare.com/r2/api/tokens/#permissions).
+- Install [DuckDB ↗︎](https://duckdb.org/docs/installation/).
+  - Note: [DuckDB 1.4.0 ↗︎](https://github.com/duckdb/duckdb/releases/tag/v1.4.0) or greater is required to attach and write to [Iceberg REST Catalogs ↗︎](https://duckdb.org/docs/stable/core_extensions/iceberg/iceberg_rest_catalogs).
+- Note: DuckDB [does not currently support ↗︎](https://duckdb.org/docs/stable/core_extensions/iceberg/iceberg_rest_catalogs#limitations-for-update-and-delete) `DELETE` on partitioned tables.
+
+## Example usage
+
+In the [DuckDB CLI ↗︎](https://duckdb.org/docs/stable/clients/cli/overview.html) (Command Line Interface), run the following commands:
+
+```sql
+-- Install the Iceberg DuckDB extension if needed, then load the extension.
+INSTALL iceberg;
+LOAD iceberg;
+
+-- Install and load httpfs extension for reading/writing files over HTTP(S).
+INSTALL httpfs;
+LOAD httpfs;
+
+-- Create a DuckDB secret to store Basin Catalog credentials.
+CREATE SECRET r2_secret (
+    TYPE ICEBERG,
+    TOKEN '<token>'
+);
+
+-- Attach Basin Catalog with the following ATTACH statement.
+ATTACH '<warehouse_name>' AS my_r2_catalog (
+    TYPE ICEBERG,
+    ENDPOINT '<catalog_uri>'
+);
+
+-- Create the default schema in the catalog and set it as the active schema.
+CREATE SCHEMA my_r2_catalog.default;
+USE my_r2_catalog.default;
+
+-- Create and populate a sample Iceberg table with data.
+CREATE TABLE my_iceberg_table AS SELECT a FROM range(4) t(a);
+
+-- Show all available tables.
+SHOW ALL TABLES;
+
+-- Query the Iceberg table you just created.
+SELECT * FROM my_r2_catalog.default.my_iceberg_table;
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/basin-catalog/config-examples/duckdb/#page","headline":"DuckDB","description":"Connect DuckDB to Basin Catalog to query and manage Iceberg tables.","url":"https://developers.cloudflare.com/basin-catalog/config-examples/duckdb/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-catalog/config-examples/duckdb/og.png?v=9c709b4d966a5902","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Connect PyIceberg to Basin Catalog to create and query Iceberg tables in Python.
+title: PyIceberg
+image: https://developers.cloudflare.com/basin-catalog/config-examples/pyiceberg/og.png?v=b3f18a06e2e6f5ca
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-catalog/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# PyIceberg
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-catalog/config-examples/pyiceberg/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Below is an example of using [PyIceberg ↗︎](https://py.iceberg.apache.org/) to connect to Basin Catalog.
+
+## Prerequisites
+
+- Sign up for a [Cloudflare account ↗︎](https://dash.cloudflare.com/sign-up/workers-and-pages).
+- [Create an R2 bucket](https://developers.cloudflare.com/r2/buckets/create-buckets/) and [enable the data catalog](https://developers.cloudflare.com/basin-catalog/manage-catalogs/#enable-basin-catalog-on-a-bucket).
+- [Create an R2 API token](https://developers.cloudflare.com/r2/api/tokens/) with both [R2 and data catalog permissions](https://developers.cloudflare.com/r2/api/tokens/#permissions).
+- Install the [PyIceberg ↗︎](https://py.iceberg.apache.org/#installation) and [PyArrow ↗︎](https://arrow.apache.org/docs/python/install.html) libraries.
+
+## Example usage
+
+```py
+import pyarrow as pa
+from pyiceberg.catalog.rest import RestCatalog
+from pyiceberg.exceptions import NamespaceAlreadyExistsError
+
+# Define catalog connection details (replace variables)
+WAREHOUSE = "<WAREHOUSE>"
+TOKEN = "<TOKEN>"
+CATALOG_URI = "<CATALOG_URI>"
+
+# Connect to Basin Catalog
+catalog = RestCatalog(
+    name="my_catalog",
+    warehouse=WAREHOUSE,
+    uri=CATALOG_URI,
+    token=TOKEN,
+)
+
+# Create default namespace
+catalog.create_namespace("default")
+
+# Create simple PyArrow table
+df = pa.table({
+    "id": [1, 2, 3],
+    "name": ["Alice", "Bob", "Charlie"],
+})
+
+# Create an Iceberg table
+test_table = ("default", "my_table")
+table = catalog.create_table(
+    test_table,
+    schema=df.schema,
+)
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/basin-catalog/config-examples/pyiceberg/#page","headline":"PyIceberg","description":"Connect PyIceberg to Basin Catalog to create and query Iceberg tables in Python.","url":"https://developers.cloudflare.com/basin-catalog/config-examples/pyiceberg/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-catalog/config-examples/pyiceberg/og.png?v=b3f18a06e2e6f5ca","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Query Basin Catalog tables from Snowflake using a catalog integration.
+title: Snowflake
+image: https://developers.cloudflare.com/basin-catalog/config-examples/snowflake/og.png?v=03b2d13b55d72bc2
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-catalog/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Snowflake
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-catalog/config-examples/snowflake/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Below is an example of using [Snowflake ↗︎](https://docs.snowflake.com/en/user-guide/tables-iceberg-configure-catalog-integration-rest) to connect and query data from Basin Catalog (read-only).
+
+## Prerequisites
+
+- Sign up for a [Cloudflare account ↗︎](https://dash.cloudflare.com/sign-up/workers-and-pages).
+- [Create an R2 bucket](https://developers.cloudflare.com/r2/buckets/create-buckets/) and [enable the data catalog](https://developers.cloudflare.com/basin-catalog/manage-catalogs/#enable-basin-catalog-on-a-bucket).
+- [Create an R2 API token](https://developers.cloudflare.com/r2/api/tokens/) with both [R2 and data catalog permissions](https://developers.cloudflare.com/r2/api/tokens/#permissions).
+- A [Snowflake ↗︎](https://www.snowflake.com/) account with the necessary privileges to create external volumes and catalog integrations.
+
+## Example usage
+
+In your Snowflake [SQL worksheet ↗︎](https://docs.snowflake.com/en/user-guide/ui-snowsight-worksheets-gs) or [notebook ↗︎](https://docs.snowflake.com/en/user-guide/ui-snowsight/notebooks), run the following commands:
+
+```sql
+-- Create a database if needed to organize your external data
+CREATE DATABASE IF NOT EXISTS r2_example_db;
+
+-- Create an external volume pointing to your R2 bucket
+CREATE OR REPLACE EXTERNAL VOLUME ext_vol_r2
+    STORAGE_LOCATIONS = (
+        (
+            NAME = 'my_r2_storage_location'
+            STORAGE_PROVIDER = 'S3COMPAT'
+            STORAGE_BASE_URL = 's3compat://<bucket-name>'
+            CREDENTIALS = (
+                AWS_KEY_ID = '<access_key>'
+                AWS_SECRET_KEY = '<secret_access_key>'
+            )
+            STORAGE_ENDPOINT = '<account_id>.r2.cloudflarestorage.com'
+        )
+    )
+    ALLOW_WRITES = FALSE;
+
+-- Create a catalog integration for Basin Catalog (read-only)
+CREATE OR REPLACE CATALOG INTEGRATION r2_data_catalog
+    CATALOG_SOURCE = ICEBERG_REST
+    TABLE_FORMAT = ICEBERG
+    CATALOG_NAMESPACE = 'default'
+    REST_CONFIG = (
+        CATALOG_URI = '<catalog_uri>'
+        CATALOG_NAME = '<warehouse_name>'
+    )
+    REST_AUTHENTICATION = (
+        TYPE = BEARER
+        BEARER_TOKEN = '<token>'
+    )
+    ENABLED = TRUE;
+
+-- Create an Apache Iceberg table in your selected Snowflake database
+CREATE ICEBERG TABLE my_iceberg_table
+    CATALOG = 'r2_data_catalog'
+    EXTERNAL_VOLUME = 'ext_vol_r2'
+    CATALOG_TABLE_NAME = 'my_table';  -- Name of existing table in your R2 data catalog
+
+-- Query your Iceberg table
+SELECT * FROM my_iceberg_table;
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/basin-catalog/config-examples/snowflake/#page","headline":"Snowflake","description":"Query Basin Catalog tables from Snowflake using a catalog integration.","url":"https://developers.cloudflare.com/basin-catalog/config-examples/snowflake/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-catalog/config-examples/snowflake/og.png?v=03b2d13b55d72bc2","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Connect PySpark to Basin Catalog to read and write Iceberg tables.
+title: Spark (PySpark)
+image: https://developers.cloudflare.com/basin-catalog/config-examples/spark-python/og.png?v=742a485aa3479f26
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-catalog/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Spark (PySpark)
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-catalog/config-examples/spark-python/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Below is an example of using [PySpark ↗︎](https://spark.apache.org/docs/latest/api/python/index.html) to connect to Basin Catalog.
+
+## Prerequisites
+
+- Sign up for a [Cloudflare account ↗︎](https://dash.cloudflare.com/sign-up/workers-and-pages).
+- [Create an R2 bucket](https://developers.cloudflare.com/r2/buckets/create-buckets/) and [enable the data catalog](https://developers.cloudflare.com/basin-catalog/manage-catalogs/#enable-basin-catalog-on-a-bucket).
+- [Create an R2 API token](https://developers.cloudflare.com/r2/api/tokens/) with both [R2 and data catalog permissions](https://developers.cloudflare.com/r2/api/tokens/#permissions).
+- Install the [PySpark ↗︎](https://spark.apache.org/docs/latest/api/python/getting_started/install.html) library.
+
+## Example usage
+
+```py
+from pyspark.sql import SparkSession
+
+# Define catalog connection details (replace variables)
+WAREHOUSE = "<WAREHOUSE>"
+TOKEN = "<TOKEN>"
+CATALOG_URI = "<CATALOG_URI>"
+
+# Build Spark session with Iceberg configurations
+spark = SparkSession.builder \
+  .appName("R2DataCatalogExample") \
+  .config('spark.jars.packages', 'org.apache.iceberg:iceberg-spark-runtime-3.5_2.12:1.6.1,org.apache.iceberg:iceberg-aws-bundle:1.6.1') \
+  .config("spark.sql.extensions", "org.apache.iceberg.spark.extensions.IcebergSparkSessionExtensions") \
+  .config("spark.sql.catalog.my_catalog", "org.apache.iceberg.spark.SparkCatalog") \
+  .config("spark.sql.catalog.my_catalog.type", "rest") \
+  .config("spark.sql.catalog.my_catalog.uri", CATALOG_URI) \
+  .config("spark.sql.catalog.my_catalog.warehouse", WAREHOUSE) \
+  .config("spark.sql.catalog.my_catalog.token", TOKEN) \
+  .config("spark.sql.catalog.my_catalog.header.X-Iceberg-Access-Delegation", "vended-credentials") \
+  .config("spark.sql.catalog.my_catalog.s3.remote-signing-enabled", "false") \
+  .config("spark.sql.defaultCatalog", "my_catalog") \
+  .getOrCreate()
+spark.sql("USE my_catalog")
+
+# Create namespace if it does not exist
+spark.sql("CREATE NAMESPACE IF NOT EXISTS default")
+
+# Create a table in the namespace using Iceberg
+spark.sql("""
+    CREATE TABLE IF NOT EXISTS default.my_table (
+        id BIGINT,
+        name STRING
+    )
+    USING iceberg
+""")
+
+# Create a simple DataFrame
+df = spark.createDataFrame(
+    [(1, "Alice"), (2, "Bob"), (3, "Charlie")],
+    ["id", "name"]
+)
+
+# Write the DataFrame to the Iceberg table
+df.write \
+    .format("iceberg") \
+    .mode("append") \
+    .save("default.my_table")
+
+# Read the data back from the Iceberg table
+result_df = spark.read \
+    .format("iceberg") \
+    .load("default.my_table")
+
+result_df.show()
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/basin-catalog/config-examples/spark-python/#page","headline":"Spark (PySpark)","description":"Connect PySpark to Basin Catalog to read and write Iceberg tables.","url":"https://developers.cloudflare.com/basin-catalog/config-examples/spark-python/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-catalog/config-examples/spark-python/og.png?v=742a485aa3479f26","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Build a Scala Spark application that connects to Basin Catalog for Iceberg table operations.
+title: Spark (Scala)
+image: https://developers.cloudflare.com/basin-catalog/config-examples/spark-scala/og.png?v=1a32dbc4664bde10
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-catalog/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Spark (Scala)
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-catalog/config-examples/spark-scala/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Below is an example of how you can build an [Apache Spark ↗︎](https://spark.apache.org/) application (with Scala) which connects to Basin Catalog. This application is built to run locally, but it can be adapted to run on a cluster.
+
+## Prerequisites
+
+- Sign up for a [Cloudflare account ↗︎](https://dash.cloudflare.com/sign-up/workers-and-pages).
+- [Create an R2 bucket](https://developers.cloudflare.com/r2/buckets/create-buckets/) and [enable the data catalog](https://developers.cloudflare.com/basin-catalog/manage-catalogs/#enable-basin-catalog-on-a-bucket).
+- [Create an R2 API token](https://developers.cloudflare.com/r2/api/tokens/) with both [R2 and data catalog permissions](https://developers.cloudflare.com/r2/api/tokens/#permissions).
+- Install Java 17, Spark 3.5.3, and SBT 1.10.11
+  - Note: The specific versions of tools are critical for getting things to work in this example.
+  - Tip: [“SDKMAN” ↗︎](https://sdkman.io/) is a convenient package manager for installing SDKs.
+
+## Example usage
+
+To start, create a new empty project directory somewhere on your machine.
+
+Inside that directory, create the following file at `src/main/scala/com/example/R2DataCatalogDemo.scala`. This will serve as the main entry point for your Spark application.
+
+```java
+package com.example
+
+import org.apache.spark.sql.SparkSession
+
+object R2DataCatalogDemo {
+    def main(args: Array[String]): Unit = {
+
+        val uri = sys.env("CATALOG_URI")
+        val warehouse = sys.env("WAREHOUSE")
+        val token = sys.env("TOKEN")
+
+        val spark = SparkSession.builder()
+            .appName("My Basin Catalog Demo")
+            .master("local[*]")
+            .config("spark.sql.extensions", "org.apache.iceberg.spark.extensions.IcebergSparkSessionExtensions")
+            .config("spark.sql.catalog.mydemo", "org.apache.iceberg.spark.SparkCatalog")
+            .config("spark.sql.catalog.mydemo.type", "rest")
+            .config("spark.sql.catalog.mydemo.uri", uri)
+            .config("spark.sql.catalog.mydemo.warehouse", warehouse)
+            .config("spark.sql.catalog.mydemo.token", token)
+            .getOrCreate()
+
+        import spark.implicits._
+
+        val data = Seq(
+            (1, "Alice", 25),
+            (2, "Bob", 30),
+            (3, "Charlie", 35),
+            (4, "Diana", 40)
+        ).toDF("id", "name", "age")
+
+        spark.sql("USE mydemo")
+
+        spark.sql("CREATE NAMESPACE IF NOT EXISTS demoNamespace")
+
+        data.writeTo("demoNamespace.demotable").createOrReplace()
+
+        val readResult = spark.sql("SELECT * FROM demoNamespace.demotable WHERE age > 30")
+        println("Records with age > 30:")
+        readResult.show()
+    }
+}
+```
+
+For building this application and managing dependencies, we will use [sbt (“simple build tool”) ↗︎](https://www.scala-sbt.org/). The following is an example `build.sbt` file to place at the root of your project. It is configured to produce a "fat JAR", bundling all required dependencies.
+
+```java
+name := "R2DataCatalogDemo"
+
+version := "1.0"
+
+val sparkVersion = "3.5.3"
+val icebergVersion = "1.8.1"
+
+// You need to use binaries of Spark compiled with either 2.12 or 2.13; and 2.12 is more common.
+// If you download Spark 3.5.3 with sdkman, then it comes with 2.12.18
+scalaVersion := "2.12.18"
+
+libraryDependencies ++= Seq(
+    "org.apache.spark" %% "spark-core" % sparkVersion,
+    "org.apache.spark" %% "spark-sql" % sparkVersion,
+    "org.apache.iceberg" % "iceberg-core" % icebergVersion,
+    "org.apache.iceberg" % "iceberg-spark-runtime-3.5_2.12" % icebergVersion,
+    "org.apache.iceberg" % "iceberg-aws-bundle" % icebergVersion,
+)
+
+// build a fat JAR with all dependencies
+assembly / assemblyMergeStrategy := {
+    case PathList("META-INF", "services", xs @ _*) => MergeStrategy.concat
+    case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+    case "reference.conf" => MergeStrategy.concat
+    case "application.conf" => MergeStrategy.concat
+    case x if x.endsWith(".properties") => MergeStrategy.first
+    case x => MergeStrategy.first
+}
+
+// For Java  17 Compatibility
+Compile / javacOptions ++= Seq("--release", "17")
+```
+
+To enable the [sbt-assembly plugin ↗︎](https://github.com/sbt/sbt-assembly?tab=readme-ov-file) (used to build fat JARs), add the following to a new file at `project/assembly.sbt`:
+
+```plaintext
+addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "1.2.0")
+```
+
+Make sure Java, Spark, and sbt are installed and available in your shell. If you are using SDKMAN, you can install them as shown below:
+
+```bash
+sdk install java 17.0.14-amzn
+sdk install spark 3.5.3
+sdk install sbt 1.10.11
+```
+
+With everything installed, you can now build the project using sbt. This will generate a single bundled JAR file.
+
+```bash
+sbt clean assembly
+```
+
+After building, the output JAR should be located at `target/scala-2.12/R2DataCatalogDemo-assembly-1.0.jar`.
+
+To run the application, you will use `spark-submit`. Below is an example shell script (`submit.sh`) that includes the necessary Java compatibility flags for Spark on Java 17:
+
+```plaintext
+# We need to set these "--add-opens" so that Spark can run on Java 17 (it needs access to
+# parts of the JVM which have been modularized and made internal).
+JAVA_17_COMPATIBILITY="--add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED"
+
+spark-submit \
+--conf "spark.driver.extraJavaOptions=$JAVA_17_COMPATIBILITY" \
+--conf "spark.executor.extraJavaOptions=$JAVA_17_COMPATIBILITY" \
+--class com.example.R2DataCatalogDemo target/scala-2.12/R2DataCatalogDemo-assembly-1.0.jar
+```
+
+Before running it, make sure the script is executable:
+
+```bash
+chmod +x submit.sh
+```
+
+At this point, your project directory should be structured like this:
+
+- Makefile
+- README.md
+- build.sbt
+- project
+  - assembly.sbt
+  - build.properties
+  - project
+- spark-submit.sh
+- src
+  - main
+    - scala
+      - com
+        - example
+          - R2DataCatalogDemo.scala
+
+Before submitting the job, make sure you have the required environment variable set for your catalog URI, warehouse, and [Cloudflare API token](https://developers.cloudflare.com/r2/api/tokens/).
+
+```bash
+export CATALOG_URI=
+export WAREHOUSE=
+export TOKEN=
+```
+
+You are now ready to run the job:
+
+```bash
+./submit.sh
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/basin-catalog/config-examples/spark-scala/#page","headline":"Spark (Scala)","description":"Build a Scala Spark application that connects to Basin Catalog for Iceberg table operations.","url":"https://developers.cloudflare.com/basin-catalog/config-examples/spark-scala/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-catalog/config-examples/spark-scala/og.png?v=1a32dbc4664bde10","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Connect StarRocks to Basin Catalog to query and modify Iceberg tables.
+title: StarRocks
+image: https://developers.cloudflare.com/basin-catalog/config-examples/starrocks/og.png?v=242389bf938f9820
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-catalog/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# StarRocks
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-catalog/config-examples/starrocks/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Below is an example of using [StarRocks ↗︎](https://docs.starrocks.io/docs/data_source/catalog/iceberg/iceberg_catalog/#rest) to connect, query, modify data from Basin Catalog (read-write).
+
+## Prerequisites
+
+- Sign up for a [Cloudflare account ↗︎](https://dash.cloudflare.com/sign-up/workers-and-pages).
+- [Create an R2 bucket](https://developers.cloudflare.com/r2/buckets/create-buckets/) and [enable the data catalog](https://developers.cloudflare.com/basin-catalog/manage-catalogs/#enable-basin-catalog-on-a-bucket).
+- [Create an R2 API token](https://developers.cloudflare.com/r2/api/tokens/) with both [R2 and data catalog permissions](https://developers.cloudflare.com/r2/api/tokens/#permissions).
+- A running [StarRocks ↗︎](https://www.starrocks.io/) frontend instance. You can use the [all-in-one ↗︎](https://docs.starrocks.io/docs/quick_start/shared-nothing/#launch-starrocks) docker setup.
+
+## Example usage
+
+In your running StarRocks instance, run these commands:
+
+```sql
+-- Create an Iceberg catalog named `r2` and set it as the current catalog
+
+CREATE EXTERNAL CATALOG r2
+PROPERTIES
+(
+    "type" = "iceberg",
+    "iceberg.catalog.type" = "rest",
+    "iceberg.catalog.uri" = "<r2_catalog_uri>",
+    "iceberg.catalog.security" = "oauth2",
+    "iceberg.catalog.oauth2.token" = "<r2_api_token>",
+    "iceberg.catalog.warehouse" = "<r2_warehouse_name>"
+);
+
+SET CATALOG r2;
+
+-- Create a database and display all databases in newly connected catalog
+
+CREATE DATABASE testdb;
+
+SHOW DATABASES FROM r2;
+
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| testdb             |
++--------------------+
+2 rows in set (0.66 sec)
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/basin-catalog/config-examples/starrocks/#page","headline":"StarRocks","description":"Connect StarRocks to Basin Catalog to query and modify Iceberg tables.","url":"https://developers.cloudflare.com/basin-catalog/config-examples/starrocks/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-catalog/config-examples/starrocks/og.png?v=242389bf938f9820","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Connect Trino to Basin Catalog using the Iceberg REST catalog connector.
+title: Trino
+image: https://developers.cloudflare.com/basin-catalog/config-examples/trino/og.png?v=1136cb1a60131739
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-catalog/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Trino
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-catalog/config-examples/trino/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Below is an example of using [Trino ↗︎](https://trino.io/) to connect to Basin Catalog. For more information on connecting to Basin Catalog with Trino, refer to [Trino documentation ↗︎](https://trino.io/docs/current/connector/iceberg.html).
+
+## Prerequisites
+
+- Sign up for a [Cloudflare account ↗︎](https://dash.cloudflare.com/sign-up/workers-and-pages).
+- [Create an R2 bucket](https://developers.cloudflare.com/r2/buckets/create-buckets/) and [enable the data catalog](https://developers.cloudflare.com/basin-catalog/manage-catalogs/#enable-basin-catalog-on-a-bucket).
+- [Create an R2 API token, key, and secret](https://developers.cloudflare.com/r2/api/tokens/) with both [R2 and data catalog permissions](https://developers.cloudflare.com/r2/api/tokens/#permissions).
+- Install [Docker ↗︎](https://docs.docker.com/get-docker/) to run the Trino container.
+
+## Setup
+
+Create a local directory for the catalog configuration and change directories to it
+
+```bash
+mkdir -p trino-catalog && cd trino-catalog/
+```
+
+Create a configuration file called `r2.properties` for your Basin Catalog connection:
+
+```properties
+# r2.properties
+connector.name=iceberg
+
+# R2 Configuration
+fs.native-s3.enabled=true
+s3.region=auto
+s3.aws-access-key=<Your R2 access key>
+s3.aws-secret-key=<Your R2 secret>
+s3.endpoint=<Your R2 endpoint>
+s3.path-style-access=true
+
+# Basin Catalog Configuration
+iceberg.catalog.type=rest
+iceberg.rest-catalog.uri=<Your Basin Catalog URI>
+iceberg.rest-catalog.warehouse=<Your Basin Catalog warehouse>
+iceberg.rest-catalog.security=OAUTH2
+iceberg.rest-catalog.oauth2.token=<Your R2 authentication token>
+```
+
+## Example usage
+
+1. Start Trino with the R2 catalog configuration:
+
+   ```bash
+   # Create a local directory for the catalog configuration
+   mkdir -p trino-catalog
+
+   # Place your r2.properties file in the catalog directory
+   cp r2.properties trino-catalog/
+
+   # Run Trino with the catalog configuration
+   docker run -d \
+     --name trino-r2 \
+     -p 8080:8080 \
+     -v $(pwd)/trino-catalog:/etc/trino/catalog \
+     trinodb/trino:latest
+   ```
+
+
+2. Connect to Trino and query your Basin Catalog:
+
+   ```bash
+   # Connect to the Trino CLI
+   docker exec -it trino-r2 trino
+   ```
+
+
+3. In the Trino CLI, run the following commands:
+
+   ```sql
+   -- Show all schemas in the R2 catalog
+   SHOW SCHEMAS IN r2;
+
+   -- Create a schema in the R2 catalog
+   CREATE SCHEMA r2.example_schema;
+
+   -- Create a table with some values in it
+   CREATE TABLE r2.example_schema.yearly_clicks (
+       year,
+       clicks
+   )
+   WITH (
+      partitioning = ARRAY['year']
+   )
+   AS VALUES
+       (2021, 10000),
+       (2022, 20000);
+
+   -- Show tables in a specific schema
+   SHOW TABLES IN r2.example_schema;
+
+   -- Query your Iceberg table
+   SELECT * FROM r2.example_schema.yearly_clicks;
+   ```
+
+
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/basin-catalog/config-examples/trino/#page","headline":"Trino","description":"Connect Trino to Basin Catalog using the Iceberg REST catalog connector.","url":"https://developers.cloudflare.com/basin-catalog/config-examples/trino/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-catalog/config-examples/trino/og.png?v=1136cb1a60131739","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Query Basin Catalog metrics for Iceberg REST API operations and table maintenance jobs via the GraphQL Analytics API.
+title: Metrics and analytics
+image: https://developers.cloudflare.com/basin-catalog/observability/metrics/og.png?v=0956eb7c6ad029ee
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-catalog/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Metrics and analytics
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-catalog/observability/metrics/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Basin Catalog exposes metrics that allow you to monitor Iceberg REST API requests and table maintenance jobs (compaction and snapshot expiration) across your warehouses.
+
+Legacy product names
+
+GraphQL dataset names such as `r2CatalogDataOperationsAdaptiveGroups` still use identifiers from R2 Data Catalog. These names will be updated in the coming weeks. Until then, use the dataset names shown in this guide.
+
+The metrics displayed in the Cloudflare dashboard are queried from Cloudflare's [GraphQL Analytics API](https://developers.cloudflare.com/analytics/graphql-api/). You can access the metrics [programmatically](#query-via-the-graphql-api) via GraphQL or any HTTP client.
+
+## Dashboard metrics
+
+The **Metrics** tab on each catalog's detail page displays five charts that summarize catalog activity over a configurable time range:
+
+| Chart | Description |
+| --- | --- |
+| **Bytes Compacted** | Total bytes written by compaction jobs |
+| **Files Compacted** | Number of input files processed and output files created by compaction |
+| **Catalog Requests** | Total Iceberg REST API requests (for example, `load-table`, `list-namespaces`, `commit-table`) |
+| **Storage Size** | Current bucket storage size |
+| **Snapshots Expired** | Number of snapshots removed by snapshot expiration jobs |
+
+The overview page also shows **Catalog Requests** and **Bucket Size** columns in the catalogs table, giving you a quick summary across all your catalogs.
+
+## GraphQL datasets
+
+### Data operations metrics
+
+Basin Catalog exports the below metrics within the `r2CatalogDataOperationsAdaptiveGroups` dataset. These metrics track Iceberg REST API requests made to your catalog, such as loading tables, listing namespaces, and committing updates.
+
+| Metric | GraphQL Field Name | Aggregation | Description |
+| --- | --- | --- | --- |
+| Request count | `count` | count | Total number of Iceberg REST API requests |
+| Request body bytes | `requestBodyBytes` | sum | Total bytes sent in request bodies |
+| Request duration | `requestDurationMs` | sum, avg, quantiles | Request duration in milliseconds |
+
+The `r2CatalogDataOperationsAdaptiveGroups` dataset provides the following dimensions for filtering and grouping queries:
+
+- `warehouseName` - The name of the Basin Catalog warehouse
+- `operation` - The Iceberg REST API operation name (for example, `load-table`, `list-namespaces`, `commit-table`)
+- `namespaceName` - The Iceberg namespace targeted by the request, if applicable
+- `tableName` - The Iceberg table targeted by the request, if applicable
+- `httpStatus` - HTTP response status code
+- `datetime` - Request timestamp
+- `date` - Request timestamp, truncated to the start of a day
+- `datetimeHour` - Request timestamp, truncated to the start of an hour
+- `datetimeMinute` - Request timestamp, truncated to the start of a minute
+- `datetimeFiveMinutes` - Request timestamp, truncated to the start of five minutes
+- `datetimeFifteenMinutes` - Request timestamp, truncated to the start of fifteen minutes
+
+### Table maintenance metrics
+
+Basin Catalog exports the below metrics within the `r2CatalogTableMaintenanceAdaptiveGroups` dataset. These metrics track table maintenance jobs including [compaction and snapshot expiration](https://developers.cloudflare.com/basin-catalog/table-maintenance/).
+
+| Metric | GraphQL Field Name | Aggregation | Description |
+| --- | --- | --- | --- |
+| Job count | `count` | count | Total number of maintenance jobs executed |
+| Files processed | `filesProcessed` | sum | Total input files processed by maintenance jobs |
+| Files output | `filesOutput` | sum | Total output files created by maintenance jobs |
+| Input bytes | `inputBytes` | sum | Total bytes read or scanned by maintenance jobs |
+| Output bytes | `outputBytes` | sum | Total bytes written by maintenance jobs |
+| Job duration | `jobDurationMs` | sum, avg, quantiles | Job duration in milliseconds |
+
+The `r2CatalogTableMaintenanceAdaptiveGroups` dataset provides the following dimensions for filtering and grouping queries:
+
+- `warehouseName` - The name of the Basin Catalog warehouse
+- `jobType` - The type of maintenance job ( `compaction`, `snapshot-expiration`)
+- `namespaceName` - The Iceberg namespace containing the table
+- `tableName` - The Iceberg table that was maintained
+- `success` - Whether the job succeeded ( `1`) or failed ( `0`)
+- `datetime` - Job timestamp
+- `date` - Job timestamp, truncated to the start of a day
+- `datetimeHour` - Job timestamp, truncated to the start of an hour
+- `datetimeMinute` - Job timestamp, truncated to the start of a minute
+- `datetimeFiveMinutes` - Job timestamp, truncated to the start of five minutes
+- `datetimeFifteenMinutes` - Job timestamp, truncated to the start of fifteen minutes
+
+## Query via the GraphQL API
+
+You can programmatically query analytics for your Basin Catalog warehouses via the [GraphQL Analytics API](https://developers.cloudflare.com/analytics/graphql-api/). This API queries the same datasets as the Cloudflare dashboard and supports GraphQL [introspection](https://developers.cloudflare.com/analytics/graphql-api/features/discovery/introspection/).
+
+Basin Catalog GraphQL datasets require an `accountTag` filter with your Cloudflare account ID.
+
+### Measure data operations over a time period
+
+This query returns the total number of Iceberg REST API requests and total request duration, grouped by operation, for a specific warehouse.
+
+```graphql
+query CatalogDataOperations(
+	$accountTag: String!
+	$warehouseName: String!
+	$datetimeStart: Time!
+	$datetimeEnd: Time!
+) {
+	viewer {
+		accounts(filter: { accountTag: $accountTag }) {
+			r2CatalogDataOperationsAdaptiveGroups(
+				limit: 10000
+				filter: {
+					warehouseName: $warehouseName
+					datetime_geq: $datetimeStart
+					datetime_leq: $datetimeEnd
+				}
+			) {
+				count
+				dimensions {
+					operation
+				}
+				sum {
+					requestBodyBytes
+					requestDurationMs
+				}
+				avg {
+					requestDurationMs
+				}
+			}
+		}
+	}
+}
+```
+
+### Measure request latency percentiles
+
+This query returns request duration percentiles for a specific warehouse, which is useful for understanding latency distribution.
+
+```graphql
+query CatalogLatencyPercentiles(
+	$accountTag: String!
+	$warehouseName: String!
+	$datetimeStart: Time!
+	$datetimeEnd: Time!
+) {
+	viewer {
+		accounts(filter: { accountTag: $accountTag }) {
+			r2CatalogDataOperationsAdaptiveGroups(
+				limit: 10000
+				filter: {
+					warehouseName: $warehouseName
+					datetime_geq: $datetimeStart
+					datetime_leq: $datetimeEnd
+				}
+			) {
+				count
+				dimensions {
+					operation
+				}
+				quantiles {
+					requestDurationMsP50
+					requestDurationMsP90
+					requestDurationMsP99
+				}
+			}
+		}
+	}
+}
+```
+
+### Query table maintenance job metrics
+
+This query returns a summary of compaction and snapshot expiration jobs for a specific warehouse, including files processed, bytes read and written, and success or failure status.
+
+```graphql
+query CatalogMaintenanceMetrics(
+	$accountTag: String!
+	$warehouseName: String!
+	$datetimeStart: Time!
+	$datetimeEnd: Time!
+) {
+	viewer {
+		accounts(filter: { accountTag: $accountTag }) {
+			r2CatalogTableMaintenanceAdaptiveGroups(
+				limit: 10000
+				filter: {
+					warehouseName: $warehouseName
+					datetime_geq: $datetimeStart
+					datetime_leq: $datetimeEnd
+				}
+			) {
+				count
+				dimensions {
+					jobType
+					tableName
+					success
+				}
+				sum {
+					filesProcessed
+					filesOutput
+					inputBytes
+					outputBytes
+					jobDurationMs
+				}
+			}
+		}
+	}
+}
+```
+
+### Filter by operation or table
+
+You can narrow results to a specific Iceberg operation or table. For example, to query only `load-table` operations for a specific table:
+
+```graphql
+query CatalogFilterByOperation(
+	$accountTag: String!
+	$datetimeStart: Time!
+	$datetimeEnd: Time!
+) {
+	viewer {
+		accounts(filter: { accountTag: $accountTag }) {
+			r2CatalogDataOperationsAdaptiveGroups(
+				limit: 10000
+				filter: {
+					warehouseName: "my-warehouse"
+					operation: "load-table"
+					tableName: "my_table"
+					datetime_geq: $datetimeStart
+					datetime_leq: $datetimeEnd
+				}
+			) {
+				count
+				sum {
+					requestDurationMs
+				}
+			}
+		}
+	}
+}
+```
+
+To query only failed maintenance jobs:
+
+```graphql
+query CatalogFailedMaintenanceJobs(
+	$accountTag: String!
+	$datetimeStart: Time!
+	$datetimeEnd: Time!
+) {
+	viewer {
+		accounts(filter: { accountTag: $accountTag }) {
+			r2CatalogTableMaintenanceAdaptiveGroups(
+				limit: 10000
+				filter: {
+					warehouseName: "my-warehouse"
+					success: 0
+					datetime_geq: $datetimeStart
+					datetime_leq: $datetimeEnd
+				}
+			) {
+				count
+				dimensions {
+					jobType
+					tableName
+				}
+			}
+		}
+	}
+}
+```
+
+### Query across all warehouses
+
+To query metrics across all warehouses on an account, omit the `warehouseName` filter and include `warehouseName` in the dimensions:
+
+```graphql
+query CatalogAllWarehouses(
+	$accountTag: String!
+	$datetimeStart: Time!
+	$datetimeEnd: Time!
+) {
+	viewer {
+		accounts(filter: { accountTag: $accountTag }) {
+			r2CatalogDataOperationsAdaptiveGroups(
+				limit: 10000
+				filter: { datetime_geq: $datetimeStart, datetime_leq: $datetimeEnd }
+			) {
+				count
+				dimensions {
+					warehouseName
+					operation
+				}
+				sum {
+					requestDurationMs
+				}
+			}
+		}
+	}
+}
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/basin-catalog/observability/metrics/#page","headline":"Metrics and analytics","description":"Query Basin Catalog metrics for Iceberg REST API operations and table maintenance jobs via the GraphQL Analytics API.","url":"https://developers.cloudflare.com/basin-catalog/observability/metrics/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-catalog/observability/metrics/og.png?v=0956eb7c6ad029ee","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```

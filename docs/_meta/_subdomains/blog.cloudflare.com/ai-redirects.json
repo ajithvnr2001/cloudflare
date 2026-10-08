@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/ai-redirects/",
+  "file": "_subdomains/blog.cloudflare.com/ai-redirects.md",
+  "title": "Redirects for AI Training enforces canonical content | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:21:58.564686+00:00",
+  "html_len": 317342,
+  "md_len": 71577,
+  "depth": 1
+}

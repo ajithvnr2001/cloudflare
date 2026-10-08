@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/c-and-a/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/c-and-a.md",
+  "title": "C&A and Cloudflare | Video",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:22.178121+00:00",
+  "html_len": 210272,
+  "md_len": 9561,
+  "depth": 0,
+  "phase": 2
+}

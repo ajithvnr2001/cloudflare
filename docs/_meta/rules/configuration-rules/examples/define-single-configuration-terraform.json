@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/configuration-rules/examples/define-single-configuration-terraform/",
+  "file": "rules/configuration-rules/examples/define-single-configuration-terraform.md",
+  "title": "Define a single configuration rule using Terraform \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:48.254396+00:00",
+  "html_len": 138831,
+  "md_len": 3094,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/quick-search-beta/",
+  "file": "_subdomains/blog.cloudflare.com/quick-search-beta.md",
+  "title": "We've shipped so many products the Cloudflare dashboard needed its own search engine | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:48.934332+00:00",
+  "html_len": 299934,
+  "md_len": 63446,
+  "depth": 0,
+  "phase": 2
+}

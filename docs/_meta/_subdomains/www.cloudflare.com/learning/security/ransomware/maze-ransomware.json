@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/security/ransomware/maze-ransomware/",
+  "file": "_subdomains/www.cloudflare.com/learning/security/ransomware/maze-ransomware.md",
+  "title": "What is Maze ransomware?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:35.130246+00:00",
+  "html_len": 239634,
+  "md_len": 22550,
+  "depth": 0,
+  "phase": 2
+}

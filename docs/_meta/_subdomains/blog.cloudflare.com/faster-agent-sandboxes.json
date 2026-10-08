@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/faster-agent-sandboxes/",
+  "file": "_subdomains/blog.cloudflare.com/faster-agent-sandboxes.md",
+  "title": "Cloudflare Containers, rebuilt to scale agent sandboxes | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:27.909915+00:00",
+  "html_len": 333807,
+  "md_len": 78707,
+  "depth": 0,
+  "phase": 2
+}

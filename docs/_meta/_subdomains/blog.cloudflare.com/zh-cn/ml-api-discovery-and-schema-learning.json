@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/ml-api-discovery-and-schema-learning/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/ml-api-discovery-and-schema-learning.md",
+  "title": "\u8fd0\u7528\u673a\u5668\u5b66\u4e60\u81ea\u52a8\u53d1\u73b0 API \u7aef\u70b9\u5e76\u751f\u6210\u67b6\u6784 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:40:12.595165+00:00",
+  "html_len": 219952,
+  "md_len": 32102,
+  "depth": 0,
+  "phase": 2
+}

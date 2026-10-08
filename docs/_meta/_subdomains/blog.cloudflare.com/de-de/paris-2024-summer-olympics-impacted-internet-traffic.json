@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/paris-2024-summer-olympics-impacted-internet-traffic/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/paris-2024-summer-olympics-impacted-internet-traffic.md",
+  "title": "Auswirkungen der Olympischen Sommerspiele 2024 in Paris auf den Internet-Traffic | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:51.049093+00:00",
+  "html_len": 270665,
+  "md_len": 49316,
+  "depth": 0,
+  "phase": 2
+}

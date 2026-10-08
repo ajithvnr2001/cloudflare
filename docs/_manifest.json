@@ -1,0 +1,55 @@
+{
+  "base": "https://developers.cloudflare.com",
+  "generated_at": "2026-10-08T08:39:01.235303+00:00",
+  "sitemap_developers": {
+    "total": 8729,
+    "covered": 8729,
+    "pct": 100.0
+  },
+  "sitemap_blog_posts": {
+    "total": 7972,
+    "covered": 7972,
+    "pct": 100.0
+  },
+  "sitemap_www": {
+    "total": 907,
+    "covered": 907,
+    "pct": 100.0
+  },
+  "total_docs_md": 21256,
+  "total_index": 21256,
+  "total_size": "813M",
+  "llms_files": 227,
+  "excluded_junk": 697,
+  "by_method": {
+    "crawl4ai+scrapegraph": 506,
+    "scrapling+scrapegraph": 20750
+  },
+  "by_host": {
+    "api.cloudflare.com": 1,
+    "blog.cloudflare.com": 10735,
+    "cloudflare.com": 3,
+    "dash.cloudflare.com": 1,
+    "developers.cloudflare.com": 9143,
+    "discord.cloudflare.com": 1,
+    "domains.cloudflare.com": 11,
+    "graphql.cloudflare.com": 1,
+    "partnerlocator.cloudflare.com": 1,
+    "playground.ai.cloudflare.com": 1,
+    "radar.cloudflare.com": 25,
+    "rpki.cloudflare.com": 1,
+    "search.ai.cloudflare.com": 1,
+    "speed.cloudflare.com": 1,
+    "support.cloudflare.com": 1,
+    "try.cloudflare.com": 1,
+    "workers.cloudflare.com": 2,
+    "www.cloudflare.com": 1326
+  },
+  "failed_blocked": 29,
+  "tools": [
+    "scrapling Fetcher.get (primary) - D4Vinci/Scrapling",
+    "crawl4AI AsyncWebCrawler (fallback) - unclecode/crawl4AI",
+    "scrapegraph-ai cleanup_html/convert_to_md - ScrapeGraphAI/Scrapegraph-ai"
+  ],
+  "notes": "Incremental updater verified 0 new (dev/blog/www up to date). 697 junk in _excluded/. community/dash/support/radar blocked, in crawl_state.json."
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/perfect-locality-and-three-epic-systemtap-scripts/",
+  "file": "_subdomains/blog.cloudflare.com/perfect-locality-and-three-epic-systemtap-scripts.md",
+  "title": "Perfect locality and three epic SystemTap scripts | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:57.246165+00:00",
+  "html_len": 293260,
+  "md_len": 67042,
+  "depth": 0,
+  "phase": 2
+}

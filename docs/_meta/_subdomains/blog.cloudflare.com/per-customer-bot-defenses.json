@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/per-customer-bot-defenses/",
+  "file": "_subdomains/blog.cloudflare.com/per-customer-bot-defenses.md",
+  "title": "Building unique, per-customer defenses against advanced bot threats in the AI era | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:49.299071+00:00",
+  "html_len": 310774,
+  "md_len": 74837,
+  "depth": 0,
+  "phase": 2
+}

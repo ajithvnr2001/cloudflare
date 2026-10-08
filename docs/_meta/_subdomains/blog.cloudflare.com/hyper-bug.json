@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/hyper-bug/",
+  "file": "_subdomains/blog.cloudflare.com/hyper-bug.md",
+  "title": "How we found a bug in the hyper HTTP library | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:41.088658+00:00",
+  "html_len": 321276,
+  "md_len": 77238,
+  "depth": 0,
+  "phase": 2
+}

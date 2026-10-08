@@ -1,0 +1,197 @@
+---
+url: https://developers.cloudflare.com/workers/examples/rewrite-links/
+title: Rewrite links \u00b7 Cloudflare Workers docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:17:26.253319+00:00
+---
+
+# Rewrite links · Cloudflare Workers docs
+
+> Source: https://developers.cloudflare.com/workers/examples/rewrite-links/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Workers](https://developers.cloudflare.com/workers/)
+  3. /[Examples](https://developers.cloudflare.com/workers/examples/)
+  4. /Rewrite Links
+
+
+
+# Rewrite links
+
+Rewrite URL links in HTML using the HTMLRewriter. This is useful for JAMstack websites.
+
+Last updated Apr 23, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers/examples/rewrite-links/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+If you want to get started quickly, click on the button below.
+
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/docs-examples/tree/main/workers/rewrite-links)
+
+This creates a repository in your GitHub account and deploys the application to Cloudflare Workers.
+    
+    
+    export default {
+    	async fetch(request) {
+    		const OLD_URL = "developer.mozilla.org";
+    		const NEW_URL = "mynewdomain.com";
+    
+    		class AttributeRewriter {
+    			constructor(attributeName) {
+    				this.attributeName = attributeName;
+    			}
+    			element(element) {
+    				const attribute = element.getAttribute(this.attributeName);
+    				if (attribute) {
+    					element.setAttribute(
+    						this.attributeName,
+    						attribute.replace(OLD_URL, NEW_URL),
+    					);
+    				}
+    			}
+    		}
+    
+    		const rewriter = new HTMLRewriter()
+    			.on("a", new AttributeRewriter("href"))
+    			.on("img", new AttributeRewriter("src"));
+    
+    		const res = await fetch(request);
+    		const contentType = res.headers.get("Content-Type");
+    
+    		// If the response is HTML, it can be transformed with
+    		// HTMLRewriter -- otherwise, it should pass through
+    		if (contentType.startsWith("text/html")) {
+    			return rewriter.transform(res);
+    		} else {
+    			return res;
+    		}
+    	},
+    };
+    
+    
+    export default {
+    	async fetch(request): Promise<Response> {
+    		const OLD_URL = "developer.mozilla.org";
+    		const NEW_URL = "mynewdomain.com";
+    
+    		class AttributeRewriter {
+    			constructor(attributeName) {
+    				this.attributeName = attributeName;
+    			}
+    			element(element) {
+    				const attribute = element.getAttribute(this.attributeName);
+    				if (attribute) {
+    					element.setAttribute(
+    						this.attributeName,
+    						attribute.replace(OLD_URL, NEW_URL),
+    					);
+    				}
+    			}
+    		}
+    
+    		const rewriter = new HTMLRewriter()
+    			.on("a", new AttributeRewriter("href"))
+    			.on("img", new AttributeRewriter("src"));
+    
+    		const res = await fetch(request);
+    		const contentType = res.headers.get("Content-Type");
+    
+    		// If the response is HTML, it can be transformed with
+    		// HTMLRewriter -- otherwise, it should pass through
+    		if (contentType.startsWith("text/html")) {
+    			return rewriter.transform(res);
+    		} else {
+    			return res;
+    		}
+    	},
+    } satisfies ExportedHandler;
+    
+    
+    from workers import WorkerEntrypoint
+    from pyodide.ffi import create_proxy
+    from js import HTMLRewriter, fetch
+    
+    
+    class AttributeRewriter:
+        old_url = "developer.mozilla.org"
+        new_url = "mynewdomain.com"
+    
+        def __init__(self, attr_name):
+            self.attr_name = attr_name
+    
+        def element(self, element):
+            attr = element.getAttribute(self.attr_name)
+            if attr:
+                element.setAttribute(
+                    self.attr_name, attr.replace(self.old_url, self.new_url)
+                )
+    
+    
+    href = create_proxy(AttributeRewriter("href"))
+    src = create_proxy(AttributeRewriter("src"))
+    rewriter = HTMLRewriter.new().on("a", href).on("img", src)
+    
+    
+    class Default(WorkerEntrypoint):
+        async def fetch(self, request):
+            res = await fetch(request)
+            content_type = res.headers["Content-Type"]
+    
+            # If the response is HTML, it can be transformed with
+            # HTMLRewriter -- otherwise, it should pass through
+            if content_type.startswith("text/html"):
+                return rewriter.transform(res)
+            return res
+    
+    
+    import { Hono } from 'hono';
+    import { html } from 'hono/html';
+    
+    const app = new Hono();
+    
+    app.get('*', async (c) => {
+      const OLD_URL = "developer.mozilla.org";
+      const NEW_URL = "mynewdomain.com";
+    
+      class AttributeRewriter {
+        attributeName: string;
+    
+        constructor(attributeName: string) {
+          this.attributeName = attributeName;
+        }
+    
+        element(element: Element) {
+          const attribute = element.getAttribute(this.attributeName);
+          if (attribute) {
+            element.setAttribute(
+              this.attributeName,
+              attribute.replace(OLD_URL, NEW_URL)
+            );
+          }
+        }
+      }
+    
+      // Make a fetch request using the original request
+      const res = await fetch(c.req.raw);
+      const contentType = res.headers.get("Content-Type") || "";
+    
+      // If the response is HTML, transform it with HTMLRewriter
+      if (contentType.startsWith("text/html")) {
+        const rewriter = new HTMLRewriter()
+          .on("a", new AttributeRewriter("href"))
+          .on("img", new AttributeRewriter("src"));
+    
+        return new Response(rewriter.transform(res).body, {
+          headers: res.headers
+        });
+      } else {
+        // Pass through the response as is
+        return res;
+      }
+    });
+    
+    export default app;
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/workers/examples/rewrite-links.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

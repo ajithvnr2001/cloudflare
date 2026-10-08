@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/open-api-transition/",
+  "file": "_subdomains/blog.cloudflare.com/open-api-transition.md",
+  "title": "The Cloudflare API now uses OpenAPI schemas | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:36.808710+00:00",
+  "html_len": 296409,
+  "md_len": 64919,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/email-workers/",
+  "file": "_subdomains/blog.cloudflare.com/tag/email-workers.md",
+  "title": "Posts tagged \"Email Workers\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:08:55.770254+00:00",
+  "html_len": 114861,
+  "md_len": 2501,
+  "depth": 1,
+  "phase": 2
+}

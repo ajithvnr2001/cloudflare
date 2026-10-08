@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-teams-dashboard-behind-the-scenes/",
+  "file": "_subdomains/blog.cloudflare.com/the-teams-dashboard-behind-the-scenes.md",
+  "title": "The Teams Dashboard: Behind the Scenes | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:37.314102+00:00",
+  "html_len": 285006,
+  "md_len": 62327,
+  "depth": 0,
+  "phase": 2
+}

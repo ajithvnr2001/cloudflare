@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/client-side-security-finds-4-malicious-campaigns/",
+  "file": "_subdomains/blog.cloudflare.com/client-side-security-finds-4-malicious-campaigns.md",
+  "title": "When scanners miss the attack: how Cloudflare Client-Side Security protects storefronts | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:30.893892+00:00",
+  "html_len": 374915,
+  "md_len": 95636,
+  "depth": 0,
+  "phase": 2
+}

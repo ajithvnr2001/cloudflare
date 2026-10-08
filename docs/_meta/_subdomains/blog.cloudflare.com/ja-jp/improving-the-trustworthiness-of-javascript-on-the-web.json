@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/improving-the-trustworthiness-of-javascript-on-the-web/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/improving-the-trustworthiness-of-javascript-on-the-web.md",
+  "title": "Web\u4e0a\u306eJavascript\u306e\u4fe1\u983c\u6027\u3092\u5411\u4e0a\u3059\u308b | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:42.921057+00:00",
+  "html_len": 242654,
+  "md_len": 47908,
+  "depth": 0,
+  "phase": 2
+}

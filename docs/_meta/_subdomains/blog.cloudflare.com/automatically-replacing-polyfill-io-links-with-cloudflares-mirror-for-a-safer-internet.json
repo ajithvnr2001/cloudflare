@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/automatically-replacing-polyfill-io-links-with-cloudflares-mirror-for-a-safer-internet/",
+  "file": "_subdomains/blog.cloudflare.com/automatically-replacing-polyfill-io-links-with-cloudflares-mirror-for-a-safer-internet.md",
+  "title": "Automatically replacing polyfill.io links with Cloudflare\u2019s mirror for a safer Internet | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:45.275010+00:00",
+  "html_len": 295422,
+  "md_len": 66555,
+  "depth": 0,
+  "phase": 2
+}

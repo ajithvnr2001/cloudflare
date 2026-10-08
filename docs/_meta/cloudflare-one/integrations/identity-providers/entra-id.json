@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/cloudflare-one/integrations/identity-providers/entra-id/",
+  "file": "cloudflare-one/integrations/identity-providers/entra-id.md",
+  "title": "Microsoft Entra ID \u00b7 Cloudflare One docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:09:02.901565+00:00",
+  "html_len": 341533,
+  "md_len": 24847,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/project-think/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/project-think.md",
+  "title": "Project Think\uff1a\u5728 Cloudflare \u4e0a\u6784\u5efa\u4e0b\u4e00\u4ee3 AI \u667a\u80fd\u4f53 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:09.341202+00:00",
+  "html_len": 264110,
+  "md_len": 38389,
+  "depth": 0,
+  "phase": 2
+}

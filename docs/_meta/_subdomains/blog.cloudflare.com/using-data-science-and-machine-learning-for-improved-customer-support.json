@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/using-data-science-and-machine-learning-for-improved-customer-support/",
+  "file": "_subdomains/blog.cloudflare.com/using-data-science-and-machine-learning-for-improved-customer-support.md",
+  "title": "Using data science and machine learning for improved customer support | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:11.475441+00:00",
+  "html_len": 303531,
+  "md_len": 68131,
+  "depth": 0,
+  "phase": 2
+}

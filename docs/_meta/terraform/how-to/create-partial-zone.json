@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/terraform/how-to/create-partial-zone/",
+  "file": "terraform/how-to/create-partial-zone.md",
+  "title": "Create a partial zone using Terraform \u00b7 Cloudflare Terraform docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:00.938950+00:00",
+  "html_len": 110289,
+  "md_len": 3512,
+  "depth": 0
+}

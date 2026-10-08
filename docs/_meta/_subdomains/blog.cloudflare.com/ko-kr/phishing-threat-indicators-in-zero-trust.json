@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/phishing-threat-indicators-in-zero-trust/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/phishing-threat-indicators-in-zero-trust.md",
+  "title": "\uc774\uc81c Cloudflare Zero Trust\uc5d0\uc11c Area 1 \uc704\ud611 \uc9c0\ud45c\ub97c \uc0ac\uc6a9\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:14.924819+00:00",
+  "html_len": 210379,
+  "md_len": 31859,
+  "depth": 0,
+  "phase": 2
+}

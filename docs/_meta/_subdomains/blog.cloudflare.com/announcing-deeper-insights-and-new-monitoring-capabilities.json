@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/announcing-deeper-insights-and-new-monitoring-capabilities/",
+  "file": "_subdomains/blog.cloudflare.com/announcing-deeper-insights-and-new-monitoring-capabilities.md",
+  "title": "Announcing deeper insights and new monitoring capabilities from Cloudflare Analytics | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:15.339633+00:00",
+  "html_len": 270777,
+  "md_len": 56778,
+  "depth": 0,
+  "phase": 2
+}

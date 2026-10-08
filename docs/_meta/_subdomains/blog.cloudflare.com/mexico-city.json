@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/mexico-city/",
+  "file": "_subdomains/blog.cloudflare.com/mexico-city.md",
+  "title": "Mexico City, Mexico: Cloudflare Data Center #134 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:35.007727+00:00",
+  "html_len": 281151,
+  "md_len": 58112,
+  "depth": 0,
+  "phase": 2
+}

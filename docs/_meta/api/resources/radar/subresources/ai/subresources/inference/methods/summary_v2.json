@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/api/resources/radar/subresources/ai/subresources/inference/methods/summary_v2/",
+  "file": "api/resources/radar/subresources/ai/subresources/inference/methods/summary_v2.md",
+  "title": "Get Workers AI inference distribution by dimension | Cloudflare API",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:26:25.679437+00:00",
+  "html_len": 2073410,
+  "md_len": 9552,
+  "depth": 1
+}

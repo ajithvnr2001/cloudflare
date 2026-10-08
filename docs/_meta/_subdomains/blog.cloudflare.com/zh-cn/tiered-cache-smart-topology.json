@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/tiered-cache-smart-topology/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/tiered-cache-smart-topology.md",
+  "title": "\u5206\u7ea7\u7f13\u5b58\u667a\u80fd\u62d3\u6251 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:08.408908+00:00",
+  "html_len": 200716,
+  "md_len": 25725,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/vi-vn/extract-audio-from-your-videos-with-cloudflare-stream/",
+  "file": "_subdomains/blog.cloudflare.com/vi-vn/extract-audio-from-your-videos-with-cloudflare-stream.md",
+  "title": "Tr\u00edch xu\u1ea5t \u00e2m thanh t\u1eeb video c\u1ee7a b\u1ea1n v\u1edbi Cloudflare Stream | Blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:15.473868+00:00",
+  "html_len": 189041,
+  "md_len": 19097,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/pq-ca-with-mtcs/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/pq-ca-with-mtcs.md",
+  "title": "\u5229\u7528 Merkle Tree Certificates \u6253\u9020\u5f8c\u91cf\u5b50\u6191\u8b49\u6388\u6b0a\u6a5f\u69cb | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:13.936377+00:00",
+  "html_len": 212727,
+  "md_len": 29081,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/dns/zone-setups/troubleshooting/pending-nameservers/",
+  "file": "dns/zone-setups/troubleshooting/pending-nameservers.md",
+  "title": "Zone stuck in Pending Nameserver Update \u00b7 Cloudflare DNS docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:11:04.161052+00:00",
+  "html_len": 152406,
+  "md_len": 13553,
+  "depth": 0
+}

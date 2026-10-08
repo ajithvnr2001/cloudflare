@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/magic-gateway-browser-isolation/",
+  "file": "_subdomains/blog.cloudflare.com/magic-gateway-browser-isolation.md",
+  "title": "Isolate browser-borne threats on any network with WAN-as-a-Service | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:07.013728+00:00",
+  "html_len": 286623,
+  "md_len": 61400,
+  "depth": 0,
+  "phase": 2
+}

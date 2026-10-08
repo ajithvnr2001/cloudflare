@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-tld-insights-on-cloudflare-radar/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-tld-insights-on-cloudflare-radar.md",
+  "title": "From .com to .anything- introducing Top-Level Domain (TLD) insights on Cloudflare Radar | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:01.780748+00:00",
+  "html_len": 314007,
+  "md_len": 73173,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-tips-frequently-used-cloudflare-ap/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-tips-frequently-used-cloudflare-ap.md",
+  "title": "CloudFlare Tips: 5 Frequently used CloudFlare API calls | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:20.179716+00:00",
+  "html_len": 269753,
+  "md_len": 57861,
+  "depth": 0,
+  "phase": 2
+}

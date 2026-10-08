@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/security/ransomware/ryuk-ransomware/",
+  "file": "_subdomains/www.cloudflare.com/learning/security/ransomware/ryuk-ransomware.md",
+  "title": "What is Ryuk ransomware?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:35.719442+00:00",
+  "html_len": 240353,
+  "md_len": 21740,
+  "depth": 0,
+  "phase": 2
+}

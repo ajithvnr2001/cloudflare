@@ -1,0 +1,12 @@
+---
+url: https://developers.cloudflare.com/ai/models/xai/grok-4.20-multi-agent-0309/schema-output.json
+title: https://developers.cloudflare.com/ai/models/xai/grok-4.20-multi-agent-0309/schema-output.json
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:23:48.347625+00:00
+---
+
+# https://developers.cloudflare.com/ai/models/xai/grok-4.20-multi-agent-0309/schema-output.json
+
+> Source: https://developers.cloudflare.com/ai/models/xai/grok-4.20-multi-agent-0309/schema-output.json
+
+{"$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","properties":{"id":{"type":"string"},"object":{"type":"string","const":"response"},"created_at":{"type":"number"},"completed_at":{"type":["number","null"]},"model":{"type":"string"},"status":{"type":"string","enum":["in_progress","completed","incomplete","failed"]},"output":{"type":"array","items":{}},"parallel_tool_calls":{"type":"boolean"},"previous_response_id":{"type":["string","null"]},"reasoning":{"anyOf":[{},{"type":"null"}]},"text":{},"tool_choice":{},"tools":{"type":"array","items":{}},"top_p":{"type":["number","null"]},"temperature":{"type":["number","null"]},"instructions":{"type":["string","null"]},"incomplete_details":{"anyOf":[{},{"type":"null"}]},"metadata":{},"store":{"type":"boolean"},"user":{"type":["string","null"]},"error":{"anyOf":[{},{"type":"null"}]},"usage":{"type":"object","properties":{"input_tokens":{"type":"number"},"output_tokens":{"type":"number"},"total_tokens":{"type":"number"},"input_tokens_details":{"type":"object","properties":{"cached_tokens":{"type":"number"}},"required":["cached_tokens"],"additionalProperties":{}},"output_tokens_details":{"type":"object","properties":{"reasoning_tokens":{"type":"number"}},"required":["reasoning_tokens"],"additionalProperties":{}},"cost_in_usd_ticks":{"type":["number","null"]},"num_sources_used":{"type":"number"},"num_server_side_tools_used":{"type":"number"}},"required":["input_tokens","output_tokens","total_tokens"],"additionalProperties":{}}},"required":["id","object","created_at","model","status","output"],"additionalProperties":{}}

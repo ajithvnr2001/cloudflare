@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/tag/cf/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/tag/cf.md",
+  "title": "\u6807\u7b7e\u4e3a\"cf\"\u7684\u6587\u7ae0 \u2014 Cloudflare \u535a\u5ba2",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (153 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:24:48.179042+00:00",
+  "html_len": 146983,
+  "md_len": 2558,
+  "depth": 1,
+  "phase": 2
+}

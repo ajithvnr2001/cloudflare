@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/examples/data-loss-prevention/",
+  "file": "workers/examples/data-loss-prevention.md",
+  "title": "Data loss prevention \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:22.247718+00:00",
+  "html_len": 229285,
+  "md_len": 11405,
+  "depth": 0
+}

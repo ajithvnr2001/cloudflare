@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/bigger-and-badder-how-ddos-attack-sizes-have-evolved-over-the-last-decade/",
+  "file": "_subdomains/blog.cloudflare.com/bigger-and-badder-how-ddos-attack-sizes-have-evolved-over-the-last-decade.md",
+  "title": "Bigger and badder: how DDoS attack sizes have evolved over the last decade | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:39:02.379334+00:00",
+  "html_len": 296775,
+  "md_len": 69770,
+  "depth": 0,
+  "phase": 2
+}

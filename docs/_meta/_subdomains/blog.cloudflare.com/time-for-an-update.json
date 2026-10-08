@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/time-for-an-update/",
+  "file": "_subdomains/blog.cloudflare.com/time-for-an-update.md",
+  "title": "Six years old and time for an update: CloudFlare becomes Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:30.543589+00:00",
+  "html_len": 284280,
+  "md_len": 62010,
+  "depth": 0,
+  "phase": 2
+}

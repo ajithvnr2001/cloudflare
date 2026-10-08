@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/ja-jp/partners/",
+  "file": "_subdomains/www.cloudflare.com/ja-jp/partners.md",
+  "title": "Cloudflare\u306e\u30d1\u30fc\u30c8\u30ca\u30fc\u30b7\u30c3\u30d7 | Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:19:08.426373+00:00",
+  "html_len": 238517,
+  "md_len": 6685,
+  "depth": 1,
+  "phase": 2
+}

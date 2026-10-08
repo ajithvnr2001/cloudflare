@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/edgemesh/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/edgemesh.md",
+  "title": "Edgemesh",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:28.073369+00:00",
+  "html_len": 204875,
+  "md_len": 7379,
+  "depth": 0,
+  "phase": 2
+}

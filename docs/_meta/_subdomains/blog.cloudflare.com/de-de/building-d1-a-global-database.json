@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/building-d1-a-global-database/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/building-d1-a-global-database.md",
+  "title": "Entwicklung von D1: einer globalen Datenbank | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:39:29.030149+00:00",
+  "html_len": 254446,
+  "md_len": 48304,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/introducing-certificate-transparency-monitoring/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/introducing-certificate-transparency-monitoring.md",
+  "title": "Pr\u00e9sentation de Certificate Transparency Monitoring | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:00.431447+00:00",
+  "html_len": 241747,
+  "md_len": 38528,
+  "depth": 0,
+  "phase": 2
+}

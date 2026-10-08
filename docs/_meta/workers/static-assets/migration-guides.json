@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/static-assets/migration-guides/",
+  "file": "workers/static-assets/migration-guides.md",
+  "title": "Migration Guides \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:52.529311+00:00",
+  "html_len": 175494,
+  "md_len": 1371,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zero-trust-signals-to-sumo-logic/",
+  "file": "_subdomains/blog.cloudflare.com/zero-trust-signals-to-sumo-logic.md",
+  "title": "Adding Zero Trust signals to Sumo Logic for better security insights | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:57.732246+00:00",
+  "html_len": 285888,
+  "md_len": 61073,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/url-forwarding/single-redirects/terraform-example/",
+  "file": "rules/url-forwarding/single-redirects/terraform-example.md",
+  "title": "Create a redirect rule using Terraform \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:15:00.676753+00:00",
+  "html_len": 138702,
+  "md_len": 2966,
+  "depth": 0
+}

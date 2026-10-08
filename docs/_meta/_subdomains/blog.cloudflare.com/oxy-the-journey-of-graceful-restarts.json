@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/oxy-the-journey-of-graceful-restarts/",
+  "file": "_subdomains/blog.cloudflare.com/oxy-the-journey-of-graceful-restarts.md",
+  "title": "Oxy: the journey of graceful restarts | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:36.780071+00:00",
+  "html_len": 293640,
+  "md_len": 67740,
+  "depth": 0,
+  "phase": 2
+}

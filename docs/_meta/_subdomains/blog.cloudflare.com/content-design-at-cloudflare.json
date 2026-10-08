@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/content-design-at-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/content-design-at-cloudflare.md",
+  "title": "\u201cMuch more than just writing.\u201d How I got started as a content designer | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:52.574149+00:00",
+  "html_len": 284269,
+  "md_len": 62539,
+  "depth": 0,
+  "phase": 2
+}

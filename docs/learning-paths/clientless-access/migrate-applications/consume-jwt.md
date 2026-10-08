@@ -1,0 +1,55 @@
+---
+url: https://developers.cloudflare.com/learning-paths/clientless-access/migrate-applications/consume-jwt/
+title: Authenticate without integrated SSO \u00b7 Cloudflare Learning Paths
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:11:45.493027+00:00
+---
+
+# Authenticate without integrated SSO · Cloudflare Learning Paths
+
+> Source: https://developers.cloudflare.com/learning-paths/clientless-access/migrate-applications/consume-jwt/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Learning Paths](https://developers.cloudflare.com/learning-paths/)
+  3. /…
+
+Clientless Access
+
+  4. /[Migrate applications](https://developers.cloudflare.com/learning-paths/clientless-access/migrate-applications/)
+  5. /Authenticate without integrated SSO
+
+
+
+# Authenticate without integrated SSO
+
+Last updated Apr 23, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/learning-paths/clientless-access/migrate-applications/consume-jwt/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewConsume the Cloudflare JWTSend authorization headers with Workers
+
+A common goal for many security organizations is to implement continuous authentication and authorization. With Cloudflare Access JWT validation, you can achieve this goal without introducing significant user interruption or requiring behavioral changes for your end users.
+
+As discussed on the [previous page](https://developers.cloudflare.com/learning-paths/clientless-access/migrate-applications/integrated-sso/), some of your applications may currently rely on a direct SSO integration to authenticate requests. However, if you were to put this type of application behind Cloudflare to enable remote access, your user would need to authenticate twice. First, they must authenticate to your identity provider via Cloudflare Access. Once they have authenticated to Access, your user will reach the front door of your internal application, where they must complete a second authentication event via the direct SSO integration.
+
+Instead of [managing a direct SSO integration](https://developers.cloudflare.com/learning-paths/clientless-access/migrate-applications/integrated-sso/) in your application, we recommend using the JSON Web Token (JWT) issued by Cloudflare Access to authenticate requests. Cloudflare becomes the primary responsible party for validating the token returned from your SSO provider. By allowing your applications to consume the Cloudflare JWT, users will only have a single authentication event required to access the application, and you can better manage authorization to your internal services with lower overhead.
+
+## Consume the Cloudflare JWT
+
+When Cloudflare sends a request to your application, the request will include a JWT signed with a key pair unique to your account. You can build a workflow in your application to [validate the Cloudflare Access JWT](https://developers.cloudflare.com/cloudflare-one/access-controls/applications/http-apps/authorization-cookie/validating-json/). This will give you stronger-than-HTML security for users who have authenticated to Cloudflare and will make your user login experience seamless.
+
+The authorization flow is illustrated in the following diagram:
+
+![ZTWA authorization flow with JWT validation](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=995,height=431,format=webp/_astro/access-jwt-flow.D4gusMDK.png)
+
+## Send authorization headers with Workers
+
+When applications do not have integrated SSO, or any other method to deliver just-in-time (JIT) user provisioning or management, it is common to look for a way within Cloudflare to automatically pass user information into the private application. To best accomplish this, we recommend using Cloudflare Workers to send custom HTTP headers. As requests route through Cloudflare's network to your application, the Worker can insert headers into the request which contain the user's identity, device posture attributes, and other custom SAML/OIDC claims from the [Cloudflare Access JWT](https://developers.cloudflare.com/cloudflare-one/access-controls/applications/http-apps/authorization-cookie/application-token/).
+
+Refer to [this tutorial](https://developers.cloudflare.com/cloudflare-one/tutorials/access-workers/) for setup details.
+
+[PreviousApplications with integrated SSO](https://developers.cloudflare.com/learning-paths/clientless-access/migrate-applications/integrated-sso/)[NextBest practices](https://developers.cloudflare.com/learning-paths/clientless-access/migrate-applications/best-practices/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/learning-paths/clientless-access/migrate-applications/consume-jwt.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

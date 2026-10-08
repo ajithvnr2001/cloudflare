@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/response-to-salesloft-drift-incident/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/response-to-salesloft-drift-incident.md",
+  "title": "O impacto da viola\u00e7\u00e3o do Salesloft Drift na Cloudflare e em nossos clientes | Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:29.494786+00:00",
+  "html_len": 212050,
+  "md_len": 39460,
+  "depth": 0,
+  "phase": 2
+}

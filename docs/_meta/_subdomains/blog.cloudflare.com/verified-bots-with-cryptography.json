@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/verified-bots-with-cryptography/",
+  "file": "_subdomains/blog.cloudflare.com/verified-bots-with-cryptography.md",
+  "title": "Message Signatures are now part of our Verified Bots Program, simplifying bot authentication | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:24:30.393362+00:00",
+  "html_len": 301816,
+  "md_len": 68458,
+  "depth": 1
+}

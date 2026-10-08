@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/twilio-segment-sdk-powered-by-cloudflare-workers/",
+  "file": "_subdomains/blog.cloudflare.com/twilio-segment-sdk-powered-by-cloudflare-workers.md",
+  "title": "Twilio Segment Edge SDK powered by Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:55.301694+00:00",
+  "html_len": 325956,
+  "md_len": 72490,
+  "depth": 0,
+  "phase": 2
+}

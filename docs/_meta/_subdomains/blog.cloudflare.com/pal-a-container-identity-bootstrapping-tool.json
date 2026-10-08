@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pal-a-container-identity-bootstrapping-tool/",
+  "file": "_subdomains/blog.cloudflare.com/pal-a-container-identity-bootstrapping-tool.md",
+  "title": "A container identity bootstrapping tool | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:11.389243+00:00",
+  "html_len": 290562,
+  "md_len": 68158,
+  "depth": 0,
+  "phase": 2
+}

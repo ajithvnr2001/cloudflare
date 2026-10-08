@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/sba-phishing-attempt/",
+  "file": "_subdomains/blog.cloudflare.com/sba-phishing-attempt.md",
+  "title": "Latest SBA phishing attempt: stealthy social engineering phish using newly registered domains attempts to gain bank details | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:08.556164+00:00",
+  "html_len": 306011,
+  "md_len": 67954,
+  "depth": 0,
+  "phase": 2
+}

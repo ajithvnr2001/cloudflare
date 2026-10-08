@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/automatically-generating-cloudflares-terraform-provider/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/automatically-generating-cloudflares-terraform-provider.md",
+  "title": "Cloudflare\uc758 Terraform \uacf5\uae09\uc790 \uc790\ub3d9\uc73c\ub85c \uc0dd\uc131 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:41:12.422333+00:00",
+  "html_len": 255041,
+  "md_len": 43177,
+  "depth": 0,
+  "phase": 2
+}

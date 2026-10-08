@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/detections/malicious-uploads/api-calls/",
+  "file": "waf/detections/malicious-uploads/api-calls.md",
+  "title": "Common API calls for content scanning \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:42.063380+00:00",
+  "html_len": 157833,
+  "md_len": 5808,
+  "depth": 0
+}

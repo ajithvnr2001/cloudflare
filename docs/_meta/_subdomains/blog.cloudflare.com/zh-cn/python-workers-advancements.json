@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/python-workers-advancements/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/python-workers-advancements.md",
+  "title": "Python Workers Redux\uff1a\u5feb\u901f\u51b7\u542f\u52a8\u3001\u8f6f\u4ef6\u5305\u548c uv \u4f18\u5148\u7684\u5de5\u4f5c\u6d41\u7a0b | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:47.020519+00:00",
+  "html_len": 209204,
+  "md_len": 29939,
+  "depth": 0,
+  "phase": 2
+}

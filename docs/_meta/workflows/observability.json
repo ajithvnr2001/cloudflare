@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workflows/observability/",
+  "file": "workflows/observability.md",
+  "title": "Observability \u00b7 Cloudflare Workflows docs",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (800 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T07:18:19.087735+00:00",
+  "html_len": 135189,
+  "md_len": 850,
+  "depth": 0
+}

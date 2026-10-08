@@ -1,0 +1,416 @@
+---
+url: https://blog.cloudflare.com/nl-nl/20-percent-internet-upgrade/
+title: Cloudflare is nu sneller en veiliger dankzij Rust | Cloudflare Blog
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:40:55.953398+00:00
+---
+
+# Cloudflare is nu sneller en veiliger dankzij Rust | Cloudflare Blog
+
+> Source: https://blog.cloudflare.com/nl-nl/20-percent-internet-upgrade/
+
+[Blog](https://blog.cloudflare.com/nl-nl/)
+
+[Achtergronden](https://blog.cloudflare.com/nl-nl/tag/deep-dive/)[NGINX](https://blog.cloudflare.com/nl-nl/tag/nginx/)[Rust](https://blog.cloudflare.com/nl-nl/tag/rust/)+2Toon 2 meer tags
+
+5 tagsToon 5 tags
+
+  * Berichttags
+  * [Achtergronden](https://blog.cloudflare.com/nl-nl/tag/deep-dive/)[NGINX](https://blog.cloudflare.com/nl-nl/tag/nginx/)[Rust](https://blog.cloudflare.com/nl-nl/tag/rust/)[Techniek](https://blog.cloudflare.com/nl-nl/tag/engineering/)[Verjaardagsweek](https://blog.cloudflare.com/nl-nl/tag/birthday-week/)
+  * Alle tags
+  * Overeenkomende tags
+  * Geen tags gevonden
+  * [Overnames](https://blog.cloudflare.com/nl-nl/tag/acquisitions/)
+  * [Geavanceerde DDoS](https://blog.cloudflare.com/nl-nl/tag/advanced-ddos/)
+  * [Agenten](https://blog.cloudflare.com/nl-nl/tag/agents/)
+  * [Agents Week](https://blog.cloudflare.com/nl-nl/tag/agents-week/)
+  * [AI](https://blog.cloudflare.com/nl-nl/tag/ai/)
+  * [AI Week](https://blog.cloudflare.com/nl-nl/tag/ai-week/)
+  * [AI-SPM](https://blog.cloudflare.com/nl-nl/tag/ai-spm/)
+  * [Analyses](https://blog.cloudflare.com/nl-nl/tag/analytics/)
+  * [API-beveiliging](https://blog.cloudflare.com/nl-nl/tag/api-security/)
+  * [Toepassingsbeveiliging](https://blog.cloudflare.com/nl-nl/tag/application-security/)
+  * [Toepassingsservices](https://blog.cloudflare.com/nl-nl/tag/application-services/)
+  * [Athenian Project (NL)](https://blog.cloudflare.com/nl-nl/tag/athenian-project/)
+  * [Aanvallen](https://blog.cloudflare.com/nl-nl/tag/attacks/)
+  * [Automatisering](https://blog.cloudflare.com/nl-nl/tag/automation/)
+  * [Verjaardagsweek](https://blog.cloudflare.com/nl-nl/tag/birthday-week/)
+  * [Botbeheer](https://blog.cloudflare.com/nl-nl/tag/bot-management/)
+  * [Bots](https://blog.cloudflare.com/nl-nl/tag/bots/)
+  * [CASB](https://blog.cloudflare.com/nl-nl/tag/casb/)
+  * [Clientless](https://blog.cloudflare.com/nl-nl/tag/clientless/)
+  * [Cloudflare Access](https://blog.cloudflare.com/nl-nl/tag/cloudflare-access/)
+  * [Cloudflare-gateway](https://blog.cloudflare.com/nl-nl/tag/gateway/)
+  * [Cloudflare One](https://blog.cloudflare.com/nl-nl/tag/cloudflare-one/)
+  * [Cloudflare Tunnel](https://blog.cloudflare.com/nl-nl/tag/cloudflare-tunnel/)
+  * [Cloudflare Workers](https://blog.cloudflare.com/nl-nl/tag/workers/)
+  * [Cloudforce One](https://blog.cloudflare.com/nl-nl/tag/cloudforce-one/)
+  * [Coinbase](https://blog.cloudflare.com/nl-nl/tag/coinbase/)
+  * [Connectivity cloud](https://blog.cloudflare.com/nl-nl/tag/connectivity-cloud/)
+  * [Consumentendiensten](https://blog.cloudflare.com/nl-nl/tag/consumer-services/)
+  * [Context](https://blog.cloudflare.com/nl-nl/tag/context/)
+  * [Cryptografie](https://blog.cloudflare.com/nl-nl/tag/cryptography/)
+  * [D1](https://blog.cloudflare.com/nl-nl/tag/d1/)
+  * [Data Catalog](https://blog.cloudflare.com/nl-nl/tag/data-catalog/)
+  * [Data Localization (NL)](https://blog.cloudflare.com/nl-nl/tag/data-localization/)
+  * [Data Privacy Day (NL)](https://blog.cloudflare.com/nl-nl/tag/data-privacy-day/)
+  * [DDoS](https://blog.cloudflare.com/nl-nl/tag/ddos/)
+  * [DDoS-waarschuwingen](https://blog.cloudflare.com/nl-nl/tag/ddos-alerts/)
+  * [DDoS-rapporten](https://blog.cloudflare.com/nl-nl/tag/ddos-reports/)
+  * [Achtergronden](https://blog.cloudflare.com/nl-nl/tag/deep-dive/)
+  * [Ontwikkelaarsplatform](https://blog.cloudflare.com/nl-nl/tag/developer-platform/)
+  * [Developer Week](https://blog.cloudflare.com/nl-nl/tag/developer-week/)
+  * [Ontwikkelaars](https://blog.cloudflare.com/nl-nl/tag/developers/)
+  * [Duurzame objecten](https://blog.cloudflare.com/nl-nl/tag/durable-objects/)
+  * [E-mailbeveiliging](https://blog.cloudflare.com/nl-nl/tag/email-security/)
+  * [Techniek](https://blog.cloudflare.com/nl-nl/tag/engineering/)
+  * [Entropie](https://blog.cloudflare.com/nl-nl/tag/entropy/)
+  * [Europe (NL)](https://blog.cloudflare.com/nl-nl/tag/europe/)
+  * [European Union (NL)](https://blog.cloudflare.com/nl-nl/tag/european-union/)
+  * [Forrester](https://blog.cloudflare.com/nl-nl/tag/forrester/)
+  * [Brief van de oprichters](https://blog.cloudflare.com/nl-nl/tag/founders-letter/)
+  * [Fraude](https://blog.cloudflare.com/nl-nl/tag/fraud/)
+  * [GDPR (NL)](https://blog.cloudflare.com/nl-nl/tag/gdpr/)
+  * [Generatieve AI](https://blog.cloudflare.com/nl-nl/tag/generative-ai/)
+  * [Germany (NL)](https://blog.cloudflare.com/nl-nl/tag/germany/)
+  * [HTTP2 (NL)](https://blog.cloudflare.com/nl-nl/tag/http2/)
+  * [Impact](https://blog.cloudflare.com/nl-nl/tag/impact/)
+  * [Intel](https://blog.cloudflare.com/nl-nl/tag/intel/)
+  * [Afsluiting van het internet](https://blog.cloudflare.com/nl-nl/tag/internet-shutdown/)
+  * [Internetverkeer](https://blog.cloudflare.com/nl-nl/tag/internet-traffic/)
+  * [LavaRand](https://blog.cloudflare.com/nl-nl/tag/lavarand/)
+  * [Leven bij Cloudflare](https://blog.cloudflare.com/nl-nl/tag/life-at-cloudflare/)
+  * [Lisbon](https://blog.cloudflare.com/nl-nl/tag/lisbon/)
+  * [LLM](https://blog.cloudflare.com/nl-nl/tag/llm/)
+  * [MCP](https://blog.cloudflare.com/nl-nl/tag/mcp/)
+  * [Mirai](https://blog.cloudflare.com/nl-nl/tag/mirai/)
+  * [Model Context-protocol,](https://blog.cloudflare.com/nl-nl/tag/model-context-protocol/)
+  * [NGINX](https://blog.cloudflare.com/nl-nl/tag/nginx/)
+  * [Kantoren](https://blog.cloudflare.com/nl-nl/tag/offices/)
+  * [Storing](https://blog.cloudflare.com/nl-nl/tag/outage/)
+  * [Partner](https://blog.cloudflare.com/nl-nl/tag/partners/)
+  * [Pipelines](https://blog.cloudflare.com/nl-nl/tag/pipelines/)
+  * [Beleid en wetgeving](https://blog.cloudflare.com/nl-nl/tag/policy/)
+  * [Portugal](https://blog.cloudflare.com/nl-nl/tag/portugal/)
+  * [Post mortem](https://blog.cloudflare.com/nl-nl/tag/post-mortem/)
+  * [Post-kwantum](https://blog.cloudflare.com/nl-nl/tag/post-quantum/)
+  * [Productnieuws](https://blog.cloudflare.com/nl-nl/tag/product-news/)
+  * [Galileo-project](https://blog.cloudflare.com/nl-nl/tag/project-galileo/)
+  * [Radar](https://blog.cloudflare.com/nl-nl/tag/cloudflare-radar/)
+  * [Willekeur](https://blog.cloudflare.com/nl-nl/tag/randomness/)
+  * [Losgeldaanvallen](https://blog.cloudflare.com/nl-nl/tag/ransom-attacks/)
+  * [Rapid Reset (NL)](https://blog.cloudflare.com/nl-nl/tag/rapid-reset/)
+  * [Onderzoek](https://blog.cloudflare.com/nl-nl/tag/research/)
+  * [Risicobeheer](https://blog.cloudflare.com/nl-nl/tag/risk-management/)
+  * [Rust](https://blog.cloudflare.com/nl-nl/tag/rust/)
+  * [SaaS-beveiliging](https://blog.cloudflare.com/nl-nl/tag/saas-security/)
+  * [SASE](https://blog.cloudflare.com/nl-nl/tag/sase/)
+  * [Beveiligde webgateway](https://blog.cloudflare.com/nl-nl/tag/secure-web-gateway/)
+  * [Veiligheid](https://blog.cloudflare.com/nl-nl/tag/security/)
+  * [Beveiligingscentrum](https://blog.cloudflare.com/nl-nl/tag/security-center/)
+  * [Beveiligingspositiebeheer](https://blog.cloudflare.com/nl-nl/tag/security-posture-management/)
+  * [Security Week](https://blog.cloudflare.com/nl-nl/tag/security-week/)
+  * [Snelheid](https://blog.cloudflare.com/nl-nl/tag/speed/)
+  * [Snel en betrouwbaar](https://blog.cloudflare.com/nl-nl/tag/speed-and-reliability/)
+  * [Opslag](https://blog.cloudflare.com/nl-nl/tag/storage/)
+  * [dreigingsinformatie](https://blog.cloudflare.com/nl-nl/tag/threat-intelligence/)
+  * [Dreigingsoperaties](https://blog.cloudflare.com/nl-nl/tag/threat-operations/)
+  * [Dreigingen](https://blog.cloudflare.com/nl-nl/tag/threats/)
+  * [Trends](https://blog.cloudflare.com/nl-nl/tag/trends/)
+  * [Vite](https://blog.cloudflare.com/nl-nl/tag/vite/)
+  * [WAF](https://blog.cloudflare.com/nl-nl/tag/waf/)
+  * [Firewall voor webtoepassingen (WAF)](https://blog.cloudflare.com/nl-nl/tag/web-application-firewall/)
+  * [Workers AI](https://blog.cloudflare.com/nl-nl/tag/workers-ai/)
+  * [Workers VPC](https://blog.cloudflare.com/nl-nl/tag/workers-vpc/)
+  * [Workflows](https://blog.cloudflare.com/nl-nl/tag/workflows/)
+  * [x402](https://blog.cloudflare.com/nl-nl/tag/x402/)
+  * [Zero Trust](https://blog.cloudflare.com/nl-nl/tag/zero-trust/)
+
+
+
+[Techniek](https://blog.cloudflare.com/nl-nl/tag/engineering/)[Verjaardagsweek](https://blog.cloudflare.com/nl-nl/tag/birthday-week/)
+
+[Achtergronden](https://blog.cloudflare.com/nl-nl/tag/deep-dive/)[NGINX](https://blog.cloudflare.com/nl-nl/tag/nginx/)[Rust](https://blog.cloudflare.com/nl-nl/tag/rust/)[Techniek](https://blog.cloudflare.com/nl-nl/tag/engineering/)[Verjaardagsweek](https://blog.cloudflare.com/nl-nl/tag/birthday-week/)
+
+26 september 2025
+
+# Cloudflare is nu sneller en veiliger dankzij Rust
+
+![Richard Boulton](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW44WPC6H4PY51ETZPAGBKZ9.jpg&w=64&h=64&f=webp&fit=cover&position=center)![Steve Goldsmith](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW497YX7768BEJGS24P0FMX8.png&w=64&h=64&f=webp&fit=cover&position=center)![Maurizio Abba](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW45R40JSMY4JX26YZV11150.jpg&w=64&h=64&f=webp&fit=cover&position=center)![Matthew Bullock](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW48ABWPJWE9RP8CPZF1G4F5.jpg&w=64&h=64&f=webp&fit=cover&position=center)
+
+[Richard Boulton](https://blog.cloudflare.com/nl-nl/author/richard/), [Steve Goldsmith](https://blog.cloudflare.com/nl-nl/author/steve-goldsmith/), [Maurizio Abba](https://blog.cloudflare.com/nl-nl/author/maurizio-abba/) en [Matthew Bullock](https://blog.cloudflare.com/nl-nl/author/matthew-bullock/)
+
+17 minuten leestijd
+
+URL KOPIËREN
+
+Dit artikel is ook beschikbaar in [English](https://blog.cloudflare.com/20-percent-internet-upgrade/), [Deutsch](https://blog.cloudflare.com/de-de/20-percent-internet-upgrade/), [Français](https://blog.cloudflare.com/fr-fr/20-percent-internet-upgrade/), [日本語](https://blog.cloudflare.com/ja-jp/20-percent-internet-upgrade/), [한국어](https://blog.cloudflare.com/ko-kr/20-percent-internet-upgrade/) en [简体中文](https://blog.cloudflare.com/zh-cn/20-percent-internet-upgrade/).
+
+![BLOG-2976 Hero Image](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW455QZH9P8QYYH3XK9XYK0W.png&w=1999&h=1125&f=webp&fit=cover&position=center)![](data:image/bmp;base64,Qk32BAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAATCwAAEwsAAAAAAAAAAAAA/////vr97evx3+Hs3uPw5en27Oz07unq/////v3/6u302ODv1N/z3OX45+r17evs////////6fD50uLzy9321eP75Ov47u/w////////7fb+1uf5zuL72Of/5+/88/X1////////9/7/4/H+3e3/5fL/8vj/+vv6////////////9Pz/8fv/+P/////////+////////////////////////////////////////////////////////////////)
+
+Cloudflare streeft er voortdurend naar om het snelste netwerk ter wereld te bouwen en te beheren. [_Sinds 2021 hebben we de prestaties van ons netwerk bijgehouden en rapporteren we erover_](https://blog.cloudflare.com/tag/network-performance-update/). De laatste update staat [_hier_](https://blog.cloudflare.com/tag/network-performance-update/).
+
+De constructie van het snelste netwerk vereist werk op allerlei vlakken. Wij investeren veel tijd in onze hardware, zodat we over efficiënte en snelle machines beschikken. We investeren in peering-regelingen om ervoor te zorgen dat we met een minimale vertraging met elk deel van het internet kunnen communiceren. Bovendien moeten we investeren in de software waarop ons netwerk draait. Zoniet, dan zal elk nieuwe product de verwerking vertragen.
+
+Hoe snel berichten ook binnenkomen, er ontstaat een knelpunt als de software te lang over de verwerking en reactie van verzoeken moet nadenken. Vandaag kondigen we een grote upgrade van onze software aan. Deze upgrade zorgt voor een gemiddelde reactietijd die 10 ms sneller is en levert een prestatieverbetering van 25% op, volgens de CDN-prestatietests van derden.
+
+Het afgelopen jaar hebben we grote onderdelen van ons systeem opnieuw opgebouwd en hebben we de latentie van het netwerkverkeer voor miljoenen klanten drastisch verlaagd. Bovendien hebben we ons systeem veiliger gemaakt en de tijd verkort die nodig is om nieuwe producten te bouwen en op de markt te brengen. 
+
+## Waar zijn we begonnen?
+
+Elk verzoek dat Cloudflare bereikt, maakt een reis door ons netwerk. Het kan afkomstig zijn van een browser die een webpagina laadt, een mobiele app die een API aanroept of geautomatiseerd verkeer van een andere service. Deze verzoeken eindigen eerst op onze HTTP- en TLS-laag, komen vervolgens in een systeem terecht dat we FL noemen en daarna bij [_Pingora_](https://blog.cloudflare.com/pingora-open-source/) dat cache-lookups uitvoert of zo nodig gegevens bij het startpunt ophaalt.
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![Diagram of our reverse proxy architecture](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW48E04GF44VW0S1HCTJT5EC.png&w=715&h=303&f=webp&fit=cover&position=center)
+
+FL is het brein van Cloudflare. Zodra een verzoek FL bereikt, voeren we de verschillende beveiligings- en prestatiefuncties op ons netwerk uit. De unieke configuratie en instellingen van elke klant worden toegepast, van het afdwingen van [_WAF-regels_](https://developers.cloudflare.com/waf/managed-rules/)en [_DDoS-bescherming_](https://www.cloudflare.com/ddos/) tot routing van verkeer naar het [_Developer Platform_](https://developers.cloudflare.com/learning-paths/workers/devplat/intro-to-devplat/)en [_R2_](https://developers.cloudflare.com/r2/). 
+
+FL werd ruim 15 jaar geleden gebouwd en vormt de kern van het netwerk van Cloudflare. Hierdoor kunnen we een breed scala aan functionaliteiten leveren, maar na verloop van tijd is die flexibiliteit een uitdaging geworden. Naarmate we meer producten hebben toegevoegd, werd het steeds moeilijker om FL te onderhouden, duurde het langer om verzoeken te verwerken en was het moeilijker om het systeem uit te breiden. Elke nieuwe functie vereiste zorgvuldige controles van de bestaande logica en elke toevoeging zorgde voor iets meer latentie, waardoor het steeds moeilijker werd om de gewenste prestaties te handhaven.
+
+Je ziet hoe cruciaal FL is voor ons systeem: we noemen het vaak het 'brein' van Cloudflare. Het is ook een van de oudste onderdelen van ons systeem: de eerste commit aan de codebase werd gedaan door een van onze oprichters, Lee Holloway, lang vóór onze initiële lancering. Deze week vieren we ons 15-jarig jubileum: dit systeem startte 9 maanden daarvoor!
+    
+    
+    commit 39c72e5edc1f05ae4c04929eda4e4d125f86c5ce
+    Author: Lee Holloway <q@t60.(none)>
+    Date:   Wed Jan 6 09:57:55 2010 -0800
+    
+        nginx-fl initial configuration
+
+Zoals de commit dat al aangeeft, werd de eerste versie van FL geïmplementeerd op basis van de NGINX-webserver, met productlogica die werd toegepast in PHP. Na 3 jaar werd het systeem te complex om nog effectief te kunnen beheren en reageerde het te langzaam. Daarom werd het hele systeem herschreven. Dit leidde tot een andere belangrijke commit, ditmaal van Dane Knecht, die nu onze CTO is.
+    
+    
+    commit bedf6e7080391683e46ab698aacdfa9b3126a75f
+    Author: Dane Knecht
+    Date:   Thu Sep 19 19:31:15 2013 -0700
+    
+        remove PHP.
+
+Vanaf dat moment werd FL geïmplementeerd met behulp van NGINX, het [_OpenResty_](https://openresty.org/en/)-framework en [_LuaJIT_](https://luajit.org/). Dit ging lange tijd prima, maar de laatste jaren begon het tekenen van veroudering te vertonen. We moesten steeds meer tijd aan het oplossen van obscure bugs in LuaJIT besteden. De zeer dynamische en ongestructureerde aard van onze Lua-code, die een zegen was toen we voor het eerst snel logica probeerden te implementeren, werd een bron van fouten en vertragingen tijdens onze pogingen om grote hoeveelheden complexe productlogica te integreren. Telkens wanneer er een nieuw product werd geïntroduceerd, moesten we alle bestaande producten doornemen om te controleren of die mogelijk door de nieuwe logica werden verstoord.
+
+Het was duidelijk dat een herziening nodig was. In juli 2024 volgde daarom een eerste commit voor een geheel nieuwe en radicaal andere implementatie. Om tijd te besparen voor het bedenken van een nieuwe naam, hebben we die gewoon 'FL2' genoemd en begonnen we uiteraard naar de originele FL te verwijzen als 'FL1'.
+    
+    
+    commit a72698fc7404a353a09a3b20ab92797ab4744ea8
+    Author: Maciej Lechowski
+    Date:   Wed Jul 10 15:19:28 2024 +0100
+    
+        Create fl2 project
+
+## Rust en rigide modularisatie
+
+We begonnen niet vanaf nul. We hebben [_eerder geblogd_](https://blog.cloudflare.com/how-we-built-pingora-the-proxy-that-connects-cloudflare-to-the-internet/) over hoe we een van onze andere verouderde systemen hebben vervangen door Pingora, dat is gebouwd in de programmeertaal [_Rust_](https://www.rust-lang.org/) en dat gebruikmaakt van de [_Tokio_](https://tokio.rs/)-runtime. We hebben ook [_geblogd over Oxy_](https://blog.cloudflare.com/introducing-oxy/), ons interne framework voor het bouwen van proxy's in Rust. We hebben het vaak over Rust en we zijn er inmiddels behoorlijk goed in geworden.
+
+We hebben FL2 in Rust en op Oxy gebouwd met een strikt moduleframework om alle logica in FL2 te structureren.
+
+## Waarom Oxy?
+
+Toen we aan de slag gingen met de bouw van FL2, wisten we dat we niet zomaar een oud systeem zouden vervangen; we waren bezig met de herbouw van de fundamenten van Cloudflare. Dat betekende dat we meer nodig hadden dan alleen een proxy. We hadden een raamwerk nodig dat met ons mee kon groeien, de enorme omvang van ons netwerk aankon en onze teams zou toestaan snel te handelen zonder aan veiligheid of prestaties te verliezen. 
+
+Oxy levert een krachtige combinatie van prestatie, veiligheid en flexibiliteit. De oplossing is gebouwd in Rust en elimineert hele reeksen bugs die onze op NGINX/LuaJIT gebaseerde FL1 teisterden, zoals problemen met de veiligheid van het geheugen en data races, terwijl prestaties op C-niveau werden geleverd. Gezien de schaal van Cloudflare zijn deze garanties geen leuke extraatjes, maar van essentieel belang. Elke microseconde die per aanvraag wordt bespaard, leidt tot een tastbare verbetering van de gebruikerservaring. En elke crash of elk randgeval dat wordt vermeden, zorgt ervoor dat het internet soepel blijft functioneren. De strikte garanties van Rust met betrekking tot de compilatietijd sluiten bovendien perfect aan bij de modulaire architectuur van FL2, waarbij we duidelijke contracten afdwingen tussen productmodules en hun inputs en outputs.
+
+Maar de keuze was niet alleen gebaseerd op de taal. Oxy is het resultaat van jarenlange ervaring met het bouwen van hoogwaardige proxy's. De oplossing stuurt al diverse grote Cloudflare-service aan, van onze [_Zero Trust_](https://developers.cloudflare.com/cloudflare-one/) Gateway tot [_Apple's iCloud Private Relay_](https://blog.cloudflare.com/icloud-private-relay/). We wisten dus dat het de diverse verkeerspatronen en protocolcombinaties van FL2 zou aankunnen. Dankzij het uitbreidingsmodel kunnen we het verkeer van[ _laag 3 tot aan de applicatielaag_](https://www.cloudflare.com/en-gb/learning/ddos/glossary/open-systems-interconnection-model-osi/) onderscheppen, analyseren en manipuleren. We kunnen het verkeer zelfs op verschillende lagen decapsuleren en opnieuw verwerken. Die flexibiliteit is essentieel voor het ontwerp van FL2, omdat het betekent dat we alles van HTTP tot onbewerkt IP-verkeer consistent kunnen verwerken en het platform kunnen doorontwikkelen om nieuwe protocollen en functies te ondersteunen, zonder dat we fundamentele onderdelen hoeven te herschrijven.
+
+Oxy wordt bovendien geleverd met een uitgebreide set ingebouwde functies waar voorheen een grote hoeveelheid maatwerkcode voor nodig was. Dingen zoals monitoring, soft reloads, het dynamisch laden van configuraties en swapping maken allemaal deel uit van het framework. Hierdoor kunnen productteams zich op de unieke bedrijfslogica van hun module concentreren, in plaats van keer op keer vanaf nul beginnen. Dankzij deze solide basis kunnen we vol vertrouwen wijzigingen snel doorvoeren en verzenden, en erop rekenen dat de wijzigingen zich na implementatie goed zullen gedragen.
+
+## Soepele herstarts voor een probleemloos internet
+
+Een van de grootste verbeteringen die Oxy met zich meebrengt, is de verwerking van herstarts. Alle software die voortdurend wordt ontwikkeld en verbeterd, moet op een gegeven moment een upgrade krijgen. Bij desktopsoftware is dit eenvoudig: je sluit het programma, installeert de update en opent de software opnieuw. Op het web is dat een stuk lastiger. Onze software is voortdurend in gebruik en kan niet zomaar worden stilgezet. Een weggevallen HTTP-verzoek kan ervoor zorgen dat een pagina niet laadt, en een verbroken verbinding kan ervoor zorgen dat je uit een videogesprek wordt verwijderd. Betrouwbaarheid is geen optie.
+
+In FL1 moest voor alle upgrades het proxyproces opnieuw gestart worden. Dit betekent dat het hele proces werd beëindigd en alle actieve verbindingen onmiddellijk werden verbroken. Dat was vooral vervelend bij langdurige verbindingen zoals WebSockets, streamingsessies en realtime API's. Zelfs geplande upgrades kunnen zichtbare onderbrekingen voor de gebruiker veroorzaken, en ongeplande herstarts tijdens incidenten kunnen nog erger zijn.
+
+Oxy heeft daar verandering in gebracht. Oxy bevat een ingebouwd mechanisme voor [_soepele herstarts_](https://blog.cloudflare.com/oxy-the-journey-of-graceful-restarts/), waardoor we zo mogelijk nieuwe versies kunnen uitrollen zonder de verbinding te verbreken. Wanneer een nieuw versie van een op Oxy-gebaseerde service wordt opgestart, accepteert de oude versie geen nieuwe verbindingen meer, maar verzorgt alleen de bestaande verbindingen. Zo kunnen de sessies ononderbroken doorgaan totdat ze vanzelf worden beëindigd.
+
+Dit betekent dat als een WebSocket-sessie gaande is wanneer we een nieuwe versie implementeren, die sessie ononderbroken kan doorgaan, totdat die vanzelf wordt beëindigd. De sessie heeft dus niet van de herstart te lijden. De gecoördineerde implementaties voor alle Cloudflare-oplossingen duren meerdere uren, waardoor de totale uitrol soepel en voor eindgebruikers vrijwel onzichtbaar verloopt.
+
+We gaan nog een stap verder door gebruik te maken van 'systemd' socket-activering. In plaats van dat elke proxy zijn eigen sockets beheert, laten wij ze door 'systemd' aanmaken en beheren. Hierdoor wordt de levensduur van sockets losgekoppeld van de levensduur van de Oxy-applicatie zelf. Als een Oxy-proces herstart of crasht, blijven de sockets open en staan ze klaar om nieuwe verbindingen te accepteren. Deze worden vervolgens verwerkt zodra het nieuwe proces draait. Hiermee worden de 'connection refused'-fouten die tijdens herstarts in FL1 kunnen optreden geëlimineerd en wordt de algehele beschikbaarheid tijdens de upgrades verbeterd.
+
+We hebben ook onze eigen coördinatiemechanismen in Rust gebouwd om Go-bibliotheken, zoals [_tableflip_](https://github.com/cloudflare/tableflip), door [_shellflip_](https://github.com/cloudflare/shellflip) te vervangen. Hierbij wordt gebruikgemaakt van een herstart-coördinatie-socket die de configuratie valideert, nieuwe instanties genereert en ervoor zorgt dat de nieuwe versie gezond is, voordat de oude versie wordt uitgeschakeld. Hierdoor worden de feedbackloops verbeterd en kunnen onze automatiseringshulpmiddelen fouten direct detecteren en erop reageren, in plaats van afhankelijk te zijn van blinde, op signalen gebaseerde herstarts.
+
+## FL2 uit modules samenstellen
+
+We wilden onze FL1-problemen vermijden en daarom zochten we een ontwerp dat alle interacties tussen de productlogica expliciet en goed begrijpelijk zou maken. 
+
+Bovenop de fundamenten van Oxy hebben we een platform gebouwd dat alle logica voor onze producten in duidelijk gedefinieerde modules opsplitst. Na wat experimenten en onderzoek hebben we een modulesysteem ontworpen dat aan een aantal strikte regels voldoet:
+
+  * De module doet geen IO (input of output).
+  * De module levert een lijst met **fasen**.
+  * De fasen worden in een strikte volgorde geëvalueerd die voor elk verzoek identiek is.
+  * Elke fase definieert een set inputs die het platform levert en een set outputs die het kan uitzenden.
+
+
+
+Hier is een voorbeeld van een modulefasedefinitie:
+    
+    
+    Phase {
+        name: phases::SERVE_ERROR_PAGE,
+        request_types_enabled: PHASE_ENABLED_FOR_REQUEST_TYPE,
+        inputs: vec![
+            InputKind::IPInfo,
+            InputKind::ModuleValue(
+                MODULE_VALUE_CUSTOM_ERRORS_FETCH_WORKER_RESPONSE.as_str(),
+            ),
+            InputKind::ModuleValue(MODULE_VALUE_ORIGINAL_SERVE_RESPONSE.as_str()),
+            InputKind::ModuleValue(MODULE_VALUE_RULESETS_CUSTOM_ERRORS_OUTPUT.as_str()),
+            InputKind::ModuleValue(MODULE_VALUE_RULESETS_UPSTREAM_ERROR_DETAILS.as_str()),
+            InputKind::RayId,
+            InputKind::StatusCode,
+            InputKind::Visitor,
+        ],
+        outputs: vec![OutputValue::ServeResponse],
+        filters: vec![],
+        func: phase_serve_error_page::callback,
+    }
+
+Deze fase is voor ons aangepaste foutpaginaproduct. Er zijn een aantal dingen als input nodig: informatie over het IP-adres van de bezoeker, enige header- en andere HTTP-informatie en een aantal 'modulewaarden'. Modulewaarden zorgen ervoor dat de ene module informatie aan de andere kan doorgeven. Ze zijn essentieel om de strikte kenmerken van het modulesysteem bruikbaar te maken. Deze module heeft bijvoorbeeld informatie nodig die wordt geproduceerd door de output van ons op regels gebaseerde, aangepaste foutenproduct (de input '`MODULE_VALUE_RULESETS_CUSTOM_ERRORS_OUTPUT`'). Deze input- en outputdefinities worden tijdens de compilatie afgedwongen.
+
+Ondanks deze strikte regels, hebben we ontdekt dat we al onze productlogica binnen dit raamwerk kunnen implementeren. Het voordeel hiervan is dat we meteen kunnen zien welke andere producten elkaar beïnvloeden.
+
+## Zo wordt een draaiend systeem vervangen
+
+Een raamwerk bouwen is één ding. Het bouwen van de productlogica die helemaal juist is, zodat klanten niets anders merken dan een verbetering van de prestaties, is een heel ander verhaal.
+
+De FL-codebase ondersteunt alle Cloudflare-producten van de afgelopen 15 jaar, en verandert voortdurend. We konden de ontwikkeling niet tegenhouden. Een van onze eerste taken was daarom om manieren te vinden om de migratie eenvoudiger en veiliger te maken.
+
+### Stap 1 - Rust-modules in OpenResty
+
+We verzenden producten niet langer naar klanten, maar bouwen de productlogica in Rust opnieuw op. Het was te veel gevraagd om van onze teams te verwachten dat ze twee versies van hun productlogica zouden handhaven en elke wijziging een tweede keer zouden uitvoeren, totdat de migratie was afgerond.
+
+Daarom hebben we een laag aan onze oude, op NGINX en OpenResty gebaseerde FL toegevoegd, waardoor de nieuwe modules gebruikt konden worden. In plaats van een parallelle implementatie, konden teams hun logica in Rust implementeren en hun oude Lua-logica daarmee vervangen, zonder dat ze op een volledige vervanging van het oude systeem hoefden te wachten.
+
+Hier zie je bijvoorbeeld een deel van de implementatie van de aangepaste foutpagina-modulefase die we eerder hebben laten zien (we hebben een aantal heel saaie details weggelaten, waardoor dit niet kan worden gecompileerd zoals staat geschreven):
+    
+    
+    pub(crate) fn callback(_services: &mut Services, input: &Input<'_>) -> Output {
+        // Rulesets produced a response to serve - this can either come from a special
+        // Cloudflare worker for serving custom errors, or be directly embedded in the rule.
+        if let Some(rulesets_params) = input
+            .get_module_value(MODULE_VALUE_RULESETS_CUSTOM_ERRORS_OUTPUT)
+            .cloned()
+        {
+            // Select either the result from the special worker, or the parameters embedded
+            // in the rule.
+            let body = input
+                .get_module_value(MODULE_VALUE_CUSTOM_ERRORS_FETCH_WORKER_RESPONSE)
+                .and_then(|response| {
+                    handle_custom_errors_fetch_response("rulesets", response.to_owned())
+                })
+                .or(rulesets_params.body);
+    
+            // If we were able to load a body, serve it, otherwise let the next bit of logic
+            // handle the response
+            if let Some(body) = body {
+                let final_body = replace_custom_error_tokens(input, &body);
+    
+                // Increment a metric recording number of custom error pages served
+                custom_pages::pages_served("rulesets").inc();
+    
+                // Return a phase output with one final action, causing an HTTP response to be served.
+                return Output::from(TerminalAction::ServeResponse(ResponseAction::OriginError {
+                    rulesets_params.status,
+                    source: "rulesets http_custom_errors",
+                    headers: rulesets_params.headers,
+                    body: Some(Bytes::from(final_body)),
+                }));
+            }
+        }
+    }
+
+De interne logica van elke module is duidelijk gescheiden van de dataverwerking. De Rust-taal zorgt voor een zeer duidelijke en expliciete verwerking van fouten.
+
+Veel van de modules die we het meest actief hebben ontwikkeld, zijn op deze manier aangepakt. Hierdoor konden de teams hun veranderingssnelheid tijdens de migratie handhaven.
+
+### Stap 2 - Testen en geautomatiseerde uitrol
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![BLOG-2976 Image 2](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW48450MSY74VQW5HVYCRTGS.png&w=715&h=266&f=webp&fit=cover&position=center)
+
+Het is essentieel om een zeer krachtig testframework te hebben dat een dergelijke migratie kan uitvoeren. We hebben een systeem gebouwd, dat wij Flamingo noemen, waarmee we duizenden volledige end-to-end testaanvragen tegelijkertijd op onze productie- en preproductiesystemen kunnen uitvoeren. Dezelfde testen zijn uitgevoerd op FL1 en FL2, waardoor we er zeker van zijn dat we het gedrag niet veranderen.
+
+Wanneer we een wijziging doorvoeren, gebeurt dat heel geleidelijk en in meerdere fasen, telkens met meer verkeer. Elke fase wordt automatisch geëvalueerd en is alleen geslaagd als alle tests zijn doorstaan en de algehele prestatie- en resourcegebruikscijfers binnen acceptabele grenzen liggen. Dit systeem is volledig geautomatiseerd en pauzeert of draait wijzigingen terug als de tests mislukken.  
+
+
+Het voordeel hiervan is dat we in FL2 binnen 48 uur nieuwe productfuncties kunnen bouwen en leveren. In FL1 zou dat weken hebben geduurd. Sterker nog, minstens één van de aankondigingen deze week hield een dergelijke verandering in!
+
+### Stap 3 - Fallbacks
+
+Meer dan 100 engineers hebben aan FL2 gewerkt en we beschikken over ruim 130 modules. En we zijn nog niet klaar. We leggen momenteel de laatste hand aan het systeem, om er zeker van te zijn dat het alle gedragingen van FL1 reproduceert.
+
+Hoe kunnen we verkeer naar FL2 sturen als het systeem niet alles kan verwerken? Als FL2 een verzoek of een stukje configuratie voor een verzoek ontvangt en niet weet hoe het hiermee om moet gaan, geeft het op en voert het een **fallback** uit: het stuurt het hele proces naar FL1. Dit gebeurt op netwerkniveau: de bytes worden gewoon doorgegeven aan FL1.
+
+Dit maakt het niet alleen mogelijk om verkeer naar FL2 te sturen zonder dat het helemaal af is, maar heeft ook een ander groot voordeel. Wanneer we een nieuwe functionaliteit in FL2 hebben geïmplementeerd en willen controleren of de werking dezelfde is als in FL1, kunnen we de functionaliteit in FL2 evalueren en daarna een fallback activeren. We kunnen het gedrag van de twee systemen met elkaar vergelijken, waardoor we er zeker van kunnen zijn dat onze implementatie correct was.
+
+### Stap 4 - Uitrol
+
+Begin 2025 hebben we voor het eerst klantverkeer via FL2 geleid. Gedurende het jaar hebben we de hoeveelheid verwerkt verkeer gestaag uitgebreid. In feite hebben we twee grafieken in het oog gehouden: één met een het toenemende verkeer dat naar FL2 gaat en een andere met het afnemende verkeer dat niet door FL2 kon worden afgehandeld en daarom terug werd gestuurd naar FL1.
+
+We zijn dit proces gestart door het verkeer van onze gratis klanten via het systeem te leiden. We konden aantonen dat het systeem correct werkte en dat de fallback-percentages voor onze belangrijkste modules afnamen. Onze [_Cloudflare Community_](https://community.cloudflare.com/) MVP's fungeerden als een 'early warning'-systeem. Ze voerden tests uit en signaleerden problemen wanneer ze dachten dat het nieuwe platform de oorzaak van een nieuw gemeld probleem zou kunnen zijn. Dankzij hun ondersteuning kon ons team snel onderzoek doen, gerichte oplossingen toepassen en bevestigen dat de overstap naar FL2 niet de oorzaak was.
+
+  
+Vervolgens zijn we overgestapt op de betalende klanten en is het aantal klanten dat het systeem gebruikt geleidelijk toegenomen. We hebben ook nauw samengewerkt met een aantal van onze grootste klanten die graag wilden profiteren van de prestatievoordelen van FL2. We hebben hen al vroeg in het proces betrokken in ruil voor veel feedback over het systeem.
+
+Op dit moment gebruiken de meeste van onze klanten FL2. Er zijn nog een aantal functies die we moeten afronden en we zijn nog niet klaar om iedereen te integreren, maar ons doel is om FL1 binnen een paar maanden uit te schakelen.
+
+## De impact van FL2
+
+Zoals we aan het begin van dit bericht al schreven, is FL2 aanzienlijk sneller dan FL1. De voornaamste reden hiervoor is dat FL2 gewoon minder werk verricht. Je hebt misschien in het voorbeeld van de moduledefinitie een regel opgemerkt.
+    
+    
+        filters: vec![],
+
+Elke module kan een set filters leveren die bepalen of ze wel of niet worden uitgevoerd. Dit betekent dat we niet voor elk product bij elke aanvraag logica uitvoeren: we kunnen heel eenvoudig precies de benodigde moduleset selecteren. De incrementele kosten voor elk nieuwe product dat we ontwikkelen, zijn verdwenen.
+
+Een andere belangrijke reden voor de betere prestaties is dat FL2 een enkele codebase is, geïmplementeerd in een taal die gericht is op prestaties. Ter vergelijking: FL1 was gebaseerd op NGINX (geschreven in C) in combinatie met LuaJIT (Lua en C-interfacelagen) en bevatte ook veel Rust-modules. Bij FL1 hebben we veel tijd en geheugencapaciteit besteed aan het converteren van data van de representatie die nodig is voor de ene taal naar de representatie die nodig is voor een andere taal.
+
+Onze interne metingen laten zien dat FL2 minder dan de helft van de CPU en veel minder dan de helft van de geheugencapaciteit gebruikt dan FL1. Dat is een groot voordeel: we kunnen de CPU gebruiken om onze klanten steeds meer functies te bieden!
+
+## Hoe weten we of onze prestaties verbeteren?
+
+Met behulp van onze eigen tools en onafhankelijke benchmarks zoals [_CDNPerf_](https://www.cdnperf.com/) hebben we de impact van FL2 gemeten toen we het over het hele netwerk uitrolden. De resultaten zijn duidelijk: websites reageren gemiddeld 10 ms sneller, wat neerkomt op een prestatieverbetering van 25%.
+
+![](data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3Crect%20width%3D%221%22%20height%3D%221%22%20fill%3D%22rgb\(243%2C243%2C243\)%22%2F%3E%3C%2Fsvg%3E)![BLOG-2976 Image 3](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW49ES09V455V6JBAB6ZCZ5R.png&w=715&h=391&f=webp&fit=cover&position=center)
+
+## Veiligheid
+
+FL2 is bovendien veiliger ontworpen dan FL1. Geen enkel softwaresysteem is perfect, maar de Rust-taal biedt ons enorme voordelen ten opzichte van LuaJIT. Rust beschikt over krachtige geheugencontroles tijdens de compilatie en een typesysteem dat grote foutcategorieën vermijdt. Combineer dat met ons rigide modulesysteem, dan kunnen we de meeste wijzigingen met grote zekerheid doorvoeren.
+
+Natuurlijk is geen enkel systeem veilig als het verkeerd wordt gebruikt. Het is niet moeilijk om code te schrijven in Rust die geheugencorruptie veroorzaakt. Om het risico te beperken, hanteren we strenge linting- en controleprocedures tijdens de compilatie, in combinatie met strikte coderingsnormen, test- en beoordelingsprocessen.
+
+Wij hanteren al lange tijd het beleid dat elke onverklaarbare crash van onze systemen [_dringend moet worden onderzocht_](https://blog.cloudflare.com/however-improbable-the-story-of-a-processor-bug/). We gaan dat beleid niet versoepelen, hoewel de voornaamste oorzaak van de nieuwe crashes in FL2 tot nu toe hardwarestoringen zijn geweest. Aangezien het aantal van dit soort crashes aanzienlijk is afgenomen, hebben we meer tijd om dergelijke onderzoeken goed uit te voeren.
+
+## Wat is de volgende stap?
+
+We zullen de rest van 2025 aan de migratie van FL1 naar FL2 wijden en zullen FL1 begin 2026 uitschakelen. We zien nu al de prestatievoordelen bij klanten en de snelheid van deze ontwikkeling. We kijken ernaar uit om dit aan al onze klanten aan te bieden.
+
+Er is nog één laatste service die we volledig moeten migreren. Het vakje 'HTTP & TLS Termination' in het diagram helemaal bovenaan is ook een NGINX-service, en we zijn halverwege een herschrijving in Rust. We boeken goede vooruitgang met deze migratie en verwachten dit proces begin volgend jaar af te ronden.
+
+Daarna, wanneer alles modulair is, in Rust is opgesteld en getest en geschaald is, kunnen we echt met de optimalisatie beginnen! We willen de manier waarop de modules met elkaar verbonden zijn, reorganiseren en vereenvoudigen, we willen de ondersteuning voor niet-HTTP-verkeer, zoals RPC en streams, uitbreiden en nog veel meer. 
+
+Als je deel wilt zijn van dit avontuur, ga dan naar onze [_vacaturepagina_](https://www.cloudflare.com/careers/). We zijn altijd op zoek naar nieuw talent dat ons wil helpen bij het bouwen van een beter internet.
+
+Op deze pagina
+
+Online discussiëren
+
+[](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Fblog.cloudflare.com%2Fnl-nl%2F20-percent-internet-upgrade%2F&t=Cloudflare%20is%20nu%20sneller%20en%20veiliger%20dankzij%20Rust)[](https://x.com/intent/post?text=Cloudflare+is+nu+sneller+en+veiliger+dankzij+Rust&url=https%3A%2F%2Fblog.cloudflare.com%2Fnl-nl%2F20-percent-internet-upgrade%2F)[](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fblog.cloudflare.com%2Fnl-nl%2F20-percent-internet-upgrade%2F)[](https://bsky.app/intent/compose?text=Cloudflare+is+nu+sneller+en+veiliger+dankzij+Rust+https%3A%2F%2Fblog.cloudflare.com%2Fnl-nl%2F20-percent-internet-upgrade%2F)[](https://mastodonshare.com/?text=Cloudflare+is+nu+sneller+en+veiliger+dankzij+Rust&url=https%3A%2F%2Fblog.cloudflare.com%2Fnl-nl%2F20-percent-internet-upgrade%2F)[](https://www.threads.net/intent/post?text=Cloudflare+is+nu+sneller+en+veiliger+dankzij+Rust+https%3A%2F%2Fblog.cloudflare.com%2Fnl-nl%2F20-percent-internet-upgrade%2F)
+
+## Gerelateerde tags
+
+[Achtergronden](https://blog.cloudflare.com/nl-nl/tag/deep-dive/)[NGINX](https://blog.cloudflare.com/nl-nl/tag/nginx/)[Rust](https://blog.cloudflare.com/nl-nl/tag/rust/)[Techniek](https://blog.cloudflare.com/nl-nl/tag/engineering/)[Verjaardagsweek](https://blog.cloudflare.com/nl-nl/tag/birthday-week/)
+
+Volg ons op social media
+
+  * ![Cloudflare](https://blog.cloudflare.com/images/placeholder__cloudflare.png)Cloudflare
+
+[](https://blog.cloudflare.com/rss/)[](https://x.com/Cloudflare)[](https://www.linkedin.com/company/cloudflare-inc-)[](https://www.youtube.com/cloudflare)[](https://instagram.com/cloudflare)[](https://github.com/cloudflare)[](https://bsky.app/profile/cloudflare.social)[](https://www.threads.com/@cloudflare)[](https://www.tiktok.com/@cloudflare)
+
+
+
+
+## Abonneer je op meldingen over nieuwe berichten
+
+E-mailadres
+
+We delen je e-mailadres nooit.
+
+Abonneren
+
+Bedankt voor je inschrijving! Controleer je inbox voor de bevestiging.

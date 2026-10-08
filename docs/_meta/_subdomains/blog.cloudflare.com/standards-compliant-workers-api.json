@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/standards-compliant-workers-api/",
+  "file": "_subdomains/blog.cloudflare.com/standards-compliant-workers-api.md",
+  "title": "The road to a more standards-compliant Workers API | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:59.197475+00:00",
+  "html_len": 342230,
+  "md_len": 75792,
+  "depth": 0,
+  "phase": 2
+}

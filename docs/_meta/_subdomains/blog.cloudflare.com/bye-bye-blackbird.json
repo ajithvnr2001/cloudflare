@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/bye-bye-blackbird/",
+  "file": "_subdomains/blog.cloudflare.com/bye-bye-blackbird.md",
+  "title": "Bye Bye Blackbird | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:46.353546+00:00",
+  "html_len": 275435,
+  "md_len": 57122,
+  "depth": 0,
+  "phase": 2
+}

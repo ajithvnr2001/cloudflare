@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/new-tools-to-monitor-your-server-and-avoid-downtime/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/new-tools-to-monitor-your-server-and-avoid-downtime.md",
+  "title": "Nuevas herramientas para supervisar el servidor y evitar el tiempo de inactividad | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:46.020812+00:00",
+  "html_len": 215965,
+  "md_len": 33111,
+  "depth": 0,
+  "phase": 2
+}

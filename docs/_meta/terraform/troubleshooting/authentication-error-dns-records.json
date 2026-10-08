@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/terraform/troubleshooting/authentication-error-dns-records/",
+  "file": "terraform/troubleshooting/authentication-error-dns-records.md",
+  "title": "403 Authentication error when creating DNS records \u00b7 Cloudflare Terraform docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:01.112536+00:00",
+  "html_len": 95122,
+  "md_len": 1685,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/elevate-load-balancing-with-private-ips-and-cloudflare-tunnels-a-secure-path-to-efficient-traffic-distribution/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/elevate-load-balancing-with-private-ips-and-cloudflare-tunnels-a-secure-path-to-efficient-traffic-distribution.md",
+  "title": "\u8ca0\u8377\u5206\u6563\u3092\u30d7\u30e9\u30a4\u30d9\u30fc\u30c8IP\u3068Cloudflare Tunnel\u3067\u3055\u3089\u306b\u5f37\u529b\u306b\uff1a\u52b9\u7387\u7684\u306a\u30c8\u30e9\u30d5\u30a3\u30c3\u30af\u5206\u6563\u3078\u306e\u5b89\u5168\u306a\u9053\u306e\u308a | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:00.190348+00:00",
+  "html_len": 230408,
+  "md_len": 41709,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,56 @@
+---
+url: https://developers.cloudflare.com/support/troubleshooting/http-status-codes/4xx-client-error/error-413/
+title: Error 413 \u00b7 Cloudflare Support docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:15:54.167373+00:00
+---
+
+# Error 413 · Cloudflare Support docs
+
+> Source: https://developers.cloudflare.com/support/troubleshooting/http-status-codes/4xx-client-error/error-413/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Support](https://developers.cloudflare.com/support/)
+  3. /…
+
+[Troubleshooting](https://developers.cloudflare.com/support/troubleshooting/)[HTTP Status Codes](https://developers.cloudflare.com/support/troubleshooting/http-status-codes/)
+
+  4. /[4xx Client Error](https://developers.cloudflare.com/support/troubleshooting/http-status-codes/4xx-client-error/)
+  5. /Error 413
+
+
+
+# Error 413
+
+Last updated Sep 28, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/support/troubleshooting/http-status-codes/4xx-client-error/error-413/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Overview413 Payload Too Large Common use cases Cloudflare-specific information
+
+## 413 Payload Too Large
+
+The `413 Payload Too Large` status code indicates that the server refuses to process the request because the payload sent by the client exceeds the server's acceptable size limit. The server may optionally close the connection. If this refusal would only happen temporarily, then the server should send a `Retry-After` header to specify when the client should try the request again.
+
+For more details, refer to [RFC 9110 ↗︎](https://www.rfc-editor.org/rfc/rfc9110#section-15.5.14).
+
+### Common use cases
+
+The `413 Payload Too Large` status code often occurs when clients attempt to upload large files, such as videos or images, or send oversized request bodies, like JSON or XML payloads, that exceed the server's size limits. This can also happen during file transfers or API requests involving large datasets, prompting the server to reject the request.
+
+### Cloudflare-specific information
+
+The upload limit for the Cloudflare API depends on your plan. If you exceed this limit, your API call will receive a `413 Request Entity Too Large` error.
+
+| Free | Pro | Business | Enterprise  
+---|---|---|---|---  
+Availability | Yes | Yes | Yes | Yes  
+Max upload size | 100 MB | 100 MB | 200 MB | Up to 5 GB  
+  
+Keep in mind, customers can adjust the **Maximum Upload Size** from the zone's **Network** page. Enterprise customers can self-serve any value up to 5 GB; uploads larger than 5 GB require additional configuration — contact your account team. Setting the limit below the size of an incoming request causes a `413`.
+
+If you require a larger upload, break up requests into smaller chunks, change your DNS record to [DNS-only](https://developers.cloudflare.com/dns/proxy-status/#dns-only-records), or [upgrade your plan](https://developers.cloudflare.com/billing/manage/change-plan/).
+
+[PreviousError 412](https://developers.cloudflare.com/support/troubleshooting/http-status-codes/4xx-client-error/error-412/)[NextError 414](https://developers.cloudflare.com/support/troubleshooting/http-status-codes/4xx-client-error/error-414/)
+
+Was this helpful?
+
+YesNo

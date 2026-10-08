@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/tag/developer-platform/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/tag/developer-platform.md",
+  "title": "Entradas etiquetadas con \"Plataforma para desarrolladores\" \u2014 Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:14:54.776749+00:00",
+  "html_len": 173740,
+  "md_len": 17136,
+  "depth": 1,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/pingora-open-source/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/pingora-open-source.md",
+  "title": "Pingora: Unser Rust-Framework f\u00fcr die Entwicklung programmierbarer Netzwerkdienste ab sofort quelloffen | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:12.393073+00:00",
+  "html_len": 234802,
+  "md_len": 37196,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/updates-to-firewall-analytics/",
+  "file": "_subdomains/blog.cloudflare.com/updates-to-firewall-analytics.md",
+  "title": "Firewall Analytics: Now available to all paid plans | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:31.227703+00:00",
+  "html_len": 289568,
+  "md_len": 61075,
+  "depth": 0,
+  "phase": 2
+}

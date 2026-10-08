@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/2021-innovations-weeks/",
+  "file": "_subdomains/blog.cloudflare.com/2021-innovations-weeks.md",
+  "title": "Cloudflare Innovation Weeks 2021 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:44.511435+00:00",
+  "html_len": 311398,
+  "md_len": 70184,
+  "depth": 0,
+  "phase": 2
+}

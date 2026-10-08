@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/cloudflare-security-posture-management/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/cloudflare-security-posture-management.md",
+  "title": "Una plataforma para gestionar la postura de seguridad predictiva de tu empresa con Cloudflare | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:58.843137+00:00",
+  "html_len": 250900,
+  "md_len": 48754,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/burkina-faso-internet-shutdown/",
+  "file": "_subdomains/blog.cloudflare.com/burkina-faso-internet-shutdown.md",
+  "title": "Burkina Faso Internet shutdown | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:50.690149+00:00",
+  "html_len": 282438,
+  "md_len": 57424,
+  "depth": 0,
+  "phase": 2
+}

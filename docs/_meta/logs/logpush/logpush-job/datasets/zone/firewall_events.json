@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/zone/firewall_events/",
+  "file": "logs/logpush/logpush-job/datasets/zone/firewall_events.md",
+  "title": "Firewall events \u00b7 Cloudflare Logs docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:12:14.031513+00:00",
+  "html_len": 172451,
+  "md_len": 8929,
+  "depth": 0
+}

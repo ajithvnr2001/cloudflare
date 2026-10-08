@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/snippets/examples/remove-query-strings/",
+  "file": "rules/snippets/examples/remove-query-strings.md",
+  "title": "Remove query strings before sending request to origin \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:53.897817+00:00",
+  "html_len": 128636,
+  "md_len": 1733,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/protecting-the-origin-with-tls-authenticated-origin-pulls/",
+  "file": "_subdomains/blog.cloudflare.com/protecting-the-origin-with-tls-authenticated-origin-pulls.md",
+  "title": "Protecting web origins with Authenticated Origin Pulls | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:45.979321+00:00",
+  "html_len": 282528,
+  "md_len": 60346,
+  "depth": 0,
+  "phase": 2
+}

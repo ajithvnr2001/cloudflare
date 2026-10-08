@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/build-video-applications-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/build-video-applications-cloudflare.md",
+  "title": "Build your next video application on Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:51.237582+00:00",
+  "html_len": 313704,
+  "md_len": 65252,
+  "depth": 0,
+  "phase": 2
+}

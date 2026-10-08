@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/more-data-more-data/",
+  "file": "_subdomains/blog.cloudflare.com/more-data-more-data.md",
+  "title": "More data, more data | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:34.905685+00:00",
+  "html_len": 272098,
+  "md_len": 60382,
+  "depth": 0,
+  "phase": 2
+}

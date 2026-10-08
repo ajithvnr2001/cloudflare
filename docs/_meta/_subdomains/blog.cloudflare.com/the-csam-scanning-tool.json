@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/the-csam-scanning-tool/",
+  "file": "_subdomains/blog.cloudflare.com/the-csam-scanning-tool.md",
+  "title": "Announcing the CSAM Scanning Tool, Free for All Cloudflare Customers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:25:48.339699+00:00",
+  "html_len": 307197,
+  "md_len": 71598,
+  "depth": 1
+}

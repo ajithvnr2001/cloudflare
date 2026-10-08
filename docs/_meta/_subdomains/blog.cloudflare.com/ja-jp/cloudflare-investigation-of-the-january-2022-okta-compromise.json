@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/cloudflare-investigation-of-the-january-2022-okta-compromise/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/cloudflare-investigation-of-the-january-2022-okta-compromise.md",
+  "title": "2022\u5e741\u6708\u306eOkta\u306e\u30bb\u30ad\u30e5\u30ea\u30c6\u30a3\u4fb5\u5bb3\u306b\u95a2\u3059\u308bCloudflare\u306e\u8abf\u67fb | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:38.997024+00:00",
+  "html_len": 201594,
+  "md_len": 29184,
+  "depth": 0,
+  "phase": 2
+}

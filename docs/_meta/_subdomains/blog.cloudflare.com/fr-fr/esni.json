@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/esni/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/esni.md",
+  "title": "Cryptage SNI : correction de l'un des principaux bugs d'Internet | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:26.481836+00:00",
+  "html_len": 228898,
+  "md_len": 35954,
+  "depth": 0,
+  "phase": 2
+}

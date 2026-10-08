@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/modernizing-a-familiar-approach-to-rest-apis-with-postgresql-and-cloudflare-workers/",
+  "file": "_subdomains/blog.cloudflare.com/modernizing-a-familiar-approach-to-rest-apis-with-postgresql-and-cloudflare-workers.md",
+  "title": "Modernizing a familiar approach to REST APIs, with PostgreSQL and Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:14.650704+00:00",
+  "html_len": 281988,
+  "md_len": 60451,
+  "depth": 0,
+  "phase": 2
+}

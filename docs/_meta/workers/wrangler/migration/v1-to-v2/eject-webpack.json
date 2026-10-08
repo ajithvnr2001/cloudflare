@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/wrangler/migration/v1-to-v2/eject-webpack/",
+  "file": "workers/wrangler/migration/v1-to-v2/eject-webpack.md",
+  "title": "1. Migrate webpack projects \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:18:12.298702+00:00",
+  "html_len": 211262,
+  "md_len": 7869,
+  "depth": 0
+}

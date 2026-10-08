@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/domain-scoped-roles-early-access/",
+  "file": "_subdomains/blog.cloudflare.com/domain-scoped-roles-early-access.md",
+  "title": "Domain Scoped Roles - Early Access | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:40.063557+00:00",
+  "html_len": 315457,
+  "md_len": 68629,
+  "depth": 0,
+  "phase": 2
+}

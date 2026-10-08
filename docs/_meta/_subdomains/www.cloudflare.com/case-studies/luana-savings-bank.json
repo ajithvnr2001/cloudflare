@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/luana-savings-bank/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/luana-savings-bank.md",
+  "title": "Luana Savings Bank & Cloudflare | Case Study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:38.037191+00:00",
+  "html_len": 205240,
+  "md_len": 9453,
+  "depth": 0,
+  "phase": 2
+}

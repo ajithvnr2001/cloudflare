@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/custom-regions/",
+  "file": "_subdomains/blog.cloudflare.com/custom-regions.md",
+  "title": "Introducing Custom Regions for precision data control | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:53.095830+00:00",
+  "html_len": 281834,
+  "md_len": 64153,
+  "depth": 0,
+  "phase": 2
+}

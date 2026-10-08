@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/examples/spa-shell/",
+  "file": "workers/examples/spa-shell.md",
+  "title": "Single Page App (SPA) shell with bootstrap data \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:25.724342+00:00",
+  "html_len": 263290,
+  "md_len": 17222,
+  "depth": 0
+}

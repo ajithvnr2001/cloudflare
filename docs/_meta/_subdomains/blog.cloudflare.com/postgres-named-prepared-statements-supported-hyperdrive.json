@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/postgres-named-prepared-statements-supported-hyperdrive/",
+  "file": "_subdomains/blog.cloudflare.com/postgres-named-prepared-statements-supported-hyperdrive.md",
+  "title": "Supporting Postgres Named Prepared Statements in Hyperdrive | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:44.647733+00:00",
+  "html_len": 305277,
+  "md_len": 72077,
+  "depth": 0,
+  "phase": 2
+}

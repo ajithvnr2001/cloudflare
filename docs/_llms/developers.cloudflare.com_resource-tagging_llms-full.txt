@@ -1,0 +1,744 @@
+---
+description: Resource Tagging lets you attach key-value pairs to a wide range of Cloudflare resource types — including zones, custom hostnames, Cloudflare Tunnels, Workers, D1 databases, R2 buckets, KV namespaces, and more. Tags are stored separately from the resources themselves, enabling cross-resource queries and policy enforcement without modifying underlying resource configurations.
+title: Resource Tagging
+image: https://developers.cloudflare.com/resource-tagging/og.png?v=b3b5822836a6e3dc
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/resource-tagging/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Resource Tagging
+
+Last updated Apr 29, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/resource-tagging/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Attach custom key-value metadata to Cloudflare resources for organization, access control, and billing attribution.
+
+Available on all plans
+
+Resource Tagging lets you attach key-value pairs to a wide range of [Cloudflare resource types](https://developers.cloudflare.com/resource-tagging/reference/resource-types/) — including zones, custom hostnames, Cloudflare Tunnels, Workers, D1 databases, R2 buckets, KV namespaces, and more. Tags are stored separately from the resources themselves, enabling cross-resource queries and policy enforcement without modifying underlying resource configurations.
+
+Public beta
+
+Resource Tagging is in public beta. The API is stable, but behavior may change as we iterate based on feedback.
+
+## How it works
+
+Tags are simple key-value string pairs stored as a JSON object:
+
+```json
+{
+  "environment": "production",
+  "team": "platform",
+  "region": "us-west-1"
+}
+```
+
+You manage tags through the Tagging API using `GET`, `PUT`, and `DELETE` operations. The API supports [filtering resources by tags](https://developers.cloudflare.com/resource-tagging/how-to/filter-resources/) with AND/OR logic, negation, and key-only matching.
+
+Authentication uses [Account Owned Tokens (AOTs)](https://developers.cloudflare.com/fundamentals/api/get-started/account-owned-tokens/), which are account-level tokens independent of individual users.
+
+## Limitations
+
+- The dashboard is in beta. You can view and manage tags in the dashboard under **Manage Account** > **Resource Tagging**, but the API remains the recommended interface for automation workflows.
+- `PUT` replaces all tags. There is no `PATCH` endpoint. The `PUT` operation replaces all tags on a resource. Use the [`GET`, merge, `PUT` workflow](https://developers.cloudflare.com/resource-tagging/how-to/manage-tags/#add-a-single-tag) to modify individual tags.
+- `DELETE` removes all tags. There is no way to delete a single tag. Use `PUT` with the remaining tags instead.
+- Querying tags for a resource that has never been tagged returns a `500` error instead of `404`. This is a known beta limitation.
+
+## Get started
+
+Follow the [Get started guide](https://developers.cloudflare.com/resource-tagging/get-started/) to set up authentication and make your first API calls.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/resource-tagging/#page","headline":"Resource Tagging","description":"Resource Tagging lets you attach key-value pairs to a wide range of Cloudflare resource types — including zones, custom hostnames, Cloudflare Tunnels, Workers, D1 databases, R2 buckets, KV namespaces, and more. Tags are stored separately from the resources themselves, enabling cross-resource queries and policy enforcement without modifying underlying resource configurations.","url":"https://developers.cloudflare.com/resource-tagging/","inLanguage":"en","image":"https://developers.cloudflare.com/resource-tagging/og.png?v=b3b5822836a6e3dc","dateModified":"2026-04-29","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Set up authentication for Resource Tagging and make your first API calls.
+title: Get started
+image: https://developers.cloudflare.com/resource-tagging/get-started/og.png?v=6b126c9afc8fbdb1
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/resource-tagging/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Get started
+
+Last updated Apr 29, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/resource-tagging/get-started/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+This guide walks you through verifying that tagging works on your account and making your first API calls.
+
+## Prerequisites
+
+- At least one user with the Super Administrator, Workers Admin, or Tag Admin role. These roles can create, update, and delete tags.
+- The API is the preferred interface for managing tags. You can also use the dashboard under **Manage Account** > **Resource Tagging**, but you should be comfortable making authenticated HTTP requests for automation workflows.
+- An API token with the required permissions. [Account Owned Tokens](https://developers.cloudflare.com/fundamentals/api/get-started/account-owned-tokens/) are recommended for automation.
+
+## 1. Verify tagging is enabled
+
+Test the API to confirm tagging is active on your account:
+
+```bash
+curl -X GET "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/tags/keys" \
+  -H "Authorization: Bearer $API_TOKEN" \
+  -H "Content-Type: application/json"
+```
+
+### Interpreting the response
+
+| Response | Meaning | Action |
+| --- | --- | --- |
+| **200 OK** with `{"success": true, "result": [...]}` | Tagging is enabled. An empty array is normal if no tags exist yet. | Proceed to the next step. |
+| **403** mentioning "permission" or "role" | The caller lacks required permissions. | Verify the caller has a Super Admin, Workers Admin, or Tag Admin role, or that the token has `#com.cloudflare.api.account.tag.list` scope. |
+| **403** mentioning "feature" or "gate" | Tagging is not enabled for this account. | Contact [Cloudflare support](https://developers.cloudflare.com/support/contacting-cloudflare-support/) for assistance. |
+| **401 Unauthorized** | Authentication failed. | Verify the token is valid, not expired, and formatted correctly in the `Authorization: Bearer` header. |
+| Any other response | Unexpected error. | Capture the full response body and contact [Cloudflare support](https://developers.cloudflare.com/support/contacting-cloudflare-support/) with the Account ID, request details, and timestamp. |
+
+## 2. Create your first tags
+
+Set tags on a resource using `PUT`:
+
+```bash
+curl -X PUT "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/tags" \
+  -H "Authorization: Bearer $API_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "resource_type": "worker",
+    "resource_id": "'"$RESOURCE_ID"'",
+    "tags": {
+      "environment": "production",
+      "team": "platform"
+    }
+  }'
+```
+
+Then retrieve the tags:
+
+```bash
+curl -X GET "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/tags?resource_type=worker&resource_id=$RESOURCE_ID" \
+  -H "Authorization: Bearer $API_TOKEN" \
+  -H "Content-Type: application/json"
+```
+
+## 3. List tagged resources
+
+Query all tagged resources in the account, optionally filtering by tag:
+
+```bash
+# All tagged resources
+curl -X GET "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/tags/resources" \
+  -H "Authorization: Bearer $API_TOKEN"
+
+# Filter: only resources with environment=production
+curl -X GET "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/tags/resources?tag=environment=production" \
+  -H "Authorization: Bearer $API_TOKEN"
+```
+
+## Next steps
+
+- Learn the full [tag filtering syntax](https://developers.cloudflare.com/resource-tagging/how-to/filter-resources/) for complex queries.
+- Understand the [GET, merge, PUT workflow](https://developers.cloudflare.com/resource-tagging/how-to/manage-tags/#add-a-single-tag) for modifying individual tags.
+- Review [supported resource types](https://developers.cloudflare.com/resource-tagging/reference/resource-types/) and their required fields.
+- Review [API limits and validation rules](https://developers.cloudflare.com/resource-tagging/reference/limits/).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/resource-tagging/get-started/#page","headline":"Get started","description":"Set up authentication for Resource Tagging and make your first API calls.","url":"https://developers.cloudflare.com/resource-tagging/get-started/","inLanguage":"en","image":"https://developers.cloudflare.com/resource-tagging/get-started/og.png?v=6b126c9afc8fbdb1","dateModified":"2026-04-29","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Query tagged resources using the tag filtering syntax.
+title: Filter resources by tag
+image: https://developers.cloudflare.com/resource-tagging/how-to/filter-resources/og.png?v=c89eb0aa466701a3
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/resource-tagging/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Filter resources by tag
+
+Last updated Apr 29, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/resource-tagging/how-to/filter-resources/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+The `GET /accounts/{account_id}/tags/resources` endpoint supports tag filtering via the `tag` query parameter. Multiple `tag` parameters combine with AND logic. For the full endpoint specification, refer to the [Resource Tagging API reference ↗︎](https://developers.cloudflare.com/api/resources/tags/).
+
+Caution
+
+Use `=` as the separator in tag filters (for example, `tag=key=value`), not `:`. The API error message references `:` but the implementation uses `=`.
+
+## Filter types
+
+### Key-only filter
+
+Match resources that have a specific tag key, regardless of value.
+
+```bash
+# All resources with an "environment" tag (any value)
+curl -X GET "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/tags/resources?tag=environment" \
+  -H "Authorization: Bearer $API_TOKEN"
+```
+
+### Key-value filter
+
+Match resources where a tag key has a specific value.
+
+```bash
+# All resources with environment=production
+curl -X GET "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/tags/resources?tag=environment=production" \
+  -H "Authorization: Bearer $API_TOKEN"
+```
+
+### Multiple values (OR)
+
+Match resources where a tag key has any of the specified values. Separate values with commas.
+
+```bash
+# environment=production OR environment=staging
+curl -X GET "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/tags/resources?tag=environment=production,staging" \
+  -H "Authorization: Bearer $API_TOKEN"
+```
+
+Maximum of 10 OR values per filter (error code `1013` if exceeded).
+
+### Negate key
+
+Match resources that do **not** have a specific tag key.
+
+```bash
+# All resources without an "archived" tag
+curl -X GET "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/tags/resources?tag=!archived" \
+  -H "Authorization: Bearer $API_TOKEN"
+```
+
+### Negate key-value
+
+Match resources where a tag key does **not** have a specific value.
+
+```bash
+# All resources where region is NOT us-west-1
+curl -X GET "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/tags/resources?tag=region!=us-west-1" \
+  -H "Authorization: Bearer $API_TOKEN"
+```
+
+## Combining filters
+
+Multiple `tag` parameters combine with AND logic. All conditions must match.
+
+```bash
+# Production resources in US regions, excluding archived
+curl -X GET "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/tags/resources?tag=environment=production&tag=region=us-west-1,us-east-1&tag=!archived" \
+  -H "Authorization: Bearer $API_TOKEN"
+```
+
+Maximum of 20 tag filters per query (error code `1010` if exceeded).
+
+## Discover available tags
+
+### List all tag keys
+
+```bash
+curl -X GET "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/tags/keys" \
+  -H "Authorization: Bearer $API_TOKEN"
+```
+
+### List values for a key
+
+```bash
+curl -X GET "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/tags/values/environment" \
+  -H "Authorization: Bearer $API_TOKEN"
+```
+
+Optionally filter by resource type:
+
+```bash
+curl -X GET "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/tags/values/environment?type=worker" \
+  -H "Authorization: Bearer $API_TOKEN"
+```
+
+## Pagination
+
+All list endpoints use cursor-based pagination with a fixed page size of 100 results.
+
+When the response includes a non-null `result_info.cursor`, pass it as a query parameter to get the next page:
+
+```bash
+curl -X GET "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/tags/resources?tag=environment=production&cursor=$CURSOR" \
+  -H "Authorization: Bearer $API_TOKEN"
+```
+
+When `cursor` is `null`, you have reached the last page. Pagination works seamlessly with tag filters.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/resource-tagging/how-to/filter-resources/#page","headline":"Filter resources by tag","description":"Query tagged resources using the tag filtering syntax.","url":"https://developers.cloudflare.com/resource-tagging/how-to/filter-resources/","inLanguage":"en","image":"https://developers.cloudflare.com/resource-tagging/how-to/filter-resources/og.png?v=c89eb0aa466701a3","dateModified":"2026-04-29","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Create, update, and delete tags on Cloudflare resources.
+title: Manage tags
+image: https://developers.cloudflare.com/resource-tagging/how-to/manage-tags/og.png?v=c580bd9b3dc21fb9
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/resource-tagging/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Manage tags
+
+Last updated Apr 29, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/resource-tagging/how-to/manage-tags/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+All tag operations use the Tagging API. Authentication requires an [account API token](https://developers.cloudflare.com/fundamentals/api/get-started/account-owned-tokens/) or user API token with appropriate permissions.
+
+## Set tags on a resource
+
+Use `PUT` to set tags on an account-level resource. This operation replaces all existing tags on the resource.
+
+```bash
+curl -X PUT "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/tags" \
+  -H "Authorization: Bearer $API_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "resource_type": "worker",
+    "resource_id": "'"$RESOURCE_ID"'",
+    "tags": {
+      "environment": "production",
+      "team": "platform",
+      "cost-center": "engineering"
+    }
+  }'
+```
+
+For zone-level resources, use the zone endpoint:
+
+```bash
+curl -X PUT "https://api.cloudflare.com/client/v4/zones/$ZONE_ID/tags" \
+  -H "Authorization: Bearer $API_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "resource_type": "zone",
+    "resource_id": "'"$ZONE_ID"'",
+    "tags": {
+      "environment": "production",
+      "customer": "acme-corp"
+    }
+  }'
+```
+
+Some resource types require additional fields. Refer to [supported resource types](https://developers.cloudflare.com/resource-tagging/reference/resource-types/) for details.
+
+## Get tags for a resource
+
+Retrieve tags for a specific resource:
+
+```bash
+curl -X GET "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/tags?resource_type=worker&resource_id=$RESOURCE_ID" \
+  -H "Authorization: Bearer $API_TOKEN"
+```
+
+Note
+
+In the current beta, querying tags for a resource that does not exist or has never been tagged returns a `500` error instead of `404`. Verify the resource exists and has been tagged at least once.
+
+## Add a single tag
+
+The API does not support partial updates — `PUT` always replaces all tags. To add a tag without removing existing ones, use the `GET`, merge, `PUT` pattern:
+
+1. `GET` the current tags.
+
+```bash
+curl -X GET "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/tags?resource_type=worker&resource_id=$RESOURCE_ID" \
+  -H "Authorization: Bearer $API_TOKEN"
+
+# Response: {"result": {"tags": {"environment": "production", "team": "platform"}}}
+```
+
+2. Merge the new tag into the existing set locally.
+
+```json
+{
+  "environment": "production",
+  "team": "platform",
+  "cost-center": "engineering"
+}
+```
+
+3. `PUT` the complete merged tag set.
+
+```bash
+curl -X PUT "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/tags" \
+  -H "Authorization: Bearer $API_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "resource_type": "worker",
+    "resource_id": "'"$RESOURCE_ID"'",
+    "tags": {
+      "environment": "production",
+      "team": "platform",
+      "cost-center": "engineering"
+    }
+  }'
+```
+
+Caution
+
+If you `PUT` only the new tag, all existing tags are deleted. Always `GET` first, merge locally, then `PUT` the complete set.
+
+## Remove a single tag
+
+Follow the same `GET`, merge, `PUT` pattern, but omit the tag you want to remove from the set before calling `PUT`.
+
+## Delete all tags
+
+To remove all tags from a resource:
+
+```bash
+curl -X DELETE "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/tags" \
+  -H "Authorization: Bearer $API_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "resource_type": "worker",
+    "resource_id": "'"$RESOURCE_ID"'"
+  }'
+```
+
+This returns `204 No Content` on success. Only use `DELETE` when you want to remove all tags from a resource (for example, when decommissioning it).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/resource-tagging/how-to/manage-tags/#page","headline":"Manage tags","description":"Create, update, and delete tags on Cloudflare resources.","url":"https://developers.cloudflare.com/resource-tagging/how-to/manage-tags/","inLanguage":"en","image":"https://developers.cloudflare.com/resource-tagging/how-to/manage-tags/og.png?v=c580bd9b3dc21fb9","dateModified":"2026-04-29","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Tagging API error codes, causes, and resolutions.
+title: Error codes
+image: https://developers.cloudflare.com/resource-tagging/reference/error-codes/og.png?v=8adc21b80c9a701f
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/resource-tagging/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Error codes
+
+Last updated Apr 27, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/resource-tagging/reference/error-codes/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+## Error code reference
+
+| Code | HTTP status | Message | Likely cause | Resolution |
+| --- | --- | --- | --- | --- |
+| `1002` | 400 | Invalid set payload | Request body is malformed or missing required fields | Verify the body is valid JSON with `resource_type`, `resource_id`, and `tags` |
+| `1003` | 400 | `resource_type` and `resource_id` are required | Missing query parameters | Include both `resource_type` and `resource_id` in the query string |
+| `1006` | 400 | Invalid resource type | Unsupported resource type | Use a [supported resource type](https://developers.cloudflare.com/resource-tagging/reference/resource-types/) |
+| `1007` | 400 | tag parameter must be in format... | Tag filter syntax is incorrect | Refer to [tag filtering syntax](https://developers.cloudflare.com/resource-tagging/how-to/filter-resources/) |
+| `1009` | 400 | `tag_key` is required | Missing `tag_key` parameter | Include the `tag_key` path parameter |
+| `1010` | 400 | too many tag filters (maximum 20) | More than 20 `tag` query parameters | Reduce filters to 20 or fewer, or split across multiple requests |
+| `1011` | 400 | tag key too long (maximum 256 characters) | Tag key exceeds 256 characters | Shorten the tag key |
+| `1012` | 400 | tag value too long (maximum 1024 characters) | Tag value exceeds 1,024 characters | Shorten the tag value |
+| `1013` | 400 | too many OR values in tag filter (maximum 10) | More than 10 comma-separated values in a single filter | Split into multiple filters |
+| `1014` | 400 | Invalid tag key | Key contains invalid characters | Use only letters, digits, `_`, `.`, `-` |
+| `1015` | 400 | Invalid delete payload | Delete request body is malformed | Verify the body includes `resource_type` and `resource_id` |
+
+Error 1007 note
+
+The error message text references `:` as the tag filter separator (for example, `key:value`), but the API implementation uses `=` in query parameters (for example, `tag=key=value`). The error message is outdated — always use `=` when constructing tag filters.
+
+## Resource not found behavior
+
+In the current beta, `GET /accounts/{account_id}/tags` returns `500 Internal Server Error` for resources that do not exist or have never been tagged:
+
+```plaintext
+"resource not found: type={resource_type} id={resource_id}"
+```
+
+List endpoints (`/tags/resources`, `/tags/keys`, `/tags/values/{key}`) return `200 OK` with an empty result array when no matches are found -- this is expected, not an error.
+
+This `500` behavior is a known beta limitation and may change to `404` in a future release.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/resource-tagging/reference/error-codes/#page","headline":"Error codes","description":"Tagging API error codes, causes, and resolutions.","url":"https://developers.cloudflare.com/resource-tagging/reference/error-codes/","inLanguage":"en","image":"https://developers.cloudflare.com/resource-tagging/reference/error-codes/og.png?v=8adc21b80c9a701f","dateModified":"2026-04-27","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: API limits, tag key validation rules, and pagination behavior.
+title: Limits and validation
+image: https://developers.cloudflare.com/resource-tagging/reference/limits/og.png?v=7d13dec8c25320d9
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/resource-tagging/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Limits and validation
+
+Last updated Apr 27, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/resource-tagging/reference/limits/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+## API limits
+
+| Limit | Value | Error code |
+| --- | --- | --- |
+| Maximum tags per account | 10,000 (beta) | N/A |
+| Maximum tag key length | 256 characters | `1011` |
+| Maximum tag value length | 1,024 characters | `1012` |
+| Maximum tag filters per query | 20 | `1010` |
+| Maximum OR values per filter | 10 | `1013` |
+| Results per page | 100 (fixed) | N/A |
+
+When a limit is exceeded, the API returns `400 Bad Request` with the corresponding error code.
+
+During the beta, each account is limited to 10,000 total tags. If you need a higher limit, contact [Cloudflare support](https://developers.cloudflare.com/support/contacting-cloudflare-support/).
+
+## Case sensitivity
+
+Tag keys and values are case-sensitive. `Environment`, `environment`, and `ENVIRONMENT` are treated as three distinct keys. Be consistent with casing conventions across your organization to avoid duplicate keys.
+
+## Tag key validation
+
+Tag keys must follow these character rules:
+
+### Allowed
+
+- Unicode letters (any language)
+- Unicode digits (0-9)
+- Underscores ( `_`)
+- Periods ( `.`)
+- Hyphens ( `-`)
+
+### Not allowed
+
+- Empty strings
+- Spaces
+- Special characters (except `_`, `.`, `-`)
+
+### Examples
+
+| Key | Valid | Reason |
+| --- | --- | --- |
+| `environment` | Yes | Letters only |
+| `team_name` | Yes | Underscore |
+| `cost-center` | Yes | Hyphen |
+| `owner.email` | Yes | Period |
+| `env123` | Yes | Letters and digits |
+| `env name` | **No** | Contains space |
+| `team@work` | **No** | Special character `@` |
+| (empty) | **No** | Empty string |
+
+Invalid tag keys return `400 Bad Request` with error code `1014`.
+
+## Pagination
+
+List endpoints use cursor-based pagination with a fixed page size of 100. The page size is not configurable.
+
+Paginated endpoints:
+
+- `GET /accounts/{account_id}/tags/keys`
+- `GET /accounts/{account_id}/tags/resources`
+- `GET /accounts/{account_id}/tags/values/{tag_key}`
+
+Refer to [Filter resources by tag](https://developers.cloudflare.com/resource-tagging/how-to/filter-resources/#pagination) for pagination examples.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/resource-tagging/reference/limits/#page","headline":"Limits and validation","description":"API limits, tag key validation rules, and pagination behavior.","url":"https://developers.cloudflare.com/resource-tagging/reference/limits/","inLanguage":"en","image":"https://developers.cloudflare.com/resource-tagging/reference/limits/og.png?v=7d13dec8c25320d9","dateModified":"2026-04-27","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Resource types that support tagging and their required fields.
+title: Supported resource types
+image: https://developers.cloudflare.com/resource-tagging/reference/resource-types/og.png?v=8340f678af15be7e
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/resource-tagging/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Supported resource types
+
+Last updated Sep 15, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/resource-tagging/reference/resource-types/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+The Tagging API supports the following resource types across account-level and zone-level scopes.
+
+## Account-level resources
+
+Use `/accounts/{account_id}/tags` endpoints for these resource types.
+
+| Resource type | Required extra fields | Description |
+| --- | --- | --- |
+| `account` | None | The Cloudflare account itself |
+| `access_application` | None | Access application |
+| `access_group` | None | Access group |
+| `account_ruleset` | None | Account-level ruleset |
+| `ai_gateway` | None | AI Gateway |
+| `alerting_policy` | None | Notification policy |
+| `alerting_webhook` | None | Notification webhook destination |
+| `cloudflared_tunnel` | None | Cloudflare Tunnel |
+| `d1_database` | None | D1 database |
+| `durable_object_namespace` | None | Durable Objects namespace |
+| `gateway_list` | None | Gateway list |
+| `gateway_rule` | None | Gateway rule |
+| `image` | None | Cloudflare Image |
+| `infrastructure_target` | None | [Access for Infrastructure](https://developers.cloudflare.com/cloudflare-one/access-controls/applications/non-http/infrastructure-apps/) target |
+| `kv_namespace` | None | Workers KV namespace |
+| `load_balancer_monitor` | None | Load Balancer monitor |
+| `load_balancer_pool` | None | Load Balancer pool |
+| `pages_project` | None | Pages project |
+| `queue` | None | Queue |
+| `r2_bucket` | None | R2 bucket |
+| `resource_share` | None | Resource share |
+| `stream_live_input` | None | Stream live input |
+| `stream_video` | None | Stream video |
+| `vectorize_index` | None | Vectorize index |
+| `worker` | None | Workers script |
+| `worker_version` | `worker_id` | Specific version of a Worker |
+
+## Zone-level resources
+
+Use `/zones/{zone_id}/tags` endpoints for these resource types.
+
+| Resource type | Required extra fields | Description |
+| --- | --- | --- |
+| `access_application_policy` | `access_application_id` | Access application policy |
+| `api_gateway_operation` | None | API Gateway operation |
+| `custom_certificate` | None | Custom SSL certificate |
+| `custom_hostname` | None | Custom hostname (SSL for SaaS) |
+| `dns_record` | None | DNS record |
+| `healthcheck` | None | Health check |
+| `load_balancer` | None | Load Balancer |
+| `managed_client_certificate` | None | Managed client certificate (mTLS) |
+| `worker_route` | None | Worker route |
+| `zone` | None | DNS zone |
+| `zone_ruleset` | None | Zone-level ruleset |
+
+## Extra fields
+
+Most resource types only require `resource_type` and `resource_id`. Two resource types require an additional field in both request bodies and query parameters.
+
+### `worker_version`
+
+Include the `worker_id` field:
+
+```bash
+# GET
+curl -X GET "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/tags?resource_type=worker_version&resource_id=$VERSION_ID&worker_id=$WORKER_ID" \
+  -H "Authorization: Bearer $API_TOKEN"
+
+# PUT
+curl -X PUT "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/tags" \
+  -H "Authorization: Bearer $API_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "resource_type": "worker_version",
+    "resource_id": "'"$VERSION_ID"'",
+    "worker_id": "'"$WORKER_ID"'",
+    "tags": {
+      "version": "1.2.3",
+      "environment": "staging"
+    }
+  }'
+```
+
+### `access_application_policy`
+
+Include the `access_application_id` field:
+
+```bash
+# GET
+curl -X GET "https://api.cloudflare.com/client/v4/zones/$ZONE_ID/tags?resource_type=access_application_policy&resource_id=$POLICY_ID&access_application_id=$APP_ID" \
+  -H "Authorization: Bearer $API_TOKEN"
+
+# PUT
+curl -X PUT "https://api.cloudflare.com/client/v4/zones/$ZONE_ID/tags" \
+  -H "Authorization: Bearer $API_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "resource_type": "access_application_policy",
+    "resource_id": "'"$POLICY_ID"'",
+    "access_application_id": "'"$APP_ID"'",
+    "tags": {
+      "sensitivity": "high",
+      "team": "security"
+    }
+  }'
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/resource-tagging/reference/resource-types/#page","headline":"Supported resource types","description":"Resource types that support tagging and their required fields.","url":"https://developers.cloudflare.com/resource-tagging/reference/resource-types/","inLanguage":"en","image":"https://developers.cloudflare.com/resource-tagging/reference/resource-types/og.png?v=8340f678af15be7e","dateModified":"2026-09-15","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```

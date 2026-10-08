@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/tag/webassembly/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/tag/webassembly.md",
+  "title": "Posts com a tag \"WebAssembly (PT)\" \u2014 Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:07:06.325613+00:00",
+  "html_len": 106982,
+  "md_len": 1460,
+  "depth": 1,
+  "phase": 2
+}

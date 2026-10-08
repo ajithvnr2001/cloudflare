@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/randomness-101-lavarand-in-production/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/randomness-101-lavarand-in-production.md",
+  "title": "Einmaleins der Zuf\u00e4lligkeit: LavaRand im Einsatz | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:33.980108+00:00",
+  "html_len": 211938,
+  "md_len": 36236,
+  "depth": 0,
+  "phase": 2
+}

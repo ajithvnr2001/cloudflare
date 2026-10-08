@@ -1,0 +1,116 @@
+---
+url: https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/security/certificate-management/issue-and-validate/validate-certificates/http/
+title: HTTP domain control validation (DCV) \u00b7 Cloudflare for Platforms docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:08:03.708257+00:00
+---
+
+# HTTP domain control validation (DCV) · Cloudflare for Platforms docs
+
+> Source: https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/security/certificate-management/issue-and-validate/validate-certificates/http/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Cloudflare for Platforms](https://developers.cloudflare.com/cloudflare-for-platforms/)
+  3. /…
+
+[Cloudflare for SaaS](https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/)[Security](https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/security/)[Certificate management](https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/security/certificate-management/)Issue and validate certificates
+
+  4. /[Validate](https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/security/certificate-management/issue-and-validate/validate-certificates/)
+  5. /HTTP
+
+
+
+# HTTP
+
+Last updated Sep 24, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/security/certificate-management/issue-and-validate/validate-certificates/http/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewNon-wildcard custom hostnamesWildcard custom hostnamesValidation methods HTTP (automatic) HTTP (manual)
+
+HTTP validation involves adding a DCV token to your customer's origin.
+
+You choose one certificate validation method when you [create a custom hostname](https://developers.cloudflare.com/api/resources/custom_hostnames/methods/create/). The API accepts one `ssl.method` value: `http`, `txt`, or `email`.
+
+* * *
+
+## Non-wildcard custom hostnames
+
+If your custom hostname does not include a wildcard, Cloudflare attempts to complete DCV through HTTP validation after the hostname points to your SaaS target, even if you have selected **TXT** for your validation method.
+
+This HTTP validation should succeed as long as your customer's hostname points to your SaaS target and they do not have any [CAA records](https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/security/certificate-management/issue-and-validate/validate-certificates/troubleshooting/#caa-records) blocking your chosen certificate authority.
+
+## Wildcard custom hostnames
+
+HTTP DCV validation is not allowed for wildcard certificates. Use [TXT validation](https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/security/certificate-management/issue-and-validate/validate-certificates/txt/) instead. You can also configure [Delegated DCV](https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/security/certificate-management/issue-and-validate/validate-certificates/delegated-dcv/) to automate TXT-based validation.
+
+* * *
+
+DCV records are generated asynchronously
+
+After you create a custom hostname, the `ssl.validation_records` array may be empty for a short period while Cloudflare requests DCV tokens from the certificate authority. If the array is empty, wait a few seconds and query the [custom hostname details endpoint](https://developers.cloudflare.com/api/resources/custom_hostnames/methods/get/) again.
+
+## Validation methods
+
+### HTTP (automatic)
+
+If you value simplicity and your customers can handle a few minutes of downtime, you can rely on Cloudflare automatic HTTP validation.
+
+Once you [create a new hostname](https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/security/certificate-management/issue-and-validate/issue-certificates/) and choose the `http` validation method, all your customers have to do is add a CNAME to your `$CNAME_TARGET` and Cloudflare will take care of the rest.
+
+Automatic HTTP validation works on the fly. After your customer points the hostname to your SaaS target, Cloudflare can serve the CA's HTTP DCV token from the edge and complete certificate validation.
+
+During that period, the hostname may route to Cloudflare before the certificate reaches `ssl.status: active`. If you need the certificate active before your customer changes DNS, use [TXT validation](https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/security/certificate-management/issue-and-validate/validate-certificates/txt/) or [Delegated DCV](https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/security/certificate-management/issue-and-validate/validate-certificates/delegated-dcv/) instead.
+
+What happens after you create the custom hostname
+
+Cloudflare contacts one of our certificate authority (CA) providers and asks them to issue certificates for the specified hostname. The CA will then inform Cloudflare that we need to demonstrate control of this hostname by returning a `$DCV_TOKEN` at a specified `$DCV_FILENAME`; both the token and the filename are randomly generated by the CA and not known to Cloudflare ahead of time.
+
+For example, if you create a new custom hostname for `site.example.com`, the CA might ask us to return the value `ca3-38734555d85e4421beb4a3e6d1645fe6` for a request to `http://site.example.com/.well-known/pki-validation/ca3-39f423f095be4983922ca0365308612d.txt"`. As soon as we receive that value from the CA we make it accessible at our edge and ask the CA to confirm it is there so that they can complete validation and the certificate order.
+
+Note
+
+Cloudflare is able to serve a random token from our edge due to the fact that `site.example.com` has a CNAME in place to `$CNAME_TARGET`, which ultimately resolves to Cloudflare IPs. If your customer has not yet added the CNAME, the CA will not be able to retrieve the token and the process will not complete.
+
+We will attempt to retry this validation check for a finite period before timing out. Refer to [Validation Retry Schedule](https://developers.cloudflare.com/ssl/edge-certificates/changing-dcv-method/validation-backoff-schedule/) for more details.
+
+If you would like to complete the issuance process before asking your customer to update their CNAME (or before changing the resolution of your target CNAME to be proxied by Cloudflare), choose another validation method.
+
+### HTTP (manual)
+
+Once you [create a new hostname](https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/security/certificate-management/issue-and-validate/issue-certificates/) and choose this validation method, you will see the following values after a few seconds:
+
+  
+
+
+  * [**API**](https://developers.cloudflare.com/api/resources/custom_hostnames/methods/get/): Within the `ssl` object, store the values present in the `validation_records` array (specifically `http_url` and `http_body`).
+  * **Dashboard** : When viewing an individual certificate on the [**Custom Hostnames** ↗︎](https://dash.cloudflare.com/?to=/:account/:zone/ssl-tls/custom-hostnames) page, refer to the values for **Certificate validation request** and **Certificate validation response**.
+
+
+
+At your origin, make the `http_body` available in a TXT record at the path specified in `http_url`. This path should also be publicly accessible to anyone on the Internet so your CA can access it.
+
+Here is an example NGINX configuration that would return a token:
+    
+    
+    location "/.well-known/pki-validation/ca3-0052344e54074d9693e89e27486692d6.txt" {
+           return 200 "ca3-be794c5f757b468eba805d1a705e44f6\n";
+    }
+
+Once your configuration is live, test that the DCV text file is in place with `curl`:
+    
+    
+    curl "http://http-preval.example.com/.well-known/pki-validation/ca3-0052344e54074d9693e89e27486692d6.txt"
+    
+    
+    ca3-be794c5f757b468eba805d1a705e44f6
+
+The token is valid for one check cycle. On the next check cycle, Cloudflare will ask the CA to recheck the URL, complete validation, and issue the certificate.
+
+If you would like to request an immediate recheck, [rather than wait for the next retry](https://developers.cloudflare.com/ssl/edge-certificates/changing-dcv-method/validation-backoff-schedule/), send a [PATCH request](https://developers.cloudflare.com/api/resources/custom_hostnames/methods/edit/) with the same values as your initial `POST` request.
+
+[PreviousTXT](https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/security/certificate-management/issue-and-validate/validate-certificates/txt/)[NextTroubleshooting](https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/security/certificate-management/issue-and-validate/validate-certificates/troubleshooting/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/cloudflare-for-platforms/cloudflare-for-saas/security/certificate-management/issue-and-validate/validate-certificates/http.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

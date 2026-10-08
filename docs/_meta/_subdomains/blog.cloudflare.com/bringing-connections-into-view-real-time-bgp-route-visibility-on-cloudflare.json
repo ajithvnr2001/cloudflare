@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/bringing-connections-into-view-real-time-bgp-route-visibility-on-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/bringing-connections-into-view-real-time-bgp-route-visibility-on-cloudflare.md",
+  "title": "Bringing connections into view: real-time BGP route visibility on Cloudflare Radar | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:13.360750+00:00",
+  "html_len": 321463,
+  "md_len": 72375,
+  "depth": 0,
+  "phase": 2
+}

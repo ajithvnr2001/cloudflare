@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/dynamic-workers/platform/",
+  "file": "dynamic-workers/platform.md",
+  "title": "Platform \u00b7 Cloudflare Dynamic Workers docs",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (781 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T07:11:16.249765+00:00",
+  "html_len": 130909,
+  "md_len": 830,
+  "depth": 0
+}

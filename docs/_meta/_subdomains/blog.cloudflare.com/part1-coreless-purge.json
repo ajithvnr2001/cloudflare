@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/part1-coreless-purge/",
+  "file": "_subdomains/blog.cloudflare.com/part1-coreless-purge.md",
+  "title": "Part 1: Rethinking Cache Purge, Fast and Scalable Global Cache Invalidation | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:24.132501+00:00",
+  "html_len": 296014,
+  "md_len": 71947,
+  "depth": 0,
+  "phase": 2
+}

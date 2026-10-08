@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/tag/randomness/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/tag/randomness.md",
+  "title": "Posts com a tag \"Aleatoriedade\" \u2014 Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:07:03.617437+00:00",
+  "html_len": 105471,
+  "md_len": 1195,
+  "depth": 1,
+  "phase": 2
+}

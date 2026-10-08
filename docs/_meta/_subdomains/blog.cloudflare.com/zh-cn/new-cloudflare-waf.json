@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/new-cloudflare-waf/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/new-cloudflare-waf.md",
+  "title": "\u5168\u65b0 Cloudflare Web \u5e94\u7528\u7a0b\u5e8f\u9632\u706b\u5899\uff08WAF\uff09 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:45.286567+00:00",
+  "html_len": 211395,
+  "md_len": 28303,
+  "depth": 0,
+  "phase": 2
+}

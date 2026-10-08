@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-apps-platform-update-november-edition/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-apps-platform-update-november-edition.md",
+  "title": "Cloudflare Apps Platform Update: November Edition | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:54.506173+00:00",
+  "html_len": 306183,
+  "md_len": 68562,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/dns/manage-dns-records/troubleshooting/stale-response/",
+  "file": "dns/manage-dns-records/troubleshooting/stale-response.md",
+  "title": "Stale response for upstream DNS resolution \u00b7 Cloudflare DNS docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:11:00.058303+00:00",
+  "html_len": 131391,
+  "md_len": 2775,
+  "depth": 0
+}

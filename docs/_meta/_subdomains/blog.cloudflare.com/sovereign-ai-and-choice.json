@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/sovereign-ai-and-choice/",
+  "file": "_subdomains/blog.cloudflare.com/sovereign-ai-and-choice.md",
+  "title": "Choice: the path to AI sovereignty | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:56.421112+00:00",
+  "html_len": 294866,
+  "md_len": 67514,
+  "depth": 0,
+  "phase": 2
+}

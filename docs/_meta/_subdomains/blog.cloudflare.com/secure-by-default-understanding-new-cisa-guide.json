@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/secure-by-default-understanding-new-cisa-guide/",
+  "file": "_subdomains/blog.cloudflare.com/secure-by-default-understanding-new-cisa-guide.md",
+  "title": "Secure by default: recommendations from the CISA\u2019s newest guide, and how Cloudflare follows these principles to keep you secure | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:46.138479+00:00",
+  "html_len": 289501,
+  "md_len": 71702,
+  "depth": 0,
+  "phase": 2
+}

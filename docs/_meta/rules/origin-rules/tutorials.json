@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/origin-rules/tutorials/",
+  "file": "rules/origin-rules/tutorials.md",
+  "title": "Origin Rules tutorials \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:49.870320+00:00",
+  "html_len": 130085,
+  "md_len": 1602,
+  "depth": 0
+}

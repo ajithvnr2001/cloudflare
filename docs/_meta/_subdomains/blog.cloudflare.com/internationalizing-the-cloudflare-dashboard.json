@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/internationalizing-the-cloudflare-dashboard/",
+  "file": "_subdomains/blog.cloudflare.com/internationalizing-the-cloudflare-dashboard.md",
+  "title": "Internationalizing the Cloudflare Dashboard | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:19.663143+00:00",
+  "html_len": 354365,
+  "md_len": 89202,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/on-the-recent-http-2-dos-attacks/",
+  "file": "_subdomains/blog.cloudflare.com/on-the-recent-http-2-dos-attacks.md",
+  "title": "On the recent HTTP/2 DoS attacks | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:38.390894+00:00",
+  "html_len": 265559,
+  "md_len": 54783,
+  "depth": 0,
+  "phase": 2
+}

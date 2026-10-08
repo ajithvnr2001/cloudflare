@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/kv/platform/release-notes/",
+  "file": "kv/platform/release-notes.md",
+  "title": "Release notes \u00b7 Cloudflare Workers KV docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:11:41.513694+00:00",
+  "html_len": 101227,
+  "md_len": 2721,
+  "depth": 0
+}

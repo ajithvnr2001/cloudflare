@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/gateway-egress-policies/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/gateway-egress-policies.md",
+  "title": "Gerenciar e controlar o uso de IPs de sa\u00edda dedicados com o Zero Trust da Cloudflare | Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:20.495335+00:00",
+  "html_len": 193674,
+  "md_len": 22007,
+  "depth": 0,
+  "phase": 2
+}

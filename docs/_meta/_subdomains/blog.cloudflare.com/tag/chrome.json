@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/chrome/",
+  "file": "_subdomains/blog.cloudflare.com/tag/chrome.md",
+  "title": "Posts tagged \"Chrome\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:08:29.604860+00:00",
+  "html_len": 161565,
+  "md_len": 13761,
+  "depth": 1,
+  "phase": 2
+}

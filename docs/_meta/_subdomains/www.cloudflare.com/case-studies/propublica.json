@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/propublica/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/propublica.md",
+  "title": "ProPublica",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:45.411901+00:00",
+  "html_len": 203027,
+  "md_len": 7587,
+  "depth": 0,
+  "phase": 2
+}

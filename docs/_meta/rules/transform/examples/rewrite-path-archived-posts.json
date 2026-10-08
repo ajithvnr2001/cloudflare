@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/transform/examples/rewrite-path-archived-posts/",
+  "file": "rules/transform/examples/rewrite-path-archived-posts.md",
+  "title": "Rewrite path of archived blog posts \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:56.032600+00:00",
+  "html_len": 130066,
+  "md_len": 2120,
+  "depth": 0
+}

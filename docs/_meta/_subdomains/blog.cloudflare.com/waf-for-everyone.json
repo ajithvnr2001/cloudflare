@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/waf-for-everyone/",
+  "file": "_subdomains/blog.cloudflare.com/waf-for-everyone.md",
+  "title": "WAF for everyone: protecting the web from high severity vulnerabilities | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:37.841972+00:00",
+  "html_len": 283951,
+  "md_len": 60840,
+  "depth": 0,
+  "phase": 2
+}

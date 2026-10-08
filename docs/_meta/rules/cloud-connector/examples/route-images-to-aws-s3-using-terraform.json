@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/cloud-connector/examples/route-images-to-aws-s3-using-terraform/",
+  "file": "rules/cloud-connector/examples/route-images-to-aws-s3-using-terraform.md",
+  "title": "Route /images to an S3 Bucket using Terraform \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:45.863692+00:00",
+  "html_len": 137447,
+  "md_len": 2493,
+  "depth": 0
+}

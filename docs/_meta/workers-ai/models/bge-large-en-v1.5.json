@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers-ai/models/bge-large-en-v1.5/",
+  "file": "workers-ai/models/bge-large-en-v1.5.md",
+  "title": "bge-large-en-v1.5 (BAAI) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:02.004821+00:00",
+  "html_len": 140960,
+  "md_len": 4739,
+  "depth": 0
+}

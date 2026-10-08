@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/devops/",
+  "file": "_subdomains/blog.cloudflare.com/tag/devops.md",
+  "title": "Posts tagged \"DevOps\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:08:48.053202+00:00",
+  "html_len": 108779,
+  "md_len": 1371,
+  "depth": 1,
+  "phase": 2
+}

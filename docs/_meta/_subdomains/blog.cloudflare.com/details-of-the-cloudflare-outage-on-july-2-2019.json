@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/details-of-the-cloudflare-outage-on-july-2-2019/",
+  "file": "_subdomains/blog.cloudflare.com/details-of-the-cloudflare-outage-on-july-2-2019.md",
+  "title": "Details of the Cloudflare outage on July 2, 2019 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:01.577413+00:00",
+  "html_len": 369321,
+  "md_len": 94332,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zaraz-uses-managed-components-and-dlp-to-make-tools-private/",
+  "file": "_subdomains/blog.cloudflare.com/zaraz-uses-managed-components-and-dlp-to-make-tools-private.md",
+  "title": "Cloudflare Zaraz supports Managed Components and DLP to make third-party tools private | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:04.740695+00:00",
+  "html_len": 282201,
+  "md_len": 61195,
+  "depth": 0,
+  "phase": 2
+}

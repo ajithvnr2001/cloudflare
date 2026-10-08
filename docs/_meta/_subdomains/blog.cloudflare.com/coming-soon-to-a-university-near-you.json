@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/coming-soon-to-a-university-near-you/",
+  "file": "_subdomains/blog.cloudflare.com/coming-soon-to-a-university-near-you.md",
+  "title": "Coming soon to a university near you | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:47.630950+00:00",
+  "html_len": 266160,
+  "md_len": 55141,
+  "depth": 0,
+  "phase": 2
+}

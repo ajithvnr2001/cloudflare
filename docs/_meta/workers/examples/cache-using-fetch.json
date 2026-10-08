@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/examples/cache-using-fetch/",
+  "file": "workers/examples/cache-using-fetch.md",
+  "title": "Cache using fetch \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:21.478945+00:00",
+  "html_len": 280580,
+  "md_len": 20930,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/birthday-week-2019-wrap-up/",
+  "file": "_subdomains/blog.cloudflare.com/birthday-week-2019-wrap-up.md",
+  "title": "Birthday Week 2019 Wrap-up | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:53.229328+00:00",
+  "html_len": 281191,
+  "md_len": 59090,
+  "depth": 0,
+  "phase": 2
+}

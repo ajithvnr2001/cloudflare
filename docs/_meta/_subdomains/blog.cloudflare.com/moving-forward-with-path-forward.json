@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/moving-forward-with-path-forward/",
+  "file": "_subdomains/blog.cloudflare.com/moving-forward-with-path-forward.md",
+  "title": "Moving Forward with Path Forward | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:08.932634+00:00",
+  "html_len": 266841,
+  "md_len": 57518,
+  "depth": 0,
+  "phase": 2
+}

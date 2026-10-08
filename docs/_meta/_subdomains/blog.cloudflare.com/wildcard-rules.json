@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/wildcard-rules/",
+  "file": "_subdomains/blog.cloudflare.com/wildcard-rules.md",
+  "title": "Go wild: Wildcard support in Rules and a new open-source wildcard crate | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:40.984072+00:00",
+  "html_len": 298689,
+  "md_len": 68431,
+  "depth": 0,
+  "phase": 2
+}

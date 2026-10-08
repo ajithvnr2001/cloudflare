@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-foundations-our-open-source-rust-service-foundation-library/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-foundations-our-open-source-rust-service-foundation-library.md",
+  "title": "Introducing Foundations - our open source Rust service foundation library | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:03.789503+00:00",
+  "html_len": 323082,
+  "md_len": 74537,
+  "depth": 0,
+  "phase": 2
+}

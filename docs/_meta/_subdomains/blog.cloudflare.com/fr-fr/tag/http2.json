@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/tag/http2/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/tag/http2.md",
+  "title": "Articles tagu\u00e9s \u00ab HTTP2 (FR) \u00bb \u2014 Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:13:11.026112+00:00",
+  "html_len": 121652,
+  "md_len": 3615,
+  "depth": 1,
+  "phase": 2
+}

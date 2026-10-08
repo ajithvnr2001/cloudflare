@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/google-pagespeed-service-customers-migrate-to-cloudflare-for-acceleration/",
+  "file": "_subdomains/blog.cloudflare.com/google-pagespeed-service-customers-migrate-to-cloudflare-for-acceleration.md",
+  "title": "Google PageSpeed Service customers: migrate to CloudFlare for acceleration | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:03.812196+00:00",
+  "html_len": 270468,
+  "md_len": 57005,
+  "depth": 0,
+  "phase": 2
+}

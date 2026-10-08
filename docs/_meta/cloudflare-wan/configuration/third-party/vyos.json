@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/cloudflare-wan/configuration/third-party/vyos/",
+  "file": "cloudflare-wan/configuration/third-party/vyos.md",
+  "title": "VyOS \u00b7 Cloudflare WAN docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:10:30.409883+00:00",
+  "html_len": 139894,
+  "md_len": 4863,
+  "depth": 0
+}

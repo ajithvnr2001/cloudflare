@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/introducing-cryptographic-attestation-of-personhood/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/introducing-cryptographic-attestation-of-personhood.md",
+  "title": "Les CAPTCHA font perdre chaque jour pr\u00e8s de 500\u00a0ans \u00e0 l'ensemble de l'humanit\u00e9\u00a0: il est temps de mettre un terme \u00e0 cette folie | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:34.196270+00:00",
+  "html_len": 250245,
+  "md_len": 51064,
+  "depth": 0,
+  "phase": 2
+}

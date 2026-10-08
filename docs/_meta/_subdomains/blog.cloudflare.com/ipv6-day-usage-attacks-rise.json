@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ipv6-day-usage-attacks-rise/",
+  "file": "_subdomains/blog.cloudflare.com/ipv6-day-usage-attacks-rise.md",
+  "title": "Happy IPv6 Day: Usage On the Rise, Attacks Too | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:53.364899+00:00",
+  "html_len": 277476,
+  "md_len": 59122,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ask-cloudflare-how-do-i-make-my-website-faster/",
+  "file": "_subdomains/blog.cloudflare.com/ask-cloudflare-how-do-i-make-my-website-faster.md",
+  "title": "Ask CloudFlare: How do I make my website faster? | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:31.469284+00:00",
+  "html_len": 267704,
+  "md_len": 54358,
+  "depth": 0,
+  "phase": 2
+}

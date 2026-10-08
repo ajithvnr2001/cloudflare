@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/spectrum/about/",
+  "file": "spectrum/about.md",
+  "title": "About \u00b7 Cloudflare Spectrum docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:15:32.221336+00:00",
+  "html_len": 93425,
+  "md_len": 1139,
+  "depth": 0
+}

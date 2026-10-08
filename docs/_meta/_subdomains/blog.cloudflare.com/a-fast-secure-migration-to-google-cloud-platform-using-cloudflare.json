@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/a-fast-secure-migration-to-google-cloud-platform-using-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/a-fast-secure-migration-to-google-cloud-platform-using-cloudflare.md",
+  "title": "A Fast, Secure Migration to Google Cloud Platform using Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:00.338917+00:00",
+  "html_len": 366149,
+  "md_len": 90313,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/sippy-incremental-migration-s3-r2/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/sippy-incremental-migration-s3-r2.md",
+  "title": "Sippy \u6703\u5e6b\u52a9\u60a8\u5728\u5c07\u8cc7\u6599\u5f9e S3 \u9010\u6b65\u9077\u79fb\u5230 R2 \u7684\u540c\u6642\uff0c\u907f\u514d\u8f38\u51fa\u8cbb\u7528 | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:35.145322+00:00",
+  "html_len": 196606,
+  "md_len": 22411,
+  "depth": 0,
+  "phase": 2
+}

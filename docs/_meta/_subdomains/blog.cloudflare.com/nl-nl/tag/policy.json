@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/nl-nl/tag/policy/",
+  "file": "_subdomains/blog.cloudflare.com/nl-nl/tag/policy.md",
+  "title": "Berichten getagd met \"Beleid en wetgeving\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:05:23.092871+00:00",
+  "html_len": 118632,
+  "md_len": 4543,
+  "depth": 1,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/vinext-nextjs-on-vite/",
+  "file": "_subdomains/blog.cloudflare.com/vinext-nextjs-on-vite.md",
+  "title": "Next.js applications, powered by Vite: introducing Vinext 1.0 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:31.535005+00:00",
+  "html_len": 301810,
+  "md_len": 65409,
+  "depth": 0,
+  "phase": 2
+}

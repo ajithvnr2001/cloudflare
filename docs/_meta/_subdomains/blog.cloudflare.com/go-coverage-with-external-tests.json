@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/go-coverage-with-external-tests/",
+  "file": "_subdomains/blog.cloudflare.com/go-coverage-with-external-tests.md",
+  "title": "Go coverage with external tests | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:46.884196+00:00",
+  "html_len": 272507,
+  "md_len": 55504,
+  "depth": 0,
+  "phase": 2
+}

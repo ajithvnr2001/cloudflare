@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/app-a-day-10-zoompf-web-performance-optimizer/",
+  "file": "_subdomains/blog.cloudflare.com/app-a-day-10-zoompf-web-performance-optimizer.md",
+  "title": "App a Day #10 - Zoompf Web Performance Optimizer | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:40.609271+00:00",
+  "html_len": 264957,
+  "md_len": 54686,
+  "depth": 0,
+  "phase": 2
+}

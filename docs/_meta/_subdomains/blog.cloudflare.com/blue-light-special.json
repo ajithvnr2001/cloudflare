@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/blue-light-special/",
+  "file": "_subdomains/blog.cloudflare.com/blue-light-special.md",
+  "title": "Blue Light Special: Ensuring fast global configuration changes | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:00.738018+00:00",
+  "html_len": 276900,
+  "md_len": 57713,
+  "depth": 0,
+  "phase": 2
+}

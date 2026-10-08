@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/load-balancing/reference/migration-guides/load-balancing-graphql-nodes/",
+  "file": "load-balancing/reference/migration-guides/load-balancing-graphql-nodes.md",
+  "title": "Migrate to new GraphQL nodes \u00b7 Cloudflare Load Balancing docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:12:06.381485+00:00",
+  "html_len": 109889,
+  "md_len": 2343,
+  "depth": 0
+}

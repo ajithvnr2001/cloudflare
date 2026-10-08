@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/mitigating-broadcast-address-attack/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/mitigating-broadcast-address-attack.md",
+  "title": "QUIC \u52d5\u4f5c\uff1a\u4fee\u88dc\u5ee3\u64ad\u4f4d\u5740\u653e\u5927\u6f0f\u6d1e | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:59.069965+00:00",
+  "html_len": 218159,
+  "md_len": 26513,
+  "depth": 0,
+  "phase": 2
+}

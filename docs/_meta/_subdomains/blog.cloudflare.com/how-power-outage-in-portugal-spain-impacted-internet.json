@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-power-outage-in-portugal-spain-impacted-internet/",
+  "file": "_subdomains/blog.cloudflare.com/how-power-outage-in-portugal-spain-impacted-internet.md",
+  "title": "How the April 28, 2025, power outage in Portugal and Spain impacted Internet traffic and connectivity | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:03.383653+00:00",
+  "html_len": 423463,
+  "md_len": 87600,
+  "depth": 0,
+  "phase": 2
+}

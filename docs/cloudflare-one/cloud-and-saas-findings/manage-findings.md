@@ -1,0 +1,257 @@
+---
+url: https://developers.cloudflare.com/cloudflare-one/cloud-and-saas-findings/manage-findings/
+title: Manage security findings \u00b7 Cloudflare One docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:08:29.481552+00:00
+---
+
+# Manage security findings · Cloudflare One docs
+
+> Source: https://developers.cloudflare.com/cloudflare-one/cloud-and-saas-findings/manage-findings/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)
+  3. /[Cloud and SaaS findings](https://developers.cloudflare.com/cloudflare-one/cloud-and-saas-findings/)
+  4. /Manage findings
+
+
+
+# Manage findings
+
+Last updated Oct 6, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/cloudflare-one/cloud-and-saas-findings/manage-findings/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewPrerequisitesPosture findings Severity levelsContent findingsView shared filesHide findings Ignore a finding Hide an instance of a findingSend webhookRemediate findings Configure remediation permissions Remediate a finding Remediate inherited file permissions Manage remediated findings
+
+Cloudflare CASB detects security issues involving users, stored files, and application settings. In Cloudflare One, you can review posture and content findings and take action on affected assets. For definitions of finding types, posture findings, and finding instances, refer to [Finding terminology](https://developers.cloudflare.com/cloudflare-one/cloud-and-saas-findings/#finding-terminology).
+
+## Prerequisites
+
+  * You have added a [Cloud and SaaS integration](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/).
+  * Your scan has surfaced at least one security finding.
+
+
+
+## Posture findings
+
+Posture findings include misconfigurations, unauthorized user activity, and other data security issues. Each finding summarizes one finding type within one integration. Its finding instances identify the affected assets. The same finding type can appear in separate rows for different integrations.
+
+To view details about the posture findings that CASB found:
+
+  1. In [Cloudflare One ↗︎](https://one.dash.cloudflare.com), go to **Cloud & SaaS findings** > **Posture Findings**.
+  2. Choose **SaaS** or **Cloud**.
+  3. To view details about a finding, select the finding name.
+
+
+
+Cloud & SaaS findings will display details about your posture finding, including the finding type, severity level, number of instances, associated integration, current status, and date detected. For more information on each instance of the finding, select **Manage**.
+
+To manage the finding's visibility, you can update the finding's severity level or hide the finding from view. You can also send a posture finding instance to a webhook. Some findings also provide a remediation guide to resolve the issue.
+
+To detect conditions that Cloudflare's standard finding types do not cover, refer to [Custom finding types](https://developers.cloudflare.com/cloudflare-one/cloud-and-saas-findings/custom-finding-types/).
+
+### Severity levels
+
+Cloudflare CASB labels each finding with one of the following severity levels:
+
+Severity level | Urgency  
+---|---  
+Critical | Suggests the finding is something your team should act on today.  
+High | Suggests the finding is something your team should act on this week.  
+Medium | Suggests the finding should be reviewed sometime this month.  
+Low | Suggests the finding is informational or part of a scheduled review process.  
+  
+#### Change the severity level
+
+You can change the severity level for a finding at any time in case the default assignment does not suit your environment:
+
+  1. In [Cloudflare One ↗︎](https://one.dash.cloudflare.com), go to **Cloud & SaaS findings** > **Posture Findings**.
+  2. Locate the finding you want to modify and select **Manage**.
+  3. In the severity level drop-down menu, choose your desired setting (_Critical_ , _High_ , _Medium_ , or _Low_).
+
+
+
+The new severity level will only apply to the posture finding within this specific integration. If you added multiple integrations of the same application, the other integrations will not be impacted by this change.
+
+## Content findings
+
+Content findings identify potential data exposure detected by [Data Loss Prevention (DLP)](https://developers.cloudflare.com/cloudflare-one/data-loss-prevention/). Each content finding represents one asset within an integration and groups all matching DLP profiles for that asset.
+
+To view details about the content findings that CASB found:
+
+  1. In [Cloudflare One ↗︎](https://one.dash.cloudflare.com), go to **Cloud & SaaS findings** > **Content Findings**.
+  2. Choose **SaaS** or **Cloud**.
+  3. To view details about a finding, select the finding name.
+
+
+
+Cloud & SaaS findings will display details about your content finding, including the file name, a link to the file, matching DLP profiles, associated integration, and date detected.
+
+AWS users can configure a [compute account](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/aws-s3/#compute-account) to scan for data security resources within their S3 resources.
+
+## View shared files
+
+Posture finding instances and content findings for some integrations (such as [Microsoft 365](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/microsoft-365/#file-sharing) and [Box](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/box/#file-sharing)) may link to an inaccessible file. To access the actual shared file:
+
+  1. In [Cloudflare One ↗︎](https://one.dash.cloudflare.com), go to **Cloud & SaaS findings** > **Posture Findings**.
+  2. Choose **SaaS** or **Cloud**.
+  3. Locate the individual finding, then select **Manage**.
+  4. In **Active Instances** , select the file name.
+  5. In **Shared Links** , select the linked file instance.
+
+
+
+  1. In [Cloudflare One ↗︎](https://one.dash.cloudflare.com), go to **Cloud & SaaS findings** > **Content Findings**.
+  2. Choose **SaaS** or **Cloud**.
+  3. Select the file name of the detected asset.
+  4. In **Sharing details** , select the linked file instance.
+
+
+
+## Hide findings
+
+After reviewing your findings, you may decide that certain posture findings are not applicable to your organization. Cloudflare CASB allows you to remove findings or individual instances of findings from your list of active issues. CASB will continue to scan for these issues, but any detections will appear in a separate tab.
+
+  * **Ignore a finding** — Moves the posture finding for one integration from **Active** to **Ignored**. Current and future detections of that finding type within the integration appear under the ignored finding. Ignoring does not affect findings of the same type in other integrations.
+  * **Hide an instance** — Moves one finding instance from **Active** to **Hidden**. Future detections of the same finding type for that asset within the integration go to the **Hidden** tab automatically.
+
+
+
+### Ignore a finding
+
+  1. In [Cloudflare One ↗︎](https://one.dash.cloudflare.com), go to **Cloud & SaaS findings** > **Posture Findings**.
+  2. Locate the active finding you want to hide.
+  3. In the three-dot menu, select **Move to ignore**.
+
+
+
+The finding's status will change from **Active** to **Ignored**. CASB will continue to scan for these findings and report detections. You can change ignored findings back to **Active** with the same process at any time.
+
+### Hide an instance of a finding
+
+  1. In [Cloudflare One ↗︎](https://one.dash.cloudflare.com), go to **Cloud & SaaS findings** > **Posture Findings**.
+  2. Choose the active finding you want to hide, then select **Manage**.
+  3. In **Active** , find the instance you want to hide.
+  4. In the three-dot menu, select **Move to hidden**.
+
+
+
+The instance will be moved from **Active** to **Hidden** within the finding. If CASB detects the same issue for that asset again, it appears in the **Hidden** tab. You can move hidden instances back to the **Active** tab at any time.
+
+## Send webhook
+
+After you configure one or more [CASB webhooks](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/webhooks/), you can send posture finding instances to external systems such as chat platforms, ticketing systems, SIEMs, SOAR tools, and custom automation services.
+
+CASB webhooks currently support posture finding instances only.
+
+  1. In [Cloudflare One ↗︎](https://one.dash.cloudflare.com), go to **Cloud & SaaS findings** > **Posture Findings**.
+  2. Choose **SaaS** or **Cloud**.
+  3. Choose the finding you want to review, then select **Manage**.
+  4. In **Active Instances** , select an instance.
+  5. In the instance details panel, select **Send webhook**.
+  6. Choose the webhook destination or destinations you want to use.
+  7. Select **Send webhooks**.
+
+
+
+Cloudflare queues webhook sends in the background. A success message means that Cloudflare accepted the request for delivery.
+
+To validate a destination before sending a live finding instance, use **Test delivery** from the [Webhooks](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/webhooks/) page.
+
+## Remediate findings
+
+In addition to detecting issues with SaaS and cloud applications, CASB can remediate supported posture finding instances directly in applications.
+
+### Configure remediation permissions
+
+Before you can remediate finding instances, [add a new integration](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/) and choose _Read-Write mode_ during setup. Alternatively, you can update an existing integration:
+
+  1. In [Cloudflare One ↗︎](https://one.dash.cloudflare.com/), go to **Cloud & SaaS findings** > **Integrations**.
+  2. Choose your integration, then select **Configure**.
+  3. In **Integration permissions** , choose _Read-Write mode_.
+  4. Select **Update integration**. CASB will redirect you to your Microsoft 365 configuration.
+  5. Sign in to your organization, then select **Accept**.
+
+
+
+CASB can now remediate instances of supported finding types directly.
+
+### Remediate a finding
+
+To remediate a finding instance:
+
+  1. In [Cloudflare One ↗︎](https://one.dash.cloudflare.com/), go to **Cloud & SaaS findings** > **Posture Findings**.
+  2. Choose a finding whose type supports remediation, then select **Manage**.
+  3. In **Active Instances** , select an instance.
+  4. In **Remediation details** , choose a remediation action to take.
+
+
+
+CASB will begin remediating the instance.
+
+### Remediate inherited file permissions
+
+CASB can remove supported permissions applied directly to a Microsoft 365 or Google Workspace resource. If a file inherits access from a parent folder or Shared Drive, change the permission on that parent resource. Changing the file itself does not remove the inherited access.
+
+CASB does not automatically change permissions on parent resources. Changing a parent permission can affect every downstream file and folder that inherits it.
+
+#### Microsoft 365
+
+CASB may show a separate finding instance for the parent folder that gives the file its permission. The remediation details may include **Parent Folder Access** links. Open the linked instance to remediate the parent folder separately.
+
+When an inherited permission prevents remediation, CASB displays:
+
+> Resource has inherited permissions. Remediate permissions at the folder or organizational level.
+
+#### Google Workspace
+
+For Google Workspace, CASB does not identify the exact parent resource. Asset details may show the associated Shared Drive, but not the originating folder or permission.
+
+When an inherited permission prevents remediation, CASB displays:
+
+> Resource has inherited permissions from a parent resource. Direct remediation of the parent is not yet supported for Google Workspace.
+
+For example, a file inherits public access when its parent folder allows **Anyone with the link**. Change the **General access** setting on the parent folder to resolve the finding instance.
+
+A file can also inherit external access from a Shared Drive member. Change the relevant parent permission or Shared Drive membership to resolve the finding instance.
+
+To remediate an inherited Google Workspace permission:
+
+  1. In Google Drive, open the affected file and select **Share** or **Manage access**.
+  2. Find the public or external access associated with the finding instance.
+  3. If Google Drive identifies the parent, open that resource. Otherwise, inspect each parent folder until you find where the permission is configured directly.
+  4. For Shared Drive content, also inspect the membership and sharing settings.
+  5. Review the impact on downstream resources before changing the permission.
+  6. Change the permission at its source.
+
+
+
+CASB updates the finding instance after it receives updated asset data. The failed child-resource remediation remains in the remediation history.
+
+### Manage remediated findings
+
+To review remediation progress, go to **Cloud & SaaS findings** > **Posture Findings** and open the affected finding instance. Each remediation status applies only to that instance:
+
+Status | Description  
+---|---  
+Pending | CASB has set the finding instance to be remediated.  
+Processing | CASB is remediating the finding instance.  
+Validating | CASB completed the remediation and is waiting to confirm that the issue affecting the asset is resolved.  
+Completed | CASB remediated the finding instance and confirmed that the issue is resolved.  
+Failed | CASB could not remediate the finding instance.  
+Rejected | CASB does not have the correct permissions to remediate the finding instance.  
+  
+CASB may take up to 48 hours to validate a remediation.
+
+If the status is **Completed** , remediation succeeded. If the status is **Failed** or **Rejected** , remediation failed, and you can select the finding instance to take action again. A **Rejected** status indicates that CASB does not have the correct permissions to remediate the instance.
+
+CASB will log remediation actions in **Logs** > **Admin**. For more information, refer to [Cloudflare One Logs](https://developers.cloudflare.com/cloudflare-one/insights/logs/).
+
+To automatically remediate matching finding instances without reviewing each one, refer to [Remediation Policies](https://developers.cloudflare.com/cloudflare-one/cloud-and-saas-findings/policies/).
+
+[PreviousOverview](https://developers.cloudflare.com/cloudflare-one/cloud-and-saas-findings/)[NextRemediation Policies](https://developers.cloudflare.com/cloudflare-one/cloud-and-saas-findings/policies/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/cloudflare-one/cloud-and-saas-findings/manage-findings.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

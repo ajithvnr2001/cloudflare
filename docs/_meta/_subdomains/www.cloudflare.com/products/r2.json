@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/products/r2/",
+  "file": "_subdomains/www.cloudflare.com/products/r2.md",
+  "title": "Cloudflare R2 - Egress-Free Object Storage",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:08.226296+00:00",
+  "html_len": 385637,
+  "md_len": 11245,
+  "depth": 0,
+  "phase": 2
+}

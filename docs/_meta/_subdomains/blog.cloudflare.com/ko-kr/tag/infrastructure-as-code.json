@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/tag/infrastructure-as-code/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/tag/infrastructure-as-code.md",
+  "title": "\"\ucf54\ub4dc\ud615 \uc778\ud504\ub77c\" \ud0dc\uadf8\uac00 \uc9c0\uc815\ub41c \uac8c\uc2dc\ubb3c \u2014 Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:20:44.886978+00:00",
+  "html_len": 103154,
+  "md_len": 1295,
+  "depth": 1,
+  "phase": 2
+}

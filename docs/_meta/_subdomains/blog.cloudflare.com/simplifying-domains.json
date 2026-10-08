@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/simplifying-domains/",
+  "file": "_subdomains/blog.cloudflare.com/simplifying-domains.md",
+  "title": "Simplifying domains for people and agents | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:28.110460+00:00",
+  "html_len": 292320,
+  "md_len": 65338,
+  "depth": 0,
+  "phase": 2
+}

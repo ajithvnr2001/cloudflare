@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-worker-services/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-worker-services.md",
+  "title": "Introducing Services: Build Composable, Distributed Applications on Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:18.967556+00:00",
+  "html_len": 303680,
+  "md_len": 63783,
+  "depth": 0,
+  "phase": 2
+}

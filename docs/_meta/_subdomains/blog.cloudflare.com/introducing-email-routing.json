@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-email-routing/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-email-routing.md",
+  "title": "Easily creating and routing email addresses with Cloudflare Email Routing | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:27:21.343066+00:00",
+  "html_len": 294120,
+  "md_len": 62351,
+  "depth": 1
+}

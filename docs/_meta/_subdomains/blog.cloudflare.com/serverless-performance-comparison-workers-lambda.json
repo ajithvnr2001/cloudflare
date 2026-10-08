@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/serverless-performance-comparison-workers-lambda/",
+  "file": "_subdomains/blog.cloudflare.com/serverless-performance-comparison-workers-lambda.md",
+  "title": "Serverless Performance: Cloudflare Workers, Lambda and Lambda@Edge | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:28.166495+00:00",
+  "html_len": 299885,
+  "md_len": 64573,
+  "depth": 0,
+  "phase": 2
+}

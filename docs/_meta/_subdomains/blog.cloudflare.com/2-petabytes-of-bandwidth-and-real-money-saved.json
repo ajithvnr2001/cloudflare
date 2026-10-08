@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/2-petabytes-of-bandwidth-and-real-money-saved/",
+  "file": "_subdomains/blog.cloudflare.com/2-petabytes-of-bandwidth-and-real-money-saved.md",
+  "title": "2 Petabytes of Bandwidth (and Real Money) Saved | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:00.601797+00:00",
+  "html_len": 266180,
+  "md_len": 54213,
+  "depth": 0,
+  "phase": 2
+}

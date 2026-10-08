@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/access-and-gateway-with-scim/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/access-and-gateway-with-scim.md",
+  "title": "Annonce de la prise en charge du protocole SCIM pour Cloudflare Access et Gateway | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:43.923950+00:00",
+  "html_len": 225657,
+  "md_len": 32662,
+  "depth": 0,
+  "phase": 2
+}

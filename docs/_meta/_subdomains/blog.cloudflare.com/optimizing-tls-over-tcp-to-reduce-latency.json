@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/optimizing-tls-over-tcp-to-reduce-latency/",
+  "file": "_subdomains/blog.cloudflare.com/optimizing-tls-over-tcp-to-reduce-latency.md",
+  "title": "Optimizing TLS over TCP to reduce latency | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:36.790414+00:00",
+  "html_len": 275558,
+  "md_len": 58735,
+  "depth": 0,
+  "phase": 2
+}

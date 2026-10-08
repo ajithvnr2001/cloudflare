@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-regional-tiered-cache/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-regional-tiered-cache.md",
+  "title": "Reduce latency and increase cache hits with Regional Tiered Cache | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:28.251548+00:00",
+  "html_len": 298054,
+  "md_len": 65880,
+  "depth": 0,
+  "phase": 2
+}

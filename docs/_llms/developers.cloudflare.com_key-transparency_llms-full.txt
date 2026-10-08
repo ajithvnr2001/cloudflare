@@ -1,0 +1,383 @@
+---
+description: Secure public key distribution in end-to-end encrypted messaging systems.
+title: Key Transparency Auditor
+image: https://developers.cloudflare.com/key-transparency/og.png?v=ca2f11507f7fa8d5
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/key-transparency/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Key Transparency Auditor
+
+Last updated Oct 2, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/key-transparency/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Secure the distribution of public keys in your end-to-end encrypted (E2EE) messaging systems
+
+Cloudflare's Key Transparency Auditor aims to secure the distribution of public keys for end-to-end encrypted (E2EE) messaging systems like [WhatsApp ↗︎](https://engineering.fb.com/2023/04/13/security/whatsapp-key-transparency/). It achieves this by building a verifiable append-only data structure called a Log, similar to [Certificate Transparency ↗︎](https://developer.mozilla.org/en-US/docs/Web/Security/Certificate_Transparency).
+
+Cloudflare acts as an auditor of Key Transparency Logs to ensure the transparency of end-to-end encrypted messaging public keys. Cloudflare provides an API for anyone to monitor the verification work we perform, and verify the state of its associated Logs locally.
+
+## Related products
+
+[Certificate Transparency Monitoring](https://developers.cloudflare.com/ssl/edge-certificates/additional-options/certificate-transparency-monitoring/)
+
+Certificate Transparency (CT) Monitoring is an opt-in feature in public beta that aims to improve security by allowing you to double-check any SSL/TLS certificates issued for your domain.
+
+[Cloudflare OHTTP Relay](https://developers.cloudflare.com/ohttp-relay/)
+
+Cloudflare OHTTP Relay (formerly Privacy Gateway) is a managed service deployed on Cloudflare's global network that implements part of the [Oblivious HTTP (OHTTP) IETF ↗︎](https://www.ietf.org/archive/id/draft-thomson-http-oblivious-01.html) standard. The goal of Cloudflare OHTTP Relay and Oblivious HTTP is to hide the client's IP address when interacting with an application backend.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/key-transparency/#page","headline":"Key Transparency Auditor","description":"Secure public key distribution in end-to-end encrypted messaging systems.","url":"https://developers.cloudflare.com/key-transparency/","inLanguage":"en","image":"https://developers.cloudflare.com/key-transparency/og.png?v=ca2f11507f7fa8d5","dateModified":"2026-10-02","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["Privacy"]}
+```
+
+---
+
+---
+description: Verify Key Transparency audit proofs locally using the Plexi CLI tool.
+title: Monitor the Auditor
+image: https://developers.cloudflare.com/key-transparency/monitor-the-auditor/og.png?v=1de9cb0d378514ad
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/key-transparency/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Monitor the Auditor
+
+Last updated May 5, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/key-transparency/monitor-the-auditor/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Cloudflare's Key Transparency Auditor validates Log audit proofs and provides a signature for them. The Log can then distribute these signatures to its end-users, and provides users with confidence that keys have not been tampered with.
+
+In order to verify our work, you can use [Plexi ↗︎](https://github.com/cloudflare/plexi), a CLI tool that allows anyone to perform proof verification locally via a public [API](https://developers.cloudflare.com/key-transparency/api/).
+
+## Features
+
+- Verify authenticity of a signature, to confirm it has been signed by a given public key
+- Verify the validity of [facebook/akd ↗︎](https://github.com/facebook/akd) proofs
+- List Logs an Auditor monitors
+
+## Installation
+
+| Environment | CLI Command |
+| --- | --- |
+| [Cargo ↗︎](https://www.rust-lang.org/tools/install) (Rust 1.81+) | `cargo install plexi` |
+
+## Usage
+
+Use the `--help` option for more details about the commands and their options.
+
+```bash
+plexi [OPTIONS] <COMMAND>
+```
+
+### Configure your auditor remote
+
+`plexi` does not come with a default remote auditor, and you will need to choose your own.
+
+You can do so either by passing `--remote-url=<REMOTE>` or setting the `PLEXI_REMOTE_URL` environment variable.
+
+A common remote is provided below:
+
+| Name | Remote |
+| --- | --- |
+| Cloudflare | `https://plexi.key-transparency.cloudflare.com` |
+
+If you have deployed your own auditor, you can add a remote by filing a [GitHub issue ↗︎](https://github.com/cloudflare/plexi/issues).
+
+### List monitored Logs
+
+An auditor monitors multiple Logs at once. To discover which Logs an auditor is monitoring, run the following:
+
+```shell
+plexi ls --remote-url 'https://plexi.key-transparency.cloudflare.com'
+whatsapp.key-transparency.v1
+```
+
+### Audit a signature
+
+The Key Transparency Auditor vouches for Log validity by ensuring epoch uniqueness and verifying the associated proof.
+
+`plexi audit` provides information about a given epoch and its validity. It can perform a local audit to confirm the auditor behaviour.
+
+For instance, to verify WhatsApp Log auditted by Cloudflare Auditor, run the following:
+
+```shell
+> plexi audit --remote-url 'https://plexi.key-transparency.cloudflare.com' --namespace 'whatsapp.key-transparency.v1' --long
+Namespace
+  Name               : whatsapp.key-transparency.v1
+  Ciphersuite        : ed25519(protobuf)
+
+Signature (2024-09-23T16:53:45Z)
+  Epoch height      	: 489193
+  Epoch digest      	: cbe5097ae832a3ae51ad866104ffd4aa1f7479e873fd18df9cb96a02fc91ebfe
+  Signature         	: fe94973e19da826487b637c019d3ce52f0c08093ada00b4fe6563e2f8117b4345121342bc33aae249be47979dfe704478e2c18aed86e674df9f934b718949c08
+  Signature verification: success
+  Proof verification	: success
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/key-transparency/monitor-the-auditor/#page","headline":"Monitor the Auditor","description":"Verify Key Transparency audit proofs locally using the Plexi CLI tool.","url":"https://developers.cloudflare.com/key-transparency/monitor-the-auditor/","inLanguage":"en","image":"https://developers.cloudflare.com/key-transparency/monitor-the-auditor/og.png?v=1de9cb0d378514ad","dateModified":"2026-05-05","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["CLI"]}
+```
+
+---
+
+---
+description: Retrieve auditor public keys and verify epoch signatures.
+title: Auditor
+image: https://developers.cloudflare.com/key-transparency/api/auditor-information/og.png?v=1e7ec5039de54f18
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/key-transparency/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Auditor
+
+Last updated May 5, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/key-transparency/api/auditor-information/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+The Auditor is designed to sign epoch information, which includes the time at which the request is received by the Auditor, the epoch number, and the epoch digest. The Auditor serializes this information in binary using protobuf or bincode and checks whether the requested inclusion is valid, as in it satisfies [publication constraints](https://developers.cloudflare.com/key-transparency/api/epochs/#constraints).
+
+If the Log is setup to provide [AKD ↗︎](https://github.com/facebook/akd) audit proof, the Auditor verifies them asynchronously.
+
+## Get Auditor information
+
+`keys` contain Auditor public keys which allow for key rotation later.
+
+```sh
+curl 'https://plexi.key-transparency.cloudflare.com/info'
+{
+  "keys": [
+    {
+      "public_key": "d1036a33a8731e82a29dc68210988b32b60b7c1bd22d2341f2e339f4db3a2f4a",
+      "not_before": 1712311441501
+    }
+  ],
+  "logs": [
+    "508607faff7cb16be841e901eca41a6239461f239e7e610c9ea2576f334bc144"
+  ]
+}
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/key-transparency/api/auditor-information/#page","headline":"Auditor","description":"Retrieve auditor public keys and verify epoch signatures.","url":"https://developers.cloudflare.com/key-transparency/api/auditor-information/","inLanguage":"en","image":"https://developers.cloudflare.com/key-transparency/api/auditor-information/og.png?v=1e7ec5039de54f18","dateModified":"2026-05-05","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["REST API"]}
+```
+
+---
+
+---
+description: Query epoch digests, audit proofs, and publication constraints.
+title: Epochs
+image: https://developers.cloudflare.com/key-transparency/api/epochs/og.png?v=d4f82e7b488c1528
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/key-transparency/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Epochs
+
+Last updated May 5, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/key-transparency/api/epochs/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+## Get an epoch
+
+```sh
+curl 'https://plexi.key-transparency.cloudflare.com/namespaces/{namespace}/audits/1'
+{
+  "namespace": "your.new.log.com",
+  "timestamp": 1717084639921,
+  "epoch": 1,
+  "digest": "1111111111111111111111111111111111111111111111111111111111111111",
+  "signature": "f6a51443bb6703813b330959d9d97471bc06464142165e59733fa102a18b052782a5307d59c31b8b13c1af7dfff6f6e7bf44e880d44e26e96c50a72f72a30c07"
+}
+```
+
+## Publish a new epoch
+
+Refer to the example below to publish a new epoch by requesting its signature.
+
+This API is authenticated via [mTLS ↗︎](https://www.cloudflare.com/learning/access-management/what-is-mutual-tls/), so that only a Log owner can publish new epochs.
+
+```sh
+curl 'https://plexi.key-transparency.cloudflare.com/namespaces/{namespace}/audits' \
+      --header 'Content-Type: application/json' \
+      --data '{"epoch": 1, "digest": "1111111111111111111111111111111111111111111111111111111111111111"}'
+{
+  "namespace": "your.new.log.com",
+  "timestamp": 1717084639921,
+  "epoch": 1,
+  "digest": "1111111111111111111111111111111111111111111111111111111111111111",
+  "signature": "f6a51443bb6703813b330959d9d97471bc06464142165e59733fa102a18b052782a5307d59c31b8b13c1af7dfff6f6e7bf44e880d44e26e96c50a72f72a30c07",
+  "key_id": 74,
+}
+```
+
+### Constraints
+
+- If `root` is defined for the namespace, the first epoch must match it (number and digest).
+- Epochs must be increasing. Second epoch is 2, third is 3, etc.
+- Epochs must have a unique digest or it will be rejected.
+- Epochs cannot be republished.
+- Digest must be a 32 byte string hex encoded (length 64).
+
+If a namespace is disabled, you receive the following error:
+
+```txt
+HTTP 400 Bad Request
+Namespace is disabled and read-only.
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/key-transparency/api/epochs/#page","headline":"Epochs","description":"Query epoch digests, audit proofs, and publication constraints.","url":"https://developers.cloudflare.com/key-transparency/api/epochs/","inLanguage":"en","image":"https://developers.cloudflare.com/key-transparency/api/epochs/og.png?v=d4f82e7b488c1528","dateModified":"2026-05-05","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["REST API","mTLS"]}
+```
+
+---
+
+---
+description: Create and manage namespaces representing logs monitored by the Cloudflare Auditor.
+title: Namespaces
+image: https://developers.cloudflare.com/key-transparency/api/namespaces/og.png?v=897884790a63bf6c
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/key-transparency/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Namespaces
+
+Last updated May 5, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/key-transparency/api/namespaces/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+The Cloudflare Key Transparency API is organized in namespaces, each one representing a Log monitored by Cloudflare Auditor. If you want to register a namespace, contact us.
+
+## Create a namespace
+
+The following fields are required when making a `POST` request:
+
+- `name`
+- `public`
+- `root`
+- `signature_version`:
+  - 0x0001 for [Protobuf serialisation ↗︎](https://github.com/cloudflare/plexi/blob/main/plexi_core/src/proto/specs/types.proto) Ed25519 signature from the Auditor
+  - 0x0002 for [bincode serialisation ↗︎](https://github.com/bincode-org/bincode/blob/trunk/docs/spec.md) E25519 serialisation by the Auditor
+
+The `log_directory` field is optional. If set, Cloudflare will use it to fetch audit proofs and validate them.
+
+This API is authenticated via [mTLS ↗︎](https://www.cloudflare.com/learning/access-management/what-is-mutual-tls/).
+
+```sh
+curl 'https://plexi.key-transparency.cloudflare.com/namespaces' \
+        	--header 'Content-Type: application/json' \
+        	--data '{
+ 	"name": "your.new.log.com",
+ 	"root": "1/1111111111111111111111111111111111111111111111111111111111111111",
+ 	"log_directory": "https://your.new.log.com/path/to/proofs",
+	"signature_version": 1
+  }'
+{
+  "name": "your.new.log.com",
+  "log_directory": "https://your.new.log.com/path/to/proofs",
+  "root": "1/1111111111111111111111111111111111111111111111111111111111111111",
+  "status": "Initialization",
+  "reports_uri": "/namespaces/your.new.log.com/reports",
+  "audits_uri": "/namespaces/your.new.log.com/audits",
+  "signature_version": 1
+}
+```
+
+After publishing the first epoch, `status` will show `Online`. Possible statuses include:
+
+- `Online`
+- `Initialization`
+- `Disabled`
+
+## List all namespaces
+
+Refer to the example below to get information about all public namespaces.
+
+```sh
+curl 'https://plexi.key-transparency.cloudflare.com/namespaces'
+{
+   "namespaces": [
+       { "name": "your.new.log.com", "root": "1/abc", "reports_uri": "/namespaces/your.new.log.com/reports", "audits_uri": "/namespaces/your.new.log.com/audits", "log_directory": "https://your.new.log.com/path/to/proofs", "status": "online" },
+       { "name": "my.new.log.com", "reports_uri": "/namespaces/meta-bt-2024/reports", "audits_uri": "/namespaces/meta-bt-2024/audits", "status": "initialization" }
+   ]
+}
+```
+
+## Disable a namespace
+
+If a log state has been corrupted, lost, or needs to be sharded to be maintainable, the Auditor allows the Log operator to mark a namespace as `Disabled`.
+
+This API is authenticated via [mTLS ↗︎](https://www.cloudflare.com/learning/access-management/what-is-mutual-tls/).
+
+```sh
+curl -X PATCH 'https://plexi.key-transparency.cloudflare.com/namespaces/{namespace}' \
+        	-H 'Content-Type: application/json' \
+        	-d '{
+ 	"status": "Disabled"
+  }'
+{
+  "name": "your.new.log.com",
+  "log_directory": "https://your.new.log.com/path/to/proofs",
+  "root": "1/1111111111111111111111111111111111111111111111111111111111111111",
+  "status": "Disabled",
+  "reports_uri": "/namespaces/your.new.log.com/reports",
+  "audits_uri": "/namespaces/your.new.log.com/audits",
+  "signature_version": 1
+}
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/key-transparency/api/namespaces/#page","headline":"Namespaces","description":"Create and manage namespaces representing logs monitored by the Cloudflare Auditor.","url":"https://developers.cloudflare.com/key-transparency/api/namespaces/","inLanguage":"en","image":"https://developers.cloudflare.com/key-transparency/api/namespaces/og.png?v=897884790a63bf6c","dateModified":"2026-05-05","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["REST API","mTLS"]}
+```

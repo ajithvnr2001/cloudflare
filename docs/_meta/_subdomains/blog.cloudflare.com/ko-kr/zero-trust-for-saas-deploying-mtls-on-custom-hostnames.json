@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/zero-trust-for-saas-deploying-mtls-on-custom-hostnames/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/zero-trust-for-saas-deploying-mtls-on-custom-hostnames.md",
+  "title": "SaaS\ub97c \uc704\ud55c Zero Trust: \uc0ac\uc6a9\uc790 \uc9c0\uc815 \ud638\uc2a4\ud2b8 \uc774\ub984\uc5d0\uc11c mTLS \ubc30\ud3ec | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:04.703570+00:00",
+  "html_len": 211037,
+  "md_len": 32183,
+  "depth": 0,
+  "phase": 2
+}

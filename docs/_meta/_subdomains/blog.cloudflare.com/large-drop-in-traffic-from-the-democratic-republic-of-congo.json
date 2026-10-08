@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/large-drop-in-traffic-from-the-democratic-republic-of-congo/",
+  "file": "_subdomains/blog.cloudflare.com/large-drop-in-traffic-from-the-democratic-republic-of-congo.md",
+  "title": "Large drop in traffic from the Democratic Republic of Congo | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:31.469048+00:00",
+  "html_len": 266459,
+  "md_len": 54758,
+  "depth": 0,
+  "phase": 2
+}

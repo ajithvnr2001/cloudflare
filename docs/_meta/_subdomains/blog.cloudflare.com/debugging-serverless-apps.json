@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/debugging-serverless-apps/",
+  "file": "_subdomains/blog.cloudflare.com/debugging-serverless-apps.md",
+  "title": "Debugging Serverless Apps | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:27.753931+00:00",
+  "html_len": 295545,
+  "md_len": 59928,
+  "depth": 0,
+  "phase": 2
+}

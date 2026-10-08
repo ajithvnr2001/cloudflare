@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-cloudflare-business-and-cloudflar/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-cloudflare-business-and-cloudflar.md",
+  "title": "Introducing: CloudFlare Business and Enterprise | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:03.209918+00:00",
+  "html_len": 279704,
+  "md_len": 60205,
+  "depth": 0,
+  "phase": 2
+}

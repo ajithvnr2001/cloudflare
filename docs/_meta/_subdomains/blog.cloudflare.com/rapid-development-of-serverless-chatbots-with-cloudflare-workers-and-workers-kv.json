@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/rapid-development-of-serverless-chatbots-with-cloudflare-workers-and-workers-kv/",
+  "file": "_subdomains/blog.cloudflare.com/rapid-development-of-serverless-chatbots-with-cloudflare-workers-and-workers-kv.md",
+  "title": "Rapid Development of Serverless Chatbots with Cloudflare Workers and Workers KV | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:48.011665+00:00",
+  "html_len": 331596,
+  "md_len": 68350,
+  "depth": 0,
+  "phase": 2
+}

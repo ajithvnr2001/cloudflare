@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/entain/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/entain.md",
+  "title": "Entain | Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:28.381963+00:00",
+  "html_len": 213113,
+  "md_len": 8659,
+  "depth": 0,
+  "phase": 2
+}

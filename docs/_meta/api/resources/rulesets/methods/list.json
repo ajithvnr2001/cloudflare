@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/api/resources/rulesets/methods/list/",
+  "file": "api/resources/rulesets/methods/list.md",
+  "title": "List account or zone rulesets | Cloudflare API",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:25:59.980031+00:00",
+  "html_len": 2023720,
+  "md_len": 6652,
+  "depth": 1
+}

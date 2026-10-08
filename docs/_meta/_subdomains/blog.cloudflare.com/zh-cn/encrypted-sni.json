@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/encrypted-sni/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/encrypted-sni.md",
+  "title": "\u4e0d\u52a0\u5bc6\uff0c\u65e0\u9690\u79c1\uff1a\u52a0\u5bc6SNI\u5de5\u4f5c\u539f\u7406 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:24.193893+00:00",
+  "html_len": 203823,
+  "md_len": 26696,
+  "depth": 0,
+  "phase": 2
+}

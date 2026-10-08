@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/cinder/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/cinder.md",
+  "title": "Cinder & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:23.597798+00:00",
+  "html_len": 205603,
+  "md_len": 7662,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-as112-project/",
+  "file": "_subdomains/blog.cloudflare.com/the-as112-project.md",
+  "title": "Cloudflare is joining the AS112 project to help the Internet deal with misdirected DNS queries | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:23.172907+00:00",
+  "html_len": 323820,
+  "md_len": 79059,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fine-tuned-inference-with-loras/",
+  "file": "_subdomains/blog.cloudflare.com/fine-tuned-inference-with-loras.md",
+  "title": "Running fine-tuned models on Workers AI with LoRAs | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:41:33.105056+00:00",
+  "html_len": 300079,
+  "md_len": 71314,
+  "depth": 0,
+  "phase": 2
+}

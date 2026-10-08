@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/have-your-data-and-hide-it-too-an-introduction-to-differential-privacy/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/have-your-data-and-hide-it-too-an-introduction-to-differential-privacy.md",
+  "title": "\u62e5\u6709\u6570\u636e\u7684\u540c\u65f6\u9690\u85cf\u6570\u636e\uff1a\u5dee\u5206\u9690\u79c1\u4ecb\u7ecd | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:03.998213+00:00",
+  "html_len": 220211,
+  "md_len": 34185,
+  "depth": 0,
+  "phase": 2
+}

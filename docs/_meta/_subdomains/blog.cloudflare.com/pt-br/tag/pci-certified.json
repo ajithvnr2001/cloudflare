@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/tag/pci-certified/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/tag/pci-certified.md",
+  "title": "Posts com a tag \"PCI Certified (ES)\" \u2014 Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:07:02.506010+00:00",
+  "html_len": 104018,
+  "md_len": 896,
+  "depth": 1,
+  "phase": 2
+}

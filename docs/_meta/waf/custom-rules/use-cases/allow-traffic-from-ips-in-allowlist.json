@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/custom-rules/use-cases/allow-traffic-from-ips-in-allowlist/",
+  "file": "waf/custom-rules/use-cases/allow-traffic-from-ips-in-allowlist.md",
+  "title": "Allow traffic from IP addresses in allowlist only \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:37.701840+00:00",
+  "html_len": 135570,
+  "md_len": 2992,
+  "depth": 0
+}

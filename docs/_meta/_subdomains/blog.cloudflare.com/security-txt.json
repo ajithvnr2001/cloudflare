@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/security-txt/",
+  "file": "_subdomains/blog.cloudflare.com/security-txt.md",
+  "title": "Enhance your website's security with Cloudflare\u2019s free security.txt generator | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:35.637449+00:00",
+  "html_len": 281311,
+  "md_len": 60529,
+  "depth": 0,
+  "phase": 2
+}

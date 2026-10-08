@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/detections/threat-intelligence/example-rules/",
+  "file": "waf/detections/threat-intelligence/example-rules.md",
+  "title": "Example rules using threat intelligence \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:42.568336+00:00",
+  "html_len": 139145,
+  "md_len": 3647,
+  "depth": 0
+}

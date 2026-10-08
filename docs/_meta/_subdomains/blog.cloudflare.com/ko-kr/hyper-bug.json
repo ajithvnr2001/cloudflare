@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/hyper-bug/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/hyper-bug.md",
+  "title": "Hyper HTTP \ub77c\uc774\ube0c\ub7ec\ub9ac\uc5d0\uc11c \ubc84\uadf8\ub97c \ubc1c\uacac\ud55c \ubc29\ubc95 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:41.421815+00:00",
+  "html_len": 241195,
+  "md_len": 40828,
+  "depth": 0,
+  "phase": 2
+}

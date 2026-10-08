@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/smart-hints/",
+  "file": "_subdomains/blog.cloudflare.com/smart-hints.md",
+  "title": "Smart Hints make code-free performance simple | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:24.239949+00:00",
+  "html_len": 286384,
+  "md_len": 65147,
+  "depth": 0,
+  "phase": 2
+}

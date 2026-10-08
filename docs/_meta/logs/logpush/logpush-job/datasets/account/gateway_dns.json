@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/account/gateway_dns/",
+  "file": "logs/logpush/logpush-job/datasets/account/gateway_dns.md",
+  "title": "Gateway DNS \u00b7 Cloudflare Logs docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:12:12.231914+00:00",
+  "html_len": 218714,
+  "md_len": 12806,
+  "depth": 0
+}

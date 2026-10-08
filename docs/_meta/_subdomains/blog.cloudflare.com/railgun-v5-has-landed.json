@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/railgun-v5-has-landed/",
+  "file": "_subdomains/blog.cloudflare.com/railgun-v5-has-landed.md",
+  "title": "Railgun v5 has landed: better, faster, lighter | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:57.042534+00:00",
+  "html_len": 272334,
+  "md_len": 58943,
+  "depth": 0,
+  "phase": 2
+}

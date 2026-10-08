@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-internet-is-a-cooperative-system-dns-outage-of-6-july-2015/",
+  "file": "_subdomains/blog.cloudflare.com/the-internet-is-a-cooperative-system-dns-outage-of-6-july-2015.md",
+  "title": "The Internet is a cooperative system: CNAME to Dyn DNS outage of 6 July 2015 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:00.148210+00:00",
+  "html_len": 264022,
+  "md_len": 55417,
+  "depth": 0,
+  "phase": 2
+}

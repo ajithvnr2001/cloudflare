@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/detections/application-profiles/fields/",
+  "file": "waf/detections/application-profiles/fields.md",
+  "title": "Fields \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:41.055193+00:00",
+  "html_len": 156733,
+  "md_len": 8199,
+  "depth": 0
+}

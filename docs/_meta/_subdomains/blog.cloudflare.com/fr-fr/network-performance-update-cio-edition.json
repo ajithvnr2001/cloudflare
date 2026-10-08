@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/network-performance-update-cio-edition/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/network-performance-update-cio-edition.md",
+  "title": "Cloudflare est plus rapide que Zscaler | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:21.463761+00:00",
+  "html_len": 261499,
+  "md_len": 55474,
+  "depth": 0,
+  "phase": 2
+}

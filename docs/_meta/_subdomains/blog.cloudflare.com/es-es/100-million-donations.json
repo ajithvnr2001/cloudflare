@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/100-million-donations/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/100-million-donations.md",
+  "title": "Cloudflare Impact alcanza los 100 millones de d\u00f3lares en donaciones | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:20.063428+00:00",
+  "html_len": 550692,
+  "md_len": 371938,
+  "depth": 0,
+  "phase": 2
+}

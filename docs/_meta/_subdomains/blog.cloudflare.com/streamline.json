@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/streamline/",
+  "file": "_subdomains/blog.cloudflare.com/streamline.md",
+  "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:23.021590+00:00",
+  "html_len": 332007,
+  "md_len": 76219,
+  "depth": 0,
+  "phase": 2
+}

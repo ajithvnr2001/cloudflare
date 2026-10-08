@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/benchmarking-dashboard-performance/",
+  "file": "_subdomains/blog.cloudflare.com/benchmarking-dashboard-performance.md",
+  "title": "Benchmarking dashboard performance | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:43.403267+00:00",
+  "html_len": 291660,
+  "md_len": 63079,
+  "depth": 0,
+  "phase": 2
+}

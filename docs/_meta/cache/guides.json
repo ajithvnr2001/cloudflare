@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/cache/guides/",
+  "file": "cache/guides.md",
+  "title": "Guides \u00b7 Cloudflare Cache (CDN) docs",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (798 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T07:05:46.925953+00:00",
+  "html_len": 149967,
+  "md_len": 858,
+  "depth": 0
+}

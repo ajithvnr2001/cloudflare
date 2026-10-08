@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ietf-hackathon-getting-tls-1-3-working-in-the-browser-2/",
+  "file": "_subdomains/blog.cloudflare.com/ietf-hackathon-getting-tls-1-3-working-in-the-browser-2.md",
+  "title": "IETF Hackathon: Getting TLS 1.3 working in the browser | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:42.054620+00:00",
+  "html_len": 276439,
+  "md_len": 58797,
+  "depth": 0,
+  "phase": 2
+}

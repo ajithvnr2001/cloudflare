@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/products/agents/",
+  "file": "_subdomains/www.cloudflare.com/products/agents.md",
+  "title": "Cloudflare Agents - Build Stateful AI Agents",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:08.427878+00:00",
+  "html_len": 356882,
+  "md_len": 11898,
+  "depth": 0,
+  "phase": 2
+}

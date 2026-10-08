@@ -1,0 +1,3487 @@
+[
+  {
+    "url": "https://developers.cloudflare.com/1.1.1.1/`/",
+    "file": "1.1.1.1/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/agent-lee/`/",
+    "file": "agent-lee/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/agent-memory/`/",
+    "file": "agent-memory/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/agent-setup/`/",
+    "file": "agent-setup/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/agents/`/",
+    "file": "agents/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai-crawl-control/`/",
+    "file": "ai-crawl-control/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai-gateway/`/",
+    "file": "ai-gateway/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai-gateway/configuration/bring-your-own-key/",
+    "file": "ai-gateway/configuration/bring-your-own-key.md",
+    "reason": "404-page"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai-search/`/",
+    "file": "ai-search/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/`/",
+    "file": "ai/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/ai4bharat/indictrans2-en-indic-1B/schema-output.json",
+    "file": "ai/models/@cf/ai4bharat/indictrans2-en-indic-1B/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/aisingapore/gemma-sea-lion-v4-27b-it/batch-output.json",
+    "file": "ai/models/@cf/aisingapore/gemma-sea-lion-v4-27b-it/batch-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/aisingapore/gemma-sea-lion-v4-27b-it/streaming-output.json",
+    "file": "ai/models/@cf/aisingapore/gemma-sea-lion-v4-27b-it/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/baai/bge-base-en-v1.5/batch-output.json",
+    "file": "ai/models/@cf/baai/bge-base-en-v1.5/batch-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/baai/bge-large-en-v1.5/batch-output.json",
+    "file": "ai/models/@cf/baai/bge-large-en-v1.5/batch-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/baai/bge-m3/batch-output.json",
+    "file": "ai/models/@cf/baai/bge-m3/batch-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/baai/bge-reranker-base/schema-output.json",
+    "file": "ai/models/@cf/baai/bge-reranker-base/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/baai/bge-small-en-v1.5/batch-output.json",
+    "file": "ai/models/@cf/baai/bge-small-en-v1.5/batch-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/black-forest-labs/flux-1-schnell/schema-output.json",
+    "file": "ai/models/@cf/black-forest-labs/flux-1-schnell/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/black-forest-labs/flux-2-dev/schema-output.json",
+    "file": "ai/models/@cf/black-forest-labs/flux-2-dev/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/black-forest-labs/flux-2-klein-4b/schema-output.json",
+    "file": "ai/models/@cf/black-forest-labs/flux-2-klein-4b/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/black-forest-labs/flux-2-klein-9b/schema-output.json",
+    "file": "ai/models/@cf/black-forest-labs/flux-2-klein-9b/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/bytedance/stable-diffusion-xl-lightning/schema-output.json",
+    "file": "ai/models/@cf/bytedance/stable-diffusion-xl-lightning/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/cloudflare/clef-flash/schema-output.json",
+    "file": "ai/models/@cf/cloudflare/clef-flash/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/cloudflare/clef/schema-output.json",
+    "file": "ai/models/@cf/cloudflare/clef/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/deepgram/aura-1/schema-output.json",
+    "file": "ai/models/@cf/deepgram/aura-1/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/deepgram/aura-2-en/schema-output.json",
+    "file": "ai/models/@cf/deepgram/aura-2-en/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/deepgram/aura-2-es/schema-output.json",
+    "file": "ai/models/@cf/deepgram/aura-2-es/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/deepgram/flux/schema-output.json",
+    "file": "ai/models/@cf/deepgram/flux/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/deepgram/nova-3/schema-output.json",
+    "file": "ai/models/@cf/deepgram/nova-3/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/deepseek-ai/deepseek-r1-distill-qwen-32b/streaming-output.json",
+    "file": "ai/models/@cf/deepseek-ai/deepseek-r1-distill-qwen-32b/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/deepseek-ai/deepseek-v4-flash-0731/batch-output.json",
+    "file": "ai/models/@cf/deepseek-ai/deepseek-v4-flash-0731/batch-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/deepseek-ai/deepseek-v4-flash-0731/streaming-output.json",
+    "file": "ai/models/@cf/deepseek-ai/deepseek-v4-flash-0731/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/deepseek-ai/deepseek-v4-pro-0813/batch-output.json",
+    "file": "ai/models/@cf/deepseek-ai/deepseek-v4-pro-0813/batch-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/deepseek-ai/deepseek-v4-pro-0813/streaming-output.json",
+    "file": "ai/models/@cf/deepseek-ai/deepseek-v4-pro-0813/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/google/embeddinggemma-300m/schema-output.json",
+    "file": "ai/models/@cf/google/embeddinggemma-300m/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/google/gemma-2b-it-lora/streaming-output.json",
+    "file": "ai/models/@cf/google/gemma-2b-it-lora/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/google/gemma-4-26b-a4b-it/batch-output.json",
+    "file": "ai/models/@cf/google/gemma-4-26b-a4b-it/batch-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/google/gemma-4-26b-a4b-it/streaming-output.json",
+    "file": "ai/models/@cf/google/gemma-4-26b-a4b-it/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/google/gemma-7b-it-lora/streaming-output.json",
+    "file": "ai/models/@cf/google/gemma-7b-it-lora/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/huggingface/distilbert-sst-2-int8/schema-output.json",
+    "file": "ai/models/@cf/huggingface/distilbert-sst-2-int8/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/ibm-granite/granite-4.0-h-micro/streaming-output.json",
+    "file": "ai/models/@cf/ibm-granite/granite-4.0-h-micro/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/leonardo/lucid-origin/schema-output.json",
+    "file": "ai/models/@cf/leonardo/lucid-origin/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/leonardo/phoenix-1.0/schema-output.json",
+    "file": "ai/models/@cf/leonardo/phoenix-1.0/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/llava-hf/llava-1.5-7b-hf/schema-output.json",
+    "file": "ai/models/@cf/llava-hf/llava-1.5-7b-hf/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/lykon/dreamshaper-8-lcm/schema-output.json",
+    "file": "ai/models/@cf/lykon/dreamshaper-8-lcm/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta-llama/llama-2-7b-chat-hf-lora/streaming-output.json",
+    "file": "ai/models/@cf/meta-llama/llama-2-7b-chat-hf-lora/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-3.1-8b-instruct-fp8/streaming-output.json",
+    "file": "ai/models/@cf/meta/llama-3.1-8b-instruct-fp8/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-3.2-11b-vision-instruct/streaming-output.json",
+    "file": "ai/models/@cf/meta/llama-3.2-11b-vision-instruct/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-3.2-1b-instruct/streaming-output.json",
+    "file": "ai/models/@cf/meta/llama-3.2-1b-instruct/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-3.2-3b-instruct/streaming-output.json",
+    "file": "ai/models/@cf/meta/llama-3.2-3b-instruct/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-3.3-70b-instruct-fp8-fast/batch-output.json",
+    "file": "ai/models/@cf/meta/llama-3.3-70b-instruct-fp8-fast/batch-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-3.3-70b-instruct-fp8-fast/streaming-output.json",
+    "file": "ai/models/@cf/meta/llama-3.3-70b-instruct-fp8-fast/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-4-scout-17b-16e-instruct/batch-output.json",
+    "file": "ai/models/@cf/meta/llama-4-scout-17b-16e-instruct/batch-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-4-scout-17b-16e-instruct/streaming-output.json",
+    "file": "ai/models/@cf/meta/llama-4-scout-17b-16e-instruct/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-guard-3-8b/schema-output.json",
+    "file": "ai/models/@cf/meta/llama-guard-3-8b/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/m2m100-1.2b/batch-output.json",
+    "file": "ai/models/@cf/meta/m2m100-1.2b/batch-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/microsoft/resnet-50/schema-output.json",
+    "file": "ai/models/@cf/microsoft/resnet-50/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/mistral/mistral-7b-instruct-v0.2-lora/streaming-output.json",
+    "file": "ai/models/@cf/mistral/mistral-7b-instruct-v0.2-lora/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/mistralai/mistral-small-3.1-24b-instruct/streaming-output.json",
+    "file": "ai/models/@cf/mistralai/mistral-small-3.1-24b-instruct/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/moondream/moondream3.1-9B-A2B/schema-output.json",
+    "file": "ai/models/@cf/moondream/moondream3.1-9B-A2B/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/moonshotai/kimi-k2.6/batch-output.json",
+    "file": "ai/models/@cf/moonshotai/kimi-k2.6/batch-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/moonshotai/kimi-k2.6/streaming-output.json",
+    "file": "ai/models/@cf/moonshotai/kimi-k2.6/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/moonshotai/kimi-k2.7-code/batch-output.json",
+    "file": "ai/models/@cf/moonshotai/kimi-k2.7-code/batch-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/moonshotai/kimi-k2.7-code/streaming-output.json",
+    "file": "ai/models/@cf/moonshotai/kimi-k2.7-code/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/myshell-ai/melotts/schema-output.json",
+    "file": "ai/models/@cf/myshell-ai/melotts/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/nvidia/nemotron-3-120b-a12b/streaming-output.json",
+    "file": "ai/models/@cf/nvidia/nemotron-3-120b-a12b/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/openai/gpt-oss-120b/batch-output.json",
+    "file": "ai/models/@cf/openai/gpt-oss-120b/batch-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/openai/gpt-oss-120b/streaming-output.json",
+    "file": "ai/models/@cf/openai/gpt-oss-120b/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/openai/gpt-oss-20b/batch-output.json",
+    "file": "ai/models/@cf/openai/gpt-oss-20b/batch-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/openai/gpt-oss-20b/streaming-output.json",
+    "file": "ai/models/@cf/openai/gpt-oss-20b/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/openai/whisper-large-v3-turbo/schema-output.json",
+    "file": "ai/models/@cf/openai/whisper-large-v3-turbo/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/openai/whisper-tiny-en/schema-output.json",
+    "file": "ai/models/@cf/openai/whisper-tiny-en/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/openai/whisper/schema-output.json",
+    "file": "ai/models/@cf/openai/whisper/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/pfnet/plamo-embedding-1b/schema-output.json",
+    "file": "ai/models/@cf/pfnet/plamo-embedding-1b/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/pipecat-ai/smart-turn-v2/schema-output.json",
+    "file": "ai/models/@cf/pipecat-ai/smart-turn-v2/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/qwen/qwen2.5-coder-32b-instruct/streaming-output.json",
+    "file": "ai/models/@cf/qwen/qwen2.5-coder-32b-instruct/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/qwen/qwen3-30b-a3b-fp8/batch-output.json",
+    "file": "ai/models/@cf/qwen/qwen3-30b-a3b-fp8/batch-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/qwen/qwen3-30b-a3b-fp8/streaming-output.json",
+    "file": "ai/models/@cf/qwen/qwen3-30b-a3b-fp8/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/qwen/qwen3-embedding-0.6b/schema-output.json",
+    "file": "ai/models/@cf/qwen/qwen3-embedding-0.6b/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/qwen/qwen3.8-27b/batch-output.json",
+    "file": "ai/models/@cf/qwen/qwen3.8-27b/batch-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/qwen/qwen3.8-27b/streaming-output.json",
+    "file": "ai/models/@cf/qwen/qwen3.8-27b/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/qwen/qwq-32b/streaming-output.json",
+    "file": "ai/models/@cf/qwen/qwq-32b/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/runwayml/stable-diffusion-v1-5-inpainting/schema-output.json",
+    "file": "ai/models/@cf/runwayml/stable-diffusion-v1-5-inpainting/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/stabilityai/stable-diffusion-xl-base-1.0/schema-output.json",
+    "file": "ai/models/@cf/stabilityai/stable-diffusion-xl-base-1.0/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/zai-org/glm-4.7-flash/streaming-output.json",
+    "file": "ai/models/@cf/zai-org/glm-4.7-flash/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/zai-org/glm-5.2/batch-output.json",
+    "file": "ai/models/@cf/zai-org/glm-5.2/batch-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/zai-org/glm-5.2/streaming-output.json",
+    "file": "ai/models/@cf/zai-org/glm-5.2/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/zai-org/glm-5.3-flash/batch-output.json",
+    "file": "ai/models/@cf/zai-org/glm-5.3-flash/batch-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/zai-org/glm-5.3-flash/streaming-output.json",
+    "file": "ai/models/@cf/zai-org/glm-5.3-flash/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/zai-org/glm-5.3/batch-output.json",
+    "file": "ai/models/@cf/zai-org/glm-5.3/batch-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/zai-org/glm-5.3/streaming-output.json",
+    "file": "ai/models/@cf/zai-org/glm-5.3/streaming-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/hh1-i2v/schema-output.json",
+    "file": "ai/models/alibaba/hh1-i2v/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/hh1-t2v/schema-output.json",
+    "file": "ai/models/alibaba/hh1-t2v/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/hh1.1-i2v/schema-output.json",
+    "file": "ai/models/alibaba/hh1.1-i2v/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/hh1.1-r2v/schema-output.json",
+    "file": "ai/models/alibaba/hh1.1-r2v/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/hh1.1-t2v/schema-output.json",
+    "file": "ai/models/alibaba/hh1.1-t2v/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/qwen-image-3.0-pro/schema-output.json",
+    "file": "ai/models/alibaba/qwen-image-3.0-pro/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/qwen3-max/schema-output.json",
+    "file": "ai/models/alibaba/qwen3-max/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/qwen3.5-397b-a17b/schema-output.json",
+    "file": "ai/models/alibaba/qwen3.5-397b-a17b/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/qwen3.7-max/schema-output.json",
+    "file": "ai/models/alibaba/qwen3.7-max/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/qwen3.7-plus/schema-output.json",
+    "file": "ai/models/alibaba/qwen3.7-plus/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/qwen3.8-max/schema-output.json",
+    "file": "ai/models/alibaba/qwen3.8-max/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/wan-2.6-image/schema-output.json",
+    "file": "ai/models/alibaba/wan-2.6-image/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/wan-2.7-i2v/schema-output.json",
+    "file": "ai/models/alibaba/wan-2.7-i2v/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/wan-3.0-prime/schema-output.json",
+    "file": "ai/models/alibaba/wan-3.0-prime/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/wan-3.0/schema-output.json",
+    "file": "ai/models/alibaba/wan-3.0/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/anthropic/claude-fable-5.1/schema-output.json",
+    "file": "ai/models/anthropic/claude-fable-5.1/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/anthropic/claude-fable-5/schema-output.json",
+    "file": "ai/models/anthropic/claude-fable-5/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/anthropic/claude-haiku-4.5/schema-output.json",
+    "file": "ai/models/anthropic/claude-haiku-4.5/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/anthropic/claude-opus-4.5/schema-output.json",
+    "file": "ai/models/anthropic/claude-opus-4.5/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/anthropic/claude-opus-4.6/schema-output.json",
+    "file": "ai/models/anthropic/claude-opus-4.6/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/anthropic/claude-opus-4.7/schema-output.json",
+    "file": "ai/models/anthropic/claude-opus-4.7/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/anthropic/claude-opus-4.8/schema-output.json",
+    "file": "ai/models/anthropic/claude-opus-4.8/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/anthropic/claude-opus-5.5/schema-output.json",
+    "file": "ai/models/anthropic/claude-opus-5.5/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/anthropic/claude-opus-5/schema-output.json",
+    "file": "ai/models/anthropic/claude-opus-5/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/anthropic/claude-sonnet-4.5/schema-output.json",
+    "file": "ai/models/anthropic/claude-sonnet-4.5/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/anthropic/claude-sonnet-4.6/schema-output.json",
+    "file": "ai/models/anthropic/claude-sonnet-4.6/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/anthropic/claude-sonnet-5.5/schema-output.json",
+    "file": "ai/models/anthropic/claude-sonnet-5.5/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/anthropic/claude-sonnet-5/schema-output.json",
+    "file": "ai/models/anthropic/claude-sonnet-5/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/assemblyai/universal-3-pro/schema-output.json",
+    "file": "ai/models/assemblyai/universal-3-pro/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/assemblyai/universal-3.5-pro/schema-output.json",
+    "file": "ai/models/assemblyai/universal-3.5-pro/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/black-forest-labs/flux-1-kontext-max/schema-output.json",
+    "file": "ai/models/black-forest-labs/flux-1-kontext-max/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/black-forest-labs/flux-1-kontext-pro/schema-output.json",
+    "file": "ai/models/black-forest-labs/flux-1-kontext-pro/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/black-forest-labs/flux-2-flex/schema-output.json",
+    "file": "ai/models/black-forest-labs/flux-2-flex/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/black-forest-labs/flux-2-max/schema-output.json",
+    "file": "ai/models/black-forest-labs/flux-2-max/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/black-forest-labs/flux-2-pro-preview/schema-output.json",
+    "file": "ai/models/black-forest-labs/flux-2-pro-preview/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/black-forest-labs/flux-3-video/schema-output.json",
+    "file": "ai/models/black-forest-labs/flux-3-video/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/black-forest-labs/flux-video-upscale/schema-output.json",
+    "file": "ai/models/black-forest-labs/flux-video-upscale/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/bria/fibo-edit-1.5/schema-output.json",
+    "file": "ai/models/bria/fibo-edit-1.5/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/bria/fibo-generate-1.5/schema-output.json",
+    "file": "ai/models/bria/fibo-generate-1.5/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/bria/remove-background/schema-output.json",
+    "file": "ai/models/bria/remove-background/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/bria/v-rmbg-3.0/schema-output.json",
+    "file": "ai/models/bria/v-rmbg-3.0/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/bytedance/seedance-2.0-fast/schema-output.json",
+    "file": "ai/models/bytedance/seedance-2.0-fast/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/bytedance/seedance-2.0-mini/schema-output.json",
+    "file": "ai/models/bytedance/seedance-2.0-mini/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/bytedance/seedance-2.0/schema-output.json",
+    "file": "ai/models/bytedance/seedance-2.0/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/bytedance/seedance-2.5/schema-output.json",
+    "file": "ai/models/bytedance/seedance-2.5/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/bytedance/seedream-4.0/schema-output.json",
+    "file": "ai/models/bytedance/seedream-4.0/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/bytedance/seedream-4.5/schema-output.json",
+    "file": "ai/models/bytedance/seedream-4.5/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/bytedance/seedream-5-lite/schema-output.json",
+    "file": "ai/models/bytedance/seedream-5-lite/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/bytedance/seedream-5-pro/schema-output.json",
+    "file": "ai/models/bytedance/seedream-5-pro/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/deepseek/deepseek-v4-pro/schema-output.json",
+    "file": "ai/models/deepseek/deepseek-v4-pro/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/elevenlabs/eleven-flash-v2-5/schema-output.json",
+    "file": "ai/models/elevenlabs/eleven-flash-v2-5/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/elevenlabs/eleven-multilingual-v2/schema-output.json",
+    "file": "ai/models/elevenlabs/eleven-multilingual-v2/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/elevenlabs/eleven-turbo-v2-5/schema-output.json",
+    "file": "ai/models/elevenlabs/eleven-turbo-v2-5/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/elevenlabs/eleven-v3/schema-output.json",
+    "file": "ai/models/elevenlabs/eleven-v3/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/elevenlabs/music-v2/schema-output.json",
+    "file": "ai/models/elevenlabs/music-v2/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-2.5-flash-lite/schema-output.json",
+    "file": "ai/models/google/gemini-2.5-flash-lite/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-2.5-flash/schema-output.json",
+    "file": "ai/models/google/gemini-2.5-flash/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-2.5-pro/schema-output.json",
+    "file": "ai/models/google/gemini-2.5-pro/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-3-flash/schema-output.json",
+    "file": "ai/models/google/gemini-3-flash/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-3.1-flash-lite/schema-output.json",
+    "file": "ai/models/google/gemini-3.1-flash-lite/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-3.1-flash-tts/schema-output.json",
+    "file": "ai/models/google/gemini-3.1-flash-tts/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-3.1-pro/schema-output.json",
+    "file": "ai/models/google/gemini-3.1-pro/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-3.5-flash-lite/schema-output.json",
+    "file": "ai/models/google/gemini-3.5-flash-lite/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-3.5-flash/schema-output.json",
+    "file": "ai/models/google/gemini-3.5-flash/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-3.6-flash/schema-output.json",
+    "file": "ai/models/google/gemini-3.6-flash/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-3.7-flash/schema-output.json",
+    "file": "ai/models/google/gemini-3.7-flash/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-3.8-flash-lite-tts/schema-output.json",
+    "file": "ai/models/google/gemini-3.8-flash-lite-tts/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-3.8-flash-tts/schema-output.json",
+    "file": "ai/models/google/gemini-3.8-flash-tts/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-3.8-flash/schema-output.json",
+    "file": "ai/models/google/gemini-3.8-flash/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-omni-1.1-flash/schema-output.json",
+    "file": "ai/models/google/gemini-omni-1.1-flash/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-omni-flash/schema-output.json",
+    "file": "ai/models/google/gemini-omni-flash/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/nano-banana-2-lite/schema-output.json",
+    "file": "ai/models/google/nano-banana-2-lite/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/nano-banana-2/schema-output.json",
+    "file": "ai/models/google/nano-banana-2/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/nano-banana-pro/schema-output.json",
+    "file": "ai/models/google/nano-banana-pro/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/nano-banana/schema-output.json",
+    "file": "ai/models/google/nano-banana/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/veo-3.1-fast/schema-output.json",
+    "file": "ai/models/google/veo-3.1-fast/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/veo-3.1/schema-output.json",
+    "file": "ai/models/google/veo-3.1/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/inworld/tts-1.5-max/schema-output.json",
+    "file": "ai/models/inworld/tts-1.5-max/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/inworld/tts-1.5-mini/schema-output.json",
+    "file": "ai/models/inworld/tts-1.5-mini/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/inworld/tts-2/schema-output.json",
+    "file": "ai/models/inworld/tts-2/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/krea/krea-2-large/schema-output.json",
+    "file": "ai/models/krea/krea-2-large/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/krea/krea-2-medium-turbo/schema-output.json",
+    "file": "ai/models/krea/krea-2-medium-turbo/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/krea/krea-2-medium/schema-output.json",
+    "file": "ai/models/krea/krea-2-medium/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/lightricks/ltx-2-5-fast/schema-output.json",
+    "file": "ai/models/lightricks/ltx-2-5-fast/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/minimax/h3-max/schema-output.json",
+    "file": "ai/models/minimax/h3-max/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/minimax/h3/schema-output.json",
+    "file": "ai/models/minimax/h3/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/minimax/hailuo-2.3-fast/schema-output.json",
+    "file": "ai/models/minimax/hailuo-2.3-fast/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/minimax/hailuo-2.3/schema-output.json",
+    "file": "ai/models/minimax/hailuo-2.3/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/minimax/m2.7/schema-output.json",
+    "file": "ai/models/minimax/m2.7/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/minimax/m3/schema-output.json",
+    "file": "ai/models/minimax/m3/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/minimax/music-2.6/schema-output.json",
+    "file": "ai/models/minimax/music-2.6/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/minimax/speech-2.8-hd/schema-output.json",
+    "file": "ai/models/minimax/speech-2.8-hd/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/minimax/speech-2.8-turbo/schema-output.json",
+    "file": "ai/models/minimax/speech-2.8-turbo/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/moonshotai/kimi-k3/schema-output.json",
+    "file": "ai/models/moonshotai/kimi-k3/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-4.1-mini/schema-output.json",
+    "file": "ai/models/openai/gpt-4.1-mini/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-4.1-nano/schema-output.json",
+    "file": "ai/models/openai/gpt-4.1-nano/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-4.1/schema-output.json",
+    "file": "ai/models/openai/gpt-4.1/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-4o-mini/schema-output.json",
+    "file": "ai/models/openai/gpt-4o-mini/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-4o-transcribe/schema-output.json",
+    "file": "ai/models/openai/gpt-4o-transcribe/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-4o/schema-output.json",
+    "file": "ai/models/openai/gpt-4o/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-5-mini/schema-output.json",
+    "file": "ai/models/openai/gpt-5-mini/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-5-nano/schema-output.json",
+    "file": "ai/models/openai/gpt-5-nano/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-5.1/schema-output.json",
+    "file": "ai/models/openai/gpt-5.1/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-5.4-mini/schema-output.json",
+    "file": "ai/models/openai/gpt-5.4-mini/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-5.4-nano/schema-output.json",
+    "file": "ai/models/openai/gpt-5.4-nano/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-5.4-pro/schema-output.json",
+    "file": "ai/models/openai/gpt-5.4-pro/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-5.4/schema-output.json",
+    "file": "ai/models/openai/gpt-5.4/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-5.5-pro/schema-output.json",
+    "file": "ai/models/openai/gpt-5.5-pro/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-5.5/schema-output.json",
+    "file": "ai/models/openai/gpt-5.5/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-5.6-luna/schema-output.json",
+    "file": "ai/models/openai/gpt-5.6-luna/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-5.6-sol/schema-output.json",
+    "file": "ai/models/openai/gpt-5.6-sol/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-5.6-terra/schema-output.json",
+    "file": "ai/models/openai/gpt-5.6-terra/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-5/schema-output.json",
+    "file": "ai/models/openai/gpt-5/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-6-astra/schema-output.json",
+    "file": "ai/models/openai/gpt-6-astra/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-6-luna/schema-output.json",
+    "file": "ai/models/openai/gpt-6-luna/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-6-sol/schema-output.json",
+    "file": "ai/models/openai/gpt-6-sol/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-6.1-sol/schema-output.json",
+    "file": "ai/models/openai/gpt-6.1-sol/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-image-1.5/schema-output.json",
+    "file": "ai/models/openai/gpt-image-1.5/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-image-2.5-flare/schema-output.json",
+    "file": "ai/models/openai/gpt-image-2.5-flare/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-image-2.5-sunburst/schema-output.json",
+    "file": "ai/models/openai/gpt-image-2.5-sunburst/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-image-2/schema-output.json",
+    "file": "ai/models/openai/gpt-image-2/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/o3-mini/schema-output.json",
+    "file": "ai/models/openai/o3-mini/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/o3/schema-output.json",
+    "file": "ai/models/openai/o3/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/o4-mini/schema-output.json",
+    "file": "ai/models/openai/o4-mini/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/tts-1-hd/schema-output.json",
+    "file": "ai/models/openai/tts-1-hd/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/tts-1/schema-output.json",
+    "file": "ai/models/openai/tts-1/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/pixverse/v5.6/schema-output.json",
+    "file": "ai/models/pixverse/v5.6/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/pixverse/v6/schema-output.json",
+    "file": "ai/models/pixverse/v6/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/pruna/p-image-edit/schema-output.json",
+    "file": "ai/models/pruna/p-image-edit/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/pruna/p-image-try-on/schema-output.json",
+    "file": "ai/models/pruna/p-image-try-on/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/pruna/p-image-upscale/schema-output.json",
+    "file": "ai/models/pruna/p-image-upscale/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/pruna/p-image/schema-output.json",
+    "file": "ai/models/pruna/p-image/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/pruna/p-video-animate/schema-output.json",
+    "file": "ai/models/pruna/p-video-animate/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/pruna/p-video-avatar/schema-output.json",
+    "file": "ai/models/pruna/p-video-avatar/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/pruna/p-video-replace/schema-output.json",
+    "file": "ai/models/pruna/p-video-replace/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/pruna/p-video/schema-output.json",
+    "file": "ai/models/pruna/p-video/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/recraft/recraftv3/schema-output.json",
+    "file": "ai/models/recraft/recraftv3/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/recraft/recraftv4-1-pro-vector/schema-output.json",
+    "file": "ai/models/recraft/recraftv4-1-pro-vector/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/recraft/recraftv4-1-pro/schema-output.json",
+    "file": "ai/models/recraft/recraftv4-1-pro/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/recraft/recraftv4-1-utility-pro-vector/schema-output.json",
+    "file": "ai/models/recraft/recraftv4-1-utility-pro-vector/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/recraft/recraftv4-1-utility-pro/schema-output.json",
+    "file": "ai/models/recraft/recraftv4-1-utility-pro/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/recraft/recraftv4-1-utility-vector/schema-output.json",
+    "file": "ai/models/recraft/recraftv4-1-utility-vector/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/recraft/recraftv4-1-utility/schema-output.json",
+    "file": "ai/models/recraft/recraftv4-1-utility/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/recraft/recraftv4-1-vector/schema-output.json",
+    "file": "ai/models/recraft/recraftv4-1-vector/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/recraft/recraftv4-1/schema-output.json",
+    "file": "ai/models/recraft/recraftv4-1/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/recraft/recraftv4-pro-vector/schema-output.json",
+    "file": "ai/models/recraft/recraftv4-pro-vector/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/recraft/recraftv4-pro/schema-output.json",
+    "file": "ai/models/recraft/recraftv4-pro/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/recraft/recraftv4-vector/schema-output.json",
+    "file": "ai/models/recraft/recraftv4-vector/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/recraft/recraftv4/schema-output.json",
+    "file": "ai/models/recraft/recraftv4/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/runwayml/aleph-2/schema-output.json",
+    "file": "ai/models/runwayml/aleph-2/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/runwayml/gen-4.5/schema-output.json",
+    "file": "ai/models/runwayml/gen-4.5/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/thinkingmachines/inkling-256k/schema-output.json",
+    "file": "ai/models/thinkingmachines/inkling-256k/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/thinkingmachines/inkling/schema-output.json",
+    "file": "ai/models/thinkingmachines/inkling/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/typesafe/jev/schema-output.json",
+    "file": "ai/models/typesafe/jev/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/unbiased/pareto/schema-output.json",
+    "file": "ai/models/unbiased/pareto/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/vidu/q3-pro/schema-output.json",
+    "file": "ai/models/vidu/q3-pro/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/vidu/q3-turbo/schema-output.json",
+    "file": "ai/models/vidu/q3-turbo/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-4.20-0309-non-reasoning/schema-output.json",
+    "file": "ai/models/xai/grok-4.20-0309-non-reasoning/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-4.20-0309-reasoning/schema-output.json",
+    "file": "ai/models/xai/grok-4.20-0309-reasoning/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-4.20-multi-agent-0309/schema-output.json",
+    "file": "ai/models/xai/grok-4.20-multi-agent-0309/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-4.3/schema-output.json",
+    "file": "ai/models/xai/grok-4.3/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-4.5/schema-output.json",
+    "file": "ai/models/xai/grok-4.5/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-4.6/schema-output.json",
+    "file": "ai/models/xai/grok-4.6/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-4.7/schema-output.json",
+    "file": "ai/models/xai/grok-4.7/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-imagine-image-2.0/schema-output.json",
+    "file": "ai/models/xai/grok-imagine-image-2.0/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-imagine-image-quality/schema-output.json",
+    "file": "ai/models/xai/grok-imagine-image-quality/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-imagine-image/schema-output.json",
+    "file": "ai/models/xai/grok-imagine-image/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-imagine-video-1.5-preview/schema-output.json",
+    "file": "ai/models/xai/grok-imagine-video-1.5-preview/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-imagine-video/schema-output.json",
+    "file": "ai/models/xai/grok-imagine-video/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-stt/schema-output.json",
+    "file": "ai/models/xai/grok-stt/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-tts/schema-output.json",
+    "file": "ai/models/xai/grok-tts/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-voice/schema-output.json",
+    "file": "ai/models/xai/grok-voice/schema-output.json.md",
+    "reason": "json-api"
+  },
+  {
+    "url": "https://developers.cloudflare.com/analytics/`/",
+    "file": "analytics/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/api-shield/`/",
+    "file": "api-shield/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/argo-smart-routing/`/",
+    "file": "argo-smart-routing/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/artifacts/`/",
+    "file": "artifacts/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/automatic-platform-optimization/`/",
+    "file": "automatic-platform-optimization/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/basin-catalog/`/",
+    "file": "basin-catalog/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/basin-pipelines/`/",
+    "file": "basin-pipelines/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/basin-sql/`/",
+    "file": "basin-sql/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/basin/`/",
+    "file": "basin/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/billing/`/",
+    "file": "billing/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/bots/`/",
+    "file": "bots/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/browser-run/`/",
+    "file": "browser-run/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/byoip/`/",
+    "file": "byoip/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/cache/`/",
+    "file": "cache/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/cf/`/",
+    "file": "cf/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/china-network/`/",
+    "file": "china-network/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/client-side-security/`/",
+    "file": "client-side-security/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/cloudflare-challenges/`/",
+    "file": "cloudflare-challenges/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/cloudflare-for-platforms/`/",
+    "file": "cloudflare-for-platforms/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/cloudflare-network-firewall/`/",
+    "file": "cloudflare-network-firewall/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/cloudflare-one/`/",
+    "file": "cloudflare-one/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/cloudflare-one/networks/resolvers-proxies/",
+    "file": "cloudflare-one/networks/resolvers-proxies.md",
+    "reason": "404-page"
+  },
+  {
+    "url": "https://developers.cloudflare.com/cloudflare-wan/`/",
+    "file": "cloudflare-wan/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/containers/`/",
+    "file": "containers/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/d1/`/",
+    "file": "d1/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/data-localization/`/",
+    "file": "data-localization/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ddos-protection/`/",
+    "file": "ddos-protection/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/dmarc-management/`/",
+    "file": "dmarc-management/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/dns/`/",
+    "file": "dns/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/docs-for-agents/`/",
+    "file": "docs-for-agents/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/durable-objects/`/",
+    "file": "durable-objects/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/dynamic-workers/`/",
+    "file": "dynamic-workers/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/email-service/`/",
+    "file": "email-service/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/firewall/`/",
+    "file": "firewall/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/flagship/`/",
+    "file": "flagship/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/fundamentals/`/",
+    "file": "fundamentals/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/google-tag-gateway/`/",
+    "file": "google-tag-gateway/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/health-checks/`/",
+    "file": "health-checks/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/hyperdrive/`/",
+    "file": "hyperdrive/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/images/`/",
+    "file": "images/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/k2/`/",
+    "file": "k2/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/key-transparency/`/",
+    "file": "key-transparency/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/kv/`/",
+    "file": "kv/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/learning-paths/`/",
+    "file": "learning-paths/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/load-balancing/`/",
+    "file": "load-balancing/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/log-explorer/`/",
+    "file": "log-explorer/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/logpush/",
+    "file": "logpush.md",
+    "reason": "404-page"
+  },
+  {
+    "url": "https://developers.cloudflare.com/logs/`/",
+    "file": "logs/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/magic-transit/`/",
+    "file": "magic-transit/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/mesh/`/",
+    "file": "mesh/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/migration-guides/`/",
+    "file": "migration-guides/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/monetization-gateway/`/",
+    "file": "monetization-gateway/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/moq/`/",
+    "file": "moq/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/multi-cloud-networking/`/",
+    "file": "multi-cloud-networking/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/network-error-logging/`/",
+    "file": "network-error-logging/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/network-flow/`/",
+    "file": "network-flow/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/network-interconnect/`/",
+    "file": "network-interconnect/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/network/`/",
+    "file": "network/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/notifications/`/",
+    "file": "notifications/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/observability/`/",
+    "file": "observability/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ohttp-relay/`/",
+    "file": "ohttp-relay/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/pages/`/",
+    "file": "pages/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/platform/puppeteer/",
+    "file": "platform/puppeteer.md",
+    "reason": "404-page"
+  },
+  {
+    "url": "https://developers.cloudflare.com/privacy-pass/`/",
+    "file": "privacy-pass/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/privacy-proxy/`/",
+    "file": "privacy-proxy/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/pulumi/`/",
+    "file": "pulumi/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/queues/`/",
+    "file": "queues/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/r2/`/",
+    "file": "r2/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/radar/`/",
+    "file": "radar/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/randomness-beacon/`/",
+    "file": "randomness-beacon/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/realtime/`/",
+    "file": "realtime/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/reference-architecture/`/",
+    "file": "reference-architecture/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/registrar/`/",
+    "file": "registrar/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/resource-tagging/`/",
+    "file": "resource-tagging/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/rules/`/",
+    "file": "rules/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ruleset-engine/`/",
+    "file": "ruleset-engine/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/sandbox/`/",
+    "file": "sandbox/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/secrets-store/`/",
+    "file": "secrets-store/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/security-center/`/",
+    "file": "security-center/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/security/`/",
+    "file": "security/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/smart-shield/`/",
+    "file": "smart-shield/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/spectrum/`/",
+    "file": "spectrum/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/speed/`/",
+    "file": "speed/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ssl/`/",
+    "file": "ssl/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/stream/`/",
+    "file": "stream/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/style-guide/`/",
+    "file": "style-guide/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/support/`/",
+    "file": "support/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/tenant/`/",
+    "file": "tenant/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/terraform/`/",
+    "file": "terraform/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/time-services/`/",
+    "file": "time-services/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/tunnel/`/",
+    "file": "tunnel/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/turnstile/`/",
+    "file": "turnstile/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/use-cases/`/",
+    "file": "use-cases/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/vectorize/`/",
+    "file": "vectorize/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/version-management/`/",
+    "file": "version-management/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/waf/`/",
+    "file": "waf/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/waiting-room/`/",
+    "file": "waiting-room/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/wallets/`/",
+    "file": "wallets/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/warp-client/`/",
+    "file": "warp-client/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/web-analytics/`/",
+    "file": "web-analytics/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/web-search/`/",
+    "file": "web-search/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/web3/`/",
+    "file": "web3/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/workers-ai/`/",
+    "file": "workers-ai/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/workers-vpc/`/",
+    "file": "workers-vpc/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/workers/`/",
+    "file": "workers/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/workflows/`/",
+    "file": "workflows/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://developers.cloudflare.com/zaraz/`/",
+    "file": "zaraz/`.md",
+    "reason": "backtick"
+  },
+  {
+    "url": "https://community.cloudflare.com/.well-known/agent.json",
+    "file": "_subdomains/community.cloudflare.com/.well-known/agent.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://community.cloudflare.com/.well-known/mcp.json",
+    "file": "_subdomains/community.cloudflare.com/.well-known/mcp.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/ai4bharat/indictrans2-en-indic-1B/schema-input.json",
+    "file": "ai/models/@cf/ai4bharat/indictrans2-en-indic-1B/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/aisingapore/gemma-sea-lion-v4-27b-it/batch-input.json",
+    "file": "ai/models/@cf/aisingapore/gemma-sea-lion-v4-27b-it/batch-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/aisingapore/gemma-sea-lion-v4-27b-it/streaming-input.json",
+    "file": "ai/models/@cf/aisingapore/gemma-sea-lion-v4-27b-it/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/aisingapore/gemma-sea-lion-v4-27b-it/sync-input.json",
+    "file": "ai/models/@cf/aisingapore/gemma-sea-lion-v4-27b-it/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/aisingapore/gemma-sea-lion-v4-27b-it/sync-output.json",
+    "file": "ai/models/@cf/aisingapore/gemma-sea-lion-v4-27b-it/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/baai/bge-base-en-v1.5/batch-input.json",
+    "file": "ai/models/@cf/baai/bge-base-en-v1.5/batch-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/baai/bge-base-en-v1.5/sync-input.json",
+    "file": "ai/models/@cf/baai/bge-base-en-v1.5/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/baai/bge-base-en-v1.5/sync-output.json",
+    "file": "ai/models/@cf/baai/bge-base-en-v1.5/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/baai/bge-large-en-v1.5/batch-input.json",
+    "file": "ai/models/@cf/baai/bge-large-en-v1.5/batch-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/baai/bge-large-en-v1.5/sync-input.json",
+    "file": "ai/models/@cf/baai/bge-large-en-v1.5/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/baai/bge-large-en-v1.5/sync-output.json",
+    "file": "ai/models/@cf/baai/bge-large-en-v1.5/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/baai/bge-m3/batch-input.json",
+    "file": "ai/models/@cf/baai/bge-m3/batch-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/baai/bge-m3/sync-input.json",
+    "file": "ai/models/@cf/baai/bge-m3/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/baai/bge-m3/sync-output.json",
+    "file": "ai/models/@cf/baai/bge-m3/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/baai/bge-reranker-base/schema-input.json",
+    "file": "ai/models/@cf/baai/bge-reranker-base/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/baai/bge-small-en-v1.5/batch-input.json",
+    "file": "ai/models/@cf/baai/bge-small-en-v1.5/batch-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/baai/bge-small-en-v1.5/sync-input.json",
+    "file": "ai/models/@cf/baai/bge-small-en-v1.5/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/baai/bge-small-en-v1.5/sync-output.json",
+    "file": "ai/models/@cf/baai/bge-small-en-v1.5/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/black-forest-labs/flux-1-schnell/schema-input.json",
+    "file": "ai/models/@cf/black-forest-labs/flux-1-schnell/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/black-forest-labs/flux-2-dev/schema-input.json",
+    "file": "ai/models/@cf/black-forest-labs/flux-2-dev/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/black-forest-labs/flux-2-klein-4b/schema-input.json",
+    "file": "ai/models/@cf/black-forest-labs/flux-2-klein-4b/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/black-forest-labs/flux-2-klein-9b/schema-input.json",
+    "file": "ai/models/@cf/black-forest-labs/flux-2-klein-9b/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/bytedance/stable-diffusion-xl-lightning/schema-input.json",
+    "file": "ai/models/@cf/bytedance/stable-diffusion-xl-lightning/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/cloudflare/clef-flash/schema-input.json",
+    "file": "ai/models/@cf/cloudflare/clef-flash/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/cloudflare/clef/schema-input.json",
+    "file": "ai/models/@cf/cloudflare/clef/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/deepgram/aura-1/schema-input.json",
+    "file": "ai/models/@cf/deepgram/aura-1/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/deepgram/aura-2-en/schema-input.json",
+    "file": "ai/models/@cf/deepgram/aura-2-en/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/deepgram/aura-2-es/schema-input.json",
+    "file": "ai/models/@cf/deepgram/aura-2-es/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/deepgram/flux/schema-input.json",
+    "file": "ai/models/@cf/deepgram/flux/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/deepgram/nova-3/schema-input.json",
+    "file": "ai/models/@cf/deepgram/nova-3/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/deepseek-ai/deepseek-r1-distill-qwen-32b/streaming-input.json",
+    "file": "ai/models/@cf/deepseek-ai/deepseek-r1-distill-qwen-32b/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/deepseek-ai/deepseek-r1-distill-qwen-32b/sync-input.json",
+    "file": "ai/models/@cf/deepseek-ai/deepseek-r1-distill-qwen-32b/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/deepseek-ai/deepseek-r1-distill-qwen-32b/sync-output.json",
+    "file": "ai/models/@cf/deepseek-ai/deepseek-r1-distill-qwen-32b/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/deepseek-ai/deepseek-v4-flash-0731/batch-input.json",
+    "file": "ai/models/@cf/deepseek-ai/deepseek-v4-flash-0731/batch-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/deepseek-ai/deepseek-v4-flash-0731/streaming-input.json",
+    "file": "ai/models/@cf/deepseek-ai/deepseek-v4-flash-0731/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/deepseek-ai/deepseek-v4-flash-0731/sync-input.json",
+    "file": "ai/models/@cf/deepseek-ai/deepseek-v4-flash-0731/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/deepseek-ai/deepseek-v4-flash-0731/sync-output.json",
+    "file": "ai/models/@cf/deepseek-ai/deepseek-v4-flash-0731/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/deepseek-ai/deepseek-v4-pro-0813/batch-input.json",
+    "file": "ai/models/@cf/deepseek-ai/deepseek-v4-pro-0813/batch-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/deepseek-ai/deepseek-v4-pro-0813/streaming-input.json",
+    "file": "ai/models/@cf/deepseek-ai/deepseek-v4-pro-0813/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/deepseek-ai/deepseek-v4-pro-0813/sync-input.json",
+    "file": "ai/models/@cf/deepseek-ai/deepseek-v4-pro-0813/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/deepseek-ai/deepseek-v4-pro-0813/sync-output.json",
+    "file": "ai/models/@cf/deepseek-ai/deepseek-v4-pro-0813/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/google/embeddinggemma-300m/schema-input.json",
+    "file": "ai/models/@cf/google/embeddinggemma-300m/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/google/gemma-2b-it-lora/streaming-input.json",
+    "file": "ai/models/@cf/google/gemma-2b-it-lora/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/google/gemma-2b-it-lora/sync-input.json",
+    "file": "ai/models/@cf/google/gemma-2b-it-lora/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/google/gemma-2b-it-lora/sync-output.json",
+    "file": "ai/models/@cf/google/gemma-2b-it-lora/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/google/gemma-4-26b-a4b-it/batch-input.json",
+    "file": "ai/models/@cf/google/gemma-4-26b-a4b-it/batch-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/google/gemma-4-26b-a4b-it/streaming-input.json",
+    "file": "ai/models/@cf/google/gemma-4-26b-a4b-it/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/google/gemma-4-26b-a4b-it/sync-input.json",
+    "file": "ai/models/@cf/google/gemma-4-26b-a4b-it/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/google/gemma-4-26b-a4b-it/sync-output.json",
+    "file": "ai/models/@cf/google/gemma-4-26b-a4b-it/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/google/gemma-7b-it-lora/streaming-input.json",
+    "file": "ai/models/@cf/google/gemma-7b-it-lora/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/google/gemma-7b-it-lora/sync-input.json",
+    "file": "ai/models/@cf/google/gemma-7b-it-lora/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/google/gemma-7b-it-lora/sync-output.json",
+    "file": "ai/models/@cf/google/gemma-7b-it-lora/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/huggingface/distilbert-sst-2-int8/schema-input.json",
+    "file": "ai/models/@cf/huggingface/distilbert-sst-2-int8/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/ibm-granite/granite-4.0-h-micro/streaming-input.json",
+    "file": "ai/models/@cf/ibm-granite/granite-4.0-h-micro/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/ibm-granite/granite-4.0-h-micro/sync-input.json",
+    "file": "ai/models/@cf/ibm-granite/granite-4.0-h-micro/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/ibm-granite/granite-4.0-h-micro/sync-output.json",
+    "file": "ai/models/@cf/ibm-granite/granite-4.0-h-micro/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/leonardo/lucid-origin/schema-input.json",
+    "file": "ai/models/@cf/leonardo/lucid-origin/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/leonardo/phoenix-1.0/schema-input.json",
+    "file": "ai/models/@cf/leonardo/phoenix-1.0/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/llava-hf/llava-1.5-7b-hf/schema-input.json",
+    "file": "ai/models/@cf/llava-hf/llava-1.5-7b-hf/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/lykon/dreamshaper-8-lcm/schema-input.json",
+    "file": "ai/models/@cf/lykon/dreamshaper-8-lcm/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta-llama/llama-2-7b-chat-hf-lora/streaming-input.json",
+    "file": "ai/models/@cf/meta-llama/llama-2-7b-chat-hf-lora/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta-llama/llama-2-7b-chat-hf-lora/sync-input.json",
+    "file": "ai/models/@cf/meta-llama/llama-2-7b-chat-hf-lora/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta-llama/llama-2-7b-chat-hf-lora/sync-output.json",
+    "file": "ai/models/@cf/meta-llama/llama-2-7b-chat-hf-lora/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-3.1-8b-instruct-fp8/streaming-input.json",
+    "file": "ai/models/@cf/meta/llama-3.1-8b-instruct-fp8/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-3.1-8b-instruct-fp8/sync-input.json",
+    "file": "ai/models/@cf/meta/llama-3.1-8b-instruct-fp8/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-3.1-8b-instruct-fp8/sync-output.json",
+    "file": "ai/models/@cf/meta/llama-3.1-8b-instruct-fp8/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-3.2-11b-vision-instruct/streaming-input.json",
+    "file": "ai/models/@cf/meta/llama-3.2-11b-vision-instruct/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-3.2-11b-vision-instruct/sync-input.json",
+    "file": "ai/models/@cf/meta/llama-3.2-11b-vision-instruct/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-3.2-11b-vision-instruct/sync-output.json",
+    "file": "ai/models/@cf/meta/llama-3.2-11b-vision-instruct/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-3.2-1b-instruct/streaming-input.json",
+    "file": "ai/models/@cf/meta/llama-3.2-1b-instruct/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-3.2-1b-instruct/sync-input.json",
+    "file": "ai/models/@cf/meta/llama-3.2-1b-instruct/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-3.2-1b-instruct/sync-output.json",
+    "file": "ai/models/@cf/meta/llama-3.2-1b-instruct/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-3.2-3b-instruct/streaming-input.json",
+    "file": "ai/models/@cf/meta/llama-3.2-3b-instruct/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-3.2-3b-instruct/sync-input.json",
+    "file": "ai/models/@cf/meta/llama-3.2-3b-instruct/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-3.2-3b-instruct/sync-output.json",
+    "file": "ai/models/@cf/meta/llama-3.2-3b-instruct/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-3.3-70b-instruct-fp8-fast/batch-input.json",
+    "file": "ai/models/@cf/meta/llama-3.3-70b-instruct-fp8-fast/batch-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-3.3-70b-instruct-fp8-fast/streaming-input.json",
+    "file": "ai/models/@cf/meta/llama-3.3-70b-instruct-fp8-fast/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-3.3-70b-instruct-fp8-fast/sync-input.json",
+    "file": "ai/models/@cf/meta/llama-3.3-70b-instruct-fp8-fast/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-3.3-70b-instruct-fp8-fast/sync-output.json",
+    "file": "ai/models/@cf/meta/llama-3.3-70b-instruct-fp8-fast/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-4-scout-17b-16e-instruct/batch-input.json",
+    "file": "ai/models/@cf/meta/llama-4-scout-17b-16e-instruct/batch-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-4-scout-17b-16e-instruct/streaming-input.json",
+    "file": "ai/models/@cf/meta/llama-4-scout-17b-16e-instruct/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-4-scout-17b-16e-instruct/sync-input.json",
+    "file": "ai/models/@cf/meta/llama-4-scout-17b-16e-instruct/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-4-scout-17b-16e-instruct/sync-output.json",
+    "file": "ai/models/@cf/meta/llama-4-scout-17b-16e-instruct/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/llama-guard-3-8b/schema-input.json",
+    "file": "ai/models/@cf/meta/llama-guard-3-8b/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/m2m100-1.2b/batch-input.json",
+    "file": "ai/models/@cf/meta/m2m100-1.2b/batch-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/m2m100-1.2b/sync-input.json",
+    "file": "ai/models/@cf/meta/m2m100-1.2b/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/meta/m2m100-1.2b/sync-output.json",
+    "file": "ai/models/@cf/meta/m2m100-1.2b/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/microsoft/resnet-50/schema-input.json",
+    "file": "ai/models/@cf/microsoft/resnet-50/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/mistral/mistral-7b-instruct-v0.2-lora/streaming-input.json",
+    "file": "ai/models/@cf/mistral/mistral-7b-instruct-v0.2-lora/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/mistral/mistral-7b-instruct-v0.2-lora/sync-input.json",
+    "file": "ai/models/@cf/mistral/mistral-7b-instruct-v0.2-lora/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/mistral/mistral-7b-instruct-v0.2-lora/sync-output.json",
+    "file": "ai/models/@cf/mistral/mistral-7b-instruct-v0.2-lora/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/mistralai/mistral-small-3.1-24b-instruct/streaming-input.json",
+    "file": "ai/models/@cf/mistralai/mistral-small-3.1-24b-instruct/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/mistralai/mistral-small-3.1-24b-instruct/sync-input.json",
+    "file": "ai/models/@cf/mistralai/mistral-small-3.1-24b-instruct/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/mistralai/mistral-small-3.1-24b-instruct/sync-output.json",
+    "file": "ai/models/@cf/mistralai/mistral-small-3.1-24b-instruct/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/moondream/moondream3.1-9B-A2B/schema-input.json",
+    "file": "ai/models/@cf/moondream/moondream3.1-9B-A2B/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/moonshotai/kimi-k2.6/batch-input.json",
+    "file": "ai/models/@cf/moonshotai/kimi-k2.6/batch-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/moonshotai/kimi-k2.6/streaming-input.json",
+    "file": "ai/models/@cf/moonshotai/kimi-k2.6/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/moonshotai/kimi-k2.6/sync-input.json",
+    "file": "ai/models/@cf/moonshotai/kimi-k2.6/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/moonshotai/kimi-k2.6/sync-output.json",
+    "file": "ai/models/@cf/moonshotai/kimi-k2.6/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/moonshotai/kimi-k2.7-code/batch-input.json",
+    "file": "ai/models/@cf/moonshotai/kimi-k2.7-code/batch-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/moonshotai/kimi-k2.7-code/streaming-input.json",
+    "file": "ai/models/@cf/moonshotai/kimi-k2.7-code/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/moonshotai/kimi-k2.7-code/sync-input.json",
+    "file": "ai/models/@cf/moonshotai/kimi-k2.7-code/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/moonshotai/kimi-k2.7-code/sync-output.json",
+    "file": "ai/models/@cf/moonshotai/kimi-k2.7-code/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/myshell-ai/melotts/schema-input.json",
+    "file": "ai/models/@cf/myshell-ai/melotts/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/nvidia/nemotron-3-120b-a12b/streaming-input.json",
+    "file": "ai/models/@cf/nvidia/nemotron-3-120b-a12b/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/nvidia/nemotron-3-120b-a12b/sync-input.json",
+    "file": "ai/models/@cf/nvidia/nemotron-3-120b-a12b/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/nvidia/nemotron-3-120b-a12b/sync-output.json",
+    "file": "ai/models/@cf/nvidia/nemotron-3-120b-a12b/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/openai/gpt-oss-120b/batch-input.json",
+    "file": "ai/models/@cf/openai/gpt-oss-120b/batch-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/openai/gpt-oss-120b/streaming-input.json",
+    "file": "ai/models/@cf/openai/gpt-oss-120b/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/openai/gpt-oss-120b/sync-input.json",
+    "file": "ai/models/@cf/openai/gpt-oss-120b/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/openai/gpt-oss-120b/sync-output.json",
+    "file": "ai/models/@cf/openai/gpt-oss-120b/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/openai/gpt-oss-20b/batch-input.json",
+    "file": "ai/models/@cf/openai/gpt-oss-20b/batch-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/openai/gpt-oss-20b/streaming-input.json",
+    "file": "ai/models/@cf/openai/gpt-oss-20b/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/openai/gpt-oss-20b/sync-input.json",
+    "file": "ai/models/@cf/openai/gpt-oss-20b/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/openai/gpt-oss-20b/sync-output.json",
+    "file": "ai/models/@cf/openai/gpt-oss-20b/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/openai/whisper-large-v3-turbo/schema-input.json",
+    "file": "ai/models/@cf/openai/whisper-large-v3-turbo/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/openai/whisper-tiny-en/schema-input.json",
+    "file": "ai/models/@cf/openai/whisper-tiny-en/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/openai/whisper/schema-input.json",
+    "file": "ai/models/@cf/openai/whisper/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/pfnet/plamo-embedding-1b/schema-input.json",
+    "file": "ai/models/@cf/pfnet/plamo-embedding-1b/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/pipecat-ai/smart-turn-v2/schema-input.json",
+    "file": "ai/models/@cf/pipecat-ai/smart-turn-v2/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/qwen/qwen2.5-coder-32b-instruct/streaming-input.json",
+    "file": "ai/models/@cf/qwen/qwen2.5-coder-32b-instruct/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/qwen/qwen2.5-coder-32b-instruct/sync-input.json",
+    "file": "ai/models/@cf/qwen/qwen2.5-coder-32b-instruct/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/qwen/qwen2.5-coder-32b-instruct/sync-output.json",
+    "file": "ai/models/@cf/qwen/qwen2.5-coder-32b-instruct/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/qwen/qwen3-30b-a3b-fp8/batch-input.json",
+    "file": "ai/models/@cf/qwen/qwen3-30b-a3b-fp8/batch-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/qwen/qwen3-30b-a3b-fp8/streaming-input.json",
+    "file": "ai/models/@cf/qwen/qwen3-30b-a3b-fp8/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/qwen/qwen3-30b-a3b-fp8/sync-input.json",
+    "file": "ai/models/@cf/qwen/qwen3-30b-a3b-fp8/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/qwen/qwen3-30b-a3b-fp8/sync-output.json",
+    "file": "ai/models/@cf/qwen/qwen3-30b-a3b-fp8/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/qwen/qwen3-embedding-0.6b/schema-input.json",
+    "file": "ai/models/@cf/qwen/qwen3-embedding-0.6b/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/qwen/qwen3.8-27b/batch-input.json",
+    "file": "ai/models/@cf/qwen/qwen3.8-27b/batch-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/qwen/qwen3.8-27b/streaming-input.json",
+    "file": "ai/models/@cf/qwen/qwen3.8-27b/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/qwen/qwen3.8-27b/sync-input.json",
+    "file": "ai/models/@cf/qwen/qwen3.8-27b/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/qwen/qwen3.8-27b/sync-output.json",
+    "file": "ai/models/@cf/qwen/qwen3.8-27b/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/qwen/qwq-32b/streaming-input.json",
+    "file": "ai/models/@cf/qwen/qwq-32b/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/qwen/qwq-32b/sync-input.json",
+    "file": "ai/models/@cf/qwen/qwq-32b/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/qwen/qwq-32b/sync-output.json",
+    "file": "ai/models/@cf/qwen/qwq-32b/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/runwayml/stable-diffusion-v1-5-inpainting/schema-input.json",
+    "file": "ai/models/@cf/runwayml/stable-diffusion-v1-5-inpainting/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/stabilityai/stable-diffusion-xl-base-1.0/schema-input.json",
+    "file": "ai/models/@cf/stabilityai/stable-diffusion-xl-base-1.0/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/zai-org/glm-4.7-flash/streaming-input.json",
+    "file": "ai/models/@cf/zai-org/glm-4.7-flash/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/zai-org/glm-4.7-flash/sync-input.json",
+    "file": "ai/models/@cf/zai-org/glm-4.7-flash/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/zai-org/glm-4.7-flash/sync-output.json",
+    "file": "ai/models/@cf/zai-org/glm-4.7-flash/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/zai-org/glm-5.2/batch-input.json",
+    "file": "ai/models/@cf/zai-org/glm-5.2/batch-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/zai-org/glm-5.2/streaming-input.json",
+    "file": "ai/models/@cf/zai-org/glm-5.2/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/zai-org/glm-5.2/sync-input.json",
+    "file": "ai/models/@cf/zai-org/glm-5.2/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/zai-org/glm-5.2/sync-output.json",
+    "file": "ai/models/@cf/zai-org/glm-5.2/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/zai-org/glm-5.3-flash/batch-input.json",
+    "file": "ai/models/@cf/zai-org/glm-5.3-flash/batch-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/zai-org/glm-5.3-flash/streaming-input.json",
+    "file": "ai/models/@cf/zai-org/glm-5.3-flash/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/zai-org/glm-5.3-flash/sync-input.json",
+    "file": "ai/models/@cf/zai-org/glm-5.3-flash/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/zai-org/glm-5.3-flash/sync-output.json",
+    "file": "ai/models/@cf/zai-org/glm-5.3-flash/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/zai-org/glm-5.3/batch-input.json",
+    "file": "ai/models/@cf/zai-org/glm-5.3/batch-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/zai-org/glm-5.3/streaming-input.json",
+    "file": "ai/models/@cf/zai-org/glm-5.3/streaming-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/zai-org/glm-5.3/sync-input.json",
+    "file": "ai/models/@cf/zai-org/glm-5.3/sync-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/@cf/zai-org/glm-5.3/sync-output.json",
+    "file": "ai/models/@cf/zai-org/glm-5.3/sync-output.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/hh1-i2v/schema-input.json",
+    "file": "ai/models/alibaba/hh1-i2v/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/hh1-t2v/schema-input.json",
+    "file": "ai/models/alibaba/hh1-t2v/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/hh1.1-i2v/schema-input.json",
+    "file": "ai/models/alibaba/hh1.1-i2v/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/hh1.1-r2v/schema-input.json",
+    "file": "ai/models/alibaba/hh1.1-r2v/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/hh1.1-t2v/schema-input.json",
+    "file": "ai/models/alibaba/hh1.1-t2v/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/qwen-image-3.0-pro/schema-input.json",
+    "file": "ai/models/alibaba/qwen-image-3.0-pro/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/qwen3-max/schema-input.json",
+    "file": "ai/models/alibaba/qwen3-max/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/qwen3.5-397b-a17b/schema-input.json",
+    "file": "ai/models/alibaba/qwen3.5-397b-a17b/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/qwen3.7-max/schema-input.json",
+    "file": "ai/models/alibaba/qwen3.7-max/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/qwen3.7-plus/schema-input.json",
+    "file": "ai/models/alibaba/qwen3.7-plus/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/qwen3.8-max/schema-input.json",
+    "file": "ai/models/alibaba/qwen3.8-max/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/wan-2.6-image/schema-input.json",
+    "file": "ai/models/alibaba/wan-2.6-image/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/wan-2.7-i2v/schema-input.json",
+    "file": "ai/models/alibaba/wan-2.7-i2v/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/wan-3.0-prime/schema-input.json",
+    "file": "ai/models/alibaba/wan-3.0-prime/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/alibaba/wan-3.0/schema-input.json",
+    "file": "ai/models/alibaba/wan-3.0/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/anthropic/claude-fable-5.1/schema-input.json",
+    "file": "ai/models/anthropic/claude-fable-5.1/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/anthropic/claude-fable-5/schema-input.json",
+    "file": "ai/models/anthropic/claude-fable-5/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/anthropic/claude-haiku-4.5/schema-input.json",
+    "file": "ai/models/anthropic/claude-haiku-4.5/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/anthropic/claude-opus-4.5/schema-input.json",
+    "file": "ai/models/anthropic/claude-opus-4.5/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/anthropic/claude-opus-4.6/schema-input.json",
+    "file": "ai/models/anthropic/claude-opus-4.6/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/anthropic/claude-opus-4.7/schema-input.json",
+    "file": "ai/models/anthropic/claude-opus-4.7/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/anthropic/claude-opus-4.8/schema-input.json",
+    "file": "ai/models/anthropic/claude-opus-4.8/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/anthropic/claude-opus-5.5/schema-input.json",
+    "file": "ai/models/anthropic/claude-opus-5.5/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/anthropic/claude-opus-5/schema-input.json",
+    "file": "ai/models/anthropic/claude-opus-5/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/anthropic/claude-sonnet-4.5/schema-input.json",
+    "file": "ai/models/anthropic/claude-sonnet-4.5/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/anthropic/claude-sonnet-4.6/schema-input.json",
+    "file": "ai/models/anthropic/claude-sonnet-4.6/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/anthropic/claude-sonnet-5.5/schema-input.json",
+    "file": "ai/models/anthropic/claude-sonnet-5.5/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/anthropic/claude-sonnet-5/schema-input.json",
+    "file": "ai/models/anthropic/claude-sonnet-5/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/assemblyai/universal-3-pro/schema-input.json",
+    "file": "ai/models/assemblyai/universal-3-pro/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/assemblyai/universal-3.5-pro/schema-input.json",
+    "file": "ai/models/assemblyai/universal-3.5-pro/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/black-forest-labs/flux-1-kontext-max/schema-input.json",
+    "file": "ai/models/black-forest-labs/flux-1-kontext-max/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/black-forest-labs/flux-1-kontext-pro/schema-input.json",
+    "file": "ai/models/black-forest-labs/flux-1-kontext-pro/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/black-forest-labs/flux-2-flex/schema-input.json",
+    "file": "ai/models/black-forest-labs/flux-2-flex/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/black-forest-labs/flux-2-max/schema-input.json",
+    "file": "ai/models/black-forest-labs/flux-2-max/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/black-forest-labs/flux-2-pro-preview/schema-input.json",
+    "file": "ai/models/black-forest-labs/flux-2-pro-preview/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/black-forest-labs/flux-3-video/schema-input.json",
+    "file": "ai/models/black-forest-labs/flux-3-video/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/black-forest-labs/flux-video-upscale/schema-input.json",
+    "file": "ai/models/black-forest-labs/flux-video-upscale/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/bria/fibo-edit-1.5/schema-input.json",
+    "file": "ai/models/bria/fibo-edit-1.5/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/bria/fibo-generate-1.5/schema-input.json",
+    "file": "ai/models/bria/fibo-generate-1.5/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/bria/remove-background/schema-input.json",
+    "file": "ai/models/bria/remove-background/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/bria/v-rmbg-3.0/schema-input.json",
+    "file": "ai/models/bria/v-rmbg-3.0/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/bytedance/seedance-2.0-fast/schema-input.json",
+    "file": "ai/models/bytedance/seedance-2.0-fast/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/bytedance/seedance-2.0-mini/schema-input.json",
+    "file": "ai/models/bytedance/seedance-2.0-mini/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/bytedance/seedance-2.0/schema-input.json",
+    "file": "ai/models/bytedance/seedance-2.0/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/bytedance/seedance-2.5/schema-input.json",
+    "file": "ai/models/bytedance/seedance-2.5/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/bytedance/seedream-4.0/schema-input.json",
+    "file": "ai/models/bytedance/seedream-4.0/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/bytedance/seedream-4.5/schema-input.json",
+    "file": "ai/models/bytedance/seedream-4.5/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/bytedance/seedream-5-lite/schema-input.json",
+    "file": "ai/models/bytedance/seedream-5-lite/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/bytedance/seedream-5-pro/schema-input.json",
+    "file": "ai/models/bytedance/seedream-5-pro/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/deepseek/deepseek-v4-pro/schema-input.json",
+    "file": "ai/models/deepseek/deepseek-v4-pro/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/elevenlabs/eleven-flash-v2-5/schema-input.json",
+    "file": "ai/models/elevenlabs/eleven-flash-v2-5/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/elevenlabs/eleven-multilingual-v2/schema-input.json",
+    "file": "ai/models/elevenlabs/eleven-multilingual-v2/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/elevenlabs/eleven-turbo-v2-5/schema-input.json",
+    "file": "ai/models/elevenlabs/eleven-turbo-v2-5/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/elevenlabs/eleven-v3/schema-input.json",
+    "file": "ai/models/elevenlabs/eleven-v3/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/elevenlabs/music-v2/schema-input.json",
+    "file": "ai/models/elevenlabs/music-v2/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-2.5-flash-lite/schema-input.json",
+    "file": "ai/models/google/gemini-2.5-flash-lite/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-2.5-flash/schema-input.json",
+    "file": "ai/models/google/gemini-2.5-flash/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-2.5-pro/schema-input.json",
+    "file": "ai/models/google/gemini-2.5-pro/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-3-flash/schema-input.json",
+    "file": "ai/models/google/gemini-3-flash/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-3.1-flash-lite/schema-input.json",
+    "file": "ai/models/google/gemini-3.1-flash-lite/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-3.1-flash-tts/schema-input.json",
+    "file": "ai/models/google/gemini-3.1-flash-tts/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-3.1-pro/schema-input.json",
+    "file": "ai/models/google/gemini-3.1-pro/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-3.5-flash-lite/schema-input.json",
+    "file": "ai/models/google/gemini-3.5-flash-lite/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-3.5-flash/schema-input.json",
+    "file": "ai/models/google/gemini-3.5-flash/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-3.6-flash/schema-input.json",
+    "file": "ai/models/google/gemini-3.6-flash/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-3.7-flash/schema-input.json",
+    "file": "ai/models/google/gemini-3.7-flash/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-3.8-flash-lite-tts/schema-input.json",
+    "file": "ai/models/google/gemini-3.8-flash-lite-tts/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-3.8-flash-tts/schema-input.json",
+    "file": "ai/models/google/gemini-3.8-flash-tts/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-3.8-flash/schema-input.json",
+    "file": "ai/models/google/gemini-3.8-flash/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-omni-1.1-flash/schema-input.json",
+    "file": "ai/models/google/gemini-omni-1.1-flash/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/gemini-omni-flash/schema-input.json",
+    "file": "ai/models/google/gemini-omni-flash/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/nano-banana-2-lite/schema-input.json",
+    "file": "ai/models/google/nano-banana-2-lite/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/nano-banana-2/schema-input.json",
+    "file": "ai/models/google/nano-banana-2/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/nano-banana-pro/schema-input.json",
+    "file": "ai/models/google/nano-banana-pro/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/nano-banana/schema-input.json",
+    "file": "ai/models/google/nano-banana/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/veo-3.1-fast/schema-input.json",
+    "file": "ai/models/google/veo-3.1-fast/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/google/veo-3.1/schema-input.json",
+    "file": "ai/models/google/veo-3.1/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/inworld/tts-1.5-max/schema-input.json",
+    "file": "ai/models/inworld/tts-1.5-max/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/inworld/tts-1.5-mini/schema-input.json",
+    "file": "ai/models/inworld/tts-1.5-mini/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/inworld/tts-2/schema-input.json",
+    "file": "ai/models/inworld/tts-2/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/krea/krea-2-large/schema-input.json",
+    "file": "ai/models/krea/krea-2-large/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/krea/krea-2-medium-turbo/schema-input.json",
+    "file": "ai/models/krea/krea-2-medium-turbo/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/krea/krea-2-medium/schema-input.json",
+    "file": "ai/models/krea/krea-2-medium/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/lightricks/ltx-2-5-fast/schema-input.json",
+    "file": "ai/models/lightricks/ltx-2-5-fast/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/minimax/h3-max/schema-input.json",
+    "file": "ai/models/minimax/h3-max/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/minimax/h3/schema-input.json",
+    "file": "ai/models/minimax/h3/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/minimax/hailuo-2.3-fast/schema-input.json",
+    "file": "ai/models/minimax/hailuo-2.3-fast/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/minimax/hailuo-2.3/schema-input.json",
+    "file": "ai/models/minimax/hailuo-2.3/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/minimax/m2.7/schema-input.json",
+    "file": "ai/models/minimax/m2.7/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/minimax/m3/schema-input.json",
+    "file": "ai/models/minimax/m3/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/minimax/music-2.6/schema-input.json",
+    "file": "ai/models/minimax/music-2.6/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/minimax/speech-2.8-hd/schema-input.json",
+    "file": "ai/models/minimax/speech-2.8-hd/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/minimax/speech-2.8-turbo/schema-input.json",
+    "file": "ai/models/minimax/speech-2.8-turbo/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/moonshotai/kimi-k3/schema-input.json",
+    "file": "ai/models/moonshotai/kimi-k3/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-4.1-mini/schema-input.json",
+    "file": "ai/models/openai/gpt-4.1-mini/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-4.1-nano/schema-input.json",
+    "file": "ai/models/openai/gpt-4.1-nano/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-4.1/schema-input.json",
+    "file": "ai/models/openai/gpt-4.1/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-4o-mini/schema-input.json",
+    "file": "ai/models/openai/gpt-4o-mini/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-4o-transcribe/schema-input.json",
+    "file": "ai/models/openai/gpt-4o-transcribe/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-4o/schema-input.json",
+    "file": "ai/models/openai/gpt-4o/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-5-mini/schema-input.json",
+    "file": "ai/models/openai/gpt-5-mini/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-5-nano/schema-input.json",
+    "file": "ai/models/openai/gpt-5-nano/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-5.1/schema-input.json",
+    "file": "ai/models/openai/gpt-5.1/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-5.4-mini/schema-input.json",
+    "file": "ai/models/openai/gpt-5.4-mini/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-5.4-nano/schema-input.json",
+    "file": "ai/models/openai/gpt-5.4-nano/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-5.4-pro/schema-input.json",
+    "file": "ai/models/openai/gpt-5.4-pro/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-5.4/schema-input.json",
+    "file": "ai/models/openai/gpt-5.4/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-5.5-pro/schema-input.json",
+    "file": "ai/models/openai/gpt-5.5-pro/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-5.5/schema-input.json",
+    "file": "ai/models/openai/gpt-5.5/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-5.6-luna/schema-input.json",
+    "file": "ai/models/openai/gpt-5.6-luna/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-5.6-sol/schema-input.json",
+    "file": "ai/models/openai/gpt-5.6-sol/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-5.6-terra/schema-input.json",
+    "file": "ai/models/openai/gpt-5.6-terra/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-5/schema-input.json",
+    "file": "ai/models/openai/gpt-5/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-6-astra/schema-input.json",
+    "file": "ai/models/openai/gpt-6-astra/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-6-luna/schema-input.json",
+    "file": "ai/models/openai/gpt-6-luna/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-6-sol/schema-input.json",
+    "file": "ai/models/openai/gpt-6-sol/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-6.1-sol/schema-input.json",
+    "file": "ai/models/openai/gpt-6.1-sol/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-image-1.5/schema-input.json",
+    "file": "ai/models/openai/gpt-image-1.5/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-image-2.5-flare/schema-input.json",
+    "file": "ai/models/openai/gpt-image-2.5-flare/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-image-2.5-sunburst/schema-input.json",
+    "file": "ai/models/openai/gpt-image-2.5-sunburst/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/gpt-image-2/schema-input.json",
+    "file": "ai/models/openai/gpt-image-2/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/o3-mini/schema-input.json",
+    "file": "ai/models/openai/o3-mini/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/o3/schema-input.json",
+    "file": "ai/models/openai/o3/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/o4-mini/schema-input.json",
+    "file": "ai/models/openai/o4-mini/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/tts-1-hd/schema-input.json",
+    "file": "ai/models/openai/tts-1-hd/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/openai/tts-1/schema-input.json",
+    "file": "ai/models/openai/tts-1/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/pixverse/v5.6/schema-input.json",
+    "file": "ai/models/pixverse/v5.6/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/pixverse/v6/schema-input.json",
+    "file": "ai/models/pixverse/v6/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/pruna/p-image-edit/schema-input.json",
+    "file": "ai/models/pruna/p-image-edit/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/pruna/p-image-try-on/schema-input.json",
+    "file": "ai/models/pruna/p-image-try-on/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/pruna/p-image-upscale/schema-input.json",
+    "file": "ai/models/pruna/p-image-upscale/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/pruna/p-image/schema-input.json",
+    "file": "ai/models/pruna/p-image/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/pruna/p-video-animate/schema-input.json",
+    "file": "ai/models/pruna/p-video-animate/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/pruna/p-video-avatar/schema-input.json",
+    "file": "ai/models/pruna/p-video-avatar/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/pruna/p-video-replace/schema-input.json",
+    "file": "ai/models/pruna/p-video-replace/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/pruna/p-video/schema-input.json",
+    "file": "ai/models/pruna/p-video/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/recraft/recraftv3/schema-input.json",
+    "file": "ai/models/recraft/recraftv3/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/recraft/recraftv4-1-pro-vector/schema-input.json",
+    "file": "ai/models/recraft/recraftv4-1-pro-vector/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/recraft/recraftv4-1-pro/schema-input.json",
+    "file": "ai/models/recraft/recraftv4-1-pro/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/recraft/recraftv4-1-utility-pro-vector/schema-input.json",
+    "file": "ai/models/recraft/recraftv4-1-utility-pro-vector/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/recraft/recraftv4-1-utility-pro/schema-input.json",
+    "file": "ai/models/recraft/recraftv4-1-utility-pro/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/recraft/recraftv4-1-utility-vector/schema-input.json",
+    "file": "ai/models/recraft/recraftv4-1-utility-vector/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/recraft/recraftv4-1-utility/schema-input.json",
+    "file": "ai/models/recraft/recraftv4-1-utility/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/recraft/recraftv4-1-vector/schema-input.json",
+    "file": "ai/models/recraft/recraftv4-1-vector/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/recraft/recraftv4-1/schema-input.json",
+    "file": "ai/models/recraft/recraftv4-1/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/recraft/recraftv4-pro-vector/schema-input.json",
+    "file": "ai/models/recraft/recraftv4-pro-vector/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/recraft/recraftv4-pro/schema-input.json",
+    "file": "ai/models/recraft/recraftv4-pro/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/recraft/recraftv4-vector/schema-input.json",
+    "file": "ai/models/recraft/recraftv4-vector/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/recraft/recraftv4/schema-input.json",
+    "file": "ai/models/recraft/recraftv4/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/runwayml/aleph-2/schema-input.json",
+    "file": "ai/models/runwayml/aleph-2/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/runwayml/gen-4.5/schema-input.json",
+    "file": "ai/models/runwayml/gen-4.5/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/thinkingmachines/inkling-256k/schema-input.json",
+    "file": "ai/models/thinkingmachines/inkling-256k/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/thinkingmachines/inkling/schema-input.json",
+    "file": "ai/models/thinkingmachines/inkling/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/typesafe/jev/schema-input.json",
+    "file": "ai/models/typesafe/jev/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/unbiased/pareto/schema-input.json",
+    "file": "ai/models/unbiased/pareto/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/vidu/q3-pro/schema-input.json",
+    "file": "ai/models/vidu/q3-pro/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/vidu/q3-turbo/schema-input.json",
+    "file": "ai/models/vidu/q3-turbo/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-4.20-0309-non-reasoning/schema-input.json",
+    "file": "ai/models/xai/grok-4.20-0309-non-reasoning/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-4.20-0309-reasoning/schema-input.json",
+    "file": "ai/models/xai/grok-4.20-0309-reasoning/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-4.20-multi-agent-0309/schema-input.json",
+    "file": "ai/models/xai/grok-4.20-multi-agent-0309/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-4.3/schema-input.json",
+    "file": "ai/models/xai/grok-4.3/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-4.5/schema-input.json",
+    "file": "ai/models/xai/grok-4.5/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-4.6/schema-input.json",
+    "file": "ai/models/xai/grok-4.6/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-4.7/schema-input.json",
+    "file": "ai/models/xai/grok-4.7/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-imagine-image-2.0/schema-input.json",
+    "file": "ai/models/xai/grok-imagine-image-2.0/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-imagine-image-quality/schema-input.json",
+    "file": "ai/models/xai/grok-imagine-image-quality/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-imagine-image/schema-input.json",
+    "file": "ai/models/xai/grok-imagine-image/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-imagine-video-1.5-preview/schema-input.json",
+    "file": "ai/models/xai/grok-imagine-video-1.5-preview/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-imagine-video/schema-input.json",
+    "file": "ai/models/xai/grok-imagine-video/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-stt/schema-input.json",
+    "file": "ai/models/xai/grok-stt/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-tts/schema-input.json",
+    "file": "ai/models/xai/grok-tts/schema-input.json.md",
+    "reason": "json-api-2"
+  },
+  {
+    "url": "https://developers.cloudflare.com/ai/models/xai/grok-voice/schema-input.json",
+    "file": "ai/models/xai/grok-voice/schema-input.json.md",
+    "reason": "json-api-2"
+  }
+]

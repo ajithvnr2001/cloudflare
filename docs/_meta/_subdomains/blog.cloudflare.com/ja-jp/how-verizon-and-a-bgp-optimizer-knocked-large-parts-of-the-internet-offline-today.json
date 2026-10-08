@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/how-verizon-and-a-bgp-optimizer-knocked-large-parts-of-the-internet-offline-today/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/how-verizon-and-a-bgp-optimizer-knocked-large-parts-of-the-internet-offline-today.md",
+  "title": "\u672c\u65e5\u767a\u751f\u3057\u305fVerizon\u3068BGP\u30aa\u30d7\u30c6\u30a3\u30de\u30a4\u30b6\u3092\u539f\u56e0\u3068\u3059\u308b\u30a4\u30f3\u30bf\u30fc\u30cd\u30c3\u30c8\u306e\u5927\u898f\u6a21\u306a\u901a\u4fe1\u969c\u5bb3\u306b\u3064\u3044\u3066 | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:02.478680+00:00",
+  "html_len": 211475,
+  "md_len": 31961,
+  "depth": 0,
+  "phase": 2
+}

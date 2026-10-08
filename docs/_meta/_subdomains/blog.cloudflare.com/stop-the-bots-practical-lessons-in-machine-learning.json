@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/stop-the-bots-practical-lessons-in-machine-learning/",
+  "file": "_subdomains/blog.cloudflare.com/stop-the-bots-practical-lessons-in-machine-learning.md",
+  "title": "Stop the Bots: Practical Lessons in Machine Learning | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:35.536601+00:00",
+  "html_len": 281875,
+  "md_len": 62910,
+  "depth": 0,
+  "phase": 2
+}

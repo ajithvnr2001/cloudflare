@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/static-assets/routing/static-site-generation/",
+  "file": "workers/static-assets/routing/static-site-generation.md",
+  "title": "Static Site Generation (SSG) and custom 404 pages \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:53.397637+00:00",
+  "html_len": 215916,
+  "md_len": 11433,
+  "depth": 0
+}

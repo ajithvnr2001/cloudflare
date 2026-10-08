@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/cloud-connector/examples/send-eu-visitors-to-gcs/",
+  "file": "rules/cloud-connector/examples/send-eu-visitors-to-gcs.md",
+  "title": "Send EU visitors to a Google Cloud Storage bucket \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:46.162839+00:00",
+  "html_len": 134500,
+  "md_len": 3819,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/cloudflare-crowdstrike-partnership/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/cloudflare-crowdstrike-partnership.md",
+  "title": "Cloudflare et CrowdStrike s'associent pour offrir aux RSSI des mesures de contr\u00f4le s\u00e9curis\u00e9es sur l'ensemble des appareils, applications et r\u00e9seaux de l'entreprise | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:34.485453+00:00",
+  "html_len": 236760,
+  "md_len": 37176,
+  "depth": 0,
+  "phase": 2
+}

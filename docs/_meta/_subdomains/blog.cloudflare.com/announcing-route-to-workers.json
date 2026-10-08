@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/announcing-route-to-workers/",
+  "file": "_subdomains/blog.cloudflare.com/announcing-route-to-workers.md",
+  "title": "Route to Workers, automate your email processing | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:25.578876+00:00",
+  "html_len": 300526,
+  "md_len": 62080,
+  "depth": 0,
+  "phase": 2
+}

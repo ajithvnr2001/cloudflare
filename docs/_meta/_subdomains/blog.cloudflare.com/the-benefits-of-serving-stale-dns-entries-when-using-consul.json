@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-benefits-of-serving-stale-dns-entries-when-using-consul/",
+  "file": "_subdomains/blog.cloudflare.com/the-benefits-of-serving-stale-dns-entries-when-using-consul.md",
+  "title": "The benefits of serving stale DNS entries when using Consul | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:35.487285+00:00",
+  "html_len": 349965,
+  "md_len": 75932,
+  "depth": 0,
+  "phase": 2
+}

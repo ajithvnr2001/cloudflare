@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/custom-rules/use-cases/site-admin-only-known-ips/",
+  "file": "waf/custom-rules/use-cases/site-admin-only-known-ips.md",
+  "title": "Require known IP addresses in site admin area \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:39.463403+00:00",
+  "html_len": 132441,
+  "md_len": 2306,
+  "depth": 0
+}

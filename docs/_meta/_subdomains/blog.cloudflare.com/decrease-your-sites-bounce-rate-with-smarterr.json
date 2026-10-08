@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/decrease-your-sites-bounce-rate-with-smarterr/",
+  "file": "_subdomains/blog.cloudflare.com/decrease-your-sites-bounce-rate-with-smarterr.md",
+  "title": "SmartErrors: Decrease Your Site's Bounce Rate | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:50.061486+00:00",
+  "html_len": 269205,
+  "md_len": 56564,
+  "depth": 0,
+  "phase": 2
+}

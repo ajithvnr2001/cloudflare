@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/roughtime/",
+  "file": "_subdomains/blog.cloudflare.com/roughtime.md",
+  "title": "Roughtime: Securing Time with Digital Signatures | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:18.138761+00:00",
+  "html_len": 298445,
+  "md_len": 70364,
+  "depth": 0,
+  "phase": 2
+}

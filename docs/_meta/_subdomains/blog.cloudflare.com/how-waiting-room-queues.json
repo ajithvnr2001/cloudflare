@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-waiting-room-queues/",
+  "file": "_subdomains/blog.cloudflare.com/how-waiting-room-queues.md",
+  "title": "How Waiting Room makes queueing decisions on Cloudflare's highly distributed network | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:27.481730+00:00",
+  "html_len": 351891,
+  "md_len": 90780,
+  "depth": 0,
+  "phase": 2
+}

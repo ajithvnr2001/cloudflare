@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/bmc-vuln/",
+  "file": "_subdomains/blog.cloudflare.com/bmc-vuln.md",
+  "title": "Cloudflare\u2019s approach to handling BMC vulnerabilities | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:00.948880+00:00",
+  "html_len": 286775,
+  "md_len": 62865,
+  "depth": 0,
+  "phase": 2
+}

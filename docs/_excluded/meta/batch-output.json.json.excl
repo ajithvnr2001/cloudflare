@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/ai/models/@cf/zai-org/glm-5.3/batch-output.json",
+  "file": "ai/models/@cf/zai-org/glm-5.3/batch-output.json.md",
+  "title": "https://developers.cloudflare.com/ai/models/@cf/zai-org/glm-5.3/batch-output.json",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:23:27.704606+00:00",
+  "html_len": 4173,
+  "md_len": 4326,
+  "depth": 1
+}

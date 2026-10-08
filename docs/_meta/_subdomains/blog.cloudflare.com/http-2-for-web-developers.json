@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/http-2-for-web-developers/",
+  "file": "_subdomains/blog.cloudflare.com/http-2-for-web-developers.md",
+  "title": "HTTP/2 For Web Developers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:49.049385+00:00",
+  "html_len": 295354,
+  "md_len": 67365,
+  "depth": 0,
+  "phase": 2
+}

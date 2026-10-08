@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/zero-trust-navigation/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/zero-trust-navigation.md",
+  "title": "Nueva navegaci\u00f3n Zero Trust disponible pr\u00f3ximamente (y necesitamos tu opini\u00f3n) | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:19.757342+00:00",
+  "html_len": 205247,
+  "md_len": 26850,
+  "depth": 0,
+  "phase": 2
+}

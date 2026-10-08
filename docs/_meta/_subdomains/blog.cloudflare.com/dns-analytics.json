@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/dns-analytics/",
+  "file": "_subdomains/blog.cloudflare.com/dns-analytics.md",
+  "title": "Meet The Brand New DNS Analytics Dashboard | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:15.138673+00:00",
+  "html_len": 283612,
+  "md_len": 59652,
+  "depth": 0,
+  "phase": 2
+}

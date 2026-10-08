@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/moscow/",
+  "file": "_subdomains/blog.cloudflare.com/moscow.md",
+  "title": "Moscow, Russia: CloudFlare\u2019s 83rd data center | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:36.104688+00:00",
+  "html_len": 276613,
+  "md_len": 58623,
+  "depth": 0,
+  "phase": 2
+}

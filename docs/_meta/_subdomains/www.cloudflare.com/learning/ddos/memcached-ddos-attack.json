@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/ddos/memcached-ddos-attack/",
+  "file": "_subdomains/www.cloudflare.com/learning/ddos/memcached-ddos-attack.md",
+  "title": "Memcached DDoS Attack",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:30.529997+00:00",
+  "html_len": 206483,
+  "md_len": 11763,
+  "depth": 0,
+  "phase": 2
+}

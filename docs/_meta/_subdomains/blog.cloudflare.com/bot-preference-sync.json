@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/bot-preference-sync/",
+  "file": "_subdomains/blog.cloudflare.com/bot-preference-sync.md",
+  "title": "Say it once: introducing Bot Preference Sync | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:43.588670+00:00",
+  "html_len": 285794,
+  "md_len": 64203,
+  "depth": 0,
+  "phase": 2
+}

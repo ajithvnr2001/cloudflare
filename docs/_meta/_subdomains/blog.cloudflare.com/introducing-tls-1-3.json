@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-tls-1-3/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-tls-1-3.md",
+  "title": "Introducing TLS 1.3 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:31.501543+00:00",
+  "html_len": 288319,
+  "md_len": 63544,
+  "depth": 0,
+  "phase": 2
+}

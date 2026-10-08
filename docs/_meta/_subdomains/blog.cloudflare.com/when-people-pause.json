@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/when-people-pause/",
+  "file": "_subdomains/blog.cloudflare.com/when-people-pause.md",
+  "title": "When people pause the Internet goes quiet | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:12.543261+00:00",
+  "html_len": 282704,
+  "md_len": 58485,
+  "depth": 0,
+  "phase": 2
+}

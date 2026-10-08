@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/auto-rag/",
+  "file": "_subdomains/blog.cloudflare.com/tag/auto-rag.md",
+  "title": "Posts tagged \"Auto Rag\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:08:19.880990+00:00",
+  "html_len": 114710,
+  "md_len": 2408,
+  "depth": 1,
+  "phase": 2
+}

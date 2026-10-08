@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-adaptive-intelligence/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-adaptive-intelligence.md",
+  "title": "Introducing Adaptive Intelligence: undermining the economics of every bot attack  | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:45.582301+00:00",
+  "html_len": 292883,
+  "md_len": 69821,
+  "depth": 0,
+  "phase": 2
+}

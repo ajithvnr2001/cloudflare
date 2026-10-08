@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/machine-learning-mobile-traffic-bots/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/machine-learning-mobile-traffic-bots.md",
+  "title": "\u6a5f\u68b0\u5b66\u7fd2\u306e\u9032\u5316\u3067\u30e2\u30d0\u30a4\u30eb\u30dc\u30c3\u30c8\u3092\u963b\u6b62 | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:42.608613+00:00",
+  "html_len": 207165,
+  "md_len": 30673,
+  "depth": 0,
+  "phase": 2
+}

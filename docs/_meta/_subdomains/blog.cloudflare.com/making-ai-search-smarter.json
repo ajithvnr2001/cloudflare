@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/making-ai-search-smarter/",
+  "file": "_subdomains/blog.cloudflare.com/making-ai-search-smarter.md",
+  "title": "Making AI search smarter | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:36.918443+00:00",
+  "html_len": 284484,
+  "md_len": 64673,
+  "depth": 0,
+  "phase": 2
+}

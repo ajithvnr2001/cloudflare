@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/gateway-managed-service-provider-meter/",
+  "file": "_subdomains/blog.cloudflare.com/gateway-managed-service-provider-meter.md",
+  "title": "Cloudflare\u2019s tenant platform in action: Meter deploys DNS filtering at scale | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:15.539652+00:00",
+  "html_len": 281265,
+  "md_len": 58728,
+  "depth": 0,
+  "phase": 2
+}

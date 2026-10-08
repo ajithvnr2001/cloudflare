@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/global-network-that-complies-with-local-law/",
+  "file": "_subdomains/blog.cloudflare.com/global-network-that-complies-with-local-law.md",
+  "title": "How to Build a Global Network that Complies with Local Law | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:49.219743+00:00",
+  "html_len": 282239,
+  "md_len": 64172,
+  "depth": 0,
+  "phase": 2
+}

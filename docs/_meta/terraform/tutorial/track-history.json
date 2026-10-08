@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/terraform/tutorial/track-history/",
+  "file": "terraform/tutorial/track-history.md",
+  "title": "Track your history \u00b7 Cloudflare Terraform docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:01.784344+00:00",
+  "html_len": 115115,
+  "md_len": 4533,
+  "depth": 0
+}

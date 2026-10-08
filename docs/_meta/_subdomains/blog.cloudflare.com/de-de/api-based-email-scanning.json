@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/api-based-email-scanning/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/api-based-email-scanning.md",
+  "title": "API-basierte E-Mail-\u00dcberpr\u00fcfung | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:05.351232+00:00",
+  "html_len": 212392,
+  "md_len": 30197,
+  "depth": 0,
+  "phase": 2
+}

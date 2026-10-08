@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/2fa/",
+  "file": "_subdomains/blog.cloudflare.com/tag/2fa.md",
+  "title": "Posts tagged \"2FA\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:08:10.663646+00:00",
+  "html_len": 108120,
+  "md_len": 1164,
+  "depth": 1,
+  "phase": 2
+}

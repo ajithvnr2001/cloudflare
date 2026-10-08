@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/sydney-australia-cloudflares-15th-data-center/",
+  "file": "_subdomains/blog.cloudflare.com/sydney-australia-cloudflares-15th-data-center.md",
+  "title": "Sydney, Australia: CloudFlare's 15th Data Center | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:59.105506+00:00",
+  "html_len": 269272,
+  "md_len": 55547,
+  "depth": 0,
+  "phase": 2
+}

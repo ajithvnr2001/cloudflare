@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/accountable-mixed-use-ai-crawlers/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/accountable-mixed-use-ai-crawlers.md",
+  "title": "\u65e2\u8981\u53c8\u8981\uff1a\u62d2\u7edd AI \u8bad\u7ec3\u800c\u4e0d\u5f71\u54cd\u641c\u7d22\u53ef\u53d1\u73b0\u6027 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:40.956548+00:00",
+  "html_len": 209184,
+  "md_len": 32027,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers-ai/models/aura-2-en/",
+  "file": "workers-ai/models/aura-2-en.md",
+  "title": "aura-2-en (Deepgram) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:01.403869+00:00",
+  "html_len": 115825,
+  "md_len": 2745,
+  "depth": 0
+}

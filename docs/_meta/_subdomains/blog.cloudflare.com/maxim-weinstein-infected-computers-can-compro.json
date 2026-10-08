@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/maxim-weinstein-infected-computers-can-compro/",
+  "file": "_subdomains/blog.cloudflare.com/maxim-weinstein-infected-computers-can-compro.md",
+  "title": "Maxim Weinstein - Infected computers can compromise a website | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:51.638462+00:00",
+  "html_len": 265341,
+  "md_len": 54306,
+  "depth": 0,
+  "phase": 2
+}

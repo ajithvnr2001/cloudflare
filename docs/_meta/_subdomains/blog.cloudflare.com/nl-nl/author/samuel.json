@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/nl-nl/author/samuel/",
+  "file": "_subdomains/blog.cloudflare.com/nl-nl/author/samuel.md",
+  "title": "Samuel Macleod - Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:24:41.223993+00:00",
+  "html_len": 122175,
+  "md_len": 3849,
+  "depth": 1,
+  "phase": 2
+}

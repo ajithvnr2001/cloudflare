@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/when-tcp-sockets-refuse-to-die/",
+  "file": "_subdomains/blog.cloudflare.com/when-tcp-sockets-refuse-to-die.md",
+  "title": "When TCP sockets refuse to die | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:25.853942+00:00",
+  "html_len": 303075,
+  "md_len": 78088,
+  "depth": 0,
+  "phase": 2
+}

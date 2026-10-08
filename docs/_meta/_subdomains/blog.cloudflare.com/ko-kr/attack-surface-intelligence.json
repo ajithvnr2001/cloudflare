@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/attack-surface-intelligence/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/attack-surface-intelligence.md",
+  "title": "\uc704\ud5d8 \uc778\uc0ac\uc774\ud2b8\ub97c \uc2e4\ud589 \uac00\ub2a5\ud55c \ubcf4\ud638\ub85c \uc804\ud658: Cloudflare\uc640 Mastercard\ub97c \ud1b5\ud55c \ubcf4\uc548 \uc0c1\ud0dc \uac1c\uc120 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:40.047927+00:00",
+  "html_len": 231946,
+  "md_len": 34550,
+  "depth": 0,
+  "phase": 2
+}

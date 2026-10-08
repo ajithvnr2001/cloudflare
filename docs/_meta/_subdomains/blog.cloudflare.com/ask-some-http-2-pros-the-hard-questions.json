@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ask-some-http-2-pros-the-hard-questions/",
+  "file": "_subdomains/blog.cloudflare.com/ask-some-http-2-pros-the-hard-questions.md",
+  "title": "Ask Some HTTP/2 Pros The Hard Questions | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:35.137913+00:00",
+  "html_len": 268238,
+  "md_len": 54335,
+  "depth": 0,
+  "phase": 2
+}

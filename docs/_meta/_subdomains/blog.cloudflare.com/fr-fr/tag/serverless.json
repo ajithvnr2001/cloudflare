@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/tag/serverless/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/tag/serverless.md",
+  "title": "Articles tagu\u00e9s \u00ab Serverless \u00bb \u2014 Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:13:25.136333+00:00",
+  "html_len": 162831,
+  "md_len": 13874,
+  "depth": 1,
+  "phase": 2
+}

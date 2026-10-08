@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/account-takeover-protection/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/account-takeover-protection.md",
+  "title": "\u6700\u7d42\u4f7f\u7528\u8005\u5b89\u5168\uff1a\u4f7f\u7528 Cloudflare \u5e33\u6236\u76dc\u7528\u9632\u8b77 | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:27.924419+00:00",
+  "html_len": 200474,
+  "md_len": 24629,
+  "depth": 0,
+  "phase": 2
+}

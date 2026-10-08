@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/clientless-web-isolation-general-availability/",
+  "file": "_subdomains/blog.cloudflare.com/clientless-web-isolation-general-availability.md",
+  "title": "Clientless Web Isolation is now generally available | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:34.954621+00:00",
+  "html_len": 279955,
+  "md_len": 59448,
+  "depth": 0,
+  "phase": 2
+}

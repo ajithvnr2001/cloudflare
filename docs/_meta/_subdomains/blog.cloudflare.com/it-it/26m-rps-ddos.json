@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/it-it/26m-rps-ddos/",
+  "file": "_subdomains/blog.cloudflare.com/it-it/26m-rps-ddos.md",
+  "title": "Cloudflare mitiga l'attacco DDoS da 26 milioni di richieste al secondo | Il blog di Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:37.868766+00:00",
+  "html_len": 190160,
+  "md_len": 16386,
+  "depth": 0,
+  "phase": 2
+}

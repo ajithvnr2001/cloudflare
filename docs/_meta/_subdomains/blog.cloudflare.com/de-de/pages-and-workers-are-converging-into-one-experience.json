@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/pages-and-workers-are-converging-into-one-experience/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/pages-and-workers-are-converging-into-one-experience.md",
+  "title": "Ein einheitliches Entwicklererlebnis f\u00fcr Cloudflare Workers und Pages | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:39.306781+00:00",
+  "html_len": 228084,
+  "md_len": 38256,
+  "depth": 0,
+  "phase": 2
+}

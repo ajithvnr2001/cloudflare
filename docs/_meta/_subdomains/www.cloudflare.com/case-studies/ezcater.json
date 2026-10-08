@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/ezcater/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/ezcater.md",
+  "title": "ezCater",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:29.567936+00:00",
+  "html_len": 201745,
+  "md_len": 7989,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/making-workers-ai-faster/",
+  "file": "_subdomains/blog.cloudflare.com/making-workers-ai-faster.md",
+  "title": "Making Workers AI faster and more efficient: Performance optimization with KV cache compression and speculative decoding | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:37.170566+00:00",
+  "html_len": 295891,
+  "md_len": 68249,
+  "depth": 0,
+  "phase": 2
+}

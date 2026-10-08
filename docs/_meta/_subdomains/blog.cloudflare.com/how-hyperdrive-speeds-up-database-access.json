@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-hyperdrive-speeds-up-database-access/",
+  "file": "_subdomains/blog.cloudflare.com/how-hyperdrive-speeds-up-database-access.md",
+  "title": "Pools across the sea: how Hyperdrive speeds up access to databases and why we\u2019re making it free | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:33.967837+00:00",
+  "html_len": 341087,
+  "md_len": 91080,
+  "depth": 0,
+  "phase": 2
+}

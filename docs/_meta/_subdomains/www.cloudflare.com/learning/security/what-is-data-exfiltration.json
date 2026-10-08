@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/security/what-is-data-exfiltration/",
+  "file": "_subdomains/www.cloudflare.com/learning/security/what-is-data-exfiltration.md",
+  "title": "What is data exfiltration?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:57.473305+00:00",
+  "html_len": 242559,
+  "md_len": 21920,
+  "depth": 0,
+  "phase": 2
+}

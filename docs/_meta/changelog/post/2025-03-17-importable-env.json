@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/changelog/post/2025-03-17-importable-env/",
+  "file": "changelog/post/2025-03-17-importable-env.md",
+  "title": "Import `env` to access bindings in your Worker's global scope \u00b7 Changelog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:06:06.325830+00:00",
+  "html_len": 73333,
+  "md_len": 3383,
+  "depth": 0
+}

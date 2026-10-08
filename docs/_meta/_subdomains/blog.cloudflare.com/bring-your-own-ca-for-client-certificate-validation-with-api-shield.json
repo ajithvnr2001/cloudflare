@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/bring-your-own-ca-for-client-certificate-validation-with-api-shield/",
+  "file": "_subdomains/blog.cloudflare.com/bring-your-own-ca-for-client-certificate-validation-with-api-shield.md",
+  "title": "Bring your own CA for client certificate validation with API Shield | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:19.302673+00:00",
+  "html_len": 278087,
+  "md_len": 59176,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/rearchitecting-workers-kv-for-redundancy/",
+  "file": "_subdomains/blog.cloudflare.com/rearchitecting-workers-kv-for-redundancy.md",
+  "title": "Redesigning Workers KV for increased availability and faster performance | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:58.543151+00:00",
+  "html_len": 313050,
+  "md_len": 80024,
+  "depth": 0,
+  "phase": 2
+}

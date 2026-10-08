@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/demos/",
+  "file": "workers/demos.md",
+  "title": "Demos and architectures \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:18.664549+00:00",
+  "html_len": 460070,
+  "md_len": 5859,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/cloud/what-is-the-cloud/",
+  "file": "_subdomains/www.cloudflare.com/learning/cloud/what-is-the-cloud.md",
+  "title": "What is the cloud? | Learning Center",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:05:14.805355+00:00",
+  "html_len": 223341,
+  "md_len": 18087,
+  "depth": 0,
+  "phase": 2
+}

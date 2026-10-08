@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/tag/zero-trust/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/tag/zero-trust.md",
+  "title": "Posts com a tag \"Zero Trust\" \u2014 Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:06:47.867770+00:00",
+  "html_len": 125868,
+  "md_len": 5948,
+  "depth": 1,
+  "phase": 2
+}

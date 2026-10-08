@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/league-of-entropy/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/league-of-entropy.md",
+  "title": "\u71b5\u8054\u76df\uff1a\u5e76\u975e\u6240\u6709\u7684\u82f1\u96c4\u90fd\u8eab\u62ab\u6597\u7bf7 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:14.914662+00:00",
+  "html_len": 223633,
+  "md_len": 31979,
+  "depth": 0,
+  "phase": 2
+}

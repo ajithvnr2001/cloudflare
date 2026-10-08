@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/padding-oracles-and-the-decline-of-cbc-mode-ciphersuites/",
+  "file": "_subdomains/blog.cloudflare.com/padding-oracles-and-the-decline-of-cbc-mode-ciphersuites.md",
+  "title": "Padding oracles and the decline of CBC-mode cipher suites | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:45.477560+00:00",
+  "html_len": 321360,
+  "md_len": 76839,
+  "depth": 0,
+  "phase": 2
+}

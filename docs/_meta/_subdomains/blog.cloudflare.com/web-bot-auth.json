@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/web-bot-auth/",
+  "file": "_subdomains/blog.cloudflare.com/web-bot-auth.md",
+  "title": "Forget IPs: using cryptography to verify bot and agent traffic | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:24:31.538956+00:00",
+  "html_len": 314393,
+  "md_len": 76486,
+  "depth": 1
+}

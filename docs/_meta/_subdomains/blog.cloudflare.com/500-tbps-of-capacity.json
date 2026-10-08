@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/500-tbps-of-capacity/",
+  "file": "_subdomains/blog.cloudflare.com/500-tbps-of-capacity.md",
+  "title": "500 Tbps of capacity: 16 years of scaling our global network | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:40.344846+00:00",
+  "html_len": 293895,
+  "md_len": 66405,
+  "depth": 0,
+  "phase": 2
+}

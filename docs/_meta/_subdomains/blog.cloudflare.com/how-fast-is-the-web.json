@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-fast-is-the-web/",
+  "file": "_subdomains/blog.cloudflare.com/how-fast-is-the-web.md",
+  "title": "How fast is the web? Explore billions of real-user measurements with BEACON | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:31.852663+00:00",
+  "html_len": 313801,
+  "md_len": 71909,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/tag/project-galileo/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/tag/project-galileo.md",
+  "title": "Entradas etiquetadas con \"Proyecto Galileo\" \u2014 Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:15:07.700488+00:00",
+  "html_len": 131121,
+  "md_len": 7548,
+  "depth": 1,
+  "phase": 2
+}

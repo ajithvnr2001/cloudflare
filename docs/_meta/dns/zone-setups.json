@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/dns/zone-setups/",
+  "file": "dns/zone-setups.md",
+  "title": "DNS setups \u00b7 Cloudflare DNS docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:11:02.148241+00:00",
+  "html_len": 137867,
+  "md_len": 6630,
+  "depth": 0
+}

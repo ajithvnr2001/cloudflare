@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/snippets/examples/send-timestamp-to-origin/",
+  "file": "rules/snippets/examples/send-timestamp-to-origin.md",
+  "title": "Send timestamp to origin as a custom header \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:54.162250+00:00",
+  "html_len": 128900,
+  "md_len": 1784,
+  "depth": 0
+}

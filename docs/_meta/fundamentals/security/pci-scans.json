@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/fundamentals/security/pci-scans/",
+  "file": "fundamentals/security/pci-scans.md",
+  "title": "Scan for PCI compliance \u00b7 Cloudflare Fundamentals docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:11:27.157447+00:00",
+  "html_len": 123709,
+  "md_len": 3350,
+  "depth": 0
+}

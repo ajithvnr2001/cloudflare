@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/tag/threat-intelligence/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/tag/threat-intelligence.md",
+  "title": "Posts com a tag \"Intelig\u00eancia contra amea\u00e7as\" \u2014 Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:07:05.150906+00:00",
+  "html_len": 104207,
+  "md_len": 989,
+  "depth": 1,
+  "phase": 2
+}

@@ -1,0 +1,12 @@
+---
+url: https://developers.cloudflare.com/ai/models/pruna/p-image-edit/schema-input.json
+title: https://developers.cloudflare.com/ai/models/pruna/p-image-edit/schema-input.json
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:23:43.521772+00:00
+---
+
+# https://developers.cloudflare.com/ai/models/pruna/p-image-edit/schema-input.json
+
+> Source: https://developers.cloudflare.com/ai/models/pruna/p-image-edit/schema-input.json
+
+{"$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","properties":{"prompt":{"type":"string","description":"Text instruction describing the desired edit or composition."},"images":{"minItems":1,"maxItems":5,"type":"array","items":{"type":"string"},"description":"Array of 1-5 reference images. Each entry is an HTTP(S) URL or a base64 data URI (data:image/...;base64,...)."},"turbo":{"default":true,"description":"Run faster with additional optimizations. For complicated tasks, it is recommended to turn this off.","type":"boolean"},"aspect_ratio":{"default":"match_input_image","description":"Output aspect ratio.","type":"string","enum":["match_input_image","1:1","16:9","9:16","4:3","3:4","3:2","2:3"]},"seed":{"description":"Random seed for reproducible generation.","type":"integer","minimum":-9007199254740991,"maximum":9007199254740991},"disable_safety_checker":{"default":false,"description":"Disable safety checker for generated images.","type":"boolean"}},"required":["prompt","images","turbo","aspect_ratio","disable_safety_checker"],"additionalProperties":{}}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/sixt/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/sixt.md",
+  "title": "SIXT | Case Study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:48.567985+00:00",
+  "html_len": 209020,
+  "md_len": 9491,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/page-rules/how-to/",
+  "file": "rules/page-rules/how-to.md",
+  "title": "How to \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:51.270888+00:00",
+  "html_len": 129227,
+  "md_len": 1279,
+  "depth": 0
+}

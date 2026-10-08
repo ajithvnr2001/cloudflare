@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/rethinking-cache-purge-architecture/",
+  "file": "_subdomains/blog.cloudflare.com/rethinking-cache-purge-architecture.md",
+  "title": "Part 2: Rethinking cache purge with a new architecture | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:22.415045+00:00",
+  "html_len": 283704,
+  "md_len": 65006,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/introducing-http-traffic-anomalies-notifications/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/introducing-http-traffic-anomalies-notifications.md",
+  "title": "HTTP \ud2b8\ub798\ud53d \uc774\uc0c1 \uc54c\ub9bc \uae30\ub2a5 \ub3c4\uc785 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:41:43.052303+00:00",
+  "html_len": 216194,
+  "md_len": 32405,
+  "depth": 0,
+  "phase": 2
+}

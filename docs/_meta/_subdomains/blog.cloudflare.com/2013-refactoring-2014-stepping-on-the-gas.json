@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/2013-refactoring-2014-stepping-on-the-gas/",
+  "file": "_subdomains/blog.cloudflare.com/2013-refactoring-2014-stepping-on-the-gas.md",
+  "title": "2013: Rebuild the Engine; 2014: Step on the Gas | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:29.862774+00:00",
+  "html_len": 283635,
+  "md_len": 60541,
+  "depth": 0,
+  "phase": 2
+}

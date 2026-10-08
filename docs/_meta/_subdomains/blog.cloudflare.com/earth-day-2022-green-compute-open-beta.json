@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/earth-day-2022-green-compute-open-beta/",
+  "file": "_subdomains/blog.cloudflare.com/earth-day-2022-green-compute-open-beta.md",
+  "title": "Happy Earth Day: Announcing Green Compute open beta | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:30.692025+00:00",
+  "html_len": 281621,
+  "md_len": 59059,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/teamviewer/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/teamviewer.md",
+  "title": "TeamViewer & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:50.957439+00:00",
+  "html_len": 211101,
+  "md_len": 5945,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/building-for-the-future/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/building-for-the-future.md",
+  "title": "Desenvolvendo para o futuro | Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:53.378031+00:00",
+  "html_len": 179046,
+  "md_len": 16899,
+  "depth": 0,
+  "phase": 2
+}

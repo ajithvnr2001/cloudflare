@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/apps-over-14000-installs/",
+  "file": "_subdomains/blog.cloudflare.com/apps-over-14000-installs.md",
+  "title": "Apps: Over 14,000 Installs | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:04.503707+00:00",
+  "html_len": 269531,
+  "md_len": 57437,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/radar-trending-domains/",
+  "file": "_subdomains/blog.cloudflare.com/radar-trending-domains.md",
+  "title": "Measuring the Internet's pulse: trending domains now on Cloudflare Radar | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:43.123006+00:00",
+  "html_len": 321054,
+  "md_len": 65998,
+  "depth": 0,
+  "phase": 2
+}

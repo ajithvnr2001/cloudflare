@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/why-its-harder-to-forge-a-sha-1-certificate-than-it-is-to-find-a-sha-1-collision/",
+  "file": "_subdomains/blog.cloudflare.com/why-its-harder-to-forge-a-sha-1-certificate-than-it-is-to-find-a-sha-1-collision.md",
+  "title": "Why it\u2019s harder to forge a SHA-1 certificate than it is to find a SHA-1 collision | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:47.690650+00:00",
+  "html_len": 310241,
+  "md_len": 73164,
+  "depth": 0,
+  "phase": 2
+}

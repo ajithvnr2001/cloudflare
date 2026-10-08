@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/changelog/product/terraform/",
+  "file": "changelog/product/terraform.md",
+  "title": "Terraform Changelog | Cloudflare Docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:07:50.135310+00:00",
+  "html_len": 312557,
+  "md_len": 81314,
+  "depth": 0
+}

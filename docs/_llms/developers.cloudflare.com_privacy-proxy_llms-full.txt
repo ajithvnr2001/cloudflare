@@ -1,0 +1,2215 @@
+---
+description: Privacy Proxy is a MASQUE-based forward proxy that hides client IP addresses while preserving geolocation accuracy.
+title: Privacy Proxy
+image: https://developers.cloudflare.com/privacy-proxy/og.png?v=c3d1d939348b9910
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/privacy-proxy/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Privacy Proxy
+
+Last updated Oct 2, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/privacy-proxy/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+A MASQUE-based forward proxy that protects user privacy while preserving geolocation accuracy.
+
+Enterprise-only
+
+Privacy Proxy is a managed proxy service that runs on Cloudflare's global network. It uses the [MASQUE ↗︎](https://datatracker.ietf.org/wg/masque/about/) protocol suite to proxy TCP and UDP traffic via HTTP CONNECT and CONNECT-UDP methods over HTTP/2 and HTTP/3.
+
+Privacy Proxy separates user identity from user activity. Users authenticate to the proxy without revealing which destinations they visit, and destination servers see requests from Cloudflare IP addresses without learning who made them.
+
+Privacy Proxy powers services like [Microsoft Edge Secure Network ↗︎](https://blog.cloudflare.com/cloudflare-now-powering-microsoft-edge-secure-network/) and serves as a second-hop relay for [iCloud Private Relay ↗︎](https://blog.cloudflare.com/icloud-private-relay/).
+
+---
+
+## Features
+
+[Single-hop deployment](https://developers.cloudflare.com/privacy-proxy/concepts/deployment-models/#single-hop)
+
+Deploy Privacy Proxy as a standalone proxy where Cloudflare handles authentication, proxying, and egress.
+
+Use Single-hop deployment
+
+[Double-hop deployment](https://developers.cloudflare.com/privacy-proxy/concepts/deployment-models/#double-hop)
+
+Operate your own first-hop proxy to authenticate users, then relay traffic through Cloudflare for additional privacy separation.
+
+Use Double-hop deployment
+
+[Geolocation preservation](https://developers.cloudflare.com/privacy-proxy/concepts/geolocation/)
+
+Maintain accurate geolocation for users without exposing their real IP addresses, ensuring location-relevant content and services work correctly.
+
+Use Geolocation preservation
+
+[Privacy Pass authentication](https://developers.cloudflare.com/privacy-proxy/concepts/authentication/)
+
+Authenticate users with Privacy Pass tokens for production deployments, ensuring privacy-preserving access control.
+
+Use Privacy Pass authentication
+
+---
+
+## Related products
+
+[Cloudflare OHTTP Relay](https://developers.cloudflare.com/ohttp-relay/)
+
+Cloudflare OHTTP Relay (formerly Privacy Gateway) implements the Oblivious HTTP (OHTTP) standard for request-level privacy, hiding client IP addresses from application backends.
+
+[WARP Client](https://developers.cloudflare.com/warp-client/)
+
+Cloudflare's consumer VPN application that uses similar privacy-preserving proxy technology.
+
+---
+
+## Availability
+
+Privacy Proxy is available as a managed service for Enterprise customers. [Contact us ↗︎](https://www.cloudflare.com/lp/privacy-edge/) to discuss your use case and get started.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/privacy-proxy/#page","headline":"Privacy Proxy","description":"Privacy Proxy is a MASQUE-based forward proxy that hides client IP addresses while preserving geolocation accuracy.","url":"https://developers.cloudflare.com/privacy-proxy/","inLanguage":"en","image":"https://developers.cloudflare.com/privacy-proxy/og.png?v=c3d1d939348b9910","dateModified":"2026-10-02","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Connect to Privacy Proxy, configure your client, and verify that traffic is proxied correctly.
+title: Get started
+image: https://developers.cloudflare.com/privacy-proxy/get-started/og.png?v=5351ef71c7115d50
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/privacy-proxy/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Get started
+
+Last updated Apr 21, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/privacy-proxy/get-started/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+This guide walks you through connecting to Privacy Proxy and verifying that traffic is proxied correctly.
+
+## Before you begin
+
+Privacy Proxy is a managed service. Before you can connect, Cloudflare will provision an endpoint and provide you with:
+
+- **Proxy endpoint URL**: The hostname for your Privacy Proxy instance (for example, `https://your-proxy.example.com`).
+- **Pre-shared key (PSK)**: A secret key for proof-of-concept authentication.
+- **Egress IP ranges**: The IP addresses that destination servers will see for proxied traffic.
+
+[Contact us ↗︎](https://www.cloudflare.com/lp/privacy-edge/) to request access and receive your configuration details.
+
+---
+
+## 1. Configure your client
+
+Privacy Proxy accepts connections over HTTP/2 and HTTP/3 using the HTTP CONNECT method. Because Privacy Proxy requires authentication headers, you cannot configure browsers to connect directly. Instead, use one of the following approaches:
+
+### Use curl for testing locally
+
+For quick tests, use curl with the `--proxy` and `--proxy-header` flags to pass authentication directly:
+
+```sh
+curl -v \
+  --proxy https://your-proxy.example.com \
+  --proxy-header "Proxy-Authorization: Preshared <YOUR_PSK>" \
+  https://example.com
+```
+
+### Use Chaussette
+
+[Chaussette](https://developers.cloudflare.com/privacy-proxy/reference/client-libraries/#chaussette) is a local SOCKS5 proxy that handles authentication and forwards requests to Privacy Proxy.
+
+1. Start Chaussette with your PSK and proxy endpoint:
+
+   ```sh
+   MASQUE_PRESHARED_KEY=<YOUR_PSK> chaussette \
+     --listen 127.0.0.1:1987 \
+     --proxy https://your-proxy.example.com:443
+   ```
+
+
+2. Configure your browser to use the local SOCKS5 proxy:
+
+   ```sh
+   google-chrome --proxy-server="socks5://127.0.0.1:1987"
+   ```
+
+
+
+---
+
+## 2. Verify the connection
+
+To confirm that traffic is routing through Privacy Proxy, check your apparent IP address:
+
+```sh
+curl -v \
+  --proxy https://your-proxy.example.com \
+  --proxy-header "Proxy-Authorization: Preshared <YOUR_PSK>" \
+  https://cloudflare.com/cdn-cgi/trace
+```
+
+The response includes connection metadata. Look for the `ip` field, which should show a Cloudflare egress IP address rather than your real IP.
+
+*Example responsetxt*
+
+```txt
+fl=123f456
+h=cloudflare.com
+ip=162.159.xxx.xxx
+ts=1234567890.123
+visit_scheme=https
+uag=curl/8.0.0
+colo=SJC
+http=http/2
+loc=US
+tls=TLSv1.3
+```
+
+The `ip` value confirms the egress IP address used by the proxy.
+
+---
+
+## 3. (Optional) Test geolocation
+
+Privacy Proxy preserves user geolocation by selecting egress IP addresses based on the client's location. You can specify a geohash to test this behavior:
+
+```sh
+curl -v \
+  --proxy https://your-proxy.example.com \
+  --proxy-header "Proxy-Authorization: Preshared <YOUR_PSK>" \
+  --proxy-header "sec-ch-geohash: xn76c-JP" \
+  https://cloudflare.com/cdn-cgi/trace
+```
+
+The `sec-ch-geohash` header provides a [geohash ↗︎](https://en.wikipedia.org/wiki/Geohash) that the proxy uses to select an appropriate egress IP. The format is `<geohash>-<country_code>`.
+
+The response should show a `loc` value corresponding to the geohash region.
+
+---
+
+## Next steps
+
+- Learn about [deployment models](https://developers.cloudflare.com/privacy-proxy/concepts/deployment-models/) to understand single-hop versus double-hop architectures.
+- Review [authentication methods](https://developers.cloudflare.com/privacy-proxy/concepts/authentication/) for production deployments using Privacy Pass.
+- Configure [observability](https://developers.cloudflare.com/privacy-proxy/reference/metrics/) to monitor proxy traffic with GraphQL Analytics and OpenTelemetry.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/privacy-proxy/get-started/#page","headline":"Get started","description":"Connect to Privacy Proxy, configure your client, and verify that traffic is proxied correctly.","url":"https://developers.cloudflare.com/privacy-proxy/get-started/","inLanguage":"en","image":"https://developers.cloudflare.com/privacy-proxy/get-started/og.png?v=5351ef71c7115d50","dateModified":"2026-04-21","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Privacy Proxy authentication methods, including pre-shared keys, Privacy Pass tokens, and mutual TLS.
+title: Authentication
+image: https://developers.cloudflare.com/privacy-proxy/concepts/authentication/og.png?v=5e39997311d369f0
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/privacy-proxy/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Authentication
+
+Last updated Apr 21, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/privacy-proxy/concepts/authentication/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Privacy Proxy requires clients to authenticate before proxying traffic. This page explains the supported authentication methods and when to use them.
+
+## Authentication methods
+
+Privacy Proxy supports three authentication methods:
+
+| Method | Use case | Privacy level |
+| --- | --- | --- |
+| Pre-shared key (PSK) | Proof of concept, testing | Lower |
+| Privacy Pass tokens | Client to server | High |
+| mTLS | Server to server | Higher |
+
+---
+
+## Pre-shared key (PSK)
+
+Pre-shared keys provide a simple way to authenticate during development and proof-of-concept testing. Cloudflare provides a secret key that clients include in each request.
+
+### How it works
+
+Include the PSK in the `Proxy-Authorization` header:
+
+```http
+CONNECT example.com:443 HTTP/2
+Host: example.com
+Proxy-Authorization: Preshared <YOUR_PSK>
+```
+
+The proxy validates the key and allows the connection if it matches.
+
+### Limitations
+
+PSK authentication has limitations that make it unsuitable for production.
+
+- **Shared secret**: All clients use the same key, so you cannot revoke access for individual users.
+- **No rate limiting per user**: You cannot enforce per-user quotas or limits.
+- **Linkability**: The proxy can link all requests using the same PSK, which reduces user privacy.
+
+Use PSK only for testing. For production deployments, use [Privacy Pass tokens](#privacy-pass-tokens).
+
+---
+
+## Privacy Pass tokens
+
+[Privacy Pass ↗︎](https://datatracker.ietf.org/wg/privacypass/about/) is a protocol that allows clients to authenticate without revealing their identity. Tokens are cryptographically unlinkable, meaning the proxy cannot correlate different requests from the same user.
+
+### How it works
+
+Privacy Pass uses a three-party architecture:
+
+- **Attester**: Verifies that the Client is a legitimate user (for example, has a valid account) and forwards token requests to the Issuer.
+- **Issuer**: Signs blinded tokens without learning which Client requested them.
+- **Origin (Privacy Proxy)**: Accepts tokens as proof of authorization.
+
+### Token issuance
+
+```plaintext
+┌──────────┐    1. Attestation request   ┌──────────┐
+│          │ ──────────────────────────▶ │          │
+│  Client  │                             │ Attester │
+│          │ ◀────────────────────────── │          │
+└──────────┘    2. Attestation OK        └──────────┘
+     │
+     │ 3. Blinded token request
+     ▼
+┌──────────┐    4. Forward request       ┌──────────┐
+│          │ ──────────────────────────▶ │          │
+│ Attester │                             │  Issuer  │
+│          │ ◀────────────────────────── │          │
+└──────────┘    5. Signed blinded token  └──────────┘
+     │
+     │ 6. Return to Client
+     ▼
+┌──────────┐
+│  Client  │  (unblinds and stores token)
+└──────────┘
+```
+
+The Client sends the token request through the Attester to maintain unlinkability. This ensures the Issuer cannot correlate token requests with specific attestation events or Client identities.
+
+### Token redemption
+
+```plaintext
+┌──────────┐    1. Present token         ┌──────────┐
+│          │ ──────────────────────────▶ │          │
+│  Client  │                             │  Privacy │
+│          │ ◀────────────────────────── │  Proxy   │
+└──────────┘    2. Connection OK         └──────────┘
+```
+
+The Privacy Proxy validates the token using the Issuer's public key. The proxy learns only that the token is valid, not who it was issued to.
+
+The token issuance process:
+
+1. The client proves their identity to the attester (for example, by signing in with an account).
+2. The attester confirms the client is valid.
+3. The client generates blinded tokens and sends them to the issuer.
+4. The issuer signs the blinded tokens and returns them.
+5. The client unblinds the tokens and stores them.
+
+When making a request:
+
+1. The client includes a token in the `Proxy-Authorization` header.
+2. The proxy verifies the token signature with the issuer's public key.
+3. The proxy allows the connection if the token is valid.
+
+Because tokens are blinded during issuance, the issuer cannot link tokens to specific issuance requests. The proxy sees only that a token is valid, not who it was issued to.
+
+### Token format
+
+Privacy Pass tokens are included in the `Proxy-Authorization` header using the `PrivateToken` scheme:
+
+```http
+CONNECT example.com:443 HTTP/2
+Host: example.com
+Proxy-Authorization: PrivateToken token=<base64-encoded-token>
+```
+
+### Set up Privacy Pass
+
+For production deployments using Privacy Pass:
+
+1. Choose an issuer. Cloudflare can operate a token issuer, or you can integrate with a third-party issuer.
+2. Configure attestation to define how clients prove their identity before receiving tokens.
+3. Distribute issuer configuration. Clients need the issuer's public key and endpoint to request tokens.
+
+[Contact us ↗︎](https://www.cloudflare.com/lp/privacy-edge/) to configure Privacy Pass for your deployment.
+
+---
+
+## Mutual TLS (mTLS)
+
+[Mutual TLS (mTLS) authentication ↗︎](https://www.cloudflare.com/learning/access-management/what-is-mutual-tls/) ensures that traffic is both secure and trusted in both directions. The client presents a certificate to the proxy, and the proxy validates it before allowing the connection.
+
+### How it works
+
+The client includes a TLS client certificate during the TLS handshake. The proxy validates the certificate against a configured certificate authority (CA) and allows the connection if the certificate is trusted.
+
+### Limitations
+
+You must provision and manage certificates for each client or service. mTLS is designed for server-to-server communication, not for authenticating individual users. The proxy can identify the client by its certificate, which reduces privacy compared to Privacy Pass.
+
+Use mTLS for server-to-server integrations where both parties are trusted services.
+
+---
+
+## Authentication in double-hop deployments
+
+In [double-hop deployments](https://developers.cloudflare.com/privacy-proxy/concepts/deployment-models/#double-hop), authentication occurs at two levels:
+
+### User to Proxy A
+
+Proxy A (which you operate) authenticates users. Common methods include:
+
+- Account credentials (username/password, SSO)
+- Privacy Pass tokens issued by your infrastructure
+- Client certificates (mTLS)
+
+### Proxy A to Proxy B
+
+Proxy B authenticates itself to Proxy A using TLS. Depending on your configuration, this can use:
+
+- Standard TLS certificates
+- Raw Public Key (RPK) TLS extension for reduced certificate overhead
+
+---
+
+## Related resources
+
+- [Privacy Pass Working Group ↗︎](https://datatracker.ietf.org/wg/privacypass/about/) - IETF working group developing the Privacy Pass protocol.
+- [Supporting the latest version of the Privacy Pass protocol ↗︎](https://blog.cloudflare.com/supporting-the-latest-version-of-the-privacy-pass-protocol/) - Cloudflare blog post on Privacy Pass implementation.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/privacy-proxy/concepts/authentication/#page","headline":"Authentication","description":"Privacy Proxy authentication methods, including pre-shared keys, Privacy Pass tokens, and mutual TLS.","url":"https://developers.cloudflare.com/privacy-proxy/concepts/authentication/","inLanguage":"en","image":"https://developers.cloudflare.com/privacy-proxy/concepts/authentication/og.png?v=5e39997311d369f0","dateModified":"2026-04-21","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Compare Privacy Proxy single-hop and double-hop deployment architectures for different privacy and operational requirements.
+title: Deployment models
+image: https://developers.cloudflare.com/privacy-proxy/concepts/deployment-models/og.png?v=542e773b477ba747
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/privacy-proxy/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Deployment models
+
+Last updated Apr 21, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/privacy-proxy/concepts/deployment-models/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Privacy Proxy supports two deployment architectures: single-hop and double-hop. The right choice depends on your privacy requirements and operational preferences.
+
+## Single-hop
+
+In a single-hop deployment, Cloudflare operates the entire proxy infrastructure. Clients connect directly to Cloudflare's Privacy Proxy, which handles authentication, proxying, and egress.
+
+```plaintext
+┌────────┐      ┌─────────────────┐      ┌─────────────┐
+│ Client │ ───▶ │  Privacy Proxy  │ ───▶ │ Destination │
+│        │      │  (Cloudflare)   │      │   Server    │
+└────────┘      └─────────────────┘      └─────────────┘
+```
+
+### How it works
+
+1. The client establishes an HTTP/2 or HTTP/3 connection to the Cloudflare proxy endpoint.
+2. The client authenticates using Privacy Pass tokens or a pre-shared key.
+3. The client sends CONNECT requests to establish tunnels to destination servers.
+4. Cloudflare proxies traffic and selects egress IP addresses based on client geolocation.
+
+### Use cases
+
+Single-hop deployment works well when:
+
+- You want Cloudflare to manage the complete proxy infrastructure.
+- Your privacy model requires hiding client IP addresses from destinations, but not from the proxy operator.
+- You need a straightforward integration with minimal client-side changes.
+
+#### Example: Microsoft Edge Secure Network
+
+[Microsoft Edge Secure Network ↗︎](https://blog.cloudflare.com/cloudflare-now-powering-microsoft-edge-secure-network/) uses single-hop deployment. The Edge browser connects directly to Cloudflare's Privacy Proxy, which handles authentication via Privacy Pass and proxies traffic to destination servers. Users get protection from network observers and destination servers without needing to configure additional infrastructure.
+
+---
+
+## Double-hop
+
+In a double-hop deployment, you operate the first proxy (Proxy A), and Cloudflare operates the second proxy (Proxy B). This creates stronger privacy separation because no single party sees both user identity and destination.
+
+```plaintext
+┌────────┐      ┌─────────────┐      ┌─────────────────┐      ┌─────────────┐
+│ Client │ ───▶ │   Proxy A   │ ───▶ │    Proxy B      │ ───▶ │ Destination │
+│        │      │    (You)    │      │  (Cloudflare)   │      │   Server    │
+└────────┘      └─────────────┘      └─────────────────┘      └─────────────┘
+```
+
+### How it works
+
+1. The client connects to Proxy A, which you operate.
+2. Proxy A authenticates the user and verifies they can use the service.
+3. Proxy A establishes a tunnel to Cloudflare's Proxy B, forwarding the client's CONNECT request.
+4. Proxy B connects to the destination and proxies traffic.
+5. Proxy B selects egress IPs based on geolocation provided by Proxy A.
+
+### Privacy separation
+
+The double-hop architecture ensures:
+
+| Information | Proxy A (you) | Proxy B (Cloudflare) |
+| --- | --- | --- |
+| Client IP address | Yes | No |
+| User account | Yes | No |
+| Destination server | Encrypted | Yes |
+| Request content | Encrypted | Encrypted |
+
+Proxy A knows who the user is but cannot see where they are going (the destination is encrypted). Proxy B knows the destination but not who is making the request. Neither party has the complete picture.
+
+### Use cases
+
+Double-hop deployment works well when:
+
+- You need stronger privacy guarantees where no single operator sees both identity and destination.
+- You want to maintain control over user authentication and account management.
+- Regulatory or compliance requirements mandate separation of user data.
+
+#### Example: iCloud Private Relay
+
+[iCloud Private Relay ↗︎](https://blog.cloudflare.com/icloud-private-relay/) uses double-hop deployment. Apple operates the first-hop proxy, which authenticates users with their Apple ID and encrypts the destination. Cloudflare operates the second-hop proxy, which decrypts the destination and connects to the server. Apple knows who the user is but not where they browse. Cloudflare knows the destinations but not who is browsing.
+
+---
+
+## Comparison
+
+| Aspect | Single-hop | Double-hop |
+| --- | --- | --- |
+| Infrastructure | Cloudflare only | You + Cloudflare |
+| Privacy separation | Proxy sees identity + destination | Split across two parties |
+| Operational complexity | Lower | Higher |
+| Authentication | Cloudflare-managed | You manage first-hop auth |
+| Use case | Browser VPNs, simple privacy | Maximum privacy separation |
+
+---
+
+## Choose a deployment model
+
+Consider these questions when selecting a deployment model:
+
+1. Who should manage user authentication?
+
+If you want Cloudflare to handle authentication, use single-hop. If you need control over user accounts, use double-hop.
+
+2. What are your privacy requirements?
+
+If your threat model requires that no single party sees both user identity and browsing activity, use double-hop.
+
+3. What operational capacity do you have?
+
+Double-hop requires you to operate and maintain a proxy. If you prefer a fully managed solution, use single-hop.
+
+[Contact us ↗︎](https://www.cloudflare.com/lp/privacy-edge/) to discuss which deployment model fits your use case.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/privacy-proxy/concepts/deployment-models/#page","headline":"Deployment models","description":"Compare Privacy Proxy single-hop and double-hop deployment architectures for different privacy and operational requirements.","url":"https://developers.cloudflare.com/privacy-proxy/concepts/deployment-models/","inLanguage":"en","image":"https://developers.cloudflare.com/privacy-proxy/concepts/deployment-models/og.png?v=542e773b477ba747","dateModified":"2026-04-21","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Privacy Proxy preserves user geolocation using geohashes to select egress IPs that match the client's geographic region.
+title: Geolocation
+image: https://developers.cloudflare.com/privacy-proxy/concepts/geolocation/og.png?v=dd8c5845f981ffa0
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/privacy-proxy/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Geolocation
+
+Last updated Apr 21, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/privacy-proxy/concepts/geolocation/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Privacy Proxy preserves user geolocation without exposing real IP addresses. This ensures location-based services work correctly while maintaining privacy.
+
+## Why geolocation matters
+
+Many online services use IP addresses to determine user location:
+
+- Search engines return locally relevant results.
+- Content providers enforce regional licensing restrictions.
+- E-commerce sites show local pricing and shipping options.
+- News sites display region-specific content.
+
+Traditional VPNs and proxies often break these services because traffic exits from data centers far from the user's actual location. Privacy Proxy solves this by selecting egress IP addresses that match the user's geographic region.
+
+## How geolocation works
+
+Privacy Proxy uses geohashes to preserve location without revealing precise coordinates.
+
+### Geohash encoding
+
+A [geohash ↗︎](https://en.wikipedia.org/wiki/Geohash) is a compact representation of latitude and longitude. Geohashes use a hierarchical encoding where longer strings represent more precise locations:
+
+| Geohash length | Approximate area |
+| --- | --- |
+| 1 character | \~5,000 km |
+| 2 characters | \~1,250 km |
+| 3 characters | \~150 km |
+| 4 characters | \~40 km |
+| 5 characters | \~5 km |
+
+Privacy Proxy uses reduced-precision geohashes (typically four to five characters) to locate users to a city or region without pinpointing their exact location.
+
+### Egress IP selection
+
+When a client connects to Privacy Proxy:
+
+1. The client (or first-hop proxy in double-hop deployments) determines the user's approximate location.
+2. The client sends a geohash in the `sec-ch-geohash` header.
+3. Privacy Proxy validates the geohash and selects an egress IP address from a pool registered to that geographic area.
+4. Destination servers see the egress IP and geolocate the user to the correct region.
+
+### Geohash header format
+
+The `sec-ch-geohash` header includes the geohash and country code:
+
+```http
+sec-ch-geohash: xn76c-JP
+```
+
+The format is `<geohash>-<country_code>`. The country code helps resolve edge cases where geohashes span country borders.
+
+## Geolocation accuracy
+
+Cloudflare maintains egress IP pools in hundreds of cities worldwide. When you register egress IPs with geolocation databases, they map to specific locations.
+
+Privacy Proxy achieves:
+
+- **City-level accuracy** by default, so users get locally relevant search results.
+- **Country-level accuracy** as a fallback if city-level is not available.
+
+Users can opt for coarser geolocation (country and timezone only) if they prefer less precise location sharing.
+
+### The pizza test
+
+A simple way to verify geolocation accuracy is to search for "pizza near me" through the proxy. If results show pizza places in the user's actual city rather than a distant data center, geolocation is working correctly.
+
+## IPv6 and geolocation precision
+
+Privacy Proxy achieves better geolocation precision over IPv6. If your origin servers support IPv6 (AAAA DNS records), the proxy prefers IPv6 egress addresses, which are registered with greater geographic precision than IPv4 equivalents.
+
+To maximize geolocation accuracy for your users, ensure your services are reachable over IPv6.
+
+## Geolocation in double-hop deployments
+
+In [double-hop deployments](https://developers.cloudflare.com/privacy-proxy/concepts/deployment-models/#double-hop), Proxy A (which you operate) is responsible for determining and forwarding the geohash:
+
+1. Proxy A geolocates the client's IP address.
+2. Proxy A converts the location to a geohash with appropriate precision.
+3. Proxy A includes the geohash in the forwarded CONNECT request to Proxy B.
+4. Proxy B (Cloudflare) selects an egress IP based on the geohash.
+
+The geohash is cryptographically protected to prevent clients from spoofing their location.
+
+## Related resources
+
+- [Geo-egress: Improving WARP user experience on a larger network ↗︎](https://blog.cloudflare.com/geoexit-improving-warp-user-experience-larger-network/) - How Cloudflare implements geolocation-aware egress.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/privacy-proxy/concepts/geolocation/#page","headline":"Geolocation","description":"Privacy Proxy preserves user geolocation using geohashes to select egress IPs that match the client's geographic region.","url":"https://developers.cloudflare.com/privacy-proxy/concepts/geolocation/","inLanguage":"en","image":"https://developers.cloudflare.com/privacy-proxy/concepts/geolocation/og.png?v=dd8c5845f981ffa0","dateModified":"2026-04-21","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Learn how Privacy Proxy uses MASQUE protocols to create encrypted tunnels that separate user identity from user activity.
+title: How Privacy Proxy works
+image: https://developers.cloudflare.com/privacy-proxy/concepts/how-it-works/og.png?v=2e0c8e8568214594
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/privacy-proxy/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# How Privacy Proxy works
+
+Last updated Apr 21, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/privacy-proxy/concepts/how-it-works/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Privacy Proxy uses the MASQUE protocol suite to create encrypted tunnels between clients and destination servers. This page explains the protocol mechanics and how privacy is preserved.
+
+## Traffic flow
+
+```plaintext
+┌──────────┐      1. Connect + Auth      ┌──────────┐      4. Connect        ┌─────────────┐
+│          │ ──────────────────────────▶ │          │ ────────────────────▶  │             │
+│  Client  │      2. CONNECT request     │  Privacy │      (Egress IP)       │ Destination │
+│          │ ──────────────────────────▶ │  Proxy   │                        │   Server    │
+│          │                             │          │ ◀────────────────────  │             │
+│          │      3. 200 OK              │          │      5. Connected      │             │
+│          │ ◀────────────────────────── │          │                        │             │
+│          │                             │          │                        │             │
+│          │  ◀───── 6. Encrypted data tunnel ─────▶  ◀─────────────────────▶│             │
+└──────────┘                             └──────────┘                        └─────────────┘
+
+           │◀──── Client IP hidden ────▶│◀──── Cloudflare Egress IP visible ──────────▶│
+```
+
+1. The client establishes an HTTP/2 or HTTP/3 connection to Privacy Proxy and presents credentials (PSK or Privacy Pass token) in the `Proxy-Authorization` header.
+2. The client sends a CONNECT request specifying the destination hostname and port.
+3. The proxy responds with `200 OK` to confirm the tunnel is ready.
+4. The proxy opens a connection to the destination using an egress IP address selected based on the client's geolocation.
+5. The client sends encrypted data through the tunnel. The proxy forwards bytes without inspection.
+
+Throughout this process, the proxy learns the destination but not the content. The destination learns the egress IP address but not the client's real IP.
+
+## MASQUE protocols
+
+[MASQUE ↗︎](https://datatracker.ietf.org/wg/masque/about/) (Multiplexed Application Substrate over QUIC Encryption) defines methods for proxying traffic over HTTP. Privacy Proxy supports two MASQUE methods:
+
+| Method | Transport | Use case |
+| --- | --- | --- |
+| HTTP CONNECT | TCP | Traditional HTTPS traffic |
+| CONNECT-UDP | UDP | QUIC-based traffic, real-time applications |
+
+Both methods create encrypted tunnels where the proxy forwards traffic without inspecting the content. The proxy sees only the destination hostname and port, not the actual requests, paths, or data exchanged.
+
+Privacy Proxy accepts connections over HTTP/2 (TLS over TCP) and HTTP/3 (QUIC), selecting the appropriate protocol based on client capabilities.
+
+For a technical deep dive into how these protocols work, refer to our [blog post ↗︎](https://blog.cloudflare.com/a-primer-on-proxies/).
+
+## Privacy separation
+
+Privacy Proxy creates a privacy boundary between user identity and user activity:
+
+| Information | Who knows it |
+| --- | --- |
+| User identity (IP address, account) | Authentication service, first-hop proxy (if using double-hop) |
+| Destination server | Privacy Proxy, destination server |
+| Request content | Client, destination server only |
+
+The proxy authenticates users to verify they have permission to use the service, but authentication happens separately from proxying. Once authenticated, the proxy forwards traffic without linking individual requests to specific users.
+
+## Related resources
+
+- [A Primer on Proxies ↗︎](https://blog.cloudflare.com/a-primer-on-proxies/) - Technical deep dive into HTTP CONNECT and MASQUE protocols.
+- [MASQUE Working Group ↗︎](https://datatracker.ietf.org/wg/masque/about/) - IETF working group developing proxy protocol standards.
+- [RFC 9298 ↗︎](https://datatracker.ietf.org/doc/html/rfc9298) - CONNECT-UDP specification for proxying UDP over HTTP.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/privacy-proxy/concepts/how-it-works/#page","headline":"How Privacy Proxy works","description":"Learn how Privacy Proxy uses MASQUE protocols to create encrypted tunnels that separate user identity from user activity.","url":"https://developers.cloudflare.com/privacy-proxy/concepts/how-it-works/","inLanguage":"en","image":"https://developers.cloudflare.com/privacy-proxy/concepts/how-it-works/og.png?v=2e0c8e8568214594","dateModified":"2026-04-21","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Open source libraries and tools for connecting to Privacy Proxy, including tokio-quiche, Chaussette, and privacypass-ts.
+title: Client libraries
+image: https://developers.cloudflare.com/privacy-proxy/reference/client-libraries/og.png?v=b4352ec00744e1c6
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/privacy-proxy/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Client libraries
+
+Last updated Apr 21, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/privacy-proxy/reference/client-libraries/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+This page lists open source libraries and tools you can use to connect to Privacy Proxy.
+
+## tokio-quiche
+
+[tokio-quiche ↗︎](https://github.com/cloudflare/quiche/tree/master/tokio-quiche) is Cloudflare's open source async QUIC and HTTP/3 library for Rust. It combines the [quiche ↗︎](https://github.com/cloudflare/quiche) QUIC implementation with the [Tokio ↗︎](https://tokio.rs/) async runtime.
+
+tokio-quiche powers Privacy Proxy infrastructure, including Proxy B for iCloud Private Relay and Cloudflare's Oxy-based proxies. It handles millions of HTTP/3 requests per second in production.
+
+### Features
+
+- Async QUIC client and server
+- HTTP/3 support via `H3Driver`
+- MASQUE CONNECT and CONNECT-UDP support
+- Battle-tested at scale on Cloudflare's network
+
+### Installation
+
+Add tokio-quiche to your `Cargo.toml`:
+
+```toml
+[dependencies]
+tokio-quiche = "0.1"
+```
+
+### Resources
+
+- [GitHub repository ↗︎](https://github.com/cloudflare/quiche/tree/master/tokio-quiche)
+- [crates.io ↗︎](https://crates.io/crates/tokio-quiche)
+- [Blog post: Async QUIC and HTTP/3 made easy ↗︎](https://blog.cloudflare.com/async-quic-and-http-3-made-easy-tokio-quiche-is-now-open-source/)
+
+---
+
+## quiche
+
+[quiche ↗︎](https://github.com/cloudflare/quiche) is Cloudflare's low-level QUIC and HTTP/3 implementation in Rust. It provides a sans-io design that can integrate into any application architecture.
+
+quiche is the foundation that tokio-quiche builds upon. Use quiche directly if you need fine-grained control over I/O or are integrating with a non-Tokio runtime.
+
+### Resources
+
+- [GitHub repository ↗︎](https://github.com/cloudflare/quiche)
+- [Documentation ↗︎](https://docs.quic.tech/quiche/)
+- [crates.io ↗︎](https://crates.io/crates/quiche)
+
+---
+
+## Chaussette
+
+[Chaussette ↗︎](https://github.com/cloudflare/chaussette) is a SOCKS5-to-CONNECT proxy designed for Privacy Proxy. It accepts local SOCKS5 connections and forwards them as HTTP CONNECT requests to Privacy Proxy.
+
+Chaussette is useful for integrating applications that support SOCKS5 but not HTTP CONNECT proxying.
+
+### Features
+
+- SOCKS5 to HTTP CONNECT conversion
+- Pre-shared key authentication
+- Geohash support for geolocation hints
+- Optional mTLS authentication
+
+### Usage
+
+```sh
+MASQUE_PRESHARED_KEY=<YOUR_PSK> chaussette \
+  --listen 127.0.0.1:1987 \
+  --proxy https://your-proxy.example.com:443 \
+  --geohash xn76c-JP
+```
+
+Then configure your application to use `socks5://127.0.0.1:1987` as its proxy.
+
+### Resources
+
+- [GitHub repository ↗︎](https://github.com/cloudflare/chaussette)
+
+---
+
+## curl
+
+For basic testing over HTTP/2, standard curl supports CONNECT proxying:
+
+```sh
+curl -v \
+  --proxy https://your-proxy.example.com \
+  --proxy-header "Proxy-Authorization: Preshared <YOUR_PSK>" \
+  https://example.com
+```
+
+curl can also be [built with quiche ↗︎](https://github.com/curl/curl/blob/master/docs/HTTP3.md#quiche-version) for HTTP/3 support.
+
+---
+
+## privacypass-ts
+
+[privacypass-ts ↗︎](https://github.com/cloudflare/privacypass-ts) is Cloudflare's TypeScript implementation of the Privacy Pass protocol. Use this library to issue and redeem Privacy Pass tokens for authenticating with Privacy Proxy.
+
+### Features
+
+- Privacy Pass token issuance and redemption
+- Support for publicly verifiable and rate-limited token types
+- Compatible with browser and Node.js environments
+
+### Installation
+
+```sh
+npm install @cloudflare/privacypass-ts
+```
+
+### Resources
+
+- [GitHub repository ↗︎](https://github.com/cloudflare/privacypass-ts)
+- [npm package ↗︎](https://www.npmjs.com/package/@cloudflare/privacypass-ts)
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/privacy-proxy/reference/client-libraries/#page","headline":"Client libraries","description":"Open source libraries and tools for connecting to Privacy Proxy, including tokio-quiche, Chaussette, and privacypass-ts.","url":"https://developers.cloudflare.com/privacy-proxy/reference/client-libraries/","inLanguage":"en","image":"https://developers.cloudflare.com/privacy-proxy/reference/client-libraries/og.png?v=b4352ec00744e1c6","dateModified":"2026-04-21","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: HTTP headers used by Privacy Proxy for authentication, geolocation, and observability, including request and response formats.
+title: HTTP headers
+image: https://developers.cloudflare.com/privacy-proxy/reference/http-headers/og.png?v=743f634e2469a307
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/privacy-proxy/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# HTTP headers
+
+Last updated Apr 21, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/privacy-proxy/reference/http-headers/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+This page documents the HTTP headers used by Privacy Proxy for authentication, geolocation, and observability. For full observability details, refer to [GraphQL Analytics API](https://developers.cloudflare.com/privacy-proxy/reference/metrics/graphql/) and [OpenTelemetry](https://developers.cloudflare.com/privacy-proxy/reference/metrics/opentelemetry/).
+
+## Request headers
+
+Clients include the following headers when connecting to Privacy Proxy.
+
+### `Proxy-Authorization`
+
+Authenticates the client to the proxy. Required for all requests.
+
+Pre-shared key format:
+
+```http
+Proxy-Authorization: Preshared <key>
+```
+
+Privacy Pass token format:
+
+```http
+Proxy-Authorization: PrivateToken token=<base64-encoded-token>
+```
+
+| Parameter | Description |
+| --- | --- |
+| `<key>` | The pre-shared key provided by Cloudflare |
+| `<base64-encoded-token>` | A base64-encoded Privacy Pass token |
+
+### GraphQL Analytics API request headers
+
+When querying Privacy Proxy metrics via the GraphQL Analytics API, send a `POST` request to `https://api.cloudflare.com/client/v4/graphql`. For required headers and authentication details, refer to [GraphQL Analytics API](https://developers.cloudflare.com/privacy-proxy/reference/metrics/graphql/).
+
+### `sec-ch-geohash`
+
+Specifies the client's geographic location for egress IP selection. Optional but recommended for accurate geolocation.
+
+```http
+sec-ch-geohash: <geohash>-<country_code>
+```
+
+| Parameter | Description |
+| --- | --- |
+| `<geohash>` | A [geohash ↗︎](https://en.wikipedia.org/wiki/Geohash) string (typically 4-8 characters) |
+| `<country_code>` | ISO 3166-1 alpha-2 country code |
+
+*Examplehttp*
+
+```http
+sec-ch-geohash: u4pruydqqvj-GB
+```
+
+This example specifies a location in the United Kingdom.
+
+---
+
+## Response headers
+
+Privacy Proxy includes the following headers in responses.
+
+### `Server-Timing`
+
+Provides timing information about proxy processing. This is part of the [OpenTelemetry](https://developers.cloudflare.com/privacy-proxy/reference/metrics/opentelemetry/) observability pipeline.
+
+```http
+Server-Timing: proxy;dur=<milliseconds>
+```
+
+| Parameter | Description |
+| --- | --- |
+| `<milliseconds>` | Processing time in milliseconds introduced by the proxy |
+
+*Examplehttp*
+
+```http
+Server-Timing: proxy;dur=8.2
+```
+
+### GraphQL Analytics API response headers
+
+For response headers returned by the GraphQL API, refer to [GraphQL Analytics API](https://developers.cloudflare.com/privacy-proxy/reference/metrics/graphql/).
+
+---
+
+## `CONNECT` request format
+
+A complete `CONNECT` request to Privacy Proxy looks like this:
+
+```http
+CONNECT example.com:443 HTTP/2
+Host: example.com
+Proxy-Authorization: Preshared abc123xyz
+sec-ch-geohash: 9q8yy-US
+```
+
+The proxy responds with a status code indicating success or failure:
+
+| Status | Meaning |
+| --- | --- |
+| `200 OK` | Tunnel established successfully |
+| `403 Forbidden` | Authentication failed |
+| `502 Bad Gateway` | Could not connect to destination |
+| `503 Service Unavailable` | Proxy temporarily unavailable |
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/privacy-proxy/reference/http-headers/#page","headline":"HTTP headers","description":"HTTP headers used by Privacy Proxy for authentication, geolocation, and observability, including request and response formats.","url":"https://developers.cloudflare.com/privacy-proxy/reference/http-headers/","inLanguage":"en","image":"https://developers.cloudflare.com/privacy-proxy/reference/http-headers/og.png?v=743f634e2469a307","dateModified":"2026-04-21","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Monitor Privacy Proxy deployments using the GraphQL Analytics API or OpenTelemetry telemetry export.
+title: Observability
+image: https://developers.cloudflare.com/privacy-proxy/reference/metrics/og.png?v=91189b93cd9663bc
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/privacy-proxy/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Observability
+
+Last updated Apr 21, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/privacy-proxy/reference/metrics/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Privacy Proxy provides two methods for accessing metrics and monitoring your proxy deployment. We recommend getting started with GraphQL as the default method for observability.
+
+- [GraphQL Analytics API](https://developers.cloudflare.com/privacy-proxy/reference/metrics/graphql/)
+- [OpenTelemetry](https://developers.cloudflare.com/privacy-proxy/reference/metrics/opentelemetry/)
+
+## Data privacy
+
+Regardless of whether you use the GraphQL Analytics API or OpenTelemetry, Privacy Proxy observability data does not include:
+
+- User IP addresses
+- Request content or headers (beyond what is needed for metrics)
+- Destination URLs or hostnames (aggregated only)
+- Authentication tokens or credentials
+
+Both methods export only operational metrics that help you monitor service health without compromising user privacy.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/privacy-proxy/reference/metrics/#page","headline":"Observability","description":"Monitor Privacy Proxy deployments using the GraphQL Analytics API or OpenTelemetry telemetry export.","url":"https://developers.cloudflare.com/privacy-proxy/reference/metrics/","inLanguage":"en","image":"https://developers.cloudflare.com/privacy-proxy/reference/metrics/og.png?v=91189b93cd9663bc","dateModified":"2026-04-21","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Query Privacy Proxy request, connection, and authentication metrics using the Cloudflare GraphQL Analytics API.
+title: GraphQL Analytics API
+image: https://developers.cloudflare.com/privacy-proxy/reference/metrics/graphql/og.png?v=ea18190e9af3f615
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/privacy-proxy/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# GraphQL Analytics API
+
+Last updated Apr 21, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/privacy-proxy/reference/metrics/graphql/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Privacy Proxy exposes metrics through Cloudflare's [GraphQL Analytics API](https://developers.cloudflare.com/analytics/graphql-api/). All metrics are queryable through a single endpoint:
+
+```txt
+POST https://api.cloudflare.com/client/v4/graphql
+```
+
+Before you begin, you will need:
+
+- **API token** — Create a token with *Account Analytics* read permissions. For more information, refer to our Analytics API token documentation: [Configure an Analytics API token](https://developers.cloudflare.com/analytics/graphql-api/getting-started/authentication/api-token-auth/).
+- **Account ID** — Your Cloudflare account ID, passed as `accountTag` in queries. For more information, refer to [Find account and zone IDs](https://developers.cloudflare.com/fundamentals/account/find-account-and-zone-ids/).
+
+---
+
+## Making a request
+
+The following example shows how to query your Privacy Proxy metrics daily request volume using curl. Replace the placeholder values with your own.
+
+```bash
+curl https://api.cloudflare.com/client/v4/graphql \
+  --header "Authorization: Bearer <API_TOKEN>" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "query": "query DailyRequestVolume($accountTag: String!, $startDate: Date!, $endDate: Date!) { viewer { accounts(filter: { accountTag: $accountTag }) { privacyProxyRequestMetricsAdaptiveGroups(filter: { date_geq: $startDate, date_leq: $endDate }, limit: 10000, orderBy: [date_ASC]) { count dimensions { date } } } } }",
+    "variables": {
+      "accountTag": "<YOUR_ACCOUNT_TAG>",
+      "startDate": "2026-04-04",
+      "endDate": "2026-04-06"
+    }
+  }'
+```
+
+---
+
+## Available nodes
+
+Four GraphQL nodes are available. All four return aggregate data only — no raw per-connection records are exposed.
+
+1. `privacyProxyRequestMetricsAdaptiveGroups` — Query aggregate request volume and error rates, filterable by time, location, endpoint, status code, and proxy status dimensions.
+2. `privacyProxyIngressConnMetricsAdaptiveGroups` — Query client-to-proxy connection counts, bytes transferred, and latency percentiles, filterable by time, location, endpoint, and transport dimensions.
+3. `privacyProxyEgressConnMetricsAdaptiveGroups` — Query proxy-to-origin connection counts, bytes transferred, and latency percentiles, filterable by time, location, endpoint, and transport dimensions.
+4. `privacyProxyAuthMetricsAdaptiveGroups` — Query authentication attempt counts, filterable by time, location, endpoint, auth method, and auth result dimensions.
+
+Adaptive sampling
+
+Requests are sampled.
+
+---
+
+## Schema
+
+<details>
+
+<summary>
+
+Metrics
+
+</summary>
+
+<details>
+
+<summary>
+
+Sum fields
+
+</summary>
+
+| Field | Type | Description | Node |
+| --- | --- | --- | --- |
+| <code>bytesSentToClient</code> | <code>uint64</code> | Total bytes sent from the proxy back to the client. | Ingress connection |
+| <code>bytesRecvdFromClient</code> | <code>uint64</code> | Total bytes received by the proxy from the client. | Ingress connection |
+| <code>bytesSentToOrigin</code> | <code>uint64</code> | Total bytes sent from the proxy to the upstream origin. | Egress connection |
+| <code>bytesRecvdFromOrigin</code> | <code>uint64</code> | Total bytes received by the proxy from the upstream origin. | Egress connection |
+| <code>packetsSentToClient</code> | <code>uint64</code> | Total packets sent from the proxy back to the client. | Ingress connection |
+| <code>packetsRecvdFromClient</code> | <code>uint64</code> | Total packets received by the proxy from the client. | Ingress connection |
+| <code>packetsSentToOrigin</code> | <code>uint64</code> | Total packets sent from the proxy to the upstream origin. | Egress connection |
+| <code>packetsRecvdFromOrigin</code> | <code>uint64</code> | Total packets received by the proxy from the upstream origin. | Egress connection |
+
+</details>
+
+<details>
+
+<summary>
+
+Count fields
+
+</summary>
+
+All four nodes expose a <code>count</code> field that returns the total number of sampled events (requests, connections, or auth attempts) matching the query filter.
+
+</details>
+
+<details>
+
+<summary>
+
+Quantile fields
+
+</summary>
+
+| Field | Type | Description | Node |
+| --- | --- | --- | --- |
+| <code>durationMsP50</code> | <code>float64</code> | Median lifetime of a connection, in milliseconds. | Ingress and egress connection |
+| <code>durationMsP95</code> | <code>float64</code> | 95th percentile connection lifetime, in milliseconds. | Ingress and egress connection |
+| <code>durationMsP99</code> | <code>float64</code> | 99th percentile connection lifetime, in milliseconds. | Ingress and egress connection |
+| <code>handshakeDurationUsP50</code> | <code>float64</code> | Median TCP+TLS/QUIC handshake time, in microseconds. | Ingress and egress connection |
+| <code>handshakeDurationUsP95</code> | <code>float64</code> | 95th percentile handshake time, in microseconds. | Ingress and egress connection |
+| <code>handshakeDurationUsP99</code> | <code>float64</code> | 99th percentile handshake time, in microseconds. | Ingress and egress connection |
+| <code>connectRequestHandlingDurationUsP50</code> | <code>float64</code> | Median time to handle a CONNECT request, in microseconds. *Not yet available.* | Request |
+| <code>connectRequestHandlingDurationUsP95</code> | <code>float64</code> | 95th percentile time to handle a CONNECT request, in microseconds. *Not yet available.* | Request |
+| <code>connectRequestHandlingDurationUsP99</code> | <code>float64</code> | 99th percentile time to handle a CONNECT request, in microseconds. *Not yet available.* | Request |
+| <code>connectTunnelSetupDurationUsP50</code> | <code>float64</code> | Median time to establish a tunnel after receiving a CONNECT request, in microseconds. *Not yet available.* | Request |
+| <code>connectTunnelSetupDurationUsP95</code> | <code>float64</code> | 95th percentile tunnel setup time, in microseconds. *Not yet available.* | Request |
+| <code>connectTunnelSetupDurationUsP99</code> | <code>float64</code> | 99th percentile tunnel setup time, in microseconds. *Not yet available.* | Request |
+
+</details>
+
+</details>
+
+<details>
+
+<summary>
+
+Dimensions
+
+</summary>
+
+<details>
+
+<summary>
+
+All nodes
+
+</summary>
+
+| Field | Type | Description |
+| --- | --- | --- |
+| <code>date</code> | <code>Date</code> | Calendar date (day granularity). |
+| <code>datetimeMinute</code> | <code>Time</code> | Timestamp truncated to the minute. |
+| <code>datetimeFiveMinutes</code> | <code>Time</code> | Timestamp truncated to five-minute intervals. |
+| <code>datetimeFifteenMinutes</code> | <code>Time</code> | Timestamp truncated to fifteen-minute intervals. |
+| <code>datetimeHour</code> | <code>Time</code> | Timestamp truncated to the hour. |
+| <code>coloCode</code> | <code>string</code> | Cloudflare data center that handled the request. |
+| <code>endpoint</code> | <code>string</code> | The appId that generated traffic. |
+
+All timestamp dimensions refer to the end of each connection or request, not the start.
+
+</details>
+
+<details>
+
+<summary>
+
+Request node only
+
+</summary>
+
+| Field | Type | Description |
+| --- | --- | --- |
+| <code>statusCode</code> | <code>uint16</code> | HTTP status code returned by the proxy to the client. |
+| <code>proxyStatus</code> | <code>string</code> | Proxy-level error classification. <code>null</code> when no proxy-level error occurred. Refer to <a href="https://developers.cloudflare.com/privacy-proxy/reference/proxy-status/">proxy status reference</a> for possible values. |
+| <code>tunnelType</code> | <code>string</code> | Tunnel protocol used (<code>connect-tcp</code>, <code>connect-udp</code>, <code>connect-ip</code>). *Not yet available.* |
+
+</details>
+
+<details>
+
+<summary>
+
+Ingress connection node only
+
+</summary>
+
+| Field | Type | Description |
+| --- | --- | --- |
+| <code>transport</code> | <code>string</code> | Transport protocol on the client-to-proxy connection (<code>tcp</code>, <code>quic</code>). |
+| <code>tlsVersion</code> | <code>string</code> | TLS version negotiated on the client-to-proxy connection. *Not yet available.* |
+
+</details>
+
+<details>
+
+<summary>
+
+Egress connection node only
+
+</summary>
+
+| Field | Type | Description |
+| --- | --- | --- |
+| <code>transport</code> | <code>string</code> | Transport protocol on the proxy-to-origin connection (<code>tcp</code>, <code>quic</code>). |
+
+</details>
+
+<details>
+
+<summary>
+
+Auth node only
+
+</summary>
+
+| Field | Type | Description |
+| --- | --- | --- |
+| <code>authMethod</code> | <code>string</code> | Authentication method used (for example, <code>Token</code>, <code>Psk</code>). |
+| <code>authResult</code> | <code>string</code> | Authentication outcome (<code>success</code>, <code>failure</code>). |
+
+</details>
+
+</details>
+
+<details>
+
+<summary>
+
+Arguments
+
+</summary>
+
+All four nodes share the same argument signature.
+
+- <code>filter</code> required — Filters your data. <code>accountTag</code> is always required inside the filter.
+- <code>limit</code> optional — Maximum number of records to return.
+- <code>orderBy</code> optional — Sort order for results.
+
+</details>
+
+---
+
+## Sample queries
+
+<details>
+
+<summary>
+
+privacyProxyRequestMetricsAdaptiveGroups node
+
+</summary>
+
+<details>
+
+<summary>
+
+Request volume overview
+
+</summary>
+
+Get a high-level view of daily request volume over a date range.
+
+```graphql
+query DailyRequestVolume(
+  $accountTag: String!
+  $startDate: Date!
+  $endDate: Date!
+) {
+  viewer {
+    accounts(filter: { accountTag: $accountTag }) {
+      privacyProxyRequestMetricsAdaptiveGroups(
+        filter: {
+          date_geq: $startDate
+          date_leq: $endDate
+        }
+        limit: 10000
+        orderBy: [date_ASC]
+      ) {
+        count
+        dimensions {
+          date
+        }
+      }
+    }
+  }
+}
+```
+
+```json
+{
+  "accountTag": "<YOUR_ACCOUNT_TAG>",
+  "startDate": "2026-04-04",
+  "endDate": "2026-04-06"
+}
+```
+
+</details>
+
+<details>
+
+<summary>
+
+Error breakdown by status code and proxy status
+
+</summary>
+
+Identify which HTTP status codes and proxy-level errors are occurring to pinpoint the source of failures.
+
+```graphql
+query ErrorBreakdown(
+  $accountTag: String!
+  $start: Time!
+  $end: Time!
+) {
+  viewer {
+    accounts(filter: { accountTag: $accountTag }) {
+      privacyProxyRequestMetricsAdaptiveGroups(
+        filter: {
+          datetimeFifteenMinutes_geq: $start
+          datetimeFifteenMinutes_leq: $end
+          statusCode_geq: 400
+        }
+        limit: 10000
+        orderBy: [datetimeFifteenMinutes_ASC]
+      ) {
+        count
+        dimensions {
+          datetimeFifteenMinutes
+          statusCode
+          proxyStatus
+        }
+      }
+    }
+  }
+}
+```
+
+```json
+{
+  "accountTag": "<YOUR_ACCOUNT_TAG>",
+  "start": "2026-04-04T00:00:00Z",
+  "end": "2026-04-06T23:59:59Z"
+}
+```
+
+</details>
+
+<details>
+
+<summary>
+
+Top proxy errors by frequency
+
+</summary>
+
+Rank the most frequent proxy error types to prioritize investigation.
+
+```graphql
+query TopProxyErrors(
+  $accountTag: String!
+  $start: Date!
+  $end: Date!
+) {
+  viewer {
+    accounts(filter: { accountTag: $accountTag }) {
+      privacyProxyRequestMetricsAdaptiveGroups(
+        filter: {
+          date_geq: $start
+          date_leq: $end
+          proxyStatus_neq: ""
+        }
+        limit: 10000
+        orderBy: [count_DESC]
+      ) {
+        count
+        dimensions {
+          proxyStatus
+          statusCode
+        }
+      }
+    }
+  }
+}
+```
+
+```json
+{
+  "accountTag": "<YOUR_ACCOUNT_TAG>",
+  "start": "2026-04-04",
+  "end": "2026-04-06"
+}
+```
+
+</details>
+
+<details>
+
+<summary>
+
+Tunnel type distribution
+
+</summary>
+
+Monitor the mix of <code>connect-tcp</code>, <code>connect-udp</code>, and <code>connect-ip</code> over time to understand how clients are connecting.
+
+```graphql
+query TunnelTypeDistribution(
+  $accountTag: String!
+  $startDate: Date!
+  $endDate: Date!
+) {
+  viewer {
+    accounts(filter: { accountTag: $accountTag }) {
+      privacyProxyRequestMetricsAdaptiveGroups(
+        filter: {
+          date_geq: $startDate
+          date_leq: $endDate
+        }
+        limit: 10000
+        orderBy: [date_ASC]
+      ) {
+        count
+        dimensions {
+          date
+          tunnelType
+        }
+      }
+    }
+  }
+}
+```
+
+```json
+{
+  "accountTag": "<YOUR_ACCOUNT_TAG>",
+  "startDate": "2026-04-04",
+  "endDate": "2026-04-06"
+}
+```
+
+</details>
+
+</details>
+
+<details>
+
+<summary>
+
+privacyProxyIngressConnMetricsAdaptiveGroups node
+
+</summary>
+
+<details>
+
+<summary>
+
+Connection volume and ingress bytes overview
+
+</summary>
+
+Get a high-level view of daily ingress connection count and bytes transferred.
+
+```graphql
+query IngressTrafficOverview(
+  $accountTag: String!
+  $startDate: Date!
+  $endDate: Date!
+) {
+  viewer {
+    accounts(filter: { accountTag: $accountTag }) {
+      privacyProxyIngressConnMetricsAdaptiveGroups(
+        filter: {
+          date_geq: $startDate
+          date_leq: $endDate
+        }
+        limit: 10000
+        orderBy: [date_ASC]
+      ) {
+        count
+        sum {
+          bytesSentToClient
+          bytesRecvdFromClient
+        }
+        dimensions {
+          date
+        }
+      }
+    }
+  }
+}
+```
+
+```json
+{
+  "accountTag": "<YOUR_ACCOUNT_TAG>",
+  "startDate": "2026-04-04",
+  "endDate": "2026-04-06"
+}
+```
+
+</details>
+
+<details>
+
+<summary>
+
+Connection duration by data center
+
+</summary>
+
+Compare client-to-proxy connection duration across data centers to identify regions with long-lived or stalled connections.
+
+```graphql
+query IngressDurationByColo(
+  $accountTag: String!
+  $startDate: Date!
+  $endDate: Date!
+) {
+  viewer {
+    accounts(filter: { accountTag: $accountTag }) {
+      privacyProxyIngressConnMetricsAdaptiveGroups(
+        filter: {
+          date_geq: $startDate
+          date_leq: $endDate
+        }
+        limit: 10000
+        orderBy: [quantiles_durationMsP50_DESC]
+      ) {
+        quantiles {
+          durationMsP50
+          durationMsP95
+          durationMsP99
+        }
+        dimensions {
+          coloCode
+        }
+      }
+    }
+  }
+}
+```
+
+```json
+{
+  "accountTag": "<YOUR_ACCOUNT_TAG>",
+  "startDate": "2026-04-04",
+  "endDate": "2026-04-06"
+}
+```
+
+</details>
+
+<details>
+
+<summary>
+
+Protocol and TLS version distribution
+
+</summary>
+
+Understanding which transport protocols (QUIC versus TCP) and TLS versions your clients use helps you plan deprecations, detect misconfigured clients, and verify that traffic meets your security requirements.
+
+```graphql
+query IngressProtocolDistribution(
+  $accountTag: String!
+  $start: Time!
+  $end: Time!
+) {
+  viewer {
+    accounts(filter: { accountTag: $accountTag }) {
+      privacyProxyIngressConnMetricsAdaptiveGroups(
+        filter: {
+          datetimeFifteenMinutes_geq: $start
+          datetimeFifteenMinutes_leq: $end
+        }
+        limit: 10000
+        orderBy: [datetimeFifteenMinutes_ASC]
+      ) {
+        count
+        dimensions {
+          datetimeFifteenMinutes
+          transport
+          tlsVersion
+        }
+      }
+    }
+  }
+}
+```
+
+```json
+{
+  "accountTag": "<YOUR_ACCOUNT_TAG>",
+  "start": "2026-04-04T00:00:00Z",
+  "end": "2026-04-06T23:59:59Z"
+}
+```
+
+</details>
+
+</details>
+
+<details>
+
+<summary>
+
+privacyProxyEgressConnMetricsAdaptiveGroups node
+
+</summary>
+
+<details>
+
+<summary>
+
+Egress bytes overview
+
+</summary>
+
+Get a high-level view of daily bytes flowing between the proxy and the upstream origin.
+
+```graphql
+query EgressBytesOverview(
+  $accountTag: String!
+  $startDate: Date!
+  $endDate: Date!
+) {
+  viewer {
+    accounts(filter: { accountTag: $accountTag }) {
+      privacyProxyEgressConnMetricsAdaptiveGroups(
+        filter: {
+          date_geq: $startDate
+          date_leq: $endDate
+        }
+        limit: 10000
+        orderBy: [date_ASC]
+      ) {
+        count
+        sum {
+          bytesSentToOrigin
+          bytesRecvdFromOrigin
+        }
+        dimensions {
+          date
+        }
+      }
+    }
+  }
+}
+```
+
+```json
+{
+  "accountTag": "<YOUR_ACCOUNT_TAG>",
+  "startDate": "2026-04-04",
+  "endDate": "2026-04-06"
+}
+```
+
+</details>
+
+<details>
+
+<summary>
+
+Proxy-to-origin latency by data center
+
+</summary>
+
+Compare proxy-to-origin handshake times across data centers to identify regions with degraded origin reachability.
+
+```graphql
+query EgressLatencyByColo(
+  $accountTag: String!
+  $startDate: Date!
+  $endDate: Date!
+) {
+  viewer {
+    accounts(filter: { accountTag: $accountTag }) {
+      privacyProxyEgressConnMetricsAdaptiveGroups(
+        filter: {
+          date_geq: $startDate
+          date_leq: $endDate
+        }
+        limit: 10000
+        orderBy: [quantiles_handshakeDurationUsP50_DESC]
+      ) {
+        quantiles {
+          handshakeDurationUsP50
+          handshakeDurationUsP95
+          handshakeDurationUsP99
+        }
+        dimensions {
+          coloCode
+        }
+      }
+    }
+  }
+}
+```
+
+```json
+{
+  "accountTag": "<YOUR_ACCOUNT_TAG>",
+  "startDate": "2026-04-04",
+  "endDate": "2026-04-06"
+}
+```
+
+</details>
+
+<details>
+
+<summary>
+
+Egress performance trend
+
+</summary>
+
+Track proxy-to-origin handshake latency at fine granularity over a specific time window.
+
+```graphql
+query EgressPerformanceTrend(
+  $accountTag: String!
+  $start: Time!
+  $end: Time!
+) {
+  viewer {
+    accounts(filter: { accountTag: $accountTag }) {
+      privacyProxyEgressConnMetricsAdaptiveGroups(
+        filter: {
+          datetimeFiveMinutes_geq: $start
+          datetimeFiveMinutes_leq: $end
+        }
+        limit: 10000
+        orderBy: [datetimeFiveMinutes_ASC]
+      ) {
+        quantiles {
+          handshakeDurationUsP50
+          handshakeDurationUsP95
+          handshakeDurationUsP99
+        }
+        count
+        dimensions {
+          datetimeFiveMinutes
+        }
+      }
+    }
+  }
+}
+```
+
+```json
+{
+  "accountTag": "<YOUR_ACCOUNT_TAG>",
+  "start": "2026-04-04T08:00:00Z",
+  "end": "2026-04-06T14:00:00Z"
+}
+```
+
+</details>
+
+</details>
+
+<details>
+
+<summary>
+
+privacyProxyAuthMetricsAdaptiveGroups node
+
+</summary>
+
+<details>
+
+<summary>
+
+Auth volume by method
+
+</summary>
+
+Track daily authentication volume per method to understand adoption and spot anomalies.
+
+```graphql
+query AuthVolumeByMethod(
+  $accountTag: String!
+  $startDate: Date!
+  $endDate: Date!
+) {
+  viewer {
+    accounts(filter: { accountTag: $accountTag }) {
+      privacyProxyAuthMetricsAdaptiveGroups(
+        filter: {
+          date_geq: $startDate
+          date_leq: $endDate
+        }
+        limit: 10000
+        orderBy: [date_ASC]
+      ) {
+        count
+        dimensions {
+          date
+          authMethod
+        }
+      }
+    }
+  }
+}
+```
+
+```json
+{
+  "accountTag": "<YOUR_ACCOUNT_TAG>",
+  "startDate": "2026-04-04",
+  "endDate": "2026-04-06"
+}
+```
+
+</details>
+
+<details>
+
+<summary>
+
+Auth failure spike detection
+
+</summary>
+
+Detect surges in authentication failures and identify which auth method is failing.
+
+```graphql
+query AuthFailureSpike(
+  $accountTag: String!
+  $start: Time!
+  $end: Time!
+) {
+  viewer {
+    accounts(filter: { accountTag: $accountTag }) {
+      privacyProxyAuthMetricsAdaptiveGroups(
+        filter: {
+          datetimeMinute_geq: $start
+          datetimeMinute_leq: $end
+          authResult: "failure"
+        }
+        limit: 10000
+        orderBy: [datetimeFiveMinutes_ASC]
+      ) {
+        count
+        dimensions {
+          datetimeFiveMinutes
+          authMethod
+        }
+      }
+    }
+  }
+}
+```
+
+```json
+{
+  "accountTag": "<YOUR_ACCOUNT_TAG>",
+  "start": "2026-04-04T10:00:00Z",
+  "end": "2026-04-06T14:00:00Z"
+}
+```
+
+</details>
+
+<details>
+
+<summary>
+
+Auth success rate
+
+</summary>
+
+Compare hourly success versus failure counts to compute auth success rate and spot degradation trends.
+
+```graphql
+query AuthSuccessRate(
+  $accountTag: String!
+  $start: Time!
+  $end: Time!
+) {
+  viewer {
+    accounts(filter: { accountTag: $accountTag }) {
+      privacyProxyAuthMetricsAdaptiveGroups(
+        filter: {
+          datetimeHour_geq: $start
+          datetimeHour_leq: $end
+        }
+        limit: 10000
+        orderBy: [datetimeHour_ASC]
+      ) {
+        count
+        dimensions {
+          datetimeHour
+          authResult
+        }
+      }
+    }
+  }
+}
+```
+
+```json
+{
+  "accountTag": "<YOUR_ACCOUNT_TAG>",
+  "start": "2026-04-04T00:00:00Z",
+  "end": "2026-04-06T23:59:59Z"
+}
+```
+
+</details>
+
+</details>
+
+---
+
+## Related resources
+
+- [GraphQL Analytics API — getting started](https://developers.cloudflare.com/analytics/graphql-api/getting-started/)
+- [GraphQL Analytics API — filtering](https://developers.cloudflare.com/analytics/graphql-api/features/filtering/)
+- [Proxy status reference](https://developers.cloudflare.com/privacy-proxy/reference/proxy-status/) — All possible `proxyStatus` values and their meanings.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/privacy-proxy/reference/metrics/graphql/#page","headline":"GraphQL Analytics API","description":"Query Privacy Proxy request, connection, and authentication metrics using the Cloudflare GraphQL Analytics API.","url":"https://developers.cloudflare.com/privacy-proxy/reference/metrics/graphql/","inLanguage":"en","image":"https://developers.cloudflare.com/privacy-proxy/reference/metrics/graphql/og.png?v=ea18190e9af3f615","dateModified":"2026-04-21","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Export Privacy Proxy metrics and traces to your observability platform using the OpenTelemetry Protocol (OTLP).
+title: OpenTelemetry
+image: https://developers.cloudflare.com/privacy-proxy/reference/metrics/opentelemetry/og.png?v=16f14ef46d7dd34d
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/privacy-proxy/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# OpenTelemetry
+
+Last updated Apr 21, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/privacy-proxy/reference/metrics/opentelemetry/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Privacy Proxy exports telemetry data using the [OpenTelemetry Protocol (OTLP) ↗︎](https://opentelemetry.io/docs/specs/otlp/). You can configure an endpoint to receive this data and forward it to your observability platform.
+
+---
+
+## Configure telemetry export
+
+During onboarding, provide Cloudflare with your OpenTelemetry collector endpoint:
+
+- **Endpoint URL**: The HTTPS endpoint where telemetry data should be sent.
+- **Authentication**: Headers or credentials required to authenticate with your collector. Supported authentication types include bearer token headers, custom header-based authentication, and mutual TLS (mTLS).
+
+Cloudflare configures your Privacy Proxy instance to export telemetry to this endpoint.
+
+---
+
+## Supported signals
+
+Privacy Proxy exports the following telemetry signals:
+
+| Signal | Description |
+| --- | --- |
+| Metrics | Connection counts, request rates, latency histograms, error rates |
+| Traces | Per-request traces showing proxy processing time. Traces are sampled at approximately 1% of requests. |
+
+---
+
+## Metrics
+
+Privacy Proxy exports metrics that help you understand usage patterns and performance.
+
+### Connection metrics
+
+| Metric | Description |
+| --- | --- |
+| `privacy_proxy_connections_total` | Total number of proxy connections |
+| `privacy_proxy_connections_active` | Currently active connections |
+| `privacy_proxy_connections_duration_seconds` | Connection duration histogram |
+
+### Request metrics
+
+| Metric | Description |
+| --- | --- |
+| `privacy_proxy_requests_total` | Total CONNECT requests processed |
+| `privacy_proxy_requests_by_status` | Requests grouped by response status code |
+| `privacy_proxy_bytes_sent_total` | Total bytes sent to destinations |
+| `privacy_proxy_bytes_received_total` | Total bytes received from destinations |
+
+### Latency metrics
+
+| Metric | Description |
+| --- | --- |
+| `privacy_proxy_connect_latency_seconds` | Time to establish connection to destination |
+| `privacy_proxy_first_byte_latency_seconds` | Time to first byte from destination |
+
+---
+
+## `Server-Timing` header
+
+Privacy Proxy includes a `Server-Timing` header in responses to help measure processing latency from the client side. For full header format details, refer to [HTTP headers](https://developers.cloudflare.com/privacy-proxy/reference/http-headers/#server-timing).
+
+```http
+Server-Timing: proxy;dur=12.5
+```
+
+The `dur` value is the processing time in milliseconds introduced by the proxy. Use this header as a client-side SLI (Service Level Indicator) to monitor proxy performance.
+
+### Example: Prometheus and Grafana
+
+To visualize Privacy Proxy metrics in Grafana:
+
+1. Configure an OpenTelemetry collector to receive data from Privacy Proxy.
+2. Export metrics from the collector to Prometheus.
+3. Create Grafana dashboards using Prometheus as a data source.
+
+*Example Prometheus queriestxt*
+
+```txt
+# Request rate over time
+rate(privacy_proxy_requests_total[5m])
+
+# 95th percentile connection latency
+histogram_quantile(0.95, rate(privacy_proxy_connect_latency_seconds_bucket[5m]))
+
+# Error rate
+sum(rate(privacy_proxy_requests_by_status{status=~"5.."}[5m])) / sum(rate(privacy_proxy_requests_total[5m]))
+```
+
+---
+
+## Related resources
+
+- [OpenTelemetry documentation ↗︎](https://opentelemetry.io/docs/) — Learn more about OpenTelemetry concepts and configuration.
+- [GraphQL Analytics API](https://developers.cloudflare.com/privacy-proxy/reference/metrics/graphql/) — Query metrics programmatically via Cloudflare's GraphQL API.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/privacy-proxy/reference/metrics/opentelemetry/#page","headline":"OpenTelemetry","description":"Export Privacy Proxy metrics and traces to your observability platform using the OpenTelemetry Protocol (OTLP).","url":"https://developers.cloudflare.com/privacy-proxy/reference/metrics/opentelemetry/","inLanguage":"en","image":"https://developers.cloudflare.com/privacy-proxy/reference/metrics/opentelemetry/og.png?v=16f14ef46d7dd34d","dateModified":"2026-04-21","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: All possible proxyStatus values for Privacy Proxy error classification in GraphQL Analytics and OpenTelemetry metrics.
+title: Proxy status reference
+image: https://developers.cloudflare.com/privacy-proxy/reference/proxy-status/og.png?v=3275dc1ee16f27df
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/privacy-proxy/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Proxy status reference
+
+Last updated Apr 21, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/privacy-proxy/reference/proxy-status/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+The `proxyStatus` dimension provides proxy-level error classification. This field is available in both [GraphQL Analytics API](https://developers.cloudflare.com/privacy-proxy/reference/metrics/graphql/) and [OpenTelemetry](https://developers.cloudflare.com/privacy-proxy/reference/metrics/opentelemetry/) metrics. The value is an empty string when no proxy-level error occurred.
+
+---
+
+## `proxyStatus` values
+
+| Value | Description |
+| --- | --- |
+| `dns_error` | The proxy encountered a DNS error when resolving the next hop hostname. |
+| `dns_timeout` | The proxy timed out while resolving the next hop hostname. |
+| `destination_not_found` | The proxy cannot determine the appropriate next hop for this request. |
+| `destination_unavailable` | The proxy considers the next hop unavailable (for example, recent failures or health check is down). |
+| `destination_ip_prohibited` | The proxy is configured to prohibit connections to the next hop IP address. |
+| `destination_ip_unroutable` | The proxy cannot find a route to the next hop IP address. |
+| `connection_refused` | The proxy's connection to the next hop was refused. |
+| `connection_terminated` | The proxy's connection to the next hop was closed before any response was received. |
+| `connection_timeout` | The proxy's attempt to open a connection to the next hop timed out. |
+| `connection_read_timeout` | The proxy was expecting data on a connection but received none within the configured time limit. |
+| `connection_write_timeout` | The proxy was attempting to write data to a connection but was unable to. |
+| `connection_limit_reached` | The proxy's configured connection limit to the next hop has been exceeded. |
+| `source_addr_in_use` | The proxy cannot assign a source address when connecting to the next hop. |
+| `source_addr_not_available` | The proxy cannot assign a source address (bind failure or source host resolution failure). |
+| `tls_protocol_error` | The proxy encountered a TLS error when communicating with the next hop. |
+| `tls_certificate_error` | The proxy encountered an error verifying the certificate presented by the next hop. |
+| `http_request_error` | The proxy is generating a client (4xx) response on the origin's behalf. |
+| `http_upgrade_failed` | The HTTP Upgrade between the proxy and the next hop failed. |
+| `http_request_denied` | The proxy rejected the HTTP request based on its configuration or policy. |
+| `proxy_internal_error` | The proxy encountered an internal error unrelated to the origin. |
+| `proxy_loop_detected` | The proxy tried to forward the request to itself. |
+| `http_protocol_error` | The proxy encountered an HTTP protocol error when communicating with the next hop. |
+| `http_response_incomplete` | The proxy received an incomplete response from the next hop. |
+| `rate_limited` | The client has reached the maximum number of connections per second to a single origin. |
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/privacy-proxy/reference/proxy-status/#page","headline":"Proxy status reference","description":"All possible proxyStatus values for Privacy Proxy error classification in GraphQL Analytics and OpenTelemetry metrics.","url":"https://developers.cloudflare.com/privacy-proxy/reference/proxy-status/","inLanguage":"en","image":"https://developers.cloudflare.com/privacy-proxy/reference/proxy-status/og.png?v=3275dc1ee16f27df","dateModified":"2026-04-21","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```

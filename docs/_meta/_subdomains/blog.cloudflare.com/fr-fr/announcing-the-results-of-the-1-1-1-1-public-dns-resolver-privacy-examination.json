@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/announcing-the-results-of-the-1-1-1-1-public-dns-resolver-privacy-examination/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/announcing-the-results-of-the-1-1-1-1-public-dns-resolver-privacy-examination.md",
+  "title": "Annonce des r\u00e9sultats de 1.1.1.1 Examen de la confidentialit\u00e9 du r\u00e9solveur DNS public | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:42.200551+00:00",
+  "html_len": 218876,
+  "md_len": 36452,
+  "depth": 0,
+  "phase": 2
+}

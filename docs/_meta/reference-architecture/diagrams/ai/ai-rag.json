@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/reference-architecture/diagrams/ai/ai-rag/",
+  "file": "reference-architecture/diagrams/ai/ai-rag.md",
+  "title": "Retrieval Augmented Generation (RAG) \u00b7 Cloudflare Reference Architecture docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:40.552757+00:00",
+  "html_len": 116255,
+  "md_len": 6038,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/prepends-considered-harmful/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/prepends-considered-harmful.md",
+  "title": "Por qu\u00e9 las comunidades BGP son mejores que los prefijos de ruta de AS | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:16.170489+00:00",
+  "html_len": 247232,
+  "md_len": 43677,
+  "depth": 0,
+  "phase": 2
+}

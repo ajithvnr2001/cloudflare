@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/location-aware-warp/",
+  "file": "_subdomains/blog.cloudflare.com/location-aware-warp.md",
+  "title": "Network detection and settings profiles for the Cloudflare One agent | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:47.806765+00:00",
+  "html_len": 295856,
+  "md_len": 64484,
+  "depth": 0,
+  "phase": 2
+}

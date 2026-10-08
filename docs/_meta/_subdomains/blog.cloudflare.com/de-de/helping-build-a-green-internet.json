@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/helping-build-a-green-internet/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/helping-build-a-green-internet.md",
+  "title": "Das Internet gr\u00fcner machen | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:00.311832+00:00",
+  "html_len": 205665,
+  "md_len": 30994,
+  "depth": 0,
+  "phase": 2
+}

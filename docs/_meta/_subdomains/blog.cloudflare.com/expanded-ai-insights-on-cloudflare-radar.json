@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/expanded-ai-insights-on-cloudflare-radar/",
+  "file": "_subdomains/blog.cloudflare.com/expanded-ai-insights-on-cloudflare-radar.md",
+  "title": "No hallucinations here: track the latest AI trends with expanded insights on Cloudflare Radar | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:12.511053+00:00",
+  "html_len": 304425,
+  "md_len": 67231,
+  "depth": 0,
+  "phase": 2
+}

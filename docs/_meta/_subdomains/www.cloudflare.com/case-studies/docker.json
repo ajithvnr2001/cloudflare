@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/docker/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/docker.md",
+  "title": "Cloudflare & Docker | Case Study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:27.557277+00:00",
+  "html_len": 205721,
+  "md_len": 8188,
+  "depth": 0,
+  "phase": 2
+}

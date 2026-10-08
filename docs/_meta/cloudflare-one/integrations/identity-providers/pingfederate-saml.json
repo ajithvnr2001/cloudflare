@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/cloudflare-one/integrations/identity-providers/pingfederate-saml/",
+  "file": "cloudflare-one/integrations/identity-providers/pingfederate-saml.md",
+  "title": "PingFederate \u00b7 Cloudflare One docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:09:05.502872+00:00",
+  "html_len": 283042,
+  "md_len": 4092,
+  "depth": 0
+}

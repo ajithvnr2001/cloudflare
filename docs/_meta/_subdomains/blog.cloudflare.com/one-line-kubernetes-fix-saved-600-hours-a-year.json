@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/one-line-kubernetes-fix-saved-600-hours-a-year/",
+  "file": "_subdomains/blog.cloudflare.com/one-line-kubernetes-fix-saved-600-hours-a-year.md",
+  "title": "A one-line Kubernetes fix that saved 600 hours a year | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:41.911886+00:00",
+  "html_len": 292976,
+  "md_len": 63252,
+  "depth": 0,
+  "phase": 2
+}

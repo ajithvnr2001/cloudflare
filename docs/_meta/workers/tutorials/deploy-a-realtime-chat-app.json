@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/tutorials/deploy-a-realtime-chat-app/",
+  "file": "workers/tutorials/deploy-a-realtime-chat-app.md",
+  "title": "Deploy a real-time chat application \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:18:01.203714+00:00",
+  "html_len": 199203,
+  "md_len": 6008,
+  "depth": 0
+}

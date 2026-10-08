@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/a-look-at-the-new-wordpress-brute-force-amplification-attack/",
+  "file": "_subdomains/blog.cloudflare.com/a-look-at-the-new-wordpress-brute-force-amplification-attack.md",
+  "title": "A Look at the New WordPress Brute Force Amplification Attack | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:52.619191+00:00",
+  "html_len": 296383,
+  "md_len": 60957,
+  "depth": 0,
+  "phase": 2
+}

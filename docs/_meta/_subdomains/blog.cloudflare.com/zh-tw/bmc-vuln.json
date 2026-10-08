@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/bmc-vuln/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/bmc-vuln.md",
+  "title": "Cloudflare \u8655\u7406 BMC \u6f0f\u6d1e\u7684\u65b9\u5f0f | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:59.489135+00:00",
+  "html_len": 189261,
+  "md_len": 21468,
+  "depth": 0,
+  "phase": 2
+}

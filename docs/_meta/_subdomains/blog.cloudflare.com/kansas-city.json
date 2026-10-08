@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/kansas-city/",
+  "file": "_subdomains/blog.cloudflare.com/kansas-city.md",
+  "title": "Kansas City: Cloudflare\u2019s 106th Data Center Now Live | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:18.392172+00:00",
+  "html_len": 270454,
+  "md_len": 56699,
+  "depth": 0,
+  "phase": 2
+}

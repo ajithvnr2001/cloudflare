@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/quic-death-spiral-fix/",
+  "file": "_subdomains/blog.cloudflare.com/quic-death-spiral-fix.md",
+  "title": "When \"idle\" isn't idle: how a Linux kernel optimization became a QUIC bug | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:38.159883+00:00",
+  "html_len": 325985,
+  "md_len": 76771,
+  "depth": 0,
+  "phase": 2
+}

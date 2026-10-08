@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/internet-privacy/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/internet-privacy.md",
+  "title": "\u00c9 preciso incorporar a privacidade na Internet | Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:50.300745+00:00",
+  "html_len": 179930,
+  "md_len": 21289,
+  "depth": 0,
+  "phase": 2
+}

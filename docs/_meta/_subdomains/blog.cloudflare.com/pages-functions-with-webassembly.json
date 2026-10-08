@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pages-functions-with-webassembly/",
+  "file": "_subdomains/blog.cloudflare.com/pages-functions-with-webassembly.md",
+  "title": "Use the language of your choice with Pages Functions via WebAssembly | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:37.534965+00:00",
+  "html_len": 303276,
+  "md_len": 63909,
+  "depth": 0,
+  "phase": 2
+}

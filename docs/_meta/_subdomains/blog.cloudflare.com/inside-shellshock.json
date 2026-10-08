@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/inside-shellshock/",
+  "file": "_subdomains/blog.cloudflare.com/inside-shellshock.md",
+  "title": "Inside Shellshock: How hackers are using it to exploit systems | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:48.578852+00:00",
+  "html_len": 320117,
+  "md_len": 71549,
+  "depth": 0,
+  "phase": 2
+}

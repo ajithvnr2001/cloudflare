@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/using-google-cloud-platform-to-analyze-cloudflare-logs/",
+  "file": "_subdomains/blog.cloudflare.com/using-google-cloud-platform-to-analyze-cloudflare-logs.md",
+  "title": "Using Google Cloud Platform to Analyze Cloudflare Logs | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:58.641264+00:00",
+  "html_len": 276759,
+  "md_len": 58233,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/how-we-built-spectrum/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/how-we-built-spectrum.md",
+  "title": "Maltraiter le pare-feu de Linux : le piratage qui nous a permis de construire Spectrum | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:25.011208+00:00",
+  "html_len": 251657,
+  "md_len": 37345,
+  "depth": 0,
+  "phase": 2
+}

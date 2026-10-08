@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-real-world-serverless-practical-advice-on-how-to-use-cloudflare-workers/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-real-world-serverless-practical-advice-on-how-to-use-cloudflare-workers.md",
+  "title": "Introducing Real World Serverless - Practical advice on how to use Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:20.461592+00:00",
+  "html_len": 292681,
+  "md_len": 61810,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/custom-rules/use-cases/allow-traffic-from-verified-bots/",
+  "file": "waf/custom-rules/use-cases/allow-traffic-from-verified-bots.md",
+  "title": "Allow traffic from search engine bots and other verified bots \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:38.101216+00:00",
+  "html_len": 132880,
+  "md_len": 2687,
+  "depth": 0
+}

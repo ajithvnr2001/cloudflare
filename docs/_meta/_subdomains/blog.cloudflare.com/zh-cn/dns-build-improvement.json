@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/dns-build-improvement/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/dns-build-improvement.md",
+  "title": "\u6211\u4eec\u5982\u4f55\u5c06 DNS \u8bb0\u5f55\u7684\u5efa\u7acb\u901f\u5ea6\u63d0\u9ad8\u4e86 4000 \u500d\u4ee5\u4e0a | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:16.427933+00:00",
+  "html_len": 205042,
+  "md_len": 27286,
+  "depth": 0,
+  "phase": 2
+}

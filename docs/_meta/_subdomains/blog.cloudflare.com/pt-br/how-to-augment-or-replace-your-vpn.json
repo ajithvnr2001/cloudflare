@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/how-to-augment-or-replace-your-vpn/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/how-to-augment-or-replace-your-vpn.md",
+  "title": "Como aumentar ou substituir a VPN com a Cloudflare | Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:34.958325+00:00",
+  "html_len": 201626,
+  "md_len": 29597,
+  "depth": 0,
+  "phase": 2
+}

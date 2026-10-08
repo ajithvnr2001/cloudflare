@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tr-tr/consequences-of-ip-blocking/",
+  "file": "_subdomains/blog.cloudflare.com/tr-tr/consequences-of-ip-blocking.md",
+  "title": "IP adreslerini engellemenin istenmeyen sonu\u00e7lar\u0131 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:04.915593+00:00",
+  "html_len": 215637,
+  "md_len": 37149,
+  "depth": 0,
+  "phase": 2
+}

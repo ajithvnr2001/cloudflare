@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/snippets/examples/remove-fields-api-response/",
+  "file": "rules/snippets/examples/remove-fields-api-response.md",
+  "title": "Remove fields from API response \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:53.554929+00:00",
+  "html_len": 128043,
+  "md_len": 1700,
+  "depth": 0
+}

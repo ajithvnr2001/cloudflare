@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ben-fathi-why-i-joined-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/ben-fathi-why-i-joined-cloudflare.md",
+  "title": "Ben Fathi: Why I Joined CloudFlare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:52.103527+00:00",
+  "html_len": 265626,
+  "md_len": 56598,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/technology-behind-radar2/",
+  "file": "_subdomains/blog.cloudflare.com/technology-behind-radar2.md",
+  "title": "How we built it: the technology behind Cloudflare Radar 2.0 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:40:31.411000+00:00",
+  "html_len": 386621,
+  "md_len": 91076,
+  "depth": 0,
+  "phase": 2
+}

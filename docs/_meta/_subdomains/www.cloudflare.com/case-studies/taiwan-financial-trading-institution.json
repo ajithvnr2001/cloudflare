@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/taiwan-financial-trading-institution/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/taiwan-financial-trading-institution.md",
+  "title": "Taiwan financial trading institution & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:50.290174+00:00",
+  "html_len": 205340,
+  "md_len": 7755,
+  "depth": 0,
+  "phase": 2
+}

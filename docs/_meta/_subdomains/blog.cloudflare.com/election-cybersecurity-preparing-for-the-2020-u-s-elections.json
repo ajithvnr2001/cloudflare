@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/election-cybersecurity-preparing-for-the-2020-u-s-elections/",
+  "file": "_subdomains/blog.cloudflare.com/election-cybersecurity-preparing-for-the-2020-u-s-elections.md",
+  "title": "Election Cybersecurity: Protecting the 2020 U.S. Elections. | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:02.302116+00:00",
+  "html_len": 288688,
+  "md_len": 65364,
+  "depth": 0,
+  "phase": 2
+}

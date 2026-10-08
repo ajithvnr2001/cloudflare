@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/content-signals-policy/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/content-signals-policy.md",
+  "title": "Cloudflare\u306e\u65b0\u30b3\u30f3\u30c6\u30f3\u30c4\u30b7\u30b0\u30ca\u30eb\u30dd\u30ea\u30b7\u30fc\u3067\u30e6\u30fc\u30b6\u30fc\u306b\u9078\u629e\u80a2\u3092 | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:47.263715+00:00",
+  "html_len": 226609,
+  "md_len": 32653,
+  "depth": 0,
+  "phase": 2
+}

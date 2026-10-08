@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/data-platform/",
+  "file": "_subdomains/blog.cloudflare.com/tag/data-platform.md",
+  "title": "Posts tagged \"Data Platform\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:08:44.057530+00:00",
+  "html_len": 113319,
+  "md_len": 2179,
+  "depth": 1,
+  "phase": 2
+}

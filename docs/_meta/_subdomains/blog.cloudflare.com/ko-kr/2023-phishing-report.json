@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/2023-phishing-report/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/2023-phishing-report.md",
+  "title": "Cloudflare\uc758 2023\ub144 \ud53c\uc2f1 \uc704\ud611 \ubcf4\uace0\uc11c \uc18c\uac1c | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:19.669029+00:00",
+  "html_len": 233901,
+  "md_len": 38472,
+  "depth": 0,
+  "phase": 2
+}

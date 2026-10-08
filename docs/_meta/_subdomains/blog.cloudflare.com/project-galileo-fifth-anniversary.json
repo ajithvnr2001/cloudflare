@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/project-galileo-fifth-anniversary/",
+  "file": "_subdomains/blog.cloudflare.com/project-galileo-fifth-anniversary.md",
+  "title": "Project Galileo: Lessons from 5 years of protecting the most vulnerable online | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:05.062553+00:00",
+  "html_len": 290155,
+  "md_len": 65162,
+  "depth": 0,
+  "phase": 2
+}

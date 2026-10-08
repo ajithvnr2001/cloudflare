@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/introducing-smarter-tiered-cache-topology-generation/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/introducing-smarter-tiered-cache-topology-generation.md",
+  "title": "\u4ecb\u7ecd: \u66f4\u667a\u80fd\u7684\u5206\u5c42\u7f13\u5b58\u62d3\u6251\u751f\u6210 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:24.167393+00:00",
+  "html_len": 197011,
+  "md_len": 24320,
+  "depth": 0,
+  "phase": 2
+}

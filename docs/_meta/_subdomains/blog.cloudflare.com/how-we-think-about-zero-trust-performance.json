@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-we-think-about-zero-trust-performance/",
+  "file": "_subdomains/blog.cloudflare.com/how-we-think-about-zero-trust-performance.md",
+  "title": "How we think about Zero Trust Performance | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:21.561254+00:00",
+  "html_len": 283485,
+  "md_len": 67708,
+  "depth": 0,
+  "phase": 2
+}

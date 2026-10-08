@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/announcing-gateway-and-casb/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/announcing-gateway-and-casb.md",
+  "title": "\u30b2\u30fc\u30c8\u30a6\u30a7\u30a4\u3068CASB\u306e\u767a\u8868 | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:12.809485+00:00",
+  "html_len": 201091,
+  "md_len": 26862,
+  "depth": 0,
+  "phase": 2
+}

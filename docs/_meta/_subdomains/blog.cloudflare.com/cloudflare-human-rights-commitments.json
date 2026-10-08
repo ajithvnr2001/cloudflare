@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-human-rights-commitments/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-human-rights-commitments.md",
+  "title": "Cloudflare's Human Rights Commitments | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:00.898081+00:00",
+  "html_len": 276226,
+  "md_len": 62392,
+  "depth": 0,
+  "phase": 2
+}

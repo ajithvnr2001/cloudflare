@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/spotify-highlight/",
+  "file": "_subdomains/blog.cloudflare.com/spotify-highlight.md",
+  "title": "Spotify's Cloudflare App is open source: fork it for your next project | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:32.788792+00:00",
+  "html_len": 268000,
+  "md_len": 57112,
+  "depth": 0,
+  "phase": 2
+}

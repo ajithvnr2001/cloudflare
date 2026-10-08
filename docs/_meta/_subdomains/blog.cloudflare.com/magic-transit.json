@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/magic-transit/",
+  "file": "_subdomains/blog.cloudflare.com/magic-transit.md",
+  "title": "Extending Cloudflare to On-Prem Networks | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:00.076805+00:00",
+  "html_len": 299795,
+  "md_len": 73996,
+  "depth": 0,
+  "phase": 2
+}

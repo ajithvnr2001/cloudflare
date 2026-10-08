@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/oblivious-dns/",
+  "file": "_subdomains/blog.cloudflare.com/oblivious-dns.md",
+  "title": "Improving DNS Privacy with Oblivious DoH in 1.1.1.1 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:45.783094+00:00",
+  "html_len": 310586,
+  "md_len": 75082,
+  "depth": 0,
+  "phase": 2
+}

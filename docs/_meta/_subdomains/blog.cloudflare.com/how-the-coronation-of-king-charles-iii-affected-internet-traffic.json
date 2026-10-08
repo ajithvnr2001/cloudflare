@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-the-coronation-of-king-charles-iii-affected-internet-traffic/",
+  "file": "_subdomains/blog.cloudflare.com/how-the-coronation-of-king-charles-iii-affected-internet-traffic.md",
+  "title": "How the coronation of King Charles III affected Internet traffic | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:34.479782+00:00",
+  "html_len": 330716,
+  "md_len": 76503,
+  "depth": 0,
+  "phase": 2
+}

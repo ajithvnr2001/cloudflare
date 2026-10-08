@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-results-of-the-cloudflare-challenge/",
+  "file": "_subdomains/blog.cloudflare.com/the-results-of-the-cloudflare-challenge.md",
+  "title": "The Results of the CloudFlare Challenge | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:23.801776+00:00",
+  "html_len": 263529,
+  "md_len": 54122,
+  "depth": 0,
+  "phase": 2
+}

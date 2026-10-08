@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/detections/attack-score/",
+  "file": "waf/detections/attack-score.md",
+  "title": "WAF attack score \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:41.163413+00:00",
+  "html_len": 152280,
+  "md_len": 8267,
+  "depth": 0
+}

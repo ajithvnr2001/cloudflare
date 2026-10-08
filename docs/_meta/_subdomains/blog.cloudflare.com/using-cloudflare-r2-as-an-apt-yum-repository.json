@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/using-cloudflare-r2-as-an-apt-yum-repository/",
+  "file": "_subdomains/blog.cloudflare.com/using-cloudflare-r2-as-an-apt-yum-repository.md",
+  "title": "Using Cloudflare R2 as an apt/yum repository | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:29.416822+00:00",
+  "html_len": 292210,
+  "md_len": 61830,
+  "depth": 0,
+  "phase": 2
+}

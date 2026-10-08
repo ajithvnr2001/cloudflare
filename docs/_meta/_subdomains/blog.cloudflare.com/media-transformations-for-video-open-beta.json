@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/media-transformations-for-video-open-beta/",
+  "file": "_subdomains/blog.cloudflare.com/media-transformations-for-video-open-beta.md",
+  "title": "Dynamically optimize, clip, and resize video from any origin with Media Transformations | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:25.287284+00:00",
+  "html_len": 292563,
+  "md_len": 65255,
+  "depth": 0,
+  "phase": 2
+}

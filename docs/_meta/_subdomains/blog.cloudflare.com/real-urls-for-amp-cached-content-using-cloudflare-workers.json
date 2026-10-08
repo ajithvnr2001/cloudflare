@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/real-urls-for-amp-cached-content-using-cloudflare-workers/",
+  "file": "_subdomains/blog.cloudflare.com/real-urls-for-amp-cached-content-using-cloudflare-workers.md",
+  "title": "Real URLs for AMP Cached Content Using Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:10.068495+00:00",
+  "html_len": 319604,
+  "md_len": 73092,
+  "depth": 0,
+  "phase": 2
+}

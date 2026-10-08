@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/stories-from-our-recent-global-data-center-upgrade/",
+  "file": "_subdomains/blog.cloudflare.com/stories-from-our-recent-global-data-center-upgrade.md",
+  "title": "Stories from our recent global data center upgrade | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:26.461621+00:00",
+  "html_len": 285259,
+  "md_len": 63713,
+  "depth": 0,
+  "phase": 2
+}

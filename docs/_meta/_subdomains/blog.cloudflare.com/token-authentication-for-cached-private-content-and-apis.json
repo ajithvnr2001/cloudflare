@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/token-authentication-for-cached-private-content-and-apis/",
+  "file": "_subdomains/blog.cloudflare.com/token-authentication-for-cached-private-content-and-apis.md",
+  "title": "Token Authentication for Cached Private Content and APIs | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:23.353924+00:00",
+  "html_len": 286268,
+  "md_len": 62900,
+  "depth": 0,
+  "phase": 2
+}

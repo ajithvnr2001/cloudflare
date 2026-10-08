@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/workflows-v2/",
+  "file": "_subdomains/blog.cloudflare.com/workflows-v2.md",
+  "title": "Rearchitecting the Workflows control plane for the agentic era | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:37.899268+00:00",
+  "html_len": 306950,
+  "md_len": 70657,
+  "depth": 0,
+  "phase": 2
+}

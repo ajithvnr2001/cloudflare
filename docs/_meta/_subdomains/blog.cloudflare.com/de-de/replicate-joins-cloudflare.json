@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/replicate-joins-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/replicate-joins-cloudflare.md",
+  "title": "Replicate wird Teil von Cloudflare | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:46.173389+00:00",
+  "html_len": 209628,
+  "md_len": 32958,
+  "depth": 0,
+  "phase": 2
+}

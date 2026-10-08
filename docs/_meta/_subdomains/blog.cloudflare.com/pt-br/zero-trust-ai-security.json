@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/zero-trust-ai-security/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/zero-trust-ai-security.md",
+  "title": "Um conjunto completo de ferramentas de seguran\u00e7a Zero Trust para ajudar a obter o m\u00e1ximo da IA | Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:13.858879+00:00",
+  "html_len": 204560,
+  "md_len": 27041,
+  "depth": 0,
+  "phase": 2
+}

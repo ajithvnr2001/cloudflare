@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/luma-health/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/luma-health.md",
+  "title": "Luma Health | Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:37.948645+00:00",
+  "html_len": 196484,
+  "md_len": 3373,
+  "depth": 0,
+  "phase": 2
+}

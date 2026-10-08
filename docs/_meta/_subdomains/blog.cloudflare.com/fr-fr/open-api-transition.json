@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/open-api-transition/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/open-api-transition.md",
+  "title": "L'API Cloudflare utilise d\u00e9sormais des sch\u00e9mas OpenAPI | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:34.390188+00:00",
+  "html_len": 230546,
+  "md_len": 35967,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-ebpf_exporter/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-ebpf_exporter.md",
+  "title": "Introducing ebpf_exporter | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:22.201104+00:00",
+  "html_len": 362507,
+  "md_len": 83296,
+  "depth": 0,
+  "phase": 2
+}

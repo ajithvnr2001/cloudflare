@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/api/resources/waiting_rooms/methods/list/",
+  "file": "api/resources/waiting_rooms/methods/list.md",
+  "title": "List waiting rooms for account or zone | Cloudflare API",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:19:14.595798+00:00",
+  "html_len": 2138675,
+  "md_len": 25482,
+  "depth": 0
+}

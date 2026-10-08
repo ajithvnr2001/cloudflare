@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/protecting-apis-with-jwt-validation/",
+  "file": "_subdomains/blog.cloudflare.com/protecting-apis-with-jwt-validation.md",
+  "title": "Protecting APIs with JWT Validation | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:59.344028+00:00",
+  "html_len": 305885,
+  "md_len": 70534,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-http2/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-http2.md",
+  "title": "HTTP/2 is here! Goodbye SPDY? Not quite yet | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:49.298797+00:00",
+  "html_len": 295316,
+  "md_len": 65408,
+  "depth": 0,
+  "phase": 2
+}

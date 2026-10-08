@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/developer-fund/",
+  "file": "_subdomains/blog.cloudflare.com/developer-fund.md",
+  "title": "Announcing the Cloudflare Apps Platform and Developer Fund | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:11.915413+00:00",
+  "html_len": 279673,
+  "md_len": 60632,
+  "depth": 0,
+  "phase": 2
+}

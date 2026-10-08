@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/global-insurance-company/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/global-insurance-company.md",
+  "title": "Cloudflare and Global Insurance Company",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:31.628770+00:00",
+  "html_len": 201967,
+  "md_len": 6288,
+  "depth": 0,
+  "phase": 2
+}

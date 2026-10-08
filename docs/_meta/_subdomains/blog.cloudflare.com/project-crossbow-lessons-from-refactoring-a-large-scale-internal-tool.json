@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/project-crossbow-lessons-from-refactoring-a-large-scale-internal-tool/",
+  "file": "_subdomains/blog.cloudflare.com/project-crossbow-lessons-from-refactoring-a-large-scale-internal-tool.md",
+  "title": "Project Crossbow: Lessons from Refactoring a Large-Scale Internal Tool | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:17.671983+00:00",
+  "html_len": 291432,
+  "md_len": 68200,
+  "depth": 0,
+  "phase": 2
+}

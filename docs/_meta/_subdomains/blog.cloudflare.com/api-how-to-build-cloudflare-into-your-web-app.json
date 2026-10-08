@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/api-how-to-build-cloudflare-into-your-web-app/",
+  "file": "_subdomains/blog.cloudflare.com/api-how-to-build-cloudflare-into-your-web-app.md",
+  "title": "API: How To Build CloudFlare Into Your Web Apps | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:27.038593+00:00",
+  "html_len": 265705,
+  "md_len": 54728,
+  "depth": 0,
+  "phase": 2
+}

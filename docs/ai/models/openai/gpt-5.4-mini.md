@@ -1,0 +1,992 @@
+---
+url: https://developers.cloudflare.com/ai/models/openai/gpt-5.4-mini/
+title: GPT-5.4 mini (OpenAI) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:05:01.008129+00:00
+---
+
+# GPT-5.4 mini (OpenAI) · Cloudflare AI docs · Cloudflare AI docs
+
+> Source: https://developers.cloudflare.com/ai/models/openai/gpt-5.4-mini/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[AI](https://developers.cloudflare.com/ai/)
+  3. /[Models](https://developers.cloudflare.com/ai/models/)
+  4. /Models
+
+
+
+![OpenAI logo](https://developers.cloudflare.com/_astro/openai.BBwNKzBb.svg)
+
+# GPT-5.4 mini
+
+Text Generation • OpenAI
+
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/openai/gpt-5.4-mini/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+`openai/gpt-5.4-mini`
+
+  * Third-party
+  * Zero data retention
+
+
+
+GPT-5.4 mini is a smaller, faster, and more cost-efficient version of GPT-5.4 for lightweight tasks.
+
+Model Info|   
+---|---  
+Context Window[ ↗](https://developers.cloudflare.com/workers-ai/platform/glossary/)| 128,000 tokens  
+Terms and License| [link ↗](https://openai.com/policies/)  
+More information| [link ↗](https://openai.com/)  
+Zero data retention| Yes  
+Request formats| Responses, Chat Completions  
+Pricing| 
+
+  * Input (per 1M tokens)$0.75
+  * Output (per 1M tokens)$4.50
+  * Cached input (per 1M tokens)$0.075
+
+  
+  
+## Usage
+    
+    
+    const response = await env.AI.run(
+      'openai/gpt-5.4-mini',
+      { messages: [{ content: 'What are the three laws of thermodynamics?', role: 'user' }] },
+    )
+    console.log(response)
+    
+    
+    curl https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/v1/chat/completions \
+      --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+      --header "Content-Type: application/json" \
+      --data '{
+      "model": "openai/gpt-5.4-mini",
+      "messages": [
+        {
+          "content": "What are the three laws of thermodynamics?",
+          "role": "user"
+        }
+      ]
+    }'
+    
+    
+    The three laws of thermodynamics are:
+    
+    1. **First Law: Conservation of energy**  
+       Energy cannot be created or destroyed, only transferred or transformed.  
+       In simple form:  
+       **ΔU = Q − W**  
+       where ΔU is the change in internal energy, Q is heat added to the system, and W is work done by the system.
+    
+    2. **Second Law: Entropy increases**  
+       In an isolated system, entropy tends to increase over time. This means natural processes are irreversible and energy tends to spread out.  
+       A common implication: no heat engine can be 100% efficient.
+    
+    3. **Third Law: Absolute zero is unattainable**  
+       As temperature approaches absolute zero, the entropy of a perfect crystal approaches a minimum value, usually taken as zero.  
+       In practice, it’s impossible to reach exactly 0 K in a finite number of steps.
+    
+    If you want, I can also give you a **very simple everyday analogy** for each law.
+    
+    
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "annotations": [],
+            "content": "The three laws of thermodynamics are:\n\n1. **First Law: Conservation of energy**  \n   Energy cannot be created or destroyed, only transferred or transformed.  \n   In simple form:  \n   **ΔU = Q − W**  \n   where ΔU is the change in internal energy, Q is heat added to the system, and W is work done by the system.\n\n2. **Second Law: Entropy increases**  \n   In an isolated system, entropy tends to increase over time. This means natural processes are irreversible and energy tends to spread out.  \n   A common implication: no heat engine can be 100% efficient.\n\n3. **Third Law: Absolute zero is unattainable**  \n   As temperature approaches absolute zero, the entropy of a perfect crystal approaches a minimum value, usually taken as zero.  \n   In practice, it’s impossible to reach exactly 0 K in a finite number of steps.\n\nIf you want, I can also give you a **very simple everyday analogy** for each law.",
+            "refusal": null,
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1776470825,
+      "gatewayMetadata": {
+        "keySource": "Unified"
+      },
+      "id": "chatcmpl-DVnVB12AdRglT0QAUKVZ2kfSuzFOP",
+      "model": "gpt-5.4-mini-2026-03-17",
+      "object": "chat.completion",
+      "service_tier": "default",
+      "system_fingerprint": null,
+      "usage": {
+        "completion_tokens": 211,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens": 15,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 226
+      }
+    }
+
+## Examples
+
+**With System Message** — Using a system message to set context
+    
+    
+    const response = await env.AI.run(
+      'openai/gpt-5.4-mini',
+      {
+        messages: [
+          { content: 'You are a helpful coding assistant specializing in Python.', role: 'system' },
+          { content: 'How do I read a JSON file in Python?', role: 'user' },
+        ],
+      },
+    )
+    console.log(response)
+    
+    
+    curl https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/v1/chat/completions \
+      --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+      --header "Content-Type: application/json" \
+      --data '{
+      "model": "openai/gpt-5.4-mini",
+      "messages": [
+        {
+          "content": "You are a helpful coding assistant specializing in Python.",
+          "role": "system"
+        },
+        {
+          "content": "How do I read a JSON file in Python?",
+          "role": "user"
+        }
+      ]
+    }'
+    
+    
+    Use Python’s built-in `json` module.
+    
+    ```python
+    import json
+    
+    with open("data.json", "r", encoding="utf-8") as f:
+        data = json.load(f)
+    
+    print(data)
+    ```
+    
+    ### Notes
+    - `json.load(f)` reads JSON from a file object.
+    - `json.loads(s)` reads JSON from a string.
+    - The result is usually a Python `dict` or `list`, depending on the JSON structure.
+    
+    ### Example JSON
+    ```json
+    {
+      "name": "Alice",
+      "age": 30
+    }
+    ```
+    
+    ### Python result
+    ```python
+    {'name': 'Alice', 'age': 30}
+    ```
+    
+    If you want, I can also show how to:
+    - read JSON into a pandas DataFrame
+    - handle invalid JSON errors
+    - write JSON back to a file
+    
+    
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "annotations": [],
+            "content": "Use Python’s built-in `json` module.\n\n```python\nimport json\n\nwith open(\"data.json\", \"r\", encoding=\"utf-8\") as f:\n    data = json.load(f)\n\nprint(data)\n```\n\n### Notes\n- `json.load(f)` reads JSON from a file object.\n- `json.loads(s)` reads JSON from a string.\n- The result is usually a Python `dict` or `list`, depending on the JSON structure.\n\n### Example JSON\n```json\n{\n  \"name\": \"Alice\",\n  \"age\": 30\n}\n```\n\n### Python result\n```python\n{'name': 'Alice', 'age': 30}\n```\n\nIf you want, I can also show how to:\n- read JSON into a pandas DataFrame\n- handle invalid JSON errors\n- write JSON back to a file",
+            "refusal": null,
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1776470827,
+      "gatewayMetadata": {
+        "keySource": "Unified"
+      },
+      "id": "chatcmpl-DVnVDQEDXijlKMCbGNVtJzuMx2D8F",
+      "model": "gpt-5.4-mini-2026-03-17",
+      "object": "chat.completion",
+      "service_tier": "default",
+      "system_fingerprint": null,
+      "usage": {
+        "completion_tokens": 176,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens": 30,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 206
+      }
+    }
+
+**Multi-turn Conversation** — Continuing a conversation with context
+    
+    
+    const response = await env.AI.run(
+      'openai/gpt-5.4-mini',
+      {
+        max_completion_tokens: 8192,
+        messages: [
+          {
+            content: 'I need help planning a road trip from San Francisco to Los Angeles.',
+            role: 'user',
+          },
+          {
+            content:
+              "I'd be happy to help! The drive is about 380 miles and takes roughly 5-6 hours. Would you like suggestions for scenic routes or interesting stops along the way?",
+            role: 'assistant',
+          },
+          { content: 'Yes, what are some good places to stop?', role: 'user' },
+        ],
+      },
+    )
+    console.log(response)
+    
+    
+    curl https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/v1/chat/completions \
+      --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+      --header "Content-Type: application/json" \
+      --data '{
+      "model": "openai/gpt-5.4-mini",
+      "max_completion_tokens": 8192,
+      "messages": [
+        {
+          "content": "I need help planning a road trip from San Francisco to Los Angeles.",
+          "role": "user"
+        },
+        {
+          "content": "I'\''d be happy to help! The drive is about 380 miles and takes roughly 5-6 hours. Would you like suggestions for scenic routes or interesting stops along the way?",
+          "role": "assistant"
+        },
+        {
+          "content": "Yes, what are some good places to stop?",
+          "role": "user"
+        }
+      ]
+    }'
+    
+    
+    Absolutely — the San Francisco to Los Angeles drive has a lot of great stop options depending on whether you want the **fastest route** or the **most scenic one**.
+    
+    ## Best stops if you take Highway 1 / Pacific Coast Highway
+    This is the most scenic route, but it can add a lot of time.
+    
+    ### 1. Monterey / Carmel-by-the-Sea
+    - Great for a first major stop south of SF
+    - **Monterey Bay Aquarium** is a top attraction
+    - Carmel has a charming village feel, beaches, and galleries
+    
+    ### 2. Big Sur
+    - One of the most famous scenic stretches in California
+    - Must-see viewpoints:
+      - **Bixby Creek Bridge**
+      - **Pfeiffer Beach**
+      - **Julia Pfeiffer Burns State Park** / McWay Falls
+    - Ideal if you want dramatic coastline and photo stops
+    
+    ### 3. San Simeon / Hearst Castle
+    - Good place to break up the drive
+    - **Hearst Castle** is the big attraction here
+    - Also possible to see elephant seals at **Piedras Blancas**
+    
+    ### 4. San Luis Obispo
+    - Nice overnight or lunch stop
+    - Relaxed downtown, good food, and easy access to nearby wine country
+    
+    ### 5. Santa Barbara
+    - Beautiful coastal city, great for a meal or longer stop
+    - **Stearns Wharf**, the mission, and the harbor are popular
+    - Good “last major stop” before LA
+    
+    ## Best stops if you take the faster inland route (US-101 / I-5)
+    This is quicker and still has good options.
+    
+    ### 1. San Luis Obispo
+    - Great midway break
+    - Walkable downtown and lots of restaurants
+    
+    ### 2. Solvang
+    - A fun Danish-style town near Santa Barbara
+    - Good for pastries, coffee, and a quick stretch
+    
+    ### 3. Santa Barbara
+    - Still worth stopping even on the faster route
+    - Beautiful and easy to enjoy without a huge detour
+    
+    ### 4. Ventura / Oxnard
+    - Good coastal stop before reaching LA
+    - Less crowded than Santa Barbara
+    
+    ## If you want a balanced one-day route
+    A practical plan is:
+    - **SF → Monterey / Carmel**
+    - **Monterey → Big Sur**
+    - **Big Sur → San Luis Obispo**
+    - **San Luis Obispo → Santa Barbara**
+    - **Santa Barbara → LA**
+    
+    That’s a lot for one day, so many people do it as a **2-day or 3-day road trip**.
+    
+    ## Quick recommendation
+    If you only want a few stops, I’d pick:
+    1. **Monterey**
+    2. **Big Sur**
+    3. **Santa Barbara**
+    
+    If you want, I can also make you:
+    - a **1-day itinerary**
+    - a **2-day scenic itinerary**
+    - or a route with **food, beaches, and hiking stops**.
+    
+    
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "annotations": [],
+            "content": "Absolutely — the San Francisco to Los Angeles drive has a lot of great stop options depending on whether you want the **fastest route** or the **most scenic one**.\n\n## Best stops if you take Highway 1 / Pacific Coast Highway\nThis is the most scenic route, but it can add a lot of time.\n\n### 1. Monterey / Carmel-by-the-Sea\n- Great for a first major stop south of SF\n- **Monterey Bay Aquarium** is a top attraction\n- Carmel has a charming village feel, beaches, and galleries\n\n### 2. Big Sur\n- One of the most famous scenic stretches in California\n- Must-see viewpoints:\n  - **Bixby Creek Bridge**\n  - **Pfeiffer Beach**\n  - **Julia Pfeiffer Burns State Park** / McWay Falls\n- Ideal if you want dramatic coastline and photo stops\n\n### 3. San Simeon / Hearst Castle\n- Good place to break up the drive\n- **Hearst Castle** is the big attraction here\n- Also possible to see elephant seals at **Piedras Blancas**\n\n### 4. San Luis Obispo\n- Nice overnight or lunch stop\n- Relaxed downtown, good food, and easy access to nearby wine country\n\n### 5. Santa Barbara\n- Beautiful coastal city, great for a meal or longer stop\n- **Stearns Wharf**, the mission, and the harbor are popular\n- Good “last major stop” before LA\n\n## Best stops if you take the faster inland route (US-101 / I-5)\nThis is quicker and still has good options.\n\n### 1. San Luis Obispo\n- Great midway break\n- Walkable downtown and lots of restaurants\n\n### 2. Solvang\n- A fun Danish-style town near Santa Barbara\n- Good for pastries, coffee, and a quick stretch\n\n### 3. Santa Barbara\n- Still worth stopping even on the faster route\n- Beautiful and easy to enjoy without a huge detour\n\n### 4. Ventura / Oxnard\n- Good coastal stop before reaching LA\n- Less crowded than Santa Barbara\n\n## If you want a balanced one-day route\nA practical plan is:\n- **SF → Monterey / Carmel**\n- **Monterey → Big Sur**\n- **Big Sur → San Luis Obispo**\n- **San Luis Obispo → Santa Barbara**\n- **Santa Barbara → LA**\n\nThat’s a lot for one day, so many people do it as a **2-day or 3-day road trip**.\n\n## Quick recommendation\nIf you only want a few stops, I’d pick:\n1. **Monterey**\n2. **Big Sur**\n3. **Santa Barbara**\n\nIf you want, I can also make you:\n- a **1-day itinerary**\n- a **2-day scenic itinerary**\n- or a route with **food, beaches, and hiking stops**.",
+            "refusal": null,
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1776470827,
+      "gatewayMetadata": {
+        "keySource": "Unified"
+      },
+      "id": "chatcmpl-DVnVDSqb2DaSLNqKCpSBwk0puM04a",
+      "model": "gpt-5.4-mini-2026-03-17",
+      "object": "chat.completion",
+      "service_tier": "default",
+      "system_fingerprint": null,
+      "usage": {
+        "completion_tokens": 601,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens": 76,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 677
+      }
+    }
+
+**Creative Writing** — Longer completion for creative output
+    
+    
+    const response = await env.AI.run(
+      'openai/gpt-5.4-mini',
+      {
+        max_completion_tokens: 8192,
+        messages: [
+          {
+            content: 'Write a short story opening about a detective finding an unusual clue.',
+            role: 'user',
+          },
+        ],
+      },
+    )
+    console.log(response)
+    
+    
+    curl https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/v1/chat/completions \
+      --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+      --header "Content-Type: application/json" \
+      --data '{
+      "model": "openai/gpt-5.4-mini",
+      "max_completion_tokens": 8192,
+      "messages": [
+        {
+          "content": "Write a short story opening about a detective finding an unusual clue.",
+          "role": "user"
+        }
+      ]
+    }'
+    
+    
+    The rain had been falling since midnight, soft and persistent, turning the city into a blur of sodium light and reflected secrets. Detective Mara Venn stood in the doorway of apartment 4B, one gloved hand resting against the frame, and looked down at the object gleaming on the floorboards.
+    
+    It wasn’t a weapon. It wasn’t jewelry, either.
+    
+    At first glance, it looked like a child’s toy: a tiny brass bird with one wing folded and the other raised as if caught mid-flight. But when Mara knelt and picked it up, she felt the weight of it—too heavy for its size—and noticed the fine engraved line along its belly. A seam.
+    
+    She turned the figurine over. Hidden beneath the bird’s feet was a row of numbers, stamped so neatly they might have been part of the design. Not a serial number, exactly. Too deliberate for that. Too precise.
+    
+    Behind her, the apartment hummed with the low buzz of the refrigerator and the distant wail of a siren moving somewhere farther downtown. Inside the room, the dead man sat slumped in his chair as if he’d merely nodded off. His hands were folded on the desk. His face was calm.
+    
+    Mara looked again at the brass bird.
+    
+    The numbers weren’t random. She knew that before she even compared them to the note pinned under the victim’s pen, written in a hand so steady it seemed almost smug:
+    
+    **You’re late. Look under the third stone.**
+    
+    She slipped the bird into an evidence bag and stared at the cold line of the victim’s mouth.
+    
+    Someone had planned this very carefully.
+    
+    And somehow, they had expected her to come.
+    
+    
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "annotations": [],
+            "content": "The rain had been falling since midnight, soft and persistent, turning the city into a blur of sodium light and reflected secrets. Detective Mara Venn stood in the doorway of apartment 4B, one gloved hand resting against the frame, and looked down at the object gleaming on the floorboards.\n\nIt wasn’t a weapon. It wasn’t jewelry, either.\n\nAt first glance, it looked like a child’s toy: a tiny brass bird with one wing folded and the other raised as if caught mid-flight. But when Mara knelt and picked it up, she felt the weight of it—too heavy for its size—and noticed the fine engraved line along its belly. A seam.\n\nShe turned the figurine over. Hidden beneath the bird’s feet was a row of numbers, stamped so neatly they might have been part of the design. Not a serial number, exactly. Too deliberate for that. Too precise.\n\nBehind her, the apartment hummed with the low buzz of the refrigerator and the distant wail of a siren moving somewhere farther downtown. Inside the room, the dead man sat slumped in his chair as if he’d merely nodded off. His hands were folded on the desk. His face was calm.\n\nMara looked again at the brass bird.\n\nThe numbers weren’t random. She knew that before she even compared them to the note pinned under the victim’s pen, written in a hand so steady it seemed almost smug:\n\n**You’re late. Look under the third stone.**\n\nShe slipped the bird into an evidence bag and stared at the cold line of the victim’s mouth.\n\nSomeone had planned this very carefully.\n\nAnd somehow, they had expected her to come.",
+            "refusal": null,
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1776470828,
+      "gatewayMetadata": {
+        "keySource": "Unified"
+      },
+      "id": "chatcmpl-DVnVEh2k96IQnpAZXEH5eHHSILLHq",
+      "model": "gpt-5.4-mini-2026-03-17",
+      "object": "chat.completion",
+      "service_tier": "default",
+      "system_fingerprint": null,
+      "usage": {
+        "completion_tokens": 343,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens": 19,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 362
+      }
+    }
+
+**Streaming Response** — Enable streaming for real-time output
+    
+    
+    const response = await env.AI.run(
+      'openai/gpt-5.4-mini',
+      {
+        messages: [{ content: 'Explain the concept of recursion with a simple example.', role: 'user' }],
+        stream: true,
+        stream_options: { include_usage: true },
+      },
+    )
+    console.log(response)
+    
+    
+    curl https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/v1/chat/completions \
+      --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+      --header "Content-Type: application/json" \
+      --data '{
+      "model": "openai/gpt-5.4-mini",
+      "messages": [
+        {
+          "content": "Explain the concept of recursion with a simple example.",
+          "role": "user"
+        }
+      ],
+      "stream": true,
+      "stream_options": {
+        "include_usage": true
+      }
+    }'
+    
+    
+    Recursion is when a function solves a problem by calling itself on a smaller version of the same problem.
+    
+    ### Simple idea
+    A recursive function usually has:
+    1. **A base case** — when to stop calling itself
+    2. **A recursive case** — when it calls itself with a smaller input
+    
+    ### Example: counting down
+    ```python
+    def countdown(n):
+        if n == 0:          # base case
+            print("Done!")
+        else:
+            print(n)
+            countdown(n - 1)  # recursive call
+    ```
+    
+    If you run:
+    ```python
+    countdown(3)
+    ```
+    
+    It prints:
+    ```python
+    3
+    2
+    1
+    Done!
+    ```
+    
+    ### How it works
+    - `countdown(3)` prints `3`, then calls `countdown(2)`
+    - `countdown(2)` prints `2`, then calls `countdown(1)`
+    - `countdown(1)` prints `1`, then calls `countdown(0)`
+    - `countdown(0)` reaches the base case and stops
+    
+    ### In short
+    Recursion is like solving a big problem by breaking it into smaller versions of the same problem until you reach a stopping point.
+    
+    
+    [
+      {
+        "choices": [
+          {
+            "delta": {
+              "content": "",
+              "refusal": null,
+              "role": "assistant"
+            },
+            "finish_reason": null,
+            "index": 0
+          }
+        ],
+        "created": 1776470832,
+        "id": "chatcmpl-DVnVIJWPzCL8OTA38vb3b0IM2eEca",
+        "model": "gpt-5.4-mini-2026-03-17",
+        "obfuscation": "9pV",
+        "object": "chat.completion.chunk",
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "usage": null
+      },
+      {
+        "choices": [
+          {
+            "delta": {
+              "content": "Rec"
+            },
+            "finish_reason": null,
+            "index": 0
+          }
+        ],
+        "created": 1776470832,
+        "id": "chatcmpl-DVnVIJWPzCL8OTA38vb3b0IM2eEca",
+        "model": "gpt-5.4-mini-2026-03-17",
+        "obfuscation": "2K",
+        "object": "chat.completion.chunk",
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "usage": null
+      },
+      "... 248 more chunks omitted ...",
+      {
+        "choices": [],
+        "created": 1776470832,
+        "id": "chatcmpl-DVnVIJWPzCL8OTA38vb3b0IM2eEca",
+        "model": "gpt-5.4-mini-2026-03-17",
+        "obfuscation": "Ic",
+        "object": "chat.completion.chunk",
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "usage": {
+          "completion_tokens": 251,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens": 16,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          },
+          "total_tokens": 267
+        }
+      }
+    ]
+
+**Web Search** — Letting the model use OpenAI's built-in web search tool to answer with current information
+    
+    
+    const response = await env.AI.run(
+      'openai/gpt-5.4-mini',
+      {
+        input: 'What were the top news stories about Cloudflare this week? Summarise in three bullets.',
+        max_output_tokens: 4096,
+        tools: [{ type: 'web_search_preview' }],
+      },
+    )
+    console.log(response)
+    
+    
+    curl https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/v1/responses \
+      --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+      --header "Content-Type: application/json" \
+      --data '{
+      "model": "openai/gpt-5.4-mini",
+      "input": "What were the top news stories about Cloudflare this week? Summarise in three bullets.",
+      "max_output_tokens": 4096,
+      "tools": [
+        {
+          "type": "web_search_preview"
+        }
+      ]
+    }'
+    
+    
+    Here are the top Cloudflare stories from **this week** I found, in three bullets:
+    
+    - **Cloudflare had a service degradation/outage today, June 22, 2026**, with widespread user reports of 500 errors and impacted services; discussion online suggests it affected a broad set of Cloudflare-dependent sites. ([reddit.com](https://www.reddit.com/r/sysadmin/comments/1ucm4f2/cloudflare_na_service_degraded_6222026/?utm_source=openai))
+    
+    - **Cloudflare announced a new partner initiative for AI and SASE adoption** on **June 18, 2026**, adding a Cloudflare One Design Partner designation and AI tooling to help customers migrate away from fragmented security setups. ([itpro.com](https://www.itpro.com/technology/artificial-intelligence/cloudflare-launches-new-partner-initiative-to-support-ai-and-sase-adoption?utm_source=openai))
+    
+    - **Cloudflare’s June product/news cycle was dominated by AI and platform expansion**, including the launch of “Application Services for Private Origins” on **June 10**, the company’s acquisition of **VoidZero** on **June 4**, and new AI security/budgeting features on **June 5**. ([blog.cloudflare.com](https://blog.cloudflare.com/?utm_source=openai))
+    
+    If you want, I can turn this into a **more newsroom-style summary** or a **“most important + why it matters”** version.
+    
+    
+    {
+      "id": "resp_0f020ddf70098206016a399675cf94819bbe9b7eee768256c3",
+      "object": "response",
+      "created_at": 1782158965,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "output": [
+        {
+          "id": "ws_0f020ddf70098206016a3996763370819b932817a9ee0bacdc",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "queries": [
+              "Cloudflare news this week June 2026 Cloudflare",
+              "Cloudflare this week news June 2026",
+              "Cloudflare latest news June 2026 site:reuters.com OR site:bloomberg.com OR site:techcrunch.com OR site:theverge.com"
+            ],
+            "query": "Cloudflare news this week June 2026 Cloudflare"
+          }
+        },
+        {
+          "id": "ws_0f020ddf70098206016a399678a478819ba4f867a7c11a5136",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "queries": [
+              "site:reuters.com Cloudflare June 2026 outage June 22 2026",
+              "site:cloudflare.com blog June 2026 Cloudflare outage June 22 2026",
+              "site:techcrunch.com Cloudflare June 2026 outage"
+            ],
+            "query": "site:reuters.com Cloudflare June 2026 outage June 22 2026"
+          }
+        },
+        {
+          "id": "msg_0f020ddf70098206016a39967aa8f0819bb32294764e0878d9",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [
+                {
+                  "type": "url_citation",
+                  "end_index": 427,
+                  "start_index": 303,
+                  "title": "Cloudflare NA service degraded 6-22-2026",
+                  "url": "https://www.reddit.com/r/sysadmin/comments/1ucm4f2/cloudflare_na_service_degraded_6222026/?utm_source=openai"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 822,
+                  "start_index": 658,
+                  "title": "Cloudflare launches new partner initiative to support AI and SASE adoption",
+                  "url": "https://www.itpro.com/technology/artificial-intelligence/cloudflare-launches-new-partner-initiative-to-support-ai-and-sase-adoption?utm_source=openai"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 1176,
+                  "start_index": 1105,
+                  "title": "The Cloudflare Blog",
+                  "url": "https://blog.cloudflare.com/?utm_source=openai"
+                }
+              ],
+              "logprobs": [],
+              "text": "Here are the top Cloudflare stories from **this week** I found, in three bullets:\n\n- **Cloudflare had a service degradation/outage today, June 22, 2026**, with widespread user reports of 500 errors and impacted services; discussion online suggests it affected a broad set of Cloudflare-dependent sites. ([reddit.com](https://www.reddit.com/r/sysadmin/comments/1ucm4f2/cloudflare_na_service_degraded_6222026/?utm_source=openai))\n\n- **Cloudflare announced a new partner initiative for AI and SASE adoption** on **June 18, 2026**, adding a Cloudflare One Design Partner designation and AI tooling to help customers migrate away from fragmented security setups. ([itpro.com](https://www.itpro.com/technology/artificial-intelligence/cloudflare-launches-new-partner-initiative-to-support-ai-and-sase-adoption?utm_source=openai))\n\n- **Cloudflare’s June product/news cycle was dominated by AI and platform expansion**, including the launch of “Application Services for Private Origins” on **June 10**, the company’s acquisition of **VoidZero** on **June 4**, and new AI security/budgeting features on **June 5**. ([blog.cloudflare.com](https://blog.cloudflare.com/?utm_source=openai))\n\nIf you want, I can turn this into a **more newsroom-style summary** or a **“most important + why it matters”** version."
+            }
+          ],
+          "phase": "final_answer",
+          "role": "assistant"
+        }
+      ],
+      "status": "completed",
+      "usage": {
+        "input_tokens": 17121,
+        "output_tokens": 485,
+        "total_tokens": 17606,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 196
+        }
+      },
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1782158971,
+      "error": null,
+      "frequency_penalty": 0,
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "moderation": null,
+      "parallel_tool_calls": true,
+      "presence_penalty": 0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "none",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tools": [
+        {
+          "type": "web_search_preview",
+          "search_content_types": [
+            "text"
+          ],
+          "search_context_size": "medium",
+          "user_location": {
+            "type": "approximate",
+            "city": null,
+            "country": "US",
+            "region": null,
+            "timezone": null
+          }
+        }
+      ],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "user": null,
+      "metadata": {},
+      "gatewayMetadata": {
+        "keySource": "Unified"
+      }
+    }
+
+## Parameters
+
+Schema variant
+
+ResponsesChat Completions
+
+▶input
+
+`one of`required
+
+instructions
+
+`string`
+
+temperature
+
+`number`minimum: 0maximum: 2
+
+max_output_tokens
+
+`number`exclusiveMinimum: 0
+
+top_p
+
+`number`minimum: 0maximum: 1
+
+stream
+
+`boolean`
+
+▶tools[]
+
+`array`
+
+tool_choice
+
+``
+
+▶text{}
+
+`object`
+
+▶reasoning{}
+
+`object`
+
+▶messages[]
+
+`array`required
+
+temperature
+
+`number`minimum: 0maximum: 2
+
+max_tokens
+
+`number`exclusiveMinimum: 0
+
+max_completion_tokens
+
+`number`exclusiveMinimum: 0
+
+top_p
+
+`number`minimum: 0maximum: 1
+
+frequency_penalty
+
+`number`minimum: -2maximum: 2
+
+presence_penalty
+
+`number`minimum: -2maximum: 2
+
+stream
+
+`boolean`
+
+▶stream_options{}
+
+`object`
+
+▶tools[]
+
+`array`
+
+tool_choice
+
+``
+
+response_format
+
+``
+
+▶modalities[]
+
+`array`
+
+▶audio{}
+
+`object`
+
+reasoning_effort
+
+`string`Optional reasoning control; availability and accepted values are model-dependent.
+
+id
+
+`string`
+
+object
+
+`string`const: response
+
+created_at
+
+`number`
+
+model
+
+`string`
+
+▶output[]
+
+`array`
+
+output_text
+
+`string`
+
+status
+
+`string`enum: in_progress, completed, failed, incomplete
+
+▶usage{}
+
+`object`
+
+id
+
+`string`
+
+object
+
+`string`
+
+created
+
+`number`
+
+model
+
+`string`
+
+▶choices[]
+
+`array`
+
+▶usage{}
+
+`object`
+
+## API Schemas (Raw)
+
+Input[](https://developers.cloudflare.com/ai/models/openai/gpt-5.4-mini/schema-input.json "Open")[](https://developers.cloudflare.com/ai/models/openai/gpt-5.4-mini/schema-input.json "Download")
+
+Output[](https://developers.cloudflare.com/ai/models/openai/gpt-5.4-mini/schema-output.json "Open")[](https://developers.cloudflare.com/ai/models/openai/gpt-5.4-mini/schema-output.json "Download")
+
+Was this helpful?
+
+YesNo
+
+[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

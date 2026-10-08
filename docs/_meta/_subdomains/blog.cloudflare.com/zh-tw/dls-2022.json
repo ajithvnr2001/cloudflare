@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/dls-2022/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/dls-2022.md",
+  "title": "\u4f7f\u7528 Cloudflare \u7684 Data Localization Suite\uff0c\u61c9\u5c0d\u65e5\u65b0\u6708\u7570\u7684\u8cc7\u6599\u7576\u5730\u5316\u74b0\u5883 | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:24.519924+00:00",
+  "html_len": 185816,
+  "md_len": 21166,
+  "depth": 0,
+  "phase": 2
+}

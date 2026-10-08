@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/deprecating-old-tls-versions-on-cloudflare-dashboard-and-api/",
+  "file": "_subdomains/blog.cloudflare.com/deprecating-old-tls-versions-on-cloudflare-dashboard-and-api.md",
+  "title": "Deprecating TLS 1.0 and 1.1 on api.cloudflare.com | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:42.899495+00:00",
+  "html_len": 291833,
+  "md_len": 63944,
+  "depth": 0,
+  "phase": 2
+}

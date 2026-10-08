@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-traffic-manager-the-details/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-traffic-manager-the-details.md",
+  "title": "Cloudflare Traffic Manager: The Details | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:29.299154+00:00",
+  "html_len": 283858,
+  "md_len": 61142,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/bpf-the-forgotten-bytecode/",
+  "file": "_subdomains/blog.cloudflare.com/bpf-the-forgotten-bytecode.md",
+  "title": "BPF - the forgotten bytecode | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:21.996608+00:00",
+  "html_len": 277861,
+  "md_len": 62950,
+  "depth": 0,
+  "phase": 2
+}

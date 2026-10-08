@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-tld-outage-dnssec/",
+  "file": "_subdomains/blog.cloudflare.com/de-tld-outage-dnssec.md",
+  "title": "When DNSSEC goes wrong: how we responded to the .de TLD outage | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:54.072025+00:00",
+  "html_len": 306153,
+  "md_len": 70527,
+  "depth": 0,
+  "phase": 2
+}

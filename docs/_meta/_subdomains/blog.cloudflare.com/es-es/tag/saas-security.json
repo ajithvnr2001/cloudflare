@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/tag/saas-security/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/tag/saas-security.md",
+  "title": "Entradas etiquetadas con \"Seguridad SaaS\" \u2014 Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:15:10.100629+00:00",
+  "html_len": 112666,
+  "md_len": 2625,
+  "depth": 1,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pipefail-how-a-missing-shell-option-slowed-cloudflare-down/",
+  "file": "_subdomains/blog.cloudflare.com/pipefail-how-a-missing-shell-option-slowed-cloudflare-down.md",
+  "title": "PIPEFAIL: How a missing shell option slowed Cloudflare down | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:32.047086+00:00",
+  "html_len": 298882,
+  "md_len": 69195,
+  "depth": 0,
+  "phase": 2
+}

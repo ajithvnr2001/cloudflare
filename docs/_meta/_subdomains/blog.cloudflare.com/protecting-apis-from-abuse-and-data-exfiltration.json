@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/protecting-apis-from-abuse-and-data-exfiltration/",
+  "file": "_subdomains/blog.cloudflare.com/protecting-apis-from-abuse-and-data-exfiltration.md",
+  "title": "Protecting your APIs from abuse and data exfiltration | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:37.847859+00:00",
+  "html_len": 300840,
+  "md_len": 70596,
+  "depth": 0,
+  "phase": 2
+}

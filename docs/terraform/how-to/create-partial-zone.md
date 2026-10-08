@@ -1,0 +1,93 @@
+---
+url: https://developers.cloudflare.com/terraform/how-to/create-partial-zone/
+title: Create a partial zone using Terraform \u00b7 Cloudflare Terraform docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:16:00.938721+00:00
+---
+
+# Create a partial zone using Terraform · Cloudflare Terraform docs
+
+> Source: https://developers.cloudflare.com/terraform/how-to/create-partial-zone/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Terraform](https://developers.cloudflare.com/terraform/)
+  3. /How-to guides
+  4. /Create a partial zone
+
+
+
+# Create a partial zone using Terraform
+
+Last updated Apr 21, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/terraform/how-to/create-partial-zone/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewPrerequisitesCreate the zoneRelated resources
+
+A [partial zone](https://developers.cloudflare.com/dns/zone-setups/partial-setup/) lets you use Cloudflare for a subdomain while keeping your existing authoritative DNS provider for the parent domain. This guide shows how to automate the setup using the [Cloudflare Terraform provider ↗︎](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs).
+
+Caution
+
+A partial zone cannot be created in the same Cloudflare account as the parent domain's full zone.
+
+## Prerequisites
+
+  * Terraform installed. Refer to [Get started](https://developers.cloudflare.com/terraform/installing/).
+  * Your Cloudflare account ID and a configured provider block. Refer to [Initialize Terraform](https://developers.cloudflare.com/terraform/tutorial/initialize-terraform/).
+
+
+
+## Create the zone
+
+Add the zone configuration and apply the change to create the zone:
+    
+    
+    resource "cloudflare_zone" "subdomain_example_com" {
+      account = {
+        id = var.cloudflare_account_id
+      }
+      name = "subdomain.example.com"
+    }
+
+Then, in a new Terraform plan and apply cycle, upgrade the zone to a Business plan or higher:
+    
+    
+    resource "cloudflare_zone_subscription" "example_zone_subscription" {
+      zone_id = cloudflare_zone.subdomain_example_com.id
+      frequency = "monthly"
+      rate_plan = {
+        id = "business"
+        currency = "USD"
+      }
+    }
+
+Then, again in a new Terraform plan and apply cycle, update your Terraform configuration to add `type = "partial"` to the zone:
+    
+    
+    resource "cloudflare_zone" "subdomain_example_com" {
+      account = {
+        id = var.cloudflare_account_id
+      }
+      name = "subdomain.example.com"
+      type = "partial"
+    }
+
+Terraform places the zone in a **Pending** state. You must add the necessary DNS records and verify domain ownership before Cloudflare activates it.
+
+Note
+
+Refer to the [cloudflare_zone docs ↗︎](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/zone) in the Terraform provider documentation when you need to reference other zone properties.
+
+## Related resources
+
+  * [Partial zone setup](https://developers.cloudflare.com/dns/zone-setups/partial-setup/)
+  * [Convert a full zone to partial](https://developers.cloudflare.com/dns/zone-setups/conversions/convert-full-to-partial/)
+  * [`cloudflare_zone` resource ↗︎](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/zone)
+
+
+
+[PreviousWorkers ↗︎](https://developers.cloudflare.com/workers/platform/infrastructure-as-code/)[NextCreate a subdomain zone](https://developers.cloudflare.com/terraform/how-to/create-secondary-zone/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/terraform/how-to/create-partial-zone.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

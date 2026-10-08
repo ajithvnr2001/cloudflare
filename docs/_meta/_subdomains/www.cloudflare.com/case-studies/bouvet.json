@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/bouvet/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/bouvet.md",
+  "title": "Cloudflare & Bouvet | Case Study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:21.458039+00:00",
+  "html_len": 211821,
+  "md_len": 11566,
+  "depth": 0,
+  "phase": 2
+}

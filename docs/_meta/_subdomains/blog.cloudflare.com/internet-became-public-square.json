@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/internet-became-public-square/",
+  "file": "_subdomains/blog.cloudflare.com/internet-became-public-square.md",
+  "title": "When the Internet (Officially) Became the Public Square | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:12.631013+00:00",
+  "html_len": 276057,
+  "md_len": 59778,
+  "depth": 0,
+  "phase": 2
+}

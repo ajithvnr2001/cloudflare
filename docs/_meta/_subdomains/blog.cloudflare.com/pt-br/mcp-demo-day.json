@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/mcp-demo-day/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/mcp-demo-day.md",
+  "title": "Demo Day do MCP: como as dez principais empresas de IA criaram servidores MCP na Cloudflare | Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:53.489523+00:00",
+  "html_len": 207992,
+  "md_len": 34901,
+  "depth": 0,
+  "phase": 2
+}

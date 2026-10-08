@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/kv/examples/routing-with-workers-kv/",
+  "file": "kv/examples/routing-with-workers-kv.md",
+  "title": "Route requests across various web servers \u00b7 Cloudflare Workers KV docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:11:40.654574+00:00",
+  "html_len": 118250,
+  "md_len": 7319,
+  "depth": 0
+}

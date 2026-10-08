@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/content-independence-day-no-ai-crawl-without-compensation/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/content-independence-day-no-ai-crawl-without-compensation.md",
+  "title": "\u5185\u5bb9\u72ec\u7acb\u65e5\uff1a\u65e0\u8865\u507f\uff0c\u65e0 AI \u722c\u866b\uff01 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:51.265728+00:00",
+  "html_len": 197659,
+  "md_len": 24010,
+  "depth": 0,
+  "phase": 2
+}

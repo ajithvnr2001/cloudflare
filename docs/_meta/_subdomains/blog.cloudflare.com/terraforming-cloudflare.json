@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/terraforming-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/terraforming-cloudflare.md",
+  "title": "Terraforming Cloudflare: in quest of the optimal setup | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:35.231062+00:00",
+  "html_len": 329171,
+  "md_len": 69487,
+  "depth": 0,
+  "phase": 2
+}

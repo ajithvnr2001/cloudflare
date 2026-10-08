@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/generate-avif-images-with-image-resizing/",
+  "file": "_subdomains/blog.cloudflare.com/generate-avif-images-with-image-resizing.md",
+  "title": "AVIF image format supported by Cloudflare Image Resizing | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:08.306361+00:00",
+  "html_len": 288082,
+  "md_len": 64380,
+  "depth": 0,
+  "phase": 2
+}

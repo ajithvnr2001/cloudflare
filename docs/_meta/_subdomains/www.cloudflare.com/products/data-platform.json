@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/products/data-platform/",
+  "file": "_subdomains/www.cloudflare.com/products/data-platform.md",
+  "title": "Cloudflare Basin - Ingest, Catalog & Query Analytics Data",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:07.815647+00:00",
+  "html_len": 375348,
+  "md_len": 10553,
+  "depth": 0,
+  "phase": 2
+}

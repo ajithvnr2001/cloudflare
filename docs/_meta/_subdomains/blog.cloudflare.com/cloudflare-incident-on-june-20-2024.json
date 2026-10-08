@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-incident-on-june-20-2024/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-incident-on-june-20-2024.md",
+  "title": "Cloudflare incident on June 20, 2024 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:22.974200+00:00",
+  "html_len": 315242,
+  "md_len": 74725,
+  "depth": 0,
+  "phase": 2
+}

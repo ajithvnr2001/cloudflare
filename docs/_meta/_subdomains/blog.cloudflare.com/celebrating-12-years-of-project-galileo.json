@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/celebrating-12-years-of-project-galileo/",
+  "file": "_subdomains/blog.cloudflare.com/celebrating-12-years-of-project-galileo.md",
+  "title": "Celebrating 12 years of Project Galileo  | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:44.834757+00:00",
+  "html_len": 296901,
+  "md_len": 64347,
+  "depth": 0,
+  "phase": 2
+}

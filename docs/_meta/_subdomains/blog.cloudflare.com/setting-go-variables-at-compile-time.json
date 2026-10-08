@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/setting-go-variables-at-compile-time/",
+  "file": "_subdomains/blog.cloudflare.com/setting-go-variables-at-compile-time.md",
+  "title": "Setting Go variables from the outside | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:46.276432+00:00",
+  "html_len": 279227,
+  "md_len": 56549,
+  "depth": 0,
+  "phase": 2
+}

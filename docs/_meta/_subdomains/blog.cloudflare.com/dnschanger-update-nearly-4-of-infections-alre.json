@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/dnschanger-update-nearly-4-of-infections-alre/",
+  "file": "_subdomains/blog.cloudflare.com/dnschanger-update-nearly-4-of-infections-alre.md",
+  "title": "DNSChanger Update: Nearly 4% of Infections Already Detected | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:05.273522+00:00",
+  "html_len": 265588,
+  "md_len": 54616,
+  "depth": 0,
+  "phase": 2
+}

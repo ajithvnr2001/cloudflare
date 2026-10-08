@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/traffic-anomalies-notifications-radar/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/traffic-anomalies-notifications-radar.md",
+  "title": "Cloudflare Radar\u306b\u3088\u308b\u30c8\u30e9\u30d5\u30a3\u30c3\u30af\u306e\u7570\u5e38\u304a\u3088\u3073\u901a\u77e5 | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:36.896683+00:00",
+  "html_len": 268484,
+  "md_len": 43263,
+  "depth": 0,
+  "phase": 2
+}

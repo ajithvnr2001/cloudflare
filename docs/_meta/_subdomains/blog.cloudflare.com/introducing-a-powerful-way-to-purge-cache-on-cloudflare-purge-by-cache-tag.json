@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-a-powerful-way-to-purge-cache-on-cloudflare-purge-by-cache-tag/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-a-powerful-way-to-purge-cache-on-cloudflare-purge-by-cache-tag.md",
+  "title": "Introducing a Powerful Way to Purge Cache on CloudFlare: Purge by Cache-Tag | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:45.025481+00:00",
+  "html_len": 282132,
+  "md_len": 58730,
+  "depth": 0,
+  "phase": 2
+}

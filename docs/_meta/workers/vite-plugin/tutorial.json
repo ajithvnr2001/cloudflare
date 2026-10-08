@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/vite-plugin/tutorial/",
+  "file": "workers/vite-plugin/tutorial.md",
+  "title": "Tutorial - React SPA with an API \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:18:07.500709+00:00",
+  "html_len": 334870,
+  "md_len": 13620,
+  "depth": 0
+}

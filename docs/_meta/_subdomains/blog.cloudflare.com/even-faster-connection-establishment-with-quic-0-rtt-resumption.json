@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/even-faster-connection-establishment-with-quic-0-rtt-resumption/",
+  "file": "_subdomains/blog.cloudflare.com/even-faster-connection-establishment-with-quic-0-rtt-resumption.md",
+  "title": "Even faster connection establishment with QUIC 0-RTT resumption | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:34.343425+00:00",
+  "html_len": 290226,
+  "md_len": 62669,
+  "depth": 0,
+  "phase": 2
+}

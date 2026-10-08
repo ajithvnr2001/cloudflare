@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/api/resources/radar/subresources/ai/subresources/inference/methods/timeseries_groups_v2/",
+  "file": "api/resources/radar/subresources/ai/subresources/inference/methods/timeseries_groups_v2.md",
+  "title": "Get time series distribution of Workers AI inference by dimension. | Cloudflare API",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:26:26.556744+00:00",
+  "html_len": 2102989,
+  "md_len": 10662,
+  "depth": 1
+}

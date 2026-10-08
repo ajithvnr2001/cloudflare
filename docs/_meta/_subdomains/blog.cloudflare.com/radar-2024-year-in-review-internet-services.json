@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/radar-2024-year-in-review-internet-services/",
+  "file": "_subdomains/blog.cloudflare.com/radar-2024-year-in-review-internet-services.md",
+  "title": "From ChatGPT to Temu: ranking top Internet services in 2024 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:08.297836+00:00",
+  "html_len": 380248,
+  "md_len": 109629,
+  "depth": 0,
+  "phase": 2
+}

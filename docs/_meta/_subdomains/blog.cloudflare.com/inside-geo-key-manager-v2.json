@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/inside-geo-key-manager-v2/",
+  "file": "_subdomains/blog.cloudflare.com/inside-geo-key-manager-v2.md",
+  "title": "Inside Geo Key Manager v2: re-imagining access control for distributed systems | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:05.421577+00:00",
+  "html_len": 360908,
+  "md_len": 91834,
+  "depth": 0,
+  "phase": 2
+}

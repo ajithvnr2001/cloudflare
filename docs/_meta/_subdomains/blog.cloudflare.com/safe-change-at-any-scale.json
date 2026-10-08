@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/safe-change-at-any-scale/",
+  "file": "_subdomains/blog.cloudflare.com/safe-change-at-any-scale.md",
+  "title": "Scaling with safety: Cloudflare's approach to global service health metrics and software releases | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:33.664697+00:00",
+  "html_len": 330360,
+  "md_len": 73146,
+  "depth": 0,
+  "phase": 2
+}

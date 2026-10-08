@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/managed-rules/payload-logging/decrypt-in-logs/",
+  "file": "waf/managed-rules/payload-logging/decrypt-in-logs.md",
+  "title": "Store decrypted matched payloads in logs \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:44.832800+00:00",
+  "html_len": 145292,
+  "md_len": 4333,
+  "depth": 0
+}

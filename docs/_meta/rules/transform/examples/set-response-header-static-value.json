@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/transform/examples/set-response-header-static-value/",
+  "file": "rules/transform/examples/set-response-header-static-value.md",
+  "title": "Set response header with a static value \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:56.626898+00:00",
+  "html_len": 132346,
+  "md_len": 1829,
+  "depth": 0
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/account/casb_findings/",
+  "file": "logs/logpush/logpush-job/datasets/account/casb_findings.md",
+  "title": "CASB Findings \u00b7 Cloudflare Logs docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:12:11.468468+00:00",
+  "html_len": 126364,
+  "md_len": 2827,
+  "depth": 0
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/tutorials/build-a-jamstack-app/",
+  "file": "workers/tutorials/build-a-jamstack-app.md",
+  "title": "Build a todo list Jamstack application \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:18:00.824199+00:00",
+  "html_len": 280610,
+  "md_len": 29631,
+  "depth": 0
+}

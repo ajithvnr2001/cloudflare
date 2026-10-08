@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/how-verizon-and-a-bgp-optimizer-knocked-large-parts-of-the-internet-offline-today/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/how-verizon-and-a-bgp-optimizer-knocked-large-parts-of-the-internet-offline-today.md",
+  "title": "Verizon \u548c\u67d0 BGP \u4f18\u5316\u5668\u5982\u4f55\u5728\u4eca\u65e5\u5927\u8303\u56f4\u91cd\u521b\u4e92\u8054\u7f51 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:02.108752+00:00",
+  "html_len": 200512,
+  "md_len": 25995,
+  "depth": 0,
+  "phase": 2
+}

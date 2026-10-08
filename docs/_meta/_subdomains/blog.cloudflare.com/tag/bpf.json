@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/bpf/",
+  "file": "_subdomains/blog.cloudflare.com/tag/bpf.md",
+  "title": "Posts tagged \"BPF\" \u2014 Cloudflare Blog",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (746 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:08:24.417454+00:00",
+  "html_len": 150684,
+  "md_len": 3139,
+  "depth": 1,
+  "phase": 2
+}

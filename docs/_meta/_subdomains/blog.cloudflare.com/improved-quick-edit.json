@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/improved-quick-edit/",
+  "file": "_subdomains/blog.cloudflare.com/improved-quick-edit.md",
+  "title": "A whole new Quick Edit in Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:44.536679+00:00",
+  "html_len": 308844,
+  "md_len": 66334,
+  "depth": 0,
+  "phase": 2
+}

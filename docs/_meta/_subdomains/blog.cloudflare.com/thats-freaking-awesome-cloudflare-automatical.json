@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/thats-freaking-awesome-cloudflare-automatical/",
+  "file": "_subdomains/blog.cloudflare.com/thats-freaking-awesome-cloudflare-automatical.md",
+  "title": "That's Freaking Awesome: CloudFlare Automatically Learns How to Stop New Attacks | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:44.193974+00:00",
+  "html_len": 266858,
+  "md_len": 54976,
+  "depth": 0,
+  "phase": 2
+}

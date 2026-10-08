@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/2017-and-the-internet-our-predictions/",
+  "file": "_subdomains/blog.cloudflare.com/2017-and-the-internet-our-predictions.md",
+  "title": "2017 and the Internet: our predictions | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:38.506799+00:00",
+  "html_len": 285194,
+  "md_len": 65584,
+  "depth": 0,
+  "phase": 2
+}

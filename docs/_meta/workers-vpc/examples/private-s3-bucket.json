@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers-vpc/examples/private-s3-bucket/",
+  "file": "workers-vpc/examples/private-s3-bucket.md",
+  "title": "Access a private S3 bucket \u00b7 Cloudflare Workers VPC",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:07.758700+00:00",
+  "html_len": 125873,
+  "md_len": 6557,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/a-very-webp-new-year-from-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/a-very-webp-new-year-from-cloudflare.md",
+  "title": "A Very WebP New Year from Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:25.217076+00:00",
+  "html_len": 280396,
+  "md_len": 61683,
+  "depth": 0,
+  "phase": 2
+}

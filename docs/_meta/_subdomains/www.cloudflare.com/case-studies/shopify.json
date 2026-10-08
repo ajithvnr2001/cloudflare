@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/shopify/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/shopify.md",
+  "title": "Shopify & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:47.793556+00:00",
+  "html_len": 228237,
+  "md_len": 15740,
+  "depth": 0,
+  "phase": 2
+}

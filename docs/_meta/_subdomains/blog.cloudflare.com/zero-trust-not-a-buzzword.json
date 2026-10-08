@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zero-trust-not-a-buzzword/",
+  "file": "_subdomains/blog.cloudflare.com/zero-trust-not-a-buzzword.md",
+  "title": "Zero Trust \u2014 Not a Buzzword | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:55.331929+00:00",
+  "html_len": 284874,
+  "md_len": 65449,
+  "depth": 0,
+  "phase": 2
+}

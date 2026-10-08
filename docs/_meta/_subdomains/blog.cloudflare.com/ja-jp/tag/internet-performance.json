@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/tag/internet-performance/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/tag/internet-performance.md",
+  "title": "\"\u30a4\u30f3\u30bf\u30fc\u30cd\u30c3\u30c8\u306e\u30d1\u30d5\u30a9\u30fc\u30de\u30f3\u30b9\" \u30bf\u30b0\u306e\u6295\u7a3f \u2014 Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:18:41.038613+00:00",
+  "html_len": 111450,
+  "md_len": 2939,
+  "depth": 1,
+  "phase": 2
+}

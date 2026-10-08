@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/dns-record-comments/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/dns-record-comments.md",
+  "title": "\u6211\u5011\u6700\u53d7\u671f\u5f85\u7684\u4e00\u9805\u529f\u80fd\u4f86\u4e86\uff1aDNS \u8a18\u9304\u8a3b\u89e3\u548c\u6a19\u8a18 | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:22.596791+00:00",
+  "html_len": 196482,
+  "md_len": 22157,
+  "depth": 0,
+  "phase": 2
+}

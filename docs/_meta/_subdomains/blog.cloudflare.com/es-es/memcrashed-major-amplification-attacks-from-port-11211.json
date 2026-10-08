@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/memcrashed-major-amplification-attacks-from-port-11211/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/memcrashed-major-amplification-attacks-from-port-11211.md",
+  "title": "Memcrashed - importantes ataques de amplificaci\u00f3n del puerto UDP 11211 | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:31.469702+00:00",
+  "html_len": 247642,
+  "md_len": 35693,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/auckland-melbourne/",
+  "file": "_subdomains/blog.cloudflare.com/auckland-melbourne.md",
+  "title": "Oceania Redundancy: Auckland and Melbourne data centers now online | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:04.691589+00:00",
+  "html_len": 280593,
+  "md_len": 61720,
+  "depth": 0,
+  "phase": 2
+}

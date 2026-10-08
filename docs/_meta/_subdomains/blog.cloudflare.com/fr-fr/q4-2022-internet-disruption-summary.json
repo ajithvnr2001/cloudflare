@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/q4-2022-internet-disruption-summary/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/q4-2022-internet-disruption-summary.md",
+  "title": "Vue d'ensemble des perturbations d'Internet au quatri\u00e8me trimestre 2022 | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:40:20.238704+00:00",
+  "html_len": 311656,
+  "md_len": 63949,
+  "depth": 0,
+  "phase": 2
+}

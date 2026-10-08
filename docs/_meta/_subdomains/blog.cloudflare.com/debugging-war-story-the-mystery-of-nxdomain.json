@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/debugging-war-story-the-mystery-of-nxdomain/",
+  "file": "_subdomains/blog.cloudflare.com/debugging-war-story-the-mystery-of-nxdomain.md",
+  "title": "Debugging war story: the mystery of NXDOMAIN | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:26.152266+00:00",
+  "html_len": 303576,
+  "md_len": 63637,
+  "depth": 0,
+  "phase": 2
+}

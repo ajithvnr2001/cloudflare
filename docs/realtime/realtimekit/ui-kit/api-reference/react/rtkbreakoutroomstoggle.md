@@ -1,0 +1,74 @@
+---
+url: https://developers.cloudflare.com/realtime/realtimekit/ui-kit/api-reference/react/rtkbreakoutroomstoggle/
+title: RtkBreakoutRoomsToggle \u00b7 Cloudflare Realtime docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:14:13.793809+00:00
+---
+
+# RtkBreakoutRoomsToggle · Cloudflare Realtime docs
+
+> Source: https://developers.cloudflare.com/realtime/realtimekit/ui-kit/api-reference/react/rtkbreakoutroomstoggle/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Realtime](https://developers.cloudflare.com/realtime/)
+  3. /…
+
+[RealtimeKit](https://developers.cloudflare.com/realtime/realtimekit/)[Build using UI Kit](https://developers.cloudflare.com/realtime/realtimekit/ui-kit/)Component Reference
+
+  4. /React
+  5. /RtkBreakoutRoomsToggle
+
+
+
+# RtkBreakoutRoomsToggle
+
+Last updated Apr 21, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/realtime/realtimekit/ui-kit/api-reference/react/rtkbreakoutroomstoggle/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewPropertiesUsage Examples Basic Usage With Properties
+
+A button which toggles visibility of breakout rooms. You need to pass the `meeting` object to it.
+
+## Properties
+
+Property | Type | Required | Default | Description  
+---|---|---|---|---  
+`iconPack` | `IconPack` | ✅ | - | Icon pack  
+`meeting` | `Meeting` | ✅ | - | Meeting object  
+`size` | `Size` | ✅ | - | Size  
+`states` | `States` | ✅ | - | States object  
+`t` | `RtkI18n` | ✅ | - | Language  
+`variant` | `ControlBarVariant` | ✅ | - | Variant  
+  
+## Usage Examples
+
+### Basic Usage
+    
+    
+    import { RtkBreakoutRoomsToggle } from '@cloudflare/realtimekit-react-ui';
+    
+    function MyComponent() {
+      return <RtkBreakoutRoomsToggle />;
+    }
+
+### With Properties
+    
+    
+    import { RtkBreakoutRoomsToggle } from '@cloudflare/realtimekit-react-ui';
+    
+    function MyComponent() {
+      return (
+        <RtkBreakoutRoomsToggle
+          iconPack={defaultIconPack}
+          meeting={meeting}
+          size="md"
+        />
+      );
+    }
+
+[PreviousRtkBreakoutRoomsManager](https://developers.cloudflare.com/realtime/realtimekit/ui-kit/api-reference/react/rtkbreakoutroomsmanager/)[NextRtkBroadcastMessageModal](https://developers.cloudflare.com/realtime/realtimekit/ui-kit/api-reference/react/rtkbroadcastmessagemodal/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/realtime/realtimekit/ui-kit/api-reference/react/RtkBreakoutRoomsToggle.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

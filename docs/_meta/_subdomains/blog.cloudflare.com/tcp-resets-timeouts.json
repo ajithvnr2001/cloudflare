@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tcp-resets-timeouts/",
+  "file": "_subdomains/blog.cloudflare.com/tcp-resets-timeouts.md",
+  "title": "Bringing insights into TCP resets and timeouts to Cloudflare Radar | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:17.676476+00:00",
+  "html_len": 385791,
+  "md_len": 102049,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/troubleshooting/fake-bot-managed-rules/",
+  "file": "waf/troubleshooting/fake-bot-managed-rules.md",
+  "title": "Fake bot detection blocking legitimate requests \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:49.360394+00:00",
+  "html_len": 140687,
+  "md_len": 3729,
+  "depth": 0
+}

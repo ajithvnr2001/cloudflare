@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/radar-domain-rankings/",
+  "file": "_subdomains/blog.cloudflare.com/radar-domain-rankings.md",
+  "title": "Goodbye, Alexa. Hello, Cloudflare Radar Domain Rankings | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:10.649929+00:00",
+  "html_len": 292128,
+  "md_len": 67413,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,76 @@
+---
+url: https://developers.cloudflare.com/artifacts/concepts/how-artifacts-works/
+title: How Artifacts works \u00b7 Cloudflare Artifacts docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:05:20.635979+00:00
+---
+
+# How Artifacts works · Cloudflare Artifacts docs
+
+> Source: https://developers.cloudflare.com/artifacts/concepts/how-artifacts-works/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Artifacts](https://developers.cloudflare.com/artifacts/)
+  3. /Concepts
+  4. /How Artifacts works
+
+
+
+# How Artifacts works
+
+Last updated Apr 25, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/artifacts/concepts/how-artifacts-works/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewCore modelDurabilityLearn more
+
+Artifacts creates Git repos on demand. Each repo is an isolated Git service with its own remote URL, tokens, and durable state.
+
+## Core model
+
+Namespaces are the top-level container for repos. A repo lives inside one namespace, and its name is unique within that namespace.
+
+Artifacts does not provision namespaces separately. When you create the first repo with a new namespace name, Artifacts creates that namespace implicitly.
+
+A namespace provides the naming and routing boundary for repos. Together, the namespace and repo name form the repo's stable address, and API responses also return a repo ID.
+
+Like [Durable Objects](https://developers.cloudflare.com/durable-objects/concepts/what-are-durable-objects/), a repo is a single logical instance that Cloudflare can route to from any region.
+
+Because each repo is isolated, it has its own:
+
+  * Git history and refs
+  * access tokens and remote URL
+  * lifecycle and durable state
+
+
+
+Repos can be created as needed. This lets Artifacts model many small units of work across separate repos.
+
+Forking follows the same model. A fork creates a new repo that starts from an existing repo's history, then diverges independently with its own tokens, routing, and lifecycle.
+
+Access is also repo-scoped. Each repo has its own tokens, and each token can be limited to a specific level of access:
+
+  * `read` for clone, fetch, pull, indexing, and review
+  * `write` for push and other mutations
+
+
+
+Your Worker or API layer decides when to mint those tokens. That keeps authentication and authorization outside the repo while still making the repo usable from Workers, the REST API, or any standard Git client.
+
+## Durability
+
+Artifacts is durable by default. A repo does not depend on one process staying alive or on one data center staying available.
+
+Behind the scenes, Cloudflare replicates repo data synchronously across multiple data centers and copies it asynchronously to object storage and snapshots. You do not need to build your own replication, failover, or snapshot pipeline to keep repository state available.
+
+Artifacts handles the Git server lifecycle and storage infrastructure underneath these Git workflows.
+
+## Learn more
+
+For repo patterns, refer to [Best practices for Artifacts](https://developers.cloudflare.com/artifacts/concepts/best-practices/). For token behavior, refer to [Git protocol](https://developers.cloudflare.com/artifacts/api/git-protocol/). For product updates, refer to the [Artifacts changelog](https://developers.cloudflare.com/artifacts/platform/changelog/).
+
+[PreviousData localization](https://developers.cloudflare.com/artifacts/guides/data-localization/)[NextNamespaces](https://developers.cloudflare.com/artifacts/concepts/namespaces/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/artifacts/concepts/how-artifacts-works.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

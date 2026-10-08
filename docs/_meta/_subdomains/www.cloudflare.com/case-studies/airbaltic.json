@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/airbaltic/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/airbaltic.md",
+  "title": "airBaltic & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:18.172122+00:00",
+  "html_len": 220687,
+  "md_len": 13566,
+  "depth": 0,
+  "phase": 2
+}

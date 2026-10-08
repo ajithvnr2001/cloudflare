@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/networks/subresources/routes/subresources/networks/methods/create/",
+  "file": "api/resources/zero_trust/subresources/networks/subresources/routes/subresources/networks/methods/create.md",
+  "title": "Create a tunnel route (CIDR Endpoint) | Cloudflare API",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:26:14.119686+00:00",
+  "html_len": 1984321,
+  "md_len": 6396,
+  "depth": 1
+}

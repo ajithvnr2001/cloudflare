@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/efficiently-compressing-dynamically-generated-53805/",
+  "file": "_subdomains/blog.cloudflare.com/efficiently-compressing-dynamically-generated-53805.md",
+  "title": "Efficiently compressing dynamically generated web content | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:45.381212+00:00",
+  "html_len": 288092,
+  "md_len": 72612,
+  "depth": 0,
+  "phase": 2
+}

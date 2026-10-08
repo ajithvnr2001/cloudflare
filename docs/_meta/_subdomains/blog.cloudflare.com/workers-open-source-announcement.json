@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/workers-open-source-announcement/",
+  "file": "_subdomains/blog.cloudflare.com/workers-open-source-announcement.md",
+  "title": "The next chapter for Cloudflare Workers: open source | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:28.150535+00:00",
+  "html_len": 276011,
+  "md_len": 59263,
+  "depth": 0,
+  "phase": 2
+}

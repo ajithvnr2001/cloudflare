@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/best-place-region-earth-inference/",
+  "file": "_subdomains/blog.cloudflare.com/best-place-region-earth-inference.md",
+  "title": "The best place on Region: Earth for inference | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:41:51.934887+00:00",
+  "html_len": 292020,
+  "md_len": 67973,
+  "depth": 0,
+  "phase": 2
+}

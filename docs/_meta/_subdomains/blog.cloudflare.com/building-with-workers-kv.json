@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/building-with-workers-kv/",
+  "file": "_subdomains/blog.cloudflare.com/building-with-workers-kv.md",
+  "title": "Building With Workers KV, a Fast Distributed Key-Value Store | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:16.160583+00:00",
+  "html_len": 310580,
+  "md_len": 66019,
+  "depth": 0,
+  "phase": 2
+}

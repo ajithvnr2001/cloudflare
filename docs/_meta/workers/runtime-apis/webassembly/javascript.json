@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/runtime-apis/webassembly/javascript/",
+  "file": "workers/runtime-apis/webassembly/javascript.md",
+  "title": "Wasm in JavaScript \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:50.696422+00:00",
+  "html_len": 188001,
+  "md_len": 5327,
+  "depth": 0
+}

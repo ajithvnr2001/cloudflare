@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/framework-guides/web-apps/react-router/",
+  "file": "workers/framework-guides/web-apps/react-router.md",
+  "title": "React Router (formerly Remix) \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:29.266697+00:00",
+  "html_len": 257898,
+  "md_len": 9763,
+  "depth": 0
+}

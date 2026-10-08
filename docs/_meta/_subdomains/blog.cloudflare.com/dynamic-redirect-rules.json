@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/dynamic-redirect-rules/",
+  "file": "_subdomains/blog.cloudflare.com/dynamic-redirect-rules.md",
+  "title": "Dynamic URL redirects: 301 to the future | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:49.714881+00:00",
+  "html_len": 284918,
+  "md_len": 63807,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/instant-logs-on-the-command-line/",
+  "file": "_subdomains/blog.cloudflare.com/instant-logs-on-the-command-line.md",
+  "title": "Slicing and Dicing Instant Logs: Real-time Insights on the Command Line | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:41.011367+00:00",
+  "html_len": 292643,
+  "md_len": 61155,
+  "depth": 0,
+  "phase": 2
+}

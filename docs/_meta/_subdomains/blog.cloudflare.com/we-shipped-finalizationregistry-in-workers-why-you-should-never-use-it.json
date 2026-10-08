@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/we-shipped-finalizationregistry-in-workers-why-you-should-never-use-it/",
+  "file": "_subdomains/blog.cloudflare.com/we-shipped-finalizationregistry-in-workers-why-you-should-never-use-it.md",
+  "title": "We shipped FinalizationRegistry in Workers: why you should never use it | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:12.303405+00:00",
+  "html_len": 324650,
+  "md_len": 77227,
+  "depth": 0,
+  "phase": 2
+}

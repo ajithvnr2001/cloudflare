@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/author/patrick-day/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/author/patrick-day.md",
+  "title": "Patrick Day: Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:24:53.001438+00:00",
+  "html_len": 132692,
+  "md_len": 6399,
+  "depth": 1,
+  "phase": 2
+}

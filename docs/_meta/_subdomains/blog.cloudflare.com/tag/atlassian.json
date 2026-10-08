@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/atlassian/",
+  "file": "_subdomains/blog.cloudflare.com/tag/atlassian.md",
+  "title": "Posts tagged \"Atlassian\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:08:18.785165+00:00",
+  "html_len": 116358,
+  "md_len": 2827,
+  "depth": 1,
+  "phase": 2
+}

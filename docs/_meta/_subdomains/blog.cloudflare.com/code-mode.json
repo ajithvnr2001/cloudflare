@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/code-mode/",
+  "file": "_subdomains/blog.cloudflare.com/code-mode.md",
+  "title": "Code Mode: the better way to use MCP | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:31.108370+00:00",
+  "html_len": 322903,
+  "md_len": 74103,
+  "depth": 0,
+  "phase": 2
+}

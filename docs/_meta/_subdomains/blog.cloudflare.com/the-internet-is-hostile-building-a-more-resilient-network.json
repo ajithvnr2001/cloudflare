@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-internet-is-hostile-building-a-more-resilient-network/",
+  "file": "_subdomains/blog.cloudflare.com/the-internet-is-hostile-building-a-more-resilient-network.md",
+  "title": "The Internet is Hostile: Building a More Resilient Network | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:27.319795+00:00",
+  "html_len": 293108,
+  "md_len": 67722,
+  "depth": 0,
+  "phase": 2
+}

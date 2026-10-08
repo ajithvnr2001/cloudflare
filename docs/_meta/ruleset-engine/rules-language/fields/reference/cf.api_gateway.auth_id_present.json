@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.api_gateway.auth_id_present/",
+  "file": "ruleset-engine/rules-language/fields/reference/cf.api_gateway.auth_id_present.md",
+  "title": "cf.api_gateway.auth_id_present \u00b7 Cloudflare Ruleset Engine docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:15:02.815516+00:00",
+  "html_len": 91951,
+  "md_len": 1157,
+  "depth": 0
+}

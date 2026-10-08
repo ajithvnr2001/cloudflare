@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/casb-dlp/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/casb-dlp.md",
+  "title": "Cloudflare CASB \u4e0e DLP \u5982\u4f55\u534f\u540c\u53d1\u6325\u4f5c\u7528\uff0c\u4fdd\u62a4\u6570\u636e\u5b89\u5168 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:40:20.916201+00:00",
+  "html_len": 201683,
+  "md_len": 24373,
+  "depth": 0,
+  "phase": 2
+}

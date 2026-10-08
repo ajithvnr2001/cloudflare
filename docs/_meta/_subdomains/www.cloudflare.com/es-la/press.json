@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/es-la/press/",
+  "file": "_subdomains/www.cloudflare.com/es-la/press.md",
+  "title": "Resumen de prensa | Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:23:53.567685+00:00",
+  "html_len": 260996,
+  "md_len": 7320,
+  "depth": 1,
+  "phase": 2
+}

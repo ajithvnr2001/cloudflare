@@ -1,0 +1,1783 @@
+---
+description: Serverless durable logs
+title: K2
+image: https://developers.cloudflare.com/k2/og.png?v=9d8a9f5bbb2b5535
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/k2/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# K2
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/k2/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Decouple event producers and consumers with a durable log
+
+Available on Workers Paid plan
+
+Note
+
+K2 is in **public beta**, and any developer with a [Workers Paid plan](https://developers.cloudflare.com/workers/platform/pricing/) can start using it. During the beta, each account can store up to 10 GB. To request a higher limit, refer to [Limits](https://developers.cloudflare.com/k2/platform/limits/#account-limits).
+
+Cloudflare K2 is a durable log. Produce records to a log, store them for a configurable retention period, and consume them from one or more independent consumers.
+
+[Get started](https://developers.cloudflare.com/k2/get-started/)
+
+---
+
+## Features
+
+[Create a K2 stream](https://developers.cloudflare.com/k2/get-started/)
+
+Create a K2 stream, produce records to it, and consume them through a subscription.
+
+Use Create a K2 stream
+
+[Produce with a Workers binding or HTTP](https://developers.cloudflare.com/k2/features/produce/)
+
+Produce records to a K2 stream with a Workers binding or the HTTP API.
+
+Produce to K2
+
+[Configure retention period](https://developers.cloudflare.com/k2/configuration/#retention)
+
+Records in K2 can be stored for up to 30 days, with longer retention available by request.
+
+Use Configure retention period
+
+[Create a subscription to consume](https://developers.cloudflare.com/k2/features/consume/)
+
+Share records across a group of consumers, or deliver every record to multiple independent consumers, with subscriptions.
+
+Create a subscription
+
+---
+
+## Related products
+
+[Workers](https://developers.cloudflare.com/workers/)
+
+Build serverless applications and deploy instantly across the globe for exceptional performance, reliability, and scale.
+
+[Queues](https://developers.cloudflare.com/queues/)
+
+Complete asynchronous tasks with guaranteed delivery and pull-based Worker consumers.
+
+---
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/k2/#page","headline":"K2","description":"Serverless durable logs","url":"https://developers.cloudflare.com/k2/","inLanguage":"en","image":"https://developers.cloudflare.com/k2/og.png?v=9d8a9f5bbb2b5535","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Create a K2 stream, produce records over HTTP, and consume them through a subscription.
+title: Get started
+image: https://developers.cloudflare.com/k2/get-started/og.png?v=62dce78adb6d0329
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/k2/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Get started
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/k2/get-started/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+This guide walks you through the process of creating a K2 stream, writing records to it, and consuming through a subscription.
+
+By the end of this guide, you will have:
+
+- Created a stream with the Cloudflare API.
+- Produced a batch of records to the stream over HTTP.
+- Created a subscription that tracks your read position.
+- Consumed a batch of records and acknowledged it.
+
+## Prerequisites
+
+1. Sign up for a [Cloudflare account ↗︎](https://dash.cloudflare.com/sign-up/workers-and-pages) and subscribe to the [Workers Paid plan](https://developers.cloudflare.com/workers/platform/pricing/). K2 is not available on the Workers Free plan.
+2. Find your [account ID](https://developers.cloudflare.com/fundamentals/account/find-account-and-zone-ids/).
+3. Install [`curl` ↗︎](https://curl.se/) and [`jq` ↗︎](https://jqlang.org/).
+
+## How K2 works
+
+A K2 **stream** is a durable, append-only log of records. Each **record** contains a binary `content` payload and optional string `headers`.
+
+Producers append records to a stream in batches. Each batch is written atomically: either every record in the batch is stored, or none are.
+
+Consumers read from a stream through a **subscription**. A subscription tracks a position in the stream. Multiple subscriptions on the same stream read independently of each other.
+
+When a consumer reads from a subscription, K2 leases a batch of records to that consumer. The consumer acknowledges the batch after it processes the records. If the consumer does not acknowledge the batch before the lease expires, K2 delivers the records again. This gives you at-least-once delivery.
+
+## 1. Create an API token
+
+You need an API token to create streams and to read from them.
+
+1. In the Cloudflare dashboard, go to the **Account API tokens** page. [Go to **Account API tokens** ↗](https://dash.cloudflare.com/?to=/:account/api-tokens)
+2. Select **Create Token** > **Create Custom Token**.
+3. Enter a name for your token, for example `k2-get-started`.
+4. Under **Permissions**, add the **K2 Config Write**, **K2 Produce**, and **K2 Consume** permissions for your account. K2 Config Write allows you to create and delete streams.
+5. Select **Continue to summary** > **Create Token**.
+6. Copy the token value. You cannot view it again after you leave the page.
+
+Export your account ID and API token as shell variables. The commands in this guide use these variables.
+
+```sh
+export ACCOUNT_ID=<YOUR_ACCOUNT_ID>
+export CLOUDFLARE_API_TOKEN=<YOUR_API_TOKEN>
+```
+
+## 2. Create a stream
+
+Create a stream named `orders`. This request enables the HTTP endpoint and requires an API token to produce records to it.
+
+```sh
+curl "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/k2/streams" \
+  --request POST \
+  --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "name": "orders",
+    "http": {
+      "enabled": true,
+      "authentication": true
+    }
+  }'
+```
+
+```json
+{
+	"success": true,
+	"errors": [],
+	"messages": [],
+	"result": {
+		"id": "241fa65b438a4d539a19371f58bfdae0",
+		"name": "orders",
+		"retention_seconds": 604800,
+		"endpoint": "https://241fa65b438a4d539a19371f58bfdae0.k2.cloudflarestorage.com",
+		"http": {
+			"enabled": true,
+			"authentication": true
+		},
+		"worker_binding": {
+			"enabled": true
+		},
+		"created_at": "2026-09-24T21:19:19.246Z",
+		"modified_at": "2026-09-24T21:19:19.246Z"
+	}
+}
+```
+
+The response includes:
+
+- `id`: The stream ID. You use it to build the stream endpoint.
+- `endpoint`: The base URL for producing and consuming records.
+- `retention_seconds`: How long K2 keeps records. The default is seven days ( `604800` seconds).
+
+Export the stream ID and endpoint as shell variables:
+
+```sh
+export STREAM_ID=<STREAM_ID>
+export K2_ENDPOINT=https://$STREAM_ID.k2.cloudflarestorage.com
+```
+
+<details>
+
+<summary>
+
+Stream configuration options
+
+</summary>
+
+| Field | Required | Description |
+| --- | --- | --- |
+| <code>name</code> | Yes | 1 to 128 letters, numbers, or underscores. Must be unique in your account. Names are not case-sensitive. |
+| <code>http.enabled</code> | Yes | Enables the HTTP <code>/produce</code> endpoint. |
+| <code>http.authentication</code> | No | Requires an API token to produce over HTTP. If you omit this field, anyone with the endpoint URL can produce. |
+| <code>http.cors.origins</code> | No | Up to five origins allowed to produce from a browser, or <code>["*"]</code> to allow any origin. |
+| <code>worker_binding.enabled</code> | No | Allows a Worker to produce through a binding. Defaults to <code>true</code>. |
+| <code>retention_seconds</code> | No | Record retention, from <code>3600</code> (one hour) to <code>2592000</code> (30 days). Defaults to <code>604800</code> (seven days). |
+
+At least one of <code>http</code> or <code>worker_binding</code> must be enabled.
+
+</details>
+
+## 3. Produce records
+
+Send a batch of two records to the `/produce` endpoint of your stream. Record `content` must be standard base64. In this example, each record contains a base64-encoded JSON order event.
+
+```sh
+curl "$K2_ENDPOINT/produce" \
+  --request POST \
+  --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "records": [
+      {
+        "content": "eyJvcmRlcl9pZCI6MTAwMSwic3RhdHVzIjoiY3JlYXRlZCJ9",
+        "headers": { "event-type": "order.created" }
+      },
+      {
+        "content": "eyJvcmRlcl9pZCI6MTAwMiwic3RhdHVzIjoiY3JlYXRlZCJ9",
+        "headers": { "event-type": "order.created" }
+      }
+    ]
+  }'
+```
+
+```json
+{ "success": true }
+```
+
+A `success: true` response means K2 stored every record in the batch.
+
+To encode your own payloads, pipe them through `base64`:
+
+```sh
+printf '%s' '{"order_id":1001,"status":"created"}' | base64
+```
+
+Note
+
+If a produce request fails, the response includes an `error` object with a `retryable` field. Only retry the request when `retryable` is `true`. K2 does not deduplicate records, so a retried batch can be stored more than once.
+
+## 4. Create a subscription
+
+A subscription tracks which records a consumer has processed. Create a subscription named `orders-processor` that starts from the earliest record in the stream.
+
+```sh
+curl "$K2_ENDPOINT/subscriptions" \
+  --request POST \
+  --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "name": "orders-processor",
+    "start_at": { "type": "earliest" }
+  }'
+```
+
+```json
+{
+	"result": { "id": "e2f747f8bccf453eb2767496779cd135" },
+	"success": true,
+	"errors": [],
+	"messages": []
+}
+```
+
+The request body contains:
+
+- `name`: 1 to 128 letters, numbers, underscores, or hyphens. Must be unique within the stream.
+- `start_at.type`: `earliest` reads from the oldest retained record. `latest` skips records that exist when you create the subscription.
+
+Creating a subscription with the same name and settings returns the existing subscription ID, so the request is safe to retry.
+
+Export the subscription ID as a shell variable:
+
+```sh
+export SUBSCRIPTION_ID=<SUBSCRIPTION_ID>
+```
+
+## 5. Consume records
+
+Request a batch of up to 100 records. The `worker_id` identifies your consumer. Each worker can hold one lease at a time.
+
+```sh
+curl "$K2_ENDPOINT/subscriptions/$SUBSCRIPTION_ID/consume" \
+  --request POST \
+  --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "worker_id": "worker-1",
+    "max_records": 100
+  }'
+```
+
+```json
+{
+	"result": {
+		"batch_id": "4f1c2a9e8b7d4c6f9a0e1d2c3b4a5968",
+		"leased_until_ms": 1790165100000,
+		"records": [
+			{
+				"timestamp_ms": 1790164800000,
+				"content": "eyJvcmRlcl9pZCI6MTAwMSwic3RhdHVzIjoiY3JlYXRlZCJ9",
+				"headers": { "event-type": "order.created" }
+			},
+			{
+				"timestamp_ms": 1790164800000,
+				"content": "eyJvcmRlcl9pZCI6MTAwMiwic3RhdHVzIjoiY3JlYXRlZCJ9",
+				"headers": { "event-type": "order.created" }
+			}
+		]
+	},
+	"success": true,
+	"errors": [],
+	"messages": []
+}
+```
+
+The response contains:
+
+- `batch_id`: The ID of the leased batch. You need it to acknowledge the batch.
+- `leased_until_ms`: When the lease expires, in milliseconds since the Unix epoch. The lease lasts five minutes.
+- `records`: The records in the batch. `timestamp_ms` is the time K2 received the record, in milliseconds since the Unix epoch. `content` is base64.
+
+To decode the record contents, pipe the response through `jq`:
+
+```sh
+curl --silent "$K2_ENDPOINT/subscriptions/$SUBSCRIPTION_ID/consume" \
+  --request POST \
+  --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+  --header "Content-Type: application/json" \
+  --data '{"worker_id": "worker-1", "max_records": 100}' \
+  | jq -r '.result.records[].content | @base64d'
+```
+
+```txt
+{"order_id":1001,"status":"created"}
+{"order_id":1002,"status":"created"}
+```
+
+Because `worker-1` still holds its lease, this second request returns the same batch and refreshes the lease. Use this behavior to recover a batch if your consumer loses a response.
+
+If there are no records to read, the response contains an empty `records` array and `batch_id` is `null`. Wait before you poll again.
+
+Export the batch ID from the response as a shell variable:
+
+```sh
+export BATCH_ID=<BATCH_ID>
+```
+
+## 6. Acknowledge the batch
+
+After you process the records, acknowledge the batch. This advances the subscription past these records and releases the lease so the worker can read the next batch.
+
+```sh
+curl "$K2_ENDPOINT/subscriptions/$SUBSCRIPTION_ID/batches/$BATCH_ID/ack" \
+  --request POST \
+  --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+  --header "Content-Type: application/json" \
+  --data '{ "worker_id": "worker-1" }'
+```
+
+```json
+{ "result": {}, "success": true, "errors": [], "messages": [] }
+```
+
+If processing fails, send the same request to `/nack` instead of `/ack`. K2 releases the lease without advancing the subscription, and delivers the records again.
+
+Run the consume request from step 5 again. Because you acknowledged the first batch, the response contains no records.
+
+## 7. Clean up
+
+Delete the subscription:
+
+```sh
+curl "$K2_ENDPOINT/subscriptions/$SUBSCRIPTION_ID" \
+  --request DELETE \
+  --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
+```
+
+```json
+{
+	"result": { "id": "e2f747f8bccf453eb2767496779cd135" },
+	"success": true,
+	"errors": [],
+	"messages": []
+}
+```
+
+Delete the stream and all of its records:
+
+```sh
+curl "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/k2/streams/$STREAM_ID" \
+  --request DELETE \
+  --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
+```
+
+```json
+{ "success": true, "errors": [], "messages": [], "result": {} }
+```
+
+## Next steps
+
+### [Limits](https://developers.cloudflare.com/k2/platform/limits/)
+
+Review record size, batch size, and subscription limits.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/k2/get-started/#page","headline":"Get started","description":"Create a K2 stream, produce records over HTTP, and consume them through a subscription.","url":"https://developers.cloudflare.com/k2/get-started/","inLanguage":"en","image":"https://developers.cloudflare.com/k2/get-started/og.png?v=62dce78adb6d0329","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Learn about the key ideas behind K2, including streams, records, subscriptions, and leases.
+title: Concepts
+image: https://developers.cloudflare.com/k2/concepts/og.png?v=b7c316bbff2924f6
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/k2/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Concepts
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/k2/concepts/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+This page introduces the concepts underlying K2.
+
+## Streams
+
+The core primitive in K2 is what we call a *stream* — an ordered, durable, log of events. The stream sits between producers writing events and consumers reading them. Unlike a traditional queue, where consumption removes items, production and consumption in a log are completely decoupled. Writes append events to the log, while reads merely advance a pointer (or *offset*) within the log.
+
+This has some useful properties:
+
+- Writes and reads are completely independent, so we never run out of space or otherwise block writes due to slow reads
+- We can support multiple independent readers consuming the entire stream (pub-sub style) as readers do not affect each other or the log
+- We can support historical replay, as data is only removed based on a configurable time-to-live (TTL)
+
+Each stream has a name and a retention period. When you create a stream, K2 assigns it a unique ID, which producers and consumers use to communicate with it. Producers write to a stream through an HTTP endpoint (with or without authentication), a Workers binding, or both.
+
+## Records
+
+Records are the data written to a stream. Each record has the following fields:
+
+- `content`: a binary message, containing arbitrary data; base64-encoded in the HTTP APIs
+- `headers`: an optional map of string keys to string values that can be used to describe the data in the content
+
+Headers are useful for describing the content, without needing to deserialize it. Common use cases for headers include:
+
+- Storing the encoding, so the reader knows how to deserialize the content
+- Representing data used to route or filter events, improving efficiency by avoiding deserialization when not necessary
+- Annotating content in a pass-through pipeline without needing to modify the underlying data
+
+Records can be up to 1 MB, counting across both content and headers.
+
+## Subscriptions
+
+Reads from K2 are performed via *subscriptions*. Each subscription will receive all messages in the stream, and multiple consumers can share a single subscription.
+
+This enables K2 to support two delivery strategies: reads can be shared amongst a set of consumers (such that each consumer gets a subset of the messages), or delivered to all consumers independently (such that each consumer gets all messages). These strategies can also be mixed, with multiple groups of consumers which each get a subset of the messages.
+
+Subscriptions are created with an initial position in the log: either `earliest`, which receives all retained (not deleted according to the TTL) data in the stream, or `latest` which receives all events from the time the subscription is created.
+
+## Leases
+
+Once a subscription is created, clients can consume from it by POSTing to the subscription's `/consume` endpoint. This returns a list of messages which this client is expected to process. These messages are *leased* to that client for a particular amount of time — the *lease period*, which is 5 minutes. The client is expected, before the lease expires, to either *ack* the messages, telling the subscription that they are successfully consumed, or *nack* them, indicating a processing failure. Events owned by a nack'd or timed-out lease will be redelivered on a subsequent call to consume.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/k2/concepts/#page","headline":"Concepts","description":"Learn about the key ideas behind K2, including streams, records, subscriptions, and leases.","url":"https://developers.cloudflare.com/k2/concepts/","inLanguage":"en","image":"https://developers.cloudflare.com/k2/concepts/og.png?v=b7c316bbff2924f6","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Create, update, and delete K2 streams, and configure their inputs, authentication, CORS, and retention.
+title: Configuration
+image: https://developers.cloudflare.com/k2/configuration/og.png?v=b5ec4eb7360749ac
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/k2/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Configuration
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/k2/configuration/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+K2 streams can be created, updated, and deleted with the REST API.
+
+To create, update, or delete streams, your API token needs the `K2 Config Write` permission. To get or list streams, it needs the `K2 Config Read` permission.
+
+## Stream settings
+
+| Setting | Type | Required | Default | Description |
+| --- | --- | --- | --- | --- |
+| `name` | string | Yes | None | 1 to 128 letters, numbers, or underscores. Must be unique in your account. Not case-sensitive. |
+| `retention_seconds` | integer | No | `604800` | How long K2 retains records, from `3600` (one hour) to `2592000` (30 days). |
+| `http` | object | Yes | None | Configures the HTTP input. Refer to [HTTP input](#http-input). |
+| `worker_binding` | object | No | `{ enabled: true }` | Configures the Workers binding input. Refer to [Workers binding input](#workers-binding-input). |
+
+At least one of `http` or `worker_binding` must be enabled.
+
+You cannot rename a stream after you create it.
+
+### Inputs
+
+An input is a way for producers to write records to a stream. K2 supports two inputs:
+
+- **HTTP:** Producers send records to the stream's `/produce` endpoint.
+- **Workers binding:** A Worker sends records through a binding.
+
+### HTTP input
+
+| Field | Type | Required | Description |
+| --- | --- | --- | --- |
+| `enabled` | boolean | Yes | Enables the `/produce` endpoint. |
+| `authentication` | boolean | No | Requires an API token with the `K2 Produce` permission to produce. If omitted or `false`, anyone with the stream endpoint can produce. |
+| `cors.origins` | array of strings | No | Origins allowed to produce from a browser. Refer to [CORS](#cors). |
+
+Caution
+
+If you do not set `authentication` to `true`, the `/produce` endpoint is public. Anyone who knows the stream ID can write records to the stream.
+
+#### Authentication
+
+When `authentication` is `true`, producers using the HTTP API must send an API token in the `Authorization: Bearer <TOKEN>` header. The token must have permission to produce to K2 streams (`K2 Produce`) in the account that owns the stream.
+
+#### CORS
+
+Configure `cors.origins` to allow browsers to produce records from a web page. Each entry must be one of the following:
+
+- An `http://` or `https://` origin, such as `https://example.com`. Origins cannot include a path, query string, fragment, or credentials.
+- `*`, to allow any origin. If you use `*`, it must be the only entry.
+
+You can configure up to five origins. Each origin must be unique.
+
+### Workers binding input
+
+| Field | Type | Required | Description |
+| --- | --- | --- | --- |
+| `enabled` | boolean | Yes | Allows Workers to produce to the stream with a binding. |
+
+If you omit `worker_binding` when you create a stream, the Workers binding input is enabled.
+
+### Retention
+
+`retention_seconds` sets how long K2 retains records after it receives them. The value must be between `3600` (one hour) and `2592000` (30 days). The default is `604800` (seven days).
+
+K2 deletes expired records in the background. Records can remain readable for some time after their retention period ends, so do not rely on retention to remove data at an exact time.
+
+## Update a stream
+
+To change a stream's settings, send a `PATCH` request with the settings to change. You can update `retention_seconds`, `http`, and `worker_binding`. Include at least one of these fields.
+
+```sh
+curl "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/k2/streams/$STREAM_ID" \
+  --request PATCH \
+  --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "retention_seconds": 86400,
+    "worker_binding": { "enabled": false }
+  }'
+```
+
+The response contains the updated stream:
+
+```json
+{
+	"success": true,
+	"errors": [],
+	"messages": [],
+	"result": {
+		"id": "241fa65b438a4d539a19371f58bfdae0",
+		"name": "orders",
+		"retention_seconds": 86400,
+		"endpoint": "https://241fa65b438a4d539a19371f58bfdae0.k2.cloudflarestorage.com",
+		"http": {
+			"enabled": true,
+			"authentication": true
+		},
+		"worker_binding": {
+			"enabled": false
+		},
+		"created_at": "2026-09-24T21:19:19.246Z",
+		"modified_at": "2026-09-29T14:25:54.712Z"
+	}
+}
+```
+
+When you update an input, the new object replaces the existing one. For example, to add a CORS origin to the HTTP input, send the complete `http` object, including `enabled` and `authentication`. To disable an input, set it to `{ "enabled": false }`. You cannot disable both inputs.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/k2/configuration/#page","headline":"Configuration","description":"Create, update, and delete K2 streams, and configure their inputs, authentication, CORS, and retention.","url":"https://developers.cloudflare.com/k2/configuration/","inLanguage":"en","image":"https://developers.cloudflare.com/k2/configuration/og.png?v=b5ec4eb7360749ac","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Read records from a K2 stream through a subscription, and acknowledge them after processing.
+title: Consume records
+image: https://developers.cloudflare.com/k2/features/consume/og.png?v=347ebe1831d9d50f
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/k2/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Consume records
+
+Last updated Oct 6, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/k2/features/consume/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Consumers read records from a K2 stream through a [subscription](https://developers.cloudflare.com/k2/concepts/#subscriptions), which tracks which records have been processed. Each subscription on a stream reads independently, meaning multiple applications can read the same records.
+
+To consume records:
+
+1. [Create a subscription](#create-a-subscription) on the stream.
+2. [Request a batch](#request-a-batch) of records. K2 leases the batch to your consumer.
+3. Process the records, then [acknowledge the batch](#acknowledge-a-batch). If processing takes longer than the lease, [extend the lease](#extend-a-lease).
+4. Repeat from step 2.
+
+K2 delivers records at least once. Your consumer can receive the same record more than once. For details, refer to [Delivery guarantees](https://developers.cloudflare.com/k2/reference/delivery-guarantees/).
+
+## Before you begin
+
+All consumer requests use the stream endpoint, `https://<STREAM_ID>.k2.cloudflarestorage.com`, and require an API token with the `K2 Consume` permission in the account that owns the stream.
+
+The examples on this page use the following shell variables:
+
+```sh
+export K2_ENDPOINT=https://<STREAM_ID>.k2.cloudflarestorage.com
+export CLOUDFLARE_API_TOKEN=<YOUR_API_TOKEN>
+```
+
+After you [create a subscription](#create-a-subscription), export its ID. After you [request a batch](#request-a-batch), export the `batch_id` from the response:
+
+```sh
+export SUBSCRIPTION_ID=<SUBSCRIPTION_ID>
+export BATCH_ID=<BATCH_ID>
+```
+
+## Create a subscription
+
+```sh
+curl "$K2_ENDPOINT/subscriptions" \
+  --request POST \
+  --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "name": "orders-ingestion",
+    "start_at": { "type": "earliest" }
+  }'
+```
+
+```json
+{
+	"result": { "id": "e2f747f8bccf453eb2767496779cd135" },
+	"success": true,
+	"errors": [],
+	"messages": []
+}
+```
+
+| Field | Type | Required | Description |
+| --- | --- | --- | --- |
+| `name` | string | Yes | 1 to 128 letters, numbers, underscores, or hyphens. Must be unique within the stream. Not case-sensitive. |
+| `start_at.type` | string | Yes | Where the subscription starts reading. `earliest` starts at the oldest retained record. `latest` starts after the newest record in the stream. |
+
+Subscriptions are immutable once created.
+
+If you create a subscription with the same name and settings as an existing one, K2 returns the existing subscription ID. If the name matches but the settings differ, K2 returns a `422` error.
+
+### Manage subscriptions
+
+| Action | Request |
+| --- | --- |
+| List subscriptions | `GET /subscriptions` |
+| Find a subscription by name | `GET /subscriptions?name=<SUBSCRIPTION_NAME>` |
+| Get a subscription | `GET /subscriptions/<SUBSCRIPTION_ID>` |
+| Delete a subscription | `DELETE /subscriptions/<SUBSCRIPTION_ID>` |
+
+List requests return an array of subscriptions, oldest first. A request with `name` returns an array with at most one subscription.
+
+A get request returns a single subscription:
+
+```json
+{
+	"result": {
+		"id": "e2f747f8bccf453eb2767496779cd135",
+		"name": "orders-processor",
+		"start_at": { "type": "earliest" },
+		"created_at": "2026-09-23T12:00:00.000Z",
+		"modified_at": "2026-09-23T12:00:00.000Z"
+	},
+	"success": true,
+	"errors": [],
+	"messages": []
+}
+```
+
+A stream can have up to 100 subscriptions. If you create a subscription on a stream that already has 100, K2 returns a `422` error with code `10219`. Delete an existing subscription to create a new one.
+
+## Request a batch
+
+Send a `POST` request to `/subscriptions/<SUBSCRIPTION_ID>/consume`:
+
+```sh
+curl "$K2_ENDPOINT/subscriptions/$SUBSCRIPTION_ID/consume" \
+  --request POST \
+  --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "worker_id": "worker-1",
+    "max_records": 100
+  }'
+```
+
+| Field | Type | Required | Description |
+| --- | --- | --- | --- |
+| `worker_id` | string | Yes | An identifier for your consumer, 1 to 256 characters. Use a different value for each concurrent consumer. |
+| `max_records` | integer | Yes | The maximum number of records to return, from `1` to `10000`. |
+
+```json
+{
+	"result": {
+		"batch_id": "4f1c2a9e8b7d4c6f9a0e1d2c3b4a5968",
+		"leased_until_ms": 1790165100000,
+		"records": [
+			{
+				"timestamp_ms": 1790164800000,
+				"content": "eyJvcmRlcl9pZCI6MTAwMSwic3RhdHVzIjoiY3JlYXRlZCJ9",
+				"headers": { "event-type": "order.created" }
+			}
+		]
+	},
+	"success": true,
+	"errors": [],
+	"messages": []
+}
+```
+
+| Field | Description |
+| --- | --- |
+| `batch_id` | The ID of the leased batch. Use it to acknowledge the batch. |
+| `leased_until_ms` | When the lease expires, in milliseconds since the Unix epoch. |
+| `records[].timestamp_ms` | When K2 received the record, in milliseconds since the Unix epoch. |
+| `records[].content` | The record payload, as standard base64. |
+| `records[].headers` | The record headers. Omitted if the record was produced without any headers. |
+
+`max_records` is a ceiling for the number of records that will be returned, but a batch may contain fewer records. This does not necessarily imply that there are no more records available.
+
+### No records available
+
+If there are no new records, the response contains an empty batch:
+
+```json
+{
+	"result": { "batch_id": null, "leased_until_ms": null, "records": [] },
+	"success": true,
+	"errors": [],
+	"messages": []
+}
+```
+
+Wait before you send another request. Use a backoff interval to avoid polling continuously.
+
+## Leases
+
+When K2 returns a batch, it leases the batch to the `worker_id` that requested it. The lease lasts five minutes.
+
+- Each `worker_id` can hold one lease at a time.
+- K2 never leases the same records to two workers at the same time.
+- A subscription can have up to 128 active leases at a time. If every lease is in use, K2 returns a `429` error with code `10216`.
+- K2 does not guarantee the order in which records are processed across workers that share a subscription.
+
+If a worker requests a batch while it already holds a lease, K2 returns the same batch and records again, and refreshes the lease. K2 ignores `max_records` when it returns the same batch. Use this to recover a batch if your consumer loses the response, for example after a network error.
+
+If a lease expires before the batch is acknowledged, K2 delivers the records again to the next worker that requests a batch.
+
+## Acknowledge a batch
+
+After you process a batch, acknowledge it. This marks the records as processed and releases the lease, so the worker can request the next batch.
+
+```sh
+curl "$K2_ENDPOINT/subscriptions/$SUBSCRIPTION_ID/batches/$BATCH_ID/ack" \
+  --request POST \
+  --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+  --header "Content-Type: application/json" \
+  --data '{ "worker_id": "worker-1" }'
+```
+
+```json
+{ "result": {}, "success": true, "errors": [], "messages": [] }
+```
+
+Acknowledge the batch before `leased_until_ms`. If the lease has expired and K2 has already delivered the records in a new batch, the acknowledgement has no effect.
+
+Acknowledging the same batch more than once is safe. K2 returns a success response for batches that are unknown or already acknowledged.
+
+## Extend a lease
+
+If your consumer needs more than five minutes to process a batch, extend the lease before it expires:
+
+```sh
+curl "$K2_ENDPOINT/subscriptions/$SUBSCRIPTION_ID/batches/$BATCH_ID/extend" \
+  --request POST \
+  --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+  --header "Content-Type: application/json" \
+  --data '{ "worker_id": "worker-1" }'
+```
+
+```json
+{
+	"result": { "leased_until_ms": 1790165400000 },
+	"success": true,
+	"errors": [],
+	"messages": []
+}
+```
+
+A successful extension sets the lease to expire five minutes after the request. It never shortens a lease.
+
+Unlike ack and nack, the `worker_id` must match the worker that holds the lease. If the lease has expired, has been released, or the batch has been acknowledged or delivered to another worker, K2 returns a `409` error with code `10218`. Retrying the same request cannot succeed. Stop processing the batch and request a new batch. K2 delivers the records again with a new `batch_id`.
+
+## Release a batch
+
+If your consumer cannot process a batch, send a negative acknowledgement (nack) to release it immediately instead of waiting for the lease to expire:
+
+```sh
+curl "$K2_ENDPOINT/subscriptions/$SUBSCRIPTION_ID/batches/$BATCH_ID/nack" \
+  --request POST \
+  --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+  --header "Content-Type: application/json" \
+  --data '{ "worker_id": "worker-1" }'
+```
+
+```json
+{ "result": {}, "success": true, "errors": [], "messages": [] }
+```
+
+K2 delivers the released records again in the next batch requested by any worker, with a new `batch_id`. The subscription does not move past the records until that new batch is acknowledged.
+
+## Handle errors
+
+Subscription and consume errors use the Cloudflare API format, with an `errors` array:
+
+```json
+{
+	"result": null,
+	"success": false,
+	"errors": [
+		{
+			"code": 10216,
+			"message": "All parallel read slots for this subscription are in use, please retry"
+		}
+	],
+	"messages": []
+}
+```
+
+This is different from the format of [produce errors](https://developers.cloudflare.com/k2/features/produce/#handle-errors).
+
+Retry requests that fail with codes `10211`, `10214`, `10216`, or `10217` after a backoff interval. Do not retry other errors without changing the request.
+
+<details>
+
+<summary>
+
+Subscription and consume error codes
+
+</summary>
+
+| Code | HTTP status | Description |
+| --- | --- | --- |
+| <code>10200</code> | <code>404</code> | The stream does not exist. |
+| <code>10201</code> | <code>422</code> | A subscription with this name exists with different settings. |
+| <code>10204</code> | <code>400</code> | The request is invalid. For example, the JSON is malformed or a field is out of range. |
+| <code>10205</code> | <code>415</code> | The <code>Content-Type</code> header is not <code>application/json</code>. |
+| <code>10208</code> | <code>401</code> | The request has no <code>Authorization</code> header. |
+| <code>10209</code> | <code>401</code> | The <code>Authorization</code> header is malformed or the API token is invalid. |
+| <code>10210</code> | <code>403</code> | The API token does not have permission to consume from this stream. |
+| <code>10211</code> | <code>503</code> | K2 is temporarily unavailable. Retry the request. |
+| <code>10213</code> | <code>500</code> | An internal error occurred. |
+| <code>10214</code> | <code>503</code> | K2 could not read records from storage. Retry the request. |
+| <code>10215</code> | <code>404</code> | The subscription does not exist. |
+| <code>10216</code> | <code>429</code> | The maximum number of concurrent consumers has been exceeded for this subscription. Retry after a lease is acknowledged, released, or expires. |
+| <code>10217</code> | <code>409</code> | K2 is still reading a batch for this <code>worker_id</code> from an earlier request. Retry the request to receive the batch. |
+| <code>10218</code> | <code>409</code> | The lease is no longer held by this worker. Do not retry. Request a new batch instead. |
+| <code>10219</code> | <code>422</code> | The stream already has the maximum of 100 subscriptions. |
+
+</details>
+
+## Next steps
+
+- Review consumer limits in [Limits](https://developers.cloudflare.com/k2/platform/limits/#subscriptions-and-consuming-records).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/k2/features/consume/#page","headline":"Consume records","description":"Read records from a K2 stream through a subscription, and acknowledge them after processing.","url":"https://developers.cloudflare.com/k2/features/consume/","inLanguage":"en","image":"https://developers.cloudflare.com/k2/features/consume/og.png?v=347ebe1831d9d50f","dateModified":"2026-10-06","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Write records to a K2 stream over HTTP or from a Worker with a binding.
+title: Produce records
+image: https://developers.cloudflare.com/k2/features/produce/og.png?v=a597d5e720909ab0
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/k2/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Produce records
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/k2/features/produce/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+You can write records to a K2 stream in two ways:
+
+- [Over HTTP](#produce-over-http), by sending a `POST` request to the stream's `/produce` endpoint.
+- [From a Worker](#produce-from-a-worker), by calling `send()` on a Workers binding.
+
+Each input must be enabled on the stream. Refer to [Inputs](https://developers.cloudflare.com/k2/configuration/#inputs).
+
+## Records and batches
+
+A record has two fields:
+
+| Field | Type | Required | Description |
+| --- | --- | --- | --- |
+| `content` | bytes | Yes | The record payload as raw bytes. |
+| `headers` | object of string to string | No | Metadata about the record. |
+
+Records are sent in batches. A batch must contain at least one record, and there is no limit on the number of records other than the maximum batch size. Batch writes are atomic, so either all records in the batch are recorded successfully or none are.
+
+Timestamps are written by the server when the batch is received, and are not currently overridable by users.
+
+For record, header, and batch size limits, refer to [Limits](https://developers.cloudflare.com/k2/platform/limits/#produce-records).
+
+## Produce over HTTP
+
+Send a `POST` request to `https://<STREAM_ID>.k2.cloudflarestorage.com/produce`. The request body is a JSON object with a `records` array. Record `content` must be standard base64.
+
+```sh
+curl "https://$STREAM_ID.k2.cloudflarestorage.com/produce" \
+  --request POST \
+  --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "records": [
+      {
+        "content": "eyJvcmRlcl9pZCI6MTAwMSwic3RhdHVzIjoiY3JlYXRlZCJ9",
+        "headers": { "event-type": "order.created" }
+      },
+      {
+        "content": "eyJvcmRlcl9pZCI6MTAwMiwic3RhdHVzIjoiY3JlYXRlZCJ9"
+      }
+    ]
+  }'
+```
+
+```json
+{ "success": true }
+```
+
+The request must meet the following requirements:
+
+- The `Content-Type` header must be `application/json`.
+- To compress the request body, gzip it and set the `Content-Encoding: gzip` header. The size limit applies both before and after decompression.
+- `content` must be standard base64 with correct padding. URL-safe base64 is not supported.
+- The request body cannot contain fields other than `records`, and records cannot contain fields other than `content` and `headers`.
+- If the HTTP input has [authentication](https://developers.cloudflare.com/k2/configuration/#authentication) enabled, include an API token in the `Authorization` header.
+
+### Produce from a browser
+
+To produce from a web page, add your site's origin to the stream's [CORS configuration](https://developers.cloudflare.com/k2/configuration/#cors).
+
+Do not include an API token in code that runs in a browser, because anyone who visits the page can read it. To produce from a browser, the stream's HTTP input must have [authentication](https://developers.cloudflare.com/k2/configuration/#authentication) disabled. This makes the `/produce` endpoint public, so anyone who knows the stream ID can write records to the stream. Validate records in your consumers.
+
+```js
+const encoder = new TextEncoder();
+
+const records = [{ order_id: 1001, status: "created" }].map((event) => ({
+	content: encoder.encode(JSON.stringify(event)).toBase64(),
+	headers: { "event-type": "order.created" },
+}));
+
+const response = await fetch(
+	"https://<STREAM_ID>.k2.cloudflarestorage.com/produce",
+	{
+		method: "POST",
+		headers: { "Content-Type": "application/json" },
+		body: JSON.stringify({ records }),
+	},
+);
+
+const result = await response.json();
+if (!result.success) {
+	console.error(`Produce failed: ${result.error.message}`);
+}
+```
+
+`Uint8Array.prototype.toBase64()` is available in recent browsers. For older browsers, use `btoa()` or a base64 library.
+
+## Produce from a Worker
+
+A Workers binding lets a Worker produce to a stream without an API token. The binding handles authentication for you.
+
+### Configure the binding
+
+Add a `k2` binding to your [Wrangler configuration file](https://developers.cloudflare.com/workers/wrangler/configuration/). Set `stream` to the ID of the stream to produce to:
+
+```jsonc
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "orders-producer",
+  "main": "src/index.ts",
+  // Set this to today's date
+  "compatibility_date": "2026-10-07",
+  "k2": [
+    {
+      "binding": "ORDERS",
+      "stream": "<STREAM_ID>"
+    }
+  ]
+}
+```
+
+```toml
+name = "orders-producer"
+main = "src/index.ts"
+# Set this to today's date
+compatibility_date = "2026-10-07"
+
+[[k2]]
+binding = "ORDERS"
+stream = "<STREAM_ID>"
+```
+
+| Field | Description |
+| --- | --- |
+| `binding` | The name of the binding in your Worker code. In this example, the binding is `env.ORDERS`. |
+| `stream` | The ID of the stream, 32 lowercase hexadecimal characters. The stream must be in the same account as the Worker. |
+
+To bind to more than one stream, add a `[[k2]]` entry for each stream.
+
+When you deploy, Cloudflare checks that the stream exists in your account and that you have permission to use it. If the check fails, the deployment fails with one of the following errors:
+
+| Code | Description |
+| --- | --- |
+| `10399` | The binding has no `stream` field, or the value is not a 32-character lowercase hexadecimal stream ID. |
+| `10400` | The stream does not exist in the account you are deploying to. |
+| `10401` | You do not have permission to bind this stream. |
+| `10402` | Cloudflare could not validate the binding. Try the deployment again. |
+
+### Send records
+
+Call `send()` on the binding with an array of records. Record `content` must be an `ArrayBuffer` or a `Uint8Array`. Every record in a batch must use the same type.
+
+This example uses the `Env` type that [`wrangler types`](https://developers.cloudflare.com/workers/languages/typescript/#generate-types) generates from your Wrangler configuration. Run `npx wrangler types` after you add the binding.
+
+*src/index.jsjs*
+
+```js
+export default {
+	async fetch(request, env) {
+		const event = { order_id: 1001, status: "created" };
+		const encoder = new TextEncoder();
+
+		const result = await env.ORDERS.send([
+			{
+				content: encoder.encode(JSON.stringify(event)),
+				headers: { "event-type": "order.created" },
+			},
+		]);
+
+		if (!result.success) {
+			console.error(`Produce failed: ${result.error.message}`);
+			return new Response("Failed to record event", {
+				status: result.error.retryable ? 503 : 500,
+			});
+		}
+
+		return new Response("Event recorded");
+	},
+};
+```
+
+*src/index.tsts*
+
+```ts
+export default {
+	async fetch(request, env): Promise<Response> {
+		const event = { order_id: 1001, status: "created" };
+		const encoder = new TextEncoder();
+
+		const result = await env.ORDERS.send([
+			{
+				content: encoder.encode(JSON.stringify(event)),
+				headers: { "event-type": "order.created" },
+			},
+		]);
+
+		if (!result.success) {
+			console.error(`Produce failed: ${result.error.message}`);
+			return new Response("Failed to record event", {
+				status: result.error.retryable ? 503 : 500,
+			});
+		}
+
+		return new Response("Event recorded");
+	},
+} satisfies ExportedHandler<Env>;
+```
+
+`send()` does not throw when K2 rejects a batch. Instead, it returns a result object. Check `result.success` after each call.
+
+String content is not supported, including base64 strings. Encode text to bytes with `TextEncoder` before you send it.
+
+## Handle errors
+
+When a batch fails, K2 returns an error object instead of `{ "success": true }`. Over HTTP, the response also has a non-`200` status code.
+
+```json
+{
+	"success": false,
+	"error": {
+		"code": 10211,
+		"message": "K2 is temporarily unavailable",
+		"retryable": true
+	}
+}
+```
+
+If `retryable` is `true`, K2 did not store the batch. Retry the same batch with exponential backoff.
+
+If `retryable` is `false`, do not retry the batch without changing it. Some failures, such as `10212`, have an unknown outcome: the batch may or may not have been stored. K2 does not deduplicate records, so retrying can store the batch twice. Design consumers to handle duplicate records.
+
+<details>
+
+<summary>
+
+Produce error codes
+
+</summary>
+
+| Code | HTTP status | Retryable | Description |
+| --- | --- | --- | --- |
+| <code>10200</code> | <code>404</code> | No | The stream does not exist, or the input is not enabled. |
+| <code>10204</code> | <code>400</code> | No | The request is invalid. For example, the JSON or base64 is malformed, or a header exceeds its size limit. |
+| <code>10205</code> | <code>415</code> | No | The <code>Content-Type</code> header is not <code>application/json</code>. |
+| <code>10206</code> | <code>413</code> | No | The request exceeds 5 MB. |
+| <code>10207</code> | <code>413</code> | No | A record exceeds 1 MB. |
+| <code>10208</code> | <code>401</code> | No | The stream requires authentication and the request has no <code>Authorization</code> header. |
+| <code>10209</code> | <code>401</code> | No | The <code>Authorization</code> header is malformed or the API token is invalid. |
+| <code>10210</code> | <code>403</code> | No | The API token does not have permission to produce to this stream. |
+| <code>10211</code> | <code>503</code> | Yes | K2 is temporarily unavailable. The batch was not stored. |
+| <code>10212</code> | <code>503</code> | No | K2 could not append the batch. The batch may or may not have been stored. |
+| <code>10213</code> | <code>500</code> | No | An internal error occurred. |
+
+</details>
+
+## Next steps
+
+- [Consume records](https://developers.cloudflare.com/k2/features/consume/) from the stream through a subscription.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/k2/features/produce/#page","headline":"Produce records","description":"Write records to a K2 stream over HTTP or from a Worker with a binding.","url":"https://developers.cloudflare.com/k2/features/produce/","inLanguage":"en","image":"https://developers.cloudflare.com/k2/features/produce/og.png?v=a597d5e720909ab0","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Account, stream, record, and consumer limits for Cloudflare K2.
+title: Limits
+image: https://developers.cloudflare.com/k2/platform/limits/og.png?v=ac2d822337ad8e50
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/k2/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Limits
+
+Last updated Oct 6, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/k2/platform/limits/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Need a higher limit?
+
+To request an adjustment to a limit, complete the [Limit Increase Request Form ↗︎](https://forms.gle/eX6pXvit1wBv77Yw5). If the limit can be increased, Cloudflare will contact you with next steps.
+
+## Account limits
+
+During the public beta, each account can store up to 10 GB across all streams.
+
+## Streams
+
+| Feature | Limit |
+| --- | --- |
+| Maximum streams per account | 20 |
+| Minimum retention period | 1 hour (`3600` seconds) |
+| Maximum retention period | 30 days (`2592000` seconds) |
+| Default retention period | 7 days (`604800` seconds) |
+
+Higher retention limits are available by request.
+
+## Produce records
+
+| Feature | Limit |
+| --- | --- |
+| Maximum produce throughput per stream | 30 MB/s |
+| Maximum request size | 5 MB (5,000,000 bytes) |
+| Maximum record size | \~1 MB (1,000,000 bytes) |
+| Maximum headers per record | 32 |
+| Maximum header name size | 256 bytes |
+| Maximum header value size | 8 KiB (8,192 bytes) |
+| Maximum total header size per record | 64 KiB (65,536 bytes) |
+
+The maximum request size applies to the HTTP request body both before and after gzip decompression + a small amount of internal metadata. For the Workers binding, it applies to the total size of the records in a single `send()` call.
+
+The maximum record size applies to the decoded record content, and to the record content and headers combined. Header sizes are measured in UTF-8 bytes.
+
+There is no limit on the number of records in a request, other than the maximum request size.
+
+The maximum produce throughput applies to the total data produced to a stream across all producers. To request a higher limit, refer to [limit increases](#account-limits).
+
+## Subscriptions and consuming records
+
+| Feature | Limit |
+| --- | --- |
+| Maximum `max_records` per consume request | 10,000 |
+| Maximum data per consume response | 10 MB |
+| `worker_id` length | 1 to 256 characters |
+| Maximum active leases per subscription | 128 |
+| Maximum subscriptions per stream | 100 |
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/k2/platform/limits/#page","headline":"Limits","description":"Account, stream, record, and consumer limits for Cloudflare K2.","url":"https://developers.cloudflare.com/k2/platform/limits/","inLanguage":"en","image":"https://developers.cloudflare.com/k2/platform/limits/og.png?v=ac2d822337ad8e50","dateModified":"2026-10-06","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: K2 pricing for data produced, data consumed, and data retained.
+title: Pricing
+image: https://developers.cloudflare.com/k2/platform/pricing/og.png?v=d6262c6af7b70b40
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/k2/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Pricing
+
+Last updated Oct 6, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/k2/platform/pricing/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Pricing availability
+
+K2 is in public beta and billing is not enabled at this time. We will provide at least 30 days notice before billing begins. Pricing may change and is shared in advance so that you can estimate what your costs will be once Cloudflare starts billing for usage.
+
+K2 is available on the [Workers Paid plan](https://developers.cloudflare.com/workers/platform/pricing/). K2 charges based on three dimensions:
+
+- **Data produced**: The volume of data written to streams.
+- **Data consumed**: The volume of data read from streams by consumers.
+- **Data retained**: The volume of data stored in streams.
+
+All three dimensions are measured in uncompressed bytes: the size of your records before any compression, such as gzip compression of an HTTP request body.
+
+## K2 pricing
+
+|  | Workers Paid <sup>[1](#user-content-fn-1)</sup> |
+| --- | --- |
+| **Data produced** | $0.04 / GB |
+| **Data consumed** | $0.04 / GB |
+| **Data retained** | $0.02 / GB / month |
+
+### Data produced
+
+Data produced is the volume of records written to a stream, through the [HTTP API or a Workers binding](https://developers.cloudflare.com/k2/features/produce/).
+
+### Data consumed
+
+Data consumed is the volume of records read from a stream through [subscriptions](https://developers.cloudflare.com/k2/features/consume/). Each subscription reads every record independently, so a stream with more subscriptions consumes more data.
+
+### Data retained
+
+Data retained is the volume of records stored in a stream, billed per GB per month. How much data a stream stores depends on how much you produce and on the stream's [retention period](https://developers.cloudflare.com/k2/configuration/#retention).
+
+## Billing examples
+
+### Example: one consumer
+
+An application produces 100 GB of events per month to a stream. One subscription consumes every record, and the stream stores an average of 25 GB over the month.
+
+| Dimension | Usage | Rate | Cost |
+| --- | --- | --- | --- |
+| Data produced | 100 GB | $0.04 / GB | $4.00 |
+| Data consumed | 100 GB | $0.04 / GB | $4.00 |
+| Data retained | 25 GB | $0.02 / GB / month | $0.50 |
+| **Total** |  |  | **$8.50** |
+
+### Example: fan-out to three consumers
+
+The same stream is read by three subscriptions, for example an alerting system, an archiver, and an analytics pipeline. Each subscription consumes every record.
+
+| Dimension | Usage | Rate | Cost |
+| --- | --- | --- | --- |
+| Data produced | 100 GB | $0.04 / GB | $4.00 |
+| Data consumed | 300 GB (3 × 100 GB) | $0.04 / GB | $12.00 |
+| Data retained | 25 GB | $0.02 / GB / month | $0.50 |
+| **Total** |  |  | **$16.50** |
+
+## Cloudflare billing policy
+
+To learn more about how usage is billed, refer to [Cloudflare Billing Policy](https://developers.cloudflare.com/billing/understand/billing-policy/).
+
+## Footnotes
+
+1. K2 both bills and measures usage based on a gigabyte   
+    (1 GB = 1,000,000,000 bytes) and not a gibibyte (GiB).   
+   [↩](#user-content-fnref-1)
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/k2/platform/pricing/#page","headline":"Pricing","description":"K2 pricing for data produced, data consumed, and data retained.","url":"https://developers.cloudflare.com/k2/platform/pricing/","inLanguage":"en","image":"https://developers.cloudflare.com/k2/platform/pricing/og.png?v=d6262c6af7b70b40","dateModified":"2026-10-06","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Storage and database options available on Cloudflare's developer platform.
+title: Choose a data or storage product
+image: https://developers.cloudflare.com/workers/platform/storage-options/og.png?v=abca508978294b6c
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Choose a data or storage product
+
+Last updated Oct 6, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/workers/platform/storage-options/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+This guide describes the storage & database products available as part of Cloudflare Workers, including recommended use-cases and best practices.
+
+## Choose a storage product
+
+The following table maps our storage & database products to common industry terms as well as recommended use-cases:
+
+| Use-case | Product | Ideal for |
+| --- | --- | --- |
+| Key-value storage | [Workers KV](https://developers.cloudflare.com/kv/) | Configuration data, service routing metadata, personalization (A/B testing) |
+| Object storage / blob storage | [R2](https://developers.cloudflare.com/r2/) | User-facing web assets, images, machine learning and training datasets, analytics datasets, log and event data. |
+| Accelerate a Postgres or MySQL database | [Hyperdrive](https://developers.cloudflare.com/hyperdrive/) | Connecting to an existing database in a cloud or on-premises using your existing database drivers & ORMs. |
+| Global coordination & stateful serverless | [Durable Objects](https://developers.cloudflare.com/durable-objects/) | Building collaborative applications; global coordination across clients; real-time WebSocket applications; strongly consistent, transactional storage. |
+| Lightweight SQL database | [D1](https://developers.cloudflare.com/d1/) | Relational data, including user profiles, product listings and orders, and/or customer data. |
+| Task processing, batching and messaging | [Queues](https://developers.cloudflare.com/queues/) | Background job processing (emails, notifications, APIs), message queuing, and deferred tasks. |
+| Event streaming | [K2](https://developers.cloudflare.com/k2/) | High-volume event data read by multiple independent consumers, such as alerting, archiving, and building machine learning features; replaying retained events. |
+| Vector search & embeddings queries | [Vectorize](https://developers.cloudflare.com/vectorize/) | Storing [embeddings](https://developers.cloudflare.com/workers-ai/models/?tasks=Text+Embeddings) from AI models for semantic search and classification tasks. |
+| Streaming ingestion | [Basin Pipelines](https://developers.cloudflare.com/basin-pipelines/) | Streaming data ingestion and processing, including clickstream analytics, telemetry/log data, and structured data for querying |
+| Time-series metrics | [Analytics Engine](https://developers.cloudflare.com/analytics/analytics-engine/) | Write and query high-cardinality time-series data, usage metrics, and service-level telemetry using Workers and/or SQL. |
+
+Applications can build on multiple storage & database products: for example, using Workers KV for session data; R2 for large file storage, media assets and user-uploaded files; and Hyperdrive to connect to a hosted Postgres or MySQL database.
+
+Pages Functions
+
+Storage options can also be used by your front-end application built with Cloudflare Pages. For more information on available storage options for Pages applications, refer to the [Pages Functions bindings documentation](https://developers.cloudflare.com/pages/functions/bindings/).
+
+## SQL database options
+
+There are three options for SQL-based databases available when building applications with Workers.
+
+- **Hyperdrive** if you have an existing Postgres or MySQL database, require large (1TB, 100TB or more) single databases, and/or want to use your existing database tools. You can also connect Hyperdrive to database platforms like [PlanetScale ↗︎](https://planetscale.com/) or [Neon ↗︎](https://neon.tech/).
+- **D1** for lightweight, serverless applications that are read-heavy, have global users that benefit from D1's [read replication](https://developers.cloudflare.com/d1/best-practices/read-replication/), and do not require you to manage and maintain a traditional RDBMS.
+- **Durable Objects** for stateful serverless workloads, per-user or per-customer SQL state, and building distributed systems (D1 and Queues are built on Durable Objects) where Durable Object's [strict serializability ↗︎](https://blog.cloudflare.com/durable-objects-easy-fast-correct-choose-three/) enables global ordering of requests and storage operations.
+
+### Session storage
+
+We recommend using [Workers KV](https://developers.cloudflare.com/kv/) for storing session data, credentials (API keys), and/or configuration data. These are typically read at high rates (thousands of RPS or more), are not typically modified (within KV's 1 write RPS per unique key limit), and do not need to be immediately consistent.
+
+Frequently read keys benefit from KV's [internal cache](https://developers.cloudflare.com/kv/concepts/how-kv-works/), and repeated reads to these "hot" keys will typically see latencies in the 500µs to 10ms range.
+
+Authentication frameworks like [OpenAuth ↗︎](https://openauth.js.org/docs/storage/cloudflare/) use Workers KV as session storage when deployed to Cloudflare, and [Cloudflare Access](https://developers.cloudflare.com/cloudflare-one/access-controls/policies/) uses KV to securely store and distribute user credentials so that they can be validated as close to the user as possible and reduce overall latency.
+
+## Product overviews
+
+### Workers KV
+
+Workers KV is an eventually consistent key-value data store that caches on the Cloudflare global network.
+
+It is ideal for projects that require:
+
+- High volumes of reads and/or repeated reads to the same keys.
+- Low-latency global reads (typically within 10ms for hot keys)
+- Per-object time-to-live (TTL).
+- Distributed configuration and/or session storage.
+
+To get started with KV:
+
+- Read how [KV works](https://developers.cloudflare.com/kv/concepts/how-kv-works/).
+- Create a [KV namespace](https://developers.cloudflare.com/kv/concepts/kv-namespaces/).
+- Review the [KV Runtime API](https://developers.cloudflare.com/kv/api/).
+- Learn about KV [Limits](https://developers.cloudflare.com/kv/platform/limits/).
+
+### R2
+
+R2 is S3-compatible blob storage that allows developers to store large amounts of unstructured data without egress fees associated with typical cloud storage services.
+
+It is ideal for projects that require:
+
+- Storage for files which are infrequently accessed.
+- Large object storage (for example, gigabytes or more per object).
+- Strong consistency per object.
+- Asset storage for websites (refer to [caching guide](https://developers.cloudflare.com/r2/buckets/public-buckets/#caching))
+
+To get started with R2:
+
+- Read the [Get started guide](https://developers.cloudflare.com/r2/get-started/).
+- Learn about R2 [Limits](https://developers.cloudflare.com/r2/platform/limits/).
+- Review the [R2 Workers API](https://developers.cloudflare.com/r2/api/workers/workers-api-reference/).
+
+### Durable Objects
+
+Durable Objects provide low-latency coordination and consistent storage for the Workers platform through global uniqueness and a transactional storage API.
+
+- Global Uniqueness guarantees that there will be a single instance of a Durable Object class with a given ID running at once, across the world. Requests for a Durable Object ID are routed by the Workers runtime to the Cloudflare data center that owns the Durable Object.
+- The transactional storage API provides strongly consistent key-value storage to the Durable Object. Each Object can only read and modify keys associated with that Object. Execution of a Durable Object is single-threaded, but multiple request events may still be processed out-of-order from how they arrived at the Object.
+
+It is ideal for projects that require:
+
+- Real-time collaboration (such as a chat application or a game server).
+- Consistent storage.
+- Data locality.
+
+To get started with Durable Objects:
+
+- Read the [introductory blog post ↗︎](https://blog.cloudflare.com/introducing-workers-durable-objects/).
+- Review the [Durable Objects documentation](https://developers.cloudflare.com/durable-objects/).
+- Get started with [Durable Objects](https://developers.cloudflare.com/durable-objects/get-started/).
+- Learn about Durable Objects [Limits](https://developers.cloudflare.com/durable-objects/platform/limits/).
+
+### D1
+
+[D1](https://developers.cloudflare.com/d1/) is Cloudflare’s native serverless database. With D1, you can create a database by importing data or defining your tables and writing your queries within a Worker or through the API.
+
+D1 is ideal for:
+
+- Persistent, relational storage for user data, account data, and other structured datasets.
+- Use-cases that require querying across your data ad-hoc (using SQL).
+- Workloads with a high ratio of reads to writes (most web applications).
+
+To get started with D1:
+
+- Read [the documentation](https://developers.cloudflare.com/d1)
+- Follow the [Get started guide](https://developers.cloudflare.com/d1/get-started/) to provision your first D1 database.
+- Review the [D1 Workers Binding API](https://developers.cloudflare.com/d1/worker-api/).
+
+Note
+
+If your working data size exceeds 10 GB (the maximum size for a D1 database), consider splitting the database into multiple, smaller D1 databases.
+
+### Queues
+
+Cloudflare Queues allows developers to send and receive messages with guaranteed delivery. It integrates with [Cloudflare Workers](https://developers.cloudflare.com/workers) and offers at-least once delivery, message batching, and does not charge for egress bandwidth.
+
+Queues is ideal for:
+
+- Offloading work from a request to schedule later.
+- Send data from Worker to Worker (inter-Service communication).
+- Buffering or batching data before writing to upstream systems, including third-party APIs or [Cloudflare R2](https://developers.cloudflare.com/queues/examples/send-errors-to-r2/).
+
+To get started with Queues:
+
+- [Set up your first queue](https://developers.cloudflare.com/queues/get-started/).
+- Learn more [about how Queues works](https://developers.cloudflare.com/queues/reference/how-queues-works/).
+
+### K2
+
+K2 is a durable event log. Producers write records to a stream, and K2 stores them for a configurable retention period. Consumers read records in batches through subscriptions, and each subscription reads every record independently.
+
+K2 is ideal for:
+
+- Moving large volumes of event data, with pricing based on data volume rather than the number of messages.
+- Delivering the same events to multiple independent consumers. For example, events from your applications can be read by an alerting system, a system that stores them durably, and a system that builds machine learning features.
+- Retaining events so that consumers can replay them, or so that a new consumer can read events produced before it was added.
+
+Use Queues when each message is a unit of work that needs to be completed, retried, and tracked individually. Use K2 when you produce and consume records in bulk, and what matters is that every record is processed rather than the state of any one record.
+
+To get started with K2:
+
+- [Create a stream](https://developers.cloudflare.com/k2/get-started/) and consume records from it.
+- Learn about [K2 concepts](https://developers.cloudflare.com/k2/concepts/), including streams, subscriptions, and leases.
+- Review K2 [Limits](https://developers.cloudflare.com/k2/platform/limits/).
+
+### Hyperdrive
+
+Hyperdrive is a service that accelerates queries you make to MySQL and Postgres databases, making it faster to access your data from across the globe, irrespective of your users’ location.
+
+Hyperdrive allows you to:
+
+- Connect to an existing database from Workers without connection overhead.
+- Cache frequent queries across Cloudflare's global network to reduce response times on highly trafficked content.
+- Reduce load on your origin database with connection pooling.
+
+To get started with Hyperdrive:
+
+- [Connect Hyperdrive](https://developers.cloudflare.com/hyperdrive/get-started/) to your existing database.
+- Learn more [about how Hyperdrive speeds up your database queries](https://developers.cloudflare.com/hyperdrive/concepts/how-hyperdrive-works/).
+
+## Basin Pipelines
+
+Basin Pipelines is a streaming ingestion service that allows you to ingest high volumes of real time data, without managing any infrastructure.
+
+Basin Pipelines allows you to:
+
+- Ingest data at extremely high throughput (tens of thousands of records per second or more)
+- Batch and write data directly to object storage, ready for querying
+- (Future) Transform and aggregate data during ingestion
+
+To get started with Basin Pipelines:
+
+- [Create a pipeline](https://developers.cloudflare.com/basin-pipelines/getting-started/) that can batch and write records to R2.
+
+### Analytics Engine
+
+Analytics Engine is Cloudflare's time-series and metrics database that allows you to write unlimited-cardinality analytics at scale using a built-in API to write data points from Workers and query that data using SQL directly.
+
+Analytics Engine allows you to:
+
+- Expose custom analytics to your own customers
+- Build usage-based billing systems
+- Understand the health of your service on a per-customer or per-user basis
+- Add instrumentation to frequently called code paths, without impacting performance or overwhelming external analytics systems with events
+
+Cloudflare uses Analytics Engine internally to store and product per-product metrics for products like D1 and R2 at scale.
+
+To get started with Analytics Engine:
+
+- Learn how to [get started with Analytics Engine](https://developers.cloudflare.com/analytics/analytics-engine/get-started/)
+- See [an example of writing time-series data to Analytics Engine](https://developers.cloudflare.com/analytics/analytics-engine/recipes/usage-based-billing-for-your-saas-product/)
+- Understand the [SQL API](https://developers.cloudflare.com/analytics/analytics-engine/sql-api/) for reading data from your Analytics Engine datasets
+
+### Vectorize
+
+Vectorize is a globally distributed vector database that enables you to build full-stack, AI-powered applications with Cloudflare Workers and [Workers AI](https://developers.cloudflare.com/workers-ai/).
+
+Vectorize allows you to:
+
+- Store embeddings from any vector embeddings model (Bring Your Own embeddings) for semantic search and classification tasks.
+- Add context to Large Language Model (LLM) queries by using vector search as part of a [Retrieval Augmented Generation](https://developers.cloudflare.com/workers-ai/guides/tutorials/build-a-retrieval-augmented-generation-ai/) (RAG) workflow.
+- [Filter on vector metadata](https://developers.cloudflare.com/vectorize/reference/metadata-filtering/) to reduce the search space and return more relevant results.
+
+To get started with Vectorize:
+
+- [Create your first vector database](https://developers.cloudflare.com/vectorize/get-started/intro/).
+- Combine [Workers AI and Vectorize](https://developers.cloudflare.com/vectorize/get-started/embeddings/) to generate, store and query text embeddings.
+- Learn more about [how vector databases work](https://developers.cloudflare.com/vectorize/reference/what-is-a-vector-database/).
+
+## SQL in Durable Objects vs D1
+
+Cloudflare Workers offers a SQLite-backed serverless database product - [D1](https://developers.cloudflare.com/d1/). How should you compare [SQLite in Durable Objects](https://developers.cloudflare.com/durable-objects/best-practices/access-durable-objects-storage/) and D1?
+
+**D1 is a managed database product.**
+
+D1 fits into a familiar architecture for developers, where application servers communicate with a database over the network. Application servers are typically Workers; however, D1 also supports external, non-Worker access via an [HTTP API ↗︎](https://developers.cloudflare.com/api/resources/d1/subresources/database/methods/query/), which helps unlock [third-party tooling](https://developers.cloudflare.com/d1/reference/community-projects/#_top) support for D1.
+
+D1 aims for a "batteries included" feature set, including the above HTTP API, [database schema management](https://developers.cloudflare.com/d1/reference/migrations/#_top), [data import/export](https://developers.cloudflare.com/d1/best-practices/import-export-data/), and [database query insights](https://developers.cloudflare.com/d1/observability/metrics-analytics/#query-insights).
+
+With D1, your application code and SQL database queries are not colocated which can impact application performance. If performance is a concern with D1, Workers has [Smart Placement](https://developers.cloudflare.com/workers/configuration/placement/#_top) to dynamically run your Worker in the best location to reduce total Worker request latency, considering everything your Worker talks to, including D1.
+
+**SQLite in Durable Objects is a lower-level compute with storage building block for distributed systems.**
+
+By design, Durable Objects are accessed with Workers-only.
+
+Durable Objects require a bit more effort, but in return, give you more flexibility and control. With Durable Objects, you must implement two pieces of code that run in different places: a front-end Worker which routes incoming requests from the Internet to a unique Durable Object, and the Durable Object itself, which runs on the same machine as the SQLite database. You get to choose what runs where, and it may be that your application benefits from running some application business logic right next to the database.
+
+With SQLite in Durable Objects, you may also need to build some of your own database tooling that comes out-of-the-box with D1.
+
+SQL query pricing and limits are intended to be identical between D1 ([pricing](https://developers.cloudflare.com/d1/platform/pricing/), [limits](https://developers.cloudflare.com/d1/platform/limits/)) and SQLite in Durable Objects ([pricing](https://developers.cloudflare.com/durable-objects/platform/pricing/#sqlite-storage-backend), [limits](https://developers.cloudflare.com/durable-objects/platform/limits/)).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/workers/platform/storage-options/#page","headline":"Choose a data or storage product","description":"Storage and database options available on Cloudflare's developer platform.","url":"https://developers.cloudflare.com/workers/platform/storage-options/","inLanguage":"en","image":"https://developers.cloudflare.com/workers/platform/storage-options/og.png?v=abca508978294b6c","dateModified":"2026-10-06","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: K2 delivers every record to every subscription at least once. Learn how subscriptions, leases, and retention affect delivery.
+title: Delivery guarantees
+image: https://developers.cloudflare.com/k2/reference/delivery-guarantees/og.png?v=5aea977318879343
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/k2/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Delivery guarantees
+
+Last updated Oct 6, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/k2/reference/delivery-guarantees/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+K2 delivers every record to every subscription on a stream at least once. A consumer can receive the same record more than once, so design consumers to handle duplicate records.
+
+This page explains how K2 delivers records from a stream to your consumers. For the requests that consumers send, refer to [Consume records](https://developers.cloudflare.com/k2/features/consume/).
+
+## Summary
+
+| Guarantee | Behavior |
+| --- | --- |
+| Delivery | At least once, per subscription. |
+| Fan-out | Every subscription receives every record. A stream can have up to 100 subscriptions. |
+| Sharing work | Within a subscription, K2 never leases the same records to two workers at the same time. |
+| Redelivery | Records are delivered again if their batch is released with a nack, or if the lease expires before an ack. |
+| Retention | Consuming a record does not delete it. Records remain in the stream until the retention period ends. |
+| Batches | Records are acknowledged, released, and redelivered as a batch. There is no per-record acknowledgement. |
+| Ordering | K2 does not guarantee the order in which records are processed across workers that share a subscription. |
+| Deduplication | K2 does not deduplicate records, on produce or on consume. |
+
+## Subscriptions are independent
+
+Each [subscription](https://developers.cloudflare.com/k2/concepts/#subscriptions) tracks its own position in the stream. Every subscription receives every record, and consuming from one subscription does not affect any other subscription.
+
+Records are not removed when they are consumed. They stay in the stream until the [retention period](https://developers.cloudflare.com/k2/configuration/#retention) ends. This means you can:
+
+- Add a new subscription later and read records that were produced before it existed, by creating it with `start_at` set to `earliest`.
+- Run several independent applications on the same stream. For example, an alerting system, an archiver, and a feature pipeline can each have their own subscription.
+
+Retention applies whether or not a record has been consumed. If a subscription falls further behind than the retention period, for example because its consumers are down, K2 deletes the records it has not read yet. Set the retention period to cover the longest consumer downtime you need to tolerate.
+
+## Share a subscription across workers
+
+Multiple workers can consume from the same subscription. K2 splits the records between them, so each worker receives a subset of the records. Up to 128 workers can hold a lease on the same subscription at the same time.
+
+- Each batch is a [lease](https://developers.cloudflare.com/k2/features/consume/#leases) held by exactly one `worker_id`.
+- Each `worker_id` can hold one lease at a time.
+- A subscription can have up to 128 active leases at a time.
+- K2 never leases the same records to two workers at the same time.
+
+## How a batch is delivered
+
+When a worker [requests a batch](https://developers.cloudflare.com/k2/features/consume/#request-a-batch), K2 leases it to that worker for five minutes. The batch then ends in one of the following ways:
+
+| What the worker does | Result |
+| --- | --- |
+| [Acknowledges (acks)](https://developers.cloudflare.com/k2/features/consume/#acknowledge-a-batch) the batch | The records are marked as processed for this subscription, and the lease is released. |
+| [Releases (nacks)](https://developers.cloudflare.com/k2/features/consume/#release-a-batch) the batch | K2 delivers the records again in the next batch requested by any worker, with a new `batch_id`. |
+| [Extends](https://developers.cloudflare.com/k2/features/consume/#extend-a-lease) the lease | The lease is set to expire five minutes after the request. |
+| Requests a batch again while it holds the lease | K2 returns the same batch and records, and refreshes the lease. |
+| Does nothing until the lease expires | K2 delivers the records again to the next worker that requests a batch, with a new `batch_id`. |
+
+Acknowledgements, nacks, and redelivery apply to the whole batch. If one record in a batch fails, you cannot acknowledge the others on their own. Either handle the failed record in your consumer, or nack the batch so that K2 delivers every record in it again.
+
+The subscription does not move past released or expired records until the new batch that contains them is acknowledged.
+
+If a lease expires and K2 has already delivered the records in a new batch, an acknowledgement from the original worker has no effect. This is why K2 delivers records at least once rather than exactly once: a worker can process a batch, fail to acknowledge it in time, and the same records are then processed by another worker.
+
+## Produce records
+
+A successful produce request means K2 has stored every record in the batch. Batch writes are atomic, so either all records in a batch are stored or none are.
+
+Some produce failures have an unknown outcome, and the batch may or may not have been stored. If you retry the batch, K2 can store the records twice. For details, refer to [Handle errors](https://developers.cloudflare.com/k2/features/produce/#handle-errors).
+
+Duplicates can therefore come from two places: a producer retrying a batch, or K2 redelivering a batch to a consumer.
+
+## Handle duplicate records
+
+To make duplicates safe, make your consumer idempotent, so that processing the same record twice has the same effect as processing it once. For example:
+
+- Include a unique ID in each record when you produce it, either in the content or in a header.
+- Use that ID as the primary key when you write to a database, so a second insert of the same record is rejected or ignored.
+- Pass that ID as an idempotency key to downstream APIs, such as a payment or email API, so they reject the duplicate on your behalf.
+
+To reduce redelivery, acknowledge each batch as soon as you finish processing it, and extend the lease if processing takes longer than five minutes.
+
+## Related resources
+
+- [Consume records](https://developers.cloudflare.com/k2/features/consume/)
+- [Produce records](https://developers.cloudflare.com/k2/features/produce/)
+- [Limits](https://developers.cloudflare.com/k2/platform/limits/#subscriptions-and-consuming-records)
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/k2/reference/delivery-guarantees/#page","headline":"Delivery guarantees","description":"K2 delivers every record to every subscription at least once. Learn how subscriptions, leases, and retention affect delivery.","url":"https://developers.cloudflare.com/k2/reference/delivery-guarantees/","inLanguage":"en","image":"https://developers.cloudflare.com/k2/reference/delivery-guarantees/og.png?v=5aea977318879343","dateModified":"2026-10-06","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```

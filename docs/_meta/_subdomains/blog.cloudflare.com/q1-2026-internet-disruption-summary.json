@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/q1-2026-internet-disruption-summary/",
+  "file": "_subdomains/blog.cloudflare.com/q1-2026-internet-disruption-summary.md",
+  "title": "Shutdowns, power outages, and conflict: a review of Q1 2026 Internet disruptions | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:35.548590+00:00",
+  "html_len": 327575,
+  "md_len": 83226,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-porcupine-attack-investigating-millions-of-junk-requests/",
+  "file": "_subdomains/blog.cloudflare.com/the-porcupine-attack-investigating-millions-of-junk-requests.md",
+  "title": "The Porcupine Attack: investigating millions of junk requests | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:24.028195+00:00",
+  "html_len": 318628,
+  "md_len": 67597,
+  "depth": 0,
+  "phase": 2
+}

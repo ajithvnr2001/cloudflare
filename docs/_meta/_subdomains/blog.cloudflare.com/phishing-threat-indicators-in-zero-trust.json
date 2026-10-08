@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/phishing-threat-indicators-in-zero-trust/",
+  "file": "_subdomains/blog.cloudflare.com/phishing-threat-indicators-in-zero-trust.md",
+  "title": "Area 1 threat indicators now available in Cloudflare Zero Trust | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:15.290661+00:00",
+  "html_len": 284800,
+  "md_len": 62465,
+  "depth": 0,
+  "phase": 2
+}

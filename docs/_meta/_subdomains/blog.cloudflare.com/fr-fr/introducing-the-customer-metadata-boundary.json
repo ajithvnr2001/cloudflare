@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/introducing-the-customer-metadata-boundary/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/introducing-the-customer-metadata-boundary.md",
+  "title": "D\u00e9couvrez l'isolement g\u00e9ographique des m\u00e9tadonn\u00e9es du client | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:54.893215+00:00",
+  "html_len": 222272,
+  "md_len": 34932,
+  "depth": 0,
+  "phase": 2
+}

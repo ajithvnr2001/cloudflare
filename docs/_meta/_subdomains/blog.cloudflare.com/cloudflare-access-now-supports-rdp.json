@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-access-now-supports-rdp/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-access-now-supports-rdp.md",
+  "title": "Cloudflare Access now supports RDP | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:56.597830+00:00",
+  "html_len": 266566,
+  "md_len": 57195,
+  "depth": 0,
+  "phase": 2
+}

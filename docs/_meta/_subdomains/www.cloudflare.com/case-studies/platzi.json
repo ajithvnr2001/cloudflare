@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/platzi/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/platzi.md",
+  "title": "Platzi & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:44.429604+00:00",
+  "html_len": 220690,
+  "md_len": 11703,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/project-jengo-challenges/",
+  "file": "_subdomains/blog.cloudflare.com/project-jengo-challenges.md",
+  "title": "Project Jengo: Explaining Challenges to Patent Validity (and a looming threat) | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:12.100480+00:00",
+  "html_len": 294350,
+  "md_len": 72022,
+  "depth": 0,
+  "phase": 2
+}

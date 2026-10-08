@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/reflections-on-reflections/",
+  "file": "_subdomains/blog.cloudflare.com/reflections-on-reflections.md",
+  "title": "Reflections on reflection (attacks) | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:35.414515+00:00",
+  "html_len": 358505,
+  "md_len": 80891,
+  "depth": 0,
+  "phase": 2
+}

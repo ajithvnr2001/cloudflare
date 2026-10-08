@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/http3-usage-one-year-on/",
+  "file": "_subdomains/blog.cloudflare.com/http3-usage-one-year-on.md",
+  "title": "Examining HTTP/3 usage one year on | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:25.090446+00:00",
+  "html_len": 337525,
+  "md_len": 78049,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/analysis-of-todays-centurylink-level-3-outage/",
+  "file": "_subdomains/blog.cloudflare.com/analysis-of-todays-centurylink-level-3-outage.md",
+  "title": "August 30th 2020: Analysis of CenturyLink/Level(3) outage | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:00.429123+00:00",
+  "html_len": 299328,
+  "md_len": 67368,
+  "depth": 0,
+  "phase": 2
+}

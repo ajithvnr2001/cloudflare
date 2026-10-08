@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/inside-imagetragick-the-real-payloads-being-used-to-hack-websites-2/",
+  "file": "_subdomains/blog.cloudflare.com/inside-imagetragick-the-real-payloads-being-used-to-hack-websites-2.md",
+  "title": "Inside ImageTragick: The Real Payloads Being Used to Hack Websites | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:38.670783+00:00",
+  "html_len": 300576,
+  "md_len": 65945,
+  "depth": 0,
+  "phase": 2
+}

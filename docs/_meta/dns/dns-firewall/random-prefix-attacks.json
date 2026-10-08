@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/dns/dns-firewall/random-prefix-attacks/",
+  "file": "dns/dns-firewall/random-prefix-attacks.md",
+  "title": "Random prefix attack mitigation \u00b7 Cloudflare DNS docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:10:56.634172+00:00",
+  "html_len": 129728,
+  "md_len": 3478,
+  "depth": 0
+}

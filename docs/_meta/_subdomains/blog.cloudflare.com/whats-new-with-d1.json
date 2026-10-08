@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/whats-new-with-d1/",
+  "file": "_subdomains/blog.cloudflare.com/whats-new-with-d1.md",
+  "title": "D1: our quest to simplify databases | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:32.672855+00:00",
+  "html_len": 337975,
+  "md_len": 78277,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/magic-transit/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/magic-transit.md",
+  "title": "Magic Transit\u4f7f\u60a8\u7684\u7f51\u7edc\u66f4\u667a\u80fd\uff0c\u66f4\u597d\uff0c\u66f4\u5f3a\u5927\uff0c\u66f4\u7ecf\u6d4e | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:59.002381+00:00",
+  "html_len": 202891,
+  "md_len": 29444,
+  "depth": 0,
+  "phase": 2
+}

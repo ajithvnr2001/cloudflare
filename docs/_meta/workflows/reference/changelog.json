@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workflows/reference/changelog/",
+  "file": "workflows/reference/changelog.md",
+  "title": "Release notes \u00b7 Cloudflare Workflows docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:18:16.372032+00:00",
+  "html_len": 120565,
+  "md_len": 8412,
+  "depth": 0
+}

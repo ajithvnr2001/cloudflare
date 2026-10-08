@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/ai/what-is-ai-security/",
+  "file": "_subdomains/www.cloudflare.com/learning/ai/what-is-ai-security.md",
+  "title": "What is AI security?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:52.065122+00:00",
+  "html_len": 225452,
+  "md_len": 24152,
+  "depth": 0,
+  "phase": 2
+}

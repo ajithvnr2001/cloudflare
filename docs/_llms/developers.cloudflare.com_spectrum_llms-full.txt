@@ -1,0 +1,2394 @@
+---
+description: Proxy and protect TCP and UDP applications with Cloudflare Spectrum.
+title: Cloudflare Spectrum
+image: https://developers.cloudflare.com/spectrum/og.png?v=54074c351e3e3535
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/spectrum/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Cloudflare Spectrum
+
+Last updated Apr 23, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/spectrum/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Spectrum provides security and acceleration for any [TCP ↗︎](https://www.cloudflare.com/learning/ddos/glossary/tcp-ip/) or [UDP ↗︎](https://www.cloudflare.com/learning/ddos/glossary/user-datagram-protocol-udp/) based application.
+
+Available on Paid plans
+
+Spectrum allows you to route MQTT, email, file transfer, version control, games, and more over TCP or UDP through Cloudflare to mask the origin and protect it from [DDoS attacks ↗︎](https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/).
+
+Note
+
+Custom TCP/UDP applications require an Enterprise plan with Spectrum as a paid add-on. See [Protocols per plan](https://developers.cloudflare.com/spectrum/protocols-per-plan/) for details, or contact your account team to enable.
+
+---
+
+## Features
+
+[Enable Proxy protocol](https://developers.cloudflare.com/spectrum/how-to/enable-proxy-protocol/)
+
+Use a proxy protocol for Cloudflare to pass on the client IP to your service.
+
+Use Enable Proxy protocol
+
+[DDoS Protection for Spectrum](https://developers.cloudflare.com/spectrum/about/ddos-for-spectrum/)
+
+Learn more about what L3/4 DDoS Protection is included as part of the Spectrum service.
+
+Use DDoS Protection for Spectrum
+
+---
+
+## Related products
+
+[DDoS Protection](https://developers.cloudflare.com/ddos-protection/)
+
+Cloudflare DDoS protection secures websites, applications, and entire networks while ensuring the performance of legitimate traffic is not compromised.
+
+[BYOIP](https://developers.cloudflare.com/byoip/)
+
+Get Cloudflare's security and performance while using your own IPs. With Bring Your Own IP (BYOIP), Cloudflare announces your IPs in all our locations.
+
+[Load Balancing](https://developers.cloudflare.com/load-balancing/)
+
+Cloudflare Load Balancing distributes traffic across your endpoints, which reduces endpoint strain and latency and improves the experience for end users.
+
+[DNS](https://developers.cloudflare.com/dns/)
+
+Cloudflare's global DNS platform provides speed and resilience. DNS customers also benefit from free DNSSEC, and protection against route leaks and hijacking.
+
+---
+
+## More resources
+
+### [Plans](https://www.cloudflare.com/plans/)
+
+Compare available Cloudflare plans.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/spectrum/#page","headline":"Cloudflare Spectrum","description":"Proxy and protect TCP and UDP applications with Cloudflare Spectrum.","url":"https://developers.cloudflare.com/spectrum/","inLanguage":"en","image":"https://developers.cloudflare.com/spectrum/og.png?v=54074c351e3e3535","dateModified":"2026-04-23","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Supported protocols for Spectrum applications by Cloudflare plan.
+title: Protocols per plan
+image: https://developers.cloudflare.com/spectrum/protocols-per-plan/og.png?v=f6640606cf542957
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/spectrum/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Protocols per plan
+
+Last updated Aug 14, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/spectrum/protocols-per-plan/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+On this table, you have information about which protocols are available per plan.
+
+|  | Free | Pro | Business | Enterprise |
+| --- | --- | --- | --- | --- |
+| Availability | No | Paid add-on | Paid add-on | Yes |
+| TCP | No | No | No | Paid add-on |
+| UDP | No | No | No | Paid add-on |
+| HTTP | No | No | No | Paid add-on |
+| HTTPS | No | No | No | Paid add-on |
+| Minecraft (one app allowed) | No | Yes | Yes | Yes |
+| SSH (one app allowed) | No | Yes | Yes | Yes |
+| RDP (one app allowed) | No | No | Yes | Yes |
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/spectrum/protocols-per-plan/#page","headline":"Protocols per plan","description":"Supported protocols for Spectrum applications by Cloudflare plan.","url":"https://developers.cloudflare.com/spectrum/protocols-per-plan/","inLanguage":"en","image":"https://developers.cloudflare.com/spectrum/protocols-per-plan/og.png?v=f6640606cf542957","dateModified":"2026-08-14","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Create a Spectrum application to proxy TCP or UDP traffic through Cloudflare.
+title: Get started
+image: https://developers.cloudflare.com/spectrum/get-started/og.png?v=610a7c261227db21
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/spectrum/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Get started
+
+Last updated Jun 23, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/spectrum/get-started/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Spectrum is available on all paid plans. Pro and Business support selected protocols only, whereas Enterprise supports all TCP and UDP based traffic. Refer to [Configuration options](https://developers.cloudflare.com/spectrum/reference/configuration-options/) for more configuration details.
+
+To create a Spectrum application, you can either use an IP address, a CNAME Record or a load balancer. Independently of the method you use, you can create the application through the dashboard or via [API](https://developers.cloudflare.com/api/resources/spectrum/subresources/apps/methods/list/).
+
+Certain fields in Spectrum request and response bodies require an Enterprise plan. Refer to the [Settings by plan](https://developers.cloudflare.com/spectrum/reference/settings-by-plan/) page for more details.
+
+## Create a Spectrum application using an IP address
+
+To create a Spectrum application using an IP address, Cloudflare normally assigns you an arbitrary IP from Cloudflare’s IP pool to your application. If you want to use your own IP addresses, you can use [BYOIP](https://developers.cloudflare.com/spectrum/about/byoip/) or you can also use a [Static IP](https://developers.cloudflare.com/spectrum/about/static-ip/). In these two last cases, you need to create your Spectrum application through the API, as these features are not available via dash. When using the API, the field `origin_direct` takes as input the IP address.
+
+<details>
+
+<summary>
+
+Add your application via Dashboard
+
+</summary>
+
+1. In the Cloudflare dashboard, go to the **Spectrum** page.<a href="https://dash.cloudflare.com/?to=/:account/:zone/spectrum">Go to **Spectrum** ↗</a>
+2. Select **Create an Application**. If this is your first time using Spectrum, the **Create an Application** modal appears.
+3. Select your **Application Type**.
+4. Under **Domain**, enter the domain that will use Spectrum.
+5. Under **Edge Port**, enter the port Cloudflare should use for your application.
+6. Under **Origin**, enter your application's origin IP and port.
+7. If your application requires the client IP and supports <a href="https://www.haproxy.com/blog/haproxy/proxy-protocol/">Proxy Protocol ↗︎</a>, enable **Proxy Protocols**. Proxy Protocol is a method for a proxy like Cloudflare to send the client IP to the origin application.
+8. Select **Add**.
+
+</details>
+
+<details>
+
+<summary>
+
+Add your application via API
+
+</summary>
+
+Below is a curl example and the associated data being posted to the API.
+
+**API example:**
+
+<details>
+
+<summary>
+
+Required API token permissions
+
+</summary>
+
+At least one of the following <a href="https://developers.cloudflare.com/fundamentals/api/reference/permissions/">token permissions</a> is required:
+
+- <code>Zone Settings Write</code>
+
+</details>
+
+*Create Spectrum application using a name for the originbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/zones/$ZONE_ID/spectrum/apps" \
+	--request POST \
+	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+	--json '{
+		"protocol": "tcp/22",
+		"dns": {
+				"type": "CNAME",
+				"name": "ssh.example.com"
+		},
+		"origin_direct": [
+				"tcp://192.0.2.1:22"
+		],
+		"proxy_protocol": "off",
+		"ip_firewall": true,
+		"tls": "full",
+		"edge_ips": {
+				"type": "dynamic",
+				"connectivity": "all"
+		},
+		"traffic_type": "direct",
+		"argo_smart_routing": true
+	}'
+```
+
+**Example data:**
+
+```json
+{
+	"success": true,
+	"errors": [],
+	"messages": [],
+	"result": {
+		"id": "ea95132c15732412d22c1476fa83f27a",
+		"protocol": "tcp/22",
+		"dns": {
+			"type": "CNAME",
+			"name": "ssh.example.com"
+		},
+		"origin_direct": ["tcp://192.0.2.1:22"],
+		"proxy_protocol": "off",
+		"ip_firewall": true,
+		"tls": "full",
+		"edge_ips": {
+			"type": "dynamic",
+			"connectivity": "all"
+		},
+		"traffic_type": "direct",
+		"argo_smart_routing": true,
+		"created_on": "2014-01-02T02:20:00Z",
+		"modified_on": "2014-01-02T02:20:00Z"
+	}
+}
+```
+
+</details>
+
+## Create a Spectrum application using a CNAME record
+
+To create a Spectrum application using a CNAME record, you will need to create a [CNAME record ↗︎](https://www.cloudflare.com/learning/dns/dns-records/dns-cname-record/) on your Cloudflare hosted zone that points to your origin's hostname. This is required to resolve to your hostname origin. Refer to [Create DNS records](https://developers.cloudflare.com/dns/manage-dns-records/how-to/create-dns-records/#create-dns-records), for more information. When using a CNAME as an origin, note that Cloudflare needs to be authoritative for that zone. When using the API, the `origin_dns` field takes as input the CNAME record.
+
+<details>
+
+<summary>
+
+Add your application via Dashboard
+
+</summary>
+
+1. In the Cloudflare dashboard, go to the **Spectrum** page.<a href="https://dash.cloudflare.com/?to=/:account/:zone/spectrum">Go to **Spectrum** ↗</a>
+2. Select **Create an Application**. If this is your first time using Spectrum, the **Create an Application** modal appears.
+3. Select your **Application Type**.
+4. Under **Domain**, enter the domain that will use Spectrum.
+5. Under **Edge Port**, enter the port Cloudflare should use for your application.
+6. Under **Origin**, enter your <code>CNAME</code> record name.
+7. Select **Add**.
+
+</details>
+
+<details>
+
+<summary>
+
+Add your application via API
+
+</summary>
+
+Below is a curl example and the associated data being posted to the API.
+
+**API example:**
+
+<details>
+
+<summary>
+
+Required API token permissions
+
+</summary>
+
+At least one of the following <a href="https://developers.cloudflare.com/fundamentals/api/reference/permissions/">token permissions</a> is required:
+
+- <code>Zone Settings Write</code>
+
+</details>
+
+*Create Spectrum application using a name for the originbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/zones/$ZONE_ID/spectrum/apps" \
+	--request POST \
+	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+	--json '{
+		"dns": {
+				"type": "CNAME",
+				"name": "spectrum-cname.example.com"
+		},
+		"ip_firewall": false,
+		"protocol": "tcp/22",
+		"proxy_protocol": "off",
+		"tls": "off",
+		"origin_dns": {
+				"name": "cname-to-origin.example.com",
+				"ttl": 1200
+		},
+		"origin_port": 22
+	}'
+```
+
+**Example data:**
+
+```json
+{
+	"dns": {
+		"type": "CNAME",
+		"name": "spectrum-cname.example.com"
+	},
+	"ip_firewall": false,
+	"protocol": "tcp/22",
+	"proxy_protocol": "off",
+	"tls": "off",
+	"origin_dns": {
+		"name": "cname-to-origin.example.com",
+		"ttl": 1200
+	},
+	"origin_port": 22
+}
+```
+
+</details>
+
+## Create a Spectrum application using a load balancer
+
+To create a Spectrum application using a load balancer, you will need to generate a load balancer from the dashboard or via the API. Refer to the [Load Balancing documentation](https://developers.cloudflare.com/load-balancing/additional-options/spectrum/#1-configure-your-load-balancer) for more details.
+
+Note
+
+To prevent issues with DNS resolution for a Spectrum application, do not use the same Spectrum hostname as a current Load Balancing hostname.
+
+<details>
+
+<summary>
+
+Add your application via Dashboard
+
+</summary>
+
+1. In the Cloudflare dashboard, go to the **Spectrum** page.<a href="https://dash.cloudflare.com/?to=/:account/:zone/spectrum">Go to **Spectrum** ↗</a>
+2. Select **Create an Application**. If this is your first time using Spectrum, the **Create an Application** modal appears.
+3. Select your **<a href="https://developers.cloudflare.com/spectrum/reference/configuration-options/#application-type">Application Type</a>**.
+4. Under **Domain**, enter the domain that will use Spectrum.
+5. Under **Edge Port**, enter the port Cloudflare should use for your application.
+6. Under **Origin**, select **Load Balancer**.
+7. Select the load balancer you want to use from the dropdown. Disabled load balancers will not show on the **Load Balancer** menu.
+8. Select **Add**.
+
+</details>
+
+<details>
+
+<summary>
+
+Add your application via API
+
+</summary>
+
+Below is a curl example and the associated data being posted to the API.
+
+**API example:**
+
+<details>
+
+<summary>
+
+Required API token permissions
+
+</summary>
+
+At least one of the following <a href="https://developers.cloudflare.com/fundamentals/api/reference/permissions/">token permissions</a> is required:
+
+- <code>Zone Settings Write</code>
+
+</details>
+
+*Create Spectrum application using a name for the originbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/zones/$ZONE_ID/spectrum/apps" \
+	--request POST \
+	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+	--json '{
+		"dns": {
+				"type": "CNAME",
+				"name": "spectrum-cname.example.com"
+		},
+		"ip_firewall": false,
+		"protocol": "tcp/22",
+		"proxy_protocol": "off",
+		"tls": "off",
+		"origin_dns": {
+				"name": "cname-to-origin.example.com",
+				"ttl": 1200
+		},
+		"origin_port": 22
+	}'
+```
+
+**Example data:**
+
+```json
+{
+  "dns": {
+    "type": "CNAME",
+    "name": "spectrum-cname.example.com"
+  },
+  "ip_firewall": false,
+  "protocol": "tcp/22",
+  "proxy_protocol": "off",
+  "tls": "off",
+  "origin_dns": {
+    "name": "cname-to-origin.example.com",
+    "ttl": 1200
+  },
+  "origin_port": 22
+}
+```
+
+</details>
+
+## Create a Spectrum application using a virtual network origin
+
+To proxy TCP or UDP traffic to an origin on your private network, attach a Cloudflare Tunnel [virtual network](https://developers.cloudflare.com/cloudflare-one/networks/virtual-networks/) to a Spectrum application. Spectrum routes traffic through the connector (Cloudflare Tunnel or Cloudflare WAN connection) associated with that virtual network. This provides an alternative to the previous pattern of putting a load balancer in front of a private origin.
+
+Virtual network origins are only supported for TCP and UDP applications. The origin must be a single private IP routable within the specified virtual network. Port ranges, hostname origins (`origin_dns`), and multiple addresses in `origin_direct` are not supported. [Proxy Protocol](https://developers.cloudflare.com/spectrum/how-to/enable-proxy-protocol/) is not currently supported, so `proxy_protocol` must be set to `off`. For details on validation errors, refer to [Error codes](https://developers.cloudflare.com/spectrum/reference/error-codes/).
+
+For a primer on virtual networks, refer to [Virtual networks](https://developers.cloudflare.com/cloudflare-one/networks/virtual-networks/).
+
+### Before you begin
+
+Set up the virtual network and a route covering your origin IP before creating the Spectrum application:
+
+- Create a virtual network and a Cloudflare Tunnel that carries it by following [Manage virtual networks](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/private-net/cloudflared/tunnel-virtual-networks/).
+- Attach a route covering your origin's private IP to the tunnel by following [Connect an IP/CIDR](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/private-net/cloudflared/connect-cidr/).
+
+For Cloudflare WAN (formerly Magic WAN) as the connector, refer to [Get started with Cloudflare WAN](https://developers.cloudflare.com/cloudflare-wan/get-started/) for setting up tunnel endpoints and routes.
+
+<details>
+
+<summary>
+
+Add your application via Dashboard
+
+</summary>
+
+1. In the Cloudflare dashboard, go to the **Spectrum** page.<a href="https://dash.cloudflare.com/?to=/:account/:zone/spectrum">Go to **Spectrum** ↗</a>
+2. Select **Create an Application**.
+3. Under **Application Type**, select **TCP** or **UDP**.
+4. Under **Domain**, enter the domain that will use Spectrum.
+5. Under **Edge Port**, enter the port Cloudflare should use for your application.
+6. Under **Origin**, select **Virtual Network**.
+7. Under **Virtual Network**, select the virtual network that contains your origin.
+8. Under **IP**, enter the private IP address of your origin.
+9. Under **Port**, enter a single port (port ranges are not supported).
+10. Select **Add**.
+
+</details>
+
+<details>
+
+<summary>
+
+Add your application via API
+
+</summary>
+
+Below is a curl example and the associated data being posted to the API.
+
+**API example:**
+
+<details>
+
+<summary>
+
+Required API token permissions
+
+</summary>
+
+At least one of the following <a href="https://developers.cloudflare.com/fundamentals/api/reference/permissions/">token permissions</a> is required:
+
+- <code>Zone Settings Write</code>
+
+</details>
+
+*Create Spectrum application using a name for the originbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/zones/$ZONE_ID/spectrum/apps" \
+	--request POST \
+	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+	--json '{
+		"protocol": "tcp/22",
+		"dns": {
+				"type": "CNAME",
+				"name": "ssh.example.com"
+		},
+		"origin_direct": [
+				"tcp://10.0.0.5:22"
+		],
+		"virtual_network_id": "f70ff985-a4ef-4643-bbbc-4a0ed4fc8415",
+		"proxy_protocol": "off",
+		"ip_firewall": true,
+		"tls": "off",
+		"edge_ips": {
+				"type": "dynamic",
+				"connectivity": "all"
+		},
+		"traffic_type": "direct"
+	}'
+```
+
+Set <code>origin_direct</code> to the private IP of your origin and <code>virtual_network_id</code> to the ID of the virtual network that the IP is routable within. You can list virtual networks for your account with the <a href="https://developers.cloudflare.com/api/resources/zero_trust/subresources/networks/subresources/virtual_networks/methods/list/">List virtual networks</a> endpoint.
+
+**Example data:**
+
+```json
+{
+	"success": true,
+	"errors": [],
+	"messages": [],
+	"result": {
+		"id": "ea95132c15732412d22c1476fa83f27a",
+		"protocol": "tcp/22",
+		"dns": {
+			"type": "CNAME",
+			"name": "ssh.example.com"
+		},
+		"origin_direct": ["tcp://10.0.0.5:22"],
+		"virtual_network_id": "f70ff985-a4ef-4643-bbbc-4a0ed4fc8415",
+		"proxy_protocol": "off",
+		"ip_firewall": true,
+		"tls": "off",
+		"edge_ips": {
+			"type": "dynamic",
+			"connectivity": "all"
+		},
+		"traffic_type": "direct",
+		"created_on": "2014-01-02T02:20:00Z",
+		"modified_on": "2014-01-02T02:20:00Z"
+	}
+}
+```
+
+</details>
+
+## View traffic
+
+You can now proxy traffic through Cloudflare without additional configuration. As you run traffic through Cloudflare, you will see the last minute of traffic from **Spectrum** in the dashboard.
+
+If you have any feedback, please [let us know ↗︎](https://community.cloudflare.com/c/website-application-performance/spectrum/48).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/spectrum/get-started/#page","headline":"Get started","description":"Create a Spectrum application to proxy TCP or UDP traffic through Cloudflare.","url":"https://developers.cloudflare.com/spectrum/get-started/","inLanguage":"en","image":"https://developers.cloudflare.com/spectrum/get-started/og.png?v=610a7c261227db21","dateModified":"2026-06-23","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Definitions for terms used across Cloudflare Spectrum documentation.
+title: Glossary
+image: https://developers.cloudflare.com/spectrum/glossary/og.png?v=9faca69c5c881513
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/spectrum/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Glossary
+
+Last updated Apr 16, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/spectrum/glossary/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Review the definitions for terms used across Cloudflare's Spectrum documentation.
+
+| Term | Definition |
+| --- | --- |
+| ACK (Acknowledge) | The final step in the TCP three-way handshake, confirming the establishment of a connection. |
+| FTP (File Transfer Protocol) | A standard network protocol used for transferring files from one host to another over a TCP-based network. |
+| FTPS (File Transfer Protocol Secure) | An extension of FTP that adds support for the Transport Layer Security (TLS) or Secure Sockets Layer (SSL) cryptographic protocols. |
+| layer 3 | The network layer in the OSI model, responsible for logical addressing, routing, and forwarding of data between devices on different networks. |
+| layer 4 | The transport layer in the OSI model, managing end-to-end communication, error-checking, and flow control. |
+| MQTT (Message Queuing Telemetry Transport) | A lightweight, publish-subscribe messaging protocol often used for communication in the Internet of Things (IoT) and other resource-constrained scenarios. |
+| OSI model (Open Systems Interconnection model) | A conceptual framework that standardizes the functions of a telecommunication or computing system into seven abstraction layers. |
+| proxy protocol | A protocol used by network proxies to convey client connection information to the destination server, facilitating proper handling of client requests. |
+| reverse proxy | A server that handles requests on behalf of clients, forwarding them to backend servers and managing tasks like load balancing and security. |
+| SFTP (Secure File Transfer Protocol) | A secure file transfer protocol that uses the Secure Socket Shell (SSH) protocol for encryption and authentication. |
+| SMTP Server (Simple Mail Transfer Protocol Server) | A server responsible for sending, receiving, and relaying email messages over a network, following the SMTP protocol. |
+| SYN (Synchronize) | The initial step in establishing a TCP connection, where a device requests a connection with another by sending a SYN packet. |
+| SYN-ACK (Synchronize-Acknowledge) | The second step in the TCP three-way handshake, where the server responds to a SYN request with a SYN-ACK packet. |
+| TCP (Transmission Control Protocol) | A connection-oriented protocol in the transport layer of the Internet Protocol Suite, providing reliable and ordered delivery of data between devices. |
+| UDP (User Datagram Protocol) | UDP (User Datagram Protocol) is a connectionless transport layer protocol that provides fast and lightweight data transmission between devices on a network, prioritizing speed over reliability. |
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/spectrum/glossary/#page","headline":"Glossary","description":"Definitions for terms used across Cloudflare Spectrum documentation.","url":"https://developers.cloudflare.com/spectrum/glossary/","inLanguage":"en","image":"https://developers.cloudflare.com/spectrum/glossary/og.png?v=9faca69c5c881513","dateModified":"2026-04-16","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Use your own IP addresses with Spectrum applications.
+title: BYOIP
+image: https://developers.cloudflare.com/spectrum/about/byoip/og.png?v=6cc5919c3bc7abb3
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/spectrum/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# BYOIP
+
+Last updated Apr 16, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/spectrum/about/byoip/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+When creating a Spectrum application, Cloudflare normally assigns an arbitrary IP from Cloudflare’s IP pool to your application. If you want to be explicit in your network setup or use your own IP addresses, BYOIP with Spectrum allows you to do just that.
+
+BYOIP stands for [Bring Your Own IP](https://developers.cloudflare.com/byoip/). If you own an IP prefix you can migrate it to Cloudflare. After migration, Cloudflare broadcasts your IP prefix and traffic is routed to the global Cloudflare network. However, without configuration, Cloudflare will not know how to handle this traffic. The last step is to add Spectrum applications for all applications that you wish to protect with the IP addresses you want associated with them.
+
+Caution
+
+When switching from non-BYOIP to BYOIP, if you are already using a Spectrum application, you need to delete your configurations and recreate new ones.
+
+The smallest prefixes that Cloudflare currently supports is /24 for IPv4 and /48 for IPv6.
+
+BYOIP does not come standard with Spectrum. To enable it, contact your account team.
+
+UDP applications
+
+Spectrum UDP applications are supported with BYOIP, including [CDN and Spectrum service bindings](https://developers.cloudflare.com/byoip/service-bindings/cdn-and-spectrum/). However, they are [not currently supported with Magic Transit service bindings](https://developers.cloudflare.com/spectrum/reference/limitations/#udp).
+
+## Assign an IP address
+
+To use an IP, it must be assigned to a Spectrum app to create the appropriate A (IPv4) or AAAA (IPv6) records. This is done by specifying one or more IP addresses when creating an application through the API. Any change to the application's properties also needs to be done via API. In addition, you must update the DNS `"type"` field to `"ADDRESS"` to create a Spectrum app using BYOIP.
+
+```json
+{
+  "id": "4590376cf2994d72cee36828ec4eff19",
+  "protocol": "tcp/22",
+  "dns": {
+    "type": "ADDRESS",
+    "name": "ssh.example.com"
+  },
+  "origin_direct": ["tcp://192.0.2.1:22"],
+  "ip_firewall": true,
+  "proxy_protocol": false,
+  "spp": false,
+  "tls": "off",
+  "traffic_type": "direct",
+  "edge_ips": {
+    "type": "static",
+    "ips": ["198.51.100.10", "2001:DB8::1"]
+  }
+}
+```
+
+## Example
+
+In the example below, the application routes traffic through Cloudflare’s HTTP pipeline, including WAF, Workers and CDN functionality.
+
+<details>
+
+<summary>
+
+Required API token permissions
+
+</summary>
+
+At least one of the following <a href="https://developers.cloudflare.com/fundamentals/api/reference/permissions/">token permissions</a> is required:
+
+- <code>Zone Settings Write</code>
+
+</details>
+
+*Create Spectrum application using a name for the originbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/zones/$ZONE_ID/spectrum/apps" \
+	--request POST \
+	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+	--json '{
+		"protocol": "tcp/80",
+		"dns": {
+				"type": "ADDRESS",
+				"name": "www.example.com"
+		},
+		"origin_direct": [
+				"tcp://192.0.2.1:80"
+		],
+		"tls": "off",
+		"traffic_type": "http",
+		"edge_ips": {
+				"type": "static",
+				"ips": [
+						"198.51.100.10",
+						"2001:DB8::1"
+				]
+		}
+	}'
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/spectrum/about/byoip/#page","headline":"BYOIP","description":"Use your own IP addresses with Spectrum applications.","url":"https://developers.cloudflare.com/spectrum/about/byoip/","inLanguage":"en","image":"https://developers.cloudflare.com/spectrum/about/byoip/og.png?v=6cc5919c3bc7abb3","dateModified":"2026-04-16","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Layer 3 and 4 DDoS protection for TCP and UDP Spectrum applications.
+title: DDoS Protection for Spectrum
+image: https://developers.cloudflare.com/spectrum/about/ddos-for-spectrum/og.png?v=ffa429f47a817909
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/spectrum/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# DDoS Protection for Spectrum
+
+Last updated Jul 16, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/spectrum/about/ddos-for-spectrum/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Spectrum provides DDoS Protection at layers 3-4 of the [OSI model ↗︎](https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/), that is against TCP and UDP based DDoS attacks.
+
+Spectrum works as a layer 4 reverse proxy, therefore a proper TCP connection must be first established before traffic is proxied to the origin. This moves any impact of SYN or SYN-ACK reflection attacks to the Cloudflare global network. Additionally, by using Spectrum in front of your application, your origin IP is concealed — preventing attackers from targeting your origin server directly. It is also recommended that you replace your origin IP address after moving to Cloudflare, and lock it down to only accept traffic from [Cloudflare’s IP address range ↗︎](https://www.cloudflare.com/ips/).
+
+Random or out-of-state TCP packets should not be passed to the origin if a legitimate TCP connection has not yet been established between the client and Cloudflare. Spectrum also [leverages SYN cookie challenges as part of the Linux networking stack ↗︎](https://blog.cloudflare.com/syn-packet-handling-in-the-wild/) to defend against floods.
+
+Furthermore, if a flood of packets of an unspecified protocol target your application (for example, your Spectrum application is for TCP traffic, and a UDP flood targets your Spectrum application), the packets will be dropped. Similarly, if packets target a port or port range that you did not specify, they will also be dropped.
+
+L3/4 DDoS attacks should be detected and mitigated by the [Network-layer DDoS Attack Protection managed ruleset](https://developers.cloudflare.com/ddos-protection/managed-rulesets/network/) that is enabled by default. This ruleset detects and mitigates DDoS attacks by dynamically fingerprinting attacks based on packet header fields.
+
+For protecting HTTP/S applications against L7 DDoS attacks and to benefit from caching and additional features, onboard your application to Cloudflare’s Web Application Firewall/Content Delivery Network service, which works in tandem with Cloudflare Spectrum.
+
+Refer to [Cloudflare DDoS Protection](https://developers.cloudflare.com/ddos-protection/) to learn more.
+
+---
+
+## Mitigation reasons
+
+The **Mitigation reason** field shown in the **DDoS managed rules** tab of [Network Analytics](https://developers.cloudflare.com/analytics/network-analytics/) (**Networking** > **Insights** > **Network Analytics** in the dashboard) will contain more information on why a given packet was dropped by the Spectrum system.
+
+The mitigation reasons are the following:
+
+| Reason | Description |
+| --- | --- |
+| **Blocked** | Packet dropped because it matched a DDoS protection rule. |
+| **Rate limited** | Packet dropped because it exceeded rate limits. |
+| **Connection limited** | Packet dropped because it exceeded connection limits. |
+| **Unexpected** | Packet dropped because it was not expected given the current state of the connection it was associated with. |
+| **Not found** | Packet dropped because it does not match any configured Spectrum application on the destination IP address and port. |
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/spectrum/about/ddos-for-spectrum/#page","headline":"DDoS Protection for Spectrum","description":"Layer 3 and 4 DDoS protection for TCP and UDP Spectrum applications.","url":"https://developers.cloudflare.com/spectrum/about/ddos-for-spectrum/","inLanguage":"en","image":"https://developers.cloudflare.com/spectrum/about/ddos-for-spectrum/og.png?v=ffa429f47a817909","dateModified":"2026-07-16","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Enable Spectrum for FTP services and understand protocol limitations.
+title: FTP
+image: https://developers.cloudflare.com/spectrum/about/ftp/og.png?v=b156b89001681860
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/spectrum/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# FTP
+
+Last updated Apr 17, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/spectrum/about/ftp/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Enabling Spectrum for FTP is not straightforward due to the implementation of the protocol. This guide gives an overview of the intricacies of FTP and under which circumstances you can enable Spectrum for your FTP service.
+
+Note
+
+This feature requires an Enterprise plan. If you would like to upgrade, contact your account team.
+
+## How FTP Operates
+
+FTP leverages two different sockets, one for issuing commands and the other for actual data transfer. The control socket takes care of users logging in and sending commands, and the data socket is where directory listings and files actually get transferred.
+
+There are two ways in which client and server can establish a data socket: active and passive. In active mode, the server connects *back* to the client on a port that they have specified, which can create issues where clients are behind an NAT. The alternative is passive mode, where the server opens an extra port that the client then connects to. For an overview of active versus passive FTP, refer to [Active FTP vs. Passive FTP, a Definitive Explanation ↗︎](http://slacksite.com/other/ftp.html).
+
+In passive mode, the FTP server communicates a port that the client should connect to, which is done on the control socket via a PASV command. By default, the FTP server responds with the IP address that it is listening on. This scenario is fine for servers running directly on a public-facing IP but creates issues when a server is behind an NAT, firewall, or Cloudflare Spectrum.
+
+Alternatively, more modern FTP server software supports [FTP extensions ↗︎](https://tools.ietf.org/html/rfc2428), which introduces the EPSV command that omits the IP address that the client should connect on. Instead, the client connects to the same IP that it connected to for the control pane.
+
+## What Does and Does Not Work
+
+Spectrum is able to protect servers serving FTP traffic in *passive mode only*. Active mode is not supported due to the fact that the origin server sees the Spectrum IP as being the client instead of the actual client IP. When the client issues a PORT command with their own IP, the FTP server rejects because the two addresses do not match.
+
+Passive mode in combination with EPSV works out of the box with no origin-side configuration required. Note that the client must also support EPSV for this to work. Traditional passive mode with PASV is possible with minimal origin-side configuration (see below, Protecting an FTP server with Spectrum)
+
+## Protect an FTP Server with Spectrum
+
+Configuring Spectrum to protect your FTP server requires creating a set of Spectrum applications that point to your origin and some configuration on the FTP server.
+
+### Protect the Control Port
+
+The control plane runs on port 21 by default, and there is nothing special that needs to be to protect this part of the FTP server. In the example below, replace 198.51.100.1 with the IP of the origin server.
+
+![Add an application dialog with IP address and port set to 21](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=656,height=1153,format=webp/_astro/ftp-control-plane-app.CCDNXmIO.png)
+
+This configuration proxies incoming connections to the origin. However, if clients issue a PASV command, they will still receive the IP of the actual origin for the data connection. This is not preferred, as this exposes the origin's IP to the client instead of being masked behind Spectrum. Steps to prevent this are documented in sections below.
+
+### Protect Data Ports
+
+Most FTP servers allow configuration of the port range that the server will use to open data connections. It is recommended to specify a port range to prevent accidentally exposing other ports on the server. For each port in the range, create a corresponding Spectrum application that maps to that port.
+
+Additionally, the FTP server needs to be configured to expose the correct IP when the client issues a PASV command. This IP should match the IP of the Spectrum app.
+
+Some FTP servers also allow dynamic resolving of hostnames. In this case, it is recommended to use the Spectrum app URL instead of the IP.
+
+Example configuration for [vsftpd ↗︎](https://security.appspot.com/vsftpd.html):
+
+> ```bash
+> pasv_min_port=20000
+> pasv_max_port=20020
+>
+> pasv_enable=YES
+> pasv_address=ftp.example.com
+> pasv_addr_resolve=YES
+> pasv_promiscuous=YES
+> ```
+
+### Spectrum FTPS (ProFTPD) instructions
+
+To use Spectrum TCP to proxy and protect FTPS, specifically ProFTPD, the following example configuration is recommended:
+
+- **Control Port**: Port 21
+- **Data Ports**: Port ranges 50000-50500
+
+On the ProFTPD server side use the following example configuration:
+
+- `MasqueradeAddress`: `www.example.com`
+- `AllowForeignAddress`: You can use the option `on` to allow all IPs, but it is recommended to only allow [Cloudflare IP](https://developers.cloudflare.com/fundamentals/concepts/cloudflare-ip-addresses/#allow-cloudflare-ip-addresses).
+- `PassivePorts`: `50000-50500`
+
+For more details, refer to the [ProFTPD documentation ↗︎](http://www.proftpd.org/docs/modules/mod_core.html).
+
+## SFTP
+
+Unlike FTP or FTPS, enabling Spectrum for SFTP does not require extra configuration. When setting up a Spectrum application for SSH, select port 22 and TCP.
+
+## Microsoft Windows IIS FTP
+
+Refer to the [Microsoft Windows IIS documentation ↗︎](https://docs.microsoft.com/en-us/iis/publish/using-the-ftp-service/configuring-ftp-firewall-settings-in-iis-7#step-1-configure-the-passive-port-range-for-the-ftp-service) to configure a static data port range and external IP matching your Spectrum application.
+
+Additionally, IIS requires that the source IP for both, FTP control and data connections are the same. However, when using Spectrum, this requirement may not be met, as both connections often terminate on different servers with their own unique egress IPs. To ensure proper functionality, also set `dataChannelSecurity/matchClientAddressForPasv = false`. Refer to [Microsoft Windows IIS FTP Official Guide ↗︎](https://learn.microsoft.com/en-us/iis/configuration/system.applicationhost/sites/site/ftpserver/security/datachannelsecurity) for further details.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/spectrum/about/ftp/#page","headline":"FTP","description":"Enable Spectrum for FTP services and understand protocol limitations.","url":"https://developers.cloudflare.com/spectrum/about/ftp/","inLanguage":"en","image":"https://developers.cloudflare.com/spectrum/about/ftp/og.png?v=b156b89001681860","dateModified":"2026-04-17","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["FTP"]}
+```
+
+---
+
+---
+description: Add TCP health checks, failover, and traffic steering to Spectrum applications.
+title: Cloudflare Load Balancing
+image: https://developers.cloudflare.com/spectrum/about/load-balancer/og.png?v=d4eca97bee635dfb
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/spectrum/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Cloudflare Load Balancing
+
+Last updated Apr 16, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/spectrum/about/load-balancer/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+You can configure Spectrum with Cloudflare [Load Balancing](https://developers.cloudflare.com/load-balancing/) to provide TCP healthchecks, failover, and traffic steering, bringing resiliency to your Spectrum applications.
+
+For an overview of how Cloudflare Load Balancing works refer to [Load Balancing components](https://developers.cloudflare.com/load-balancing/understand-basics/load-balancing-components/). For setup guidance refer to [Add load balancing to Spectrum applications](https://developers.cloudflare.com/load-balancing/additional-options/spectrum/).
+
+## TCP health checks
+
+You can configure a Cloudflare load balancer to probe any TCP port for an accepted connection, which is in addition to HTTP and HTTPS probing capabilities.
+
+Health checks are optional within a load balancer. However, without a health check, the load balancer will distribute traffic to all endpoints in the first pool. With the health checks enabled, hosts that have gone into an error state will not receive traffic, maintaining uptime. This allows you to enable intelligent failover within a pool of hosts or amongst multiple pools.
+
+The example below shows a TCP health check configuration for an application running on port 2408 with a refresh rate every 30 seconds. You can configure TCP health checks through the dashboard or through Cloudflare's API.
+
+<details>
+
+<summary>
+
+TCP health check - Dashboard example
+
+</summary>
+
+| Field | Value |
+| --- | --- |
+| Type | TCP |
+| Port | 2408 |
+
+Under **Advanced health check settings**:
+
+| Field | Value |
+| --- | --- |
+| Interval | 30 |
+| Timeout | 5 seconds |
+| Retries | 2 |
+
+</details>
+
+<details>
+
+<summary>
+
+TCP health check - API example
+
+</summary>
+
+<details>
+
+<summary>
+
+Required API token permissions
+
+</summary>
+
+At least one of the following <a href="https://developers.cloudflare.com/fundamentals/api/reference/permissions/">token permissions</a> is required:
+
+- <code>Load Balancing: Monitors and Pools Write</code>
+
+</details>
+
+*Create Monitorbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/load_balancers/monitors" \
+	--request POST \
+	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+	--json '{
+		"description": "Spectrum Health Check",
+		"type": "tcp",
+		"port": 2048,
+		"interval": 30,
+		"retries": 2,
+		"timeout": 5,
+		"method": "connection_established"
+	}'
+```
+
+```json
+{
+    "result": {
+        "description": "TCP Monitor for Spectrum",
+        "created_on": "2025-07-17T14:55:04.830009Z",
+        "modified_on": "2025-07-17T14:55:04.830009Z",
+        "id": "1d404721c660a8a7aaa28d68ed6d48d9",
+        "type": "tcp",
+        "port": 2048,
+        "interval": 60,
+        "retries": 2,
+        "timeout": 5,
+        "expected_body": "",
+        "expected_codes": "",
+        "follow_redirects": false,
+        "allow_insecure": false,
+        "probe_zone": "",
+        "path": "",
+        "method": "connection_established"
+    },
+    "success": true,
+    "errors": [],
+    "messages": []
+}
+```
+
+</details>
+
+## Traffic steering
+
+All traffic steering policies are available for transport load balancing through Spectrum. Refer to the Load Balancing documentation to learn more about the available [global traffic steering](https://developers.cloudflare.com/load-balancing/understand-basics/traffic-steering/steering-policies/) and [endpoint steering](https://developers.cloudflare.com/load-balancing/understand-basics/traffic-steering/origin-level-steering/) options.
+
+## Weights
+
+[Endpoint weights](https://developers.cloudflare.com/load-balancing/understand-basics/traffic-steering/origin-level-steering/#weights) allow you to have endpoints with different capacity or to split traffic amongst hosts for any other reason.
+
+Weight configured within a load balancer pool will be honored with load balancing through Spectrum.
+
+## Requirements and limitations
+
+- Load Balancing [session affinity](https://developers.cloudflare.com/load-balancing/understand-basics/session-affinity/), [failover across pools](https://developers.cloudflare.com/load-balancing/understand-basics/adaptive-routing/#failover-across-pools), and [custom rules](https://developers.cloudflare.com/load-balancing/additional-options/load-balancing-rules/) are not supported by Spectrum.
+- UDP health checks are only available with public monitoring. TCP can be used with both public and private monitoring.
+
+- This feature requires an Enterprise plan. If you would like to upgrade, contact your account team.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/spectrum/about/load-balancer/#page","headline":"Cloudflare Load Balancing","description":"Add TCP health checks, failover, and traffic steering to Spectrum applications.","url":"https://developers.cloudflare.com/spectrum/about/load-balancer/","inLanguage":"en","image":"https://developers.cloudflare.com/spectrum/about/load-balancer/og.png?v=d4eca97bee635dfb","dateModified":"2026-04-16","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Assign persistent IP addresses to your Spectrum applications.
+title: Static IP
+image: https://developers.cloudflare.com/spectrum/about/static-ip/og.png?v=2cba881b64406ed0
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/spectrum/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Static IP
+
+Last updated Apr 16, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/spectrum/about/static-ip/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+When you create a Spectrum application, you are assigned an IP. These IPs are normally dynamic, meaning that they will change over time. But, for instance, if you want to set up WAF custom rules for specific IPs, you may want to use static IPs.
+
+A static IP, like a physical street address can tell other computers or servers on the Internet where a specific computer is located or connected. This makes the device easier to find on the network, since the IP will not change.
+
+With static IPs, Cloudflare commits to never changing the IP address of a client's domain resolved at the Cloudflare global network. For example, `www.example.com` will always resolve and accept traffic sent to `198.51.100.10`. No other customer will be hosted on that IP.
+
+Importantly, the static IP is associated with the DNS name, not with each individual Spectrum application. This means that all Spectrum apps using the same hostname will share the same static IP.
+
+## Use static IPs with Spectrum
+
+Availability
+
+Static IP is an Enterprise feature that does not come standard with Spectrum. Contact your account team to request access.
+
+Once you get your static IP from Cloudflare, you can use it via API, just like [BYOIP](https://developers.cloudflare.com/byoip/). For the moment, there is still no UI available for this feature.
+
+When creating a Spectrum application through the API, specify the static IPs that you have been provided. See, for instance, the API example below that creates an application routing traffic through Cloudflare’s HTTP pipeline.
+
+<details>
+
+<summary>
+
+Required API token permissions
+
+</summary>
+
+At least one of the following <a href="https://developers.cloudflare.com/fundamentals/api/reference/permissions/">token permissions</a> is required:
+
+- <code>Zone Settings Write</code>
+
+</details>
+
+*Create Spectrum application using a name for the originbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/zones/$ZONE_ID/spectrum/apps" \
+	--request POST \
+	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+	--json '{
+		"protocol": "tcp/80",
+		"dns": {
+				"type": "ADDRESS",
+				"name": "www.example.com"
+		},
+		"origin_direct": [
+				"tcp://192.0.2.1:80"
+		],
+		"tls": "off",
+		"traffic_type": "http",
+		"edge_ips": {
+				"type": "static",
+				"ips": [
+						"198.51.100.10",
+						"2001:DB8::1"
+				]
+		}
+	}'
+```
+
+## Check your static IPs
+
+You can find your leased static IPs for Spectrum on the dashboard under [**Address space** > **Leased IPs** ↗︎](https://dash.cloudflare.com/?to=/:account/ip-addresses/address-space).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/spectrum/about/static-ip/#page","headline":"Static IP","description":"Assign persistent IP addresses to your Spectrum applications.","url":"https://developers.cloudflare.com/spectrum/about/static-ip/","inLanguage":"en","image":"https://developers.cloudflare.com/spectrum/about/static-ip/og.png?v=2cba881b64406ed0","dateModified":"2026-04-16","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Pass client IP information to your origin using Proxy protocol v1 or Simple Proxy Protocol.
+title: Enable Proxy protocol
+image: https://developers.cloudflare.com/spectrum/how-to/enable-proxy-protocol/og.png?v=bc94e8997f6438fa
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/spectrum/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Enable Proxy protocol
+
+Last updated Apr 16, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/spectrum/how-to/enable-proxy-protocol/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Because Cloudflare intercepts packets before forwarding them to your server, if you were to look up the client IP, you would see Cloudflare's IP rather than the true client IP.
+
+Some services you run may require knowledge of the true client IP. In those cases, you can use a proxy protocol for Cloudflare to pass on the client IP to your service. Sending proxy information along is dependent on whether TCP or UDP is used. For TCP, Spectrum supports adding [Proxy Protocol v1 ↗︎](https://www.haproxy.org/download/1.8/doc/proxy-protocol.txt), which is the human readable version supported by Amazon ELB and [NGINX ↗︎](https://docs.nginx.com/nginx/admin-guide/load-balancer/using-proxy-protocol/). For UDP applications, Cloudflare has developed a custom proxy protocol called Simple Proxy Protocol. Be aware that Proxy Protocol is not supported for Spectrum egresses to Cloudflare WAN (formerly Magic WAN).
+
+Note
+
+This feature requires an Enterprise plan. If you would like to upgrade, contact your account team.
+
+## Enable Proxy Protocol v1 for TCP
+
+1. In the Cloudflare dashboard, go to the **Spectrum** page. [Go to **Spectrum** ↗](https://dash.cloudflare.com/?to=/:account/:zone/spectrum)
+2. Locate the application that will use the PROXY protocol and select **Configure**.
+3. From the dropdown, select **PROXY Protocol v1**.
+
+When TCP applications are configured to use **PROXY Protocol v1**, Cloudflare will prepend each inbound TCP connection with the PROXY Protocol plain-text header.
+
+### The Proxy Protocol v1 Header
+
+PROXY Protocol prepends every connection with a header reporting the client IP address and port. A PROXY Protocol plain-text header has the format:
+
+```plaintext
+PROXY_STRING + single space + INET_PROTOCOL + single space + CLIENT_IP + single space + PROXY_IP + single space + CLIENT_PORT + single space + PROXY_PORT + "\r\n"
+```
+
+An example PROXY Protocol line for an IPv4 address would look like:
+
+```plaintext
+PROXY TCP4 192.0.2.0 192.0.2.255 42300 443\r\n
+```
+
+An example PROXY Protocol line for an IPv6 address would look like:
+
+```plaintext
+PROXY TCP6 2001:db8:: 2001:db8:ffff:ffff:ffff:ffff:ffff:ffff 42300 443\r\n
+```
+
+## Enable Proxy Protocol v2 for TCP/UDP
+
+1. In the Cloudflare dashboard, go to the **Spectrum** page. [Go to **Spectrum** ↗](https://dash.cloudflare.com/?to=/:account/:zone/spectrum)
+2. Locate the application that will use the PROXY protocol and select **Configure**.
+3. From the dropdown, select **PROXY Protocol v2**.
+
+When TCP applications are configured to use **PROXY Protocol v2**, Cloudflare will prepend each inbound TCP connection with the PROXY Protocol binary header.
+
+When UDP applications are configured to use **PROXY Protocol v2**, Cloudflare will prepend the first UDP datagram on a stream with a PROXY Protocol binary header.
+
+### The Proxy Protocol v2 Header
+
+PROXY Protocol prepends every connection with a header reporting the client IP address and port.
+
+A PROXY Protocol binary header for a IPv4 incoming address has the format:
+
+```txt
+ 0                   1                   2                   3
+ 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                                                               |
++                                                               +
+|                  Proxy Protocol v2 Signature                  |
++                                                               +
+|                                                               |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|Version|Command|   AF  | Proto.|         Address Length        |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                      IPv4 Source Address                      |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                    IPv4 Destination Address                   |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|          Source Port          |        Destination Port       |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+```
+
+A PROXY Protocol binary header for a IPv6 incoming address has the format:
+
+```txt
+ 0                   1                   2                   3
+ 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                                                               |
++                                                               +
+|                  Proxy Protocol v2 Signature                  |
++                                                               +
+|                                                               |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|Version|Command|   AF  | Proto.|         Address Length        |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                                                               |
++                                                               +
+|                                                               |
++                      IPv6 Source Address                      +
+|                                                               |
++                                                               +
+|                                                               |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                                                               |
++                                                               +
+|                                                               |
++                    IPv6 Destination Address                   +
+|                                                               |
++                                                               +
+|                                                               |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|          Source Port          |        Destination Port       |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+```
+
+## Enable Simple Proxy Protocol for UDP
+
+When using Spectrum for UDP, the client source IP and port information can be obtained by using Simple Proxy Protocol, a lightweight protocol developed specifically for UDP.
+
+To enable it, select **Configure** on a Spectrum application and toggle the setting for Simple Proxy Protocol to **On**.
+
+Simple Proxy Protocol dictates that your origin must also prepend packets meant for the client with the same header, including original client source information. This is done to validate that packets coming in are in fact intended for the client.
+
+For more information about Simple Proxy Protocol headers, refer to [Simple Proxy Protocol headers](https://developers.cloudflare.com/spectrum/reference/simple-proxy-protocol-header/).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/spectrum/how-to/enable-proxy-protocol/#page","headline":"Enable Proxy protocol","description":"Pass client IP information to your origin using Proxy protocol v1 or Simple Proxy Protocol.","url":"https://developers.cloudflare.com/spectrum/how-to/enable-proxy-protocol/","inLanguage":"en","image":"https://developers.cloudflare.com/spectrum/how-to/enable-proxy-protocol/og.png?v=bc94e8997f6438fa","dateModified":"2026-04-16","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Metrics tracked for every Spectrum connection, including bytes and connection duration.
+title: Analytics
+image: https://developers.cloudflare.com/spectrum/reference/analytics/og.png?v=68cc04c4ed747195
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/spectrum/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Analytics
+
+Last updated Sep 28, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/spectrum/reference/analytics/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Cloudflare measures the following metrics for every connection.
+
+| Metric | Name | Example | Unit |
+| --- | --- | --- | --- |
+| count | Count of total events | `1000` | Count |
+| bytesIngress | Sum of ingress bytes | `1000` | Sum |
+| bytesEgress | Sum of egress bytes | `1000` | Sum |
+| durationAvg | Average connection duration | `1.0` | Time in milliseconds |
+| durationMedian | Median connection duration | `1.0` | Time in milliseconds |
+| duration90th | 90th percentile connection duration | `1.0` | Time in milliseconds |
+| duration99th | 99th percentile connection duration | `1.0` | Time in milliseconds |
+
+## Additional dimensions
+
+You can divide your analytics further by the following dimensions.
+
+| Dimension | Name | Example |
+| --- | --- | --- |
+| event | Connection Event | `connect`, `progress`, `disconnect`, `originError`, `clientFiltered` |
+| appID | Application ID | `40d67c87c6cd4b889a4fd57805225e85` |
+| coloName | Colo Name | `SFO` |
+| ipVersion | IP version used by the client | `4`, `6` |
+
+## Operators for filtering
+
+Use the operators below to filter data.
+
+| Operator | Name | URL Encoded |
+| --- | --- | --- |
+| `==` | Equals | `%3D%3D` |
+| `!=` | Does not equal | `!%3D` |
+| `>` | Greater Than | `%3E` |
+| `<` | Less Than | `%3C` |
+| `>=` | Greater than or equal to | `%3E%3D` |
+| `<=` | Less than or equal to | `%3C%3D` |
+
+Combine filters using `OR` and `AND` boolean logic:
+
+- `AND` takes precedence over `OR` in all expressions.
+- The `OR` operator is defined using a comma `,` or the `OR` keyword surrounded by whitespace.
+- The `AND` operator is defined using a semicolon `;` or the `AND` keyword surrounded by whitespace.
+
+  Note
+
+  Note that the semicolon is a reserved character in URLs ([RFC 1738 ↗︎](https://www.rfc-editor.org/rfc/rfc1738)) and should be percent-encoded as `%3B`.
+
+## Analytics request structure
+
+```txt
+/api/v4/zones/{zone_id}/spectrum/analytics/events/summary?metrics=METRICS&dimensions=DIMENSIONS&filters=FILTERS&since=FROM_TS&sort=SORT&until=TO_TS&limit=LIMIT
+/api/v4/zones/{zone_id}/spectrum/analytics/events/bytime?metrics=METRICS&dimensions=DIMENSIONS&filters=FILTERS&since=FROM_TS&sort=SORT&until=TO_TS&limit=LIMIT
+```
+
+- METRICS is one or more metrics (such as count) to compute
+- DIMENSIONS can be used to break down the data by given attributes
+- FILTERS used to filter rows by one or more dimensions (see Filters section below)
+- SORT is the sort order for the result set; sort fields must be included in METRICS or DIMENSIONS
+- TO\_TS is the end of time interval to query, defaults to current time
+- FROM\_TS is the start of time interval to query, defaults to TO\_TS - 6 hours
+- STEP is used to select time series resolution when using endpoint:
+- auto or omitted - selects time step most appropriate to time interval
+  - year
+  - quarter
+  - month
+  - week
+  - day
+  - hour
+
+## Analytics query example
+
+<details>
+
+<summary>
+
+Required API token permissions
+
+</summary>
+
+At least one of the following <a href="https://developers.cloudflare.com/fundamentals/api/reference/permissions/">token permissions</a> is required:
+
+- <code>Analytics Read</code>
+
+</details>
+
+*Get analytics summarybash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/zones/$ZONE_ID/spectrum/analytics/events/summary" \
+	--request GET \
+	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
+```
+
+Refer to the [Spectrum API documentation](https://developers.cloudflare.com/api/resources/spectrum/subresources/analytics/subresources/aggregates/subresources/currents/methods/get/) for more examples of API requests.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/spectrum/reference/analytics/#page","headline":"Analytics","description":"Metrics tracked for every Spectrum connection, including bytes and connection duration.","url":"https://developers.cloudflare.com/spectrum/reference/analytics/","inLanguage":"en","image":"https://developers.cloudflare.com/spectrum/reference/analytics/og.png?v=68cc04c4ed747195","dateModified":"2026-09-28","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["Analytics"]}
+```
+
+---
+
+---
+description: Configurable options for Spectrum applications, including edge and origin ports and protocols.
+title: Configuration options
+image: https://developers.cloudflare.com/spectrum/reference/configuration-options/og.png?v=a0f8992ba404a747
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/spectrum/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Configuration options
+
+Last updated Jul 20, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/spectrum/reference/configuration-options/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Spectrum is a global TCP and UDP proxy running on Cloudflare's edge nodes. It does not terminate the connection in the application-layer sense. However, at Layer 4, Spectrum does terminate the TCP and UDP sockets in both directions. The L4 payloads of TCP segments and UDP datagrams are passed back and forth as-is, without modifications.
+
+This means Spectrum does not inspect, modify, or upgrade application-layer protocols. For example, Spectrum cannot convert an HTTP connection to HTTPS, add HTTP headers, or apply WAF rules to TCP traffic. To add Layer 7 functionality such as CDN, Workers, or Bot Management, set the [application type](#application-type) to **HTTP/HTTPS**.
+
+For common issues and troubleshooting guidance, refer to [Spectrum Troubleshooting](https://developers.cloudflare.com/spectrum/reference/troubleshooting/).
+
+Note
+
+Some of these features require an Enterprise plan. If you would like to upgrade, contact your account team.
+
+## Application type
+
+The application type determines the protocol by which data travels from the edge to your origin. Select *TCP/UDP* if you want to proxy directly to the origin. If you want to set up products like CDN, Workers, or Bot management, you need to select *HTTP/HTTPS*. In this case, traffic is routed through Cloudflare's pipeline instead of connecting directly to your origin.
+
+## IP addresses
+
+When a Spectrum application is created, it is assigned a unique IPv4 and IPv6 address, or you can provision the application to be IPv6 only. The addresses are not static, and they may change over time. The best way to look up the current addresses is by using DNS. The DNS name of the Spectrum application will always return the IPs currently dedicated to the application.
+
+The addresses are anycasted from all Cloudflare data centers, with the exception of data centers in China.
+
+## SMTP
+
+Spectrum can act as a TCP load balancer in front of an SMTP server but will not act as an intermediary mail server. Instead, Spectrum passes data through to your origin. The client IP shown on mail will be the Cloudflare edge IP. If the mail server requires knowing the true client IP, it should use Proxy Protocol to get the source IP from Cloudflare. Cloudflare recommends enabling Proxy Protocol on applications configured to proxy SMTP.
+
+SMTP servers may perform a series of checks on servers attempting to send messages through it. These checks are intended to filter requests from illegitimate servers.
+
+Messages may be rejected if:
+
+- A reverse DNS lookup on the IP address of the connecting server returns a negative response.
+- The reverse DNS lookup produces a different hostname than what was sent in the SMTP `HELO`/ `EHLO` message.
+- The reverse DNS lookup produces a different hostname than what is advertised in your SMTP server's banner.
+- The result of a reverse DNS lookup does not match a corresponding forward DNS lookup.
+
+Spectrum applications do not have reverse DNS entries.
+
+Additionally, SMTP servers may perform a DNS lookup to find the MX records for a domain. Messages from your server may be rejected if an MX record for your domain is associated with a Spectrum application, as the IP address of server will not match the Spectrum IP address.
+
+## Ports
+
+Cloudflare supports all TCP ports.
+
+## Port ranges
+
+Spectrum applications can be configured to proxy traffic on ranges of ports.
+
+For direct origins:
+
+```json
+{
+	"protocol": "tcp/1000-2000",
+	"dns": {
+		"type": "CNAME",
+		"name": "range.example.com"
+	},
+	"origin_direct": ["tcp://192.0.2.1:3000-4000"]
+}
+```
+
+For DNS origins:
+
+```json
+{
+	"protocol": "tcp/1000-2000",
+	"dns": {
+		"type": "CNAME",
+		"name": "range.example.com"
+	},
+	"origin_dns": {
+		"name": "origin.example.com",
+		"ttl": 1200
+	},
+	"origin_port": "3000-4000"
+}
+```
+
+The number of ports in an origin port range must match the number of ports specified in the `protocol` field. Connections to a port within a port range at the edge will be proxied to the equivalent port offset in the origin range. For example, in the configurations above, a connection to `range.example.com:1005` would be proxied to port `3005` on the origin.
+
+## IP Access rules
+
+If [IP Access rules](https://developers.cloudflare.com/waf/tools/ip-access-rules/create/) are enabled for a Spectrum application, Cloudflare will respect the IP Access rules configured for that domain. Cloudflare only respects rules created for specific IP addresses, IP blocks, countries, or ASNs for Spectrum applications. Spectrum will also only respect rules created with the actions `allow` or `block`.
+
+Note
+
+Network analytics data for Spectrum does not reflect the outcomes of IP Access rules. Instead, to verify whether traffic was allowed or blocked based on these rules, consult the Spectrum event logs.
+
+## Argo Smart Routing
+
+Once Argo Smart Routing is enabled for your application, traffic will automatically be routed through the fastest and most reliable network path available. Argo Smart Routing is available for TCP and UDP (beta) applications.
+
+## Virtual network origin
+
+Spectrum applications can route `origin_direct` traffic to a private origin through a Cloudflare Tunnel [virtual network](https://developers.cloudflare.com/cloudflare-one/networks/virtual-networks/). Set `virtual_network_id` on the application to the ID of the virtual network that the origin IP is routable within. Traffic to the application is delivered through the connector associated with that virtual network — typically a [Cloudflare Tunnel](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/) or a [Cloudflare WAN](https://developers.cloudflare.com/cloudflare-wan/) (formerly Magic WAN) connection.
+
+To create the virtual network and attach a route covering your origin IP, refer to [Manage virtual networks](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/private-net/cloudflared/tunnel-virtual-networks/) and [Connect an IP/CIDR](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/private-net/cloudflared/connect-cidr/).
+
+The following restrictions apply when `virtual_network_id` is set:
+
+- Application type must be TCP or UDP. HTTP/HTTPS applications do not support virtual network origins.
+- The origin must be specified with `origin_direct`. Hostname origins ( `origin_dns`) are not supported.
+- `origin_direct` must contain exactly one address. Multiple addresses are not supported.
+- The origin port must be a single port. Port ranges are not supported.
+- The origin IP must be routable within the specified virtual network. The virtual network must already have a route covering the IP.
+- [Proxy Protocol](https://developers.cloudflare.com/spectrum/how-to/enable-proxy-protocol/) is not supported. `proxy_protocol` must be set to `off`.
+
+For the validation error codes returned when these constraints are violated, refer to [Error codes](https://developers.cloudflare.com/spectrum/reference/error-codes/).
+
+Spectrum virtual network origins are for TCP and UDP traffic only. For HTTP/HTTPS traffic to private origins, use [Application Services for Private Origins](https://developers.cloudflare.com/dns/private-origins/), which provides WAF, CDN caching, and the full Cloudflare proxy stack.
+
+## Edge TLS Termination
+
+Spectrum does not perform protocol upgrade
+
+Spectrum operates at Layer 4 and forwards TCP payloads as-is. If Edge TLS Termination is set to **off** (Passthrough), Spectrum will **not** upgrade an HTTP connection to HTTPS, even if your origin listens on port 443. To encrypt traffic between Cloudflare and your origin, enable Edge TLS Termination and set it to **Full** or **Full (Strict)**.
+
+For example, if a client connects to your Spectrum application on port 8012 using HTTP, and your origin is configured on port 443, the connection to origin will use HTTP on port 443 — not HTTPS — unless Edge TLS Termination is set to **Full** or **Full (Strict)**.
+
+If you enable **Edge TLS Termination** for a Spectrum application, Cloudflare will encrypt traffic for the application at the Edge. The Edge TLS Termination toggle applies only to TCP applications.
+
+Spectrum offers three modes of TLS termination: 'Flexible', 'Full', and 'Full (Strict)'.
+
+'Flexible' enables termination of the client connection at the edge, but does not enable TLS from Cloudflare to your origin. Traffic will be sent over an encrypted connection from the client to Cloudflare, but not from Cloudflare to the origin.
+
+'Full' specifies that traffic from Cloudflare to the origin will also be encrypted but without certificate validation. When set to 'Full (Strict)', traffic from Cloudflare to the origin will also be encrypted with strict validation of the origin certificate.
+
+TLS versions supported by Spectrum include TLS 1.1, TLS 1.2, and TLS 1.3.
+
+You can manage this through the Spectrum app at the Cloudflare dashboard, or using the [Spectrum API endpoint](https://developers.cloudflare.com/api/resources/spectrum/subresources/apps/methods/update/).
+
+Note
+
+If you have the TLS termination setting configured to **off**, this means that Spectrum will then proxy connections to the origin without decrypting. The certificate that is presented in this case will be the certificate installed at your origin server, instead of the Edge Certificate from Cloudflare.
+
+Caution
+
+Do not configure a TCP-type Spectrum application's origin to point to another Cloudflare-proxied hostname (for example, `origin.example.com.cdn.cloudflare.net`). This creates an unsupported double-proxy path that may result in TLS handshake failures at the origin. For TCP applications, a failed TLS handshake to the origin is reported as an origin connection failure (`521` or `522`), not error `525` — `525` applies to HTTP/HTTPS applications. Use a direct origin IP address or a DNS hostname that resolves to your origin server without passing through Cloudflare's proxy. Refer to [Spectrum Troubleshooting](https://developers.cloudflare.com/spectrum/reference/troubleshooting/#tls-handshake-failures-error-525) for details.
+
+Caution
+
+If you need to control TLS settings, like the minimum TLS version or cipher suites, you need to use an HTTPS application. For TCP applications, default settings will apply. The minimum TLS version will be 1.1 and the cipher suites are:
+
+| OpenSSL Name |
+| --- |
+| AEAD-CHACHA20-POLY1305-SHA256 |
+| AEAD-AES128-GCM-SHA256 |
+| AEAD-AES256-GCM-SHA384 |
+| ECDHE-RSA-CHACHA20-POLY1305 |
+| ECDHE-ECDSA-CHACHA20-POLY1305 |
+| ECDHE-RSA-AES128-GCM-SHA256 |
+| ECDHE-ECDSA-AES128-GCM-SHA256 |
+| ECDHE-RSA-AES256-GCM-SHA384 |
+| ECDHE-ECDSA-AES256-GCM-SHA384 |
+| ECDHE-RSA-AES128-SHA256 |
+| ECDHE-RSA-AES128-SHA |
+| CDHE-ECDSA-AES128-SHA256 |
+| ECDHE-ECDSA-AES128-SHA |
+| ECDHE-RSA-AES256-SHA |
+| ECDHE-ECDSA-AES256-SHA |
+| AES128-GCM-SHA256 |
+| AES256-GCM-SHA384 |
+| AES128-SHA256 |
+| AES128-SHA |
+| AES256-SHA |
+| ECDHE-RSA-DES-CBC3-SHA |
+| DES-CBC3-SHA |
+
+## Origin TLS Termination
+
+Below are the cipher suites Cloudflare presents to origins during an SSL/TLS handshake. For cipher suites supported at our edge or presented to browsers and other user agents, refer to [Cipher suites](https://developers.cloudflare.com/ssl/edge-certificates/additional-options/cipher-suites/).
+
+The cipher suites below are ordered based on how they appear in the ClientHello, communicating our preference to the origin. Customers do not have the ability to modify the ciphers used by Spectrum.
+
+## Supported cipher suites by protocol
+
+| OpenSSL Name | TLS 1.1 | TLS 1.2 | TLS 1.3 |
+| --- | --- | --- | --- |
+| AEAD-AES128-GCM-SHA256<sup>[1](#user-content-fn-1)</sup> | ❌ | ❌ | ✅ |
+| AEAD-AES256-GCM-SHA384<sup>[1](#user-content-fn-1)</sup> | ❌ | ❌ | ✅ |
+| AEAD-CHACHA20-POLY1305-SHA256<sup>[1](#user-content-fn-1)</sup> | ❌ | ❌ | ✅ |
+| ECDHE-ECDSA-AES128-GCM-SHA256 | ❌ | ✅ | ❌ |
+| ECDHE-RSA-AES128-GCM-SHA256 | ❌ | ✅ | ❌ |
+| ECDHE-RSA-AES128-SHA | ✅ | ✅ | ❌ |
+| AES128-GCM-SHA256 | ❌ | ✅ | ❌ |
+| AES128-SHA | ✅ | ✅ | ❌ |
+| AES256-SHA | ✅ | ✅ | ❌ |
+
+## Footnotes
+
+1. Although TLS 1.3 uses the same cipher suite space as previous versions of TLS, TLS 1.3 cipher suites are defined differently, only specifying the symmetric ciphers, and cannot be used with TLS 1.2. Similarly, TLS 1.2 and lower cipher suites cannot be used with TLS 1.3 ([RFC 8446 ↗︎](https://www.rfc-editor.org/rfc/rfc8446.html)). BoringSSL also hard-codes cipher preferences in this order for TLS 1.3. Refer to [TLS 1.3 cipher suites](https://developers.cloudflare.com/ssl/origin-configuration/cipher-suites/#tls-13-cipher-suites) for details. [↩](#user-content-fnref-1) [↩<sup>2</sup>](#user-content-fnref-1-2) [↩<sup>3</sup>](#user-content-fnref-1-3)
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/spectrum/reference/configuration-options/#page","headline":"Configuration options","description":"Configurable options for Spectrum applications, including edge and origin ports and protocols.","url":"https://developers.cloudflare.com/spectrum/reference/configuration-options/","inLanguage":"en","image":"https://developers.cloudflare.com/spectrum/reference/configuration-options/og.png?v=a0f8992ba404a747","dateModified":"2026-07-20","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Error codes returned by the Cloudflare Spectrum API.
+title: Error codes
+image: https://developers.cloudflare.com/spectrum/reference/error-codes/og.png?v=59e854c4eb97a8f4
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/spectrum/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Error codes
+
+Last updated Jun 30, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/spectrum/reference/error-codes/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+This page documents error codes returned by the [Spectrum API](https://developers.cloudflare.com/api/resources/spectrum/subresources/apps/), along with recommended fixes to help with troubleshooting.
+
+## How errors are returned
+
+Spectrum API errors follow the standard Cloudflare v4 error envelope. The response body includes an `errors` array with `code` and `message` fields:
+
+```json
+{
+  "errors": [
+    {
+      "code": 11044,
+      "message": "No matching routes in the specified virtual network."
+    }
+  ],
+  "messages": [],
+  "success": false,
+  "result": null
+}
+```
+
+## General errors (10xxx)
+
+### 10002 — Unexpected internal server error
+
+An unexpected error occurred during request processing. The response does not include diagnostic details. If you contact Cloudflare support, provide the [Ray ID](https://developers.cloudflare.com/fundamentals/reference/cloudflare-ray-id/) from the response so the original error can be located.
+
+HTTP `503` indicates a dependent service (such as DNS or IP address management) is temporarily unavailable. HTTP `500` indicates any other internal error.
+
+### 10012 — Unknown field in request JSON
+
+The request body contains a field the API does not recognize. This error is only returned for applications on Pay-as-you-go accounts. Enterprise applications silently ignore unknown fields.
+
+Pay-as-you-go accounts are limited to `protocol`, `dns`, and `origin_direct` when creating or updating a Spectrum application. A common cause is an account without a Spectrum entitlement sending a full Spectrum configuration — any field outside those three will be rejected.
+
+**Resolution:** To use the full Spectrum configuration API, contact your account team to enable Spectrum as a paid add-on. Otherwise, remove any fields other than `protocol`, `dns`, and `origin_direct` from the request.
+
+## Application configuration errors (11xxx)
+
+These errors are returned as HTTP `400`, unless noted otherwise.
+
+### 11000 — Invalid origin configuration
+
+The request must provide exactly one of `origin_direct` or `origin_dns`. Providing both or neither will trigger this error.
+
+### 11001 — Invalid origin DNS configuration
+
+The `origin_dns` configuration failed validation. Common causes:
+
+- The `origin_dns.name` is not a valid domain name.
+- A non-SRV `origin_dns.type` was provided without an `origin_port`.
+- The `origin_dns.ttl` is outside the allowed range.
+
+### 11002 — Invalid origin address
+
+One or more of the origin addresses provided are invalid.
+
+Common causes:
+
+- **IPv6 origin without brackets:** IPv6 addresses must be wrapped in brackets in `origin_direct`, for example `tcp://[2001:db8::1]:443`. Without brackets, the colons in the address make parsing ambiguous.
+- **Origin IP fails access control validation:** The origin IP may fail an internal access control check. Verify the IP is valid and belongs to an allowed range.
+
+### 11004 — Invalid DNS configuration
+
+The DNS type must match the edge IP allocation mode. Dynamic edge IPs require `type: "CNAME"`. Static (BYOIP) edge IPs require `type: "ADDRESS"`. This error is also returned if you attempt to change the DNS type when updating an existing application.
+
+### 11014 — FTP not enabled
+
+FTP traffic type is not enabled for the account. Returned as HTTP `403`.
+
+**Resolution:** Contact your account team to enable FTP support.
+
+### 11018 — `edge_ips` not enabled
+
+The `edge_ips` feature (BYOIP) is not enabled for the account. Returned as HTTP `403`.
+
+**Resolution:** Contact your account team to enable [BYOIP](https://developers.cloudflare.com/spectrum/about/byoip/) for the account.
+
+### 11019 — `edge_ips` not authorized
+
+The authenticated account is not authorized to use the provided `edge_ips`.
+
+Common causes:
+
+- **API token lacks IP prefix permissions:** API tokens scoped to Spectrum may not carry the IP prefix permissions required for BYOIP validation. Use a Global API Key, or add the **Account** > **IP Prefixes** permission to the API token.
+- **BYOIP prefix not allocated to account:** Verify the BYOIP prefix is allocated to the requesting account before assigning it.
+
+### 11026 — Argo Smart Routing not enabled
+
+The request set `argo_smart_routing` to `true`, but Argo Smart Routing is not enabled for the account. Returned as HTTP `403`.
+
+**Resolution:** Contact your account team to enable Argo Smart Routing for the account.
+
+### 11033 — `edge_ips` in use
+
+One or more of the provided `edge_ips` is already in use by another zone.
+
+Common cause: The requested edge IP may be held by a legacy Spectrum application on a deleted zone. Contact Cloudflare support to clean up the orphaned application.
+
+### 11034 — Cannot create more applications for protocol
+
+Pay-as-you-go accounts are limited to one application per protocol. If you need multiple applications on the same protocol, contact your account team to enable Spectrum as a paid add-on.
+
+### 11050 — Invalid cross-zone origin DNS configuration
+
+The DNS record or Load Balancer used as an origin lives on a different zone or a non-permitted zone.
+
+**Resolution:** Move the origin DNS record or Load Balancer to the same zone, or use `origin_direct` with an IP address instead.
+
+## Virtual network origin errors
+
+The following codes are returned by `POST /zones/:zone/spectrum/apps` and `PATCH /zones/:zone/spectrum/apps/:id` when validating an application that uses a [virtual network origin](https://developers.cloudflare.com/spectrum/reference/configuration-options/#virtual-network-origin).
+
+### 11041 — Virtual network requires origin direct
+
+`virtual_network_id` was set on a request that uses `origin_dns`. Virtual network origins are only supported with IP-based origins.
+
+**Resolution:** Replace `origin_dns` with `origin_direct` and provide the private IP and single port that the virtual network routes to.
+
+### 11042 — Virtual network requires single origin
+
+`origin_direct` contained more than one address. Virtual network origins must resolve to a single private IP and port.
+
+**Resolution:** Reduce `origin_direct` to a single entry of the form `tcp://<IP>:<PORT>` or `udp://<IP>:<PORT>`.
+
+### 11043 — Virtual network no port range
+
+The request included a port range, either in `origin_port` or in the `origin_direct` address. Virtual network origins do not support port ranges.
+
+**Resolution:** Use a single port instead of a range. If you need to expose multiple ports, create a separate Spectrum application per port.
+
+### 11044 — Virtual network route not found
+
+The combination of IP and `virtual_network_id` does not match any route in the specified virtual network. This covers two cases: the virtual network does not exist, or the IP is not routable within the virtual network you specified.
+
+**Resolution:**
+
+- Confirm `virtual_network_id` matches a virtual network on your account. You can list virtual networks with the [List virtual networks](https://developers.cloudflare.com/api/resources/zero_trust/subresources/networks/subresources/virtual_networks/methods/list/) endpoint.
+- Confirm the origin IP is within a route attached to that virtual network. You can list routes with the [List network routes](https://developers.cloudflare.com/api/resources/zero_trust/subresources/networks/subresources/routes/methods/list/) endpoint.
+- If no matching route exists, add one by following [Connect an IP/CIDR](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/private-net/cloudflared/connect-cidr/).
+
+### 11045 — Virtual network invalid UUID
+
+`virtual_network_id` is not a valid UUID.
+
+**Resolution:** Provide a UUID. Virtual network IDs are returned by the [List virtual networks](https://developers.cloudflare.com/api/resources/zero_trust/subresources/networks/subresources/virtual_networks/methods/list/) endpoint in the `id` field of each entry.
+
+## Addressing errors (12xxx)
+
+### 12005 — IPv4 quota limit
+
+The zone has allocated all available IPv4 addresses in its quota.
+
+**Resolution:** Consolidate applications onto fewer IPs (multiple apps can share a hostname on different ports), purchase additional Cloudflare-managed IPs, or onboard [BYOIP](https://developers.cloudflare.com/spectrum/about/byoip/).
+
+## Protocol errors (13xxx)
+
+### 13002 — Protocol not available
+
+The requested protocol is not available for the zone. The error message includes specific edge ports that are not allowed for the requested protocol.
+
+## Hostname errors (16xxx)
+
+### 16001 — Zone mismatch
+
+A hostname with the same DNS name already exists but belongs to a different zone. This can occur during application creation or update when the hostname lookup matches a record owned by another zone.
+
+**Resolution:**
+
+- Verify you are using the correct zone ID in the API request URL.
+- Use a different DNS name for the application.
+- If the DNS name was previously used on another zone you control, delete the application on that zone first.
+- Contact Cloudflare support if none of these apply — the hostname may need to be cleaned up internally.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/spectrum/reference/error-codes/#page","headline":"Error codes","description":"Error codes returned by the Cloudflare Spectrum API.","url":"https://developers.cloudflare.com/spectrum/reference/error-codes/","inLanguage":"en","image":"https://developers.cloudflare.com/spectrum/reference/error-codes/og.png?v=59e854c4eb97a8f4","dateModified":"2026-06-30","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: How Spectrum Layer 4 traffic can appear in Layer 7 analytics dashboards.
+title: Why Spectrum-enabled hostnames might appear in Layer 7 Analytics
+image: https://developers.cloudflare.com/spectrum/reference/layer-7-analytics/og.png?v=07edec5ffa69670f
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/spectrum/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Why Spectrum-enabled hostnames might appear in Layer 7 Analytics
+
+Last updated Apr 16, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/spectrum/reference/layer-7-analytics/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Even when you have Spectrum enabled to handle Layer 4 traffic (for example, TCP/UDP connections), you may still notice traffic in your Layer 7 (L7) analytics dashboard. This is due to the way Cloudflare's Layer 7 CDN and Spectrum handle customer identity differently.
+
+## How Spectrum identifies a user (Layer 4)
+
+In Spectrum, the identity of the customer hostname is based on the Cloudflare IP address that the client uses to connect to the edge. Here is the typical process:
+
+1. Spectrum sets up a DNS hostname in the customer's zone that points to its Spectrum edge IP, and links this edge IP and port to the customer's configuration.
+2. The client performs a DNS lookup on the Spectrum hostname, retrieves the Spectrum edge IP, and connects to that IP and port.
+3. Spectrum uses this edge IP and port to match the connection to the customer's configuration, identifying the customer.
+
+This process focuses on Layer 4 associating a hostname and customer configuration around IP addresses and ports.
+
+## How the CDN identifies a user (Layer 7)
+
+1. The customer sets up a DNS hostname in their zone that directs traffic to their origin server.
+2. The client performs a DNS lookup on the CDN hostname, and the DNS server responds with a CDN edge IP. In contrast to Spectrum, the CDN edge IP is primarily used for traffic management rather than customer identity, as multiple customers can share the same CDN edge IP.
+
+For the CDN, identifying the customer relies heavily on resolving hostnames during the TLS handshake (SNI) and the HTTP request (`Host` header). Notably, the CDN is designed to accept any hostname that matches the customer's zone (for example, `*.example.com`), even if there is no specific Layer 7 DNS match. This means that even Spectrum or Load Balancer hostnames will be accepted as valid under `*.example.com`.
+
+## The overlap: Layer 7 traffic being proxied through Spectrum
+
+Because the CDN is designed to accept any hostname under your zone (for example, `spectrum.example.com`), HTTP traffic that should first be proxied by Spectrum, or even HTTP traffic meant for a Layer-4-only Spectrum app, may sometimes be processed directly by the Layer 7 CDN system. The process is the following:
+
+1. The client connects to a Layer 7 CDN edge IP while using the hostname of a Spectrum application (for example, `spectrum.example.com`) during both the TLS handshake and the HTTP request. Essentially, this means the client is attempting to access `spectrum.example.com` on an incorrect IP.
+2. The CDN accepts this hostname as part of the customer zone during both the TLS and HTTP phases because it is designed to recognize any hostname under `*.example.com`. As a result, the request passes through the CDN under the zone's identity.
+3. However, when the CDN attempts to connect to the origin server, it performs an internal DNS lookup of the HTTP hostname, which resolves to the Spectrum IP (from `spectrum.example.com` to the Spectrum edge IP). Consequently, the CDN establishes an origin connection to Spectrum, loading its configuration and forwarding the request to the Spectrum origin.
+
+This means traffic for this hostname undergoes the standard Layer 7 CDN products, including Analytics and logs.
+
+## Blocking unwanted L7 traffic
+
+If you want to prevent traffic for Layer-4-only Spectrum hostnames from being proxied through Layer 7 to your origin (including unwanted scans or requests), we recommend implementing a Layer 7 WAF (Web Application Firewall) rule. This rule can block traffic directed at specific hostnames or ports, ensuring that only legitimate traffic reaches your Spectrum service.
+
+For example, you can create a WAF rule to block requests to `spectrum.example.com` unless they originate from a Spectrum IP or a customer's Spectrum BYOIP. The traffic will still be logged in Layer 7 Analytics, including WAF Security Events, but this prevents it from arriving at the wrong address and looping through the CDN a second time.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/spectrum/reference/layer-7-analytics/#page","headline":"Why Spectrum-enabled hostnames might appear in Layer 7 Analytics","description":"How Spectrum Layer 4 traffic can appear in Layer 7 analytics dashboards.","url":"https://developers.cloudflare.com/spectrum/reference/layer-7-analytics/","inLanguage":"en","image":"https://developers.cloudflare.com/spectrum/reference/layer-7-analytics/og.png?v=07edec5ffa69670f","dateModified":"2026-04-16","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Limitations that apply to Spectrum applications.
+title: Limitations
+image: https://developers.cloudflare.com/spectrum/reference/limitations/og.png?v=e84cde46b655df7c
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/spectrum/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Limitations
+
+Last updated Sep 16, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/spectrum/reference/limitations/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+The following limitations apply to Spectrum applications.
+
+## IPv4 hostname quota
+
+By default, an account is limited to **10 unique Spectrum hostnames** using Cloudflare-managed IPv4 addresses, across all zones on the account. Each hostname is backed by a dedicated IPv4 address, and this quota is applied at the account level — not per zone.
+
+IPv6-only Spectrum applications do not count against this quota.
+
+If you need more than 10 IPv4-backed Spectrum hostnames, you can:
+
+- **Use [BYOIP](https://developers.cloudflare.com/spectrum/about/byoip/)** — bring your own IP space so Spectrum applications are not constrained by the default shared-IPv4 allocation.
+- **Use IPv6-only Spectrum applications** — IPv6 addresses are not subject to the same scarcity as IPv4.
+- **CNAME multiple subdomains to a single Spectrum application** — point several DNS-only (gray-clouded) `CNAME` records at one Spectrum application hostname. This works only when those hostnames share the same origin (one origin per application).
+- **Use [Cloudflare for SaaS](https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/)** — configure the Spectrum application as the target (fallback origin) for Custom Hostnames.
+
+Contact your account team if you expect to exceed the quota.
+
+## HTTPS
+
+At the moment, HTTPS applications do not support HTTP/3.
+
+## UDP
+
+Cloudflare does not support packet fragmentation for UDP packets. If packets are fragmented, they will be dropped at Cloudflare’s edge.
+
+Spectrum UDP applications are supported with [BYOIP](https://developers.cloudflare.com/spectrum/about/byoip/), including [CDN and Spectrum service bindings](https://developers.cloudflare.com/byoip/service-bindings/cdn-and-spectrum/). They are not currently supported with [Magic Transit service bindings](https://developers.cloudflare.com/byoip/service-bindings/).
+
+## Minecraft
+
+Minecraft Java Edition is supported but Minecraft Bedrock Edition is not supported.
+
+## Universal SSL
+
+[Universal SSL](https://developers.cloudflare.com/ssl/edge-certificates/universal-ssl/) is not compatible with Cloudflare Spectrum. Use either an [advanced certificate](https://developers.cloudflare.com/ssl/edge-certificates/advanced-certificate-manager/) or a [custom certificate](https://developers.cloudflare.com/ssl/edge-certificates/custom-certificates/) instead.
+
+## Private Network Load Balancing
+
+When using [Spectrum](https://developers.cloudflare.com/load-balancing/private-network/#on-ramps) as an on-ramp into Private Network Load Balancing, the [proxy protocol](https://developers.cloudflare.com/spectrum/how-to/enable-proxy-protocol/) setting in Spectrum is not supported. This applies regardless of the [off-ramp](https://developers.cloudflare.com/load-balancing/private-network/) used to reach your private origin, including Cloudflare WAN and Cloudflare Tunnel.
+
+## Cloudflare Tunnel
+
+Integrating Spectrum with [Cloudflare Tunnel](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/) is only supported for **HTTP/HTTPS** applications. This is because Spectrum must upstream the request through the [Layer 7 CDN products](https://developers.cloudflare.com/spectrum/reference/layer-7-analytics/#the-overlap-layer-7-traffic-being-proxied-through-spectrum) to reach the Tunnel service.
+
+To correctly route traffic from Spectrum through a Cloudflare Tunnel, you must:
+
+1. Configure your Spectrum application with the type set to **HTTP** or **HTTPS**.
+2. Point the Spectrum application's origin to a hostname that is already [routing traffic](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/routing-to-tunnel/) through your Cloudflare Tunnel (for example, via a [DNS record](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/routing-to-tunnel/dns/) or [Cloudflare Load Balancer](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/routing-to-tunnel/public-load-balancers/)).
+
+Using a Spectrum application of any other type (for example, TCP) with a Cloudflare Tunnel origin directly is not supported. Pointing a Spectrum application's origin directly to your Tunnel's subdomain (`<UUID>.cfargotunnel.com`) is also not a valid configuration and will not work.
+
+Alternative L4 routing
+
+To route non-HTTP (TCP or UDP) traffic from a public Spectrum application to a private endpoint via Cloudflare Tunnel, configure a [Cloudflare Load Balancer with Private Network Load Balancing (LTM)](https://developers.cloudflare.com/load-balancing/private-network/) in between.
+
+By defining private IP addresses as origins inside your Load Balancer pool and associating them with your tunnel's Virtual Network ID (`virtual_network_id`), the Load Balancer will receive the L4 traffic from Spectrum and route it to your private origin over the Cloudflare Tunnel.
+
+## Listen on ports configuration
+
+By default, Spectrum is configured to listen on all ports, which can raise concerns for security auditors. However, it is important to note that Spectrum will only proxy connections from edge ports that are specifically configured within Cloudflare.
+
+When a TCP handshake is initiated to any port for a Spectrum IP, the handshake will always be completed. If there is a Spectrum application configured for the port, the connection will be proxied to origin. If no application is configured, the connection is immediately terminated and no origin connection will be opened.
+
+Spectrum will only ever proxy traffic to an origin if there is a Spectrum application configured for that port.
+
+## IP access control
+
+Currently, [custom rules](https://developers.cloudflare.com/waf/custom-rules/) do not work with Spectrum applications. Use [IP Access rules](https://developers.cloudflare.com/waf/tools/ip-access-rules/) to allowlist, block, and challenge traffic for Spectrum applications based on the request's IP address, Autonomous System Number (ASN), or country.
+
+Refer to [Configuration options](https://developers.cloudflare.com/spectrum/reference/configuration-options/#ip-access-rules) for more information.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/spectrum/reference/limitations/#page","headline":"Limitations","description":"Limitations that apply to Spectrum applications.","url":"https://developers.cloudflare.com/spectrum/reference/limitations/","inLanguage":"en","image":"https://developers.cloudflare.com/spectrum/reference/limitations/og.png?v=e84cde46b655df7c","dateModified":"2026-09-16","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Access Spectrum connection lifecycle logs through Logpush.
+title: Event logs
+image: https://developers.cloudflare.com/spectrum/reference/logs/og.png?v=a828859b0d5e06f8
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/spectrum/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Event logs
+
+Last updated Jul 20, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/spectrum/reference/logs/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Spectrum logs the entire lifecycle of every client that connects through it. These event logs are available through Logpush as a separate category (dataset type `spectrum_events`); they are not part of HTTP log events.
+
+For each connection, Spectrum logs a connect event and either a disconnect or error event. Details on status codes can be found below.
+
+## Configure Logpush
+
+Spectrum [log events](https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/) can be configured through the dashboard or API, depending on your preferred [destination](https://developers.cloudflare.com/logs/logpush/logpush-job/enable-destinations/).
+
+## Status Codes
+
+Spectrum status codes are not HTTP status codes
+
+The status codes in the Spectrum status code table are Spectrum-specific connection status codes. They describe the outcome of Layer 4 (TCP/UDP) connections, not HTTP transactions. Some codes share numbers with HTTP status codes (for example, `444`, `499`) but have different meanings in the Spectrum context. For guidance on interpreting common status code patterns, refer to [Spectrum Troubleshooting](https://developers.cloudflare.com/spectrum/reference/troubleshooting/#common-spectrum-event-log-status-codes).
+
+| Code | Description |
+| --- | --- |
+| 0 | Connection was opened successfully. |
+| 200 | Normal connection closure. |
+| 400 | The TLS client hello sent during the client/edge TLS handshake contained an invalid SNI. |
+| 403 | Connection closed because the client IP matched a firewall rule with deny action. |
+| 443 | The client TLS handshake failed. |
+| 444 | The origin closed the connection by sending a reset (RST) packet. Not all data may have been sent. |
+| 445 | A timeout event (ETIMEDOUT) occurred on an established connection to origin. |
+| 446 | Origin keepalive expired (EHOSTUNREACH). |
+| 447 | Error while reading from or writing to an established origin connection (ECONNREFUSED). |
+| 448 | Origin connection closed due to a broken pipe (EPIPE). |
+| 490 | Client TLS error on established connection. |
+| 495 | Client connection received an error (ECONNREFUSED). |
+| 496 | Client host is unreachable (EHOSTUNREACH). |
+| 497 | A timeout event (ETIMEDOUT) occurred on an established connection to client. |
+| 498 | Established client connection closed due to broken pipe (EPIPE). |
+| 499 | The client closed the connection by sending a reset (RST) packet. Not all data may have been sent. |
+| 500 | Internal Cloudflare error. |
+| 503 | Error related to performing the TLS handshake with keyless SSL. |
+| 520 | Unknown origin connection error. |
+| 521 | Origin refused to open the connection (ECONNREFUSED). |
+| 522 | Opening a connection to origin failed: ETIMEDOUT |
+| 523 | Opening a connection to origin failed: ENETUNREACH |
+| 524 | Opening a connection to origin failed due to an internal system error. |
+| 530 | Internal error while resolving origin to an IP. |
+| 531 | Could not resolve origin to an IP. |
+| 532 | The origin connection was not opened because the origin IP is blocked. |
+| 533 | Internal error while resolving origin to an IP. |
+| 540 | The client/edge TLS handshake failed due to an invalid configuration. |
+| 999 | Unknown connection error. |
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/spectrum/reference/logs/#page","headline":"Event logs","description":"Access Spectrum connection lifecycle logs through Logpush.","url":"https://developers.cloudflare.com/spectrum/reference/logs/","inLanguage":"en","image":"https://developers.cloudflare.com/spectrum/reference/logs/og.png?v=a828859b0d5e06f8","dateModified":"2026-07-20","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["Logging"]}
+```
+
+---
+
+---
+description: Spectrum API fields and settings available by Cloudflare plan.
+title: Settings by plan
+image: https://developers.cloudflare.com/spectrum/reference/settings-by-plan/og.png?v=05b281547e1ceff1
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/spectrum/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Settings by plan
+
+Last updated Apr 16, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/spectrum/reference/settings-by-plan/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Certain fields in Spectrum request and response bodies require an Enterprise plan. To upgrade your plan, contact your account team.
+
+Spectrum properties requiring an Enterprise plan:
+
+| Name | Type | Description | Example |
+| --- | --- | --- | --- |
+| `origin_dns` | object | Method and parameters used to discover the origin server address via DNS. Valid record types are `A`, `AAAA`, `SRV` and empty (both `A` and `AAA`).<br>A request must contain either an `origin_dns` parameter or an `origin_direct` parameter. When both are specified the service returns an `HTTP 400 Bad Request`. | `origin_dns: {type: A, name: mqtt.example.com, ttl: 1200}` |
+| `origin_port` | integer | The destination port at the origin. | `22` |
+| `proxy_protocol` | string | Enables Proxy Protocol to the origin. Spectrum supports `v1`, `v2`, and `simple` proxy protocols. Refer to [Proxy Protocol](https://developers.cloudflare.com/spectrum/how-to/enable-proxy-protocol/) for more details. | `off` |
+| `ip_firewall` | boolean | Enables IP Access rules for this application. | `true` |
+| `tls` | string | Type of TLS termination for the application. Options are `off` (default, also known as Passthrough), `flexible`, `full`, and `strict`. Refer to [Configuration Options](https://developers.cloudflare.com/spectrum/reference/configuration-options/) for descriptions of each. | `full` |
+| `argo_smart_routing` | boolean | Enables Argo Smart Routing for the application. Note that it is only available for TCP applications with traffic\_type set to `direct`. | `true` |
+
+Review the [Spectrum API documentation](https://developers.cloudflare.com/api/resources/spectrum/subresources/apps/methods/list/) for example API requests.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/spectrum/reference/settings-by-plan/#page","headline":"Settings by plan","description":"Spectrum API fields and settings available by Cloudflare plan.","url":"https://developers.cloudflare.com/spectrum/reference/settings-by-plan/","inLanguage":"en","image":"https://developers.cloudflare.com/spectrum/reference/settings-by-plan/og.png?v=05b281547e1ceff1","dateModified":"2026-04-16","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Format of the Simple Proxy Protocol header prepended to UDP datagrams.
+title: Simple Proxy Protocol Header
+image: https://developers.cloudflare.com/spectrum/reference/simple-proxy-protocol-header/og.png?v=bf6cc3a474cfbbae
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/spectrum/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Simple Proxy Protocol Header
+
+Last updated Apr 17, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/spectrum/reference/simple-proxy-protocol-header/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+The client source IP and port is encoded in a fixed-length, 38-octet long header and prepended to the payload of each proxied UDP datagram in the format described below.
+
+```txt
+ 0                   1                   2                   3
+ 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|          Magic Number         |                               |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+                               +
+|                                                               |
++                                                               +
+|                                                               |
++                         Client Address                        +
+|                                                               |
++                               +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                               |                               |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+                               +
+|                                                               |
++                                                               +
+|                                                               |
++                         Proxy Address                         +
+|                                                               |
++                               +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                               |         Client Port           |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|           Proxy Port          |          Payload...           |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+```
+
+The contents of the header are below.
+
+## Magic Number
+
+16-bit fixed value set to 0x56EC for SPP. This field should be used to identify the SPP protocol and its SPP 38-byte header.
+
+## Client Address
+
+128-bit address of the originator of the proxied UDP datagram, that is, the client. An IPv6 address if the client used IPv6 addressing, or an IPv4-mapped IPv6 address (refer to [RFC 4291 ↗︎](https://tools.ietf.org/html/rfc4291)) in case of an IPv4 client.
+
+## Proxy address
+
+128-bit address of the recipient of the proxied UDP datagram, that is the proxy. Contents should be interpreted in the same way as the Client Address.
+
+## Client port
+
+16-bit source port number of the proxied UDP datagram. In other words, the UDP port number from which the client sent the datagram.
+
+## Proxy port
+
+16-bit destination port number of the proxied UDP datagram. In other words, the UDP port number on which the proxy received the datagram.
+
+## Payload
+
+Data following the header carried by the datagram. Magic number, addresses, and port numbers are encoded in network byte order.
+
+A corresponding C structure describing the header is:
+
+```c
+struct {
+    uint16_t magic;
+    uint8_t  client_addr[16];
+    uint8_t  proxy_addr[16];
+    uint16_t client_port;
+    uint16_t proxy_port;
+};
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/spectrum/reference/simple-proxy-protocol-header/#page","headline":"Simple Proxy Protocol Header","description":"Format of the Simple Proxy Protocol header prepended to UDP datagrams.","url":"https://developers.cloudflare.com/spectrum/reference/simple-proxy-protocol-header/","inLanguage":"en","image":"https://developers.cloudflare.com/spectrum/reference/simple-proxy-protocol-header/og.png?v=bf6cc3a474cfbbae","dateModified":"2026-04-17","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["UDP"]}
+```
+
+---
+
+---
+description: Where to find logs and diagnostics for Spectrum applications.
+title: Troubleshooting
+image: https://developers.cloudflare.com/spectrum/reference/troubleshooting/og.png?v=1606887ee62bacda
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/spectrum/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Troubleshooting
+
+Last updated Jul 20, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/spectrum/reference/troubleshooting/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+To investigate issues with a Spectrum application, use the logs and diagnostics described on this page. For API validation errors returned when creating or updating an application, refer to [Error codes](https://developers.cloudflare.com/spectrum/reference/error-codes/).
+
+## Spectrum event logs
+
+Spectrum logs the lifecycle of every connection it proxies, including status codes for edge-to-origin failures (for example, `521` connection refused, `522` timeout, `523` unreachable). Refer to [Event logs](https://developers.cloudflare.com/spectrum/reference/logs/).
+
+## Virtual network origins
+
+When a Spectrum application uses a [virtual network origin](https://developers.cloudflare.com/spectrum/reference/configuration-options/#virtual-network-origin), traffic to the origin flows through the connector associated with the virtual network. Diagnose origin connectivity from the connector side using the sources for your connector type.
+
+### Cloudflare Tunnel as the connector
+
+- **Tunnel logs** record activity between `cloudflared` and Cloudflare's network and between `cloudflared` and your origin. Refer to [Log streams](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/monitor-tunnels/logs/).
+- **Tunnel diagnostic logs** collect a diagnostic report from a single `cloudflared` instance. Refer to [Diagnostic logs](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/troubleshoot-tunnels/diag-logs/).
+- **Private network connectivity** covers common causes when traffic does not reach a private origin through a tunnel. Refer to [Private network connectivity](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/troubleshoot-tunnels/private-networks/).
+
+### Cloudflare WAN as the connector
+
+For tunnel health, BGP, and routing diagnostics on WAN-connected origins, refer to [Troubleshoot Cloudflare WAN](https://developers.cloudflare.com/cloudflare-wan/troubleshooting/).
+
+## Cannot create Spectrum application — DNS record already exists
+
+### Symptoms
+
+- When creating a Spectrum application in the dashboard, you receive the error: **"An A, AAAA or CNAME record already exists with that host."**
+- You already have a manually-created proxied DNS record ( `A`, `AAAA`, or `CNAME`) for the hostname you are trying to use for a new Spectrum application.
+
+### Cause
+
+Cloudflare does not support having both a manually-created proxied DNS record (`A`, `AAAA`, or `CNAME`) and a Spectrum application on the same hostname. This is because Spectrum provisions and manages its own DNS record for the application, which conflicts with the existing manually-created record. This is a platform limitation, not a dashboard-only restriction.
+
+This limitation only applies to manually-created proxied records. Multiple Spectrum applications — including a mix of HTTP/HTTPS and TCP/UDP application types — can share the same hostname, because Spectrum manages the DNS record for each of them.
+
+### Solution
+
+If you only need Spectrum applications on the hostname (for example, an HTTP/HTTPS Spectrum application alongside a TCP/UDP Spectrum application), you do not need a workaround — create the additional Spectrum application on the same hostname.
+
+If you need to keep a manually-created proxied DNS record on the hostname (for example, to route standard HTTP/HTTPS traffic through the CDN and WAF instead of through Spectrum), use a **split-hostname architecture** instead, where the manually-created proxied record and the Spectrum application use different hostnames:
+
+| Traffic type | Hostname | Cloudflare service |
+| --- | --- | --- |
+| HTTPS (web UI, APIs) | `app.example.com` | Manually-created proxied DNS record with CDN/WAF |
+| TCP (custom protocol, ICA/HDX, and similar) | `app-tcp.example.com` | Spectrum application |
+
+Configure your application or client to use the appropriate hostname for each traffic type.
+
+Common use case: Citrix Gateway / VDI
+
+A common scenario where this limitation is encountered is Citrix Gateway deployments, where the web UI and authentication flow use HTTPS through a manually-created proxied record (requiring WAF protection) while ICA/HDX session traffic uses TCP on a different port through a Spectrum application. In this case, configure the Citrix StoreFront to generate ICA files pointing to the Spectrum hostname (for example, `citrix-ica.example.com:4443`) while keeping the web UI on the WAF-protected hostname (`citrix.example.com:443`).
+
+For more details on this limitation, refer to [Spectrum Limitations](https://developers.cloudflare.com/spectrum/reference/limitations/).
+
+## Origin receives HTTP instead of HTTPS (protocol mismatch)
+
+### Symptoms
+
+- Your Spectrum application edge port uses HTTP (for example, port 8012), and your origin expects HTTPS on port 443.
+- The origin rejects the connection or returns errors because it receives plaintext HTTP instead of encrypted HTTPS.
+- The configuration appears to work as: `http:8012 → Cloudflare Spectrum → http:443 (origin)` instead of the expected `http:8012 → Cloudflare Spectrum → https:443 (origin)`.
+
+### Cause
+
+Spectrum operates at Layer 4 (TCP/UDP). When Edge TLS Termination is set to **off** (Passthrough), Spectrum forwards the raw TCP payload to the origin without modification. It does not perform protocol upgrade — connecting to an origin on port 443 does not automatically mean the connection will use HTTPS.
+
+### Solution
+
+To send encrypted traffic from Cloudflare to your origin, you must turn on **Edge TLS Termination** on the Spectrum application and set it to **Full** or **Full (Strict)**:
+
+- **Full**: Cloudflare connects to origin using TLS but does not validate the origin certificate.
+- **Full (Strict)**: Cloudflare connects to origin using TLS and validates the origin certificate against a trusted CA or Cloudflare Origin CA.
+
+You can configure Edge TLS Termination in the Spectrum application settings in the dashboard, or via the API by setting the `tls` field to `full` or `strict`.
+
+Refer to [Edge TLS Termination](https://developers.cloudflare.com/spectrum/reference/configuration-options/#edge-tls-termination) for more details.
+
+## TLS handshake failures (error 525)
+
+### Symptoms
+
+- For TCP applications with Edge TLS Termination set to **Full** or **Full (Strict)**: connections to the origin fail. Spectrum event logs may show `521` (connection refused) or `522` (connection timeout) because a failed TLS handshake at the origin is reported as an origin connection failure. Refer to [Event logs](https://developers.cloudflare.com/spectrum/reference/logs/) for the full status code reference.
+- For HTTP/HTTPS applications: clients receive error `525` (SSL handshake failed).
+
+These errors typically appear after creating a Spectrum application or modifying TLS settings.
+
+### Cause
+
+The TLS handshake between Cloudflare and your origin server failed. Common causes include:
+
+- **Edge TLS Termination is set to Full or Full (Strict)**, but the origin does not have a valid TLS certificate or does not accept TLS connections on the configured port.
+- **The Spectrum application origin points to another Cloudflare-proxied hostname** (for example, `origin.example.com.cdn.cloudflare.net`). This creates a double-proxy chain that is not supported for TCP application types and can cause TLS handshake failures.
+- **TLS version or cipher mismatch** between Cloudflare's edge and the origin server.
+
+### Solution
+
+1. Verify that your origin server has a valid TLS certificate and is configured to accept TLS connections on the origin port.
+2. If using **Full (Strict)**, ensure the origin certificate is issued by a publicly trusted CA or a [Cloudflare Origin CA certificate](https://developers.cloudflare.com/ssl/origin-configuration/origin-ca/).
+3. Confirm that the Spectrum application origin is not pointing to another Cloudflare-proxied hostname. Use a direct origin IP address or a DNS name that resolves directly to your origin server (not through Cloudflare's proxy).
+4. If the origin only supports specific TLS versions, note that Spectrum supports TLS 1.1, 1.2, and 1.3 when Edge TLS Termination is turned on.
+
+## Common Spectrum event log status codes
+
+Spectrum uses its own set of connection status codes that are distinct from HTTP status codes used by Cloudflare's CDN layer. Some codes share numbers (for example, 444, 499) but have different meanings.
+
+For the full status code table, refer to [Event logs](https://developers.cloudflare.com/spectrum/reference/logs/).
+
+### Common patterns
+
+The following table lists frequently observed Spectrum status code patterns and their likely causes:
+
+| Pattern | Likely cause | Recommended action |
+| --- | --- | --- |
+| High volume of **444** (Origin sent RST) | Origin server is actively resetting connections. May indicate origin overload, misconfigured firewall, or application crash. | Check origin server health, firewall rules, and application logs. |
+| High volume of **445** (Origin timeout) | Established connections to origin are timing out. May indicate origin is slow to respond or network path issues. | Check origin server performance and network connectivity between Cloudflare and origin. |
+| High volume of **497** (Client timeout) | Client connections are timing out. May indicate network issues between clients and Cloudflare edge, or clients with very long idle connections. | Review client network conditions and consider adjusting idle timeout expectations. |
+| High volume of **498** (Client broken pipe) | Client connections are dropping mid-session. May indicate unstable client networks (for example, mobile users). | Often expected for mobile or unreliable networks. Monitor for trends. |
+| High volume of **499** (Client sent RST) | Clients are actively closing connections. May indicate client-side timeouts or application-level disconnects. | Review client application timeout settings. |
+| **521** (Origin refused connection) | Origin is not accepting connections on the configured port. | Verify origin server is running and listening on the correct port. Check origin firewall. |
+| **522** (Origin connection timeout) | Cannot establish a TCP connection to origin. | Verify origin IP address, port, and that origin is reachable from Cloudflare. |
+
+Note
+
+Network Analytics data for Spectrum does not reflect the outcomes of IP Access Rules. To verify whether traffic was allowed or blocked based on IP Access Rules, consult the Spectrum event logs.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/spectrum/reference/troubleshooting/#page","headline":"Troubleshooting","description":"Where to find logs and diagnostics for Spectrum applications.","url":"https://developers.cloudflare.com/spectrum/reference/troubleshooting/","inLanguage":"en","image":"https://developers.cloudflare.com/spectrum/reference/troubleshooting/og.png?v=1606887ee62bacda","dateModified":"2026-07-20","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["Debugging"]}
+```

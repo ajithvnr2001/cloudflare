@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/products/wan/",
+  "file": "_subdomains/www.cloudflare.com/products/wan.md",
+  "title": "Cloudflare WAN: Coffee shop networking at every branch",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:15.111484+00:00",
+  "html_len": 404804,
+  "md_len": 10878,
+  "depth": 0,
+  "phase": 2
+}

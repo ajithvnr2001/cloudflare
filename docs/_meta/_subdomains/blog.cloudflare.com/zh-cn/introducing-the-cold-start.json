@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/introducing-the-cold-start/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/introducing-the-cold-start.md",
+  "title": "\u9686\u91cd\u63a8\u51fa The Cold Start\uff1a\u5728 Cloudflare Connect \u73b0\u573a\u4e3a\u4f60\u7684\u521d\u521b\u516c\u53f8\u8def\u6f14 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:17.663349+00:00",
+  "html_len": 196617,
+  "md_len": 24806,
+  "depth": 0,
+  "phase": 2
+}

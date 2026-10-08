@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/wethenew/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/wethenew.md",
+  "title": "Wethenew | Case Study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:55.788594+00:00",
+  "html_len": 204948,
+  "md_len": 5417,
+  "depth": 0,
+  "phase": 2
+}

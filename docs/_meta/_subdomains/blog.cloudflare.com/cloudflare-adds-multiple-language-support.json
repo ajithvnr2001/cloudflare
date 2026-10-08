@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-adds-multiple-language-support/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-adds-multiple-language-support.md",
+  "title": "CloudFlare Adds Multiple Language Support | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:25.772052+00:00",
+  "html_len": 265343,
+  "md_len": 54102,
+  "depth": 0,
+  "phase": 2
+}

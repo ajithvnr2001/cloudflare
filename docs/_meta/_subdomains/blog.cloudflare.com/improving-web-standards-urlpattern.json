@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/improving-web-standards-urlpattern/",
+  "file": "_subdomains/blog.cloudflare.com/improving-web-standards-urlpattern.md",
+  "title": "New URLPattern API brings improved pattern matching to Node.js and Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:21.550807+00:00",
+  "html_len": 294900,
+  "md_len": 64418,
+  "depth": 0,
+  "phase": 2
+}

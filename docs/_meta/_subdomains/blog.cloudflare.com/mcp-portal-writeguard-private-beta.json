@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/mcp-portal-writeguard-private-beta/",
+  "file": "_subdomains/blog.cloudflare.com/mcp-portal-writeguard-private-beta.md",
+  "title": "WriteGuard: Fine-grained controls for MCP Servers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:20.520866+00:00",
+  "html_len": 305530,
+  "md_len": 68940,
+  "depth": 0,
+  "phase": 2
+}

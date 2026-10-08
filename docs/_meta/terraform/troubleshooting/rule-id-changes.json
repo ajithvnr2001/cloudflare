@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/terraform/troubleshooting/rule-id-changes/",
+  "file": "terraform/troubleshooting/rule-id-changes.md",
+  "title": "Rule IDs change when I modify a ruleset \u00b7 Cloudflare Terraform docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:01.384633+00:00",
+  "html_len": 99352,
+  "md_len": 3215,
+  "depth": 0
+}

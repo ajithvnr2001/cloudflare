@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/path-mtu-discovery-in-practice/",
+  "file": "_subdomains/blog.cloudflare.com/path-mtu-discovery-in-practice.md",
+  "title": "Path MTU discovery in practice | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:10.196504+00:00",
+  "html_len": 297136,
+  "md_len": 64177,
+  "depth": 0,
+  "phase": 2
+}

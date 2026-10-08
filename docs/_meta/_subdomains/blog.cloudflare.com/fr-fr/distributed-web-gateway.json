@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/distributed-web-gateway/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/distributed-web-gateway.md",
+  "title": "Cloudflare devient interplan\u00e9taire : lancement de la passerelle IPFS de Cloudflare | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:27.971752+00:00",
+  "html_len": 237786,
+  "md_len": 40855,
+  "depth": 0,
+  "phase": 2
+}

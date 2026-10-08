@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/how-to-drop-10-million-packets/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/how-to-drop-10-million-packets.md",
+  "title": "Wie man 10 Millionen Pakete pro Sekunde verwirft | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:16.728118+00:00",
+  "html_len": 285572,
+  "md_len": 42925,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/static-assets/",
+  "file": "workers/static-assets.md",
+  "title": "Static Assets \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:50.848128+00:00",
+  "html_len": 220682,
+  "md_len": 8983,
+  "depth": 0
+}

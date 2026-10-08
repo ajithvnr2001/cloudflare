@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/account-abuse-protection/",
+  "file": "_subdomains/blog.cloudflare.com/account-abuse-protection.md",
+  "title": "Announcing Cloudflare Account Abuse Protection: prevent fraudulent attacks from bots and humans | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:22.084578+00:00",
+  "html_len": 294356,
+  "md_len": 68761,
+  "depth": 0,
+  "phase": 2
+}

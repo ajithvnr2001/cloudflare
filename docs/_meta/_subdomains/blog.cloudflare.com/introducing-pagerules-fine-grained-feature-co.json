@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-pagerules-fine-grained-feature-co/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-pagerules-fine-grained-feature-co.md",
+  "title": "Introducing Page Rules: Fine Grained Control over CloudFlare's Features | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:11.280066+00:00",
+  "html_len": 275012,
+  "md_len": 58906,
+  "depth": 0,
+  "phase": 2
+}

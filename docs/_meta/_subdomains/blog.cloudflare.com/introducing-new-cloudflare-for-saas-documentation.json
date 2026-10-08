@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-new-cloudflare-for-saas-documentation/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-new-cloudflare-for-saas-documentation.md",
+  "title": "Introducing new Cloudflare for SaaS documentation | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:10.838460+00:00",
+  "html_len": 280631,
+  "md_len": 60145,
+  "depth": 0,
+  "phase": 2
+}

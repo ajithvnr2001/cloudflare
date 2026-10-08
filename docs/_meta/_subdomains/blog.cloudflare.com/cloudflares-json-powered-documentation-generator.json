@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflares-json-powered-documentation-generator/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflares-json-powered-documentation-generator.md",
+  "title": "CloudFlare's JSON-powered Documentation Generator | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:40.683408+00:00",
+  "html_len": 310698,
+  "md_len": 70287,
+  "depth": 0,
+  "phase": 2
+}

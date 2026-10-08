@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/football/",
+  "file": "_subdomains/blog.cloudflare.com/tag/football.md",
+  "title": "Posts tagged \"Football\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:09:00.354988+00:00",
+  "html_len": 106682,
+  "md_len": 870,
+  "depth": 1,
+  "phase": 2
+}

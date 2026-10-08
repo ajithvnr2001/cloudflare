@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/agents/platform/",
+  "file": "agents/platform.md",
+  "title": "Platform \u00b7 Cloudflare Agents docs",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (717 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T07:04:38.110704+00:00",
+  "html_len": 156535,
+  "md_len": 775,
+  "depth": 0
+}

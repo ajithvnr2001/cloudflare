@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/snippets/examples/rewrite-site-links/",
+  "file": "rules/snippets/examples/rewrite-site-links.md",
+  "title": "Rewrite links on HTML pages \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:54.005936+00:00",
+  "html_len": 132822,
+  "md_len": 2253,
+  "depth": 0
+}

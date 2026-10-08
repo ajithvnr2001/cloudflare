@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/building-the-simplest-go-static-analysis-tool/",
+  "file": "_subdomains/blog.cloudflare.com/building-the-simplest-go-static-analysis-tool.md",
+  "title": "Building the simplest Go static analysis tool | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:41.293845+00:00",
+  "html_len": 280099,
+  "md_len": 57747,
+  "depth": 0,
+  "phase": 2
+}

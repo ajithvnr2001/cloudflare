@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/a-thanksgiving-2020-reading-list/",
+  "file": "_subdomains/blog.cloudflare.com/a-thanksgiving-2020-reading-list.md",
+  "title": "A Thanksgiving 2020 Reading List | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:46.410545+00:00",
+  "html_len": 275857,
+  "md_len": 58374,
+  "depth": 0,
+  "phase": 2
+}

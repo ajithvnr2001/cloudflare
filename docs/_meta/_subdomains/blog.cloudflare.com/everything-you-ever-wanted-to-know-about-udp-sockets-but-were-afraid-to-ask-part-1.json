@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/everything-you-ever-wanted-to-know-about-udp-sockets-but-were-afraid-to-ask-part-1/",
+  "file": "_subdomains/blog.cloudflare.com/everything-you-ever-wanted-to-know-about-udp-sockets-but-were-afraid-to-ask-part-1.md",
+  "title": "Everything you ever wanted to know about UDP sockets but were afraid to ask, part 1 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:50.442392+00:00",
+  "html_len": 300619,
+  "md_len": 66788,
+  "depth": 0,
+  "phase": 2
+}

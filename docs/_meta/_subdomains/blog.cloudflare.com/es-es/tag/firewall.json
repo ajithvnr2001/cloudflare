@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/tag/firewall/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/tag/firewall.md",
+  "title": "Entradas etiquetadas con \"Firewall (ES)\" \u2014 Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:14:58.027342+00:00",
+  "html_len": 108142,
+  "md_len": 1782,
+  "depth": 1,
+  "phase": 2
+}

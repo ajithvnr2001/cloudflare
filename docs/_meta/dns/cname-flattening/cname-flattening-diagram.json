@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/dns/cname-flattening/cname-flattening-diagram/",
+  "file": "dns/cname-flattening/cname-flattening-diagram.md",
+  "title": "CNAME flattening diagram \u00b7 Cloudflare DNS docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:10:55.893310+00:00",
+  "html_len": 132075,
+  "md_len": 3973,
+  "depth": 0
+}

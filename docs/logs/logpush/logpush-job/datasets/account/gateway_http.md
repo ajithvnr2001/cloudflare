@@ -1,0 +1,421 @@
+---
+url: https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/account/gateway_http/
+title: Gateway HTTP \u00b7 Cloudflare Logs docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:12:12.411592+00:00
+---
+
+# Gateway HTTP · Cloudflare Logs docs
+
+> Source: https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/account/gateway_http/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Logs](https://developers.cloudflare.com/logs/)
+  3. /…
+
+[Logpush](https://developers.cloudflare.com/logs/logpush/)Logpush job setup[Datasets](https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/)
+
+  4. /Account-scoped datasets
+  5. /Gateway HTTP
+
+
+
+# Gateway HTTP
+
+Last updated Sep 14, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/account/gateway_http/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewAccountIDActionAddedHeadersAppControlInfoApplicationIDsApplicationNamesApplicationStatusesBlockedFileHashBlockedFileNameBlockedFileReasonBlockedFileSizeBlockedFileTypeCategoryIDsCategoryNamesDatetimeDeletedHeadersDestinationIPDestinationIPContinentCodeDestinationIPCountryCodeDestinationPortDeviceIDDeviceNameDownloadMatchedDlpProfileEntriesDownloadMatchedDlpProfilesDownloadedFileNamesEmailExperimentalFeaturesFileInfoForensicCopyStatusHTTPHostHTTPMethodHTTPStatusCodeHTTPVersionIsIsolatedOfframpOnrampPackageInfoPolicyIDPolicyNamePrivateAppAUDProxyEndpointQuarantinedRedirectTargetURIRefererRegistrationIDRequestIDSessionIDSetHeadersSourceIPSourceIPContinentCodeSourceIPCountryCodeSourceInternalIPSourcePortTenantIDURLUntrustedCertificateActionUploadMatchedDlpProfileEntriesUploadMatchedDlpProfilesUploadedFileNamesUserAgentUserIDVirtualNetworkIDVirtualNetworkNameWarnings
+
+The descriptions below detail the fields available for `gateway_http`.
+
+## AccountID
+
+Type: `string`
+
+Cloudflare account tag.
+
+## Action
+
+Type: `string`
+
+Action performed by gateway on the HTTP request.
+
+## AddedHeaders
+
+Type: `array[string]`
+
+Headers added to the HTTP request by a Gateway rule.
+
+## AppControlInfo
+
+Type: `object`
+
+Information about application control operations, APIs, and groups that matched the HTTP request.
+
+## ApplicationIDs
+
+Type: `array[int]`
+
+IDs of the applications that matched the HTTP request parameters.
+
+## ApplicationNames
+
+Type: `array[string]`
+
+Names of the applications that matched the HTTP request parameters.
+
+## ApplicationStatuses
+
+Type: `array[string]`
+
+Statuses of the applications that matched the HTTP request parameters.
+
+## BlockedFileHash
+
+Type: `string`
+
+Hash of the file blocked in the response, if any.
+
+## BlockedFileName
+
+Type: `string`
+
+File name blocked in the request, if any.
+
+## BlockedFileReason
+
+Type: `string`
+
+Reason file was blocked in the response, if any.
+
+## BlockedFileSize
+
+Type: `int`
+
+File size(bytes) blocked in the response, if any.
+
+## BlockedFileType
+
+Type: `string`
+
+File type blocked in the response eg. exe, bin, if any.
+
+## CategoryIDs
+
+Type: `array[int]`
+
+IDs of the categories that matched the HTTP request parameters.
+
+## CategoryNames
+
+Type: `array[string]`
+
+Names of the categories that matched the HTTP request parameters.
+
+## Datetime
+
+Type: `int or string`
+
+The date and time the corresponding HTTP request was made.
+
+## DeletedHeaders
+
+Type: `array[string]`
+
+Names of headers that were deleted from the HTTP request by a Gateway rule.
+
+## DestinationIP
+
+Type: `string`
+
+Destination ip of the request.
+
+## DestinationIPContinentCode
+
+Type: `string`
+
+Continent code of the destination IP of the HTTP request (for example, 'NA').
+
+## DestinationIPCountryCode
+
+Type: `string`
+
+Country code of the destination IP of the HTTP request (for example, 'US').
+
+## DestinationPort
+
+Type: `int`
+
+Destination port of the request.
+
+## DeviceID
+
+Type: `string`
+
+UUID of the device where the HTTP request originated from.
+
+## DeviceName
+
+Type: `string`
+
+The name of the device where the HTTP request originated from (for example, 'Laptop MB810').
+
+## DownloadMatchedDlpProfileEntries
+
+Type: `array[string]`
+
+List of matched DLP entries in the HTTP request.
+
+## DownloadMatchedDlpProfiles
+
+Type: `array[string]`
+
+List of matched DLP profiles in the HTTP request.
+
+## DownloadedFileNames
+
+Type: `array[string]`
+
+List of files downloaded in the HTTP request.
+
+## Email
+
+Type: `string`
+
+Email used to authenticate the client.
+
+## ExperimentalFeatures
+
+Type: `object`
+
+Experimental features which will be either permanently added to the schema or marked for deprecation. In that case, they will be removed 3 months after the notice. Current fields: 'mcp' - If MCP traffic was detected or not.
+
+## FileInfo
+
+Type: `object`
+
+Information about files detected within the HTTP request.
+
+## ForensicCopyStatus
+
+Type: `string`
+
+Status of any associated forensic copies that may have been captured during the request.
+
+## HTTPHost
+
+Type: `string`
+
+Content of the host header in the HTTP request.
+
+## HTTPMethod
+
+Type: `string`
+
+HTTP request method.
+
+## HTTPStatusCode
+
+Type: `int`
+
+HTTP status code gateway returned to the user. Zero if nothing was returned (for example, client disconnected).
+
+## HTTPVersion
+
+Type: `string`
+
+Version name for the HTTP request.
+
+## IsIsolated
+
+Type: `bool`
+
+Whether the HTTP request originated from an isolated browser.
+
+## Offramp
+
+Type: `string`
+
+Traffic destination type.
+
+## Onramp
+
+Type: `string`
+
+Traffic source type.
+
+## PackageInfo
+
+Type: `object`
+
+Information about the software package detected in the HTTP request, including its ecosystem, namespace, name, version, and package URL (PURL).
+
+## PolicyID
+
+Type: `string`
+
+The gateway policy UUID applied to the request, if any.
+
+## PolicyName
+
+Type: `string`
+
+The name of the gateway policy applied to the request, if any.
+
+## PrivateAppAUD
+
+Type: `string`
+
+The private app AUD, if any.
+
+## ProxyEndpoint
+
+Type: `string`
+
+The proxy endpoint used on the HTTP request, if any.
+
+## Quarantined
+
+Type: `bool`
+
+If the request content was quarantined.
+
+## RedirectTargetURI
+
+Type: `string`
+
+Custom URI to which the user was redirected, if any.
+
+## Referer
+
+Type: `string`
+
+Contents of the referer header in the HTTP request.
+
+## RegistrationID
+
+Type: `string`
+
+The UUID of the device registration from which the HTTP request originated.
+
+## RequestID
+
+Type: `string`
+
+Cloudflare request ID. This might be empty on bypass action.
+
+## SessionID
+
+Type: `string`
+
+Network session ID.
+
+## SetHeaders
+
+Type: `array[string]`
+
+Names of headers that were set (overwritten) on the HTTP request by a Gateway rule.
+
+## SourceIP
+
+Type: `string`
+
+Source ip of the request.
+
+## SourceIPContinentCode
+
+Type: `string`
+
+Continent code of the source IP of the request (for example, 'NA').
+
+## SourceIPCountryCode
+
+Type: `string`
+
+Country code of the source IP of the request (for example, 'US').
+
+## SourceInternalIP
+
+Type: `string`
+
+Internal IP of the device. For Cloudflare One Client (WARP) traffic, this is the WARP CGNAT address. For GRE/IPsec on-ramps, this is the source IP behind the tunnel.
+
+## SourcePort
+
+Type: `int`
+
+Source port of the request.
+
+## TenantID
+
+Type: `string`
+
+The tenant ID of the request, if exists.
+
+## URL
+
+Type: `string`
+
+HTTP request URL.
+
+## UntrustedCertificateAction
+
+Type: `string`
+
+Action taken when an untrusted origin certificate error occurs (for example, expired certificate, mismatched common name, invalid certificate chain, signed by non-public CA). One of _none_ | _block_ | _error_ | _passThrough_.
+
+## UploadMatchedDlpProfileEntries
+
+Type: `array[string]`
+
+List of matched DLP entries in the HTTP request.
+
+## UploadMatchedDlpProfiles
+
+Type: `array[string]`
+
+List of matched DLP profiles in the HTTP request.
+
+## UploadedFileNames
+
+Type: `array[string]`
+
+List of files uploaded in the HTTP request.
+
+## UserAgent
+
+Type: `string`
+
+Contents of the user agent header in the HTTP request.
+
+## UserID
+
+Type: `string`
+
+User identity where the HTTP request originated from.
+
+## VirtualNetworkID
+
+Type: `string`
+
+The identifier of the virtual network the device was connected to, if any.
+
+## VirtualNetworkName
+
+Type: `string`
+
+The name of the virtual network the device was connected to, if any.
+
+## Warnings
+
+Type: `array[string]`
+
+Warnings generated during request processing.
+
+[PreviousGateway DNS](https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/account/gateway_dns/)[NextGateway Network](https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/account/gateway_network/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/logs/logpush/logpush-job/datasets/account/gateway_http.md)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

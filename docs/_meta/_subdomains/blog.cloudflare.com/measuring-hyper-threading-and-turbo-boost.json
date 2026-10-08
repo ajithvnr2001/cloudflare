@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/measuring-hyper-threading-and-turbo-boost/",
+  "file": "_subdomains/blog.cloudflare.com/measuring-hyper-threading-and-turbo-boost.md",
+  "title": "Measuring Hyper-Threading and Turbo Boost | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:01.347871+00:00",
+  "html_len": 302644,
+  "md_len": 67268,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/security/glossary/what-is-threat-intelligence/",
+  "file": "_subdomains/www.cloudflare.com/learning/security/glossary/what-is-threat-intelligence.md",
+  "title": "What is threat intelligence?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:21.684143+00:00",
+  "html_len": 236620,
+  "md_len": 19568,
+  "depth": 0,
+  "phase": 2
+}

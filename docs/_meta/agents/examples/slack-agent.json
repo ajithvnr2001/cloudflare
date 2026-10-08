@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/agents/examples/slack-agent/",
+  "file": "agents/examples/slack-agent.md",
+  "title": "Slack agent \u00b7 Cloudflare Agents docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:04:10.914584+00:00",
+  "html_len": 220635,
+  "md_len": 16246,
+  "depth": 0
+}

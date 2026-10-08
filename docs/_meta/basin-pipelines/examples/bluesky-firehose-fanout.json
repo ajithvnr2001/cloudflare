@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/basin-pipelines/examples/bluesky-firehose-fanout/",
+  "file": "basin-pipelines/examples/bluesky-firehose-fanout.md",
+  "title": "Fan out a stream to multiple Iceberg tables \u00b7 Cloudflare Basin Pipelines Docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:05:24.993523+00:00",
+  "html_len": 342307,
+  "md_len": 26725,
+  "depth": 0
+}

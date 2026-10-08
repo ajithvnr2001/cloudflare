@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/2022-07-sms-phishing-attacks/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/2022-07-sms-phishing-attacks.md",
+  "title": "Din\u00e1micas de una estafa sofisticada de phishing y c\u00f3mo la detuvimos | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:54.521714+00:00",
+  "html_len": 225875,
+  "md_len": 40808,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/custom-headers-for-pages/",
+  "file": "_subdomains/blog.cloudflare.com/custom-headers-for-pages.md",
+  "title": "Introducing Custom Headers for Cloudflare Pages | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:53.500378+00:00",
+  "html_len": 288632,
+  "md_len": 61100,
+  "depth": 0,
+  "phase": 2
+}

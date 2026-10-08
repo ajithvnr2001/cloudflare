@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/legato-security/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/legato-security.md",
+  "title": "Cloudflare Email Security | Legato Security",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:36.971874+00:00",
+  "html_len": 205392,
+  "md_len": 9287,
+  "depth": 0,
+  "phase": 2
+}

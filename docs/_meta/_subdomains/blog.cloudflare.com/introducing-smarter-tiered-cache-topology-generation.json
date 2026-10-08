@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-smarter-tiered-cache-topology-generation/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-smarter-tiered-cache-topology-generation.md",
+  "title": "Introducing: Smarter Tiered Cache Topology Generation | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:24.870938+00:00",
+  "html_len": 288276,
+  "md_len": 62329,
+  "depth": 0,
+  "phase": 2
+}

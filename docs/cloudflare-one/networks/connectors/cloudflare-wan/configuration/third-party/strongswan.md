@@ -1,0 +1,235 @@
+---
+url: https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-wan/configuration/third-party/strongswan/
+title: strongSwan \u00b7 Cloudflare One docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:09:36.179108+00:00
+---
+
+# strongSwan · Cloudflare One docs
+
+> Source: https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-wan/configuration/third-party/strongswan/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)
+  3. /…
+
+NetworksConnectors[Cloudflare WAN](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-wan/)Configuration
+
+  4. /Third-party integration
+  5. /strongSwan
+
+
+
+# strongSwan
+
+Last updated Aug 24, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-wan/configuration/third-party/strongswan/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Overview1\. Configure health checks2\. Configure strongSwan3\. Configure the IPsec file4\. Add policy-based routing5\. Check connection status
+
+This tutorial explains how to set up strongSwan along with Cloudflare WAN (formerly Magic WAN). You will learn how to configure strongSwan, configure an IPsec tunnel, and create Policy-Based Routing (PBR).
+
+## 1\. Configure health checks
+
+Configure the [bidirectional health checks](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-wan/configuration/how-to/configure-tunnel-endpoints/#add-tunnels) target for Cloudflare WAN. For this tutorial, use `172.64.240.252` as the target IP address, and `type` as the request.
+
+This can be set up [with the API](https://developers.cloudflare.com/api/resources/magic_transit/subresources/ipsec_tunnels/methods/update/). For example:
+    
+    
+    curl --request PUT \
+    https://api.cloudflare.com/client/v4/accounts/{account_id}/magic/ipsec_tunnels/{tunnel_id} \
+    --header "X-Auth-Email: <EMAIL>" \
+    --header "X-Auth-Key: <API_KEY>" \
+    --header "Content-Type: application/json" \
+    --data '{
+      "health_check": {
+        "enabled": true,
+        "target": "172.64.240.252",
+        "type": "request",
+        "rate": "mid"
+      }
+    }'
+
+## 2\. Configure strongSwan
+
+  1. [Install strongSwan ↗︎](https://docs.strongswan.org/docs/5.9/install/install.html). For example, open the console and run:
+
+
+    
+    
+    sudo apt-get install strongswan -y
+
+  2. Open `/etc/strongswan.conf` and add the following settings:
+
+
+    
+    
+    charon {
+        load_modular = yes
+        install_routes = no
+        install_virtual_ip = no
+    
+        plugins {
+            include strongswan.d/charon/*.conf
+        }
+    }
+    
+    include strongswan.d/*.conf
+
+## 3\. Configure the IPsec file
+
+  1. Open `/etc/ipsec.conf` and add the following settings:
+
+
+    
+    
+    # ipsec.conf - strongSwan IPsec configuration file
+    config setup
+        charondebug="all"
+        uniqueids = yes
+    
+    conn %default
+        ikelifetime=24h
+        rekey=yes
+        reauth=no
+        keyexchange=ikev2
+        authby=secret
+        dpdaction=restart
+        closeaction=restart
+    
+    # Sample VPN connections
+    conn cloudflare-ipsec
+        auto=start
+        type=tunnel
+        fragmentation=no
+        leftauth=psk
+        # Private IP of the VM
+        left=%any
+        # Tunnel ID from dashboard, in this example FQDN is used
+        leftid=<YOUR_TUNNEL_ID>.<YOUR_ACCOUNT_ID>.ipsec.cloudflare.com
+        leftsubnet=0.0.0.0/0
+        # Cloudflare Anycast IP
+        right=<YOUR_CLOUDFLARE_ANYCAST_IP>
+        rightid=<YOUR_CLOUDFLARE_ANYCAST_IP>
+        rightsubnet=0.0.0.0/0
+        rightauth=psk
+        ike=aes256-sha256-ecp384!
+        esp=aes256-sha256-ecp384!
+        replay_window=0
+        mark_in=42
+        mark_out=42
+        leftupdown=/etc/strongswan.d/ipsec-vti.sh
+
+  2. Create a virtual tunnel interface (VTI) with the IP configured as the target for Cloudflare's health checks (`172.64.240.252`) to route IPsec packets. Open `/etc/strongswan.d/`.
+
+  3. Create a script called `ipsec-vti.sh` and add the following:
+
+
+
+    
+    
+    #!/bin/bash
+    
+    set -o nounset
+    set -o errexit
+    
+    VTI_IF="vti0"
+    
+    case "${PLUTO_VERB}" in
+        up-client)
+            ip tunnel add "${VTI_IF}" local "${PLUTO_ME}" remote "${PLUTO_PEER}" mode vti \
+            key "${PLUTO_MARK_OUT%%/*}"
+            ip link set "${VTI_IF}" up
+            ip addr add 172.64.240.252/32 dev vti0
+            sysctl -w "net.ipv4.conf.${VTI_IF}.disable_policy=1"
+            sysctl -w "net.ipv4.conf.${VTI_IF}.rp_filter=0"
+            sysctl -w "net.ipv4.conf.all.rp_filter=0"
+            ip rule add from 172.64.240.252 lookup viatunicmp
+            ip route add default dev vti0 table viatunicmp
+            ;;
+        down-client)
+            ip tunnel del "${VTI_IF}"
+            ip rule del from 172.64.240.252 lookup viatunicmp
+            ip route del default dev vti0 table viatunicmp
+            ;;
+    esac
+    echo "executed"
+
+## 4\. Add policy-based routing
+
+Create Policy-Based Routing (PBR) to redirect returning traffic through the IPsec tunnel. Without it, the ICMP replies to the health probes sent by Cloudflare will be returned through the Internet, instead of the same IPsec tunnel.
+
+This tutorial uses [iproute2 ↗︎](https://en.wikipedia.org/wiki/Iproute2) to route IP packets from `172.64.240.252` to the tunnel interface.
+
+  1. Open `/etc/iproute2/`.
+
+  2. Edit the `rt_tables` file to add a routing table number and name. In this example, use `viatunicmp` as the name and `200` as the number for the routing table.
+
+
+
+    
+    
+    #
+    # reserved values
+    #
+    255 local
+    254 main
+    253 default
+    0   unspec
+    200 viatunicmp
+    #
+    # local
+    #
+    #1  inr.ruhep
+
+  3. Add a rule to match the routing table. This rule instructs the system to use routing table `viatunicmp` if the packet's source address is `172.64.240.252`:
+
+
+    
+    
+    ip rule add from 172.64.240.252 lookup viatunicmp
+
+  4. Add a route to the `viatunicmp` routing table. This is the default route through the interface `vti0` in the `viatunicmp` table.
+
+
+    
+    
+    ip route add default dev vti0 table viatunicmp
+
+  5. Start IPsec. You can also `stop`, `restart`, and show the `status` for the IPsec connection:
+
+
+    
+    
+    ipsec start
+    
+    
+    Security Associations (1 up, 0 connecting):
+    cloudflare-ipsec[1]: ESTABLISHED 96 minutes ago, <IPSEC_TUNNEL_IDENTIFIER>.ipsec.cloudflare.com]...162.159.67.88[162.159.67.88]
+    cloudflare-ipsec{4}:  INSTALLED, TUNNEL, reqid 1, ESP SPIs: c4e20a95_i c5373d00_o
+    cloudflare-ipsec{4}:   0.0.0.0/0 === 0.0.0.0/0
+
+## 5\. Check connection status
+
+Use tcpdump to investigate the status of health checks originated from Cloudflare.
+    
+    
+    sudo tcpdump -i <OUTGOING_INTERFACE> esp and host <TUNNEL_CLOUDFLARE_ENDPOINT_IP>
+
+In this example, the outgoing Internet interface shows that the IPsec encrypted packets (ESP) from Cloudflare's health check probes (both the request and response) are going through the IPsec tunnel.
+
+![tcpdump shows the IPsec encrypted packets from Cloudflare's health probes](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1999,height=294,format=webp/_astro/ipsec.CuiOceRh.png)
+
+Run tcpdump on `vti0` to check the decrypted packets.
+    
+    
+    sudo tcpdump -i vti0 host 172.64.240.252
+
+![If you run tcpdump on vti0 you can check for decrypted packets](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1999,height=275,format=webp/_astro/tcpdump.CaDJay4I.png)
+
+[PreviousSophos Firewall](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-wan/configuration/third-party/sophos-firewall/)[NextUbiquiti](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-wan/configuration/third-party/ubiquiti/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/cloudflare-one/networks/connectors/cloudflare-wan/configuration/third-party/strongswan.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/98-percent-ipv6/",
+  "file": "_subdomains/blog.cloudflare.com/98-percent-ipv6.md",
+  "title": "98.01% of sites on Cloudflare now use IPv6 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:27.087455+00:00",
+  "html_len": 311362,
+  "md_len": 67400,
+  "depth": 0,
+  "phase": 2
+}

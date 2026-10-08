@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/a-new-portal-for-project-galileo-participants/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/a-new-portal-for-project-galileo-participants.md",
+  "title": "Um novo portal para os participantes do Projeto Galileo | Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:33.817331+00:00",
+  "html_len": 177150,
+  "md_len": 15874,
+  "depth": 0,
+  "phase": 2
+}

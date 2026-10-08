@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/10-billion-page-views/",
+  "file": "_subdomains/blog.cloudflare.com/10-billion-page-views.md",
+  "title": "10 Billion Page Views | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:02.327766+00:00",
+  "html_len": 265087,
+  "md_len": 53568,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://domains.cloudflare.com/zh-cn/",
+  "file": "_subdomains/domains.cloudflare.com/zh-cn.md",
+  "title": "Cloudflare Registrar - Search and Buy Domains at Cost",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:11:42.741136+00:00",
+  "html_len": 255501,
+  "md_len": 5067,
+  "depth": 1,
+  "phase": 2
+}

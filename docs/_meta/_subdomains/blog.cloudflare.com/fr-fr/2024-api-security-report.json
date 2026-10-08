@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/2024-api-security-report/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/2024-api-security-report.md",
+  "title": "D\u00e9couvrez le rapport Cloudflare 2024 consacr\u00e9 \u00e0 la gestion et \u00e0 la s\u00e9curit\u00e9 des API | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:13.770711+00:00",
+  "html_len": 248544,
+  "md_len": 50278,
+  "depth": 0,
+  "phase": 2
+}

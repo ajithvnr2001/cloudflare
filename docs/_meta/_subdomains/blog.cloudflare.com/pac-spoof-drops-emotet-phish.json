@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pac-spoof-drops-emotet-phish/",
+  "file": "_subdomains/blog.cloudflare.com/pac-spoof-drops-emotet-phish.md",
+  "title": "PAC spoof drops Emotet: phishing campaign leverages stolen PAC content to drop Emotet | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:54.534763+00:00",
+  "html_len": 286656,
+  "md_len": 64731,
+  "depth": 0,
+  "phase": 2
+}

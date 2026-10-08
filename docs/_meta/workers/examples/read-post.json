@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/examples/read-post/",
+  "file": "workers/examples/read-post.md",
+  "title": "Read POST \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:24.983275+00:00",
+  "html_len": 228655,
+  "md_len": 10227,
+  "depth": 0
+}

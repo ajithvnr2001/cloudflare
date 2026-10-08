@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-investigation-of-the-january-2022-okta-compromise/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-investigation-of-the-january-2022-okta-compromise.md",
+  "title": "Cloudflare\u2019s investigation of the January 2022 Okta compromise | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:39.304574+00:00",
+  "html_len": 284495,
+  "md_len": 62618,
+  "depth": 0,
+  "phase": 2
+}

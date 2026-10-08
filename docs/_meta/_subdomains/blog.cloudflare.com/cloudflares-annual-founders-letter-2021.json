@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflares-annual-founders-letter-2021/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflares-annual-founders-letter-2021.md",
+  "title": "Cloudflare's 2021 Annual Founders' Letter | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:03.541572+00:00",
+  "html_len": 297984,
+  "md_len": 64560,
+  "depth": 0,
+  "phase": 2
+}

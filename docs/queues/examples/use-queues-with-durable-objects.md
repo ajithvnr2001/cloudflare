@@ -1,0 +1,145 @@
+---
+url: https://developers.cloudflare.com/queues/examples/use-queues-with-durable-objects/
+title: Queues - Use Queues and Durable Objects \u00b7 Cloudflare Queues docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:12:41.096101+00:00
+---
+
+# Queues - Use Queues and Durable Objects · Cloudflare Queues docs
+
+> Source: https://developers.cloudflare.com/queues/examples/use-queues-with-durable-objects/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Queues](https://developers.cloudflare.com/queues/)
+  3. /[Examples](https://developers.cloudflare.com/queues/examples/)
+  4. /Use Queues from Durable Objects
+
+
+
+# Use Queues from Durable Objects
+
+Publish to a queue from within a Durable Object.
+
+Last updated Apr 21, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/queues/examples/use-queues-with-durable-objects/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+The following example shows you how to write a Worker script to publish to [Cloudflare Queues](https://developers.cloudflare.com/queues/) from within a [Durable Object](https://developers.cloudflare.com/durable-objects/).
+
+Prerequisites:
+
+  * A [queue created](https://developers.cloudflare.com/queues/get-started/#3-create-a-queue) via the Cloudflare dashboard or the [wrangler CLI](https://developers.cloudflare.com/workers/wrangler/install-and-update/).
+  * A [configured **producer** binding](https://developers.cloudflare.com/queues/configuration/configure-queues/#producer-worker-configuration) in the Cloudflare dashboard or Wrangler file.
+  * A [Durable Object namespace binding](https://developers.cloudflare.com/workers/wrangler/configuration/#durable-objects).
+
+
+
+Configure your Wrangler file as follows:
+    
+    
+    {
+    	"$schema": "./node_modules/wrangler/config-schema.json",
+    	"name": "my-worker",
+    	"queues": {
+    		"producers": [
+    			{
+    				"queue": "my-queue",
+    				"binding": "YOUR_QUEUE"
+    			}
+    		]
+    	},
+    	"durable_objects": {
+    		"bindings": [
+    			{
+    				"name": "YOUR_DO_CLASS",
+    				"class_name": "YourDurableObject"
+    			}
+    		]
+    	},
+    	"migrations": [
+    		{
+    			"tag": "v1",
+    			"new_sqlite_classes": [
+    				"YourDurableObject"
+    			]
+    		}
+    	]
+    }
+    
+    
+    "$schema" = "./node_modules/wrangler/config-schema.json"
+    name = "my-worker"
+    
+    [[queues.producers]]
+    queue = "my-queue"
+    binding = "YOUR_QUEUE"
+    
+    [[durable_objects.bindings]]
+    name = "YOUR_DO_CLASS"
+    class_name = "YourDurableObject"
+    
+    [[migrations]]
+    tag = "v1"
+    new_sqlite_classes = [ "YourDurableObject" ]
+
+The following Worker script:
+
+  1. Creates a Durable Object stub, or retrieves an existing one based on a userId.
+  2. Passes request data to the Durable Object.
+  3. Publishes to a queue from within the Durable Object.
+
+
+
+Extending the `DurableObject` base class makes your `Env` available on `this.env` and the Durable Object state available on `this.ctx` within the [`fetch()` handler](https://developers.cloudflare.com/durable-objects/best-practices/create-durable-object-stubs-and-send-requests/) in the Durable Object.
+    
+    
+    import { DurableObject } from "cloudflare:workers";
+    
+    interface Env {
+      YOUR_QUEUE: Queue;
+      YOUR_DO_CLASS: DurableObjectNamespace<YourDurableObject>;
+    }
+    
+    export default {
+      async fetch(req, env, ctx): Promise<Response> {
+        // Assume each Durable Object is mapped to a userId in a query parameter
+        // In a production application, this will be a userId defined by your application
+        // that you validate (and/or authenticate) first.
+        const url = new URL(req.url);
+        const userIdParam = url.searchParams.get("userId");
+    
+        if (userIdParam) {
+          // Get a stub that allows you to call that Durable Object
+          const durableObjectStub = env.YOUR_DO_CLASS.getByName(userIdParam);
+    
+          // Pass the request to that Durable Object and await the response
+          // This invokes the constructor once on your Durable Object class (defined further down)
+          // on the first initialization, and the fetch method on each request.
+          // We pass the original Request to the Durable Object's fetch method
+          const response = await durableObjectStub.fetch(req);
+    
+          // This would return "wrote to queue", but you could return any response.
+          return response;
+        }
+        return new Response("userId must be provided", { status: 400 });
+      },
+    } satisfies ExportedHandler<Env>;
+    
+    export class YourDurableObject extends DurableObject<Env> {
+      async fetch(req: Request): Promise<Response> {
+        // Error handling elided for brevity.
+        // Publish to your queue
+        await this.env.YOUR_QUEUE.send({
+          id: this.ctx.id.toString(), // Write the ID of the Durable Object to your queue
+          // Write any other properties to your queue
+        });
+    
+        return new Response("wrote to queue");
+      }
+    }
+
+[PreviousServerless ETL pipelines ↗︎](https://developers.cloudflare.com/reference-architecture/diagrams/serverless/serverless-etl/)[NextPublish to a Queue via Workers](https://developers.cloudflare.com/queues/examples/publish-to-a-queue-via-workers/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/queues/examples/use-queues-with-durable-objects.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

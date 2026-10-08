@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-web-is-world-wide-or-who-still-needs-rc4/",
+  "file": "_subdomains/blog.cloudflare.com/the-web-is-world-wide-or-who-still-needs-rc4.md",
+  "title": "The Web is World-Wide, or who still needs RC4? | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:22.182988+00:00",
+  "html_len": 297101,
+  "md_len": 65519,
+  "depth": 0,
+  "phase": 2
+}

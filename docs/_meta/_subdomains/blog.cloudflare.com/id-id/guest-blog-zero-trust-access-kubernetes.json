@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/id-id/guest-blog-zero-trust-access-kubernetes/",
+  "file": "_subdomains/blog.cloudflare.com/id-id/guest-blog-zero-trust-access-kubernetes.md",
+  "title": "Blog Tamu: k8s tunnels dengan Kudelski Security | Blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:11.768289+00:00",
+  "html_len": 194027,
+  "md_len": 22226,
+  "depth": 0,
+  "phase": 2
+}

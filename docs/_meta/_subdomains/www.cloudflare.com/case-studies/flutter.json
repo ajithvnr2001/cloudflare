@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/flutter/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/flutter.md",
+  "title": "Flutter | Case Study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:30.393423+00:00",
+  "html_len": 198546,
+  "md_len": 3032,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/revisiting-spectre-attacks-on-workers/",
+  "file": "_subdomains/blog.cloudflare.com/revisiting-spectre-attacks-on-workers.md",
+  "title": "A revisit of remote Spectre attacks on Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:48.421584+00:00",
+  "html_len": 338941,
+  "md_len": 83552,
+  "depth": 0,
+  "phase": 2
+}

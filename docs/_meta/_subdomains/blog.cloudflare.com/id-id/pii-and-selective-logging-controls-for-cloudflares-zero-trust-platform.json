@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/id-id/pii-and-selective-logging-controls-for-cloudflares-zero-trust-platform/",
+  "file": "_subdomains/blog.cloudflare.com/id-id/pii-and-selective-logging-controls-for-cloudflares-zero-trust-platform.md",
+  "title": "Kontrol PII dan Log Selektif untuk Platform Zero Trust Cloudflare | Blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:18.440138+00:00",
+  "html_len": 175213,
+  "md_len": 14700,
+  "depth": 0,
+  "phase": 2
+}

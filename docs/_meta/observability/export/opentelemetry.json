@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/observability/export/opentelemetry/",
+  "file": "observability/export/opentelemetry.md",
+  "title": "OpenTelemetry export \u00b7 Cloudflare Observability docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:12:26.141732+00:00",
+  "html_len": 115523,
+  "md_len": 7036,
+  "depth": 0
+}

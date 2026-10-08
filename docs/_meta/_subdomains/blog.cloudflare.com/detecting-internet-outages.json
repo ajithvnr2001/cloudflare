@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/detecting-internet-outages/",
+  "file": "_subdomains/blog.cloudflare.com/detecting-internet-outages.md",
+  "title": "Gone offline: how Cloudflare Radar detects Internet outages | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:37.874924+00:00",
+  "html_len": 336079,
+  "md_len": 83375,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/bangkok/",
+  "file": "_subdomains/blog.cloudflare.com/bangkok.md",
+  "title": "Bangkok, Thailand: CloudFlare\u2019s 79th Data Center | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:40.659924+00:00",
+  "html_len": 275296,
+  "md_len": 57550,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/iot-security-anti-patterns/",
+  "file": "_subdomains/blog.cloudflare.com/iot-security-anti-patterns.md",
+  "title": "IoT Security Anti-Patterns | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:36.876531+00:00",
+  "html_len": 281522,
+  "md_len": 60803,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/security/what-is-saml/",
+  "file": "_subdomains/www.cloudflare.com/learning/security/what-is-saml.md",
+  "title": "What is SAML? | How SAML authentication works",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:05:11.732431+00:00",
+  "html_len": 239654,
+  "md_len": 22398,
+  "depth": 0,
+  "phase": 2
+}

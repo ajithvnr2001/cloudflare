@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/tag/anycast/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/tag/anycast.md",
+  "title": "Articles tagu\u00e9s \u00ab Anycast (FR) \u00bb \u2014 Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:12:53.022071+00:00",
+  "html_len": 121625,
+  "md_len": 3560,
+  "depth": 1,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/detections/ai-security-for-apps/unsafe-topics/",
+  "file": "waf/detections/ai-security-for-apps/unsafe-topics.md",
+  "title": "Unsafe and custom topic detection \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:40.852877+00:00",
+  "html_len": 167956,
+  "md_len": 11783,
+  "depth": 0
+}

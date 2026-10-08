@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/high-reliability-ocsp-stapling/",
+  "file": "_subdomains/blog.cloudflare.com/high-reliability-ocsp-stapling.md",
+  "title": "High-reliability OCSP stapling and why it matters | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:10.273914+00:00",
+  "html_len": 326905,
+  "md_len": 79458,
+  "depth": 0,
+  "phase": 2
+}

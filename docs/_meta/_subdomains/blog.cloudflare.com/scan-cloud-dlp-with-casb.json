@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/scan-cloud-dlp-with-casb/",
+  "file": "_subdomains/blog.cloudflare.com/scan-cloud-dlp-with-casb.md",
+  "title": "Detecting sensitive data and misconfigurations in AWS and GCP with Cloudflare One | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:41:04.993272+00:00",
+  "html_len": 297260,
+  "md_len": 64056,
+  "depth": 0,
+  "phase": 2
+}

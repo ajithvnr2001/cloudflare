@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/tag/offices/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/tag/offices.md",
+  "title": "Articles tagu\u00e9s \u00ab Bureaux \u00bb \u2014 Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:13:17.636627+00:00",
+  "html_len": 111659,
+  "md_len": 1166,
+  "depth": 1,
+  "phase": 2
+}

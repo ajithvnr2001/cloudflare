@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/distributed-web-gateway/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/distributed-web-gateway.md",
+  "title": "Cloudflare goes InterPlanetary \u2013 Einf\u00fchrung des IPFS-Gateways von Cloudflare | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:28.470752+00:00",
+  "html_len": 230976,
+  "md_len": 40761,
+  "depth": 0,
+  "phase": 2
+}

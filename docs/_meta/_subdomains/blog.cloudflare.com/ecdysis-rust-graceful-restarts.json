@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ecdysis-rust-graceful-restarts/",
+  "file": "_subdomains/blog.cloudflare.com/ecdysis-rust-graceful-restarts.md",
+  "title": "Shedding old code with ecdysis: graceful restarts for Rust services at Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:46.599881+00:00",
+  "html_len": 303523,
+  "md_len": 69541,
+  "depth": 0,
+  "phase": 2
+}

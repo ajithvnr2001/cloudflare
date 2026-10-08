@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/workflows-ga-production-ready-durable-execution/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/workflows-ga-production-ready-durable-execution.md",
+  "title": "Cloudflare Workflows est d\u00e9sormais en disponibilit\u00e9 g\u00e9n\u00e9rale : une ex\u00e9cution durable, pr\u00eate pour la production | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:03.515667+00:00",
+  "html_len": 262552,
+  "md_len": 41198,
+  "depth": 0,
+  "phase": 2
+}

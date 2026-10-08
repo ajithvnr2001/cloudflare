@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/transform/examples/rewrite-url-string-visitors/",
+  "file": "rules/transform/examples/rewrite-url-string-visitors.md",
+  "title": "Rewrite URL query string \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:56.184632+00:00",
+  "html_len": 132148,
+  "md_len": 1717,
+  "depth": 0
+}

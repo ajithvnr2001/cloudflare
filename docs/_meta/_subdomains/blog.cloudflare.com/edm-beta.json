@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/edm-beta/",
+  "file": "_subdomains/blog.cloudflare.com/edm-beta.md",
+  "title": "DLP Exact Data Match beta now available | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:32.600363+00:00",
+  "html_len": 284487,
+  "md_len": 58829,
+  "depth": 0,
+  "phase": 2
+}

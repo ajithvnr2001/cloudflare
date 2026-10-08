@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/kafka/",
+  "file": "_subdomains/blog.cloudflare.com/tag/kafka.md",
+  "title": "Posts tagged \"Kafka\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:09:21.026209+00:00",
+  "html_len": 136392,
+  "md_len": 7943,
+  "depth": 1,
+  "phase": 2
+}

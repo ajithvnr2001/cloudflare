@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/workers-cache/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/workers-cache.md",
+  "title": "\u60a8\u7684 Worker \u73fe\u5728\u53ef\u4ee5\u64c1\u6709\u5c08\u5c6c\u7684\u524d\u7f6e\u5feb\u53d6\u4e86 | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:52.386966+00:00",
+  "html_len": 263600,
+  "md_len": 43712,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/releasing-kubectl-support-in-access/",
+  "file": "_subdomains/blog.cloudflare.com/releasing-kubectl-support-in-access.md",
+  "title": "Releasing kubectl support in Access | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:13.856183+00:00",
+  "html_len": 289383,
+  "md_len": 63079,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/exploring-internet-traffic-shifts-and-cyber-attacks-during-the-2024-us-election/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/exploring-internet-traffic-shifts-and-cyber-attacks-during-the-2024-us-election.md",
+  "title": "\u00c9tude de l'\u00e9volution du trafic Internet et des cyberattaques pendant les \u00e9lections am\u00e9ricaines de 2024 | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:01.778546+00:00",
+  "html_len": 295093,
+  "md_len": 60101,
+  "depth": 0,
+  "phase": 2
+}

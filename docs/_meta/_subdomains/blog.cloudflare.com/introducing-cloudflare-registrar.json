@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-cloudflare-registrar/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-cloudflare-registrar.md",
+  "title": "Introducing CloudFlare Registrar: Designed for Security, Not the Masses | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:45.009109+00:00",
+  "html_len": 279364,
+  "md_len": 63323,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/spectrum/",
+  "file": "_subdomains/blog.cloudflare.com/spectrum.md",
+  "title": "Introducing Spectrum: Extending Cloudflare To 65,533 More Ports | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:36.909262+00:00",
+  "html_len": 275476,
+  "md_len": 57861,
+  "depth": 0,
+  "phase": 2
+}

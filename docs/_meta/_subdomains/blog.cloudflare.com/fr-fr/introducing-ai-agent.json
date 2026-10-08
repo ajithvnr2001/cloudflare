@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/introducing-ai-agent/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/introducing-ai-agent.md",
+  "title": "D\u00e9couvrez Cloudy, l'agent IA de Cloudflare con\u00e7u pour simplifier les configurations complexes | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:10.221640+00:00",
+  "html_len": 236934,
+  "md_len": 39026,
+  "depth": 0,
+  "phase": 2
+}

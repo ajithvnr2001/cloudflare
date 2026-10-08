@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/troubleshooting/samesite-cookie-interaction/",
+  "file": "waf/troubleshooting/samesite-cookie-interaction.md",
+  "title": "SameSite cookie interaction with Cloudflare \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:49.573895+00:00",
+  "html_len": 150615,
+  "md_len": 8216,
+  "depth": 0
+}

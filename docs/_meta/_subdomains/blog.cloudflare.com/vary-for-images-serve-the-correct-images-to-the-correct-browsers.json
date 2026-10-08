@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/vary-for-images-serve-the-correct-images-to-the-correct-browsers/",
+  "file": "_subdomains/blog.cloudflare.com/vary-for-images-serve-the-correct-images-to-the-correct-browsers.md",
+  "title": "Vary for Images: Serve the Correct Images to the Correct Browsers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:08.838510+00:00",
+  "html_len": 295855,
+  "md_len": 64924,
+  "depth": 0,
+  "phase": 2
+}

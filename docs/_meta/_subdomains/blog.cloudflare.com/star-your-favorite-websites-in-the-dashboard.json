@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/star-your-favorite-websites-in-the-dashboard/",
+  "file": "_subdomains/blog.cloudflare.com/star-your-favorite-websites-in-the-dashboard.md",
+  "title": "Star your favorite websites in the dashboard | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:15.859987+00:00",
+  "html_len": 266569,
+  "md_len": 54931,
+  "depth": 0,
+  "phase": 2
+}

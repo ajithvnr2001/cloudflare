@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/cache-poisoning-protection/",
+  "file": "_subdomains/blog.cloudflare.com/cache-poisoning-protection.md",
+  "title": "How Cloudflare protects customers from cache poisoning | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:25:42.765069+00:00",
+  "html_len": 284452,
+  "md_len": 60872,
+  "depth": 1
+}

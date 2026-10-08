@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/foundation-dns-launch/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/foundation-dns-launch.md",
+  "title": "Mejoramos el DNS autoritativo con el lanzamiento oficial de Foundation DNS | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:41:22.584782+00:00",
+  "html_len": 276261,
+  "md_len": 55244,
+  "depth": 0,
+  "phase": 2
+}

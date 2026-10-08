@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/networks/subresources/routes/methods/edit/",
+  "file": "api/resources/zero_trust/subresources/networks/subresources/routes/methods/edit.md",
+  "title": "Update a tunnel route | Cloudflare API",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:26:15.821663+00:00",
+  "html_len": 1984523,
+  "md_len": 6203,
+  "depth": 1
+}

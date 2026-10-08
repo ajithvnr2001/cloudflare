@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-magic-firewall/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-magic-firewall.md",
+  "title": "Introducing Magic Firewall | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:53.374645+00:00",
+  "html_len": 289864,
+  "md_len": 63484,
+  "depth": 0,
+  "phase": 2
+}

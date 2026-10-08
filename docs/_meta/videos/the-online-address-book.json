@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/videos/the-online-address-book/",
+  "file": "videos/the-online-address-book.md",
+  "title": "The Online Address Book | Cloudflare Docs",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (331 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T07:16:41.870094+00:00",
+  "html_len": 98042,
+  "md_len": 402,
+  "depth": 0
+}

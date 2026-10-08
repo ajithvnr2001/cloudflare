@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/dns/changelog/",
+  "file": "dns/changelog.md",
+  "title": "Changelog \u00b7 Cloudflare DNS docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:10:55.644018+00:00",
+  "html_len": 185774,
+  "md_len": 20264,
+  "depth": 0
+}

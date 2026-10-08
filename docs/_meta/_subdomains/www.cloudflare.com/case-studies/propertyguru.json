@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/propertyguru/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/propertyguru.md",
+  "title": "PropertyGuru",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:45.199349+00:00",
+  "html_len": 209315,
+  "md_len": 9506,
+  "depth": 0,
+  "phase": 2
+}

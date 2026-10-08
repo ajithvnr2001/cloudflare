@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/waf-payload-logging/",
+  "file": "_subdomains/blog.cloudflare.com/waf-payload-logging.md",
+  "title": "Get better visibility for the WAF with payload logging | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:48.346615+00:00",
+  "html_len": 320788,
+  "md_len": 70833,
+  "depth": 0,
+  "phase": 2
+}

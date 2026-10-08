@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/security/what-is-a-vpn/",
+  "file": "_subdomains/www.cloudflare.com/learning/security/what-is-a-vpn.md",
+  "title": "What Is A VPN?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:50.121271+00:00",
+  "html_len": 238720,
+  "md_len": 22239,
+  "depth": 0,
+  "phase": 2
+}

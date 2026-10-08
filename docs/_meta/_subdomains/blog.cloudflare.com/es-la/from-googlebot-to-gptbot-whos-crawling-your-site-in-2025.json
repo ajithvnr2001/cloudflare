@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-la/from-googlebot-to-gptbot-whos-crawling-your-site-in-2025/",
+  "file": "_subdomains/blog.cloudflare.com/es-la/from-googlebot-to-gptbot-whos-crawling-your-site-in-2025.md",
+  "title": "De Googlebot a GPTBot: qui\u00e9n rastrea tu sitio en 2025 | El blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:52.008886+00:00",
+  "html_len": 254468,
+  "md_len": 37585,
+  "depth": 0,
+  "phase": 2
+}

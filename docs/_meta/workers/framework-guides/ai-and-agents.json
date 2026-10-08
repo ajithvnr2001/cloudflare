@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/framework-guides/ai-and-agents/",
+  "file": "workers/framework-guides/ai-and-agents.md",
+  "title": "AI & agents \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:26.548906+00:00",
+  "html_len": 175204,
+  "md_len": 1062,
+  "depth": 0
+}

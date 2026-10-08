@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/author/matthew-conroy/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/author/matthew-conroy.md",
+  "title": "Matthew Conroy - Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:14:28.693471+00:00",
+  "html_len": 109647,
+  "md_len": 1601,
+  "depth": 1,
+  "phase": 2
+}

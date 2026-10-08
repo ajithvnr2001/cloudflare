@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/hyper-bug/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/hyper-bug.md",
+  "title": "\u30cf\u30a4\u30d1\u30fcHTTP\u30e9\u30a4\u30d6\u30e9\u30ea\u306e\u30d0\u30b0\u306e\u767a\u898b\u65b9\u6cd5 | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:41.772734+00:00",
+  "html_len": 236901,
+  "md_len": 38624,
+  "depth": 0,
+  "phase": 2
+}

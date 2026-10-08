@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/announcing-firewall-rules/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/announcing-firewall-rules.md",
+  "title": "Anunciamos las Reglas de Firewall | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:13.947421+00:00",
+  "html_len": 226731,
+  "md_len": 34754,
+  "depth": 0,
+  "phase": 2
+}

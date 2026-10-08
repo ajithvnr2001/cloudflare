@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/this-is-strictly-a-violation-of-the-tcp-specification/",
+  "file": "_subdomains/blog.cloudflare.com/this-is-strictly-a-violation-of-the-tcp-specification.md",
+  "title": "This is strictly a violation of the TCP specification | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:33.165883+00:00",
+  "html_len": 318664,
+  "md_len": 69740,
+  "depth": 0,
+  "phase": 2
+}

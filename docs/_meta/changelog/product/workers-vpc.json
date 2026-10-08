@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/changelog/product/workers-vpc/",
+  "file": "changelog/product/workers-vpc.md",
+  "title": "Workers VPC Changelog | Cloudflare Docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:07:52.459527+00:00",
+  "html_len": 213584,
+  "md_len": 18955,
+  "depth": 0
+}

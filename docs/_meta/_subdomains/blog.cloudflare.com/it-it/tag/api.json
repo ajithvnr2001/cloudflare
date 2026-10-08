@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/it-it/tag/api/",
+  "file": "_subdomains/blog.cloudflare.com/it-it/tag/api.md",
+  "title": "Post con tag \"API\" \u2014 Il blog di Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:22:13.049325+00:00",
+  "html_len": 118976,
+  "md_len": 3133,
+  "depth": 1,
+  "phase": 2
+}

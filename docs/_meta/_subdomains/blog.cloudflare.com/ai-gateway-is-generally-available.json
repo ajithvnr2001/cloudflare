@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ai-gateway-is-generally-available/",
+  "file": "_subdomains/blog.cloudflare.com/ai-gateway-is-generally-available.md",
+  "title": "AI Gateway is generally available: a unified interface for managing and scaling your generative AI workloads | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:39:18.526578+00:00",
+  "html_len": 317718,
+  "md_len": 67219,
+  "depth": 0,
+  "phase": 2
+}

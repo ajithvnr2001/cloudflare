@@ -1,0 +1,1076 @@
+---
+url: https://developers.cloudflare.com/ai/models/openai/gpt-5-mini/
+title: GPT-5 mini (OpenAI) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:05:00.853358+00:00
+---
+
+# GPT-5 mini (OpenAI) · Cloudflare AI docs · Cloudflare AI docs
+
+> Source: https://developers.cloudflare.com/ai/models/openai/gpt-5-mini/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[AI](https://developers.cloudflare.com/ai/)
+  3. /[Models](https://developers.cloudflare.com/ai/models/)
+  4. /Models
+
+
+
+![OpenAI logo](https://developers.cloudflare.com/_astro/openai.BBwNKzBb.svg)
+
+# GPT-5 mini
+
+Text Generation • OpenAI
+
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/openai/gpt-5-mini/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+`openai/gpt-5-mini`
+
+  * Third-party
+  * Zero data retention
+
+
+
+GPT-5 Mini is the lightweight, low-cost variant of GPT-5, well suited to high-volume coding and reasoning tasks.
+
+Model Info|   
+---|---  
+Context Window[ ↗](https://developers.cloudflare.com/workers-ai/platform/glossary/)| 128,000 tokens  
+Terms and License| [link ↗](https://openai.com/policies/)  
+More information| [link ↗](https://openai.com/)  
+Zero data retention| Yes  
+Request formats| Responses, Chat Completions  
+Pricing| 
+
+  * Input (per 1M tokens)$0.25
+  * Output (per 1M tokens)$2.00
+  * Cached input (per 1M tokens)$0.025
+
+  
+  
+## Usage
+    
+    
+    const response = await env.AI.run(
+      'openai/gpt-5-mini',
+      { messages: [{ content: 'What are the three laws of thermodynamics?', role: 'user' }] },
+    )
+    console.log(response)
+    
+    
+    curl https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/v1/chat/completions \
+      --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+      --header "Content-Type: application/json" \
+      --data '{
+      "model": "openai/gpt-5-mini",
+      "messages": [
+        {
+          "content": "What are the three laws of thermodynamics?",
+          "role": "user"
+        }
+      ]
+    }'
+    
+    
+    Briefly, the fundamental laws are:
+    
+    - Zeroth law (often counted separately): If system A is in thermal equilibrium with B, and B is in thermal equilibrium with C, then A is in thermal equilibrium with C. This justifies the concept of temperature and allows the use of thermometers.
+    
+    - First law (conservation of energy): Energy is conserved. For a closed system,
+      ΔU = Q − W,
+      where ΔU is the change in internal energy, Q is heat added to the system, and W is work done by the system.
+    
+    - Second law (direction of processes; entropy): Natural processes increase the total entropy of an isolated system. A standard mathematical statement:
+      ΔS ≥ ∫ δQ_rev/T,
+      and for an isolated system ΔS ≥ 0. Equivalent formulations: no cyclic engine can convert all heat into work (Kelvin–Planck), and heat cannot spontaneously flow from a colder to a hotter body (Clausius).
+    
+    - Third law (zero‑temperature limit): As T → 0, the entropy of a perfect crystalline substance approaches a constant (often taken as zero). Consequences include the unattainability principle: absolute zero cannot be reached in a finite number of steps.
+    
+    (Traditionally textbooks list the First, Second and Third laws; the Zeroth law was named later because it underpins the concept of temperature.)
+    
+    
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "annotations": [],
+            "content": "Briefly, the fundamental laws are:\n\n- Zeroth law (often counted separately): If system A is in thermal equilibrium with B, and B is in thermal equilibrium with C, then A is in thermal equilibrium with C. This justifies the concept of temperature and allows the use of thermometers.\n\n- First law (conservation of energy): Energy is conserved. For a closed system,\n  ΔU = Q − W,\n  where ΔU is the change in internal energy, Q is heat added to the system, and W is work done by the system.\n\n- Second law (direction of processes; entropy): Natural processes increase the total entropy of an isolated system. A standard mathematical statement:\n  ΔS ≥ ∫ δQ_rev/T,\n  and for an isolated system ΔS ≥ 0. Equivalent formulations: no cyclic engine can convert all heat into work (Kelvin–Planck), and heat cannot spontaneously flow from a colder to a hotter body (Clausius).\n\n- Third law (zero‑temperature limit): As T → 0, the entropy of a perfect crystalline substance approaches a constant (often taken as zero). Consequences include the unattainability principle: absolute zero cannot be reached in a finite number of steps.\n\n(Traditionally textbooks list the First, Second and Third laws; the Zeroth law was named later because it underpins the concept of temperature.)",
+            "refusal": null,
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1777320124,
+      "gatewayMetadata": {
+        "keySource": "Unified"
+      },
+      "id": "chatcmpl-DZMRYPDmQAXQ6d6GeOKrgb8jeCPgK",
+      "model": "gpt-5-mini-2025-08-07",
+      "object": "chat.completion",
+      "service_tier": "default",
+      "system_fingerprint": null,
+      "usage": {
+        "completion_tokens": 673,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 384,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens": 15,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 688
+      }
+    }
+
+## Examples
+
+**With System Message** — Using a system message to set context
+    
+    
+    const response = await env.AI.run(
+      'openai/gpt-5-mini',
+      {
+        messages: [
+          { content: 'You are a helpful coding assistant specializing in Python.', role: 'system' },
+          { content: 'How do I read a JSON file in Python?', role: 'user' },
+        ],
+      },
+    )
+    console.log(response)
+    
+    
+    curl https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/v1/chat/completions \
+      --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+      --header "Content-Type: application/json" \
+      --data '{
+      "model": "openai/gpt-5-mini",
+      "messages": [
+        {
+          "content": "You are a helpful coding assistant specializing in Python.",
+          "role": "system"
+        },
+        {
+          "content": "How do I read a JSON file in Python?",
+          "role": "user"
+        }
+      ]
+    }'
+    
+    
+    The built‑in json module is the usual way. Use json.load() to parse a file object into Python objects (dicts, lists, strings, numbers, booleans, None).
+    
+    Basic example:
+    ```python
+    import json
+    
+    with open("data.json", "r", encoding="utf-8") as f:
+        data = json.load(f)
+    
+    print(type(data))  # usually dict or list
+    print(data)
+    ```
+    
+    Read from a JSON string:
+    ```python
+    s = '{"name": "Alice", "age": 30}'
+    obj = json.loads(s)
+    ```
+    
+    Common extras
+    
+    - Error handling:
+    ```python
+    import json
+    
+    try:
+        with open("data.json", "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except FileNotFoundError:
+        print("File not found")
+    except json.JSONDecodeError as e:
+        print("Invalid JSON:", e)
+    ```
+    
+    - Newline-delimited JSON (NDJSON / JSON Lines):
+    ```python
+    import json
+    
+    with open("lines.jsonl", "r", encoding="utf-8") as f:
+        for line in f:
+            if line.strip():
+                obj = json.loads(line)
+                # process obj
+    ```
+    
+    - Large files (streaming): for very large JSON arrays, use a streaming parser like ijson to avoid loading everything into memory:
+    ```python
+    import ijson
+    
+    with open("big.json", "rb") as f:
+        for item in ijson.items(f, "item"):  # "item" is path for array elements
+            # process item
+    ```
+    
+    - Compressed JSON:
+    ```python
+    import gzip, json
+    
+    with gzip.open("data.json.gz", "rt", encoding="utf-8") as f:
+        data = json.load(f)
+    ```
+    
+    - Convert Python back to JSON:
+    ```python
+    with open("out.json", "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    ```
+    
+    If your JSON maps naturally to tabular data, pandas.read_json can be convenient:
+    ```python
+    import pandas as pd
+    df = pd.read_json("data.json")
+    ```
+    
+    That covers the usual ways — if you share the structure of your JSON or constraints (huge file, NDJSON, custom types), I can give a more specific example.
+    
+    
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "annotations": [],
+            "content": "The built‑in json module is the usual way. Use json.load() to parse a file object into Python objects (dicts, lists, strings, numbers, booleans, None).\n\nBasic example:\n```python\nimport json\n\nwith open(\"data.json\", \"r\", encoding=\"utf-8\") as f:\n    data = json.load(f)\n\nprint(type(data))  # usually dict or list\nprint(data)\n```\n\nRead from a JSON string:\n```python\ns = '{\"name\": \"Alice\", \"age\": 30}'\nobj = json.loads(s)\n```\n\nCommon extras\n\n- Error handling:\n```python\nimport json\n\ntry:\n    with open(\"data.json\", \"r\", encoding=\"utf-8\") as f:\n        data = json.load(f)\nexcept FileNotFoundError:\n    print(\"File not found\")\nexcept json.JSONDecodeError as e:\n    print(\"Invalid JSON:\", e)\n```\n\n- Newline-delimited JSON (NDJSON / JSON Lines):\n```python\nimport json\n\nwith open(\"lines.jsonl\", \"r\", encoding=\"utf-8\") as f:\n    for line in f:\n        if line.strip():\n            obj = json.loads(line)\n            # process obj\n```\n\n- Large files (streaming): for very large JSON arrays, use a streaming parser like ijson to avoid loading everything into memory:\n```python\nimport ijson\n\nwith open(\"big.json\", \"rb\") as f:\n    for item in ijson.items(f, \"item\"):  # \"item\" is path for array elements\n        # process item\n```\n\n- Compressed JSON:\n```python\nimport gzip, json\n\nwith gzip.open(\"data.json.gz\", \"rt\", encoding=\"utf-8\") as f:\n    data = json.load(f)\n```\n\n- Convert Python back to JSON:\n```python\nwith open(\"out.json\", \"w\", encoding=\"utf-8\") as f:\n    json.dump(data, f, ensure_ascii=False, indent=2)\n```\n\nIf your JSON maps naturally to tabular data, pandas.read_json can be convenient:\n```python\nimport pandas as pd\ndf = pd.read_json(\"data.json\")\n```\n\nThat covers the usual ways — if you share the structure of your JSON or constraints (huge file, NDJSON, custom types), I can give a more specific example.",
+            "refusal": null,
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1777320141,
+      "gatewayMetadata": {
+        "keySource": "Unified"
+      },
+      "id": "chatcmpl-DZMRprAcSRmcAdqafyZx3VJbKyz1M",
+      "model": "gpt-5-mini-2025-08-07",
+      "object": "chat.completion",
+      "service_tier": "default",
+      "system_fingerprint": null,
+      "usage": {
+        "completion_tokens": 754,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 256,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens": 30,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 784
+      }
+    }
+
+**Multi-turn Conversation** — Continuing a conversation with context
+    
+    
+    const response = await env.AI.run(
+      'openai/gpt-5-mini',
+      {
+        max_completion_tokens: 8192,
+        messages: [
+          {
+            content: 'I need help planning a road trip from San Francisco to Los Angeles.',
+            role: 'user',
+          },
+          {
+            content:
+              "I'd be happy to help! The drive is about 380 miles and takes roughly 5-6 hours. Would you like suggestions for scenic routes or interesting stops along the way?",
+            role: 'assistant',
+          },
+          { content: 'Yes, what are some good places to stop?', role: 'user' },
+        ],
+      },
+    )
+    console.log(response)
+    
+    
+    curl https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/v1/chat/completions \
+      --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+      --header "Content-Type: application/json" \
+      --data '{
+      "model": "openai/gpt-5-mini",
+      "max_completion_tokens": 8192,
+      "messages": [
+        {
+          "content": "I need help planning a road trip from San Francisco to Los Angeles.",
+          "role": "user"
+        },
+        {
+          "content": "I'\''d be happy to help! The drive is about 380 miles and takes roughly 5-6 hours. Would you like suggestions for scenic routes or interesting stops along the way?",
+          "role": "assistant"
+        },
+        {
+          "content": "Yes, what are some good places to stop?",
+          "role": "user"
+        }
+      ]
+    }'
+    
+    
+    Great — here are several good stop options and a few sample itineraries depending on how much time you have and which route you take (PCH/Highway 1 for scenery, US‑101 for a balance of speed and towns, I‑5 if you want the fastest drive).
+    
+    High-level route choices
+    - Pacific Coast Highway (CA‑1 / PCH): Most scenic — cliffs, beaches, Big Sur. Slow, can be winding and has occasional closures/traffic.
+    - US‑101: Faster than CA‑1 and still scenic through coastal towns, wine country, and beaches.
+    - I‑5: Fastest (about 5–6 hours), but mostly inland and not scenic. Good if you want to minimize driving time.
+    
+    Useful tip: check Caltrans for road conditions and CA‑1/Big Sur closures before you go; plan around LA rush hour (avoid entering LA 3–7 pm) and leaving SF early to beat Bay Area traffic.
+    
+    Stops (north → south) — highlights by route
+    
+    Common coastal highlights (CA‑1 & 101 overlap in places)
+    - Half Moon Bay (30–45 min from SF)
+      - Quick beach walk, pastries (Local bakeries), coastal trail views.
+    - Santa Cruz (1–1.5 hr from SF)
+      - Boardwalk, surf spots, downtown restaurants.
+    - Capitola (near Santa Cruz)
+      - Colorful seaside village good for a short stroll and lunch.
+    
+    Monterey/Carmel area (great for families/couples)
+    - Monterey Bay Aquarium (Monterey)
+      - World-class aquarium, Cannery Row dining.
+    - 17‑Mile Drive / Pebble Beach (Carmel/Monterey)
+      - Scenic loop with coastal viewpoints and Lone Cypress.
+    - Carmel-by-the-Sea
+      - Charming village, galleries, beach.
+    
+    Big Sur (must-see if you have time)
+    - Bixby Creek Bridge (iconic photo stop)
+    - Pfeiffer Big Sur State Park (hiking)
+    - Pfeiffer Beach (purple sand, limited parking)
+    - McWay Falls / Julia Pfeiffer Burns State Park (waterfall onto beach)
+    - Note: limited services and cell coverage — fuel up in Monterey or Carmel.
+    
+    San Simeon / Cambria / Hearst Castle
+    - Piedras Blancas elephant seal rookery (near San Simeon)
+    - Hearst Castle tour (advance tickets recommended)
+    - Cambria — quaint village for dinner/overnight.
+    
+    San Luis Obispo / Pismo Beach / Morro Bay
+    - San Luis Obispo (downtown, bubblegum alley)
+    - Pismo Beach (cliffs, monarch butterflies seasonally)
+    - Morro Bay (Morro Rock, kayaking)
+    
+    Santa Ynez Valley / Solvang (inland detour off PCH/101)
+    - Danish-style Solvang, wineries in Santa Ynez and Los Olivos — great for wine tasting and a slower afternoon.
+    
+    Santa Barbara (the “American Riviera”)
+    - State Street, waterfront, mission, good dining and beaches.
+    
+    Last stretch into Los Angeles (via US‑101 or PCH)
+    - Ventura (surf, harbor)
+    - Malibu (beaches, Zuma, Point Dume)
+    - Santa Monica / Venice (pier, boardwalk, restaurants) before heading to downtown LA or other neighborhoods.
+    
+    If you take I‑5 (fastest) — practical stops
+    - Gilroy (garlic/food if you want a quick break)
+    - Kettleman City or Harris Ranch (famous steakhouse stop)
+    - Tejon Ranch outlets near the Grapevine (shopping, quick break)
+    - Pyramid Lake/ghost-town stops are possible but mostly freeway views
+    
+    Sample itineraries
+    
+    1) One-day drive, scenic highlights (long day)
+    - Early SF departure (6–7 am) → Santa Cruz (coffee, 1 hr) → Monterey (lunch, Aquarium optional, 1.5–2 hr) → Big Sur (Bixby Bridge & viewpoints, 1–1.5 hr) → San Simeon (elephant seals) → Santa Barbara arrival late evening. Expect 10–12+ hours including stops.
+    
+    2) Two-day relaxed coastal trip (recommended)
+    Day 1: SF → Half Moon Bay → Santa Cruz → Monterey/Carmel (overnight)
+    Day 2: Carmel → Big Sur (Pfeiffer Beach, McWay Falls) → San Simeon or Pismo → Santa Barbara → LA
+    - Overnight options: Carmel, Big Sur (if available), or San Luis Obispo/Santa Barbara to split driving times.
+    
+    3) Three-day scenic + wine-country
+    Day 1: SF → Santa Cruz → Monterey/Carmel (explore 17‑Mile Drive)
+    Day 2: Carmel → Big Sur → San Simeon → Pismo/Morro Bay (overnight)
+    Day 3: Pismo → Solvang (wine tasting) → Santa Barbara → LA
+    
+    Practical tips
+    - Time: Without stops SF→LA on PCH/101 is 8–10 hours; I‑5 ~5–6 hours.
+    - Fuel and services: Fill up before Big Sur; limited gas and few restaurants in stretches.
+    - Reservations: Hotels in Big Sur and popular towns fill up fast — book ahead. Hearst Castle requires timed tickets.
+    - Weather/season: Summer fog near SF; Big Sur can have wind and cooler temps. CA‑1 sometimes closes after storms/landslides.
+    - Parking: Popular spots (Pfeiffer Beach, Bixby turnout, McWay Falls) can have limited parking — arrive early.
+    - Safety: Drive carefully on winding sections, keep an eye on fuel, cell coverage is spotty in Big Sur.
+    
+    If you tell me:
+    - how many days you have,
+    - whether you prefer beaches, hiking, wine, food stops, or quick travel,
+    I’ll draft a detailed day‑by‑day plan with drive times, restaurants and where to stay.
+    
+    
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "annotations": [],
+            "content": "Great — here are several good stop options and a few sample itineraries depending on how much time you have and which route you take (PCH/Highway 1 for scenery, US‑101 for a balance of speed and towns, I‑5 if you want the fastest drive).\n\nHigh-level route choices\n- Pacific Coast Highway (CA‑1 / PCH): Most scenic — cliffs, beaches, Big Sur. Slow, can be winding and has occasional closures/traffic.\n- US‑101: Faster than CA‑1 and still scenic through coastal towns, wine country, and beaches.\n- I‑5: Fastest (about 5–6 hours), but mostly inland and not scenic. Good if you want to minimize driving time.\n\nUseful tip: check Caltrans for road conditions and CA‑1/Big Sur closures before you go; plan around LA rush hour (avoid entering LA 3–7 pm) and leaving SF early to beat Bay Area traffic.\n\nStops (north → south) — highlights by route\n\nCommon coastal highlights (CA‑1 & 101 overlap in places)\n- Half Moon Bay (30–45 min from SF)\n  - Quick beach walk, pastries (Local bakeries), coastal trail views.\n- Santa Cruz (1–1.5 hr from SF)\n  - Boardwalk, surf spots, downtown restaurants.\n- Capitola (near Santa Cruz)\n  - Colorful seaside village good for a short stroll and lunch.\n\nMonterey/Carmel area (great for families/couples)\n- Monterey Bay Aquarium (Monterey)\n  - World-class aquarium, Cannery Row dining.\n- 17‑Mile Drive / Pebble Beach (Carmel/Monterey)\n  - Scenic loop with coastal viewpoints and Lone Cypress.\n- Carmel-by-the-Sea\n  - Charming village, galleries, beach.\n\nBig Sur (must-see if you have time)\n- Bixby Creek Bridge (iconic photo stop)\n- Pfeiffer Big Sur State Park (hiking)\n- Pfeiffer Beach (purple sand, limited parking)\n- McWay Falls / Julia Pfeiffer Burns State Park (waterfall onto beach)\n- Note: limited services and cell coverage — fuel up in Monterey or Carmel.\n\nSan Simeon / Cambria / Hearst Castle\n- Piedras Blancas elephant seal rookery (near San Simeon)\n- Hearst Castle tour (advance tickets recommended)\n- Cambria — quaint village for dinner/overnight.\n\nSan Luis Obispo / Pismo Beach / Morro Bay\n- San Luis Obispo (downtown, bubblegum alley)\n- Pismo Beach (cliffs, monarch butterflies seasonally)\n- Morro Bay (Morro Rock, kayaking)\n\nSanta Ynez Valley / Solvang (inland detour off PCH/101)\n- Danish-style Solvang, wineries in Santa Ynez and Los Olivos — great for wine tasting and a slower afternoon.\n\nSanta Barbara (the “American Riviera”)\n- State Street, waterfront, mission, good dining and beaches.\n\nLast stretch into Los Angeles (via US‑101 or PCH)\n- Ventura (surf, harbor)\n- Malibu (beaches, Zuma, Point Dume)\n- Santa Monica / Venice (pier, boardwalk, restaurants) before heading to downtown LA or other neighborhoods.\n\nIf you take I‑5 (fastest) — practical stops\n- Gilroy (garlic/food if you want a quick break)\n- Kettleman City or Harris Ranch (famous steakhouse stop)\n- Tejon Ranch outlets near the Grapevine (shopping, quick break)\n- Pyramid Lake/ghost-town stops are possible but mostly freeway views\n\nSample itineraries\n\n1) One-day drive, scenic highlights (long day)\n- Early SF departure (6–7 am) → Santa Cruz (coffee, 1 hr) → Monterey (lunch, Aquarium optional, 1.5–2 hr) → Big Sur (Bixby Bridge & viewpoints, 1–1.5 hr) → San Simeon (elephant seals) → Santa Barbara arrival late evening. Expect 10–12+ hours including stops.\n\n2) Two-day relaxed coastal trip (recommended)\nDay 1: SF → Half Moon Bay → Santa Cruz → Monterey/Carmel (overnight)\nDay 2: Carmel → Big Sur (Pfeiffer Beach, McWay Falls) → San Simeon or Pismo → Santa Barbara → LA\n- Overnight options: Carmel, Big Sur (if available), or San Luis Obispo/Santa Barbara to split driving times.\n\n3) Three-day scenic + wine-country\nDay 1: SF → Santa Cruz → Monterey/Carmel (explore 17‑Mile Drive)\nDay 2: Carmel → Big Sur → San Simeon → Pismo/Morro Bay (overnight)\nDay 3: Pismo → Solvang (wine tasting) → Santa Barbara → LA\n\nPractical tips\n- Time: Without stops SF→LA on PCH/101 is 8–10 hours; I‑5 ~5–6 hours.\n- Fuel and services: Fill up before Big Sur; limited gas and few restaurants in stretches.\n- Reservations: Hotels in Big Sur and popular towns fill up fast — book ahead. Hearst Castle requires timed tickets.\n- Weather/season: Summer fog near SF; Big Sur can have wind and cooler temps. CA‑1 sometimes closes after storms/landslides.\n- Parking: Popular spots (Pfeiffer Beach, Bixby turnout, McWay Falls) can have limited parking — arrive early.\n- Safety: Drive carefully on winding sections, keep an eye on fuel, cell coverage is spotty in Big Sur.\n\nIf you tell me:\n- how many days you have,\n- whether you prefer beaches, hiking, wine, food stops, or quick travel,\nI’ll draft a detailed day‑by‑day plan with drive times, restaurants and where to stay.",
+            "refusal": null,
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1777420669,
+      "gatewayMetadata": {
+        "keySource": "BYOK"
+      },
+      "id": "chatcmpl-DZmbFd2Ooyi5zmVdbSPxGyjtrwUUO",
+      "model": "gpt-5-mini-2025-08-07",
+      "object": "chat.completion",
+      "service_tier": "default",
+      "system_fingerprint": null,
+      "usage": {
+        "completion_tokens": 1926,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 704,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens": 76,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 2002
+      }
+    }
+
+**Creative Writing** — Longer completion for creative output
+    
+    
+    const response = await env.AI.run(
+      'openai/gpt-5-mini',
+      {
+        max_completion_tokens: 8192,
+        messages: [
+          {
+            content: 'Write a short story opening about a detective finding an unusual clue.',
+            role: 'user',
+          },
+        ],
+      },
+    )
+    console.log(response)
+    
+    
+    curl https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/v1/chat/completions \
+      --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+      --header "Content-Type: application/json" \
+      --data '{
+      "model": "openai/gpt-5-mini",
+      "max_completion_tokens": 8192,
+      "messages": [
+        {
+          "content": "Write a short story opening about a detective finding an unusual clue.",
+          "role": "user"
+        }
+      ]
+    }'
+    
+    
+    The stairwell smelled like old coffee and lemon oil; the landlord kept the cleaner’s bottle on the second landing like a totem. I’d been up and down those stairs enough to know the rhythm of the building—how the pipes sang at night, which door stuck in winter—but the little hallway outside 3B hit a chord I hadn’t heard before: silence so neat it felt deliberate.
+    
+    Her coat was still on the back of a chair, collar up like a small, pale stack of waves. No sign of forced entry, no overturned furniture, just the slow, inevitable disorder of someone who left thinking she’d be right back. I moved to the chair because detectives move where other people don’t: to pockets. Fingers downed in fabric, searching for lint and receipts and the kind of trash that forgets its own story.
+    
+    Folded twice, tucked in the inner pocket, was a drawing on cheap paper—crayon blue and stubborn as truth. A stick figure, two dots for eyes, and across the forehead a jagged line of darker crayon. At the bottom, in a child’s hurried script, the name: Jonah. My Jonah. The line across the forehead was the scar I got when I was eight and dared a chain-link fence like a daredevil out of hindsight. A scar nobody I worked with would know about; a scar I had never told anyone about.
+    
+    The paper smelled faintly of rain and something waxy. I held it up to the single strip of window light and the crayon wax glowed like it had a pulse. The building hummed. Downstairs, someone laughed at nothing. In my chest, something rearranged—an old drawer opened, and a key I’d misplaced years ago slid into my hand. Not a clue so much as an accusation: someone had been in her pockets and had known the exact shape of my face.
+    
+    
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "annotations": [],
+            "content": "The stairwell smelled like old coffee and lemon oil; the landlord kept the cleaner’s bottle on the second landing like a totem. I’d been up and down those stairs enough to know the rhythm of the building—how the pipes sang at night, which door stuck in winter—but the little hallway outside 3B hit a chord I hadn’t heard before: silence so neat it felt deliberate.\n\nHer coat was still on the back of a chair, collar up like a small, pale stack of waves. No sign of forced entry, no overturned furniture, just the slow, inevitable disorder of someone who left thinking she’d be right back. I moved to the chair because detectives move where other people don’t: to pockets. Fingers downed in fabric, searching for lint and receipts and the kind of trash that forgets its own story.\n\nFolded twice, tucked in the inner pocket, was a drawing on cheap paper—crayon blue and stubborn as truth. A stick figure, two dots for eyes, and across the forehead a jagged line of darker crayon. At the bottom, in a child’s hurried script, the name: Jonah. My Jonah. The line across the forehead was the scar I got when I was eight and dared a chain-link fence like a daredevil out of hindsight. A scar nobody I worked with would know about; a scar I had never told anyone about.\n\nThe paper smelled faintly of rain and something waxy. I held it up to the single strip of window light and the crayon wax glowed like it had a pulse. The building hummed. Downstairs, someone laughed at nothing. In my chest, something rearranged—an old drawer opened, and a key I’d misplaced years ago slid into my hand. Not a clue so much as an accusation: someone had been in her pockets and had known the exact shape of my face.",
+            "refusal": null,
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1777320157,
+      "gatewayMetadata": {
+        "keySource": "Unified"
+      },
+      "id": "chatcmpl-DZMS5kOjcgUQY5W2AZnL6aYVk6pbG",
+      "model": "gpt-5-mini-2025-08-07",
+      "object": "chat.completion",
+      "service_tier": "default",
+      "system_fingerprint": null,
+      "usage": {
+        "completion_tokens": 1416,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1024,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens": 19,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 1435
+      }
+    }
+
+**Streaming Response** — Enable streaming for real-time output
+    
+    
+    const response = await env.AI.run(
+      'openai/gpt-5-mini',
+      {
+        messages: [{ content: 'Explain the concept of recursion with a simple example.', role: 'user' }],
+        stream: true,
+        stream_options: { include_usage: true },
+      },
+    )
+    console.log(response)
+    
+    
+    curl https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/v1/chat/completions \
+      --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+      --header "Content-Type: application/json" \
+      --data '{
+      "model": "openai/gpt-5-mini",
+      "messages": [
+        {
+          "content": "Explain the concept of recursion with a simple example.",
+          "role": "user"
+        }
+      ],
+      "stream": true,
+      "stream_options": {
+        "include_usage": true
+      }
+    }'
+    
+    
+    Recursion is when a function calls itself to solve a smaller instance of the same problem. Two parts are essential:
+    - Base case: a simple instance that can be answered directly (stops recursion).
+    - Recursive case: reduces the problem toward the base case by calling the function again.
+    
+    Simple example — factorial (n! = n × (n−1) × ... × 1)
+    
+    Python:
+    def factorial(n):
+        if n == 0:           # base case
+            return 1
+        else:                # recursive case
+            return n * factorial(n - 1)
+    
+    Trace for factorial(4):
+    factorial(4)
+    → 4 * factorial(3)
+    → 4 * (3 * factorial(2))
+    → 4 * (3 * (2 * factorial(1)))
+    → 4 * (3 * (2 * (1 * factorial(0))))
+    → 4 * 3 * 2 * 1 * 1 = 24
+    
+    Another simple example — sum of a list:
+    def sum_list(lst):
+        if not lst:          # base case: empty list
+            return 0
+        return lst[0] + sum_list(lst[1:])  # recursive case
+    
+    Notes:
+    - Always ensure the base case will be reached (otherwise you get infinite recursion and eventually a stack overflow).
+    - Recursion can make code clearer for problems that naturally break into smaller subproblems (tree traversal, divide-and-conquer). For very deep recursion, consider iterative solutions or tail recursion (if the language optimizes it).
+    
+    
+    [
+      {
+        "choices": [
+          {
+            "delta": {
+              "content": "",
+              "refusal": null,
+              "role": "assistant"
+            },
+            "finish_reason": null,
+            "index": 0
+          }
+        ],
+        "created": 1777320181,
+        "id": "chatcmpl-DZMSTkAwp2vWq2CMKZi2k62kKUAsk",
+        "model": "gpt-5-mini-2025-08-07",
+        "obfuscation": "R7nTj",
+        "object": "chat.completion.chunk",
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "usage": null
+      },
+      {
+        "choices": [
+          {
+            "delta": {
+              "content": "Rec"
+            },
+            "finish_reason": null,
+            "index": 0
+          }
+        ],
+        "created": 1777320181,
+        "id": "chatcmpl-DZMSTkAwp2vWq2CMKZi2k62kKUAsk",
+        "model": "gpt-5-mini-2025-08-07",
+        "obfuscation": "tvLc",
+        "object": "chat.completion.chunk",
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "usage": null
+      },
+      "... 318 more chunks omitted ...",
+      {
+        "choices": [],
+        "created": 1777320181,
+        "id": "chatcmpl-DZMSTkAwp2vWq2CMKZi2k62kKUAsk",
+        "model": "gpt-5-mini-2025-08-07",
+        "obfuscation": "mJ",
+        "object": "chat.completion.chunk",
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "usage": {
+          "completion_tokens": 711,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 384,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens": 16,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          },
+          "total_tokens": 727
+        }
+      }
+    ]
+
+**Web Search** — Letting the model use OpenAI's built-in web search tool to answer with current information
+    
+    
+    const response = await env.AI.run(
+      'openai/gpt-5-mini',
+      {
+        input: 'What were the top news stories about Cloudflare this week? Summarise in three bullets.',
+        max_output_tokens: 4096,
+        tools: [{ type: 'web_search_preview' }],
+      },
+    )
+    console.log(response)
+    
+    
+    curl https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/v1/responses \
+      --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+      --header "Content-Type: application/json" \
+      --data '{
+      "model": "openai/gpt-5-mini",
+      "input": "What were the top news stories about Cloudflare this week? Summarise in three bullets.",
+      "max_output_tokens": 4096,
+      "tools": [
+        {
+          "type": "web_search_preview"
+        }
+      ]
+    }'
+    
+    
+    Do you mean this calendar week (June 16–22, 2026)? Assuming yes — here are the three top Cloudflare stories from June 16–22, 2026:
+    
+    - Jun 22, 2026 — Eastern North America fiber cut caused increased error rates/latency and a partial degradation across Cloudflare services; engineers re‑routed traffic and mitigated most impact. ([cloudflarestatus.com](https://www.cloudflarestatus.com/))  
+    - Jun 16, 2026 — Cloudflare reported degraded availability for some Workers AI models (affecting specific @cf/moonshotai models), which Cloudflare investigated and partially mitigated. ([cloudflarestatus.com](https://www.cloudflarestatus.com/))  
+    - Jun 17–18, 2026 — Cloudflare launched a Cloudflare One “Design Partner” designation and an AI‑powered toolkit (Cloudflare One Stack) to speed SASE/Zero‑Trust and AI security migrations via select channel partners. ([itpro.com](https://www.itpro.com/technology/artificial-intelligence/cloudflare-launches-new-partner-initiative-to-support-ai-and-sase-adoption?utm_source=openai))
+    
+    Want me to expand any item (impacts, affected customers, timelines) or fetch more sources?
+    
+    
+    {
+      "id": "resp_0353bf77a6c21bf8016a3990db5a388199857704943aa2bb92",
+      "object": "response",
+      "created_at": 1782157531,
+      "model": "gpt-5-mini-2025-08-07",
+      "output": [
+        {
+          "id": "rs_0353bf77a6c21bf8016a3990dbc7748199b7d16f5b4f7e77ca",
+          "type": "reasoning",
+          "content": [],
+          "summary": []
+        },
+        {
+          "id": "ws_0353bf77a6c21bf8016a3990ddd1c4819998796587f7fb4927",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "queries": [
+              "Cloudflare news June 2026",
+              "Cloudflare this week June 2026 news Cloudflare breach outage June 2026",
+              "Cloudflare IPO news 2026 June 'Cloudflare' 'June 2026' 'announcement'"
+            ],
+            "query": "Cloudflare news June 2026"
+          }
+        },
+        {
+          "id": "rs_0353bf77a6c21bf8016a3990df53dc81999d07483ac94d8c85",
+          "type": "reasoning",
+          "content": [],
+          "summary": []
+        },
+        {
+          "id": "ws_0353bf77a6c21bf8016a3990e126588199944c35eb4b3ce827",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "queries": [
+              "Cloudflare news June 2026",
+              "Cloudflare outage June 2026",
+              "Cloudflare security incident June 2026"
+            ],
+            "query": "Cloudflare news June 2026"
+          }
+        },
+        {
+          "id": "rs_0353bf77a6c21bf8016a3990e34d508199a4144abcd991086c",
+          "type": "reasoning",
+          "content": [],
+          "summary": []
+        },
+        {
+          "id": "ws_0353bf77a6c21bf8016a3990e43d8c8199bc26696b72289725",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "open_page",
+            "url": "https://www.cloudflarestatus.com/"
+          }
+        },
+        {
+          "id": "rs_0353bf77a6c21bf8016a3990e59ae48199b6ba9d1f7337f25c",
+          "type": "reasoning",
+          "content": [],
+          "summary": []
+        },
+        {
+          "id": "ws_0353bf77a6c21bf8016a3990e9b440819998ba8376759a1a54",
+          "type": "web_search_call",
+          "status": "completed",
+          "action": {
+            "type": "search",
+            "queries": [
+              "Cloudflare One Design Partner AI toolkit announcement June 2026 Cloudflare press release",
+              "Cloudflare 'Design Partner' 'Cloudflare One' June 17 2026 press release"
+            ],
+            "query": "Cloudflare One Design Partner AI toolkit announcement June 2026 Cloudflare press release"
+          }
+        },
+        {
+          "id": "rs_0353bf77a6c21bf8016a3990ec1a1481998070b84eb2a654a0",
+          "type": "reasoning",
+          "content": [],
+          "summary": []
+        },
+        {
+          "id": "msg_0353bf77a6c21bf8016a3990f499108199bd7021505470de8c",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [
+                {
+                  "type": "url_citation",
+                  "end_index": 386,
+                  "start_index": 327,
+                  "title": "Cloudflare Status",
+                  "url": "https://www.cloudflarestatus.com/"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 633,
+                  "start_index": 574,
+                  "title": "Cloudflare Status",
+                  "url": "https://www.cloudflarestatus.com/"
+                },
+                {
+                  "type": "url_citation",
+                  "end_index": 1016,
+                  "start_index": 852,
+                  "title": "Cloudflare launches new partner initiative to support AI and SASE adoption",
+                  "url": "https://www.itpro.com/technology/artificial-intelligence/cloudflare-launches-new-partner-initiative-to-support-ai-and-sase-adoption?utm_source=openai"
+                }
+              ],
+              "logprobs": [],
+              "text": "Do you mean this calendar week (June 16–22, 2026)? Assuming yes — here are the three top Cloudflare stories from June 16–22, 2026:\n\n- Jun 22, 2026 — Eastern North America fiber cut caused increased error rates/latency and a partial degradation across Cloudflare services; engineers re‑routed traffic and mitigated most impact. ([cloudflarestatus.com](https://www.cloudflarestatus.com/))  \n- Jun 16, 2026 — Cloudflare reported degraded availability for some Workers AI models (affecting specific @cf/moonshotai models), which Cloudflare investigated and partially mitigated. ([cloudflarestatus.com](https://www.cloudflarestatus.com/))  \n- Jun 17–18, 2026 — Cloudflare launched a Cloudflare One “Design Partner” designation and an AI‑powered toolkit (Cloudflare One Stack) to speed SASE/Zero‑Trust and AI security migrations via select channel partners. ([itpro.com](https://www.itpro.com/technology/artificial-intelligence/cloudflare-launches-new-partner-initiative-to-support-ai-and-sase-adoption?utm_source=openai))\n\nWant me to expand any item (impacts, affected customers, timelines) or fetch more sources?"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "status": "completed",
+      "usage": {
+        "input_tokens": 19586,
+        "output_tokens": 1796,
+        "total_tokens": 21382,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 1344
+        }
+      },
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1782157560,
+      "error": null,
+      "frequency_penalty": 0,
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "moderation": null,
+      "parallel_tool_calls": true,
+      "presence_penalty": 0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "medium",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tools": [
+        {
+          "type": "web_search_preview",
+          "search_content_types": [
+            "text"
+          ],
+          "search_context_size": "medium",
+          "user_location": {
+            "type": "approximate",
+            "city": null,
+            "country": "US",
+            "region": null,
+            "timezone": null
+          }
+        }
+      ],
+      "top_logprobs": 0,
+      "top_p": 1,
+      "truncation": "disabled",
+      "user": null,
+      "metadata": {},
+      "gatewayMetadata": {
+        "keySource": "Unified"
+      }
+    }
+
+## Parameters
+
+Schema variant
+
+ResponsesChat Completions
+
+▶input
+
+`one of`required
+
+instructions
+
+`string`
+
+temperature
+
+`number`minimum: 0maximum: 2
+
+max_output_tokens
+
+`number`exclusiveMinimum: 0
+
+top_p
+
+`number`minimum: 0maximum: 1
+
+stream
+
+`boolean`
+
+▶tools[]
+
+`array`
+
+tool_choice
+
+``
+
+▶text{}
+
+`object`
+
+▶reasoning{}
+
+`object`
+
+▶messages[]
+
+`array`required
+
+temperature
+
+`number`minimum: 0maximum: 2
+
+max_tokens
+
+`number`exclusiveMinimum: 0
+
+max_completion_tokens
+
+`number`exclusiveMinimum: 0
+
+top_p
+
+`number`minimum: 0maximum: 1
+
+frequency_penalty
+
+`number`minimum: -2maximum: 2
+
+presence_penalty
+
+`number`minimum: -2maximum: 2
+
+stream
+
+`boolean`
+
+▶stream_options{}
+
+`object`
+
+▶tools[]
+
+`array`
+
+tool_choice
+
+``
+
+response_format
+
+``
+
+▶modalities[]
+
+`array`
+
+▶audio{}
+
+`object`
+
+reasoning_effort
+
+`string`Optional reasoning control; availability and accepted values are model-dependent.
+
+id
+
+`string`
+
+object
+
+`string`const: response
+
+created_at
+
+`number`
+
+model
+
+`string`
+
+▶output[]
+
+`array`
+
+output_text
+
+`string`
+
+status
+
+`string`enum: in_progress, completed, failed, incomplete
+
+▶usage{}
+
+`object`
+
+id
+
+`string`
+
+object
+
+`string`
+
+created
+
+`number`
+
+model
+
+`string`
+
+▶choices[]
+
+`array`
+
+▶usage{}
+
+`object`
+
+## API Schemas (Raw)
+
+Input[](https://developers.cloudflare.com/ai/models/openai/gpt-5-mini/schema-input.json "Open")[](https://developers.cloudflare.com/ai/models/openai/gpt-5-mini/schema-input.json "Download")
+
+Output[](https://developers.cloudflare.com/ai/models/openai/gpt-5-mini/schema-output.json "Open")[](https://developers.cloudflare.com/ai/models/openai/gpt-5-mini/schema-output.json "Download")
+
+Was this helpful?
+
+YesNo
+
+[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

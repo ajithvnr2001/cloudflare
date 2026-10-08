@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/using-go-as-a-scripting-language-in-linux/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/using-go-as-a-scripting-language-in-linux.md",
+  "title": "\ub9ac\ub205\uc2a4\uc5d0\uc11c Go\ub97c \uc2a4\ud06c\ub9bd\ud2b8 \uc5b8\uc5b4\ub85c \uc0ac\uc6a9\ud558\uae30 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:20.015783+00:00",
+  "html_len": 225221,
+  "md_len": 34792,
+  "depth": 0,
+  "phase": 2
+}

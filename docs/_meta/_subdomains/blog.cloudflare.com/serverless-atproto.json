@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/serverless-atproto/",
+  "file": "_subdomains/blog.cloudflare.com/serverless-atproto.md",
+  "title": "Serverless Statusphere: a walk through building serverless ATProto applications on Cloudflare\u2019s Developer Platform | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:48.917467+00:00",
+  "html_len": 314212,
+  "md_len": 73518,
+  "depth": 0,
+  "phase": 2
+}

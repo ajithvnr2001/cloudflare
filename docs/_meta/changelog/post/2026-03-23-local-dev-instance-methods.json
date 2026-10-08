@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/changelog/post/2026-03-23-local-dev-instance-methods/",
+  "file": "changelog/post/2026-03-23-local-dev-instance-methods.md",
+  "title": "Workflow instances now support pause(), resume(), restart(), and terminate() methods in local development \u00b7 Changelog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:06:42.322905+00:00",
+  "html_len": 62683,
+  "md_len": 1538,
+  "depth": 0
+}

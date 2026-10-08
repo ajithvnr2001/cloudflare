@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/increasing-ipv6-mtu/",
+  "file": "_subdomains/blog.cloudflare.com/increasing-ipv6-mtu.md",
+  "title": "Fixing an old hack - why we are bumping the IPv6 MTU | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:26.411954+00:00",
+  "html_len": 315575,
+  "md_len": 69879,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-uefa-euro-2020-final-as-seen-online-by-cloudflare-radar/",
+  "file": "_subdomains/blog.cloudflare.com/the-uefa-euro-2020-final-as-seen-online-by-cloudflare-radar.md",
+  "title": "The UEFA EURO 2020 final as seen online by Cloudflare Radar | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:01.836267+00:00",
+  "html_len": 277573,
+  "md_len": 56410,
+  "depth": 0,
+  "phase": 2
+}

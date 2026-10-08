@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/performing-preventing-ssl-stripping-a-plain-english-primer/",
+  "file": "_subdomains/blog.cloudflare.com/performing-preventing-ssl-stripping-a-plain-english-primer.md",
+  "title": "Performing & Preventing SSL Stripping: A Plain-English Primer | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:58.892256+00:00",
+  "html_len": 298197,
+  "md_len": 70520,
+  "depth": 0,
+  "phase": 2
+}

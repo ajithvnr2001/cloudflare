@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/thebaylights/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/thebaylights.md",
+  "title": "The Bay Lights",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:51.740611+00:00",
+  "html_len": 202407,
+  "md_len": 4950,
+  "depth": 0,
+  "phase": 2
+}

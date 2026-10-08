@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/increasing-cache-hit-rates-with-query-string-sort/",
+  "file": "_subdomains/blog.cloudflare.com/increasing-cache-hit-rates-with-query-string-sort.md",
+  "title": "Increasing Cache Hit Rates with Query String Sort | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:25:42.524345+00:00",
+  "html_len": 266419,
+  "md_len": 55519,
+  "depth": 1
+}

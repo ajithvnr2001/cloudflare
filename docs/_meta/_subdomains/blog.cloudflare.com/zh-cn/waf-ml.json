@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/waf-ml/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/waf-ml.md",
+  "title": "\u901a\u8fc7\u673a\u5668\u5b66\u4e60\u6539\u5584 WAF | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:45.359995+00:00",
+  "html_len": 198989,
+  "md_len": 24276,
+  "depth": 0,
+  "phase": 2
+}

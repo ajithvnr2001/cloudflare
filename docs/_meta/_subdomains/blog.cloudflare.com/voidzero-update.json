@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/voidzero-update/",
+  "file": "_subdomains/blog.cloudflare.com/voidzero-update.md",
+  "title": "Four months of VoidZero at Cloudflare: making the open-source JavaScript toolchain faster for all humans and agents | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:33.278452+00:00",
+  "html_len": 294578,
+  "md_len": 64441,
+  "depth": 0,
+  "phase": 2
+}

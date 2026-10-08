@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/custom-rules/use-cases/block-worker-subrequests/",
+  "file": "waf/custom-rules/use-cases/block-worker-subrequests.md",
+  "title": "Block Worker subrequests from other zones \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:38.654933+00:00",
+  "html_len": 135629,
+  "md_len": 2685,
+  "depth": 0
+}

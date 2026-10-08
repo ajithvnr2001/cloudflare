@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/sending-email-from-workers-with-mailchannels/",
+  "file": "_subdomains/blog.cloudflare.com/sending-email-from-workers-with-mailchannels.md",
+  "title": "Send email using Workers with MailChannels | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:23.223588+00:00",
+  "html_len": 289121,
+  "md_len": 59689,
+  "depth": 0,
+  "phase": 2
+}

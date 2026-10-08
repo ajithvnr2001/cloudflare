@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-pagerules-advanced-caching/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-pagerules-advanced-caching.md",
+  "title": "Introducing Page Rules: Advanced Caching (Including Configurable HTML Caching) | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:10.339741+00:00",
+  "html_len": 275324,
+  "md_len": 59640,
+  "depth": 0,
+  "phase": 2
+}

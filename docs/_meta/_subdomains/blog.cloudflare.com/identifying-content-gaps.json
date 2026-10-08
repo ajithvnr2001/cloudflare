@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/identifying-content-gaps/",
+  "file": "_subdomains/blog.cloudflare.com/identifying-content-gaps.md",
+  "title": "Identifying content gaps in our documentation | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:14.354874+00:00",
+  "html_len": 277189,
+  "md_len": 60678,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/a-tour-inside-cloudflares-latest-generation-servers/",
+  "file": "_subdomains/blog.cloudflare.com/a-tour-inside-cloudflares-latest-generation-servers.md",
+  "title": "A Tour Inside CloudFlare's Latest Generation Servers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:34.502731+00:00",
+  "html_len": 299648,
+  "md_len": 69208,
+  "depth": 0,
+  "phase": 2
+}

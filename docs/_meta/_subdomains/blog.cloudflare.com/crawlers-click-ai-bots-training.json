@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/crawlers-click-ai-bots-training/",
+  "file": "_subdomains/blog.cloudflare.com/crawlers-click-ai-bots-training.md",
+  "title": "The crawl-to-click gap: Cloudflare data on AI bots, training, and referrals | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:05.525764+00:00",
+  "html_len": 325366,
+  "md_len": 73793,
+  "depth": 0,
+  "phase": 2
+}

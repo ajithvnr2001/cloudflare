@@ -1,0 +1,76 @@
+---
+url: https://developers.cloudflare.com/dns/additional-options/dns-zone-defaults/
+title: Configure DNS zone defaults \u00b7 Cloudflare DNS docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:10:55.395402+00:00
+---
+
+# Configure DNS zone defaults · Cloudflare DNS docs
+
+> Source: https://developers.cloudflare.com/dns/additional-options/dns-zone-defaults/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[DNS](https://developers.cloudflare.com/dns/)
+  3. /Additional options
+  4. /Zone defaults
+
+
+
+# Configure DNS zone defaults
+
+Last updated Apr 16, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/dns/additional-options/dns-zone-defaults/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewStepsAvailable settings
+
+While there are default values for DNS settings that Cloudflare applies to all new zones, Enterprise accounts have the option to configure their own DNS zone defaults according to their preference.
+
+Caution
+
+DNS zone defaults are only applied at the moment a new zone is created and will not impact already existing zones, nor zones that existed previously and are being revived.
+
+Any of the values specified as default can later be adjusted within each zone, on the respective [**DNS Settings** ↗︎](https://dash.cloudflare.com/?to=/:account/:zone/dns/settings) or [**DNS Records** ↗︎](https://dash.cloudflare.com/?to=/:account/:zone/dns/records) page.
+
+## Steps
+
+  1. In the Cloudflare dashboard, go to the account **Settings** page.
+
+[ Go to **Configurations** ↗ ](https://dash.cloudflare.com/?to=/:account/configurations)
+  2. Go to **DNS Settings**. If these options are not displayed on your Cloudflare dashboard, you may need to reach out to your account team to have them added.
+
+  3. For **DNS zone defaults** , select **Configure defaults**.
+
+
+
+
+The values you select for the listed settings will be automatically applied to new zones as you add them to your Cloudflare account.
+
+## Available settings
+
+  * [Nameserver assignment](https://developers.cloudflare.com/dns/nameservers/nameserver-options/#assignment-method): Select your preferred nameserver type or assignment method that you want Cloudflare to use for your new zones. This setting applies both to primary zones ([full setup](https://developers.cloudflare.com/dns/zone-setups/full-setup/)) and [secondary zones](https://developers.cloudflare.com/dns/zone-setups/zone-transfers/cloudflare-as-secondary/).
+
+
+
+For primary zones:
+
+  * [Multi-provider DNS](https://developers.cloudflare.com/dns/nameservers/nameserver-options/#multi-provider-dns): Control whether or not Cloudflare will consider `NS` records you add on the zone apex and if zones that contain external nameservers listed in the registrar will be activated.
+  * [Nameserver TTL](https://developers.cloudflare.com/dns/nameservers/nameserver-options/#nameserver-ttl): Control how long, in seconds, your nameserver (`NS`) records are cached. The default time-to-live (TTL) is 24 hours. This setting applies both to Cloudflare nameservers and [custom nameservers](https://developers.cloudflare.com/dns/nameservers/custom-nameservers/).
+  * [SOA record](https://developers.cloudflare.com/dns/manage-dns-records/reference/dns-record-types/#soa): Adjust values for the start of authority (SOA) record that Cloudflare creates for your zone.
+
+
+
+For secondary zones:
+
+  * [Secondary DNS override](https://developers.cloudflare.com/dns/zone-setups/zone-transfers/cloudflare-as-secondary/proxy-traffic/): Enable the options to use Cloudflare [proxy](https://developers.cloudflare.com/dns/proxy-status/) and add `CNAME` records at your zone apex.
+
+Multi-provider DNS does not apply as a setting for secondary zones, as this is already a required behavior for this setup. `SOA` record and the `NS` record TTL are defined on your external DNS provider and only transferred into Cloudflare.
+
+
+
+
+[PreviousExample diagram](https://developers.cloudflare.com/dns/cname-flattening/cname-flattening-diagram/)[NextAnalytics and logs](https://developers.cloudflare.com/dns/additional-options/analytics/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/dns/additional-options/dns-zone-defaults.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

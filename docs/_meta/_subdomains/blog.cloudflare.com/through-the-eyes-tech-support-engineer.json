@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/through-the-eyes-tech-support-engineer/",
+  "file": "_subdomains/blog.cloudflare.com/through-the-eyes-tech-support-engineer.md",
+  "title": "Through the eyes of a Cloudflare Technical Support Engineer | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:37.612606+00:00",
+  "html_len": 277721,
+  "md_len": 59237,
+  "depth": 0,
+  "phase": 2
+}

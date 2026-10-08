@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/crawler-hints-supports-microsofts-indexnow-in-helping-users-find-new-content/",
+  "file": "_subdomains/blog.cloudflare.com/crawler-hints-supports-microsofts-indexnow-in-helping-users-find-new-content.md",
+  "title": "Crawler Hints supports Microsoft\u2019s IndexNow in helping users find new content | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:10.168482+00:00",
+  "html_len": 281343,
+  "md_len": 61801,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://radar.cloudflare.com/bots/directory/gptbot/",
+  "file": "_subdomains/radar.cloudflare.com/bots/directory/gptbot.md",
+  "title": "GPTBot Bot Information | Cloudflare Radar",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:28:02.645092+00:00",
+  "html_len": 195841,
+  "md_len": 1813,
+  "depth": 1
+}

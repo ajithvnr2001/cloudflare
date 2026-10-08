@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/private-rate-limiting/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/private-rate-limiting.md",
+  "title": "\uc775\uba85 \uc790\uaca9 \uc99d\uba85- \uac1c\uc778\uc815\ubcf4\ub97c \uce68\ud574\ud558\uc9c0 \uc54a\ub294 \ub808\uc774\ud2b8 \ub9ac\ubbf8\ud305 \ubd07 \ubc0f \uc5d0\uc774\uc804\ud2b8 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:53.340545+00:00",
+  "html_len": 299921,
+  "md_len": 57683,
+  "depth": 0,
+  "phase": 2
+}

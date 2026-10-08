@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/every-7-8us-your-computers-memory-has-a-hiccup/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/every-7-8us-your-computers-memory-has-a-hiccup.md",
+  "title": "Cada 7.8\u03bcs, a la memoria de su ordenador le entra hipo | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:11.071421+00:00",
+  "html_len": 231009,
+  "md_len": 34884,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-distributed-web-resolver/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-distributed-web-resolver.md",
+  "title": "A Name Resolver for the Distributed Web | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:40.669750+00:00",
+  "html_len": 293800,
+  "md_len": 66858,
+  "depth": 0,
+  "phase": 2
+}

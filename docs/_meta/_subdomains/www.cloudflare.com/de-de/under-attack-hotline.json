@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/de-de/under-attack-hotline/",
+  "file": "_subdomains/www.cloudflare.com/de-de/under-attack-hotline.md",
+  "title": "Hilfe bei Hackerangriffen | Cloudflare",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (109 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:17:47.678303+00:00",
+  "html_len": 572745,
+  "md_len": 18064,
+  "depth": 1,
+  "phase": 2
+}

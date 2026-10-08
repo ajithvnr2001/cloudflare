@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-a-customers-trust-in-cloudflare-led-to-a-big-win-against-bots/",
+  "file": "_subdomains/blog.cloudflare.com/how-a-customers-trust-in-cloudflare-led-to-a-big-win-against-bots.md",
+  "title": "How a Customer's Trust in Cloudflare Led to a Big Win against Bots | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:52.833807+00:00",
+  "html_len": 273142,
+  "md_len": 60032,
+  "depth": 0,
+  "phase": 2
+}

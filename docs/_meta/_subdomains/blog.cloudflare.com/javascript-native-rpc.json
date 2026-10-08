@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/javascript-native-rpc/",
+  "file": "_subdomains/blog.cloudflare.com/javascript-native-rpc.md",
+  "title": "We've added JavaScript-native RPC to Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:40.649543+00:00",
+  "html_len": 348197,
+  "md_len": 77631,
+  "depth": 0,
+  "phase": 2
+}

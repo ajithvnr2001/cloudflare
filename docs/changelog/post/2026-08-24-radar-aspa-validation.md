@@ -1,0 +1,63 @@
+---
+url: https://developers.cloudflare.com/changelog/post/2026-08-24-radar-aspa-validation/
+title: RPKI ASPA path validation on Cloudflare Radar \u00b7 Changelog
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:07:10.441717+00:00
+---
+
+# RPKI ASPA path validation on Cloudflare Radar · Changelog
+
+> Source: https://developers.cloudflare.com/changelog/post/2026-08-24-radar-aspa-validation/
+
+# Changelog
+
+New updates and improvements at Cloudflare.
+
+[ View RSS feeds ](https://developers.cloudflare.com/fundamentals/new-features/available-rss-feeds/)[ Subscribe to RSS ](https://developers.cloudflare.com/changelog/rss/index.xml)
+
+[Back to all posts](https://developers.cloudflare.com/changelog)August 24, 2026
+
+## RPKI ASPA path validation on Cloudflare Radar
+
+[Radar](https://developers.cloudflare.com/radar/)
+
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-08-24-radar-aspa-validation/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+[**Radar**](https://developers.cloudflare.com/radar/) adds an [ASPA validation tool ↗︎](https://radar.cloudflare.com/routing/aspa-validation) to its [Routing section ↗︎](https://radar.cloudflare.com/routing). Enter a BGP `AS_PATH` and the tool checks it against the [Autonomous System Provider Authorization (ASPA) ↗︎](https://blog.cloudflare.com/aspa-secure-internet/) records currently published in the RPKI, returning a verdict of `Valid`, `Invalid`, or `Unknown`. An `Invalid` verdict means no chain of provider authorizations covers the whole path, which is the signature of a route leak.
+
+Validation follows [draft-ietf-sidrops-aspa-verification ↗︎](https://datatracker.ietf.org/doc/draft-ietf-sidrops-aspa-verification/), so verdicts match those produced by validators implementing the same draft. The draft is still a work in progress and not yet an RFC.
+
+#### Enter a path
+
+Paths are read in BGP wire order: the rightmost AS is the origin, and the leftmost AS is the one closest to the collector or router that observed the route. AS numbers can be separated by spaces, commas, or hyphens, with or without an `AS` prefix. The full ASPA snapshot is loaded into the browser once, so the verdict, graph, and trace update as the path is edited, with no further requests. A set of example paths covers the interesting cases, including a route leak with an AS0 ASPA, where an AS declares that it has no providers at all.
+
+#### Choose an algorithm
+
+The draft defines two verification algorithms that differ only in whether a down-ramp is permitted:
+
+  * **Upstream** ([section 5.4 ↗︎](https://datatracker.ietf.org/doc/html/draft-ietf-sidrops-aspa-verification#section-5.4)) — for routes received from a customer, peer, route server client, or route server. Only an up-ramp is permitted.
+  * **Downstream** ([section 5.5 ↗︎](https://datatracker.ietf.org/doc/html/draft-ietf-sidrops-aspa-verification#section-5.5)) — for routes received from a provider. Both an up-ramp and a down-ramp are permitted.
+
+
+
+An **up-ramp** is the run of consecutive customer-to-provider hops from the origin to the apex of the path, and a **down-ramp** is the equivalent run from the announcing neighbor back to that apex. The tool evaluates both algorithms at once and labels each with its verdict, so a path that is legitimate when received from one session type and a leak when received from another is visible without switching modes. Selecting an algorithm drives the graph and the trace.
+
+#### Read the result
+
+The **ASPA validation graph** draws the path hop by hop, labeling each AS with its role, whether it publishes an ASPA, and how many providers that ASPA authorizes. Every hop is marked `Provider+`, `Not Provider+`, or `No attestation`, and the maximum and minimum bounds of each ramp are drawn against the length of the path. Hops that no ramp reaches are highlighted, because a path the ramps cannot cover end to end is `Invalid`. The accompanying **ASPA records** table lists every AS in the path with its ASPA status and its authorized providers, each linked to its Radar AS page.
+
+![ASPA validation graph for the path 1003 6939 1299 553, showing a Valid verdict under the downstream algorithm, the Provider+, Not Provider+, and No attestation outcome on each hop, and the up-ramp and down-ramp bounds that together cover the path](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1600,height=1222,format=webp/_astro/aspa-validation-graph.DQUq8KCm.png)
+
+#### Follow the algorithm
+
+The **Algorithm step by step** section shows the derivation rather than just the answer. Two columns run the same scans under different stopping rules: the upper bounds, which test for `Invalid` and stop only on `Not Provider+`, and the lower bounds, which test for `Unknown` and also stop on `No Attestation`. A hop is `Not Provider+` when the AS publishes an ASPA that does not list the next AS as a provider, and `No Attestation` when the AS publishes no ASPA at all. Each column lists the outcome for every hop scanned, marks where the scan stopped, gives the resulting ramp length, and then evaluates the verdict rule with the numbers filled in.
+
+![Step-by-step trace for the same path, with the upper-bound and lower-bound columns each listing the up-ramp and down-ramp scans, the ramp lengths they produce, and the verdict rule that neither Invalid nor Unknown satisfies, leaving a Valid verdict](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1392,height=586,format=webp/_astro/aspa-validation-algorithm-trace.Bb8SM4wT.png)
+
+#### Share a validation
+
+The path and the selected algorithm are kept in the URL, so a link reproduces a result exactly — for example, this [route leak with an AS0 ASPA ↗︎](https://radar.cloudflare.com/routing/aspa-validation?path=22652-1299-9498-149765-14789). Appending `&mode=upstream` pins the link to the upstream algorithm. The graph is a standard Radar widget, so it can also be embedded or shared as an image.
+
+The records behind the tool are the same ones served by the [`/bgp/rpki/aspa/snapshot`](https://developers.cloudflare.com/api/resources/radar/subresources/bgp/subresources/rpki/subresources/aspa/methods/snapshot/) endpoint of the [`ASPA`](https://developers.cloudflare.com/api/resources/radar/subresources/bgp/subresources/rpki/subresources/aspa/) API, and the number of records loaded and the snapshot timestamp are shown alongside the input.
+
+Try the [ASPA validation tool ↗︎](https://radar.cloudflare.com/routing/aspa-validation) with a path of your own.

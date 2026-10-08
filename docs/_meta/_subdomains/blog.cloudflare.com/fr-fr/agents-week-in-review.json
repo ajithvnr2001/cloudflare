@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/agents-week-in-review/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/agents-week-in-review.md",
+  "title": "B\u00e2tir le cloud agentique\u00a0: toutes les solutions que nous avons lanc\u00e9es \u00e0 l'occasion de l'Agents\u00a0Week\u00a02026 | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:58.562793+00:00",
+  "html_len": 260074,
+  "md_len": 47357,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/rust-workers-emscripten-target/",
+  "file": "_subdomains/blog.cloudflare.com/rust-workers-emscripten-target.md",
+  "title": "Supporting native Rust in Workers with the new Emscripten target for wasm-bindgen | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:32.442580+00:00",
+  "html_len": 311156,
+  "md_len": 75205,
+  "depth": 0,
+  "phase": 2
+}

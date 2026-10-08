@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/testing/vitest-integration/migration-guides/migrate-from-miniflare-2/",
+  "file": "workers/testing/vitest-integration/migration-guides/migrate-from-miniflare-2.md",
+  "title": "Migrate from Miniflare 2's test environments \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:58.515790+00:00",
+  "html_len": 207098,
+  "md_len": 10472,
+  "depth": 0
+}

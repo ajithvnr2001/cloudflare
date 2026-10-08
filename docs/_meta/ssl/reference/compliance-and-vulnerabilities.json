@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/ssl/reference/compliance-and-vulnerabilities/",
+  "file": "ssl/reference/compliance-and-vulnerabilities.md",
+  "title": "PCI DSS compliance \u00b7 Cloudflare SSL/TLS docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:15:45.414341+00:00",
+  "html_len": 179420,
+  "md_len": 14909,
+  "depth": 0
+}

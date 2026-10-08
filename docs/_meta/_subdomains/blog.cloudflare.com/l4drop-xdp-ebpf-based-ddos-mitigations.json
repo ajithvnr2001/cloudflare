@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/l4drop-xdp-ebpf-based-ddos-mitigations/",
+  "file": "_subdomains/blog.cloudflare.com/l4drop-xdp-ebpf-based-ddos-mitigations.md",
+  "title": "L4Drop: XDP DDoS Mitigations | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:07.766022+00:00",
+  "html_len": 305094,
+  "md_len": 66921,
+  "depth": 0,
+  "phase": 2
+}

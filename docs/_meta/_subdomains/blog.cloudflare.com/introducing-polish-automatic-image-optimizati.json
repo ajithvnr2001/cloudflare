@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-polish-automatic-image-optimizati/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-polish-automatic-image-optimizati.md",
+  "title": "Introducing Polish: Automatic Image Optimization | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:57.900093+00:00",
+  "html_len": 275744,
+  "md_len": 58248,
+  "depth": 0,
+  "phase": 2
+}

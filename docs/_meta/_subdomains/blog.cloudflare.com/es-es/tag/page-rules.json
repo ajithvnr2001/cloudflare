@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/tag/page-rules/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/tag/page-rules.md",
+  "title": "Entradas etiquetadas con \"Page Rules (ES)\" \u2014 Blog de Cloudflare",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (765 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:15:07.578305+00:00",
+  "html_len": 118900,
+  "md_len": 3400,
+  "depth": 1,
+  "phase": 2
+}

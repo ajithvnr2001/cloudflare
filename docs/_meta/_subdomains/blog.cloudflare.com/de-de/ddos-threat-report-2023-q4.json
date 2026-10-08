@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/ddos-threat-report-2023-q4/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/ddos-threat-report-2023-q4.md",
+  "title": "Bericht zur DDoS-Bedrohungslandschaft im vierten Quartal 2023 | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:39:40.171960+00:00",
+  "html_len": 301586,
+  "md_len": 66011,
+  "depth": 0,
+  "phase": 2
+}

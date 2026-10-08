@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/cloudflare-os/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/cloudflare-os.md",
+  "title": "Cloudflare OS : une plateforme ouverte pour les agents, les applications et le travail | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:54.070765+00:00",
+  "html_len": 259883,
+  "md_len": 50209,
+  "depth": 0,
+  "phase": 2
+}

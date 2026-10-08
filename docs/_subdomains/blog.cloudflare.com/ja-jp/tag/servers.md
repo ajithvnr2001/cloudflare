@@ -1,0 +1,24 @@
+---
+url: https://blog.cloudflare.com/ja-jp/tag/servers/
+title: \"\u30b5\u30fc\u30d0\u30fc\" \u30bf\u30b0\u306e\u6295\u7a3f \u2014 Cloudflare \u30d6\u30ed\u30b0
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T08:18:58.764475+00:00
+---
+
+# "サーバー" タグの投稿 — Cloudflare ブログ
+
+> Source: https://blog.cloudflare.com/ja-jp/tag/servers/
+
+TAG
+
+# サーバー
+
+[サーバー RSSフィードを購読する](https://blog.cloudflare.com/ja-jp/tag/servers/rss)
+
+2025年9月8日## [Cloudflare WorkersにNode.js HTTPサーバーを導入](https://blog.cloudflare.com/ja-jp/bringing-node-js-http-servers-to-cloudflare-workers/)
+
+node:httpクライアントとサーバーのAPIをCloudflare Workersに実装したことで、開発者は最小限のコード変更で既存のNode.jsアプリケーションを移行できるようになりました。
+
+![Yagiz Nizipli](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW49902QMPTX5QJQNJN0SVZ9.jpg&w=64&h=64&f=webp&fit=cover&position=center)![James M Snell](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW47K5PBRD0MV43BH5TR121F.jpg&w=64&h=64&f=webp&fit=cover&position=center)
+
+[Yagiz Nizipli](https://blog.cloudflare.com/ja-jp/author/yagiz-nizipli/)、[James M Snell](https://blog.cloudflare.com/ja-jp/author/jasnell/)

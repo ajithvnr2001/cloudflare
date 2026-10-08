@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/third-times-the-cache-no-more/",
+  "file": "_subdomains/blog.cloudflare.com/third-times-the-cache-no-more.md",
+  "title": "Third Time\u2019s the Cache, No More | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:34.174430+00:00",
+  "html_len": 286874,
+  "md_len": 62178,
+  "depth": 0,
+  "phase": 2
+}

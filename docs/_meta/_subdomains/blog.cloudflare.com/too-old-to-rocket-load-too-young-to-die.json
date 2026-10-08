@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/too-old-to-rocket-load-too-young-to-die/",
+  "file": "_subdomains/blog.cloudflare.com/too-old-to-rocket-load-too-young-to-die.md",
+  "title": "Too Old To Rocket Load, Too Young To Die | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:28.476884+00:00",
+  "html_len": 350328,
+  "md_len": 79429,
+  "depth": 0,
+  "phase": 2
+}

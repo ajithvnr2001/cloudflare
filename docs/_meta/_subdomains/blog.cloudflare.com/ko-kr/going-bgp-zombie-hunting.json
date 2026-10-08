@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/going-bgp-zombie-hunting/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/going-bgp-zombie-hunting.md",
+  "title": "BGP \uc880\ube44\uc640 \uacfc\ub3c4\ud55c \uacbd\ub85c \uc0ac\ub0e5 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:51.009133+00:00",
+  "html_len": 237169,
+  "md_len": 39182,
+  "depth": 0,
+  "phase": 2
+}

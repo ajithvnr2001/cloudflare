@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/new-firewall-tab-and-analytics/",
+  "file": "_subdomains/blog.cloudflare.com/new-firewall-tab-and-analytics.md",
+  "title": "New Firewall Tab and Analytics | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:54.522415+00:00",
+  "html_len": 292495,
+  "md_len": 61178,
+  "depth": 0,
+  "phase": 2
+}

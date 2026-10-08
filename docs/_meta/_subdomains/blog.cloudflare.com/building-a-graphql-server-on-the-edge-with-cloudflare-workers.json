@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/building-a-graphql-server-on-the-edge-with-cloudflare-workers/",
+  "file": "_subdomains/blog.cloudflare.com/building-a-graphql-server-on-the-edge-with-cloudflare-workers.md",
+  "title": "Building a GraphQL server on the edge with Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:37.940468+00:00",
+  "html_len": 277863,
+  "md_len": 57142,
+  "depth": 0,
+  "phase": 2
+}

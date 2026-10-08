@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/bgp-hijack-detection/",
+  "file": "_subdomains/blog.cloudflare.com/bgp-hijack-detection.md",
+  "title": "Cloudflare Radar's new BGP origin hijack detection system | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:16.385155+00:00",
+  "html_len": 329176,
+  "md_len": 80551,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/dns-build-improvement/",
+  "file": "_subdomains/blog.cloudflare.com/dns-build-improvement.md",
+  "title": "How we improved DNS record build speed by more than 4,000x | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:16.165676+00:00",
+  "html_len": 297633,
+  "md_len": 68196,
+  "depth": 0,
+  "phase": 2
+}

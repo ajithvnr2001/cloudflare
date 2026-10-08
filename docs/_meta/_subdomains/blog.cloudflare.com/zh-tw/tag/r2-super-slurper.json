@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/tag/r2-super-slurper/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/tag/r2-super-slurper.md",
+  "title": "\u6a19\u7c64\u70ba\u300cR2 Super Slurper\u300d\u7684\u6587\u7ae0 \u2014 Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:09:58.414179+00:00",
+  "html_len": 102534,
+  "md_len": 1312,
+  "depth": 1,
+  "phase": 2
+}

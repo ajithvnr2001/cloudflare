@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/q1-2023-internet-disruption-summary/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/q1-2023-internet-disruption-summary.md",
+  "title": "Vue d'ensemble des perturbations d'Internet au premier trimestre 2023 | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:40:02.057806+00:00",
+  "html_len": 352703,
+  "md_len": 70911,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/dns/zone-setups/zone-transfers/cloudflare-as-primary/setup/",
+  "file": "dns/zone-setups/zone-transfers/cloudflare-as-primary/setup.md",
+  "title": "Set up outgoing zone transfers (Cloudflare as Primary) \u00b7 Cloudflare DNS docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:11:04.732162+00:00",
+  "html_len": 164760,
+  "md_len": 8963,
+  "depth": 0
+}

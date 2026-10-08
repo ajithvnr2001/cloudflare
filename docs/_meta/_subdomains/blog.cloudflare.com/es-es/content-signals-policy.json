@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/content-signals-policy/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/content-signals-policy.md",
+  "title": "La nueva pol\u00edtica de se\u00f1ales de contenido de Cloudflare ofrece opciones a los usuarios | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:47.392720+00:00",
+  "html_len": 229305,
+  "md_len": 34817,
+  "depth": 0,
+  "phase": 2
+}

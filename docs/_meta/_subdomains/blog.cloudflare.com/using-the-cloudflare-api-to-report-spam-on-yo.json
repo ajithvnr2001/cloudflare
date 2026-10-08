@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/using-the-cloudflare-api-to-report-spam-on-yo/",
+  "file": "_subdomains/blog.cloudflare.com/using-the-cloudflare-api-to-report-spam-on-yo.md",
+  "title": "Using the CloudFlare API to report spam on your site back to CloudFlare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:25.560922+00:00",
+  "html_len": 266828,
+  "md_len": 56153,
+  "depth": 0,
+  "phase": 2
+}

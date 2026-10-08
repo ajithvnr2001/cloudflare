@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/melbourne-airport/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/melbourne-airport.md",
+  "title": "Melbourne Airport & Cloudflare | Case Study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:39.008818+00:00",
+  "html_len": 206149,
+  "md_len": 7742,
+  "depth": 0,
+  "phase": 2
+}

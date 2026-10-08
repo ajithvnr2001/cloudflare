@@ -1,0 +1,1100 @@
+---
+url: https://blog.cloudflare.com/mcp-security-updates/
+title: How Cloudflare detects MCP traffic and helps secure it | Cloudflare Blog
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:34:49.538599+00:00
+---
+
+# How Cloudflare detects MCP traffic and helps secure it | Cloudflare Blog
+
+> Source: https://blog.cloudflare.com/mcp-security-updates/
+
+[Blog](https://blog.cloudflare.com/)
+
+[AI](https://blog.cloudflare.com/tag/ai/)[Cloudflare One](https://blog.cloudflare.com/tag/cloudflare-one/)[MCP](https://blog.cloudflare.com/tag/mcp/)+3Show 3 more tags
+
+6 TagsShow 6 tags
+
+  * Post Tags
+  * [AI](https://blog.cloudflare.com/tag/ai/)[Cloudflare One](https://blog.cloudflare.com/tag/cloudflare-one/)[MCP](https://blog.cloudflare.com/tag/mcp/)[Product News](https://blog.cloudflare.com/tag/product-news/)[SASE](https://blog.cloudflare.com/tag/sase/)[Zero Trust](https://blog.cloudflare.com/tag/zero-trust/)
+  * All tags
+  * Matching tags
+  * No tags found
+  * [1.1.1.1](https://blog.cloudflare.com/tag/1-1-1-1/)
+  * [2FA](https://blog.cloudflare.com/tag/2fa/)
+  * [Abuse](https://blog.cloudflare.com/tag/abuse/)
+  * [Access](https://blog.cloudflare.com/tag/access/)
+  * [Access Control Lists (ACLs)](https://blog.cloudflare.com/tag/access-control-lists-acls/)
+  * [Accessibility](https://blog.cloudflare.com/tag/accessibility/)
+  * [Account Takeover](https://blog.cloudflare.com/tag/account-takeover/)
+  * [Acquisitions](https://blog.cloudflare.com/tag/acquisitions/)
+  * [Addressing](https://blog.cloudflare.com/tag/addressing/)
+  * [Advanced Certificate Manager](https://blog.cloudflare.com/tag/advanced-certificate-manager/)
+  * [Advanced DDoS](https://blog.cloudflare.com/tag/advanced-ddos/)
+  * [Advertising](https://blog.cloudflare.com/tag/advertising/)
+  * [Aegis](https://blog.cloudflare.com/tag/aegis/)
+  * [AEO](https://blog.cloudflare.com/tag/aeo/)
+  * [Africa](https://blog.cloudflare.com/tag/africa/)
+  * [Afroflare](https://blog.cloudflare.com/tag/afroflare/)
+  * [Agent Cloud](https://blog.cloudflare.com/tag/agent-cloud/)
+  * [Agent Development Lifecycle](https://blog.cloudflare.com/tag/agent-development-lifecycle/)
+  * [Agent Readiness](https://blog.cloudflare.com/tag/agent-readiness/)
+  * [Agents](https://blog.cloudflare.com/tag/agents/)
+  * [Agents Week](https://blog.cloudflare.com/tag/agents-week/)
+  * [Agents Week 2026](https://blog.cloudflare.com/tag/agents-week-2026/)
+  * [AI](https://blog.cloudflare.com/tag/ai/)
+  * [AI Bots](https://blog.cloudflare.com/tag/ai-bots/)
+  * [AI Gateway](https://blog.cloudflare.com/tag/ai-gateway/)
+  * [AI Search](https://blog.cloudflare.com/tag/ai-search/)
+  * [AI WAF](https://blog.cloudflare.com/tag/ai-waf/)
+  * [AI Week](https://blog.cloudflare.com/tag/ai-week/)
+  * [AI-SPM](https://blog.cloudflare.com/tag/ai-spm/)
+  * [Alertmanager](https://blog.cloudflare.com/tag/alertmanager/)
+  * [Always Online](https://blog.cloudflare.com/tag/always-online/)
+  * [AMD](https://blog.cloudflare.com/tag/amd/)
+  * [AMP](https://blog.cloudflare.com/tag/amp-tag/)
+  * [Analytics](https://blog.cloudflare.com/tag/analytics/)
+  * [Anonymous](https://blog.cloudflare.com/tag/anonymous/)
+  * [Anti Malware](https://blog.cloudflare.com/tag/anti-malware/)
+  * [Anycast](https://blog.cloudflare.com/tag/anycast/)
+  * [API](https://blog.cloudflare.com/tag/api/)
+  * [API Gateway](https://blog.cloudflare.com/tag/api-gateway/)
+  * [API Security](https://blog.cloudflare.com/tag/api-security/)
+  * [API Shield](https://blog.cloudflare.com/tag/api-shield/)
+  * [APJC](https://blog.cloudflare.com/tag/apjc/)
+  * [Apple](https://blog.cloudflare.com/tag/apple/)
+  * [Application Security](https://blog.cloudflare.com/tag/application-security/)
+  * [Application Services](https://blog.cloudflare.com/tag/application-services/)
+  * [Area 1 Security](https://blog.cloudflare.com/tag/area-1-security/)
+  * [Argo Smart Routing](https://blog.cloudflare.com/tag/argo/)
+  * [ASCII](https://blog.cloudflare.com/tag/ascii/)
+  * [Asia](https://blog.cloudflare.com/tag/asia/)
+  * [Athenian Project](https://blog.cloudflare.com/tag/athenian-project/)
+  * [Atlassian](https://blog.cloudflare.com/tag/atlassian/)
+  * [Attacks](https://blog.cloudflare.com/tag/attacks/)
+  * [Audit Logs](https://blog.cloudflare.com/tag/audit-logs/)
+  * [Austin](https://blog.cloudflare.com/tag/austin/)
+  * [Australia](https://blog.cloudflare.com/tag/australia/)
+  * [Authentication](https://blog.cloudflare.com/tag/authentication/)
+  * [Authy](https://blog.cloudflare.com/tag/authy/)
+  * [Auto Rag](https://blog.cloudflare.com/tag/auto-rag/)
+  * [Automatic HTTPS](https://blog.cloudflare.com/tag/automatic-https/)
+  * [Automatic Platform Optimization](https://blog.cloudflare.com/tag/automatic-platform-optimization/)
+  * [Automation](https://blog.cloudflare.com/tag/automation/)
+  * [AutoMinify](https://blog.cloudflare.com/tag/autominify/)
+  * [Awards](https://blog.cloudflare.com/tag/awards/)
+  * [AWS](https://blog.cloudflare.com/tag/aws/)
+  * [Baidu](https://blog.cloudflare.com/tag/baidu/)
+  * [Bandwidth Alliance](https://blog.cloudflare.com/tag/bandwidth-alliance/)
+  * [Bandwidth Costs](https://blog.cloudflare.com/tag/bandwidth-costs/)
+  * [Best Practices](https://blog.cloudflare.com/tag/best-practices/)
+  * [Beta](https://blog.cloudflare.com/tag/beta/)
+  * [Better Internet](https://blog.cloudflare.com/tag/better-internet/)
+  * [BGP](https://blog.cloudflare.com/tag/bgp/)
+  * [Billing](https://blog.cloudflare.com/tag/billing/)
+  * [Birthday Week](https://blog.cloudflare.com/tag/birthday-week/)
+  * [Black Friday](https://blog.cloudflare.com/tag/black-friday/)
+  * [Blackbird](https://blog.cloudflare.com/tag/blackbird/)
+  * [Bot Fight Mode](https://blog.cloudflare.com/tag/bot-fight-mode/)
+  * [Bot Management](https://blog.cloudflare.com/tag/bot-management/)
+  * [Botnet](https://blog.cloudflare.com/tag/botnet/)
+  * [Bots](https://blog.cloudflare.com/tag/bots/)
+  * [BPF](https://blog.cloudflare.com/tag/bpf/)
+  * [Brand](https://blog.cloudflare.com/tag/brand/)
+  * [Brand Protection](https://blog.cloudflare.com/tag/brand-protection/)
+  * [Brazil](https://blog.cloudflare.com/tag/brazil/)
+  * [Browser Insights](https://blog.cloudflare.com/tag/browser-insights/)
+  * [Browser Rendering](https://blog.cloudflare.com/tag/browser-rendering/)
+  * [Browser Run](https://blog.cloudflare.com/tag/browser-run/)
+  * [Bug Bounty](https://blog.cloudflare.com/tag/bug-bounty/)
+  * [Bugs](https://blog.cloudflare.com/tag/bugs/)
+  * [BYOIP](https://blog.cloudflare.com/tag/byoip/)
+  * [Cache](https://blog.cloudflare.com/tag/cache/)
+  * [Cache Purge](https://blog.cloudflare.com/tag/cache-purge/)
+  * [Cache Reserve](https://blog.cloudflare.com/tag/cache-reserve/)
+  * [Cache Rules](https://blog.cloudflare.com/tag/cache-rules/)
+  * [California](https://blog.cloudflare.com/tag/california/)
+  * [Canada](https://blog.cloudflare.com/tag/canada/)
+  * [Cap'n Proto](https://blog.cloudflare.com/tag/capn-proto/)
+  * [CAPTCHA](https://blog.cloudflare.com/tag/captcha/)
+  * [Careers](https://blog.cloudflare.com/tag/careers/)
+  * [CASB](https://blog.cloudflare.com/tag/casb/)
+  * [Categories](https://blog.cloudflare.com/tag/categories/)
+  * [CDN](https://blog.cloudflare.com/tag/cdn/)
+  * [CDNJS](https://blog.cloudflare.com/tag/cdnjs/)
+  * [Certificate Authority](https://blog.cloudflare.com/tag/certificate-authority/)
+  * [Certificate Pinning](https://blog.cloudflare.com/tag/certificate-pinning/)
+  * [Certificate Transparency](https://blog.cloudflare.com/tag/certificate-transparency/)
+  * [Certification](https://blog.cloudflare.com/tag/certification/)
+  * [CFSSL](https://blog.cloudflare.com/tag/cfssl/)
+  * [Challenge Page](https://blog.cloudflare.com/tag/challenge-page/)
+  * [ChatGPT](https://blog.cloudflare.com/tag/chatgpt/)
+  * [China](https://blog.cloudflare.com/tag/china/)
+  * [China Network](https://blog.cloudflare.com/tag/china-network/)
+  * [Christmas](https://blog.cloudflare.com/tag/christmas/)
+  * [Chrome](https://blog.cloudflare.com/tag/chrome/)
+  * [CIO Week](https://blog.cloudflare.com/tag/cio-week/)
+  * [CISA](https://blog.cloudflare.com/tag/cisa/)
+  * [Claire](https://blog.cloudflare.com/tag/claire/)
+  * [CLI](https://blog.cloudflare.com/tag/cli/)
+  * [ClickHouse](https://blog.cloudflare.com/tag/clickhouse/)
+  * [Clientless](https://blog.cloudflare.com/tag/clientless/)
+  * [Clientless Web Isolation](https://blog.cloudflare.com/tag/clientless-web-isolation/)
+  * [Cloud Connector](https://blog.cloudflare.com/tag/cloud-connector/)
+  * [Cloud Email Security](https://blog.cloudflare.com/tag/cloud-email-security/)
+  * [Cloudflare Access](https://blog.cloudflare.com/tag/cloudflare-access/)
+  * [Cloudflare Apps](https://blog.cloudflare.com/tag/cloudflare-apps/)
+  * [Cloudflare Area 1](https://blog.cloudflare.com/tag/cloudflare-area-1/)
+  * [Cloudflare Calls](https://blog.cloudflare.com/tag/cloudflare-calls/)
+  * [Cloudflare Email Service](https://blog.cloudflare.com/tag/cloudflare-email-services/)
+  * [Cloudflare for Campaigns](https://blog.cloudflare.com/tag/cloudflare-for-campaigns/)
+  * [Cloudflare for SaaS](https://blog.cloudflare.com/tag/cloudflare-for-saas/)
+  * [Cloudflare for Startups](https://blog.cloudflare.com/tag/cloudflare-for-startups/)
+  * [Cloudflare Gateway](https://blog.cloudflare.com/tag/gateway/)
+  * [Cloudflare History](https://blog.cloudflare.com/tag/cloudflare-history/)
+  * [Cloudflare Images](https://blog.cloudflare.com/tag/cloudflare-images/)
+  * [Cloudflare Media Platform](https://blog.cloudflare.com/tag/cloudflare-media-platform/)
+  * [Cloudflare Meetups](https://blog.cloudflare.com/tag/cloudflare-meetups/)
+  * [Cloudflare Network](https://blog.cloudflare.com/tag/cloudflare-network/)
+  * [Cloudflare One](https://blog.cloudflare.com/tag/cloudflare-one/)
+  * [Cloudflare One Client](https://blog.cloudflare.com/tag/cloudflare-one-client/)
+  * [Cloudflare One User Risk Score](https://blog.cloudflare.com/tag/cloudflare-one-user-risk-score/)
+  * [Cloudflare One Week](https://blog.cloudflare.com/tag/cloudflare-one-week/)
+  * [Cloudflare OS](https://blog.cloudflare.com/tag/cloudflare-os/)
+  * [Cloudflare Pages](https://blog.cloudflare.com/tag/cloudflare-pages/)
+  * [Cloudflare Polish](https://blog.cloudflare.com/tag/cloudflare-polish/)
+  * [Cloudflare Queues](https://blog.cloudflare.com/tag/cloudflare-queues/)
+  * [Cloudflare Realtime](https://blog.cloudflare.com/tag/cloudflare-realtime/)
+  * [Cloudflare Stream](https://blog.cloudflare.com/tag/cloudflare-stream/)
+  * [Cloudflare Tunnel](https://blog.cloudflare.com/tag/cloudflare-tunnel/)
+  * [Cloudflare TV](https://blog.cloudflare.com/tag/cloudflare-tv/)
+  * [Cloudflare Workers](https://blog.cloudflare.com/tag/workers/)
+  * [Cloudflare Workers (PT)](https://blog.cloudflare.com/tag/cloudflare-workers-pt/)
+  * [Cloudflare Workers KV](https://blog.cloudflare.com/tag/cloudflare-workers-kv/)
+  * [Cloudflare Workers KV (ES)](https://blog.cloudflare.com/tag/cloudflare-workers-kv-es/)
+  * [Cloudflare Zero Trust](https://blog.cloudflare.com/tag/cloudflare-zero-trust/)
+  * [Cloudforce One](https://blog.cloudflare.com/tag/cloudforce-one/)
+  * [Cloudy](https://blog.cloudflare.com/tag/cloudy/)
+  * [Code Orange](https://blog.cloudflare.com/tag/code-orange/)
+  * [Coinbase](https://blog.cloudflare.com/tag/coinbase/)
+  * [Colombia](https://blog.cloudflare.com/tag/colombia/)
+  * [Community](https://blog.cloudflare.com/tag/community/)
+  * [Compliance](https://blog.cloudflare.com/tag/compliance/)
+  * [Compression](https://blog.cloudflare.com/tag/compression/)
+  * [Config Rules](https://blog.cloudflare.com/tag/config-rules/)
+  * [Configuration Management](https://blog.cloudflare.com/tag/configuration-management/)
+  * [Congestion Control](https://blog.cloudflare.com/tag/congestion-control/)
+  * [Connectivity](https://blog.cloudflare.com/tag/connectivity/)
+  * [Connectivity Cloud](https://blog.cloudflare.com/tag/connectivity-cloud/)
+  * [Consumer Services](https://blog.cloudflare.com/tag/consumer-services/)
+  * [Containers](https://blog.cloudflare.com/tag/containers/)
+  * [Content Independence Day](https://blog.cloudflare.com/tag/content-independence-day/)
+  * [Content Scanning](https://blog.cloudflare.com/tag/content-scanning/)
+  * [Context](https://blog.cloudflare.com/tag/context/)
+  * [Core](https://blog.cloudflare.com/tag/core/)
+  * [COVID-19](https://blog.cloudflare.com/tag/covid-19/)
+  * [Crawler Hints](https://blog.cloudflare.com/tag/crawler-hints/)
+  * [CrowdStrike](https://blog.cloudflare.com/tag/crowdstrike/)
+  * [Crypto Week](https://blog.cloudflare.com/tag/crypto-week/)
+  * [Cryptography](https://blog.cloudflare.com/tag/cryptography/)
+  * [CSAM Reporting](https://blog.cloudflare.com/tag/csam-reporting/)
+  * [Customer Success](https://blog.cloudflare.com/tag/customer-success/)
+  * [Customer Zero](https://blog.cloudflare.com/tag/customer-zero/)
+  * [Customers](https://blog.cloudflare.com/tag/customers/)
+  * [CVE](https://blog.cloudflare.com/tag/cve/)
+  * [CVE-2023-50387](https://blog.cloudflare.com/tag/cve-2023-50387/)
+  * [Cyber Readiness](https://blog.cloudflare.com/tag/cyber-readiness/)
+  * [Cybersecurity](https://blog.cloudflare.com/tag/cybersecurity/)
+  * [D1](https://blog.cloudflare.com/tag/d1/)
+  * [Dashboard](https://blog.cloudflare.com/tag/dashboard-tag/)
+  * [Data](https://blog.cloudflare.com/tag/data/)
+  * [Data Catalog](https://blog.cloudflare.com/tag/data-catalog/)
+  * [Data Center](https://blog.cloudflare.com/tag/data-center/)
+  * [Data Localization](https://blog.cloudflare.com/tag/data-localization/)
+  * [Data Localization Suite](https://blog.cloudflare.com/tag/data-localization-suite/)
+  * [Data Loss](https://blog.cloudflare.com/tag/data-loss/)
+  * [Data Loss Prevention](https://blog.cloudflare.com/tag/data-loss-prevention/)
+  * [Data Platform](https://blog.cloudflare.com/tag/data-platform/)
+  * [Data Privacy Day](https://blog.cloudflare.com/tag/data-privacy-day/)
+  * [Data Protection](https://blog.cloudflare.com/tag/data-protection/)
+  * [Data Sovereignty](https://blog.cloudflare.com/tag/data-sovereignty/)
+  * [Data Transfer Bucket](https://blog.cloudflare.com/tag/data-transfer-bucket/)
+  * [Database](https://blog.cloudflare.com/tag/database/)
+  * [DDoS](https://blog.cloudflare.com/tag/ddos/)
+  * [DDoS Alerts](https://blog.cloudflare.com/tag/ddos-alerts/)
+  * [DDoS Reports](https://blog.cloudflare.com/tag/ddos-reports/)
+  * [Debugging](https://blog.cloudflare.com/tag/debugging/)
+  * [Deep Dive](https://blog.cloudflare.com/tag/deep-dive/)
+  * [Descaler](https://blog.cloudflare.com/tag/descaler/)
+  * [Design](https://blog.cloudflare.com/tag/design/)
+  * [Deskope](https://blog.cloudflare.com/tag/deskope/)
+  * [Developer Documentation](https://blog.cloudflare.com/tag/developer-documentation/)
+  * [Developer Platform](https://blog.cloudflare.com/tag/developer-platform/)
+  * [Developer Spotlight](https://blog.cloudflare.com/tag/developer-spotlight/)
+  * [Developer Week](https://blog.cloudflare.com/tag/developer-week/)
+  * [Developers](https://blog.cloudflare.com/tag/developers/)
+  * [Developers Storage](https://blog.cloudflare.com/tag/developers-storage/)
+  * [Device Security](https://blog.cloudflare.com/tag/device-security/)
+  * [DevOps](https://blog.cloudflare.com/tag/devops/)
+  * [DEX](https://blog.cloudflare.com/tag/dex/)
+  * [Digital Experience Monitoring](https://blog.cloudflare.com/tag/digital-experience-monitoring/)
+  * [Digital Forensics](https://blog.cloudflare.com/tag/digital-forensics/)
+  * [Disrupt](https://blog.cloudflare.com/tag/disrupt/)
+  * [Distributed](https://blog.cloudflare.com/tag/distributed/)
+  * [Distributed Systems](https://blog.cloudflare.com/tag/distributed-systems/)
+  * [Distributed Web](https://blog.cloudflare.com/tag/distributed-web/)
+  * [Diversity](https://blog.cloudflare.com/tag/diversity/)
+  * [DLP](https://blog.cloudflare.com/tag/dlp/)
+  * [DMARC](https://blog.cloudflare.com/tag/dmarc/)
+  * [DNS](https://blog.cloudflare.com/tag/dns/)
+  * [DNS Filtering](https://blog.cloudflare.com/tag/dns-filtering/)
+  * [DNS Flood](https://blog.cloudflare.com/tag/dns-flood/)
+  * [DNS Security](https://blog.cloudflare.com/tag/dns-security/)
+  * [DNSSEC](https://blog.cloudflare.com/tag/dnssec/)
+  * [Dogfooding](https://blog.cloudflare.com/tag/dogfooding/)
+  * [DoH](https://blog.cloudflare.com/tag/doh/)
+  * [Domain Rankings](https://blog.cloudflare.com/tag/domain-rankings/)
+  * [Domain Scoped Roles](https://blog.cloudflare.com/tag/domain-scoped-roles/)
+  * [dosd](https://blog.cloudflare.com/tag/dosd/)
+  * [Drupal](https://blog.cloudflare.com/tag/drupal/)
+  * [Due Process](https://blog.cloudflare.com/tag/due-process/)
+  * [Durable Execution](https://blog.cloudflare.com/tag/durable-execution/)
+  * [Durable Objects](https://blog.cloudflare.com/tag/durable-objects/)
+  * [Early Hints](https://blog.cloudflare.com/tag/early-hints/)
+  * [Earth Day](https://blog.cloudflare.com/tag/earth-day/)
+  * [eBPF](https://blog.cloudflare.com/tag/ebpf/)
+  * [EC2](https://blog.cloudflare.com/tag/ec2/)
+  * [eCommerce](https://blog.cloudflare.com/tag/ecommerce/)
+  * [Edge](https://blog.cloudflare.com/tag/edge/)
+  * [Edge Computing](https://blog.cloudflare.com/tag/edge-computing/)
+  * [Edge Database](https://blog.cloudflare.com/tag/edge-database/)
+  * [Edge Rules](https://blog.cloudflare.com/tag/edge-rules/)
+  * [Education](https://blog.cloudflare.com/tag/education/)
+  * [Egress](https://blog.cloudflare.com/tag/egress/)
+  * [Elastic](https://blog.cloudflare.com/tag/elastic/)
+  * [Election Security](https://blog.cloudflare.com/tag/election-security/)
+  * [Elections](https://blog.cloudflare.com/tag/elections/)
+  * [Elliptic Curves](https://blog.cloudflare.com/tag/elliptic-curves/)
+  * [Email](https://blog.cloudflare.com/tag/email/)
+  * [Email Routing](https://blog.cloudflare.com/tag/email-routing/)
+  * [Email Security](https://blog.cloudflare.com/tag/email-security/)
+  * [Email Workers](https://blog.cloudflare.com/tag/email-workers/)
+  * [EmDash](https://blog.cloudflare.com/tag/emdash/)
+  * [Emissions](https://blog.cloudflare.com/tag/emissions/)
+  * [Employee Resource Groups](https://blog.cloudflare.com/tag/employee-resource-groups/)
+  * [Encrypted SNI](https://blog.cloudflare.com/tag/encrypted-sni/)
+  * [Encryption](https://blog.cloudflare.com/tag/encryption/)
+  * [Engineering](https://blog.cloudflare.com/tag/engineering/)
+  * [Enterprise](https://blog.cloudflare.com/tag/enterprise/)
+  * [Entropy](https://blog.cloudflare.com/tag/entropy/)
+  * [EPYC](https://blog.cloudflare.com/tag/epyc/)
+  * [Ethereum](https://blog.cloudflare.com/tag/ethereum/)
+  * [Europe](https://blog.cloudflare.com/tag/europe/)
+  * [European Union](https://blog.cloudflare.com/tag/european-union/)
+  * [Events](https://blog.cloudflare.com/tag/events/)
+  * [Exploit](https://blog.cloudflare.com/tag/exploit/)
+  * [Facebook](https://blog.cloudflare.com/tag/facebook/)
+  * [Fancy Bear](https://blog.cloudflare.com/tag/fancy-bear/)
+  * [Fast Fonts](https://blog.cloudflare.com/tag/fast-fonts/)
+  * [FCC](https://blog.cloudflare.com/tag/fcc/)
+  * [Feature Flags](https://blog.cloudflare.com/tag/feature-flags/)
+  * [FedRAMP](https://blog.cloudflare.com/tag/fedramp/)
+  * [FedRAMP High](https://blog.cloudflare.com/tag/fedramp-high/)
+  * [FedRAMP Moderate](https://blog.cloudflare.com/tag/fedramp-moderate/)
+  * [Firefox](https://blog.cloudflare.com/tag/firefox/)
+  * [Firewall](https://blog.cloudflare.com/tag/firewall/)
+  * [Firmware](https://blog.cloudflare.com/tag/firmware/)
+  * [Florida](https://blog.cloudflare.com/tag/florida/)
+  * [Football](https://blog.cloudflare.com/tag/football/)
+  * [Formal Methods](https://blog.cloudflare.com/tag/formal-methods/)
+  * [Forrester](https://blog.cloudflare.com/tag/forrester/)
+  * [Fortran](https://blog.cloudflare.com/tag/fortran/)
+  * [Foundation DNS](https://blog.cloudflare.com/tag/foundation-dns/)
+  * [Founders' Letter](https://blog.cloudflare.com/tag/founders-letter/)
+  * [France](https://blog.cloudflare.com/tag/france/)
+  * [Fraud](https://blog.cloudflare.com/tag/fraud/)
+  * [Free](https://blog.cloudflare.com/tag/free/)
+  * [Freedom of Speech](https://blog.cloudflare.com/tag/freedom-of-speech/)
+  * [Front End](https://blog.cloudflare.com/tag/front-end/)
+  * [Full Stack](https://blog.cloudflare.com/tag/full-stack/)
+  * [Full Stack Week](https://blog.cloudflare.com/tag/full-stack-week/)
+  * [Fun](https://blog.cloudflare.com/tag/fun/)
+  * [GA Week](https://blog.cloudflare.com/tag/ga-week/)
+  * [Gartner](https://blog.cloudflare.com/tag/gartner/)
+  * [Gatebot](https://blog.cloudflare.com/tag/gatebot/)
+  * [GDPR](https://blog.cloudflare.com/tag/gdpr/)
+  * [Gen X](https://blog.cloudflare.com/tag/gen-x/)
+  * [General Availability](https://blog.cloudflare.com/tag/general-availability/)
+  * [Generative AI](https://blog.cloudflare.com/tag/generative-ai/)
+  * [Geo Key Manager](https://blog.cloudflare.com/tag/geo-key-manager/)
+  * [Germany](https://blog.cloudflare.com/tag/germany/)
+  * [GitHub](https://blog.cloudflare.com/tag/github/)
+  * [Go](https://blog.cloudflare.com/tag/go/)
+  * [Google](https://blog.cloudflare.com/tag/google/)
+  * [Google Analytics](https://blog.cloudflare.com/tag/google-analytics/)
+  * [Google Cloud](https://blog.cloudflare.com/tag/google-cloud/)
+  * [Google Workspace](https://blog.cloudflare.com/tag/google-workspace/)
+  * [Government Innovation](https://blog.cloudflare.com/tag/government-innovation/)
+  * [Grace Hopper](https://blog.cloudflare.com/tag/grace-hopper/)
+  * [Grafana](https://blog.cloudflare.com/tag/grafana/)
+  * [GraphQL](https://blog.cloudflare.com/tag/graphql/)
+  * [Green](https://blog.cloudflare.com/tag/green/)
+  * [Grinch](https://blog.cloudflare.com/tag/grinch/)
+  * [Growth](https://blog.cloudflare.com/tag/growth/)
+  * [gRPC](https://blog.cloudflare.com/tag/grpc/)
+  * [Guest Post](https://blog.cloudflare.com/tag/guest-post/)
+  * [Hackathon](https://blog.cloudflare.com/tag/hackathon/)
+  * [Halloween](https://blog.cloudflare.com/tag/halloween/)
+  * [Hardware](https://blog.cloudflare.com/tag/hardware/)
+  * [HashiCorp](https://blog.cloudflare.com/tag/hashicorp/)
+  * [Hertzbleed](https://blog.cloudflare.com/tag/hertzbleed/)
+  * [Heuristics](https://blog.cloudflare.com/tag/heuristics/)
+  * [History](https://blog.cloudflare.com/tag/history/)
+  * [Holidays](https://blog.cloudflare.com/tag/holidays/)
+  * [Holocaust](https://blog.cloudflare.com/tag/holocaust/)
+  * [Hong Kong](https://blog.cloudflare.com/tag/hongkong/)
+  * [Hosting Con](https://blog.cloudflare.com/tag/hostingcon/)
+  * [Hostnames](https://blog.cloudflare.com/tag/hostnames/)
+  * [HTTP2](https://blog.cloudflare.com/tag/http2/)
+  * [HTTP3](https://blog.cloudflare.com/tag/http3/)
+  * [HTTPS](https://blog.cloudflare.com/tag/https/)
+  * [Human Rights](https://blog.cloudflare.com/tag/human-rights/)
+  * [Hurricane](https://blog.cloudflare.com/tag/hurricane/)
+  * [Hybrid Cloud](https://blog.cloudflare.com/tag/hybrid-cloud/)
+  * [Hyperdrive](https://blog.cloudflare.com/tag/hyperdrive/)
+  * [I'm Under Attack Mode](https://blog.cloudflare.com/tag/iuam/)
+  * [IBM](https://blog.cloudflare.com/tag/ibm/)
+  * [ICANN](https://blog.cloudflare.com/tag/icann/)
+  * [iCloud Private Relay](https://blog.cloudflare.com/tag/icloud-private-relay/)
+  * [Identity](https://blog.cloudflare.com/tag/identity/)
+  * [IETF](https://blog.cloudflare.com/tag/ietf/)
+  * [IETF Standards](https://blog.cloudflare.com/tag/ietf-standards/)
+  * [IL4](https://blog.cloudflare.com/tag/il4/)
+  * [Image Optimization](https://blog.cloudflare.com/tag/image-optimization/)
+  * [Image Recognition](https://blog.cloudflare.com/tag/image-recognition/)
+  * [Image Resizing](https://blog.cloudflare.com/tag/image-resizing/)
+  * [Image Storage](https://blog.cloudflare.com/tag/image-storage/)
+  * [Impact](https://blog.cloudflare.com/tag/impact/)
+  * [Impact Week](https://blog.cloudflare.com/tag/impact-week/)
+  * [Incident Report](https://blog.cloudflare.com/tag/incident-report/)
+  * [Incident Response](https://blog.cloudflare.com/tag/incident-response/)
+  * [India](https://blog.cloudflare.com/tag/india/)
+  * [Indicators of Compromise](https://blog.cloudflare.com/tag/indicators-of-compromise/)
+  * [Indonesian](https://blog.cloudflare.com/tag/indonesian-id/)
+  * [Inference](https://blog.cloudflare.com/tag/inference/)
+  * [Infrastructure](https://blog.cloudflare.com/tag/infrastructure/)
+  * [Infrastructure as Code](https://blog.cloudflare.com/tag/infrastructure-as-code/)
+  * [Insights](https://blog.cloudflare.com/tag/insights/)
+  * [Intel](https://blog.cloudflare.com/tag/intel/)
+  * [Interconnection](https://blog.cloudflare.com/tag/interconnection/)
+  * [Internal DNS](https://blog.cloudflare.com/tag/internal-dns/)
+  * [Internet Performance](https://blog.cloudflare.com/tag/internet-performance/)
+  * [Internet Quality](https://blog.cloudflare.com/tag/internet-quality/)
+  * [Internet Regulation](https://blog.cloudflare.com/tag/internet-regulation/)
+  * [Internet Shutdown](https://blog.cloudflare.com/tag/internet-shutdown/)
+  * [Internet Summit](https://blog.cloudflare.com/tag/internet-summit/)
+  * [Internet Traffic](https://blog.cloudflare.com/tag/internet-traffic/)
+  * [Internet Trends](https://blog.cloudflare.com/tag/internet-trends/)
+  * [Internship Experience](https://blog.cloudflare.com/tag/internship-experience/)
+  * [Intrusion Detection](https://blog.cloudflare.com/tag/intrusion-detection/)
+  * [Investors](https://blog.cloudflare.com/tag/investors/)
+  * [IoCs](https://blog.cloudflare.com/tag/iocs/)
+  * [iOS](https://blog.cloudflare.com/tag/ios/)
+  * [IoT](https://blog.cloudflare.com/tag/iot/)
+  * [IPFS](https://blog.cloudflare.com/tag/ipfs/)
+  * [IPsec](https://blog.cloudflare.com/tag/ipsec/)
+  * [IPv4](https://blog.cloudflare.com/tag/ipv4/)
+  * [IPv6](https://blog.cloudflare.com/tag/ipv6/)
+  * [IRAP](https://blog.cloudflare.com/tag/irap/)
+  * [Israel](https://blog.cloudflare.com/tag/israel/)
+  * [Italy](https://blog.cloudflare.com/tag/italy/)
+  * [IWD](https://blog.cloudflare.com/tag/iwd/)
+  * [JAMstack](https://blog.cloudflare.com/tag/jamstack/)
+  * [Japan](https://blog.cloudflare.com/tag/japan/)
+  * [JavaScript](https://blog.cloudflare.com/tag/javascript/)
+  * [Jengo](https://blog.cloudflare.com/tag/jengo/)
+  * [Jengo Policy](https://blog.cloudflare.com/tag/jengo-policy/)
+  * [Joomla](https://blog.cloudflare.com/tag/joomla/)
+  * [Judeoflare](https://blog.cloudflare.com/tag/judeoflare/)
+  * [Kafka](https://blog.cloudflare.com/tag/kafka/)
+  * [Kernel](https://blog.cloudflare.com/tag/kernel/)
+  * [Key Value](https://blog.cloudflare.com/tag/key-value/)
+  * [Keyless SSL](https://blog.cloudflare.com/tag/keyless-ssl/)
+  * [KeyTrap](https://blog.cloudflare.com/tag/keytrap/)
+  * [Killnet](https://blog.cloudflare.com/tag/killnet/)
+  * [Korea](https://blog.cloudflare.com/tag/korea/)
+  * [Kubernetes](https://blog.cloudflare.com/tag/kubernetes/)
+  * [LangChain](https://blog.cloudflare.com/tag/langchain/)
+  * [Latency](https://blog.cloudflare.com/tag/latency/)
+  * [Latin America](https://blog.cloudflare.com/tag/latin-america/)
+  * [Latinflare](https://blog.cloudflare.com/tag/latinflare/)
+  * [LavaRand](https://blog.cloudflare.com/tag/lavarand/)
+  * [Lazarus group](https://blog.cloudflare.com/tag/lazarus-group/)
+  * [Leaked Credential Checks](https://blog.cloudflare.com/tag/leaked-credential-checks/)
+  * [Legal](https://blog.cloudflare.com/tag/legal/)
+  * [Legal Patents Sable](https://blog.cloudflare.com/tag/legal-patents-sable/)
+  * [LGBTQIA+](https://blog.cloudflare.com/tag/lgbtqia/)
+  * [Life at Cloudflare](https://blog.cloudflare.com/tag/life-at-cloudflare/)
+  * [Linux](https://blog.cloudflare.com/tag/linux/)
+  * [Lisbon](https://blog.cloudflare.com/tag/lisbon/)
+  * [Live Streaming](https://blog.cloudflare.com/tag/live-streaming/)
+  * [Llama](https://blog.cloudflare.com/tag/llama/)
+  * [LLM](https://blog.cloudflare.com/tag/llm/)
+  * [Load Balancing](https://blog.cloudflare.com/tag/loadbalancing/)
+  * [Localization](https://blog.cloudflare.com/tag/localization/)
+  * [Log Push](https://blog.cloudflare.com/tag/log-push/)
+  * [Log4J](https://blog.cloudflare.com/tag/log4j/)
+  * [Log4Shell](https://blog.cloudflare.com/tag/log4shell/)
+  * [Logging](https://blog.cloudflare.com/tag/logging/)
+  * [Logs](https://blog.cloudflare.com/tag/logs/)
+  * [LUA](https://blog.cloudflare.com/tag/lua/)
+  * [Machine Learning](https://blog.cloudflare.com/tag/machine-learning/)
+  * [Magecart](https://blog.cloudflare.com/tag/magecart/)
+  * [Magic Firewall](https://blog.cloudflare.com/tag/magic-firewall/)
+  * [Magic Network Monitoring](https://blog.cloudflare.com/tag/magic-network-monitoring/)
+  * [Magic Transit](https://blog.cloudflare.com/tag/magic-transit/)
+  * [Magic WAN](https://blog.cloudflare.com/tag/magic-wan/)
+  * [Magic WAN Connector](https://blog.cloudflare.com/tag/magic-wan-connector/)
+  * [Malicious JavaScript](https://blog.cloudflare.com/tag/malicious-javascript/)
+  * [Malware](https://blog.cloudflare.com/tag/malware/)
+  * [Managed Components](https://blog.cloudflare.com/tag/managed-components/)
+  * [Managed Rules](https://blog.cloudflare.com/tag/managed-rules/)
+  * [March of Cloudflare](https://blog.cloudflare.com/tag/march-of-cloudflare/)
+  * [MASQUE](https://blog.cloudflare.com/tag/masque/)
+  * [MCP](https://blog.cloudflare.com/tag/mcp/)
+  * [Meerkat](https://blog.cloudflare.com/tag/meerkat/)
+  * [MeetUp](https://blog.cloudflare.com/tag/meetup/)
+  * [Meris](https://blog.cloudflare.com/tag/meris/)
+  * [Message Protocol](https://blog.cloudflare.com/tag/message-protocol/)
+  * [Mexico](https://blog.cloudflare.com/tag/mexico/)
+  * [Micro-frontends](https://blog.cloudflare.com/tag/micro-frontends/)
+  * [Microsoft](https://blog.cloudflare.com/tag/microsoft/)
+  * [Microsoft 365](https://blog.cloudflare.com/tag/microsoft-365/)
+  * [Microsoft Azure](https://blog.cloudflare.com/tag/microsoft-azure/)
+  * [Middle East](https://blog.cloudflare.com/tag/middle-east/)
+  * [Migration Hub](https://blog.cloudflare.com/tag/migration-hub/)
+  * [Milestones](https://blog.cloudflare.com/tag/milestone/)
+  * [Miniflare](https://blog.cloudflare.com/tag/miniflare/)
+  * [Mirage](https://blog.cloudflare.com/tag/mirage/)
+  * [Mirai](https://blog.cloudflare.com/tag/mirai/)
+  * [Mitel](https://blog.cloudflare.com/tag/mitel/)
+  * [Mitigation](https://blog.cloudflare.com/tag/mitigation/)
+  * [Mixed Content Errors](https://blog.cloudflare.com/tag/mixed-content-errors/)
+  * [MLops](https://blog.cloudflare.com/tag/mlops/)
+  * [Mobile](https://blog.cloudflare.com/tag/mobile/)
+  * [Mobile SDK](https://blog.cloudflare.com/tag/mobile-sdk/)
+  * [Model Context Protocol](https://blog.cloudflare.com/tag/model-context-protocol/)
+  * [Moldova](https://blog.cloudflare.com/tag/moldova/)
+  * [Monitoring](https://blog.cloudflare.com/tag/monitoring/)
+  * [Multi-Cloud](https://blog.cloudflare.com/tag/multi-cloud/)
+  * [Multi-User](https://blog.cloudflare.com/tag/multi-user/)
+  * [MySQL](https://blog.cloudflare.com/tag/mysql/)
+  * [NaaS](https://blog.cloudflare.com/tag/naas/)
+  * [Net Neutrality](https://blog.cloudflare.com/tag/net-neutrality/)
+  * [Network](https://blog.cloudflare.com/tag/network/)
+  * [Network Interconnect](https://blog.cloudflare.com/tag/network-interconnect/)
+  * [Network Performance Update](https://blog.cloudflare.com/tag/network-performance-update/)
+  * [Network Protection](https://blog.cloudflare.com/tag/network-protection/)
+  * [Network Services](https://blog.cloudflare.com/tag/network-services/)
+  * [Networking](https://blog.cloudflare.com/tag/networking/)
+  * [New Year](https://blog.cloudflare.com/tag/new-year/)
+  * [NGINX](https://blog.cloudflare.com/tag/nginx/)
+  * [Ninjas](https://blog.cloudflare.com/tag/ninjas/)
+  * [NIST](https://blog.cloudflare.com/tag/nist/)
+  * [Node.js](https://blog.cloudflare.com/tag/node-js/)
+  * [North America](https://blog.cloudflare.com/tag/north-america/)
+  * [Notebooks](https://blog.cloudflare.com/tag/notebooks/)
+  * [Notifications](https://blog.cloudflare.com/tag/notifications/)
+  * [NSEC3](https://blog.cloudflare.com/tag/nsec3/)
+  * [OAuth](https://blog.cloudflare.com/tag/oauth/)
+  * [Observability](https://blog.cloudflare.com/tag/observability/)
+  * [Oceania](https://blog.cloudflare.com/tag/oceania/)
+  * [OCSP](https://blog.cloudflare.com/tag/ocsp/)
+  * [Offices](https://blog.cloudflare.com/tag/offices/)
+  * [Okta](https://blog.cloudflare.com/tag/okta/)
+  * [Olympics](https://blog.cloudflare.com/tag/olympics/)
+  * [Onboarding](https://blog.cloudflare.com/tag/onboarding/)
+  * [Open API](https://blog.cloudflare.com/tag/open-api/)
+  * [Open Source](https://blog.cloudflare.com/tag/open-source/)
+  * [OpenAI](https://blog.cloudflare.com/tag/openai/)
+  * [OpenBMC](https://blog.cloudflare.com/tag/open-bmc/)
+  * [OpenDNS](https://blog.cloudflare.com/tag/opendns/)
+  * [OpenSSL](https://blog.cloudflare.com/tag/openssl/)
+  * [OpenTelemetry ](https://blog.cloudflare.com/tag/opentelemetry/)
+  * [Optimization](https://blog.cloudflare.com/tag/optimization/)
+  * [Origin Rules](https://blog.cloudflare.com/tag/origin-rules/)
+  * [Outage](https://blog.cloudflare.com/tag/outage/)
+  * [Oxy](https://blog.cloudflare.com/tag/oxy/)
+  * [Pacific Northwest](https://blog.cloudflare.com/tag/pacific-northwest/)
+  * [Page Rules](https://blog.cloudflare.com/tag/page-rules/)
+  * [Page Shield](https://blog.cloudflare.com/tag/page-shield/)
+  * [Parallels](https://blog.cloudflare.com/tag/parallels/)
+  * [Partners](https://blog.cloudflare.com/tag/partners/)
+  * [Partnership](https://blog.cloudflare.com/tag/partnerships/)
+  * [Password-reuse](https://blog.cloudflare.com/tag/password-reuse/)
+  * [Passwords](https://blog.cloudflare.com/tag/passwords/)
+  * [Passwords (PT)](https://blog.cloudflare.com/tag/passwords-pt/)
+  * [Patents](https://blog.cloudflare.com/tag/patents/)
+  * [Pay Per Crawl](https://blog.cloudflare.com/tag/pay-per-crawl/)
+  * [PAYGO](https://blog.cloudflare.com/tag/paygo/)
+  * [Payments](https://blog.cloudflare.com/tag/payments/)
+  * [PCI Certified](https://blog.cloudflare.com/tag/pci-certified/)
+  * [Peering](https://blog.cloudflare.com/tag/peering/)
+  * [Performance](https://blog.cloudflare.com/tag/performance/)
+  * [Performance Optimization](https://blog.cloudflare.com/tag/performance-optimization/)
+  * [Phishing](https://blog.cloudflare.com/tag/phishing/)
+  * [php](https://blog.cloudflare.com/tag/php/)
+  * [Phython](https://blog.cloudflare.com/tag/phython/)
+  * [Pingora](https://blog.cloudflare.com/tag/pingora/)
+  * [Pipelines](https://blog.cloudflare.com/tag/pipelines/)
+  * [PlanetScale](https://blog.cloudflare.com/tag/planetscale/)
+  * [Plans](https://blog.cloudflare.com/tag/plans/)
+  * [Platform Engineering](https://blog.cloudflare.com/tag/platform-engineering/)
+  * [Platform Week](https://blog.cloudflare.com/tag/platform-week/)
+  * [Plesk](https://blog.cloudflare.com/tag/plesk/)
+  * [Policy & Legal](https://blog.cloudflare.com/tag/policy/)
+  * [Politics](https://blog.cloudflare.com/tag/politics/)
+  * [Portugal](https://blog.cloudflare.com/tag/portugal/)
+  * [Post Mortem](https://blog.cloudflare.com/tag/post-mortem/)
+  * [Post-Quantum](https://blog.cloudflare.com/tag/post-quantum/)
+  * [Postgres](https://blog.cloudflare.com/tag/postgres/)
+  * [Precursor](https://blog.cloudflare.com/tag/precursor/)
+  * [Prepared Statements](https://blog.cloudflare.com/tag/prepared-statements/)
+  * [Prisma](https://blog.cloudflare.com/tag/prisma/)
+  * [Privacy](https://blog.cloudflare.com/tag/privacy/)
+  * [Privacy Pass](https://blog.cloudflare.com/tag/privacy-pass/)
+  * [Privacy Week](https://blog.cloudflare.com/tag/privacy-week/)
+  * [Private IP](https://blog.cloudflare.com/tag/private-ip/)
+  * [Private Network](https://blog.cloudflare.com/tag/private-network/)
+  * [Product Design](https://blog.cloudflare.com/tag/product-design/)
+  * [Product News](https://blog.cloudflare.com/tag/product-news/)
+  * [Programming](https://blog.cloudflare.com/tag/programming/)
+  * [Programming (PT)](https://blog.cloudflare.com/tag/programming-pt/)
+  * [Project Fair Shot](https://blog.cloudflare.com/tag/project-fair-shot/)
+  * [Project Galileo](https://blog.cloudflare.com/tag/project-galileo/)
+  * [Project Honey Pot](https://blog.cloudflare.com/tag/project-honey-pot/)
+  * [Project Pangea](https://blog.cloudflare.com/tag/project-pangea/)
+  * [Project Safekeeping](https://blog.cloudflare.com/tag/project-safekeeping/)
+  * [Project Turpentine](https://blog.cloudflare.com/tag/project-turpentine/)
+  * [Prometheus](https://blog.cloudflare.com/tag/prometheus/)
+  * [Protocols](https://blog.cloudflare.com/tag/protocols/)
+  * [Proudflare](https://blog.cloudflare.com/tag/proudflare/)
+  * [Proxying](https://blog.cloudflare.com/tag/proxying/)
+  * [Public Sector](https://blog.cloudflare.com/tag/public-sector/)
+  * [Python](https://blog.cloudflare.com/tag/python/)
+  * [Python Workers](https://blog.cloudflare.com/tag/python-workers/)
+  * [Quantization](https://blog.cloudflare.com/tag/quantization/)
+  * [Queues](https://blog.cloudflare.com/tag/queues/)
+  * [QUIC](https://blog.cloudflare.com/tag/quic/)
+  * [QUICHE](https://blog.cloudflare.com/tag/quiche/)
+  * [Quicksilver](https://blog.cloudflare.com/tag/quicksilver/)
+  * [R2](https://blog.cloudflare.com/tag/r2/)
+  * [R2 Super Slurper](https://blog.cloudflare.com/tag/r2-super-slurper/)
+  * [Radar](https://blog.cloudflare.com/tag/cloudflare-radar/)
+  * [Radar Alerts](https://blog.cloudflare.com/tag/radar-alerts/)
+  * [Radar API](https://blog.cloudflare.com/tag/radar-api/)
+  * [Radar Maps](https://blog.cloudflare.com/tag/radar-maps/)
+  * [Railgun](https://blog.cloudflare.com/tag/railgun/)
+  * [Randomness](https://blog.cloudflare.com/tag/randomness/)
+  * [Ransom Attacks](https://blog.cloudflare.com/tag/ransom-attacks/)
+  * [Rapid Reset](https://blog.cloudflare.com/tag/rapid-reset/)
+  * [Raspberry Pi](https://blog.cloudflare.com/tag/raspberry-pi/)
+  * [Rate Limiting](https://blog.cloudflare.com/tag/rate-limiting/)
+  * [RC4](https://blog.cloudflare.com/tag/rc4/)
+  * [RDDoS](https://blog.cloudflare.com/tag/rddos/)
+  * [React](https://blog.cloudflare.com/tag/react/)
+  * [Reading List](https://blog.cloudflare.com/tag/reading-list/)
+  * [Real-time](https://blog.cloudflare.com/tag/real-time/)
+  * [Recruiting](https://blog.cloudflare.com/tag/recruiting/)
+  * [Regional Services](https://blog.cloudflare.com/tag/regional-services/)
+  * [Registrar](https://blog.cloudflare.com/tag/registrar/)
+  * [Reliability](https://blog.cloudflare.com/tag/reliability/)
+  * [Remote Browser Isolation](https://blog.cloudflare.com/tag/remote-browser-isolation/)
+  * [Remote Desktop Protocol ](https://blog.cloudflare.com/tag/remote-desktop-protocol/)
+  * [Remote Work](https://blog.cloudflare.com/tag/remote-work/)
+  * [Replication](https://blog.cloudflare.com/tag/replication/)
+  * [Research](https://blog.cloudflare.com/tag/research/)
+  * [Resolver](https://blog.cloudflare.com/tag/resolver/)
+  * [Restreaming](https://blog.cloudflare.com/tag/restreaming/)
+  * [Retreat](https://blog.cloudflare.com/tag/retreat/)
+  * [Reverse Engineering](https://blog.cloudflare.com/tag/reverse-engineering/)
+  * [REvil](https://blog.cloudflare.com/tag/revil/)
+  * [Risk Management](https://blog.cloudflare.com/tag/risk-management/)
+  * [Road to Zero Trust](https://blog.cloudflare.com/tag/road-to-zero-trust/)
+  * [Rocket Loader](https://blog.cloudflare.com/tag/rocketloader/)
+  * [RocksDB](https://blog.cloudflare.com/tag/rocksdb/)
+  * [Routing](https://blog.cloudflare.com/tag/routing/)
+  * [Routing Security](https://blog.cloudflare.com/tag/routing-security/)
+  * [RPC](https://blog.cloudflare.com/tag/rpc/)
+  * [RPKI](https://blog.cloudflare.com/tag/rpki/)
+  * [RRDNS](https://blog.cloudflare.com/tag/rrdns/)
+  * [RSA](https://blog.cloudflare.com/tag/rsa/)
+  * [Russia](https://blog.cloudflare.com/tag/russia/)
+  * [Rust](https://blog.cloudflare.com/tag/rust/)
+  * [Rust Workers](https://blog.cloudflare.com/tag/rust-workers/)
+  * [SaaS](https://blog.cloudflare.com/tag/saas/)
+  * [SAAS Security](https://blog.cloudflare.com/tag/saas-security/)
+  * [Sable](https://blog.cloudflare.com/tag/sable/)
+  * [Salt](https://blog.cloudflare.com/tag/salt/)
+  * [Sampling](https://blog.cloudflare.com/tag/sampling/)
+  * [Sandbox](https://blog.cloudflare.com/tag/sandbox/)
+  * [SASE](https://blog.cloudflare.com/tag/sase/)
+  * [Save The Web](https://blog.cloudflare.com/tag/savetheweb/)
+  * [SDK](https://blog.cloudflare.com/tag/sdk/)
+  * [Search Engine](https://blog.cloudflare.com/tag/search-engine/)
+  * [Secrets Store](https://blog.cloudflare.com/tag/secrets-store/)
+  * [Secure Web Gateway](https://blog.cloudflare.com/tag/secure-web-gateway/)
+  * [Security](https://blog.cloudflare.com/tag/security/)
+  * [Security Analytics](https://blog.cloudflare.com/tag/security-analytics/)
+  * [Security Center](https://blog.cloudflare.com/tag/security-center/)
+  * [Security Posture](https://blog.cloudflare.com/tag/security-posture/)
+  * [Security Posture Management](https://blog.cloudflare.com/tag/security-posture-management/)
+  * [Security Service Edge](https://blog.cloudflare.com/tag/security-service-edge/)
+  * [Security Week](https://blog.cloudflare.com/tag/security-week/)
+  * [security.txt](https://blog.cloudflare.com/tag/security-txt/)
+  * [SEO](https://blog.cloudflare.com/tag/seo/)
+  * [Server Push](https://blog.cloudflare.com/tag/server-push/)
+  * [Serverless](https://blog.cloudflare.com/tag/serverless/)
+  * [Serverless (PT)](https://blog.cloudflare.com/tag/serverless-pt/)
+  * [Serverless AI](https://blog.cloudflare.com/tag/serverless-ai/)
+  * [Serverless Week](https://blog.cloudflare.com/tag/serverless-week/)
+  * [Servers](https://blog.cloudflare.com/tag/servers/)
+  * [SIEM](https://blog.cloudflare.com/tag/siem/)
+  * [Signed Exchanges (SXG)](https://blog.cloudflare.com/tag/signed-exchanges/)
+  * [SIM](https://blog.cloudflare.com/tag/sim/)
+  * [Singapore](https://blog.cloudflare.com/tag/singapore/)
+  * [Single Sign On (SSO)](https://blog.cloudflare.com/tag/sso/)
+  * [Smart Placement](https://blog.cloudflare.com/tag/smart-placement/)
+  * [Smart Shield](https://blog.cloudflare.com/tag/smart-shield/)
+  * [Snippets](https://blog.cloudflare.com/tag/snippets/)
+  * [SOC as a Service](https://blog.cloudflare.com/tag/soc-as-a-service/)
+  * [South Africa](https://blog.cloudflare.com/tag/south-africa/)
+  * [South America](https://blog.cloudflare.com/tag/south-america/)
+  * [Spain](https://blog.cloudflare.com/tag/spain/)
+  * [spdy](https://blog.cloudflare.com/tag/spdy/)
+  * [Spectrum](https://blog.cloudflare.com/tag/spectrum/)
+  * [Speed](https://blog.cloudflare.com/tag/speed/)
+  * [Speed & Reliability](https://blog.cloudflare.com/tag/speed-and-reliability/)
+  * [Speed Brain](https://blog.cloudflare.com/tag/speed-brain/)
+  * [Speed Week](https://blog.cloudflare.com/tag/speed-week/)
+  * [Spoofing](https://blog.cloudflare.com/tag/spoofing/)
+  * [Sports](https://blog.cloudflare.com/tag/sports/)
+  * [SQL](https://blog.cloudflare.com/tag/sql/)
+  * [SRE](https://blog.cloudflare.com/tag/sre/)
+  * [SSE](https://blog.cloudflare.com/tag/sse/)
+  * [SSH](https://blog.cloudflare.com/tag/ssh/)
+  * [SSL](https://blog.cloudflare.com/tag/ssl/)
+  * [Standards](https://blog.cloudflare.com/tag/standards/)
+  * [Startup Enterprise Plan](https://blog.cloudflare.com/tag/startup-enterprise-plan/)
+  * [Statistics](https://blog.cloudflare.com/tag/statistics/)
+  * [StopTheHacker](https://blog.cloudflare.com/tag/stopthehacker/)
+  * [Storage](https://blog.cloudflare.com/tag/storage/)
+  * [Sumo Logic](https://blog.cloudflare.com/tag/sumo-logic/)
+  * [Super Bowl](https://blog.cloudflare.com/tag/super-bowl/)
+  * [Supercloud](https://blog.cloudflare.com/tag/supercloud/)
+  * [Supply Chain Attacks](https://blog.cloudflare.com/tag/supply-chain-attacks/)
+  * [Support](https://blog.cloudflare.com/tag/support/)
+  * [Sustainability](https://blog.cloudflare.com/tag/sustainability/)
+  * [SWAG](https://blog.cloudflare.com/tag/swag/)
+  * [SWG](https://blog.cloudflare.com/tag/swg/)
+  * [Swift](https://blog.cloudflare.com/tag/swift/)
+  * [Switzerland](https://blog.cloudflare.com/tag/switzerland/)
+  * [SXSW](https://blog.cloudflare.com/tag/sxsw/)
+  * [SYN](https://blog.cloudflare.com/tag/syn/)
+  * [SYN Flood](https://blog.cloudflare.com/tag/syn-flood/)
+  * [Syria](https://blog.cloudflare.com/tag/syria/)
+  * [TCP](https://blog.cloudflare.com/tag/tcp/)
+  * [Team](https://blog.cloudflare.com/tag/team/)
+  * [Teams Dashboard](https://blog.cloudflare.com/tag/teams-dashboard/)
+  * [Tech Talks](https://blog.cloudflare.com/tag/tech-talks/)
+  * [TechCrunch](https://blog.cloudflare.com/tag/techcrunch/)
+  * [Technical Writing](https://blog.cloudflare.com/tag/technical-writing/)
+  * [Terraform](https://blog.cloudflare.com/tag/terraform/)
+  * [Testimonials](https://blog.cloudflare.com/tag/testimonials/)
+  * [Testing](https://blog.cloudflare.com/tag/testing/)
+  * [Texas](https://blog.cloudflare.com/tag/texas/)
+  * [Thanksgiving](https://blog.cloudflare.com/tag/thanksgiving/)
+  * [The Serverlist Newsletter](https://blog.cloudflare.com/tag/serverlist/)
+  * [Threat Data](https://blog.cloudflare.com/tag/threat-data/)
+  * [Threat Feeds](https://blog.cloudflare.com/tag/threat-feeds/)
+  * [Threat Intelligence](https://blog.cloudflare.com/tag/threat-intelligence/)
+  * [Threat Operations](https://blog.cloudflare.com/tag/threat-operations/)
+  * [Threat Report](https://blog.cloudflare.com/tag/threat-report/)
+  * [Threats](https://blog.cloudflare.com/tag/threats/)
+  * [Tiered Cache](https://blog.cloudflare.com/tag/tiered-cache/)
+  * [TikTok](https://blog.cloudflare.com/tag/tiktok/)
+  * [TLS](https://blog.cloudflare.com/tag/tls/)
+  * [TLS 1.3](https://blog.cloudflare.com/tag/tls-1-3/)
+  * [Tools](https://blog.cloudflare.com/tag/tools/)
+  * [Tor](https://blog.cloudflare.com/tag/tor/)
+  * [Tracing](https://blog.cloudflare.com/tag/tracing/)
+  * [Traffic](https://blog.cloudflare.com/tag/traffic/)
+  * [Transform Rules](https://blog.cloudflare.com/tag/transform-rules/)
+  * [Transparency](https://blog.cloudflare.com/tag/transparency/)
+  * [Trends](https://blog.cloudflare.com/tag/trends/)
+  * [Trust & Safety](https://blog.cloudflare.com/tag/trust-and-safety/)
+  * [TTFB](https://blog.cloudflare.com/tag/ttfb/)
+  * [TTL](https://blog.cloudflare.com/tag/ttl/)
+  * [TURN](https://blog.cloudflare.com/tag/turn/)
+  * [TURN Server](https://blog.cloudflare.com/tag/turn-server/)
+  * [Turnstile](https://blog.cloudflare.com/tag/turnstile/)
+  * [TypeScript](https://blog.cloudflare.com/tag/typescript/)
+  * [UDP](https://blog.cloudflare.com/tag/udp/)
+  * [Ukraine](https://blog.cloudflare.com/tag/ukraine/)
+  * [United Kingdom](https://blog.cloudflare.com/tag/united-kingdom/)
+  * [Universal SSL](https://blog.cloudflare.com/tag/universal-ssl/)
+  * [URL Scanner](https://blog.cloudflare.com/tag/url-scanner/)
+  * [USA](https://blog.cloudflare.com/tag/usa/)
+  * [User Research](https://blog.cloudflare.com/tag/user-research/)
+  * [VDI](https://blog.cloudflare.com/tag/vdi/)
+  * [Vectorize](https://blog.cloudflare.com/tag/vectorize/)
+  * [Vetflare](https://blog.cloudflare.com/tag/vetflare/)
+  * [Video](https://blog.cloudflare.com/tag/video/)
+  * [Visibility](https://blog.cloudflare.com/tag/visibility/)
+  * [Vite](https://blog.cloudflare.com/tag/vite/)
+  * [VoIP](https://blog.cloudflare.com/tag/voip/)
+  * [VPC](https://blog.cloudflare.com/tag/vpc/)
+  * [VPN](https://blog.cloudflare.com/tag/vpn/)
+  * [Vulnerabilities](https://blog.cloudflare.com/tag/vulnerabilities/)
+  * [WAF](https://blog.cloudflare.com/tag/waf/)
+  * [WAF Attack Score](https://blog.cloudflare.com/tag/waf-attack-score/)
+  * [WAF Rules](https://blog.cloudflare.com/tag/waf-rules/)
+  * [Waiting Room](https://blog.cloudflare.com/tag/waiting-room/)
+  * [WARP](https://blog.cloudflare.com/tag/warp/)
+  * [WARP Connector](https://blog.cloudflare.com/tag/warp-connector/)
+  * [WASM](https://blog.cloudflare.com/tag/wasm/)
+  * [Web Application Firewall](https://blog.cloudflare.com/tag/web-application-firewall/)
+  * [Web Asset Discovery](https://blog.cloudflare.com/tag/web-asset-discovery/)
+  * [Web3](https://blog.cloudflare.com/tag/web3/)
+  * [WebAssembly](https://blog.cloudflare.com/tag/webassembly/)
+  * [Webinars](https://blog.cloudflare.com/tag/webinars/)
+  * [WebMCP](https://blog.cloudflare.com/tag/webmcp/)
+  * [WebP](https://blog.cloudflare.com/tag/webp/)
+  * [WebRTC](https://blog.cloudflare.com/tag/webrtc/)
+  * [WebSockets](https://blog.cloudflare.com/tag/websockets/)
+  * [Wildebeest](https://blog.cloudflare.com/tag/wildebeest/)
+  * [Womenflare](https://blog.cloudflare.com/tag/womenflare/)
+  * [WordPress](https://blog.cloudflare.com/tag/wordpress/)
+  * [Workers AI](https://blog.cloudflare.com/tag/workers-ai/)
+  * [Workers Launchpad](https://blog.cloudflare.com/tag/workers-launchpad/)
+  * [Workers Logs](https://blog.cloudflare.com/tag/workers-logs/)
+  * [Workers Observability](https://blog.cloudflare.com/tag/workers-observability/)
+  * [Workers Sites](https://blog.cloudflare.com/tag/workers-sites/)
+  * [Workers Unbound](https://blog.cloudflare.com/tag/workers-unbound/)
+  * [Workers VPC](https://blog.cloudflare.com/tag/workers-vpc/)
+  * [Workflows](https://blog.cloudflare.com/tag/workflows/)
+  * [World IPv6 Day](https://blog.cloudflare.com/tag/world-ipv6-day/)
+  * [Wrangler](https://blog.cloudflare.com/tag/wrangler/)
+  * [x402](https://blog.cloudflare.com/tag/x402/)
+  * [Year in Review](https://blog.cloudflare.com/tag/year-in-review/)
+  * [Z3](https://blog.cloudflare.com/tag/z3/)
+  * [Zaraz](https://blog.cloudflare.com/tag/zaraz/)
+  * [Zero Day Threats](https://blog.cloudflare.com/tag/zero-day-threats/)
+  * [Zero Trust](https://blog.cloudflare.com/tag/zero-trust/)
+  * [Zero Trust Week](https://blog.cloudflare.com/tag/zero-trust-week/)
+  * [Zone Versioning](https://blog.cloudflare.com/tag/zone-versioning/)
+  * [Artificial Intelligence](https://blog.cloudflare.com/tag/artificial-intelligence/)
+  * [Workers](https://blog.cloudflare.com/tag/workers-1/)
+  * [Client-Side Security](https://blog.cloudflare.com/tag/client-side-security/)
+  * [Architecture](https://blog.cloudflare.com/tag/architecture/)
+  * [Multi-tenant Secuity](https://blog.cloudflare.com/tag/multi-tenant-secuity/)
+  * [Multi-tenant Security](https://blog.cloudflare.com/tag/multi-tenant-security/)
+  * [cf](https://blog.cloudflare.com/tag/cf/)
+  * [BEACON](https://blog.cloudflare.com/tag/beacon/)
+
+
+
+[Product News](https://blog.cloudflare.com/tag/product-news/)[SASE](https://blog.cloudflare.com/tag/sase/)[Zero Trust](https://blog.cloudflare.com/tag/zero-trust/)
+
+[AI](https://blog.cloudflare.com/tag/ai/)[Cloudflare One](https://blog.cloudflare.com/tag/cloudflare-one/)[MCP](https://blog.cloudflare.com/tag/mcp/)[Product News](https://blog.cloudflare.com/tag/product-news/)[SASE](https://blog.cloudflare.com/tag/sase/)[Zero Trust](https://blog.cloudflare.com/tag/zero-trust/)
+
+August 14, 2026
+
+# How Cloudflare detects MCP traffic and helps secure it
+
+![AJ Gerstenhaber](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW45AC8ST716E4F0Q7NWHHKA.jpg&w=64&h=64&f=webp&fit=cover&position=center)![Kenny Johnson](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW471W94YNK8KYMJEK8P7RHD.jpeg&w=64&h=64&f=webp&fit=cover&position=center)
+
+[AJ Gerstenhaber](https://blog.cloudflare.com/author/aj/) and [Kenny Johnson](https://blog.cloudflare.com/author/kenny/)
+
+17 minute read
+
+COPY URL
+
+This post is also available in [繁體中文](https://blog.cloudflare.com/zh-tw/mcp-security-updates/) and [简体中文](https://blog.cloudflare.com/zh-cn/mcp-security-updates/).
+
+![](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01M005HG1H0K802B4Y17SX9NQ5.png&w=1999&h=1125&f=webp&fit=cover&position=center)![](data:image/bmp;base64,Qk32BAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAATCwAAEwsAAAAAAAAAAAAA/////v786u/02OXx0+f02u/35PH06e3s/////v/+5uz20N7zyuD21Or64fD26e7u////////5Ov6ydn2w9v60ej94fD66vDy////////5+7/zNr7xtz+1Or/5fT/7/T3////////8fT/2eP/1Ob/4fL/7/r/9vn8/////////f3/6vD/5/T/8P7/+v///v7/////////////+Pv/9v///f///////////////////////v///P//////////////)
+
+Most companies designed their resource permissions with a human user in mind. A senior engineer may be able to deploy to production, query a sensitive database, or revoke another user's access. Those privileges come with risk, but that risk has traditionally been bounded by two assumptions: the engineer will use human judgment, and the engineer can only act at human speed.
+
+An engineer who sees an unexpected result will usually stop and reconsider their actions. Any human being can only click, type, and review _so much_ in a single day. The introduction of AI agents changes both thresholds. Their decisions are nondeterministic, and they can take the same action (or invoke the same tool) indefinitely, without getting tired or stopping for lunch. A plausible — but incorrect — decision can become thousands of incorrect actions before a human notices.
+
+Today, we're announcing new[ _Cloudflare One_](https://developers.cloudflare.com/cloudflare-one/) capabilities to identify inspected MCP traffic, show which users and servers are generating it, and control direct connections on managed network paths. Combined with[ _MCP Server Portals_](https://developers.cloudflare.com/cloudflare-one/access-controls/ai-controls/mcp-portals/), these controls help administrators see whether agents are using an approved path, or somehow bypassing it.
+
+[_Model Context Protocol_](https://www.cloudflare.com/learning/ai/what-is-model-context-protocol-mcp/) (MCP) servers give agents a common way to discover and invoke tools backed by third-party SaaS products, internal applications, and APIs. The underlying permissions are likely familiar; what changes is _who_ makes each decision, and how quickly a bad decision can spread.
+
+Connecting an agent to one of these tools can take a single line of configuration. An employee can point Claude Code, Codex, Cursor, OpenCode, VS Code, or any AI harness at an MCP server without checking whether it is approved. The resulting traffic has no obvious shape. The Model Context Protocol does not use a guaranteed hostname or require /mcp in the path, so a direct connection can look like any other HTTPS API call.
+
+To explain how these controls fit together, we'll start with the anatomy of a tool call and the information it exposes. We'll then compare the three places a security team can act: inside the client, on the network, and at the MCP server. From there, we'll show how[ _Cloudflare Gateway_](https://developers.cloudflare.com/cloudflare-one/traffic-policies/) uses protocol signals to find shadow MCP traffic and enforce MCP Portal-only access to trusted MCP servers.
+
+## The anatomy of an MCP tool call
+
+The same MCP tool call has three forms as it moves through a system. Inside the client it is a decision to invoke a tool with a set of arguments. On the network it is an HTTP transaction carrying a[ _JSON-RPC_](https://www.jsonrpc.org/specification) message. At the server it becomes a call to a tool handler that may read data, change state, or complete some other action.
+
+Consider an agent that wants to know the weather in Austin. A remote MCP request can look like this:
+    
+    
+    POST /mcp HTTP/1.1
+    Host: tools.example.com
+    Authorization: Bearer <access-token>
+    Content-Type: application/json
+    MCP-Protocol-Version: 2026-07-28
+    Mcp-Method: tools/call
+    Mcp-Name: get_weather
+    
+    {
+      "jsonrpc": "2.0",
+      "id": 42,
+      "method": "tools/call",
+      "params": {
+        "name": "get_weather",
+        "arguments": {
+          "city": "Austin"
+        }
+      }
+    }
+
+There are several useful signals packed into this request. The hostname and path identify the destination. The authorization header carries the credential used to authenticate the caller when the server requires one. The header: `MCP-Protocol-Version` identifies the protocol version, while `Mcp-Method` and `Mcp-Name` expose the operation and tool in the new stateless protocol. The JSON-RPC envelope repeats the method, gives the request an `id` that the client can match with a response, and carries the tool arguments in `params`.
+
+The arguments are the most sensitive part. They can contain a search query, source code, customer data, or instructions for an action such as creating a ticket or changing infrastructure. The tool name says what the agent intends to call; the arguments say what data it will send and what action it wants the server to perform.
+
+If the call succeeds, the server returns a JSON-RPC response with the same ID and the tool result. That response may also contain sensitive data. Request inspection can stop an unsafe action before execution, while response inspection and logging show what the tool returned to the agent.
+
+## Three places to control an MCP request
+
+The request gives security teams three places to observe or control the call.
+
+### Inside the MCP client
+
+A[ _client hook_](https://code.claude.com/docs/en/hooks) can run after the model selects a tool but before the client serializes the request. From there, it can see the destination server, tool name, and arguments _without_ decrypting network traffic.
+
+This is the earliest stage in the request chain to exercise control. The client can deny a server that is not on an allowlist, ask the user to confirm a sensitive operation, or remove data from the arguments before it leaves the device. It can also cover local `stdio` (aka local) MCP servers, which never generate network traffic.
+
+This presents a standardization challenge. In order for a security team to benefit from this, they would need to reproduce their controls across every client that their employees use. Client-side controls work best when the organization manages both the client and the device, but telemetry from one client is never a complete inventory of MCP use.
+
+### At the device's network boundary
+
+A[ ](https://www.cloudflare.com/learning/cdn/glossary/reverse-proxy/#what-is-a-proxy-server)[_secure web gateway_](https://www.cloudflare.com/learning/access-management/what-is-a-secure-web-gateway/) can observe the HTTP request after it leaves the client. With[ _TLS decryption_](https://developers.cloudflare.com/cloudflare-one/traffic-policies/http-policies/tls-decryption/), it can associate the request with a user and device, inspect the destination and protocol headers, and apply policy without depending on a particular MCP client.
+
+The network layer has the widest lens to detect remote MCP traffic on managed paths. It can identify direct connections to servers outside an approved Portal and block them before the request reaches the destination. Where[ _data loss prevention_](https://developers.cloudflare.com/cloudflare-one/data-loss-prevention/) scanning is supported, a proxy can also examine the JSON-RPC method and arguments for sensitive data. However, proxies cannot see local `stdio` calls or off-network traffic.
+
+### Before the MCP server invokes the tool
+
+The server has the richest execution context. It has authenticated the caller, parsed the MCP message, resolved `get_weather` to a handler, and validated the supplied arguments against the tool's input schema. This is the last point where the request can be denied before the tool runs.
+
+An[ _Agents SDK_](https://developers.cloudflare.com/agents/model-context-protocol/) handler or similar server middleware can authorize the caller for the specific tool, apply rate limits, inspect arguments, and record the outcome. A server should perform these checks before invoking the handler, especially for tools that write data or trigger external actions. Logging only after execution can explain what happened, but it cannot prevent it.
+
+Cloudflare's[ _WriteGuard_](https://blog.cloudflare.com/mcp-portal-writeguard-private-beta/) uses this pattern across our internal MCP servers. Each tool has a risk tier and an enabled or disabled state. WriteGuard can pass a read through unchanged, add agent attribution and an audit event to an allowed write, or block a critical action before its handler runs. Because the control lives at the server, an end user cannot bypass it by switching clients or disabling a local hook.
+
+While server-side controls only protect servers that implement them, the client and server have the best request depth. The network sees the widest set of remote connections. Used together, these controls can stop sensitive data before it leaves a device, find unmanaged MCP traffic, and deny an unauthorized operation before a tool executes.
+
+The network control point has the broadest coverage, but it first has to distinguish MCP from ordinary HTTPS traffic, a user must be running a proxy, and the MCP Server (or Portal) must verify that the proxy was used in the connection.
+
+Cloudflare One provides the networking pieces of that chain. The[ _Cloudflare One Client_](https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/) sends traffic from managed devices through Gateway. Gateway can classify MCP requests at the protocol layer, and distinguish whether traffic is initiated from an MCP Portal, or is going outside approved controls. Administrators can then report on, or block connections that do not follow the approved path. That process starts with identifying the request reliably.
+
+## A URL does not tell you that a request uses MCP
+
+Our first approach to finding MCP traffic used the GraphQL Analytics API to search[ _Gateway HTTP logs_](https://developers.cloudflare.com/cloudflare-one/insights/logs/dashboard-logs/gateway-logs/) for hostnames containing `mcp` and common paths like `/mcp` or `/sse`. Our[ _MCP traffic detection tutorial_](https://developers.cloudflare.com/cloudflare-one/tutorials/detect-mcp-traffic-gateway-logs/#2-build-the-mcp-detection-query) includes the query. It also explains how to create[ _data loss prevention patterns for MCP JSON-RPC methods_](https://developers.cloudflare.com/cloudflare-one/tutorials/detect-mcp-traffic-gateway-logs/#4-create-dlp-profiles-for-mcp-json-rpc-detection) like `initialize`, `tools/call,` and `resources/read` in request bodies.
+
+Those signals are still useful for finding traffic from older clients and providing historical visibility, but they're very basic. They miss an MCP server at an ordinary URL like [_https://tools.example.com/api_](https://tools.example.com/api), which is not uncommon.
+
+And they can match an unrelated service that happens to use `mcp` in a hostname or path (unlikely, but we have seen it). For conforming Streamable HTTP clients, the protocol header is a more specific signal. The[ _MCP 2025-11-25 specification_](https://modelcontextprotocol.io/specification/2025-11-25/basic/transports#protocol-version-header) says clients **MUST** include `MCP-Protocol-Version` on every HTTP request after initialization. The[ _MCP 2026-07-28 specification_](https://modelcontextprotocol.io/specification/2026-07-28/basic/transports/streamable-http#protocol-version-header) goes further and requires it on every POST request.
+
+That does not make the header a complete detector. The initial request from a legacy client may not contain it, protocol versions earlier than 2025-06-18 did not define it, and local `stdio`, custom transport, or nonconforming traffic may never carry it. Its presence is a strong positive indicator of MCP; its absence does not prove that a request is not MCP.
+
+## The protocol is becoming easier to identify on the wire
+
+The legacy MCP flow begins with an `initialize` request that does not contain the `MCP-Protocol-Version` HTTP header, so a network control may not classify the first request to a previously unknown endpoint from the header alone. The signal appears after the client and server finish initialization.
+
+A later tool call looks like this:
+    
+    
+    POST /api HTTP/1.1
+    Host: tools.example.com
+    Content-Type: application/json
+    MCP-Protocol-Version: 2025-11-25
+    
+    {"jsonrpc":"2.0","id":2,"method":"tools/call","params":{"name":"get_weather"}}
+
+The[ _MCP 2026-07-28 specification_](https://modelcontextprotocol.io/specification/2026-07-28) changes this model considerably. The core protocol is stateless; it removes the `initialize` handshake entirely and places the protocol version and operation on each request:
+    
+    
+    POST /mcp HTTP/1.1
+    Host: tools.example.com
+    Content-Type: application/json
+    MCP-Protocol-Version: 2026-07-28
+    Mcp-Method: tools/call
+    Mcp-Name: get_weather
+    
+    {"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"get_weather"}}
+
+The `Mcp-Method` and `Mcp-Name` headers let ordinary HTTP infrastructure identify the operation without parsing the body. Load balancers can route requests, rate limiters can separate `tools/list` from `tools/call`, and security products get more information on every request.
+
+These protocol signals give Cloudflare Gateway something concrete to evaluate without relying on a list of MCP-looking URLs.
+
+## Shadow MCP and approved-path bypass are separate problems
+
+Once Gateway can identify MCP traffic, you can then evaluate what a given connection _means_ for your security posture.
+
+Shadow MCP is a connection to a server the organization has not approved. An employee finds the server in a repository, a product guide, or a message from a colleague and adds it directly to their MCP client. The security team has no idea which tools it exposes or what data employees send to it.
+
+Portal bypass is different: it starts with an approved server that the organization has placed in an MCP Portal, but an employee connects to its upstream URL directly and skips the Portal's Access policy, curated tool catalog, data loss prevention, and tool-level audit trail.
+
+Gateway is the primary control for shadow MCP on managed network paths; it identifies TLS-inspected MCP traffic, shows the destination and user, and can apply policy. Portal bypass needs that network control plus an origin that can reject direct requests, whether that means an Access policy, a source IP restriction, or an enterprise authorization mechanism initiated by the MCP server itself.
+
+## Detecting MCP traffic in Gateway
+
+For customers who have already adopted Cloudflare Gateway with TLS inspection, we are adding a detection heuristic that answers a simple question for every inspected request: _Is this MCP traffic?_
+
+For session-based Streamable HTTP connections, MCP clients send an `MCP-Protocol-Version` header after initialization. Gateway inspects that header on every TLS-inspected request and classifies the traffic accordingly, using detection built from patterns we observe across the millions of requests that traverse the Cloudflare network every day. The classification identifies MCP negotiation and proxying to a hostname without relying on knowing the specific host or URL ahead of time.
+
+**Starting today, all Cloudflare Zero Trust customers see indications of MCP traffic in their Gateway HTTP logs and can explicitly block or allow that traffic with a new Gateway selector:**
+
+`experimental.is_mcp == true`
+
+The selector is a boolean. If Gateway detects the `MCP-Protocol-Version` header on a TLS-inspected request, the value is `true`, and an administrator can use it in an Allow or Block policy without maintaining their own list of MCP-looking domains.
+
+Direct encrypted traffic must pass through[ _TLS decryption_](https://developers.cloudflare.com/cloudflare-one/traffic-policies/http-policies/tls-decryption/) before Gateway can inspect these headers, and local `stdio` servers, off-network connections,[ _Do Not Inspect_](https://developers.cloudflare.com/cloudflare-one/traffic-policies/http-policies/#do-not-inspect) traffic, and requests that never traverse Gateway remain outside this view.
+
+## Visibility into MCP traffic across your network
+
+Today, we're introducing a dedicated MCP traffic dashboard that shows which hosts are serving MCP traffic within your network, which users are generating that traffic, and whether requests are going through your Cloudflare MCP Portals or bypassing them entirely.
+
+![](data:image/bmp;base64,Qk32BAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAATCwAAEwsAAAAAAAAAAAAA+Pb38/Ly6+np6OXk6ujo7Ovq5+bm3dvb/fz9+fj48O/v7Ovr7+7t8vHw7Ovr4uHh////////9/f38/Pz9vb1+fj49PPz6enq////////////+/z7/v79////+/v78fLy////////////////////////////+fn5//////////////////////////////7/////////////////////////////////////////////////////////////////)![image4.png](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01M006515QKW8QFWMM2CMQEMWM.png&w=715&h=276&f=webp&fit=cover&position=center)
+
+The dashboard shows:
+
+  * Total MCP requests, unique users, and unique servers over a configurable time window
+  * MCP servers over time with per-server request counts
+  * Traffic breakdown by on-ramp, separating MCP Portal traffic from direct device client connections
+  * Top MCP servers seen outside your Portals, which is the shadow MCP traffic that matters most
+  * Top users by MCP request volume
+
+
+
+![](data:image/bmp;base64,Qk32BAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAATCwAAEwsAAAAAAAAAAAAA5t3j5dvf49jX49fS59rV6d3a5trb4NXX5N7q5N3m5d3e6N/a7OLd7ePi6t/g5Nna5uP15+Tx6ubp7+nm9Ozp9Ozs8Ofp6uDg7+7/8O/98/L1+PXy/Pj2/ff4+PL08urq/v///f7//v/////+//////////7/+/b1////////////////////////////////////////////////////////////////////////////////////////////////)![image2.png](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01M0065XXBCYAR5KRXB3FZFM2M.png&w=715&h=220&f=webp&fit=cover&position=center)
+
+Administrators can filter by specific servers, users, or on-ramp types, and navigate directly to Gateway HTTP logs filtered by the relevant host or user for deeper investigation.
+
+![](data:image/bmp;base64,Qk32BAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAATCwAAEwsAAAAAAAAAAAAA+/379PXz5uTj39ra5uDg7unp6+jp4N/h////+vr57Ovp5uPi7ero9PLx8fDv5eXl////////9PPx7+7r9vXz/f37+fn37O3r////////+/v59vf0/v/8////////9PXx///////////+/Pz6////////////+vv4//////////////79///////////////+//////////////7+//////////////////////////////7/////////////////)![image1.png](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01M0066Q7JSDX30E6M8WMBEA7H.png&w=715&h=309&f=webp&fit=cover&position=center)
+
+## Bring discovered servers into an MCP Portal
+
+MCP discovery turns unknown traffic into a list an administrator can investigate. When an organization approves one of those servers, it can place the server behind a Cloudflare MCP server portal. The Portal gives employees one managed endpoint and puts[ _Access_](https://developers.cloudflare.com/cloudflare-one/access-controls/) identity, a curated tool catalog, and logging in front of the upstream server. Administrators can[ _route compatible upstream calls through Gateway_](https://developers.cloudflare.com/cloudflare-one/access-controls/ai-controls/mcp-portals/#route-portal-traffic-through-gateway) for HTTP policy, predictable egress, and data loss prevention, either across the Portal or for an individual server. Tool activity can also be[ _exported through Logpush_](https://developers.cloudflare.com/cloudflare-one/access-controls/ai-controls/mcp-portals/#export-logs-with-logpush). The discovery dashboard can then distinguish requests that use the Portal from direct connections to the same server.
+
+This creates a path from discovery to governance: find the server, decide whether to approve it, move approved use behind the Portal, and investigate traffic that continues to go around it. That last step matters because unapproved servers and bypasses of approved servers are different problems.
+
+## Enforcing Portal-only access
+
+We are adding Traffic Source selectors to[ _Gateway Network_](https://developers.cloudflare.com/cloudflare-one/traffic-policies/network-policies/) and[ _HTTP policies_](https://developers.cloudflare.com/cloudflare-one/traffic-policies/http-policies/) to give administrators the fidelity to write rules to control MCP traffic based on whether or not originated from your MCP Portals.
+
+When MCP Portal traffic routes through Gateway it carries an `mcp_portal` Traffic Source, which lets policy distinguish Portal-proxied requests from direct employee connections. A baseline enforcement rule looks like this:
+    
+    
+    experimental.is_mcp == true and not traffic.onramp in ("mcp_portal")
+    Action: Block
+
+![](data:image/bmp;base64,Qk32BAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAATCwAAEwsAAAAAAAAAAAAA+/v69fX06+rq5+bn7ezt8/Lz7+7u4+Lh/fz7+Pf27u3t6+rq8fDx9vX28vHx5uXk/////Pv68/Hx7+7v9fT1+/r69vX16+rp////////+Pb29fT0+/r7////+/r68O/u/////////vz8+vn6////////////9vT0//////////////7+////////////+vn4/////////////////////////////fz8/////////////////////////////v39)![image3.png](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01M0067SYKZRJ9D2XV8C2473AD.png&w=715&h=437&f=webp&fit=cover&position=center)
+
+Any detected MCP traffic that did not arrive through a Portal gets blocked; traffic that came through the Portal is unaffected. For organizations that want to observe before enforcing, Traffic Source and MCP detection now exist in HTTP logs for traffic that has been decrypted, so you can monitor behavior for proxied traffic without the need for a policy.
+
+## More MCP servers can now use the governed path
+
+An approved path is only useful if it can connect to a critical mass of the servers employees actually need.
+
+Earlier MCP specifications recommended[ _Dynamic Client Registration_](https://datatracker.ietf.org/doc/html/rfc7591), where the client registers itself with an authorization server without an OAuth application. Many common OAuth providers use a different model: they require an administrator to register an application with a fixed client ID, client secret, callback URL, and set of scopes. MCP `2026-07-28` also recently deprecated dynamic registration.
+
+To help alleviate this, MCP Portals now support pre-registered OAuth clients. An administrator can[ _configure manual OAuth credentials_](https://developers.cloudflare.com/cloudflare-one/access-controls/ai-controls/mcp-portals/#configure-manual-oauth-credentials), register the callback URL shown in the dashboard with the upstream provider, and enter the client credentials. The Portal discovers standard OAuth metadata when available, and the administrator can provide the authorization, token, revocation, and issuer endpoints when discovery is not possible.
+
+Each user still authorizes access to their own upstream data sources, and the stored client secret is used only to fetch updated tool and prompt lists.
+
+Manual OAuth support now helps to cover the many permutations of OAuth implementations. Some providers require custom headers, personal access tokens, or an explicit client allowlist, and those are separate compatibility problems. We will continue to expand the OAuth support of MCP portals in the coming months.
+
+## Bringing private MCP servers into the same Portal
+
+Public SaaS tools are only part of an enterprise's MCP catalog. Most secure information that businesses rely on is not available from the public Internet; it exists in public or private cloud infrastructure, or is hosted on-premise, and is only reachable through connectivity to private networks.
+
+Today, an MCP Portal must be able to resolve and reach an upstream server over the public Internet. This means that servers that are only available on private networks — via[ _private DNS_](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/private-net/cloudflared/private-dns/) or inside private IP space — can’t be reached by Portals. We are working to let MCP Portals connect to private servers through[ ](https://developers.cloudflare.com/workers-vpc/)Cloudflare Gateway routing and the same Cloudflare One network that is already used for other private applications.
+
+The private server keeps its private hostname; the Portal reaches it through Cloudflare's private routing and presents its tools beside the public upstream servers; and Access policy, Portal logging, and tool controls continue to apply at the same front door.
+
+Routing Portal traffic through Gateway also stamps it with the `mcp_portal` Traffic Source, so Gateway policy can distinguish a Portal request from a direct employee connection. Private connectivity for MCP servers is in active development; keep an eye on the [_Changelog_](https://developers.cloudflare.com/changelog/) for more information.
+
+## Agents SDK supports the new stateless model
+
+A few weeks ago, the MCP project published the `2026-07-28` specification, a major revision that replaces connection-scoped initialization with a stateless, per-request model. We covered the protocol changes and migration path in [_The next generation of MCP_](https://blog.cloudflare.com/mcp-v2).
+
+[_Cloudflare Agents SDK_](https://developers.cloudflare.com/agents/model-context-protocol/) v0.20.0 supports MCP `2026-07-28` as both a client and a server. For each connection the client first probes for the new stateless protocol with `server/discover`; if the server does not support it, the client continues with the legacy `initialize` handshake on the same connection. Existing `addMcpServer` calls do not need separate protocol settings or separate clients.
+
+On the server side, `createMcpHandler` can serve stateless tools, prompts, resources, and elicitation from a[ _Worker_](https://developers.cloudflare.com/workers/) without creating a transport session or[ _Durable Object_](https://developers.cloudflare.com/durable-objects/):
+    
+    
+    import { McpServer } from "@modelcontextprotocol/server";
+    import { createMcpHandler } from "agents/mcp/server";
+    
+    function createServer() {
+      return new McpServer({ name: "example", version: "1.0.0" });
+    }
+    
+    export default {
+      fetch(request, env, ctx) {
+        return createMcpHandler(createServer)(request, env, ctx);
+      },
+    } satisfies ExportedHandler;
+
+The fallback matters because protocol migrations rarely happen all at once. A new client still needs to reach an existing server, and a new server still needs to handle clients that have not moved yet. The Agents SDK supports both paths while the ecosystem transitions.
+
+## Start with visibility, then close the paths that should not exist
+
+A workable MCP security program starts with understanding your users’ traffic profiles, MCP usage, and aligning on an approved set of tools and access methodologies.
+
+First, inspect the MCP traffic that traverses Gateway and compare its destinations with the servers your organization has approved. Move more approved servers behind MCP Portals.
+
+Then, enforce the boundary you can control. Compose Gateway policies which use the MCP detection conditions together with the Traffic Source and Destination conditions to block direct MCP connections from managed devices and sites, and restrict self-hosted upstream servers to Portal traffic where possible.
+
+We will soon be adding more granular functionality for visibility and control of MCP traffic, including control over specific tool use and new reporting on tool usage across all MCP servers within your environment — whether they are known or unknown to your security organization.
+
+Our[ _MCP traffic detection tutorial_](https://developers.cloudflare.com/cloudflare-one/tutorials/detect-mcp-traffic-gateway-logs/) covers the hostname, path, and JSON-RPC heuristics available for Gateway logs today. We will update the documentation with the protocol selector details as the new signal reaches general availability.  
+
+
+On this page
+
+Discuss Online
+
+[](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Fblog.cloudflare.com%2Fmcp-security-updates%2F&t=How%20Cloudflare%20detects%20MCP%20traffic%20and%20helps%20secure%20it)[](https://x.com/intent/post?text=How+Cloudflare+detects+MCP+traffic+and+helps+secure+it&url=https%3A%2F%2Fblog.cloudflare.com%2Fmcp-security-updates%2F)[](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fblog.cloudflare.com%2Fmcp-security-updates%2F)[](https://bsky.app/intent/compose?text=How+Cloudflare+detects+MCP+traffic+and+helps+secure+it+https%3A%2F%2Fblog.cloudflare.com%2Fmcp-security-updates%2F)[](https://mastodonshare.com/?text=How+Cloudflare+detects+MCP+traffic+and+helps+secure+it&url=https%3A%2F%2Fblog.cloudflare.com%2Fmcp-security-updates%2F)[](https://www.threads.net/intent/post?text=How+Cloudflare+detects+MCP+traffic+and+helps+secure+it+https%3A%2F%2Fblog.cloudflare.com%2Fmcp-security-updates%2F)
+
+## Related tags
+
+[AI](https://blog.cloudflare.com/tag/ai/)[Cloudflare One](https://blog.cloudflare.com/tag/cloudflare-one/)[MCP](https://blog.cloudflare.com/tag/mcp/)[Product News](https://blog.cloudflare.com/tag/product-news/)[SASE](https://blog.cloudflare.com/tag/sase/)[Zero Trust](https://blog.cloudflare.com/tag/zero-trust/)
+
+Follow on Social Media
+
+  * ![Cloudflare](https://blog.cloudflare.com/images/placeholder__cloudflare.png)Cloudflare
+
+[](https://blog.cloudflare.com/rss/)[](https://x.com/Cloudflare)[](https://www.linkedin.com/company/cloudflare-inc-)[](https://www.youtube.com/cloudflare)[](https://instagram.com/cloudflare)[](https://github.com/cloudflare)[](https://bsky.app/profile/cloudflare.social)[](https://www.threads.com/@cloudflare)[](https://www.tiktok.com/@cloudflare)
+
+  * ![Kenny Johnson](https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KW471W94YNK8KYMJEK8P7RHD.jpeg&w=64&h=64&f=webp&fit=cover&position=center)[Kenny Johnson](https://blog.cloudflare.com/author/kenny/)
+
+[](https://x.com/KennyJohnsonATX)
+
+
+
+
+## Subscribe to receive notifications of new posts
+
+Email address
+
+We’ll never share your email address.
+
+Subscribe
+
+Thanks for subscribing! Check your inbox to confirm.

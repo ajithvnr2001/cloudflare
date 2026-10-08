@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/how-cloudflare-security-does-zero-trust/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/how-cloudflare-security-does-zero-trust.md",
+  "title": "Comment Cloudflare propose la s\u00e9curit\u00e9 Zero Trust | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:30.955685+00:00",
+  "html_len": 224680,
+  "md_len": 37407,
+  "depth": 0,
+  "phase": 2
+}

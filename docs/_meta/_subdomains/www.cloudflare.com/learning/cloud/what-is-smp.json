@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/cloud/what-is-smp/",
+  "file": "_subdomains/www.cloudflare.com/learning/cloud/what-is-smp.md",
+  "title": "What is a SaaS management platform (SMP)?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:05:12.775877+00:00",
+  "html_len": 210072,
+  "md_len": 12383,
+  "depth": 0,
+  "phase": 2
+}

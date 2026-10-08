@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/de-de/plans/enterprise/contact/",
+  "file": "_subdomains/www.cloudflare.com/de-de/plans/enterprise/contact.md",
+  "title": "Kontakt zu Enterprise Sales | Sprechen Sie mit einem Experten | Cloudflare",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (149 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:16:29.450542+00:00",
+  "html_len": 447723,
+  "md_len": 7477,
+  "depth": 1,
+  "phase": 2
+}

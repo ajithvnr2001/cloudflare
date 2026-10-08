@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers-ai/models/llama-guard-3-8b/",
+  "file": "workers-ai/models/llama-guard-3-8b.md",
+  "title": "llama-guard-3-8b (Meta) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:04.998679+00:00",
+  "html_len": 138177,
+  "md_len": 5078,
+  "depth": 0
+}

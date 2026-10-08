@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/wrangler-v2-beta/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/wrangler-v2-beta.md",
+  "title": "wrangler 2.0 \u2014\u2014 Cloudflare Workers \u7684\u65b0\u5f00\u53d1\u4f53\u9a8c | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:55.043421+00:00",
+  "html_len": 190962,
+  "md_len": 22329,
+  "depth": 0,
+  "phase": 2
+}

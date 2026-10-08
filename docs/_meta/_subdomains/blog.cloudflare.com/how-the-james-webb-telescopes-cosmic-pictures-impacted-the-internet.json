@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-the-james-webb-telescopes-cosmic-pictures-impacted-the-internet/",
+  "file": "_subdomains/blog.cloudflare.com/how-the-james-webb-telescopes-cosmic-pictures-impacted-the-internet.md",
+  "title": "How the James Webb Telescope's cosmic pictures impacted the Internet | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:13.445059+00:00",
+  "html_len": 284850,
+  "md_len": 59750,
+  "depth": 0,
+  "phase": 2
+}

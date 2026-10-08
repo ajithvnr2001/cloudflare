@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/tag/mirai/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/tag/mirai.md",
+  "title": "Beitr\u00e4ge mit dem Tag \"Mirai\" \u2014 Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:16:50.879907+00:00",
+  "html_len": 115223,
+  "md_len": 3496,
+  "depth": 1,
+  "phase": 2
+}

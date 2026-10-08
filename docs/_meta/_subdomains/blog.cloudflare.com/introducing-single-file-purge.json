@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-single-file-purge/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-single-file-purge.md",
+  "title": "Introducing: Single File Cache Purge | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:59.551991+00:00",
+  "html_len": 268347,
+  "md_len": 54954,
+  "depth": 0,
+  "phase": 2
+}

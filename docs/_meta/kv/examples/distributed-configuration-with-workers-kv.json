@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/kv/examples/distributed-configuration-with-workers-kv/",
+  "file": "kv/examples/distributed-configuration-with-workers-kv.md",
+  "title": "Build a distributed configuration store \u00b7 Cloudflare Workers KV docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:11:40.289104+00:00",
+  "html_len": 132661,
+  "md_len": 9594,
+  "depth": 0
+}

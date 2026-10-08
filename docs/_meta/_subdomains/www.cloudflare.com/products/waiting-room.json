@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/products/waiting-room/",
+  "file": "_subdomains/www.cloudflare.com/products/waiting-room.md",
+  "title": "Cloudflare Waiting Room - Manage Traffic Surges",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:14.086706+00:00",
+  "html_len": 663739,
+  "md_len": 8759,
+  "depth": 0,
+  "phase": 2
+}

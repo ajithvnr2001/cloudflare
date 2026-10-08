@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloud-connector/",
+  "file": "_subdomains/blog.cloudflare.com/cloud-connector.md",
+  "title": "Simplify cloud routing and object storage configurations with Cloud Connector | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:41.465970+00:00",
+  "html_len": 293206,
+  "md_len": 67360,
+  "depth": 0,
+  "phase": 2
+}

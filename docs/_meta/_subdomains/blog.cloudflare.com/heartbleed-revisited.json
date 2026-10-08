@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/heartbleed-revisited/",
+  "file": "_subdomains/blog.cloudflare.com/heartbleed-revisited.md",
+  "title": "Heartbleed Revisited | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:04.776912+00:00",
+  "html_len": 292315,
+  "md_len": 64808,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/understand-and-reduce-your-carbon-impact-with-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/understand-and-reduce-your-carbon-impact-with-cloudflare.md",
+  "title": "Understand and reduce your carbon impact with Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:23:56.397831+00:00",
+  "html_len": 279084,
+  "md_len": 60851,
+  "depth": 1
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/page-rules/troubleshooting/",
+  "file": "rules/page-rules/troubleshooting.md",
+  "title": "Troubleshooting \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:51.516292+00:00",
+  "html_len": 129540,
+  "md_len": 1494,
+  "depth": 0
+}

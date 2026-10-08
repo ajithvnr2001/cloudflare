@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/cache/purge/",
+  "file": "workers/cache/purge.md",
+  "title": "Purge and invalidate the cache \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:11.362293+00:00",
+  "html_len": 316980,
+  "md_len": 27759,
+  "depth": 0
+}

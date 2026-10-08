@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/cloudflares-abuse-policies-and-approach/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/cloudflares-abuse-policies-and-approach.md",
+  "title": "Cloudflare: Richtlinien zu & Umgang mit Regelverst\u00f6\u00dfen | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:53.681621+00:00",
+  "html_len": 226444,
+  "md_len": 44638,
+  "depth": 0,
+  "phase": 2
+}

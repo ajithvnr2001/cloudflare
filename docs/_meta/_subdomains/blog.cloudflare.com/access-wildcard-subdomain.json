@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/access-wildcard-subdomain/",
+  "file": "_subdomains/blog.cloudflare.com/access-wildcard-subdomain.md",
+  "title": "Securing infrastructure at scale with Cloudflare Access | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:17.854526+00:00",
+  "html_len": 277369,
+  "md_len": 60148,
+  "depth": 0,
+  "phase": 2
+}

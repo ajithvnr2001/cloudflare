@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/udacity/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/udacity.md",
+  "title": "Udacity",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:53.057629+00:00",
+  "html_len": 204931,
+  "md_len": 5412,
+  "depth": 0,
+  "phase": 2
+}

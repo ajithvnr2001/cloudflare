@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/agent-registry/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/agent-registry.md",
+  "title": "IP \ubaa9\ub85d\uc744 \ub118\uc5b4\uc11c- \ubd07 \ubc0f \uc5d0\uc774\uc804\ud2b8\ub97c \uc704\ud55c \ub808\uc9c0\uc2a4\ud2b8\ub9ac \ud615\uc2dd | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:52.977285+00:00",
+  "html_len": 220039,
+  "md_len": 33819,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/what-happens-when-a-hurricane-hits-the-web/",
+  "file": "_subdomains/blog.cloudflare.com/what-happens-when-a-hurricane-hits-the-web.md",
+  "title": "What Happens When a Hurricane Hits the Web | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:55.203208+00:00",
+  "html_len": 279558,
+  "md_len": 60426,
+  "depth": 0,
+  "phase": 2
+}

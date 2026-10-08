@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/estonian-railways/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/estonian-railways.md",
+  "title": "Estonian Railways & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:28.928041+00:00",
+  "html_len": 221598,
+  "md_len": 12142,
+  "depth": 0,
+  "phase": 2
+}

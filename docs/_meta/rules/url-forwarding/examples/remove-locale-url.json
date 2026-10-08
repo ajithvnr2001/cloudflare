@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/url-forwarding/examples/remove-locale-url/",
+  "file": "rules/url-forwarding/examples/remove-locale-url.md",
+  "title": "Remove locale from URL path \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:15:00.296396+00:00",
+  "html_len": 133394,
+  "md_len": 2808,
+  "depth": 0
+}

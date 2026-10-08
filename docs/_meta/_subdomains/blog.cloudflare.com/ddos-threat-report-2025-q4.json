@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ddos-threat-report-2025-q4/",
+  "file": "_subdomains/blog.cloudflare.com/ddos-threat-report-2025-q4.md",
+  "title": "2025 Q4 DDoS threat report: A record-setting 31.4 Tbps attack caps a year of massive DDoS assaults | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:45.200441+00:00",
+  "html_len": 328036,
+  "md_len": 73113,
+  "depth": 0,
+  "phase": 2
+}

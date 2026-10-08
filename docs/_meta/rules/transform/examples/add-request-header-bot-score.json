@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/transform/examples/add-request-header-bot-score/",
+  "file": "rules/transform/examples/add-request-header-bot-score.md",
+  "title": "Add a request header with the current bot score \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:55.522057+00:00",
+  "html_len": 132191,
+  "md_len": 1817,
+  "depth": 0
+}

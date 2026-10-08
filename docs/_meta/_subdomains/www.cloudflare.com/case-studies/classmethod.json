@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/classmethod/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/classmethod.md",
+  "title": "Classmethod & Cloudflare | Case Study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:23.792591+00:00",
+  "html_len": 203335,
+  "md_len": 7810,
+  "depth": 0,
+  "phase": 2
+}

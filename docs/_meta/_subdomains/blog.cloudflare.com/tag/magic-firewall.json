@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/magic-firewall/",
+  "file": "_subdomains/blog.cloudflare.com/tag/magic-firewall.md",
+  "title": "Posts tagged \"Magic Firewall\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:09:26.437104+00:00",
+  "html_len": 119760,
+  "md_len": 4078,
+  "depth": 1,
+  "phase": 2
+}

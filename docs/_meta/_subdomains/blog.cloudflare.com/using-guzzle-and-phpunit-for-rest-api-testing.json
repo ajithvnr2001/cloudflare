@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/using-guzzle-and-phpunit-for-rest-api-testing/",
+  "file": "_subdomains/blog.cloudflare.com/using-guzzle-and-phpunit-for-rest-api-testing.md",
+  "title": "Using Guzzle and PHPUnit for REST API Testing | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:24.545664+00:00",
+  "html_len": 294413,
+  "md_len": 60680,
+  "depth": 0,
+  "phase": 2
+}

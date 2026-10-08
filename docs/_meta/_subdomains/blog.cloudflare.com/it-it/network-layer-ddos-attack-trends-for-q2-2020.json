@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/it-it/network-layer-ddos-attack-trends-for-q2-2020/",
+  "file": "_subdomains/blog.cloudflare.com/it-it/network-layer-ddos-attack-trends-for-q2-2020.md",
+  "title": "Tendenze degli attacchi DDoS a livello di rete nel secondo trimestre del 2020 | Il blog di Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:57.942110+00:00",
+  "html_len": 222508,
+  "md_len": 31026,
+  "depth": 0,
+  "phase": 2
+}

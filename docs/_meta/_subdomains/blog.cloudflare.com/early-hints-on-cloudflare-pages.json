@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/early-hints-on-cloudflare-pages/",
+  "file": "_subdomains/blog.cloudflare.com/early-hints-on-cloudflare-pages.md",
+  "title": "Cloudflare Pages gets even faster with Early Hints | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:19.982352+00:00",
+  "html_len": 300950,
+  "md_len": 64251,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/changelog/rss/cache.xml",
+  "file": "changelog/rss/cache.xml.md",
+  "title": "Cloudflare changelogs | Cache",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:25:42.129656+00:00",
+  "html_len": 126953,
+  "md_len": 108405,
+  "depth": 1
+}

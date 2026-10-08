@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/post-mortem-todays-attack-apparent-google-app/",
+  "file": "_subdomains/blog.cloudflare.com/post-mortem-todays-attack-apparent-google-app.md",
+  "title": "Post Mortem: Today's Attack; Apparent Google Apps/Gmail Vulnerability; and How to Protect Yourself | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:04.147993+00:00",
+  "html_len": 272218,
+  "md_len": 63163,
+  "depth": 0,
+  "phase": 2
+}

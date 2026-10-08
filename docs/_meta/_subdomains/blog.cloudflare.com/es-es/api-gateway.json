@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/api-gateway/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/api-gateway.md",
+  "title": "Novedad: Cloudflare API Gateway | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:36.015418+00:00",
+  "html_len": 234052,
+  "md_len": 40911,
+  "depth": 0,
+  "phase": 2
+}

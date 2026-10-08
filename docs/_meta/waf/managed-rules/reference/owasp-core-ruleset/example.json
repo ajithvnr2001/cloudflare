@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/managed-rules/reference/owasp-core-ruleset/example/",
+  "file": "waf/managed-rules/reference/owasp-core-ruleset/example.md",
+  "title": "OWASP evaluation example \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:45.176746+00:00",
+  "html_len": 137406,
+  "md_len": 3357,
+  "depth": 0
+}

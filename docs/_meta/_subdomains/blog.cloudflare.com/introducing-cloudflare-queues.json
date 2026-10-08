@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-cloudflare-queues/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-cloudflare-queues.md",
+  "title": "Cloudflare Queues: globally distributed queues without the egress fees | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:04.996880+00:00",
+  "html_len": 289683,
+  "md_len": 61660,
+  "depth": 0,
+  "phase": 2
+}

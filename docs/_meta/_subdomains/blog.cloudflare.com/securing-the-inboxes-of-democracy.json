@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/securing-the-inboxes-of-democracy/",
+  "file": "_subdomains/blog.cloudflare.com/securing-the-inboxes-of-democracy.md",
+  "title": "How Cloudflare helps secure the inboxes of democracy | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:12.867068+00:00",
+  "html_len": 284300,
+  "md_len": 61516,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/stream-live-captions/",
+  "file": "_subdomains/blog.cloudflare.com/stream-live-captions.md",
+  "title": "Closed Caption support coming to Stream Live | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:24.652321+00:00",
+  "html_len": 277165,
+  "md_len": 56998,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/magic-transit/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/magic-transit.md",
+  "title": "Mit Magic Transit wird Ihr Netzwerk intelligenter, besser, st\u00e4rker und kosteng\u00fcnstiger | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:59.757209+00:00",
+  "html_len": 224710,
+  "md_len": 44595,
+  "depth": 0,
+  "phase": 2
+}

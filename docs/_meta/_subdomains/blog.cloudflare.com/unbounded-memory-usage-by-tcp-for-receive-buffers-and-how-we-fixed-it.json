@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/unbounded-memory-usage-by-tcp-for-receive-buffers-and-how-we-fixed-it/",
+  "file": "_subdomains/blog.cloudflare.com/unbounded-memory-usage-by-tcp-for-receive-buffers-and-how-we-fixed-it.md",
+  "title": "Unbounded memory usage by TCP for receive buffers, and how we fixed it | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:27.433531+00:00",
+  "html_len": 356540,
+  "md_len": 87355,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,54 @@
+---
+url: https://developers.cloudflare.com/use-cases/company-security/data-loss-prevention/
+title: Prevent data loss \u00b7 Cloudflare use cases
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:16:09.887159+00:00
+---
+
+# Prevent data loss · Cloudflare use cases
+
+> Source: https://developers.cloudflare.com/use-cases/company-security/data-loss-prevention/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Use cases](https://developers.cloudflare.com/use-cases/)
+  3. /[Company security](https://developers.cloudflare.com/use-cases/company-security/)
+  4. /Prevent data loss
+
+
+
+# Prevent data loss
+
+Last updated Apr 24, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/use-cases/company-security/data-loss-prevention/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewSolutions Cloudflare OneGet started
+
+Sensitive data — Personally Identifiable Information (PII), payment card numbers, health records — can leave your network through employee uploads, SaaS misconfigurations, or compromised applications. Cloudflare One detects sensitive data patterns in traffic and blocks exfiltration in real time.
+
+## Solutions
+
+### Cloudflare One
+
+Secure your organization with a cloud security platform that replaces legacy perimeters with Cloudflare's global network. [Learn more about Cloudflare One](https://developers.cloudflare.com/cloudflare-one/).
+
+  * **Data detection** \- Identify sensitive data patterns — Personally Identifiable Information (PII), Payment Card Industry (PCI), Protected Health Information (PHI), and custom patterns — in traffic flowing through Gateway
+  * **Inline protection** \- Block uploads or transfers of sensitive data in real time before they leave the network
+  * **SaaS visibility** \- Discover which SaaS applications employees are using, including unsanctioned shadow IT
+  * **Posture management** \- Identify misconfigurations and overly permissive sharing settings across connected SaaS apps
+
+
+
+## Get started
+
+  1. [Configure DLP policies](https://developers.cloudflare.com/cloudflare-one/data-loss-prevention/)
+  2. [Set up CASB integrations](https://developers.cloudflare.com/cloudflare-one/cloud-and-saas-findings/)
+  3. [Create Gateway HTTP policies for DLP](https://developers.cloudflare.com/cloudflare-one/traffic-policies/http-policies/)
+
+
+
+[PreviousStop email phishing attacks](https://developers.cloudflare.com/use-cases/company-security/email-security/)[NextEnsure device endpoint security](https://developers.cloudflare.com/use-cases/company-security/device-security/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/use-cases/company-security/data-loss-prevention.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

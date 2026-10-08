@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/fossil/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/fossil.md",
+  "title": "FOSSIL & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:30.917499+00:00",
+  "html_len": 206824,
+  "md_len": 12915,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/tag/olympics/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/tag/olympics.md",
+  "title": "Articles tagu\u00e9s \u00ab Olympics (FR) \u00bb \u2014 Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:13:17.775571+00:00",
+  "html_len": 118120,
+  "md_len": 2880,
+  "depth": 1,
+  "phase": 2
+}

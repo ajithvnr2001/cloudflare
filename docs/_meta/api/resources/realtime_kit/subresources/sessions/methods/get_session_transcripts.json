@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/sessions/methods/get_session_transcripts/",
+  "file": "api/resources/realtime_kit/subresources/sessions/methods/get_session_transcripts.md",
+  "title": "Fetch the complete transcript for a session | Cloudflare API",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:26:46.158347+00:00",
+  "html_len": 1942357,
+  "md_len": 2644,
+  "depth": 1
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/jcb/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/jcb.md",
+  "title": "JCB | Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:35.277276+00:00",
+  "html_len": 204731,
+  "md_len": 5361,
+  "depth": 0,
+  "phase": 2
+}

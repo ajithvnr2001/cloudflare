@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/web-analytics-vitals-explorer/",
+  "file": "_subdomains/blog.cloudflare.com/web-analytics-vitals-explorer.md",
+  "title": "Discovering what\u2019s slowing down your website with Web Analytics | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:07.372704+00:00",
+  "html_len": 281258,
+  "md_len": 61012,
+  "depth": 0,
+  "phase": 2
+}

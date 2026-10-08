@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/speed/observatory/run-speed-test/",
+  "file": "speed/observatory/run-speed-test.md",
+  "title": "Run test \u00b7 Cloudflare Speed docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:15:34.023153+00:00",
+  "html_len": 118385,
+  "md_len": 5474,
+  "depth": 0
+}

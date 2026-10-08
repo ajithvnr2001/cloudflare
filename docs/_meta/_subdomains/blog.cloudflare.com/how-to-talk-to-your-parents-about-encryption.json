@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-to-talk-to-your-parents-about-encryption/",
+  "file": "_subdomains/blog.cloudflare.com/how-to-talk-to-your-parents-about-encryption.md",
+  "title": "How to Talk to Your Parents About Encryption | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:48.122027+00:00",
+  "html_len": 272269,
+  "md_len": 59575,
+  "depth": 0,
+  "phase": 2
+}

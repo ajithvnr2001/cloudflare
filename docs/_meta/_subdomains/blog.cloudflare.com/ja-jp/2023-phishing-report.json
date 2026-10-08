@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/2023-phishing-report/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/2023-phishing-report.md",
+  "title": "Cloudflare\u306e\u300c2023\u5e74\u30d5\u30a3\u30c3\u30b7\u30f3\u30b0\u8105\u5a01\u30ec\u30dd\u30fc\u30c8\u300d\u306e\u3054\u7d39\u4ecb | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:19.841390+00:00",
+  "html_len": 229195,
+  "md_len": 36091,
+  "depth": 0,
+  "phase": 2
+}

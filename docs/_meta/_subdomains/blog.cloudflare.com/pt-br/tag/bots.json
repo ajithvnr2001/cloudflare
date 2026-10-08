@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/tag/bots/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/tag/bots.md",
+  "title": "Posts com a tag \"Bots\" \u2014 Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:06:53.917659+00:00",
+  "html_len": 126737,
+  "md_len": 5865,
+  "depth": 1,
+  "phase": 2
+}

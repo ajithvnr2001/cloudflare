@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cname-a-record-order-dns-standards/",
+  "file": "_subdomains/blog.cloudflare.com/cname-a-record-order-dns-standards.md",
+  "title": "What came first- the CNAME or the A record | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:57.496822+00:00",
+  "html_len": 310084,
+  "md_len": 69742,
+  "depth": 0,
+  "phase": 2
+}

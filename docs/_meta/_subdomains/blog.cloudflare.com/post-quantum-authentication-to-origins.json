@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/post-quantum-authentication-to-origins/",
+  "file": "_subdomains/blog.cloudflare.com/post-quantum-authentication-to-origins.md",
+  "title": "Post-quantum authentication to origins is now supported | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:27.705798+00:00",
+  "html_len": 331700,
+  "md_len": 78257,
+  "depth": 0,
+  "phase": 2
+}

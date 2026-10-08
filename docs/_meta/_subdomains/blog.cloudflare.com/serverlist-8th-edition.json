@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/serverlist-8th-edition/",
+  "file": "_subdomains/blog.cloudflare.com/serverlist-8th-edition.md",
+  "title": "The Serverlist: Static sites, serverless costs, and more | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:35.652616+00:00",
+  "html_len": 267309,
+  "md_len": 53853,
+  "depth": 0,
+  "phase": 2
+}

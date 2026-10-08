@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/deploy-planetscale-postgres-with-workers/",
+  "file": "_subdomains/blog.cloudflare.com/deploy-planetscale-postgres-with-workers.md",
+  "title": "Deploy Postgres and MySQL databases with PlanetScale + Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:32.402045+00:00",
+  "html_len": 301146,
+  "md_len": 62746,
+  "depth": 0,
+  "phase": 2
+}

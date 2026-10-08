@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/automatically-secure/",
+  "file": "_subdomains/blog.cloudflare.com/automatically-secure.md",
+  "title": "Automatically Secure: how we upgraded 6,000,000 domains by default to get ready for the Quantum Future | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:49.530082+00:00",
+  "html_len": 337559,
+  "md_len": 85748,
+  "depth": 0,
+  "phase": 2
+}

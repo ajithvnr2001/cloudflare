@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/detections/threat-intelligence/",
+  "file": "waf/detections/threat-intelligence.md",
+  "title": "Threat intelligence \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:42.516035+00:00",
+  "html_len": 135992,
+  "md_len": 3647,
+  "depth": 0
+}

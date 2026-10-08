@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/one-observability-platform/",
+  "file": "_subdomains/blog.cloudflare.com/one-observability-platform.md",
+  "title": "8 major updates to Cloudflare Observability | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:22.624951+00:00",
+  "html_len": 333985,
+  "md_len": 70274,
+  "depth": 0,
+  "phase": 2
+}

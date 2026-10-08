@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/county-of-san-luis-obispo/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/county-of-san-luis-obispo.md",
+  "title": "County of San Luis Obispo",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:24.505181+00:00",
+  "html_len": 205278,
+  "md_len": 8947,
+  "depth": 0,
+  "phase": 2
+}

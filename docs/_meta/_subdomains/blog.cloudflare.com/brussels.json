@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/brussels/",
+  "file": "_subdomains/blog.cloudflare.com/brussels.md",
+  "title": "Brussels, Belgium: CloudFlare's 81st Data Center is Live! | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:36.558545+00:00",
+  "html_len": 268599,
+  "md_len": 54715,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/5-more-page-rules-for-5-dollars/",
+  "file": "_subdomains/blog.cloudflare.com/5-more-page-rules-for-5-dollars.md",
+  "title": "You Can Finally Get More Page Rules For 5 For $5 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:33.349308+00:00",
+  "html_len": 268147,
+  "md_len": 54689,
+  "depth": 0,
+  "phase": 2
+}

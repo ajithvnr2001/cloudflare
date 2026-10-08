@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-root-cause-of-large-ddos-ip-spoofing/",
+  "file": "_subdomains/blog.cloudflare.com/the-root-cause-of-large-ddos-ip-spoofing.md",
+  "title": "The real cause of large DDoS - IP Spoofing | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:42.645910+00:00",
+  "html_len": 319931,
+  "md_len": 71873,
+  "depth": 0,
+  "phase": 2
+}

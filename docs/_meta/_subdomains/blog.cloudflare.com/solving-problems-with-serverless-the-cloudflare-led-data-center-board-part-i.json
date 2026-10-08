@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/solving-problems-with-serverless-the-cloudflare-led-data-center-board-part-i/",
+  "file": "_subdomains/blog.cloudflare.com/solving-problems-with-serverless-the-cloudflare-led-data-center-board-part-i.md",
+  "title": "Solving Problems with Serverless \u2013 The Cloudflare LED Data Center Board, Part I | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:57.947048+00:00",
+  "html_len": 283681,
+  "md_len": 60937,
+  "depth": 0,
+  "phase": 2
+}

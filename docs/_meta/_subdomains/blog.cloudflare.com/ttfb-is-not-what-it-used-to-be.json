@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ttfb-is-not-what-it-used-to-be/",
+  "file": "_subdomains/blog.cloudflare.com/ttfb-is-not-what-it-used-to-be.md",
+  "title": "Are you measuring what matters? A fresh look at Time To First Byte | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:23.529856+00:00",
+  "html_len": 294189,
+  "md_len": 69189,
+  "depth": 0,
+  "phase": 2
+}

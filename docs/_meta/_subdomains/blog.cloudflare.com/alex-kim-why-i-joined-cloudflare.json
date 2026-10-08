@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/alex-kim-why-i-joined-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/alex-kim-why-i-joined-cloudflare.md",
+  "title": "Alex Kim: Why I joined Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:52.474269+00:00",
+  "html_len": 270929,
+  "md_len": 58771,
+  "depth": 0,
+  "phase": 2
+}

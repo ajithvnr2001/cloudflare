@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/sfomarathon/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/sfomarathon.md",
+  "title": "The San Francisco Marathon",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:47.718125+00:00",
+  "html_len": 201683,
+  "md_len": 4145,
+  "depth": 0,
+  "phase": 2
+}

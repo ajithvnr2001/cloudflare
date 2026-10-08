@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/evolution-of-cloudflare-radar/",
+  "file": "_subdomains/blog.cloudflare.com/evolution-of-cloudflare-radar.md",
+  "title": "Making the Internet observable- the evolution of Cloudflare Radar | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:01.528729+00:00",
+  "html_len": 323922,
+  "md_len": 76622,
+  "depth": 0,
+  "phase": 2
+}

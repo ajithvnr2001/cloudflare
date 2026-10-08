@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/privacy-pass-the-math/",
+  "file": "_subdomains/blog.cloudflare.com/privacy-pass-the-math.md",
+  "title": "Privacy Pass - \u201cThe Math\u201d | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:57.799008+00:00",
+  "html_len": 305586,
+  "md_len": 76550,
+  "depth": 0,
+  "phase": 2
+}

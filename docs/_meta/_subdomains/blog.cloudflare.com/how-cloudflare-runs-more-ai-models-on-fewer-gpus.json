@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-cloudflare-runs-more-ai-models-on-fewer-gpus/",
+  "file": "_subdomains/blog.cloudflare.com/how-cloudflare-runs-more-ai-models-on-fewer-gpus.md",
+  "title": "How Cloudflare runs more AI models on fewer GPUs:  A technical deep-dive | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:06.416353+00:00",
+  "html_len": 309220,
+  "md_len": 69402,
+  "depth": 0,
+  "phase": 2
+}

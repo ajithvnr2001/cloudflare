@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/residential-proxy-bot-detection-using-machine-learning/",
+  "file": "_subdomains/blog.cloudflare.com/residential-proxy-bot-detection-using-machine-learning.md",
+  "title": "Using machine learning to detect bot attacks that leverage residential proxies | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:44.953576+00:00",
+  "html_len": 312337,
+  "md_len": 74658,
+  "depth": 0,
+  "phase": 2
+}

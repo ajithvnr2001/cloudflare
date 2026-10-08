@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/increased-interest-in-spanish-media-after-the-la-palma-volcanic-eruption/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/increased-interest-in-spanish-media-after-the-la-palma-volcanic-eruption.md",
+  "title": "Crece el inter\u00e9s en los medios de comunicaci\u00f3n espa\u00f1oles tras la erupci\u00f3n volc\u00e1nica de La Palma | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:19.702360+00:00",
+  "html_len": 195788,
+  "md_len": 23323,
+  "depth": 0,
+  "phase": 2
+}

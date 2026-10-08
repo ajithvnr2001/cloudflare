@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/radar-2022-year-in-review/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/radar-2022-year-in-review.md",
+  "title": "Bilan Year In Review 2022 de Cloudflare Radar | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:27.476202+00:00",
+  "html_len": 378660,
+  "md_len": 112308,
+  "depth": 0,
+  "phase": 2
+}

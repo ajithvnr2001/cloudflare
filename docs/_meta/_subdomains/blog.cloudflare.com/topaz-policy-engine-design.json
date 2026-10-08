@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/topaz-policy-engine-design/",
+  "file": "_subdomains/blog.cloudflare.com/topaz-policy-engine-design.md",
+  "title": "How we prevent conflicts in authoritative DNS configuration using formal verification | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:31.031790+00:00",
+  "html_len": 325717,
+  "md_len": 82434,
+  "depth": 0,
+  "phase": 2
+}

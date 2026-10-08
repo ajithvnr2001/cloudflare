@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/location-aware-ddos-protection/",
+  "file": "_subdomains/blog.cloudflare.com/location-aware-ddos-protection.md",
+  "title": "Introducing Location-Aware DDoS Protection | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:29.974406+00:00",
+  "html_len": 287511,
+  "md_len": 59475,
+  "depth": 0,
+  "phase": 2
+}

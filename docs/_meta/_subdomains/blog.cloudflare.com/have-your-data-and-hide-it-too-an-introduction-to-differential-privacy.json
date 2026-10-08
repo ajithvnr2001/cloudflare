@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/have-your-data-and-hide-it-too-an-introduction-to-differential-privacy/",
+  "file": "_subdomains/blog.cloudflare.com/have-your-data-and-hide-it-too-an-introduction-to-differential-privacy.md",
+  "title": "Have your data and hide it too: an introduction to differential privacy | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:05.214208+00:00",
+  "html_len": 319137,
+  "md_len": 81953,
+  "depth": 0,
+  "phase": 2
+}

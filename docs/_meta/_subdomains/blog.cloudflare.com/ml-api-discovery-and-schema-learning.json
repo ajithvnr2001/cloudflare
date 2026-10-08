@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/ml-api-discovery-and-schema-learning/",
+  "file": "_subdomains/blog.cloudflare.com/ml-api-discovery-and-schema-learning.md",
+  "title": "Automatically discovering API endpoints and generating schemas using machine learning | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:23:59.205912+00:00",
+  "html_len": 317265,
+  "md_len": 76522,
+  "depth": 1
+}

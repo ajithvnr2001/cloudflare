@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/route-leak-detection/",
+  "file": "_subdomains/blog.cloudflare.com/route-leak-detection.md",
+  "title": "Protecting Cloudflare Customers from BGP Insecurity with Route Leak Detection | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:06.210275+00:00",
+  "html_len": 297600,
+  "md_len": 67147,
+  "depth": 0,
+  "phase": 2
+}

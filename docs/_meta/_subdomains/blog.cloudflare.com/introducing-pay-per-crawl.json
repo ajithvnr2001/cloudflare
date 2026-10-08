@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-pay-per-crawl/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-pay-per-crawl.md",
+  "title": "Introducing pay per crawl: Enabling content owners to charge AI crawlers for access | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:21:56.599401+00:00",
+  "html_len": 297670,
+  "md_len": 64712,
+  "depth": 1
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/serverless-matrix-homeserver-workers/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/serverless-matrix-homeserver-workers.md",
+  "title": "\u6784\u5efa\u65e0\u670d\u52a1\u5668\u3001\u62b5\u5fa1\u91cf\u5b50\u8ba1\u7b97\u5a01\u80c1\u7684 Matrix \u5bb6\u5ead\u670d\u52a1\u5668 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:43.883858+00:00",
+  "html_len": 221506,
+  "md_len": 31153,
+  "depth": 0,
+  "phase": 2
+}

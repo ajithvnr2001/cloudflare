@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/astro-issue-triage/",
+  "file": "_subdomains/blog.cloudflare.com/astro-issue-triage.md",
+  "title": "How we built a software factory to drive Astro\u2019s GitHub issue count to zero | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:25.377078+00:00",
+  "html_len": 445933,
+  "md_len": 212027,
+  "depth": 0,
+  "phase": 2
+}

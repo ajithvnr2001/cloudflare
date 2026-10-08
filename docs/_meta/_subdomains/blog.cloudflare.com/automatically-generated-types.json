@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/automatically-generated-types/",
+  "file": "_subdomains/blog.cloudflare.com/automatically-generated-types.md",
+  "title": "Automatically generating types for Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:58.259707+00:00",
+  "html_len": 314404,
+  "md_len": 62861,
+  "depth": 0,
+  "phase": 2
+}

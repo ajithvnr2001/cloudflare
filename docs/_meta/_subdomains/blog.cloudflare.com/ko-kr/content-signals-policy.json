@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/content-signals-policy/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/content-signals-policy.md",
+  "title": "\uc0ac\uc6a9\uc790\uc5d0\uac8c \uc120\ud0dd\uad8c\uc744 \uc8fc\ub294 Cloudflare\uc758 \uc0c8\ub85c\uc6b4 \ucf58\ud150\uce20 \uc2e0\ud638 \uc815\ucc45 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:47.532382+00:00",
+  "html_len": 231342,
+  "md_len": 35131,
+  "depth": 0,
+  "phase": 2
+}

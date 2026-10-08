@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/improving-html-time-to-first-byte/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/improving-html-time-to-first-byte.md",
+  "title": "\u6539\u8fdbHTML\u7684\u7b2c\u4e00\u4e2a\u5b57\u8282\u65f6\u95f4 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:24.866874+00:00",
+  "html_len": 220890,
+  "md_len": 29664,
+  "depth": 0,
+  "phase": 2
+}

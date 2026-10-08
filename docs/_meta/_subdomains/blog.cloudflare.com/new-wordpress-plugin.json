@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/new-wordpress-plugin/",
+  "file": "_subdomains/blog.cloudflare.com/new-wordpress-plugin.md",
+  "title": "CloudFlare\u2019s new WordPress plugin | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:32.191853+00:00",
+  "html_len": 271064,
+  "md_len": 56082,
+  "depth": 0,
+  "phase": 2
+}

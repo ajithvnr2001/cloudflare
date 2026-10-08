@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/batched-dns-changes/",
+  "file": "_subdomains/blog.cloudflare.com/batched-dns-changes.md",
+  "title": "Making zone management more efficient with batch DNS record updates | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:38.496663+00:00",
+  "html_len": 318461,
+  "md_len": 72843,
+  "depth": 0,
+  "phase": 2
+}

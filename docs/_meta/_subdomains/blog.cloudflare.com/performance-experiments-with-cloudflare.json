@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/performance-experiments-with-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/performance-experiments-with-cloudflare.md",
+  "title": "How to use Cloudflare Observatory for performance experiments | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:43.615275+00:00",
+  "html_len": 284594,
+  "md_len": 62359,
+  "depth": 0,
+  "phase": 2
+}

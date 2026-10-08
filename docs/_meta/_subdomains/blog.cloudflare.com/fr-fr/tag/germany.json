@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/tag/germany/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/tag/germany.md",
+  "title": "Articles tagu\u00e9s \u00ab Germany (FR) \u00bb \u2014 Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:13:10.402063+00:00",
+  "html_len": 110379,
+  "md_len": 1050,
+  "depth": 1,
+  "phase": 2
+}

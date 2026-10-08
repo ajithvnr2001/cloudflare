@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/static-assets/get-started/",
+  "file": "workers/static-assets/get-started.md",
+  "title": "Get Started \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:51.574062+00:00",
+  "html_len": 214936,
+  "md_len": 7766,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/improving-your-monitoring-setup-by-integrating-cloudflares-analytics-data-into-prometheus-and-grafana/",
+  "file": "_subdomains/blog.cloudflare.com/improving-your-monitoring-setup-by-integrating-cloudflares-analytics-data-into-prometheus-and-grafana.md",
+  "title": "Improving your monitoring setup by integrating Cloudflare\u2019s analytics data into Prometheus and Grafana | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:22.136850+00:00",
+  "html_len": 292502,
+  "md_len": 62101,
+  "depth": 0,
+  "phase": 2
+}

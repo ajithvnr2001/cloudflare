@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/revenge-listening-sockets/",
+  "file": "_subdomains/blog.cloudflare.com/revenge-listening-sockets.md",
+  "title": "The revenge of the listening sockets | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:42.446252+00:00",
+  "html_len": 300905,
+  "md_len": 65098,
+  "depth": 0,
+  "phase": 2
+}

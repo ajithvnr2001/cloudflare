@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/changelog/rss/artifacts.xml",
+  "file": "changelog/rss/artifacts.xml.md",
+  "title": "Cloudflare changelogs | Artifacts",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:24:02.415144+00:00",
+  "html_len": 37706,
+  "md_len": 30380,
+  "depth": 1
+}

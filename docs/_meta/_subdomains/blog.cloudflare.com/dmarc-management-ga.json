@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/dmarc-management-ga/",
+  "file": "_subdomains/blog.cloudflare.com/dmarc-management-ga.md",
+  "title": "Cloudflare DMARC Management is now generally available | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:46.303370+00:00",
+  "html_len": 292907,
+  "md_len": 65221,
+  "depth": 0,
+  "phase": 2
+}

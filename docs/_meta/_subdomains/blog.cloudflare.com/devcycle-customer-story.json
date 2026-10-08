@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/devcycle-customer-story/",
+  "file": "_subdomains/blog.cloudflare.com/devcycle-customer-story.md",
+  "title": "Cloudflare Workers scale too well and broke our infrastructure, so we are rebuilding it on Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:00.462642+00:00",
+  "html_len": 288597,
+  "md_len": 65010,
+  "depth": 0,
+  "phase": 2
+}

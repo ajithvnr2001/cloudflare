@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/detecting-internet-outages/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/detecting-internet-outages.md",
+  "title": "\uc624\ud504\ub77c\uc778 \uc0c1\ud0dc: Cloudflare Radar\uc758 \uc778\ud130\ub137 \uc911\ub2e8 \uac10\uc9c0 \ubc29\ubc95 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:37.105620+00:00",
+  "html_len": 253598,
+  "md_len": 44673,
+  "depth": 0,
+  "phase": 2
+}

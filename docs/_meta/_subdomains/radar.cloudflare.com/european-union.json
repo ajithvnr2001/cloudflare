@@ -1,0 +1,10 @@
+{
+  "url": "https://radar.cloudflare.com/european-union/",
+  "file": "_subdomains/radar.cloudflare.com/european-union.md",
+  "title": "European Union Overview | Cloudflare Radar",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:27:36.123272+00:00",
+  "html_len": 174169,
+  "md_len": 3609,
+  "depth": 1
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/managed-rules/check-for-exposed-credentials/monitor-events/",
+  "file": "waf/managed-rules/check-for-exposed-credentials/monitor-events.md",
+  "title": "Monitor exposed credentials events \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:43.507837+00:00",
+  "html_len": 138141,
+  "md_len": 2910,
+  "depth": 0
+}

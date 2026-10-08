@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/ai/what-is-lora/",
+  "file": "_subdomains/www.cloudflare.com/learning/ai/what-is-lora.md",
+  "title": "What is low-rank adaptation (LoRA)?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:05:05.503020+00:00",
+  "html_len": 210570,
+  "md_len": 13895,
+  "depth": 0,
+  "phase": 2
+}

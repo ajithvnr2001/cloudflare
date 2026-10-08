@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/applications/methods/update/",
+  "file": "api/resources/zero_trust/subresources/access/subresources/applications/methods/update.md",
+  "title": "Update an Access application | Cloudflare API",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:27:35.682096+00:00",
+  "html_len": 18725504,
+  "md_len": 735205,
+  "depth": 1
+}

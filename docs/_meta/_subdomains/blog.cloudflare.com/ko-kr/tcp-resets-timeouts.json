@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/tcp-resets-timeouts/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/tcp-resets-timeouts.md",
+  "title": "Cloudflare Radar\uc758 TCP \uc7ac\uc124\uc815 \ubc0f \uc81c\ud55c \uc2dc\uac04 \ucd08\uacfc\uc5d0 \ub300\ud55c \uc778\uc0ac\uc774\ud2b8 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:17.057673+00:00",
+  "html_len": 301185,
+  "md_len": 61399,
+  "depth": 0,
+  "phase": 2
+}

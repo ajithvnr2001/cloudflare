@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/html-rewriter-beta/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/html-rewriter-beta.md",
+  "title": "No tan est\u00e1tico... Presentamos la versi\u00f3n Beta de LA API HTMLRewriter a Cloudflare Workers | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:51.645041+00:00",
+  "html_len": 208164,
+  "md_len": 28473,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/navigating-the-maze-of-magecart/",
+  "file": "_subdomains/blog.cloudflare.com/navigating-the-maze-of-magecart.md",
+  "title": "Navigating the maze of Magecart: a cautionary tale of a Magecart impacted website | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:59.994434+00:00",
+  "html_len": 325516,
+  "md_len": 68781,
+  "depth": 0,
+  "phase": 2
+}

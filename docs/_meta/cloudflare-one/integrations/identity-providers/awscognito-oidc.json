@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/cloudflare-one/integrations/identity-providers/awscognito-oidc/",
+  "file": "cloudflare-one/integrations/identity-providers/awscognito-oidc.md",
+  "title": "Amazon Cognito \u00b7 Cloudflare One docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:09:01.640790+00:00",
+  "html_len": 288531,
+  "md_len": 5412,
+  "depth": 0
+}

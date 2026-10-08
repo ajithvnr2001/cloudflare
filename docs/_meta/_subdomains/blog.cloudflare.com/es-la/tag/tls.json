@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-la/tag/tls/",
+  "file": "_subdomains/blog.cloudflare.com/es-la/tag/tls.md",
+  "title": "Publicaciones etiquetadas con \"TLS\" \u2014 El blog de Cloudflare",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (214 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:23:27.499515+00:00",
+  "html_len": 115349,
+  "md_len": 2834,
+  "depth": 1,
+  "phase": 2
+}

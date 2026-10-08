@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/introducing-backup-certificates/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/introducing-backup-certificates.md",
+  "title": "\uc18c\uac1c: \ubc31\uc5c5 \uc778\uc99d\uc11c | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:40:47.076637+00:00",
+  "html_len": 206347,
+  "md_len": 31900,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/connection-tampering/",
+  "file": "_subdomains/blog.cloudflare.com/connection-tampering.md",
+  "title": "A global assessment of third-party connection tampering | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:12.173820+00:00",
+  "html_len": 365878,
+  "md_len": 98361,
+  "depth": 0,
+  "phase": 2
+}

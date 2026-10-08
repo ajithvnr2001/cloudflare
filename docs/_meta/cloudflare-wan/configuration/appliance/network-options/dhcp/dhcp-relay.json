@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/cloudflare-wan/configuration/appliance/network-options/dhcp/dhcp-relay/",
+  "file": "cloudflare-wan/configuration/appliance/network-options/dhcp/dhcp-relay.md",
+  "title": "DHCP relay \u00b7 Cloudflare WAN docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:10:26.711549+00:00",
+  "html_len": 124437,
+  "md_len": 4300,
+  "depth": 0
+}

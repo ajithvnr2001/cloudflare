@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/content-as-a-product/",
+  "file": "_subdomains/blog.cloudflare.com/content-as-a-product.md",
+  "title": "How we treat content as a product | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:20.378863+00:00",
+  "html_len": 273236,
+  "md_len": 59897,
+  "depth": 0,
+  "phase": 2
+}

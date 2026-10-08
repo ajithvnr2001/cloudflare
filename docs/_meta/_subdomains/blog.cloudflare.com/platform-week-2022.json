@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/platform-week-2022/",
+  "file": "_subdomains/blog.cloudflare.com/platform-week-2022.md",
+  "title": "Welcome to Platform Week | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:38.064186+00:00",
+  "html_len": 282078,
+  "md_len": 60514,
+  "depth": 0,
+  "phase": 2
+}

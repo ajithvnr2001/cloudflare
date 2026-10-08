@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/enhancing-optimizely-with-cloudflare-workers/",
+  "file": "_subdomains/blog.cloudflare.com/enhancing-optimizely-with-cloudflare-workers.md",
+  "title": "Enhancing the Optimizely Experimentation Platform with Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:44.703272+00:00",
+  "html_len": 296471,
+  "md_len": 64819,
+  "depth": 0,
+  "phase": 2
+}

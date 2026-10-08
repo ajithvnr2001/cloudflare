@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/optimizing-core-unit-boot-time/",
+  "file": "_subdomains/blog.cloudflare.com/optimizing-core-unit-boot-time.md",
+  "title": "How we reduced core unit boot time from hours to minutes | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:33.781725+00:00",
+  "html_len": 299132,
+  "md_len": 67150,
+  "depth": 0,
+  "phase": 2
+}

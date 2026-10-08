@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/managed-rules/payload-logging/configure-api/",
+  "file": "waf/managed-rules/payload-logging/configure-api.md",
+  "title": "Configure payload logging for a managed ruleset via API \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:44.254744+00:00",
+  "html_len": 156754,
+  "md_len": 8469,
+  "depth": 0
+}

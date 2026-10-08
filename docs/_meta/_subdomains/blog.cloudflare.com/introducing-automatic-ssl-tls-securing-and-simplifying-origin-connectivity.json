@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-automatic-ssl-tls-securing-and-simplifying-origin-connectivity/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-automatic-ssl-tls-securing-and-simplifying-origin-connectivity.md",
+  "title": "Introducing Automatic SSL/TLS: securing and simplifying origin connectivity | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:42.225000+00:00",
+  "html_len": 325653,
+  "md_len": 78562,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/syn-packet-handling-in-the-wild/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/syn-packet-handling-in-the-wild.md",
+  "title": "Die Verarbeitung von SYN-Paketen in freier Wildbahn | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:33.897864+00:00",
+  "html_len": 247401,
+  "md_len": 42543,
+  "depth": 0,
+  "phase": 2
+}

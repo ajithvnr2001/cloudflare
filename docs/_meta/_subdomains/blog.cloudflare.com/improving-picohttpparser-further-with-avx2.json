@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/improving-picohttpparser-further-with-avx2/",
+  "file": "_subdomains/blog.cloudflare.com/improving-picohttpparser-further-with-avx2.md",
+  "title": "Improving PicoHTTPParser further with AVX2 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:11.034261+00:00",
+  "html_len": 268878,
+  "md_len": 57187,
+  "depth": 0,
+  "phase": 2
+}

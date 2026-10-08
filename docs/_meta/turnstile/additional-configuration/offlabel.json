@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/turnstile/additional-configuration/offlabel/",
+  "file": "turnstile/additional-configuration/offlabel.md",
+  "title": "Remove Cloudflare branding with Offlabel \u00b7 Cloudflare Turnstile docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:06.541056+00:00",
+  "html_len": 115454,
+  "md_len": 3679,
+  "depth": 0
+}

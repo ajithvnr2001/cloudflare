@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/analytics-engine-open-beta/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/analytics-engine-open-beta.md",
+  "title": "\u4e0d\u8981\u6eda\u52a8\u81ea\u5df1\u7684\u9ad8\u57fa\u6570\u5206\u6790\uff0c\u8bf7\u4f7f\u7528 Workers \u5206\u6790\u5f15\u64ce | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:30.079883+00:00",
+  "html_len": 191747,
+  "md_len": 24221,
+  "depth": 0,
+  "phase": 2
+}

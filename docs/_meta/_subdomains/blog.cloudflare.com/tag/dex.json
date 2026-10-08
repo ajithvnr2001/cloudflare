@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/dex/",
+  "file": "_subdomains/blog.cloudflare.com/tag/dex.md",
+  "title": "Posts tagged \"DEX\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:08:48.115936+00:00",
+  "html_len": 113250,
+  "md_len": 2236,
+  "depth": 1,
+  "phase": 2
+}

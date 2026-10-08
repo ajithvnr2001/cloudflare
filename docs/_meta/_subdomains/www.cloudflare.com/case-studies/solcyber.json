@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/solcyber/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/solcyber.md",
+  "title": "Cloudflare Cloud Email Security | SolCyber",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:49.028560+00:00",
+  "html_len": 201879,
+  "md_len": 5757,
+  "depth": 0,
+  "phase": 2
+}

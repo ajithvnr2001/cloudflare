@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-bandwidth-of-a-boeing-747-and-its-impact/",
+  "file": "_subdomains/blog.cloudflare.com/the-bandwidth-of-a-boeing-747-and-its-impact.md",
+  "title": "The bandwidth of a Boeing 747 and its impact on web browsing | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:58.293955+00:00",
+  "html_len": 271309,
+  "md_len": 58469,
+  "depth": 0,
+  "phase": 2
+}

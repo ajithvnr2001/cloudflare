@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/page-shield-generally-available/",
+  "file": "_subdomains/blog.cloudflare.com/page-shield-generally-available.md",
+  "title": "Page Shield is generally available | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:15.210092+00:00",
+  "html_len": 288370,
+  "md_len": 63589,
+  "depth": 0,
+  "phase": 2
+}

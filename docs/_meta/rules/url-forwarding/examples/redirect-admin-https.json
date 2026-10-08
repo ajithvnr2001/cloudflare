@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/url-forwarding/examples/redirect-admin-https/",
+  "file": "rules/url-forwarding/examples/redirect-admin-https.md",
+  "title": "Redirect admin area requests to HTTPS \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:59.825015+00:00",
+  "html_len": 132966,
+  "md_len": 2366,
+  "depth": 0
+}

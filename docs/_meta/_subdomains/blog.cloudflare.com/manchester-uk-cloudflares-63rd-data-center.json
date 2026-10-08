@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/manchester-uk-cloudflares-63rd-data-center/",
+  "file": "_subdomains/blog.cloudflare.com/manchester-uk-cloudflares-63rd-data-center.md",
+  "title": "Manchester, UK: CloudFlare's 63rd data center | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:53.333394+00:00",
+  "html_len": 269666,
+  "md_len": 56288,
+  "depth": 0,
+  "phase": 2
+}

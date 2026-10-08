@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-ca-encryption-origin/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-ca-encryption-origin.md",
+  "title": "Introducing CloudFlare Origin CA | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:41.874854+00:00",
+  "html_len": 334303,
+  "md_len": 78851,
+  "depth": 0,
+  "phase": 2
+}

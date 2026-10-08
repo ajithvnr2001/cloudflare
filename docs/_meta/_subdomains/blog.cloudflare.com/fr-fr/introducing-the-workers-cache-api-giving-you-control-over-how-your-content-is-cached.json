@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/introducing-the-workers-cache-api-giving-you-control-over-how-your-content-is-cached/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/introducing-the-workers-cache-api-giving-you-control-over-how-your-content-is-cached.md",
+  "title": "Lancement de l'API Cache pour Workers : contr\u00f4lez la mise en cache de votre contenu | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:26.622355+00:00",
+  "html_len": 227816,
+  "md_len": 32001,
+  "depth": 0,
+  "phase": 2
+}

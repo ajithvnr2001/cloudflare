@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/building-full-stack-with-pages/",
+  "file": "_subdomains/blog.cloudflare.com/building-full-stack-with-pages.md",
+  "title": "Building a full stack application with Cloudflare Pages | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:54.371012+00:00",
+  "html_len": 338988,
+  "md_len": 70652,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/platform/",
+  "file": "workers/platform.md",
+  "title": "Platform \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:36.994291+00:00",
+  "html_len": 176762,
+  "md_len": 1928,
+  "depth": 0
+}

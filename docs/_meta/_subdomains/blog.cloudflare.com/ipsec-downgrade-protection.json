@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ipsec-downgrade-protection/",
+  "file": "_subdomains/blog.cloudflare.com/ipsec-downgrade-protection.md",
+  "title": "Preventing quantum downgrade attacks against IPsec | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:28.860615+00:00",
+  "html_len": 303979,
+  "md_len": 76026,
+  "depth": 0,
+  "phase": 2
+}

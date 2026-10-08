@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/products/ai-search/",
+  "file": "_subdomains/www.cloudflare.com/products/ai-search.md",
+  "title": "Cloudflare AI Search - Automatic RAG infrastructure and querying",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:08.648530+00:00",
+  "html_len": 370500,
+  "md_len": 9965,
+  "depth": 0,
+  "phase": 2
+}

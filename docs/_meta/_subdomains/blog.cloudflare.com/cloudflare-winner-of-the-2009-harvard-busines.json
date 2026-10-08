@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-winner-of-the-2009-harvard-busines/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-winner-of-the-2009-harvard-busines.md",
+  "title": "Cloudflare: Winner of the 2009 Harvard Business School Business Plan Competition | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:28.885729+00:00",
+  "html_len": 264625,
+  "md_len": 53828,
+  "depth": 0,
+  "phase": 2
+}

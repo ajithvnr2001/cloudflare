@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/dns/zone-setups/zone-transfers/cloudflare-as-secondary/proxy-traffic/",
+  "file": "dns/zone-setups/zone-transfers/cloudflare-as-secondary/proxy-traffic.md",
+  "title": "Proxy traffic with Secondary DNS override \u00b7 Cloudflare DNS docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:11:05.050373+00:00",
+  "html_len": 142738,
+  "md_len": 5786,
+  "depth": 0
+}

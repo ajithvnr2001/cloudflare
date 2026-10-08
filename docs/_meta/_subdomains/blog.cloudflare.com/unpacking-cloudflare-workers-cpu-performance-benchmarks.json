@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/unpacking-cloudflare-workers-cpu-performance-benchmarks/",
+  "file": "_subdomains/blog.cloudflare.com/unpacking-cloudflare-workers-cpu-performance-benchmarks.md",
+  "title": "Unpacking Cloudflare Workers CPU Performance Benchmarks | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:43.946386+00:00",
+  "html_len": 321619,
+  "md_len": 85977,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/url-forwarding/examples/redirect-all-different-hostname/",
+  "file": "rules/url-forwarding/examples/redirect-all-different-hostname.md",
+  "title": "Redirect requests to a different hostname \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:15:00.076488+00:00",
+  "html_len": 133109,
+  "md_len": 2400,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/email-security-phishing-gap-llm/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/email-security-phishing-gap-llm.md",
+  "title": "\u5f9e\u88ab\u52d5\u61c9\u5c0d\u5230\u4e3b\u52d5\u51fa\u64ca\uff1a\u5229\u7528 LLM \u6280\u8853\u5f4c\u5408\u7db2\u8def\u91e3\u9b5a\u5dee\u8ddd | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:43.933387+00:00",
+  "html_len": 199002,
+  "md_len": 23977,
+  "depth": 0,
+  "phase": 2
+}

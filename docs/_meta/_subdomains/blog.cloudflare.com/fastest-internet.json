@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fastest-internet/",
+  "file": "_subdomains/blog.cloudflare.com/fastest-internet.md",
+  "title": "Welcome to Speed Week and a Waitless Internet | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:07.693439+00:00",
+  "html_len": 289155,
+  "md_len": 72867,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,12 @@
+---
+url: https://developers.cloudflare.com/ai/models/google/gemini-3.8-flash-lite-tts/schema-input.json
+title: https://developers.cloudflare.com/ai/models/google/gemini-3.8-flash-lite-tts/schema-input.json
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:23:36.473753+00:00
+---
+
+# https://developers.cloudflare.com/ai/models/google/gemini-3.8-flash-lite-tts/schema-input.json
+
+> Source: https://developers.cloudflare.com/ai/models/google/gemini-3.8-flash-lite-tts/schema-input.json
+
+{"$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","properties":{"text":{"type":"string","maxLength":10000,"description":"The text to convert to speech. Maximum 10,000 characters."},"voice":{"description":"The voice to use for speech synthesis","type":"string","enum":["Zephyr","Puck","Charon","Kore","Fenrir","Leda","Orus","Aoede","Callirrhoe","Autonoe","Enceladus","Iapetus","Umbriel","Algieba","Despina","Erinome","Algenib","Rasalgethi","Laomedeia","Achernar","Alnilam","Schedar","Gacrux","Pulcherrima","Achird","Zubenelgenubi","Vindemiatrix","Sadachbia","Sadaltager","Sulafat"]},"temperature":{"description":"Controls randomness in generation (0-2)","type":"number","minimum":0,"maximum":2},"topP":{"description":"Nucleus sampling threshold (0-1). Tokens with cumulative probability up to topP are considered","type":"number","minimum":0,"maximum":1},"topK":{"description":"Only sample from the top K tokens. Smaller K = more focused, larger K = more diverse","type":"integer","exclusiveMinimum":0,"maximum":9007199254740991},"maxOutputTokens":{"description":"Maximum number of tokens to generate","type":"integer","exclusiveMinimum":0,"maximum":9007199254740991},"stopSequences":{"description":"Sequences where the model will stop generating further tokens","type":"array","items":{"type":"string"}}},"required":["text"],"additionalProperties":false}

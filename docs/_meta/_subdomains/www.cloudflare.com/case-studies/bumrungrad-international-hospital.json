@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/bumrungrad-international-hospital/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/bumrungrad-international-hospital.md",
+  "title": "Bumrungrad International Hospital | Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:22.246789+00:00",
+  "html_len": 212768,
+  "md_len": 10121,
+  "depth": 0,
+  "phase": 2
+}

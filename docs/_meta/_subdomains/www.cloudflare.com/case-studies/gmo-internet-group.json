@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/gmo-internet-group/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/gmo-internet-group.md",
+  "title": "GMO Internet Group & Cloudflare | Case Study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:32.313011+00:00",
+  "html_len": 207067,
+  "md_len": 9008,
+  "depth": 0,
+  "phase": 2
+}

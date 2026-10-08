@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/dynamic-workers/",
+  "file": "_subdomains/blog.cloudflare.com/dynamic-workers.md",
+  "title": "Sandboxing AI agents, 100x faster  | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:27:22.133867+00:00",
+  "html_len": 331431,
+  "md_len": 79380,
+  "depth": 1
+}

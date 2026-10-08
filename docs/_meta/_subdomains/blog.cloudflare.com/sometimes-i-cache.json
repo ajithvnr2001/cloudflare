@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/sometimes-i-cache/",
+  "file": "_subdomains/blog.cloudflare.com/sometimes-i-cache.md",
+  "title": "Sometimes I cache: implementing lock-free probabilistic caching | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:29.564809+00:00",
+  "html_len": 344339,
+  "md_len": 75210,
+  "depth": 0,
+  "phase": 2
+}

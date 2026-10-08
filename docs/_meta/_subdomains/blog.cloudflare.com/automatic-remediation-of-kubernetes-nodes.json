@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/automatic-remediation-of-kubernetes-nodes/",
+  "file": "_subdomains/blog.cloudflare.com/automatic-remediation-of-kubernetes-nodes.md",
+  "title": "Automatic Remediation of Kubernetes Nodes | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:20.613375+00:00",
+  "html_len": 320059,
+  "md_len": 72348,
+  "depth": 0,
+  "phase": 2
+}

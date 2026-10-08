@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/integrating-cloudflare-gateway-and-access/",
+  "file": "_subdomains/blog.cloudflare.com/integrating-cloudflare-gateway-and-access.md",
+  "title": "Integrating Cloudflare Gateway and Access | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:41.709767+00:00",
+  "html_len": 283515,
+  "md_len": 60882,
+  "depth": 0,
+  "phase": 2
+}

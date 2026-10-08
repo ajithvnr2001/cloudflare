@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/extending-local-traffic-management-load-balancing-to-layer-4-with-spectrum/",
+  "file": "_subdomains/blog.cloudflare.com/extending-local-traffic-management-load-balancing-to-layer-4-with-spectrum.md",
+  "title": "Extending Private Network Load Balancing load balancing to Layer 4 with Spectrum | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:48.238385+00:00",
+  "html_len": 290376,
+  "md_len": 65784,
+  "depth": 0,
+  "phase": 2
+}

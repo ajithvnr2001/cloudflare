@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-view-from-washington-the-state-of-cybersecurity/",
+  "file": "_subdomains/blog.cloudflare.com/the-view-from-washington-the-state-of-cybersecurity.md",
+  "title": "The View from Washington: The State of Cybersecurity | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:06.370899+00:00",
+  "html_len": 269564,
+  "md_len": 60395,
+  "depth": 0,
+  "phase": 2
+}

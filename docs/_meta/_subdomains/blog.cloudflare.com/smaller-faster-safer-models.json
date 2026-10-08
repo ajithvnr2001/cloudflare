@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/smaller-faster-safer-models/",
+  "file": "_subdomains/blog.cloudflare.com/smaller-faster-safer-models.md",
+  "title": "Smaller, faster, safer: running Kimi and GLM at scale | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:28.583068+00:00",
+  "html_len": 288600,
+  "md_len": 62261,
+  "depth": 0,
+  "phase": 2
+}

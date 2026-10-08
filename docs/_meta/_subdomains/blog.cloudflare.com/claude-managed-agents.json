@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/claude-managed-agents/",
+  "file": "_subdomains/blog.cloudflare.com/claude-managed-agents.md",
+  "title": "Announcing Claude Managed Agents on Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:36.358328+00:00",
+  "html_len": 310053,
+  "md_len": 69774,
+  "depth": 0,
+  "phase": 2
+}

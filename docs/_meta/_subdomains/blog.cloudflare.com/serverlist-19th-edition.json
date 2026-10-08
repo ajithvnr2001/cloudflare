@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/serverlist-19th-edition/",
+  "file": "_subdomains/blog.cloudflare.com/serverlist-19th-edition.md",
+  "title": "The Serverlist: The Edge on Localhost, Micro API in Firebase and Workers, and more! | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:00.625424+00:00",
+  "html_len": 264909,
+  "md_len": 53575,
+  "depth": 0,
+  "phase": 2
+}

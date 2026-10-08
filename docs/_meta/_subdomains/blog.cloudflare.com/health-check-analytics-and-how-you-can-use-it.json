@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/health-check-analytics-and-how-you-can-use-it/",
+  "file": "_subdomains/blog.cloudflare.com/health-check-analytics-and-how-you-can-use-it.md",
+  "title": "Health Check Analytics and how you can use it | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:09.433309+00:00",
+  "html_len": 298121,
+  "md_len": 66731,
+  "depth": 0,
+  "phase": 2
+}

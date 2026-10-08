@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/phishing-protection-browser/",
+  "file": "_subdomains/blog.cloudflare.com/phishing-protection-browser.md",
+  "title": "Control input on suspicious sites with Cloudflare Browser Isolation | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:23.860384+00:00",
+  "html_len": 283238,
+  "md_len": 60933,
+  "depth": 0,
+  "phase": 2
+}

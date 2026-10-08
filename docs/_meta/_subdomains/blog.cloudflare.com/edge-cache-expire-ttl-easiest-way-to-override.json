@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/edge-cache-expire-ttl-easiest-way-to-override/",
+  "file": "_subdomains/blog.cloudflare.com/edge-cache-expire-ttl-easiest-way-to-override.md",
+  "title": "Edge Cache Expire TTL: Easiest way to override any existing headers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:53.624842+00:00",
+  "html_len": 275463,
+  "md_len": 58844,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/ypo/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/ypo.md",
+  "title": "YPO | Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:56.242789+00:00",
+  "html_len": 206091,
+  "md_len": 6742,
+  "depth": 0,
+  "phase": 2
+}

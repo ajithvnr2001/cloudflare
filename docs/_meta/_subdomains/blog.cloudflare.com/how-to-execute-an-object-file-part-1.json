@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-to-execute-an-object-file-part-1/",
+  "file": "_subdomains/blog.cloudflare.com/how-to-execute-an-object-file-part-1.md",
+  "title": "How to execute an object file: Part 1 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:37.023041+00:00",
+  "html_len": 363938,
+  "md_len": 81224,
+  "depth": 0,
+  "phase": 2
+}

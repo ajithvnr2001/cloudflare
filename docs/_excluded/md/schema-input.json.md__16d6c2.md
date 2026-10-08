@@ -1,0 +1,12 @@
+---
+url: https://developers.cloudflare.com/ai/models/pruna/p-image-try-on/schema-input.json
+title: https://developers.cloudflare.com/ai/models/pruna/p-image-try-on/schema-input.json
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:23:43.879277+00:00
+---
+
+# https://developers.cloudflare.com/ai/models/pruna/p-image-try-on/schema-input.json
+
+> Source: https://developers.cloudflare.com/ai/models/pruna/p-image-try-on/schema-input.json
+
+{"$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","properties":{"person_image":{"type":"string","description":"Image of the person to dress. A publicly reachable HTTP(S) URL or a base64 data URI (data:image/...;base64,...)."},"garment_images":{"minItems":1,"maxItems":11,"type":"array","items":{"type":"string"},"description":"Garment reference images to fit onto the person. Each entry is an HTTP(S) URL or a base64 data URI. Up to 6 recommended, up to 11 supported."},"prompt":{"default":"","description":"Experimental guidance for non-flatlay garment images, e.g. which garment from which image to use.","type":"string"},"seed":{"description":"Random seed. Leave unset for a random seed.","type":"integer","minimum":-9007199254740991,"maximum":9007199254740991},"turbo":{"default":false,"description":"Run faster with additional optimizations. Not recommended for more than 4 garments.","type":"boolean"},"output_format":{"default":"jpg","description":"Format of the saved output image.","type":"string","enum":["webp","jpg","png"]},"output_quality":{"default":95,"description":"Quality for jpg/webp outputs, from 0 to 100.","type":"integer","minimum":0,"maximum":100},"reference_pose":{"description":"Optional reference pose image (HTTP(S) URL or data URI). When provided, the person is reposed to match this reference before virtual try-on.","type":"string"},"preserve_input_size":{"default":true,"description":"Return the output at the original input resolution.","type":"boolean"}},"required":["person_image","garment_images","prompt","turbo","output_format","output_quality","preserve_input_size"],"additionalProperties":{}}

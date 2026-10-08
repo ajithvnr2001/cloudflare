@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp.md",
+  "title": "Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:05:26.118563+00:00",
+  "html_len": 174318,
+  "md_len": 15570,
+  "depth": 1,
+  "phase": 2
+}

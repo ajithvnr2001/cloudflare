@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/firewall/api/cf-firewall-rules/delete/",
+  "file": "firewall/api/cf-firewall-rules/delete.md",
+  "title": "DELETE examples - Firewall rules \u00b7 Cloudflare Firewall Rules (deprecated) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:11:16.285542+00:00",
+  "html_len": 104527,
+  "md_len": 2378,
+  "depth": 0
+}

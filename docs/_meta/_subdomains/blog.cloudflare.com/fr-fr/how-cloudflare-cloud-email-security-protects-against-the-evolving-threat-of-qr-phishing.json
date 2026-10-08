@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/how-cloudflare-cloud-email-security-protects-against-the-evolving-threat-of-qr-phishing/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/how-cloudflare-cloud-email-security-protects-against-the-evolving-threat-of-qr-phishing.md",
+  "title": "Comment la solution Cloud Email Security de Cloudflare offre une protection contre la menace changeante que constitue le phishing par QR code | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:39:21.628582+00:00",
+  "html_len": 239758,
+  "md_len": 44089,
+  "depth": 0,
+  "phase": 2
+}

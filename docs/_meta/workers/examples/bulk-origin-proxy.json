@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/examples/bulk-origin-proxy/",
+  "file": "workers/examples/bulk-origin-proxy.md",
+  "title": "Bulk origin override \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:20.770059+00:00",
+  "html_len": 189711,
+  "md_len": 3962,
+  "depth": 0
+}

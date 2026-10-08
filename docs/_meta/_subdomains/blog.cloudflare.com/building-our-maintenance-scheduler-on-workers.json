@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/building-our-maintenance-scheduler-on-workers/",
+  "file": "_subdomains/blog.cloudflare.com/building-our-maintenance-scheduler-on-workers.md",
+  "title": "How Workers powers our internal maintenance scheduling pipeline | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:15.419403+00:00",
+  "html_len": 332024,
+  "md_len": 75393,
+  "depth": 0,
+  "phase": 2
+}

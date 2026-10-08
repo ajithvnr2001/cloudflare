@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-is-now-pci-3-1-certified/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-is-now-pci-3-1-certified.md",
+  "title": "CloudFlare is now PCI 3.1 certified | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:51.873423+00:00",
+  "html_len": 273915,
+  "md_len": 60391,
+  "depth": 0,
+  "phase": 2
+}

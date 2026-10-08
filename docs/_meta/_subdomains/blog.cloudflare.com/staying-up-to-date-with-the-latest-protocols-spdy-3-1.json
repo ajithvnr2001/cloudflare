@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/staying-up-to-date-with-the-latest-protocols-spdy-3-1/",
+  "file": "_subdomains/blog.cloudflare.com/staying-up-to-date-with-the-latest-protocols-spdy-3-1.md",
+  "title": "Staying up to date with the latest protocols: SPDY/3.1 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:27.700281+00:00",
+  "html_len": 284526,
+  "md_len": 59933,
+  "depth": 0,
+  "phase": 2
+}

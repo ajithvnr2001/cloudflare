@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-cuban-cdn/",
+  "file": "_subdomains/blog.cloudflare.com/the-cuban-cdn.md",
+  "title": "The Cuban CDN | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:33.611079+00:00",
+  "html_len": 301567,
+  "md_len": 66088,
+  "depth": 0,
+  "phase": 2
+}

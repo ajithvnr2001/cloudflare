@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/dcard/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/dcard.md",
+  "title": "Dcard | Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:26.369280+00:00",
+  "html_len": 208695,
+  "md_len": 6942,
+  "depth": 0,
+  "phase": 2
+}

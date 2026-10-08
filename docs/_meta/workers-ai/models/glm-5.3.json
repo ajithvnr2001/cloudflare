@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers-ai/models/glm-5.3/",
+  "file": "workers-ai/models/glm-5.3.md",
+  "title": "glm-5.3 (Zhipu AI) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:05.260035+00:00",
+  "html_len": 826301,
+  "md_len": 12316,
+  "depth": 0
+}

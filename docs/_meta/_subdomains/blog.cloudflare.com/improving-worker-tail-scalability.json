@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/improving-worker-tail-scalability/",
+  "file": "_subdomains/blog.cloudflare.com/improving-worker-tail-scalability.md",
+  "title": "Improving Worker Tail scalability | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:15.325037+00:00",
+  "html_len": 289770,
+  "md_len": 62039,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/how-to-build-your-own-vpn-or-the-history-of-warp/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/how-to-build-your-own-vpn-or-the-history-of-warp.md",
+  "title": "VPN \uad6c\ucd95 \ubc29\ubc95 \ub610\ub294 WARP\uc758 \uc5ed\uc0ac | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:54.097184+00:00",
+  "html_len": 223654,
+  "md_len": 36003,
+  "depth": 0,
+  "phase": 2
+}

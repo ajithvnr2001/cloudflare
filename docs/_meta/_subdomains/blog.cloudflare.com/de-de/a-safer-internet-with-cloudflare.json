@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/a-safer-internet-with-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/a-safer-internet-with-cloudflare.md",
+  "title": "Ein sichereres Internet mit Cloudflare: kostenlose Bedrohungsdaten, Analysen und Erkennung neuer Gefahren | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:41:11.899572+00:00",
+  "html_len": 251420,
+  "md_len": 51890,
+  "depth": 0,
+  "phase": 2
+}

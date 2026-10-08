@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/protect-your-sites-with-rapidly-deployed-waf-rules/",
+  "file": "_subdomains/blog.cloudflare.com/protect-your-sites-with-rapidly-deployed-waf-rules.md",
+  "title": "Protect Your Sites With Rapidly Deployed WAF Rules | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:51.575788+00:00",
+  "html_len": 270459,
+  "md_len": 59153,
+  "depth": 0,
+  "phase": 2
+}

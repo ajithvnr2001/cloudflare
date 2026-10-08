@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/changelog/post/2025-08-08-dot-env-in-local-dev/",
+  "file": "changelog/post/2025-08-08-dot-env-in-local-dev.md",
+  "title": "Wrangler and the Cloudflare Vite plugin support `.env` files in local development \u00b7 Changelog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:06:19.179955+00:00",
+  "html_len": 73791,
+  "md_len": 3879,
+  "depth": 0
+}

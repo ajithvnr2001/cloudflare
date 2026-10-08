@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/cloudflare-wan/configuration/third-party/fortinet/",
+  "file": "cloudflare-wan/configuration/third-party/fortinet.md",
+  "title": "Fortinet \u00b7 Cloudflare WAN docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:10:29.420239+00:00",
+  "html_len": 197183,
+  "md_len": 24715,
+  "depth": 0
+}

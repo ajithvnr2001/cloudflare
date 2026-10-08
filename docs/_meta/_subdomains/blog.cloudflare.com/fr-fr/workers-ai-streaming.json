@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/workers-ai-streaming/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/workers-ai-streaming.md",
+  "title": "Diffusion en continu et longueurs de contexte plus grandes pour les grands mod\u00e8les de langage dans Workers\u00a0IA | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:39:45.461591+00:00",
+  "html_len": 235398,
+  "md_len": 34124,
+  "depth": 0,
+  "phase": 2
+}

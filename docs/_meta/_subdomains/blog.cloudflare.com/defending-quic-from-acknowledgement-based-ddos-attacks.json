@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/defending-quic-from-acknowledgement-based-ddos-attacks/",
+  "file": "_subdomains/blog.cloudflare.com/defending-quic-from-acknowledgement-based-ddos-attacks.md",
+  "title": "Defending QUIC from acknowledgement-based DDoS attacks | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:31.601545+00:00",
+  "html_len": 314081,
+  "md_len": 73754,
+  "depth": 0,
+  "phase": 2
+}

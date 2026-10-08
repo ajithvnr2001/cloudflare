@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/es-es/impact/",
+  "file": "_subdomains/www.cloudflare.com/es-es/impact.md",
+  "title": "Cloudflare Impact | Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:15:25.601846+00:00",
+  "html_len": 293199,
+  "md_len": 17834,
+  "depth": 1,
+  "phase": 2
+}

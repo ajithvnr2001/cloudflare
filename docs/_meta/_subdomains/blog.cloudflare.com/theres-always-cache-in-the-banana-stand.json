@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/theres-always-cache-in-the-banana-stand/",
+  "file": "_subdomains/blog.cloudflare.com/theres-always-cache-in-the-banana-stand.md",
+  "title": "There\u2019s Always Cache in the Banana Stand | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:52.098346+00:00",
+  "html_len": 275975,
+  "md_len": 59269,
+  "depth": 0,
+  "phase": 2
+}

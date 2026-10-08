@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/dynamic-data-collection-with-zaraz-worker-variables/",
+  "file": "_subdomains/blog.cloudflare.com/dynamic-data-collection-with-zaraz-worker-variables.md",
+  "title": "Dynamic data collection with Zaraz Worker Variables | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:27.203521+00:00",
+  "html_len": 319788,
+  "md_len": 69848,
+  "depth": 0,
+  "phase": 2
+}

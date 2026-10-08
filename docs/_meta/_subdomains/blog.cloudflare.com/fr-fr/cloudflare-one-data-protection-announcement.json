@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/cloudflare-one-data-protection-announcement/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/cloudflare-one-data-protection-announcement.md",
+  "title": "Cloudflare One for Data Protection | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:28.098894+00:00",
+  "html_len": 237629,
+  "md_len": 45783,
+  "depth": 0,
+  "phase": 2
+}

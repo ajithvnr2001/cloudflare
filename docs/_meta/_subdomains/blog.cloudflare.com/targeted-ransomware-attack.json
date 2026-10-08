@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/targeted-ransomware-attack/",
+  "file": "_subdomains/blog.cloudflare.com/targeted-ransomware-attack.md",
+  "title": "Anatomy of a Targeted Ransomware Attack | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:31.762073+00:00",
+  "html_len": 279631,
+  "md_len": 64002,
+  "depth": 0,
+  "phase": 2
+}

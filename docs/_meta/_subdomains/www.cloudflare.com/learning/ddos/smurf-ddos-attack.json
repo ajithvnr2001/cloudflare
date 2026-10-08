@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/ddos/smurf-ddos-attack/",
+  "file": "_subdomains/www.cloudflare.com/learning/ddos/smurf-ddos-attack.md",
+  "title": "Smurf DDoS Attack",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:38.148054+00:00",
+  "html_len": 204561,
+  "md_len": 9313,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/two-clicks-to-enable-regional-zero-trust-compliance/",
+  "file": "_subdomains/blog.cloudflare.com/two-clicks-to-enable-regional-zero-trust-compliance.md",
+  "title": "Two clicks to add region-based Zero Trust compliance | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:59.933313+00:00",
+  "html_len": 293748,
+  "md_len": 64405,
+  "depth": 0,
+  "phase": 2
+}

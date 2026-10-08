@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/ja-jp/sase/",
+  "file": "_subdomains/www.cloudflare.com/ja-jp/sase.md",
+  "title": "Cloudflare One | \u4fca\u654f\u3067\u771f\u306b\u7d71\u5408\u3055\u308c\u305fSASE\u30d7\u30e9\u30c3\u30c8\u30d5\u30a9\u30fc\u30e0 | Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:19:10.882529+00:00",
+  "html_len": 361926,
+  "md_len": 24418,
+  "depth": 1,
+  "phase": 2
+}

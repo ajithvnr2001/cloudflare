@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/data-generation-and-sampling-strategies/",
+  "file": "_subdomains/blog.cloudflare.com/data-generation-and-sampling-strategies.md",
+  "title": "Improving the accuracy of our machine learning WAF using data augmentation and sampling | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:08.990172+00:00",
+  "html_len": 312198,
+  "md_len": 75329,
+  "depth": 0,
+  "phase": 2
+}

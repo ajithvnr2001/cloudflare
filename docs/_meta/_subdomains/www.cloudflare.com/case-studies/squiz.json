@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/squiz/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/squiz.md",
+  "title": "Squiz & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:49.482397+00:00",
+  "html_len": 205190,
+  "md_len": 10938,
+  "depth": 0,
+  "phase": 2
+}

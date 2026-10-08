@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/tag/outage/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/tag/outage.md",
+  "title": "Articles tagu\u00e9s \u00ab Panne \u00bb \u2014 Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:13:18.130390+00:00",
+  "html_len": 162082,
+  "md_len": 14411,
+  "depth": 1,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/fanhero/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/fanhero.md",
+  "title": "FanHero",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:30.052982+00:00",
+  "html_len": 201552,
+  "md_len": 6178,
+  "depth": 0,
+  "phase": 2
+}

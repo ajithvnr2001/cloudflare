@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-la/cloudflare-cf-cli-launch/",
+  "file": "_subdomains/blog.cloudflare.com/es-la/cloudflare-cf-cli-launch.md",
+  "title": "Presentamos cf: la CLI ag\u00e9ntica para toda la API de Cloudflare | El blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:16.382827+00:00",
+  "html_len": 219990,
+  "md_len": 25643,
+  "depth": 0,
+  "phase": 2
+}

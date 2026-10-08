@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/cloudflare-2024-annual-founders-letter/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/cloudflare-2024-annual-founders-letter.md",
+  "title": "Carta anual de los fundadores de Cloudflare de 2024 | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:39:07.938887+00:00",
+  "html_len": 211463,
+  "md_len": 29966,
+  "depth": 0,
+  "phase": 2
+}

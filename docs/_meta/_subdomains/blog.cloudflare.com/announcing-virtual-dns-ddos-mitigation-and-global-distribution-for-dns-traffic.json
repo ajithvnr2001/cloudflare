@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/announcing-virtual-dns-ddos-mitigation-and-global-distribution-for-dns-traffic/",
+  "file": "_subdomains/blog.cloudflare.com/announcing-virtual-dns-ddos-mitigation-and-global-distribution-for-dns-traffic.md",
+  "title": "Announcing Virtual DNS: DDoS Mitigation and Global Distribution for DNS Traffic | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:07.658529+00:00",
+  "html_len": 284799,
+  "md_len": 61009,
+  "depth": 0,
+  "phase": 2
+}

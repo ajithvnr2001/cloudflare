@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-now-powering-microsoft-edge-secure-network/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-now-powering-microsoft-edge-secure-network.md",
+  "title": "Cloudflare is now powering Microsoft Edge Secure Network | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:41:50.690202+00:00",
+  "html_len": 280970,
+  "md_len": 61815,
+  "depth": 0,
+  "phase": 2
+}

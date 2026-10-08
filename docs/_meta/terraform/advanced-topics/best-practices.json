@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/terraform/advanced-topics/best-practices/",
+  "file": "terraform/advanced-topics/best-practices.md",
+  "title": "Best practices \u00b7 Cloudflare Terraform docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:00.626807+00:00",
+  "html_len": 128424,
+  "md_len": 9833,
+  "depth": 0
+}

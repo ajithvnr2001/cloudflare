@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/videos/strict-ssl-concepts/",
+  "file": "videos/strict-ssl-concepts.md",
+  "title": "SSL/TLS concepts | Cloudflare Docs",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (201 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T07:16:40.576363+00:00",
+  "html_len": 97519,
+  "md_len": 275,
+  "depth": 0
+}

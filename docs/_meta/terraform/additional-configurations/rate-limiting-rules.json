@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/terraform/additional-configurations/rate-limiting-rules/",
+  "file": "terraform/additional-configurations/rate-limiting-rules.md",
+  "title": "Rate limiting rules configuration using Terraform \u00b7 Cloudflare Terraform docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:00.330136+00:00",
+  "html_len": 151233,
+  "md_len": 12991,
+  "depth": 0
+}

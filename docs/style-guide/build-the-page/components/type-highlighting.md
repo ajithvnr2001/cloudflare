@@ -1,0 +1,158 @@
+---
+url: https://developers.cloudflare.com/style-guide/build-the-page/components/type-highlighting/
+title: Type highlighting \u00b7 Cloudflare Style Guide
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:20:03.676265+00:00
+---
+
+# Type highlighting · Cloudflare Style Guide
+
+> Source: https://developers.cloudflare.com/style-guide/build-the-page/components/type-highlighting/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Style Guide](https://developers.cloudflare.com/style-guide/)
+  3. /…
+
+[Build the page](https://developers.cloudflare.com/style-guide/build-the-page/)
+
+  4. /[Components](https://developers.cloudflare.com/style-guide/build-the-page/components/)
+  5. /Type highlighting
+
+
+
+# Type highlighting
+
+Last updated Aug 20, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/style-guide/build-the-page/components/type-highlighting/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewTypeMetaInfoCombined example
+
+The `Type` component is used `1633` times on `83` pages.
+
+See all examples of pages that use Type
+
+Used **1633** times.
+
+**Pages**
+
+  * [/agent-memory/api/workers-api/](https://developers.cloudflare.com/agent-memory/api/workers-api/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/agent-memory/api/workers-api.mdx)
+  * [/artifacts/api/rest-api/](https://developers.cloudflare.com/artifacts/api/rest-api/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/artifacts/api/rest-api.mdx)
+  * [/artifacts/api/workers-binding/](https://developers.cloudflare.com/artifacts/api/workers-binding/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/artifacts/api/workers-binding.mdx)
+  * [/cloudflare-network-firewall/reference/network-firewall-fields/](https://developers.cloudflare.com/cloudflare-network-firewall/reference/network-firewall-fields/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/cloudflare-network-firewall/reference/network-firewall-fields.mdx)
+  * [/cloudflare-one/reusable-components/packet-filtering-fields/](https://developers.cloudflare.com/cloudflare-one/reusable-components/packet-filtering-fields/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/cloudflare-one/reusable-components/packet-filtering-fields.mdx)
+  * [/d1/worker-api/d1-database/](https://developers.cloudflare.com/d1/worker-api/d1-database/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/d1/worker-api/d1-database.mdx)
+  * [/d1/worker-api/prepared-statements/](https://developers.cloudflare.com/d1/worker-api/prepared-statements/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/d1/worker-api/prepared-statements.mdx)
+  * [/durable-objects/api/alarms/](https://developers.cloudflare.com/durable-objects/api/alarms/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/durable-objects/api/alarms.mdx)
+  * [/durable-objects/api/base/](https://developers.cloudflare.com/durable-objects/api/base/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/durable-objects/api/base.mdx)
+  * [/durable-objects/api/sqlite-storage-api/](https://developers.cloudflare.com/durable-objects/api/sqlite-storage-api/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/durable-objects/api/sqlite-storage-api.mdx)
+  * [/durable-objects/api/state/](https://developers.cloudflare.com/durable-objects/api/state/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/durable-objects/api/state.mdx)
+  * [/durable-objects/best-practices/websockets/](https://developers.cloudflare.com/durable-objects/best-practices/websockets/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/durable-objects/best-practices/websockets.mdx)
+  * [/durable-objects/reference/durable-objects-migrations/](https://developers.cloudflare.com/durable-objects/reference/durable-objects-migrations/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/durable-objects/reference/durable-objects-migrations.mdx)
+  * [/dynamic-workers/api-reference/](https://developers.cloudflare.com/dynamic-workers/api-reference/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/dynamic-workers/api-reference.mdx)
+  * [/dynamic-workers/usage/durable-object-facets/](https://developers.cloudflare.com/dynamic-workers/usage/durable-object-facets/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/dynamic-workers/usage/durable-object-facets.mdx)
+  * [/firewall/api/cf-filters/json-object/](https://developers.cloudflare.com/firewall/api/cf-filters/json-object/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/firewall/api/cf-filters/json-object.mdx)
+  * [/firewall/api/cf-firewall-rules/json-object/](https://developers.cloudflare.com/firewall/api/cf-firewall-rules/json-object/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/firewall/api/cf-firewall-rules/json-object.mdx)
+  * [/images/storage/binding/](https://developers.cloudflare.com/images/storage/binding/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/images/storage/binding.mdx)
+  * [/kv/concepts/kv-namespaces/](https://developers.cloudflare.com/kv/concepts/kv-namespaces/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/kv/concepts/kv-namespaces.mdx)
+  * [/pages/configuration/redirects/](https://developers.cloudflare.com/pages/configuration/redirects/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/pages/configuration/redirects.mdx)
+  * [/pages/functions/wrangler-configuration/](https://developers.cloudflare.com/pages/functions/wrangler-configuration/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/pages/functions/wrangler-configuration.mdx)
+  * [/pages/get-started/c3/](https://developers.cloudflare.com/pages/get-started/c3/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/pages/get-started/c3.mdx)
+  * [/queues/configuration/configure-queues/](https://developers.cloudflare.com/queues/configuration/configure-queues/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/queues/configuration/configure-queues.mdx)
+  * [/queues/configuration/javascript-apis/](https://developers.cloudflare.com/queues/configuration/javascript-apis/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/queues/configuration/javascript-apis.mdx)
+  * [/queues/configuration/pause-purge/](https://developers.cloudflare.com/queues/configuration/pause-purge/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/queues/configuration/pause-purge.mdx)
+  * [/r2/api/workers/workers-api-reference/](https://developers.cloudflare.com/r2/api/workers/workers-api-reference/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/r2/api/workers/workers-api-reference.mdx)
+  * [/rules/custom-errors/reference/parameters/](https://developers.cloudflare.com/rules/custom-errors/reference/parameters/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/rules/custom-errors/reference/parameters.mdx)
+  * [/rules/url-forwarding/bulk-redirects/reference/parameters/](https://developers.cloudflare.com/rules/url-forwarding/bulk-redirects/reference/parameters/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/rules/url-forwarding/bulk-redirects/reference/parameters.mdx)
+  * [/ruleset-engine/rules-language/functions/](https://developers.cloudflare.com/ruleset-engine/rules-language/functions/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/ruleset-engine/rules-language/functions.mdx)
+  * [/ruleset-engine/rulesets-api/create/](https://developers.cloudflare.com/ruleset-engine/rulesets-api/create/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/ruleset-engine/rulesets-api/create.mdx)
+  * [/ruleset-engine/rulesets-api/json-object/](https://developers.cloudflare.com/ruleset-engine/rulesets-api/json-object/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/ruleset-engine/rulesets-api/json-object.mdx)
+  * [/sandbox/reference/directory-backups/](https://developers.cloudflare.com/sandbox/reference/directory-backups/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/sandbox/reference/directory-backups.mdx)
+  * [/sandbox/reference/s3-mounts/](https://developers.cloudflare.com/sandbox/reference/s3-mounts/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/sandbox/reference/s3-mounts.mdx)
+  * [/smart-shield/configuration/dedicated-egress-ips/ips-utilization/](https://developers.cloudflare.com/smart-shield/configuration/dedicated-egress-ips/ips-utilization/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/smart-shield/configuration/dedicated-egress-ips/ips-utilization.mdx)
+  * [/stream/manage-video-library/bindings/](https://developers.cloudflare.com/stream/manage-video-library/bindings/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/stream/manage-video-library/bindings.mdx)
+  * [/style-guide/build-the-page/components/cf-command/](https://developers.cloudflare.com/style-guide/build-the-page/components/cf-command/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/style-guide/build-the-page/components/cf-command.mdx)
+  * [/style-guide/build-the-page/components/cf-namespace/](https://developers.cloudflare.com/style-guide/build-the-page/components/cf-namespace/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/style-guide/build-the-page/components/cf-namespace.mdx)
+  * [/style-guide/build-the-page/components/details/](https://developers.cloudflare.com/style-guide/build-the-page/components/details/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/style-guide/build-the-page/components/details.mdx)
+  * [/style-guide/build-the-page/components/render/](https://developers.cloudflare.com/style-guide/build-the-page/components/render/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/style-guide/build-the-page/components/render.mdx)
+  * [/style-guide/build-the-page/components/resources-by-selector/](https://developers.cloudflare.com/style-guide/build-the-page/components/resources-by-selector/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/style-guide/build-the-page/components/resources-by-selector.mdx)
+  * [/style-guide/build-the-page/components/wrangler-command/](https://developers.cloudflare.com/style-guide/build-the-page/components/wrangler-command/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/style-guide/build-the-page/components/wrangler-command.mdx)
+  * [/style-guide/build-the-page/components/wrangler-namespace/](https://developers.cloudflare.com/style-guide/build-the-page/components/wrangler-namespace/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/style-guide/build-the-page/components/wrangler-namespace.mdx)
+  * [/style-guide/documentation-content-strategy/content-types/changelog/](https://developers.cloudflare.com/style-guide/documentation-content-strategy/content-types/changelog/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/style-guide/documentation-content-strategy/content-types/changelog.mdx)
+  * [/waf/detections/ai-security-for-apps/fields/](https://developers.cloudflare.com/waf/detections/ai-security-for-apps/fields/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/waf/detections/ai-security-for-apps/fields.mdx)
+  * [/waf/detections/application-profiles/fields/](https://developers.cloudflare.com/waf/detections/application-profiles/fields/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/waf/detections/application-profiles/fields.mdx)
+  * [/waf/detections/attack-score/](https://developers.cloudflare.com/waf/detections/attack-score/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/waf/detections/attack-score.mdx)
+  * [/waf/detections/attack-signature-detection/fields/](https://developers.cloudflare.com/waf/detections/attack-signature-detection/fields/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/waf/detections/attack-signature-detection/fields.mdx)
+  * [/waf/detections/leaked-credentials/](https://developers.cloudflare.com/waf/detections/leaked-credentials/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/waf/detections/leaked-credentials/index.mdx)
+  * [/waf/detections/malicious-uploads/](https://developers.cloudflare.com/waf/detections/malicious-uploads/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/waf/detections/malicious-uploads/index.mdx)
+  * [/waf/detections/threat-intelligence/fields/](https://developers.cloudflare.com/waf/detections/threat-intelligence/fields/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/waf/detections/threat-intelligence/fields.mdx)
+  * [/waf/rate-limiting-rules/parameters/](https://developers.cloudflare.com/waf/rate-limiting-rules/parameters/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/waf/rate-limiting-rules/parameters.mdx)
+  * [/waf/tools/lists/lists-api/json-object/](https://developers.cloudflare.com/waf/tools/lists/lists-api/json-object/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/waf/tools/lists/lists-api/json-object.mdx)
+  * [/workers-ai/configuration/bindings/](https://developers.cloudflare.com/workers-ai/configuration/bindings/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/workers-ai/configuration/bindings.mdx)
+  * [/workers-ai/features/markdown-conversion/usage/binding/](https://developers.cloudflare.com/workers-ai/features/markdown-conversion/usage/binding/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/workers-ai/features/markdown-conversion/usage/binding.mdx)
+  * [/workers-ai/features/markdown-conversion/usage/rest-api/](https://developers.cloudflare.com/workers-ai/features/markdown-conversion/usage/rest-api/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/workers-ai/features/markdown-conversion/usage/rest-api.mdx)
+  * [/workers/configuration/multipart-upload-metadata/](https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/workers/configuration/multipart-upload-metadata.mdx)
+  * [/workers/local-development/](https://developers.cloudflare.com/workers/local-development/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/workers/local-development/index.mdx)
+  * [/workers/runtime-apis/bindings/worker-loader/](https://developers.cloudflare.com/workers/runtime-apis/bindings/worker-loader/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/workers/runtime-apis/bindings/worker-loader.mdx)
+  * [/workers/runtime-apis/html-rewriter/](https://developers.cloudflare.com/workers/runtime-apis/html-rewriter/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/workers/runtime-apis/html-rewriter.mdx)
+  * [/workers/runtime-apis/request/](https://developers.cloudflare.com/workers/runtime-apis/request/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/workers/runtime-apis/request.mdx)
+  * [/workers/static-assets/redirects/](https://developers.cloudflare.com/workers/static-assets/redirects/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/workers/static-assets/redirects.mdx)
+  * [/workers/vite-plugin/reference/api/](https://developers.cloudflare.com/workers/vite-plugin/reference/api/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/workers/vite-plugin/reference/api.mdx)
+  * [/workers/wrangler/api/](https://developers.cloudflare.com/workers/wrangler/api/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/workers/wrangler/api.mdx)
+  * [/workers/wrangler/commands/general/](https://developers.cloudflare.com/workers/wrangler/commands/general/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/workers/wrangler/commands/general.mdx)
+  * [/workers/wrangler/commands/workers/](https://developers.cloudflare.com/workers/wrangler/commands/workers/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/workers/wrangler/commands/workers.mdx)
+  * [/workers/wrangler/configuration/](https://developers.cloudflare.com/workers/wrangler/configuration/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/workers/wrangler/configuration.mdx)
+  * [/workers/wrangler/custom-builds/](https://developers.cloudflare.com/workers/wrangler/custom-builds/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/workers/wrangler/custom-builds.mdx)
+  * [/workers/wrangler/migration/v1-to-v2/wrangler-legacy/commands/](https://developers.cloudflare.com/workers/wrangler/migration/v1-to-v2/wrangler-legacy/commands/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/workers/wrangler/migration/v1-to-v2/wrangler-legacy/commands.mdx)
+  * [/workers/wrangler/system-environment-variables/](https://developers.cloudflare.com/workers/wrangler/system-environment-variables/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/workers/wrangler/system-environment-variables.mdx)
+  * [/workflows/build/workers-api/](https://developers.cloudflare.com/workflows/build/workers-api/)-[Source](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/workflows/build/workers-api.mdx)
+
+
+
+**Partials**
+
+  * [src/content/partials/ai-search/ai-search-api-params.mdx](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/partials/ai-search/ai-search-api-params.mdx)
+  * [src/content/partials/ai-search/chat-completions-api-params.mdx](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/partials/ai-search/chat-completions-api-params.mdx)
+  * [src/content/partials/ai-search/search-api-params.mdx](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/partials/ai-search/search-api-params.mdx)
+  * [src/content/partials/ai-search/v2-chat-completions-params.mdx](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/partials/ai-search/v2-chat-completions-params.mdx)
+  * [src/content/partials/ai-search/v2-create-instance-params.mdx](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/partials/ai-search/v2-create-instance-params.mdx)
+  * [src/content/partials/ai-search/v2-search-params.mdx](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/partials/ai-search/v2-search-params.mdx)
+  * [src/content/partials/durable-objects/api-async-kv-legacy.mdx](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/partials/durable-objects/api-async-kv-legacy.mdx)
+  * [src/content/partials/durable-objects/api-storage-alarms.mdx](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/partials/durable-objects/api-storage-alarms.mdx)
+  * [src/content/partials/durable-objects/api-storage-other-methods.mdx](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/partials/durable-objects/api-storage-other-methods.mdx)
+  * [src/content/partials/durable-objects/api-sync-kv.mdx](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/partials/durable-objects/api-sync-kv.mdx)
+  * [src/content/partials/workers/wrangler-commands/containers.mdx](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/partials/workers/wrangler-commands/containers.mdx)
+  * [src/content/partials/workers/wrangler-commands/global-flags.mdx](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/partials/workers/wrangler-commands/global-flags.mdx)
+  * [src/content/partials/workers/wrangler-commands/tunnel.mdx](https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/partials/workers/wrangler-commands/tunnel.mdx)
+
+
+
+## Type
+    
+    
+    import { Type } from "~/components";
+    
+    <Type text="Promise<T | string | ArrayBuffer>" />
+
+## MetaInfo
+    
+    
+    import { MetaInfo } from "~/components";
+    
+    <MetaInfo text="(default: false) optional" />
+
+## Combined example
+    
+    
+    import { Type, MetaInfo } from "~/components";
+    
+    - `name` <Type text="string" />
+      - The name of your service.
+    - `local` <Type text="boolean" /> <MetaInfo text="(default: true) optional" />
+      - If the service should run locally or not.
+
+[PreviousTabs](https://developers.cloudflare.com/style-guide/build-the-page/components/tabs/)[NextTypeScript example](https://developers.cloudflare.com/style-guide/build-the-page/components/typescript-example/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/style-guide/build-the-page/components/type-highlighting.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

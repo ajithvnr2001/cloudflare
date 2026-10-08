@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/dns-over-tls-built-in/",
+  "file": "_subdomains/blog.cloudflare.com/dns-over-tls-built-in.md",
+  "title": "DNS-Over-TLS Built-In & Enforced - 1.1.1.1 and the GL.iNet GL-AR750S | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:27.247173+00:00",
+  "html_len": 284574,
+  "md_len": 60493,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/api-tokens-general-availability/",
+  "file": "_subdomains/blog.cloudflare.com/api-tokens-general-availability.md",
+  "title": "Announcing the General Availability of API Tokens | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:58.218514+00:00",
+  "html_len": 288610,
+  "md_len": 63206,
+  "depth": 0,
+  "phase": 2
+}

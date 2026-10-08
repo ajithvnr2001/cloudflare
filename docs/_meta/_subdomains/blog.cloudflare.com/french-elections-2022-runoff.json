@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/french-elections-2022-runoff/",
+  "file": "_subdomains/blog.cloudflare.com/french-elections-2022-runoff.md",
+  "title": "Two voting days, a debate and a polling rule in France impacts the Internet | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:14.309496+00:00",
+  "html_len": 296411,
+  "md_len": 63902,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/cache/how-to/cache-rules/examples/cache-ttl-by-status-code/",
+  "file": "cache/how-to/cache-rules/examples/cache-ttl-by-status-code.md",
+  "title": "Cache TTL by status code \u00b7 Cloudflare Cache (CDN) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:05:43.861641+00:00",
+  "html_len": 110902,
+  "md_len": 2329,
+  "depth": 0
+}

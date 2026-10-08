@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/gateway-egress-policies/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/gateway-egress-policies.md",
+  "title": "\u85c9\u52a9 Cloudflare Zero Trust \u7ba1\u7406\u548c\u63a7\u5236\u5c08\u7528\u8f38\u51fa IP \u7684\u4f7f\u7528 | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:20.597611+00:00",
+  "html_len": 195240,
+  "md_len": 22323,
+  "depth": 0,
+  "phase": 2
+}

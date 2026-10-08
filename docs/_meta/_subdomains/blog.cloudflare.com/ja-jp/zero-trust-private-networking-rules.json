@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/zero-trust-private-networking-rules/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/zero-trust-private-networking-rules.md",
+  "title": "Zero Trust\u30d7\u30e9\u30a4\u30d9\u30fc\u30c8\u30cd\u30c3\u30c8\u30ef\u30fc\u30ad\u30f3\u30b0\u30eb\u30fc\u30eb | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:22.534292+00:00",
+  "html_len": 201441,
+  "md_len": 27811,
+  "depth": 0,
+  "phase": 2
+}

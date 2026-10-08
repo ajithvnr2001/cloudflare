@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/mod-io/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/mod-io.md",
+  "title": "Mod.io & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:39.667913+00:00",
+  "html_len": 212390,
+  "md_len": 7235,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/bootstrapping-a-typescript-worker/",
+  "file": "_subdomains/blog.cloudflare.com/bootstrapping-a-typescript-worker.md",
+  "title": "Bootstrapping a Typescript Worker | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:30.913175+00:00",
+  "html_len": 430194,
+  "md_len": 82061,
+  "depth": 0,
+  "phase": 2
+}

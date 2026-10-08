@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/announcing-ai-gateway/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/announcing-ai-gateway.md",
+  "title": "Einf\u00fchrung von AI\u00a0Gateway\u00a0\u2013 f\u00fcr zuverl\u00e4ssigere, besser beobachtbare und skalierbare Anwendungen | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:41:54.151016+00:00",
+  "html_len": 223565,
+  "md_len": 34272,
+  "depth": 0,
+  "phase": 2
+}

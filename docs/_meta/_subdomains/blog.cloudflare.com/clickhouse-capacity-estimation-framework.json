@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/clickhouse-capacity-estimation-framework/",
+  "file": "_subdomains/blog.cloudflare.com/clickhouse-capacity-estimation-framework.md",
+  "title": "ClickHouse Capacity Estimation Framework | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:50.772498+00:00",
+  "html_len": 291533,
+  "md_len": 65540,
+  "depth": 0,
+  "phase": 2
+}

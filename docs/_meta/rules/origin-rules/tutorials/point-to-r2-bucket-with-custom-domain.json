@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/origin-rules/tutorials/point-to-r2-bucket-with-custom-domain/",
+  "file": "rules/origin-rules/tutorials/point-to-r2-bucket-with-custom-domain.md",
+  "title": "Point to R2 bucket with a custom domain \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:50.199087+00:00",
+  "html_len": 146404,
+  "md_len": 5247,
+  "depth": 0
+}

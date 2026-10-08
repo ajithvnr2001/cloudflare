@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-curious-case-of-caching-csrf-tokens/",
+  "file": "_subdomains/blog.cloudflare.com/the-curious-case-of-caching-csrf-tokens.md",
+  "title": "The Curious Case of Caching CSRF Tokens | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:52.893415+00:00",
+  "html_len": 312761,
+  "md_len": 77069,
+  "depth": 0,
+  "phase": 2
+}

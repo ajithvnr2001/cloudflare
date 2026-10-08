@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/managing-dns-records/",
+  "file": "_subdomains/blog.cloudflare.com/managing-dns-records.md",
+  "title": "CloudFlare's New UI: Managing DNS records | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:07.683657+00:00",
+  "html_len": 267807,
+  "md_len": 56817,
+  "depth": 0,
+  "phase": 2
+}

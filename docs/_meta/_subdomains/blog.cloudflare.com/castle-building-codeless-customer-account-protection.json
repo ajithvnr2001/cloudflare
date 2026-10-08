@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/castle-building-codeless-customer-account-protection/",
+  "file": "_subdomains/blog.cloudflare.com/castle-building-codeless-customer-account-protection.md",
+  "title": "How Castle is Building Codeless Customer Account Protection | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:37.419214+00:00",
+  "html_len": 291031,
+  "md_len": 67107,
+  "depth": 0,
+  "phase": 2
+}

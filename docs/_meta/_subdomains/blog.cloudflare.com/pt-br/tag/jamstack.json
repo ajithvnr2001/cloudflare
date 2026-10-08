@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/tag/jamstack/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/tag/jamstack.md",
+  "title": "Posts com a tag \"JAMstack (PT)\" \u2014 Blog da Cloudflare",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (233 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:07:01.060254+00:00",
+  "html_len": 115297,
+  "md_len": 2787,
+  "depth": 1,
+  "phase": 2
+}

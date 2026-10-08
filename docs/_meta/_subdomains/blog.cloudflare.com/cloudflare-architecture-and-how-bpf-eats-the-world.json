@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-architecture-and-how-bpf-eats-the-world/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-architecture-and-how-bpf-eats-the-world.md",
+  "title": "Cloudflare architecture and how BPF eats the world | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:23.266596+00:00",
+  "html_len": 323942,
+  "md_len": 73495,
+  "depth": 0,
+  "phase": 2
+}

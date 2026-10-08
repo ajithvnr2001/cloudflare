@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/account/dns_firewall_logs/",
+  "file": "logs/logpush/logpush-job/datasets/account/dns_firewall_logs.md",
+  "title": "DNS Firewall Logs \u00b7 Cloudflare Logs docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:12:12.042373+00:00",
+  "html_len": 135677,
+  "md_len": 4105,
+  "depth": 0
+}

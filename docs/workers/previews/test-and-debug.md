@@ -1,0 +1,172 @@
+---
+url: https://developers.cloudflare.com/workers/previews/test-and-debug/
+title: Test and debug \u00b7 Cloudflare Workers docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:17:40.676560+00:00
+---
+
+# Test and debug · Cloudflare Workers docs
+
+> Source: https://developers.cloudflare.com/workers/previews/test-and-debug/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Workers](https://developers.cloudflare.com/workers/)
+  3. /[Previews](https://developers.cloudflare.com/workers/previews/)
+  4. /Test and debug
+
+
+
+# Test and debug
+
+Last updated Oct 2, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers/previews/test-and-debug/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewLogs and tracesTail WorkersMetricsBrowser evidenceExporting dataCurrent limitations
+
+Previews support the same [Workers Observability](https://developers.cloudflare.com/workers/observability/) features as production — [logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/), [traces](https://developers.cloudflare.com/workers/observability/traces/), [metrics](https://developers.cloudflare.com/workers/observability/metrics-and-analytics/), and [Tail Workers](https://developers.cloudflare.com/workers/observability/logs/tail-workers/) — configured independently so your Preview telemetry stays separate.
+
+## Logs and traces
+
+Enable logs and traces for Previews in your `previews` block. These settings are independent from production, so you can run full sampling on a Preview without affecting production telemetry.
+    
+    
+    {
+      "observability": {
+        "enabled": true,
+        "logs": { "enabled": true, "invocation_logs": true }
+      },
+      "previews": {
+        "observability": {
+          "enabled": true,
+          "logs": {
+            "enabled": true,
+            "invocation_logs": true,
+            "persist": true
+          },
+          "traces": {
+            "enabled": true,
+            "head_sampling_rate": 1,
+            "persist": true
+          }
+        }
+      }
+    }
+    
+    
+    [observability]
+    enabled = true
+    
+      [observability.logs]
+      enabled = true
+      invocation_logs = true
+    
+    [previews.observability]
+    enabled = true
+    
+      [previews.observability.logs]
+      enabled = true
+      invocation_logs = true
+      persist = true
+    
+      [previews.observability.traces]
+      enabled = true
+      head_sampling_rate = 1
+      persist = true
+
+Once enabled, Preview logs and traces appear in the Cloudflare dashboard under the individual Preview's **Observability** tab. You can also configure these settings per Preview in the dashboard under **Settings > Observability**.
+
+## Tail Workers
+
+[Tail Workers](https://developers.cloudflare.com/workers/observability/logs/tail-workers/) receive execution metadata from your Worker — request URLs, response status codes, console logs, and errors. You can configure a Tail Worker destination for production, for Previews, or both.
+    
+    
+    {
+      "tail_consumers": [
+        { "service": "my-tail-sink" }
+      ],
+      "previews": {
+        "tail_consumers": [
+          { "service": "my-tail-sink" }
+        ]
+      }
+    }
+    
+    
+    [[tail_consumers]]
+    service = "my-tail-sink"
+    
+    [[previews.tail_consumers]]
+    service = "my-tail-sink"
+
+When you deploy a Preview with `npx wrangler preview --json`, the output confirms whether Tail Worker destinations are attached. You can also configure Tail Worker destinations per Preview in the dashboard under **Settings > Observability > Tail Worker**.
+
+Tail Workers vs. `wrangler tail`
+
+A **Tail Worker** is a configured destination that receives execution events. [`wrangler tail`](https://developers.cloudflare.com/workers/wrangler/commands/workers/#tail) is a CLI command for live-tailing. `wrangler tail` does not currently support Previews — use a Tail Worker destination or [Logpush](https://developers.cloudflare.com/workers/observability/logs/logpush/) instead.
+
+## Metrics
+
+Preview invocation metrics are available through the [GraphQL Analytics API](https://developers.cloudflare.com/analytics/graphql-api/). Query the `workersInvocationsAdaptive` dataset with `isPreview: 1` to filter for Preview traffic.
+    
+    
+    query PreviewMetrics($accountTag: String!, $since: Time!) {
+    	viewer {
+    		accounts(filter: { accountTag: $accountTag }) {
+    			workersInvocationsAdaptive(
+    				limit: 100
+    				filter: { datetime_geq: $since, isPreview: 1 }
+    			) {
+    				dimensions {
+    					datetime
+    					scriptName
+    					previewSlug
+    					status
+    				}
+    				sum {
+    					requests
+    					errors
+    				}
+    			}
+    		}
+    	}
+    }
+
+Useful fields include `scriptName` (Worker name), `previewSlug` (Preview name), and `status`.
+
+Per-Preview metrics are also visible in the dashboard under the Preview's **Metrics** tab.
+
+You can also query Preview observability data using the [Workers Observability MCP server ↗︎](https://github.com/cloudflare/mcp-server-cloudflare/tree/main/apps/workers-observability).
+
+## Browser evidence
+
+Preview observability shows what happened inside the Worker. [Browser Run](https://developers.cloudflare.com/browser-run/) can add the browser-side view of the same change — open the Preview URL, exercise a flow, and capture a screenshot or PDF.
+
+Include a debug ID in the URL or request headers so the browser traffic can be correlated with the Preview's logs and traces in Workers Observability.
+    
+    
+    # Deploy the Preview
+    npx wrangler preview --name my-feature
+    
+    # Capture a screenshot of the Preview URL
+    curl "https://YOUR_BROWSER_RUN_WORKER.workers.dev/screenshot?url=https://my-feature-my-worker.subdomain.workers.dev&debugId=review-123"
+
+Browser Run is not required — you can also use curl, Playwright, integration tests, or any other tool to send traffic to the Preview URL. Browser Run is useful when you want the review artifact to include what a browser actually rendered.
+
+For GitHub Actions examples that create a Preview URL, probe it, capture a screenshot, or post it back to a pull request, refer to [Examples](https://developers.cloudflare.com/workers/previews/examples/).
+
+## Exporting data
+
+You can export Preview telemetry to your existing observability stack using [OpenTelemetry-compliant exports](https://developers.cloudflare.com/observability/export/opentelemetry/) or [Workers Logpush](https://developers.cloudflare.com/workers/observability/logs/logpush/). Configure these in the `previews` block to keep Preview exports separate from production.
+
+## Current limitations
+
+  * `wrangler tail` does not support targeting Previews.
+
+
+
+[PreviousCustom domains](https://developers.cloudflare.com/workers/previews/custom-domains/)[NextCompare workflows](https://developers.cloudflare.com/workers/previews/compare-workflows/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/workers/previews/test-and-debug.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/prepends-considered-harmful/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/prepends-considered-harmful.md",
+  "title": "Por que as comunidades BGP s\u00e3o melhores que os prefixos AS-path | Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:14.675129+00:00",
+  "html_len": 227477,
+  "md_len": 34138,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/waf-ml/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/waf-ml.md",
+  "title": "Aprendizaje autom\u00e1tico para la optimizaci\u00f3n del WAF | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:46.742950+00:00",
+  "html_len": 210619,
+  "md_len": 30581,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/scenario-planner/",
+  "file": "_subdomains/blog.cloudflare.com/scenario-planner.md",
+  "title": "Removing uncertainty through \"what-if\" capacity planning | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:38.954241+00:00",
+  "html_len": 297664,
+  "md_len": 70549,
+  "depth": 0,
+  "phase": 2
+}

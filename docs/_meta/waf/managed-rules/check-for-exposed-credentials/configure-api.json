@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/managed-rules/check-for-exposed-credentials/configure-api/",
+  "file": "waf/managed-rules/check-for-exposed-credentials/configure-api.md",
+  "title": "Configure exposed credentials checks via API \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:43.292143+00:00",
+  "html_len": 167115,
+  "md_len": 11407,
+  "depth": 0
+}

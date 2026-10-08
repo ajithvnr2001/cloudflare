@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ten-new-data-centers/",
+  "file": "_subdomains/blog.cloudflare.com/ten-new-data-centers.md",
+  "title": "Ten new data centers: Cloudflare expands global network to 165 cities | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:04.739979+00:00",
+  "html_len": 301795,
+  "md_len": 63027,
+  "depth": 0,
+  "phase": 2
+}

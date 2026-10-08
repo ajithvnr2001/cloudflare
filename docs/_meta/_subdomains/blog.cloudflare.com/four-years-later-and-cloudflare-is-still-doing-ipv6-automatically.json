@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/four-years-later-and-cloudflare-is-still-doing-ipv6-automatically/",
+  "file": "_subdomains/blog.cloudflare.com/four-years-later-and-cloudflare-is-still-doing-ipv6-automatically.md",
+  "title": "Four years later and CloudFlare is still doing IPv6 automatically | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:02.703354+00:00",
+  "html_len": 280358,
+  "md_len": 59549,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/gateway-egress-policies/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/gateway-egress-policies.md",
+  "title": "G\u00e9rez et contr\u00f4lez l'utilisation d'adresses IP de sortie d\u00e9di\u00e9es avec Cloudflare Zero Trust | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:21.520430+00:00",
+  "html_len": 225095,
+  "md_len": 34614,
+  "depth": 0,
+  "phase": 2
+}

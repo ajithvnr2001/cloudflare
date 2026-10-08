@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/if-i-knew-then/",
+  "file": "_subdomains/blog.cloudflare.com/if-i-knew-then.md",
+  "title": "If I Knew Then What I Know Now: Tales from the Early Internet | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:04.974445+00:00",
+  "html_len": 270467,
+  "md_len": 62293,
+  "depth": 0,
+  "phase": 2
+}

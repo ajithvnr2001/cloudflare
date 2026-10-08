@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/understanding-and-mitigating-ntp-based-ddos-attacks/",
+  "file": "_subdomains/blog.cloudflare.com/understanding-and-mitigating-ntp-based-ddos-attacks.md",
+  "title": "Understanding and mitigating NTP-based DDoS attacks | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:29.195417+00:00",
+  "html_len": 281169,
+  "md_len": 62508,
+  "depth": 0,
+  "phase": 2
+}

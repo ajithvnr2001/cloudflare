@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/gusto/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/gusto.md",
+  "title": "Gusto & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:32.504092+00:00",
+  "html_len": 212354,
+  "md_len": 10919,
+  "depth": 0,
+  "phase": 2
+}

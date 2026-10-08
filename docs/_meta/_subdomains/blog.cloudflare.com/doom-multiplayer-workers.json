@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/doom-multiplayer-workers/",
+  "file": "_subdomains/blog.cloudflare.com/doom-multiplayer-workers.md",
+  "title": "Multiplayer Doom on Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:25.567608+00:00",
+  "html_len": 353936,
+  "md_len": 80696,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/observability/traces/",
+  "file": "workers/observability/traces.md",
+  "title": "Traces \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:36.655833+00:00",
+  "html_len": 200107,
+  "md_len": 7414,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/tag/internet-performance/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/tag/internet-performance.md",
+  "title": "Entradas etiquetadas con \"Rendimiento de Internet\" \u2014 Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:15:01.891804+00:00",
+  "html_len": 113633,
+  "md_len": 2857,
+  "depth": 1,
+  "phase": 2
+}

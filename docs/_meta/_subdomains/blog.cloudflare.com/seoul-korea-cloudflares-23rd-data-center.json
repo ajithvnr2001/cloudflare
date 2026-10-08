@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/seoul-korea-cloudflares-23rd-data-center/",
+  "file": "_subdomains/blog.cloudflare.com/seoul-korea-cloudflares-23rd-data-center.md",
+  "title": "Seoul, Korea: CloudFlare's 23rd Data Center | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:52.820239+00:00",
+  "html_len": 269846,
+  "md_len": 55880,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/welcome-to-agents-week/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/welcome-to-agents-week.md",
+  "title": "Bienvenue dans l\u2019Agents Week | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:42.134063+00:00",
+  "html_len": 234848,
+  "md_len": 42638,
+  "depth": 0,
+  "phase": 2
+}

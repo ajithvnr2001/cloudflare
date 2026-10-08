@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/bitso/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/bitso.md",
+  "title": "Bitso",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:21.495651+00:00",
+  "html_len": 206887,
+  "md_len": 9046,
+  "depth": 0,
+  "phase": 2
+}

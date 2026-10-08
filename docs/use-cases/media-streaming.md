@@ -1,0 +1,107 @@
+---
+url: https://developers.cloudflare.com/use-cases/media-streaming/
+title: Media and streaming \u00b7 Use cases \u00b7 Cloudflare use cases
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:16:10.696531+00:00
+---
+
+# Media and streaming · Use cases · Cloudflare use cases
+
+> Source: https://developers.cloudflare.com/use-cases/media-streaming/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Use cases](https://developers.cloudflare.com/use-cases/)
+  3. /Media and streaming
+
+
+
+# Media and streaming
+
+Last updated Apr 24, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/use-cases/media-streaming/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewArchitecture patterns Video platform Image optimization pipeline User-generated contentPrerequisites Create a new application Use an existing applicationRelated resources
+
+Deliver video, images, and rich media at scale with encoding, optimization, and global distribution. Cloudflare Stream handles video upload, encoding, and adaptive bitrate delivery. Images transforms and optimizes images on-the-fly. R2 stores media files with zero egress fees. Cache serves content from 300+ edge locations. Hotlink Protection and signed URLs secure media from unauthorized access.
+
+  * [Upload, encode, and deliver videos](https://developers.cloudflare.com/use-cases/media-streaming/video-delivery/)
+  * [Optimize and transform images for the web](https://developers.cloudflare.com/use-cases/media-streaming/image-optimization/)
+  * [Store media at scale](https://developers.cloudflare.com/use-cases/media-streaming/store-media/)
+  * [Cache and accelerate media delivery](https://developers.cloudflare.com/use-cases/media-streaming/cache-delivery/)
+  * [Secure your content](https://developers.cloudflare.com/use-cases/media-streaming/secure-content/)
+
+
+
+## Architecture patterns
+
+### Video platform
+
+Build a complete video hosting and delivery solution:
+
+  * **Stream** handles upload, encoding, and adaptive bitrate delivery
+  * **Stream Live** enables live streaming with automatic recording
+  * **Signed URLs** protect content with token authentication
+
+
+
+### Image optimization pipeline
+
+Serve optimized images without pre-generating variants:
+
+  1. **R2** stores original high-resolution images
+  2. **Images** transforms images on-the-fly based on URL parameters
+  3. **Workers** applies custom logic for format selection and caching
+
+
+
+### User-generated content
+
+Handle media uploads from users at scale:
+
+  1. **R2** receives uploads directly via presigned URLs
+  2. **Workers** validates and processes uploaded content
+  3. **Stream** or **Images** optimizes media for delivery
+
+
+
+* * *
+
+## Prerequisites
+
+### Create a new application
+
+  * A [Cloudflare account ↗︎](https://dash.cloudflare.com/sign-up). Stream and R2 are account-level offerings. You do not need a domain added to Cloudflare to upload, encode, or store media.
+  * For Image Transformations: enable the feature per domain from the [Transformations page ↗︎](https://dash.cloudflare.com/?to=/:account/images/transformations) in the dashboard. Refer to [Image Transformations](https://developers.cloudflare.com/images/optimization/transformations/overview/).
+
+
+
+### Use an existing application
+
+  * A [Cloudflare account ↗︎](https://dash.cloudflare.com/sign-up).
+  * A domain [added to Cloudflare](https://developers.cloudflare.com/fundamentals/manage-domains/add-site/) with DNS records proxied through Cloudflare. This is required for CDN caching, image optimization (Polish), and cache rules.
+  * For Image Transformations on an existing domain: enable the feature from the [Transformations page ↗︎](https://dash.cloudflare.com/?to=/:account/images/transformations) in the dashboard. Refer to [Image Transformations](https://developers.cloudflare.com/images/optimization/transformations/overview/).
+
+
+
+* * *
+
+## Related resources
+
+### [Stream documentation](https://developers.cloudflare.com/stream/)
+
+Complete documentation for video upload, encoding, and delivery.
+
+### [Images documentation](https://developers.cloudflare.com/images/)
+
+Complete documentation for image optimization and transformation.
+
+### [Media case studies](https://www.cloudflare.com/case-studies/?industry=Media%20%26%20Entertainment)
+
+Explore how media companies use Cloudflare.
+
+[PreviousControl costs and improve quality](https://developers.cloudflare.com/use-cases/ai/control-costs/)[NextUpload, encode, and deliver videos](https://developers.cloudflare.com/use-cases/media-streaming/video-delivery/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/use-cases/media-streaming/index.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

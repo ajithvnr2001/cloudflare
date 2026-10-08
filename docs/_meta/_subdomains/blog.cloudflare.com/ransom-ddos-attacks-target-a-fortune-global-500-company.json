@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ransom-ddos-attacks-target-a-fortune-global-500-company/",
+  "file": "_subdomains/blog.cloudflare.com/ransom-ddos-attacks-target-a-fortune-global-500-company.md",
+  "title": "Ransom DDoS attacks target a Fortune Global 500 company | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:40.977714+00:00",
+  "html_len": 279891,
+  "md_len": 61674,
+  "depth": 0,
+  "phase": 2
+}

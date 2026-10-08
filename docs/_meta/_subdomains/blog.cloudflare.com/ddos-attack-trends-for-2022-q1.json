@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ddos-attack-trends-for-2022-q1/",
+  "file": "_subdomains/blog.cloudflare.com/ddos-attack-trends-for-2022-q1.md",
+  "title": "DDoS Attack Trends for 2022 Q1 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:40:38.950915+00:00",
+  "html_len": 378242,
+  "md_len": 91866,
+  "depth": 0,
+  "phase": 2
+}

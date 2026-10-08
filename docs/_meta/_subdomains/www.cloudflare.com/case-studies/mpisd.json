@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/mpisd/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/mpisd.md",
+  "title": "Mount Pleasant Independent School District",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:40.495274+00:00",
+  "html_len": 206214,
+  "md_len": 8279,
+  "depth": 0,
+  "phase": 2
+}

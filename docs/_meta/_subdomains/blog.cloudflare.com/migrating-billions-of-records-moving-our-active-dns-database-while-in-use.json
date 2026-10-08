@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/migrating-billions-of-records-moving-our-active-dns-database-while-in-use/",
+  "file": "_subdomains/blog.cloudflare.com/migrating-billions-of-records-moving-our-active-dns-database-while-in-use.md",
+  "title": "Migrating billions of records: moving our active DNS database while it\u2019s in use | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:31.796857+00:00",
+  "html_len": 322551,
+  "md_len": 81553,
+  "depth": 0,
+  "phase": 2
+}

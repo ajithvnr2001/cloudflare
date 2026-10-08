@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/api/resources/radar/subresources/tlds/subresources/performance/methods/timeseries_groups/",
+  "file": "api/resources/radar/subresources/tlds/subresources/performance/methods/timeseries_groups.md",
+  "title": "Get TLD Performance Over Time | Cloudflare API",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:27:12.677066+00:00",
+  "html_len": 2101160,
+  "md_len": 10257,
+  "depth": 1
+}

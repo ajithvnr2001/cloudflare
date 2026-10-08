@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/examples/respond-with-another-site/",
+  "file": "workers/examples/respond-with-another-site.md",
+  "title": "Respond with another site \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:25.078653+00:00",
+  "html_len": 185694,
+  "md_len": 2840,
+  "depth": 0
+}

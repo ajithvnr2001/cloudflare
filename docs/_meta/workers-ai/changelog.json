@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers-ai/changelog/",
+  "file": "workers-ai/changelog.md",
+  "title": "Changelog \u00b7 Cloudflare Workers AI docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:56.594377+00:00",
+  "html_len": 154692,
+  "md_len": 23037,
+  "depth": 0
+}

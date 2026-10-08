@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-verifies-code-whatsapp-web-serves-users/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-verifies-code-whatsapp-web-serves-users.md",
+  "title": "How Cloudflare verifies the code WhatsApp Web serves to users | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:40:49.411088+00:00",
+  "html_len": 288078,
+  "md_len": 62393,
+  "depth": 0,
+  "phase": 2
+}

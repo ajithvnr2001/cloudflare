@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/encrypted-sni/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/encrypted-sni.md",
+  "title": "Chiffrez-le ou perdez-le : comment fonctionne le SNI chiffr\u00e9 | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:23.399832+00:00",
+  "html_len": 226735,
+  "md_len": 35846,
+  "depth": 0,
+  "phase": 2
+}

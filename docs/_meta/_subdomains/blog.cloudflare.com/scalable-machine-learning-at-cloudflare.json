@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/scalable-machine-learning-at-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/scalable-machine-learning-at-cloudflare.md",
+  "title": "Every request, every microsecond: scalable machine learning at Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:24.495070+00:00",
+  "html_len": 329910,
+  "md_len": 81569,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/towards-a-global-framework-for-cross-border-data-flows-and-privacy-protection/",
+  "file": "_subdomains/blog.cloudflare.com/towards-a-global-framework-for-cross-border-data-flows-and-privacy-protection.md",
+  "title": "Towards a global framework for cross-border data flows and privacy protection | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:02.116864+00:00",
+  "html_len": 283145,
+  "md_len": 64085,
+  "depth": 0,
+  "phase": 2
+}

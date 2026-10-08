@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/last-mile-insights/",
+  "file": "_subdomains/blog.cloudflare.com/last-mile-insights.md",
+  "title": "Unboxing the Last Mile: Introducing Last Mile Insights | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:05.864655+00:00",
+  "html_len": 306891,
+  "md_len": 71809,
+  "depth": 0,
+  "phase": 2
+}

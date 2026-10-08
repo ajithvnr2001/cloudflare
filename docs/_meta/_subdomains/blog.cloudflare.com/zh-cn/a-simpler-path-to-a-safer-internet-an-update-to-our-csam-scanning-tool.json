@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/a-simpler-path-to-a-safer-internet-an-update-to-our-csam-scanning-tool/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/a-simpler-path-to-a-safer-internet-an-update-to-our-csam-scanning-tool.md",
+  "title": "\u901a\u5f80\u66f4\u5b89\u5168\u4e92\u8054\u7f51\u7684\u66f4\u7b80\u5355\u8def\u5f84\uff1a\u6211\u4eec\u5bf9 CSAM \u626b\u63cf\u5de5\u5177\u8fdb\u884c\u4e86\u66f4\u65b0 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:50.136177+00:00",
+  "html_len": 190413,
+  "md_len": 23040,
+  "depth": 0,
+  "phase": 2
+}

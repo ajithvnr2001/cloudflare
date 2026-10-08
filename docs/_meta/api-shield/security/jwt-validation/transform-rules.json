@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/api-shield/security/jwt-validation/transform-rules/",
+  "file": "api-shield/security/jwt-validation/transform-rules.md",
+  "title": "Enhance Request Header Transform Rules with JWT claims \u00b7 Cloudflare API Shield docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:05:18.906136+00:00",
+  "html_len": 105167,
+  "md_len": 3033,
+  "depth": 0
+}

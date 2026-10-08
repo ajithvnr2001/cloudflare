@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ecommerce-best-practices/",
+  "file": "_subdomains/blog.cloudflare.com/ecommerce-best-practices.md",
+  "title": "Ecommerce websites on Cloudflare: best practices | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:16.606574+00:00",
+  "html_len": 292089,
+  "md_len": 65319,
+  "depth": 0,
+  "phase": 2
+}

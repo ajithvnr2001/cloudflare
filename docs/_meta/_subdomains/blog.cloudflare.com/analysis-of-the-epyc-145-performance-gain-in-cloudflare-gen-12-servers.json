@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/analysis-of-the-epyc-145-performance-gain-in-cloudflare-gen-12-servers/",
+  "file": "_subdomains/blog.cloudflare.com/analysis-of-the-epyc-145-performance-gain-in-cloudflare-gen-12-servers.md",
+  "title": "Analysis of the EPYC 145% performance gain in Cloudflare Gen 12 servers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:36.540113+00:00",
+  "html_len": 409888,
+  "md_len": 73212,
+  "depth": 0,
+  "phase": 2
+}

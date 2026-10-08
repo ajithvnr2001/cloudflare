@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflares-new-waf-compiling-to-lua/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflares-new-waf-compiling-to-lua.md",
+  "title": "CloudFlare's new WAF: compiling to Lua | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:33.998272+00:00",
+  "html_len": 274110,
+  "md_len": 62207,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/canva/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/canva.md",
+  "title": "Canva & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:22.732138+00:00",
+  "html_len": 228987,
+  "md_len": 13370,
+  "depth": 0,
+  "phase": 2
+}

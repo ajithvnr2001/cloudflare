@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/replace-your-hardware-firewalls-with-cloudflare-one/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/replace-your-hardware-firewalls-with-cloudflare-one.md",
+  "title": "\ud558\ub4dc\uc6e8\uc5b4 \ubc29\ud654\ubcbd\uc744 Cloudflare One\uc73c\ub85c \uad50\uccb4\ud558\uc138\uc694 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:51.455869+00:00",
+  "html_len": 225920,
+  "md_len": 39401,
+  "depth": 0,
+  "phase": 2
+}

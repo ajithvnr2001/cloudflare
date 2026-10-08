@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/nl-nl/casb-ai-integrations/",
+  "file": "_subdomains/blog.cloudflare.com/nl-nl/casb-ai-integrations.md",
+  "title": "Gebruik ChatGPT, Claude en Gemini met een beveiligingsscan van Cloudflare CASB | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:48.173869+00:00",
+  "html_len": 195313,
+  "md_len": 23420,
+  "depth": 0,
+  "phase": 2
+}

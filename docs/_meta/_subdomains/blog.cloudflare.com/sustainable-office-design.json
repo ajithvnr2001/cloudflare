@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/sustainable-office-design/",
+  "file": "_subdomains/blog.cloudflare.com/sustainable-office-design.md",
+  "title": "How we redesigned our offices to be more sustainable | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:51.002989+00:00",
+  "html_len": 292924,
+  "md_len": 66019,
+  "depth": 0,
+  "phase": 2
+}

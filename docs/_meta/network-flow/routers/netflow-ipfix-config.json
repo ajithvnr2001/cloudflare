@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/network-flow/routers/netflow-ipfix-config/",
+  "file": "network-flow/routers/netflow-ipfix-config.md",
+  "title": "Netflow/IPFIX configuration \u00b7 Cloudflare Network Flow docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:12:23.428831+00:00",
+  "html_len": 112239,
+  "md_len": 3911,
+  "depth": 0
+}

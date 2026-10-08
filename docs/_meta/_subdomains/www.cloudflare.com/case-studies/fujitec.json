@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/fujitec/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/fujitec.md",
+  "title": "Fujitec & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:31.067580+00:00",
+  "html_len": 212673,
+  "md_len": 11056,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/unser-am-neuesten-datacenter-dusseldorf/",
+  "file": "_subdomains/blog.cloudflare.com/unser-am-neuesten-datacenter-dusseldorf.md",
+  "title": "Unser neuer 31er Data Center: D\u00fcsseldorf | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:07.864891+00:00",
+  "html_len": 269472,
+  "md_len": 55544,
+  "depth": 0,
+  "phase": 2
+}

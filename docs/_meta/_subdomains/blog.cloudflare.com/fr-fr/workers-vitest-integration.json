@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/workers-vitest-integration/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/workers-vitest-integration.md",
+  "title": "Am\u00e9lioration des tests dans Workers via Vitest et workerd | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:13.643959+00:00",
+  "html_len": 292714,
+  "md_len": 55940,
+  "depth": 0,
+  "phase": 2
+}

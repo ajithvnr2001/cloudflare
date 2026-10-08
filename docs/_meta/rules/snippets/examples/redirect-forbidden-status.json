@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/snippets/examples/redirect-forbidden-status/",
+  "file": "rules/snippets/examples/redirect-forbidden-status.md",
+  "title": "Redirect 403 Forbidden to a different page \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:53.802425+00:00",
+  "html_len": 128150,
+  "md_len": 1645,
+  "depth": 0
+}

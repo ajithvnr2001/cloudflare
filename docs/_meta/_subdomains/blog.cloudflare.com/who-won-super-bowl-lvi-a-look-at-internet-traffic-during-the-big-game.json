@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/who-won-super-bowl-lvi-a-look-at-internet-traffic-during-the-big-game/",
+  "file": "_subdomains/blog.cloudflare.com/who-won-super-bowl-lvi-a-look-at-internet-traffic-during-the-big-game.md",
+  "title": "Who won Super Bowl LVI? A look at Internet traffic during the big game | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:40.518421+00:00",
+  "html_len": 342614,
+  "md_len": 74282,
+  "depth": 0,
+  "phase": 2
+}

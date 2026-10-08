@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/products/waf/",
+  "file": "_subdomains/www.cloudflare.com/products/waf.md",
+  "title": "Cloudflare WAF - Web Application Firewall",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:13.519733+00:00",
+  "html_len": 288964,
+  "md_len": 7927,
+  "depth": 0,
+  "phase": 2
+}

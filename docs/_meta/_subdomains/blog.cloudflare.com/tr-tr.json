@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tr-tr/",
+  "file": "_subdomains/blog.cloudflare.com/tr-tr.md",
+  "title": "Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:05:27.678531+00:00",
+  "html_len": 115620,
+  "md_len": 1712,
+  "depth": 1,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/vfs-global/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/vfs-global.md",
+  "title": "VFS Global & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:54.235502+00:00",
+  "html_len": 218869,
+  "md_len": 12977,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/choosing-a-two-factor-authentication-system/",
+  "file": "_subdomains/blog.cloudflare.com/choosing-a-two-factor-authentication-system.md",
+  "title": "Choosing a Two-Factor Authentication System | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:44.484381+00:00",
+  "html_len": 274600,
+  "md_len": 60711,
+  "depth": 0,
+  "phase": 2
+}

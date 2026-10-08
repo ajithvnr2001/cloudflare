@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/gatway-protocol-detection/",
+  "file": "_subdomains/blog.cloudflare.com/gatway-protocol-detection.md",
+  "title": "Protocol detection with Cloudflare Gateway | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:56.368470+00:00",
+  "html_len": 276408,
+  "md_len": 58120,
+  "depth": 0,
+  "phase": 2
+}

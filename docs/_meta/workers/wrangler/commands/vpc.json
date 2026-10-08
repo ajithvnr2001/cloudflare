@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/wrangler/commands/vpc/",
+  "file": "workers/wrangler/commands/vpc.md",
+  "title": "VPC \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:18:10.011363+00:00",
+  "html_len": 233476,
+  "md_len": 7751,
+  "depth": 0
+}

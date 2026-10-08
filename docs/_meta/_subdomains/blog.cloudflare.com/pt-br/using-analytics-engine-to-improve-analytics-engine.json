@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/using-analytics-engine-to-improve-analytics-engine/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/using-analytics-engine-to-improve-analytics-engine.md",
+  "title": "Como a Cloudflare instrumenta servi\u00e7os usando o Workers Analytics Engine | Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:33.071402+00:00",
+  "html_len": 206169,
+  "md_len": 25795,
+  "depth": 0,
+  "phase": 2
+}

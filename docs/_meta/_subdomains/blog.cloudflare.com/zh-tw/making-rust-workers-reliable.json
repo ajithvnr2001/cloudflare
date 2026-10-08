@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/making-rust-workers-reliable/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/making-rust-workers-reliable.md",
+  "title": "\u8b93 Rust Workers \u66f4\u52a0\u53ef\u9760\uff1awasm\u2011bindgen \u4e2d\u7684 panic \u8207 abort \u5fa9\u539f | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:39.937648+00:00",
+  "html_len": 207030,
+  "md_len": 27447,
+  "depth": 0,
+  "phase": 2
+}

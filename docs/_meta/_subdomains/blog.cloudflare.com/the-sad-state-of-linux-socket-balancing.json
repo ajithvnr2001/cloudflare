@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-sad-state-of-linux-socket-balancing/",
+  "file": "_subdomains/blog.cloudflare.com/the-sad-state-of-linux-socket-balancing.md",
+  "title": "Why does one NGINX worker take all the load? | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:59.902050+00:00",
+  "html_len": 307251,
+  "md_len": 69920,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/heuristics-and-rules-why-we-built-a-new-old-waf/",
+  "file": "_subdomains/blog.cloudflare.com/heuristics-and-rules-why-we-built-a-new-old-waf.md",
+  "title": "Heuristics and Rules: Why We Built a New Old WAF | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:33.065192+00:00",
+  "html_len": 280823,
+  "md_len": 62998,
+  "depth": 0,
+  "phase": 2
+}

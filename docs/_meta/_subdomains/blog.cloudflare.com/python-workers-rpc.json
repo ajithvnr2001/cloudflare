@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/python-workers-rpc/",
+  "file": "_subdomains/blog.cloudflare.com/python-workers-rpc.md",
+  "title": "Workers RPC now works across Python and JavaScript | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:27:06.826294+00:00",
+  "html_len": 316207,
+  "md_len": 66519,
+  "depth": 1
+}

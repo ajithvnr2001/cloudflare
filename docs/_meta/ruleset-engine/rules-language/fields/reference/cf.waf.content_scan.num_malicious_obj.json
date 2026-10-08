@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.waf.content_scan.num_malicious_obj/",
+  "file": "ruleset-engine/rules-language/fields/reference/cf.waf.content_scan.num_malicious_obj.md",
+  "title": "cf.waf.content_scan.num_malicious_obj \u00b7 Cloudflare Ruleset Engine docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:15:07.928340+00:00",
+  "html_len": 92380,
+  "md_len": 1413,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/dns-encryption-explained/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/dns-encryption-explained.md",
+  "title": "Explication du chiffrement des DNS | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:50.364420+00:00",
+  "html_len": 254782,
+  "md_len": 56463,
+  "depth": 0,
+  "phase": 2
+}

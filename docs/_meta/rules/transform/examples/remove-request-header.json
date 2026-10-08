@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/transform/examples/remove-request-header/",
+  "file": "rules/transform/examples/remove-request-header.md",
+  "title": "Remove a request header \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:55.912675+00:00",
+  "html_len": 131836,
+  "md_len": 1609,
+  "depth": 0
+}

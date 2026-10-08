@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/backbone2024/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/backbone2024.md",
+  "title": "Le r\u00e9seau d'infrastructure sur lequel repose le cloud de connectivit\u00e9 de Cloudflare | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:41:16.148176+00:00",
+  "html_len": 263270,
+  "md_len": 52061,
+  "depth": 0,
+  "phase": 2
+}

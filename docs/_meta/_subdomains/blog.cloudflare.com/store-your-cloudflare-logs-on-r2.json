@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/store-your-cloudflare-logs-on-r2/",
+  "file": "_subdomains/blog.cloudflare.com/store-your-cloudflare-logs-on-r2.md",
+  "title": "Store your Cloudflare logs on R2 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:25.166187+00:00",
+  "html_len": 278794,
+  "md_len": 59642,
+  "depth": 0,
+  "phase": 2
+}

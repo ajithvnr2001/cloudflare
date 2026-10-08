@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/dns/zone-setups/zone-transfers/cloudflare-as-secondary/setup/",
+  "file": "dns/zone-setups/zone-transfers/cloudflare-as-secondary/setup.md",
+  "title": "Set up incoming zone transfers (Cloudflare as Secondary) \u00b7 Cloudflare DNS docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:11:05.228076+00:00",
+  "html_len": 167017,
+  "md_len": 10382,
+  "depth": 0
+}

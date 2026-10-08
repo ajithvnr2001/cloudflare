@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/what-makes-spdy-speedy/",
+  "file": "_subdomains/blog.cloudflare.com/what-makes-spdy-speedy.md",
+  "title": "What makes SPDY speedy? | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:02.228775+00:00",
+  "html_len": 278605,
+  "md_len": 61191,
+  "depth": 0,
+  "phase": 2
+}

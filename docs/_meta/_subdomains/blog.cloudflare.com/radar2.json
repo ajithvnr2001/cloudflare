@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/radar2/",
+  "file": "_subdomains/blog.cloudflare.com/radar2.md",
+  "title": "The home page for Internet insights: Cloudflare Radar 2.0 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:02.407722+00:00",
+  "html_len": 296815,
+  "md_len": 64212,
+  "depth": 0,
+  "phase": 2
+}

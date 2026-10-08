@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/new-application-security-experience/",
+  "file": "_subdomains/blog.cloudflare.com/new-application-security-experience.md",
+  "title": "Making Application Security simple with a new unified dashboard experience | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:21.777111+00:00",
+  "html_len": 314558,
+  "md_len": 71188,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/it-it/tag/automation/",
+  "file": "_subdomains/blog.cloudflare.com/it-it/tag/automation.md",
+  "title": "Post con tag \"Automazione\" \u2014 Il blog di Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:22:13.348916+00:00",
+  "html_len": 109797,
+  "md_len": 980,
+  "depth": 1,
+  "phase": 2
+}

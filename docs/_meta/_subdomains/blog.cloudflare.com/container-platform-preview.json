@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/container-platform-preview/",
+  "file": "_subdomains/blog.cloudflare.com/container-platform-preview.md",
+  "title": "Our container platform is in production. It has GPUs. Here\u2019s an early look | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:38.119666+00:00",
+  "html_len": 340383,
+  "md_len": 87615,
+  "depth": 0,
+  "phase": 2
+}

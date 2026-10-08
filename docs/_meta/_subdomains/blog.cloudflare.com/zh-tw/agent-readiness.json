@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/agent-readiness/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/agent-readiness.md",
+  "title": "\u63a8\u51fa\u667a\u6167\u9ad4\u5c31\u7dd2\u7a0b\u5ea6\u5206\u6578\u3002\u67e5\u770b\u60a8\u7684\u7db2\u7ad9\u662f\u5426\u5177\u5099\u667a\u6167\u9ad4\u5c31\u7dd2\u80fd\u529b | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:07.815177+00:00",
+  "html_len": 246225,
+  "md_len": 37701,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/making-the-waf-40-faster/",
+  "file": "_subdomains/blog.cloudflare.com/making-the-waf-40-faster.md",
+  "title": "Making the WAF 40% faster | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:32.171372+00:00",
+  "html_len": 300041,
+  "md_len": 63999,
+  "depth": 0,
+  "phase": 2
+}

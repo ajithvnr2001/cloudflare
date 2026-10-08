@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/what-we-just-did-to-make-ssl-even-faster/",
+  "file": "_subdomains/blog.cloudflare.com/what-we-just-did-to-make-ssl-even-faster.md",
+  "title": "What We Just Did to Make SSL Even Faster | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:54.441125+00:00",
+  "html_len": 276345,
+  "md_len": 60713,
+  "depth": 0,
+  "phase": 2
+}

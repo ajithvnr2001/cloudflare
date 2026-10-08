@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/data-loss-prevention/",
+  "file": "_subdomains/blog.cloudflare.com/data-loss-prevention.md",
+  "title": "Announcing Cloudflare\u2019s Data Loss Prevention platform | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:07.897659+00:00",
+  "html_len": 304814,
+  "md_len": 70425,
+  "depth": 0,
+  "phase": 2
+}

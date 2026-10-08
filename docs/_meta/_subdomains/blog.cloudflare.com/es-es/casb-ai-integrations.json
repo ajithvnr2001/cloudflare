@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/casb-ai-integrations/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/casb-ai-integrations.md",
+  "title": "An\u00e1lisis de seguridad de ChatGPT, Claude y Gemini con el CASB de Cloudflare | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:48.830728+00:00",
+  "html_len": 213497,
+  "md_len": 32998,
+  "depth": 0,
+  "phase": 2
+}

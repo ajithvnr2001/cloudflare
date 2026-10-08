@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/block-unsafe-llm-prompts-with-firewall-for-ai/",
+  "file": "_subdomains/blog.cloudflare.com/block-unsafe-llm-prompts-with-firewall-for-ai.md",
+  "title": "Block unsafe prompts targeting your LLM endpoints with Firewall for AI | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:08.142716+00:00",
+  "html_len": 298917,
+  "md_len": 68187,
+  "depth": 0,
+  "phase": 2
+}

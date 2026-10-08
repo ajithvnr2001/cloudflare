@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/sandbox-ga/",
+  "file": "_subdomains/blog.cloudflare.com/sandbox-ga.md",
+  "title": "Agents have their own computers with Sandboxes GA | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:19.630006+00:00",
+  "html_len": 327371,
+  "md_len": 71136,
+  "depth": 0,
+  "phase": 2
+}

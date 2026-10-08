@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/argo-spectrum/",
+  "file": "_subdomains/blog.cloudflare.com/argo-spectrum.md",
+  "title": "Announcing Argo for Spectrum | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:50.103333+00:00",
+  "html_len": 277504,
+  "md_len": 60192,
+  "depth": 0,
+  "phase": 2
+}

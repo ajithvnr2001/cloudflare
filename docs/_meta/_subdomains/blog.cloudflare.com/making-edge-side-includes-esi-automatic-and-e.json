@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/making-edge-side-includes-esi-automatic-and-e/",
+  "file": "_subdomains/blog.cloudflare.com/making-edge-side-includes-esi-automatic-and-e.md",
+  "title": "Making Edge Side Includes (ESI) Automatic and Easy | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:00.642150+00:00",
+  "html_len": 279180,
+  "md_len": 59812,
+  "depth": 0,
+  "phase": 2
+}

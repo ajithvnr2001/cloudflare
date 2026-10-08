@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/naranja/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/naranja.md",
+  "title": "Naranja | Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:40.750890+00:00",
+  "html_len": 211513,
+  "md_len": 7128,
+  "depth": 0,
+  "phase": 2
+}

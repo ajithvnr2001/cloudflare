@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/serverlist-16th-edition/",
+  "file": "_subdomains/blog.cloudflare.com/serverlist-16th-edition.md",
+  "title": "The Serverlist: Serverless Computing vs. Containers, Serverless MySQL at Scale, and more! | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:09.939606+00:00",
+  "html_len": 264968,
+  "md_len": 53614,
+  "depth": 0,
+  "phase": 2
+}

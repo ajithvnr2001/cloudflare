@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/prepare-your-site-for-traffic-spikes-this-holiday-season/",
+  "file": "_subdomains/blog.cloudflare.com/prepare-your-site-for-traffic-spikes-this-holiday-season.md",
+  "title": "Prepare Your Site for Traffic Spikes this Holiday Season | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:11.876570+00:00",
+  "html_len": 285470,
+  "md_len": 62326,
+  "depth": 0,
+  "phase": 2
+}

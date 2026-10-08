@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/domains/",
+  "file": "_subdomains/www.cloudflare.com/domains.md",
+  "title": "Cloudflare Registrar - Search and Buy Domains at Cost",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:05.855463+00:00",
+  "html_len": 255501,
+  "md_len": 5065,
+  "depth": 0,
+  "phase": 2
+}

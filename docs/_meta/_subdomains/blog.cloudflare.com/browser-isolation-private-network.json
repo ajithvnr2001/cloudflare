@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/browser-isolation-private-network/",
+  "file": "_subdomains/blog.cloudflare.com/browser-isolation-private-network.md",
+  "title": "Connect to private network services with Browser Isolation | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:51.451407+00:00",
+  "html_len": 286100,
+  "md_len": 62527,
+  "depth": 0,
+  "phase": 2
+}

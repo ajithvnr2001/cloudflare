@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/kyiv/",
+  "file": "_subdomains/blog.cloudflare.com/kyiv.md",
+  "title": "Kyiv, Ukraine: Cloudflare\u2019s 78th Data Center | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:40.935721+00:00",
+  "html_len": 271253,
+  "md_len": 55972,
+  "depth": 0,
+  "phase": 2
+}

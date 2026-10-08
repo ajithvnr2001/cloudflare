@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/hapag-lloyd/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/hapag-lloyd.md",
+  "title": "Hapag-Lloyd & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:33.478143+00:00",
+  "html_len": 218825,
+  "md_len": 10823,
+  "depth": 0,
+  "phase": 2
+}

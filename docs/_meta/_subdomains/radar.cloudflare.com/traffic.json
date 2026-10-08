@@ -1,0 +1,10 @@
+{
+  "url": "https://radar.cloudflare.com/traffic/",
+  "file": "_subdomains/radar.cloudflare.com/traffic.md",
+  "title": "Traffic Worldwide | Cloudflare Radar",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:27:14.903039+00:00",
+  "html_len": 207637,
+  "md_len": 2910,
+  "depth": 1
+}

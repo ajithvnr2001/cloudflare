@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/measuring-network-connections-at-scale/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/measuring-network-connections-at-scale.md",
+  "title": "\uc778\ud130\ub137 \uaddc\ubaa8\uc5d0\uc11c TCP \uc5f0\uacb0\uc758 \ud2b9\uc131 \uce21\uc815 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:53.318491+00:00",
+  "html_len": 246678,
+  "md_len": 43931,
+  "depth": 0,
+  "phase": 2
+}

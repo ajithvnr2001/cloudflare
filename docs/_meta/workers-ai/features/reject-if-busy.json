@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers-ai/features/reject-if-busy/",
+  "file": "workers-ai/features/reject-if-busy.md",
+  "title": "Reject busy requests \u00b7 Cloudflare Workers AI docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:58.916071+00:00",
+  "html_len": 119633,
+  "md_len": 3617,
+  "depth": 0
+}

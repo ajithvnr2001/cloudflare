@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/helping-apache-servers-stay-safe-from-zero-day-path-traversal-attacks/",
+  "file": "_subdomains/blog.cloudflare.com/helping-apache-servers-stay-safe-from-zero-day-path-traversal-attacks.md",
+  "title": "Helping Apache Servers stay safe from zero-day path traversal attacks (CVE-2021-41773) | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:59.422063+00:00",
+  "html_len": 280720,
+  "md_len": 59848,
+  "depth": 0,
+  "phase": 2
+}

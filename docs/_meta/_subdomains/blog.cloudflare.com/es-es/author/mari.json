@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/author/mari/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/author/mari.md",
+  "title": "Mari Galicer: Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:24:38.408282+00:00",
+  "html_len": 126057,
+  "md_len": 4871,
+  "depth": 1,
+  "phase": 2
+}

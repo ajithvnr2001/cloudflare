@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/author/matthew-prince/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/author/matthew-prince.md",
+  "title": "Matthew Prince: Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:24:32.622723+00:00",
+  "html_len": 242136,
+  "md_len": 27769,
+  "depth": 1,
+  "phase": 2
+}

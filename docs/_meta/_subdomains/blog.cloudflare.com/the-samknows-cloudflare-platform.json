@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-samknows-cloudflare-platform/",
+  "file": "_subdomains/blog.cloudflare.com/the-samknows-cloudflare-platform.md",
+  "title": "The SamKnows Cloudflare Platform | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:00.838317+00:00",
+  "html_len": 298619,
+  "md_len": 70123,
+  "depth": 0,
+  "phase": 2
+}

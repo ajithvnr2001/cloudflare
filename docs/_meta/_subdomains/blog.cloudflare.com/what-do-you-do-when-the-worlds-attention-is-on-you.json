@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/what-do-you-do-when-the-worlds-attention-is-on-you/",
+  "file": "_subdomains/blog.cloudflare.com/what-do-you-do-when-the-worlds-attention-is-on-you.md",
+  "title": "What do you do when the world\u2019s attention is on you? | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:25.223259+00:00",
+  "html_len": 270756,
+  "md_len": 59151,
+  "depth": 0,
+  "phase": 2
+}

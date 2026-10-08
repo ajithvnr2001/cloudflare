@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/bots/changelog/index.xml",
+  "file": "bots/changelog/index.xml.md",
+  "title": "Changelog | Bots",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:24:22.710815+00:00",
+  "html_len": 6236,
+  "md_len": 4949,
+  "depth": 1
+}

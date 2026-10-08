@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/fixing-the-mixed-content-problem-with-automatic-https-rewrites/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/fixing-the-mixed-content-problem-with-automatic-https-rewrites.md",
+  "title": "Behebung des Problems mit gemischten Inhalten durch automatische HTTPS-Rewrites | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:28.193565+00:00",
+  "html_len": 233259,
+  "md_len": 41198,
+  "depth": 0,
+  "phase": 2
+}

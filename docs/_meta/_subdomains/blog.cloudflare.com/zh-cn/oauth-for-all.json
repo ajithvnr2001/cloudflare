@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/oauth-for-all/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/oauth-for-all.md",
+  "title": "\u4f7f\u7528\u9762\u5411\u6240\u6709\u5ba2\u6237\u7684 OAuth\uff0c\u89e3\u9501 Cloudflare \u5e94\u7528\u751f\u6001\u7cfb\u7edf\u7684\u6f5c\u529b | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:30.158731+00:00",
+  "html_len": 210553,
+  "md_len": 27604,
+  "depth": 0,
+  "phase": 2
+}

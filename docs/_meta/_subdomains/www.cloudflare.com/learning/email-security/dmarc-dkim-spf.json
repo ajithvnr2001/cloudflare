@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/email-security/dmarc-dkim-spf/",
+  "file": "_subdomains/www.cloudflare.com/learning/email-security/dmarc-dkim-spf.md",
+  "title": "What are DMARC, DKIM, and SPF?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:06.065066+00:00",
+  "html_len": 202127,
+  "md_len": 11789,
+  "depth": 0,
+  "phase": 2
+}

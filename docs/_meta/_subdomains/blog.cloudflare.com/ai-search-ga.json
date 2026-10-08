@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ai-search-ga/",
+  "file": "_subdomains/blog.cloudflare.com/ai-search-ga.md",
+  "title": "AI Search is now generally available | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:26.671368+00:00",
+  "html_len": 289727,
+  "md_len": 63741,
+  "depth": 0,
+  "phase": 2
+}

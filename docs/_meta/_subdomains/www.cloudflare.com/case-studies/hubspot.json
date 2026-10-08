@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/hubspot/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/hubspot.md",
+  "title": "Cloudflare | Case Study | HubSpot",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:33.814787+00:00",
+  "html_len": 202867,
+  "md_len": 6786,
+  "depth": 0,
+  "phase": 2
+}

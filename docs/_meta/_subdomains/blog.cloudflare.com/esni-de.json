@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/esni-de/",
+  "file": "_subdomains/blog.cloudflare.com/esni-de.md",
+  "title": "Verschl\u00fcsselung von SNI: Wie einer der gro\u00dfen Internet-Bugs behoben wurde | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:17.645449+00:00",
+  "html_len": 295225,
+  "md_len": 67085,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,145 @@
+---
+url: https://developers.cloudflare.com/turnstile/changelog/
+title: Changelog \u00b7 Cloudflare Turnstile docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:16:06.696929+00:00
+---
+
+# Changelog · Cloudflare Turnstile docs
+
+> Source: https://developers.cloudflare.com/turnstile/changelog/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Turnstile](https://developers.cloudflare.com/turnstile/)
+  3. /Changelog
+
+
+
+# Changelog
+
+Last updated Apr 16, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/turnstile/changelog/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+[Subscribe to RSS](https://developers.cloudflare.com/turnstile/changelog/index.xml)
+
+## 2026-07-22
+
+  * Turnstile may now make requests to `hagen.challenges.cloudflare.com` or `brunhild.challenges.cloudflare.com` as part of browser verification. Add both hostnames to your network allowlist so Turnstile can access them. For more information, refer to [Failed subdomain network requests during Turnstile challenges](https://developers.cloudflare.com/cloudflare-challenges/troubleshooting/challenge-solve-issues/#failed-subdomain-network-requests-during-turnstile-challenges).
+
+
+
+## 2024-08-12
+
+  * Added [`[flexible]`](https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/#widget-size) width widget size.
+  * Added new dimensions for Turnstile's compact size.
+  * Added a Feedback Report toggle on the widget's configuration.
+
+
+
+## 2024-04-10
+
+  * Added [`[refresh-timeout]`](https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/#refresh-a-timed-out-widget) and document new automatic interactive timeout-refresh.
+
+
+
+## 2024-03-25
+
+  * Added more [supported languages](https://developers.cloudflare.com/turnstile/reference/supported-languages).
+
+
+
+## 2023-12-18
+
+  * Added [Pre-Clearance mode](https://developers.cloudflare.com/turnstile/concepts/pre-clearance-support/).
+
+
+
+## 2023-08-24
+
+  * Added [Client-side errors](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/).
+
+
+
+## 2023-07-31
+
+  * Added [`[turnstile.isExpired]`](https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/#access-a-widgets-state).
+  * Added `uk` language.
+
+
+
+## 2023-05-25
+
+  * Added idempotency support for `POST /siteverify` requests via the `idempotency_key` parameter.
+
+
+
+## 2023-04-17
+
+  * Added references to Turnstile Public API.
+  * Added references for [`[after-interactive-callback]`](https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/#explicitly-render-the-turnstile-widget), [`[before-interactive-callback]`](https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/#explicitly-render-the-turnstile-widget), and [`[unsupported-callback]`](https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/#explicitly-render-the-turnstile-widget).
+
+
+
+## 2023-03-06
+
+  * Added [`[execution]`](https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/#explicitly-render-the-turnstile-widget) and [`[appearance]`](https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/#explicitly-render-the-turnstile-widget).
+
+
+
+## 2023-02-15
+
+  * Added the [`[turnstile.ready]`](https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/#explicitly-render-the-turnstile-widget) callback.
+
+
+
+## 2023-02-01
+
+  * Added the [`[data-]language`](https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/#configurations) parameter.
+
+
+
+## 2022-12-12
+
+  * [`POST /siteverify`](https://developers.cloudflare.com/turnstile/get-started/server-side-validation/) supports JSON requests now.
+
+
+
+## 2022-11-11
+
+  * Added [`retry` and `retry-interval`](https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/#configurations) for controlling retry behavior.
+
+
+
+## 2022-10-28
+
+  * Renamed the `[data-]expired-callback` callback to [`[data-]timeout-callback`](https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/#configurations) (called when the challenge times out).
+  * Added the [`[data-]expired-callback`](https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/#configurations) callback (called when the token expires).
+
+
+
+## 2022-10-24
+
+  * Added [`response-field` and `response-field-name`](https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/#configurations) for controlling the input element created by Turnstile.
+  * Added option for changing the [size of the Turnstile widget](https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/#widget-size).
+
+
+
+## 2022-10-13
+
+  * Added validation for action: `/^[a-z0-9_-]{0,32}$/i`
+  * Added validation for cData: `/^[a-z0-9_-]{0,255}$/i`
+
+
+
+## 2022-10-11
+
+  * Added [`turnstile.remove`](https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/#remove-a-widget)
+
+
+
+[PreviousCommunity resources](https://developers.cloudflare.com/turnstile/community-resources/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/turnstile/changelog.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/nl-nl/ai-crawl-control-for-project-galileo/",
+  "file": "_subdomains/blog.cloudflare.com/nl-nl/ai-crawl-control-for-project-galileo.md",
+  "title": "Project Galileo biedt bescherming aan journalisten en lokale nieuwsorganisaties tegen AI-crawlers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:28.313391+00:00",
+  "html_len": 201745,
+  "md_len": 24625,
+  "depth": 0,
+  "phase": 2
+}

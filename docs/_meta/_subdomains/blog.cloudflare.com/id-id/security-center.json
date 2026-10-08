@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/id-id/security-center/",
+  "file": "_subdomains/blog.cloudflare.com/id-id/security-center.md",
+  "title": "Memperkenalkan Pusat Keamanan Cloudflare | Blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:48.977838+00:00",
+  "html_len": 177779,
+  "md_len": 16498,
+  "depth": 0,
+  "phase": 2
+}

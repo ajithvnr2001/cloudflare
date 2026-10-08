@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/hyperdrive-making-regional-databases-feel-distributed/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/hyperdrive-making-regional-databases-feel-distributed.md",
+  "title": "Hyperdrive: Damit Datenbanken global wirken | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:22.077881+00:00",
+  "html_len": 233697,
+  "md_len": 39677,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/rise-of-edge-compute-the-video/",
+  "file": "_subdomains/blog.cloudflare.com/rise-of-edge-compute-the-video.md",
+  "title": "The Rise of Edge Compute: The Video | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:27.308500+00:00",
+  "html_len": 271018,
+  "md_len": 55209,
+  "depth": 0,
+  "phase": 2
+}

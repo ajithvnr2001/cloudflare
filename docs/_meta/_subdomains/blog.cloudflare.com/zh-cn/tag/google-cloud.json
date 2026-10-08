@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/tag/google-cloud/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/tag/google-cloud.md",
+  "title": "\u6807\u7b7e\u4e3a\"Google Cloud\"\u7684\u6587\u7ae0 \u2014 Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:11:19.548408+00:00",
+  "html_len": 104406,
+  "md_len": 1656,
+  "depth": 1,
+  "phase": 2
+}

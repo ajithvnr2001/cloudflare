@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/ssl/what-is-encrypted-sni/",
+  "file": "_subdomains/www.cloudflare.com/learning/ssl/what-is-encrypted-sni.md",
+  "title": "What is encrypted SNI? | How ESNI works",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:05:00.982331+00:00",
+  "html_len": 206488,
+  "md_len": 13541,
+  "depth": 0,
+  "phase": 2
+}

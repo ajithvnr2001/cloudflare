@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-the-customer-metadata-boundary/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-the-customer-metadata-boundary.md",
+  "title": "Introducing the Customer Metadata Boundary | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:55.805552+00:00",
+  "html_len": 289012,
+  "md_len": 63428,
+  "depth": 0,
+  "phase": 2
+}

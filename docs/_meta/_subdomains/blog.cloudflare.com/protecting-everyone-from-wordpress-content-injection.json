@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/protecting-everyone-from-wordpress-content-injection/",
+  "file": "_subdomains/blog.cloudflare.com/protecting-everyone-from-wordpress-content-injection.md",
+  "title": "Protecting everyone from WordPress Content Injection | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:23.555713+00:00",
+  "html_len": 268457,
+  "md_len": 55768,
+  "depth": 0,
+  "phase": 2
+}

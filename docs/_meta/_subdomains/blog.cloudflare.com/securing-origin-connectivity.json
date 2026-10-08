@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/securing-origin-connectivity/",
+  "file": "_subdomains/blog.cloudflare.com/securing-origin-connectivity.md",
+  "title": "Automatic (secure) transmission: taking the pain out of origin connection security | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:29.992905+00:00",
+  "html_len": 300113,
+  "md_len": 69539,
+  "depth": 0,
+  "phase": 2
+}

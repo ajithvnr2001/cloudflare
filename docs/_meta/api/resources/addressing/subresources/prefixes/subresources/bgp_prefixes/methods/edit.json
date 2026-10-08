@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/subresources/bgp_prefixes/methods/edit/",
+  "file": "api/resources/addressing/subresources/prefixes/subresources/bgp_prefixes/methods/edit.md",
+  "title": "Update BGP Prefix | Cloudflare API",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:25:34.498604+00:00",
+  "html_len": 2010462,
+  "md_len": 7805,
+  "depth": 1
+}

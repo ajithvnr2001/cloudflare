@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/press/press-releases/2026/cloudflare-announces-research-pilot-with-openai/",
+  "file": "_subdomains/www.cloudflare.com/press/press-releases/2026/cloudflare-announces-research-pilot-with-openai.md",
+  "title": "Cloudflare Announces Research Pilot with OpenAI  | Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:14:31.721623+00:00",
+  "html_len": 235544,
+  "md_len": 7193,
+  "depth": 1,
+  "phase": 2
+}

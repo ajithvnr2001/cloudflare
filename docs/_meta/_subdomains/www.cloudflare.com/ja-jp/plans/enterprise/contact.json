@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/ja-jp/plans/enterprise/contact/",
+  "file": "_subdomains/www.cloudflare.com/ja-jp/plans/enterprise/contact.md",
+  "title": "\u30a8\u30f3\u30bf\u30fc\u30d7\u30e9\u30a4\u30ba\u5411\u3051\u304a\u554f\u5408\u305b | Cloudflare",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (102 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:18:24.638323+00:00",
+  "html_len": 564475,
+  "md_len": 12298,
+  "depth": 1,
+  "phase": 2
+}

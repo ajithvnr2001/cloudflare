@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/radar-2025-year-in-review/",
+  "file": "_subdomains/blog.cloudflare.com/radar-2025-year-in-review.md",
+  "title": "The 2025 Cloudflare Radar Year in Review- the rise of AI, post-quantum, and record-breaking DDoS attacks | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:44.501372+00:00",
+  "html_len": 570612,
+  "md_len": 181895,
+  "depth": 0,
+  "phase": 2
+}

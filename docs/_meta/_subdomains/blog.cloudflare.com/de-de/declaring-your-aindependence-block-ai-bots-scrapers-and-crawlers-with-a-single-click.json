@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/declaring-your-aindependence-block-ai-bots-scrapers-and-crawlers-with-a-single-click/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/declaring-your-aindependence-block-ai-bots-scrapers-and-crawlers-with-a-single-click.md",
+  "title": "Ein KInderspiel: KI-Bots, Scraper und Crawler mit einem einzigen Klick blockieren | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:39:18.067302+00:00",
+  "html_len": 255725,
+  "md_len": 42270,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/cloudflare-one/integrations/identity-providers/generic-oidc/",
+  "file": "cloudflare-one/integrations/identity-providers/generic-oidc.md",
+  "title": "Generic OIDC \u00b7 Cloudflare One docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:09:03.058056+00:00",
+  "html_len": 317175,
+  "md_len": 14726,
+  "depth": 0
+}

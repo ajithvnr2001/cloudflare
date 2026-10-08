@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/developer-week-2024-wrap-up/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/developer-week-2024-wrap-up.md",
+  "title": "Abschluss der Developer Week 2024 | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:39:25.489327+00:00",
+  "html_len": 241445,
+  "md_len": 49673,
+  "depth": 0,
+  "phase": 2
+}

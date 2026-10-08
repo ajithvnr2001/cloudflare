@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/making-dns-record-changes-more-reliable/",
+  "file": "_subdomains/blog.cloudflare.com/making-dns-record-changes-more-reliable.md",
+  "title": "Making DNS record changes more reliable | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:10.620565+00:00",
+  "html_len": 275352,
+  "md_len": 56261,
+  "depth": 0,
+  "phase": 2
+}

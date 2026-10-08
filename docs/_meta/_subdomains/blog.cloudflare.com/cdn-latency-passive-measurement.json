@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cdn-latency-passive-measurement/",
+  "file": "_subdomains/blog.cloudflare.com/cdn-latency-passive-measurement.md",
+  "title": "\u201cLook, Ma, no probes!\u201d \u2014 Characterizing CDNs\u2019 latencies with passive measurement | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:56.563917+00:00",
+  "html_len": 307229,
+  "md_len": 75738,
+  "depth": 0,
+  "phase": 2
+}

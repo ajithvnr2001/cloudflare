@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/deploy-workers-using-terraform/",
+  "file": "_subdomains/blog.cloudflare.com/deploy-workers-using-terraform.md",
+  "title": "Deploy Workers using Terraform | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:19.236831+00:00",
+  "html_len": 299438,
+  "md_len": 66221,
+  "depth": 0,
+  "phase": 2
+}

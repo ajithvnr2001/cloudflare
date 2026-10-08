@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/2020-elections-phishing-report/",
+  "file": "_subdomains/blog.cloudflare.com/2020-elections-phishing-report.md",
+  "title": "New Area 1 security study shows that U.S. State & local election administrators remain vulnerable to phish | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:04.250554+00:00",
+  "html_len": 271230,
+  "md_len": 58363,
+  "depth": 0,
+  "phase": 2
+}

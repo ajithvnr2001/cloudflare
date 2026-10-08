@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/ai-code-review/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/ai-code-review.md",
+  "title": "\u5927\u898f\u6a21\u5354\u540c\u904b\u4f5c AI \u7a0b\u5f0f\u78bc\u5be9\u67e5 | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:39.994875+00:00",
+  "html_len": 265107,
+  "md_len": 39547,
+  "depth": 0,
+  "phase": 2
+}

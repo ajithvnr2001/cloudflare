@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/detections/leaked-credentials/examples/",
+  "file": "waf/detections/leaked-credentials/examples.md",
+  "title": "Leaked credentials example mitigation rules \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:41.684403+00:00",
+  "html_len": 141524,
+  "md_len": 3190,
+  "depth": 0
+}

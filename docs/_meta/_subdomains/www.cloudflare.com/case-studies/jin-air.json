@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/jin-air/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/jin-air.md",
+  "title": "Jin Air & Cloudflare | Case Study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:35.814246+00:00",
+  "html_len": 215990,
+  "md_len": 9258,
+  "depth": 0,
+  "phase": 2
+}

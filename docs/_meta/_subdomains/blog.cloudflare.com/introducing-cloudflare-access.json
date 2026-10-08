@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-cloudflare-access/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-cloudflare-access.md",
+  "title": "Introducing Cloudflare Access: Like BeyondCorp, But You Don\u2019t Have To Be A Google Employee To Use It | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:49.229894+00:00",
+  "html_len": 279930,
+  "md_len": 60018,
+  "depth": 0,
+  "phase": 2
+}

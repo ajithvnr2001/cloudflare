@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/tag/year-in-review/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/tag/year-in-review.md",
+  "title": "\"1\u5e74\u306e\u632f\u308a\u8fd4\u308a\" \u30bf\u30b0\u306e\u6295\u7a3f \u2014 Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:19:07.219554+00:00",
+  "html_len": 115254,
+  "md_len": 3752,
+  "depth": 1,
+  "phase": 2
+}

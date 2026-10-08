@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/its-crowded-in-here/",
+  "file": "_subdomains/blog.cloudflare.com/its-crowded-in-here.md",
+  "title": "It's crowded in here! | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:34.490658+00:00",
+  "html_len": 332357,
+  "md_len": 79529,
+  "depth": 0,
+  "phase": 2
+}

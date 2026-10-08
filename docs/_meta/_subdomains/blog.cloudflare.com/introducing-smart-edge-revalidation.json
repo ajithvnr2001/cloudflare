@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-smart-edge-revalidation/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-smart-edge-revalidation.md",
+  "title": "Introducing Smart Edge Revalidation | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:25:51.837801+00:00",
+  "html_len": 295077,
+  "md_len": 64598,
+  "depth": 1
+}

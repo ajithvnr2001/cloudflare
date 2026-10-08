@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/connection-coalescing-with-origin-frames-fewer-dns-queries-fewer-connections/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/connection-coalescing-with-origin-frames-fewer-dns-queries-fewer-connections.md",
+  "title": "\u4f7f\u7528 ORIGIN Frames \u5b9e\u73b0\u8fde\u63a5\u5408\u5e76\uff1a\u51cf\u5c11 DNS \u67e5\u8be2\uff0c\u51cf\u5c11\u8fde\u63a5\u6570 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:03.021679+00:00",
+  "html_len": 226924,
+  "md_len": 35127,
+  "depth": 0,
+  "phase": 2
+}

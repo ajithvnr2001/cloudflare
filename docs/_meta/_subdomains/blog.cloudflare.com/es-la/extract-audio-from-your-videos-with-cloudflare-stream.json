@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-la/extract-audio-from-your-videos-with-cloudflare-stream/",
+  "file": "_subdomains/blog.cloudflare.com/es-la/extract-audio-from-your-videos-with-cloudflare-stream.md",
+  "title": "Extrae el audio de tus videos con Cloudflare Stream | El blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:16.539998+00:00",
+  "html_len": 196866,
+  "md_len": 22205,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/dns/zone-setups/subdomain-setup/setup/",
+  "file": "dns/zone-setups/subdomain-setup/setup.md",
+  "title": "Subdomain delegation and available setups \u00b7 Cloudflare DNS docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:11:03.774587+00:00",
+  "html_len": 138274,
+  "md_len": 6681,
+  "depth": 0
+}

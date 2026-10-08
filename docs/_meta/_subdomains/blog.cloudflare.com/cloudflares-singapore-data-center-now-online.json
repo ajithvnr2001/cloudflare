@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflares-singapore-data-center-now-online/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflares-singapore-data-center-now-online.md",
+  "title": "CloudFlare's Singapore Data Center Now Online | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:23.486755+00:00",
+  "html_len": 267029,
+  "md_len": 54701,
+  "depth": 0,
+  "phase": 2
+}

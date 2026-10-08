@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/rpki-details/",
+  "file": "_subdomains/blog.cloudflare.com/rpki-details.md",
+  "title": "RPKI and BGP: our path to securing Internet Routing | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:16.895766+00:00",
+  "html_len": 306344,
+  "md_len": 69311,
+  "depth": 0,
+  "phase": 2
+}

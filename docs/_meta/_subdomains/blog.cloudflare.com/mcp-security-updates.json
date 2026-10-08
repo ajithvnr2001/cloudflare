@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/mcp-security-updates/",
+  "file": "_subdomains/blog.cloudflare.com/mcp-security-updates.md",
+  "title": "How Cloudflare detects MCP traffic and helps secure it | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:49.539043+00:00",
+  "html_len": 328002,
+  "md_len": 81740,
+  "depth": 0,
+  "phase": 2
+}

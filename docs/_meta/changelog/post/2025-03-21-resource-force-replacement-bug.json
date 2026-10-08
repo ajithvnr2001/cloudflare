@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/changelog/post/2025-03-21-resource-force-replacement-bug/",
+  "file": "changelog/post/2025-03-21-resource-force-replacement-bug.md",
+  "title": "Dozens of Cloudflare Terraform Provider resources now have proper drift detection \u00b7 Changelog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:06:07.103916+00:00",
+  "html_len": 61560,
+  "md_len": 1725,
+  "depth": 0
+}

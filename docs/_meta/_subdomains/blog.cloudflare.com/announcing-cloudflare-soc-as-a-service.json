@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/announcing-cloudflare-soc-as-a-service/",
+  "file": "_subdomains/blog.cloudflare.com/announcing-cloudflare-soc-as-a-service.md",
+  "title": "Cloudflare\u2019s SOC as a Service | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:26.359639+00:00",
+  "html_len": 280038,
+  "md_len": 63779,
+  "depth": 0,
+  "phase": 2
+}

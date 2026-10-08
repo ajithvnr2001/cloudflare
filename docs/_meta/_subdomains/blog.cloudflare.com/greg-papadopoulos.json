@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/greg-papadopoulos/",
+  "file": "_subdomains/blog.cloudflare.com/greg-papadopoulos.md",
+  "title": "The Network is the Computer: A Conversation with Greg Papadopoulos | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:18.637030+00:00",
+  "html_len": 295200,
+  "md_len": 77259,
+  "depth": 0,
+  "phase": 2
+}

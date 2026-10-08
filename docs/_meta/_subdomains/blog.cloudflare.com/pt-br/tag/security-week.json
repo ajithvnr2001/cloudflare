@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/tag/security-week/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/tag/security-week.md",
+  "title": "Posts com a tag \"Security Week\" \u2014 Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:07:04.541661+00:00",
+  "html_len": 110796,
+  "md_len": 2605,
+  "depth": 1,
+  "phase": 2
+}

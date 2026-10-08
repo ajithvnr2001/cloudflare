@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/pingora-open-source/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/pingora-open-source.md",
+  "title": "\u5f00\u6e90 Pingora \u2014\u2014\u6211\u4eec\u7528\u4e8e\u6784\u5efa\u53ef\u7f16\u7a0b\u7f51\u7edc\u670d\u52a1\u7684 Rust \u6846\u67b6 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:09.860081+00:00",
+  "html_len": 218817,
+  "md_len": 28457,
+  "depth": 0,
+  "phase": 2
+}

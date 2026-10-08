@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/rss/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/rss.md",
+  "title": "Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:08:01.164691+00:00",
+  "html_len": 444362,
+  "md_len": 387707,
+  "depth": 1,
+  "phase": 2
+}

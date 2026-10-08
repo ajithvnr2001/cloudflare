@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zero-trust-with-managed-devices/",
+  "file": "_subdomains/blog.cloudflare.com/zero-trust-with-managed-devices.md",
+  "title": "Build Zero Trust rules with managed devices | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:03.413588+00:00",
+  "html_len": 286496,
+  "md_len": 60585,
+  "depth": 0,
+  "phase": 2
+}

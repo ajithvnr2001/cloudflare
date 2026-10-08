@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-la/best-practices-sase-for-ai/",
+  "file": "_subdomains/blog.cloudflare.com/es-la/best-practices-sase-for-ai.md",
+  "title": "Pr\u00e1cticas recomendadas para proteger la IA generativa con SASE | El blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:07.632069+00:00",
+  "html_len": 244040,
+  "md_len": 49758,
+  "depth": 0,
+  "phase": 2
+}

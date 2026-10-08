@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/it-it/project-fair-shot/",
+  "file": "_subdomains/blog.cloudflare.com/it-it/project-fair-shot.md",
+  "title": "Presentazione di Progetto Fair Shot: come garantire che i siti di registrazione per i vaccini contro il COVID-19 possano tenere il passo con la domanda | Il blog di Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:35.557594+00:00",
+  "html_len": 186018,
+  "md_len": 16390,
+  "depth": 0,
+  "phase": 2
+}

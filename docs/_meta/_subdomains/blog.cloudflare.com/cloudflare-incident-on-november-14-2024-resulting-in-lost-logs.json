@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-incident-on-november-14-2024-resulting-in-lost-logs/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-incident-on-november-14-2024-resulting-in-lost-logs.md",
+  "title": "Cloudflare incident on November 14, 2024, resulting in lost logs | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:29.126442+00:00",
+  "html_len": 293763,
+  "md_len": 66412,
+  "depth": 0,
+  "phase": 2
+}

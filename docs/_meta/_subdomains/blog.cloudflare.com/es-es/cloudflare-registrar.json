@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/cloudflare-registrar/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/cloudflare-registrar.md",
+  "title": "Presentamos el registrador de Cloudflare: El registro de dominio que le va a encantar | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:25.477668+00:00",
+  "html_len": 219500,
+  "md_len": 34813,
+  "depth": 0,
+  "phase": 2
+}

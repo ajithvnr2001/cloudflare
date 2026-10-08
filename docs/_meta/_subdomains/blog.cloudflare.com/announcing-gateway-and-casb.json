@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/announcing-gateway-and-casb/",
+  "file": "_subdomains/blog.cloudflare.com/announcing-gateway-and-casb.md",
+  "title": "Announcing Gateway + CASB | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:13.814066+00:00",
+  "html_len": 280391,
+  "md_len": 58635,
+  "depth": 0,
+  "phase": 2
+}

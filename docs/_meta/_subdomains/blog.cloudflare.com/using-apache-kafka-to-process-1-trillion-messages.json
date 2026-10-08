@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/using-apache-kafka-to-process-1-trillion-messages/",
+  "file": "_subdomains/blog.cloudflare.com/using-apache-kafka-to-process-1-trillion-messages.md",
+  "title": "Using Apache Kafka to process 1 trillion inter-service messages | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:11.753987+00:00",
+  "html_len": 299014,
+  "md_len": 67546,
+  "depth": 0,
+  "phase": 2
+}

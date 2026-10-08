@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/quickbutik/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/quickbutik.md",
+  "title": "Quickbutik | Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:45.784202+00:00",
+  "html_len": 207188,
+  "md_len": 7414,
+  "depth": 0,
+  "phase": 2
+}

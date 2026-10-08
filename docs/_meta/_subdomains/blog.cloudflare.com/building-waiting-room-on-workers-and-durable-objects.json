@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/building-waiting-room-on-workers-and-durable-objects/",
+  "file": "_subdomains/blog.cloudflare.com/building-waiting-room-on-workers-and-durable-objects.md",
+  "title": "Building Waiting Room on Workers and Durable Objects | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:23.818629+00:00",
+  "html_len": 356185,
+  "md_len": 89759,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/indonesia/",
+  "file": "_subdomains/blog.cloudflare.com/indonesia.md",
+  "title": "Cloudflare's network expansion in Indonesia | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:47.109452+00:00",
+  "html_len": 293004,
+  "md_len": 63978,
+  "depth": 0,
+  "phase": 2
+}

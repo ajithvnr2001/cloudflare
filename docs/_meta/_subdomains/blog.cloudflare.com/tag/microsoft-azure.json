@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/microsoft-azure/",
+  "file": "_subdomains/blog.cloudflare.com/tag/microsoft-azure.md",
+  "title": "Posts tagged \"Microsoft Azure\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:09:30.078051+00:00",
+  "html_len": 110480,
+  "md_len": 1758,
+  "depth": 1,
+  "phase": 2
+}

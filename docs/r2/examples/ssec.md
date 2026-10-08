@@ -1,0 +1,296 @@
+---
+url: https://developers.cloudflare.com/r2/examples/ssec/
+title: Use SSE-C \u00b7 Cloudflare R2 docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:12:46.434376+00:00
+---
+
+# Use SSE-C · Cloudflare R2 docs
+
+> Source: https://developers.cloudflare.com/r2/examples/ssec/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[R2](https://developers.cloudflare.com/r2/)
+  3. /[Examples](https://developers.cloudflare.com/r2/examples/)
+  4. /Use SSE-C
+
+
+
+# Use SSE-C
+
+Last updated Apr 21, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/r2/examples/ssec/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewBefore you beginWorkersS3-API
+
+The following tutorial shows some snippets for how to use Server-Side Encryption with Customer-Provided Keys (SSE-C) on R2.
+
+## Before you begin
+
+  * When using SSE-C, make sure you store your encryption key(s) in a safe place. In the event you misplace them, Cloudflare will be unable to recover the body of any objects encrypted using those keys.
+  * While SSE-C does provide MD5 hashes, this hash can be used for identification of keys only. The MD5 hash is not used in the encryption process itself.
+
+
+
+## Workers
+    
+    
+    interface Environment {
+    	R2: R2Bucket
+    	/**
+    	 * In this example, your SSE-C is stored as a hexadecimal string (preferably a secret).
+    	 * The R2 API also supports providing an ArrayBuffer directly, if you want to generate/
+    	 * store your keys dynamically.
+    	*/
+    	SSEC_KEY: string
+    }
+    export default {
+    	async fetch(req: Request, env: Env) {
+    		const { SSEC_KEY, R2 } = env;
+    		const { pathname: filename } = new URL(req.url);
+    		switch(req.method) {
+    			case "GET": {
+    				const maybeObj = await env.BUCKET.get(filename, {
+    					onlyIf: req.headers,
+    					ssecKey: SSEC_KEY,
+    				});
+    				if(!maybeObj) {
+    					return new Response("Not Found", {
+    						status: 404
+    					});
+    				}
+    				const headers = new Headers();
+    				maybeObj.writeHttpMetadata(headers);
+    				return new Response(body, {
+    					headers
+    				});
+    			}
+    			case 'POST': {
+    				const multipartUpload = await env.BUCKET.createMultipartUpload(filename, {
+    					httpMetadata: req.headers,
+    					ssecKey: SSEC_KEY,
+    				});
+    				/**
+    				 * This example only provides a single-part "multipart" upload.
+    				 * For multiple parts, the process is the same(the key must be provided)
+    				 * for every part.
+    				*/
+    				const partOne = await multipartUpload.uploadPart(1, req.body, ssecKey);
+    				const obj = await multipartUpload.complete([partOne]);
+    				const headers = new Headers();
+    				obj.writeHttpMetadata(headers);
+    				return new Response(null, {
+    					headers,
+    					status: 201
+    				});
+    			}
+    			case 'PUT': {
+    				const obj = await env.BUCKET.put(filename, req.body, {
+    					httpMetadata: req.headers,
+    					ssecKey: SSEC_KEY,
+    				});
+    				const headers = new Headers();
+    				maybeObj.writeHttpMetadata(headers);
+    				return new Response(null, {
+    					headers,
+    					status: 201
+    				});
+    			}
+    			default: {
+    				return new Response("Method not allowed", {
+    					status: 405
+    				});
+    			}
+    		}
+    	}
+    }
+    
+    
+    /**
+    	 * In this example, your SSE-C is stored as a hexadecimal string(preferably a secret).
+    	 * The R2 API also supports providing an ArrayBuffer directly, if you want to generate/
+    	 * store your keys dynamically.
+    */
+    export default {
+    	async fetch(req, env) {
+    		const { SSEC_KEY, R2 } = env;
+    		const { pathname: filename } = new URL(req.url);
+    		switch(req.method) {
+    			case "GET": {
+    				const maybeObj = await env.BUCKET.get(filename, {
+    					onlyIf: req.headers,
+    					ssecKey: SSEC_KEY,
+    				});
+    				if(!maybeObj) {
+    					return new Response("Not Found", {
+    						status: 404
+    					});
+    				}
+    				const headers = new Headers();
+    				maybeObj.writeHttpMetadata(headers);
+    				return new Response(body, {
+    					headers
+    				});
+    			}
+    			case 'POST': {
+    				const multipartUpload = await env.BUCKET.createMultipartUpload(filename, {
+    					httpMetadata: req.headers,
+    					ssecKey: SSEC_KEY,
+    				});
+    				/**
+    				 * This example only provides a single-part "multipart" upload.
+    				 * For multiple parts, the process is the same(the key must be provided)
+    				 * for every part.
+    				*/
+    				const partOne = await multipartUpload.uploadPart(1, req.body, ssecKey);
+    				const obj = await multipartUpload.complete([partOne]);
+    				const headers = new Headers();
+    				obj.writeHttpMetadata(headers);
+    				return new Response(null, {
+    					headers,
+    					status: 201
+    				});
+    			}
+    			case 'PUT': {
+    				const obj = await env.BUCKET.put(filename, req.body, {
+    					httpMetadata: req.headers,
+    					ssecKey: SSEC_KEY,
+    				});
+    				const headers = new Headers();
+    				maybeObj.writeHttpMetadata(headers);
+    				return new Response(null, {
+    					headers,
+    					status: 201
+    				});
+    			}
+    			default: {
+    				return new Response("Method not allowed", {
+    					status: 405
+    				});
+    			}
+    		}
+    	}
+    }
+
+## S3-API
+    
+    
+    import {
+    	UploadPartCommand,
+    	PutObjectCommand, S3Client,
+    	CompleteMultipartUploadCommand,
+    	CreateMultipartUploadCommand,
+    	type UploadPartCommandOutput
+    } from "@aws-sdk/client-s3";
+    
+    const s3 = new S3Client({
+    	endpoint: process.env.R2_ENDPOINT,
+    	credentials: {
+    		accessKeyId: process.env.R2_ACCESS_KEY_ID,
+    		secretAccessKey: process.env.R2_SECRET_ACCESS_KEY,
+    	},
+    });
+    
+    const SSECustomerAlgorithm = "AES256";
+    const SSECustomerKey = process.env.R2_SSEC_KEY;
+    const SSECustomerKeyMD5 = process.env.R2_SSEC_KEY_MD5;
+    
+    await s3.send(
+    	new PutObjectCommand({
+    		Bucket: "your-bucket",
+    		Key: "single-part",
+    		Body: "BeepBoop",
+    		SSECustomerAlgorithm,
+    		SSECustomerKey,
+    		SSECustomerKeyMD5,
+    	}),
+    );
+    
+    const multi = await s3.send(
+    	new CreateMultipartUploadCommand({
+    		Bucket: "your-bucket",
+    		Key: "multi-part",
+    		SSECustomerAlgorithm,
+    		SSECustomerKey,
+    		SSECustomerKeyMD5,
+    	}),
+    );
+    const UploadId = multi.UploadId;
+    
+    const parts: UploadPartCommandOutput[] = [];
+    
+    parts.push(
+    	await s3.send(
+    		new UploadPartCommand({
+    			Bucket: "your-bucket",
+    			Key: "multi-part",
+    			UploadId,
+    			// 	filledBuf()` generates some random data.
+    			// Replace with a function/body of your choice.
+    			Body: filledBuf(),
+    			PartNumber: 1,
+    			SSECustomerAlgorithm,
+    			SSECustomerKey,
+    			SSECustomerKeyMD5,
+    		}),
+    	),
+    );
+    parts.push(
+    	await s3.send(
+    		new UploadPartCommand({
+    			Bucket: "your-bucket",
+    			Key: "multi-part",
+    			UploadId,
+    			// 	filledBuf()` generates some random data.
+    			// Replace with a function/body of your choice.
+    			Body: filledBuf(),
+    			PartNumber: 2,
+    			SSECustomerAlgorithm,
+    			SSECustomerKey,
+    			SSECustomerKeyMD5,
+    		}),
+    	),
+    );
+    await s3.send(
+    	new CompleteMultipartUploadCommand({
+    		Bucket: "your-bucket",
+    		Key: "multi-part",
+    		UploadId,
+    		MultipartUpload: {
+    			Parts: parts.map(({ ETag }, PartNumber) => ({
+    				ETag,
+    				PartNumber: PartNumber + 1,
+    			})),
+    		},
+    		SSECustomerAlgorithm,
+    		SSECustomerKey,
+    		SSECustomerKeyMD5,
+    	}),
+    );
+    
+    const HeadObjectOutput = await s3.send(
+    	new HeadObjectCommand({
+    		Bucket: "your-bucket",
+    		Key: "multi-part",
+    		SSECustomerAlgorithm,
+    		SSECustomerKey,
+    		SSECustomerKeyMD5,
+    	}),
+    );
+    
+    const GetObjectOutput = await s3.send(
+    	new GetObjectCommand({
+    		Bucket: "your-bucket",
+    		Key: "single-part",
+    		SSECustomerAlgorithm,
+    		SSECustomerKey,
+    		SSECustomerKeyMD5,
+    	}),
+    );
+
+[PreviousTerraform (AWS)](https://developers.cloudflare.com/r2/examples/terraform-aws/)[NextUse the Cache API](https://developers.cloudflare.com/r2/examples/cache-api/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/r2/examples/ssec.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/changelog/post/2025-09-16-remote-bindings-ga/",
+  "file": "changelog/post/2025-09-16-remote-bindings-ga.md",
+  "title": "Remote bindings GA - Connect to remote resources (D1, KV, R2, etc.) during local development \u00b7 Changelog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:06:22.973779+00:00",
+  "html_len": 70175,
+  "md_len": 2853,
+  "depth": 0
+}

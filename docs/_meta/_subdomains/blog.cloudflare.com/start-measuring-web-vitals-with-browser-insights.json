@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/start-measuring-web-vitals-with-browser-insights/",
+  "file": "_subdomains/blog.cloudflare.com/start-measuring-web-vitals-with-browser-insights.md",
+  "title": "Start measuring Web Vitals with Browser Insights | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:56.894554+00:00",
+  "html_len": 284815,
+  "md_len": 61327,
+  "depth": 0,
+  "phase": 2
+}

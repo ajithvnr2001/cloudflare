@@ -1,0 +1,79 @@
+---
+url: https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/routing-to-tunnel/dns/
+title: DNS records \u00b7 Cloudflare One docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:09:19.239503+00:00
+---
+
+# DNS records · Cloudflare One docs
+
+> Source: https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/routing-to-tunnel/dns/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)
+  3. /…
+
+NetworksConnectors[Cloudflare Tunnel](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/)
+
+  4. /[Published applications](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/routing-to-tunnel/)
+  5. /DNS records
+
+
+
+# DNS records
+
+Last updated Apr 17, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/routing-to-tunnel/dns/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewCreate a DNS recordCloudflare settings
+
+When you create a tunnel, Cloudflare generates a subdomain at `<UUID>.cfargotunnel.com`. You point a CNAME record at this subdomain to route traffic from your hostname to the tunnel.
+
+The `cfargotunnel.com` subdomain only proxies traffic for DNS records in the same Cloudflare account. If someone discovers your tunnel UUID, they cannot create a DNS record in another account to proxy traffic through it.
+
+## Create a DNS record
+
+To create a DNS record for a Cloudflare Tunnel:
+
+  1. Log in to the [Cloudflare dashboard ↗︎](https://dash.cloudflare.com/) and go to **DNS Records** for your domain.
+
+[ Go to **Records** ↗ ](https://dash.cloudflare.com/?to=/:account/:zone/dns/records)
+  2. Select **Add record**.
+
+  3. Enter the following values:
+
+     * **Type** : _CNAME_
+     * **Name** : Subdomain of your application
+     * **Target** : `<UUID>.cfargotunnel.com`
+  4. Select **Save**.
+
+
+![Example of fields completed to create a new CNAME record.](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=2544,height=830,format=webp/_astro/dns-record.B25etJTI.png)
+
+For locally-managed tunnels, run the following command to create a CNAME record pointing to your tunnel subdomain:
+    
+    
+    cloudflared tunnel route dns <UUID or NAME> www.app.com
+
+This creates a CNAME record but does not proxy traffic unless the tunnel is running.
+
+Note
+
+To create DNS records using `cloudflared`, the [`cert.pem`](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/do-more-with-tunnels/local-management/local-tunnel-terms/#certpem) file must be installed on your system.
+
+The DNS record and the tunnel are independent. You can create DNS records that point to a tunnel that is not running. If a tunnel stops, the DNS record is not deleted — visitors will see a `1016` error.
+
+You can also create multiple DNS records pointing to the same tunnel subdomain. If you route traffic from multiple hostnames to multiple services, create a CNAME entry for each hostname. All entries share the same target.
+
+## Cloudflare settings
+
+Published applications inherit the Cloudflare settings for their hostname, including [cache rules](https://developers.cloudflare.com/cache/how-to/cache-rules/), [WAF rules](https://developers.cloudflare.com/waf/), and other [Rules](https://developers.cloudflare.com/rules/) configurations. You can change these settings for each hostname in the [Cloudflare dashboard ↗︎](https://dash.cloudflare.com/).
+
+If you use a load balancer, settings are applied to the load balancer hostname instead.
+
+[PreviousOverview](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/routing-to-tunnel/)[NextPublic load balancers](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/routing-to-tunnel/public-load-balancers/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/cloudflare-one/networks/connectors/cloudflare-tunnel/routing-to-tunnel/dns.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

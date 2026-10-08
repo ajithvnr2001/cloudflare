@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/upgrading-cloud-infrastructure-with-workers-kv/",
+  "file": "_subdomains/blog.cloudflare.com/upgrading-cloud-infrastructure-with-workers-kv.md",
+  "title": "Upgrading Cloud Infrastructure Made Easier and Safer Using Cloudflare Workers and Workers KV | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:02.229906+00:00",
+  "html_len": 304944,
+  "md_len": 64174,
+  "depth": 0,
+  "phase": 2
+}

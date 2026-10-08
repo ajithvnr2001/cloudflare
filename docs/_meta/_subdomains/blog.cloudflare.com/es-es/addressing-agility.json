@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/addressing-agility/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/addressing-agility.md",
+  "title": "Resolvemos la arquitectura \"narrow waist\" de las direcciones IP con Addressing Agility, una soluci\u00f3n para nombres y servicios web | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:58.997541+00:00",
+  "html_len": 245062,
+  "md_len": 53447,
+  "depth": 0,
+  "phase": 2
+}

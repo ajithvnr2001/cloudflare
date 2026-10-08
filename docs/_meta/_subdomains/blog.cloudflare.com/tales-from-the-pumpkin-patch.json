@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tales-from-the-pumpkin-patch/",
+  "file": "_subdomains/blog.cloudflare.com/tales-from-the-pumpkin-patch.md",
+  "title": "Tales From The Pumpkin Patch | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:00.998933+00:00",
+  "html_len": 267660,
+  "md_len": 56467,
+  "depth": 0,
+  "phase": 2
+}

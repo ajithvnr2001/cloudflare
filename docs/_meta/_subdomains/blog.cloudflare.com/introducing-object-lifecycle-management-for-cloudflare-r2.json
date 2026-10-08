@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-object-lifecycle-management-for-cloudflare-r2/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-object-lifecycle-management-for-cloudflare-r2.md",
+  "title": "Introducing Object Lifecycle Management for Cloudflare R2 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:45.638515+00:00",
+  "html_len": 283934,
+  "md_len": 58967,
+  "depth": 0,
+  "phase": 2
+}

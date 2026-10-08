@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-access-for-saas/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-access-for-saas.md",
+  "title": "Cloudflare Access: now for SaaS apps, too | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:53.122280+00:00",
+  "html_len": 303175,
+  "md_len": 72821,
+  "depth": 0,
+  "phase": 2
+}

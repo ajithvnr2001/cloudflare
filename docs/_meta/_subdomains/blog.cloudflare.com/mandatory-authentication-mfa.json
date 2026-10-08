@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/mandatory-authentication-mfa/",
+  "file": "_subdomains/blog.cloudflare.com/mandatory-authentication-mfa.md",
+  "title": "Mind the gap: new tools for continuous enforcement from boot to login | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:26:27.289359+00:00",
+  "html_len": 284595,
+  "md_len": 62217,
+  "depth": 1
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/id-id/mitigating-bot-attacks-against-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/id-id/mitigating-bot-attacks-against-cloudflare.md",
+  "title": "Mengurangi Serangan Bot terhadap Cloudflare | Blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:03.925793+00:00",
+  "html_len": 177984,
+  "md_len": 18906,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/api-sequence-analytics/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/api-sequence-analytics.md",
+  "title": "Automatisches Aufsp\u00fcren von API-Missbrauch durch Sequenzanalyse | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:20.384469+00:00",
+  "html_len": 231732,
+  "md_len": 39044,
+  "depth": 0,
+  "phase": 2
+}

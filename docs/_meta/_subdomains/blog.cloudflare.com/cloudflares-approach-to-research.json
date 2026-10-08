@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflares-approach-to-research/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflares-approach-to-research.md",
+  "title": "Cloudflare\u2019s Approach to Research | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:37.037616+00:00",
+  "html_len": 283192,
+  "md_len": 66289,
+  "depth": 0,
+  "phase": 2
+}

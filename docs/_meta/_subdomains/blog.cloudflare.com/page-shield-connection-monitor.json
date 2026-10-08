@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/page-shield-connection-monitor/",
+  "file": "_subdomains/blog.cloudflare.com/page-shield-connection-monitor.md",
+  "title": "Page Shield can now watch for malicious outbound connections made by third-party JavaScript code | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:09.261510+00:00",
+  "html_len": 284171,
+  "md_len": 62162,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/quic-version-1-is-live-on-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/quic-version-1-is-live-on-cloudflare.md",
+  "title": "QUIC Version 1 is live on Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:25.298882+00:00",
+  "html_len": 303786,
+  "md_len": 67762,
+  "depth": 0,
+  "phase": 2
+}

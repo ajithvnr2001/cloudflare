@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/automatic-protection-for-common-web-platforms/",
+  "file": "_subdomains/blog.cloudflare.com/automatic-protection-for-common-web-platforms.md",
+  "title": "Automatic protection for common web platforms | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:14.064035+00:00",
+  "html_len": 272651,
+  "md_len": 55466,
+  "depth": 0,
+  "phase": 2
+}

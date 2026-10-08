@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/rightblogger/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/rightblogger.md",
+  "title": "RightBlogger - Customer story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:46.388910+00:00",
+  "html_len": 220421,
+  "md_len": 11483,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/tag/log4j/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/tag/log4j.md",
+  "title": "Articles tagu\u00e9s \u00ab Log4J (FR) \u00bb \u2014 Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:13:14.782185+00:00",
+  "html_len": 124161,
+  "md_len": 4270,
+  "depth": 1,
+  "phase": 2
+}

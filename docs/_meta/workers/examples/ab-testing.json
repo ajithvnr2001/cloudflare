@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/examples/ab-testing/",
+  "file": "workers/examples/ab-testing.md",
+  "title": "A/B testing with same-URL direct access \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:19.490402+00:00",
+  "html_len": 208518,
+  "md_len": 6646,
+  "depth": 0
+}

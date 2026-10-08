@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/content-independence-day/",
+  "file": "_subdomains/blog.cloudflare.com/tag/content-independence-day.md",
+  "title": "Posts tagged \"Content Independence Day\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:08:39.930101+00:00",
+  "html_len": 130577,
+  "md_len": 6263,
+  "depth": 1,
+  "phase": 2
+}

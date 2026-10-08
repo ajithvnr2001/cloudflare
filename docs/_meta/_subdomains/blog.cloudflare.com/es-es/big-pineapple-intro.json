@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/big-pineapple-intro/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/big-pineapple-intro.md",
+  "title": "C\u00f3mo utilizamos Rust y Wasm en el solucionador 1.1.1.1 de Cloudflare | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:21.477806+00:00",
+  "html_len": 246525,
+  "md_len": 55045,
+  "depth": 0,
+  "phase": 2
+}

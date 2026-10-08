@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/dns/faq/",
+  "file": "dns/faq.md",
+  "title": "FAQ \u00b7 Cloudflare DNS docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:10:57.813777+00:00",
+  "html_len": 170469,
+  "md_len": 15206,
+  "depth": 0
+}

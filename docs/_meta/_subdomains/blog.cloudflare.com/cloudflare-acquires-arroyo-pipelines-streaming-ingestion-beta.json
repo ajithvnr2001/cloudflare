@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-acquires-arroyo-pipelines-streaming-ingestion-beta/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-acquires-arroyo-pipelines-streaming-ingestion-beta.md",
+  "title": "Just landed: streaming ingestion on Cloudflare with Arroyo and Pipelines | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:02.944097+00:00",
+  "html_len": 310317,
+  "md_len": 70902,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/email-service/examples/email-routing/hard-bounce-handling/",
+  "file": "email-service/examples/email-routing/hard-bounce-handling.md",
+  "title": "Handle hard bounce emails \u00b7 Cloudflare Email Service docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:11:13.361916+00:00",
+  "html_len": 152132,
+  "md_len": 9439,
+  "depth": 0
+}

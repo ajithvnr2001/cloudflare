@@ -1,0 +1,10 @@
+{
+  "url": "https://dash.cloudflare.com/",
+  "file": "_subdomains/dash.cloudflare.com/_index.md",
+  "title": "Cloudflare Dashboard | Manage Your Account",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (87 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T07:20:55.678616+00:00",
+  "html_len": 96300,
+  "md_len": 2665,
+  "depth": 1
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/cloudflare-and-remote-browser-isolation/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/cloudflare-and-remote-browser-isolation.md",
+  "title": "Cloudflare + Isolation de navigateur \u00e0 distance | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:40.970057+00:00",
+  "html_len": 242476,
+  "md_len": 50724,
+  "depth": 0,
+  "phase": 2
+}

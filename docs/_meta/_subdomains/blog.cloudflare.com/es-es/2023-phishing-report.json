@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/2023-phishing-report/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/2023-phishing-report.md",
+  "title": "Informe de Cloudflare sobre las amenazas de phishing en 2023 | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:20.110384+00:00",
+  "html_len": 237234,
+  "md_len": 43600,
+  "depth": 0,
+  "phase": 2
+}

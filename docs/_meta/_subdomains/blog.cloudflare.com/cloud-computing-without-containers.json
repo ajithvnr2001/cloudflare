@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloud-computing-without-containers/",
+  "file": "_subdomains/blog.cloudflare.com/cloud-computing-without-containers.md",
+  "title": "Cloud Computing without Containers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:13.581070+00:00",
+  "html_len": 297237,
+  "md_len": 66962,
+  "depth": 0,
+  "phase": 2
+}

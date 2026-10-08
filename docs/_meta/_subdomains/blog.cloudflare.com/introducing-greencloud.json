@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-greencloud/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-greencloud.md",
+  "title": "Introducing Greencloud | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:15.592876+00:00",
+  "html_len": 278005,
+  "md_len": 60023,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/microsoft-sharepoint-covid19-phishing/",
+  "file": "_subdomains/blog.cloudflare.com/microsoft-sharepoint-covid19-phishing.md",
+  "title": "Phishpoint back in full swing: an infamous Microsoft SharePoint spoof resumes with new tactics | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:43.411933+00:00",
+  "html_len": 296584,
+  "md_len": 66414,
+  "depth": 0,
+  "phase": 2
+}

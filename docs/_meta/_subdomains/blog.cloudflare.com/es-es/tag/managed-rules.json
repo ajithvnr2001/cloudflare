@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/tag/managed-rules/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/tag/managed-rules.md",
+  "title": "Entradas etiquetadas con \"Managed Rules (ES)\" \u2014 Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:15:03.758921+00:00",
+  "html_len": 108190,
+  "md_len": 1770,
+  "depth": 1,
+  "phase": 2
+}

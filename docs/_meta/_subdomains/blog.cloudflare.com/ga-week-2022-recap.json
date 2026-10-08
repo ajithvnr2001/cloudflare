@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ga-week-2022-recap/",
+  "file": "_subdomains/blog.cloudflare.com/ga-week-2022-recap.md",
+  "title": "GA Week 2022: what you may have missed | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:13.157220+00:00",
+  "html_len": 281950,
+  "md_len": 61229,
+  "depth": 0,
+  "phase": 2
+}

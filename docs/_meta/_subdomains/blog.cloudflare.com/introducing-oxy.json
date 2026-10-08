@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-oxy/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-oxy.md",
+  "title": "Oxy is Cloudflare's Rust-based next generation proxy framework | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:43.368148+00:00",
+  "html_len": 312397,
+  "md_len": 76301,
+  "depth": 0,
+  "phase": 2
+}

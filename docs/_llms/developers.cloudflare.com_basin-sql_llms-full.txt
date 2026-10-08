@@ -1,0 +1,5137 @@
+---
+description: A distributed SQL engine for Basin Catalog
+title: Basin SQL
+image: https://developers.cloudflare.com/basin-sql/og.png?v=57df7a270078be5d
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-sql/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Basin SQL
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-sql/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Query Apache Iceberg tables managed by Basin Catalog using SQL.
+
+Basin SQL is Cloudflare's serverless, distributed, analytics query engine for querying [Apache Iceberg ↗︎](https://iceberg.apache.org/) tables stored in [Basin Catalog](https://developers.cloudflare.com/basin-catalog/). Basin SQL is designed to efficiently query large amounts of data by automatically utilizing file pruning, Cloudflare's distributed compute, and R2 object storage.
+
+Basin SQL is now Generally Available
+
+Basin SQL, formerly known as R2 SQL, is now Generally Available. Existing R2 SQL APIs continue to work and will be deprecated in the future.
+
+To report bugs or give feedback, go to the [**#basin-sql Discord channel** ↗︎](https://discord.cloudflare.com/). If you are having issues with Wrangler, report issues in the [**Wrangler GitHub repository** ↗︎](https://github.com/cloudflare/workers-sdk/issues/new/choose).
+
+npmyarnpnpm
+
+```
+npx wrangler basin sql query "YOUR_WAREHOUSE_NAME" "SELECT * FROM default.transactions LIMIT 10"
+```
+
+```
+yarn wrangler basin sql query "YOUR_WAREHOUSE_NAME" "SELECT * FROM default.transactions LIMIT 10"
+```
+
+```
+pnpm wrangler basin sql query "YOUR_WAREHOUSE_NAME" "SELECT * FROM default.transactions LIMIT 10"
+```
+
+Create an end-to-end data pipeline by following [this step by step guide](https://developers.cloudflare.com/basin-sql/get-started/), which shows you how to stream events into an Apache Iceberg table and query it with Basin SQL.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/basin-sql/#page","headline":"Basin SQL","description":"A distributed SQL engine for Basin Catalog","url":"https://developers.cloudflare.com/basin-sql/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-sql/og.png?v=57df7a270078be5d","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Create your first pipeline to ingest streaming data and write to Basin Catalog as an Apache Iceberg table.
+title: Getting started
+image: https://developers.cloudflare.com/basin-sql/get-started/og.png?v=8fe96c60f1f68a3b
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-sql/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Getting started
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-sql/get-started/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+This guide will instruct you through:
+
+- Creating your first [R2 bucket](https://developers.cloudflare.com/r2/buckets/) and enabling its [data catalog](https://developers.cloudflare.com/basin-catalog/).
+- Creating an [API token](https://developers.cloudflare.com/r2/api/tokens/) needed for pipelines to authenticate with your data catalog.
+- Creating your first pipeline with a simple ecommerce schema that writes to an [Apache Iceberg ↗︎](https://iceberg.apache.org/) table managed by Basin Catalog.
+- Sending sample ecommerce data via HTTP endpoint.
+- Validating data in your bucket and querying it with Basin SQL.
+
+## Prerequisites
+
+1. Sign up for a [Cloudflare account ↗︎](https://dash.cloudflare.com/sign-up/workers-and-pages).
+2. Install [`Node.js` ↗︎](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+
+<details>
+
+<summary>
+
+Node.js version manager
+
+</summary>
+
+Use a Node version manager like <a href="https://volta.sh/">Volta ↗︎</a> or <a href="https://github.com/nvm-sh/nvm">nvm ↗︎</a> to avoid permission issues and change Node.js versions. <a href="https://developers.cloudflare.com/workers/wrangler/install-and-update/">Wrangler</a>, discussed later in this guide, requires a Node version of <code>16.17.0</code> or later.
+
+</details>
+
+## 1. Create an R2 bucket
+
+1. If not already logged in, run:npmyarnpnpm
+
+   ```
+   npx wrangler login
+   ```
+
+   ```
+   yarn wrangler login
+   ```
+
+   ```
+   pnpm wrangler login
+   ```
+
+
+2. Create an R2 bucket:npmyarnpnpm
+
+   ```
+   npx wrangler r2 bucket create pipelines-tutorial
+   ```
+
+   ```
+   yarn wrangler r2 bucket create pipelines-tutorial
+   ```
+
+   ```
+   pnpm wrangler r2 bucket create pipelines-tutorial
+   ```
+
+
+
+1. In the Cloudflare dashboard, go to the **R2 object storage** page. [Go to **Overview** ↗](https://dash.cloudflare.com/?to=/:account/r2/overview)
+2. Select **Create bucket**.
+3. Enter the bucket name: pipelines-tutorial
+4. Select **Create bucket**.
+
+## 2. Enable Basin Catalog
+
+Enable the catalog on your R2 bucket:
+
+npmyarnpnpm
+
+```
+npx wrangler basin catalog enable pipelines-tutorial
+```
+
+```
+yarn wrangler basin catalog enable pipelines-tutorial
+```
+
+```
+pnpm wrangler basin catalog enable pipelines-tutorial
+```
+
+When you run this command, take note of the "Warehouse" and "Catalog URI". You will need these later.
+
+1. In the Cloudflare dashboard, go to the **R2 object storage** page. [Go to **Overview** ↗](https://dash.cloudflare.com/?to=/:account/r2/overview)
+2. Select the bucket: pipelines-tutorial.
+3. Switch to the **Settings** tab, scroll down to **Basin Catalog**, and select **Enable**.
+4. Once enabled, note the **Catalog URI** and **Warehouse name**.
+
+## 3. Create an API token
+
+Basin Pipelines must authenticate to Basin Catalog with an [R2 API token](https://developers.cloudflare.com/r2/api/tokens/) that has catalog and R2 permissions.
+
+1. In the Cloudflare dashboard, go to the **R2 object storage** page. [Go to **Overview** ↗](https://dash.cloudflare.com/?to=/:account/r2/overview)
+2. Select **Manage API tokens**.
+3. Select **Create Account API token**.
+4. Give your API token a name.
+5. Under **Permissions**, choose the **Admin Read & Write** permission.
+6. Select **Create Account API Token**.
+7. Note the **Token value**.
+
+Note
+
+This token also includes the Basin SQL Read permission, which allows you to query your data with Basin SQL.
+
+## 4. Create a pipeline
+
+First, create a schema file that defines your ecommerce data structure:
+
+**Create `schema.json`:**
+
+```json
+{
+	"fields": [
+		{
+			"name": "user_id",
+			"type": "string",
+			"required": true
+		},
+		{
+			"name": "event_type",
+			"type": "string",
+			"required": true
+		},
+		{
+			"name": "product_id",
+			"type": "string",
+			"required": false
+		},
+		{
+			"name": "amount",
+			"type": "float64",
+			"required": false
+		}
+	]
+}
+```
+
+Use the interactive setup to create a pipeline that writes to Basin Catalog:
+
+npmyarnpnpm
+
+```
+npx wrangler basin pipelines setup
+```
+
+```
+yarn wrangler basin pipelines setup
+```
+
+```
+pnpm wrangler basin pipelines setup
+```
+
+Follow the prompts:
+
+1. **Pipeline name**: Enter `ecommerce`
+2. **Stream configuration**:
+   - Enable HTTP endpoint: `yes`
+   - Require authentication: `no` (for simplicity)
+   - Configure custom CORS origins: `no`
+   - Schema definition: `Load from file`
+   - Schema file path: `schema.json` (or your file path)
+3. **Sink configuration**:
+   - Destination type: `Data Catalog Table`
+   - R2 bucket name: `pipelines-tutorial`
+   - Namespace: `default`
+   - Table name: `ecommerce`
+   - Catalog API token: Enter your token from step 3
+   - Compression: `zstd`
+   - Roll file when size reaches (MB): `100`
+   - Roll file when time reaches (seconds): `10` (for faster data visibility in this tutorial)
+4. **SQL transformation**: Choose `Use simple ingestion query` to use:
+
+   ```sql
+   INSERT INTO ecommerce_sink SELECT * FROM ecommerce_stream
+   ```
+
+
+
+After setup completes, note the HTTP endpoint URL displayed in the final output.
+
+1. In the Cloudflare dashboard, go to **Basin Pipelines** > **Pipelines**. [Go to **Pipelines** ↗](https://dash.cloudflare.com/?to=/:account/pipelines/overview)
+2. Select **Create Pipeline**.
+3. **Connect to a Stream**:
+   - Pipeline name: `ecommerce`
+   - Enable HTTP endpoint for sending data: Enabled
+   - HTTP authentication: Disabled (default)
+   - Select **Next**
+4. **Define Input Schema**:
+   - Select **JSON editor**
+   - Copy in the schema:
+
+     ```json
+     {
+     	"fields": [
+     		{
+     			"name": "user_id",
+     			"type": "string",
+     			"required": true
+     		},
+     		{
+     			"name": "event_type",
+     			"type": "string",
+     			"required": true
+     		},
+     		{
+     			"name": "product_id",
+     			"type": "string",
+     			"required": false
+     		},
+     		{
+     			"name": "amount",
+     			"type": "f64",
+     			"required": false
+     		}
+     	]
+     }
+     ```
+   - Select **Next**
+5. **Define Sink**:
+   - Select your R2 bucket: `pipelines-tutorial`
+   - Storage type: **Basin Catalog**
+   - Namespace: `default`
+   - Table name: `ecommerce`
+   - **Advanced Settings**: Change **Maximum Time Interval** to `10 seconds`
+   - Select **Next**
+6. **Credentials**:
+   - Disable **Automatically create an Account API token for your sink**
+   - Enter **Catalog Token** from step 3
+   - Select **Next**
+7. **Pipeline Definition**:
+   - Leave the default SQL query:
+
+     ```sql
+     INSERT INTO ecommerce_sink SELECT * FROM ecommerce_stream;
+     ```
+   - Select **Create Pipeline**
+8. After pipeline creation, note the **Stream ID** for the next step.
+
+## 5. Send sample data
+
+Send ecommerce events to your pipeline's HTTP endpoint:
+
+```bash
+curl -X POST https://{stream-id}.ingest.cloudflare.com \
+  -H "Content-Type: application/json" \
+  -d '[
+    {
+      "user_id": "user_12345",
+      "event_type": "purchase",
+      "product_id": "widget-001",
+      "amount": 29.99
+    },
+    {
+      "user_id": "user_67890",
+      "event_type": "view_product",
+      "product_id": "widget-002"
+    },
+    {
+      "user_id": "user_12345",
+      "event_type": "add_to_cart",
+      "product_id": "widget-003",
+      "amount": 15.50
+    }
+  ]'
+```
+
+Replace `{stream-id}` with your actual stream endpoint from the pipeline setup.
+
+## 6. Validate data in your bucket
+
+1. In the Cloudflare dashboard, go to the **R2 object storage** page.
+2. Select your bucket: `pipelines-tutorial`.
+3. Confirm that your pipeline created Iceberg metadata and data files. If the files do not appear, wait a few minutes and try again.
+4. The data is organized in the Apache Iceberg format with metadata tracking table versions.
+
+## 7. Query your data using Basin SQL
+
+Set up your environment to use Basin SQL:
+
+```bash
+export WRANGLER_BASIN_SQL_AUTH_TOKEN=YOUR_API_TOKEN
+```
+
+Or create a `.env` file with:
+
+```plaintext
+WRANGLER_BASIN_SQL_AUTH_TOKEN=YOUR_API_TOKEN
+```
+
+Where `YOUR_API_TOKEN` is the token you created in step 3. For more information on setting environment variables, refer to [Wrangler system environment variables](https://developers.cloudflare.com/workers/wrangler/system-environment-variables/).
+
+Query your data:
+
+npmyarnpnpm
+
+```
+npx wrangler basin sql query "YOUR_WAREHOUSE_NAME" "SELECT user_id, event_type, product_id, amount FROM default.ecommerce WHERE event_type = 'purchase' LIMIT 10"
+```
+
+```
+yarn wrangler basin sql query "YOUR_WAREHOUSE_NAME" "SELECT user_id, event_type, product_id, amount FROM default.ecommerce WHERE event_type = 'purchase' LIMIT 10"
+```
+
+```
+pnpm wrangler basin sql query "YOUR_WAREHOUSE_NAME" "SELECT user_id, event_type, product_id, amount FROM default.ecommerce WHERE event_type = 'purchase' LIMIT 10"
+```
+
+Replace `YOUR_WAREHOUSE_NAME` with the warehouse name from step 2.
+
+You can also query this table with any engine that supports Apache Iceberg. To connect other engines to Basin Catalog, refer to [Connect to Iceberg engines](https://developers.cloudflare.com/basin-catalog/config-examples/).
+
+## Learn more
+
+### [Managing catalogs](https://developers.cloudflare.com/basin-catalog/manage-catalogs/)
+
+Enable or disable Basin Catalog on your bucket, retrieve configuration details, and authenticate your Iceberg engine.
+
+### [Try another example](https://developers.cloudflare.com/basin-sql/tutorials/end-to-end-pipeline/)
+
+Detailed tutorial for setting up a simple fraud detection data pipeline, and generate events for it in Python.
+
+### [Basin Pipelines](https://developers.cloudflare.com/basin-pipelines/)
+
+Understand SQL transformations and pipeline configuration.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/basin-sql/get-started/#page","headline":"Getting started","description":"Create your first pipeline to ingest streaming data and write to Basin Catalog as an Apache Iceberg table.","url":"https://developers.cloudflare.com/basin-sql/get-started/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-sql/get-started/og.png?v=8fe96c60f1f68a3b","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Understand how to query data with Basin SQL
+title: Query data
+image: https://developers.cloudflare.com/basin-sql/query-data/og.png?v=babebcf967cb2a0a
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-sql/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Query data
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-sql/query-data/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Query [Apache Iceberg ↗︎](https://iceberg.apache.org/) tables managed by [Basin Catalog](https://developers.cloudflare.com/basin-catalog/). Basin SQL queries can be made via [Wrangler](https://developers.cloudflare.com/workers/wrangler/) or HTTP API.
+
+## Get your warehouse name
+
+To query data with Basin SQL, you need your warehouse name associated with your [catalog](https://developers.cloudflare.com/basin-catalog/manage-catalogs/). To retrieve it, you can run the `basin catalog get` command:
+
+npmyarnpnpm
+
+```
+npx wrangler basin catalog get <BUCKET_NAME>
+```
+
+```
+yarn wrangler basin catalog get <BUCKET_NAME>
+```
+
+```
+pnpm wrangler basin catalog get <BUCKET_NAME>
+```
+
+Alternatively, you can find it in the dashboard by going to the **R2 object storage** page, selecting the bucket, switching to the **Settings** tab, scrolling to **Basin Catalog**, and finding **Warehouse name**.
+
+## Query via Wrangler
+
+To begin, install [`npm` ↗︎](https://docs.npmjs.com/getting-started). Then [install Wrangler, the Developer Platform CLI](https://developers.cloudflare.com/workers/wrangler/install-and-update/).
+
+Wrangler needs an API token with permissions to access Basin Catalog, R2 storage, and Basin SQL to execute queries. The `basin sql query` command looks for the token in the `WRANGLER_BASIN_SQL_AUTH_TOKEN` environment variable.
+
+Set up your environment:
+
+```bash
+export WRANGLER_BASIN_SQL_AUTH_TOKEN=YOUR_API_TOKEN
+```
+
+Or create a `.env` file with:
+
+```txt
+WRANGLER_BASIN_SQL_AUTH_TOKEN=YOUR_API_TOKEN
+```
+
+Where `YOUR_API_TOKEN` is the token you created with the [required permissions](#authentication). For more information on setting environment variables, refer to [Wrangler system environment variables](https://developers.cloudflare.com/workers/wrangler/system-environment-variables/).
+
+To run a SQL query, run the `basin sql query` command:
+
+npmyarnpnpm
+
+```
+npx wrangler basin sql query <WAREHOUSE> "SELECT * FROM namespace.table_name limit 10;"
+```
+
+```
+yarn wrangler basin sql query <WAREHOUSE> "SELECT * FROM namespace.table_name limit 10;"
+```
+
+```
+pnpm wrangler basin sql query <WAREHOUSE> "SELECT * FROM namespace.table_name limit 10;"
+```
+
+For a full list of supported SQL commands, refer to the [Basin SQL reference](https://developers.cloudflare.com/basin-sql/sql-reference/).
+
+## Query via API
+
+Below is an example of using Basin SQL via the REST endpoint:
+
+```bash
+curl -X POST \
+  "https://api.sql.cloudflarestorage.com/api/v1/accounts/{ACCOUNT_ID}/basin-sql/query/{BUCKET_NAME}" \
+  -H "Authorization: Bearer ${WRANGLER_BASIN_SQL_AUTH_TOKEN}" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "query": "SELECT * FROM namespace.table_name limit 10;"
+  }'
+```
+
+The API requires an API token with the appropriate permissions in the Authorization header. Refer to [Authentication](#authentication) for details on creating a token.
+
+For a full list of supported SQL commands, refer to the [Basin SQL reference](https://developers.cloudflare.com/basin-sql/sql-reference/).
+
+## Authentication
+
+To query data with Basin SQL, you must provide a Cloudflare API token with Basin SQL, Basin Catalog, and R2 storage permissions. Basin SQL requires these permissions to access catalog metadata and read the underlying data files stored in R2.
+
+### Create API token in the dashboard
+
+Create an [R2 API token](https://developers.cloudflare.com/r2/api/tokens/#permissions) with the following permissions:
+
+- Access to Basin Catalog (read-only)
+- Access to R2 storage (Admin read/write)
+- Access to Basin SQL (read-only)
+
+Use this token value for the `WRANGLER_BASIN_SQL_AUTH_TOKEN` environment variable when querying with Wrangler, or in the Authorization header when using the REST API.
+
+### Create API token via API
+
+To create an API token programmatically for use with Basin SQL, specify Basin SQL, Basin Catalog, and R2 storage permission groups in your [Access Policy](https://developers.cloudflare.com/r2/api/tokens/#access-policy).
+
+#### Example Access Policy
+
+```json
+[
+	{
+		"id": "f267e341f3dd4697bd3b9f71dd96247f",
+		"effect": "allow",
+		"resources": {
+			"com.cloudflare.edge.r2.bucket.4793d734c0b8e484dfc37ec392b5fa8a_default_my-bucket": "*",
+			"com.cloudflare.edge.r2.bucket.4793d734c0b8e484dfc37ec392b5fa8a_eu_my-eu-bucket": "*"
+		},
+		"permission_groups": [
+			{
+				"id": "f45430d92e2b4a6cb9f94f2594c141b8",
+				"name": "Workers R2 SQL Read"
+			},
+			{
+				"id": "d229766a2f7f4d299f20eaa8c9b1fde9",
+				"name": "Workers R2 Data Catalog Write"
+			},
+			{
+				"id": "bf7481a1826f439697cb59a20b22293e",
+				"name": "Workers R2 Storage Write"
+			}
+		]
+	}
+]
+```
+
+To learn more about how to create API tokens for Basin SQL using the API, including required permission groups and usage examples, refer to the [Create API tokens via API documentation](https://developers.cloudflare.com/r2/api/tokens/#create-api-tokens-via-api).
+
+## Additional resources
+
+### [Manage catalogs](https://developers.cloudflare.com/basin-catalog/manage-catalogs/)
+
+Enable or disable Basin Catalog on your bucket, retrieve configuration details, and authenticate your Iceberg engine.
+
+### [Build an end to end data pipeline](https://developers.cloudflare.com/basin-sql/tutorials/end-to-end-pipeline/)
+
+Detailed tutorial for setting up a simple fraud detection data pipeline, and generate events for it in Python.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/basin-sql/query-data/#page","headline":"Query data","description":"Understand how to query data with Basin SQL","url":"https://developers.cloudflare.com/basin-sql/query-data/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-sql/query-data/og.png?v=babebcf967cb2a0a","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Comprehensive reference for SQL syntax, functions, and data types supported in Basin SQL.
+title: SQL reference
+image: https://developers.cloudflare.com/basin-sql/sql-reference/og.png?v=ac761896d6b1b401
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-sql/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# SQL reference
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-sql/sql-reference/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Basin SQL is Cloudflare's serverless, distributed, analytics query engine for querying [Apache Iceberg ↗︎](https://iceberg.apache.org/) tables stored in [Basin Catalog](https://developers.cloudflare.com/basin-catalog/). This page documents the supported SQL syntax.
+
+---
+
+## Query syntax
+
+```sql
+SELECT [DISTINCT] column_list | expression | aggregate_function | window_function
+FROM namespace_name.table_name
+[JOIN namespace_name.table_name ON condition]
+[WHERE conditions]
+[GROUP BY column_list]
+[HAVING conditions]
+[QUALIFY window_condition]
+[ORDER BY expression [ASC | DESC]]
+[LIMIT number]
+```
+
+Two or more queries can be combined with [set operations](#set-operations) (`UNION`, `UNION ALL`, `INTERSECT`, `EXCEPT`).
+
+---
+
+## Schema discovery commands
+
+### SHOW DATABASES
+
+Lists all available namespaces.
+
+```sql
+SHOW DATABASES;
+```
+
+### SHOW NAMESPACES
+
+Alias for `SHOW DATABASES`. Lists all available namespaces.
+
+```sql
+SHOW NAMESPACES;
+```
+
+### SHOW TABLES
+
+Lists all tables within a specific namespace.
+
+```sql
+SHOW TABLES IN namespace_name;
+```
+
+### DESCRIBE
+
+Describes the structure of a table, showing column names and data types.
+
+```sql
+DESCRIBE namespace_name.table_name;
+```
+
+---
+
+## SELECT clause
+
+### Syntax
+
+```sql
+SELECT [DISTINCT] column_specification [, column_specification, ...]
+```
+
+### Column specification
+
+- **Column name**: `column_name`
+- **All columns**: `*`
+- **Qualified wildcard**: `table_name.*`
+- **Column alias**: `column_name AS alias`
+- **Expressions**: arithmetic, function calls, CASE expressions, and casts
+
+### Examples
+
+```sql
+SELECT * FROM my_namespace.sales_data LIMIT 10
+SELECT customer_id, region, total_amount FROM my_namespace.sales_data LIMIT 10
+SELECT region, total_amount * 1.1 AS total_with_tax FROM my_namespace.sales_data LIMIT 10
+```
+
+### DISTINCT
+
+`SELECT DISTINCT` returns unique rows. `DISTINCT ON (...)` returns the first row for each combination of the listed expressions, using the `ORDER BY` clause to determine which row is kept.
+
+```sql
+-- Unique combinations
+SELECT DISTINCT region, department FROM my_namespace.sales_data
+
+-- First row per region by amount
+SELECT DISTINCT ON (region) region, customer_id, total_amount
+FROM my_namespace.sales_data
+ORDER BY region, total_amount DESC
+```
+
+For counting unique values on large datasets, `approx_distinct()` is a faster alternative.
+
+---
+
+## Common table expressions (CTEs)
+
+CTEs let you define named temporary result sets using `WITH` that you can reference in the main query. CTEs can reference different tables and can include JOINs. A CTE can also be joined with other CTEs or regular tables in the main query.
+
+### Syntax
+
+```sql
+WITH cte_name AS (
+    SELECT ...
+    FROM namespace_name.table_name
+    [WHERE ...]
+)
+SELECT ... FROM cte_name
+```
+
+### Chained CTEs
+
+A CTE can reference a previously defined CTE.
+
+```sql
+WITH filtered AS (
+    SELECT customer_id, department, total_amount
+    FROM my_namespace.sales_data
+    WHERE total_amount > 0
+),
+summary AS (
+    SELECT department,
+           COUNT(*) AS order_count,
+           round(AVG(total_amount), 2) AS avg_amount
+    FROM filtered
+    GROUP BY department
+)
+SELECT *
+FROM summary
+WHERE order_count > 100
+ORDER BY avg_amount DESC
+```
+
+### CTE joined with another table
+
+```sql
+WITH enterprise_zones AS (
+    SELECT zone_id, domain, plan
+    FROM my_namespace.zones
+    WHERE plan = 'enterprise'
+)
+SELECT ez.domain, f.action, COUNT(*) AS cnt
+FROM enterprise_zones ez
+INNER JOIN my_namespace.firewall_events f ON ez.zone_id = f.zone_id
+GROUP BY ez.domain, f.action
+ORDER BY cnt DESC
+LIMIT 20
+```
+
+### Two CTEs joined together
+
+```sql
+WITH top_zones AS (
+    SELECT zone_id, COUNT(*) AS req_count
+    FROM my_namespace.http_requests
+    GROUP BY zone_id
+    ORDER BY req_count DESC
+    LIMIT 50
+),
+zone_threats AS (
+    SELECT zone_id, COUNT(*) AS threat_count
+    FROM my_namespace.firewall_events
+    WHERE risk_score > 0.5
+    GROUP BY zone_id
+)
+SELECT tz.zone_id, tz.req_count, COALESCE(zt.threat_count, 0) AS threat_count
+FROM top_zones tz
+LEFT JOIN zone_threats zt ON tz.zone_id = zt.zone_id
+ORDER BY tz.req_count DESC
+LIMIT 20
+```
+
+---
+
+## FROM clause
+
+### Syntax
+
+```sql
+SELECT * FROM namespace_name.table_name
+```
+
+Basin SQL queries can reference one or more tables. Tables are specified as `namespace_name.table_name`. Multiple tables can be combined using JOINs or comma-separated syntax. Refer to the [JOIN clause](#join-clause) section for details.
+
+---
+
+## JOIN clause
+
+Basin SQL supports joining multiple Iceberg tables in a single query. All join types use standard SQL syntax.
+
+### Supported join types
+
+| Join type | Syntax | Description |
+| --- | --- | --- |
+| Inner join | `INNER JOIN ... ON` | Returns rows that match in both tables |
+| Left outer join | `LEFT JOIN ... ON` | Returns all rows from the left table, NULLs for non-matching right |
+| Right outer join | `RIGHT JOIN ... ON` | Returns all rows from the right table, NULLs for non-matching left |
+| Full outer join | `FULL OUTER JOIN ... ON` | Returns all rows from both tables, NULLs where no match |
+| Cross join | `CROSS JOIN` | Cartesian product of both tables |
+| Implicit join | `FROM t1, t2 WHERE t1.id = t2.id` | Comma-separated tables with join condition in `WHERE` |
+
+### Syntax
+
+```sql
+-- Explicit JOIN
+SELECT columns
+FROM namespace.table1 alias1
+[INNER | LEFT | RIGHT | FULL OUTER | CROSS] JOIN namespace.table2 alias2
+  ON alias1.column = alias2.column
+[WHERE conditions]
+
+-- Implicit join
+SELECT columns
+FROM namespace.table1 alias1, namespace.table2 alias2
+WHERE alias1.column = alias2.column
+```
+
+### Multi-way joins
+
+You can join three or more tables in a single query:
+
+```sql
+SELECT z.domain, h.method, f.action, COUNT(*) AS cnt
+FROM my_namespace.zones z
+INNER JOIN my_namespace.http_requests h ON z.zone_id = h.zone_id
+INNER JOIN my_namespace.firewall_events f ON z.zone_id = f.zone_id
+WHERE h.status_code >= 400
+GROUP BY z.domain, h.method, f.action
+ORDER BY cnt DESC
+LIMIT 20
+```
+
+### Self-joins
+
+A table can be joined with itself using different aliases:
+
+```sql
+SELECT f1.source_ip, f1.zone_id AS zone1, f2.zone_id AS zone2
+FROM my_namespace.firewall_events f1
+INNER JOIN my_namespace.firewall_events f2
+  ON f1.source_ip = f2.source_ip
+  AND f1.zone_id < f2.zone_id
+WHERE f1.action = 'block'
+LIMIT 20
+```
+
+### Join conditions
+
+- Join conditions use the `ON` clause with equality ( `=`) or expression-based predicates.
+- Functions are supported in join predicates (for example, `ON LOWER(a.col) = LOWER(b.col)`).
+- Multiple conditions can be combined with `AND`.
+
+Note
+
+Nested (parenthesized) joins are not supported. Write multi-way joins as a flat sequence of `JOIN` clauses instead of grouping them with parentheses.
+
+```sql
+-- Not supported
+SELECT * FROM (t1 JOIN t2 ON t1.id = t2.id) JOIN t3 ON t2.id = t3.id
+
+-- Supported
+SELECT * FROM t1 JOIN t2 ON t1.id = t2.id JOIN t3 ON t2.id = t3.id
+```
+
+### Best practices for joins
+
+- Include `WHERE` filters to reduce intermediate result sizes, especially for multi-way joins.
+- Join large fact tables through a shared dimension table rather than directly cross-joining two large tables.
+- Use `LIMIT` to cap result sizes.
+
+---
+
+## Subqueries
+
+Basin SQL supports subqueries in multiple positions within a query.
+
+### Subqueries in FROM (derived tables)
+
+A subquery in the `FROM` clause creates a derived table that can be referenced in the outer query:
+
+```sql
+SELECT sub.domain, sub.total_requests
+FROM (
+    SELECT z.domain, COUNT(*) AS total_requests
+    FROM my_namespace.zones z
+    INNER JOIN my_namespace.http_requests h ON z.zone_id = h.zone_id
+    GROUP BY z.domain
+) sub
+WHERE sub.total_requests > 1000
+ORDER BY sub.total_requests DESC
+LIMIT 20
+```
+
+Note
+
+`LATERAL` derived tables are not supported. Subqueries in `FROM` cannot reference columns from other tables in the same `FROM` clause.
+
+Derived tables can be joined with other derived tables or regular tables:
+
+```sql
+SELECT req.domain, req.total_reqs, fw.total_events
+FROM (
+    SELECT zone_id, domain, COUNT(*) AS total_reqs
+    FROM my_namespace.zones z
+    INNER JOIN my_namespace.http_requests h ON z.zone_id = h.zone_id
+    GROUP BY zone_id, domain
+) req
+INNER JOIN (
+    SELECT zone_id, COUNT(*) AS total_events
+    FROM my_namespace.firewall_events
+    GROUP BY zone_id
+) fw ON req.zone_id = fw.zone_id
+ORDER BY fw.total_events DESC
+LIMIT 20
+```
+
+### `IN` / `NOT IN` subqueries
+
+Filter rows based on whether a value exists in the result of a subquery:
+
+```sql
+-- Find requests from enterprise zones
+SELECT method, status_code, COUNT(*) AS cnt
+FROM my_namespace.http_requests
+WHERE zone_id IN (
+    SELECT zone_id FROM my_namespace.zones WHERE plan = 'enterprise'
+)
+GROUP BY method, status_code
+ORDER BY cnt DESC
+LIMIT 20
+```
+
+```sql
+-- NOT IN example
+SELECT zone_id, COUNT(*) AS cnt
+FROM my_namespace.http_requests
+WHERE zone_id NOT IN (
+    SELECT zone_id FROM my_namespace.firewall_events WHERE action = 'block'
+)
+GROUP BY zone_id
+LIMIT 10
+```
+
+Caution
+
+`NOT IN` subqueries are not supported on nullable columns. If the subquery column can contain `NULL` values, use `NOT EXISTS` instead.
+
+```sql
+-- Instead of NOT IN on a nullable column:
+SELECT z.domain
+FROM my_namespace.zones z
+WHERE NOT EXISTS (
+    SELECT 1 FROM my_namespace.firewall_events f
+    WHERE f.zone_id = z.zone_id
+)
+LIMIT 20
+```
+
+### `EXISTS` / `NOT EXISTS` subqueries
+
+Test for the existence of rows matching a correlated condition:
+
+```sql
+-- Find zones with blocked firewall events (semi-join)
+SELECT z.domain, z.plan
+FROM my_namespace.zones z
+WHERE EXISTS (
+    SELECT 1 FROM my_namespace.firewall_events f
+    WHERE f.zone_id = z.zone_id AND f.action = 'block'
+)
+ORDER BY z.domain
+LIMIT 20
+```
+
+```sql
+-- Find zones with NO firewall events (anti-join)
+SELECT z.domain, z.plan
+FROM my_namespace.zones z
+WHERE NOT EXISTS (
+    SELECT 1 FROM my_namespace.firewall_events f
+    WHERE f.zone_id = z.zone_id
+)
+ORDER BY z.domain
+LIMIT 20
+```
+
+### Scalar subqueries
+
+A subquery that returns a single value can be used in `SELECT`, `WHERE`, or `HAVING`:
+
+```sql
+-- In SELECT (constant value per row)
+SELECT z.domain, z.plan,
+       (SELECT COUNT(*) FROM my_namespace.zones) AS total_zones
+FROM my_namespace.zones z
+WHERE z.plan = 'enterprise'
+LIMIT 10
+```
+
+```sql
+-- In WHERE (comparison)
+SELECT z.domain, z.plan, z.requests_30d
+FROM my_namespace.zones z
+WHERE z.requests_30d > (
+    SELECT AVG(requests_30d) FROM my_namespace.zones
+)
+ORDER BY z.requests_30d DESC
+LIMIT 20
+```
+
+---
+
+## WHERE clause
+
+### Syntax
+
+```sql
+SELECT * FROM namespace_name.table_name WHERE condition [AND | OR condition ...]
+```
+
+### Conditions
+
+#### Comparison operators
+
+`=`, `!=`, `<>`, `<`, `>`, `<=`, `>=`
+
+#### Null checks
+
+- `column_name IS NULL`
+- `column_name IS NOT NULL`
+
+#### Boolean checks
+
+- `IS TRUE`, `IS FALSE`, `IS NOT TRUE`, `IS NOT FALSE`
+- `IS UNKNOWN`, `IS NOT UNKNOWN`
+
+#### Range
+
+- `column_name BETWEEN value1 AND value2`
+- `column_name NOT BETWEEN value1 AND value2`
+
+#### List membership
+
+- `column_name IN ('value1', 'value2')`
+- `column_name NOT IN ('value1', 'value2')`
+
+#### Pattern matching
+
+- `column_name LIKE 'pattern'`
+- `column_name NOT LIKE 'pattern'`
+- `column_name ILIKE 'pattern'` (case-insensitive)
+- `column_name NOT ILIKE 'pattern'`
+- `column_name SIMILAR TO 'regex_pattern'`
+
+#### Logical operators
+
+- `AND`
+- `OR`
+- `NOT`
+
+### Examples
+
+```sql
+SELECT * FROM my_namespace.sales_data
+WHERE timestamp BETWEEN '2025-09-24T01:00:00Z' AND '2025-09-25T01:00:00Z'
+
+SELECT * FROM my_namespace.sales_data
+WHERE status = 200 AND response_time > 1000
+
+SELECT * FROM my_namespace.sales_data
+WHERE (region = 'North' OR region = 'South')
+  AND total_amount IS NOT NULL
+
+SELECT * FROM my_namespace.sales_data
+WHERE department ILIKE '%eng%'
+```
+
+---
+
+## GROUP BY clause
+
+### Syntax
+
+```sql
+SELECT column_list, aggregation_function(column)
+FROM namespace_name.table_name
+[WHERE conditions]
+GROUP BY column_list
+```
+
+### Examples
+
+```sql
+SELECT department, COUNT(*) AS dept_count
+FROM my_namespace.sales_data
+GROUP BY department
+
+SELECT department, category, SUM(total_amount) AS total
+FROM my_namespace.sales_data
+GROUP BY department, category
+```
+
+### GROUPING SETS, ROLLUP, and CUBE
+
+These extensions compute multiple groupings, including subtotals and grand totals, in a single query.
+
+- **`GROUPING SETS`**: Computes exactly the groupings you list. `()` produces the grand total.
+- **`ROLLUP`**: Computes hierarchical subtotals from left to right. `ROLLUP(a, b)` groups by `(a, b)`, `(a)`, and `()`.
+- **`CUBE`**: Computes every combination of the listed columns. `CUBE(a, b)` groups by `(a, b)`, `(a)`, `(b)`, and `()`.
+
+```sql
+-- Subtotals per department plus a grand total
+SELECT department, SUM(total_amount) AS total
+FROM my_namespace.sales_data
+GROUP BY ROLLUP(department)
+
+-- Every combination of department and category
+SELECT department, category, SUM(total_amount) AS total
+FROM my_namespace.sales_data
+GROUP BY CUBE(department, category)
+
+-- Explicit groupings
+SELECT department, category, SUM(total_amount) AS total
+FROM my_namespace.sales_data
+GROUP BY GROUPING SETS ((department, category), (department), ())
+```
+
+---
+
+## HAVING clause
+
+### Syntax
+
+```sql
+SELECT column_list, aggregation_function(column) AS alias
+FROM namespace_name.table_name
+GROUP BY column_list
+HAVING aggregation_function(column) comparison_operator value
+```
+
+### Examples
+
+```sql
+SELECT department, COUNT(*) AS dept_count
+FROM my_namespace.sales_data
+GROUP BY department
+HAVING COUNT(*) > 1000
+
+SELECT region, SUM(total_amount) AS total
+FROM my_namespace.sales_data
+GROUP BY region
+HAVING SUM(total_amount) > 1000000
+```
+
+---
+
+## ORDER BY clause
+
+### Syntax
+
+```sql
+ORDER BY expression [ASC | DESC] [, expression [ASC | DESC], ...]
+```
+
+- **ASC**: Ascending order (default)
+- **DESC**: Descending order
+- Multi-column ordering is supported
+
+### Examples
+
+```sql
+SELECT customer_id, total_amount
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL
+ORDER BY total_amount DESC
+LIMIT 50
+
+SELECT department, COUNT(*) AS dept_count
+FROM my_namespace.sales_data
+GROUP BY department
+ORDER BY dept_count DESC, department ASC
+```
+
+---
+
+## LIMIT clause
+
+### Syntax
+
+```sql
+LIMIT number
+```
+
+- **Type**: Integer only
+- **Default**: 500
+
+### Examples
+
+```sql
+SELECT * FROM my_namespace.sales_data LIMIT 100
+```
+
+---
+
+## Window functions
+
+Window functions compute a value across a set of rows related to the current row without collapsing them into a single output row. The window is defined inline with an `OVER (...)` clause containing an optional `PARTITION BY`, `ORDER BY`, and frame specification.
+
+### Syntax
+
+```sql
+function(args) OVER (
+    [PARTITION BY expression [, ...]]
+    [ORDER BY expression [ASC | DESC] [, ...]]
+    [frame_specification]
+)
+```
+
+### Supported functions
+
+| Category | Functions |
+| --- | --- |
+| Ranking | `ROW_NUMBER`, `RANK`, `DENSE_RANK`, `PERCENT_RANK`, `CUME_DIST`, `NTILE` |
+| Offset | `LAG`, `LEAD`, `FIRST_VALUE`, `LAST_VALUE`, `NTH_VALUE` |
+| Aggregate | `SUM`, `AVG`, `COUNT`, `MIN`, `MAX`, and other aggregates used with `OVER` |
+
+### Examples
+
+```sql
+-- Rank rows within each partition
+SELECT customer_id, region,
+       ROW_NUMBER() OVER (PARTITION BY region ORDER BY total_amount DESC) AS rank_in_region,
+       LAG(total_amount) OVER (PARTITION BY region ORDER BY total_amount DESC) AS prev_amount
+FROM my_namespace.sales_data
+
+-- Running total with an explicit frame
+SELECT customer_id, total_amount,
+       SUM(total_amount) OVER (ORDER BY total_amount ROWS BETWEEN 2 PRECEDING AND CURRENT ROW) AS running_total
+FROM my_namespace.sales_data
+```
+
+Note
+
+The named `WINDOW` clause is not supported. Inline the `OVER (...)` specification at each call site instead of defining `WINDOW w AS (...)`.
+
+### QUALIFY
+
+`QUALIFY` filters rows based on the result of a window function, similar to how `HAVING` filters grouped rows.
+
+```sql
+-- Keep only the top 3 customers by amount in each region
+SELECT customer_id, region, total_amount
+FROM my_namespace.sales_data
+QUALIFY ROW_NUMBER() OVER (PARTITION BY region ORDER BY total_amount DESC) <= 3
+```
+
+---
+
+## Set operations
+
+Set operations combine the results of two or more `SELECT` statements.
+
+### Syntax
+
+```sql
+SELECT ... FROM table1
+UNION | UNION ALL | INTERSECT | EXCEPT
+SELECT ... FROM table2
+```
+
+### Supported operations
+
+| Operation | Description |
+| --- | --- |
+| `UNION` | Returns all rows from both queries, removing duplicates |
+| `UNION ALL` | Returns all rows from both queries, including duplicates |
+| `INTERSECT` | Returns only rows that appear in both query results |
+| `EXCEPT` | Returns rows from the first query that do not appear in the second |
+
+### Examples
+
+#### Union
+
+```sql
+-- Find zones that had either firewall blocks OR high-risk requests
+SELECT zone_id FROM my_namespace.firewall_events WHERE action = 'block'
+UNION
+SELECT zone_id FROM my_namespace.http_requests WHERE risk_score > 0.8
+```
+
+#### Intersect
+
+```sql
+-- Find zones with both firewall blocks AND entries in the zones table
+SELECT zone_id FROM my_namespace.firewall_events WHERE action = 'block'
+INTERSECT
+SELECT zone_id FROM my_namespace.zones WHERE plan = 'enterprise'
+```
+
+#### Except
+
+```sql
+-- Find enterprise zones that have no firewall events
+SELECT zone_id FROM my_namespace.zones WHERE plan = 'enterprise'
+EXCEPT
+SELECT zone_id FROM my_namespace.firewall_events
+```
+
+### Requirements
+
+- All queries in a set operation must return the same number of columns.
+- Corresponding columns must have compatible data types.
+- Column names in the result are taken from the first query.
+
+Note
+
+A `LIMIT` placed directly before a set operator is not valid. Wrap each query in a subquery if you need to limit its rows, or apply a single `LIMIT` to the combined result.
+
+---
+
+## EXPLAIN
+
+Returns the execution plan for a query without running it.
+
+```sql
+EXPLAIN SELECT department, COUNT(*) AS dept_count
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL
+GROUP BY department;
+```
+
+### EXPLAIN FORMAT JSON
+
+Returns the execution plan as structured JSON for programmatic analysis.
+
+```sql
+EXPLAIN FORMAT JSON SELECT * FROM my_namespace.sales_data LIMIT 10;
+```
+
+---
+
+## Expressions
+
+Expressions can be used in `SELECT`, `WHERE`, `GROUP BY`, `HAVING`, and `ORDER BY` clauses.
+
+### Literals
+
+```sql
+SELECT 42 AS int_val, 3.14 AS float_val, 'hello' AS str_val, TRUE AS bool_val, NULL AS null_val
+FROM my_namespace.sales_data LIMIT 1
+```
+
+### Arithmetic operators
+
+`+`, `-`, `*`, `/`, `%`
+
+```sql
+SELECT customer_id, total_amount * 1.1 AS total_with_tax, total_amount % 10 AS remainder
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL
+LIMIT 5
+```
+
+### String concatenation
+
+```sql
+SELECT customer_id || ' - ' || region AS label
+FROM my_namespace.sales_data
+LIMIT 5
+```
+
+### CASE expressions
+
+Searched form:
+
+```sql
+SELECT customer_id,
+    CASE
+        WHEN total_amount > 1000 THEN 'high'
+        WHEN total_amount > 100 THEN 'medium'
+        ELSE 'low'
+    END AS tier
+FROM my_namespace.sales_data
+LIMIT 10
+```
+
+Simple form:
+
+```sql
+SELECT customer_id,
+    CASE region
+        WHEN 'North' THEN 'N'
+        WHEN 'South' THEN 'S'
+        ELSE 'Other'
+    END AS region_code
+FROM my_namespace.sales_data
+LIMIT 10
+```
+
+### Type casting
+
+```sql
+-- CAST
+SELECT CAST(total_amount AS INT) AS amount_int FROM my_namespace.sales_data LIMIT 5
+
+-- TRY_CAST (returns NULL on failure instead of error)
+SELECT TRY_CAST(customer_id AS INT) AS id_int FROM my_namespace.sales_data LIMIT 5
+
+-- Shorthand (::)
+SELECT total_amount::INT AS amount_int FROM my_namespace.sales_data LIMIT 5
+```
+
+### EXTRACT
+
+```sql
+SELECT EXTRACT(YEAR FROM timestamp) AS yr,
+       EXTRACT(MONTH FROM timestamp) AS mo,
+       EXTRACT(DAY FROM timestamp) AS dy
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+---
+
+## Data type reference
+
+| Type | Description | Example Values |
+| --- | --- | --- |
+| `integer` | Whole numbers | `1`, `42`, `-10`, `0` |
+| `float` | Decimal numbers | `1.5`, `3.14`, `-2.7`, `0.0` |
+| `string` | Text values | `'hello'`, `'GET'`, `'2024-01-01'` |
+| `boolean` | Boolean values | `true`, `false` |
+| `timestamp` | RFC3339 | `'2025-09-24T01:00:00Z'` |
+| `date` | Date values | `'2025-09-24'` |
+| `struct` | Named fields | `struct_col['field_name']` |
+| `array` | Ordered list | `array_col[1]` (1-indexed) |
+| `map` | Key-value pairs | `map_keys(map_col)` |
+
+---
+
+## Operator precedence
+
+1. **Comparison operators**: `=`, `!=`, `<`, `<=`, `>`, `>=`, `LIKE`, `BETWEEN`, `IS NULL`, `IS NOT NULL`
+2. **AND** (higher precedence)
+3. **OR** (lower precedence)
+
+Use parentheses to override default precedence:
+
+```sql
+SELECT * FROM my_namespace.sales_data WHERE (status = 404 OR status = 500) AND region = 'North'
+```
+
+---
+
+## Complete query examples
+
+### Basic query
+
+```sql
+SELECT *
+FROM my_namespace.sales_data
+WHERE timestamp BETWEEN '2025-09-24T01:00:00Z' AND '2025-09-25T01:00:00Z'
+LIMIT 100
+```
+
+### Filtered query with sorting
+
+```sql
+SELECT customer_id, timestamp, status, total_amount
+FROM my_namespace.sales_data
+WHERE status >= 400 AND total_amount > 5000
+ORDER BY total_amount DESC
+LIMIT 50
+```
+
+### Aggregation with HAVING
+
+```sql
+SELECT region, COUNT(*) AS region_count, AVG(total_amount) AS avg_amount
+FROM my_namespace.sales_data
+WHERE status = 'completed'
+GROUP BY region
+HAVING COUNT(*) > 1000
+ORDER BY avg_amount DESC
+LIMIT 20
+```
+
+### Conditional categorization
+
+```sql
+SELECT customer_id,
+    CASE
+        WHEN total_amount >= 1000 THEN 'Premium'
+        WHEN total_amount >= 100 THEN 'Standard'
+        ELSE 'Basic'
+    END AS tier,
+    total_amount
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL
+ORDER BY total_amount DESC
+LIMIT 20
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/basin-sql/sql-reference/#page","headline":"SQL reference","description":"Comprehensive reference for SQL syntax, functions, and data types supported in Basin SQL.","url":"https://developers.cloudflare.com/basin-sql/sql-reference/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-sql/sql-reference/og.png?v=ac761896d6b1b401","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["SQL"]}
+```
+
+---
+
+---
+description: Reference for the aggregate functions supported in Basin SQL, organized by category.
+title: Aggregate functions
+image: https://developers.cloudflare.com/basin-sql/sql-reference/aggregate-functions/og.png?v=d5773fc22c1b5711
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-sql/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Aggregate functions
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-sql/sql-reference/aggregate-functions/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Aggregate functions collapse multiple rows into a single result. They are used with `GROUP BY` to compute summaries per group, or without `GROUP BY` to compute a single result across all rows.
+
+Most aggregates accept a `DISTINCT` modifier, for example `COUNT(DISTINCT customer_id)` or `SUM(DISTINCT total_amount)`.
+
+Note
+
+On large datasets, prefer the [approximate aggregates](#approximate-aggregates) (`approx_distinct`, `approx_median`, `approx_percentile_cont`) over their exact counterparts for lower memory and compute.
+
+---
+
+## Basic aggregates
+
+### COUNT
+
+Counts rows. `COUNT(*)` counts all rows. `COUNT(column)` counts non-NULL values.
+
+```sql
+SELECT COUNT(*) AS total_rows
+FROM my_namespace.sales_data
+
+SELECT department, COUNT(*) AS dept_count
+FROM my_namespace.sales_data
+GROUP BY department
+ORDER BY dept_count DESC
+```
+
+### SUM
+
+Returns the sum of values in a column.
+
+```sql
+SELECT SUM(total_amount) AS grand_total
+FROM my_namespace.sales_data
+
+SELECT department, SUM(total_amount) AS dept_total
+FROM my_namespace.sales_data
+GROUP BY department
+ORDER BY dept_total DESC
+```
+
+### AVG
+
+Returns the average of values in a column. Alias: `mean`.
+
+```sql
+SELECT AVG(total_amount) AS avg_amount
+FROM my_namespace.sales_data
+
+SELECT department, AVG(total_amount) AS avg_amount
+FROM my_namespace.sales_data
+GROUP BY department
+ORDER BY avg_amount DESC
+```
+
+### MIN
+
+Returns the minimum value. Works on numeric and string columns.
+
+```sql
+SELECT MIN(total_amount) AS min_amount, MIN(customer_id) AS first_customer
+FROM my_namespace.sales_data
+
+SELECT department, MIN(total_amount) AS min_amount
+FROM my_namespace.sales_data
+GROUP BY department
+```
+
+### MAX
+
+Returns the maximum value. Works on numeric and string columns.
+
+```sql
+SELECT MAX(total_amount) AS max_amount, MAX(customer_id) AS last_customer
+FROM my_namespace.sales_data
+
+SELECT department, MAX(total_amount) AS max_amount
+FROM my_namespace.sales_data
+GROUP BY department
+```
+
+### MEDIAN
+
+Returns the exact median value. For large datasets, use [`approx_median`](#approx_median) instead.
+
+```sql
+SELECT MEDIAN(total_amount) AS median_amount
+FROM my_namespace.sales_data
+
+SELECT department, MEDIAN(total_amount) AS median_amount
+FROM my_namespace.sales_data
+GROUP BY department
+```
+
+### PERCENTILE\_CONT
+
+Returns the exact value at a given percentile using `WITHIN GROUP (ORDER BY ...)`. The percentile parameter must be between `0.0` and `1.0` inclusive. For large datasets, use [`approx_percentile_cont`](#approx_percentile_cont) instead.
+
+```sql
+SELECT PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY total_amount) AS median,
+       PERCENTILE_CONT(0.95) WITHIN GROUP (ORDER BY total_amount) AS p95
+FROM my_namespace.sales_data
+```
+
+Note
+
+`PERCENTILE_DISC` is not supported. Use `PERCENTILE_CONT` or [`approx_percentile_cont`](#approx_percentile_cont).
+
+---
+
+## Approximate aggregates
+
+Approximate aggregation functions produce statistically estimated results while using significantly less memory and compute than their exact counterparts. Use them when analyzing large datasets and an approximate result is acceptable.
+
+### approx\_percentile\_cont
+
+Returns the approximate value at a given percentile using a T-Digest algorithm. The percentile parameter must be between `0.0` and `1.0` inclusive.
+
+```sql
+SELECT approx_percentile_cont(total_amount, 0.5) AS median,
+       approx_percentile_cont(total_amount, 0.95) AS p95
+FROM my_namespace.sales_data
+
+SELECT department,
+       approx_percentile_cont(total_amount, 0.5) AS median
+FROM my_namespace.sales_data
+GROUP BY department
+ORDER BY median DESC
+```
+
+### approx\_percentile\_cont\_with\_weight
+
+Returns the approximate weighted percentile. Rows are weighted by the `weight` column.
+
+```sql
+SELECT approx_percentile_cont_with_weight(unit_price, quantity, 0.5) AS weighted_median
+FROM my_namespace.sales_data
+WHERE unit_price IS NOT NULL AND quantity IS NOT NULL
+```
+
+### approx\_median
+
+Returns the approximate median. Equivalent to `approx_percentile_cont(column, 0.5)`.
+
+```sql
+SELECT approx_median(total_amount) AS median_amount
+FROM my_namespace.sales_data
+
+SELECT department, approx_median(total_amount) AS median
+FROM my_namespace.sales_data
+GROUP BY department
+```
+
+### approx\_distinct
+
+Returns the approximate count of distinct values using HyperLogLog.
+
+```sql
+SELECT approx_distinct(customer_id) AS unique_customers
+FROM my_namespace.sales_data
+
+SELECT department, approx_distinct(customer_id) AS unique_customers
+FROM my_namespace.sales_data
+GROUP BY department
+```
+
+### approx\_top\_k
+
+Returns the *k* most frequent values with their approximate counts.
+
+```sql
+SELECT approx_top_k(department, 5) AS top_departments
+FROM my_namespace.sales_data
+```
+
+---
+
+## Statistical aggregates
+
+### var / var\_samp
+
+Returns the sample variance.
+
+```sql
+SELECT var(total_amount) AS variance
+FROM my_namespace.sales_data
+
+SELECT department, var(total_amount) AS variance
+FROM my_namespace.sales_data
+GROUP BY department
+```
+
+### var\_pop
+
+Returns the population variance.
+
+```sql
+SELECT var_pop(total_amount) AS pop_variance
+FROM my_namespace.sales_data
+```
+
+### stddev / stddev\_samp
+
+Returns the sample standard deviation.
+
+```sql
+SELECT stddev(total_amount) AS std_dev
+FROM my_namespace.sales_data
+
+SELECT department, stddev(total_amount) AS std_dev
+FROM my_namespace.sales_data
+GROUP BY department
+```
+
+### stddev\_pop
+
+Returns the population standard deviation.
+
+```sql
+SELECT stddev_pop(total_amount) AS pop_std_dev
+FROM my_namespace.sales_data
+```
+
+### covar\_samp
+
+Returns the sample covariance. Alias: `covar`.
+
+```sql
+SELECT covar_samp(total_amount, CAST(quantity AS DOUBLE)) AS covariance
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL AND quantity IS NOT NULL
+```
+
+### covar\_pop
+
+Returns the population covariance.
+
+```sql
+SELECT covar_pop(total_amount, CAST(quantity AS DOUBLE)) AS pop_covariance
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL AND quantity IS NOT NULL
+```
+
+### corr
+
+Returns the Pearson correlation coefficient between two columns.
+
+```sql
+SELECT corr(total_amount, CAST(quantity AS DOUBLE)) AS correlation
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL AND quantity IS NOT NULL
+```
+
+### regr\_slope
+
+Returns the slope of the linear regression line.
+
+```sql
+SELECT regr_slope(total_amount, CAST(quantity AS DOUBLE)) AS slope
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL AND quantity IS NOT NULL
+```
+
+### regr\_intercept
+
+Returns the y-intercept of the linear regression line.
+
+```sql
+SELECT regr_intercept(total_amount, CAST(quantity AS DOUBLE)) AS intercept
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL AND quantity IS NOT NULL
+```
+
+### regr\_count
+
+Returns the count of non-NULL pairs.
+
+```sql
+SELECT regr_count(total_amount, CAST(quantity AS DOUBLE)) AS pair_count
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL AND quantity IS NOT NULL
+```
+
+### regr\_r2
+
+Returns the coefficient of determination (R-squared).
+
+```sql
+SELECT regr_r2(total_amount, CAST(quantity AS DOUBLE)) AS r_squared
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL AND quantity IS NOT NULL
+```
+
+### regr\_avgx
+
+Returns the average of the independent variable (x) for non-NULL pairs.
+
+```sql
+SELECT regr_avgx(total_amount, CAST(quantity AS DOUBLE)) AS avg_qty
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL AND quantity IS NOT NULL
+```
+
+### regr\_avgy
+
+Returns the average of the dependent variable (y) for non-NULL pairs.
+
+```sql
+SELECT regr_avgy(total_amount, CAST(quantity AS DOUBLE)) AS avg_amount
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL AND quantity IS NOT NULL
+```
+
+### regr\_sxx
+
+Returns the sum of squares of the independent variable.
+
+```sql
+SELECT regr_sxx(total_amount, CAST(quantity AS DOUBLE)) AS sxx
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL AND quantity IS NOT NULL
+```
+
+### regr\_syy
+
+Returns the sum of squares of the dependent variable.
+
+```sql
+SELECT regr_syy(total_amount, CAST(quantity AS DOUBLE)) AS syy
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL AND quantity IS NOT NULL
+```
+
+### regr\_sxy
+
+Returns the sum of products of the paired variables.
+
+```sql
+SELECT regr_sxy(total_amount, CAST(quantity AS DOUBLE)) AS sxy
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL AND quantity IS NOT NULL
+```
+
+---
+
+## Bitwise aggregates
+
+### bit\_and
+
+Returns the bitwise AND of all values in a group.
+
+```sql
+SELECT department, bit_and(quantity) AS and_result
+FROM my_namespace.sales_data
+WHERE quantity IS NOT NULL
+GROUP BY department
+```
+
+### bit\_or
+
+Returns the bitwise OR of all values in a group.
+
+```sql
+SELECT department, bit_or(quantity) AS or_result
+FROM my_namespace.sales_data
+WHERE quantity IS NOT NULL
+GROUP BY department
+```
+
+### bit\_xor
+
+Returns the bitwise XOR of all values in a group.
+
+```sql
+SELECT department, bit_xor(quantity) AS xor_result
+FROM my_namespace.sales_data
+WHERE quantity IS NOT NULL
+GROUP BY department
+```
+
+---
+
+## Boolean aggregates
+
+### bool\_and
+
+Returns true if all values in a group are true.
+
+```sql
+SELECT department, bool_and(is_completed) AS all_completed
+FROM my_namespace.sales_data
+WHERE is_completed IS NOT NULL
+GROUP BY department
+```
+
+### bool\_or
+
+Returns true if any value in a group is true.
+
+```sql
+SELECT department, bool_or(is_completed) AS any_completed
+FROM my_namespace.sales_data
+WHERE is_completed IS NOT NULL
+GROUP BY department
+```
+
+---
+
+## Positional aggregates
+
+### first\_value
+
+Returns the first value in a group according to the specified ordering.
+
+```sql
+SELECT department,
+       first_value(customer_id ORDER BY total_amount ASC) AS lowest_spender
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL
+GROUP BY department
+```
+
+### last\_value
+
+Returns the last value in a group according to the specified ordering.
+
+```sql
+SELECT department,
+       last_value(customer_id ORDER BY total_amount ASC) AS highest_spender
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL
+GROUP BY department
+```
+
+---
+
+## Collection aggregates
+
+These aggregates accumulate all input values into a single result. Because they hold every value in memory, use a `WHERE` filter or `GROUP BY` to keep group sizes bounded on large datasets.
+
+### array\_agg
+
+Collects values from a group into an array.
+
+```sql
+SELECT department, array_agg(customer_id) AS customers
+FROM my_namespace.sales_data
+GROUP BY department
+```
+
+### string\_agg
+
+Concatenates values from a group into a single string, separated by the given delimiter.
+
+```sql
+SELECT department, string_agg(customer_id, ', ') AS customer_list
+FROM my_namespace.sales_data
+GROUP BY department
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/basin-sql/sql-reference/aggregate-functions/#page","headline":"Aggregate functions","description":"Reference for the aggregate functions supported in Basin SQL, organized by category.","url":"https://developers.cloudflare.com/basin-sql/sql-reference/aggregate-functions/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-sql/sql-reference/aggregate-functions/og.png?v=d5773fc22c1b5711","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["SQL"]}
+```
+
+---
+
+---
+description: Reference for querying struct, array, and map column types in Basin SQL.
+title: Complex types
+image: https://developers.cloudflare.com/basin-sql/sql-reference/complex-types/og.png?v=7665fc9bf478c765
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-sql/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Complex types
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-sql/sql-reference/complex-types/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Basin SQL supports querying struct, array, and map column types stored in Iceberg tables. This page covers access patterns, supported functions, and examples for each type.
+
+---
+
+## Structs
+
+Struct columns contain named fields. Access fields using bracket notation or the `get_field()` function.
+
+### Bracket notation
+
+```sql
+SELECT pricing['price'] AS price,
+       pricing['discount_percent'] AS discount
+FROM my_namespace.products
+LIMIT 5
+```
+
+### get\_field function
+
+```sql
+SELECT get_field(pricing, 'price') AS price,
+       get_field(pricing, 'discount_percent') AS discount
+FROM my_namespace.products
+LIMIT 5
+```
+
+### Struct fields in WHERE
+
+```sql
+SELECT customer_id, pricing['price'] AS price
+FROM my_namespace.products
+WHERE pricing['price'] > 50
+LIMIT 10
+```
+
+### Struct fields in ORDER BY
+
+```sql
+SELECT customer_id, pricing['price'] AS price
+FROM my_namespace.products
+WHERE pricing['price'] IS NOT NULL
+ORDER BY pricing['price'] DESC
+LIMIT 10
+```
+
+### Struct fields in GROUP BY
+
+```sql
+SELECT platforms['windows'] AS windows_support,
+       COUNT(*) AS product_count,
+       AVG(pricing['price']) AS avg_price
+FROM my_namespace.products
+WHERE pricing['price'] IS NOT NULL
+GROUP BY platforms['windows']
+```
+
+### Creating structs inline
+
+```sql
+-- named_struct creates a struct with named fields
+SELECT named_struct('id', customer_id, 'amount', total_amount) AS info
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL
+LIMIT 1
+
+-- struct creates a struct with positional fields
+SELECT struct(customer_id, total_amount, region) AS info
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL
+LIMIT 1
+```
+
+---
+
+## Arrays
+
+Array columns contain ordered lists of values. Array indexing is **1-based**.
+
+### Index access
+
+```sql
+SELECT customer_id, tags[1] AS first_tag, tags[2] AS second_tag
+FROM my_namespace.products
+LIMIT 5
+```
+
+### Create arrays
+
+#### make\_array
+
+Creates an array from a list of values.
+
+```sql
+SELECT make_array(1, 2, 3) AS nums
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+#### string\_to\_array
+
+Splits a string into an array by a delimiter.
+
+```sql
+SELECT string_to_array(categories, ',') AS cat_array
+FROM my_namespace.products
+WHERE categories IS NOT NULL
+LIMIT 5
+```
+
+#### range
+
+Generates an array of integers from start (inclusive) to stop (exclusive).
+
+```sql
+SELECT range(0, 5) AS nums
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+#### generate\_series
+
+Generates an array of integers from start to stop (inclusive).
+
+```sql
+SELECT generate_series(1, 5) AS nums
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### Inspect arrays
+
+#### array\_length
+
+Returns the number of elements in an array.
+
+```sql
+SELECT customer_id, array_length(tags) AS tag_count
+FROM my_namespace.products
+LIMIT 5
+```
+
+#### cardinality
+
+Returns the total number of elements in an array. Alias for `array_length`.
+
+```sql
+SELECT customer_id, cardinality(tags) AS tag_count
+FROM my_namespace.products
+LIMIT 5
+```
+
+#### empty
+
+Returns true if an array has zero elements.
+
+```sql
+SELECT customer_id, empty(tags) AS has_no_tags
+FROM my_namespace.products
+LIMIT 5
+```
+
+#### array\_ndims
+
+Returns the number of dimensions of an array.
+
+```sql
+SELECT array_ndims(make_array(1, 2, 3)) AS ndims
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+#### array\_dims
+
+Returns the dimensions of an array.
+
+```sql
+SELECT array_dims(make_array(1, 2, 3)) AS dims
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### Search arrays
+
+#### array\_has
+
+Returns true if an array contains a value.
+
+```sql
+SELECT customer_id, array_has(tags, 'premium') AS is_premium
+FROM my_namespace.products
+LIMIT 5
+```
+
+#### array\_has\_all
+
+Returns true if the first array contains all elements of the second.
+
+```sql
+SELECT array_has_all(make_array(1, 2, 3, 4), make_array(2, 3)) AS has_all
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+#### array\_has\_any
+
+Returns true if the first array contains any element of the second.
+
+```sql
+SELECT array_has_any(make_array(1, 2, 3), make_array(3, 4, 5)) AS has_any
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+#### array\_position
+
+Returns the position of the first occurrence of a value (1-indexed). Returns 0 if not found.
+
+```sql
+SELECT array_position(make_array('a', 'b', 'c', 'b'), 'b') AS pos
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+#### array\_positions
+
+Returns all positions of a value as an array.
+
+```sql
+SELECT array_positions(make_array(1, 2, 1, 3, 1), 1) AS positions
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### Transform arrays
+
+#### array\_sort
+
+Sorts array elements.
+
+```sql
+SELECT array_sort(make_array(3, 1, 2)) AS sorted
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+#### array\_reverse
+
+Reverses the order of array elements.
+
+```sql
+SELECT array_reverse(make_array(1, 2, 3)) AS reversed
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+#### array\_distinct
+
+Removes duplicate elements from an array.
+
+```sql
+SELECT array_distinct(make_array(1, 2, 2, 3, 3, 3)) AS unique_vals
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+#### flatten
+
+Flattens a nested array by one level.
+
+```sql
+SELECT flatten(make_array(make_array(1, 2), make_array(3, 4))) AS flat
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+#### array\_slice
+
+Returns a slice of an array from a start index to an end index (both inclusive, 1-indexed).
+
+```sql
+SELECT array_slice(make_array(10, 20, 30, 40, 50), 2, 4) AS sliced
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### Modify arrays
+
+#### array\_append
+
+Appends a value to the end of an array.
+
+```sql
+SELECT array_append(make_array(1, 2, 3), 4) AS appended
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+#### array\_prepend
+
+Prepends a value to the beginning of an array.
+
+```sql
+SELECT array_prepend(0, make_array(1, 2, 3)) AS prepended
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+#### array\_concat
+
+Concatenates two or more arrays.
+
+```sql
+SELECT array_concat(make_array(1, 2), make_array(3, 4)) AS merged
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+#### array\_remove
+
+Removes the first occurrence of a value from an array.
+
+```sql
+SELECT array_remove(make_array(1, 2, 3, 2), 2) AS result
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+#### array\_remove\_all
+
+Removes all occurrences of a value from an array.
+
+```sql
+SELECT array_remove_all(make_array(1, 2, 3, 2, 2), 2) AS result
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+#### array\_remove\_n
+
+Removes the first *n* occurrences of a value from an array.
+
+```sql
+SELECT array_remove_n(make_array(1, 2, 2, 2, 3), 2, 2) AS result
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+#### array\_replace
+
+Replaces the first occurrence of a value in an array.
+
+```sql
+SELECT array_replace(make_array(1, 2, 3), 2, 99) AS result
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+#### array\_replace\_n
+
+Replaces the first *n* occurrences of a value in an array.
+
+```sql
+SELECT array_replace_n(make_array(1, 2, 2, 2, 3), 2, 99, 2) AS result
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+#### array\_replace\_all
+
+Replaces all occurrences of a value in an array.
+
+```sql
+SELECT array_replace_all(make_array(1, 2, 3, 2), 2, 99) AS result
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+#### array\_pop\_back
+
+Removes the last element from an array.
+
+```sql
+SELECT array_pop_back(make_array(1, 2, 3)) AS result
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+#### array\_pop\_front
+
+Removes the first element from an array.
+
+```sql
+SELECT array_pop_front(make_array(1, 2, 3)) AS result
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+#### array\_repeat
+
+Repeats a value a given number of times as an array.
+
+```sql
+SELECT array_repeat(region, 3) AS repeated
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+#### array\_resize
+
+Resizes an array to a given length, filling with a default value.
+
+```sql
+SELECT array_resize(make_array(1, 2), 5, 0) AS resized
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### Set operations on arrays
+
+#### array\_intersect
+
+Returns elements common to both arrays.
+
+```sql
+SELECT array_intersect(make_array(1, 2, 3), make_array(2, 3, 4)) AS common
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+#### array\_union
+
+Returns all unique elements from both arrays.
+
+```sql
+SELECT array_union(make_array(1, 2, 3), make_array(3, 4, 5)) AS merged
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+#### array\_except
+
+Returns elements in the first array that are not in the second.
+
+```sql
+SELECT array_except(make_array(1, 2, 3, 4), make_array(2, 4)) AS diff
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### Aggregate array values
+
+#### array\_max
+
+Returns the maximum value in an array.
+
+```sql
+SELECT customer_id, array_max(scores) AS max_score
+FROM my_namespace.products
+LIMIT 5
+```
+
+#### array\_min
+
+Returns the minimum value in an array.
+
+```sql
+SELECT customer_id, array_min(scores) AS min_score
+FROM my_namespace.products
+LIMIT 5
+```
+
+#### array\_any\_value
+
+Returns the first non-NULL value in an array.
+
+```sql
+SELECT array_any_value(make_array(NULL, 42, NULL)) AS first_val
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+#### array\_element
+
+Returns the element at a given index (1-indexed). Equivalent to bracket-notation access (`arr[idx]`).
+
+```sql
+SELECT array_element(make_array(10, 20, 30), 2) AS second_val
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### Convert arrays
+
+#### array\_to\_string
+
+Joins array elements into a string with a separator.
+
+```sql
+SELECT customer_id, array_to_string(tags, ', ') AS tag_list
+FROM my_namespace.products
+LIMIT 5
+```
+
+---
+
+## Maps
+
+Map columns store key-value pairs. Use `map_keys`, `map_values`, and `map_extract` to query them.
+
+### map\_keys
+
+Returns all keys from a map as an array.
+
+```sql
+SELECT map_keys(metadata) AS keys
+FROM my_namespace.products
+LIMIT 5
+```
+
+### map\_values
+
+Returns all values from a map as an array.
+
+```sql
+SELECT map_values(metadata) AS vals
+FROM my_namespace.products
+LIMIT 5
+```
+
+### map\_extract
+
+Returns the value for a specific key.
+
+```sql
+SELECT map_extract(metadata, 'source') AS source,
+       map_extract(metadata, 'store_name') AS store
+FROM my_namespace.products
+LIMIT 5
+```
+
+### Creating maps inline
+
+```sql
+SELECT map(make_array('a', 'b'), make_array(1, 2)) AS m
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+---
+
+## Complete function index
+
+### Struct functions
+
+| Function | Description |
+| --- | --- |
+| `struct_col['field']` | Bracket notation field access |
+| `get_field(struct, 'field')` | Function-based field access |
+| `named_struct(k1, v1, ...)` | Create struct with named fields |
+| `struct(v1, v2, ...)` | Create struct with positional fields |
+
+### Array functions
+
+| Function | Description |
+| --- | --- |
+| `make_array(v1, v2, ...)` | Create array from values |
+| `string_to_array(str, delim)` | Split string into array |
+| `range(start, stop)` | Generate integer range (exclusive stop) |
+| `generate_series(start, stop)` | Generate integer series (inclusive stop) |
+| `array_length(arr)` | Number of elements |
+| `cardinality(arr)` | Number of elements |
+| `empty(arr)` | True if empty |
+| `array_ndims(arr)` | Number of dimensions |
+| `array_dims(arr)` | Dimension information |
+| `array_has(arr, val)` | Contains check |
+| `array_has_all(arr, arr2)` | Contains all check |
+| `array_has_any(arr, arr2)` | Contains any check |
+| `array_position(arr, val)` | First position of value |
+| `array_positions(arr, val)` | All positions of value |
+| `array_sort(arr)` | Sort elements |
+| `array_reverse(arr)` | Reverse order |
+| `array_distinct(arr)` | Remove duplicates |
+| `flatten(arr)` | Flatten one level |
+| `array_slice(arr, start, end)` | Extract sub-array |
+| `array_append(arr, val)` | Append to end |
+| `array_prepend(val, arr)` | Prepend to start |
+| `array_concat(arr1, arr2)` | Concatenate arrays |
+| `array_remove(arr, val)` | Remove first occurrence |
+| `array_remove_all(arr, val)` | Remove all occurrences |
+| `array_remove_n(arr, val, n)` | Remove first *n* occurrences |
+| `array_replace(arr, old, new)` | Replace first occurrence |
+| `array_replace_n(arr, old, new, n)` | Replace first *n* occurrences |
+| `array_replace_all(arr, old, new)` | Replace all occurrences |
+| `array_pop_back(arr)` | Remove last element |
+| `array_pop_front(arr)` | Remove first element |
+| `array_repeat(val, n)` | Repeat value *n* times |
+| `array_resize(arr, size, default)` | Resize with default fill |
+| `array_intersect(arr1, arr2)` | Common elements |
+| `array_union(arr1, arr2)` | Union of elements |
+| `array_except(arr1, arr2)` | Difference of elements |
+| `array_max(arr)` | Maximum value |
+| `array_min(arr)` | Minimum value |
+| `array_any_value(arr)` | First non-NULL value |
+| `array_to_string(arr, delim)` | Join elements as string |
+| `array_element(arr, idx)` | Element at index |
+
+### Map functions
+
+| Function | Description |
+| --- | --- |
+| `map(keys_arr, vals_arr)` | Create map from key and value arrays |
+| `map_keys(map)` | All keys as array |
+| `map_values(map)` | All values as array |
+| `map_extract(map, key)` | Value for a specific key |
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/basin-sql/sql-reference/complex-types/#page","headline":"Complex types","description":"Reference for querying struct, array, and map column types in Basin SQL.","url":"https://developers.cloudflare.com/basin-sql/sql-reference/complex-types/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-sql/sql-reference/complex-types/og.png?v=7665fc9bf478c765","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["SQL"]}
+```
+
+---
+
+---
+description: Reference for the scalar functions supported in Basin SQL, organized by category.
+title: Scalar functions
+image: https://developers.cloudflare.com/basin-sql/sql-reference/scalar-functions/og.png?v=943b375a0e807737
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-sql/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Scalar functions
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-sql/sql-reference/scalar-functions/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Scalar functions transform individual values and can be used in `SELECT`, `WHERE`, `GROUP BY`, `HAVING`, and `ORDER BY` clauses.
+
+---
+
+## Core functions
+
+### arrow\_cast
+
+Casts an expression to a specific Arrow data type by string name.
+
+```sql
+SELECT arrow_cast(total_amount, 'Float32') AS amount_f32
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL
+LIMIT 1
+```
+
+### arrow\_typeof
+
+Returns the Arrow data type name of an expression.
+
+```sql
+SELECT arrow_typeof(total_amount) AS amount_type,
+       arrow_typeof(customer_id) AS id_type
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### coalesce
+
+Returns the first non-NULL argument.
+
+```sql
+SELECT coalesce(department, region, 'unknown') AS first_val
+FROM my_namespace.sales_data
+LIMIT 5
+```
+
+### get\_field
+
+Extracts a field from a struct by name.
+
+```sql
+SELECT get_field(named_struct('customer', customer_id, 'amount', total_amount), 'amount') AS amt
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL
+LIMIT 1
+```
+
+### greatest
+
+Returns the largest value from a list of arguments.
+
+```sql
+SELECT greatest(total_amount, unit_price, quantity) AS max_val
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL
+LIMIT 5
+```
+
+### least
+
+Returns the smallest value from a list of arguments.
+
+```sql
+SELECT least(total_amount, unit_price, quantity) AS min_val
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL
+LIMIT 5
+```
+
+### named\_struct
+
+Creates a struct with named fields from key-value pairs.
+
+```sql
+SELECT named_struct('customer', customer_id, 'amount', total_amount) AS info
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL
+LIMIT 1
+```
+
+### nullif
+
+Returns NULL if both arguments are equal, otherwise returns the first argument.
+
+```sql
+SELECT nullif(department, 'Unknown') AS dept
+FROM my_namespace.sales_data
+LIMIT 5
+```
+
+### nvl
+
+Returns the second argument if the first is NULL. Alias: `ifnull`.
+
+```sql
+SELECT nvl(department, 'N/A') AS dept
+FROM my_namespace.sales_data
+LIMIT 5
+```
+
+### nvl2
+
+Returns the second argument if the first is not NULL, otherwise returns the third.
+
+```sql
+SELECT nvl2(department, 'has_dept', 'no_dept') AS dept_status
+FROM my_namespace.sales_data
+LIMIT 5
+```
+
+### overlay
+
+Replaces a substring at a given position.
+
+```sql
+SELECT customer_id,
+       overlay(customer_id PLACING 'XX' FROM 1 FOR 2) AS masked
+FROM my_namespace.sales_data
+LIMIT 3
+```
+
+### struct
+
+Creates a struct with positional fields. Alias: `row`.
+
+```sql
+SELECT struct(customer_id, total_amount, region) AS info
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL
+LIMIT 1
+```
+
+---
+
+## Crypto functions
+
+### digest
+
+Returns a hash of a string using a specified algorithm. Supported algorithms: `md5`, `sha224`, `sha256`, `sha384`, `sha512`.
+
+```sql
+SELECT customer_id, digest(customer_id, 'sha256') AS hash
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### md5
+
+Returns the MD5 hash of a string.
+
+```sql
+SELECT customer_id, md5(customer_id) AS hash
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### sha224
+
+Returns the SHA-224 hash of a string.
+
+```sql
+SELECT sha224(customer_id) AS hash
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### sha256
+
+Returns the SHA-256 hash of a string.
+
+```sql
+SELECT customer_id, sha256(customer_id) AS hash
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### sha384
+
+Returns the SHA-384 hash of a string.
+
+```sql
+SELECT sha384(customer_id) AS hash
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### sha512
+
+Returns the SHA-512 hash of a string.
+
+```sql
+SELECT sha512(customer_id) AS hash
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+---
+
+## Datetime functions
+
+### current\_date
+
+Returns today's date. Alias: `today`.
+
+```sql
+SELECT current_date() AS today_date
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### current\_time
+
+Returns the current time. Precision is quantized to 10ms boundaries.
+
+```sql
+SELECT current_time() AS now_time
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### date\_bin
+
+Bins a timestamp into fixed-size intervals aligned to an origin.
+
+```sql
+SELECT date_bin(INTERVAL '1 hour', timestamp, '2025-01-01T00:00:00Z') AS hour_bin,
+       COUNT(*) AS cnt
+FROM my_namespace.sales_data
+GROUP BY date_bin(INTERVAL '1 hour', timestamp, '2025-01-01T00:00:00Z')
+ORDER BY hour_bin
+LIMIT 5
+```
+
+### date\_part
+
+Extracts a component from a timestamp. Alias: `datepart`.
+
+Supported fields: `year`, `month`, `day`, `hour`, `minute`, `second`, `millisecond`, `microsecond`, `week`, `dow`, `doy`, `quarter`, `epoch`.
+
+```sql
+SELECT date_part('hour', timestamp) AS hr,
+       date_part('minute', timestamp) AS mn
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### date\_trunc
+
+Truncates a timestamp to a specified unit. Alias: `datetrunc`.
+
+Supported units: `year`, `month`, `week`, `day`, `hour`, `minute`, `second`.
+
+```sql
+SELECT date_trunc('day', timestamp) AS day_trunc, COUNT(*) AS cnt
+FROM my_namespace.sales_data
+GROUP BY date_trunc('day', timestamp)
+ORDER BY day_trunc
+LIMIT 5
+```
+
+### from\_unixtime
+
+Converts a Unix epoch (seconds) to a timestamp.
+
+```sql
+SELECT from_unixtime(1770000000) AS ts
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### make\_date
+
+Constructs a date from year, month, and day components.
+
+```sql
+SELECT make_date(2026, 3, 1) AS d
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### make\_time
+
+Constructs a time from hour, minute, and second components.
+
+```sql
+SELECT make_time(14, 30, 0) AS t
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### now
+
+Returns the current timestamp. Aliases: `current_timestamp`.
+
+Precision is quantized to 10ms boundaries.
+
+```sql
+SELECT now() AS current_ts
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### to\_char
+
+Formats a timestamp as a string using strftime format. Alias: `date_format`.
+
+```sql
+SELECT to_char(timestamp, '%Y-%m-%d %H:%M') AS formatted
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### to\_date
+
+Parses a date from a string using a format pattern.
+
+```sql
+SELECT to_date('2026-03-01', '%Y-%m-%d') AS d
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### to\_local\_time
+
+Strips timezone information from a timestamp.
+
+```sql
+SELECT to_local_time(timestamp) AS local_ts
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### to\_time
+
+Parses a time from a string using a format pattern.
+
+```sql
+SELECT to_time('14:30:00', '%H:%M:%S') AS t
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### to\_timestamp
+
+Parses a timestamp from a string using a format pattern.
+
+```sql
+SELECT to_timestamp('2026-03-01 12:00:00', '%Y-%m-%d %H:%M:%S') AS ts
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### to\_timestamp\_micros
+
+Converts microseconds since Unix epoch to a timestamp.
+
+```sql
+SELECT to_timestamp_micros(1770000000000000) AS ts
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### to\_timestamp\_millis
+
+Converts milliseconds since Unix epoch to a timestamp.
+
+```sql
+SELECT to_timestamp_millis(1770000000000) AS ts
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### to\_timestamp\_nanos
+
+Converts nanoseconds since Unix epoch to a timestamp. Large values may overflow.
+
+```sql
+SELECT to_timestamp_nanos(1770000000000000000) AS ts
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### to\_timestamp\_seconds
+
+Converts seconds since Unix epoch to a timestamp.
+
+```sql
+SELECT to_timestamp_seconds(1770000000) AS ts
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### to\_unixtime
+
+Converts a timestamp to a Unix epoch (seconds).
+
+```sql
+SELECT to_unixtime(timestamp) AS epoch
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+---
+
+## Encoding functions
+
+### decode
+
+Decodes a string to binary data. Supported encoding: `base64`.
+
+```sql
+SELECT decode('aGVsbG8=', 'base64') AS raw
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### encode
+
+Encodes binary data to a string. Supported encoding: `base64`.
+
+```sql
+SELECT encode(CAST('hello' AS BYTEA), 'base64') AS b64
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+---
+
+## JSON functions
+
+### json\_as\_text
+
+Returns any JSON value as unquoted text.
+
+```sql
+SELECT json_as_text(doc, 'description') AS description
+FROM my_namespace.sales_data
+LIMIT 5
+```
+
+### json\_contains
+
+Returns true if the specified key path exists in the JSON.
+
+```sql
+SELECT customer_id, json_contains(doc, 'email') AS has_email
+FROM my_namespace.sales_data
+LIMIT 5
+```
+
+### json\_get
+
+Extracts a value by key path. Returns a union type — use the typed variants (`json_get_str`, `json_get_int`, etc.) for predictable results.
+
+```sql
+SELECT json_get(doc, 'name') AS name
+FROM my_namespace.sales_data
+LIMIT 5
+```
+
+### json\_get\_array
+
+Returns a JSON array as a list of strings.
+
+```sql
+SELECT json_get_array(doc, 'tags') AS tags
+FROM my_namespace.sales_data
+LIMIT 5
+```
+
+### json\_get\_bool
+
+Returns a boolean value from a JSON column by key path.
+
+```sql
+SELECT json_get_bool(doc, 'active') AS is_active
+FROM my_namespace.sales_data
+LIMIT 5
+```
+
+### json\_get\_float
+
+Returns a float value from a JSON column by key path.
+
+```sql
+SELECT json_get_float(doc, 'price') AS price
+FROM my_namespace.sales_data
+LIMIT 5
+```
+
+### json\_get\_int
+
+Returns an integer value from a JSON column by key path.
+
+```sql
+SELECT json_get_int(doc, 'age') AS age
+FROM my_namespace.sales_data
+LIMIT 5
+```
+
+### json\_get\_json
+
+Returns nested JSON as a raw JSON string.
+
+```sql
+SELECT json_get_json(doc, 'metadata') AS metadata
+FROM my_namespace.sales_data
+LIMIT 5
+```
+
+### json\_get\_str
+
+Returns a string value from a JSON column by key path.
+
+```sql
+SELECT json_get_str(doc, 'name') AS name
+FROM my_namespace.sales_data
+LIMIT 5
+```
+
+### json\_length
+
+Returns the length of a JSON array or object.
+
+```sql
+SELECT json_length(doc, 'items') AS item_count
+FROM my_namespace.sales_data
+LIMIT 5
+```
+
+---
+
+## Math functions
+
+### abs
+
+Returns the absolute value of a number.
+
+```sql
+SELECT abs(total_amount - 500) AS distance_from_500
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL
+LIMIT 5
+```
+
+### cbrt
+
+Returns the cube root of a number.
+
+```sql
+SELECT cbrt(CAST(quantity AS DOUBLE)) AS cbrt_qty
+FROM my_namespace.sales_data
+WHERE quantity IS NOT NULL
+LIMIT 5
+```
+
+### ceil
+
+Returns the smallest integer greater than or equal to a number.
+
+```sql
+SELECT ceil(total_amount) AS rounded_up
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL
+LIMIT 5
+```
+
+### degrees
+
+Converts radians to degrees.
+
+```sql
+SELECT degrees(pi()) AS full_circle
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### exp
+
+Returns *e* raised to the given power.
+
+```sql
+SELECT exp(total_amount / 1000.0) AS exp_val
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL
+LIMIT 5
+```
+
+### factorial
+
+Returns the factorial of a non-negative integer.
+
+```sql
+SELECT factorial(5) AS fact5
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### floor
+
+Returns the largest integer less than or equal to a number.
+
+```sql
+SELECT floor(total_amount) AS rounded_down
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL
+LIMIT 5
+```
+
+### gcd
+
+Returns the greatest common divisor of two integers.
+
+```sql
+SELECT gcd(12, 8) AS gcd_val
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### Hyperbolic functions
+
+`sinh`, `cosh`, `tanh`, `asinh`, `acosh`, `atanh`
+
+```sql
+SELECT sinh(1.0) AS sh, cosh(1.0) AS ch, tanh(1.0) AS th
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### isnan
+
+Returns true if the value is NaN.
+
+```sql
+SELECT isnan(0.0 / 0.0) AS is_nan
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### iszero
+
+Returns true if the value is zero.
+
+```sql
+SELECT iszero(0.0) AS is_zero
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### lcm
+
+Returns the least common multiple of two integers.
+
+```sql
+SELECT lcm(4, 6) AS lcm_val
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### ln
+
+Returns the natural logarithm.
+
+```sql
+SELECT ln(total_amount) AS ln_val
+FROM my_namespace.sales_data
+WHERE total_amount > 0
+LIMIT 5
+```
+
+### log
+
+Returns the logarithm of a value for a given base.
+
+```sql
+SELECT log(10.0, total_amount) AS log10_val
+FROM my_namespace.sales_data
+WHERE total_amount > 0
+LIMIT 5
+```
+
+### log2
+
+Returns the base-2 logarithm.
+
+```sql
+SELECT log2(total_amount) AS log2_val
+FROM my_namespace.sales_data
+WHERE total_amount > 0
+LIMIT 5
+```
+
+### log10
+
+Returns the base-10 logarithm.
+
+```sql
+SELECT log10(total_amount) AS log10_val
+FROM my_namespace.sales_data
+WHERE total_amount > 0
+LIMIT 5
+```
+
+### nanvl
+
+Returns the first argument if it is not NaN, otherwise returns the second.
+
+```sql
+SELECT nanvl(0.0 / 0.0, -1.0) AS safe_val
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### pi
+
+Returns the value of pi.
+
+```sql
+SELECT pi() AS pi_val
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### power
+
+Raises a number to a power. Alias: `pow`.
+
+```sql
+SELECT power(total_amount, 2.0) AS amount_squared
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL
+LIMIT 5
+```
+
+### radians
+
+Converts degrees to radians.
+
+```sql
+SELECT radians(180.0) AS pi_val
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### random
+
+Returns a random float between 0 and 1.
+
+```sql
+SELECT random() AS rnd
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### round
+
+Rounds a number to a specified number of decimal places.
+
+```sql
+SELECT round(total_amount, 2) AS rounded
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL
+LIMIT 5
+```
+
+### signum
+
+Returns the sign of a number: -1, 0, or 1.
+
+```sql
+SELECT signum(total_amount - 500) AS sign_val
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL
+LIMIT 5
+```
+
+### sqrt
+
+Returns the square root of a number.
+
+```sql
+SELECT sqrt(CAST(quantity AS DOUBLE)) AS sqrt_qty
+FROM my_namespace.sales_data
+WHERE quantity IS NOT NULL
+LIMIT 5
+```
+
+### Trigonometric functions
+
+`sin`, `cos`, `tan`, `asin`, `acos`, `atan`, `atan2`, `cot`
+
+```sql
+SELECT sin(1.0) AS s, cos(1.0) AS c, tan(1.0) AS t,
+       asin(0.5) AS as_val, acos(0.5) AS ac_val, atan(1.0) AS at_val
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### trunc
+
+Truncates a number to a specified number of decimal places.
+
+```sql
+SELECT trunc(total_amount, 0) AS truncated
+FROM my_namespace.sales_data
+WHERE total_amount IS NOT NULL
+LIMIT 5
+```
+
+---
+
+## Regex functions
+
+### regexp\_count
+
+Returns the number of matches of a pattern in a string.
+
+```sql
+SELECT department, regexp_count(department, '[aeiou]') AS vowels
+FROM my_namespace.sales_data
+WHERE department IS NOT NULL
+LIMIT 5
+```
+
+### regexp\_instr
+
+Returns the position of the first match of a pattern.
+
+```sql
+SELECT department, regexp_instr(department, '[0-9]') AS digit_pos
+FROM my_namespace.sales_data
+WHERE department IS NOT NULL
+LIMIT 5
+```
+
+### regexp\_like
+
+Returns true if a string matches a regular expression pattern.
+
+```sql
+SELECT department, regexp_like(department, '^[A-Z]{2}') AS starts_two_caps
+FROM my_namespace.sales_data
+WHERE department IS NOT NULL
+LIMIT 5
+```
+
+### regexp\_match
+
+Returns the first match of a pattern as an array.
+
+```sql
+SELECT department, regexp_match(department, '([A-Z][a-z]+)') AS first_word
+FROM my_namespace.sales_data
+WHERE department IS NOT NULL
+LIMIT 3
+```
+
+### regexp\_replace
+
+Replaces matches of a pattern with a replacement string.
+
+```sql
+SELECT department, regexp_replace(department, '[0-9]', '#') AS no_digits
+FROM my_namespace.sales_data
+WHERE department IS NOT NULL
+LIMIT 5
+```
+
+---
+
+## String functions
+
+### ascii
+
+Returns the ASCII code of the first character.
+
+```sql
+SELECT customer_id, ascii(customer_id) AS first_code
+FROM my_namespace.sales_data
+LIMIT 3
+```
+
+### bit\_length
+
+Returns the length of a string in bits.
+
+```sql
+SELECT customer_id, bit_length(customer_id) AS bits
+FROM my_namespace.sales_data
+LIMIT 3
+```
+
+### btrim
+
+Trims characters from both sides of a string. Alias: `trim`.
+
+```sql
+SELECT btrim('  hello  ') AS trimmed
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### chr
+
+Returns the character for a given ASCII code.
+
+```sql
+SELECT chr(65) AS letter
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### concat
+
+Concatenates two or more strings.
+
+```sql
+SELECT concat(department, ' - ', region) AS label
+FROM my_namespace.sales_data
+WHERE department IS NOT NULL
+LIMIT 5
+```
+
+### concat\_ws
+
+Concatenates strings with a separator.
+
+```sql
+SELECT concat_ws('/', region, department) AS path
+FROM my_namespace.sales_data
+WHERE department IS NOT NULL
+LIMIT 5
+```
+
+### contains
+
+Returns true if a string contains a substring.
+
+```sql
+SELECT customer_id, contains(department, 'Sales') AS is_sales
+FROM my_namespace.sales_data
+WHERE department IS NOT NULL
+LIMIT 5
+```
+
+### ends\_with
+
+Returns true if a string ends with a suffix.
+
+```sql
+SELECT customer_id, ends_with(department, 'ing') AS ends_ing
+FROM my_namespace.sales_data
+WHERE department IS NOT NULL
+LIMIT 5
+```
+
+### levenshtein
+
+Returns the Levenshtein edit distance between two strings.
+
+```sql
+SELECT department, levenshtein(department, 'Engineering') AS dist
+FROM my_namespace.sales_data
+WHERE department IS NOT NULL
+LIMIT 5
+```
+
+### lower
+
+Converts a string to lowercase.
+
+```sql
+SELECT lower(department) AS dept_lower
+FROM my_namespace.sales_data
+LIMIT 5
+```
+
+### ltrim
+
+Trims characters from the left side of a string.
+
+```sql
+SELECT ltrim('  hello') AS trimmed
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### octet\_length
+
+Returns the length of a string in bytes.
+
+```sql
+SELECT customer_id, octet_length(customer_id) AS bytes
+FROM my_namespace.sales_data
+LIMIT 3
+```
+
+### repeat
+
+Repeats a string a given number of times.
+
+```sql
+SELECT repeat(region, 2) AS doubled
+FROM my_namespace.sales_data
+LIMIT 3
+```
+
+### replace
+
+Replaces all occurrences of a substring.
+
+```sql
+SELECT department, replace(department, ' ', '_') AS underscored
+FROM my_namespace.sales_data
+WHERE department IS NOT NULL
+LIMIT 5
+```
+
+### rtrim
+
+Trims characters from the right side of a string.
+
+```sql
+SELECT rtrim('hello  ') AS trimmed
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### split\_part
+
+Splits a string by a delimiter and returns the specified part (1-indexed).
+
+```sql
+SELECT customer_id, split_part(customer_id, '-', 1) AS first_part
+FROM my_namespace.sales_data
+WHERE customer_id IS NOT NULL
+LIMIT 5
+```
+
+### starts\_with
+
+Returns true if a string starts with a prefix.
+
+```sql
+SELECT customer_id, starts_with(department, 'Eng') AS is_eng
+FROM my_namespace.sales_data
+WHERE department IS NOT NULL
+LIMIT 5
+```
+
+### to\_hex
+
+Converts an integer to a hexadecimal string.
+
+```sql
+SELECT to_hex(255) AS hex_ff
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### upper
+
+Converts a string to uppercase.
+
+```sql
+SELECT upper(region) AS region_upper
+FROM my_namespace.sales_data
+LIMIT 5
+```
+
+### uuid
+
+Generates a random UUID.
+
+```sql
+SELECT uuid() AS new_id
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+---
+
+## Unicode functions
+
+### character\_length
+
+Returns the number of characters in a string. Aliases: `length`, `char_length`.
+
+```sql
+SELECT department, character_length(department) AS len
+FROM my_namespace.sales_data
+WHERE department IS NOT NULL
+LIMIT 5
+```
+
+### find\_in\_set
+
+Returns the position of a string within a comma-separated list.
+
+```sql
+SELECT find_in_set('North', 'South,North,East,West') AS pos
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### initcap
+
+Capitalizes the first letter of each word.
+
+```sql
+SELECT initcap('hello world') AS capped
+FROM my_namespace.sales_data
+LIMIT 1
+```
+
+### left
+
+Returns the leftmost *n* characters of a string.
+
+```sql
+SELECT department, left(department, 5) AS prefix
+FROM my_namespace.sales_data
+WHERE department IS NOT NULL
+LIMIT 5
+```
+
+### lpad
+
+Left-pads a string to a specified length.
+
+```sql
+SELECT region, lpad(region, 15, '.') AS padded
+FROM my_namespace.sales_data
+LIMIT 5
+```
+
+### reverse
+
+Reverses a string.
+
+```sql
+SELECT department, reverse(department) AS rev
+FROM my_namespace.sales_data
+WHERE department IS NOT NULL
+LIMIT 5
+```
+
+### right
+
+Returns the rightmost *n* characters of a string.
+
+```sql
+SELECT department, right(department, 3) AS suffix
+FROM my_namespace.sales_data
+WHERE department IS NOT NULL
+LIMIT 5
+```
+
+### rpad
+
+Right-pads a string to a specified length.
+
+```sql
+SELECT region, rpad(region, 15, '.') AS padded
+FROM my_namespace.sales_data
+LIMIT 5
+```
+
+### strpos
+
+Returns the position of a substring (1-indexed). Aliases: `instr`, `position`.
+
+```sql
+SELECT department, strpos(department, 'a') AS a_pos
+FROM my_namespace.sales_data
+WHERE department IS NOT NULL
+LIMIT 5
+```
+
+### substr
+
+Returns a substring starting at a position for a given length. Alias: `substring`.
+
+```sql
+SELECT department, substr(department, 1, 8) AS first_eight
+FROM my_namespace.sales_data
+WHERE department IS NOT NULL
+LIMIT 5
+```
+
+### substr\_index
+
+Returns the substring before the *n*-th occurrence of a delimiter. Alias: `substring_index`.
+
+```sql
+SELECT customer_id, substr_index(customer_id, '-', 1) AS first_segment
+FROM my_namespace.sales_data
+WHERE customer_id IS NOT NULL
+LIMIT 5
+```
+
+### translate
+
+Replaces characters in a string based on a mapping.
+
+```sql
+SELECT department, translate(department, 'aeiou', '12345') AS coded
+FROM my_namespace.sales_data
+WHERE department IS NOT NULL
+LIMIT 5
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/basin-sql/sql-reference/scalar-functions/#page","headline":"Scalar functions","description":"Reference for the scalar functions supported in Basin SQL, organized by category.","url":"https://developers.cloudflare.com/basin-sql/sql-reference/scalar-functions/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-sql/sql-reference/scalar-functions/og.png?v=943b375a0e807737","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["SQL"]}
+```
+
+---
+
+---
+description: Troubleshoot common Basin SQL errors including query structure, type, and timeout issues.
+title: Troubleshooting guide
+image: https://developers.cloudflare.com/basin-sql/troubleshooting/og.png?v=30db96d89482c7e7
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-sql/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Troubleshooting guide
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-sql/troubleshooting/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+This guide covers potential errors and limitations you may encounter when using Basin SQL.
+
+## Query structure errors
+
+### Missing required clauses
+
+**Error**: `expected exactly 1 table in FROM clause`
+
+**Problem**: Basin SQL requires a `FROM` clause in your query.
+
+```sql
+-- Invalid - Missing FROM clause
+SELECT user_id WHERE status = 200;
+
+-- Valid
+SELECT user_id
+FROM my_namespace.http_requests
+WHERE status = 200 AND timestamp BETWEEN '2025-09-24T01:00:00Z' AND '2025-09-25T01:00:00Z';
+```
+
+**Solution**: Always include `FROM` with a fully qualified table name (`namespace_name.table_name`).
+
+---
+
+## FROM clause issues
+
+### Join performance issues
+
+**Symptom**: Query returns 502 Bad Gateway or times out.
+
+**Problem**: Multi-way joins across large tables can exceed resource limits, especially with `COUNT(DISTINCT)` or other memory-intensive aggregations.
+
+```sql
+-- May timeout: cross-joining two large fact tables
+SELECT COUNT(DISTINCT h.ray_id), COUNT(DISTINCT f.event_id)
+FROM my_namespace.http_requests h
+INNER JOIN my_namespace.firewall_events f ON h.zone_id = f.zone_id
+```
+
+**Solution**:
+
+- Add `WHERE` filters to reduce intermediate result sizes.
+- Join through dimension tables instead of directly joining fact tables.
+- Use `approx_distinct()` instead of `COUNT(DISTINCT)` for approximate counts.
+- Break complex multi-way joins into smaller queries using CTEs or sequential queries.
+
+```sql
+-- Better: filter both sides and use approx_distinct
+SELECT z.plan,
+       approx_distinct(h.ray_id) AS unique_requests
+FROM my_namespace.zones z
+INNER JOIN my_namespace.http_requests h ON z.zone_id = h.zone_id
+WHERE z.plan = 'enterprise'
+  AND h.status_code >= 400
+GROUP BY z.plan
+```
+
+### `NOT IN` on nullable columns
+
+**Symptom**: `NOT IN` subquery returns unexpected results or errors.
+
+**Problem**: `NOT IN` subqueries are not supported when the subquery column can contain `NULL` values.
+
+```sql
+-- Fails: nullable_col may contain NULLs
+SELECT zone_id
+FROM my_namespace.http_requests
+WHERE zone_id NOT IN (
+    SELECT nullable_col FROM my_namespace.other_table
+)
+LIMIT 20
+```
+
+**Solution**: Use `NOT EXISTS` with a correlated subquery instead.
+
+```sql
+-- Works: NOT EXISTS handles NULLs correctly
+SELECT h.zone_id
+FROM my_namespace.http_requests h
+WHERE NOT EXISTS (
+    SELECT 1 FROM my_namespace.other_table o
+    WHERE o.nullable_col = h.zone_id
+)
+LIMIT 20
+```
+
+### Correlated subquery performance
+
+**Symptom**: `EXISTS` or `NOT EXISTS` subquery runs slowly.
+
+**Problem**: Correlated subqueries with complex conditions can be slow because the inner query is evaluated for each row of the outer query.
+
+```sql
+-- Slower: multiple filter conditions in correlated subquery
+SELECT z.domain
+FROM my_namespace.zones z
+WHERE EXISTS (
+    SELECT 1 FROM my_namespace.firewall_events f
+    WHERE f.zone_id = z.zone_id
+      AND f.risk_score > 0.9
+      AND f.colo = 'SJC'
+)
+LIMIT 20
+```
+
+**Solution**:
+
+- Simplify correlated conditions where possible.
+- Consider rewriting as a `JOIN` with `GROUP BY` instead of `EXISTS`.
+- Use an `IN` subquery with pre-aggregated results instead of `EXISTS`.
+
+---
+
+## WHERE clause issues
+
+### JSON object filtering
+
+**Error**: `unsupported binary operator` or `Error during planning: could not parse compound`
+
+**Problem**: JSON functions are not yet implemented. You cannot filter on fields inside JSON objects using JSON path operators.
+
+```sql
+-- Invalid - JSON path operators not supported
+SELECT * FROM my_namespace.requests WHERE json_data->>'level' = 'error'
+
+-- Valid - Filter on the entire JSON column
+SELECT * FROM my_namespace.logs WHERE json_data IS NOT NULL LIMIT 100
+```
+
+**Solution**:
+
+- Denormalize frequently queried JSON fields into separate columns.
+- Filter on the entire JSON field, and handle parsing in your application.
+
+Note
+
+Struct columns are supported and can be filtered using bracket notation. Refer to [Complex types](https://developers.cloudflare.com/basin-sql/sql-reference/complex-types/) for details.
+
+```sql
+SELECT * FROM my_namespace.products WHERE pricing['price'] > 50 LIMIT 100
+```
+
+---
+
+## LIMIT clause issues
+
+### Invalid limit values
+
+**Error**: `maximum LIMIT is 10000`
+
+**Problem**: LIMIT values must be between 1 and 10,000.
+
+```sql
+-- Invalid - Out of range
+SELECT * FROM my_namespace.events LIMIT 50000
+
+-- Valid
+SELECT * FROM my_namespace.events LIMIT 10000
+```
+
+**Solution**: Use LIMIT values between 1 and 10,000.
+
+### Pagination attempts
+
+**Error**: `unsupported feature: OFFSET clause is not supported`
+
+**Problem**: OFFSET is not supported.
+
+```sql
+-- Invalid - Pagination not supported
+SELECT * FROM my_namespace.events LIMIT 100 OFFSET 200
+
+-- Valid - Use cursor-based pagination with ORDER BY and WHERE
+-- Page 1
+SELECT * FROM my_namespace.events
+WHERE timestamp >= '2024-01-01'
+ORDER BY timestamp
+LIMIT 100
+
+-- Page 2 - Use the last timestamp from the previous page
+SELECT * FROM my_namespace.events
+WHERE timestamp > '2024-01-01T10:30:00Z'
+ORDER BY timestamp
+LIMIT 100
+```
+
+**Solution**: Implement cursor-based pagination using `ORDER BY` and `WHERE` conditions.
+
+---
+
+## Schema issues
+
+### DDL and DML operations
+
+**Error**: `only read-only queries are allowed`
+
+**Problem**: Basin SQL is a read-only query engine. DDL and DML statements are not supported.
+
+```sql
+-- Invalid - Schema changes not supported
+ALTER TABLE my_namespace.events ADD COLUMN new_field STRING
+UPDATE my_namespace.events SET status = 200 WHERE user_id = '123'
+CREATE TABLE my_namespace.test (id INT)
+DROP TABLE my_namespace.events
+```
+
+**Solution**: Manage your schema through your data ingestion pipeline and Basin Catalog.
+
+---
+
+## Performance optimization
+
+### Query performance issues
+
+If your queries are running slowly:
+
+1. **Always include partition (timestamp) filters**: This is the most important optimization.
+
+   ```sql
+   -- Good - Narrows data scan to one day
+   SELECT * FROM my_namespace.events
+   WHERE timestamp BETWEEN '2024-01-01' AND '2024-01-02'
+   LIMIT 100
+   ```
+
+
+2. **Use selective filtering**: Include specific conditions to reduce result sets.
+
+   ```sql
+   -- Good - Multiple filters reduce scanned data
+   SELECT * FROM my_namespace.events
+   WHERE status = 200 AND region = 'US' AND timestamp > '2024-01-01'
+   LIMIT 100
+   ```
+
+
+3. **Select specific columns**: Avoid `SELECT *` when you only need a few fields.
+
+   ```sql
+   -- Good - Only reads the columns you need
+   SELECT user_id, status, timestamp
+   FROM my_namespace.events
+   WHERE timestamp > '2024-01-01'
+   LIMIT 100
+   ```
+
+
+4. **Use EXPLAIN to inspect the execution plan**: Verify that predicate pushdown and file pruning are working.
+
+   ```sql
+   EXPLAIN SELECT user_id, status
+   FROM my_namespace.events
+   WHERE timestamp > '2024-01-01' AND status = 200
+   ```
+
+
+5. **Enable compaction**: Enable compaction in Basin Catalog to reduce the number of small files scanned per query.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/basin-sql/troubleshooting/#page","headline":"Troubleshooting guide","description":"Troubleshoot common Basin SQL errors including query structure, type, and timeout issues.","url":"https://developers.cloudflare.com/basin-sql/troubleshooting/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-sql/troubleshooting/og.png?v=30db96d89482c7e7","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["SQL"]}
+```
+
+---
+
+---
+description: Step-by-step Basin SQL tutorials for querying data stored in R2.
+title: Tutorials
+image: https://developers.cloudflare.com/basin-sql/tutorials/og.png?v=7ae619c5e0612636
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-sql/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Tutorials
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-sql/tutorials/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/basin-sql/tutorials/#page","headline":"Tutorials","description":"Step-by-step Basin SQL tutorials for querying data stored in R2.","url":"https://developers.cloudflare.com/basin-sql/tutorials/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-sql/tutorials/og.png?v=7ae619c5e0612636","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: This tutorial demonstrates how to build a complete data pipeline using Basin Pipelines, Basin Catalog, and Basin SQL.
+title: Build an end to end data pipeline
+image: https://developers.cloudflare.com/basin-sql/tutorials/end-to-end-pipeline/og.png?v=ab581c00f5892f2e
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-sql/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Build an end to end data pipeline
+
+Learn how to create an end-to-end data pipeline using Basin Pipelines, Basin Catalog, and Basin SQL for real-time transaction analysis.
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-sql/tutorials/end-to-end-pipeline/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+In this tutorial, you will learn how to build a complete data pipeline using Basin Pipelines, Basin Catalog, and Basin SQL. This also includes a sample Python script that creates and sends financial transaction data to your Pipeline that can be queried by Basin SQL or any Apache Iceberg-compatible query engine.
+
+This tutorial demonstrates how to:
+
+- Set up Basin Catalog to store our transaction events in an Apache Iceberg table
+- Set up a Basin Pipelines pipeline
+- Create transaction data with fraud patterns to send to your Pipeline
+- Query your data using Basin SQL for fraud analysis
+
+## Prerequisites
+
+1. Sign up for a [Cloudflare account ↗︎](https://dash.cloudflare.com/sign-up).
+2. Install a [Node.js version supported by Wrangler](https://developers.cloudflare.com/workers/wrangler/install-and-update/#install-wrangler).
+3. Install [Python 3.8+ ↗︎](https://python.org) for the data generation script.
+
+Node.js version manager
+
+Use a Node version manager like [Volta ↗︎](https://volta.sh/) or [nvm ↗︎](https://github.com/nvm-sh/nvm) to avoid permission issues and change Node.js versions.
+
+## 1. Set up authentication
+
+You will need API tokens to interact with Cloudflare services.
+
+1. In the Cloudflare dashboard, go to the **API tokens** page. [Go to **Account API tokens** ↗](https://dash.cloudflare.com/?to=/:account/api-tokens)
+2. Select **Create Token**.
+3. Select **Get started** next to Create Custom Token.
+4. Enter a name for your API token.
+5. Under **Permissions**, choose:
+   - **Basin Pipelines** with Read, Send, and Edit permissions
+   - **Basin Catalog** with Read and Edit permissions
+   - **Basin SQL** with Read permissions
+   - **Workers R2 Storage** with Read and Edit permissions
+6. Optionally, add a TTL to this token.
+7. Select **Continue to summary**.
+8. Select **Create Token**.
+9. Note the **Token value**.
+
+Export your new token as an environment variable:
+
+```bash
+export WRANGLER_BASIN_SQL_AUTH_TOKEN= #paste your token here
+```
+
+If this is your first time using Wrangler, make sure to log in.
+
+npmyarnpnpm
+
+```
+npx wrangler login
+```
+
+```
+yarn wrangler login
+```
+
+```
+pnpm wrangler login
+```
+
+## 2. Create an R2 bucket and enable Basin Catalog
+
+Create an R2 bucket:
+
+npmyarnpnpm
+
+```
+npx wrangler r2 bucket create fraud-pipeline
+```
+
+```
+yarn wrangler r2 bucket create fraud-pipeline
+```
+
+```
+pnpm wrangler r2 bucket create fraud-pipeline
+```
+
+1. In the Cloudflare dashboard, go to the **R2 object storage** page. [Go to **Overview** ↗](https://dash.cloudflare.com/?to=/:account/r2/overview)
+2. Select **Create bucket**.
+3. Enter the bucket name: `fraud-pipeline`
+4. Select **Create bucket**.
+
+Enable the catalog on your R2 bucket:
+
+npmyarnpnpm
+
+```
+npx wrangler basin catalog enable fraud-pipeline
+```
+
+```
+yarn wrangler basin catalog enable fraud-pipeline
+```
+
+```
+pnpm wrangler basin catalog enable fraud-pipeline
+```
+
+When you run this command, take note of the "Warehouse" and "Catalog URI". You will need these later.
+
+1. In the Cloudflare dashboard, go to the **R2 object storage** page. [Go to **Overview** ↗](https://dash.cloudflare.com/?to=/:account/r2/overview)
+2. Select the bucket: `fraud-pipeline`.
+3. Switch to the **Settings** tab, scroll down to **Basin Catalog**, and select **Enable**.
+4. Once enabled, note the **Catalog URI** and **Warehouse name**.
+
+Note
+
+Copy the `warehouse` (ACCOUNTID\_BUCKETNAME) and paste it in the `export` below. We will use it later in the tutorial.
+
+```bash
+export WAREHOUSE= #Paste your warehouse here
+```
+
+### (Optional) Enable compaction on your Basin Catalog
+
+Basin Catalog can automatically compact tables for you. In production event streaming use cases, it is common to end up with many small files, so it is recommended to enable compaction. Since the tutorial only demonstrates a sample use case, this step is optional.
+
+npmyarnpnpm
+
+```
+npx wrangler basin catalog compaction enable fraud-pipeline --token $WRANGLER_BASIN_SQL_AUTH_TOKEN
+```
+
+```
+yarn wrangler basin catalog compaction enable fraud-pipeline --token $WRANGLER_BASIN_SQL_AUTH_TOKEN
+```
+
+```
+pnpm wrangler basin catalog compaction enable fraud-pipeline --token $WRANGLER_BASIN_SQL_AUTH_TOKEN
+```
+
+1. In the Cloudflare dashboard, go to the **R2 object storage** page. [Go to **Overview** ↗](https://dash.cloudflare.com/?to=/:account/r2/overview)
+2. Select the bucket: `fraud-pipeline`.
+3. Switch to the **Settings** tab, scroll to **Basin Catalog**, select the edit icon, and select **Enable**.
+4. Choose a target file size or leave the default, then select **Save**.
+
+## 3. Set up the pipeline infrastructure
+
+### 3.1. Create the Pipeline stream
+
+First, create a schema file called `raw_transactions_schema.json` with the following `json` schema:
+
+```json
+{
+	"fields": [
+		{ "name": "transaction_id", "type": "string", "required": true },
+		{ "name": "user_id", "type": "int64", "required": true },
+		{ "name": "amount", "type": "float64", "required": false },
+		{ "name": "transaction_timestamp", "type": "string", "required": false },
+		{ "name": "location", "type": "string", "required": false },
+		{ "name": "merchant_category", "type": "string", "required": false },
+		{ "name": "is_fraud", "type": "bool", "required": false }
+	]
+}
+```
+
+Create a stream to receive incoming fraud detection events:
+
+npmyarnpnpm
+
+```
+npx wrangler basin pipelines streams create raw_events_stream --schema-file raw_transactions_schema.json --http-enabled true --http-auth false
+```
+
+```
+yarn wrangler basin pipelines streams create raw_events_stream --schema-file raw_transactions_schema.json --http-enabled true --http-auth false
+```
+
+```
+pnpm wrangler basin pipelines streams create raw_events_stream --schema-file raw_transactions_schema.json --http-enabled true --http-auth false
+```
+
+Note
+
+Note the **HTTP Ingest Endpoint URL** from the output. This is the endpoint you will use to send data to your pipeline.
+
+```bash
+# The http ingest endpoint from the output (see example below)
+export STREAM_ENDPOINT= #the http ingest endpoint from the output (see example below)
+```
+
+The output should look like this:
+
+```sh
+🌀 Creating stream 'raw_events_stream'...
+✨ Successfully created stream 'raw_events_stream' with id 'stream_id'.
+
+Creation Summary:
+General:
+  Name:  raw_events_stream
+
+HTTP Ingest:
+  Enabled:         Yes
+  Authentication:  Yes
+  Endpoint:        https://stream_id.ingest.cloudflare.com
+  CORS Origins:    None
+
+Input Schema:
+┌───────────────────────┬────────┬────────────┬──────────┐
+│ Field Name            │ Type   │ Unit/Items │ Required │
+├───────────────────────┼────────┼────────────┼──────────┤
+│ transaction_id        │ string │            │ Yes      │
+├───────────────────────┼────────┼────────────┼──────────┤
+│ user_id               │ int64  │            │ Yes      │
+├───────────────────────┼────────┼────────────┼──────────┤
+│ amount                │float64 │            │ No       │
+├───────────────────────┼────────┼────────────┼──────────┤
+│ transaction_timestamp │ string │            │ No       │
+├───────────────────────┼────────┼────────────┼──────────┤
+│ location              │ string │            │ No       │
+├───────────────────────┼────────┼────────────┼──────────┤
+│ merchant_category     │ string │            │ No       │
+├───────────────────────┼────────┼────────────┼──────────┤
+│ is_fraud              │ bool   │            │ No       │
+└───────────────────────┴────────┴────────────┴──────────┘
+```
+
+### 3.2. Create the data sink
+
+Create a sink that writes data to your R2 bucket as Apache Iceberg tables:
+
+npmyarnpnpm
+
+```
+npx wrangler basin pipelines sinks create raw_events_sink --type "basin-catalog" --bucket "fraud-pipeline" --roll-interval 30 --namespace "fraud_detection" --table "transactions" --catalog-token $WRANGLER_BASIN_SQL_AUTH_TOKEN
+```
+
+```
+yarn wrangler basin pipelines sinks create raw_events_sink --type "basin-catalog" --bucket "fraud-pipeline" --roll-interval 30 --namespace "fraud_detection" --table "transactions" --catalog-token $WRANGLER_BASIN_SQL_AUTH_TOKEN
+```
+
+```
+pnpm wrangler basin pipelines sinks create raw_events_sink --type "basin-catalog" --bucket "fraud-pipeline" --roll-interval 30 --namespace "fraud_detection" --table "transactions" --catalog-token $WRANGLER_BASIN_SQL_AUTH_TOKEN
+```
+
+Note
+
+This creates a `sink` configuration that will write to the Iceberg table `fraud_detection.transactions` in your Basin Catalog every 30 seconds. Basin Pipelines automatically appends an `__ingest_ts` column that is used to partition the table by `DAY`.
+
+### 3.3. Create the pipeline
+
+Connect your stream to your sink with SQL:
+
+npmyarnpnpm
+
+```
+npx wrangler basin pipelines create raw_events_pipeline --sql "INSERT INTO raw_events_sink SELECT * FROM raw_events_stream"
+```
+
+```
+yarn wrangler basin pipelines create raw_events_pipeline --sql "INSERT INTO raw_events_sink SELECT * FROM raw_events_stream"
+```
+
+```
+pnpm wrangler basin pipelines create raw_events_pipeline --sql "INSERT INTO raw_events_sink SELECT * FROM raw_events_stream"
+```
+
+1. In the Cloudflare dashboard, go to **Basin Pipelines** > **Pipelines**. [Go to **Pipelines** ↗](https://dash.cloudflare.com/?to=/:account/pipelines/overview)
+2. Select **Create Pipeline**.
+3. **Connect to a Stream**:
+   - Pipeline name: `raw_events`
+   - Enable HTTP endpoint for sending data: Enabled
+   - HTTP authentication: Disabled (default)
+   - Select **Next**
+4. **Define Input Schema**:
+   - Select **JSON editor**
+   - Copy in the schema:
+
+     ```json
+     {
+     	"fields": [
+     		{ "name": "transaction_id", "type": "string", "required": true },
+     		{ "name": "user_id", "type": "int64", "required": true },
+     		{ "name": "amount", "type": "float64", "required": false },
+     		{
+     			"name": "transaction_timestamp",
+     			"type": "string",
+     			"required": false
+     		},
+     		{ "name": "location", "type": "string", "required": false },
+     		{ "name": "merchant_category", "type": "string", "required": false },
+     		{ "name": "is_fraud", "type": "bool", "required": false }
+     	]
+     }
+     ```
+
+
+   - Select **Next**
+5. **Define Sink**:
+   - Select your R2 bucket: `fraud-pipeline`
+   - Storage type: **Basin Catalog**
+   - Namespace: `fraud_detection`
+   - Table name: `transactions`
+   - **Advanced Settings**: Change **Maximum Time Interval** to `30 seconds`
+   - Select **Next**
+6. **Credentials**:
+   - Disable **Automatically create an Account API token for your sink**
+   - Enter **Catalog Token** from step 1
+   - Select **Next**
+7. **Pipeline Definition**:
+   - Leave the default SQL query:
+
+     ```sql
+     INSERT INTO raw_events_sink SELECT * FROM raw_events_stream;
+     ```
+   - Select **Create Pipeline**
+8. After pipeline creation, note the **Stream ID** for the next step.
+
+## 4. Generate sample fraud detection data
+
+Create a Python script to generate realistic transaction data with fraud patterns:
+
+*fraud\_data\_generator.pypython*
+
+```python
+import requests
+import json
+import uuid
+import random
+import time
+import os
+from datetime import datetime, timezone, timedelta
+
+# Configuration - exported from the prior steps
+STREAM_ENDPOINT = os.environ["STREAM_ENDPOINT"]# From the stream you created
+API_TOKEN = os.environ["WRANGLER_BASIN_SQL_AUTH_TOKEN"] #the same one created earlier
+EVENTS_TO_SEND = 1000 # Feel free to adjust this
+
+def generate_transaction():
+    """Generate some random transactions with occasional fraud"""
+
+    # User IDs
+    high_risk_users = [1001, 1002, 1003, 1004, 1005]
+    normal_users = list(range(1006, 2000))
+
+    user_id = random.choice(high_risk_users + normal_users)
+    is_high_risk_user = user_id in high_risk_users
+
+    # Generate amounts
+    if random.random() < 0.05:
+        amount = round(random.uniform(5000, 50000), 2)
+    elif random.random() < 0.03:
+        amount = round(random.uniform(0.01, 1.00), 2)
+    else:
+        amount = round(random.uniform(10, 500), 2)
+
+    # Locations
+    normal_locations = ["NEW_YORK", "LOS_ANGELES", "CHICAGO", "MIAMI", "SEATTLE", "SAN FRANCISCO"]
+    high_risk_locations = ["UNKNOWN_LOCATION", "VPN_EXIT", "MARS", "BAT_CAVE"]
+
+    if is_high_risk_user and random.random() < 0.3:
+        location = random.choice(high_risk_locations)
+    else:
+        location = random.choice(normal_locations)
+
+    # Merchant categories
+    normal_merchants = ["GROCERY", "GAS_STATION", "RESTAURANT", "RETAIL"]
+    high_risk_merchants = ["GAMBLING", "CRYPTO", "MONEY_TRANSFER", "GIFT_CARDS"]
+
+    if random.random() < 0.1:  # 10% high-risk merchants
+        merchant_category = random.choice(high_risk_merchants)
+    else:
+        merchant_category = random.choice(normal_merchants)
+
+    # Series of checks to either increase fraud score by a certain margin
+    fraud_score = 0
+    if amount > 2000: fraud_score += 0.4
+    if amount < 1: fraud_score += 0.3
+    if location in high_risk_locations: fraud_score += 0.5
+    if merchant_category in high_risk_merchants: fraud_score += 0.3
+    if is_high_risk_user: fraud_score += 0.2
+
+    # Compare the fraud scores
+    is_fraud = random.random() < min(fraud_score * 0.3, 0.8)
+
+    # Generate timestamps (some fraud happens at unusual hours)
+    base_time = datetime.now(timezone.utc)
+    if is_fraud and random.random() < 0.4:  # 40% of fraud at night
+        hour = random.randint(0, 5)  # Late night/early morning
+        transaction_time = base_time.replace(hour=hour)
+    else:
+        transaction_time = base_time - timedelta(
+            hours=random.randint(0, 168)  # Last week
+        )
+
+    return {
+        "transaction_id": str(uuid.uuid4()),
+        "user_id": user_id,
+        "amount": amount,
+        "transaction_timestamp": transaction_time.isoformat(),
+        "location": location,
+        "merchant_category": merchant_category,
+        "is_fraud": True if is_fraud else False
+    }
+
+def send_batch_to_stream(events, batch_size=100):
+    """Send events to Cloudflare Stream in batches"""
+
+    headers = {
+        "Authorization": f"Bearer {API_TOKEN}",
+        "Content-Type": "application/json"
+    }
+
+    total_sent = 0
+    fraud_count = 0
+
+    for i in range(0, len(events), batch_size):
+        batch = events[i:i + batch_size]
+        fraud_in_batch = sum(1 for event in batch if event["is_fraud"] == True)
+
+        try:
+            response = requests.post(STREAM_ENDPOINT, headers=headers, json=batch)
+
+            if response.status_code in [200, 201]:
+                total_sent += len(batch)
+                fraud_count += fraud_in_batch
+                print(f"Sent batch of {len(batch)} events (Total: {total_sent})")
+            else:
+                print(f"Failed to send batch: {response.status_code} - {response.text}")
+
+        except Exception as e:
+            print(f"Error sending batch: {e}")
+
+        time.sleep(0.1)
+
+    return total_sent, fraud_count
+
+def main():
+    print("Generating fraud detection data...")
+
+    # Generate events
+    events = []
+    for i in range(EVENTS_TO_SEND):
+        events.append(generate_transaction())
+        if (i + 1) % 100 == 0:
+            print(f"Generated {i + 1} events...")
+
+    fraud_events = sum(1 for event in events if event["is_fraud"] == True)
+    print(f"📊 Generated {len(events)} total events ({fraud_events} fraud, {fraud_events/len(events)*100:.1f}%)")
+
+    # Send to stream
+    print("Sending data to Pipeline stream...")
+    sent, fraud_sent = send_batch_to_stream(events)
+
+    print(f"\nComplete!")
+    print(f"   Events sent: {sent:,}")
+    print(f"   Fraud events: {fraud_sent:,} ({fraud_sent/sent*100:.1f}%)")
+    print(f"   Data is now flowing through your pipeline!")
+
+if __name__ == "__main__":
+    main()
+```
+
+Install the required Python dependency and run the script:
+
+```bash
+pip install requests
+python fraud_data_generator.py
+```
+
+## 5. Query the data with Basin SQL
+
+Now you can analyze your fraud detection data using Basin SQL. Here are some example queries:
+
+### 5.1. View recent transactions
+
+npmyarnpnpm
+
+```
+npx wrangler basin sql query "$WAREHOUSE" "SELECT transaction_id, user_id, amount, location, merchant_category, is_fraud, transaction_timestamp FROM fraud_detection.transactions WHERE __ingest_ts > '2025-09-24T01:00:00Z' AND is_fraud = true LIMIT 10"
+```
+
+```
+yarn wrangler basin sql query "$WAREHOUSE" "SELECT transaction_id, user_id, amount, location, merchant_category, is_fraud, transaction_timestamp FROM fraud_detection.transactions WHERE __ingest_ts > '2025-09-24T01:00:00Z' AND is_fraud = true LIMIT 10"
+```
+
+```
+pnpm wrangler basin sql query "$WAREHOUSE" "SELECT transaction_id, user_id, amount, location, merchant_category, is_fraud, transaction_timestamp FROM fraud_detection.transactions WHERE __ingest_ts > '2025-09-24T01:00:00Z' AND is_fraud = true LIMIT 10"
+```
+
+### 5.2. Filter the raw transactions into a new table to highlight high-value transactions
+
+Create a new sink that will write the filtered data to a new Apache Iceberg table in Basin Catalog:
+
+npmyarnpnpm
+
+```
+npx wrangler basin pipelines sinks create fraud_filter_sink --type "basin-catalog" --bucket "fraud-pipeline" --roll-interval 30 --namespace "fraud_detection" --table "fraud_transactions" --catalog-token $WRANGLER_BASIN_SQL_AUTH_TOKEN
+```
+
+```
+yarn wrangler basin pipelines sinks create fraud_filter_sink --type "basin-catalog" --bucket "fraud-pipeline" --roll-interval 30 --namespace "fraud_detection" --table "fraud_transactions" --catalog-token $WRANGLER_BASIN_SQL_AUTH_TOKEN
+```
+
+```
+pnpm wrangler basin pipelines sinks create fraud_filter_sink --type "basin-catalog" --bucket "fraud-pipeline" --roll-interval 30 --namespace "fraud_detection" --table "fraud_transactions" --catalog-token $WRANGLER_BASIN_SQL_AUTH_TOKEN
+```
+
+Now you will create a new SQL query to process data from the original `raw_events_stream` stream and only write flagged transactions that are over the `amount` of 1,000.
+
+npmyarnpnpm
+
+```
+npx wrangler basin pipelines create fraud_events_pipeline --sql "INSERT INTO fraud_filter_sink SELECT * FROM raw_events_stream WHERE is_fraud=true and amount > 1000"
+```
+
+```
+yarn wrangler basin pipelines create fraud_events_pipeline --sql "INSERT INTO fraud_filter_sink SELECT * FROM raw_events_stream WHERE is_fraud=true and amount > 1000"
+```
+
+```
+pnpm wrangler basin pipelines create fraud_events_pipeline --sql "INSERT INTO fraud_filter_sink SELECT * FROM raw_events_stream WHERE is_fraud=true and amount > 1000"
+```
+
+Note
+
+It may take a few minutes for the new Pipeline to fully Initialize and start processing the data. Also keep in mind the 30 second `roll-interval`.
+
+Query the table and check the results:
+
+npmyarnpnpm
+
+```
+npx wrangler basin sql query "$WAREHOUSE" "SELECT transaction_id, user_id, amount, location, merchant_category, is_fraud, transaction_timestamp FROM fraud_detection.fraud_transactions LIMIT 10"
+```
+
+```
+yarn wrangler basin sql query "$WAREHOUSE" "SELECT transaction_id, user_id, amount, location, merchant_category, is_fraud, transaction_timestamp FROM fraud_detection.fraud_transactions LIMIT 10"
+```
+
+```
+pnpm wrangler basin sql query "$WAREHOUSE" "SELECT transaction_id, user_id, amount, location, merchant_category, is_fraud, transaction_timestamp FROM fraud_detection.fraud_transactions LIMIT 10"
+```
+
+Also verify that the non-fraudulent events are being filtered out:
+
+npmyarnpnpm
+
+```
+npx wrangler basin sql query "$WAREHOUSE" "SELECT transaction_id, user_id, amount, location, merchant_category, is_fraud, transaction_timestamp FROM fraud_detection.fraud_transactions WHERE is_fraud = false LIMIT 10"
+```
+
+```
+yarn wrangler basin sql query "$WAREHOUSE" "SELECT transaction_id, user_id, amount, location, merchant_category, is_fraud, transaction_timestamp FROM fraud_detection.fraud_transactions WHERE is_fraud = false LIMIT 10"
+```
+
+```
+pnpm wrangler basin sql query "$WAREHOUSE" "SELECT transaction_id, user_id, amount, location, merchant_category, is_fraud, transaction_timestamp FROM fraud_detection.fraud_transactions WHERE is_fraud = false LIMIT 10"
+```
+
+You should see the following output:
+
+```text
+Query executed successfully with no results
+```
+
+## Conclusion
+
+You have successfully built an end to end data pipeline using Cloudflare's data platform. Through this tutorial, you have learned to:
+
+1. **Use Basin Catalog**: Leveraged Apache Iceberg tables for efficient data storage
+2. **Set up Basin Pipelines**: Created streams, sinks, and pipelines for data ingestion
+3. **Generated sample data**: Created transaction data with some basic fraud patterns
+4. **Query your tables with Basin SQL**: Access raw and processed data tables stored in Basin Catalog
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/basin-sql/tutorials/end-to-end-pipeline/#page","headline":"Build an end to end data pipeline","description":"This tutorial demonstrates how to build a complete data pipeline using Basin Pipelines, Basin Catalog, and Basin SQL.","url":"https://developers.cloudflare.com/basin-sql/tutorials/end-to-end-pipeline/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-sql/tutorials/end-to-end-pipeline/og.png?v=ab581c00f5892f2e","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Basin SQL platform details including pricing and configuration.
+title: Platform
+image: https://developers.cloudflare.com/basin-sql/platform/og.png?v=448c59794ddf45a2
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-sql/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Platform
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-sql/platform/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/basin-sql/platform/#page","headline":"Platform","description":"Basin SQL platform details including pricing and configuration.","url":"https://developers.cloudflare.com/basin-sql/platform/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-sql/platform/og.png?v=448c59794ddf45a2","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Basin SQL pricing based on data scanned, with included usage details and billing examples.
+title: Pricing
+image: https://developers.cloudflare.com/basin-sql/platform/pricing/og.png?v=beaa6d5359272bf8
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-sql/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Pricing
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-sql/platform/pricing/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Note
+
+Basin SQL requires an active [R2 subscription](https://developers.cloudflare.com/r2/get-started/). Your account must also have a [linked payment card](https://developers.cloudflare.com/billing/get-started/create-billing-profile/).
+
+Basin SQL charges based on a single dimension:
+
+- **Data scanned**: The volume of compressed data read from R2 to execute your query.
+
+Basin SQL pricing is additive to standard [R2 storage and operations](https://developers.cloudflare.com/r2/pricing/) and [Basin Catalog](https://developers.cloudflare.com/basin-catalog/platform/pricing/) charges. When the query engine reads files, those requests count as R2 Class B (read) operations. R2 does not charge for egress, so there is no additional data transfer cost.
+
+All included usage is on a monthly basis.
+
+## Basin SQL pricing
+
+|  | Pricing |
+| --- | --- |
+| Included | 10 GB / month |
+| Data scanned | $0.0025 / GB ($2.50 / TB) |
+
+### What counts as data scanned
+
+Data scanned is the compressed bytes read from R2 object storage to answer your query. This matches what you see in your R2 bucket — if a Parquet file is 100 MB on disk, scanning that file bills for 100 MB.
+
+- **Minimum per query**: 10 MB. If a query scans less than 10 MB, you are billed for 10 MB.
+- **Failed queries**: Queries that fail due to a system error or syntax error caught before execution are not charged. Queries that fail mid-execution due to a runtime error are also not charged.
+- **Metadata-only operations**: Operations such as `EXPLAIN`, `SHOW`, and `DESCRIBE` do not scan data and are free. Standard R2 and Basin Catalog request charges still apply.
+
+## Billing examples
+
+### Example 1: Ad-hoc analytics on 500 GB of Parquet data
+
+A user stores 500 GB of Parquet data in Basin Catalog and runs queries that scan a total of 50 GB of compressed data during the month.
+
+| Dimension | Usage | Included | Billable | Cost |
+| --- | --- | --- | --- | --- |
+| R2 storage | 500 GB-month | 10 GB-month | 490 GB-month | $7.35 |
+| Basin SQL (data scanned) | 50 GB | 10 GB | 40 GB | $0.10 |
+| **Total** |  |  |  | **$7.45** |
+
+### Example 2: Heavy query workload on 10 TB dataset
+
+A data team stores 10 TB of compressed Parquet/Iceberg data and scans 50 TB of data per month across their queries. The team also makes 2 million catalog operations with compaction processing 500 GB.
+
+| Dimension | Usage | Included | Billable | Cost |
+| --- | --- | --- | --- | --- |
+| R2 storage | 10,000 GB-month | 10 GB-month | 9,990 GB-month | $149.85 |
+| Basin SQL (data scanned) | 50,000 GB | 10 GB | 49,990 GB | $124.98 |
+| Basin Catalog operations | 2,000,000 | 1,000,000 | 1,000,000 | $9.00 |
+| Basin Catalog compaction (data) | 500 GB | 10 GB | 490 GB | $2.45 |
+| **Total** |  |  |  | **$286.28** |
+
+## Frequently asked questions
+
+### Is there a minimum billing increment per query?
+
+Yes. Each query is billed for a minimum of 10 MB of data scanned. This covers the overhead of initializing the query engine.
+
+### Does data scanned include R2 egress fees?
+
+No. R2 does not charge for egress. The query engine runs within the Cloudflare network adjacent to R2 storage, so there are no data transfer costs.
+
+## Cloudflare billing policy
+
+To learn more about how usage is billed, refer to [Cloudflare Billing Policy](https://developers.cloudflare.com/billing/understand/billing-policy/).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/basin-sql/platform/pricing/#page","headline":"Pricing","description":"Basin SQL pricing based on data scanned, with included usage details and billing examples.","url":"https://developers.cloudflare.com/basin-sql/platform/pricing/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-sql/platform/pricing/og.png?v=beaa6d5359272bf8","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Basin SQL reference documentation for limitations, best practices, and Wrangler commands.
+title: Reference
+image: https://developers.cloudflare.com/basin-sql/reference/og.png?v=787721345609b574
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-sql/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Reference
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-sql/reference/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/basin-sql/reference/#page","headline":"Reference","description":"Basin SQL reference documentation for limitations, best practices, and Wrangler commands.","url":"https://developers.cloudflare.com/basin-sql/reference/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-sql/reference/og.png?v=787721345609b574","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Supported features, known limitations, and best practices for Basin SQL queries.
+title: Limitations and best practices
+image: https://developers.cloudflare.com/basin-sql/reference/limitations-best-practices/og.png?v=ec5ce75f215b7f8d
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-sql/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Limitations and best practices
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-sql/reference/limitations-best-practices/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+This page summarizes supported features, limitations, and best practices.
+
+## Quick reference
+
+| Feature | Supported | Notes |
+| --- | --- | --- |
+| SELECT, WHERE, GROUP BY, HAVING, ORDER BY, LIMIT | Yes | |
+| Column aliases (`AS`) | Yes | |
+| Expressions (CASE, CAST, LIKE, BETWEEN, IN, arithmetic) | Yes | Full expression support |
+| EXPLAIN | Yes | Returns execution plan as text or JSON |
+| Scalar functions | Yes | Math, string, datetime, regex, crypto, array, map, struct, JSON |
+| Aggregate functions | Yes | Basic, approximate, statistical, bitwise, boolean, positional |
+| Approximate aggregates | Yes | `approx_distinct`, `approx_median`, `approx_percentile_cont`, `approx_top_k` |
+| Struct / Array / Map column types | Yes | Bracket notation, `get_field()`, array functions, map functions |
+| CTEs (`WITH ... AS`) | Yes | Can reference different tables and include JOINs |
+| JOINs (INNER, LEFT, RIGHT, FULL OUTER, CROSS) | Yes | All standard join types |
+| Implicit joins (comma FROM) | Yes | |
+| Subqueries (`IN`, `NOT IN`) | Yes | `NOT IN` not supported on nullable columns — use `NOT EXISTS` instead |
+| Subqueries (`EXISTS`, `NOT EXISTS`) | Yes | semi-join and anti-join patterns |
+| Scalar subqueries | Yes | In SELECT, WHERE, HAVING |
+| Derived tables (FROM subqueries) | Yes | Can be nested and joined. `LATERAL` derived tables not supported. |
+| Self-joins | Yes | Same table with different aliases |
+| Window functions (`OVER`) | Yes | Inline `OVER (...)` only — named `WINDOW` clause not supported |
+| `QUALIFY` | Yes | Filter on a window function result |
+| `SELECT DISTINCT` / `DISTINCT ON` | Yes | |
+| `func(DISTINCT ...)` | Yes | `COUNT`, `SUM`, `AVG`, and other aggregates |
+| Set operations (`UNION`, `UNION ALL`, `INTERSECT`, `EXCEPT`) | Yes | |
+| `GROUPING SETS` / `ROLLUP` / `CUBE` | Yes | |
+| `OFFSET` | No | |
+| `INSERT` / `UPDATE` / `DELETE` | No | Read-only |
+| `CREATE` / `DROP` / `ALTER` | No | Read-only |
+
+For the full SQL syntax, refer to the [SQL reference](https://developers.cloudflare.com/basin-sql/sql-reference/).
+
+---
+
+## Unsupported SQL features
+
+| Feature | Error |
+| --- | --- |
+| `OFFSET` | `unsupported feature: OFFSET clause is not supported` |
+| Named `WINDOW` clause | `unsupported feature: WINDOW clause is not supported` |
+| `INSERT` / `UPDATE` / `DELETE` | `only read-only queries are allowed` |
+| `CREATE` / `DROP` / `ALTER` | `only read-only queries are allowed` |
+| `UNNEST` / `PIVOT` / `UNPIVOT` | Not supported |
+| Wildcard modifiers (`ILIKE`, `EXCLUDE`, `EXCEPT`, `REPLACE`, `RENAME` on `*`) | Not supported |
+| Nested (parenthesized) joins | Not supported |
+| `LATERAL` derived tables / `LATERAL VIEW` | Not supported |
+| `PERCENTILE_DISC` | Not supported — use `PERCENTILE_CONT` |
+
+---
+
+## Unsupported expression patterns
+
+| Pattern | Alternative |
+| --- | --- |
+| `NOT IN` subquery on nullable columns | Use `NOT EXISTS` with a correlated subquery instead |
+
+Exact aggregates such as `COUNT(DISTINCT ...)`, `MEDIAN`, `PERCENTILE_CONT`, `ARRAY_AGG`, and `STRING_AGG` are supported. On large datasets, prefer the approximate alternatives (`approx_distinct`, `approx_median`, `approx_percentile_cont`) for lower memory and compute. Refer to [Aggregate functions](https://developers.cloudflare.com/basin-sql/sql-reference/aggregate-functions/).
+
+---
+
+## Runtime constraints
+
+| Constraint | Details |
+| --- | --- |
+| Resource-intensive queries | Queries that require high memory or compute may time out. This includes multi-way joins (three or more large tables), `COUNT(DISTINCT)` and other `func(DISTINCT ...)` across joins or high-cardinality columns, `ARRAY_AGG` / `STRING_AGG`, set operations that deduplicate large inputs, window functions over large partitions, and large sorts or high-cardinality `GROUP BY`. Add `WHERE` filters and `LIMIT`, and prefer `approx_*` aggregates to reduce the chance of a timeout. |
+| Budget-gated functions | `MEDIAN`, `PERCENTILE_CONT`, `ARRAY_AGG`, `STRING_AGG`, `NTH_VALUE` used as an aggregate, any aggregate with `DISTINCT`, and window functions (including those used through `QUALIFY`) are budget-gated up front. Basin SQL estimates the memory required before running the query and rejects it with a `400` error if too much data would be scanned. Add a `GROUP BY` or `WHERE` filters to reduce the rows processed. |
+| Multi-table queries | JOINs, subqueries (IN, EXISTS, scalar, derived tables), and multi-table CTEs are supported. Performance depends on intermediate result size; use WHERE filters to manage join selectivity. |
+| Partitioned and unpartitioned tables | Both partitioned and unpartitioned Iceberg tables are supported. |
+| Parquet format only | No CSV, JSON, or other formats. |
+| Read-only | Basin SQL is a query engine, not a database. No writes. |
+| `now()` / `current_time()` precision | Quantized to 10ms boundaries and forced to UTC. |
+
+---
+
+## Common error codes
+
+| Code | Meaning |
+| --- | --- |
+| 40003 | Invalid SQL syntax |
+| 40004 | Invalid query (unsupported feature, unknown column, type mismatch) |
+| 80001 | Edge service connection failure (retry) |
+
+---
+
+## Best practices
+
+1. Include time-range filters in `WHERE` to limit data scanned.
+2. Use specific column names instead of `SELECT *` for better performance.
+3. Use `LIMIT` to control result set size.
+4. Use approximate aggregation functions ( `approx_distinct`, `approx_median`, `approx_percentile_cont`) instead of exact alternatives on large datasets.
+5. Enable compaction in Basin Catalog to reduce the number of files scanned per query.
+6. Use `EXPLAIN` to inspect the execution plan and verify predicate pushdown.
+7. Use `WHERE` filters with multi-way joins to reduce intermediate result sizes. Joining three or more large tables without filters can exceed resource limits.
+8. Join large fact tables through dimension tables rather than directly joining two large fact tables. For example, join `http_requests` to `firewall_events` through a shared `zones` dimension rather than cross-joining both fact tables.
+9. Be cautious with `COUNT(DISTINCT)` across multi-way joins. This combination can produce very large intermediate results. Consider using `approx_distinct()` or breaking the query into smaller steps.
+10. Use explicit `JOIN` syntax instead of implicit joins (comma-separated `FROM`) for readability and to ensure the optimizer can choose optimal join ordering.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/basin-sql/reference/limitations-best-practices/#page","headline":"Limitations and best practices","description":"Supported features, known limitations, and best practices for Basin SQL queries.","url":"https://developers.cloudflare.com/basin-sql/reference/limitations-best-practices/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-sql/reference/limitations-best-practices/og.png?v=ec5ce75f215b7f8d","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["SQL"]}
+```
+
+---
+
+---
+description: Wrangler commands for querying data with Basin SQL.
+title: Wrangler commands
+image: https://developers.cloudflare.com/basin-sql/reference/wrangler-commands/og.png?v=04f1cc0e595fd0ce
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/basin-sql/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Wrangler commands
+
+Last updated Oct 1, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/basin-sql/reference/wrangler-commands/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Use the `basin sql` command family to query a warehouse:
+
+npmyarnpnpm
+
+```
+npx wrangler basin sql query <WAREHOUSE_NAME> "SELECT * FROM <NAMESPACE>.<TABLE> LIMIT 10"
+```
+
+```
+yarn wrangler basin sql query <WAREHOUSE_NAME> "SELECT * FROM <NAMESPACE>.<TABLE> LIMIT 10"
+```
+
+```
+pnpm wrangler basin sql query <WAREHOUSE_NAME> "SELECT * FROM <NAMESPACE>.<TABLE> LIMIT 10"
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/basin-sql/reference/wrangler-commands/#page","headline":"Wrangler commands","description":"Wrangler commands for querying data with Basin SQL.","url":"https://developers.cloudflare.com/basin-sql/reference/wrangler-commands/","inLanguage":"en","image":"https://developers.cloudflare.com/basin-sql/reference/wrangler-commands/og.png?v=04f1cc0e595fd0ce","dateModified":"2026-10-01","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/snippets/examples/follow-redirects/",
+  "file": "rules/snippets/examples/follow-redirects.md",
+  "title": "Follow redirects from the origin \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:53.012012+00:00",
+  "html_len": 129764,
+  "md_len": 2642,
+  "depth": 0
+}

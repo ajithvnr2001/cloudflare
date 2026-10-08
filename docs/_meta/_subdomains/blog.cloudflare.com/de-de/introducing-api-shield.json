@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/introducing-api-shield/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/introducing-api-shield.md",
+  "title": "Wir pr\u00e4sentieren: API Shield | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:13.156763+00:00",
+  "html_len": 279360,
+  "md_len": 45542,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/svg-support-in-cloudflare-images/",
+  "file": "_subdomains/blog.cloudflare.com/svg-support-in-cloudflare-images.md",
+  "title": "SVG support in Cloudflare Images | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:05.371480+00:00",
+  "html_len": 299092,
+  "md_len": 67914,
+  "depth": 0,
+  "phase": 2
+}

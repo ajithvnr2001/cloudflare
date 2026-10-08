@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cf-cli-local-explorer/",
+  "file": "_subdomains/blog.cloudflare.com/cf-cli-local-explorer.md",
+  "title": "Building a CLI for all of Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:38.976754+00:00",
+  "html_len": 304511,
+  "md_len": 67114,
+  "depth": 0,
+  "phase": 2
+}

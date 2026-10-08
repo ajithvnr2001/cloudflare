@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cinco-de-mayo-what-are-we-celebrating-anyway/",
+  "file": "_subdomains/blog.cloudflare.com/cinco-de-mayo-what-are-we-celebrating-anyway.md",
+  "title": "Cinco de Mayo - What are we celebrating anyway? | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:12.256213+00:00",
+  "html_len": 284811,
+  "md_len": 62945,
+  "depth": 0,
+  "phase": 2
+}

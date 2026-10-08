@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/intel/",
+  "file": "_subdomains/blog.cloudflare.com/tag/intel.md",
+  "title": "Posts tagged \"Intel\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:09:15.671873+00:00",
+  "html_len": 116427,
+  "md_len": 2888,
+  "depth": 1,
+  "phase": 2
+}

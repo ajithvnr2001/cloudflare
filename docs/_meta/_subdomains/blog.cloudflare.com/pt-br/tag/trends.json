@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/tag/trends/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/tag/trends.md",
+  "title": "Posts com a tag \"Tend\u00eancias\" \u2014 Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:07:05.803707+00:00",
+  "html_len": 164114,
+  "md_len": 15051,
+  "depth": 1,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/cloudflare-radar-2021-year-in-review/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/cloudflare-radar-2021-year-in-review.md",
+  "title": "Bilan Year In Review 2021 de Cloudflare Radar | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:45.847170+00:00",
+  "html_len": 298332,
+  "md_len": 59925,
+  "depth": 0,
+  "phase": 2
+}

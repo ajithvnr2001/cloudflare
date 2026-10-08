@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/flo-health/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/flo-health.md",
+  "title": "Flo Health & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:30.228751+00:00",
+  "html_len": 217452,
+  "md_len": 10394,
+  "depth": 0,
+  "phase": 2
+}

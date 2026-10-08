@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/tag/application-security/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/tag/application-security.md",
+  "title": "\u6807\u7b7e\u4e3a\"\u5e94\u7528\u7a0b\u5e8f\u5b89\u5168\"\u7684\u6587\u7ae0 \u2014 Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:11:02.820669+00:00",
+  "html_len": 148329,
+  "md_len": 10404,
+  "depth": 1,
+  "phase": 2
+}

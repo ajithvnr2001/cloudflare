@@ -1,0 +1,10 @@
+{
+  "url": "https://www.cloudflare.com/plans/",
+  "file": "_subdomains/www.cloudflare.com/plans.md",
+  "title": "Pricing",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:20:26.749956+00:00",
+  "html_len": 687645,
+  "md_len": 29007,
+  "depth": 1
+}

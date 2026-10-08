@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/building-jetflow-a-framework-for-flexible-performant-data-pipelines-at-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/building-jetflow-a-framework-for-flexible-performant-data-pipelines-at-cloudflare.md",
+  "title": "Jetflow\u306e\u69cb\u7bc9\uff1aCloudflare\u306b\u304a\u3051\u308b\u67d4\u8edf\u3067\u9ad8\u6027\u80fd\u306a\u30c7\u30fc\u30bf\u30d1\u30a4\u30d7\u30e9\u30a4\u30f3\u306e\u30d5\u30ec\u30fc\u30e0\u30ef\u30fc\u30af | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:58.762151+00:00",
+  "html_len": 221003,
+  "md_len": 35171,
+  "depth": 0,
+  "phase": 2
+}

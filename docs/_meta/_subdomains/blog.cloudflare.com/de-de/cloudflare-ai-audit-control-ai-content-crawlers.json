@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/cloudflare-ai-audit-control-ai-content-crawlers/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/cloudflare-ai-audit-control-ai-content-crawlers.md",
+  "title": "Ab sofort kann der Zugriff durch KI-Modelle auf Ihre Inhalte \u00fcberpr\u00fcft und kontrolliert werden | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:39:06.445276+00:00",
+  "html_len": 235812,
+  "md_len": 42554,
+  "depth": 0,
+  "phase": 2
+}

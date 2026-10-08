@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/binary-ast/",
+  "file": "_subdomains/blog.cloudflare.com/binary-ast.md",
+  "title": "Faster script loading with BinaryAST? | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:46.427898+00:00",
+  "html_len": 350639,
+  "md_len": 84524,
+  "depth": 0,
+  "phase": 2
+}

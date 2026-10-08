@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja4-signals/",
+  "file": "_subdomains/blog.cloudflare.com/ja4-signals.md",
+  "title": "Advancing Threat Intelligence: JA4 fingerprints and inter-request signals | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:41.976804+00:00",
+  "html_len": 312846,
+  "md_len": 77124,
+  "depth": 0,
+  "phase": 2
+}

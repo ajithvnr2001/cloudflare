@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/nl-nl/galileo/",
+  "file": "_subdomains/www.cloudflare.com/nl-nl/galileo.md",
+  "title": "Project Galileo  | Cloudflare",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (87 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:06:37.910893+00:00",
+  "html_len": 448807,
+  "md_len": 20404,
+  "depth": 1,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://radar.cloudflare.com/bots/directory/google/",
+  "file": "_subdomains/radar.cloudflare.com/bots/directory/google.md",
+  "title": "GoogleBot Bot Information | Cloudflare Radar",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:27:21.559247+00:00",
+  "html_len": 161764,
+  "md_len": 2124,
+  "depth": 1
+}

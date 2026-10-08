@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/snippets/examples/serve-different-origin/",
+  "file": "rules/snippets/examples/serve-different-origin.md",
+  "title": "Route to a different origin based on origin response \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:54.351503+00:00",
+  "html_len": 129131,
+  "md_len": 1966,
+  "depth": 0
+}

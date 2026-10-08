@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/agents/examples/chat-agent/",
+  "file": "agents/examples/chat-agent.md",
+  "title": "Chat agent \u00b7 Cloudflare Agents docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:04:10.576473+00:00",
+  "html_len": 227688,
+  "md_len": 18652,
+  "depth": 0
+}

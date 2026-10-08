@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/h3i/",
+  "file": "_subdomains/blog.cloudflare.com/h3i.md",
+  "title": "Open sourcing h3i: a command line tool and library for low-level HTTP/3 testing and debugging | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:27.634068+00:00",
+  "html_len": 360265,
+  "md_len": 91106,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/snippets/examples/ab-testing-same-url/",
+  "file": "rules/snippets/examples/ab-testing-same-url.md",
+  "title": "A/B testing with same-URL direct access \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:52.404273+00:00",
+  "html_len": 133090,
+  "md_len": 2537,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/chaos-in-cloudflare-lisbon-office-securing-the-internet-with-wave-motion/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/chaos-in-cloudflare-lisbon-office-securing-the-internet-with-wave-motion.md",
+  "title": "Chaos dans les bureaux de Cloudflare \u00e0 Lisbonne : s\u00e9curiser Internet gr\u00e2ce au mouvement des vagues | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:19.310118+00:00",
+  "html_len": 255839,
+  "md_len": 43509,
+  "depth": 0,
+  "phase": 2
+}

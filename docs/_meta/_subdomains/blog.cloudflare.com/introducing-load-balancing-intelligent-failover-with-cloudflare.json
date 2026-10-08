@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-load-balancing-intelligent-failover-with-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-load-balancing-intelligent-failover-with-cloudflare.md",
+  "title": "Introducing Load Balancing & Intelligent Failover with Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:13.936123+00:00",
+  "html_len": 279901,
+  "md_len": 59390,
+  "depth": 0,
+  "phase": 2
+}

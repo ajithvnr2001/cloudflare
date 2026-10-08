@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/welcome-to-birthday-week-2023/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/welcome-to-birthday-week-2023.md",
+  "title": "Bienvenue dans la Semaine anniversaire 2023 | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:24.170887+00:00",
+  "html_len": 210614,
+  "md_len": 27772,
+  "depth": 0,
+  "phase": 2
+}

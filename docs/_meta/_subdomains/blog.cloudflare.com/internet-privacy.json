@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/internet-privacy/",
+  "file": "_subdomains/blog.cloudflare.com/internet-privacy.md",
+  "title": "Privacy needs to be built into the Internet | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:52.596570+00:00",
+  "html_len": 276658,
+  "md_len": 62206,
+  "depth": 0,
+  "phase": 2
+}

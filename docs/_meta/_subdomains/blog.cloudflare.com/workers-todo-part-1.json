@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/workers-todo-part-1/",
+  "file": "_subdomains/blog.cloudflare.com/workers-todo-part-1.md",
+  "title": "Going originless with Cloudflare Workers \u2013 Building a Todo app \u2013 Part 1: The API | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:06.329597+00:00",
+  "html_len": 316862,
+  "md_len": 66476,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/cloudflares-always-online-and-the-internet-archive-team-up-to-fight-origin-errors/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/cloudflares-always-online-and-the-internet-archive-team-up-to-fight-origin-errors.md",
+  "title": "Le service Always Online de Cloudflare et l'organisation Internet Archive font \u00e9quipe pour lutter contre les erreurs des serveurs d'origine | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:15.048705+00:00",
+  "html_len": 225188,
+  "md_len": 35305,
+  "depth": 0,
+  "phase": 2
+}

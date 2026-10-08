@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/making-static-sites-dynamic-with-cloudflare-d1/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/making-static-sites-dynamic-with-cloudflare-d1.md",
+  "title": "Dynamiser les sites statiques gr\u00e2ce \u00e0 Cloudflare D1 | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:40:32.544613+00:00",
+  "html_len": 247370,
+  "md_len": 35373,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/orpheus-saves-internet-requests-while-maintaining-speed/",
+  "file": "_subdomains/blog.cloudflare.com/orpheus-saves-internet-requests-while-maintaining-speed.md",
+  "title": "How Orpheus automatically routes around bad Internet weather | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:24.851075+00:00",
+  "html_len": 293573,
+  "md_len": 72802,
+  "depth": 0,
+  "phase": 2
+}

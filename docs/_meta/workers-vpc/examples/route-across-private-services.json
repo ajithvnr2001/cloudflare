@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers-vpc/examples/route-across-private-services/",
+  "file": "workers-vpc/examples/route-across-private-services.md",
+  "title": "Route to private services from Workers \u00b7 Cloudflare Workers VPC",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:08.320569+00:00",
+  "html_len": 118700,
+  "md_len": 4747,
+  "depth": 0
+}

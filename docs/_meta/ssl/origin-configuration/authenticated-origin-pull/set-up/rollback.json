@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/ssl/origin-configuration/authenticated-origin-pull/set-up/rollback/",
+  "file": "ssl/origin-configuration/authenticated-origin-pull/set-up/rollback.md",
+  "title": "Roll back per-hostname AOP \u00b7 Cloudflare SSL/TLS docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:15:43.911580+00:00",
+  "html_len": 135977,
+  "md_len": 4197,
+  "depth": 0
+}

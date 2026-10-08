@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/snippets-announcement/",
+  "file": "_subdomains/blog.cloudflare.com/snippets-announcement.md",
+  "title": "The most programmable Supercloud with Cloudflare Snippets | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:55.755628+00:00",
+  "html_len": 292885,
+  "md_len": 66395,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/new-and-improved-workers-docs/",
+  "file": "_subdomains/blog.cloudflare.com/new-and-improved-workers-docs.md",
+  "title": "New and improved Workers Docs | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:03.376302+00:00",
+  "html_len": 291463,
+  "md_len": 60770,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-php-api-binding/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-php-api-binding.md",
+  "title": "A New API Binding: cloudflare-php | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:03.018044+00:00",
+  "html_len": 304268,
+  "md_len": 63824,
+  "depth": 0,
+  "phase": 2
+}

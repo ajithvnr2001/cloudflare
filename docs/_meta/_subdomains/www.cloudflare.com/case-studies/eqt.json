@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/eqt/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/eqt.md",
+  "title": "EQT & Cloudflare | Case Study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:28.789251+00:00",
+  "html_len": 210613,
+  "md_len": 11879,
+  "depth": 0,
+  "phase": 2
+}

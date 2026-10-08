@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/tag/gatebot/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/tag/gatebot.md",
+  "title": "Posts com a tag \"Gatebot (PT)\" \u2014 Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:06:58.761207+00:00",
+  "html_len": 104016,
+  "md_len": 966,
+  "depth": 1,
+  "phase": 2
+}

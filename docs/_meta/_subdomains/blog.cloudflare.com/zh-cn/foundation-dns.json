@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/foundation-dns/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/foundation-dns.md",
+  "title": "\u9686\u91cd\u5ba3\u5e03 Foundation DNS \u2014\u2014 Cloudflare \u7684\u5168\u65b0\u9ad8\u7ea7 DNS \u4ea7\u54c1 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:52.820169+00:00",
+  "html_len": 220948,
+  "md_len": 32307,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workflows/build/visualizer/",
+  "file": "workflows/build/visualizer.md",
+  "title": "Visualize Workflows \u00b7 Cloudflare Workflows docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:18:14.900253+00:00",
+  "html_len": 102755,
+  "md_len": 4062,
+  "depth": 0
+}

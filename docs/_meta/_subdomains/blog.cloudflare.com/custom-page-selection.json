@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/custom-page-selection/",
+  "file": "_subdomains/blog.cloudflare.com/custom-page-selection.md",
+  "title": "Custom Page Selection for Cloudflare Apps | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:34.435049+00:00",
+  "html_len": 274164,
+  "md_len": 57885,
+  "depth": 0,
+  "phase": 2
+}

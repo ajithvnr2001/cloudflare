@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/data-protection-browser/",
+  "file": "_subdomains/blog.cloudflare.com/data-protection-browser.md",
+  "title": "Data protection controls with Cloudflare Browser Isolation | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:10.210464+00:00",
+  "html_len": 286077,
+  "md_len": 63519,
+  "depth": 0,
+  "phase": 2
+}

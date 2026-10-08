@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/browser-isolation-for-teams-of-all-sizes/",
+  "file": "_subdomains/blog.cloudflare.com/browser-isolation-for-teams-of-all-sizes.md",
+  "title": "Browser Isolation for teams of all sizes | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:03.473974+00:00",
+  "html_len": 292360,
+  "md_len": 63679,
+  "depth": 0,
+  "phase": 2
+}

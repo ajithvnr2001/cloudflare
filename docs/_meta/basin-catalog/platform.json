@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/basin-catalog/platform/",
+  "file": "basin-catalog/platform.md",
+  "title": "Platform \u00b7 Cloudflare Basin Catalog docs",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (684 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T07:05:29.862415+00:00",
+  "html_len": 129180,
+  "md_len": 736,
+  "depth": 0
+}

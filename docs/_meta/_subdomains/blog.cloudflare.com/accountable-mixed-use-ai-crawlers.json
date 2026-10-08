@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers/",
+  "file": "_subdomains/blog.cloudflare.com/accountable-mixed-use-ai-crawlers.md",
+  "title": "Have it both ways: stay discoverable in search while disallowing AI training | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:41.624845+00:00",
+  "html_len": 301797,
+  "md_len": 73711,
+  "depth": 0,
+  "phase": 2
+}

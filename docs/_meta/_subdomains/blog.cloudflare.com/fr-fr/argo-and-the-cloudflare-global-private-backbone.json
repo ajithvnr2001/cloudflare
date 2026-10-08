@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/argo-and-the-cloudflare-global-private-backbone/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/argo-and-the-cloudflare-global-private-backbone.md",
+  "title": "Argo et le r\u00e9seau dorsal priv\u00e9 global de Cloudflare | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:20.127547+00:00",
+  "html_len": 229869,
+  "md_len": 39362,
+  "depth": 0,
+  "phase": 2
+}

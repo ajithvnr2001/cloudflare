@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/custom-rules/use-cases/block-attack-score/",
+  "file": "waf/custom-rules/use-cases/block-attack-score.md",
+  "title": "Block requests by attack score \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:38.170485+00:00",
+  "html_len": 134290,
+  "md_len": 2100,
+  "depth": 0
+}

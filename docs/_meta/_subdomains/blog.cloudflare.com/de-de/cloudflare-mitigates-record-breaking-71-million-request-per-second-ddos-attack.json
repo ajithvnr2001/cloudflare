@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/cloudflare-mitigates-record-breaking-71-million-request-per-second-ddos-attack/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/cloudflare-mitigates-record-breaking-71-million-request-per-second-ddos-attack.md",
+  "title": "Cloudflare wehrt einen Rekord-DDoS-Angriff mit 71 Mio. Anfragen pro Sekunde ab | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:23.075914+00:00",
+  "html_len": 224475,
+  "md_len": 36352,
+  "depth": 0,
+  "phase": 2
+}

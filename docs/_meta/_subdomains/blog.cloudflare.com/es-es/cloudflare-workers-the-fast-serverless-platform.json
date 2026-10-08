@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/cloudflare-workers-the-fast-serverless-platform/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/cloudflare-workers-the-fast-serverless-platform.md",
+  "title": "Cloudflare Workers: la plataforma r\u00e1pida sin servidor | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:00.204075+00:00",
+  "html_len": 220411,
+  "md_len": 35220,
+  "depth": 0,
+  "phase": 2
+}

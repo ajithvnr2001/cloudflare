@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/mexico/",
+  "file": "_subdomains/blog.cloudflare.com/tag/mexico.md",
+  "title": "Posts tagged \"Mexico\" \u2014 Cloudflare Blog",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (690 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:09:29.786200+00:00",
+  "html_len": 116036,
+  "md_len": 3089,
+  "depth": 1,
+  "phase": 2
+}

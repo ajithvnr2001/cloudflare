@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/logs-r2/",
+  "file": "_subdomains/blog.cloudflare.com/logs-r2.md",
+  "title": "Logs on R2: slash your logging costs | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:27.006471+00:00",
+  "html_len": 277685,
+  "md_len": 58752,
+  "depth": 0,
+  "phase": 2
+}

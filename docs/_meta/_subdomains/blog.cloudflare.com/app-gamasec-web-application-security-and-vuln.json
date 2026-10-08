@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/app-gamasec-web-application-security-and-vuln/",
+  "file": "_subdomains/blog.cloudflare.com/app-gamasec-web-application-security-and-vuln.md",
+  "title": "App: GamaSec Web Application Security and Vulnerability Scanning | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:42.954437+00:00",
+  "html_len": 265573,
+  "md_len": 55327,
+  "depth": 0,
+  "phase": 2
+}

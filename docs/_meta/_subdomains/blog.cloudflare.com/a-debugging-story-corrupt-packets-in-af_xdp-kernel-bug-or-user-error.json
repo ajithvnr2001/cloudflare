@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/a-debugging-story-corrupt-packets-in-af_xdp-kernel-bug-or-user-error/",
+  "file": "_subdomains/blog.cloudflare.com/a-debugging-story-corrupt-packets-in-af_xdp-kernel-bug-or-user-error.md",
+  "title": "A debugging story: corrupt packets in AF_XDP; a kernel bug or user error? | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:21.132120+00:00",
+  "html_len": 353534,
+  "md_len": 88708,
+  "depth": 0,
+  "phase": 2
+}

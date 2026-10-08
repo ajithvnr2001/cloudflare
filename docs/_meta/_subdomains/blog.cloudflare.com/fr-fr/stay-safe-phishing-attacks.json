@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/stay-safe-phishing-attacks/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/stay-safe-phishing-attacks.md",
+  "title": "Rester \u00e0 l'abri du phishing | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:59.420442+00:00",
+  "html_len": 231439,
+  "md_len": 40667,
+  "depth": 0,
+  "phase": 2
+}

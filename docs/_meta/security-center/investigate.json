@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/security-center/investigate/",
+  "file": "security-center/investigate.md",
+  "title": "Investigate \u00b7 Cloudflare Security Center docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:15:30.253562+00:00",
+  "html_len": 93089,
+  "md_len": 2112,
+  "depth": 0
+}

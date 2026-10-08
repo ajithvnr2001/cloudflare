@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/how-to-test-http-3-and-quic-with-firefox-nightly/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/how-to-test-http-3-and-quic-with-firefox-nightly.md",
+  "title": "Firefox Nightly\uc5d0\uc11c HTTP/3 \uacfc QUIC\uc744 \uc2dc\ud5d8\ud574 \ubcf4\uae30 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:32.592312+00:00",
+  "html_len": 214644,
+  "md_len": 31562,
+  "depth": 0,
+  "phase": 2
+}

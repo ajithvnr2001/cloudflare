@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/more-npm-packages-on-cloudflare-workers-combining-polyfills-and-native-code/",
+  "file": "_subdomains/blog.cloudflare.com/more-npm-packages-on-cloudflare-workers-combining-polyfills-and-native-code.md",
+  "title": "More NPM packages on Cloudflare Workers: Combining polyfills and native code to support Node.js APIs | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:10.465527+00:00",
+  "html_len": 326795,
+  "md_len": 73146,
+  "depth": 0,
+  "phase": 2
+}

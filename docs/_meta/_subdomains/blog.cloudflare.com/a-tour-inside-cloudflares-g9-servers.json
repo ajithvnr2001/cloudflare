@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/a-tour-inside-cloudflares-g9-servers/",
+  "file": "_subdomains/blog.cloudflare.com/a-tour-inside-cloudflares-g9-servers.md",
+  "title": "A Tour Inside Cloudflare's G9 Servers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:13.374065+00:00",
+  "html_len": 309098,
+  "md_len": 71113,
+  "depth": 0,
+  "phase": 2
+}

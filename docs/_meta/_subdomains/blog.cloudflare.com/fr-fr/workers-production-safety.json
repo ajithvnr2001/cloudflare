@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/workers-production-safety/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/workers-production-safety.md",
+  "title": "Nouveaux outils pour la s\u00e9curit\u00e9 de la production : d\u00e9ploiements graduels, Stack Traces, contr\u00f4le du volume de requ\u00eates et nouveaux SDK | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:41:28.122987+00:00",
+  "html_len": 260162,
+  "md_len": 53004,
+  "depth": 0,
+  "phase": 2
+}

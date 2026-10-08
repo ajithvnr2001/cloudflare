@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-workers-templates/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-workers-templates.md",
+  "title": "Get started with Cloudflare Workers with ready-made templates | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:58.404263+00:00",
+  "html_len": 296885,
+  "md_len": 64093,
+  "depth": 0,
+  "phase": 2
+}

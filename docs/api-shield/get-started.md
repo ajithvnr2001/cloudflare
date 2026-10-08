@@ -1,0 +1,150 @@
+---
+url: https://developers.cloudflare.com/api-shield/get-started/
+title: Get started with API Shield \u00b7 Cloudflare API Shield docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:05:17.446632+00:00
+---
+
+# Get started with API Shield · Cloudflare API Shield docs
+
+> Source: https://developers.cloudflare.com/api-shield/get-started/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[API Shield](https://developers.cloudflare.com/api-shield/)
+  3. /Get started
+
+
+
+# Get started with API Shield
+
+Last updated Sep 29, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/api-shield/get-started/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewSession identifiers To set up session identifiersCreate a Schema ProfileEnable the Sensitive Data Detection ruleset and accompanying rulesManage operationsAdd rate limits to your most sensitive endpointsExport a learned schemaView and configure Sequence AnalyticsAdditional configuration Set up JSON Web Tokens (JWT) validation Set up GraphQL malicious query protection Mutual TLS (mTLS) authentication
+
+API Shield protects your APIs by discovering endpoints, validating request schemas, and detecting abuse patterns. This guide walks through the initial setup from configuring session identifiers to enabling advanced protections.
+
+## Session identifiers
+
+While not strictly required, it is recommended that you configure your session identifiers when getting started with API Shield. When Cloudflare inspects your API traffic for individual sessions, we can offer more tools for visibility, management, and control.
+
+If you are unsure of the session identifiers that your API uses, consult with your development team.
+
+Session identifiers should uniquely identify API clients. A common session identifier for API traffic is the `Authorization` header. When a [JSON Web Token (JWT)](https://developers.cloudflare.com/api-shield/security/jwt-validation/) is used by the API for client authentication, its value may change over time. You can use a claim value inside the JWT such as `sub` or `email` as a session identifier to uniquely identify the session over time.
+
+If no session identifiers are configured and the `Authorization` header appears on more than 1% of eligible sampled client requests with `2xx` responses, Cloudflare automatically configures that header as the API Shield session identifier. Cloudflare does not overwrite an existing session identifier configuration.
+
+An API Shield subscription or eligible API Shield trial is required to configure session identifiers, including cookie-based identifiers. Configured identifiers can provide optional evidence for [API Discovery](https://developers.cloudflare.com/api-shield/security/api-discovery/), and are used by [Sequence Mitigation](https://developers.cloudflare.com/api-shield/security/sequence-mitigation/), [rate limiting recommendations](https://developers.cloudflare.com/api-shield/security/volumetric-abuse-detection/), [Sequence Analytics](https://developers.cloudflare.com/api-shield/security/sequence-analytics/), and [Authentication Posture](https://developers.cloudflare.com/api-shield/security/authentication-posture/).
+
+### To set up session identifiers
+
+You can configure up to 10 session identifiers.
+
+  1. In the Cloudflare dashboard, go to the **Security Settings** page.
+
+[ Go to **Settings** ↗ ](https://dash.cloudflare.com/?to=/:account/:zone/security/settings)
+  2. Filter by **API abuse**.
+
+  3. On **Session identifiers** , select **Configure session identifiers**.
+
+  4. Select **Manage identifiers**.
+
+  5. Choose the type of session identifier (cookie, HTTP header, or JWT claim).
+
+Note
+
+The session identifier cookie must comply with RFC 6265. Otherwise, it will be rejected.
+
+If you are using a JWT claim, choose the [Token Configuration](https://developers.cloudflare.com/api-shield/security/jwt-validation/api/#token-configurations) that will verify the JWT, then specify the claim using a supported [RFC 9535 JSONPath ↗︎](https://www.rfc-editor.org/rfc/rfc9535.html) expression. Token Configurations are required to use JWT claims as session identifiers. Refer to [JWT Validation](https://developers.cloudflare.com/api-shield/security/jwt-validation/) for more information.
+
+  6. Enter the name of the session identifier.
+
+  7. Select **Save**.
+
+
+
+
+API Shield generates rate limiting recommendations for eligible saved operations. Recommendations require API Shield access, a configured session identifier that matches operation traffic, sufficient data, and completed processing. After these requirements are met, you can view per-operation and per-session recommendations and create rate limiting rules.
+
+Discovery can use configured session identifiers as one signal when identifying API traffic. Session identifiers also support session traffic analysis in [Sequence Analytics](https://developers.cloudflare.com/api-shield/security/sequence-analytics/).
+
+## Create a Schema Profile
+
+[Application Profiles](https://developers.cloudflare.com/waf/detections/application-profiles/) provides one Schema Profile with two sources. Schema Learning derives a profile from traffic, while Schema Validation uses an uploaded OpenAPI schema.
+
+Both sources provide an **always-on detection** after their profile becomes available. Mitigation requires a separate WAF Custom Rule.
+
+If you maintain an OpenAPI schema, follow the [Schema Validation upload procedure](https://developers.cloudflare.com/api-shield/security/schema-validation/#upload-a-schema). API Shield remains the reference for OpenAPI compatibility, schema governance, and automation.
+
+## Enable the Sensitive Data Detection ruleset and accompanying rules
+
+API Shield works with the Cloudflare [WAF](https://developers.cloudflare.com/waf/) [Sensitive Data Detection](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-management/#sensitive-data-detection) ruleset to identify API endpoints that return sensitive data, such as social security or credit card numbers, in their HTTP responses. Review these endpoints to verify that sensitive data is only returned where expected.
+
+Note
+
+Sensitive Data Detection requires a separate subscription. Contact your account team if your plan does not include this feature.
+
+You can identify endpoints returning sensitive data by selecting the icon next to the path in a row. Expand the endpoint to see details on which rules were triggered and view more information by exploring events in **Firewall Events**.
+
+## Manage operations
+
+Web Assets continuously discovers operations from traffic. An operation represents an endpoint by HTTP method, hostname pattern, and path pattern.
+
+You can also add operations manually under **Web Assets** > **Operations**. Discovery and manual creation only add inventory entries.
+
+To start Schema Learning, select **Learn profile** from the operation overflow menu. Review the learned schema through **View details** > **Security overview**.
+
+For the complete workflow and traffic thresholds, refer to [Get started with Application Profiles](https://developers.cloudflare.com/waf/detections/application-profiles/get-started/).
+
+## Add rate limits to your most sensitive endpoints
+
+[Rate limiting rules](https://developers.cloudflare.com/waf/rate-limiting-rules/) allow you to define rate limits for requests matching an expression, and choose the action to perform when those rate limits are reached.
+
+API Shield generates rate limit recommendations for eligible saved operations. Recommendations require API Shield access, a configured session identifier that matches operation traffic, sufficient data, and completed processing. These recommendations are scoped per operation and per session rather than applied across your entire site or based on IP address.
+
+Per-session rate limits track traffic from individual visitors during their session to a specific endpoint. This reduces false positives from broadly scoped rules while still limiting abusive traffic.
+
+## Export a learned schema
+
+A learned-schema export is a point-in-time OpenAPI snapshot for a selected hostname. It includes learned operations by method and path and detected path variables (for example, `/users/{id}`). It can also include detected query parameters, their formats, and rate limit recommendations.
+
+You can export your learned schemas in the [Cloudflare dashboard](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-management/schema-learning/#export-a-schema) or via the [API](https://developers.cloudflare.com/api/resources/api_gateway/subresources/schemas/methods/list/).
+
+The export uses OpenAPI `v3.0.0`. To use a fixed profile, upload that file through [Schema Validation](https://developers.cloudflare.com/api-shield/security/schema-validation/).
+
+## View and configure Sequence Analytics
+
+[Sequence Analytics](https://developers.cloudflare.com/api-shield/security/sequence-analytics/) identifies common patterns of API requests — for example, a user checking their account balance before initiating a funds transfer.
+
+Sequences are ranked by precedence score, which measures how likely specific API requests are to occur together in a consistent order. High-scoring sequences contain API requests that are likely to be preceded by the other operations in the sequence.
+
+[Sequence mitigation](https://developers.cloudflare.com/api-shield/security/sequence-mitigation/) allows you to enforce request patterns for authenticated clients communicating with your API. Use Sequence Analytics to identify the sequences your API clients follow, then apply API Shield protections (rate limiting, Schema validation, JWT validation, and mTLS) to the endpoints in your high-scoring sequences. Verify the expected endpoint order with your development team.
+
+For more information, refer to [Detecting API abuse automatically using sequence analysis ↗︎](https://blog.cloudflare.com/api-sequence-analytics) blog post.
+
+## Additional configuration
+
+### Set up JSON Web Tokens (JWT) validation
+
+[JSON Web Tokens (JWT) validation](https://developers.cloudflare.com/api-shield/security/jwt-validation/) verifies that tokens sent by clients have not been tampered with and have not expired. Configure JWT validation using the Cloudflare dashboard or API.
+
+### Set up GraphQL malicious query protection
+
+If your origin uses GraphQL, you may consider setting limits on GraphQL query size and depth.
+
+[GraphQL malicious query protection](https://developers.cloudflare.com/api-shield/security/graphql-protection/api/) scans GraphQL traffic for queries with excessive nesting or size that could overload your origin and result in a denial of service. You can create rules that set maximum query depth and size to block these queries before they reach your origin.
+
+For more information, refer to the [blog post ↗︎](https://blog.cloudflare.com/protecting-graphql-apis-from-malicious-queries/).
+
+### Mutual TLS (mTLS) authentication
+
+If you operate an API that requires or would benefit from an extra layer of protection, you may consider using Mutual TLS (mTLS).
+
+[Mutual TLS (mTLS) authentication](https://developers.cloudflare.com/api-shield/security/mtls/) requires both the client and server to verify each other's identity using certificates. In standard TLS, only the server proves its identity. mTLS adds client verification, which is useful for devices like IoT hardware that do not authenticate via an identity provider.
+
+[PreviousOverview](https://developers.cloudflare.com/api-shield/)[NextPlans](https://developers.cloudflare.com/api-shield/plans/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/api-shield/get-started.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

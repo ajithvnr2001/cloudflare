@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/",
+  "file": "workers-ai/models/qwen3.8-27b.md",
+  "title": "qwen3.8-27b (Qwen) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:06.365689+00:00",
+  "html_len": 821795,
+  "md_len": 11851,
+  "depth": 0
+}

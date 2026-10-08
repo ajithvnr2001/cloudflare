@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/birthday-week-2019/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/birthday-week-2019.md",
+  "title": "Bienvenue \u00e0 la Semaine anniversaire 2019 | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:54.744529+00:00",
+  "html_len": 207255,
+  "md_len": 27326,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/serverlist-15th-edition/",
+  "file": "_subdomains/blog.cloudflare.com/serverlist-15th-edition.md",
+  "title": "The Serverlist: Workers Supports COBOL, Workers @ Opendoor, and more! | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:12.989479+00:00",
+  "html_len": 264772,
+  "md_len": 53499,
+  "depth": 0,
+  "phase": 2
+}

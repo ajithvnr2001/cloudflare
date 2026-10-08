@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/ja-jp/press/",
+  "file": "_subdomains/www.cloudflare.com/ja-jp/press.md",
+  "title": "\u30d7\u30ec\u30b9\u6982\u8981 | Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:19:25.026907+00:00",
+  "html_len": 252871,
+  "md_len": 6148,
+  "depth": 1,
+  "phase": 2
+}

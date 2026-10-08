@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/teams-dashboard-design-story/",
+  "file": "_subdomains/blog.cloudflare.com/teams-dashboard-design-story.md",
+  "title": "The Teams Dashboard: The Design Story | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:05.472034+00:00",
+  "html_len": 287060,
+  "md_len": 61488,
+  "depth": 0,
+  "phase": 2
+}

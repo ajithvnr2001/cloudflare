@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/how-waiting-room-queues/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/how-waiting-room-queues.md",
+  "title": "Comment Waiting Room prend des d\u00e9cisions de mise en file d'attente sur le r\u00e9seau hautement distribu\u00e9 de Cloudflare | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:26.810136+00:00",
+  "html_len": 293341,
+  "md_len": 70728,
+  "depth": 0,
+  "phase": 2
+}

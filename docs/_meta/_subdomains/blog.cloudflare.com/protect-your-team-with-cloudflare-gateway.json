@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/protect-your-team-with-cloudflare-gateway/",
+  "file": "_subdomains/blog.cloudflare.com/protect-your-team-with-cloudflare-gateway.md",
+  "title": "Protect your team with Cloudflare Gateway | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:22.687206+00:00",
+  "html_len": 311110,
+  "md_len": 72957,
+  "depth": 0,
+  "phase": 2
+}

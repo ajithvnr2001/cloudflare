@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/power-outage-taiwan/",
+  "file": "_subdomains/blog.cloudflare.com/power-outage-taiwan.md",
+  "title": "Power outage hits the island of Taiwan. Here\u2019s what we learned. | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:08.652210+00:00",
+  "html_len": 275423,
+  "md_len": 57213,
+  "depth": 0,
+  "phase": 2
+}

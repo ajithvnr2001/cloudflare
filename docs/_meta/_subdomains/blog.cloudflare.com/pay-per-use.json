@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pay-per-use/",
+  "file": "_subdomains/blog.cloudflare.com/pay-per-use.md",
+  "title": "Pay Per Use: when AI uses your work, you should get paid | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:28.310898+00:00",
+  "html_len": 298514,
+  "md_len": 64680,
+  "depth": 0,
+  "phase": 2
+}

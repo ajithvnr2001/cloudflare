@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/cloudflare-research-two-years-in/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/cloudflare-research-two-years-in.md",
+  "title": "Zwei Jahre Cloudflare Research: eine Zwischenbilanz | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:25.245686+00:00",
+  "html_len": 229588,
+  "md_len": 49509,
+  "depth": 0,
+  "phase": 2
+}

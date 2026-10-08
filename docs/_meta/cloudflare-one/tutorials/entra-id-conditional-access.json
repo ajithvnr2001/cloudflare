@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/cloudflare-one/tutorials/entra-id-conditional-access/",
+  "file": "cloudflare-one/tutorials/entra-id-conditional-access.md",
+  "title": "Use Microsoft Entra ID Conditional Access policies in Cloudflare Access \u00b7 Cloudflare One docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:10:20.948953+00:00",
+  "html_len": 279583,
+  "md_len": 5387,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/id-id/zero-trust-with-managed-devices/",
+  "file": "_subdomains/blog.cloudflare.com/id-id/zero-trust-with-managed-devices.md",
+  "title": "Membuat aturan Zero Trust dengan perangkat terkelola | Blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:03.072883+00:00",
+  "html_len": 175829,
+  "md_len": 13642,
+  "depth": 0,
+  "phase": 2
+}

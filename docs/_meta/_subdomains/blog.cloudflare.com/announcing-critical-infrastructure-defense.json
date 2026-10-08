@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/announcing-critical-infrastructure-defense/",
+  "file": "_subdomains/blog.cloudflare.com/announcing-critical-infrastructure-defense.md",
+  "title": "Cloudflare, CrowdStrike, and Ping Identity launch the Critical Infrastructure Defense Project | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:36.874893+00:00",
+  "html_len": 277884,
+  "md_len": 59423,
+  "depth": 0,
+  "phase": 2
+}

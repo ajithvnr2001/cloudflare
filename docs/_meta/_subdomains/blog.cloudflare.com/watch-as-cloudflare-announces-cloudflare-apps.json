@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/watch-as-cloudflare-announces-cloudflare-apps/",
+  "file": "_subdomains/blog.cloudflare.com/watch-as-cloudflare-announces-cloudflare-apps.md",
+  "title": "Watch as CloudFlare Announces CloudFlare Apps and Rocket Loader to the World | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:42.991617+00:00",
+  "html_len": 263525,
+  "md_len": 54151,
+  "depth": 0,
+  "phase": 2
+}

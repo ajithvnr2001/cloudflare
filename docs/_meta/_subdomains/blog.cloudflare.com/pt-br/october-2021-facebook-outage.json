@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/october-2021-facebook-outage/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/october-2021-facebook-outage.md",
+  "title": "Entendendo como o Facebook desapareceu da Internet | Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:59.968892+00:00",
+  "html_len": 227893,
+  "md_len": 28736,
+  "depth": 0,
+  "phase": 2
+}

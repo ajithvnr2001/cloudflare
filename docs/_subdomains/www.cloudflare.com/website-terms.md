@@ -1,0 +1,151 @@
+---
+url: https://www.cloudflare.com/website-terms/
+title: Terms of Use | Cloudflare
+method: crawl4ai+scrapegraph (scrapling: scrapling thin content (83 chars), fallback to crawl4ai)
+fetched_at: 2026-10-08T07:22:01.505696+00:00
+---
+
+# Terms of Use | Cloudflare
+
+> Source: https://www.cloudflare.com/website-terms/
+
+Preview Mode
+[Documentation](https://staging.mrk.cfdata.org/mrk/redwood-blade-repository/)
+Cloudflare Website and Online Services Terms of Use
+Effective August 1, 2025 
+_Welcome to Cloudflare! As used in these Terms of Use, "Cloudflare", "us" or "we" refers to Cloudflare, Inc. and its affiliates._
+* * *
+PLEASE READ THE FOLLOWING CAREFULLY AS IT AFFECTS YOUR LEGAL RIGHTS. These terms of use (“Terms”), along with Cloudflare’s [Privacy Policy](https://www.cloudflare.com/privacypolicy/), govern your use of Cloudflare’s Websites and Online Services. For the purposes of these Terms, (i) “Websites” refers to www.cloudflare.com, as well as the other websites that Cloudflare operates and that link to these Terms, and (ii) “Online Services” means Cloudflare’s products and services that are publicly available without a subscription or a Cloudflare account, including, but not limited to, the 1.1.1.1 Public DNS Resolver service, including 1.1.1.1 for Families, Cloudflare Time Services, RPKI Portal, and Distributed Web Gateway and Resolver. If you do not agree to these Terms, you must not access or use our Websites or Online Services.
+THESE TERMS DO NOT APPLY TO YOUR ACCESS AND USE OF THE CLOUDFLARE PRODUCTS AND SERVICES THAT ARE PROVIDED UNDER THE [SELF-SERVE SUBSCRIPTION AGREEMENT](https://www.cloudflare.com/terms/), THE [ENTERPRISE SUBSCRIPTION AGREEMENT](https://www.cloudflare.com/enterpriseterms/), OR OTHER WRITTEN AGREEMENT SIGNED BETWEEN YOU AND CLOUDFLARE (IF APPLICABLE).
+If there is a conflict between these Terms and additional terms applicable to a given Website or Online Service, the additional terms will control for that conflict. 
+  1. ELIGIBILITY
+
+
+By agreeing to these Terms, you represent and warrant to us: (i) that you have not previously been suspended or removed from the Websites and Online Services and (ii) that your use of the Websites and Online Services is in compliance with any and all applicable laws and regulations.
+2. LICENSE GRANT TO CLOUDFLARE  
+  
+By submitting, posting, or publishing your content, suggestions, enhancement requests, recommendations, feedback, information, data, or comments (“Content”) to any Website or Online Service, you are granting Cloudflare a perpetual, irrevocable, worldwide, non-exclusive, royalty-free right and license (with the right to sublicense) to use, incorporate, exploit, display, perform, reproduce, distribute, and prepare derivative works of your Content. You will retain ownership of your Content, however, any use of your Content by Cloudflare may be without any compensation paid to you. By submitting, posting, and publishing your Content, you represent and warrant that your Content, does not: (i) infringe, violate, or misappropriate any third-party right, including any copyright, trademark, patent, trade secret, moral right, privacy right, right of publicity, or any other intellectual property or proprietary right; or (ii) slander, defame, or libel any third-party.
+3. INFRINGEMENT AND ABUSE  
+  
+With respect to the Online Services, Cloudflare operates pass-through network services used to improve network performance, not hosting provider services and as such, we have no way of removing improper or infringing material from our users’ websites, third party sites or their hosting services. Cloudflare has no control over any decentralized name registries, and cannot remove material that is accessible through the Distributed Web Gateway. Copyright holders or their agents concerned with material served through Cloudflare’s network should submit a notification of claimed copyright infringement or other abuse through our automated form located at [https://www.cloudflare.com/trust-hub/abuse-approach/](https://www.cloudflare.com/trust-hub/abuse-approach/).If you would prefer not to use our complaint submission form, you may mail your complaint to:  
+  
+Cloudflare, Inc.  
+Attn: Legal Department  
+101 Townsend St,  
+San Francisco, CA 94107  
+  
+When submitting abuse reports, please provide detailed information supporting your complaint as well as an affidavit attesting to its validity. Please bear in mind that unless you have requested us not to share your information through the opt-out procedure described on our abuse page, Cloudflare may provide copies of, or information from your notification or complaint to anyone it considers appropriate, including but not limited to the Cloudflare user whom the notification or complaint relates to, the Cloudflare user’s hosting provider, website operator and visitors of Cloudflare’s own website. For more information about how Cloudflare handles complaints please visit [https://www.cloudflare.com/trust-hub/abuse-approach/](https://www.cloudflare.com/trust-hub/abuse-approach/).  
+  
+If you intend to automate the process by which you submit abuse reports , you will need to request access to an abuse API token. If you are granted an abuse API token, you agree not to disclose or provide the abuse API token to any person or entity other than to yourself or your organization’s employees, or use the API or API token in any manner prohibited under Section 7 below. You understand that Cloudflare may suspend or revoke an abuse API token at any time in Cloudflare’s reasonable discretion.
+4. TERMINATION OF USE; DISCONTINUATION AND MODIFICATION OF THE WEBSITES AND ONLINE SERVICES  
+  
+We may at our sole discretion suspend or terminate your access to the Websites and/or Online Services at any time, with or without notice for any reason or no reason at all. We also reserve the right to modify or discontinue the Websites and/or Online Services at any time (including, without limitation, by limiting or discontinuing certain features of the Websites and/or Online Services) without notice to you. We will have no liability whatsoever on account of any change to the Websites and/or Online Services or any suspension or termination of your access to or use of the Websites and/or Online Services.
+5. THIRD-PARTY WEBSITES  
+  
+The Websites and Online Services may contain links to third-party websites. Such linked websites are not under our control, and we are not responsible for their content.
+6. OWNERSHIP; PROPRIETARY RIGHTS  
+  
+The visual interfaces, graphics, design, compilation, information, data, computer code (including source code or object code), products, software, services, and all other elements of the Websites and Online Services (the “Materials”) provided by Cloudflare are protected by all relevant intellectual property and proprietary rights and applicable laws. All Materials contained in the Websites and Online Services are the property of Cloudflare or our third-party licensors. Except as expressly authorized by Cloudflare you may not make use of the Materials. Cloudflare reserves all rights to the Materials not granted expressly in these Terms.
+7. PROHIBITED USES  
+  
+As a condition of your use of the Websites and Online Services, you will not use the Websites or Online Services for any purpose that is unlawful or prohibited by these Terms. You may not use the Websites or Online Services in any manner that could damage, disable, overburden, disrupt or impair any Cloudflare servers or APIs, or any networks connected to any Cloudflare server or APIs, or that could interfere with any other party's use and enjoyment of any Websites or Online Services. You may not transmit any viruses, worms, defects, Trojan horses, or any items of a destructive nature through your use of Websites or Online Services. You may not exceed or circumvent, or try to exceed or circumvent, limitations on the Websites or Online Services, including on any API calls, or otherwise use the Websites or Online Services in a manner that violates any Cloudflare documentation or user manuals. You may not attempt to gain unauthorized access to any Websites or Online Services, other accounts, computer systems, or networks connected to any Cloudflare server or to any of the Websites or Online Services through hacking, password mining, or any other means. You may not obtain or attempt to obtain any materials or information through any means not intentionally made available through the Websites or Online Services. You may not to use the Websites or Online Services in any way that violates any applicable federal, state, local, or international law or regulation (including, without limitation, any laws regarding the export of data or software to and from the US or other countries).  
+  
+Cloudflare retains the right (but not the obligation) to block content from its Distributed Web Gateway that Cloudflare determines (in its sole discretion) to be illegal, harmful, or in violation of these Terms. For these purposes, illegal or harmful content includes but is not limited to: (a) content containing, promoting, or facilitating child sexual exploitation and abuse or human trafficking; (b) content that infringes on another person’s intellectual property rights or is otherwise unlawful; (c) content that discloses sensitive personal information, incites or exploits violence, or is intended to defraud the public; and (d) content that seeks to distribute malware, facilitate phishing, or otherwise constitutes technical abuse. 
+8. ARTIFICIAL INTELLIGENCE RESTRICTION 
+You may not use automated bots to access, scan, scrape, data mine, copy, or use the materials or content on this website for developing, training, fine-tuning, or otherwise contributing to or improving a machine learning model or artificial intelligence (AI) system or the operation thereof, unless your bot’s user agent is (i) explicitly permitted (“allowed”) to do so in this website’s robots.txt file and (ii) solely used to identify bots used for AI purposes (i.e., this provision does not apply to user agents that are used for multiple purposes, such as search engine indexing and AI purposes). 
+9. INDEMNITY  
+  
+You agree that you will be responsible for your use of the Websites and Online Services, and you agree to defend, indemnify, and hold harmless Cloudflare and its officers, directors, employees, consultants, affiliates, subsidiaries and agents (collectively, the "Cloudflare Entities") from and against any and all claims, liabilities, damages, losses, and expenses, including reasonable attorneys' fees and costs, arising out of or in any way connected with (i) your access to, use of, or alleged use of the Websites and Online Services; (ii) your violation of these Terms or any representation, warranty, or agreements referenced herein, or any applicable law or regulation; (iii) your violation of any third-party right, including without limitation any intellectual property right, publicity, confidentiality, property or privacy right; or (iv) any disputes or issues between you and any third party. We reserve the right, at our own expense, to assume the exclusive defense and control of any matter otherwise subject to indemnification by you (and without limiting your indemnification obligations with respect to such matter), and in such case, you agree to cooperate with our defense of such claim.
+10. DISCLAIMERS; NO WARRANTIES  
+  
+THE WEBSITES AND ONLINE SERVICES ARE MADE AVAILABLE TO YOU ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITH THE EXPRESS UNDERSTANDING THAT THE CLOUDFLARE ENTITIES HAVE NO OBLIGATION TO MONITOR, CONTROL, OR VET THE CONTENT OR DATA APPEARING ON THE WEBSITES AND ONLINE SERVICES. AS SUCH, YOUR USE OF THE WEBSITES AND ONLINE SERVICES IS AT YOUR OWN DISCRETION AND RISK. THE CLOUDFLARE ENTITIES MAKE NO CLAIMS OR PROMISES ABOUT THE QUALITY, ACCURACY, OR RELIABILITY OF THE WEBSITES AND ONLINE SERVICES AND EXPRESSLY DISCLAIM ALL WARRANTIES, WHETHER EXPRESS OR IMPLIED, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+11. LIMITATION OF LIABILITY  
+  
+IN NO EVENT WILL THE CLOUDFLARE ENTITIES BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF OR RELATING TO YOUR ACCESS TO OR USE OF, OR YOUR INABILITY TO ACCESS OR USE, THE WEBSITES AND ONLINE SERVICES OR ANY MATERIALS OR CONTENT ON THE WEBSITES AND ONLINE SERVICES, WHETHER BASED ON WARRANTY, CONTRACT, TORT (INCLUDING NEGLIGENCE), STATUTE, OR ANY OTHER LEGAL THEORY, WHETHER OR NOT THE CLOUDFLARE ENTITIES HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGE.
+12. GOVERNING LAW  
+  
+These Terms will be governed by the laws of the State of California without regard to conflict of law principles. To the extent that any lawsuit or court proceeding is permitted hereunder, you and Cloudflare agree to submit to the personal and exclusive jurisdiction of the state and federal courts located within San Francisco County, California for the purpose of litigating all such disputes.
+13. CHANGES TO THESE TERMS  
+  
+Cloudflare reserves the right to make modifications to these Terms at any time. Revised versions of these Terms will be posted to this Website. Unless otherwise specified, any modifications to the Terms will take effect the day they are posted to this Website. If you do not agree with the revised Terms, your sole and exclusive remedy will be to discontinue your use of the Websites and Online Services.
+14. GENERAL  
+  
+These Terms, together with the Privacy Policy and any applicable product limits, disclaimers, or other terms presented to you on our Website or [documentation](https://developers.cloudflare.com/), each of which are incorporated by reference into the Agreement, constitute the entire and exclusive understanding and agreement between you and Cloudflare regarding your use of and access to the Websites and Online Services. Use of section headers in these Terms is for convenience only and will not have any impact on the interpretation of particular provisions. You may not assign or transfer these Terms or your rights hereunder, in whole or in part, by operation of law or otherwise, without our prior written consent. We may assign these Terms at any time without notice. The failure to require performance of any provision will not affect our right to require performance at any time thereafter, nor will a waiver of any breach or default of these Terms or any provision of these Terms constitute a waiver of any subsequent breach or default or a waiver of the provision itself. In the event that any part of these Terms is held to be invalid or unenforceable, the unenforceable part will be given effect to the greatest extent possible and the remaining parts will remain in full force and effect. You acknowledge that the Websites and Online Services are not intended to be technology protection measures that will help you comply with the Children’s Online Privacy Protection Act (COPPA) or Children's Internet Protection Act (CIPA).Upon termination of these Terms, any provision that by its nature or express terms should survive will survive such termination or expiration, including, but not limited to, Section 2 and Sections 7 through 14.
+15. CONTACT INFORMATION  
+  
+The Websites and Online Services are operated by Cloudflare, Inc., located at 101 Townsend St., San Francisco, California 94107. You may contact us by sending correspondence to the foregoing address or by emailing us at support@cloudflare.com. If you are a California resident, you may have these Terms mailed to you electronically by sending a letter to the foregoing address with your electronic mail address and a request for these Terms.
+## Legal
+[Website Terms of Use](https://www.cloudflare.com/website-terms/)
+[Self-Serve Subscription Agreement](https://www.cloudflare.com/terms/)
+[Service-Specific Terms](https://www.cloudflare.com/service-specific-terms-overview/)
+[Privacy Policy](https://www.cloudflare.com/privacypolicy/)
+[Cookie Policy](https://www.cloudflare.com/cookie-policy/)
+[Trust & Safety](https://www.cloudflare.com/trust-hub/abuse-approach/)
+[Transparency Report](https://www.cloudflare.com/transparency/)
+[Domain Registration Agreement](https://www.cloudflare.com/domain-registration-agreement/)
+[Modern Slavery Act Statement](https://www.cloudflare.com/modern-slavery-act-statement/)
+[Third Party Code of Conduct](https://cf-assets.www.cloudflare.com/slt3lc6tev37/284hiWkCYNc49GQpAeBvGN/e137cdac96d1c4cd403c6b525831d284/Third_Party_Code_of_Conduct.pdf)
+[Candidate Privacy Policy](https://www.cloudflare.com/candidate-privacy-notice/)
+### Have Questions?
+* * *
+If you have questions about these terms or anything else about Cloudflare, please don't hesitate to contact us:
++1 (650) 319-8930
+Cloudflare, Inc.  
+101 Townsend St,  
+San Francisco, CA 94107  
+USA
+GETTING STARTED
+  * [Free plans](https://www.cloudflare.com/plans/free/)
+  * [Small business plans](https://www.cloudflare.com/small-business/)
+  * [For enterprises](https://www.cloudflare.com/enterprise/)
+  * [Get a recommendation](https://www.cloudflare.com/about-your-website/)
+  * [Request a demo](https://www.cloudflare.com/plans/enterprise/demo/)
+  * [Contact sales](https://www.cloudflare.com/plans/enterprise/contact/)
+
+
+SOLUTIONS
+  * [Connectivity cloud](https://www.cloudflare.com/connectivity-cloud/)
+  * [Application services](https://www.cloudflare.com/application-services/)
+  * [SASE and workspace security](https://www.cloudflare.com/sase/)
+  * [Network services](https://www.cloudflare.com/network-services/)
+  * [Developer platform](https://www.cloudflare.com/developer-platform/)
+
+
+SUPPORT
+  * [Help center](https://support.cloudflare.com)
+  * [Customer support](https://dash.cloudflare.com/?to=/:account/support)
+  * [Community forum](https://community.cloudflare.com)
+  * [Developers Discord ](https://discord.com/invite/cloudflaredev)
+  * [Lost account access?](https://developers.cloudflare.com/support/account-management-billing/common-account-questions/login-and-account-issues/)
+  * [Cloudflare status](https://www.cloudflarestatus.com/)
+
+
+COMPLIANCE
+  * [Compliance resources](https://www.cloudflare.com/trust-hub/compliance-resources/)
+  * [Trust](https://www.cloudflare.com/trust-hub/)
+  * [GDPR](https://www.cloudflare.com/trust-hub/gdpr/)
+  * [Responsible AI](https://www.cloudflare.com/trust-hub/responsible-ai/)
+  * [Transparency report](https://www.cloudflare.com/transparency/)
+  * [Report abuse](https://www.cloudflare.com/trust-hub/abuse-approach/)
+
+
+PUBLIC INTEREST
+  * [Project Galileo](https://www.cloudflare.com/galileo/)
+  * [Athenian Project](https://www.cloudflare.com/athenian/)
+  * [Cloudflare for Campaigns](https://www.cloudflare.com/campaigns/)
+  * [Project Fairshot](https://www.cloudflare.com/fair-shot/)
+
+
+COMPANY
+  * [About Cloudflare](https://www.cloudflare.com/about-overview/)
+  * [Network map](https://www.cloudflare.com/network/)
+  * [Our team](https://www.cloudflare.com/people/)
+  * [Logos & press kit](https://www.cloudflare.com/press/press-kit/)
+  * [Diversity, equity, & inclusion](https://www.cloudflare.com/diversity-equity-and-inclusion/)
+  * [Impact/ESG](https://www.cloudflare.com/impact/)
+
+
+[](https://www.facebook.com/cloudflare "Facebook")[](https://x.com/cloudflare "X")[](https://www.linkedin.com/company/cloudflare "LinkedIn")[](https://www.youtube.com/cloudflare "Youtube")[](https://instagram.com/cloudflare "Instagram")
+© 2026 Cloudflare, Inc.[Privacy Policy](https://www.cloudflare.com/privacypolicy/)[Terms of Use](https://www.cloudflare.com/website-terms/)[Report Security Issues](https://www.cloudflare.com/disclosure/)![privacy options](https://www.cloudflare.com/img/privacyoptions.svg)Cookie Preferences[Trademark](https://www.cloudflare.com/trademark/)
+![](https://benchmarks.cdn-c.compute-pipe.com/r20-100KB.png?r=70804387)![](https://benchmark.1e100cdn.net/r20-100KB.png?r=89598035)![](https://benchmarks.cdn.compute-pipe.com/r20-100KB.png?r=57386491)![](https://cedexis-test.akamaized.net/img/r20-100KB.png?r=95463443)
+![](https://id.rlcdn.com/464526.gif)![](https://t.co/1/i/adsct?bci=4&dv=UTC%26en-US%26Google%20Inc.%26Linux%20x86_64%26255%261080%26600%262%2624%261080%26600%260%26na&eci=3&event=%7B%7D&event_id=ccb7890b-b4bf-4417-ad9a-964b150bd2b2&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=6ed57960-d47b-49b2-aeb2-afdb0ead6725&restricted_data_use=restrict_optimization&tw_document_href=https%3A%2F%2Fwww.cloudflare.com%2Fwebsite-terms%2F&tw_engaged_ms=94&tw_iframe_status=0&tw_pid_src=2&tw_session_count=1&tw_session_id=1791444048934-751291570&twpid=tw.1791444048934.805112577849113746&txn_id=nvldc&type=javascript&version=2.4.11)![](https://analytics.twitter.com/1/i/adsct?bci=4&dv=UTC%26en-US%26Google%20Inc.%26Linux%20x86_64%26255%261080%26600%262%2624%261080%26600%260%26na&eci=3&event=%7B%7D&event_id=ccb7890b-b4bf-4417-ad9a-964b150bd2b2&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=6ed57960-d47b-49b2-aeb2-afdb0ead6725&restricted_data_use=restrict_optimization&tw_document_href=https%3A%2F%2Fwww.cloudflare.com%2Fwebsite-terms%2F&tw_engaged_ms=94&tw_iframe_status=0&tw_pid_src=2&tw_session_count=1&tw_session_id=1791444048934-751291570&twpid=tw.1791444048934.805112577849113746&txn_id=nvldc&type=javascript&version=2.4.11)![](https://t.co/1/i/adsct?bci=4&dv=UTC%26en-US%26Google%20Inc.%26Linux%20x86_64%26255%261080%26600%262%2624%261080%26600%260%26na&eci=3&event=%7B%7D&event_id=2d1ebad5-5f74-4465-9ffa-28d4afbe2203&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=6ed57960-d47b-49b2-aeb2-afdb0ead6725&restricted_data_use=restrict_optimization&tw_ch_fvl=HeadlessChrome%2F153.0.8010.12%2CNot_A%20Brand%2F8.0.0.0%2CChromium%2F153.0.8010.12&tw_document_href=https%3A%2F%2Fwww.cloudflare.com%2Fwebsite-terms%2F&tw_engaged_ms=8&tw_iframe_status=0&tw_pid_src=2&tw_session_count=1&tw_session_id=1791444048934-751291570&twpid=tw.1791444048934.805112577849113746&txn_id=pomsv&type=javascript&version=2.4.11)![](https://analytics.twitter.com/1/i/adsct?bci=4&dv=UTC%26en-US%26Google%20Inc.%26Linux%20x86_64%26255%261080%26600%262%2624%261080%26600%260%26na&eci=3&event=%7B%7D&event_id=2d1ebad5-5f74-4465-9ffa-28d4afbe2203&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=6ed57960-d47b-49b2-aeb2-afdb0ead6725&restricted_data_use=restrict_optimization&tw_ch_fvl=HeadlessChrome%2F153.0.8010.12%2CNot_A%20Brand%2F8.0.0.0%2CChromium%2F153.0.8010.12&tw_document_href=https%3A%2F%2Fwww.cloudflare.com%2Fwebsite-terms%2F&tw_engaged_ms=8&tw_iframe_status=0&tw_pid_src=2&tw_session_count=1&tw_session_id=1791444048934-751291570&twpid=tw.1791444048934.805112577849113746&txn_id=pomsv&type=javascript&version=2.4.11)

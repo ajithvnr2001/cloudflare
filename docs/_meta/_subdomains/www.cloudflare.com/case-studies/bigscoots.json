@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/bigscoots/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/bigscoots.md",
+  "title": "BigScoots & Cloudflare | Case Study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:20.946373+00:00",
+  "html_len": 211733,
+  "md_len": 9605,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-wan/configuration/third-party/azure/azure-vpn-gateway/",
+  "file": "cloudflare-one/networks/connectors/cloudflare-wan/configuration/third-party/azure/azure-vpn-gateway.md",
+  "title": "Microsoft Azure VPN Gateway \u00b7 Cloudflare One docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:09:33.219148+00:00",
+  "html_len": 338515,
+  "md_len": 23830,
+  "depth": 0
+}

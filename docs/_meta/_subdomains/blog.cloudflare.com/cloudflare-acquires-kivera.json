@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-acquires-kivera/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-acquires-kivera.md",
+  "title": "Cloudflare acquires Kivera to add simple, preventive cloud security to Cloudflare One | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:37.647419+00:00",
+  "html_len": 293071,
+  "md_len": 69395,
+  "depth": 0,
+  "phase": 2
+}

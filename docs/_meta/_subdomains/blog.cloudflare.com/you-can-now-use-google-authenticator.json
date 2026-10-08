@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/you-can-now-use-google-authenticator/",
+  "file": "_subdomains/blog.cloudflare.com/you-can-now-use-google-authenticator.md",
+  "title": "You can now use Google Authenticator and any TOTP app for Two-Factor Authentication | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:20.698966+00:00",
+  "html_len": 267920,
+  "md_len": 56710,
+  "depth": 0,
+  "phase": 2
+}

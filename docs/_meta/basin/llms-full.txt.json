@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/basin/llms-full.txt",
+  "file": "basin/llms-full.txt.md",
+  "title": "https://developers.cloudflare.com/basin/llms-full.txt",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:24:03.747788+00:00",
+  "html_len": 58925,
+  "md_len": 57570,
+  "depth": 1
+}

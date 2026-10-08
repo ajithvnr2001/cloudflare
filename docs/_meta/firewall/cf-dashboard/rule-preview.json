@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/firewall/cf-dashboard/rule-preview/",
+  "file": "firewall/cf-dashboard/rule-preview.md",
+  "title": "Preview firewall rules \u00b7 Cloudflare Firewall Rules (deprecated) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:11:16.849915+00:00",
+  "html_len": 100882,
+  "md_len": 3621,
+  "depth": 0
+}

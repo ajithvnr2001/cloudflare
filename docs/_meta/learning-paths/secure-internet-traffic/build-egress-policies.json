@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/learning-paths/secure-internet-traffic/build-egress-policies/",
+  "file": "learning-paths/secure-internet-traffic/build-egress-policies.md",
+  "title": "Control traffic egress with source IP anchoring and allowlisting \u00b7 Cloudflare Learning Paths",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:11:55.849629+00:00",
+  "html_len": 104732,
+  "md_len": 2186,
+  "depth": 0
+}

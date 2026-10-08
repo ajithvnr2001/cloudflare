@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/transform-http-request-headers/",
+  "file": "_subdomains/blog.cloudflare.com/transform-http-request-headers.md",
+  "title": "Modify HTTP request headers with Transform Rules | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:02.046459+00:00",
+  "html_len": 288086,
+  "md_len": 61051,
+  "depth": 0,
+  "phase": 2
+}

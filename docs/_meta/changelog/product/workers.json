@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/changelog/product/workers/",
+  "file": "changelog/product/workers.md",
+  "title": "Workers Changelog | Cloudflare Docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:07:52.848578+00:00",
+  "html_len": 419637,
+  "md_len": 64880,
+  "depth": 0
+}

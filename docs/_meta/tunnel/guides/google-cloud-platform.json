@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/tunnel/guides/google-cloud-platform/",
+  "file": "tunnel/guides/google-cloud-platform.md",
+  "title": "GCP \u00b7 Cloudflare Docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:04.509615+00:00",
+  "html_len": 115434,
+  "md_len": 5057,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/rio-de-janeiro/",
+  "file": "_subdomains/blog.cloudflare.com/rio-de-janeiro.md",
+  "title": "Aquele Abra\u00e7o Rio de Janeiro: Cloudflare's 116th Data Center! | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:09.371591+00:00",
+  "html_len": 268552,
+  "md_len": 57080,
+  "depth": 0,
+  "phase": 2
+}

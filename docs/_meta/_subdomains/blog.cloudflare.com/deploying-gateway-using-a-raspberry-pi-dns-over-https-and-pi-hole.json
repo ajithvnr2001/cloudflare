@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/deploying-gateway-using-a-raspberry-pi-dns-over-https-and-pi-hole/",
+  "file": "_subdomains/blog.cloudflare.com/deploying-gateway-using-a-raspberry-pi-dns-over-https-and-pi-hole.md",
+  "title": "Deploying Gateway using a Raspberry Pi, DNS over HTTPS and Pi-hole | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:14.421815+00:00",
+  "html_len": 337944,
+  "md_len": 76712,
+  "depth": 0,
+  "phase": 2
+}

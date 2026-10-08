@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/how-we-built-spectrum/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/how-we-built-spectrum.md",
+  "title": "Abuso del firewall de Linux: el hack que nos permiti\u00f3 crear Spectrum | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:25.151588+00:00",
+  "html_len": 241034,
+  "md_len": 35016,
+  "depth": 0,
+  "phase": 2
+}

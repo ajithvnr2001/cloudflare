@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/a-brief-anycast-primer/",
+  "file": "_subdomains/blog.cloudflare.com/a-brief-anycast-primer.md",
+  "title": "A Brief Primer on Anycast | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:17.771768+00:00",
+  "html_len": 275690,
+  "md_len": 59608,
+  "depth": 0,
+  "phase": 2
+}

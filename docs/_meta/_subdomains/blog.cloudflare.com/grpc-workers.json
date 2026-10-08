@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/grpc-workers/",
+  "file": "_subdomains/blog.cloudflare.com/grpc-workers.md",
+  "title": "Cloudflare Workers and Containers now support inbound TCP connections and gRPC | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:37.341247+00:00",
+  "html_len": 322310,
+  "md_len": 68295,
+  "depth": 0,
+  "phase": 2
+}

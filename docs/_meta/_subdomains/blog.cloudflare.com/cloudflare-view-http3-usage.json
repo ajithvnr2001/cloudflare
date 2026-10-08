@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-view-http3-usage/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-view-http3-usage.md",
+  "title": "HTTP RFCs have evolved: A Cloudflare view of HTTP usage trends | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:18.518553+00:00",
+  "html_len": 325229,
+  "md_len": 73531,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/cloudflare-one/tutorials/extend-sso-with-workers/",
+  "file": "cloudflare-one/tutorials/extend-sso-with-workers.md",
+  "title": "Send SSO attributes to Access-protected origins with Workers \u00b7 Cloudflare One docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:10:21.783105+00:00",
+  "html_len": 317408,
+  "md_len": 11190,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/zh-tw/trust-hub/gdpr/",
+  "file": "_subdomains/www.cloudflare.com/zh-tw/trust-hub/gdpr.md",
+  "title": "GDPR FAQs | Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:10:23.542399+00:00",
+  "html_len": 287406,
+  "md_len": 31299,
+  "depth": 1,
+  "phase": 2
+}

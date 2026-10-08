@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/announcing-workers-smart-placement/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/announcing-workers-smart-placement.md",
+  "title": "O Smart Placement acelera os aplicativos movendo o c\u00f3digo para perto do seu back-end. Nenhuma configura\u00e7\u00e3o \u00e9 necess\u00e1ria | Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:39:56.780758+00:00",
+  "html_len": 204779,
+  "md_len": 25485,
+  "depth": 0,
+  "phase": 2
+}

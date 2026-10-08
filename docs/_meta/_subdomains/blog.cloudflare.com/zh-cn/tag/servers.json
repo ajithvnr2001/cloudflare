@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/tag/servers/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/tag/servers.md",
+  "title": "\u6807\u7b7e\u4e3a\"\u670d\u52a1\u5668\"\u7684\u6587\u7ae0 \u2014 Cloudflare \u535a\u5ba2",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (636 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:11:36.388289+00:00",
+  "html_len": 113607,
+  "md_len": 2942,
+  "depth": 1,
+  "phase": 2
+}

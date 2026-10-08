@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/history-of-stock-quotes/",
+  "file": "_subdomains/blog.cloudflare.com/history-of-stock-quotes.md",
+  "title": "The History of Stock Quotes | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:52.350849+00:00",
+  "html_len": 306601,
+  "md_len": 79499,
+  "depth": 0,
+  "phase": 2
+}

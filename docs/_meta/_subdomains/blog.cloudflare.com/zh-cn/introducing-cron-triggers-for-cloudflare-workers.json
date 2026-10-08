@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/introducing-cron-triggers-for-cloudflare-workers/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/introducing-cron-triggers-for-cloudflare-workers.md",
+  "title": "\u4e3aCloudflare Workers\u5f15\u5165Cron\u89e6\u53d1\u5668 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:28.120552+00:00",
+  "html_len": 191422,
+  "md_len": 23069,
+  "depth": 0,
+  "phase": 2
+}

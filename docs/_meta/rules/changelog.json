@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/changelog/",
+  "file": "rules/changelog.md",
+  "title": "Rules changelog \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:46.051346+00:00",
+  "html_len": 265646,
+  "md_len": 48876,
+  "depth": 0
+}

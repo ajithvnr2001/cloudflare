@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-the-cloudflare-cache-purge-featur/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-the-cloudflare-cache-purge-featur.md",
+  "title": "Introducing the Cloudflare Cache Purge Feature | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:26.463692+00:00",
+  "html_len": 262737,
+  "md_len": 55211,
+  "depth": 0,
+  "phase": 2
+}

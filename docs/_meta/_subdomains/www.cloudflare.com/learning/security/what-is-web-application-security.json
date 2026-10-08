@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/security/what-is-web-application-security/",
+  "file": "_subdomains/www.cloudflare.com/learning/security/what-is-web-application-security.md",
+  "title": "What is web application security? | Learning Center",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:05:17.738562+00:00",
+  "html_len": 246117,
+  "md_len": 28018,
+  "depth": 0,
+  "phase": 2
+}

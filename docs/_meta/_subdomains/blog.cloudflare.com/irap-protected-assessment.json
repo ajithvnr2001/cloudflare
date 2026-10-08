@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/irap-protected-assessment/",
+  "file": "_subdomains/blog.cloudflare.com/irap-protected-assessment.md",
+  "title": "Cloudflare is now IRAP assessed at the PROTECTED level, furthering our commitment to the global public sector | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:22.070363+00:00",
+  "html_len": 275139,
+  "md_len": 58322,
+  "depth": 0,
+  "phase": 2
+}

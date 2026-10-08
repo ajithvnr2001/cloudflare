@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/ridiculously-easy-to-use-tunnels/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/ridiculously-easy-to-use-tunnels.md",
+  "title": "\u4f7f\u7528\u96a7\u9053\u6781\u5176\u7b80\u5355 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:04.604625+00:00",
+  "html_len": 195225,
+  "md_len": 25352,
+  "depth": 0,
+  "phase": 2
+}

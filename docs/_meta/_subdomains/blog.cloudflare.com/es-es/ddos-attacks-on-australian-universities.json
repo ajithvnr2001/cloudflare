@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/ddos-attacks-on-australian-universities/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/ddos-attacks-on-australian-universities.md",
+  "title": "Killnet y AnonymousSudan lanzan ataques DDoS contra sitios web de universidades australianas, y amenazan con m\u00e1s ataques \u2014 qu\u00e9 se puede hacer para evitarlo | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:40:12.674963+00:00",
+  "html_len": 206959,
+  "md_len": 29261,
+  "depth": 0,
+  "phase": 2
+}

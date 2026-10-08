@@ -1,0 +1,1430 @@
+---
+description: The application security dashboard helps you understand the current security posture of your web applications and allows you configure different security rules for those applications.
+title: Application security dashboard
+image: https://developers.cloudflare.com/security/og.png?v=9e2a7a29666c5402
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/security/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Application security dashboard
+
+Last updated Apr 23, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/security/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+The application security dashboard is your starting point to better understand the security posture of your web applications, and to configure rules to protect them.
+
+### New dashboard experience
+
+Cloudflare is gradually making the new **Security** dashboard available by default to users. Users who do not have the new dashboard by default can still manually opt in:
+
+1. Log in to the [Cloudflare dashboard ↗︎](https://dash.cloudflare.com), and select your account and domain.
+2. Open any page under **Security**.
+3. In the top right-hand corner of the page, select **Try new dashboard**.
+
+To opt out of the new security dashboard:
+
+1. In the Cloudflare dashboard, go to the Security **Settings** page. [Go to **Settings** ↗](https://dash.cloudflare.com/?to=/:account/:zone/security/settings)
+2. Turn off the setting **New application security dashboard**.
+
+The opt-out option will be available for a limited time.
+
+## Features
+
+[Security overview](https://developers.cloudflare.com/security/overview/)
+
+Get a high-level overview of your domain's security posture.
+
+Explore Security overview
+
+[Security Analytics](https://developers.cloudflare.com/security/analytics/)
+
+Shows information about all incoming HTTP requests or mitigated requests (rule matches). Tailor your security configurations based on sampled logs.
+
+Explore Security Analytics
+
+[Web assets](https://developers.cloudflare.com/security/web-assets/)
+
+Discover your web assets (including API endpoints) and instruct Cloudflare how to best protect them.
+
+Use Web assets
+
+[Security rules](https://developers.cloudflare.com/security/rules/)
+
+Perform security actions on incoming requests that match specified filters.
+
+Use Security rules
+
+---
+
+## More resources
+
+### [Plans](https://www.cloudflare.com/plans/#overview)
+
+Compare available Cloudflare plans
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/security/#page","headline":"Application security dashboard","description":"The application security dashboard helps you understand the current security posture of your web applications and allows you configure different security rules for those applications.","url":"https://developers.cloudflare.com/security/","inLanguage":"en","image":"https://developers.cloudflare.com/security/og.png?v=9e2a7a29666c5402","dateModified":"2026-04-23","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Review your domain's security posture and action items.
+title: Security overview
+image: https://developers.cloudflare.com/security/overview/og.png?v=5e5e0450837afa25
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/security/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Security overview
+
+Last updated Apr 23, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/security/overview/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Security overview provides an overview of your domain's security posture and allows you to quickly identify security action items that may need your attention.
+
+To access Security overview in the new security dashboard, go to the **Overview** page.
+
+[Go to **Overview** ↗](https://dash.cloudflare.com/?to=/:account/:zone/security/overview)
+
+The Security overview page displays:
+
+- Security action items
+- Detection tools
+- Traffic overview
+
+## Security action items
+
+**Security action items** shows you insights and recommendations related to misconfigurations, exposed infrastructure, and suspicious activity.
+
+- **Action item types**:
+  - Suspicious activity
+  - Security insight
+- **Criticality**: Your action items are ranked by the highest criticality, showing critical first, moderate, and low respectively.
+- **Filters**: You can filter your action items by Criticality, Insight Type, and Security Category.
+  - Criticality:
+    - Low
+    - Moderate
+    - Critical
+  - Insight Types:
+    - Suspicious activity
+    - Exposed infrastructure
+    - Insecure configuration
+    - Configuration suggestion
+    - Compliance Violation
+    - Email Security
+    - Weak Authentication
+  - Security Category:
+    - Web application exploits
+    - AI exploits
+    - DDoS attacks
+    - Bot traffic
+    - API abuse
+    - Client-side abuse
+    - Fraud
+- **Review**: Review your security action items for more detailed information and recommended actions to resolve.
+- **Load more**: View the full list of security action items.
+
+### Archive action items
+
+You can archive security action items that you do not want to display in the main list. The following archive options are available:
+
+- **False Positive**: Removes the action item from your active list and suppresses it indefinitely. Rationale text is optional.
+- **Accept Risk**: Removes the action item from your active list and suppresses it indefinitely. Rationale text is required.
+- **Other**: Removes the action item from your active list and suppresses it indefinitely. Rationale text is required.
+
+You can move an action item from the archive back to the active list at any time.
+
+Archiving suspicious activity
+
+Archiving a detected suspicious activity will only archive that item from the security overview page. The suspicious activity will still appear in your security analytics dashboard.
+
+### Audit log API endpoints
+
+To view when an action item’s status was changed and the rationale provided for that change, use the following API commands to retrieve audit logs:
+
+| Method | Path | Description |
+| --- | --- | --- |
+| `GET` | `/api/accounts/{accountID}/insights/audit-log` | List all audit logs for an account |
+| `GET` | `/api/accounts/{accountID}/insights/{insightID}/audit-log` | List audit logs for a specific issue |
+| `GET` | `/api/accounts/{accountID}/issues/audit-log` | List all audit logs for account issues |
+| `GET` | `/api/accounts/{accountID}/issues/{insightID}/audit-log` | List all audit logs for a specific issue |
+| `GET` | `/api/accounts/{accountID}/zones/{zoneID}/insights/audit-log` | List all audit logs for a domain |
+| `GET` | `/api/accounts/{accountID}/zones/{zoneID}/insights/{insightID}/audit-log` | List audit logs for a specific issue in a domain |
+
+Refer to our [Security Center API documentation](https://developers.cloudflare.com/api/resources/security_center) to review the action item audit logs by account, domain, or a specific `issue_id`.
+
+## Detection tools
+
+Review the available detection tools and what services are currently running to protect your domain against threats.
+
+## Traffic overview
+
+View the patterns and highlights from your domain's traffic in the past 30 days.
+
+The Cloudflare dashboard displays:
+
+- **Monthly requests**: View the monthly requests and traffic that has been mitigated by Cloudflare.
+- **How you compare to your peers**: For enterprise plans, understand how your security posture compares to others in your industry protected by Cloudflare.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/security/overview/#page","headline":"Security overview","description":"Review your domain's security posture and action items.","url":"https://developers.cloudflare.com/security/overview/","inLanguage":"en","image":"https://developers.cloudflare.com/security/overview/og.png?v=5e5e0450837afa25","dateModified":"2026-04-23","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Scan your account for misconfigurations and potential security risks across all domains.
+title: Security Insights
+image: https://developers.cloudflare.com/security/security-insights/og.png?v=b3f018517f96fa74
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/security/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Security Insights
+
+Last updated Aug 24, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/security/security-insights/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+User permission
+
+Ensure your user has one of the necessary roles to access Security Insights. Refer to [Roles and permissions](https://developers.cloudflare.com/security/security-insights/roles-and-permissions/) for more information.
+
+Security Insights provides you with a list of insights, covering different areas of your Cloudflare environment, such as: Cloudflare account settings, DNS record configurations, SSL/TLS certificates configurations, Cloudflare Access configurations and Cloudflare WAF configurations.
+
+Listed below are the specific insights currently available:
+
+| Insight Name | Description |
+| --- | --- |
+| [CASB integration status](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/troubleshooting/) | We detect unhealthy CASB integrations. |
+| [Dangling `A` Records](https://developers.cloudflare.com/dns/manage-dns-records/reference/dns-record-types/#a-and-aaaa) | A record is pointing to an IPv4 address that you might no longer control. You are at risk of a subdomain takeover. |
+| [Dangling `AAAA` Records](https://developers.cloudflare.com/dns/manage-dns-records/reference/dns-record-types/#a-and-aaaa) | A record is pointing to an IPv6 address that you might no longer control. You are at risk of a subdomain takeover. |
+| [Dangling `CNAME` Records](https://developers.cloudflare.com/dns/manage-dns-records/reference/dns-record-types/#a-and-aaaa) | A record is pointing to a resource that cannot be found. You are at risk of a subdomain takeover. |
+| [DMARC Record Errors](https://developers.cloudflare.com/dns/manage-dns-records/reference/dns-record-types/#dmarc) | We detect an incorrect or missing `DMARC` record. |
+| [Domains missing TLS Encryption](https://developers.cloudflare.com/ssl/get-started/) | We detect that there is no TLS encryption for this domain. |
+| [Domains supporting older TLS version](https://developers.cloudflare.com/ssl/reference/protocols/) | This domain supports older versions of the TLS protocol. |
+| [Domains without 'Always Use HTTPS'](https://developers.cloudflare.com/ssl/edge-certificates/additional-options/always-use-https/) | HTTP requests to this domain may not redirect to its HTTPS equivalent. |
+| [Domains without HSTS](https://developers.cloudflare.com/ssl/edge-certificates/additional-options/http-strict-transport-security/) | HTTP Strict Transport Security (`HSTS`), is a header which allows a website to specify and enforce security policy in client web browsers. This policy enforcement protects secure websites from downgrade attacks SSL stripping and cookie hijacking. |
+| [Exposed RDP Servers](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/use-cases/rdp/) | We detect an RDP server that is exposed to the public Internet. |
+| [Get notified of malicious client-side scripts](https://developers.cloudflare.com/client-side-security/alerts/) | We detect that client-side security alerts are not configured. You will not receive notifications when we detect potential malicious scripts executing in your client-side environment. |
+| [Increased body response size detected on API endpoints](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-labels/) | Investigate changes, abuse, or successful attacks that may have led to this increase in response body size. |
+| [Increased errors detected on API endpoints](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-labels/) | Investigate changes, abuse, or successful attacks that may have led to this increase in errors. |
+| [Increased latency detected on API endpoints](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-labels/) | Investigate changes, abuse, or successful attacks that may have led to this increase in response latency. |
+| [Managed Rules not deployed](https://developers.cloudflare.com/waf/managed-rules/) | No managed rules deployed on a WAF protected domain. Refer to [Known limitations](#known-limitations). |
+| [Upgrade to new Managed Rules](https://developers.cloudflare.com/waf/reference/legacy/old-waf-managed-rules/upgrade/) | Upgrade to new Managed Rules system required for optimal protection. |
+| [Mixed-authentication API endpoints detected](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-labels/#managed-labels) | Not all of the successful requests against API endpoints carried session identifiers. |
+| [New API endpoints detected](https://developers.cloudflare.com/api-shield/security/api-discovery/) | API Discovery detects new API endpoints in your zone's traffic. |
+| [New CASB integrations found](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/) | New CASB integrations have been found. |
+| [Overprovisioned Access Policies](https://developers.cloudflare.com/cloudflare-one/access-controls/policies/) | We detect an Access policy to allow everyone access to your application. |
+| [Client-side security not enabled](https://developers.cloudflare.com/client-side-security/get-started/) | Client-side security (formerly known as Page Shield) helps meet PCI DSS v4.0 compliance regarding requirement 6.4.3. |
+| [SPF Record Errors](https://developers.cloudflare.com/dns/manage-dns-records/reference/dns-record-types/#spf) | We detect an incorrect or missing `SPF` record. |
+| [Sensitive data in API response](https://developers.cloudflare.com/api-shield/management-and-monitoring/#sensitive-data-detection) | Sensitive data in API responses detected. |
+| [Turn on JavaScript Detection](https://developers.cloudflare.com/bots/additional-configurations/javascript-detections/) | One or more of your Bot Management enabled zones does not have JavaScript Detection enabled, which is a critical part of our bot detection suite. |
+| [Unassigned Access seats](https://developers.cloudflare.com/cloudflare-one/) | We detect a Zero Trust subscription that is not configured yet. |
+| [Unauthenticated API endpoints detected](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-labels/#managed-labels) | None of the successful requests against API endpoints carried session identifiers. |
+| [Unprotected Cloudflare Tunnels](https://developers.cloudflare.com/cloudflare-one/access-controls/applications/http-apps/self-hosted-public-app/#4-connect-your-origin-to-cloudflare) | We detect an application that is served by a Cloudflare Tunnel but not protected by a corresponding Access policy. |
+| [Unproxied `A` Records](https://developers.cloudflare.com/dns/manage-dns-records/reference/dns-record-types/#a-and-aaaa) | This DNS record is not proxied by Cloudflare. Cloudflare can not protect this origin because it is exposed to the public Internet. |
+| [Unproxied `AAAA` Records](https://developers.cloudflare.com/dns/manage-dns-records/reference/dns-record-types/#a-and-aaaa) | This DNS record is not proxied by Cloudflare. Cloudflare can not protect this origin because it is exposed to the public Internet. |
+| [Unproxied `CNAME` Records](https://developers.cloudflare.com/dns/proxy-status/#dns-only-records) | This DNS record is not proxied by Cloudflare. Cloudflare can not protect this origin because it is exposed to the public Internet. |
+| [Users without MFA](https://developers.cloudflare.com/fundamentals/user-profiles/2fa/) | We detect that a Cloudflare administrative user has not enabled multifactor authentication. |
+| [Zones without WAF Managed Rules](https://developers.cloudflare.com/waf/managed-rules/) | We detect that this domain does not have the WAF's Managed Rules enabled. You are at risk from zero-day and other common vulnerabilities. |
+| [No Turnstile enabled](https://developers.cloudflare.com/turnstile/) | We detect that there is no Turnstile widget configured on the account. |
+
+## Known limitations
+
+Security Insights scans run periodically and use heuristics to detect potential issues. In some cases, an insight may not accurately reflect your current configuration:
+
+- ***Managed Rules not deployed* on zones with account-level managed rules**: If you deploy managed rules at the account level rather than the zone level, Security Center may not detect them and may report that managed rules are not deployed. If your account-level configuration is correct, you can [archive the insight](https://developers.cloudflare.com/security/security-insights/review-insights/#archive-insights) to dismiss it.
+- **Vulnerability insights for rules in log mode**: If you configure a managed rule with a *Log* action (for example, to monitor traffic before enforcing), Security Center may still generate a vulnerability insight because the rule is not actively blocking traffic. This is expected behavior. You can archive the insight if you are intentionally using log mode.
+
+To remove a resolved or inaccurate insight from your dashboard, [archive the insight](https://developers.cloudflare.com/security/security-insights/review-insights/#archive-insights) or wait for the next automatic scan.
+
+Accounts with more than 10,000 zones
+
+Cloudflare aggregates account-level Security Insights for accounts with up to 10,000 zones. For accounts with more than 10,000 zones, Cloudflare does not aggregate insights at the account level, so the dashboard cannot display account-level Security Insights.
+
+To review security findings for these accounts, use per-zone [Security Analytics](https://developers.cloudflare.com/waf/analytics/security-analytics/) on individual domains. To analyze or retain activity across your entire account, export logs to a security information and event management (SIEM) system with [Logpush](https://developers.cloudflare.com/logs/logpush/).
+
+## More resources
+
+For more information on available operations for Security Insights, refer to [Review Security Insights](https://developers.cloudflare.com/security/security-insights/review-insights/).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/security/security-insights/#page","headline":"Security Insights","description":"Scan your account for misconfigurations and potential security risks across all domains.","url":"https://developers.cloudflare.com/security/security-insights/","inLanguage":"en","image":"https://developers.cloudflare.com/security/security-insights/og.png?v=b3f018517f96fa74","dateModified":"2026-08-24","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: How Security Insights scans your account and produces security findings.
+title: How it works
+image: https://developers.cloudflare.com/security/security-insights/how-it-works/og.png?v=462a8fa79eefbebc
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/security/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# How it works
+
+Last updated Aug 26, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/security/security-insights/how-it-works/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Cloudflare runs regular security scans on your account. These scans check your Cloudflare account settings, DNS record configurations, and product configurations — such as SSL/TLS, WAF, and Access — across all domains in your account.
+
+Each scan compares your current configuration against a set of ideal product configurations that indicate a strong security posture. When your configuration does not match an ideal configuration for one or more checks, the scan produces a **Security Insight** — a finding that represents a potential risk.
+
+The [list of insights](https://developers.cloudflare.com/security/security-insights/) may include potential security threats, vulnerabilities, compliance risks, insecure configurations, or any other identified risks.
+
+Note
+
+Security Insights also checks [non-proxied (DNS-only) hostnames](https://developers.cloudflare.com/dns/proxy-status/#dns-only-records). Because these records are not routed through Cloudflare, they do not benefit from Cloudflare's application security features.
+
+## Scan properties
+
+Each insight has the following properties:
+
+- **Severity**: The security risk of the insight. The severity values are: *Low*, *Moderate*, and *Critical*. The higher the severity level, the higher the risk of threat to your environment.
+- **Insight**: The insight description detailing the current configuration that is causing the risk or vulnerability.
+- **Risk**: A description of the risk associated with not addressing the issue.
+- **Type**: The insight category.
+
+For a full list of insight types and their descriptions, refer to [Security Insights](https://developers.cloudflare.com/security/security-insights/).
+
+## Scan frequency
+
+Cloudflare performs scans automatically for all accounts and zones by default. On-demand scans are available on all plans:
+
+| Plan | Scan Frequency | On-Demand |
+| --- | --- | --- |
+| Free | Every 7 days | Yes |
+| Pro and Business | Every 3 days | Yes |
+| Enterprise | Daily | Yes |
+
+Caution
+
+Automated scans for Free accounts may be paused due to account inactivity. To ensure scans continue to run, regularly review Security Insights in the Cloudflare dashboard or through the [API](https://developers.cloudflare.com/api/resources/security_center/).
+
+All accounts can also manually start a scan from the **Security Insights** page in the Cloudflare dashboard.
+
+[Go to **Security insights** ↗](https://dash.cloudflare.com/?to=/:account/security-center)
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/security/security-insights/how-it-works/#page","headline":"How it works","description":"How Security Insights scans your account and produces security findings.","url":"https://developers.cloudflare.com/security/security-insights/how-it-works/","inLanguage":"en","image":"https://developers.cloudflare.com/security/security-insights/how-it-works/og.png?v=462a8fa79eefbebc","dateModified":"2026-08-26","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Review, filter, and resolve security insights detected across your domains.
+title: Review Security Insights
+image: https://developers.cloudflare.com/security/security-insights/review-insights/og.png?v=9270f8d2bace6b00
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/security/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Review Security Insights
+
+Last updated Jun 2, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/security/security-insights/review-insights/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Check the **Security Insights** tab for a list of detected insights that you should address.
+
+For each detected insight, you can resolve it or archive it, after understanding its risks.
+
+1. In the Cloudflare dashboard, go to the **Security Insights** page. [Go to **Security insights** ↗](https://dash.cloudflare.com/?to=/:account/security-center)
+2. Next to the insight you wish to address, select **Details** to review it.
+
+## Resolve an insight
+
+Caution
+
+Insights will not be automatically removed from your dashboard when you address them. You must either manually [archive insights](#archive-insights), manually trigger another scan or wait for the automatic scan to run as per [scan frequency](https://developers.cloudflare.com/security/security-insights/how-it-works/#scan-frequency).
+
+In the Resolve insights page, if you choose to update a configuration based on the recommendation actions, follow the instructions on the insight details page.
+
+The following insights follow a different yet straightforward workflow to be resolved:
+
+- **Minimum Version of TLS 1.2 not enforced**: To resolve this insight:
+  - Go to **SSL/TLS** > **Edge Certificates**.
+  - Select **TLS 1.2**.
+- **Domains without "Always use HTTPS"**: To resolve this insight:
+  - Go to **SSL/TLS** > **Edge Certificates**.
+  - Select **Always Use HTTPS**.
+- **Turn on JavaScript Detections**: To resolve this insight:
+  - Go to **Security** > **Bots** > Select **Configure Bot Management**.
+  - Select **JavaScript Detections**.
+
+## Export insights
+
+You can export security insights to a CSV format directly from the dashboard.
+
+To export security insights:
+
+1. In the Cloudflare dashboard, go to the **Security Insights** page. [Go to **Security insights** ↗](https://dash.cloudflare.com/?to=/:account/security-center)
+2. Select **Export insights**.
+
+Exporting security insights allow you to perform a deeper analysis of your insights.
+
+The exported CSV file includes information such as the severity of your data, insight type scan date, issue class and additional optional fields, such as insight details, risk assessment, detection method, and recommended actions.
+
+## Archive insights
+
+You can archive one or more insights from the dashboard.
+
+To archive insights:
+
+1. In the Cloudflare dashboard, go to the **Security Insights** page. [Go to **Security insights** ↗](https://dash.cloudflare.com/?to=/:account/security-center)
+2. Select the insight(s) you want to archive, then select **Archive selected**.
+
+Alternatively, to archive an insight:
+
+1. Select the insight you want to archive and select **Details**. The dashboard will open a page where you will be able to review [insight properties](https://developers.cloudflare.com/security/security-insights/how-it-works/#scan-properties).
+2. Select **Archive insight**.
+
+## Enable alerts
+
+You can enable alerts for critical insights.
+
+To enable alerts:
+
+1. In the Cloudflare dashboard, go to the **Security Insights** page. [Go to **Security insights** ↗](https://dash.cloudflare.com/?to=/:account/security-center)
+2. Select the security insight(s) you want to create an alert for, then select **Create alert for selected classes**.
+3. Enter the notification name, and choose one or more insights classes to filter a notification.
+4. Select **Add email recipient** and enter an email address to receive the alert.
+5. Select **Save**.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/security/security-insights/review-insights/#page","headline":"Review Security Insights","description":"Review, filter, and resolve security insights detected across your domains.","url":"https://developers.cloudflare.com/security/security-insights/review-insights/","inLanguage":"en","image":"https://developers.cloudflare.com/security/security-insights/review-insights/og.png?v=9270f8d2bace6b00","dateModified":"2026-06-02","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Cloudflare roles required to access and manage Security Insights.
+title: Roles and permissions
+image: https://developers.cloudflare.com/security/security-insights/roles-and-permissions/og.png?v=b778df88b4815e20
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/security/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Roles and permissions
+
+Last updated May 5, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/security/security-insights/roles-and-permissions/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Cloudflare users with the following [roles](https://developers.cloudflare.com/fundamentals/manage-members/roles/) have access to Security Insights in the Cloudflare dashboard:
+
+- Administrator
+- Administrator Read Only
+- Super Administrator - All Privileges
+- SSL/TLS, Caching, Performance, Page Rules, and Customization
+- DNS
+- Page Shield
+- Page Shield Read
+- Firewall
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/security/security-insights/roles-and-permissions/#page","headline":"Roles and permissions","description":"Cloudflare roles required to access and manage Security Insights.","url":"https://developers.cloudflare.com/security/security-insights/roles-and-permissions/","inLanguage":"en","image":"https://developers.cloudflare.com/security/security-insights/roles-and-permissions/og.png?v=b778df88b4815e20","dateModified":"2026-05-05","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Security Analytics shows information about all incoming HTTP requests or mitigated requests (rule matches).
+title: Security Analytics (new dashboard)
+image: https://developers.cloudflare.com/security/analytics/og.png?v=924fed89af91d333
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/security/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Security Analytics (new dashboard)
+
+Last updated May 5, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/security/analytics/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Security Analytics shows information about all incoming HTTP requests or only about requests mitigated by Cloudflare.
+
+Use Security Analytics as your starting point to understand and analyze traffic patterns, and to create security rules based on the filters you applied.
+
+To access Security Analytics in the new security dashboard, go to the **Analytics** page.
+
+[Go to **Analytics** ↗](https://dash.cloudflare.com/?to=/:account/:zone/security/analytics)
+
+By default, Security Analytics queries filter on `requestSource = 'eyeball'`, which represents requests from end users. Note that requests from Cloudflare Workers (subrequests) are not visible in Security Analytics.
+
+## Traffic
+
+The **Traffic** tab displays information about all incoming HTTP requests for your domain, including requests not handled by Cloudflare security products.
+
+In this tab you can perform several tasks:
+
+- View the traffic distribution for your domain.
+- Understand which traffic is being mitigated by Cloudflare security products, and where non-mitigated traffic is being served from (Cloudflare global network or [origin server ↗︎](https://www.cloudflare.com/learning/cdn/glossary/origin-server/)).
+- Analyze suspicious traffic and create tailored custom [security rules](https://developers.cloudflare.com/security/rules/) based on applied filters.
+- [Find an appropriate rate limit](https://developers.cloudflare.com/waf/rate-limiting-rules/find-rate-limit/) for incoming traffic.
+
+For information on how to use the **Traffic** tab, refer to [Security Analytics](https://developers.cloudflare.com/waf/analytics/security-analytics/#adjusting-displayed-data).
+
+If you need to modify existing security-related rules you already configured, consider also using the [Events](#events) tab. This tab displays information about requests affected by Cloudflare security products.
+
+Note
+
+The **Traffic** tab includes functionality available in the [Security Analytics](https://developers.cloudflare.com/waf/analytics/security-analytics/) page in the previous dashboard navigation structure.
+
+## Events
+
+Use the **Events** tab to review mitigated requests and to tailor your security configurations.
+
+The **Events** tab displays information about requests actioned or flagged by Cloudflare security products. Each incoming HTTP request might generate one or more security events. The tab only shows these events, not the HTTP requests themselves. To obtain information on all incoming HTTP requests, use the [Traffic](#traffic) tab.
+
+Users on a Free plan can view summarized events by date in sampled logs. Customers on paid plans have access to additional graphs and dashboards that summarize the most relevant information about the current behavior of Cloudflare's security features on your domain.
+
+For more information on the **Events** tab, refer to [Security Events](https://developers.cloudflare.com/waf/analytics/security-events/).
+
+Note
+
+The **Events** tab corresponds to the [Security Events](https://developers.cloudflare.com/waf/analytics/security-events/) page in the previous dashboard navigation structure.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/security/analytics/#page","headline":"Security Analytics (new dashboard)","description":"Security Analytics shows information about all incoming HTTP requests or mitigated requests (rule matches).","url":"https://developers.cloudflare.com/security/analytics/","inLanguage":"en","image":"https://developers.cloudflare.com/security/analytics/og.png?v=924fed89af91d333","dateModified":"2026-05-05","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Discover operations in applications proxied through Cloudflare and use that context to protect important traffic.
+title: Web Assets
+image: https://developers.cloudflare.com/security/web-assets/og.png?v=726814c6b39b692c
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/security/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Web Assets
+
+Last updated Aug 19, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/security/web-assets/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Web Assets automatically discovers operations in web applications proxied through Cloudflare. Operation context helps you define security protections against application-specific functionalities.
+
+For example, discovering operations that receive LLM prompts so [AI Security for Apps](https://developers.cloudflare.com/waf/detections/ai-security-for-apps/) can help you define targeted protections such as deterring prompt injections.
+
+To access Web Assets in the Cloudflare dashboard, go to the **Web Assets** page.
+
+[Go to **Web assets** ↗](https://dash.cloudflare.com/?to=/:account/:zone/security/web-assets)
+
+## Definition of an operation
+
+An operation is a group of HTTP requests that serve the same purpose in your application. Each operation is defined by:
+
+- HTTP method
+- Hostname pattern
+- Path pattern
+
+For example, Web Assets can group requests to product detail pages into one operation:
+
+```txt
+GET example.com/products/{var1}
+```
+
+The operation can match requests such as:
+
+```txt
+GET https://example.com/products/shoes
+GET https://example.com/products/hats
+GET https://example.com/products/jackets
+```
+
+This lets Cloudflare identify requests that serve the same purpose in your application.
+
+## How Cloudflare identifies operations
+
+Operations can come from several sources:
+
+- **Discovery**: Web Assets continuously reviews proxied HTTP traffic and groups similar requests into operations using machine learning (for [API discovery](https://developers.cloudflare.com/api-shield/security/api-discovery/)) and heuristics.
+- **Manual entry**: You can add operations by method, hostname pattern, and path pattern.
+- **Schema upload**: You can [upload an OpenAPI schema](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-management/#add-endpoints-from-schema-validation) to create operations from an existing API definition.
+
+These sources contribute to the same operation inventory. You do not need to review every discovered operation before security detections can use operation context.
+
+## Operation states and profile learning
+
+Operations can be in the `candidate`, `shadow`, or `full` state. These states control operation matching and available features.
+
+An operation state alone does not start profile learning. To learn a Schema Profile, select **Learn profile** from the operation overflow menu.
+
+For the profile lifecycle, refer to [Application Profiles](https://developers.cloudflare.com/waf/detections/application-profiles/). For uploaded OpenAPI schemas, refer to [Schema Validation](https://developers.cloudflare.com/api-shield/security/schema-validation/).
+
+## Describe operations context
+
+[Labels](https://developers.cloudflare.com/security/web-assets/label-operations/) describe what an operation does, such as a login flow, sign-up flow, AI-powered operation, or another use case.
+
+Cloudflare defines managed labels. Some managed labels can be discovered automatically, but not every managed label is currently auto-discovered.
+
+Custom labels let you organize operations for your own workflows. They do not replace managed labels for Cloudflare security detections.
+
+## Define security protections
+
+Security detections can use Web Assets to focus on the operations where their signals matter. For example, [AI Security for Apps](https://developers.cloudflare.com/waf/detections/ai-security-for-apps/) uses the `cf-llm` managed label to scan requests to AI-powered operations. For more information, refer to [Define security protections](https://developers.cloudflare.com/security/web-assets/define-security-protections/).
+
+### Related API Shield features
+
+Web Assets focuses on HTTP request operations. For API-specific protections such as schema validation, schema learning, mutual TLS, and JWT validation, refer to [API Shield](https://developers.cloudflare.com/api-shield/).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/security/web-assets/#page","headline":"Web Assets","description":"Discover operations in applications proxied through Cloudflare and use that context to protect important traffic.","url":"https://developers.cloudflare.com/security/web-assets/","inLanguage":"en","image":"https://developers.cloudflare.com/security/web-assets/og.png?v=726814c6b39b692c","dateModified":"2026-08-19","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Use Web Assets operations and labels with Cloudflare detections, then create rules to act on risky traffic.
+title: Define security protections
+image: https://developers.cloudflare.com/security/web-assets/define-security-protections/og.png?v=29f83253e5848238
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/security/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Define security protections
+
+Last updated Jun 26, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/security/web-assets/define-security-protections/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Web Assets provides application context to security detections. This helps detections inspect the right traffic and lets you create rules focusing on targeted protections.
+
+Use this guide to connect a Web Assets operation to a security detection and create a rule that logs, challenges, blocks, or rate limits risky traffic.
+
+## Protection workflow
+
+Most protections that use Web Assets follow the same workflow:
+
+1. Turn on the security detection that protects the use case, if applicable.
+2. In Web Assets, confirm that the relevant operation exists. [Go to **Web assets** ↗](https://dash.cloudflare.com/?to=/:account/:zone/security/web-assets)
+3. Apply the required managed label if not already exists.
+4. In Security Analytics, review matched traffic and detection results. [Go to **Analytics** ↗](https://dash.cloudflare.com/?to=/:account/:zone/security/analytics)
+5. Create a custom rule, or rate limiting rule to act on risky traffic.
+
+## Example: Protect AI-powered operations
+
+[AI Security for Apps](https://developers.cloudflare.com/waf/detections/ai-security-for-apps/) runs targeted scans on requests to AI-powered operations. Use it to detect prompt injection, personally identifiable information (PII) in prompts, unsafe topics, and other Large Language Model (LLM)-specific signals.
+
+To define protection for an LLM-powered operation:
+
+1. Turn on AI Security for Apps.
+2. Confirm that the operation receiving LLM prompts exists in Web Assets.
+3. Apply the `cf-llm` managed label if not already exists.
+4. In Security Analytics, filter by the `cf-llm` managed label.
+5. Review AI Security for Apps fields on matched traffic.
+6. Create a custom rule or rate limiting rule that acts on the AI detection fields.
+
+For the full setup workflow, refer to [Get started with AI Security for Apps](https://developers.cloudflare.com/waf/detections/ai-security-for-apps/get-started/).
+
+## Validate detection behavior
+
+Use Security Analytics to confirm that the expected requests carry the right operation and label context before you create a blocking rule.
+
+1. In the Cloudflare dashboard, go to the **Analytics** page. [Go to **Analytics** ↗](https://dash.cloudflare.com/?to=/:account/:zone/security/analytics)
+2. Filter by the relevant managed label.
+3. Review **Sampled logs**.
+4. Check detection-specific fields, such as LLM prompt fields or leaked credential fields.
+
+You can also export operation and label data with Logpush or query it with the GraphQL Analytics API. For more information, refer to [Use labels in analytics and logs](https://developers.cloudflare.com/security/web-assets/label-operations/#use-labels-in-analytics-and-logs/).
+
+## Mitigate matched traffic
+
+After you validate detection behavior, create rules that act on relevant detection fields.
+
+For example, a rule can match requests addressed to an operation labeled `cf-llm` that also carry personally identifiable information in an LLM prompt.
+
+You can use [custom rules](https://developers.cloudflare.com/waf/custom-rules/create-dashboard/) to log, challenge, block, or skip traffic. You can use [rate limiting rules](https://developers.cloudflare.com/waf/rate-limiting-rules/) to limit high-volume activity.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/security/web-assets/define-security-protections/#page","headline":"Define security protections","description":"Use Web Assets operations and labels with Cloudflare detections, then create rules to act on risky traffic.","url":"https://developers.cloudflare.com/security/web-assets/define-security-protections/","inLanguage":"en","image":"https://developers.cloudflare.com/security/web-assets/define-security-protections/og.png?v=29f83253e5848238","dateModified":"2026-06-26","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Use Web Assets to review operations, labels, matched traffic, learned schemas, and risks.
+title: Get started
+image: https://developers.cloudflare.com/security/web-assets/get-started/og.png?v=a077270071d6ac1d
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/security/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Get started
+
+Last updated Aug 19, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/security/web-assets/get-started/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+You do not need to complete a fixed setup flow before discovered operations can be used for protection. Use this page to choose the capability that matches your task.
+
+## Review operations
+
+Review operations to understand the parts of your application that receive traffic, such as login, sign-up, checkout, upload, and AI-powered flows.
+
+Discovered operations can be used for matching and downstream security detections before you manually refine them. For more information, refer to [Manage operations](https://developers.cloudflare.com/security/web-assets/manage-operations/).
+
+## Add or refine operations
+
+Add an operation when traffic you want to protect does not appear, or when you want to define the operation structure yourself.
+
+Manual creation and editing only update operation inventory. Refine an operation when its method, hostname pattern, or path pattern does not match your intended grouping.
+
+For more information, refer to [Manage operations](https://developers.cloudflare.com/security/web-assets/manage-operations/).
+
+## Review labeled operations
+
+Labels describe what an operation does. Detections can use labels to focus on traffic for a specific use case.
+
+Refine labels when the current label set does not describe the operation correctly. For example, add `cf-llm` to operations that receive Large Language Model (LLM) prompts so [AI Security for Apps](https://developers.cloudflare.com/waf/detections/ai-security-for-apps/) can scan incoming prompts for threats such as prompt injection.
+
+For more information, refer to [Label operations](https://developers.cloudflare.com/security/web-assets/label-operations/).
+
+## Review traffic matched to operations
+
+Use [Security Analytics](https://developers.cloudflare.com/waf/analytics/security-analytics/) to review traffic matched to individual operations or labels.
+
+[Go to **Analytics** ↗](https://dash.cloudflare.com/?to=/:account/:zone/security/analytics)
+
+For individual operations, use the operation ID or operation details to review matched traffic and logs. For labeled traffic, filter by managed labels such as `cf-llm` or `cf-log-in`.
+
+Certain metrics, such as latency, may not populate when a request is handled by [Cloudflare Workers](https://developers.cloudflare.com/workers/) or a product built on Workers, such as [Waiting Room](https://developers.cloudflare.com/waiting-room/). You can also export operation and label fields through Logpush or query them through the GraphQL Analytics API. For more information, refer to [Use labels in analytics and logs](https://developers.cloudflare.com/security/web-assets/label-operations/#use-labels-in-analytics-and-logs/).
+
+## Use learned schemas
+
+Discovered operations do not automatically start profile learning. To learn a Schema Profile, select **Learn profile** from the operation overflow menu.
+
+After the profile becomes available, select **View details**. Review the learned schema under **Security overview**.
+
+If you already maintain OpenAPI schemas, you can upload them to create operations and use them with API Shield [Schema Validation](https://developers.cloudflare.com/api-shield/security/schema-validation/).
+
+For the complete workflow, refer to [Application Profiles](https://developers.cloudflare.com/waf/detections/application-profiles/) and [Schema learning](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-management/schema-learning/).
+
+## Define security protections
+
+After traffic is matched to the relevant operation, define relevant security rules to act on that traffic.
+
+For example, AI Security for Apps scans requests to operations labeled with `cf-llm`. You can then create rules that log or block requests with unsafe LLM prompt signals.
+
+For more information, refer to [Define security protections](https://developers.cloudflare.com/security/web-assets/define-security-protections/).
+
+## Review risks
+
+Web Assets can show risks on operations that may need attention. A corresponding [Security Center](https://developers.cloudflare.com/security-center/) Insight may also be raised.
+
+For the current risk reference, refer to [API endpoint risks](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-labels/#risk-labels).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/security/web-assets/get-started/#page","headline":"Get started","description":"Use Web Assets to review operations, labels, matched traffic, learned schemas, and risks.","url":"https://developers.cloudflare.com/security/web-assets/get-started/","inLanguage":"en","image":"https://developers.cloudflare.com/security/web-assets/get-started/og.png?v=a077270071d6ac1d","dateModified":"2026-08-19","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Use labels to describe the application use case for Web Assets operations.
+title: Label operations
+image: https://developers.cloudflare.com/security/web-assets/label-operations/og.png?v=2ebd620750e42057
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/security/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Label operations
+
+Last updated Jun 26, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/security/web-assets/label-operations/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Labels add use-case context to operations. Security detections can use labels to extend relevant focus on traffic with a specific application use case.
+
+## Managed labels
+
+Cloudflare defines managed labels. They identify common operation types, such as login flows, sign-up flows, and AI-powered operations.
+
+Some managed labels can be discovered automatically. Automatic discovery currently applies only to selected managed labels and selected plans.
+
+The following managed labels are available:
+
+| Label | Description |
+| --- | --- |
+| `cf-api-endpoint` | Operations that serve machine-readable data or facilitate programmatic interaction. |
+| `cf-llm` | Operations that receive requests for services powered by Large Language Models (LLMs). |
+| `cf-mcp` | Operations that implement the [Model Context Protocol (MCP)](https://developers.cloudflare.com/agents/model-context-protocol/) for AI tool and data access. |
+| `cf-contains-ads` | Operations that serve web pages containing advertisements. |
+| `cf-log-in` | Operations that accept user credentials. |
+| `cf-sign-up` | Operations that create user accounts. |
+| `cf-content` | Operations that provide unique content, such as product details, reviews, or pricing. |
+| `cf-purchase` | Operations that complete a purchase. |
+| `cf-password-reset` | Operations that participate in password reset flows. |
+| `cf-add-cart` | Operations that add items to a cart or verify item availability. |
+| `cf-add-payment` | Operations that accept credit card or bank account details. |
+| `cf-check-value` | Operations that check rewards points, in-game currency, or other stored value. |
+| `cf-add-post` | Operations that post messages, reviews, or similar user-generated content. |
+| `cf-account-update` | Operations that update user account or profile details. |
+| `cf-rss-feed` | Operations that expect traffic from RSS clients. |
+| `cf-web-page` | Operations that serve HTML pages. |
+
+Note
+
+[Bot Fight Mode](https://developers.cloudflare.com/bots/get-started/bot-fight-mode/) will not block requests to operations labeled as `cf-rss-feed`.
+
+[Super Bot Fight Mode rules](https://developers.cloudflare.com/bots/get-started/super-bot-fight-mode/#ruleset-engine) will not match or challenge requests labeled as `cf-rss-feed`.
+
+## Available detections
+
+Some detections use labels to decide which operations to inspect. The following detections can use operation labels:
+
+| Label | Related detection |
+| --- | --- |
+| `cf-llm` | [AI Security for Apps](https://developers.cloudflare.com/waf/detections/ai-security-for-apps/) |
+| `cf-log-in` | [Leaked credentials detection](https://developers.cloudflare.com/waf/detections/leaked-credentials/) and [account abuse protection](https://developers.cloudflare.com/bots/account-abuse-protection/) |
+| `cf-sign-up` | [Account abuse protection](https://developers.cloudflare.com/bots/account-abuse-protection/) |
+
+Some detections may still require product-specific configuration. For an end-to-end workflow, refer to [Define security protections](https://developers.cloudflare.com/security/web-assets/define-security-protections/).
+
+## Custom labels
+
+Custom labels help you organize operations by owner, application, environment, and business flow.
+
+## Apply labels
+
+Apply labels to operations from Web Assets.
+
+1. In the Cloudflare dashboard, go to the **Web Assets** page. [Go to **Web assets** ↗](https://dash.cloudflare.com/?to=/:account/:zone/security/web-assets)
+2. Select the operation that you want to label.
+3. Select **Edit labels**.
+4. Select the managed or custom labels to apply.
+5. Select **Save labels**.
+
+## Use labels in analytics and logs
+
+You can review matched operations and managed labels in Security Analytics. You can also query or export this data.
+
+### GraphQL Analytics API
+
+You can query matched operation and managed label data using the [GraphQL Analytics API](https://developers.cloudflare.com/analytics/graphql-api/). The `webAssetsOperationId` and `webAssetsLabelsManaged` fields are available in the `httpRequestsAdaptive` and `httpRequestsAdaptiveGroups` datasets.
+
+`webAssetsLabelsManaged` returns at most 10 labels per request.
+
+The following query returns request counts by operation ID and managed label set for traffic carrying the `cf-llm` managed label:
+
+```graphql
+query GetAdaptiveGroups($zoneTag: string, $start: DateTime!, $end: DateTime!) {
+	viewer {
+		zones(filter: { zoneTag: $zoneTag }) {
+			httpRequestsAdaptiveGroups(
+				filter: {
+					datetime_geq: $start
+					datetime_leq: $end
+					requestSource: "eyeball"
+					webAssetsLabelsManaged_hasany: ["cf-llm"]
+				}
+				limit: 25
+				orderBy: [count_DESC]
+			) {
+				count
+				dimensions {
+					webAssetsOperationId
+					webAssetsLabelsManaged
+				}
+			}
+		}
+	}
+}
+```
+
+Replace `cf-llm` with another [managed label](#managed-labels). You can also use `webAssetsOperationId` as the only dimension to group traffic by matched operation.
+
+### Logpush
+
+You can export per-request Web Assets data to your storage or SIEM system using [Logpush](https://developers.cloudflare.com/logs/logpush/). The `WebAssetsOperationID` and `WebAssetsLabelsManaged` fields are available in the [HTTP requests dataset](https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/zone/http_requests/#webassetslabelsmanaged/).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/security/web-assets/label-operations/#page","headline":"Label operations","description":"Use labels to describe the application use case for Web Assets operations.","url":"https://developers.cloudflare.com/security/web-assets/label-operations/","inLanguage":"en","image":"https://developers.cloudflare.com/security/web-assets/label-operations/og.png?v=2ebd620750e42057","dateModified":"2026-06-26","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["GraphQL"]}
+```
+
+---
+
+---
+description: Manage operations and start profile learning in Web Assets.
+title: Manage operations
+image: https://developers.cloudflare.com/security/web-assets/manage-operations/og.png?v=fa324efd72a6f555
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/security/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Manage operations
+
+Last updated Aug 19, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/security/web-assets/manage-operations/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+## Operation states
+
+Each operation has one of the following states:
+
+| State | Meaning |
+| --- | --- |
+| `full` | An operation that you selected, added manually, or created from a schema. Full operations are used for matching, logging, detections, and rules. |
+| `candidate` | An operation that Cloudflare discovered from traffic. Candidate operations are used for matching, logging, detections, and rules before you manually review them. |
+| `shadow` | An operation that exists in Web Assets but is not used for matching, logging, detections, or rules. |
+
+You do not need to move every discovered operation to the `full` state. Candidate operations provide operation context automatically. Profile learning starts only when you select **Learn profile**.
+
+## Discovery requirements
+
+If an operation does not appear in Web Assets, Cloudflare may not have observed enough valid requests over a continuous period. Discovery only processes requests that satisfy all of the following requirements:
+
+- The request must return a `2xx` response code from the Cloudflare edge.
+- The request must not come directly from Cloudflare Workers.
+- The operation must receive at least 500 requests within a 10-day period.
+
+## Discovered operations
+
+Discovery continuously identifies operations from proxied HTTP traffic. Discovery groups similar request paths together by using path normalization.
+
+For example, discovery can group these requests:
+
+```txt
+GET https://api.example.com/profile/238
+GET https://api.example.com/profile/392
+```
+
+Discovery can group them into one operation:
+
+```txt
+GET api.example.com/profile/{var1}
+```
+
+Discovered operations are used for matching before you manually refine them. This provides operation context without requiring a state change first.
+
+Discovery-backed matching is subject to plan availability and system limits. Cloudflare currently sends up to 3,000 operations per zone to the edge for matching. Operations in the `full` state are prioritized first, followed by operations in the `candidate` state.
+
+## Start profile learning
+
+Select **Learn profile** to start intentional profile learning. Discovery, manual creation, and editing do not start profiling.
+
+Customers with API Security already have access to Schema Profiles through Schema Learning and Schema Validation. Cloudflare is opening a closed beta to invited Enterprise customers without API Security. Interested customers can contact their account team to express interest. Closed-beta access does not imply future plan availability or pricing.
+
+For a candidate or shadow operation, this action also moves the operation into the `full` state. An operation already in the `full` state remains there. Cloudflare then learns expected request structure from qualifying traffic.
+
+For API endpoints, API Shield also collects data for other context:
+
+- Request structures through [schema learning](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-management/schema-learning/)
+- Normal request volume through [rate limit recommendations](https://developers.cloudflare.com/api-shield/security/volumetric-abuse-detection/)
+- Authentication usage through [Authentication Posture](https://developers.cloudflare.com/api-shield/security/authentication-posture/)
+- Persisted security findings through [API endpoint risk labels](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-labels/#risk-labels)
+
+Each feature has separate data and timing requirements. For Schema Profiles, refer to [Schema learning](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-management/schema-learning/).
+
+Full operations can also use protections that require a known API endpoint, including [Schema Validation](https://developers.cloudflare.com/api-shield/security/schema-validation/), [fallthrough rules](https://developers.cloudflare.com/api-shield/security/schema-validation/#add-validation-by-adding-a-fallthrough-rule), and [sequence mitigation](https://developers.cloudflare.com/api-shield/security/sequence-mitigation/).
+
+1. In the Cloudflare dashboard, go to the **Web Assets** page with the **Operations** tab highlighted. [Go to **Web assets** ↗](https://dash.cloudflare.com/?to=/:account/:zone/security/web-assets)
+2. Open the row actions for the operation.
+3. Select **Learn profile**.
+
+After the profile becomes available, select **View details**. Review the learned schema under **Security overview**.
+
+## Traffic matching behavior
+
+Cloudflare matches each request to one operation at the edge. When more than one operation pattern could match the same request, the more specific operation wins.
+
+Matching priority
+
+Operations in the `full` state always match before operations in the `candidate` state.
+
+For example, these operations could both match `GET https://example.com/checkout/pay`:
+
+```txt
+GET example.com/checkout/pay
+GET example.com/checkout/{var1}
+```
+
+Cloudflare uses `GET example.com/checkout/pay` because it is more specific.
+
+For the same method, hostname pattern, and path pattern, Cloudflare generates the same operation UUID. This keeps operation identity stable when the same operation is found again.
+
+## Add operations manually
+
+Add an operation manually when traffic you want to protect has not been discovered, or when you want to define the operation structure yourself.
+
+1. In the Cloudflare dashboard, go to the **Web Assets** page with **Operations** tab highlighted. [Go to **Web assets** ↗](https://dash.cloudflare.com/?to=/:account/:zone/security/web-assets)
+2. Select **Add operation**.
+3. Choose **Manually add**.
+4. Select the HTTP method, enter the hostname pattern and path pattern.
+5. Confirm with **Add operation**.
+
+Manual creation only adds the operation to inventory. Select **Learn profile** separately to start profiling.
+
+## Use variables in operation patterns
+
+When you add an operation manually, use variables to match similar traffic with one operation.
+
+For path variables, enclose the variable in braces:
+
+```txt
+/api/users/{var1}/details
+```
+
+For hostname variables, the variable must occupy a complete hostname label. Cloudflare supports patterns such as:
+
+```txt
+{hostVar1}.example.com
+foo.{hostVar1}.example.com
+{hostVar2}.{hostVar1}.example.com
+```
+
+Do not combine a hostname variable with other characters in the same label. The following pattern is not supported:
+
+```txt
+foo-{hostVar1}.example.com
+```
+
+## Add operations from schemas
+
+If you already maintain OpenAPI schemas, you can continue uploading them to create operations.
+
+Schema upload is also used by [API Shield](https://developers.cloudflare.com/api-shield/) for schema validation. For more information, refer to [Schema Validation](https://developers.cloudflare.com/api-shield/security/schema-validation/) and [schema learning](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-management/schema-learning/).
+
+## Refine operations
+
+Refine operations when the current grouping does not match how the traffic should be grouped or protected.
+
+For example, you may want separate operations for login and password reset traffic, even if both routes share part of the same path structure. You may also want to replace several narrow operations with one broader operation when they represent the same application behavior.
+
+Review overlapping operations before making changes. Cloudflare matches a request to one operation. A broad operation can change how similar requests are grouped, while a narrow operation can isolate one flow from related traffic.
+
+1. In the Cloudflare dashboard, go to the **Web Assets** page with the **Operations** tab highlighted. [Go to **Web assets** ↗](https://dash.cloudflare.com/?to=/:account/:zone/security/web-assets)
+2. Open the row actions for the operation.
+3. Select **Edit operation**.
+4. Update the HTTP method, hostname pattern, or path pattern.
+5. Select **Save**.
+
+Editing updates the operation inventory entry. It does not start profile learning.
+
+Editing this operation will change its ID
+
+Cloudflare computes operation IDs from the HTTP method, hostname, and path. Changing these values creates a different operation ID.
+
+## Delete operations
+
+You can delete operations one at a time or in bulk.
+
+1. In the Cloudflare dashboard, go to the **Web Assets** page with **Operations** tab highlighted. [Go to **Web assets** ↗](https://dash.cloudflare.com/?to=/:account/:zone/security/web-assets)
+2. Select the operation(s) that you want to delete.
+3. Confirm with **Delete operations**.
+
+Note
+
+After you delete an operation, Cloudflare no longer matches future traffic to that operation. If Cloudflare later discovers similar traffic, the traffic may appear again as a discovered operation.
+
+## Use the Cloudflare API
+
+You can interact with operations through the Cloudflare API. For more information, refer to [operations API documentation](https://developers.cloudflare.com/api/resources/api_gateway/subresources/discovery/subresources/operations/methods/list/).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/security/web-assets/manage-operations/#page","headline":"Manage operations","description":"Manage operations and start profile learning in Web Assets.","url":"https://developers.cloudflare.com/security/web-assets/manage-operations/","inLanguage":"en","image":"https://developers.cloudflare.com/security/web-assets/manage-operations/og.png?v=fa324efd72a6f555","dateModified":"2026-08-19","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Security rules perform security actions on incoming requests that match specified filters.
+title: Security rules
+image: https://developers.cloudflare.com/security/rules/og.png?v=28208f8b98d2defd
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/security/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Security rules
+
+Last updated Sep 8, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/security/rules/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Security rules perform security-related actions on incoming requests that match specified filters. Rules are evaluated and executed in order, from first to last.
+
+You can create Security Rules from reviewed [Attack Signature Detection](https://developers.cloudflare.com/waf/detections/attack-signature-detection/use-attack-signatures-in-security-rules/) confidence, category, and Ref metadata.
+
+To access security rules in the new security dashboard, go to the **Security rules** page.
+
+[Go to **Security rules** ↗](https://dash.cloudflare.com/?to=/:account/:zone/security/security-rules)
+
+## Security rules
+
+The **Security rules** tab includes a list of different types of rules configured in your domain/zone to protect your applications and resources.
+
+To create a security rule:
+
+1. In the Cloudflare dashboard, go to the **Security rules** page. [Go to **Security rules** ↗](https://dash.cloudflare.com/?to=/:account/:zone/security/security-rules)
+2. (Optional) Select **Templates**, and then select a template from the list. You can customize the default configuration of the template before deploying the new rule. Refer to the resources listed in the next step.
+3. Select **Create rule** > select the type of rule you want to create. Refer to the following resources about each rule type:
+   - [Custom rules](https://developers.cloudflare.com/waf/custom-rules/create-dashboard/#rule-form)
+   - [Rate limiting rules](https://developers.cloudflare.com/waf/rate-limiting-rules/create-zone-dashboard/#rule-form)
+   - [API sequence rules](https://developers.cloudflare.com/api-shield/security/sequence-mitigation/#rule-form)
+   - [API JWT validation rules](https://developers.cloudflare.com/api-shield/security/jwt-validation/#rule-form) (requires a [token configuration](https://developers.cloudflare.com/security/settings/#all-settings))
+   - [Managed rules exceptions](https://developers.cloudflare.com/waf/managed-rules/waf-exceptions/define-dashboard/#2-define-basic-exception-parameters)
+   - [Content security rules](https://developers.cloudflare.com/client-side-security/rules/create-dashboard/#rule-form) (previously known as policies)
+
+Notes
+
+To deploy a managed ruleset, go to the Security **Settings** page. For more information, refer to [Deploy a managed ruleset](https://developers.cloudflare.com/waf/managed-rules/deploy-zone-dashboard/#deploy-a-managed-ruleset).
+
+The **Security rules** tab includes functionality available in different products in the previous dashboard navigation structure, such as the [WAF](https://developers.cloudflare.com/waf/), [API Shield](https://developers.cloudflare.com/api-shield/), and [client-side security](https://developers.cloudflare.com/client-side-security/).
+
+The tab may show additional rule types if you have configured at least one of the following:
+
+- [IP access rules](https://developers.cloudflare.com/waf/tools/ip-access-rules/)
+- [User agent blocking rules](https://developers.cloudflare.com/waf/tools/user-agent-blocking/)
+- [Zone lockdown rules](https://developers.cloudflare.com/waf/tools/zone-lockdown/)
+
+## DDoS protection
+
+The **DDoS protection** tab shows the multiple DDoS mitigation services provided by Cloudflare. You can create rules to override these mitigation tools. DDoS attack protection overrides are only available to Enterprise customers with the Advanced DDoS Protection subscription.
+
+To learn more about DDoS protection overrides, refer to the following resources:
+
+- [HTTP DDoS attack protection overrides](https://developers.cloudflare.com/ddos-protection/managed-rulesets/http/http-overrides/)
+- [Network-layer DDoS attack protection overrides](https://developers.cloudflare.com/ddos-protection/managed-rulesets/network/network-overrides/)
+
+Note
+
+You define [overrides for the Network-layer DDoS attack protection managed ruleset](https://developers.cloudflare.com/ddos-protection/managed-rulesets/network/network-overrides/configure-dashboard/) at the account level.
+
+## Interaction between different app security features
+
+If you are using several app security features like custom rules, Managed Rules, and Super Bot Fight Mode, it is important to understand how these features interact and the order in which they execute. Refer to [Security features interoperability](https://developers.cloudflare.com/waf/feature-interoperability/) for more information.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/security/rules/#page","headline":"Security rules","description":"Security rules perform security actions on incoming requests that match specified filters.","url":"https://developers.cloudflare.com/security/rules/","inLanguage":"en","image":"https://developers.cloudflare.com/security/rules/og.png?v=28208f8b98d2defd","dateModified":"2026-09-08","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Configure different Cloudflare security features that protect your web applications, APIs, and resources.
+title: Security settings
+image: https://developers.cloudflare.com/security/settings/og.png?v=14f099136a8746f0
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/security/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Security settings
+
+Last updated Aug 19, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/security/settings/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+This page describes the security settings available in the new security dashboard for a given domain.
+
+To access security settings in the new security dashboard, go to the **Settings** page.
+
+[Go to **Settings** ↗](https://dash.cloudflare.com/?to=/:account/:zone/security/settings)
+
+## Security setting categories
+
+Security settings and detection tools are categorized by the type of threat that they detect and mitigate.
+
+### Web application exploits
+
+In the **Web application exploits** security category you can manage the following settings:
+
+- Detection tools:
+  - [Leaked credentials detection](https://developers.cloudflare.com/waf/detections/leaked-credentials/)
+  - [Malicious uploads detection](https://developers.cloudflare.com/waf/detections/malicious-uploads/)
+  - [Sensitive data detection](https://developers.cloudflare.com/waf/managed-rules/reference/sensitive-data-detection/)
+  - [Cloudflare managed ruleset](https://developers.cloudflare.com/waf/managed-rules/reference/cloudflare-managed-ruleset/)
+  - [OWASP Core](https://developers.cloudflare.com/waf/managed-rules/reference/owasp-core-ruleset/) ruleset
+  - [AI Security for Apps](https://developers.cloudflare.com/waf/detections/ai-security-for-apps/)
+- [Under Attack mode](https://developers.cloudflare.com/fundamentals/reference/under-attack-mode/) in Security Level
+- Managed [security.txt](https://developers.cloudflare.com/security-center/infrastructure/security-file/)
+
+Refer to each linked page for details.
+
+Note
+
+The web application exploits security category includes features and settings from the [Cloudflare WAF](https://developers.cloudflare.com/waf/) in the previous dashboard navigation structure.
+
+### DDoS attacks
+
+The **DDoS attacks** security category shows the multiple mitigation services against DDoS attacks provided by Cloudflare.
+
+You can create rules to override DDoS attack protection tools. DDoS attack protection overrides are only available to Enterprise customers with the Advanced DDoS Protection subscription.
+
+To learn more about DDoS protection overrides, refer to the following resources:
+
+- [HTTP DDoS attack protection overrides](https://developers.cloudflare.com/ddos-protection/managed-rulesets/http/http-overrides/)
+- [Network-layer DDoS attack protection overrides](https://developers.cloudflare.com/ddos-protection/managed-rulesets/network/network-overrides/)
+
+Note
+
+You define overrides for the Network-layer DDoS attack protection managed ruleset at the account level in Account Home > **L3/4 DDoS** > **Network-layer DDoS Protection**.
+
+Additionally, you can manage the following settings:
+
+- [Block AI Bots](https://developers.cloudflare.com/bots/concepts/bot/#ai-bots)
+- [Bot Management](https://developers.cloudflare.com/bots/get-started/bot-management/) (depending on your Enterprise subscriptions)
+- [Browser Integrity Check](https://developers.cloudflare.com/waf/tools/browser-integrity-check/)
+- [Challenge Passage](https://developers.cloudflare.com/cloudflare-challenges/challenge-types/challenge-pages/challenge-passage/)
+- [Cloudflare managed ruleset](https://developers.cloudflare.com/waf/managed-rules/reference/cloudflare-managed-ruleset/)
+- [AI Security for Apps](https://developers.cloudflare.com/waf/detections/ai-security-for-apps/)
+- [Schema learning](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-management/schema-learning/)
+- [Schema validation](https://developers.cloudflare.com/api-shield/security/schema-validation/) (requires an uploaded schema)
+- [Under Attack mode](https://developers.cloudflare.com/fundamentals/reference/under-attack-mode/) (under Security Level)
+- SSL/TLS DDoS attack protection
+
+### Bot traffic
+
+In the **Bot traffic** security category you can manage the following settings:
+
+- [AI Labyrinth](https://developers.cloudflare.com/bots/additional-configurations/ai-labyrinth/)
+- [Block AI Bots](https://developers.cloudflare.com/bots/concepts/bot/#ai-bots)
+- [Bot fight mode](https://developers.cloudflare.com/bots/get-started/bot-fight-mode/) (depending on your Cloudflare plan)
+- [Super Bot fight mode](https://developers.cloudflare.com/bots/get-started/super-bot-fight-mode/) (depending on your Cloudflare plan)
+- [Bot Management](https://developers.cloudflare.com/bots/get-started/bot-management/) (depending on your Enterprise subscriptions)
+- AI bot traffic management with [robots.txt](https://developers.cloudflare.com/bots/additional-configurations/managed-robots-txt/)
+- API [sequence detection](https://developers.cloudflare.com/api-shield/security/sequence-analytics/) (requires you to configure a session identifier)
+
+Note
+
+The bot traffic security category includes features and settings from [Bots](https://developers.cloudflare.com/bots/) in the previous dashboard navigation structure.
+
+### API abuse
+
+In the **API abuse** security category you can manage the following settings:
+
+- [Developer portal](https://developers.cloudflare.com/api-shield/management-and-monitoring/developer-portal/) creation
+- Web asset discovery (always enabled if included in your Enterprise subscriptions. For Enterprise subscriptions, [API endpoint discovery](https://developers.cloudflare.com/api-shield/security/api-discovery/) is also included, which requires you to configure a [session identifier](https://developers.cloudflare.com/api-shield/management-and-monitoring/session-identifiers/))
+- [Endpoint labels](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-labels/)
+- [JWT validation](https://developers.cloudflare.com/api-shield/security/jwt-validation/) (requires you to add a [JWT configuration](https://developers.cloudflare.com/api-shield/security/jwt-validation/api/#token-configurations))
+
+Note
+
+The API abuse security category includes features and settings from [API Shield](https://developers.cloudflare.com/api-shield/) in the previous dashboard navigation structure.
+
+### Client-side abuse
+
+In the **Client-side abuse** security category you can manage the following settings:
+
+- [Continuous script monitoring](https://developers.cloudflare.com/client-side-security/how-it-works/):
+  - [Reporting endpoint](https://developers.cloudflare.com/client-side-security/reference/settings/#reporting-endpoint) to use your hostname instead of a Cloudflare-owned endpoint (only for Enterprise customers with a paid add-on)
+  - [Data logged in client-side abuse reports](https://developers.cloudflare.com/client-side-security/reference/settings/#connection-target-details) (only the hostname or the full URI)
+- [Email Address Obfuscation](https://developers.cloudflare.com/waf/tools/scrape-shield/email-address-obfuscation/)
+- [Hotlink Protection](https://developers.cloudflare.com/waf/tools/scrape-shield/hotlink-protection/)
+
+Note
+
+The client-side abuse security category includes features and settings from [client-side security](https://developers.cloudflare.com/client-side-security/) (formerly known as Page Shield) and [Scrape Shield](https://developers.cloudflare.com/waf/tools/scrape-shield/) in the previous dashboard navigation structure.
+
+## All settings
+
+The following table links to additional information about each available setting:
+
+| Setting | Location in previous dashboard navigation |
+| --- | --- |
+| [AI Labyrinth](https://developers.cloudflare.com/bots/additional-configurations/ai-labyrinth/) | **Security** > **Bots** > **Configure Bot Fight Mode<br>Security** > **Bots** > **Configure Super Bot Fight Mode<br>Security** > **Bots** > **Configure Bot Management** |
+| [AI Security for Apps](https://developers.cloudflare.com/waf/detections/ai-security-for-apps/) | *N/A* |
+| [Block AI Bots](https://developers.cloudflare.com/bots/concepts/bot/#ai-bots) | **Security** > **Bots** > **Configure Bot Fight Mode<br>Security** > **Bots** > **Configure Super Bot Fight Mode<br>Security** > **Bots** > **Configure Bot Management** |
+| [Bot Management](https://developers.cloudflare.com/bots/get-started/bot-management/): | **Security** > **Bots** |
+| — [JS detections](https://developers.cloudflare.com/bots/additional-configurations/javascript-detections/) | **Security** > **Bots** > **Configure Super Bot Fight Mode<br>Security** > **Bots** > **Configure Bot Management** |
+| — [Auto-update machine learning](https://developers.cloudflare.com/bots/reference/machine-learning-models/) | **Security** > **Bots** > **Configure Bot Management** |
+| [Browser integrity check](https://developers.cloudflare.com/waf/tools/browser-integrity-check/) | **Security** > **Settings** |
+| Challenge Passage: [Timeout](https://developers.cloudflare.com/cloudflare-challenges/challenge-types/challenge-pages/challenge-passage/) | **Security** > **Settings** |
+| [Client certificates](https://developers.cloudflare.com/ssl/client-certificates/) | **SSL** > **Client Certificates** |
+| [Cloudflare managed ruleset](https://developers.cloudflare.com/waf/managed-rules/reference/cloudflare-managed-ruleset/) | **Security** > **WAF** > **Managed rules** tab |
+| [Continuous script monitoring](https://developers.cloudflare.com/client-side-security/how-it-works/): | **Security** > **Client-side security** |
+| — [Reporting endpoint](https://developers.cloudflare.com/client-side-security/reference/settings/#reporting-endpoint) | **Security** > **Client-side security** > **Settings** |
+| — [Data processing](https://developers.cloudflare.com/client-side-security/reference/settings/#connection-target-details) | **Security** > **Client-side security** > **Settings** |
+| — [Alerts](https://developers.cloudflare.com/client-side-security/alerts/configure/) | **Security** > **Client-side security** > **Settings**<br>Account Home > **Notifications** |
+| [Create a developer portal](https://developers.cloudflare.com/api-shield/management-and-monitoring/developer-portal/) | **Security** > **API Shield** > **Settings** |
+| [Custom fallthrough rules](https://developers.cloudflare.com/api-shield/security/schema-validation/#add-validation-by-adding-a-fallthrough-rule) | **Security** > **API Shield** > **Settings** |
+| [Email Address Obfuscation](https://developers.cloudflare.com/waf/tools/scrape-shield/email-address-obfuscation/) | **Scrape Shield** |
+| [API endpoint discovery](https://developers.cloudflare.com/api-shield/security/api-discovery/): | **API Shield** > **Discovery** |
+| — [Session identifiers](https://developers.cloudflare.com/api-shield/management-and-monitoring/session-identifiers/) | **Security** > **API Shield** > **Settings** |
+| [Endpoint labels](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-labels/) | **Security** > **Settings** > **Labels** |
+| [Hotlink Protection](https://developers.cloudflare.com/waf/tools/scrape-shield/hotlink-protection/) | **Scrape Shield** |
+| [HTTP DDoS attack protection](https://developers.cloudflare.com/ddos-protection/managed-rulesets/http/): | **Security** > **DDoS** |
+| — [Configure overrides](https://developers.cloudflare.com/ddos-protection/managed-rulesets/http/http-overrides/configure-dashboard/) | **Security** > **DDoS** |
+| [Instruct AI bot traffic with robots.txt](https://developers.cloudflare.com/bots/additional-configurations/managed-robots-txt/) | **Security** > **Bots** > **Configure Bot Fight Mode<br>Security** > **Bots** > **Configure Super Bot Fight Mode<br>Security** > **Bots** > **Configure Bot Management** |
+| [IP access rules](https://developers.cloudflare.com/waf/tools/ip-access-rules/) | **Security** > **WAF** > **Tools** tab<br>**Security** > **WAF** > **Custom rules** tab |
+| [IP lists](https://developers.cloudflare.com/waf/tools/lists/custom-lists/#ip-lists) | Account Home > **Manage Account** > **Configurations** |
+| [JWT validation](https://developers.cloudflare.com/api-shield/security/jwt-validation/): | **Security** > **API Shield** > **Settings** |
+| — [JWT validation rules](https://developers.cloudflare.com/api-shield/security/jwt-validation/#add-a-jwt-validation-rule) | **Security** > **API Shield** > **API Rules** |
+| — [Token configurations](https://developers.cloudflare.com/api-shield/security/jwt-validation/#add-a-token-validation-configuration) | **Security** > **API Shield** > **Settings** |
+| [Leaked credentials detection](https://developers.cloudflare.com/waf/detections/leaked-credentials/): | **Security** > **Settings** |
+| — [Custom username and password location](https://developers.cloudflare.com/waf/detections/leaked-credentials/#custom-detection-locations) | **Security** > **Settings** |
+| [Malicious uploads detection](https://developers.cloudflare.com/waf/detections/malicious-uploads/): | **Security** > **Settings** |
+| — [Custom content location](https://developers.cloudflare.com/waf/detections/malicious-uploads/#custom-scan-expressions) | **Security** > **Settings** |
+| [mTLS rules](https://developers.cloudflare.com/api-shield/security/mtls/configure/) | **SSL/TLS** > **Client Certificates** |
+| [Network-layer DDoS attack protection](https://developers.cloudflare.com/ddos-protection/managed-rulesets/network/) | Account Home > **L3/4 DDoS** > **Network-layer DDoS Protection** |
+| [OWASP Core](https://developers.cloudflare.com/waf/managed-rules/reference/owasp-core-ruleset/) ruleset | **Security** > **WAF** > **Managed rules** tab |
+| Rate limit authentication requests | **Security** > **WAF** > **Rate limiting rules** tab |
+| [Replace insecure JavaScript libraries](https://developers.cloudflare.com/waf/tools/replace-insecure-js-libraries/) | **Security** > **Settings** |
+| [Schema learning](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-management/schema-learning/): | **Security** > **Web Assets** > **Operations** |
+| — [Session identifiers](https://developers.cloudflare.com/api-shield/management-and-monitoring/session-identifiers/) | **Security** > **API Shield** > **Settings** |
+| [Schema validation](https://developers.cloudflare.com/api-shield/security/schema-validation/) | **Security** > **API Shield** > **Schema Validation** |
+| — [Operations](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-management/) | **Security** > **Web Assets** > **Operations** |
+| — [Active schemas](https://developers.cloudflare.com/api-shield/security/schema-validation/#view-active-schemas) | **Security** > **API Shield** > **Schema Validation** |
+| [Security level: I'm under attack mode](https://developers.cloudflare.com/fundamentals/reference/under-attack-mode/) | **Security** > **Settings** |
+| [Security.txt](https://developers.cloudflare.com/security-center/infrastructure/security-file/) | **Security** > **Settings** |
+| [Sensitive data detection](https://developers.cloudflare.com/waf/managed-rules/reference/sensitive-data-detection/#configure-in-the-dashboard) ruleset | **Security** > **Sensitive Data** |
+| [Sequence detection](https://developers.cloudflare.com/api-shield/security/sequence-analytics/): | **Security** > **API Shield** > **API Rules** |
+| — [Endpoints](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-management/) | **Security** > **API Shield** |
+| — [Session identifiers](https://developers.cloudflare.com/api-shield/management-and-monitoring/session-identifiers/) | **Security** > **API Shield** > **Settings** |
+| [Session identifiers](https://developers.cloudflare.com/api-shield/management-and-monitoring/session-identifiers/) | **Security** > **API Shield** > **Settings** |
+| [SSL/TLS DDoS attack protection](https://developers.cloudflare.com/ddos-protection/managed-rulesets/) | **Security** > **DDoS** |
+| [Token configurations](https://developers.cloudflare.com/api-shield/security/jwt-validation/) | **Security** > **API Shield** > **Settings** |
+| [User agent blocking](https://developers.cloudflare.com/waf/tools/user-agent-blocking/) | **Security** > **WAF** > **Tools** tab<br>**Security** > **WAF** > **Custom rules** tab |
+| [Zone lockdown](https://developers.cloudflare.com/waf/tools/zone-lockdown/) | **Security** > **WAF** > **Tools** tab<br>**Security** > **WAF** > **Custom rules** tab |
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/security/settings/#page","headline":"Security settings","description":"Configure different Cloudflare security features that protect your web applications, APIs, and resources.","url":"https://developers.cloudflare.com/security/settings/","inLanguage":"en","image":"https://developers.cloudflare.com/security/settings/og.png?v=14f099136a8746f0","dateModified":"2026-08-19","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```

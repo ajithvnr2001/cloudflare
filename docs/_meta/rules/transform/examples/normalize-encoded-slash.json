@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/transform/examples/normalize-encoded-slash/",
+  "file": "rules/transform/examples/normalize-encoded-slash.md",
+  "title": "Normalize encoded slashes in URL path \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:56.304715+00:00",
+  "html_len": 135944,
+  "md_len": 2912,
+  "depth": 0
+}

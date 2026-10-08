@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/tag/policy/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/tag/policy.md",
+  "title": "Entradas etiquetadas con \"Pol\u00edtica y legal\" \u2014 Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:14:37.842731+00:00",
+  "html_len": 164025,
+  "md_len": 14849,
+  "depth": 1,
+  "phase": 2
+}

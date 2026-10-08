@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/sopa-could-create-new-denial-of-service-attac/",
+  "file": "_subdomains/blog.cloudflare.com/sopa-could-create-new-denial-of-service-attac.md",
+  "title": "SOPA Could Create New Denial of Service Attack, Powered by Law not Botnets | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:15.786759+00:00",
+  "html_len": 274446,
+  "md_len": 58907,
+  "depth": 0,
+  "phase": 2
+}

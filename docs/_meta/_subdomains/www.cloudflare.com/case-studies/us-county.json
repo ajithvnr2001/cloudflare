@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/us-county/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/us-county.md",
+  "title": "US County",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:53.851795+00:00",
+  "html_len": 200515,
+  "md_len": 3745,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/dns-cache-memory-optimization-1111/",
+  "file": "_subdomains/blog.cloudflare.com/dns-cache-memory-optimization-1111.md",
+  "title": "How we saved 100 terabytes of memory by optimizing 1.1.1.1\u2019s DNS cache | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:49.836710+00:00",
+  "html_len": 332104,
+  "md_len": 75888,
+  "depth": 0,
+  "phase": 2
+}

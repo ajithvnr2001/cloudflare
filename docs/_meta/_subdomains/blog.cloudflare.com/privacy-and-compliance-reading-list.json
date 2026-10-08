@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/privacy-and-compliance-reading-list/",
+  "file": "_subdomains/blog.cloudflare.com/privacy-and-compliance-reading-list.md",
+  "title": "Privacy and Compliance Reading List | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:43.874758+00:00",
+  "html_len": 282437,
+  "md_len": 66009,
+  "depth": 0,
+  "phase": 2
+}

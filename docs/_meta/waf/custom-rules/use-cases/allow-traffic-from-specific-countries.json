@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/custom-rules/use-cases/allow-traffic-from-specific-countries/",
+  "file": "waf/custom-rules/use-cases/allow-traffic-from-specific-countries.md",
+  "title": "Allow traffic from specific countries only \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:38.023675+00:00",
+  "html_len": 132409,
+  "md_len": 2240,
+  "depth": 0
+}

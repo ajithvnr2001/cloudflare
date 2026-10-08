@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/virtual-networking-101-understanding-tap/",
+  "file": "_subdomains/blog.cloudflare.com/virtual-networking-101-understanding-tap.md",
+  "title": "Virtual networking 101: bridging the gap to understanding TAP | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:10.298285+00:00",
+  "html_len": 353264,
+  "md_len": 75713,
+  "depth": 0,
+  "phase": 2
+}

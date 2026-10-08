@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/queens-platinum-jubilee/",
+  "file": "_subdomains/blog.cloudflare.com/queens-platinum-jubilee.md",
+  "title": "How Queen Elizabeth II\u2019s Platinum Jubilee had an impact on the Internet | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:19.300791+00:00",
+  "html_len": 304903,
+  "md_len": 66841,
+  "depth": 0,
+  "phase": 2
+}

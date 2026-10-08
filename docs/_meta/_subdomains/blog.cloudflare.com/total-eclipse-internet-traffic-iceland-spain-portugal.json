@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/total-eclipse-internet-traffic-iceland-spain-portugal/",
+  "file": "_subdomains/blog.cloudflare.com/total-eclipse-internet-traffic-iceland-spain-portugal.md",
+  "title": "Total eclipse of the Internet: traffic impacts in Iceland, Spain, and Portugal | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:47.352535+00:00",
+  "html_len": 284960,
+  "md_len": 61894,
+  "depth": 0,
+  "phase": 2
+}

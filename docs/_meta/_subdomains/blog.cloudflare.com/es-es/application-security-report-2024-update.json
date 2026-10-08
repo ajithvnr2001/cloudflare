@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/application-security-report-2024-update/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/application-security-report-2024-update.md",
+  "title": "Informe de seguridad de las aplicaciones: actualizaci\u00f3n de 2024 | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:39:13.064798+00:00",
+  "html_len": 252241,
+  "md_len": 49186,
+  "depth": 0,
+  "phase": 2
+}

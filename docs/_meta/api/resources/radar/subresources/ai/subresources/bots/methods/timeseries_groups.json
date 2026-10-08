@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/api/resources/radar/subresources/ai/subresources/bots/methods/timeseries_groups/",
+  "file": "api/resources/radar/subresources/ai/subresources/bots/methods/timeseries_groups.md",
+  "title": "Get time series distribution of AI bots HTTP requests by dimension. | Cloudflare API",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:28:05.224131+00:00",
+  "html_len": 2146754,
+  "md_len": 12051,
+  "depth": 1
+}

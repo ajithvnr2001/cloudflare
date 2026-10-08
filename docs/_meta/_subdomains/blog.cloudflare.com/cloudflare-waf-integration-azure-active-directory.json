@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-waf-integration-azure-active-directory/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-waf-integration-azure-active-directory.md",
+  "title": "Enable secure access to applications with Cloudflare WAF and Azure Active Directory | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:23.259433+00:00",
+  "html_len": 282251,
+  "md_len": 60219,
+  "depth": 0,
+  "phase": 2
+}

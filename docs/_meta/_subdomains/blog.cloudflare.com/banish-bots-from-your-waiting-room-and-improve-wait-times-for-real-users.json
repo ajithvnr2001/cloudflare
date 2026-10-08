@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/banish-bots-from-your-waiting-room-and-improve-wait-times-for-real-users/",
+  "file": "_subdomains/blog.cloudflare.com/banish-bots-from-your-waiting-room-and-improve-wait-times-for-real-users.md",
+  "title": "Banish bots from your Waiting Room and improve wait times for real users | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:25.853924+00:00",
+  "html_len": 331237,
+  "md_len": 80121,
+  "depth": 0,
+  "phase": 2
+}

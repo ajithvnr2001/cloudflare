@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/making-super-slurper-five-times-faster/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/making-super-slurper-five-times-faster.md",
+  "title": "\u4f7f\u7528 Workers\u3001Durable Objects \u548c Queues \u4f7f Super Slurper \u901f\u5ea6\u63d0\u9ad8 5 \u500d | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:41:00.370237+00:00",
+  "html_len": 215351,
+  "md_len": 30233,
+  "depth": 0,
+  "phase": 2
+}

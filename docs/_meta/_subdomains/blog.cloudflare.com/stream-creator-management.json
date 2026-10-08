@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/stream-creator-management/",
+  "file": "_subdomains/blog.cloudflare.com/stream-creator-management.md",
+  "title": "Cloudflare Stream simplifies creator management for creator platforms | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:25.367443+00:00",
+  "html_len": 283988,
+  "md_len": 59318,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/betting-on-blockchain/",
+  "file": "_subdomains/blog.cloudflare.com/betting-on-blockchain.md",
+  "title": "Betting on Blockchain | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:04.646214+00:00",
+  "html_len": 267870,
+  "md_len": 60967,
+  "depth": 0,
+  "phase": 2
+}

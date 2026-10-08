@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-my-team-wrote-12-cloudflare-apps-with-fewer-than-20-lines-of-code/",
+  "file": "_subdomains/blog.cloudflare.com/how-my-team-wrote-12-cloudflare-apps-with-fewer-than-20-lines-of-code.md",
+  "title": "How my team wrote 12 Cloudflare apps with fewer than 20 lines of code | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:05.482918+00:00",
+  "html_len": 277664,
+  "md_len": 57729,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/adding-the-fallback-pool-to-the-load-balancing-ui/",
+  "file": "_subdomains/blog.cloudflare.com/adding-the-fallback-pool-to-the-load-balancing-ui.md",
+  "title": "Adding the Fallback Pool to the Load Balancing UI and other significant UI enhancements | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:20.264270+00:00",
+  "html_len": 295792,
+  "md_len": 64318,
+  "depth": 0,
+  "phase": 2
+}

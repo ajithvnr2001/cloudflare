@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-acquires-eager/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-acquires-eager.md",
+  "title": "Cloudflare Acquires Eager to Reimagine Apps | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:25.610734+00:00",
+  "html_len": 273123,
+  "md_len": 56844,
+  "depth": 0,
+  "phase": 2
+}

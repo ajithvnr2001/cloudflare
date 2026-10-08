@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/delivery-hero/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/delivery-hero.md",
+  "title": "Delivery Hero & Cloudflare | Customer Video",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:26.449707+00:00",
+  "html_len": 222637,
+  "md_len": 12952,
+  "depth": 0,
+  "phase": 2
+}

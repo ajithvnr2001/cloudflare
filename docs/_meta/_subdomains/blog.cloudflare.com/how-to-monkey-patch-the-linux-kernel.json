@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-to-monkey-patch-the-linux-kernel/",
+  "file": "_subdomains/blog.cloudflare.com/how-to-monkey-patch-the-linux-kernel.md",
+  "title": "How to Monkey-Patch the Linux Kernel | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:57.463593+00:00",
+  "html_len": 294061,
+  "md_len": 63690,
+  "depth": 0,
+  "phase": 2
+}

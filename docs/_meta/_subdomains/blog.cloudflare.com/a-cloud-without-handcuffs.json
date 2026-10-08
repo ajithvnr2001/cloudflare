@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/a-cloud-without-handcuffs/",
+  "file": "_subdomains/blog.cloudflare.com/a-cloud-without-handcuffs.md",
+  "title": "A Cloud Without Handcuffs | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:05.418596+00:00",
+  "html_len": 264727,
+  "md_len": 57859,
+  "depth": 0,
+  "phase": 2
+}

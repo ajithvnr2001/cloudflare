@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/announcing-gateway-and-casb/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/announcing-gateway-and-casb.md",
+  "title": "Novedad: Gateway y CASB | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:13.902925+00:00",
+  "html_len": 199913,
+  "md_len": 25541,
+  "depth": 0,
+  "phase": 2
+}

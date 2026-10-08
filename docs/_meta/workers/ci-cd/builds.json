@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/ci-cd/builds/",
+  "file": "workers/ci-cd/builds.md",
+  "title": "Builds \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:10.593991+00:00",
+  "html_len": 197505,
+  "md_len": 7426,
+  "depth": 0
+}

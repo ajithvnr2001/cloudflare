@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/bringing-ai-to-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/bringing-ai-to-cloudflare.md",
+  "title": "AI Everywhere with the WAF Rule Builder Assistant, Cloudflare Radar AI Insights, and updated AI bot protection | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:20.797254+00:00",
+  "html_len": 325038,
+  "md_len": 73034,
+  "depth": 0,
+  "phase": 2
+}

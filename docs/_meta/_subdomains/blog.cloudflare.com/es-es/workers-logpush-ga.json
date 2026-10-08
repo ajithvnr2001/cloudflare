@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/workers-logpush-ga/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/workers-logpush-ga.md",
+  "title": "Env\u00eda los registros de Cloudflare Workers al destino que elijas con Workers Trace Events Logpush | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:06.303675+00:00",
+  "html_len": 208757,
+  "md_len": 27059,
+  "depth": 0,
+  "phase": 2
+}

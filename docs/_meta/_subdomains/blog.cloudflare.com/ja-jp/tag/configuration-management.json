@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/tag/configuration-management/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/tag/configuration-management.md",
+  "title": "\"\u30b3\u30f3\u30d5\u30a3\u30ae\u30e5\u30ec\u30fc\u30b7\u30e7\u30f3\u7ba1\u7406\" \u30bf\u30b0\u306e\u6295\u7a3f \u2014 Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:18:27.040102+00:00",
+  "html_len": 103470,
+  "md_len": 1268,
+  "depth": 1,
+  "phase": 2
+}

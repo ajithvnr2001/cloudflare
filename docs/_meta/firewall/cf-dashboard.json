@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/firewall/cf-dashboard/",
+  "file": "firewall/cf-dashboard.md",
+  "title": "Manage firewall rules in the Cloudflare dashboard \u00b7 Cloudflare Firewall Rules (deprecated) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:11:16.928163+00:00",
+  "html_len": 100066,
+  "md_len": 2341,
+  "depth": 0
+}

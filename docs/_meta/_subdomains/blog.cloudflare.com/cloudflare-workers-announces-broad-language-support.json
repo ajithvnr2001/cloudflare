@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-workers-announces-broad-language-support/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-workers-announces-broad-language-support.md",
+  "title": "Cloudflare Workers Announces Broad Language Support | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:09.789487+00:00",
+  "html_len": 315999,
+  "md_len": 70055,
+  "depth": 0,
+  "phase": 2
+}

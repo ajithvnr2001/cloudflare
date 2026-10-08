@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/account-waf/",
+  "file": "_subdomains/blog.cloudflare.com/account-waf.md",
+  "title": "Account WAF now available to Enterprise customers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:07.516132+00:00",
+  "html_len": 274407,
+  "md_len": 58686,
+  "depth": 0,
+  "phase": 2
+}

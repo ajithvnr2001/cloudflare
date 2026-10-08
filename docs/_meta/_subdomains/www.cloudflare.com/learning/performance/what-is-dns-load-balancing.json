@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/performance/what-is-dns-load-balancing/",
+  "file": "_subdomains/www.cloudflare.com/learning/performance/what-is-dns-load-balancing.md",
+  "title": "What is DNS-based load balancing?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:59.395405+00:00",
+  "html_len": 205268,
+  "md_len": 12165,
+  "depth": 0,
+  "phase": 2
+}

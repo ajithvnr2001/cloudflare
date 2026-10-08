@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/introducing-cloudflare-for-teams/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/introducing-cloudflare-for-teams.md",
+  "title": "Lancement de Cloudflare for Teams | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:02.418974+00:00",
+  "html_len": 298407,
+  "md_len": 66022,
+  "depth": 0,
+  "phase": 2
+}

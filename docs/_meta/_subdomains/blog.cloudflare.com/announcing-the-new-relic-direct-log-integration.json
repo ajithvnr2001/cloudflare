@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/announcing-the-new-relic-direct-log-integration/",
+  "file": "_subdomains/blog.cloudflare.com/announcing-the-new-relic-direct-log-integration.md",
+  "title": "Get full observability into your Cloudflare logs with New Relic | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:46.498686+00:00",
+  "html_len": 281826,
+  "md_len": 59254,
+  "depth": 0,
+  "phase": 2
+}

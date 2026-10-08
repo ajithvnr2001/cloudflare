@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/snippets/examples/jwt-validation/",
+  "file": "rules/snippets/examples/jwt-validation.md",
+  "title": "Validate JSON web tokens (JWT) \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:53.215704+00:00",
+  "html_len": 149314,
+  "md_len": 6395,
+  "depth": 0
+}

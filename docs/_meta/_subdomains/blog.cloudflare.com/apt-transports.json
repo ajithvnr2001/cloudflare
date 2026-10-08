@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/apt-transports/",
+  "file": "_subdomains/blog.cloudflare.com/apt-transports.md",
+  "title": "A Tale of Two (APT) Transports | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:37.698179+00:00",
+  "html_len": 297218,
+  "md_len": 66653,
+  "depth": 0,
+  "phase": 2
+}

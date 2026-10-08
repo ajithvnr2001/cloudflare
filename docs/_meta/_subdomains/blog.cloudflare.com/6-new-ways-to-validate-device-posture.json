@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/6-new-ways-to-validate-device-posture/",
+  "file": "_subdomains/blog.cloudflare.com/6-new-ways-to-validate-device-posture.md",
+  "title": "6 New Ways to Validate Device Posture | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:12.631667+00:00",
+  "html_len": 291353,
+  "md_len": 63856,
+  "depth": 0,
+  "phase": 2
+}

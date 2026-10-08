@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/python-workflows/",
+  "file": "_subdomains/blog.cloudflare.com/python-workflows.md",
+  "title": "A closer look at Python Workflows, now in beta | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:49.447461+00:00",
+  "html_len": 299037,
+  "md_len": 66035,
+  "depth": 0,
+  "phase": 2
+}

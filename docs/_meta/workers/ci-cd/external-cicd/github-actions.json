@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/ci-cd/external-cicd/github-actions/",
+  "file": "workers/ci-cd/external-cicd/github-actions.md",
+  "title": "GitHub Actions \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:13.241683+00:00",
+  "html_len": 190438,
+  "md_len": 4569,
+  "depth": 0
+}

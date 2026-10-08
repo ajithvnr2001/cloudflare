@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/products/network-firewall/",
+  "file": "_subdomains/www.cloudflare.com/products/network-firewall.md",
+  "title": "Cloudflare Network Firewall - Cloud-native FWaaS for Enterprise WAN",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:16.898517+00:00",
+  "html_len": 289648,
+  "md_len": 8332,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/high-performance-llms/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/high-performance-llms.md",
+  "title": "\u6784\u5efa\u8fd0\u884c\u8d85\u5927\u8bed\u8a00\u6a21\u578b\u7684\u57fa\u7840 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:08.048859+00:00",
+  "html_len": 208636,
+  "md_len": 28199,
+  "depth": 0,
+  "phase": 2
+}

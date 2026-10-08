@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-strict-ssl-protecting-against-a-man-in-the-middle-attack-on-origin-traffic/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-strict-ssl-protecting-against-a-man-in-the-middle-attack-on-origin-traffic.md",
+  "title": "Introducing Strict SSL: Protecting Against a On-Path Attack on Origin Traffic | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:51.399954+00:00",
+  "html_len": 302961,
+  "md_len": 67149,
+  "depth": 0,
+  "phase": 2
+}

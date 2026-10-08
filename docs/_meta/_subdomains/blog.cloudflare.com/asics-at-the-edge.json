@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/asics-at-the-edge/",
+  "file": "_subdomains/blog.cloudflare.com/asics-at-the-edge.md",
+  "title": "ASICs at the Edge | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:05.219418+00:00",
+  "html_len": 310333,
+  "md_len": 81876,
+  "depth": 0,
+  "phase": 2
+}

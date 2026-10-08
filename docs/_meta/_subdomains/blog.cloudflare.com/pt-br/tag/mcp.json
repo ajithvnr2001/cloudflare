@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/tag/mcp/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/tag/mcp.md",
+  "title": "Posts com a tag \"MCP\" \u2014 Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:07:01.415201+00:00",
+  "html_len": 110461,
+  "md_len": 2239,
+  "depth": 1,
+  "phase": 2
+}

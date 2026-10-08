@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/patching-the-internet-fixing-the-wordpress-br/",
+  "file": "_subdomains/blog.cloudflare.com/patching-the-internet-fixing-the-wordpress-br.md",
+  "title": "Patching the Internet in Realtime: Fixing the Current WordPress Brute Force Attack | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:38.491976+00:00",
+  "html_len": 269827,
+  "md_len": 56166,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/making-rust-workers-reliable/",
+  "file": "_subdomains/blog.cloudflare.com/making-rust-workers-reliable.md",
+  "title": "Making Rust Workers reliable: panic and abort recovery in wasm\u2011bindgen | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:39.329024+00:00",
+  "html_len": 304653,
+  "md_len": 70720,
+  "depth": 0,
+  "phase": 2
+}

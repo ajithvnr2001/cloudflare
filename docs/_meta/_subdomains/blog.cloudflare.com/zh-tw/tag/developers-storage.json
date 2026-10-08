@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/tag/developers-storage/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/tag/developers-storage.md",
+  "title": "\u6a19\u7c64\u70ba\u300c\u958b\u767c\u4eba\u54e1\u5132\u5b58\u9ad4\u300d\u7684\u6587\u7ae0 \u2014 Cloudflare \u90e8\u843d\u683c",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (725 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:09:48.622817+00:00",
+  "html_len": 114247,
+  "md_len": 3062,
+  "depth": 1,
+  "phase": 2
+}

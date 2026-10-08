@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/elections-france-2022/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/elections-france-2022.md",
+  "title": "L'\u00e9lection pr\u00e9sidentielle fran\u00e7aise de 2022 laisse des traces sur Internet | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:13.325792+00:00",
+  "html_len": 236951,
+  "md_len": 35860,
+  "depth": 0,
+  "phase": 2
+}

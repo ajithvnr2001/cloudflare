@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/making-magic-transit-health-checks-faster-and-more-responsive/",
+  "file": "_subdomains/blog.cloudflare.com/making-magic-transit-health-checks-faster-and-more-responsive.md",
+  "title": "Making Magic Transit health checks faster and more responsive | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:10.416756+00:00",
+  "html_len": 291181,
+  "md_len": 64768,
+  "depth": 0,
+  "phase": 2
+}

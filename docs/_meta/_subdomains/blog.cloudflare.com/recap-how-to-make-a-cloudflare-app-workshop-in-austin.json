@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/recap-how-to-make-a-cloudflare-app-workshop-in-austin/",
+  "file": "_subdomains/blog.cloudflare.com/recap-how-to-make-a-cloudflare-app-workshop-in-austin.md",
+  "title": "Recap: How to make a Cloudflare App workshop in Austin | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:10.005314+00:00",
+  "html_len": 273731,
+  "md_len": 55852,
+  "depth": 0,
+  "phase": 2
+}

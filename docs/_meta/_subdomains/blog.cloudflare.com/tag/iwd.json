@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/iwd/",
+  "file": "_subdomains/blog.cloudflare.com/tag/iwd.md",
+  "title": "Posts tagged \"IWD\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:09:19.803415+00:00",
+  "html_len": 118325,
+  "md_len": 3854,
+  "depth": 1,
+  "phase": 2
+}

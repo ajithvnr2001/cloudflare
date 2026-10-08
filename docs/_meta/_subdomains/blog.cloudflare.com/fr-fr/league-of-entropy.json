@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/league-of-entropy/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/league-of-entropy.md",
+  "title": "Ligue d'entropie : Les h\u00e9ros ne portent pas tous des capes | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:14.598155+00:00",
+  "html_len": 251055,
+  "md_len": 45255,
+  "depth": 0,
+  "phase": 2
+}

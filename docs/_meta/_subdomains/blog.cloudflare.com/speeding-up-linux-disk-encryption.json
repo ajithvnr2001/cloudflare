@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/speeding-up-linux-disk-encryption/",
+  "file": "_subdomains/blog.cloudflare.com/speeding-up-linux-disk-encryption.md",
+  "title": "Speeding up Linux disk encryption | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:21.041366+00:00",
+  "html_len": 387586,
+  "md_len": 96560,
+  "depth": 0,
+  "phase": 2
+}

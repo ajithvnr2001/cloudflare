@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-k2-streams/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-k2-streams.md",
+  "title": "Announcing Cloudflare K2: serverless event streams | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:22.344612+00:00",
+  "html_len": 300329,
+  "md_len": 65482,
+  "depth": 0,
+  "phase": 2
+}

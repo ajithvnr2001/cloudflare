@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/nginx-structural-enhancements-for-http-2-performance/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/nginx-structural-enhancements-for-http-2-performance.md",
+  "title": "HTTP/2 \uc131\ub2a5 \ud5a5\uc0c1\uc744 \uc704\ud55c NGINX \uad6c\uc870 \uac1c\uc120 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:16.920791+00:00",
+  "html_len": 240556,
+  "md_len": 40085,
+  "depth": 0,
+  "phase": 2
+}

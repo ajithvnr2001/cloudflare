@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/graphql/",
+  "file": "_subdomains/blog.cloudflare.com/tag/graphql.md",
+  "title": "Posts tagged \"GraphQL\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:09:06.115621+00:00",
+  "html_len": 121509,
+  "md_len": 4706,
+  "depth": 1,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/tag/egress/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/tag/egress.md",
+  "title": "\"\uc1a1\uc2e0\" \ud0dc\uadf8\uac00 \uc9c0\uc815\ub41c \uac8c\uc2dc\ubb3c \u2014 Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:20:38.268243+00:00",
+  "html_len": 105385,
+  "md_len": 2004,
+  "depth": 1,
+  "phase": 2
+}

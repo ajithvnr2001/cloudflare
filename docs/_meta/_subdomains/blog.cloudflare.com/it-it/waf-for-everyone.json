@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/it-it/waf-for-everyone/",
+  "file": "_subdomains/blog.cloudflare.com/it-it/waf-for-everyone.md",
+  "title": "Ognuno avr\u00e0 un WAF! | Il blog di Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:38.247678+00:00",
+  "html_len": 184199,
+  "md_len": 15880,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/heuristics/",
+  "file": "_subdomains/blog.cloudflare.com/tag/heuristics.md",
+  "title": "Posts tagged \"Heuristics\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:09:08.197865+00:00",
+  "html_len": 109612,
+  "md_len": 1344,
+  "depth": 1,
+  "phase": 2
+}

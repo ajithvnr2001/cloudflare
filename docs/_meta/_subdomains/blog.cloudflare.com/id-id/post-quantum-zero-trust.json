@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/id-id/post-quantum-zero-trust/",
+  "file": "_subdomains/blog.cloudflare.com/id-id/post-quantum-zero-trust.md",
+  "title": "Kriptografi konvensional sedang terancam. Tingkatkan ke kriptografi pascakuantum dengan Cloudflare Zero Trust. | Blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:31.801216+00:00",
+  "html_len": 219169,
+  "md_len": 35601,
+  "depth": 0,
+  "phase": 2
+}

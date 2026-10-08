@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-dlp-mip/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-dlp-mip.md",
+  "title": "Cloudflare One DLP integrates with Microsoft Information Protection labels | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:57.073895+00:00",
+  "html_len": 286948,
+  "md_len": 60959,
+  "depth": 0,
+  "phase": 2
+}

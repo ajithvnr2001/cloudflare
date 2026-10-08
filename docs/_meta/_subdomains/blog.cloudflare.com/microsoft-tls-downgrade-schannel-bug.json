@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/microsoft-tls-downgrade-schannel-bug/",
+  "file": "_subdomains/blog.cloudflare.com/microsoft-tls-downgrade-schannel-bug.md",
+  "title": "Change the (S)Channel! Deconstructing the Microsoft TLS Session Resumption bug | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:42.780863+00:00",
+  "html_len": 309494,
+  "md_len": 74431,
+  "depth": 0,
+  "phase": 2
+}

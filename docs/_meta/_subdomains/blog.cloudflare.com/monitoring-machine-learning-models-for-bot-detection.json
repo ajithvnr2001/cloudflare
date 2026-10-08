@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/monitoring-machine-learning-models-for-bot-detection/",
+  "file": "_subdomains/blog.cloudflare.com/monitoring-machine-learning-models-for-bot-detection.md",
+  "title": "Monitoring machine learning models for bot detection | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:56.361839+00:00",
+  "html_len": 298665,
+  "md_len": 71526,
+  "depth": 0,
+  "phase": 2
+}

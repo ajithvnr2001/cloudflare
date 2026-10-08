@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/today-is-a-big-day-for-page-rules-2/",
+  "file": "_subdomains/blog.cloudflare.com/today-is-a-big-day-for-page-rules-2.md",
+  "title": "Today Is A Big Day For Page Rules | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:41.862574+00:00",
+  "html_len": 282600,
+  "md_len": 58286,
+  "depth": 0,
+  "phase": 2
+}

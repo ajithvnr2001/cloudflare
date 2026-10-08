@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/networks/subresources/routes/subresources/networks/methods/delete/",
+  "file": "api/resources/zero_trust/subresources/networks/subresources/routes/subresources/networks/methods/delete.md",
+  "title": "Delete a tunnel route (CIDR Endpoint) | Cloudflare API",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:26:14.811009+00:00",
+  "html_len": 1992889,
+  "md_len": 6607,
+  "depth": 1
+}

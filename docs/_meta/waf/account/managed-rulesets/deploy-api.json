@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/account/managed-rulesets/deploy-api/",
+  "file": "waf/account/managed-rulesets/deploy-api.md",
+  "title": "Deploy a WAF managed ruleset via API for an account \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:29.378547+00:00",
+  "html_len": 171682,
+  "md_len": 8672,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/a-step-by-step-guide-to-transferring-domains-to-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/a-step-by-step-guide-to-transferring-domains-to-cloudflare.md",
+  "title": "Eine Schritt-f\u00fcr-Schritt-Anleitung f\u00fcr den Transfer einer Domain zu Cloudflare | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:10.436285+00:00",
+  "html_len": 204804,
+  "md_len": 32495,
+  "depth": 0,
+  "phase": 2
+}

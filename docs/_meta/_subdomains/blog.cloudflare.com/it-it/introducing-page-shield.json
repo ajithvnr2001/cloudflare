@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/it-it/introducing-page-shield/",
+  "file": "_subdomains/blog.cloudflare.com/it-it/introducing-page-shield.md",
+  "title": "Page Shield: protezione dei dati utente nel browser | Il blog di Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:33.040632+00:00",
+  "html_len": 195079,
+  "md_len": 21675,
+  "depth": 0,
+  "phase": 2
+}

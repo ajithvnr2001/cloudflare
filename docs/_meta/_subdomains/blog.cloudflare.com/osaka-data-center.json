@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/osaka-data-center/",
+  "file": "_subdomains/blog.cloudflare.com/osaka-data-center.md",
+  "title": "Osaka, Japan: CloudFlare's 35th Data Center | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:01.954892+00:00",
+  "html_len": 273794,
+  "md_len": 59110,
+  "depth": 0,
+  "phase": 2
+}

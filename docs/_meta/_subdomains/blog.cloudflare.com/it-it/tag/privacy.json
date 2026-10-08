@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/it-it/tag/privacy/",
+  "file": "_subdomains/blog.cloudflare.com/it-it/tag/privacy.md",
+  "title": "Post con tag \"Privacy\" \u2014 Il blog di Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:22:19.583026+00:00",
+  "html_len": 123665,
+  "md_len": 4289,
+  "depth": 1,
+  "phase": 2
+}

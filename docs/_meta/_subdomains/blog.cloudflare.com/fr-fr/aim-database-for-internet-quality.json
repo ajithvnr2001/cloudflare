@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/aim-database-for-internet-quality/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/aim-database-for-internet-quality.md",
+  "title": "Mesurer la qualit\u00e9 du r\u00e9seau pour mieux comprendre l'exp\u00e9rience des utilisateurs finaux | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:45.617464+00:00",
+  "html_len": 273539,
+  "md_len": 59252,
+  "depth": 0,
+  "phase": 2
+}

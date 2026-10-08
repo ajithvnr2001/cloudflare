@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/elections-france-2022/",
+  "file": "_subdomains/blog.cloudflare.com/elections-france-2022.md",
+  "title": "The 2022 French Presidential election leaves its mark on the Internet | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:12.639246+00:00",
+  "html_len": 304003,
+  "md_len": 65555,
+  "depth": 0,
+  "phase": 2
+}

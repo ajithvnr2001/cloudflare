@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/transform/examples/rewrite-several-url-different-url/",
+  "file": "rules/transform/examples/rewrite-several-url-different-url.md",
+  "title": "Rewrite image paths with several URL segments \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:56.239145+00:00",
+  "html_len": 132929,
+  "md_len": 2025,
+  "depth": 0
+}

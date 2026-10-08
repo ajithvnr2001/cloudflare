@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/account-abuse-protection-dashboard/",
+  "file": "_subdomains/blog.cloudflare.com/account-abuse-protection-dashboard.md",
+  "title": "Follow the thread: a new dashboard to investigate account abuse | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:24.651663+00:00",
+  "html_len": 297757,
+  "md_len": 67330,
+  "depth": 0,
+  "phase": 2
+}

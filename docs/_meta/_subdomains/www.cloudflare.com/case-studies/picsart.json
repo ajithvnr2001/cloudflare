@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/picsart/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/picsart.md",
+  "title": "Picsart",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:44.555685+00:00",
+  "html_len": 216616,
+  "md_len": 8308,
+  "depth": 0,
+  "phase": 2
+}

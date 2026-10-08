@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/changelog/rss/api-shield.xml",
+  "file": "changelog/rss/api-shield.xml.md",
+  "title": "Cloudflare changelogs | API Shield",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:23:52.693656+00:00",
+  "html_len": 15944,
+  "md_len": 13653,
+  "depth": 1
+}

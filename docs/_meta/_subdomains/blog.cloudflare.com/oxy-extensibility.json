@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/oxy-extensibility/",
+  "file": "_subdomains/blog.cloudflare.com/oxy-extensibility.md",
+  "title": "How Oxy uses hooks for maximum extensibility | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:26.709257+00:00",
+  "html_len": 327484,
+  "md_len": 74089,
+  "depth": 0,
+  "phase": 2
+}

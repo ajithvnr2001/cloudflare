@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/de-de/careers/",
+  "file": "_subdomains/www.cloudflare.com/de-de/careers.md",
+  "title": "Cloudflare-Karriere | Cloudflare",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (90 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:17:52.648266+00:00",
+  "html_len": 538962,
+  "md_len": 13860,
+  "depth": 1,
+  "phase": 2
+}

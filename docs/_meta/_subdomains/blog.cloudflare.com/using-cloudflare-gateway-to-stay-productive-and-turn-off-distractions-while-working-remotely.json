@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/using-cloudflare-gateway-to-stay-productive-and-turn-off-distractions-while-working-remotely/",
+  "file": "_subdomains/blog.cloudflare.com/using-cloudflare-gateway-to-stay-productive-and-turn-off-distractions-while-working-remotely.md",
+  "title": "Using Cloudflare Gateway to Stay Productive (and turn off distractions) While Working Remotely | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:21.682033+00:00",
+  "html_len": 279967,
+  "md_len": 60142,
+  "depth": 0,
+  "phase": 2
+}

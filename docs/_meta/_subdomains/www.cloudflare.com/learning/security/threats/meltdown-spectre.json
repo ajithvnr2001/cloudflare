@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/security/threats/meltdown-spectre/",
+  "file": "_subdomains/www.cloudflare.com/learning/security/threats/meltdown-spectre.md",
+  "title": "What is Meltdown/Spectre?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:40.645906+00:00",
+  "html_len": 240430,
+  "md_len": 22117,
+  "depth": 0,
+  "phase": 2
+}

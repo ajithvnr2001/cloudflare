@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-we-used-our-new-graphql-api-to-build-firewall-analytics/",
+  "file": "_subdomains/blog.cloudflare.com/how-we-used-our-new-graphql-api-to-build-firewall-analytics.md",
+  "title": "How we used our new GraphQL Analytics API to build Firewall Analytics | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:45.598910+00:00",
+  "html_len": 304493,
+  "md_len": 65707,
+  "depth": 0,
+  "phase": 2
+}

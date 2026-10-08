@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-dns-is-simple-fast-and-flexible/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-dns-is-simple-fast-and-flexible.md",
+  "title": "CloudFlare DNS is simple, fast and flexible | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:27.919804+00:00",
+  "html_len": 275230,
+  "md_len": 62907,
+  "depth": 0,
+  "phase": 2
+}

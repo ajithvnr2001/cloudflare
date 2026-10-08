@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/managing-dns-records-for-the-people-with-cloudflare-apps/",
+  "file": "_subdomains/blog.cloudflare.com/managing-dns-records-for-the-people-with-cloudflare-apps.md",
+  "title": "Managing DNS Records For The People With Cloudflare Apps | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:05.266454+00:00",
+  "html_len": 291402,
+  "md_len": 60547,
+  "depth": 0,
+  "phase": 2
+}

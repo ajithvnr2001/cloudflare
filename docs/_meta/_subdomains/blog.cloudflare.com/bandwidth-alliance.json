@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/bandwidth-alliance/",
+  "file": "_subdomains/blog.cloudflare.com/bandwidth-alliance.md",
+  "title": "Introducing the Bandwidth Alliance: sharing the benefits of interconnected networks | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:16.633217+00:00",
+  "html_len": 297559,
+  "md_len": 68686,
+  "depth": 0,
+  "phase": 2
+}

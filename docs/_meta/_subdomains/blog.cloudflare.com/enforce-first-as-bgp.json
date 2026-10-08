@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/enforce-first-as-bgp/",
+  "file": "_subdomains/blog.cloudflare.com/enforce-first-as-bgp.md",
+  "title": "Enforcing the First AS in BGP AS PATHs | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:05.581218+00:00",
+  "html_len": 326084,
+  "md_len": 75640,
+  "depth": 0,
+  "phase": 2
+}

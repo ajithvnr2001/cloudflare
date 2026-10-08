@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/enforce-web-policy-with-hypertext-strict-transport-security-hsts/",
+  "file": "_subdomains/blog.cloudflare.com/enforce-web-policy-with-hypertext-strict-transport-security-hsts.md",
+  "title": "Enforce Web Policy with HTTP Strict Transport Security (HSTS) | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:07.382986+00:00",
+  "html_len": 277888,
+  "md_len": 58017,
+  "depth": 0,
+  "phase": 2
+}

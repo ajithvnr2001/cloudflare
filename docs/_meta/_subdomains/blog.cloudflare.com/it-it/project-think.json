@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/it-it/project-think/",
+  "file": "_subdomains/blog.cloudflare.com/it-it/project-think.md",
+  "title": "Project Think: creare la nuova generazione di agenti IA su Cloudflare | Il blog di Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:11.689127+00:00",
+  "html_len": 264607,
+  "md_len": 40363,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/sockmap-tcp-splicing-of-the-future/",
+  "file": "_subdomains/blog.cloudflare.com/sockmap-tcp-splicing-of-the-future.md",
+  "title": "SOCKMAP - TCP splicing of the future | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:21.385584+00:00",
+  "html_len": 309722,
+  "md_len": 71764,
+  "depth": 0,
+  "phase": 2
+}

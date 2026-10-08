@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/cleaning-up-bad-bots/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/cleaning-up-bad-bots.md",
+  "title": "Chasser les bots malveillants (et limiter le r\u00e9chauffement climatique...) | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:53.415308+00:00",
+  "html_len": 223897,
+  "md_len": 36497,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-acquires-cryptoseal/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-acquires-cryptoseal.md",
+  "title": "CloudFlare Acquires CryptoSeal | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:19.992960+00:00",
+  "html_len": 267826,
+  "md_len": 55509,
+  "depth": 0,
+  "phase": 2
+}

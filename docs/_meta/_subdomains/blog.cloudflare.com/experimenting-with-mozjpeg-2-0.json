@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/experimenting-with-mozjpeg-2-0/",
+  "file": "_subdomains/blog.cloudflare.com/experimenting-with-mozjpeg-2-0.md",
+  "title": "Experimenting with mozjpeg 2.0 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:48.833496+00:00",
+  "html_len": 269123,
+  "md_len": 57327,
+  "depth": 0,
+  "phase": 2
+}

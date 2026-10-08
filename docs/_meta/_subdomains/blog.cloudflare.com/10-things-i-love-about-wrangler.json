@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/10-things-i-love-about-wrangler/",
+  "file": "_subdomains/blog.cloudflare.com/10-things-i-love-about-wrangler.md",
+  "title": "10 things I love about Wrangler v2.0 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:27.956683+00:00",
+  "html_len": 298989,
+  "md_len": 66593,
+  "depth": 0,
+  "phase": 2
+}

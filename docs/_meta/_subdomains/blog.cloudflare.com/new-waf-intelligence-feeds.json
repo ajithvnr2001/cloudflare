@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/new-waf-intelligence-feeds/",
+  "file": "_subdomains/blog.cloudflare.com/new-waf-intelligence-feeds.md",
+  "title": "New WAF intelligence feeds | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:13.658372+00:00",
+  "html_len": 289121,
+  "md_len": 60548,
+  "depth": 0,
+  "phase": 2
+}

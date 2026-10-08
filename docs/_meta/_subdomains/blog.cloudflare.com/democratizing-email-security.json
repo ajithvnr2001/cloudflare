@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/democratizing-email-security/",
+  "file": "_subdomains/blog.cloudflare.com/democratizing-email-security.md",
+  "title": "Democratizing email security: protecting individuals and businesses of all sizes from phishing and malware attacks | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:35.850674+00:00",
+  "html_len": 282533,
+  "md_len": 60330,
+  "depth": 0,
+  "phase": 2
+}

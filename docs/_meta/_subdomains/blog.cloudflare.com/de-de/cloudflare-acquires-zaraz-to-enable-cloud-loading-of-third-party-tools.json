@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/cloudflare-acquires-zaraz-to-enable-cloud-loading-of-third-party-tools/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/cloudflare-acquires-zaraz-to-enable-cloud-loading-of-third-party-tools.md",
+  "title": "Cloudflare \u00fcbernimmt Zaraz, um das Laden von Drittanbieter-Tools in der Cloud zu erm\u00f6glichen | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:40:53.682511+00:00",
+  "html_len": 229262,
+  "md_len": 44162,
+  "depth": 0,
+  "phase": 2
+}

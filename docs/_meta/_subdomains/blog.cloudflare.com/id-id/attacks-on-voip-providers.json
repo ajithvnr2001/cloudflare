@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/id-id/attacks-on-voip-providers/",
+  "file": "_subdomains/blog.cloudflare.com/id-id/attacks-on-voip-providers.md",
+  "title": "Maaf, dengan siapa saya berbicara? Peningkatan serangan DDoS VoIP baru-baru ini | Blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:57.275190+00:00",
+  "html_len": 207567,
+  "md_len": 24111,
+  "depth": 0,
+  "phase": 2
+}

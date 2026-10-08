@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/tag/gartner/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/tag/gartner.md",
+  "title": "\"Gartner (KO)\" \ud0dc\uadf8\uac00 \uc9c0\uc815\ub41c \uac8c\uc2dc\ubb3c \u2014 Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:20:41.645925+00:00",
+  "html_len": 106321,
+  "md_len": 2212,
+  "depth": 1,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/caliente-mx/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/caliente-mx.md",
+  "title": "Caliente.mx & Cloudflare | Customer Video",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:22.524807+00:00",
+  "html_len": 214775,
+  "md_len": 11663,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/three-new-ways-teams-are-using-cloudflare-access/",
+  "file": "_subdomains/blog.cloudflare.com/three-new-ways-teams-are-using-cloudflare-access.md",
+  "title": "Three new ways teams are using Cloudflare Access | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:25.146251+00:00",
+  "html_len": 295148,
+  "md_len": 63712,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/cloudflare-one/email-security/setup/pre-delivery-deployment/prerequisites/m365-email-security-mx/use-cases/five-junk-admin-quarantine/",
+  "file": "cloudflare-one/email-security/setup/pre-delivery-deployment/prerequisites/m365-email-security-mx/use-cases/five-junk-admin-quarantine.md",
+  "title": "Deliver emails to the junk email folder - Microsoft 365 \u00b7 Cloudflare One docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:08:43.054303+00:00",
+  "html_len": 292176,
+  "md_len": 5876,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/network-analytics-v2-announcement/",
+  "file": "_subdomains/blog.cloudflare.com/network-analytics-v2-announcement.md",
+  "title": "Introducing Cloudflare\u2019s new Network Analytics dashboard | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:36.362924+00:00",
+  "html_len": 327721,
+  "md_len": 72085,
+  "depth": 0,
+  "phase": 2
+}

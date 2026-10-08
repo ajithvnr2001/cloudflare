@@ -1,0 +1,570 @@
+---
+description: Monitor origin server availability and get notified of status changes.
+title: Health Checks
+image: https://developers.cloudflare.com/health-checks/og.png?v=05cd814f72d2117c
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/health-checks/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Health Checks
+
+Last updated Aug 14, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/health-checks/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+---
+
+Smart Shield
+
+This functionality is now offered as part of Cloudflare's origin server safeguard, Smart Shield. [Learn more](https://developers.cloudflare.com/smart-shield/).
+
+Standalone Health Checks monitors an IP address or hostname for origin servers or applications and notifies you in near real-time if there happens to be a problem.
+
+A health check is a service that runs on Cloudflare's edge network to monitor whether an origin server is online. This allows you to view the health of your origin servers even if there is only one origin or you do not yet need to balance traffic across your infrastructure.
+
+Health Checks support various configurations to hone in on what you can check, including response codes, protocol types, and intervals. You can specify a particular path if an origin server serves multiple applications or check a larger subset of response codes for your staging environment. All of these options allow you to properly target your Health Check, providing a precise picture of what is wrong with an origin server.
+
+Note
+
+Standalone Health Checks are different from health monitors associated with load balancers. For more details about health monitors, refer to the [Load Balancing documentation](https://developers.cloudflare.com/load-balancing/monitors/).
+
+---
+
+## Features
+
+[Health Checks Analytics](https://developers.cloudflare.com/health-checks/health-checks-analytics/)
+
+You can use Health Checks Analytics to evaluate origin uptime, latency, failure reason, and specific event logs to debug possible origin issues.
+
+Use Health Checks Analytics
+
+---
+
+## Related products
+
+[Load Balancing](https://developers.cloudflare.com/load-balancing/)
+
+Cloudflare Load Balancing distributes traffic across your [endpoints](https://developers.cloudflare.com/load-balancing/understand-basics/load-balancing-components/), which reduces endpoint strain and latency and improves the experience for end users.
+
+---
+
+## Availability
+
+|  | Free | Pro | Business | Enterprise |
+| --- | --- | --- | --- | --- |
+| Availability | No | Yes | Yes | Yes |
+| Number of checks | 0 | 10 | 50 | 1,000 |
+| Analytics | No | Yes | Yes | Yes |
+
+---
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/health-checks/#page","headline":"Health Checks","description":"Monitor origin server availability and get notified of status changes.","url":"https://developers.cloudflare.com/health-checks/","inLanguage":"en","image":"https://developers.cloudflare.com/health-checks/og.png?v=05cd814f72d2117c","dateModified":"2026-08-14","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Create and configure Health Checks to monitor your origin servers.
+title: Get started
+image: https://developers.cloudflare.com/health-checks/get-started/og.png?v=5924d358c8f2d274
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/health-checks/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Get started
+
+Last updated Apr 16, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/health-checks/get-started/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Smart Shield
+
+This functionality is now offered as part of Cloudflare's origin server safeguard, Smart Shield. [Learn more](https://developers.cloudflare.com/smart-shield/).
+
+This guide will get you started with creating and managing configured Health Checks.
+
+## Create a Health Check
+
+1. In the Cloudflare dashboard, go to the **Health Checks** page. [Go to **Health Checks** ↗](https://dash.cloudflare.com/?to=/:account/:zone/traffic/health-checks)
+2. Select **Create** and fill out the form, paying special attention to:
+   - The values for **Interval** and **Check regions**, because decreasing the **Interval** and increasing **Check regions** may increase the load on your origin server.
+   - **Retries**, which specify the number of retries to attempt in case of a timeout before marking the origin as unhealthy.
+   - **Response body**, which specifies a substring that must be present in the first 10 KB of the response body for the check to succeed.
+3. Select **Save and Deploy**.
+
+## Manage Health Checks
+
+1. Log in to the [Cloudflare dashboard ↗︎](https://dash.cloudflare.com) and select your account and domain.
+2. Go to **Traffic** > **Health Checks**.
+3. Navigate to your health check and select **Edit**.
+4. Edit your Health Check.
+5. Select **Save**.
+
+Note
+
+You can also enable, disable, or delete configured Health Checks.
+
+Note
+
+Authenticated origin pull is not supported by Standalone Health Checks.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/health-checks/get-started/#page","headline":"Get started","description":"Create and configure Health Checks to monitor your origin servers.","url":"https://developers.cloudflare.com/health-checks/get-started/","inLanguage":"en","image":"https://developers.cloudflare.com/health-checks/get-started/og.png?v=5924d358c8f2d274","dateModified":"2026-04-16","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: View Health Checks status history and response time analytics.
+title: Health Checks Analytics
+image: https://developers.cloudflare.com/health-checks/health-checks-analytics/og.png?v=ca5c10ffb8ef0649
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/health-checks/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Health Checks Analytics
+
+Last updated Apr 17, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/health-checks/health-checks-analytics/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Smart Shield
+
+This functionality is now offered as part of Cloudflare's origin server safeguard, Smart Shield. [Learn more](https://developers.cloudflare.com/smart-shield/).
+
+Once you have set up a standalone Health Check including notification emails, use Health Check Analytics to debug possible origin issues.
+
+To access health check analytics:
+
+1. In the Cloudflare dashboard, go to the **Health Check Analytics** page. [Go to **Health Check Analytics** ↗](https://dash.cloudflare.com/?to=/:account/:zone/traffic/health-check-analytics)
+
+You can evaluate origin uptime, latency, failure reason, and specific event logs:
+
+- **Health Checks By Uptime**: Shows the percentage of uptime for individual origins over time.
+- **Health Checks By Failure Reason**: Shows a breakdown of failures by the specific reason. Refer to [common error code causes and solutions below](#common-error-codes).
+- **Health Checks By Latency**: Shows average latency – measured in round trip time — for individual origins over time.
+- **Event Log**: Shows individual health check data.
+  - Select each record for additional details on **Round trip time**, the **Failure Reason**, the **Average Waterfall** (showing chronological data about request stages), **Response status code**, and more.
+  - Note that **Global** is not a configured region; it represents the aggregated data from all enabled regions.
+
+## Common error codes
+
+### TCP connection failed
+
+#### Cause
+
+Health Checks failed to establish a TCP connection to your origin server.
+
+#### Solution
+
+This typically occurs when there is a network failure between Cloudflare and your origin, and/or a firewall refuses to allow our connection. Ensure your network and firewall configurations are not interfering with traffic.
+
+### HTTP timeout occurred
+
+#### Cause
+
+The origin failed to return an HTTP response within the timeout configured. This happens if you have the timeout set to a low number. For example, one to two seconds.
+
+#### Solution
+
+Cloudflare recommends increasing the HTTP response timeout to allow the origin server to respond.
+
+### Response code mismatch error
+
+#### Cause
+
+Cloudflare receives an HTTP status code that does not match the values defined in the `expected_codes` property of your Health Check configuration.
+
+#### Solution
+
+Response codes must match the `expected_codes`. Confirm the values are correct by comparing the expected response codes and the status code received in the Event Log.
+
+#### ​​Alternate cause
+
+You may also see this issue if you have a Health Check configured to use HTTP connections and your origin server is redirecting to HTTPS. In this case, the response code will often be `301`, `302`, or `303`.
+
+#### Solution
+
+Change your Cloudflare Health Check configuration to use HTTPS or set the value of `follow_redirect` to `true` so that Cloudflare can resolve the correct status code.
+
+### Response body mismatch error
+
+#### Cause
+
+The response body returns from your origin server and does not include the (case-insensitive) value of `expected_body` configured in your Health Check.
+
+Note
+
+We only read the first 10 KB of the response. If you return a larger response, and the `expected_body` is not in the first 10 KB, the Health Check will fail.
+
+#### Solution
+
+Ensure the `expected_body` is in the first 10 KB of the response body. ​​
+
+### TLS untrusted certificate error
+
+#### Cause
+
+The certificate is not trusted by a public Certificate Authority (CA).
+
+#### Solution
+
+If you’re using a self-signed certificate, Cloudflare recommends either using a publicly trusted certificate or setting the `allow_insecure` property on your Health Check to `true`.
+
+### TLS name mismatch error
+
+#### Cause
+
+Our Health Check (client) was not able to match a name on the server certificate to the hostname of the request.
+
+#### Solution
+
+Inspect your Health Check configuration to confirm that the `header` value set in the Cloudflare Health Check is correct.
+
+### TLS protocol error
+
+#### Cause
+
+This error can occur if you are using an older version of TLS or your origin server is not configured for HTTPS.
+
+#### Solution
+
+Ensure that your origin server supports TLS 1.2 or greater and is configured for HTTPS.
+
+### TLS unrecognized name error
+
+#### Cause
+
+The server did not recognize the name provided by the client. When a host header is set, this is set as the ServerName in the initial TLS handshake. If it is not set, Cloudflare will not provide a ServerName, which can cause this error.
+
+#### Solution
+
+Set the host header in your Health Check object.
+
+### ​​No route to host error
+
+#### Cause
+
+The IP address cannot be reached from Cloudflare’s network. Common causes are ISP or hosting provider network issues (e.g. BGP level), or that the IP does not exist.
+
+#### Solution
+
+Ensure IP is accurate, and check if there is an ISP or hosting provider network issue.
+
+### TCP Timeout
+
+#### Cause
+
+Data transmission was not acknowledged and the retransmit of data did not succeed.
+
+#### Solution
+
+Confirm whether the SYN-ACK for the handshake takes place at your origin and contact [Cloudflare support](https://developers.cloudflare.com/support/contacting-cloudflare-support/).
+
+### ​​Network Unreachable
+
+#### Cause
+
+Cloudflare cannot connect to the origin web server due to network unavailability. This is usually caused by a network issue or incorrect origin IP.
+
+#### Solution
+
+Check the IP entered for the origin in Cloudflare’s Health Checks configuration or the IP returned via DNS for the origin hostname.
+
+### HTTP Invalid Response
+
+#### Cause
+
+Usually caused by an HTTP 502 error or bad gateway.
+
+#### Solution
+
+Ensure the origin web server responds to requests and that no applications have crashed or are under high load.
+
+### DNS Unknown Host
+
+#### Cause
+
+The origin web server hostname does not exist.
+
+#### Solution
+
+Confirm the origin web server resolves to an IP address.
+
+### Connection Reset by Peer
+
+#### Cause
+
+A network error occurred while the client received data from the origin web server.
+
+#### Solution
+
+Confirm whether the origin web server is experiencing a high amount of traffic or an error.
+
+### Monitor Configuration Error
+
+#### Cause
+
+There was a configuration error in the Health Check and no checks were run against the origin.
+
+#### Solution
+
+Review your Health Check configuration to ensure it matches an expected request to your origin.
+
+### ​​DNS Internal
+
+#### Cause
+
+The origin web server's hostname resolves to a non-publicly-routable or restricted IP address (for example, a localhost address). No checks are run against this origin.
+
+#### Solution
+
+Confirm the origin web server hostname resolves to a publicly routable IP address. Note that if the hostname resolves to a public Cloudflare anycast IP (because the hostname is proxied through Cloudflare), the health check will run but will probe Cloudflare's edge rather than your actual origin server. To monitor your origin server directly, configure the health check to use the origin IP address or a non-proxied hostname.
+
+### Other Failure
+
+#### Cause
+
+If the failure cannot be classified as any other type of failure mentioned above.
+
+#### Solution
+
+Contact [Cloudflare support](https://developers.cloudflare.com/support/contacting-cloudflare-support/).
+
+## Set up alerts
+
+You can configure alerts to notify you of any changes in your health check status.
+
+<details>
+
+<summary>
+
+Health Checks status notification
+
+</summary>
+
+**Who is it for?**
+
+Customers who want to be warned about changes to server health as determined by <a href="https://developers.cloudflare.com/health-checks/">health checks</a>.
+
+**Other options / filters**
+
+Available filters include:
+
+- You can search for and add health checks from your list of health checks.
+- You can choose a trigger to fire the notification when your server becomes **unhealthy**, **healthy**, or **either healthy or unhealthy**.
+
+**Included with**
+
+Professional plans or higher.
+
+**What should you do if you receive one?**
+
+Review your <a href="https://developers.cloudflare.com/health-checks/health-checks-analytics/#common-error-codes">health check analytics</a>.
+
+</details>
+
+Refer to [Cloudflare Notifications](https://developers.cloudflare.com/notifications/get-started/) for more information on how to set up an alert.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/health-checks/health-checks-analytics/#page","headline":"Health Checks Analytics","description":"View Health Checks status history and response time analytics.","url":"https://developers.cloudflare.com/health-checks/health-checks-analytics/","inLanguage":"en","image":"https://developers.cloudflare.com/health-checks/health-checks-analytics/og.png?v=ca5c10ffb8ef0649","dateModified":"2026-04-17","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["Analytics"]}
+```
+
+---
+
+---
+description: Cloudflare data center regions used for Health Checks monitoring.
+title: Health Checks regions
+image: https://developers.cloudflare.com/health-checks/concepts/health-checks-regions/og.png?v=ea639ba8feac0196
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/health-checks/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Health Checks regions
+
+Last updated Apr 16, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/health-checks/concepts/health-checks-regions/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Cloudflare has data centers in [hundreds of cities worldwide ↗︎](https://www.cloudflare.com/network/). Health checks do not run from every single of these data centers as this would result in numerous requests to your servers. Instead, you are able to choose between one and thirteen regions from which to run health checks. Cloudflare will run Health Checks from three data centers in each region that you select.
+
+Note
+
+The exact location of these data centers are subject to change at any moment.
+
+The Internet is not the same everywhere around the world and your users may not have the same experience on your application according to where they are. Running Health Checks from different regions lets you know the health of your application from the point of view of the Cloudflare network in each of these regions.
+
+Analytics are presented at two levels:
+
+- Regional Aggregates: Combined results from the three data centers within a specific region.
+- Global Aggregates: Total results across all configured regions and data centers.
+
+In the event log, entries are labeled by region or as **Global**. We do not provide granular data for individual data centers.
+
+If you select multiple regions or choose **All Regions** (Business and Enterprise Only), you may increase traffic to your servers. Each region sends individual health checks from three data centers.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/health-checks/concepts/health-checks-regions/#page","headline":"Health Checks regions","description":"Cloudflare data center regions used for Health Checks monitoring.","url":"https://developers.cloudflare.com/health-checks/concepts/health-checks-regions/","inLanguage":"en","image":"https://developers.cloudflare.com/health-checks/concepts/health-checks-regions/og.png?v=ea639ba8feac0196","dateModified":"2026-04-16","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Set up notifications for Health Checks status changes.
+title: Health Checks notifications
+image: https://developers.cloudflare.com/health-checks/how-to/health-checks-notifications/og.png?v=d4f9846a3b360d95
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/health-checks/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Health Checks notifications
+
+Last updated Apr 16, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/health-checks/how-to/health-checks-notifications/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+You can [configure notification emails](https://developers.cloudflare.com/health-checks/how-to/health-checks-notifications/#configure-notifications) to be alerted when the Health Check detects that there is a change in the status of your origin server. Cloudflare will send you an email within seconds so you can take the necessary action before customers are impacted.
+
+The email provides information to determine what caused the health status change. You can evaluate when the change happened, the status of the origin server, if and why it is unhealthy, the expected response code, and the received response code.
+
+## Configure notifications
+
+1. In the Cloudflare dashboard, go to the **Health Checks** page. [Go to **Health Checks** ↗](https://dash.cloudflare.com/?to=/:account/:zone/traffic/health-checks)
+2. Select **Configure an alert**.
+3. Fill out the **Notification name** and **Description**.
+4. Add a Notification email.
+5. Select **Next**.
+6. Add health checks to include in your alerts.
+7. Choose the **Notification trigger**, which determines when you receive alerts.
+8. Select **Create**.
+
+Note
+
+A notification is only sent after a change of status in the majority of all selected region(s).
+
+For a single region, this will be 2 of 3 data centers. With 13 regions selected, this will be 7 of 13 regions.
+
+See [common error codes](https://developers.cloudflare.com/health-checks/health-checks-analytics/#common-error-codes) for more information regarding the cause of any changes to your Health Check.
+
+Cloudflare encourages you to view your [Health Checks Analytics](https://developers.cloudflare.com/health-checks/health-checks-analytics/#common-error-codes) to get more context about the health of your servers over time.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/health-checks/how-to/health-checks-notifications/#page","headline":"Health Checks notifications","description":"Set up notifications for Health Checks status changes.","url":"https://developers.cloudflare.com/health-checks/how-to/health-checks-notifications/","inLanguage":"en","image":"https://developers.cloudflare.com/health-checks/how-to/health-checks-notifications/og.png?v=d4f9846a3b360d95","dateModified":"2026-04-16","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Restrict Health Checks access to specific Cloudflare IP addresses.
+title: Zone Lockdown
+image: https://developers.cloudflare.com/health-checks/how-to/zone-lockdown/og.png?v=727db4e3f1644dfc
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/health-checks/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Zone Lockdown
+
+Last updated Apr 16, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/health-checks/how-to/zone-lockdown/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Currently, any Cloudflare customer on a paid plan can configure Health Checks against any host or IP. [Zone Lockdown](https://developers.cloudflare.com/waf/tools/zone-lockdown/) specifies a list of one or more IP addresses, CIDR ranges, or networks that are the only IPs allowed to access a domain, subdomain, or URL. It allows multiple destinations in a single rule as well as IPv4 and IPv6 addresses. IP addresses not specified in the Zone Lockdown rule are denied access to the specified resources.
+
+Customers who use zone lockdown and want their health checks to continue passing can use [WAF custom rules](https://developers.cloudflare.com/waf/custom-rules/create-dashboard/) to bypass zone lockdown.
+
+## Bypass zone lockdown
+
+To bypass zone lockdown using a WAF custom rule:
+
+1. Follow the steps to [create a custom rule in the dashboard](https://developers.cloudflare.com/waf/custom-rules/create-dashboard/).
+2. Create a custom rule matching on **user agent**.
+
+   Cloudflare Health Checks have a user agent of the following format: `Mozilla/5.0 (compatible;Cloudflare-Healthchecks/1.0;+https://www.cloudflare.com/; healthcheck-id: XXX)` where `XXX` is replaced with the first 16 characters of the Health Check ID.
+
+   To allow a specific Health Check, verify if the user agent contains the first 16 characters of the Health Check ID.
+3. Set the action to *Skip* and the corresponding feature to **Zone Lockdown** under **More components to skip**.
+
+### Via the API
+
+This example adds a new WAF custom rule to the ruleset with ID `{ruleset_id}` that skips zone lockdown for incoming requests with a user agent containing `1234567890abcdef`:
+
+```bash
+curl "https://api.cloudflare.com/client/v4/{zone_id}/rulesets/{ruleset_id}/rules" \
+--header "Authorization: Bearer <API_TOKEN>" \
+--header "Content-Type: application/json" \
+--data '{
+  "action": "skip",
+  "action_parameters": {
+    "products": [
+      "zoneLockdown"
+    ]
+  },
+  "expression": "http.user_agent contains \"1234567890abcdef\"",
+  "description": "bypass zone lockdown - specific healthcheck"
+}'
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/health-checks/how-to/zone-lockdown/#page","headline":"Zone Lockdown","description":"Restrict Health Checks access to specific Cloudflare IP addresses.","url":"https://developers.cloudflare.com/health-checks/how-to/zone-lockdown/","inLanguage":"en","image":"https://developers.cloudflare.com/health-checks/how-to/zone-lockdown/og.png?v=727db4e3f1644dfc","dateModified":"2026-04-16","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/managed-rules/payload-logging/",
+  "file": "waf/managed-rules/payload-logging.md",
+  "title": "Log the payload of matched rules \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:43.770457+00:00",
+  "html_len": 145193,
+  "md_len": 4767,
+  "depth": 0
+}

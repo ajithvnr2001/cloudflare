@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/platform/claim-deployments/",
+  "file": "workers/platform/claim-deployments.md",
+  "title": "Claim deployments (temporary accounts) \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:38.142160+00:00",
+  "html_len": 257748,
+  "md_len": 20168,
+  "depth": 0
+}

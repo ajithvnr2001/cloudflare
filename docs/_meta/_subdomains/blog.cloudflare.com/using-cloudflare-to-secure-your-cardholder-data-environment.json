@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/using-cloudflare-to-secure-your-cardholder-data-environment/",
+  "file": "_subdomains/blog.cloudflare.com/using-cloudflare-to-secure-your-cardholder-data-environment.md",
+  "title": "Using Cloudflare to secure your cardholder data environment | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:19.477369+00:00",
+  "html_len": 271147,
+  "md_len": 58686,
+  "depth": 0,
+  "phase": 2
+}

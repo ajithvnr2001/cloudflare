@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/aspa-secure-internet/",
+  "file": "_subdomains/blog.cloudflare.com/aspa-secure-internet.md",
+  "title": "ASPA: making Internet routing more secure | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:44.801492+00:00",
+  "html_len": 337037,
+  "md_len": 75382,
+  "depth": 0,
+  "phase": 2
+}

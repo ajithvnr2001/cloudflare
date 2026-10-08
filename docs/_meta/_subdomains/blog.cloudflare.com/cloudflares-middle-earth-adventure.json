@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflares-middle-earth-adventure/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflares-middle-earth-adventure.md",
+  "title": "CloudFlare's Middle Earth Adventure | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:00.823276+00:00",
+  "html_len": 294348,
+  "md_len": 61731,
+  "depth": 0,
+  "phase": 2
+}

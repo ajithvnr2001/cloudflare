@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/padlet/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/padlet.md",
+  "title": "Padlet | Video",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:43.566209+00:00",
+  "html_len": 197826,
+  "md_len": 2811,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/id-id/protecting-apis-from-abuse-and-data-exfiltration/",
+  "file": "_subdomains/blog.cloudflare.com/id-id/protecting-apis-from-abuse-and-data-exfiltration.md",
+  "title": "Melindungi API Anda dari penyalahgunaan dan pencurian data | Blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:36.837942+00:00",
+  "html_len": 193268,
+  "md_len": 25394,
+  "depth": 0,
+  "phase": 2
+}

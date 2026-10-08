@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/gateway-managed-service-provider/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/gateway-managed-service-provider.md",
+  "title": "Cloudflare Zero Trust para proveedores de servicios administrados | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:29.266683+00:00",
+  "html_len": 224798,
+  "md_len": 41122,
+  "depth": 0,
+  "phase": 2
+}

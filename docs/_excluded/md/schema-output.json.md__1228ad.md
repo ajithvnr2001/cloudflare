@@ -1,0 +1,12 @@
+---
+url: https://developers.cloudflare.com/ai/models/@cf/moondream/moondream3.1-9B-A2B/schema-output.json
+title: https://developers.cloudflare.com/ai/models/@cf/moondream/moondream3.1-9B-A2B/schema-output.json
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:23:22.874208+00:00
+---
+
+# https://developers.cloudflare.com/ai/models/@cf/moondream/moondream3.1-9B-A2B/schema-output.json
+
+> Source: https://developers.cloudflare.com/ai/models/@cf/moondream/moondream3.1-9B-A2B/schema-output.json
+
+{"type":"object","contentType":"application/json","properties":{"finish_reason":{"type":"string","description":"Reason the generation finished."},"metrics":{"type":"object","properties":{"input_tokens":{"type":"integer","description":"Number of input tokens consumed."},"output_tokens":{"type":"integer","description":"Number of output tokens generated."},"prefill_time_ms":{"type":"number","description":"Prefill time in milliseconds."},"decode_time_ms":{"type":"number","description":"Decode time in milliseconds."},"ttft_ms":{"type":"number","description":"Time to first token in milliseconds."}},"required":["input_tokens","output_tokens","prefill_time_ms","decode_time_ms","ttft_ms"]},"answer":{"type":"string","description":"Answer text for the `query` task. Null for other tasks."},"caption":{"type":"string","description":"Caption text for the `caption` task. Null for other tasks."},"points":{"type":"array","description":"Located points for the `point` task. Null for other tasks.","items":{"type":"object","properties":{"x":{"type":"number","description":"X coordinate."},"y":{"type":"number","description":"Y coordinate."}},"required":["x","y"]}},"objects":{"type":"array","description":"Detected bounding boxes for the `detect` task. Null for other tasks.","items":{"type":"object","properties":{"x_min":{"type":"number","description":"Minimum X coordinate."},"y_min":{"type":"number","description":"Minimum Y coordinate."},"x_max":{"type":"number","description":"Maximum X coordinate."},"y_max":{"type":"number","description":"Maximum Y coordinate."}},"required":["x_min","y_min","x_max","y_max"]}},"reasoning":{"type":"object","description":"Reasoning trace for the `query` task when reasoning=true. Null otherwise.","properties":{"text":{"type":"string","description":"Reasoning text."},"grounding":{"type":"array","description":"Grounding information.","items":{"type":"object"}}},"required":["text"]}},"required":["finish_reason","metrics"]}

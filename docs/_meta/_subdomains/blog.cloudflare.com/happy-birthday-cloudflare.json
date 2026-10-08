@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/happy-birthday-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/happy-birthday-cloudflare.md",
+  "title": "Happy Second Birthday CloudFlare! | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:48.760191+00:00",
+  "html_len": 273638,
+  "md_len": 57564,
+  "depth": 0,
+  "phase": 2
+}

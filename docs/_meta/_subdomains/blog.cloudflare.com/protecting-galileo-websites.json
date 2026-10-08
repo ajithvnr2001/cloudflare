@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/protecting-galileo-websites/",
+  "file": "_subdomains/blog.cloudflare.com/protecting-galileo-websites.md",
+  "title": "Protecting Project Galileo websites from HTTP attacks | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:43.514059+00:00",
+  "html_len": 290779,
+  "md_len": 64405,
+  "depth": 0,
+  "phase": 2
+}

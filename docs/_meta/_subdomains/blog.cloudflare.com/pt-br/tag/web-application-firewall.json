@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/tag/web-application-firewall/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/tag/web-application-firewall.md",
+  "title": "Posts com a tag \"Firewall de aplicativos web\" \u2014 Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:07:07.442094+00:00",
+  "html_len": 104169,
+  "md_len": 931,
+  "depth": 1,
+  "phase": 2
+}

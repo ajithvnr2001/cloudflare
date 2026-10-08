@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/what-will-ai-mean-for-everyday-life/",
+  "file": "_subdomains/blog.cloudflare.com/what-will-ai-mean-for-everyday-life.md",
+  "title": "What Will AI Mean for Everyday Life? | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:06.159494+00:00",
+  "html_len": 267829,
+  "md_len": 60925,
+  "depth": 0,
+  "phase": 2
+}

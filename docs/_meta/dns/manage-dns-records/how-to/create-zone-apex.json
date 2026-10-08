@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/dns/manage-dns-records/how-to/create-zone-apex/",
+  "file": "dns/manage-dns-records/how-to/create-zone-apex.md",
+  "title": "Create zone apex record \u00b7 Cloudflare DNS docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:10:58.774724+00:00",
+  "html_len": 143822,
+  "md_len": 5952,
+  "depth": 0
+}

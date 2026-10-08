@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/every-7-8us-your-computers-memory-has-a-hiccup/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/every-7-8us-your-computers-memory-has-a-hiccup.md",
+  "title": "Alle 7,8 \u03bcs hat der Speicher Ihres Computers Schluckauf | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:11.408812+00:00",
+  "html_len": 234848,
+  "md_len": 37307,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/per-origin-host-header-override/",
+  "file": "_subdomains/blog.cloudflare.com/per-origin-host-header-override.md",
+  "title": "Per Origin Host Header Override | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:30.315079+00:00",
+  "html_len": 282237,
+  "md_len": 62472,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/gen13-launch/",
+  "file": "_subdomains/blog.cloudflare.com/gen13-launch.md",
+  "title": "Launching Cloudflare\u2019s Gen 13 servers- trading cache for cores for 2x edge compute performance | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:40.791780+00:00",
+  "html_len": 308091,
+  "md_len": 67164,
+  "depth": 0,
+  "phase": 2
+}

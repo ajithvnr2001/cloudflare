@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/rfc9234-bgp-role-model/",
+  "file": "_subdomains/blog.cloudflare.com/rfc9234-bgp-role-model.md",
+  "title": "BGP Role model: tracking the adoption of RFC 9234 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:38.163841+00:00",
+  "html_len": 2102955,
+  "md_len": 1859970,
+  "depth": 0,
+  "phase": 2
+}

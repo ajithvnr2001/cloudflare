@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/dmarc-management/",
+  "file": "_subdomains/blog.cloudflare.com/dmarc-management.md",
+  "title": "Stop brand impersonation with Cloudflare DMARC Management | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:50.108278+00:00",
+  "html_len": 310114,
+  "md_len": 69500,
+  "depth": 0,
+  "phase": 2
+}

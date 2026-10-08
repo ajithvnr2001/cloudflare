@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/it-it/tag/sandbox/",
+  "file": "_subdomains/blog.cloudflare.com/it-it/tag/sandbox.md",
+  "title": "Post con tag \"Sandbox\" \u2014 Il blog di Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:22:20.224088+00:00",
+  "html_len": 116381,
+  "md_len": 2361,
+  "depth": 1,
+  "phase": 2
+}

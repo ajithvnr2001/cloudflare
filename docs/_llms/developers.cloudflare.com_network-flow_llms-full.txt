@@ -1,0 +1,1968 @@
+---
+description: Analyze network traffic with NetFlow, sFlow, and IPFIX data.
+title: Network Flow
+image: https://developers.cloudflare.com/network-flow/og.png?v=5592f94a3e6cac43
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-flow/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Network Flow
+
+Last updated Apr 17, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-flow/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Improve your network and cloud traffic visibility. Customers with public IPs can also detect DDoS attacks based on their traffic flows. Formerly Magic Network Monitoring.
+
+Available on all plans
+
+Understanding what is happening on your network is essential for troubleshooting performance issues, detecting threats, and planning capacity. Network Flow (formerly Magic Network Monitoring) gives you this visibility by analyzing network flow data that your routers or cloud environment send. The service supports NetFlow v5, NetFlow v9, IPFIX, and sFlow. In cloud environments, it supports AWS VPC flow logs through AWS Firehose.
+
+Network Flow is available to all users with a Cloudflare account. You can log in to your Cloudflare dashboard, select your account, then go to the [Network flow ↗︎](https://dash.cloudflare.com/?to=/:account/networking-insights/analytics/network-analytics/flow-analytics) page to get started.
+
+All users can use the [free version](https://developers.cloudflare.com/network-flow/network-flow-free/) in a home network, network lab, or business to get end-to-end visibility across their network traffic. Potential enterprise customers are encouraged to use the free version to run a proof of concept.
+
+Enterprise customers can use Network Flow with [Magic Transit on-demand](https://developers.cloudflare.com/magic-transit/on-demand/) to monitor their network, identify volumetric DDoS attacks, and activate Magic Transit on-demand to mitigate those attacks.
+
+Refer to [Get started](https://developers.cloudflare.com/network-flow/get-started/).
+
+---
+
+## Features
+
+[Rules](https://developers.cloudflare.com/network-flow/rules/)
+
+Create rules to set thresholds for network traffic volume and receive alerts when thresholds are exceeded.
+
+Use Rules
+
+[Magic Transit integration](https://developers.cloudflare.com/network-flow/magic-transit-integration/)
+
+Magic Transit On Demand customers can automatically enable DDoS mitigation when the service detects a DDoS attack.
+
+Use Magic Transit integration
+
+[Rule notifications](https://developers.cloudflare.com/network-flow/rules/rule-notifications/)
+
+Configure email, webhook, or PagerDuty notifications to receive alerts when rule thresholds are exceeded.
+
+Use Rule notifications
+
+---
+
+## Related products
+
+[Magic Transit](https://developers.cloudflare.com/magic-transit/)
+
+Mitigates L7, L4, and L3 DDoS attacks when combined with Network Flow and Magic Transit on-demand.
+
+[DDoS Protection](https://developers.cloudflare.com/ddos-protection/)
+
+Provides HTTP DDoS attack protection for zones onboarded to Cloudflare in addition to L3 and L4 DDoS attack protection.
+
+[Cloudflare Network Interconnect](https://developers.cloudflare.com/network-interconnect/)
+
+Connects your network infrastructure directly with Cloudflare - rather than using the public Internet - for a more reliable and secure experience.
+
+## More resources
+
+### [Discord](https://discord.com/invite/cloudflaredev)
+
+Connect with the Network Flow community on Discord to ask questions, and share feedback.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://developers.cloudflare.com/network-flow/#page","headline":"Network Flow","description":"Analyze network traffic with NetFlow, sFlow, and IPFIX data.","url":"https://developers.cloudflare.com/network-flow/","inLanguage":"en","image":"https://developers.cloudflare.com/network-flow/og.png?v=5592f94a3e6cac43","dateModified":"2026-04-17","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Set up Network Flow to monitor network traffic patterns.
+title: Get started
+image: https://developers.cloudflare.com/network-flow/get-started/og.png?v=7159d79bfff43d7f
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-flow/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Get started
+
+Last updated May 7, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-flow/get-started/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Network Flow (formerly Magic Network Monitoring) includes an onboarding workflow that guides you step-by-step through the product configuration process. If you are unable to complete the configuration in one session, you can exit the workflow and resume it at any time.
+
+After completing the setup, you can view traffic analytics, create rules to monitor traffic thresholds, and receive alerts when those thresholds are exceeded. To begin, complete the list of tasks below.
+
+- [NetFlow and sFlow guide](#netflow-and-sflow-guide)
+- [VPC flow log guide (beta)](#vpc-flow-log-guide)
+
+If you are an Enterprise customer, Cloudflare can significantly accelerate the onboarding timeline during active-attack scenarios.
+
+Enterprise customers that would like to use Network Flow and Magic Transit On Demand together can begin by [configuring Magic Transit](https://developers.cloudflare.com/magic-transit/get-started/).
+
+## NetFlow and sFlow guide
+
+### 1. Verify NetFlow or sFlow capabilities
+
+Verify your routers are capable of exporting NetFlow or sFlow to an IP address on Cloudflare's network. Network Flow supports NetFlow v5, NetFlow v9, IPFIX, and sFlow.
+
+Refer to [Supported routers](https://developers.cloudflare.com/network-flow/routers/supported-routers) to view a list of supported routers. The list is not exhaustive.
+
+### 2. Register your router with Cloudflare
+
+Register your router so that Cloudflare knows which IP address to expect flow data from and can associate it with your account.
+
+1. Go to the **Network flow** page.
+
+[Go to **Network flow** ↗](https://dash.cloudflare.com/?to=/:account/networking-insights/analytics/network-analytics/flow-analytics)
+
+2. In **Network flow**, select **Configure Network flow**.
+3. Select the **Configure routers** tab.
+4. (Optional) Under **IP Address**, enter your router's public IP address.
+5. Under **Default router sampling rate**, enter a value for the sampling rate. The value should match the sampling rate of your NetFlow or sFlow configuration.
+6. Select **Next**.
+
+### 3. Configure your router
+
+Next, configure your router to send NetFlow or sFlow data to Cloudflare. For this step, you will also need to have your router's configuration menu open to input the values shown in the Cloudflare dashboard.
+
+Refer to the [NetFlow and IPFIX configuration guide](https://developers.cloudflare.com/network-flow/routers/netflow-ipfix-config/) or the [sFlow configuration guide](https://developers.cloudflare.com/network-flow/routers/sflow-config/) for more information.
+
+1. From **Configure routers** in the dashboard, select either **NetFlow Configuration** or **sFlow configuration**.
+2. Follow the configuration steps for the selected configuration type.
+3. Enter the values shown in your router's configuration.
+4. Select **Next**.
+
+### 4. Check your router configuration
+
+After setting up your router, confirm the configuration was successfully set up.
+
+From the **Check routers** page on the dashboard, you can view the status of your routers. Router data typically takes five to ten minutes to appear in the Cloudflare dashboard.
+
+Refer to **Router status description** to confirm whether data is successfully being sent.
+
+When you are done with router configuration, select **Finish onboarding**.
+
+Note
+
+This will only be visible during the onboarding process. When you are finished onboarding, this page will no longer be visible.
+
+### 5. Create rules
+
+Create rules to analyze data for a specific set of destinations or to implement thresholds. Refer to [Rules](https://developers.cloudflare.com/network-flow/rules/) for more information.
+
+## VPC flow log guide Beta
+
+### 1. Verify cloud flow log capabilities
+
+Verify that your Amazon Web Services (AWS) account is capable of exporting AWS Virtual Private Cloud (VPC) flow logs through AWS Firehose. Currently, Network Flow only supports VPC flow log ingestion for AWS.
+
+### 2. Set up AWS Firehose to export VPC flow logs to Cloudflare
+
+Note
+
+AWS VPC flow logs can only be configured through the Cloudflare API for Network Flow. There are no inputs in the dashboard for configuring AWS VPC flow logs.
+
+1. Create an authorization token using [Cloudflare's API for Network Flow](https://developers.cloudflare.com/api/resources/magic_network_monitoring/subresources/vpc_flows/subresources/tokens/methods/create/). This authorization token allows Cloudflare to identify and verify the account sending VPC flow logs to our endpoint.<details><summary>
+
+   Required API token permissions</summary>
+
+At least one of the following <a href="https://developers.cloudflare.com/fundamentals/api/reference/permissions/">token permissions</a> is required:
+   - <code>Magic Network Monitoring Admin</code></details>
+
+   *Generate authentication token for VPC flow logs export.bash*
+
+   
+
+   ```bash
+   curl "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/mnm/vpc-flows/token" \
+   	--request POST \
+   	--header "X-Auth-Email: $CLOUDFLARE_EMAIL" \
+   	--header "X-Auth-Key: $CLOUDFLARE_API_KEY"
+   ```
+
+
+2. In your AWS Firehose stream configuration, set the `HTTP Headers - X-Amz-Firehose-Access-Key` to the authorization token generated in the previous step.
+3. Send your AWS Firehose VPC flow log stream towards `https://aws-flow-logs.cloudflare.com/`.
+4. Select all of the AWS VPC flow log data fields that you want to send to Cloudflare. You should select the highest number AWS VPC flow log version that supports all the fields you want to export to Cloudflare (refer to [AWS flow log documentation ↗︎](https://docs.aws.amazon.com/vpc/latest/userguide/flow-log-records.html) for more information). For example, if you need a version 8 field like `reject-reason`, you must export all fields from versions 1 through 8. Cloudflare supports all seven templates for AWS VPC Flow logs.
+
+### 3. Verify your cloud traffic via analytics
+
+After setting up AWS Firehose to send VPC flow logs to Network Flow, you can confirm that Cloudflare is receiving the logs as expected by searching for your cloud traffic data in the analytics page of the Network Flow dashboard.
+
+1. Go to the **Network flow** page.
+
+[Go to **Network flow** ↗](https://dash.cloudflare.com/?to=/:account/networking-insights/analytics/network-analytics/flow-analytics)
+
+2. The default view will be the analytics dashboard for Network Flow.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/network-flow/get-started/#page","headline":"Get started","description":"Set up Network Flow to monitor network traffic patterns.","url":"https://developers.cloudflare.com/network-flow/get-started/","inLanguage":"en","image":"https://developers.cloudflare.com/network-flow/get-started/og.png?v=7159d79bfff43d7f","dateModified":"2026-05-07","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["NetFlow","AWS"]}
+```
+
+---
+
+---
+description: Create rules to alert on network flow anomalies.
+title: Rules
+image: https://developers.cloudflare.com/network-flow/rules/og.png?v=ec6aab61f018adff
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-flow/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Rules
+
+Last updated May 7, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-flow/rules/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Network Flow (formerly Magic Network Monitoring) rules monitor your network traffic for Distributed Denial of Service (DDoS) attacks targeting specific IP addresses or prefixes. When traffic exceeds a rule's threshold or matches a known DDoS attack fingerprint, you receive an alert.
+
+## Rule types
+
+Network Flow supports three rule types:
+
+| Rule Type | Description | Availability |
+| --- | --- | --- |
+| [Dynamic threshold](https://developers.cloudflare.com/network-flow/rules/dynamic-threshold/) (recommended) | Analyzes your network's traffic patterns over time and automatically adjusts the DDoS threshold (bits or packets) based on traffic history. | API only |
+| [Static threshold](https://developers.cloudflare.com/network-flow/rules/static-threshold/) | You define a fixed threshold (bits or packets) for DDoS traffic monitoring. | API and dashboard |
+| [sFlow DDoS attack](https://developers.cloudflare.com/network-flow/rules/s-flow-ddos-attack/) | If you send sFlow data to Cloudflare, you can receive alerts when a specific DDoS attack type is detected in your traffic. | API only (sFlow data only) |
+
+## Create rules in the dashboard
+
+You can only configure static traffic threshold rules in the Cloudflare dashboard.
+
+Invalid account settings error when trying to create a rule
+
+If you get the following error when trying to create a rule:
+
+`Invalid account settings request body: account name format contains illegal characters or is not supported`
+
+Make sure the name for your Cloudflare account does not contain unsupported characters, like, for example, `&`, `<`, `>`, `"`, `'`, `` ` ``.
+
+Refer to [Account name](https://developers.cloudflare.com/fundamentals/account/create-account/#account-name) to learn how to change your account name.
+
+To create a new rule:
+
+1. Go to the **Network flow** page.
+
+[Go to **Network flow** ↗](https://dash.cloudflare.com/?to=/:account/networking-insights/analytics/network-analytics/flow-analytics)
+
+2. Select **Configure Network flow**.
+3. In the **Configure rules** tab, select **Add new rule**.
+4. Fill in the rule fields. For details on each field, refer to [Static threshold rules](https://developers.cloudflare.com/network-flow/rules/static-threshold/).
+5. Select **Create a new rule** when you are finished.
+
+## Edit rules in the dashboard
+
+1. Go to the **Network flow** page.
+
+[Go to **Network flow** ↗](https://dash.cloudflare.com/?to=/:account/networking-insights/analytics/network-analytics/flow-analytics)
+
+2. Select **Configure Network flow**.
+3. In the **Configure rules** tab, find the static threshold rule you want to edit, and select **Edit**.
+4. Edit the appropriate fields. Refer to [Rule configuration fields](https://developers.cloudflare.com/network-flow/rules/static-threshold/#rule-configuration-fields) for more information on what each field does.
+5. Select **Save** when you are finished.
+
+## Delete rules in the dashboard
+
+1. Go to the **Network flow** page.
+
+[Go to **Network flow** ↗](https://dash.cloudflare.com/?to=/:account/networking-insights/analytics/network-analytics/flow-analytics)
+
+2. Select **Configure Network flow**.
+3. In the **Configure rules** tab, find the static threshold rule you want to delete, and select **Delete**.
+4. Select **I understand that deleting a rule is permanent**, and select **Delete** again.
+
+## Common settings that apply to all rule types
+
+### Rule Auto-Advertisement
+
+Auto-Advertisement automatically activates [Magic Transit](https://developers.cloudflare.com/magic-transit/) when a rule triggers, routing your traffic through Cloudflare for DDoS mitigation without manual intervention.
+
+This feature is available to Enterprise customers using [Magic Transit On Demand](https://developers.cloudflare.com/magic-transit/on-demand). You can enable it for any dynamic threshold, static threshold, or sFlow DDoS attack rule.
+
+Follow the previous steps to [create](#create-rules-in-the-dashboard) or [edit](#edit-rules-in-the-dashboard) a rule. Then, enable **Auto-Advertisement**.
+
+#### Rule Auto-Advertisement notifications
+
+Webhook, PagerDuty, and email notifications are sent following an auto-advertisement attempt for all prefixes inside the flagged rule.
+
+You will receive the status of the advertisement for each prefix with the following available statuses:
+
+- **Advertised**: The prefix was successfully advertised.
+- **Already Advertised**: The prefix was advertised prior to the auto advertisement attempt.
+- **Delayed**: The prefix cannot currently be advertised but will attempt advertisement. After the prefix can be advertised, a new notification is sent with the updated status.
+- **Locked**: The prefix is locked and cannot be advertised.
+- **Could not Advertise**: Cloudflare was unable to advertise the prefix. This status can occur for multiple reasons, but usually occurs when you are not allowed to advertise a prefix.
+- **Error**: A general error occurred during prefix advertisement.
+
+### Rule IP prefixes
+
+Each rule must include one or more IP prefixes. All prefixes in a rule are evaluated as aggregate traffic — their combined volume is measured against the threshold.
+
+- To alert on the **combined** traffic of multiple prefixes, add them to the same rule.
+- To alert on **individual** prefix traffic, create a separate rule for each prefix.
+
+#### Rule IP prefixes example
+
+In the following example, the rule triggers when the **combined** packet traffic of `192.168.0.0/24` and `172.118.0.0/24` exceeds `10000` packets. If Auto-Advertisement is enabled, Cloudflare advertises both prefixes when the rule triggers.
+
+You can also [configure rule IP prefixes at scale using the API](https://developers.cloudflare.com/api/resources/magic_network_monitoring/subresources/rules/).
+
+```json
+{
+	"rules": [
+		{
+			"name": "Too many packets",
+			"prefixes": ["192.168.0.0/24", "172.118.0.0/24"],
+			"packet_threshold": 10000,
+			"automatic_advertisement": true,
+			"duration": "1m0s",
+			"type": "threshold"
+		}
+	]
+}
+```
+
+To set a threshold for a single prefix, create a separate rule:
+
+```json
+{
+	"rules": [
+		{
+			"name": "Too many packets",
+			"prefixes": ["172.118.0.0/24"],
+			"packet_threshold": 1000,
+			"automatic_advertisement": true,
+			"duration": "1m0s",
+			"type": "threshold"
+		}
+	]
+}
+```
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/network-flow/rules/#page","headline":"Rules","description":"Create rules to alert on network flow anomalies.","url":"https://developers.cloudflare.com/network-flow/rules/","inLanguage":"en","image":"https://developers.cloudflare.com/network-flow/rules/og.png?v=ec6aab61f018adff","dateModified":"2026-05-07","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["JSON"]}
+```
+
+---
+
+---
+description: Create dynamic threshold rules for anomaly detection.
+title: Dynamic threshold rule
+image: https://developers.cloudflare.com/network-flow/rules/dynamic-threshold/og.png?v=d8f2fe04d002de7d
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-flow/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Dynamic threshold rule
+
+Last updated Apr 17, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-flow/rules/dynamic-threshold/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+A dynamic threshold rule (beta) monitors your network traffic patterns and automatically adjusts the Distributed Denial of Service (DDoS) threshold based on traffic history. Network Flow (formerly Magic Network Monitoring) compares total traffic across all IP prefixes and addresses in the rule against the dynamic threshold, measured in bits or packets per second. If traffic exceeds the threshold, Network Flow sends an alert.
+
+To use dynamic threshold rules, you must send NetFlow or sFlow data to Cloudflare. You can only configure dynamic threshold rules through the [Network Flow Rules API](https://developers.cloudflare.com/api/resources/magic_network_monitoring/subresources/rules/) — they are not available in the dashboard.
+
+## Rule configuration fields
+
+| Field | Description |
+| --- | --- |
+| **Rule name** | Must be unique and cannot contain spaces. Supports characters `A-Z`, `a-z`, `0-9`, underscore (`_`), dash (`-`), period (`.`), and tilde (`~`). Maximum of 256 characters. |
+| **Rule type** | zscore |
+| **Target** | Can be defined in either bits per second or packets per second. |
+| **Sensitivity** | Controls how easily traffic anomalies trigger alerts. Available values: low, medium, and high. Higher sensitivity triggers alerts on smaller deviations from normal traffic. |
+| **Auto-advertisement** | If you are a [Magic Transit On Demand](https://developers.cloudflare.com/magic-transit/on-demand) customer, you can enable this feature to automatically enable Magic Transit if the rule's dynamic threshold is triggered. Network Flow supports Magic Transit's supernet capability. To learn more refer to [Auto-Advertisement section](https://developers.cloudflare.com/network-flow/rules/#rule-auto-advertisement). |
+| **Rule IP prefix** | The IP prefix associated with the rule for monitoring traffic volume. Must be a CIDR range such as `160.168.0.1/24`. The maximum is 5,000 unique CIDR entries. To learn more and review an example, refer to the [Rule IP prefixes](https://developers.cloudflare.com/network-flow/rules/#rule-ip-prefixes) section. |
+
+## API documentation
+
+To review an example API configuration call using CURL and the expected output for a successful response, go to the [Rules](https://developers.cloudflare.com/api/resources/magic_network_monitoring/subresources/rules/) section in the Network Flow API documentation.
+
+## How the dynamic rule threshold is calculated
+
+Z-score compares short-term traffic patterns (five-minute window) against long-term baselines (four-hour window) to detect anomalies. The threshold adjusts automatically as your traffic history grows.
+
+Z-Score is calculated by using the following formula:
+
+```txt
+Z = (X - μ) / σ
+```
+
+- `X` = Current traffic value.
+- `μ` = Mean traffic value over the long window.
+- `σ` = Standard deviation over the long window.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/network-flow/rules/dynamic-threshold/#page","headline":"Dynamic threshold rule","description":"Create dynamic threshold rules for anomaly detection.","url":"https://developers.cloudflare.com/network-flow/rules/dynamic-threshold/","inLanguage":"en","image":"https://developers.cloudflare.com/network-flow/rules/dynamic-threshold/og.png?v=d8f2fe04d002de7d","dateModified":"2026-04-17","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Configure notifications for Network Flow rule matches.
+title: Configure rule notifications
+image: https://developers.cloudflare.com/network-flow/rules/rule-notifications/og.png?v=82c8b0621ebde799
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-flow/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Configure rule notifications
+
+Last updated Apr 17, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-flow/rules/rule-notifications/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Network Flow (formerly Magic Network Monitoring) can notify you by email, webhook, or PagerDuty when a rule is triggered. When a rule detects a traffic anomaly, notifications alert your team so you can respond — or, if you use Magic Transit with auto-advertisement, Cloudflare can begin mitigating the attack automatically.
+
+For more information on the notification platform, refer to [Notifications documentation](https://developers.cloudflare.com/notifications/). You can also:
+
+- [Configure Cloudflare notifications](https://developers.cloudflare.com/notifications/get-started/)
+- [Configure PagerDuty](https://developers.cloudflare.com/notifications/get-started/configure-pagerduty/)
+- [Configure webhooks](https://developers.cloudflare.com/notifications/get-started/configure-webhooks/)
+- [Test a notification](https://developers.cloudflare.com/notifications/get-started/#manage-alerts)
+- [Notification History](https://developers.cloudflare.com/notifications/notification-history/)
+
+## Notification configuration fields
+
+| Field | Description |
+| --- | --- |
+| **Notification name** | A label to identify this notification in your notifications list. |
+| **Description (optional)** | The description of the notification. |
+| **Webhooks** | One or more webhooks to deliver the notification to. |
+| **Notification email** | One or more email addresses to deliver the notification to. |
+
+## Rule Auto-Advertisement notifications
+
+Webhook, PagerDuty, and email notifications are sent following an auto-advertisement attempt for all prefixes inside the flagged rule.
+
+You will receive the status of the advertisement for each prefix with the following available statuses:
+
+- **Advertised**: The prefix was successfully advertised.
+- **Already Advertised**: The prefix was advertised prior to the auto advertisement attempt.
+- **Delayed**: The prefix cannot currently be advertised but will attempt advertisement. After the prefix can be advertised, a new notification is sent with the updated status.
+- **Locked**: The prefix is locked and cannot be advertised.
+- **Could not Advertise**: Cloudflare was unable to advertise the prefix. This status can occur for multiple reasons, but usually occurs when you are not allowed to advertise a prefix.
+- **Error**: A general error occurred during prefix advertisement.
+
+## Configure rule notifications
+
+To configure notifications for Network Flow rules:
+
+1. In the Cloudflare dashboard, go to the **Notifications** page.
+
+[Go to **Notifications** ↗](https://dash.cloudflare.com/?to=/:account/notifications)
+
+2. Select **Add**.
+3. Select *Magic Transit* from the product drop-down menu.
+4. Find the appropriate Network Flow alert and select **Select**:
+   - **Network Flow: Volumetric Attack** - for static threshold and dynamic threshold notifications
+   - **Network Flow: DDoS Attack** - for sFlow DDoS attack notifications
+5. Fill in the notification configuration details.
+6. Select **Save**.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/network-flow/rules/rule-notifications/#page","headline":"Configure rule notifications","description":"Configure notifications for Network Flow rule matches.","url":"https://developers.cloudflare.com/network-flow/rules/rule-notifications/","inLanguage":"en","image":"https://developers.cloudflare.com/network-flow/rules/rule-notifications/og.png?v=82c8b0621ebde799","dateModified":"2026-04-17","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Create sFlow DDoS attack detection rules.
+title: sFlow DDoS attack rule
+image: https://developers.cloudflare.com/network-flow/rules/s-flow-ddos-attack/og.png?v=035519884a687319
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-flow/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# sFlow DDoS attack rule
+
+Last updated Apr 17, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-flow/rules/s-flow-ddos-attack/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+An sFlow DDoS attack rule (beta) alerts you when a DDoS attack is detected in your network traffic. Network Flow (formerly Magic Network Monitoring) uses the same DDoS detection rules that protect Cloudflare's global network to identify these attacks.
+
+To use sFlow DDoS attack rules, you must send sFlow data to Cloudflare. You can only configure these rules through the [Network Flow Rules API](https://developers.cloudflare.com/api/resources/magic_network_monitoring/subresources/rules/) — they are not available in the dashboard.
+
+## Send sFlow data from your network to Cloudflare
+
+To send sFlow data to Cloudflare, your router must support sFlow exports. Refer to [Supported routers](https://developers.cloudflare.com/network-flow/routers/supported-routers/) to verify compatibility, and [Configure sFlow](https://developers.cloudflare.com/network-flow/routers/sflow-config/) for setup instructions.
+
+## Rule configuration fields
+
+| Field | Description |
+| --- | --- |
+| **Rule name** | Must be unique and cannot contain spaces. Supports characters `A-Z`, `a-z`, `0-9`, underscore (`_`), dash (`-`), period (`.`), and tilde (`~`). Maximum of 256 characters. |
+| **Rule type** | advanced\_ddos |
+| **Prefix Match** | The field `prefix_match` determines how IP matches are handled. <br><br>**Subnet** (recommended): Automatically advertise if the attacked IPs are within a subnet of a public IP prefix that can be advertised by Magic Transit.<br><br>**Exact**: Automatically advertise if the attacked IPs are an exact match with a public IP prefix that can be advertised by Magic Transit.<br><br>**Supernet**: Automatically advertise if the attacked IPs are a supernet of a public IP prefix that can be advertised by Magic Transit. |
+| **Auto-advertisement** | If you are a [Magic Transit On Demand](https://developers.cloudflare.com/magic-transit/on-demand) customer, you can enable this feature to automatically enable Magic Transit if the rule's dynamic threshold is triggered. To learn more, refer to [Auto-advertisement](https://developers.cloudflare.com/network-flow/rules/#rule-auto-advertisement). |
+| **Rule IP prefix** | The IP prefix associated with the rule for monitoring traffic volume. Must be a CIDR range such as `160.168.0.1/24`. The maximum is 5,000 unique CIDR entries. To learn more and see an example, refer to [Rule IP prefixes](https://developers.cloudflare.com/network-flow/rules/#rule-ip-prefixes). |
+
+## API documentation
+
+Refer to the [Rules API documentation](https://developers.cloudflare.com/api/resources/magic_network_monitoring/subresources/rules/) to review an example API configuration call using CURL and the expected output for a successful response.
+
+## Tune the sFlow DDoS alert thresholds
+
+You can tune the thresholds of your sFlow DDoS alerts in the dashboard and via the Cloudflare API by following the [Network-layer DDoS Attack Protection managed ruleset](https://developers.cloudflare.com/ddos-protection/managed-rulesets/network/) guide.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/network-flow/rules/s-flow-ddos-attack/#page","headline":"sFlow DDoS attack rule","description":"Create sFlow DDoS attack detection rules.","url":"https://developers.cloudflare.com/network-flow/rules/s-flow-ddos-attack/","inLanguage":"en","image":"https://developers.cloudflare.com/network-flow/rules/s-flow-ddos-attack/og.png?v=035519884a687319","dateModified":"2026-04-17","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Create static threshold rules for traffic limits.
+title: Static threshold rule
+image: https://developers.cloudflare.com/network-flow/rules/static-threshold/og.png?v=7ab4ff050e7ca7c1
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-flow/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Static threshold rule
+
+Last updated Apr 17, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-flow/rules/static-threshold/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+A static threshold rule monitors your network traffic against a fixed threshold you define, measured in bits or packets per second. Network Flow (formerly Magic Network Monitoring) compares total traffic across all IP prefixes and addresses in the rule against this threshold. If traffic exceeds the threshold for the configured duration, Network Flow sends an alert.
+
+To use static threshold rules, you must send NetFlow or sFlow data to Cloudflare.
+
+## Rule configuration fields
+
+| Field | Description |
+| --- | --- |
+| **Rule name** | Must be unique and cannot contain spaces. Supports characters `A-Z`, `a-z`, `0-9`, underscore (`_`), dash (`-`), period (`.`), and tilde (`~`). Maximum of 256 characters. |
+| **Rule type** | threshold |
+| **Rule threshold type** | Can be defined in either bits per second or packets per second. |
+| **Rule threshold** | The number of bits per second or packets per second for the rule alert. When this value is exceeded for the rule duration, an alert notification is sent. Minimum of `1` and no maximum. |
+| **Rule duration** | The amount of time in minutes the rule threshold must exceed to send an alert notification. Choose from the following values: `1`, `5`, `10`, `15`, `20`, `30`, `45`, or `60` minutes. |
+| **Auto-advertisement** | If you are a Magic Transit On Demand customer, you can enable this feature to automatically enable Magic Transit if the rule alert is triggered. Network Flow (formerly Magic Network Monitoring) supports Magic Transit's supernet capability. To learn more refer to [Auto-Advertisement section](#rule-auto-advertisement). |
+| **Rule IP prefix** | The IP prefix associated with the rule for monitoring traffic volume. Must be a CIDR range such as `160.168.0.1/24`. Max is 5,000 unique CIDR entries. To learn more, refer to [Rule IP prefixes](#rule-ip-prefixes). |
+
+## API documentation
+
+To review an example static threshold rule, go to the [Rules](https://developers.cloudflare.com/api/resources/magic_network_monitoring/subresources/rules/) section in the Network Flow API documentation.
+
+## Recommended rule configuration
+
+Follow the guidelines in [Rule IP prefixes](#rule-ip-prefixes), [Rule threshold](#rule-threshold), and [Rule duration](#rule-duration) to create appropriate Network Flow rules and set accurate thresholds.
+
+### Rule IP prefixes
+
+Cloudflare recommends starting with one Network Flow rule for each public `/24` IP prefix in your network. Including the range of the `/24` prefix in the rule name makes it easier to find and filter in Network Flow analytics.
+
+As you become more familiar with traffic patterns across each prefix, create more specific rules with IP prefixes smaller or larger than `/24` depending on your needs. You can also combine multiple IP prefixes in a single rule.
+
+### Rule threshold
+
+Follow the steps in [Initial rule configuration](#initial-rule-configuration) and [Setting the appropriate threshold](#setting-the-appropriate-threshold) to configure appropriate rule thresholds.
+
+#### Initial rule configuration
+
+When you first configure Network Flow, you may not know the typical traffic patterns for each IP prefix. Set an initial threshold high enough that it is unlikely to trigger during setup — Cloudflare recommends 10 Gbps or 10 Mpps.
+
+This lets you collect baseline traffic data without receiving alerts. After configuring your initial rules, monitor for alerts and review traffic in Network Flow Analytics. Over time, update each rule's threshold based on historical traffic data.
+
+| Threshold type | Recommended rule threshold to collect initial data |
+| --- | --- |
+| Bits | 10 Gbps (10,000,000,000 bits per second) |
+| Packets | 10 Mpps (10,000,000 packets per second) |
+
+#### Setting the appropriate threshold
+
+After creating the initial set of rules to monitor your network traffic, you should collect 14-30 days of historical traffic volume data for each rule.
+
+Cloudflare recommends that you set a rule threshold that is two times larger than the maximum non-attack traffic observed for a one minute time interval within a Network Flow rule.
+
+To find the maximum non-attack traffic for a one minute time interval over the past 14-30 days, filter for the specific rule you want to analyze:
+
+1. Go to the **Network flow** page.
+
+[Go to **Network flow** ↗](https://dash.cloudflare.com/?to=/:account/networking-insights/analytics/network-analytics/flow-analytics)
+
+2. Select **Add filter**.
+3. In **New filter**, use the drop-down menus to create the following filter:
+
+| Field | Operator | Rule name |
+| --- | --- | --- |
+| *Monitoring Rule* | *equals* | `<RULE_NAME>` |
+
+Once the rule filter is selected in Network Flow Analytics, you can check the historical traffic volume data for the rule over the selected time period. Cloudflare recommends reviewing historical data in seven-day increments, since that is the largest window that shows one-hour time intervals. To select a custom seven-day range, go to the top right corner of Network Flow analytics, open the time window drop-down menu, and select **Custom range**.
+
+You should review the selected seven-day time range and identify the largest traffic volume peak. Then, click and drag on the largest traffic peak to view the traffic volume data for a smaller time window. Continue until you are viewing the traffic volume data in one-minute intervals.
+
+Record the largest traffic volume peak for the rule in a spreadsheet, then repeat this process across 14-30 days of data. The rule threshold should be updated to be two times the largest traffic spike for a one minute time interval across 14-30 days of data. You should go through this process to set the threshold for each Network Flow rule.
+
+### Rule duration
+
+Your IP prefixes may experience inconsistent spikes across one-minute intervals. Set a rule duration of at least two minutes to reduce false positive alerts from short-term non-malicious traffic spikes. A two-minute duration means traffic must stay above the threshold for two minutes before an alert fires.
+
+### Adjusting rules over time
+
+After updating your first set of thresholds based on historical data, monitor for Network Flow alerts to verify the thresholds are appropriate. Adjust thresholds and duration over time to find the right alert sensitivity for your network environment.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/network-flow/rules/static-threshold/#page","headline":"Static threshold rule","description":"Create static threshold rules for traffic limits.","url":"https://developers.cloudflare.com/network-flow/rules/static-threshold/","inLanguage":"en","image":"https://developers.cloudflare.com/network-flow/rules/static-threshold/og.png?v=7ab4ff050e7ca7c1","dateModified":"2026-04-17","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Collect flow logs from cloud provider environments.
+title: Cloud flow logs (beta)
+image: https://developers.cloudflare.com/network-flow/cloud-flow-logs/og.png?v=c56849766e8832b6
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-flow/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Cloud flow logs (beta)
+
+Last updated May 7, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-flow/cloud-flow-logs/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Network Flow (formerly Magic Network Monitoring) lets you monitor cloud traffic alongside your on-premise network data. Export virtual private cloud (VPC) flow logs from your cloud environment to Cloudflare, where they are processed and displayed as analytics in the dashboard. You can also query cloud traffic data through the [GraphQL API](https://developers.cloudflare.com/analytics/graphql-api/).
+
+Network Flow supports AWS VPC flow logs via AWS Firehose. Configuration is only available through the Network Flow API.
+
+To set up AWS VPC flow logs, refer to [Set up AWS VPC flow logs](https://developers.cloudflare.com/network-flow/get-started/#vpc-flow-log-guide).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/network-flow/cloud-flow-logs/#page","headline":"Cloud flow logs (beta)","description":"Collect flow logs from cloud provider environments.","url":"https://developers.cloudflare.com/network-flow/cloud-flow-logs/","inLanguage":"en","image":"https://developers.cloudflare.com/network-flow/cloud-flow-logs/og.png?v=c56849766e8832b6","dateModified":"2026-05-07","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["AWS","Logging"]}
+```
+
+---
+
+---
+description: Integrate Network Flow with Magic Transit.
+title: Magic Transit integration
+image: https://developers.cloudflare.com/network-flow/magic-transit-integration/og.png?v=3528053b1b4b0ce8
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-flow/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Magic Transit integration
+
+Last updated May 7, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-flow/magic-transit-integration/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+[Magic Transit On Demand](https://developers.cloudflare.com/magic-transit/on-demand/) allows you to keep Magic Transit disabled during normal operations and activate it only when you need DDoS protection. Network Flow monitors your traffic while Magic Transit is off and detects attacks. When an attack is detected, you can enable Magic Transit automatically or manually.
+
+You can create Network Flow rules that monitor specific IP prefixes for DDoS attacks. When an attack is detected, Cloudflare notifies you by email, [webhook](https://developers.cloudflare.com/notifications/get-started/configure-webhooks/), or [PagerDuty](https://developers.cloudflare.com/notifications/get-started/configure-pagerduty/).
+
+If you enable [auto-advertisement](#activate-ip-auto-advertisement) on a rule, Magic Transit activates automatically to protect the targeted prefixes. You can enable auto-advertisement for individual Network Flow rules through the dashboard or API.
+
+After Magic Transit activates and your traffic flows through Cloudflare, Cloudflare blocks malicious DDoS traffic. Your origin servers receive only clean traffic through IPsec or GRE tunnels.
+
+The following diagrams illustrate this process:
+
+![The diagram shows the flow of traffic when you send flow data from your network to Cloudflare for analysis.](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1435,height=802,format=webp/_astro/1-flowdata.C2Oap_Pf.png)
+
+![Cloudflare automatically notifies you when Cloudflare detects an attack	based on your flow data.](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1436,height=761,format=webp/_astro/2-flowdata.DLOwyPqi.png)
+
+![You can create rules to activate Magic Transit automatically, to protect your IP addresses from a DDoS
+attack.](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1436,height=761,format=webp/_astro/3-flowdata.CiegeHTC.png)
+
+## Activate IP auto-advertisement
+
+Before a rule can automatically activate Magic Transit, you must enable IP advertisement for the relevant prefixes. You can do this through the dashboard or the API.
+
+### Dashboard
+
+To activate IP advertisement through the Cloudflare dashboard, refer to [Configure dynamic advertisement](https://developers.cloudflare.com/byoip/concepts/dynamic-advertisement/best-practices/#configure-dynamic-advertisement).
+
+### API
+
+To activate IP advertisement through the API, refer to the [IP Address Management Dynamic Advertisement API](https://developers.cloudflare.com/api/resources/addressing/subresources/prefixes/subresources/advertisement_status/methods/edit/).
+
+## Network Flow rules
+
+To create Network Flow rules with auto-advertisement, refer to [Rule Auto-Advertisement](https://developers.cloudflare.com/network-flow/rules/#rule-auto-advertisement).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/network-flow/magic-transit-integration/#page","headline":"Magic Transit integration","description":"Integrate Network Flow with Magic Transit.","url":"https://developers.cloudflare.com/network-flow/magic-transit-integration/","inLanguage":"en","image":"https://developers.cloudflare.com/network-flow/magic-transit-integration/og.png?v=3528053b1b4b0ce8","dateModified":"2026-05-07","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["Integration"]}
+```
+
+---
+
+---
+description: Network Flow features available on the free tier.
+title: Free version
+image: https://developers.cloudflare.com/network-flow/network-flow-free/og.png?v=6cd0f05235d95e3c
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-flow/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Free version
+
+Last updated Apr 17, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-flow/network-flow-free/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+The free version of Network Flow (formerly Magic Network Monitoring) is available to all Cloudflare accounts.
+
+Join [Cloudflare's Discord server ↗︎](https://discord.com/invite/cloudflaredev) to discuss Network Flow use cases, configuration, and troubleshooting. The Network Flow product and engineering team regularly engages with the community.
+
+In the Discord server, find the **magic-network-monitoring** channel under the **Cloudflare One** category.
+
+## Access the free version of Network Flow
+
+The free version includes all features of the enterprise version, with network flow volume and configuration limits.
+
+1. Go to the **Network flow** page.
+
+[Go to **Network flow** ↗](https://dash.cloudflare.com/?to=/:account/networking-insights/analytics/network-analytics/flow-analytics)
+
+2. Complete the onboarding wizard to configure Network Flow. Refer to [Get started](https://developers.cloudflare.com/network-flow/get-started/) for detailed configuration instructions.
+
+## Limitations
+
+| Configuration limit | Value |
+| --- | --- |
+| Number of registered routers | 10 |
+| Number of rules | 25 |
+| Network flows per second per account | 250 |
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/network-flow/network-flow-free/#page","headline":"Free version","description":"Network Flow features available on the free tier.","url":"https://developers.cloudflare.com/network-flow/network-flow-free/","inLanguage":"en","image":"https://developers.cloudflare.com/network-flow/network-flow-free/og.png?v=6cd0f05235d95e3c","dateModified":"2026-04-17","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: API endpoints for managing Network Flow configurations.
+title: API
+image: https://developers.cloudflare.com/network-flow/api/og.png?v=b57a0fa8f0fdd479
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-flow/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# API
+
+Last updated Apr 17, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-flow/api/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Use Network Flow's (formerly Magic Network Monitoring) API to configure your account and rules.
+
+## Account configuration
+
+Refer to [Account configuration API methods](https://developers.cloudflare.com/api/resources/magic_network_monitoring/subresources/configs/methods/get/) to:
+
+- Create, list, update, and delete Network Flow configurations
+- List default sampling, router IPs, and rules for an account
+
+## Rules configuration
+
+Refer to [Rules configuration API methods](https://developers.cloudflare.com/api/resources/magic_network_monitoring/subresources/rules/methods/list/) to:
+
+- Create, list, update, and delete rules
+- Update advertisement for a rule
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/network-flow/api/#page","headline":"API","description":"API endpoints for managing Network Flow configurations.","url":"https://developers.cloudflare.com/network-flow/api/","inLanguage":"en","image":"https://developers.cloudflare.com/network-flow/api/og.png?v=b57a0fa8f0fdd479","dateModified":"2026-04-17","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Definitions for terms used across Network Flow documentation.
+title: Glossary
+image: https://developers.cloudflare.com/network-flow/glossary/og.png?v=61243207365c3b26
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-flow/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Glossary
+
+Last updated Apr 17, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-flow/glossary/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Review the definitions for terms used across Cloudflare's Network Flow (formerly Magic Network Monitoring) documentation.
+
+| Term | Definition |
+| --- | --- |
+| flow data | Represents records of communication between devices. There are a number of flow data protocols, such as NetFlow or sFlow. |
+| NetFlow | Network protocol developed by Cisco to collect and monitor network traffic flow data. |
+| sampling | In the context of Network Flow, sampling is the process of taking samples of packets for a specific period to identify potential attacks. |
+| sFlow | An industry standard packet sampling protocol to monitor network devices. |
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/network-flow/glossary/#page","headline":"Glossary","description":"Definitions for terms used across Network Flow documentation.","url":"https://developers.cloudflare.com/network-flow/glossary/","inLanguage":"en","image":"https://developers.cloudflare.com/network-flow/glossary/og.png?v=61243207365c3b26","dateModified":"2026-04-17","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Answers to common questions about Network Flow.
+title: FAQ
+image: https://developers.cloudflare.com/network-flow/faq/og.png?v=35b4b9050a5c9f6b
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-flow/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# FAQ
+
+Last updated May 7, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-flow/faq/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+If you cannot find your answer here, refer to the [community page ↗︎](https://community.cloudflare.com/) for more resources.
+
+## I am getting an "Invalid account settings request body: account name format contains illegal characters or is not supported" error when trying to create a rule.
+
+This probably means that your account name has unsupported characters. Make sure your account name does not have characters like, for example, `&`, `<`, `>`, `"`, `'`, `` ` ``.
+
+Refer to [Account name](https://developers.cloudflare.com/fundamentals/account/create-account/#account-name) to learn how to change your account name.
+
+## Can I send NetFlow/sFlow data to Cloudflare in a secure, encrypted way?
+
+Yes. Both enterprise and free customers can send encrypted network flow data to Cloudflare.
+
+Enterprise customers with Magic Transit or Cloudflare WAN (formerly Magic WAN) can send encrypted network flow data via an IPsec tunnel to Cloudflare's network. You can achieve this by:
+
+1. Configuring your [NetFlow](https://developers.cloudflare.com/network-flow/routers/netflow-ipfix-config/) or [sFlow](https://developers.cloudflare.com/network-flow/routers/sflow-config/) data to be sent to Cloudflare's network for parsing.
+2. Directing that network flow data to be sent over [Magic Transit IPsec tunnels](https://developers.cloudflare.com/magic-transit/how-to/configure-tunnel-endpoints/) or [Cloudflare WAN IPsec tunnels](https://developers.cloudflare.com/cloudflare-wan/configuration/how-to/configure-tunnel-endpoints/) to Cloudflare's network.
+
+Cloudflare identifies the flow traffic by its destination IP address and port, then forwards it to Network Flow for parsing.
+
+Free customers can route their network flow traffic through a device that is running the Cloudflare One Client. Then, network flow traffic can be forwarded from the Cloudflare One Client enabled device to Cloudflare's network flow endpoints. Learn more in the [Encrypt network flow data tutorial](https://developers.cloudflare.com/network-flow/tutorials/encrypt-network-flow-data/).
+
+## I have Auto-Advertisement enabled and it was triggered by an attack. Do I have to turn Magic Transit off manually?
+
+Yes. After Auto-Advertisement activates for a prefix under attack, Cloudflare continues advertising that prefix even after the attack ends. You must manually withdraw the prefix to stop Magic Transit. Refer to [Configure dynamic advertisement](https://developers.cloudflare.com/byoip/concepts/dynamic-advertisement/best-practices/#configure-dynamic-advertisement) to withdraw your prefixes.
+
+## If Auto-Advertisement is enabled, and the threshold has been triggered, will the IP prefix show as advertised in the dashboard?
+
+Yes, the IP prefix will show as advertised under the [IP Prefixes tab](https://developers.cloudflare.com/byoip/concepts/dynamic-advertisement/best-practices/#configure-dynamic-advertisement).
+
+## Does Auto-advertisement also work with BGP-controlled advertisements?
+
+No. Auto-advertisement only works with API-controlled advertisement, not BGP-controlled advertisement.
+
+## In the API, Network Flow rules have a `bandwidth_threshold` data field. Does the value for this field refer to bytes transferred or current throughput?
+
+A [Network Flow rule](https://developers.cloudflare.com/api/resources/magic_network_monitoring/subresources/rules/methods/list/) threshold has two values:
+
+- `bandwidth_threshold` — the total ingress throughput on your network at any given moment, measured in bits per second.
+- `duration` — how long `bandwidth_threshold` must be exceeded before you receive an alert.
+
+For example, you create a Network Flow rule with the following parameters:
+
+```txt
+"bandwidth_threshold": 50000000
+"duration": "1m0s"
+```
+
+With this rule, your network needs to receive a throughput greater than 50,000,000 bits per second (50 Megabits per second or Mbps) for 60 seconds. If both of these conditions are met, then Network Flow will send you an alert.
+
+## My router's public IP address is different from the IP address of my network flow `agent-ip`. I cannot change my network flow `agent-ip`, and I am not seeing my router's traffic in Network Flow analytics
+
+Set your router's public IP address and network flow `agent-ip` to the same value. If you cannot change the `agent-ip`, register both your router's public IP and the `agent-ip` in the Network Flow [router configuration](https://developers.cloudflare.com/network-flow/get-started/).
+
+Registering both addresses prevents Network Flow from blocking traffic from unrecognized IPs. Your router's flow data appears under the `agent-ip`.
+
+## What is the Network Flow data retention policy for NetFlow/sFlow received from customer's routers?
+
+All flow data is processed on Cloudflare's servers in the US. If you enable data sovereignty in Europe, you cannot use Network Flow.
+
+Cloudflare retains GraphQL analytics data for 90 days for enterprise customers and seven days for non-enterprise customers. Cloudflare also retains flow data for six hours for threshold crossing detection.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/network-flow/faq/#page","headline":"FAQ","description":"Answers to common questions about Network Flow.","url":"https://developers.cloudflare.com/network-flow/faq/","inLanguage":"en","image":"https://developers.cloudflare.com/network-flow/faq/og.png?v=35b4b9050a5c9f6b","dateModified":"2026-05-07","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["IPsec"]}
+```
+
+---
+
+---
+description: Review recent changes to Network Flow (formerly Magic Network Monitoring).
+title: Changelog
+image: https://developers.cloudflare.com/network-flow/changelog/og.png?v=c368404554a80221
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-flow/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Changelog
+
+Last updated Apr 17, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-flow/changelog/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+[Subscribe to RSS](https://developers.cloudflare.com/changelog/rss/network-flow.xml)
+
+## 2026-02-17
+
+  
+**Cloudflare One Product Name Updates**  
+
+We are updating naming related to some of our Networking products to better clarify their place in the Zero Trust and Secure Access Service Edge (SASE) journey.
+
+We are retiring some older brand names in favor of names that describe exactly what the products do within your network. We are doing this to help customers build better, clearer mental models for comprehensive SASE architecture delivered on Cloudflare.
+
+#### What's changing
+
+- **Magic WAN** → **Cloudflare WAN**
+- **Magic WAN IPsec** → **Cloudflare IPsec**
+- **Magic WAN GRE** → **Cloudflare GRE**
+- **Magic WAN Connector** → **Cloudflare One Appliance**
+- **Magic Firewall** → **Cloudflare Network Firewall**
+- **Magic Network Monitoring** → **Network Flow**
+- **Magic Cloud Networking** → **Cloudflare One Multi-cloud Networking**
+
+**No action is required by you** — all functionality, existing configurations, and billing will remain exactly the same.
+
+For more information, visit the [Cloudflare One documentation](https://developers.cloudflare.com/cloudflare-one/).
+
+## 2026-01-15
+
+  
+**Network Services navigation update**  
+
+The Network Services menu structure in Cloudflare's dashboard has been updated to reflect solutions and capabilities instead of product names. This will make it easier for you to find what you need and better reflects how our services work together.
+
+Your existing configurations will remain the same, and you will have access to all of the same features and functionality.
+
+The changes visible in your dashboard may vary based on the products you use. Overall, changes relate to [Magic Transit ↗︎](https://developers.cloudflare.com/magic-transit/), [Magic WAN ↗︎](https://developers.cloudflare.com/magic-wan/), and [Magic Firewall ↗︎](https://developers.cloudflare.com/cloudflare-network-firewall/).
+
+**Summary of changes:**
+
+- A new **Overview** page provides access to the most common tasks across Magic Transit and Magic WAN.
+- Product names have been removed from top-level navigation.
+- Magic Transit and Magic WAN configuration is now organized under **Routes** and **Connectors**. For example, you will find IP Prefixes under **Routes**, and your GRE/IPsec Tunnels under **Connectors.**
+- Magic Firewall policies are now called **Firewall Policies.**
+- Magic WAN Connectors and Connector On-Ramps are now referenced in the dashboard as **Appliances** and **Appliance profiles.** They can be found under **Connectors > Appliances.**
+- Network analytics, network health, and real-time analytics are now available under **Insights.**
+- Packet Captures are found under **Insights > Diagnostics.**
+- You can manage your Sites from **Insights > Network health.**
+- You can find Magic Network Monitoring under **Insights > Network flow**.
+
+If you would like to provide feedback, complete [this form ↗︎](https://forms.gle/htWyjRsTjw1usdis5). You can also find these details in the January 7, 2026 email titled **\[FYI] Upcoming Network Services Dashboard Navigation Update**.
+
+Preview: ![Networking Navigation](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=3000,height=1052,format=webp/_astro/networking-overview-and-navigation.CeMgEFaZ.png)
+
+## 2024-09-24
+
+  
+**Try out Magic Network Monitoring**  
+
+The free version of Magic Network Monitoring (MNM) is now available to everyone with a Cloudflare account by default.
+
+1. Log in to your [Cloudflare dashboard ↗︎](https://dash.cloudflare.com), and select your account.
+2. Go to **Analytics & Logs** > **Magic Monitoring**.
+
+![Try out the free version of Magic Network Monitoring](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=852,height=666,format=webp/_astro/get-started.D7KXWcs4.png)
+
+For more details, refer to the [Get started guide](https://developers.cloudflare.com/network-flow/get-started/).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://developers.cloudflare.com/network-flow/changelog/#page","headline":"Changelog","description":"Review recent changes to Network Flow (formerly Magic Network Monitoring).","url":"https://developers.cloudflare.com/network-flow/changelog/","inLanguage":"en","image":"https://developers.cloudflare.com/network-flow/changelog/og.png?v=c368404554a80221","dateModified":"2026-04-17","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: A step-by-step configuration guide for exporting NetFlow or IPFIX data to Cloudflare's network.
+title: Netflow/IPFIX configuration
+image: https://developers.cloudflare.com/network-flow/routers/netflow-ipfix-config/og.png?v=0e149712805641be
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-flow/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Netflow/IPFIX configuration
+
+Last updated May 7, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-flow/routers/netflow-ipfix-config/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Configure your router to export flow data to Cloudflare's network for analysis in Network Flow (formerly Magic Network Monitoring). Network Flow supports the NetFlow v5, NetFlow v9, and IPFIX formats.
+
+## Before you begin
+
+Before configuring NetFlow or IPFIX, verify the following:
+
+- Your router supports NetFlow or IPFIX export capabilities. Refer to [Supported routers](https://developers.cloudflare.com/network-flow/routers/supported-routers/) for a list of compatible routers.
+- You have administrative access to your router's configuration interface.
+- You have [registered your router with Cloudflare](https://developers.cloudflare.com/network-flow/get-started/#2-register-your-router-with-cloudflare).
+
+## 1. Access your router configuration
+
+Log in to your router's configuration application or command-line interface. The exact method varies by router vendor and model.
+
+## 2. Configure Flow Exporter
+
+Open your router's NetFlow configuration menu and set up the **Flow Exporter** with the following values:
+
+- **Destination IP address**: `162.159.65.1`
+- **Destination Port**: `2055`
+- **Transport Protocol**: `UDP`
+
+These settings direct your router to send flow data to Cloudflare's network for analysis.
+
+## 3. Configure Flow Record
+
+Set up your router's **Flow Record** configuration with the following fields. These fields define what traffic metadata your router collects and exports.
+
+Match fields identify the traffic:
+
+- `match ipv4 protocol`
+- `match ipv4 source address`
+- `match ipv4 destination address`
+- `match transport source-port`
+- `match transport destination-port`
+- `match interface input`
+
+Collect fields capture statistics about the traffic:
+
+- `collect transport tcp flag`
+- `collect counter packets long`
+- `collect counter bytes long`
+- `collect flow sampler`
+- `collect timestamp sys-uptime first`
+- `collect timestamp sys-uptime last`
+
+## 4. Save and apply configuration
+
+Save your NetFlow or IPFIX configuration changes and apply them to your router. Verify that your router's NetFlow template does not contain duplicated fields, as duplicates can cause export errors.
+
+## 5. Verify your configuration
+
+After configuring NetFlow or IPFIX, verify that data is being sent to Cloudflare:
+
+1. Wait five to ten minutes for flow data to be transmitted and processed.
+2. Check your router status in the Cloudflare dashboard under **Network flow** > **Configure Network flow** > **Check routers** (visible during onboarding) or view analytics in the **Network flow** page.
+3. If data is not appearing, verify your Flow Exporter settings and confirm your router's public IP address matches the IP registered with Cloudflare.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/network-flow/routers/netflow-ipfix-config/#page","headline":"Netflow/IPFIX configuration","description":"A step-by-step configuration guide for exporting NetFlow or IPFIX data to Cloudflare's network.","url":"https://developers.cloudflare.com/network-flow/routers/netflow-ipfix-config/","inLanguage":"en","image":"https://developers.cloudflare.com/network-flow/routers/netflow-ipfix-config/og.png?v=0e149712805641be","dateModified":"2026-05-07","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["NetFlow","UDP"]}
+```
+
+---
+
+---
+description: The best sampling rate recommendations for your network's traffic volume.
+title: Recommended sampling rate
+image: https://developers.cloudflare.com/network-flow/routers/recommended-sampling-rate/og.png?v=590ca5d1a82b28d9
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-flow/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Recommended sampling rate
+
+Last updated May 7, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-flow/routers/recommended-sampling-rate/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Your router samples the traffic that passes through it to create NetFlow or sFlow data. The sampling rate determines how frequently your router captures a packet — for example, a rate of 1 in 100 means your router captures one out of every 100 packets.
+
+Sampling more frequently (lower ratios like 1 in 100) produces more accurate flow data but uses more router memory and CPU. Sampling less frequently (higher ratios like 1 in 4,000) reduces resource usage and is suitable for networks with larger traffic volumes.
+
+The following table provides general recommendations based on your traffic volume. Test different sampling rates to find the best option for your network.
+
+| Traffic Volume | Router sampling recommendation |
+| --- | --- |
+| Low | Between 1 in 100 packets - 1 in 500 packets |
+| Medium | Between 1 in 1,000 - 1 in 2,000 packets |
+| High | Between 1 in 2,000 - 1 in 4,000 packets |
+
+As a general rule, you may notice a loss in data accuracy (depending on your network volume) when your network flow sampling rate exceeds 1 in 5,000 packets.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/network-flow/routers/recommended-sampling-rate/#page","headline":"Recommended sampling rate","description":"The best sampling rate recommendations for your network's traffic volume.","url":"https://developers.cloudflare.com/network-flow/routers/recommended-sampling-rate/","inLanguage":"en","image":"https://developers.cloudflare.com/network-flow/routers/recommended-sampling-rate/og.png?v=590ca5d1a82b28d9","dateModified":"2026-05-07","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["NetFlow"]}
+```
+
+---
+
+---
+description: A step-by-step configuration guide for exporting sFlow data to Cloudflare's network.
+title: sFlow configuration
+image: https://developers.cloudflare.com/network-flow/routers/sflow-config/og.png?v=7cf611e55c205367
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-flow/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# sFlow configuration
+
+Last updated May 7, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-flow/routers/sflow-config/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Configure your router to export sFlow data to Cloudflare's network for analysis in Network Flow (formerly Magic Network Monitoring). sFlow is a network monitoring protocol that samples network traffic to provide visibility into your network's performance and traffic patterns.
+
+## Before you begin
+
+Before configuring sFlow, verify the following:
+
+- Your router supports sFlow export capabilities. Refer to [Supported routers](https://developers.cloudflare.com/network-flow/routers/supported-routers/) for a list of compatible routers.
+- You have administrative access to your router's configuration interface.
+- You have [registered your router with Cloudflare](https://developers.cloudflare.com/network-flow/get-started/#2-register-your-router-with-cloudflare) and noted the default sampling rate you configured during registration.
+
+## 1. Access your router configuration
+
+Log in to your router's configuration application or command-line interface. The exact method varies by router vendor and model.
+
+## 2. Configure sFlow exporter
+
+Locate your router's sFlow configuration menu and set up the sFlow exporter with the following values:
+
+- **Destination IP address**: `162.159.65.1`
+- **Destination Port**: `6343`
+- **Transport Protocol**: `UDP`
+
+These settings direct your router to send sFlow data to Cloudflare's network for analysis.
+
+## 3. Configure sampling rate
+
+Set your router's sampling rate to match the value you entered when registering your router with Cloudflare. The sampling rate determines how frequently your router samples network traffic to generate sFlow data.
+
+Refer to [Recommended sampling rate](https://developers.cloudflare.com/network-flow/routers/recommended-sampling-rate/) for guidance on selecting an appropriate sampling rate based on your network's traffic volume.
+
+## 4. Save and apply configuration
+
+Save your sFlow configuration changes and apply them to your router. Depending on your router model, you may need to restart the sFlow service or reload the configuration for changes to take effect.
+
+## Verify your configuration
+
+After configuring sFlow, verify that data is being sent to Cloudflare:
+
+1. Wait five to ten minutes for sFlow data to be transmitted and processed.
+2. Check your router status in the Cloudflare dashboard under **Network flow** > **Configure Network flow** > **Check routers** (visible during onboarding) or view analytics in the **Network flow** page.
+3. If data is not appearing, verify your sFlow exporter settings and confirm your router's public IP address matches the IP registered with Cloudflare.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/network-flow/routers/sflow-config/#page","headline":"sFlow configuration","description":"A step-by-step configuration guide for exporting sFlow data to Cloudflare's network.","url":"https://developers.cloudflare.com/network-flow/routers/sflow-config/","inLanguage":"en","image":"https://developers.cloudflare.com/network-flow/routers/sflow-config/og.png?v=7cf611e55c205367","dateModified":"2026-05-07","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["UDP"]}
+```
+
+---
+
+---
+description: A list of open source, NetFlow, and sFlow routers.
+title: Supported routers
+image: https://developers.cloudflare.com/network-flow/routers/supported-routers/og.png?v=de18f0b4b0c87b64
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-flow/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Supported routers
+
+Last updated May 7, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-flow/routers/supported-routers/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+The majority of enterprise-grade routers are capable of exporting NetFlow or sFlow, and popular router brands that support either NetFlow or sFlow are listed below.
+
+Relatively few consumer grade routers are capable of exporting NetFlow or sFlow. If you are a network hobbyist, business, or other organization, and your router options are limited, you can view the list of open source and affordable options below.
+
+Note
+
+These lists are not exhaustive, and we encourage you to check your router's specification sheet to confirm your router is capable of exporting NetFlow or sFlow.
+
+## NetFlow routers
+
+### Popular network hobbyist/small business options
+
+<details>
+
+<summary>
+
+pfSense
+
+</summary>
+
+- <a href="https://www.pfsense.org/">pfSense website ↗︎</a>
+- **Supported hardware model or plugin**: <a href="https://docs.netgate.com/pfsense/en/latest/recipes/netflow-with-softflowd.html">softflowd ↗︎</a>
+
+</details>
+
+<details>
+
+<summary>
+
+Ubiquiti
+
+</summary>
+
+- <a href="https://www.ui.com/">Ubiquiti website ↗︎</a>
+- **Supported hardware model or plugin**: UISP EdgeRouter series
+
+</details>
+
+### Enterprise NetFlow capable routers
+
+<details>
+
+<summary>
+
+Barracuda
+
+</summary>
+
+- **Supported hardware model or plugin**: CloudGen Firewall, NG Firewall
+
+</details>
+
+<details>
+
+<summary>
+
+Cisco
+
+</summary>
+
+- <a href="https://community.cisco.com/t5/security-knowledge-base/netflow-support-matrix/ta-p/3644638?attachment-id=203270">NetFlow/sFlow Support Matrix ↗︎</a>
+- **Supported hardware model or plugin**: ASR series, Catalyst series, ISR series, Nexus 1000v, Nexus 5000, Nexus 6000, Nexus 7000, Nexus 9000, WLC series, 800 series (not 860)
+
+</details>
+
+<details>
+
+<summary>
+
+Fortinet
+
+</summary>
+
+- **Supported hardware model or plugin**: FortiGate series, FortiSwitch series
+
+</details>
+
+<details>
+
+<summary>
+
+Meraki
+
+</summary>
+
+- <a href="https://community.cisco.com/t5/security-knowledge-base/netflow-support-matrix/ta-p/3644638?attachment-id=203270">NetFlow/sFlow Support Matrix (Meraki on page 2) ↗︎</a>
+- **Supported hardware model or plugin**: MX series, Z1 series
+
+</details>
+
+<details>
+
+<summary>
+
+Mikrotik
+
+</summary>
+
+- <a href="https://wiki.mikrotik.com/wiki/Manual:IP/Traffic_Flow">MikroTik website ↗︎</a>
+- **Supported hardware model or plugin**: Router OS v2.9, v3, v4, and later
+
+</details>
+
+<details>
+
+<summary>
+
+Nokia
+
+</summary>
+
+- **Supported hardware model or plugin**: 7950 XRS series, 7750 SR series
+
+</details>
+
+<details>
+
+<summary>
+
+Ubiquiti
+
+</summary>
+
+- <a href="https://www.ui.com/">Ubiquiti website ↗︎</a>
+- **Supported hardware model or plugin**: 7950 XRS series, 7750 SR series
+
+</details>
+
+### Open source router OS
+
+<details>
+
+<summary>
+
+pfSense
+
+</summary>
+
+- <a href="https://www.pfsense.org/">pfSense website ↗︎</a>
+- **Supported hardware model or plugin**: <a href="https://docs.netgate.com/pfsense/en/latest/recipes/netflow-with-softflowd.html">softflowd ↗︎</a>
+
+</details>
+
+<details>
+
+<summary>
+
+OpenWrt
+
+</summary>
+
+- <a href="https://openwrt.org/start">OpenWrt website ↗︎</a>
+- **Supported hardware model or plugin**: <a href="https://openwrt.org/toh/start">Table of supported routers ↗︎</a><br> <a href="https://openwrt.org/packages/pkgdata/softflowd">OpenWrt NetFlow support ↗︎</a>
+
+</details>
+
+## sFlow routers
+
+### Popular sFlow capable routers
+
+<details>
+
+<summary>
+
+Arista
+
+</summary>
+
+- **Supported hardware model or plugin**: 710P series, 720X series, 7010 series, 7020R series, 7050X3 series, 7060X series, 7150 series, 7160 series, 7170 series, 7250X series, 7280R series, 7300 series, 7500R series, 7800R3 series
+
+</details>
+
+<details>
+
+<summary>
+
+Aruba
+
+</summary>
+
+- **Supported hardware model or plugin**: 2530 series, 2540 series, 2920 series, 2930F series, 2930M series, 3810 series, 5400R series, 8320 series, 8400 series
+
+</details>
+
+<details>
+
+<summary>
+
+Cisco
+
+</summary>
+
+- <a href="https://community.cisco.com/t5/security-knowledge-base/netflow-support-matrix/ta-p/3644638?attachment-id=203270">NetFlow/sFlow Support Matrix ↗︎</a>
+- **Supported hardware model or plugin**: 350 series Managed Switches, 350X series Stackable Managed Switches, 550X series Stackable Managed Switches, 8000 series Routers, ASR 9000 series Routers, Catalyst 1000 series, Catalyst 2960-L series, ME 1200 series, NCS 540 series Routers, NCS 5500 series Routers, Nexus 3000 series, Nexus 3100 series, Nexus 3200 series, Nexus 3600 series, Nexus 9200 series, Nexus 9300 series, Nexus 9500 series
+
+</details>
+
+<details>
+
+<summary>
+
+Dell
+
+</summary>
+
+- **Supported hardware model or plugin**: Dell Networking N1100 series, Dell Networking N1500 series, Dell Networking N2000 series, Dell Networking N3000 series, Dell Networking N4000 series, Dell Networking C9000 series, Dell Networking S-series 10GbE switches, Dell Networking S-series 1GbE switches, Dell Networking S-series 25/40/50/100GbE switches, Dell Networking Z-series Core and Aggregation switches
+
+</details>
+
+<details>
+
+<summary>
+
+D-Link
+
+</summary>
+
+- **Supported hardware model or plugin**: DXS-3400 series, DGS-3120 series, DGS-3630 series, DWS-3160-24TC, DWS-3160-24PC, DWS-4026
+
+</details>
+
+<details>
+
+<summary>
+
+Edge-Core Networks
+
+</summary>
+
+- **Supported hardware model or plugin**: AS7700 series, AS5800 series, ECS4660 series, ECS4260 series, ECS4100 series, ECS4200 series, ECS4510 series, ECS3500 series, Open Networking
+
+</details>
+
+<details>
+
+<summary>
+
+Extreme Networks
+
+</summary>
+
+- **Supported hardware model or plugin**: X440-G2 series, X450-G2 series, X460-G2 series, X620 series, X670-G2 series, X690 series, X770 series, X870 series, CER 2000 series, MLX series, SLX 9140, SLX 9240, SLX 9540, SLX 9850 series, VDX 6740, VDX 6940, VDX 8770, ERS 4900 series, ERS 5900 series, VSP 4000 series, VSP 8200 series, VSP 8400 series, 200 series, 8000 series
+
+</details>
+
+<details>
+
+<summary>
+
+Fortinet
+
+</summary>
+
+- **Supported hardware model or plugin**: FortiGate series, FortiSwitch series
+
+</details>
+
+<details>
+
+<summary>
+
+HPE
+
+</summary>
+
+- **Supported hardware model or plugin**: HPE 6600 Switch series, HPE 5900 Switch series, HPE 5700 Switch series, HPE 5500 Switch series, HPE FF 5940 Switch series, HPE FF 5950 Switch series, HPE FF 12900E Switch series
+
+</details>
+
+<details>
+
+<summary>
+
+Hitachi
+
+</summary>
+
+- **Supported hardware model or plugin**: Apresia 3400 series, Apresia 5400 series, Apresia 13000 series, Apresia 15000 series, GR4000, GS4000, GS3000
+
+</details>
+
+<details>
+
+<summary>
+
+Huawei
+
+</summary>
+
+- **Supported hardware model or plugin**: CloudEngine 5800 series, CloudEngine 6800 series, CloudEngine 7800 series, CloudEngine 8800 series, CloudEngine 12800 series, NetEngine 8000 series, S600-E series, S1720 series, S2700 series, S5700 series, S6720 series, S7700 series, S9700 series, S12700 series
+
+</details>
+
+<details>
+
+<summary>
+
+Juniper
+
+</summary>
+
+- **Supported hardware model or plugin**: ACX5000, EX series, MX series, NFX series, OCX1100, PTX1000, PTX10000, QFX series
+
+</details>
+
+<details>
+
+<summary>
+
+NEC
+
+</summary>
+
+- **Supported hardware model or plugin**: IP8800/S2500 series, IP8800/S3640 series, IP8800/S3650 series, IP8800/S3660 series, IP8800/S3830 series, IP8800/S4600 series, IP8800/S6300 series, IP8800/S6600 series, IP8800/S6700 series, IP8800/S8308 series, IP8800/S8600 series, IP8800/R8600 series, PF series (ProgrammableFlow)
+
+</details>
+
+<details>
+
+<summary>
+
+Netgear
+
+</summary>
+
+- **Supported hardware model or plugin**: M4100 series, M4200 series, M4300 series, M5300 series, M6100 series, M7100 series, M7300 series, XSM7224S Switch series
+
+</details>
+
+<details>
+
+<summary>
+
+Nokia
+
+</summary>
+
+- **Supported hardware model or plugin**: Service Router Linux, 7220 Interconnect Router, 7250 Interconnect Router
+
+</details>
+
+<details>
+
+<summary>
+
+Nvidia
+
+</summary>
+
+- **Supported hardware model or plugin**: Cumulus Linux, NVIDIA Linux Switch, NVIDIA Onyx, SN2000 Open Ethernet Switches, SN3000 Open Ethernet Switches, SN4000 Open Ethernet Switches
+
+</details>
+
+<details>
+
+<summary>
+
+Quanta Computer
+
+</summary>
+
+- **Supported hardware model or plugin**: T1000 series, T3000 series, T5000 series, T7000 series
+
+</details>
+
+<details>
+
+<summary>
+
+ZTE
+
+</summary>
+
+- **Supported hardware model or plugin**: ZXR10 2900E series, ZXR10 3900E series, ZXR10 5200 series, ZXR10 5900E series
+
+</details>
+
+<details>
+
+<summary>
+
+ZyXEL
+
+</summary>
+
+- **Supported hardware model or plugin**: MGS3520 series, XGS1900 series, XGS2210 series, XGS3700 series, XGS4600 series, XGS4700 series
+
+</details>
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/network-flow/routers/supported-routers/#page","headline":"Supported routers","description":"A list of open source, NetFlow, and sFlow routers.","url":"https://developers.cloudflare.com/network-flow/routers/supported-routers/","inLanguage":"en","image":"https://developers.cloudflare.com/network-flow/routers/supported-routers/og.png?v=de18f0b4b0c87b64","dateModified":"2026-05-07","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["NetFlow"]}
+```
+
+---
+
+---
+description: Cloudflare's Network Flow can be used to test a simulated DDoS attack.
+title: DDoS testing guide
+image: https://developers.cloudflare.com/network-flow/tutorials/ddos-testing-guide/og.png?v=9cc77f0b7494a1bd
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-flow/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# DDoS testing guide
+
+Last updated Apr 17, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-flow/tutorials/ddos-testing-guide/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+To test Network Flow (formerly Magic Network Monitoring) in a repeatable manner, simulate a DDoS attack. At a high level, you need to:
+
+1. Select and install a trusted, open source DDoS simulation tool.
+2. Conduct a small DDoS test attack in a safe test environment.
+
+## Permission requirements
+
+You need to contact Cloudflare to obtain permission before conducting a DDoS test if:
+
+- Your property is hosted in Cloudflare.
+- Internet traffic goes through Cloudflare before reaching your property.
+
+If you are an Enterprise customer with Network Flow enabled, contact your Cloudflare Account Manager before starting DDoS testing, even if the property is not hosted in Cloudflare.
+
+Refer to [Simulating test DDoS attacks](https://developers.cloudflare.com/ddos-protection/reference/simulate-ddos-attack/) for more information.
+
+If you need help conducting a simulated DDoS attack, [fill out this form ↗︎](https://forms.gle/6tBZNu7shoaCmP9h6).
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/network-flow/tutorials/ddos-testing-guide/#page","headline":"DDoS testing guide","description":"Cloudflare's Network Flow can be used to test a simulated DDoS attack.","url":"https://developers.cloudflare.com/network-flow/tutorials/ddos-testing-guide/","inLanguage":"en","image":"https://developers.cloudflare.com/network-flow/tutorials/ddos-testing-guide/og.png?v=9cc77f0b7494a1bd","dateModified":"2026-04-17","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"}}
+```
+
+---
+
+---
+description: Encrypt the network flowData sent from your router to Cloudflare by routing your network traffic through a device running the Cloudflare One Client.
+title: Encrypt network flow data
+image: https://developers.cloudflare.com/network-flow/tutorials/encrypt-network-flow-data/og.png?v=56463987f2d35ef4
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-flow/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# Encrypt network flow data
+
+Last updated May 7, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-flow/tutorials/encrypt-network-flow-data/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+You can encrypt the network flow data sent from your router to Cloudflare by [routing ↗︎](https://www.cloudflare.com/learning/network-layer/what-is-routing/) your network flow traffic through a device running the Cloudflare One Client. Encrypted network flow traffic is then forwarded from the Cloudflare One Client device to Cloudflare's network flow endpoints.
+
+To learn more about the Cloudflare One Client, and to install it on Linux, macOS, or Windows, refer to the [Cloudflare One Client documentation](https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/).
+
+## 1. Configure your devices
+
+Follow the instructions in the [Network Flow (formerly Magic Network Monitoring) API](https://developers.cloudflare.com/api/resources/magic_network_monitoring/subresources/configs/methods/edit/) to configure your devices.
+
+The `warp_devices` array at the account level is a list of WARP devices through which you can send encrypted flows. Each WARP device must have:
+
+- The Cloudflare One Client UUID. You can obtain the UUID in the UI or through the following command:
+
+  ```sh
+  warp-cli registration show
+  ```
+- A name.
+- A `router_ip` that belongs to one of your configured router IP addresses.
+
+For example:
+
+<details>
+
+<summary>
+
+Required API token permissions
+
+</summary>
+
+At least one of the following <a href="https://developers.cloudflare.com/fundamentals/api/reference/permissions/">token permissions</a> is required:
+
+- <code>Magic Network Monitoring Admin</code>
+- <code>Magic Network Monitoring Config Write</code>
+
+</details>
+
+*Update account configuration fieldsbash*
+
+```bash
+curl "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/mnm/config" \
+	--request PATCH \
+	--header "X-Auth-Email: $CLOUDFLARE_EMAIL" \
+	--header "X-Auth-Key: $CLOUDFLARE_API_KEY" \
+	--json '{
+		"warp_devices": [
+				{
+						"id": "<YOUR_WARP_DEVICE_UNIQUE_IDENTIFIER>",
+						"name": "<NAME_OF_WARP_DEVICE>",
+						"router_ip": "YOUR_ROUTER_IP"
+				}
+		]
+	}'
+```
+
+## 2. Route Network Flow traffic through the Cloudflare One Client
+
+Depending on where you installed the Cloudflare One Client, you may need to configure other devices on the subnet to route traffic through the Cloudflare One Client. If you have access to your router and it runs a version/OS supported by the Cloudflare One Client, Cloudflare recommends [Option 1](#option-1-default-gateway). This also applies if you use a software-based flow exporter (such as `softflowd`) instead of a physical router to collect and export flows.
+
+### Option 1: Default gateway
+
+If you installed the Cloudflare One Client on your router or machine collector (a computer, virtual machine, or server that collects flow information), no additional configuration is necessary. All traffic uses the router as the default gateway. Configure your flow export to send data to IP address `162.159.65.1` and port `2055` for NetFlow, or `162.159.65.1` and port `6343` for sFlow.
+
+### Option 2: Alternate gateway
+
+If you have access to the router but installed the Cloudflare One Client on another machine, you can configure the router to export flow traffic to the machine running the Cloudflare One Client. To do this:
+
+1. Set the machine's IP address as the export destination on the router.
+2. Configure the export port on the router to match the listening port on the Cloudflare One Client machine.
+3. Redirect traffic that arrives at your machine running the Cloudflare One Client to the following Cloudflare destination IPs and ports:
+   - **For NetFlow**: IP address `162.159.65.1` and port `2055`.
+   - **For sFlow**: IP `162.159.65.1` and port `6343`.   
+      For example, if WARP is running on a machine in your network with the IP `10.10.10.10`, and you configured it to accept traffic on port `2055` or `6343`, you need to configure your flow export-capable router to send data to `10.10.10.10` and port `2055` or `6343`.
+
+In the machine running the Cloudflare One Client, you can redirect this traffic to Cloudflare using a proxy or redirect tool of your choice. Options include:
+
+- Using `socat`, listen on the desired port for UDP traffic. Then, proxy that traffic to Network Flow's destination and port.
+  - `socat UDP-LISTEN:2055,reuseaddr,fork UDP:162.159.65.1:2055`
+  - `socat UDP-LISTEN:6343,reuseaddr,fork UDP:162.159.65.1:6343`
+- Using any other proxy or port forwarding tool, such as `netcat`, `uredir` or `iptables`.
+
+## 3. (Optional) Configure split tunnels
+
+If you do not want all traffic on your device to route through the Cloudflare One Client, [configure split tunnels/proxy mode](https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/configure/route-traffic/split-tunnels/) to either only allow Network Flow traffic towards `162.159.65.1` or exclude everything else.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/network-flow/tutorials/encrypt-network-flow-data/#page","headline":"Encrypt network flow data","description":"Encrypt the network flowData sent from your router to Cloudflare by routing your network traffic through a device running the Cloudflare One Client.","url":"https://developers.cloudflare.com/network-flow/tutorials/encrypt-network-flow-data/","inLanguage":"en","image":"https://developers.cloudflare.com/network-flow/tutorials/encrypt-network-flow-data/og.png?v=56463987f2d35ef4","dateModified":"2026-05-07","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["Shell","CLI"]}
+```
+
+---
+
+---
+description: Use the GraphQL Analytics API to retrieve Network Flow data.
+title: GraphQL Analytics
+image: https://developers.cloudflare.com/network-flow/tutorials/graphql-analytics/og.png?v=854747f00e0067f4
+---
+
+[Skip to content](#main-content)
+
+> Documentation Index  
+> Fetch the complete documentation index at: https://developers.cloudflare.com/network-flow/llms.txt  
+> Use this file to discover all available pages before exploring further.
+
+# GraphQL Analytics
+
+Last updated May 5, 2026|Copy as Markdown| [View as Markdown](https://developers.cloudflare.com/network-flow/tutorials/graphql-analytics/index.md)| [Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Use the GraphQL Analytics API to retrieve Network Flow (formerly Magic Network Monitoring) flow data.
+
+Before you begin, you must have an [API token](https://developers.cloudflare.com/analytics/graphql-api/getting-started/authentication/). For additional help getting started with GraphQL Analytics, refer to [GraphQL Analytics API](https://developers.cloudflare.com/analytics/graphql-api/).
+
+### Obtain your Cloudflare Account ID
+
+To query Network Flow data via GraphQL, you need your Cloudflare Account ID.
+
+1. Log in to the Cloudflare dashboard, and select your account.
+
+[Go to **Account home** ↗](https://dash.cloudflare.com/?to=/:account/home)
+
+2. The URL in your browser's address bar should show `https://dash.cloudflare.com/` followed by a hex string. The hex string is your Cloudflare Account ID.
+
+## Explore GraphQL schema with Network Flow example
+
+Run a test query to retrieve bits and packets aggregated in five-minute intervals. Copy and paste the following code into GraphiQL.
+
+For additional information about the Analytics schema, refer to [Explore the Analytics schema with GraphiQL](https://developers.cloudflare.com/analytics/graphql-api/getting-started/explore-graphql-schema/).
+
+```graphql
+query MagicNetworkMonitoring($accountTag: string!, $start: Time, $end: Time) {
+	viewer {
+		accounts(filter: { accountTag: $accountTag }) {
+			mnmFlowDataAdaptiveGroups(
+				filter: { datetime_gt: $start, datetime_leq: $end }
+				limit: 10
+				orderBy: [datetimeFiveMinutes_DESC]
+			) {
+				sum {
+					bits
+					packets
+				}
+				dimensions {
+					datetimeFiveMinutes
+				}
+			}
+		}
+	}
+}
+```
+
+Note
+
+Cloudflare analytics are case sensitive for paths and URIs. Make sure that filters or queries use the correct case.
+
+Was this helpful?
+
+YesNo
+
+## On this page
+
+[![](https://developers.cloudflare.com/_astro/logo.te5VL_aD.svg)Docs](https://developers.cloudflare.com/)
+
+```json
+{"@context":"https://schema.org","@type":"TechArticle","@id":"https://developers.cloudflare.com/network-flow/tutorials/graphql-analytics/#page","headline":"GraphQL Analytics","description":"Use the GraphQL Analytics API to retrieve Network Flow data.","url":"https://developers.cloudflare.com/network-flow/tutorials/graphql-analytics/","inLanguage":"en","image":"https://developers.cloudflare.com/network-flow/tutorials/graphql-analytics/og.png?v=854747f00e0067f4","dateModified":"2026-05-05","publisher":{"@type":"Organization","name":"Cloudflare","description":"One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure","url":"https://www.cloudflare.com/","sameAs":["https://github.com/cloudflare","https://www.linkedin.com/company/cloudflare","https://x.com/cloudflare"],"logo":{"@type":"ImageObject","url":"https://developers.cloudflare.com/logo.svg"},"address":{"@type":"PostalAddress","streetAddress":"101 Townsend St","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94107","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","contactType":"Customer Support","url":"https://support.cloudflare.com/","availableLanguage":["English"]},{"@type":"ContactPoint","contactType":"Sales","url":"https://www.cloudflare.com/contact/","availableLanguage":["English"]}]},"isPartOf":{"@type":"WebSite","@id":"https://developers.cloudflare.com/#website","name":"Cloudflare Docs","url":"https://developers.cloudflare.com/"},"keywords":["GraphQL"]}
+```

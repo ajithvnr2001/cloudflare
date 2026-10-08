@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-data-platform/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-data-platform.md",
+  "title": "Announcing the Cloudflare Data Platform: ingest, store, and query your data directly on Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:17.920892+00:00",
+  "html_len": 305167,
+  "md_len": 70271,
+  "depth": 0,
+  "phase": 2
+}

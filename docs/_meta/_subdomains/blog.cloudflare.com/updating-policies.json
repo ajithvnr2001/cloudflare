@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/updating-policies/",
+  "file": "_subdomains/blog.cloudflare.com/updating-policies.md",
+  "title": "Updating Policies | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:53.338198+00:00",
+  "html_len": 275777,
+  "md_len": 61575,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,210 @@
+---
+url: https://developers.cloudflare.com/cloudflare-wan/configuration/common-settings/configure-tunnel-health-alerts/
+title: Configure Tunnel Health Alerts \u00b7 Cloudflare WAN docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:10:27.250801+00:00
+---
+
+# Configure Tunnel Health Alerts · Cloudflare WAN docs
+
+> Source: https://developers.cloudflare.com/cloudflare-wan/configuration/common-settings/configure-tunnel-health-alerts/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Cloudflare WAN](https://developers.cloudflare.com/cloudflare-wan/)
+  3. /…
+
+Configuration
+
+  4. /[Common settings](https://developers.cloudflare.com/cloudflare-wan/configuration/common-settings/)
+  5. /Configure Tunnel Health Alerts
+
+
+
+# Configure Tunnel Health Alerts
+
+Last updated Aug 24, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/cloudflare-wan/configuration/common-settings/configure-tunnel-health-alerts/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+OverviewAlert dataSLO thresholdsSet up Tunnel Health AlertsTest SLOs
+
+You can configure Tunnel Health Alerts (formerly Magic Tunnel health alerts) to receive email, webhook, and PagerDuty notifications when the percentage of successful health checks for an IPsec/GRE tunnel drops below the selected [service-level objective (SLO)](https://developers.cloudflare.com/cloudflare-wan/reference/how-cloudflare-calculates-tunnel-health-alerts/).
+
+Tunnel health alerts monitor the health check success rate of each IPsec/GRE tunnel included in the alert that has actively transferred customer traffic (excluding health check traffic) over the past six hours. You can define an SLO threshold for the percentage of health checks that must be successful for each IPsec/GRE tunnel. If the number of successful health checks for the IPsec/GRE tunnel(s) included in the alert drops below the SLO threshold, an alert fires.
+
+## Alert data
+
+When a Tunnel health alert fires, you receive the following data in the email, webhook, and PagerDuty notification:
+
+  * Cloudflare account name
+  * Cloudflare account ID
+  * Alert type
+  * Tunnel name
+  * Tunnel ID
+  * Tunnel status
+  * Alert SLO
+  * Timestamp
+
+
+
+## SLO thresholds
+
+Currently, there are seven SLO threshold values that you can configure through the Cloudflare dashboard. For a more granular approach, use the API.
+
+The SLO threshold for Tunnel health alerts is the percentage of successful health checks for each IPsec/GRE tunnel in the alert:
+
+Alert Sensitivity Level | SLO threshold  
+---|---  
+Minimum | 95.0  
+Very low | 96.0  
+Low | 97.0  
+Medium | 98.0  
+High | 99.0  
+Very high | 99.5  
+Maximum | 99.9  
+  
+The time it takes to receive alerts depends on the sensitivity level you configure for your SLO thresholds. Higher sensitivity levels notify you faster when a tunnel's health degrades, but they may also trigger alerts for brief or minor disruptions. Lower sensitivity levels reduce the chance of false alarms but may delay notifications for less severe issues.
+
+While the underlying detection timing remains consistent across sensitivity levels, the speed of notification depends on how significantly the tunnel's health has dropped and the sensitivity you have chosen. Cloudflare recommends that you test SLO thresholds to determine which one better serves your use case.
+
+For details, refer to [How Cloudflare calculates Tunnel health alerts](https://developers.cloudflare.com/cloudflare-wan/reference/how-cloudflare-calculates-tunnel-health-alerts/).
+
+## Set up Tunnel Health Alerts
+
+  1. Go to the **Notifications** page.
+
+[ Go to **Notifications** ↗ ](https://dash.cloudflare.com/?to=/:account/notifications)
+  2. Select **Add**.
+
+  3. From the **Product** drop-down menu, select **Cloudflare WAN**.
+
+  4. Select **Tunnel Health Check Alert** > **Select** to add a notification. You can add alerts by tunnel or by data center (beta).
+
+
+
+
+Alert by tunnel
+
+  5. Select **Alert by tunnel**.
+  6. Enter a name and description for the notification.
+  7. Add webhooks or an email address for the person who should receive the notification, and select **Next**.
+  8. Select the **Alert Sensitivity Level** threshold from the drop-down menu. The threshold defaults to _Medium (98.0)_. You can choose from options between _Minimum (95.0)_ and _Maximum (99.9)_. For details, refer to [How Cloudflare calculates Tunnel health alerts](https://developers.cloudflare.com/cloudflare-wan/reference/how-cloudflare-calculates-tunnel-health-alerts/).
+  9. From the **Alert interval** drop-down menu, set the minimum amount of time that must pass before Cloudflare sends you a duplicate alert. Options range from five minutes to seven days.
+  10. Enable **Set as default alert for any new tunnels created in the future** if you want the alert sensitivity level you chose to be automatically applied to all new tunnels you create.
+  11. Select **Next**.
+  12. Choose the tunnels you want to receive alerts for. You can search by specific tunnel names, or filter them by type (Generic Routing Encapsulation (GRE), Internet Protocol Security (IPsec), and CNI (Cloudflare Network Interconnect)). Select **Next**.
+  13. Review the details of your alert. If these details are correct, select **Create alert**.
+
+
+
+Alert by data center (beta)
+
+  5. Select **Alert by data center**.
+  6. Enter a name and description for the notification.
+  7. Add webhooks or an email address for the person who should receive the notification, and select **Next**.
+  8. Select the **Alert Sensitivity Level** threshold from the drop-down menu. The threshold defaults to _Medium (98.0)_. You can choose from options between _Minimum (95.0)_ and _Maximum (99.9)_. For details, refer to [How Cloudflare calculates Tunnel health alerts](https://developers.cloudflare.com/cloudflare-wan/reference/how-cloudflare-calculates-tunnel-health-alerts/).
+  9. From the **Alert interval** drop-down menu, set the minimum amount of time that must pass before Cloudflare sends you a duplicate alert. Options range from five minutes to seven days.
+  10. Choose the data centers you want to receive alerts for, and select **Next**.
+  11. Choose the tunnels you want to receive alerts for. You can search by specific tunnel names, or filter them by type (GRE, IPsec, and CNI (Cloudflare Network Interconnect)). Select **Next**.
+  12. Review the details of your alert. If these details are correct, select **Create alert**.
+
+
+
+Note
+
+For details on specific permissions, refer to the [documentation for Notifications](https://developers.cloudflare.com/notifications/get-started/).
+
+Send a [`POST` request](https://developers.cloudflare.com/api/resources/alerting/subresources/policies/methods/create/) to create a tunnel health alert. You can set tunnel health alerts with any SLO value between `0` and `99.99`.
+
+Required API token permissions
+
+At least one of the following [token permissions](https://developers.cloudflare.com/fundamentals/api/reference/permissions/) is required:
+
+  * `Notifications Write`
+  * `Account Settings Write`
+
+Create a Notification policybash
+    
+    
+    curl "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/alerting/v3/policies" \
+    	--request POST \
+    	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+    	--json '{
+    		"alert_type": "magic_wan_tunnel_health",
+    		"description": "<DESCRIBE_POLICY>",
+    		"enabled": true,
+    		"filters": {
+    				"slo": [
+    						"99.9"
+    				]
+    		},
+    		"mechanisms": {
+    				"email": [
+    						{
+    								"id": "EMAIL_ADDRESS"
+    						}
+    				]
+    		},
+    		"name": "<DESCRIBE_ALERT>"
+    	}'
+    
+    
+      	{
+      		"result": [
+      			{
+      				"id": "f174e90a-fafe-4643-bbbc-4a0ed4fc8415",
+      				"name": "<POLICY_NAME>",
+      				"description": "<POLICY_DESCRIPTION>",
+      				"enabled": true,
+      				"alert_type": "magic_wan_tunnel_health",
+      				"mechanisms": {
+      					"email": [
+      						{
+      							"id": "<YOUR_EMAIL>"
+      						}
+      					]
+      				},
+      				"created": "2024-09-11T14:13:29.585658Z",
+      				"modified": "2024-09-11T14:13:29.585658Z",
+      				"conditions": {
+      					"and": [
+      						{
+      							"or": [
+      								{
+      									"<=": [
+      										{
+      											"var": "slo"
+      										},
+      										"99.9"
+      									]
+      								}
+      							]
+      						}
+      					]
+      				},
+      				"filters": {
+      					"slo": ["99.9"]
+      				}
+      			}
+      		],
+      		"success": true,
+      		"errors": [],
+      		"messages": []
+      	}
+      
+
+## Test SLOs
+
+To test whether a specific alert sensitivity level works for your use case:
+
+  1. Create an alert with a specific sensitivity level for a tunnel with active traffic within the past six hours. If you are unsure which tunnels to choose, refer to [Network Analytics](https://developers.cloudflare.com/cloudflare-wan/analytics/network-analytics/) for real-time and historical data about your network.
+  2. Disable the tunnel you are testing, so there is 100% [health check failure](https://developers.cloudflare.com/cloudflare-wan/reference/tunnel-health-checks/).
+  3. The time it takes for Cloudflare to send you an alert depends on the sensitivity you chose for your alerts.
+
+
+
+[PreviousUpdate tunnel health checks frequency](https://developers.cloudflare.com/cloudflare-wan/configuration/common-settings/update-tunnel-health-checks-frequency/)[NextEnable user roles](https://developers.cloudflare.com/cloudflare-wan/configuration/common-settings/enable-roles/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/cloudflare-wan/configuration/common-settings/configure-tunnel-health-alerts.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

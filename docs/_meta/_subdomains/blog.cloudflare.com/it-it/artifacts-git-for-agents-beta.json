@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/it-it/artifacts-git-for-agents-beta/",
+  "file": "_subdomains/blog.cloudflare.com/it-it/artifacts-git-for-agents-beta.md",
+  "title": "Artefatti: archiviazione versionata che parla Git | Il blog di Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:40.138145+00:00",
+  "html_len": 218019,
+  "md_len": 30362,
+  "depth": 0,
+  "phase": 2
+}

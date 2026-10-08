@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.tls_client_auth.cert_issuer_serial/",
+  "file": "ruleset-engine/rules-language/fields/reference/cf.tls_client_auth.cert_issuer_serial.md",
+  "title": "cf.tls_client_auth.cert_issuer_serial \u00b7 Cloudflare Ruleset Engine docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:15:06.843865+00:00",
+  "html_len": 92193,
+  "md_len": 1283,
+  "depth": 0
+}

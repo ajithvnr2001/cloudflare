@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/ai-gateway/integrations/",
+  "file": "ai-gateway/integrations.md",
+  "title": "Integrations \u00b7 Cloudflare AI Gateway docs",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (691 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T07:04:38.359661+00:00",
+  "html_len": 143842,
+  "md_len": 742,
+  "depth": 0
+}

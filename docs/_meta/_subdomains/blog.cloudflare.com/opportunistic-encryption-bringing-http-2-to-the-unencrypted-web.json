@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/opportunistic-encryption-bringing-http-2-to-the-unencrypted-web/",
+  "file": "_subdomains/blog.cloudflare.com/opportunistic-encryption-bringing-http-2-to-the-unencrypted-web.md",
+  "title": "Opportunistic Encryption: Bringing HTTP/2 to the unencrypted web | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:31.299998+00:00",
+  "html_len": 299555,
+  "md_len": 67354,
+  "depth": 0,
+  "phase": 2
+}

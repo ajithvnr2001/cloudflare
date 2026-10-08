@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/security/what-is-dns-filtering/",
+  "file": "_subdomains/www.cloudflare.com/learning/security/what-is-dns-filtering.md",
+  "title": "What is DNS filtering? | Secure DNS servers",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:59.505549+00:00",
+  "html_len": 250021,
+  "md_len": 27143,
+  "depth": 0,
+  "phase": 2
+}

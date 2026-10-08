@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/first-round-of-french-election-2024-party-attacks-and-a-modest-traffic-dip/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/first-round-of-french-election-2024-party-attacks-and-a-modest-traffic-dip.md",
+  "title": "Premier tour de l'\u00e9lection fran\u00e7aise\u00a0: les attaques lanc\u00e9es contre des partis politiques et une l\u00e9g\u00e8re chute du trafic | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:02.626046+00:00",
+  "html_len": 216979,
+  "md_len": 29915,
+  "depth": 0,
+  "phase": 2
+}

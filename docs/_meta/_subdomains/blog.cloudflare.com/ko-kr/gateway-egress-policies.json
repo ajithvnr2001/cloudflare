@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/gateway-egress-policies/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/gateway-egress-policies.md",
+  "title": "Cloudflare Zero Trust\ub85c \uc804\uc6a9 \uc1a1\uc2e0 IP \uc0ac\uc6a9 \uad00\ub9ac \ubc0f \uc81c\uc5b4 | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:21.043711+00:00",
+  "html_len": 215913,
+  "md_len": 32227,
+  "depth": 0,
+  "phase": 2
+}

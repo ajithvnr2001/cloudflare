@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/support/troubleshooting/general-troubleshooting/geographic-traffic-routing/",
+  "file": "support/troubleshooting/general-troubleshooting/geographic-traffic-routing.md",
+  "title": "Cloudflare traffic not being sent to the geographically closest data center \u00b7 Cloudflare Support docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:15:52.697786+00:00",
+  "html_len": 111357,
+  "md_len": 2009,
+  "depth": 0
+}

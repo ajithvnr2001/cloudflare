@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/cloudflare-one/integrations/identity-providers/citrixadc-saml/",
+  "file": "cloudflare-one/integrations/identity-providers/citrixadc-saml.md",
+  "title": "Citrix ADC (SAML) \u00b7 Cloudflare One docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:09:02.448275+00:00",
+  "html_len": 277220,
+  "md_len": 5741,
+  "depth": 0
+}

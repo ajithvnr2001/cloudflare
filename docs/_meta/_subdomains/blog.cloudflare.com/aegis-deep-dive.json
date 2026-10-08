@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/aegis-deep-dive/",
+  "file": "_subdomains/blog.cloudflare.com/aegis-deep-dive.md",
+  "title": "Simplify allowlist management and lock down origin access with Cloudflare Aegis | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:22.285532+00:00",
+  "html_len": 309248,
+  "md_len": 77683,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/framework-guides/web-apps/more-web-frameworks/docusaurus/",
+  "file": "workers/framework-guides/web-apps/more-web-frameworks/docusaurus.md",
+  "title": "Docusaurus \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:28.478916+00:00",
+  "html_len": 244401,
+  "md_len": 6769,
+  "depth": 0
+}

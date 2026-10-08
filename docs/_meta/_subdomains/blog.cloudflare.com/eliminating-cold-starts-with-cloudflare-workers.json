@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/eliminating-cold-starts-with-cloudflare-workers/",
+  "file": "_subdomains/blog.cloudflare.com/eliminating-cold-starts-with-cloudflare-workers.md",
+  "title": "Eliminating cold starts with Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:04.470884+00:00",
+  "html_len": 289255,
+  "md_len": 61658,
+  "depth": 0,
+  "phase": 2
+}

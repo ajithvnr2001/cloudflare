@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/framework-guides/web-apps/vue/",
+  "file": "workers/framework-guides/web-apps/vue.md",
+  "title": "Vue \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:29.959044+00:00",
+  "html_len": 218763,
+  "md_len": 6450,
+  "depth": 0
+}

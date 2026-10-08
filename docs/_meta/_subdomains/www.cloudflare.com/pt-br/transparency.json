@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/pt-br/transparency/",
+  "file": "_subdomains/www.cloudflare.com/pt-br/transparency.md",
+  "title": "Cloudflare Transparency Report | Cloudflare",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (106 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:08:09.195768+00:00",
+  "html_len": 544090,
+  "md_len": 12426,
+  "depth": 1,
+  "phase": 2
+}

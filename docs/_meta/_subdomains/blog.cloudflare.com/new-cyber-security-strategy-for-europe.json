@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/new-cyber-security-strategy-for-europe/",
+  "file": "_subdomains/blog.cloudflare.com/new-cyber-security-strategy-for-europe.md",
+  "title": "A New Cybersecurity Strategy for Europe | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:00.867993+00:00",
+  "html_len": 270498,
+  "md_len": 58306,
+  "depth": 0,
+  "phase": 2
+}

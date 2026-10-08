@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/how-we-scaled-nginx-and-saved-the-world-54-years-every-day/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/how-we-scaled-nginx-and-saved-the-world-54-years-every-day.md",
+  "title": "\u6269\u5c55nginx\u2014\u2014\u6bcf\u4e00\u5929\u4e3a\u4e16\u754c\u8282\u7701\u51fa54\u5e74\u7684\u65f6\u95f4 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:29.046020+00:00",
+  "html_len": 214984,
+  "md_len": 27150,
+  "depth": 0,
+  "phase": 2
+}

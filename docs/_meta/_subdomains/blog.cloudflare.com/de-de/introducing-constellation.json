@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/introducing-constellation/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/introducing-constellation.md",
+  "title": "Wir pr\u00e4sentieren Constellation, die KI f\u00fcr den Cloudflare-L\u00f6sungsstapel | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:43.632578+00:00",
+  "html_len": 249037,
+  "md_len": 38579,
+  "depth": 0,
+  "phase": 2
+}

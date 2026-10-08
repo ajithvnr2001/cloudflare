@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/r2-sql-aggregations/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/r2-sql-aggregations.md",
+  "title": "R2 SQL\u3067\u306eGROUP BY\u3001SUM\u3001\u305d\u306e\u4ed6\u306e\u96c6\u7d04\u30af\u30a8\u30ea\u306e\u30b5\u30dd\u30fc\u30c8\u3092\u767a\u8868 | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:46.916157+00:00",
+  "html_len": 223567,
+  "md_len": 33224,
+  "depth": 0,
+  "phase": 2
+}

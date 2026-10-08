@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/languages/rust/crates/",
+  "file": "workers/languages/rust/crates.md",
+  "title": "Supported crates \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:32.993902+00:00",
+  "html_len": 183778,
+  "md_len": 3416,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/es-es/press/press-kit/",
+  "file": "_subdomains/www.cloudflare.com/es-es/press/press-kit.md",
+  "title": "Dossier de prensa de Cloudflare | Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:15:49.500234+00:00",
+  "html_len": 298157,
+  "md_len": 17076,
+  "depth": 1,
+  "phase": 2
+}

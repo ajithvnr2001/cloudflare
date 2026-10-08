@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/how-cloudflare-erroneously-throttled-a-customers-web-traffic/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/how-cloudflare-erroneously-throttled-a-customers-web-traffic.md",
+  "title": "Cloudflare \u5982\u4f55\u932f\u8aa4\u5730\u5c0d\u5ba2\u6236\u7684 Web \u6d41\u91cf\u9032\u884c\u4e86\u7bc0\u6d41\u8655\u7406 | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:18.810905+00:00",
+  "html_len": 186024,
+  "md_len": 20232,
+  "depth": 0,
+  "phase": 2
+}

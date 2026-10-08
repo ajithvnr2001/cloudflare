@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/aes-cbc-going-the-way-of-the-dodo/",
+  "file": "_subdomains/blog.cloudflare.com/aes-cbc-going-the-way-of-the-dodo.md",
+  "title": "AES-CBC is going the way of the dodo | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:16.389920+00:00",
+  "html_len": 272547,
+  "md_len": 56265,
+  "depth": 0,
+  "phase": 2
+}

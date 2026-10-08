@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/basin-catalog/config-examples/snowflake/",
+  "file": "basin-catalog/config-examples/snowflake.md",
+  "title": "Snowflake \u00b7 Cloudflare Basin Catalog docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:05:23.266096+00:00",
+  "html_len": 99145,
+  "md_len": 3665,
+  "depth": 0
+}

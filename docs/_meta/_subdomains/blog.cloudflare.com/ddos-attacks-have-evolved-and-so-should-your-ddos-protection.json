@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ddos-attacks-have-evolved-and-so-should-your-ddos-protection/",
+  "file": "_subdomains/blog.cloudflare.com/ddos-attacks-have-evolved-and-so-should-your-ddos-protection.md",
+  "title": "DDoS attacks have evolved, and so should your DDoS protection | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:23.682642+00:00",
+  "html_len": 290967,
+  "md_len": 62186,
+  "depth": 0,
+  "phase": 2
+}

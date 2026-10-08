@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflares-new-control-panel/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflares-new-control-panel.md",
+  "title": "CloudFlare's New Dashboard | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:05.208786+00:00",
+  "html_len": 283315,
+  "md_len": 60237,
+  "depth": 0,
+  "phase": 2
+}

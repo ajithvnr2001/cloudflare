@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/snowflake-r2-global-data-lake/",
+  "file": "_subdomains/blog.cloudflare.com/snowflake-r2-global-data-lake.md",
+  "title": "Use Snowflake with R2 to extend your global data lake | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:33.083370+00:00",
+  "html_len": 294373,
+  "md_len": 60619,
+  "depth": 0,
+  "phase": 2
+}

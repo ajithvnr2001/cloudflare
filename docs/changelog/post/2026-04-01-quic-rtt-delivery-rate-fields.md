@@ -1,0 +1,57 @@
+---
+url: https://developers.cloudflare.com/changelog/post/2026-04-01-quic-rtt-delivery-rate-fields/
+title: New QUIC RTT and delivery rate fields \u00b7 Changelog
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:06:44.095310+00:00
+---
+
+# New QUIC RTT and delivery rate fields · Changelog
+
+> Source: https://developers.cloudflare.com/changelog/post/2026-04-01-quic-rtt-delivery-rate-fields/
+
+# Changelog
+
+New updates and improvements at Cloudflare.
+
+[ View RSS feeds ](https://developers.cloudflare.com/fundamentals/new-features/available-rss-feeds/)[ Subscribe to RSS ](https://developers.cloudflare.com/changelog/rss/index.xml)
+
+[Back to all posts](https://developers.cloudflare.com/changelog)April 1, 2026
+
+## New QUIC RTT and delivery rate fields
+
+[Rules](https://developers.cloudflare.com/rules/)
+
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-01-quic-rtt-delivery-rate-fields/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Two new fields are now available in rule expressions that surface Layer 4 transport telemetry from the client connection. Together with the existing [`cf.timings.client_tcp_rtt_msec`](https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/) field, these fields give you a complete picture of connection quality for both TCP and QUIC traffic — enabling transport-aware rules without requiring any client-side changes.
+
+Previously, QUIC RTT and delivery rate data was only available via the `Server-Timing: cfL4` response header. These new fields make the same data available directly in rule expressions, so you can use them in Transform Rules, WAF Custom Rules, and other phases that support dynamic fields.
+
+#### New fields
+
+Field | Type | Description  
+---|---|---  
+`cf.timings.client_quic_rtt_msec` | Integer | The smoothed QUIC round-trip time (RTT) between Cloudflare and the client in milliseconds. Only populated for QUIC (HTTP/3) connections. Returns `0` for TCP connections.  
+`cf.edge.l4.delivery_rate` | Integer | The most recent data delivery rate estimate for the client connection, in bytes per second. Returns `0` when L4 statistics are not available for the request.  
+  
+#### Example: Route slow connections to a lightweight origin
+
+Use a request header transform rule to tag requests from high-latency connections, so your origin can serve a lighter page variant:
+
+**Rule expression:**
+    
+    
+    cf.timings.client_tcp_rtt_msec > 200 or cf.timings.client_quic_rtt_msec > 200
+
+**Header modifications:**
+
+Operation | Header name | Value  
+---|---|---  
+Set | `X-High-Latency` | `true`  
+  
+#### Example: Match low-bandwidth connections
+    
+    
+    cf.edge.l4.delivery_rate > 0 and cf.edge.l4.delivery_rate < 100000
+
+For more information, refer to [Request Header Transform Rules](https://developers.cloudflare.com/rules/transform/request-header-modification/) and the [fields reference](https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/).

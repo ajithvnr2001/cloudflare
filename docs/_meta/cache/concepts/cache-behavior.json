@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/cache/concepts/cache-behavior/",
+  "file": "cache/concepts/cache-behavior.md",
+  "title": "Head Requests and Set-Cookie Headers \u00b7 Cloudflare Cache (CDN) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:05:41.183715+00:00",
+  "html_len": 109040,
+  "md_len": 3065,
+  "depth": 0
+}

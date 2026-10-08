@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/atlanta-cloudflares-16th-data-center/",
+  "file": "_subdomains/blog.cloudflare.com/atlanta-cloudflares-16th-data-center.md",
+  "title": "Atlanta: CloudFlare's 16th Data Center | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:59.360905+00:00",
+  "html_len": 272785,
+  "md_len": 56105,
+  "depth": 0,
+  "phase": 2
+}

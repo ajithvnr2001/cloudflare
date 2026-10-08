@@ -1,0 +1,10 @@
+{
+  "url": "https://radar.cloudflare.com/categorization-feedback/",
+  "file": "_subdomains/radar.cloudflare.com/categorization-feedback.md",
+  "title": "Domain Categorization | Cloudflare Radar",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (560 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T07:21:47.301541+00:00",
+  "html_len": 129943,
+  "md_len": 1563,
+  "depth": 1
+}

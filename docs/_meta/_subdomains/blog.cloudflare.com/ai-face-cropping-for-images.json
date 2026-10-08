@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ai-face-cropping-for-images/",
+  "file": "_subdomains/blog.cloudflare.com/ai-face-cropping-for-images.md",
+  "title": "How we built AI face cropping for Images | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:58.250264+00:00",
+  "html_len": 318755,
+  "md_len": 76243,
+  "depth": 0,
+  "phase": 2
+}

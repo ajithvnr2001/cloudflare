@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/products/bot-mitigation/",
+  "file": "_subdomains/www.cloudflare.com/products/bot-mitigation.md",
+  "title": "Cloudflare Bot Management - Stop Bad Bots",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:15.788194+00:00",
+  "html_len": 289067,
+  "md_len": 7719,
+  "depth": 0,
+  "phase": 2
+}

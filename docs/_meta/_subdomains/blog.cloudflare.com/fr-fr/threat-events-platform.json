@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/threat-events-platform/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/threat-events-platform.md",
+  "title": "Lancement d'un contexte am\u00e9lior\u00e9 pour l'activit\u00e9 des acteurs mena\u00e7ants \u00e0 l'aide de Cloudforce One, notre plateforme consacr\u00e9e aux \u00e9v\u00e9nements malveillants | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:00.870511+00:00",
+  "html_len": 239525,
+  "md_len": 41287,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/telefonica-tech/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/telefonica-tech.md",
+  "title": "Telef\u00f3nica Tech",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:51.204355+00:00",
+  "html_len": 201223,
+  "md_len": 3683,
+  "depth": 0,
+  "phase": 2
+}

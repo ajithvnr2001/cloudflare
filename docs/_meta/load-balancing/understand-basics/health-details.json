@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/load-balancing/understand-basics/health-details/",
+  "file": "load-balancing/understand-basics/health-details.md",
+  "title": "How endpoints and pools become unhealthy \u00b7 Cloudflare Load Balancing docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:12:07.037433+00:00",
+  "html_len": 126343,
+  "md_len": 7284,
+  "depth": 0
+}

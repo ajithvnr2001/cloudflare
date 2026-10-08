@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/why-is-there-a-v-in-sigsegv-segmentation-fault/",
+  "file": "_subdomains/blog.cloudflare.com/why-is-there-a-v-in-sigsegv-segmentation-fault.md",
+  "title": "Why is there a \"V\" in SIGSEGV Segmentation Fault? | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:08.271096+00:00",
+  "html_len": 278882,
+  "md_len": 57862,
+  "depth": 0,
+  "phase": 2
+}

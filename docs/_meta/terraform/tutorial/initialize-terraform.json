@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/terraform/tutorial/initialize-terraform/",
+  "file": "terraform/tutorial/initialize-terraform.md",
+  "title": "Introduction to Terraform init \u00b7 Cloudflare Terraform docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:01.584522+00:00",
+  "html_len": 129300,
+  "md_len": 6580,
+  "depth": 0
+}

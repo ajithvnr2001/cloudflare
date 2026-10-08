@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-is-pci-certified/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-is-pci-certified.md",
+  "title": "CloudFlare is PCI Certified | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:20.762913+00:00",
+  "html_len": 264644,
+  "md_len": 54064,
+  "depth": 0,
+  "phase": 2
+}

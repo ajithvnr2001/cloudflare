@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/kentik-and-magic-transit/",
+  "file": "_subdomains/blog.cloudflare.com/kentik-and-magic-transit.md",
+  "title": "Cloudflare partners with Kentik to enhance on-demand DDoS protection | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:31.525454+00:00",
+  "html_len": 283213,
+  "md_len": 62096,
+  "depth": 0,
+  "phase": 2
+}

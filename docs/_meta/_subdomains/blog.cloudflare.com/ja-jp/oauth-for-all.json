@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/oauth-for-all/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/oauth-for-all.md",
+  "title": "OAuth\u3067\u3001\u3059\u3079\u3066\u306e\u4eba\u306bCloudflare\u30a2\u30d7\u30ea\u30a8\u30b3\u30b7\u30b9\u30c6\u30e0\u3092\u958b\u653e | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:29.222383+00:00",
+  "html_len": 220490,
+  "md_len": 32631,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-deluge-of-digital-attacks-against-journalists/",
+  "file": "_subdomains/blog.cloudflare.com/the-deluge-of-digital-attacks-against-journalists.md",
+  "title": "The deluge of digital attacks against journalists | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:29.516419+00:00",
+  "html_len": 289032,
+  "md_len": 64105,
+  "depth": 0,
+  "phase": 2
+}

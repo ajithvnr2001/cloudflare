@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/couponbirds/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/couponbirds.md",
+  "title": "CouponBirds & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:24.870540+00:00",
+  "html_len": 211001,
+  "md_len": 8036,
+  "depth": 0,
+  "phase": 2
+}

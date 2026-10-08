@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/going-bgp-zombie-hunting/",
+  "file": "_subdomains/blog.cloudflare.com/going-bgp-zombie-hunting.md",
+  "title": "BGP zombies and excessive path hunting | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:51.900876+00:00",
+  "html_len": 319095,
+  "md_len": 74053,
+  "depth": 0,
+  "phase": 2
+}

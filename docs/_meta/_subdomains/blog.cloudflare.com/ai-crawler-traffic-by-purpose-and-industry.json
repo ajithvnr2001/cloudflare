@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ai-crawler-traffic-by-purpose-and-industry/",
+  "file": "_subdomains/blog.cloudflare.com/ai-crawler-traffic-by-purpose-and-industry.md",
+  "title": "A deeper look at AI crawlers: breaking down traffic by purpose and industry | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:06.647178+00:00",
+  "html_len": 313861,
+  "md_len": 70332,
+  "depth": 0,
+  "phase": 2
+}

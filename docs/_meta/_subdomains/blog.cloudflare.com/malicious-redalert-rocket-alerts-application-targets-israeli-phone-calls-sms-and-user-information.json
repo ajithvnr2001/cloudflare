@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/malicious-redalert-rocket-alerts-application-targets-israeli-phone-calls-sms-and-user-information/",
+  "file": "_subdomains/blog.cloudflare.com/malicious-redalert-rocket-alerts-application-targets-israeli-phone-calls-sms-and-user-information.md",
+  "title": "Malicious \u201cRedAlert - Rocket Alerts\u201d application targets Israeli phone calls, SMS, and user information | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:08.363493+00:00",
+  "html_len": 312455,
+  "md_len": 69269,
+  "depth": 0,
+  "phase": 2
+}

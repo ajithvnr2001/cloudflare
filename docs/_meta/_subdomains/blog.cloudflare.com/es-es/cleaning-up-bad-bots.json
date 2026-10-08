@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/cleaning-up-bad-bots/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/cleaning-up-bad-bots.md",
+  "title": "Limpieza de bots malos (y el entorno) | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:53.825920+00:00",
+  "html_len": 212158,
+  "md_len": 33301,
+  "depth": 0,
+  "phase": 2
+}

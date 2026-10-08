@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/learning/cloud/cloud-native-security/",
+  "file": "_subdomains/www.cloudflare.com/learning/cloud/cloud-native-security.md",
+  "title": "What is cloud-native security?",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:04:03.289965+00:00",
+  "html_len": 220615,
+  "md_len": 19196,
+  "depth": 0,
+  "phase": 2
+}

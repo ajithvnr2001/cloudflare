@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/exposing-go-on-the-internet/",
+  "file": "_subdomains/blog.cloudflare.com/exposing-go-on-the-internet.md",
+  "title": "So you want to expose Go on the Internet | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:24.861270+00:00",
+  "html_len": 297133,
+  "md_len": 66739,
+  "depth": 0,
+  "phase": 2
+}

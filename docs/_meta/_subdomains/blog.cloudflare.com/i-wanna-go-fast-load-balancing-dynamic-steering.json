@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/i-wanna-go-fast-load-balancing-dynamic-steering/",
+  "file": "_subdomains/blog.cloudflare.com/i-wanna-go-fast-load-balancing-dynamic-steering.md",
+  "title": "I Wanna Go Fast - Load Balancing Dynamic Steering | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:26.511825+00:00",
+  "html_len": 286900,
+  "md_len": 62821,
+  "depth": 0,
+  "phase": 2
+}

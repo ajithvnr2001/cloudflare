@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/content-signals-policy/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/content-signals-policy.md",
+  "title": "Donner le choix aux utilisateurs gr\u00e2ce \u00e0 la nouvelle politique sur les signaux de contenu lanc\u00e9e par Cloudflare | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:47.655008+00:00",
+  "html_len": 240945,
+  "md_len": 38009,
+  "depth": 0,
+  "phase": 2
+}

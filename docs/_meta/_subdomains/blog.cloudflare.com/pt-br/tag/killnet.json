@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/tag/killnet/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/tag/killnet.md",
+  "title": "Posts com a tag \"Killnet (PT)\" \u2014 Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:07:00.570057+00:00",
+  "html_len": 109017,
+  "md_len": 1936,
+  "depth": 1,
+  "phase": 2
+}

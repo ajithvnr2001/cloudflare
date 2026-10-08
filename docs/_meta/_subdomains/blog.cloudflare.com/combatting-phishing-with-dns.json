@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/combatting-phishing-with-dns/",
+  "file": "_subdomains/blog.cloudflare.com/combatting-phishing-with-dns.md",
+  "title": "Why Some Phishing Emails Are Mysteriously Disappearing | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:53.079458+00:00",
+  "html_len": 288814,
+  "md_len": 60654,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-outage/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-outage.md",
+  "title": "Cloudflare outage caused by bad software deploy (updated) | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:40.233003+00:00",
+  "html_len": 265086,
+  "md_len": 55695,
+  "depth": 0,
+  "phase": 2
+}

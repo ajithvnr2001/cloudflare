@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/radar/investigate/bgp-anomalies/",
+  "file": "radar/investigate/bgp-anomalies.md",
+  "title": "BGP anomalies \u00b7 Cloudflare Radar docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:12:50.524389+00:00",
+  "html_len": 170056,
+  "md_len": 16075,
+  "depth": 0
+}

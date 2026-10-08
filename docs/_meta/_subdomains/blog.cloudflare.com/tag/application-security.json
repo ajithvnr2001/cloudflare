@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/application-security/",
+  "file": "_subdomains/blog.cloudflare.com/tag/application-security.md",
+  "title": "Posts tagged \"Application Security\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:08:18.005863+00:00",
+  "html_len": 183598,
+  "md_len": 18297,
+  "depth": 1,
+  "phase": 2
+}

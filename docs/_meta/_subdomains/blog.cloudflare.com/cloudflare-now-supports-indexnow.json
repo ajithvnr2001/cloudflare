@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-now-supports-indexnow/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-now-supports-indexnow.md",
+  "title": "Crawler Hints Update: Cloudflare Supports IndexNow and Announces General Availability | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:54.421109+00:00",
+  "html_len": 293764,
+  "md_len": 65768,
+  "depth": 0,
+  "phase": 2
+}

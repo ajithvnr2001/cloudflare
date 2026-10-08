@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/adopting-opentelemetry-for-our-logging-pipeline/",
+  "file": "_subdomains/blog.cloudflare.com/adopting-opentelemetry-for-our-logging-pipeline.md",
+  "title": "Adopting OpenTelemetry for our logging pipeline | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:47.743157+00:00",
+  "html_len": 289139,
+  "md_len": 68746,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/workers-for-platforms-ga/",
+  "file": "_subdomains/blog.cloudflare.com/workers-for-platforms-ga.md",
+  "title": "The easiest way to build a modern SaaS application | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:07.292048+00:00",
+  "html_len": 305169,
+  "md_len": 65999,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/where-mobile-traffic-more-and-less-popular/",
+  "file": "_subdomains/blog.cloudflare.com/where-mobile-traffic-more-and-less-popular.md",
+  "title": "Where is mobile traffic the most and least popular? | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:00.267895+00:00",
+  "html_len": 294849,
+  "md_len": 67329,
+  "depth": 0,
+  "phase": 2
+}

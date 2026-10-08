@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/http3-the-past-present-and-future/",
+  "file": "_subdomains/blog.cloudflare.com/http3-the-past-present-and-future.md",
+  "title": "HTTP/3: the past, the present, and the future | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:07.076844+00:00",
+  "html_len": 329929,
+  "md_len": 77097,
+  "depth": 0,
+  "phase": 2
+}

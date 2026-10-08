@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/workers-kv-is-ga/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/workers-kv-is-ga.md",
+  "title": "Workers KV - La base de donn\u00e9es distribu\u00e9e de Cloudflare | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:07.304953+00:00",
+  "html_len": 267754,
+  "md_len": 43054,
+  "depth": 0,
+  "phase": 2
+}

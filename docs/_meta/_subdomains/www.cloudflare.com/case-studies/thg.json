@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/thg/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/thg.md",
+  "title": "THG & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:51.970840+00:00",
+  "html_len": 213085,
+  "md_len": 12153,
+  "depth": 0,
+  "phase": 2
+}

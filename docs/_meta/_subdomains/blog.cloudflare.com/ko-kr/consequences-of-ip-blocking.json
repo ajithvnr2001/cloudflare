@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/consequences-of-ip-blocking/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/consequences-of-ip-blocking.md",
+  "title": "IP \uc8fc\uc18c \ucc28\ub2e8\uc73c\ub85c \uc778\ud55c \uc758\ub3c4\ud558\uc9c0 \uc54a\uc740 \uacb0\uacfc | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:05.946324+00:00",
+  "html_len": 236770,
+  "md_len": 44332,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/introducing-browser-insights/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/introducing-browser-insights.md",
+  "title": "Presentaci\u00f3n de Browser Insights | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:08.873613+00:00",
+  "html_len": 213743,
+  "md_len": 30477,
+  "depth": 0,
+  "phase": 2
+}

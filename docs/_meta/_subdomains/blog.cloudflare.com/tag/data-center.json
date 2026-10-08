@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/data-center/",
+  "file": "_subdomains/blog.cloudflare.com/tag/data-center.md",
+  "title": "Posts tagged \"Data Center\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:08:43.285800+00:00",
+  "html_len": 159143,
+  "md_len": 12518,
+  "depth": 1,
+  "phase": 2
+}

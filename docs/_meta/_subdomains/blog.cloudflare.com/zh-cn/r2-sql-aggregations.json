@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/r2-sql-aggregations/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/r2-sql-aggregations.md",
+  "title": "\u9686\u91cd\u5ba3\u5e03 R2 SQL \u652f\u6301 GROUP BY\u3001SUM \u548c\u5176\u4ed6\u805a\u5408\u67e5\u8be2 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:46:46.225807+00:00",
+  "html_len": 213459,
+  "md_len": 28005,
+  "depth": 0,
+  "phase": 2
+}

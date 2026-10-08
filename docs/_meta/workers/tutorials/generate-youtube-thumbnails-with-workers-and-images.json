@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/tutorials/generate-youtube-thumbnails-with-workers-and-images/",
+  "file": "workers/tutorials/generate-youtube-thumbnails-with-workers-and-images.md",
+  "title": "Generate YouTube thumbnails with Workers and Cloudflare Image Resizing \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:18:01.376434+00:00",
+  "html_len": 279204,
+  "md_len": 21532,
+  "depth": 0
+}

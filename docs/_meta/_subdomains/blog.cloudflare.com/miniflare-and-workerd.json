@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/miniflare-and-workerd/",
+  "file": "_subdomains/blog.cloudflare.com/miniflare-and-workerd.md",
+  "title": "Doubling down on local development with Workers: Miniflare meets workerd | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:55.048423+00:00",
+  "html_len": 288354,
+  "md_len": 62604,
+  "depth": 0,
+  "phase": 2
+}

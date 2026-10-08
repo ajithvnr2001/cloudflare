@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/leroy-merlin/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/leroy-merlin.md",
+  "title": "Leroy Merlin & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:37.368753+00:00",
+  "html_len": 205913,
+  "md_len": 7672,
+  "depth": 0,
+  "phase": 2
+}

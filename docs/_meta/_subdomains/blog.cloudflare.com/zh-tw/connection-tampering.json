@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/connection-tampering/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/connection-tampering.md",
+  "title": "\u5c0d\u7b2c\u4e09\u65b9\u9023\u7dda\u7ac4\u6539\u7684\u5168\u7403\u8a55\u4f30 | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:11.273003+00:00",
+  "html_len": 251727,
+  "md_len": 41216,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-four-critical-security-flaws-that-resulte/",
+  "file": "_subdomains/blog.cloudflare.com/the-four-critical-security-flaws-that-resulte.md",
+  "title": "The Four Critical Security Flaws that Resulted in Last Friday's Hack | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:03.600360+00:00",
+  "html_len": 272521,
+  "md_len": 57481,
+  "depth": 0,
+  "phase": 2
+}

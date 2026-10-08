@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/casb-ga/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/casb-ga.md",
+  "title": "Detecta problemas de seguridad en tus aplicaciones SaaS con Cloudflare CASB | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:51.388371+00:00",
+  "html_len": 213683,
+  "md_len": 30062,
+  "depth": 0,
+  "phase": 2
+}

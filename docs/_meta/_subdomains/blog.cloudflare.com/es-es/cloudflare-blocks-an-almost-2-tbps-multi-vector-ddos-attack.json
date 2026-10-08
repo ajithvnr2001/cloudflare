@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/cloudflare-blocks-an-almost-2-tbps-multi-vector-ddos-attack/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/cloudflare-blocks-an-almost-2-tbps-multi-vector-ddos-attack.md",
+  "title": "Cloudflare bloquea un ataque DDoS multivector de casi 2 TB/s | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:56.801218+00:00",
+  "html_len": 207619,
+  "md_len": 26371,
+  "depth": 0,
+  "phase": 2
+}

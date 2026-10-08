@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/getting-paid-a-cloudflare-braintree-meetup/",
+  "file": "_subdomains/blog.cloudflare.com/getting-paid-a-cloudflare-braintree-meetup.md",
+  "title": "How to choose a payment platform: a CloudFlare + Braintree meetup | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:46.386306+00:00",
+  "html_len": 263100,
+  "md_len": 54098,
+  "depth": 0,
+  "phase": 2
+}

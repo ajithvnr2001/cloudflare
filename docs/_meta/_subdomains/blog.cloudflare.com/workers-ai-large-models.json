@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/workers-ai-large-models/",
+  "file": "_subdomains/blog.cloudflare.com/workers-ai-large-models.md",
+  "title": "Powering the agents: Workers AI now runs large models, starting with Kimi K2.5 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:42.546854+00:00",
+  "html_len": 304297,
+  "md_len": 68980,
+  "depth": 0,
+  "phase": 2
+}

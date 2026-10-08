@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/facebook/",
+  "file": "_subdomains/blog.cloudflare.com/tag/facebook.md",
+  "title": "Posts tagged \"Facebook\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:08:58.698085+00:00",
+  "html_len": 111778,
+  "md_len": 1937,
+  "depth": 1,
+  "phase": 2
+}

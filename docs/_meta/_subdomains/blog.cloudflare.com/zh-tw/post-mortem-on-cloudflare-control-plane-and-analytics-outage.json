@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/post-mortem-on-cloudflare-control-plane-and-analytics-outage/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/post-mortem-on-cloudflare-control-plane-and-analytics-outage.md",
+  "title": "Cloudflare \u63a7\u5236\u5e73\u9762\u548c\u5206\u6790\u670d\u52d9\u4e2d\u65b7\u7684\u4e8b\u5f8c\u5206\u6790 | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:39:46.171170+00:00",
+  "html_len": 188061,
+  "md_len": 24264,
+  "depth": 0,
+  "phase": 2
+}

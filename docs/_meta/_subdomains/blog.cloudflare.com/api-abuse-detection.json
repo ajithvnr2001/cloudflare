@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/api-abuse-detection/",
+  "file": "_subdomains/blog.cloudflare.com/api-abuse-detection.md",
+  "title": "Announcing API Abuse Detection | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:05.248841+00:00",
+  "html_len": 303949,
+  "md_len": 68321,
+  "depth": 0,
+  "phase": 2
+}

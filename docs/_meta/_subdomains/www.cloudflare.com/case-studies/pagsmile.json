@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/pagsmile/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/pagsmile.md",
+  "title": "Pagsmile & Cloudflare | Case Study",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:44.211406+00:00",
+  "html_len": 224887,
+  "md_len": 13403,
+  "depth": 0,
+  "phase": 2
+}

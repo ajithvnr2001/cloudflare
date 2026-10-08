@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/website-performance-matters/",
+  "file": "_subdomains/blog.cloudflare.com/website-performance-matters.md",
+  "title": "Website Performance Matters | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:25.140700+00:00",
+  "html_len": 269290,
+  "md_len": 57134,
+  "depth": 0,
+  "phase": 2
+}

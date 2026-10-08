@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/per-customer-bot-defenses/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/per-customer-bot-defenses.md",
+  "title": "\u5728 AI \u65f6\u4ee3\uff0c\u4e3a\u6bcf\u4f4d\u5ba2\u6237\u6784\u5efa\u4e13\u5c5e\u7684\u9ad8\u7ea7\u673a\u5668\u4eba\u5a01\u80c1\u9632\u62a4 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:50.252407+00:00",
+  "html_len": 215355,
+  "md_len": 31245,
+  "depth": 0,
+  "phase": 2
+}

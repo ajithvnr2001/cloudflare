@@ -1,0 +1,173 @@
+---
+url: https://developers.cloudflare.com/durable-objects/examples/use-kv-from-durable-objects/
+title: Durable Objects - Use KV within Durable Objects \u00b7 Cloudflare Durable Objects docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:11:08.894919+00:00
+---
+
+# Durable Objects - Use KV within Durable Objects · Cloudflare Durable Objects docs
+
+> Source: https://developers.cloudflare.com/durable-objects/examples/use-kv-from-durable-objects/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Durable Objects](https://developers.cloudflare.com/durable-objects/)
+  3. /Examples
+  4. /Use Workers KV from Durable Objects
+
+
+
+# Use Workers KV from Durable Objects
+
+Read and write to/from Workers KV within a Durable Object
+
+Last updated Apr 21, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/durable-objects/examples/use-kv-from-durable-objects/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+The following Worker script shows you how to configure a Durable Object to read from and/or write to a [Workers KV namespace](https://developers.cloudflare.com/kv/concepts/how-kv-works/). This is useful when using a Durable Object to coordinate between multiple clients, and allows you to serialize writes to KV and/or broadcast a single read from KV to hundreds or thousands of clients connected to a single Durable Object [using WebSockets](https://developers.cloudflare.com/durable-objects/best-practices/websockets/).
+
+Prerequisites:
+
+  * A [KV namespace](https://developers.cloudflare.com/kv/api/) created via the Cloudflare dashboard or the [wrangler CLI](https://developers.cloudflare.com/workers/wrangler/install-and-update/).
+  * A [configured binding](https://developers.cloudflare.com/kv/concepts/kv-bindings/) for the `kv_namespace` in the Cloudflare dashboard or Wrangler file.
+  * A [Durable Object namespace binding](https://developers.cloudflare.com/workers/wrangler/configuration/#durable-objects).
+
+
+
+Configure your Wrangler file as follows:
+    
+    
+    {
+    	"$schema": "./node_modules/wrangler/config-schema.json",
+    	"name": "my-worker",
+    	"main": "src/index.ts",
+    	"kv_namespaces": [
+    		{
+    			"binding": "YOUR_KV_NAMESPACE",
+    			"id": "<id_of_your_namespace>"
+    		}
+    	],
+    	"durable_objects": {
+    		"bindings": [
+    			{
+    				"name": "YOUR_DO_CLASS",
+    				"class_name": "YourDurableObject"
+    			}
+    		]
+    	}
+    }
+    
+    
+    "$schema" = "./node_modules/wrangler/config-schema.json"
+    name = "my-worker"
+    main = "src/index.ts"
+    
+    [[kv_namespaces]]
+    binding = "YOUR_KV_NAMESPACE"
+    id = "<id_of_your_namespace>"
+    
+    [[durable_objects.bindings]]
+    name = "YOUR_DO_CLASS"
+    class_name = "YourDurableObject"
+    
+    
+    import { DurableObject } from "cloudflare:workers";
+    
+    interface Env {
+    	YOUR_KV_NAMESPACE: KVNamespace;
+    	YOUR_DO_CLASS: DurableObjectNamespace;
+    }
+    
+    export default {
+    	async fetch(req: Request, env: Env): Promise<Response> {
+    		// Assume each Durable Object is mapped to a roomId in a query parameter
+    		// In a production application, this will likely be a roomId defined by your application
+    		// that you validate (and/or authenticate) first.
+    		let url = new URL(req.url);
+    		let roomIdParam = url.searchParams.get("roomId");
+    
+    		if (roomIdParam) {
+    			// Get a stub that allows you to call that Durable Object
+    			let durableObjectStub = env.YOUR_DO_CLASS.getByName(roomIdParam);
+    
+    			// Pass the request to that Durable Object and await the response
+    			// This invokes the constructor once on your Durable Object class (defined further down)
+    			// on the first initialization, and the fetch method on each request.
+    			//
+    			// You could pass the original Request to the Durable Object's fetch method
+    			// or a simpler URL with just the roomId.
+    			let response = await durableObjectStub.fetch(`http://do/${roomId}`);
+    
+    			// This would return the value you read from KV *within* the Durable Object.
+    			return response;
+    		}
+    	},
+    };
+    
+    export class YourDurableObject extends DurableObject {
+    	constructor(
+    		public state: DurableObjectState,
+    		env: Env,
+    	) {
+    		super(state, env);
+    	}
+    
+    	async fetch(request: Request) {
+    		// Error handling elided for brevity.
+    		// Write to KV
+    		await this.env.YOUR_KV_NAMESPACE.put("some-key");
+    
+    		// Fetch from KV
+    		let val = await this.env.YOUR_KV_NAMESPACE.get("some-other-key");
+    
+    		return Response.json(val);
+    	}
+    }
+    
+    
+    from workers import DurableObject, Response, WorkerEntrypoint
+    from urllib.parse import urlparse, parse_qs
+    
+    class Default(WorkerEntrypoint):
+    	async def fetch(self, req):
+    		# Assume each Durable Object is mapped to a roomId in a query parameter
+    		# In a production application, this will likely be a roomId defined by your application
+    		# that you validate (and/or authenticate) first.
+    		url = req.url
+    		parsed_url = urlparse(url)
+    		room_id_param = parse_qs(parsed_url.query).get('roomId', [None])[0]
+    
+    		if room_id_param:
+    			# Get a stub that allows you to call that Durable Object
+    			durable_object_stub = self.env.YOUR_DO_CLASS.getByName(room_id_param)
+    
+    			# Pass the request to that Durable Object and await the response
+    			# This invokes the constructor once on your Durable Object class (defined further down)
+    			# on the first initialization, and the fetch method on each request.
+    			#
+    			# You could pass the original Request to the Durable Object's fetch method
+    			# or a simpler URL with just the roomId.
+    			response = await durable_object_stub.fetch(f"http://do/{room_id_param}")
+    
+    			# This would return the value you read from KV *within* the Durable Object.
+    			return response
+    
+    class YourDurableObject(DurableObject):
+    	def __init__(self, state, env):
+    		super().__init__(state, env)
+    
+    	async def fetch(self, request):
+    		# Error handling elided for brevity.
+    		# Write to KV
+    		await self.env.YOUR_KV_NAMESPACE.put("some-key", "some-value")
+    
+    		# Fetch from KV
+    		val = await self.env.YOUR_KV_NAMESPACE.get("some-other-key")
+    
+    		return Response.json(val)
+
+[PreviousDurable Object Time To Live](https://developers.cloudflare.com/durable-objects/examples/durable-object-ttl/)[NextAgents ↗︎](https://developers.cloudflare.com/agents/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/durable-objects/examples/use-kv-from-durable-objects.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

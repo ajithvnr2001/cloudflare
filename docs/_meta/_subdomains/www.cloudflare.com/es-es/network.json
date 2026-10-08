@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/es-es/network/",
+  "file": "_subdomains/www.cloudflare.com/es-es/network.md",
+  "title": "Red global de Cloudflare: servicios y privacidad de datos | Cloudflare",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (128 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T08:16:25.194102+00:00",
+  "html_len": 627870,
+  "md_len": 26015,
+  "depth": 1,
+  "phase": 2
+}

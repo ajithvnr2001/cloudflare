@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/terraform/how-to/",
+  "file": "terraform/how-to.md",
+  "title": "How-to guides \u00b7 Cloudflare Terraform docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:00.823568+00:00",
+  "html_len": 93794,
+  "md_len": 974,
+  "depth": 0
+}

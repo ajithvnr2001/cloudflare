@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/tag/pipelines/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/tag/pipelines.md",
+  "title": "Beitr\u00e4ge mit dem Tag \"Pipelines\" \u2014 Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:16:53.752013+00:00",
+  "html_len": 106896,
+  "md_len": 1416,
+  "depth": 1,
+  "phase": 2
+}

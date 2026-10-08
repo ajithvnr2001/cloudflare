@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ko-kr/foundation-dns/",
+  "file": "_subdomains/blog.cloudflare.com/ko-kr/foundation-dns.md",
+  "title": "Cloudflare\uc758 \uc0c8\ub85c\uc6b4 \ud504\ub9ac\ubbf8\uc5c4 DNS \uc624\ud37c\ub9c1\uc778 Foundation DNS \ubc1c\ud45c | Cloudflare \ube14\ub85c\uadf8",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:53.833540+00:00",
+  "html_len": 237597,
+  "md_len": 41385,
+  "depth": 0,
+  "phase": 2
+}

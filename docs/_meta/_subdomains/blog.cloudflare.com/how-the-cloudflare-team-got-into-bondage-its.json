@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-the-cloudflare-team-got-into-bondage-its/",
+  "file": "_subdomains/blog.cloudflare.com/how-the-cloudflare-team-got-into-bondage-its.md",
+  "title": "How the CloudFlare Team Got Into Bondage (It's Not What You Think) | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:38.693937+00:00",
+  "html_len": 286417,
+  "md_len": 67701,
+  "depth": 0,
+  "phase": 2
+}

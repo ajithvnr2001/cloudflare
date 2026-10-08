@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/quantifying-the-impact-of-cloudbleed/",
+  "file": "_subdomains/blog.cloudflare.com/quantifying-the-impact-of-cloudbleed.md",
+  "title": "Quantifying the Impact of \"Cloudbleed\" | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:37.837071+00:00",
+  "html_len": 301046,
+  "md_len": 76525,
+  "depth": 0,
+  "phase": 2
+}

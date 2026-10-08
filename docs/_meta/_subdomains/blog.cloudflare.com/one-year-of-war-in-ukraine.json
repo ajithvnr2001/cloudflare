@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/one-year-of-war-in-ukraine/",
+  "file": "_subdomains/blog.cloudflare.com/one-year-of-war-in-ukraine.md",
+  "title": "One year of war in Ukraine: Internet trends, attacks, and resilience | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:43.915258+00:00",
+  "html_len": 440922,
+  "md_len": 111463,
+  "depth": 0,
+  "phase": 2
+}

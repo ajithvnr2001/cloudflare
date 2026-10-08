@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/app-fund-2-0/",
+  "file": "_subdomains/blog.cloudflare.com/app-fund-2-0.md",
+  "title": "Cloudflare Apps Fund 2.0 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:07.087688+00:00",
+  "html_len": 265316,
+  "md_len": 54805,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/transform/response-header-modification/reference/header-format/",
+  "file": "rules/transform/response-header-modification/reference/header-format.md",
+  "title": "Format of HTTP response header names and values \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:57.952623+00:00",
+  "html_len": 132038,
+  "md_len": 1914,
+  "depth": 0
+}

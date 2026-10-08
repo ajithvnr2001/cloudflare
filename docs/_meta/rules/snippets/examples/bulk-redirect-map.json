@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/snippets/examples/bulk-redirect-map/",
+  "file": "rules/snippets/examples/bulk-redirect-map.md",
+  "title": "Bulk redirect based on a map object \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:53.459938+00:00",
+  "html_len": 127868,
+  "md_len": 2045,
+  "depth": 0
+}

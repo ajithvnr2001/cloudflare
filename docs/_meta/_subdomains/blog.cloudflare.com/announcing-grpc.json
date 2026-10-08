@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/announcing-grpc/",
+  "file": "_subdomains/blog.cloudflare.com/announcing-grpc.md",
+  "title": "Announcing support for gRPC | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:55.946162+00:00",
+  "html_len": 275321,
+  "md_len": 60541,
+  "depth": 0,
+  "phase": 2
+}

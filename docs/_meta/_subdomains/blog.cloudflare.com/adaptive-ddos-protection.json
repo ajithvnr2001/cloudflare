@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/adaptive-ddos-protection/",
+  "file": "_subdomains/blog.cloudflare.com/adaptive-ddos-protection.md",
+  "title": "Introducing Cloudflare Adaptive DDoS Protection - our new traffic profiling system for mitigating DDoS attacks | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:36:25.680570+00:00",
+  "html_len": 289880,
+  "md_len": 62131,
+  "depth": 0,
+  "phase": 2
+}

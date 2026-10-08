@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/url-forwarding/examples/redirect-all-different-domain-root/",
+  "file": "rules/url-forwarding/examples/redirect-all-different-domain-root.md",
+  "title": "Redirect requests for a domain to a new domain \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:15:00.536837+00:00",
+  "html_len": 130999,
+  "md_len": 2539,
+  "depth": 0
+}

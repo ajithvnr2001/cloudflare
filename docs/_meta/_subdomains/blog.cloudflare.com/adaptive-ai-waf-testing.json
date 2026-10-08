@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/adaptive-ai-waf-testing/",
+  "file": "_subdomains/blog.cloudflare.com/adaptive-ai-waf-testing.md",
+  "title": "We tested our own WAF with frontier AI models. Here\u2019s what we found | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:28.544709+00:00",
+  "html_len": 305303,
+  "md_len": 72212,
+  "depth": 0,
+  "phase": 2
+}

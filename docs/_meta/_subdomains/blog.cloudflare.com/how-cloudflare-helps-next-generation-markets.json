@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-cloudflare-helps-next-generation-markets/",
+  "file": "_subdomains/blog.cloudflare.com/how-cloudflare-helps-next-generation-markets.md",
+  "title": "How Cloudflare helps next-generation markets | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:24.125541+00:00",
+  "html_len": 324348,
+  "md_len": 79432,
+  "depth": 0,
+  "phase": 2
+}

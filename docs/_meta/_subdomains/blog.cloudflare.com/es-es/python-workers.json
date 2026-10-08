@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/python-workers/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/python-workers.md",
+  "title": "Usamos Python en Workers con Pyodide y WebAssembly | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:26.810804+00:00",
+  "html_len": 267387,
+  "md_len": 59984,
+  "depth": 0,
+  "phase": 2
+}

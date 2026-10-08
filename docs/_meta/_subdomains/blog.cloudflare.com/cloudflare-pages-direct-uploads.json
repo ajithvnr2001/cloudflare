@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-pages-direct-uploads/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-pages-direct-uploads.md",
+  "title": "Introducing Direct Uploads for Cloudflare Pages | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:54.087881+00:00",
+  "html_len": 288635,
+  "md_len": 61513,
+  "depth": 0,
+  "phase": 2
+}

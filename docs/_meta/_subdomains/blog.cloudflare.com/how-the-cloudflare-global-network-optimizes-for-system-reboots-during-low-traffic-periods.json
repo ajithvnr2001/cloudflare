@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-the-cloudflare-global-network-optimizes-for-system-reboots-during-low-traffic-periods/",
+  "file": "_subdomains/blog.cloudflare.com/how-the-cloudflare-global-network-optimizes-for-system-reboots-during-low-traffic-periods.md",
+  "title": "How the Cloudflare global network optimizes for system reboots during low-traffic periods | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:18.778617+00:00",
+  "html_len": 305354,
+  "md_len": 68201,
+  "depth": 0,
+  "phase": 2
+}

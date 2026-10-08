@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-har-sanitizer-secure-har-sharing/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-har-sanitizer-secure-har-sharing.md",
+  "title": "Introducing HAR Sanitizer: secure HAR sharing | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:06.475137+00:00",
+  "html_len": 278562,
+  "md_len": 62154,
+  "depth": 0,
+  "phase": 2
+}

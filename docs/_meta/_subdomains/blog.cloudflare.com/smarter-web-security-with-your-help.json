@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/smarter-web-security-with-your-help/",
+  "file": "_subdomains/blog.cloudflare.com/smarter-web-security-with-your-help.md",
+  "title": "Smarter Web Security, With Your Help | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:48.049300+00:00",
+  "html_len": 266552,
+  "md_len": 55983,
+  "depth": 0,
+  "phase": 2
+}

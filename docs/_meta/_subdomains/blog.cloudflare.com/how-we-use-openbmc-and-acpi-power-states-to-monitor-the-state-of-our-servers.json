@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-we-use-openbmc-and-acpi-power-states-to-monitor-the-state-of-our-servers/",
+  "file": "_subdomains/blog.cloudflare.com/how-we-use-openbmc-and-acpi-power-states-to-monitor-the-state-of-our-servers.md",
+  "title": "Is this thing on? Using OpenBMC and ACPI power states for reliable server boot | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:32.647783+00:00",
+  "html_len": 347213,
+  "md_len": 80221,
+  "depth": 0,
+  "phase": 2
+}

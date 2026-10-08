@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/building-jetflow-a-framework-for-flexible-performant-data-pipelines-at-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/building-jetflow-a-framework-for-flexible-performant-data-pipelines-at-cloudflare.md",
+  "title": "Building Jetflow: a framework for flexible, performant data pipelines at Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:49:59.288555+00:00",
+  "html_len": 303039,
+  "md_len": 70991,
+  "depth": 0,
+  "phase": 2
+}

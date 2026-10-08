@@ -1,0 +1,10 @@
+{
+  "url": "https://www.cloudflare.com/learning/bots/what-is-a-bot/",
+  "file": "_subdomains/www.cloudflare.com/learning/bots/what-is-a-bot.md",
+  "title": "What is a bot? | Learning Center",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:24:30.468146+00:00",
+  "html_len": 195138,
+  "md_len": 7574,
+  "depth": 1
+}

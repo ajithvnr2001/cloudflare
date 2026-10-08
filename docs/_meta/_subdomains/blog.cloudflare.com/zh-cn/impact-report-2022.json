@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/impact-report-2022/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/impact-report-2022.md",
+  "title": "\u7528\u6211\u4eec\u7684\u6700\u65b0\u5f71\u54cd\u62a5\u544a\u4e3a 2022 \u5e74\u753b\u4e0a\u5706\u6ee1\u53e5\u53f7 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:08.048849+00:00",
+  "html_len": 187572,
+  "md_len": 21298,
+  "depth": 0,
+  "phase": 2
+}

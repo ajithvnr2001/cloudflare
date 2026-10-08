@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-apps/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-apps.md",
+  "title": "Introducing CloudFlare Apps: Fast, Safe, and One-Click Simple | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:43.903868+00:00",
+  "html_len": 269399,
+  "md_len": 56530,
+  "depth": 0,
+  "phase": 2
+}

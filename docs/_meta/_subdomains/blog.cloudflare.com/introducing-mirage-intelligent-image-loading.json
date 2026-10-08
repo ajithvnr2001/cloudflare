@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-mirage-intelligent-image-loading/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-mirage-intelligent-image-loading.md",
+  "title": "Introducing Mirage: Automatic Responsive Web Design via Intelligent Image Loading | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:03.407957+00:00",
+  "html_len": 278225,
+  "md_len": 59650,
+  "depth": 0,
+  "phase": 2
+}

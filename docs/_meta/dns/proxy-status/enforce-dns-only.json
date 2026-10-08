@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/dns/proxy-status/enforce-dns-only/",
+  "file": "dns/proxy-status/enforce-dns-only.md",
+  "title": "Enforce DNS-only \u00b7 Cloudflare DNS docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:11:01.135246+00:00",
+  "html_len": 156296,
+  "md_len": 10440,
+  "depth": 0
+}

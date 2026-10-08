@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-workers-dashboard-logs/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-workers-dashboard-logs.md",
+  "title": "Introducing logs from the dashboard for Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:11.434353+00:00",
+  "html_len": 285869,
+  "md_len": 59166,
+  "depth": 0,
+  "phase": 2
+}

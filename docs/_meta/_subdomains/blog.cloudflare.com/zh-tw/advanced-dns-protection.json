@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-tw/advanced-dns-protection/",
+  "file": "_subdomains/blog.cloudflare.com/zh-tw/advanced-dns-protection.md",
+  "title": "Advanced DNS Protection\uff1a\u7de9\u89e3\u8907\u96dc\u7684 DNS DDoS \u653b\u64ca | Cloudflare \u90e8\u843d\u683c",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:39:32.481866+00:00",
+  "html_len": 217900,
+  "md_len": 28864,
+  "depth": 0,
+  "phase": 2
+}

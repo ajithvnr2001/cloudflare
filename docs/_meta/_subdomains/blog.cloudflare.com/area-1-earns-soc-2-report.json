@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/area-1-earns-soc-2-report/",
+  "file": "_subdomains/blog.cloudflare.com/area-1-earns-soc-2-report.md",
+  "title": "Cloudflare Area 1 earns SOC 2 report | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:25.889968+00:00",
+  "html_len": 272806,
+  "md_len": 56563,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/introducing-network-discovery/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/introducing-network-discovery.md",
+  "title": "Novedad: Private Network Discovery | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:57.257711+00:00",
+  "html_len": 208383,
+  "md_len": 29381,
+  "depth": 0,
+  "phase": 2
+}

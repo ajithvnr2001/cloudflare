@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/id-id/phishing-protection-browser/",
+  "file": "_subdomains/blog.cloudflare.com/id-id/phishing-protection-browser.md",
+  "title": "Kontrol input pada situs yang mencurigakan dengan Cloudflare Browser Isolation | Blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:22.922819+00:00",
+  "html_len": 172669,
+  "md_len": 13916,
+  "depth": 0,
+  "phase": 2
+}

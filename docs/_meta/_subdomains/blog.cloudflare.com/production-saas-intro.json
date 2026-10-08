@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/production-saas-intro/",
+  "file": "_subdomains/blog.cloudflare.com/production-saas-intro.md",
+  "title": "An Open-Source CMS on the Cloudflare Stack: Introductory Post | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:50:50.064047+00:00",
+  "html_len": 295093,
+  "md_len": 70020,
+  "depth": 0,
+  "phase": 2
+}

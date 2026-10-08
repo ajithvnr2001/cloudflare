@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/marlo-beauty/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/marlo-beauty.md",
+  "title": "Marlo Beauty & Cloudflare | Customer Story",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:38.308544+00:00",
+  "html_len": 204306,
+  "md_len": 6520,
+  "depth": 0,
+  "phase": 2
+}

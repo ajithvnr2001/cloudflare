@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-la/forge-open-source-generation-pipeline/",
+  "file": "_subdomains/blog.cloudflare.com/es-la/forge-open-source-generation-pipeline.md",
+  "title": "Forge, el proceso de c\u00f3digo abierto para generar SDK, interfaces de l\u00ednea de comandos, documentaci\u00f3n y mucho m\u00e1s | El blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:19.588456+00:00",
+  "html_len": 206748,
+  "md_len": 24317,
+  "depth": 0,
+  "phase": 2
+}

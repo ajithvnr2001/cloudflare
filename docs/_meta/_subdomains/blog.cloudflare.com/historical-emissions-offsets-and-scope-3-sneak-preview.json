@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/historical-emissions-offsets-and-scope-3-sneak-preview/",
+  "file": "_subdomains/blog.cloudflare.com/historical-emissions-offsets-and-scope-3-sneak-preview.md",
+  "title": "Historical emissions offsets (and Scope 3 sneak preview) | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:49.847371+00:00",
+  "html_len": 288304,
+  "md_len": 66672,
+  "depth": 0,
+  "phase": 2
+}

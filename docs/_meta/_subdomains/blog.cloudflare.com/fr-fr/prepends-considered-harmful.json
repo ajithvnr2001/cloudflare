@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/prepends-considered-harmful/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/prepends-considered-harmful.md",
+  "title": "Pourquoi les communaut\u00e9s BGP sont pr\u00e9f\u00e9rables aux ajouts de pr\u00e9fixes AS-path | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:44:15.281578+00:00",
+  "html_len": 258979,
+  "md_len": 47042,
+  "depth": 0,
+  "phase": 2
+}

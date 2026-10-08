@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-we-train-ai-to-uncover-malicious-javascript-intent-and-make-web-surfing-safer/",
+  "file": "_subdomains/blog.cloudflare.com/how-we-train-ai-to-uncover-malicious-javascript-intent-and-make-web-surfing-safer.md",
+  "title": "How we train AI to uncover malicious JavaScript intent and make web surfing safer | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:23.790924+00:00",
+  "html_len": 348810,
+  "md_len": 80959,
+  "depth": 0,
+  "phase": 2
+}

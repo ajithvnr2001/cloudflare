@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/pt-br/tag/dns/",
+  "file": "_subdomains/blog.cloudflare.com/pt-br/tag/dns.md",
+  "title": "Posts com a tag \"DNS\" \u2014 Blog da Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:06:57.446198+00:00",
+  "html_len": 116697,
+  "md_len": 3795,
+  "depth": 1,
+  "phase": 2
+}

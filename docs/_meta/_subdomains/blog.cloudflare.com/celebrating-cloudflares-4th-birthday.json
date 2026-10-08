@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/celebrating-cloudflares-4th-birthday/",
+  "file": "_subdomains/blog.cloudflare.com/celebrating-cloudflares-4th-birthday.md",
+  "title": "Celebrating CloudFlare's 4th Birthday | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:47.594882+00:00",
+  "html_len": 270734,
+  "md_len": 56569,
+  "depth": 0,
+  "phase": 2
+}

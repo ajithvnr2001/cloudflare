@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/cloudflare-ddos-threat-report-2022-q3/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/cloudflare-ddos-threat-report-2022-q3.md",
+  "title": "Informe sobre amenazas DDoS de Cloudflare del tercer trimestre de 2022 | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:38:29.053570+00:00",
+  "html_len": 272502,
+  "md_len": 53867,
+  "depth": 0,
+  "phase": 2
+}

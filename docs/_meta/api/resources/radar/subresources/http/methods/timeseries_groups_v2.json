@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/api/resources/radar/subresources/http/methods/timeseries_groups_v2/",
+  "file": "api/resources/radar/subresources/http/methods/timeseries_groups_v2.md",
+  "title": "Get HTTP requests time series grouped by dimension | Cloudflare API",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:27:17.630962+00:00",
+  "html_len": 2193734,
+  "md_len": 12995,
+  "depth": 1
+}

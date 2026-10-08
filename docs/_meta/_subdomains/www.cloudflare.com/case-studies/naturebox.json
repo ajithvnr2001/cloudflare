@@ -1,0 +1,11 @@
+{
+  "url": "https://www.cloudflare.com/case-studies/naturebox/",
+  "file": "_subdomains/www.cloudflare.com/case-studies/naturebox.md",
+  "title": "NatureBox",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:03:41.248859+00:00",
+  "html_len": 204929,
+  "md_len": 5370,
+  "depth": 0,
+  "phase": 2
+}

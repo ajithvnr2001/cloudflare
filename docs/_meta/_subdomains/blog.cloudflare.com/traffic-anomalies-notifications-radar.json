@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/traffic-anomalies-notifications-radar/",
+  "file": "_subdomains/blog.cloudflare.com/traffic-anomalies-notifications-radar.md",
+  "title": "Traffic anomalies and notifications with Cloudflare Radar | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:45:35.670278+00:00",
+  "html_len": 353613,
+  "md_len": 80443,
+  "depth": 0,
+  "phase": 2
+}

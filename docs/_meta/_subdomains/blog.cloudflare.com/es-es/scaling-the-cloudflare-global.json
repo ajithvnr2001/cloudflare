@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/scaling-the-cloudflare-global/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/scaling-the-cloudflare-global.md",
+  "title": "La red global de Cloudflare se expande a 193 ciudades | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:11.012910+00:00",
+  "html_len": 207672,
+  "md_len": 29494,
+  "depth": 0,
+  "phase": 2
+}

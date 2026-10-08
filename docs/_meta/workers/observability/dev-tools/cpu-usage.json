@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/observability/dev-tools/cpu-usage/",
+  "file": "workers/observability/dev-tools/cpu-usage.md",
+  "title": "Profiling CPU usage \u00b7 Cloudflare Workers docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:17:34.663723+00:00",
+  "html_len": 190029,
+  "md_len": 6119,
+  "depth": 0
+}

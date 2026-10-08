@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/50-most-impersonated-brands-protect-phishing/",
+  "file": "_subdomains/blog.cloudflare.com/50-most-impersonated-brands-protect-phishing.md",
+  "title": "Top 50 most impersonated brands in phishing attacks and new tools you can use to protect your employees from them | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:58.923504+00:00",
+  "html_len": 320176,
+  "md_len": 67527,
+  "depth": 0,
+  "phase": 2
+}

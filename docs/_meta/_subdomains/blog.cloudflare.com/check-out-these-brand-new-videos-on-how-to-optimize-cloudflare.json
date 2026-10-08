@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/check-out-these-brand-new-videos-on-how-to-optimize-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/check-out-these-brand-new-videos-on-how-to-optimize-cloudflare.md",
+  "title": "Check out these brand new videos on how to optimize CloudFlare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:00:02.149000+00:00",
+  "html_len": 266945,
+  "md_len": 55427,
+  "depth": 0,
+  "phase": 2
+}

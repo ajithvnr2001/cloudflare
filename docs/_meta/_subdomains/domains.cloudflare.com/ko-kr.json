@@ -1,0 +1,11 @@
+{
+  "url": "https://domains.cloudflare.com/ko-kr/",
+  "file": "_subdomains/domains.cloudflare.com/ko-kr.md",
+  "title": "Cloudflare Registrar - Search and Buy Domains at Cost",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:21:14.421409+00:00",
+  "html_len": 255501,
+  "md_len": 5067,
+  "depth": 1,
+  "phase": 2
+}

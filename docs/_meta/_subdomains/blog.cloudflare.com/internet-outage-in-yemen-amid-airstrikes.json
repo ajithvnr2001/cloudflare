@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/internet-outage-in-yemen-amid-airstrikes/",
+  "file": "_subdomains/blog.cloudflare.com/internet-outage-in-yemen-amid-airstrikes.md",
+  "title": "Internet outage in Yemen amid airstrikes | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:42.858220+00:00",
+  "html_len": 280171,
+  "md_len": 57495,
+  "depth": 0,
+  "phase": 2
+}

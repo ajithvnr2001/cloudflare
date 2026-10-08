@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/one-more-zero-trust-thing-cloudflare-intrusion-detection/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/one-more-zero-trust-thing-cloudflare-intrusion-detection.md",
+  "title": "Noch etwas zu Zero Trust: Das Cloudflare Intrusion Detection System | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:09.155072+00:00",
+  "html_len": 207261,
+  "md_len": 31178,
+  "depth": 0,
+  "phase": 2
+}

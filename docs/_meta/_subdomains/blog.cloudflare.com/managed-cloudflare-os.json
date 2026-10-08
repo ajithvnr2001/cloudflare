@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/managed-cloudflare-os/",
+  "file": "_subdomains/blog.cloudflare.com/managed-cloudflare-os.md",
+  "title": "Cloudflare OS: your company\u2019s agent workspace, managed for you | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:26.159555+00:00",
+  "html_len": 276537,
+  "md_len": 59183,
+  "depth": 0,
+  "phase": 2
+}

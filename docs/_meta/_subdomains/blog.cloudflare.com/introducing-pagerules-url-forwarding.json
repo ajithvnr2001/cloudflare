@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/introducing-pagerules-url-forwarding/",
+  "file": "_subdomains/blog.cloudflare.com/introducing-pagerules-url-forwarding.md",
+  "title": "Introducing Page Rules: URL Forwarding | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:11.067745+00:00",
+  "html_len": 272531,
+  "md_len": 57997,
+  "depth": 0,
+  "phase": 2
+}

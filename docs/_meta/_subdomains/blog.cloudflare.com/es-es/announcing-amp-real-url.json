@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/announcing-amp-real-url/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/announcing-amp-real-url.md",
+  "title": "Anuncio de AMP Real URL | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:21.766489+00:00",
+  "html_len": 219131,
+  "md_len": 34698,
+  "depth": 0,
+  "phase": 2
+}

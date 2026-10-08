@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/workers-tcp-socket-api-connect-databases/",
+  "file": "_subdomains/blog.cloudflare.com/workers-tcp-socket-api-connect-databases.md",
+  "title": "Announcing connect() \u2014 a new API for creating TCP sockets from Cloudflare Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:32.608784+00:00",
+  "html_len": 316485,
+  "md_len": 70722,
+  "depth": 0,
+  "phase": 2
+}

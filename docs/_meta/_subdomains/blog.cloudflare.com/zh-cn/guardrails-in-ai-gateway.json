@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/guardrails-in-ai-gateway/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/guardrails-in-ai-gateway.md",
+  "title": "\u901a\u8fc7 AI Gateway \u4e2d\u7684 Guardrails \u4fdd\u62a4 AI \u4ea4\u4e92\uff0c\u5b89\u5168\u65e0\u98ce\u9669 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:58.216127+00:00",
+  "html_len": 206501,
+  "md_len": 27898,
+  "depth": 0,
+  "phase": 2
+}

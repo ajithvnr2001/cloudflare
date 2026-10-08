@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/were-hosting-a-go-hackathon/",
+  "file": "_subdomains/blog.cloudflare.com/were-hosting-a-go-hackathon.md",
+  "title": "We\u2019re Hosting a Go Hackathon! | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:59:46.017897+00:00",
+  "html_len": 265768,
+  "md_len": 53596,
+  "depth": 0,
+  "phase": 2
+}

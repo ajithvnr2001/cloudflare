@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/load-balancing-with-weighted-pools/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/load-balancing-with-weighted-pools.md",
+  "title": "\u4f7f\u7528\u52a0\u6743\u6c60\u8fdb\u884c\u8d1f\u8f7d\u5e73\u8861 | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:52:10.422338+00:00",
+  "html_len": 209004,
+  "md_len": 26547,
+  "depth": 0,
+  "phase": 2
+}

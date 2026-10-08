@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/mitigating-spectre-and-other-security-threats-the-cloudflare-workers-security-model/",
+  "file": "_subdomains/blog.cloudflare.com/mitigating-spectre-and-other-security-threats-the-cloudflare-workers-security-model.md",
+  "title": "Mitigating Spectre and Other Security Threats: The Cloudflare Workers Security Model | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:57:04.675317+00:00",
+  "html_len": 313861,
+  "md_len": 86126,
+  "depth": 0,
+  "phase": 2
+}

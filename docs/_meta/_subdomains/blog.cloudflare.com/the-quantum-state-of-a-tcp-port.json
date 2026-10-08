@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-quantum-state-of-a-tcp-port/",
+  "file": "_subdomains/blog.cloudflare.com/the-quantum-state-of-a-tcp-port.md",
+  "title": "The quantum state of a TCP port | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:01:45.425874+00:00",
+  "html_len": 365732,
+  "md_len": 78365,
+  "depth": 0,
+  "phase": 2
+}

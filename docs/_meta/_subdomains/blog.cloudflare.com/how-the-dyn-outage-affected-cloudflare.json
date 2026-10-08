@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-the-dyn-outage-affected-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/how-the-dyn-outage-affected-cloudflare.md",
+  "title": "How the Dyn outage affected Cloudflare | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:39.429147+00:00",
+  "html_len": 291407,
+  "md_len": 65618,
+  "depth": 0,
+  "phase": 2
+}

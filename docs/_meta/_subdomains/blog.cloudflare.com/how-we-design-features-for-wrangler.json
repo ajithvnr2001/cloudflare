@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-we-design-features-for-wrangler/",
+  "file": "_subdomains/blog.cloudflare.com/how-we-design-features-for-wrangler.md",
+  "title": "How We Design Features for Wrangler, the Cloudflare Workers CLI | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:02:18.171133+00:00",
+  "html_len": 309738,
+  "md_len": 67321,
+  "depth": 0,
+  "phase": 2
+}

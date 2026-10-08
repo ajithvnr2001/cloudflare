@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-acquires-baselime-expands-observability-capabilities/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-acquires-baselime-expands-observability-capabilities.md",
+  "title": "Cloudflare acquires Baselime to expand serverless application observability capabilities | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:51.568176+00:00",
+  "html_len": 291666,
+  "md_len": 65262,
+  "depth": 0,
+  "phase": 2
+}

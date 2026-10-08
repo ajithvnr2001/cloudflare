@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/cloudflare-outage-on-july-17-2020/",
+  "file": "_subdomains/blog.cloudflare.com/cloudflare-outage-on-july-17-2020.md",
+  "title": "Cloudflare outage on July 17, 2020 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:47:58.455942+00:00",
+  "html_len": 280767,
+  "md_len": 59564,
+  "depth": 0,
+  "phase": 2
+}

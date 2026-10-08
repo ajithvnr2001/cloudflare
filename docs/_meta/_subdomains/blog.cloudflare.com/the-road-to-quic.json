@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/the-road-to-quic/",
+  "file": "_subdomains/blog.cloudflare.com/the-road-to-quic.md",
+  "title": "The Road to QUIC | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:24.648078+00:00",
+  "html_len": 303647,
+  "md_len": 72806,
+  "depth": 0,
+  "phase": 2
+}

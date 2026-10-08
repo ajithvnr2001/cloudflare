@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/author/matt-tk-taylor/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/author/matt-tk-taylor.md",
+  "title": "Matt \u201cTK\u201d Taylor - Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:24:39.871066+00:00",
+  "html_len": 134457,
+  "md_len": 4134,
+  "depth": 1,
+  "phase": 2
+}

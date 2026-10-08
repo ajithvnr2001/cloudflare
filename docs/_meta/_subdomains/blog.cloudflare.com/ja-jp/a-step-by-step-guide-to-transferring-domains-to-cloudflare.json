@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/ja-jp/a-step-by-step-guide-to-transferring-domains-to-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/ja-jp/a-step-by-step-guide-to-transferring-domains-to-cloudflare.md",
+  "title": "\u30c9\u30e1\u30a4\u30f3\u3092Cloudflare\u306b\u79fb\u7ba1\u3059\u308b\u305f\u3081\u306e\u30b9\u30c6\u30c3\u30d7\u30d0\u30a4\u30b9\u30c6\u30c3\u30d7\u30ac\u30a4\u30c9 | Cloudflare \u30d6\u30ed\u30b0",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:42:10.967382+00:00",
+  "html_len": 200509,
+  "md_len": 29547,
+  "depth": 0,
+  "phase": 2
+}

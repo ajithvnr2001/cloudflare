@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/protected-quick-tunnels/",
+  "file": "_subdomains/blog.cloudflare.com/protected-quick-tunnels.md",
+  "title": "Protected Quick Tunnels: simple accountless authentication for your next dev project | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:23.246127+00:00",
+  "html_len": 305961,
+  "md_len": 67869,
+  "depth": 0,
+  "phase": 2
+}

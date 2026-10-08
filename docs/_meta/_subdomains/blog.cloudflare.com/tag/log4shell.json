@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/tag/log4shell/",
+  "file": "_subdomains/blog.cloudflare.com/tag/log4shell.md",
+  "title": "Posts tagged \"Log4Shell\" \u2014 Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T08:09:25.230052+00:00",
+  "html_len": 128396,
+  "md_len": 6091,
+  "depth": 1,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/an-ai-index-for-all-our-customers/",
+  "file": "_subdomains/blog.cloudflare.com/an-ai-index-for-all-our-customers.md",
+  "title": "An AI Index for all our customers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:51:46.194579+00:00",
+  "html_len": 296663,
+  "md_len": 65524,
+  "depth": 0,
+  "phase": 2
+}

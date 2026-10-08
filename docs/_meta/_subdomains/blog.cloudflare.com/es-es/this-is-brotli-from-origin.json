@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/this-is-brotli-from-origin/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/this-is-brotli-from-origin.md",
+  "title": "Usamos el nivel 11 de la compresi\u00f3n Brotli desde el servidor de origen e incluimos la funci\u00f3n Compression Rules | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:34.495932+00:00",
+  "html_len": 239377,
+  "md_len": 40242,
+  "depth": 0,
+  "phase": 2
+}

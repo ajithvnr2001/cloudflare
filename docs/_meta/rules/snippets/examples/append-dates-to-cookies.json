@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/rules/snippets/examples/append-dates-to-cookies/",
+  "file": "rules/snippets/examples/append-dates-to-cookies.md",
+  "title": "Append dates to cookies to use with A/B testing \u00b7 Cloudflare Rules docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:14:52.670201+00:00",
+  "html_len": 129160,
+  "md_len": 1830,
+  "depth": 0
+}

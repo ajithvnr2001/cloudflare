@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/es-es/agent-development-lifecycle/",
+  "file": "_subdomains/blog.cloudflare.com/es-es/agent-development-lifecycle.md",
+  "title": "El Ciclo de Vida de Desarrollo de Agentes ha llegado a Cloudflare | Blog de Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:35:14.953317+00:00",
+  "html_len": 240251,
+  "md_len": 42976,
+  "depth": 0,
+  "phase": 2
+}

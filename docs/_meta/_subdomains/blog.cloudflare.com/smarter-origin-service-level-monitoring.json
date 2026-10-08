@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/smarter-origin-service-level-monitoring/",
+  "file": "_subdomains/blog.cloudflare.com/smarter-origin-service-level-monitoring.md",
+  "title": "Smart(er) Origin Service Level Monitoring | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:20.151317+00:00",
+  "html_len": 293896,
+  "md_len": 64318,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/waf/detections/malicious-uploads/",
+  "file": "waf/detections/malicious-uploads.md",
+  "title": "Malicious uploads detection \u00b7 Cloudflare Web Application Firewall (WAF) docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:42.304319+00:00",
+  "html_len": 158386,
+  "md_len": 10595,
+  "depth": 0
+}

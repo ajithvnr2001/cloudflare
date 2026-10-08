@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/meta-llama-3-1-available-on-workers-ai/",
+  "file": "_subdomains/blog.cloudflare.com/meta-llama-3-1-available-on-workers-ai.md",
+  "title": "Meta Llama 3.1 now available on Workers AI | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:43.233144+00:00",
+  "html_len": 283599,
+  "md_len": 58860,
+  "depth": 0,
+  "phase": 2
+}

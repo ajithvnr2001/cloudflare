@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/how-cloudflare-images-can-make-your-life-easier/",
+  "file": "_subdomains/blog.cloudflare.com/how-cloudflare-images-can-make-your-life-easier.md",
+  "title": "How Cloudflare Images can make your life easier | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:06.780900+00:00",
+  "html_len": 271695,
+  "md_len": 57513,
+  "depth": 0,
+  "phase": 2
+}

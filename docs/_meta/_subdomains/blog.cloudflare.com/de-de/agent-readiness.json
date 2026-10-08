@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/agent-readiness/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/agent-readiness.md",
+  "title": "Wir stellen den Agententauglichkeitsscore vor. \u00dcberpr\u00fcfen Sie, ob Ihre Website agentenf\u00e4hig ist. | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:37:11.869809+00:00",
+  "html_len": 279300,
+  "md_len": 59463,
+  "depth": 0,
+  "phase": 2
+}

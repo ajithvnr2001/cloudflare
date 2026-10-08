@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/terminating-service-for-8chan/",
+  "file": "_subdomains/blog.cloudflare.com/terminating-service-for-8chan.md",
+  "title": "Terminating Service for 8Chan | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:14.274254+00:00",
+  "html_len": 274370,
+  "md_len": 61357,
+  "depth": 0,
+  "phase": 2
+}

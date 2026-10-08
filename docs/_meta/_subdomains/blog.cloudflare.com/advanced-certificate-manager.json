@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/advanced-certificate-manager/",
+  "file": "_subdomains/blog.cloudflare.com/advanced-certificate-manager.md",
+  "title": "Introducing: Advanced Certificate Manager | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:48:31.212177+00:00",
+  "html_len": 290575,
+  "md_len": 64936,
+  "depth": 0,
+  "phase": 2
+}

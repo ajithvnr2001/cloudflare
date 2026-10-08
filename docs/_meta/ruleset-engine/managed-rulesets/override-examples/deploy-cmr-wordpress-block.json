@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/ruleset-engine/managed-rulesets/override-examples/deploy-cmr-wordpress-block/",
+  "file": "ruleset-engine/managed-rulesets/override-examples/deploy-cmr-wordpress-block.md",
+  "title": "Use tag overrides to set WordPress rules to Block \u00b7 Cloudflare Ruleset Engine docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:15:01.904723+00:00",
+  "html_len": 117737,
+  "md_len": 5921,
+  "depth": 0
+}

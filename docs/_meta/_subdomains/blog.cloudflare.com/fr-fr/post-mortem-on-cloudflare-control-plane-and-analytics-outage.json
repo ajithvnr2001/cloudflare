@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/fr-fr/post-mortem-on-cloudflare-control-plane-and-analytics-outage/",
+  "file": "_subdomains/blog.cloudflare.com/fr-fr/post-mortem-on-cloudflare-control-plane-and-analytics-outage.md",
+  "title": "Analyse post-incident de la d\u00e9faillance des outils d'analyse et du plan de contr\u00f4le de Cloudflare | Le blog Cloudflare",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:39:47.611253+00:00",
+  "html_len": 229630,
+  "md_len": 48343,
+  "depth": 0,
+  "phase": 2
+}

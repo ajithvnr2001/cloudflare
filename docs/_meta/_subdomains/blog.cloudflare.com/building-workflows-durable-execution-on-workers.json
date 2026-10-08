@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/building-workflows-durable-execution-on-workers/",
+  "file": "_subdomains/blog.cloudflare.com/building-workflows-durable-execution-on-workers.md",
+  "title": "Build durable applications on Cloudflare Workers: you write the Workflows, we take care of the rest | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:32.972410+00:00",
+  "html_len": 412193,
+  "md_len": 93919,
+  "depth": 0,
+  "phase": 2
+}

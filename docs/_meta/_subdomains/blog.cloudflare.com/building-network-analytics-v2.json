@@ -1,0 +1,10 @@
+{
+  "url": "https://blog.cloudflare.com/building-network-analytics-v2/",
+  "file": "_subdomains/blog.cloudflare.com/building-network-analytics-v2.md",
+  "title": "How we built Network Analytics v2 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:23:53.582887+00:00",
+  "html_len": 324010,
+  "md_len": 75634,
+  "depth": 1
+}

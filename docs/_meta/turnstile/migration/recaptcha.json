@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/turnstile/migration/recaptcha/",
+  "file": "turnstile/migration/recaptcha.md",
+  "title": "Migrate from reCAPTCHA \u00b7 Cloudflare Turnstile docs",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:16:07.466118+00:00",
+  "html_len": 113101,
+  "md_len": 2887,
+  "depth": 0
+}

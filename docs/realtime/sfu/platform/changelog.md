@@ -1,0 +1,139 @@
+---
+url: https://developers.cloudflare.com/realtime/sfu/platform/changelog/
+title: Changelog \u00b7 Cloudflare Realtime docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:14:37.226897+00:00
+---
+
+# Changelog · Cloudflare Realtime docs
+
+> Source: https://developers.cloudflare.com/realtime/sfu/platform/changelog/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Realtime](https://developers.cloudflare.com/realtime/)
+  3. /…
+
+[Realtime SFU](https://developers.cloudflare.com/realtime/sfu/)
+
+  4. /[Platform](https://developers.cloudflare.com/realtime/sfu/platform/)
+  5. /Changelog
+
+
+
+# Changelog
+
+Last updated Sep 22, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/realtime/sfu/platform/changelog/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+[Subscribe to RSS](https://developers.cloudflare.com/realtime/sfu/platform/changelog/index.xml)
+
+## 2026-09-30
+
+**Realtime SFU WebSocket adapter is generally available**
+
+The WebSocket adapter for Cloudflare's Realtime SFU is now generally available. Any server that accepts WebSockets, such as a Durable Object, can receive live call audio as PCM samples and video as JPEG frames without implementing a WebRTC client. You can also send PCM audio into the SFU for WebRTC clients to hear.
+
+Media formats and adapter creation requests stay the same. For WebRTC-to-WebSocket streaming, the SFU now retries the same endpoint for up to 15 seconds instead of 5, with no additional API setting.
+
+Closing an adapter is now idempotent and succeeds even if the adapter has already closed.
+
+Refer to the [GA announcement](https://developers.cloudflare.com/changelog/post/2026-09-30-websocket-adapter-ga/) and [WebSocket adapter guide](https://developers.cloudflare.com/realtime/sfu/features/media-transport-adapters/websocket-adapter/).
+
+## 2026-08-13
+
+**DataChannels reliability and ordering (ordered, maxRetransmits, maxPacketLifeTime)**
+
+Publishers can choose ordering and retry settings for each named DataChannel. Every subscriber mirrors the published channel's policy in its API request and browser configuration. Use separate named channels for different policies.
+
+  * `ordered` (default `true`) controls in-order delivery. When `false`, a delayed message does not block later messages.
+  * Set `ordered: false` and omit both retry fields for reliable, unordered delivery.
+  * Set at most one of `maxRetransmits` and `maxPacketLifeTime`. Omit both for reliable delivery; `maxRetransmits: 0` explicitly requests no retransmissions.
+  * `maxPacketLifeTime` limits transport attempts, not end-to-end message age.
+  * Set the same delivery policy on local and remote `/datachannels/new` calls and each `createDataChannel()` call. Channel IDs remain endpoint-specific; `waitForAck` and `canReply` remain subscription-specific.
+  * Docs: [DataChannels](https://developers.cloudflare.com/realtime/sfu/features/datachannels/), [Connection API](https://developers.cloudflare.com/realtime/sfu/api/)
+
+
+
+## 2026-07-23
+
+**DataChannels return-to-publisher (canReply)**
+
+DataChannels now support opt-in reverse traffic from one subscriber back to the publisher on the same channel. When a subscriber pulls a remote DataChannel with `canReply: true` (or is granted it later via `datachannels/update`), the SFU admits that subscriber's messages to the publisher only.
+
+  * Opt-in per subscriber; defaults to `false`, so existing publisher-to-subscriber fan-out is unchanged.
+  * Reverse traffic is not fanned out to other subscribers.
+  * Exclusive: at most one subscriber holds `canReply` per publisher DataChannel; a new grant replaces the previous holder.
+  * Grant or revoke without re-pulling via `PUT .../datachannels/update`.
+  * Docs: [DataChannels](https://developers.cloudflare.com/realtime/sfu/features/datachannels/), [Limits, timeouts and quotas](https://developers.cloudflare.com/realtime/sfu/platform/limits/)
+
+
+
+## 2026-06-10
+
+**DataChannels subscriber acknowledgment gate (waitForAck)**
+
+DataChannels now support an opt-in subscriber acknowledgment gate. When a subscriber pulls a remote DataChannel with `waitForAck: true`, the SFU holds delivery to that subscriber until it sends its first message (the acknowledgment). This avoids losing the first messages before the subscriber is ready to handle them.
+
+  * Opt-in per subscriber; defaults to `false`, so existing behavior is unchanged.
+  * The acknowledgment is consumed by the SFU and is not forwarded, so the channel stays unidirectional.
+  * Send the acknowledgment within 30 seconds of creating the remote DataChannel.
+  * Docs: [DataChannels](https://developers.cloudflare.com/realtime/sfu/features/datachannels/), [Limits, timeouts and quotas](https://developers.cloudflare.com/realtime/sfu/platform/limits/)
+
+
+
+## 2025-11-21
+
+**WebSocket adapter video (JPEG) support**
+
+Updated Media Transport Adapters (WebSocket adapter) to support video egress as JPEG frames in addition to audio.
+
+  * Stream audio and video between WebRTC tracks and WebSocket endpoints
+  * Video egress-only as JPEG at approximately 1 FPS for snapshots, thumbnails, and computer vision pipelines
+  * Clarified media formats for PCM audio and JPEG video over Protocol Buffers
+  * Updated docs: [Adapters](https://developers.cloudflare.com/realtime/sfu/features/media-transport-adapters/), [WebSocket adapter](https://developers.cloudflare.com/realtime/sfu/features/media-transport-adapters/websocket-adapter/)
+
+
+
+## 2025-08-29
+
+**Media Transport Adapters (WebSocket) open beta**
+
+Open beta for Media Transport Adapters (WebSocket adapter) to bridge audio between WebRTC and WebSocket.
+
+  * Ingest (WebSocket → WebRTC) and Stream (WebRTC → WebSocket)
+  * Opus for WebRTC tracks; PCM over WebSocket via Protocol Buffers
+
+
+
+Docs: [Adapters](https://developers.cloudflare.com/realtime/sfu/features/media-transport-adapters/), [WebSocket adapter](https://developers.cloudflare.com/realtime/sfu/features/media-transport-adapters/websocket-adapter/)
+
+## 2024-09-25
+
+**TURN service is generally available (GA)**
+
+Cloudflare Realtime TURN service is generally available and helps address common challenges with real-time communication. For more information, refer to the [blog post](https://blog.cloudflare.com/webrtc-turn-using-anycast/) or [TURN documentation](https://developers.cloudflare.com/realtime/turn/).
+
+## 2024-04-04
+
+**Orange Meets availability**
+
+Orange Meets, Cloudflare's internal video conferencing app, is open source and available for use from [Github](https://github.com/cloudflare/orange?cf_target_id=40DF7321015C5928F9359DD01303E8C2).
+
+## 2024-04-04
+
+**Cloudflare Realtime open beta**
+
+Cloudflare Realtime is in open beta and available from the Cloudflare Dashboard.
+
+## 2022-09-27
+
+**Cloudflare Realtime closed beta**
+
+Cloudflare Realtime is available as a closed beta for users who request an invitation. Refer to the [blog post](https://blog.cloudflare.com/announcing-cloudflare-calls/) for more information.
+
+[PreviousLimits, timeouts, and quotas](https://developers.cloudflare.com/realtime/sfu/platform/limits/)[NextOverview](https://developers.cloudflare.com/realtime/turn/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/realtime/sfu/platform/changelog.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

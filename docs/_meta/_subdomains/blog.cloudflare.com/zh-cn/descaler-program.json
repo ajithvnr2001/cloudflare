@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/zh-cn/descaler-program/",
+  "file": "_subdomains/blog.cloudflare.com/zh-cn/descaler-program.md",
+  "title": "\u501f\u52a9 Descaler \u8ba1\u5212\u4ece Zscaler \u65e0\u5fe7\u8fc1\u79fb\u81f3 Cloudflare One | Cloudflare \u535a\u5ba2",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:43:53.219904+00:00",
+  "html_len": 200789,
+  "md_len": 26343,
+  "depth": 0,
+  "phase": 2
+}

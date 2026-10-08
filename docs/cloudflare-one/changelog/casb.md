@@ -1,0 +1,375 @@
+---
+url: https://developers.cloudflare.com/cloudflare-one/changelog/casb/
+title: CASB Changelog \u00b7 Cloudflare One docs
+method: scrapling+scrapegraph
+fetched_at: 2026-10-08T07:08:25.423735+00:00
+---
+
+# CASB Changelog · Cloudflare One docs
+
+> Source: https://developers.cloudflare.com/cloudflare-one/changelog/casb/
+
+  1. [Home](https://developers.cloudflare.com/)
+  2. /[Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)
+  3. /[Changelog](https://developers.cloudflare.com/cloudflare-one/changelog/)
+  4. /CASB
+
+
+
+# CASB
+
+Last updated Apr 17, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/cloudflare-one/changelog/casb/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+
+Overview2024-06-032024-05-232024-04-16
+
+[Subscribe to RSS](https://developers.cloudflare.com/changelog/rss/casb.xml)
+
+## 2026-10-05
+
+  
+**Detect organization-specific risks with CASB custom finding types**  
+
+
+[Cloudflare CASB](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/) now supports [**custom finding types**](https://developers.cloudflare.com/cloudflare-one/cloud-and-saas-findings/custom-finding-types/), giving security teams full control over the security conditions CASB detects across their SaaS and cloud integrations.
+
+In addition to CASB's library of standard finding types, you can now write your own detection logic using [Rego ↗︎](https://www.openpolicyagent.org/docs/policy-language), the open-source policy language from Open Policy Agent (OPA). Use custom finding types to match your organization's own thresholds and exceptions, such as flagging admin accounts without two-factor authentication, and get higher-confidence findings to act on.
+
+![Create a custom finding type with a name, severity, scope, and Rego detection logic](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1194,height=1194,format=webp/_astro/create-custom-finding-type.CF3GXoPZ.png)
+
+#### Key capabilities
+
+  * **Write your own detection logic** — Define exactly what CASB flags using Rego expressions evaluated against asset data from your connected integrations.
+  * **Target any supported provider and asset class** — Scope a custom finding type to a provider (such as Google Workspace or Microsoft 365) and asset class (such as users, files, or groups), and apply it to all integrations for that provider or a selected subset.
+  * **Built-in validation** — Select **Validate** to check your expression for syntax errors and schema issues before you create the finding type.
+  * **Inspect and duplicate standard finding types** — Open any standard finding type to view its detection logic, then duplicate it as the starting point for a custom finding type.
+  * **Works with CASB policies** — Use custom finding types in [CASB remediation policies](https://developers.cloudflare.com/cloudflare-one/cloud-and-saas-findings/policies/) to send matching findings to Slack, ServiceNow, or any other webhook destination.
+
+
+
+#### Get started
+
+  1. In [Cloudflare One ↗︎](https://one.dash.cloudflare.com), go to **Cloud & SaaS findings** > **Findings library**.
+  2. Select **Create finding**.
+  3. Enter a name, description, and severity.
+  4. Select a provider and asset class, then set the integration scope.
+  5. Write your Rego expression and select **Validate**.
+  6. Select **Create finding**.
+
+
+
+CASB evaluates the custom finding type against assets as they are created or updated within the selected scope. Matching assets appear as posture finding instances under **Posture Findings**.
+
+#### Learn more
+
+  * Learn how to [create and manage custom finding types](https://developers.cloudflare.com/cloudflare-one/cloud-and-saas-findings/custom-finding-types/) in Cloudflare One.
+  * Learn how to [manage findings](https://developers.cloudflare.com/cloudflare-one/cloud-and-saas-findings/manage-findings/) in Cloudflare One.
+  * Learn how to [create and manage CASB remediation policies](https://developers.cloudflare.com/cloudflare-one/cloud-and-saas-findings/policies/) in Cloudflare One.
+
+
+
+CASB custom finding types are now available in Cloudflare One.
+
+## 2026-09-09
+
+  
+**New CASB integration for Zoom**  
+
+
+[Cloudflare CASB](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/) now integrates with [Zoom](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/zoom/). The integration connects through Cloudflare's pre-built OAuth application — no manual app setup in Zoom is required. After an initial scan, CASB continuously scans your Zoom account to surface new findings as your environment changes.
+
+Zoom is widely used for meetings, webinars, and collaboration. Misconfigurations in account settings, meeting security controls, and recording access can expose organizations to data leakage, unauthorized access, and compliance risk. Cloudflare CASB ingests Zoom account data via API to surface security findings across these areas.
+
+#### Key capabilities
+
+Starting today, security teams can scan for security findings across the following assets:
+
+  * **Account settings** — Detect weak password policies, unlocked security controls, and two-factor authentication gaps across your Zoom account
+  * **User accounts** — Identify users not enforcing SSO, accounts with insecure host keys, unverified or inactive users, and unsafe overrides of account-level security settings
+  * **Meetings** — Surface meetings without passwords or waiting rooms, meetings using Personal Meeting IDs (PMIs), and meetings with external domain hosts
+  * **Recordings** — Detect publicly accessible cloud recordings, recordings without passcodes, and weak recording password configurations
+  * **Content** — Identify sensitive information in meeting and recording content via DLP Profile matching
+
+
+
+#### Learn more
+
+This [integration](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/zoom/) is available to all Cloudflare Zero Trust customers today. New customers can sign up and start with their first two integrations for free. Existing customers can enable the integration directly in the Cloudflare One dashboard under **Cloud & SaaS findings** > **Integrations**. The integration begins scanning immediately and surfaces findings in the dashboard within minutes.
+
+## 2026-08-21
+
+  
+**Automatically remediate Microsoft 365 and Google Workspace findings with API-based CASB remediation policies**  
+
+
+[Cloudflare CASB](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/) is an API-based (agentless) tool that continuously scans your SaaS and cloud applications for security misconfigurations and data exposure. You can now use **CASB remediation policies** to automatically fix a finding or send a webhook the moment CASB detects it, without manual triage.
+
+#### Remediate Microsoft 365 and Google Workspace findings
+
+A policy can perform a first-party remediation action directly against the SaaS integration API. When a policy triggers, Cloudflare revokes the external sharing configuration without human intervention.
+
+Remediation is currently supported for file-sharing findings in Microsoft 365 and Google Workspace. Support for additional finding types and integrations is coming soon. For the full list of supported finding types, refer to [Run remediations](https://developers.cloudflare.com/cloudflare-one/cloud-and-saas-findings/policies/#run-remediations) in the CASB remediation policies documentation.
+
+#### Send webhooks
+
+A policy can send posture finding data to Slack, ServiceNow, or any other webhook destination. Webhook actions are supported for all posture finding types across CASB integrations.
+
+A single policy can perform both actions: remediate a finding and send a webhook.
+
+#### Get started
+
+  1. In [Cloudflare One ↗︎](https://one.dash.cloudflare.com), go to **Cloud & SaaS findings** > **Policies**.
+  2. Select **Create a policy**.
+  3. Under **Basic information** , enter a **Policy name** and, optionally, a **Description**.
+  4. Under **Choose how you want to trigger the policy** , select a **Vendor** , **Integration** , and **Finding type**.
+  5. Under **Define what to do with findings that match your trigger** , choose **Run Remediation** , **Send webhooks** , or both.
+  6. Under **Status** , turn on **Enable policy**.
+  7. Select **Create policy**.
+
+
+
+#### Learn more
+
+  * Learn how to [create and manage CASB remediation policies](https://developers.cloudflare.com/cloudflare-one/cloud-and-saas-findings/policies/) in Cloudflare One.
+  * Configure [CASB webhooks](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/webhooks/) as a policy destination.
+  * Learn how to [manage findings](https://developers.cloudflare.com/cloudflare-one/cloud-and-saas-findings/manage-findings/) in Cloudflare One.
+
+
+
+CASB remediation policies are now available in Cloudflare One.
+
+## 2026-05-19
+
+  
+**CASB adds support for Claude Compliance API**  
+
+
+[Cloudflare CASB](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/anthropic/) now integrates with the [Claude Compliance API ↗︎](https://support.claude.com/en/articles/13015708-access-the-compliance-api). This enhancement gives security teams visibility into Claude usage patterns, admin activity, and compliance-relevant events across their organization.
+
+The Claude Compliance API provides structured access to audit logs and administrative actions within Claude Enterprise and Claude Platform. Cloudflare CASB ingests this data to surface security findings that help organizations enhance their security posture and enforce AI governance.
+
+#### Key capabilities
+
+Starting today, security teams can scan for security findings across the following assets:
+
+  * **Public projects** — Projects set to public visibility
+  * **Project attachment** — Files and documents added to projects that violate DLP policies
+  * **Chat files** — User-uploaded and provider-generated files that violate DLP policies
+  * **Chat messages** — User prompts and provider responses that violate DLP policies
+  * **Artifacts** — Provider-generated documents and files that violate DLP policies
+
+
+
+#### Learn more
+
+This [integration](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/anthropic/) is available to all Cloudflare One customers. New Cloudflare customers can sign up and start with their first two integrations for free. Existing customers can enable the integration directly in the dashboard. The integration begins scanning immediately and surfaces findings in the dashboard within minutes.
+
+## 2026-04-09
+
+  
+**Send CASB posture finding instances with webhooks**  
+
+
+You can now use **CASB webhooks** in Cloudflare One to send posture finding instances to external systems such as chat platforms, ticketing systems, SIEMs, SOAR tools, and custom automation services.
+
+This gives security teams a simple way to route CASB posture findings into the tools and workflows they already use for triage and response.
+
+To get started, go to **Integrations** > **Webhooks** in the Cloudflare One dashboard to create a webhook destination. After you configure a webhook, open a posture finding instance and select **Send webhook** to send it.
+
+#### Key capabilities
+
+  * **Flexible authentication** — Configure destinations using **None** , **Basic Auth** , **Bearer Auth** , **Static Headers** , or **HMAC-Signing**.
+  * **Built-in testing** — Use **Test delivery** to send a test request before sending a live finding instance.
+  * **Posture finding workflows** — Send posture finding instances directly from the finding details workflow in **Cloud & SaaS findings**.
+  * **HTTPS destinations** — Configure webhook destinations with public `https://` URLs.
+
+
+
+#### Learn more
+
+  * Configure [CASB webhooks](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/webhooks/) in Cloudflare.
+  * Learn how to [manage findings](https://developers.cloudflare.com/cloudflare-one/cloud-and-saas-findings/manage-findings/) in Cloudflare.
+
+
+
+CASB webhooks are now available in Cloudflare One.
+
+## 2026-02-20
+
+  
+**Understand CASB findings instantly with Cloudy Summaries**  
+
+
+You can now easily understand your SaaS security posture findings and why they were detected with **Cloudy Summaries in CASB**. This feature integrates Cloudflare's Cloudy AI directly into your CASB Posture Findings to automatically generate clear, plain-language summaries of complex security misconfigurations, third-party app risks, and data exposures.
+
+This allows security teams and IT administrators to drastically reduce triage time by immediately understanding the context, potential impact, and necessary remediation steps for any given finding—without needing to be an expert in every connected SaaS application.
+
+To view a summary, simply navigate to your Posture Findings in the Cloudflare One dashboard (under **Cloud and SaaS findings**) and open the finding details of a specific instance of a Finding.
+
+Cloudy Summaries are supported on all available integrations, including Microsoft 365, Google Workspace, Salesforce, GitHub, AWS, Slack, and Dropbox. See the full list of supported integrations [here](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/).
+
+#### Key capabilities
+
+  * **Contextual explanations** — Quickly understand the specifics of a finding with plain-language summaries detailing exactly what was detected, from publicly shared sensitive files to risky third-party app scopes.
+  * **Clear risk assessment** — Instantly grasp the potential security impact of the finding, such as data breach risks, unauthorized account access, or email spoofing vulnerabilities.
+  * **Actionable guidance** — Get clear recommendations and next steps on how to effectively remediate the issue and secure your environment.
+  * **Built-in feedback** — Help improve future AI summarization accuracy by submitting feedback directly using the thumbs-up and thumbs-down buttons.
+
+
+
+#### Learn more
+
+  * Learn more about managing [CASB Posture Findings](https://developers.cloudflare.com/cloudflare-one/cloud-and-saas-findings/) in Cloudflare.
+
+
+
+Cloudy Summaries in CASB are available to all Cloudflare CASB users today.
+
+## 2025-11-14
+
+  
+**New SaaS Security weekly digests with API CASB**  
+
+
+You can now stay on top of your SaaS security posture with the new **CASB Weekly Digest** notification. This opt-in email digest is delivered to your inbox every Monday morning and provides a high-level summary of your organization's Cloudflare API CASB findings from the previous week.
+
+This allows security teams and IT administrators to get proactive, at-a-glance visibility into new risks and integration health without having to log in to the dashboard.
+
+To opt in, navigate to **Manage Account** > **Notifications** in the Cloudflare dashboard to configure the **CASB Weekly Digest** alert type.
+
+#### Key capabilities
+
+  * **At-a-glance summary** — Review new high/critical findings, most frequent finding types, and new content exposures from the past 7 days.
+  * **Integration health** — Instantly see the status of all your connected SaaS integrations (Healthy, Unhealthy, or Paused) to spot API connection issues.
+  * **Proactive alerting** — The digest is sent automatically to all subscribed users every Monday morning.
+  * **Easy to configure** — Users can opt in by enabling the notification in the Cloudflare dashboard under **Manage Account** > **Notifications**.
+
+
+
+#### Learn more
+
+  * Configure [notification preferences](https://developers.cloudflare.com/notifications/) in Cloudflare.
+
+
+
+The CASB Weekly Digest notification is available to all Cloudflare users today.
+
+## 2025-10-28
+
+  
+**CASB introduces new granular roles**  
+
+
+Cloudflare CASB (Cloud Access Security Broker) now supports two new granular roles to provide more precise access control for your security teams:
+
+  * **Cloudflare CASB Read:** Provides read-only access to view CASB findings and dashboards. This role is ideal for security analysts, compliance auditors, or team members who need visibility without modification rights.
+  * **Cloudflare CASB:** Provides full administrative access to configure and manage all aspects of the CASB product.
+
+
+
+These new roles help you better enforce the principle of least privilege. You can now grant specific members access to CASB security findings without assigning them broader permissions, such as the **Super Administrator** or **Administrator** roles.
+
+To enable [Data Loss Prevention (DLP)](https://developers.cloudflare.com/cloudflare-one/data-loss-prevention/dlp-profiles/), scans in CASB, account members will need the **Cloudflare Zero Trust** role.
+
+You can find these new roles when inviting members or creating API tokens in the Cloudflare dashboard under **Manage Account** > **Members**.
+
+To learn more about managing roles and permissions, refer to the [Manage account members and roles documentation](https://developers.cloudflare.com/fundamentals/manage-members/roles/).
+
+## 2025-08-26
+
+  
+**New CASB integrations for ChatGPT, Claude, and Gemini**  
+
+
+[Cloudflare CASB ↗︎](https://www.cloudflare.com/zero-trust/products/casb/) now supports three of the most widely used GenAI platforms — **OpenAI ChatGPT** , **Anthropic Claude** , and **Google Gemini**. These API-based integrations give security teams agentless visibility into posture, data, and compliance risks across their organization’s use of generative AI.
+
+![Cloudflare CASB showing selection of new findings for ChatGPT, Claude, and Gemini integrations.](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=2335,height=1776,format=webp/_astro/casb-ai-integrations-preview.B-zsSA1P.png)
+
+#### Key capabilities
+
+  * **Agentless connections** — connect ChatGPT, Claude, and Gemini tenants via API; no endpoint software required
+  * **Posture management** — detect insecure settings and misconfigurations that could lead to data exposure
+  * **DLP detection** — identify sensitive data in uploaded chat attachments or files
+  * **GenAI-specific insights** — surface risks unique to each provider’s capabilities
+
+
+
+#### Learn more
+
+  * [ChatGPT integration docs ↗︎](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/openai/)
+  * [Claude integration docs ↗︎](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/anthropic/)
+  * [Gemini integration docs ↗︎](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/google-workspace/gemini/)
+
+
+
+These integrations are available to all Cloudflare One customers today.
+
+## 2025-06-23
+
+  
+**Data Security Analytics in the Zero Trust dashboard**  
+
+
+Zero Trust now includes **Data security analytics** , providing you with unprecedented visibility into your organization sensitive data.
+
+The new dashboard includes:
+
+  * **Sensitive Data Movement Over Time:**
+
+    * See patterns and trends in how sensitive data moves across your environment. This helps understand where data is flowing and identify common paths.
+  * **Sensitive Data at Rest in SaaS & Cloud:**
+
+    * View an inventory of sensitive data stored within your corporate SaaS applications (for example, Google Drive, Microsoft 365) and cloud accounts (such as AWS S3).
+  * **DLP Policy Activity:**
+
+    * Identify which of your Data Loss Prevention (DLP) policies are being triggered most often.
+    * See which specific users are responsible for triggering DLP policies.
+
+![Data Security Analytics](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=3254,height=1580,format=webp/_astro/cf1-data-security-analytics-v1.BGl6fYXl.png)
+
+To access the new dashboard, log in to [Cloudflare One ↗︎](https://one.dash.cloudflare.com/) and go to **Insights** on the sidebar.
+
+## 2024-11-22
+
+  
+**Find security misconfigurations in your AWS cloud environment**  
+
+
+You can now use CASB to find security misconfigurations in your AWS cloud environment using [Data Loss Prevention](https://developers.cloudflare.com/cloudflare-one/data-loss-prevention/).
+
+You can also [connect your AWS compute account](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/aws-s3/#compute-account) to extract and scan your S3 buckets for sensitive data while avoiding egress fees. CASB will scan any objects that exist in the bucket at the time of configuration.
+
+To connect a compute account to your AWS integration:
+
+  1. In [Cloudflare One ↗︎](https://one.dash.cloudflare.com), go to **Cloud & SaaS findings** > **Integrations**.
+  2. Find and select your AWS integration.
+  3. Select **Open connection instructions**.
+  4. Follow the instructions provided to connect a new compute account.
+  5. Select **Refresh**.
+
+
+
+## 2024-06-03
+
+**Atlassian Bitbucket integration**
+
+You can now scan your Bitbucket Cloud workspaces for a variety of contextualized security issues such as source code exposure, admin misconfigurations, and more.
+
+## 2024-05-23
+
+**Data-at-rest DLP for Box and Dropbox**
+
+You can now scan your [Box](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/box/#data-loss-prevention-optional) and [Dropbox](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/dropbox/#data-loss-prevention-optional) files for DLP matches.
+
+## 2024-04-16
+
+**Export CASB findings to CSV**
+
+You can now export all top-level CASB findings or every instance of your findings to CSV.
+
+[PreviousBrowser Isolation](https://developers.cloudflare.com/cloudflare-one/changelog/browser-isolation/)[NextCloudflare Network Firewall](https://developers.cloudflare.com/cloudflare-one/changelog/cloudflare-network-firewall/)
+
+Was this helpful?
+
+YesNo
+
+[Edit page](https://github.com/cloudflare/cloudflare-docs/edit/production/src/content/docs/cloudflare-one/changelog/casb.mdx)[Report issue](https://github.com/cloudflare/cloudflare-docs/issues/new/choose)

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/branch-predictor/",
+  "file": "_subdomains/blog.cloudflare.com/branch-predictor.md",
+  "title": "Branch predictor: How many \"if\"s are too many? Including x86 and M1 benchmarks! | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:56:28.950394+00:00",
+  "html_len": 354322,
+  "md_len": 85178,
+  "depth": 0,
+  "phase": 2
+}

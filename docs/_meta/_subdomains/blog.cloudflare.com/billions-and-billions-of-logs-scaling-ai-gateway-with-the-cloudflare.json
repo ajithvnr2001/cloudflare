@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/billions-and-billions-of-logs-scaling-ai-gateway-with-the-cloudflare/",
+  "file": "_subdomains/blog.cloudflare.com/billions-and-billions-of-logs-scaling-ai-gateway-with-the-cloudflare.md",
+  "title": "Billions and billions (of logs): scaling AI Gateway with the Cloudflare Developer Platform | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:53:31.463247+00:00",
+  "html_len": 313001,
+  "md_len": 72982,
+  "depth": 0,
+  "phase": 2
+}

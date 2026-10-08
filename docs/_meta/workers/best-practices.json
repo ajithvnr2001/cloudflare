@@ -1,0 +1,10 @@
+{
+  "url": "https://developers.cloudflare.com/workers/best-practices/",
+  "file": "workers/best-practices.md",
+  "title": "Best practices \u00b7 Cloudflare Workers docs",
+  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (799 chars), fallback to crawl4ai)",
+  "fetched_at": "2026-10-08T07:18:05.147452+00:00",
+  "html_len": 222751,
+  "md_len": 850,
+  "depth": 0
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/why-we-are-acquiring-area-1/",
+  "file": "_subdomains/blog.cloudflare.com/why-we-are-acquiring-area-1.md",
+  "title": "Why we are acquiring Area 1 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:55:38.038427+00:00",
+  "html_len": 292623,
+  "md_len": 66692,
+  "depth": 0,
+  "phase": 2
+}

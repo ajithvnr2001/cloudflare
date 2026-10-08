@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/de-de/workers-production-safety/",
+  "file": "_subdomains/blog.cloudflare.com/de-de/workers-production-safety.md",
+  "title": "Neue Tools f\u00fcr die Produktionssicherheit \u2014 Gradual Deployments, Source Maps, Rate Limiting und neue SDKs | Der Cloudflare-Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:41:29.119599+00:00",
+  "html_len": 250683,
+  "md_len": 50377,
+  "depth": 0,
+  "phase": 2
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/workers-granular-authorization/",
+  "file": "_subdomains/blog.cloudflare.com/workers-granular-authorization.md",
+  "title": "Give every teammate and agent the right level of access to your Workers | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:34:45.211654+00:00",
+  "html_len": 365620,
+  "md_len": 125277,
+  "depth": 0,
+  "phase": 2
+}

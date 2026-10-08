@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/r2-is-faster-than-s3/",
+  "file": "_subdomains/blog.cloudflare.com/r2-is-faster-than-s3.md",
+  "title": "Developer Week Performance Update: Spotlight on R2 | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:54:29.216569+00:00",
+  "html_len": 316712,
+  "md_len": 67459,
+  "depth": 0,
+  "phase": 2
+}

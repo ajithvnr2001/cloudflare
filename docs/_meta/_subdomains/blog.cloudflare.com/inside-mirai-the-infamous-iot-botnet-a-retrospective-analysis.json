@@ -1,0 +1,11 @@
+{
+  "url": "https://blog.cloudflare.com/inside-mirai-the-infamous-iot-botnet-a-retrospective-analysis/",
+  "file": "_subdomains/blog.cloudflare.com/inside-mirai-the-infamous-iot-botnet-a-retrospective-analysis.md",
+  "title": "Inside the infamous Mirai IoT Botnet: A Retrospective Analysis | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-08T07:58:51.879346+00:00",
+  "html_len": 340604,
+  "md_len": 84458,
+  "depth": 0,
+  "phase": 2
+}
