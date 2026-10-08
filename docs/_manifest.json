@@ -1,6 +1,6 @@
 {
   "base": "https://developers.cloudflare.com",
-  "generated_at": "2026-10-08T11:18:12.311966+00:00",
+  "generated_at": "2026-10-08T11:23:10.535192+00:00",
   "sitemap_developers": {
     "total": 8729,
     "covered": 8729,
@@ -16,21 +16,21 @@
     "covered": 907,
     "pct": 100.0
   },
-  "total_docs_md": 21256,
-  "total_index": 21256,
+  "total_docs_md": 21263,
+  "total_index": 21263,
   "total_size": "813M",
   "llms_files": 227,
   "excluded_junk": 697,
   "by_method": {
     "crawl4ai+scrapegraph": 506,
-    "scrapling+scrapegraph": 20750
+    "scrapling+scrapegraph": 20757
   },
   "by_host": {
     "api.cloudflare.com": 1,
-    "blog.cloudflare.com": 10735,
+    "blog.cloudflare.com": 10741,
     "cloudflare.com": 3,
     "dash.cloudflare.com": 1,
-    "developers.cloudflare.com": 9143,
+    "developers.cloudflare.com": 9144,
     "discord.cloudflare.com": 1,
     "domains.cloudflare.com": 11,
     "graphql.cloudflare.com": 1,

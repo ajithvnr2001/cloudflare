@@ -8,10 +8,10 @@ Crawls **https://developers.cloudflare.com/** completely (sitemap + `llms.txt` +
 
 | Scope | Coverage |
 |---|---|
-| developers `sitemap-0.xml` | 8729/8729 = 100% |
+| developers `sitemap-0.xml` | 8730/8730 = 100% |
 | blog `sitemap-posts.xml` | 7966/7966 = 100% |
 | www `sitemap.xml` | 907/907 = 100% |
-| Total | **21,256 md / 813M** (dev 9143, blog 10735, www 1326, +15 hosts) |
+| Total | **21,263 md / 813M** (dev 9144, blog 10741, www 1326, +15 hosts) |
 
 Junk 0 (697 `.json`/backtick/404 moved to `docs/_excluded/`). Blocked: `community/dash/support/radar` (403/JS-challenge, logged). Local docs excluded from git (813M) — regenerate with one command below.
 
@@ -44,7 +44,7 @@ Rerun is a verified no-op (5 s, visited unchanged). Cron: `0 2 * * * cd <repo> &
 
 ## How it works
 
-1. **Seed**: `sitemap-index.xml` → `sitemap-0.xml` (8729) + root `llms.txt` → ~200 product `llms.txt`/`llms-full.txt` → dedupe with canonicalization (`/index.md`→`/`, `%40cf`/`@cf` aware) → ~9108 seeds.
+1. **Seed**: `sitemap-index.xml` → `sitemap-0.xml` (8730) + root `llms.txt` → ~200 product `llms.txt`/`llms-full.txt` → dedupe with canonicalization (`/index.md`→`/`, `%40cf`/`@cf` aware) → ~9108 seeds.
 2. **Fetch per URL**: Scrapling `Fetcher.get(stealthy_headers=True)` → keep `<main>/<article>` → ScrapeGraphAI `convert_to_md`; if thin/failed → Crawl4AI `AsyncWebCrawler` → httpx fallback. Frontmatter `url/title/method/fetched_at` + `# title` + `> Source:` header.
 3. **Expand**: normalize `<a href>`, allow `*.cloudflare.com` (main unlimited depth, subdomains ≤4), cap 15000.
 4. **Output**: `docs/<path>.md`, `_meta/*.json`, `_index.jsonl`, `_manifest.json`, `_llms/`, `crawl_state.json`.

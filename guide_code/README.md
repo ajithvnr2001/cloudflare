@@ -12,10 +12,10 @@ Flow: `Fetcher.get(stealthy_headers=True)` (`coder_scrape.py:19`) → keep `<mai
 
 ## 2. Full crawl (done, reproducible)
 ```bash
-python3 crawl_cloudflare.py --max-pages 15000 --concurrency 15   # developers 8729/8729
-python3 phase2_crawl.py                                          # blog 7972/7972 + www 907/907
+python3 crawl_cloudflare.py --max-pages 15000 --concurrency 15   # developers 8730/8730
+python3 phase2_crawl.py                                          # blog 7978/7978 + www 907/907
 ```
-Seeds = `sitemap-0.xml` + `llms.txt`→`llms-full.txt` + sitemap-posts/www; `normalize_url()` canonicalizes `/index.md`→`/`, skips `.json`/backtick/binary, allows `*.cloudflare.com` (`crawl_cloudflare.py:80`). Saves `docs/<path>.md` + `_meta/*.json`, appends `_index.jsonl`. Current: dev 9143, blog 10735, www 1326.
+Seeds = `sitemap-0.xml` + `llms.txt`→`llms-full.txt` + sitemap-posts/www; `normalize_url()` canonicalizes `/index.md`→`/`, skips `.json`/backtick/binary, allows `*.cloudflare.com` (`crawl_cloudflare.py:80`). Saves `docs/<path>.md` + `_meta/*.json`, appends `_index.jsonl`. Current: dev 9144, blog 10741, www 1326.
 
 ## 3. Update without recrawling (incremental)
 ```bash
@@ -31,7 +31,7 @@ Live set − indexed set (encoding-aware `%40cf`/`@cf`) = targets; existing file
 ## 4. Verify (all green)
 ```bash
 python3 update_incremental.py --check-only   # expect dev/blog/www new=0
-cat docs/_manifest.json                      # 21256 docs, 100% sitemaps, junk 0
+cat docs/_manifest.json                      # 21263 docs, 100% sitemaps, junk 0
 ```
 Blocked (expected): `community/dash/support/radar` 403/JS-challenge → `failed`. Junk → `docs/_excluded/`.
 
