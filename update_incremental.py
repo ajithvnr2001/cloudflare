@@ -73,6 +73,23 @@ async def main():
         for u in miss[:20]: print(f"  NEW: {u}")
         if len(miss) > 20: print(f"  ... +{len(miss)-20} more")
     total_new = sum(len(v) for v in new.values())
+    if not a.check_only:
+        # daily verification stamp (committed even when nothing new)
+        from datetime import datetime as _dt, timezone as _tz
+        _now = _dt.now(_tz.utc)
+        _stamp = {"date": _now.strftime("%F"), "at": _now.isoformat(),
+                  "new": {k: len(v) for k, v in new.items()},
+                  "total_index": len(indexed)}
+        (DOCS / "_last_verified.json").write_text(json.dumps(_stamp, indent=2))
+        try:
+            _mp = DOCS / "_manifest.json"
+            _m = json.loads(_mp.read_text()) if _mp.exists() else {}
+            _m["last_verified"] = _stamp["date"]
+            _m["generated_at"] = _stamp["at"]
+            _mp.write_text(json.dumps(_m, indent=2))
+        except Exception as e:
+            print("stamp manifest skip:", e)
+        print(f"stamped {_stamp['date']} (new={total_new})")
     if a.force:
         targets = [canon_dev(a.force) if "developers" in a.force else C.normalize_url(a.force)]
         print(f"force: {targets}")
