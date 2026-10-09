@@ -99,7 +99,8 @@ async def main():
         print("check-only" if a.check_only else "no new docs — all up to date")
         return
     print(f"fetching {len(targets)} new docs...")
-    st = json.load(open(STATE)); visited_state, failed = st.get("visited", {}), st.get("failed", {})
+    st = json.load(open(STATE)) if STATE.exists() else {"visited": {}, "failed": {}}
+    visited_state, failed = st.get("visited", {}), st.get("failed", {})
     from datetime import datetime, timezone
     idx_f = open(DOCS / "_index.jsonl", "a", encoding="utf-8")
     sem = asyncio.Semaphore(a.concurrency)
