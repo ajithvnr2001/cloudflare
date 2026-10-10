@@ -34,7 +34,7 @@ git clone --depth 1 https://github.com/D4Vinci/Scrapling tools/scrapling
 python3 crawl_cloudflare.py --max-pages 15000 --concurrency 15
 # phase 2 subdomains (blog/www)
 python3 phase2_crawl.py
-# steady state — only NEW pages + refreshes sitemap-updated pages (newest 30/run), never blind-recrawls
+# steady state — NEW pages + refreshes ALL sitemap-updated pages (newest first), never blind-recrawls
 python3 update_incremental.py --check-only
 python3 update_incremental.py
 python3 update_incremental.py --force <URL>

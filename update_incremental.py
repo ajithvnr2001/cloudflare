@@ -14,7 +14,7 @@ import crawl_cloudflare as C
 
 DOCS = C.OUT_ROOT
 STATE = C.STATE_FILE
-REFRESH_CAP = 30  # max stale-page refetches per run (newest first; keeps daily Actions cheap)
+REFRESH_CAP = 0  # 0 = no cap: refresh ALL stale pages per run (newest first)
 
 def canon_dev(u):
     abs_u, _ = urldefrag(urljoin("https://developers.cloudflare.com", u.strip()))
@@ -105,7 +105,7 @@ async def main():
         except Exception:
             pass
     stale.sort(reverse=True)
-    refresh = [u for _, u in stale[:REFRESH_CAP]]
+    refresh = [u for _, u in stale] if not REFRESH_CAP else [u for _, u in stale[:REFRESH_CAP]]
     print(f"stale (sitemap newer than fetched): {len(stale)}, refreshing newest {len(refresh)}")
     for d, u in stale[:10]: print(f"  STALE {d} {u}")
     if not a.check_only:
