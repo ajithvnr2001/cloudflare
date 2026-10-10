@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/fundamentals/reference/markdown-for-agents/
 title: Markdown for Agents \u00b7 Cloudflare Fundamentals docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:11:25.377959+00:00
+fetched_at: 2026-10-10T13:55:56.334055+00:00
 ---
 
 # Markdown for Agents · Cloudflare Fundamentals docs
@@ -18,9 +18,9 @@ fetched_at: 2026-10-08T07:11:25.377959+00:00
 
 # Markdown for Agents
 
-Last updated Jul 13, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/fundamentals/reference/markdown-for-agents/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 9, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/fundamentals/reference/markdown-for-agents/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
-OverviewWhat is Markdown for AgentsHow to use Response headers Token count headers Content Signals PolicyOutput format YAML frontmatter JSON-LDHow to enable Enable for specific subdomains or paths Enable for specific subdomains or paths Enable for all custom hostnames Enable for specific custom hostnamesAvailability and PricingTry it with CloudflareLimitationsOther Markdown conversion APIs
+OverviewWhat is Markdown for AgentsHow to use Response headers Content Signals PolicyOutput format YAML frontmatter JSON-LDHow to enable Enable for specific subdomains or paths Enable for specific subdomains or paths Enable for all custom hostnames Enable for specific custom hostnamesAvailability and PricingTry it with CloudflareLimitationsOther Markdown conversion APIs
 
 ## What is Markdown for Agents
 
@@ -51,8 +51,6 @@ Or if you’re building an AI Agent using Workers, you can use TypeScript:
     		},
     	},
     );
-    const tokenCount = r.headers.get("x-markdown-tokens");
-    const originalTokenCount = r.headers.get("x-original-tokens");
     const markdown = await r.text();
     
     
@@ -64,8 +62,6 @@ Or if you’re building an AI Agent using Workers, you can use TypeScript:
     		},
     	},
     );
-    const tokenCount = r.headers.get("x-markdown-tokens");
-    const originalTokenCount = r.headers.get("x-original-tokens");
     const markdown = await r.text();
 
 The response to this request is now formatting in markdown:
@@ -74,12 +70,9 @@ The response to this request is now formatting in markdown:
     HTTP/2 200
     date: Wed, 11 Feb 2026 11:44:48 GMT
     content-type: text/markdown; charset=utf-8
-    content-length: 2899
     vary: accept
     cache-control: public, max-age=3600
     strict-transport-security: max-age=63072000; includeSubDomains
-    x-markdown-tokens: 725
-    x-original-tokens: 12345
     content-signal: ai-train=yes, search=yes, ai-input=yes
     
     ---
@@ -101,16 +94,10 @@ Because the body is replaced with converted Markdown, the following changes are 
 
   * `Content-Type` is set to `text/markdown; charset=utf-8`.
   * `Vary` includes `Accept` (any `Vary` dimensions your origin already declared are preserved) so that caches store separate variants for Markdown and HTML.
-  * `Content-Length` is recalculated to match the size of the Markdown response.
+  * `Content-Length` is removed because the Markdown response is streamed.
   * Headers that describe the original body are removed, because they no longer match the converted response: `Content-Encoding`, `Content-Range`, `Transfer-Encoding`, `ETag`, and `Last-Modified`. `ETag` and `Last-Modified` are dropped because conditional requests (`If-None-Match`, `If-Modified-Since`) cannot be honored for converted responses.
 
 
-
-Markdown for Agents also adds the token count headers described below.
-
-### Token count headers
-
-Note that we include token count headers with the converted response. `x-markdown-tokens` indicates the estimated number of tokens in the Markdown document, and `x-original-tokens` indicates the estimated number of tokens in the original HTML document before conversion. You can use these values in your flow, for example to calculate the size of a context window, estimate the token savings from Markdown conversion, or decide on your chunking strategy.
 
 ### Content Signals Policy
 
@@ -309,7 +296,7 @@ We have enabled this feature in our [Developer Documentation ↗︎](https://dev
 ## Limitations
 
   * We only convert from HTML, other types of documents may be included in the future.
-  * The origin response cannot exceed 2 MB (2,097,152 bytes).
+  * Conversion is limited to 6 MiB (6,291,456 bytes) of decompressed HTML. The limit applies after decompression, not to the compressed response size.
 
 
 

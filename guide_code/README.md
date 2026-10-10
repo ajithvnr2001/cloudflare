@@ -20,7 +20,7 @@ Seeds = `sitemap-0.xml` + `llms.txt`→`llms-full.txt` + sitemap-posts/www; `nor
 ## 3. Update without recrawling (incremental)
 ```bash
 python3 update_incremental.py --check-only   # diff live sitemaps vs _index.jsonl (last: new=0)
-python3 update_incremental.py                # fetch only NEW (prev run: 6 blog i18n, 6/6 ok)
+python3 update_incremental.py                # fetch NEW + refresh stale (sitemap lastmod > fetched_at) (prev run: 6 blog i18n, 6/6 ok)
 python3 update_incremental.py --force <URL>  # refetch one changed page
 # coder minimal version:
 python3 guide_code/coder_update.py --check-only
