@@ -1,0 +1,7 @@
+{
+  "url": "https://blog.cloudflare.com/workers-on-demand-profiling/",
+  "file": "_subdomains/blog.cloudflare.com/workers-on-demand-profiling.md",
+  "title": "Introducing on-demand CPU and memory profiling\u00a0with flamegraphs for Workers and Durable Objects | Cloudflare Blog",
+  "method": "scrapling+scrapegraph",
+  "fetched_at": "2026-10-10T07:57:30.048867+00:00"
+}
