@@ -3,8 +3,5 @@
   "file": "changelog/post/2026-06-16-custom-spans.md",
   "title": "Workers tracing now supports custom spans \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:58.210030+00:00",
-  "html_len": 64031,
-  "md_len": 2405,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:36.497575+00:00"
 }

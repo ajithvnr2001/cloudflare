@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-02-14-example-ai-prompts/
 title: Build AI Agents with Example Prompts \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:03.349391+00:00
+fetched_at: 2026-10-10T14:38:54.740568+00:00
 ---
 
 # Build AI Agents with Example Prompts · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Agents](https://developers.cloudflare.com/agents/)[Workers](https://developers.cloudflare.com/workers/)[Workflows](https://developers.cloudflare.com/workflows/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-02-14-example-ai-prompts/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We've added an [example prompt](https://developers.cloudflare.com/workers/get-started/prompting/) to help you get started with building AI agents and applications on Cloudflare [Workers](https://developers.cloudflare.com/workers/), including [Workflows](https://developers.cloudflare.com/workflows/), [Durable Objects](https://developers.cloudflare.com/durable-objects/), and [Workers KV](https://developers.cloudflare.com/kv/).
 

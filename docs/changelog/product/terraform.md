@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/terraform/
 title: Terraform Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:50.134873+00:00
+fetched_at: 2026-10-10T14:38:04.155742+00:00
 ---
 
 # Terraform Changelog | Cloudflare Docs

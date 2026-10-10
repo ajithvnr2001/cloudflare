@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-01-radar-routing-section/
 title: Routing Section Expansion on Cloudflare Radar \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:44.454294+00:00
+fetched_at: 2026-10-10T14:38:41.277790+00:00
 ---
 
 # Routing Section Expansion on Cloudflare Radar · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Radar](https://developers.cloudflare.com/radar/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-01-radar-routing-section/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [**Radar**](https://developers.cloudflare.com/radar/) now features an expanded [Routing section ↗︎](https://radar.cloudflare.com/routing) with dedicated sub-pages, providing a more organized and in-depth view of the global routing ecosystem. This restructuring lays the groundwork for additional routing features and widgets coming in the near future.
 

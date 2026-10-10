@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/http.request.body.multipart.content_transfer_encodings/
 title: http.request.body.multipart.content_transfer_encodings \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:09.912346+00:00
+fetched_at: 2026-10-10T14:37:33.068695+00:00
 ---
 
 # http.request.body.multipart.content_transfer_encodings · Cloudflare Ruleset Engine docs

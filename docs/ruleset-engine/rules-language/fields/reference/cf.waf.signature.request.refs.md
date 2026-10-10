@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.waf.signature.request.refs/
 title: cf.waf.signature.request.refs \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:08.925617+00:00
+fetched_at: 2026-10-10T14:37:33.438175+00:00
 ---
 
 # cf.waf.signature.request.refs · Cloudflare Ruleset Engine docs

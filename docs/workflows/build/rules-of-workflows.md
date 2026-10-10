@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workflows/build/rules-of-workflows/
 title: Rules of Workflows \u00b7 Cloudflare Workflows docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:18:14.106045+00:00
+fetched_at: 2026-10-10T14:39:29.474206+00:00
 ---
 
 # Rules of Workflows · Cloudflare Workflows docs
@@ -18,7 +18,7 @@ fetched_at: 2026-10-08T07:18:14.106045+00:00
 
 # Rules of Workflows
 
-Last updated Sep 10, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workflows/build/rules-of-workflows/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Overview Ensure API/Binding calls are idempotent Make your steps granular Do not rely on state outside of a step Avoid doing side effects outside of a step.do Do not mutate your incoming events Name steps deterministically Take care with Promise.race() and Promise.any() Instance IDs are unique await your steps Use conditional logic carefully Batch multiple Workflow invocations Limit timeouts to 30 minutes or less Keep non-stream step return values under 1 MiBRelated resources
 
@@ -958,7 +958,7 @@ index.tsts
 
 ### Batch multiple Workflow invocations
 
-When creating multiple Workflow instances, use the [`createBatch`](https://developers.cloudflare.com/workflows/build/workers-api/#createBatch) method to batch the invocations together. This allows you to create multiple Workflow instances in a single request, which will reduce the number of requests made to the Workflows API. However, each individual instance in the batch will still count towards the [creation rate limit](https://developers.cloudflare.com/workflows/reference/limits/). Unlike `create`, `createBatch` is idempotent: if an existing instance with the same ID is still within its [retention limit](https://developers.cloudflare.com/workflows/reference/limits/), it will be skipped and excluded from the returned array.
+When creating multiple Workflow instances, use the [`createBatch`](https://developers.cloudflare.com/workflows/build/workers-api/#createbatch) method to batch the invocations together. This allows you to create multiple Workflow instances in a single request, which will reduce the number of requests made to the Workflows API. However, each individual instance in the batch will still count towards the [creation rate limit](https://developers.cloudflare.com/workflows/reference/limits/). Unlike `create`, `createBatch` does not throw if an existing instance with the same ID is still within its [retention limit](https://developers.cloudflare.com/workflows/reference/limits/). Instead, it skips that instance and reports it in the `errors` array of the result.
 
 index.jsjs
     
@@ -982,8 +982,11 @@ index.jsjs
     
     		// ✅ Good: Batch calls together
     		// This improves throughput.
-    		let createdInstances = await env.MY_WORKFLOW.createBatch(instances);
-    		return Response.json({ instances: createdInstances });
+    		let { created, errors } = await env.MY_WORKFLOW.createBatch({ instances });
+    		return Response.json({
+    			instances: created.map((instance) => instance.id),
+    			errors,
+    		});
     	},
     };
 
@@ -1009,8 +1012,11 @@ index.tsts
     
     		// ✅ Good: Batch calls together
     		// This improves throughput.
-    		let createdInstances = await env.MY_WORKFLOW.createBatch(instances);
-    		return Response.json({ instances: createdInstances });
+    		let { created, errors } = await env.MY_WORKFLOW.createBatch({ instances });
+    		return Response.json({
+    			instances: created.map((instance) => instance.id),
+    			errors,
+    		});
     	},
     };
 

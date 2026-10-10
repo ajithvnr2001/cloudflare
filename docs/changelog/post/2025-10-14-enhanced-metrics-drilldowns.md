@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-10-14-enhanced-metrics-drilldowns/
 title: Enhanced AI Crawl Control metrics with new drilldowns and filters \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:26.153436+00:00
+fetched_at: 2026-10-10T14:38:47.809572+00:00
 ---
 
 # Enhanced AI Crawl Control metrics with new drilldowns and filters · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Crawl Control](https://developers.cloudflare.com/ai-crawl-control/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-10-14-enhanced-metrics-drilldowns/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 AI Crawl Control now provides enhanced metrics and CSV data exports to help you better understand AI crawler activity across your sites.
 

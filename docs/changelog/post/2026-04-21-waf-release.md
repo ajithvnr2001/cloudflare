@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-21-waf-release/
 title: WAF Release - 2026-04-21 \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:48.486753+00:00
+fetched_at: 2026-10-10T14:38:39.884927+00:00
 ---
 
 # WAF Release - 2026-04-21 · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [WAF](https://developers.cloudflare.com/waf/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-21-waf-release/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 This week's release introduces a new detection for a Remote Code Execution (RCE) vulnerability in Apache ActiveMQ (CVE-2026-34197) and an updated signature for Magento 2 - Unrestricted File Upload. Alongside these detections, we are continuing our work on rule refinements to provide deeper security insights for our customers.
 

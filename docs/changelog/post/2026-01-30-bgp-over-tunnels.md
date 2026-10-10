@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-01-30-bgp-over-tunnels/
 title: BGP over GRE and IPsec tunnels \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:35.205366+00:00
+fetched_at: 2026-10-10T14:38:44.501981+00:00
 ---
 
 # BGP over GRE and IPsec tunnels · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare WAN](https://developers.cloudflare.com/cloudflare-wan/)[Magic Transit](https://developers.cloudflare.com/magic-transit/)[Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-01-30-bgp-over-tunnels/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Magic WAN and Magic Transit customers can use the Cloudflare dashboard to configure and manage BGP peering between their networks and their Magic routing table when using IPsec and GRE tunnel on-ramps (beta).
 

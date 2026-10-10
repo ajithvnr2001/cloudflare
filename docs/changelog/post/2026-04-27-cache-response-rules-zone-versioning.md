@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-27-cache-response-rules-zone-versioning/
 title: Cache Response Rules now support zone versioning \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:49.127033+00:00
+fetched_at: 2026-10-10T14:38:39.600895+00:00
 ---
 
 # Cache Response Rules now support zone versioning · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cache / CDN](https://developers.cloudflare.com/cache/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-27-cache-response-rules-zone-versioning/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cache Response Rules now work with [Version Management](https://developers.cloudflare.com/version-management/). You can version response-phase cache settings and promote them through environments, just like Cache Rules and other supported configurations.
 

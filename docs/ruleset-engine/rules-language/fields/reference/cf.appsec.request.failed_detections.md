@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.appsec.request.failed_detections/
 title: cf.appsec.request.failed_detections \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-09T10:55:29.853992+00:00
+fetched_at: 2026-10-10T14:37:35.864152+00:00
 ---
 
 # cf.appsec.request.failed_detections · Cloudflare Ruleset Engine docs

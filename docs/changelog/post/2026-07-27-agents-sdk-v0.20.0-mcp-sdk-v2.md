@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-27-agents-sdk-v0.20.0-mcp-sdk-v2/
 title: Agents SDK adds MCP Specification 2026-07-28 support \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:05.213700+00:00
+fetched_at: 2026-10-10T14:38:34.287611+00:00
 ---
 
 # Agents SDK adds MCP Specification 2026-07-28 support · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Agents](https://developers.cloudflare.com/agents/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-27-agents-sdk-v0.20.0-mcp-sdk-v2/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Agents SDK v0.20.0 adds client and server support for the [MCP 2026-07-28 release candidate ↗︎](https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/). Workers can serve tools, prompts, resources, and elicitation without an MCP transport session or Durable Object. Agents can connect to both MCP 2026-07-28 servers and existing legacy servers.
 

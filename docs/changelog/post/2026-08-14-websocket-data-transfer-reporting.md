@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-08-14-websocket-data-transfer-reporting/
 title: WebSocket reporting now includes full connection data transfer and duration \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:08.622829+00:00
+fetched_at: 2026-10-10T14:38:32.879058+00:00
 ---
 
 # WebSocket reporting now includes full connection data transfer and duration · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Analytics](https://developers.cloudflare.com/analytics/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-08-14-websocket-data-transfer-reporting/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare has fixed an issue affecting WebSocket data transfer and session duration reporting. HTTP Traffic Analytics and HTTP request logs now correctly report data transferred throughout a WebSocket connection and the duration of the full session. During the affected period, reporting captured only the bytes and duration of the initial `101 Switching Protocols` handshake for some WebSocket connections.
 

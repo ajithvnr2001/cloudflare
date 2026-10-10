@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-10-06-dns-records-quota-warning/
 title: Warnings when approaching your DNS records quota \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:19.423535+00:00
+fetched_at: 2026-10-10T14:38:29.316050+00:00
 ---
 
 # Warnings when approaching your DNS records quota · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [DNS](https://developers.cloudflare.com/dns/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-10-06-dns-records-quota-warning/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The DNS records page in the Cloudflare dashboard now shows a warning once you have used 85% of your [DNS records quota](https://developers.cloudflare.com/dns/manage-dns-records/#dns-records-quota).
 

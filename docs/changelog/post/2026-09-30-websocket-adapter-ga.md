@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-30-websocket-adapter-ga/
 title: Realtime SFU WebSocket adapter is generally available \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:17.790365+00:00
+fetched_at: 2026-10-10T14:38:29.899500+00:00
 ---
 
 # Realtime SFU WebSocket adapter is generally available · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Realtime](https://developers.cloudflare.com/realtime/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-30-websocket-adapter-ga/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The [WebSocket adapter](https://developers.cloudflare.com/realtime/sfu/features/media-transport-adapters/websocket-adapter/) for [Cloudflare's Realtime SFU](https://developers.cloudflare.com/realtime/sfu/) is now generally available. The SFU (selective forwarding unit) is managed WebRTC infrastructure for live audio, video, and data across [Cloudflare's global network in 330+ cities ↗︎](https://www.cloudflare.com/products/turn-sfu/).
 

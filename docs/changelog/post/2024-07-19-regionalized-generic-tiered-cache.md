@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2024-07-19-regionalized-generic-tiered-cache/
 title: Regionalized Generic Tiered Cache for higher hit ratios \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:59.263930+00:00
+fetched_at: 2026-10-10T14:38:56.183106+00:00
 ---
 
 # Regionalized Generic Tiered Cache for higher hit ratios · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cache / CDN](https://developers.cloudflare.com/cache/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2024-07-19-regionalized-generic-tiered-cache/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now achieve higher cache hit ratios with [Generic Global Tiered Cache](https://developers.cloudflare.com/cache/how-to/tiered-cache/#generic-global-tiered-cache). Regional content hashing routes content consistently to the same upper-tier data centers, eliminating redundant caching and reducing origin load.
 

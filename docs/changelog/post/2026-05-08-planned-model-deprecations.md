@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-08-planned-model-deprecations/
 title: Planned model deprecations on Workers AI \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:52.194877+00:00
+fetched_at: 2026-10-10T14:38:38.591123+00:00
 ---
 
 # Planned model deprecations on Workers AI · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers AI](https://developers.cloudflare.com/workers-ai/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-08-planned-model-deprecations/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We are refreshing the Workers AI model catalog to make room for newer releases. Please update your apps to remove references to the models listed below before the deprecation date.
 

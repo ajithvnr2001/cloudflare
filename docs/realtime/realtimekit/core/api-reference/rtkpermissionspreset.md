@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/realtime/realtimekit/core/api-reference/rtkpermissionspreset/
 title: RTKPermissionsPreset \u00b7 Cloudflare Realtime docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:12:55.656741+00:00
+fetched_at: 2026-10-10T14:37:57.571045+00:00
 ---
 
 # RTKPermissionsPreset · Cloudflare Realtime docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:12:55.656741+00:00
 
 # RTKPermissionsPreset
 
-Last updated Jul 20, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/realtime/realtimekit/core/api-reference/rtkpermissionspreset/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Jul 20, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Overview meeting.self.permissions.stageEnabled meeting.self.permissions.stageAccess meeting.self.permissions.acceptWaitingRequests meeting.self.permissions.requestProduceVideo meeting.self.permissions.requestProduceAudio meeting.self.permissions.requestProduceScreenshare meeting.self.permissions.canAllowParticipantAudio meeting.self.permissions.canAllowParticipantScreensharing meeting.self.permissions.canAllowParticipantVideo meeting.self.permissions.canDisableParticipantAudio meeting.self.permissions.canDisableParticipantVideo meeting.self.permissions.kickParticipant meeting.self.permissions.pinParticipant meeting.self.permissions.canRecord meeting.self.permissions.waitingRoomBehaviour meeting.self.permissions.plugins meeting.self.permissions.polls meeting.self.permissions.canProduceVideo meeting.self.permissions.canProduceScreenshare meeting.self.permissions.canProduceAudio meeting.self.permissions.chatPublic meeting.self.permissions.chatPrivate meeting.self.permissions.hiddenParticipant meeting.self.permissions.showParticipantList meeting.self.permissions.canChangeParticipantPermissions meeting.self.permissions.canLivestream
 

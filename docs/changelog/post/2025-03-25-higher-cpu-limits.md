@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-03-25-higher-cpu-limits/
 title: Run Workers for up to 5 minutes of CPU-time \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:07.421342+00:00
+fetched_at: 2026-10-10T14:38:53.645858+00:00
 ---
 
 # Run Workers for up to 5 minutes of CPU-time · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-03-25-higher-cpu-limits/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now run a Worker for up to 5 minutes of CPU time for each request.
 

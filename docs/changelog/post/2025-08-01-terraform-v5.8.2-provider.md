@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-08-01-terraform-v5.8.2-provider/
 title: Terraform v5.8.2 now available \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:18.305126+00:00
+fetched_at: 2026-10-10T14:38:50.578305+00:00
 ---
 
 # Terraform v5.8.2 now available · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)[Terraform](https://developers.cloudflare.com/terraform/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-08-01-terraform-v5.8.2-provider/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Earlier this year, we announced the launch of the new [Terraform v5 Provider](https://developers.cloudflare.com/changelog/2025-02-03-terraform-v5-provider/). We are aware of the high number of [issues ↗︎](https://github.com/cloudflare/terraform-provider-cloudflare) reported by the Cloudflare community related to the v5 release. We have committed to releasing improvements on a 2 week cadeance to ensure it's stability and reliability. We have also pivoted from an issue-to-issue approach to a resource-per-resource approach - we will be focusing on specific resources for every release, stabilizing the release and closing all associated bugs with that resource before moving onto resolving migration issues.
 

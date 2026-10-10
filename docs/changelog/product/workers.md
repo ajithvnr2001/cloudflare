@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/workers/
 title: Workers Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:52.847563+00:00
+fetched_at: 2026-10-10T14:38:02.195376+00:00
 ---
 
 # Workers Changelog | Cloudflare Docs
@@ -230,6 +230,60 @@ Zaraz
 No products found.
 
 [ View RSS feeds ](https://developers.cloudflare.com/fundamentals/new-features/available-rss-feeds/)[ Subscribe to RSS ](https://developers.cloudflare.com/changelog/rss/index.xml)
+
+Oct 8, 2026
+
+## [Create Workflow instance batches by count or list](https://developers.cloudflare.com/changelog/post/2026-10-08-create-batch-object-form/)
+
+[Workflows](https://developers.cloudflare.com/workflows/)[Workers](https://developers.cloudflare.com/workers/)
+
+[`createBatch()`](https://developers.cloudflare.com/workflows/build/workers-api/#createbatch) now accepts an options object that creates up to 100 Workflow instances in one call. The result lists the created instances and explains why any others were not created. To use this form in local development and get its types from `wrangler types`, use Wrangler 4.148.0 or later.
+
+To create instances that share the same options, pass `count`. Each instance receives a generated ID:
+    
+    
+    const result = await env.MY_WORKFLOW.createBatch({
+    	count: 10,
+    	params: { report: "daily" },
+    });
+    
+    
+    const result = await env.MY_WORKFLOW.createBatch({
+    	count: 10,
+    	params: { report: "daily" },
+    });
+
+To give each instance its own ID or options, pass `instances`:
+    
+    
+    const { created, errors } = await env.MY_WORKFLOW.createBatch({
+    	instances: [
+    		{ id: "order-1", params: { orderId: 1 } },
+    		{ id: "order-2", params: { orderId: 2 } },
+    	],
+    });
+    
+    for (const error of errors) {
+    	console.log(error.index, error.id, error.code, error.message);
+    }
+    
+    
+    const { created, errors } = await env.MY_WORKFLOW.createBatch({
+    	instances: [
+    		{ id: "order-1", params: { orderId: 1 } },
+    		{ id: "order-2", params: { orderId: 2 } },
+    	],
+    });
+    
+    for (const error of errors) {
+    	console.log(error.index, error.id, error.code, error.message);
+    }
+
+`created` contains the created instances. `errors` contains each entry that was not created, identified by its position in the input. IDs that already exist and IDs repeated within the batch are reported as errors instead of being skipped silently.
+
+Passing an array to `createBatch()` is deprecated. Existing code that uses the array form continues to work.
+
+For more information, refer to [`createBatch`](https://developers.cloudflare.com/workflows/build/workers-api/#createbatch).
 
 Oct 2, 2026
 
@@ -549,7 +603,7 @@ In the example, `env.AUTH_SERVER.validateToken` is that Service Binding call. Th
     	"name": "calendar-mcp",
     	"main": "src/index.ts",
     	// Set this to today's date
-    	"compatibility_date": "2026-10-08",
+    	"compatibility_date": "2026-10-10",
     	"services": [
     		{
     			"binding": "AUTH_SERVER",
@@ -563,7 +617,7 @@ In the example, `env.AUTH_SERVER.validateToken` is that Service Binding call. Th
     name = "calendar-mcp"
     main = "src/index.ts"
     # Set this to today's date
-    compatibility_date = "2026-10-08"
+    compatibility_date = "2026-10-10"
     
     [[services]]
     binding = "AUTH_SERVER"
@@ -1324,7 +1378,7 @@ You can now manage Email Routing rules that route emails to Workers from your Wr
       "name": "invoice-handler",
       "main": "src/index.ts",
       // Set this to today's date
-      "compatibility_date": "2026-10-08",
+      "compatibility_date": "2026-10-10",
       "addresses": [
         "invoice@yourdomain.com"
       ]
@@ -1334,7 +1388,7 @@ You can now manage Email Routing rules that route emails to Workers from your Wr
     name = "invoice-handler"
     main = "src/index.ts"
     # Set this to today's date
-    compatibility_date = "2026-10-08"
+    compatibility_date = "2026-10-10"
     addresses = ["invoice@yourdomain.com"]
 
 When you run `wrangler deploy`, Wrangler creates rules for new addresses, updates existing rules managed by the Worker, and removes managed rules that are no longer in the configuration. Wrangler shows the planned changes and asks for confirmation before applying potentially destructive changes.
@@ -1427,18 +1481,6 @@ For ASGI frameworks like FastAPI or Starlette:
     Default = asgi.entrypoint(app)
 
 For more information about using individual web frameworks, refer to the [packages documentation in Python Workers](https://developers.cloudflare.com/workers/languages/python/packages/).
-
-Aug 28, 2026
-
-## [Durable Objects can use up to ten Dynamic Workers concurrently](https://developers.cloudflare.com/changelog/post/2026-08-28-durable-objects-dynamic-workers-limit/)
-
-[Workers](https://developers.cloudflare.com/workers/)[Durable Objects](https://developers.cloudflare.com/durable-objects/)
-
-[Durable Objects](https://developers.cloudflare.com/durable-objects/) can have up to ten distinct [Dynamic Workers](https://developers.cloudflare.com/dynamic-workers/) with in-flight requests, increased from four. This limit applies across all concurrent requests to the same Durable Object because they share an input/output (I/O) context. Other Workers can have up to four distinct Dynamic Workers with in-flight requests per request.
-
-Multiple in-flight requests to the same Dynamic Worker count as one toward this limit.
-
-For more information, refer to [Dynamic Workers limits](https://developers.cloudflare.com/dynamic-workers/platform/limits/).
 
 ← Prev
 

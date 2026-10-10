@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/alibaba/qwen3.7-max/
 title: Qwen 3.7 Max (Alibaba) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:50.250609+00:00
+fetched_at: 2026-10-10T14:39:19.358517+00:00
 ---
 
 # Qwen 3.7 Max (Alibaba) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:04:50.250609+00:00
 
 Text Generation • Alibaba
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/alibaba/qwen3.7-max/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `alibaba/qwen3.7-max`
 

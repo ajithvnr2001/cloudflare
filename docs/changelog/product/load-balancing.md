@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/load-balancing/
 title: Load Balancing Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:46.992897+00:00
+fetched_at: 2026-10-10T14:38:07.066075+00:00
 ---
 
 # Load Balancing Changelog | Cloudflare Docs

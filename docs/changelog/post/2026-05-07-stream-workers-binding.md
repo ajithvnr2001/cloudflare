@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-07-stream-workers-binding/
 title: Introducing Stream Bindings for Workers \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:52.039467+00:00
+fetched_at: 2026-10-10T14:38:38.692564+00:00
 ---
 
 # Introducing Stream Bindings for Workers · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Stream](https://developers.cloudflare.com/stream/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-07-stream-workers-binding/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now interact with your Stream video library using new bindings for Workers! This allows customers to upload content to Stream, provision direct uploads, manage videos, and generate signed URLs from a Worker without making authenticated API calls. We're excited to bring Stream and Workers closer together to empower more programmatic pipelines, tighter integrations, and support generative AI and inference workloads.
 

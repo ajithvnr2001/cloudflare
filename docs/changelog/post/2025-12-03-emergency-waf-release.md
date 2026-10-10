@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-12-03-emergency-waf-release/
 title: WAF Release - 2025-12-03 - Emergency \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:30.541790+00:00
+fetched_at: 2026-10-10T14:38:46.189141+00:00
 ---
 
 # WAF Release - 2025-12-03 - Emergency · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [WAF](https://developers.cloudflare.com/waf/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-12-03-emergency-waf-release/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The WAF rule deployed yesterday to block unsafe deserialization-based RCE has been updated. The rule description now reads “React – RCE – CVE-2025-55182”, explicitly mapping to the recently disclosed React Server Components vulnerability. Detection logic remains unchanged.
 

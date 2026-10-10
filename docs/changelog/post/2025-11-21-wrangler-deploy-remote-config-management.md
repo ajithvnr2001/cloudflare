@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-11-21-wrangler-deploy-remote-config-management/
 title: Better local deployment flow for Cloudflare Workers \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:30.245074+00:00
+fetched_at: 2026-10-10T14:38:46.429124+00:00
 ---
 
 # Better local deployment flow for Cloudflare Workers · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-11-21-wrangler-deploy-remote-config-management/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Until now, if a Worker had been previously deployed via the [Cloudflare Dashboard ↗︎](https://dash.cloudflare.com), a subsequent deployment done via the Cloudflare Workers CLI, [**Wrangler**](https://developers.cloudflare.com/workers/wrangler/) (through the [`deploy` command](https://developers.cloudflare.com/workers/wrangler/commands/general/#deploy)), would allow the user to override the Worker's dashboard settings without providing details on what dashboard settings would be lost.
 

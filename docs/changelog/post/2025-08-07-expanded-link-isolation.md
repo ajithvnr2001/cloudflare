@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-08-07-expanded-link-isolation/
 title: Expanded Email Link Isolation \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:18.674826+00:00
+fetched_at: 2026-10-10T14:38:50.277621+00:00
 ---
 
 # Expanded Email Link Isolation · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Email security](https://developers.cloudflare.com/cloudflare-one/email-security/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-08-07-expanded-link-isolation/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 When you deploy MX or Inline, not only can you apply email link isolation to suspicious links in all emails (including benign), you can now also apply email link isolation to all links of a specified disposition. This provides more flexibility in controlling user actions within emails.
 

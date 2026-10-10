@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/%40cf/meta/llama-3.3-70b-instruct-fp8-fast/
 title: llama-3.3-70b-instruct-fp8-fast (Meta) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:46.611403+00:00
+fetched_at: 2026-10-10T14:39:22.017546+00:00
 ---
 
 # llama-3.3-70b-instruct-fp8-fast (Meta) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:04:46.611403+00:00
 
 Text Generation • Meta
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/%40cf/meta/llama-3.3-70b-instruct-fp8-fast/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `@cf/meta/llama-3.3-70b-instruct-fp8-fast`
 

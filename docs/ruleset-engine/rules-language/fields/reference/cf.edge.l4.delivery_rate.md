@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.edge.l4.delivery_rate/
 title: cf.edge.l4.delivery_rate \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:03.299369+00:00
+fetched_at: 2026-10-10T14:37:35.496400+00:00
 ---
 
 # cf.edge.l4.delivery_rate · Cloudflare Ruleset Engine docs

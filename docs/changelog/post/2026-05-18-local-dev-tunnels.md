@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-18-local-dev-tunnels/
 title: Share local dev servers through Cloudflare Tunnel in Wrangler and Vite \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:53.553565+00:00
+fetched_at: 2026-10-10T14:38:38.128681+00:00
 ---
 
 # Share local dev servers through Cloudflare Tunnel in Wrangler and Vite · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-18-local-dev-tunnels/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now share local dev sessions through [Cloudflare Tunnel](https://developers.cloudflare.com/tunnel/) and get a public URL when using either [Wrangler](https://developers.cloudflare.com/workers/wrangler/) or the [Cloudflare Vite plugin](https://developers.cloudflare.com/workers/vite-plugin/). This is useful when you need to share a preview, test a webhook, or access your app from another device.
 

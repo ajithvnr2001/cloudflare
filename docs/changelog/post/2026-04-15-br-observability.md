@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-15-br-observability/
 title: Browser Run adds Live View, Human in the Loop, and Session Recordings \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:46.825614+00:00
+fetched_at: 2026-10-10T14:38:40.427633+00:00
 ---
 
 # Browser Run adds Live View, Human in the Loop, and Session Recordings · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Browser Run](https://developers.cloudflare.com/browser-run/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-15-br-observability/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 When browser automation fails or behaves unexpectedly, it can be hard to understand what happened. We are shipping three new features in [Browser Run](https://developers.cloudflare.com/browser-run/) (formerly Browser Rendering) to help:
 

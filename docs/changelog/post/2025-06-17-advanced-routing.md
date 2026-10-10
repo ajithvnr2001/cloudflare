@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-06-17-advanced-routing/
 title: Control which routes invoke your Worker script for Single Page Applications \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:14.229795+00:00
+fetched_at: 2026-10-10T14:38:51.671013+00:00
 ---
 
 # Control which routes invoke your Worker script for Single Page Applications · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-06-17-advanced-routing/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 For those building [Single Page Applications (SPAs) on Workers](https://developers.cloudflare.com/workers/static-assets/routing/single-page-application/#advanced-routing-control), you can now explicitly define which routes invoke your Worker script in Wrangler configuration. The [`run_worker_first` config option](https://developers.cloudflare.com/workers/static-assets/binding/#run_worker_first) has now been expanded to accept an array of route patterns, allowing you to more granularly specify when your Worker script runs.
 
@@ -31,7 +31,7 @@ For those building [Single Page Applications (SPAs) on Workers](https://develope
     {
     	"name": "my-spa-worker",
     	// Set this to today's date
-    	"compatibility_date": "2026-10-08",
+    	"compatibility_date": "2026-10-10",
     	"main": "./src/index.ts",
     	"assets": {
     		"directory": "./dist/",
@@ -44,7 +44,7 @@ For those building [Single Page Applications (SPAs) on Workers](https://develope
     
     name = "my-spa-worker"
     # Set this to today's date
-    compatibility_date = "2026-10-08"
+    compatibility_date = "2026-10-10"
     main = "./src/index.ts"
     
     [assets]

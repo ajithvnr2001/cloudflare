@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-02-03-r2-local-uploads/
 title: Improve Global Upload Performance with R2 Local Uploads - Now in Open Beta \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:35.754531+00:00
+fetched_at: 2026-10-10T14:38:44.334010+00:00
 ---
 
 # Improve Global Upload Performance with R2 Local Uploads - Now in Open Beta · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [R2](https://developers.cloudflare.com/r2/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-02-03-r2-local-uploads/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Local Uploads](https://developers.cloudflare.com/r2/buckets/local-uploads/) is now available in open beta. Enable it on your [R2](https://developers.cloudflare.com/r2/) bucket to improve upload performance when clients upload data from a different region than your bucket. With Local Uploads enabled, object data is written to storage infrastructure near the client, then asynchronously replicated to your bucket. The object is immediately accessible and remains strongly consistent throughout. Refer to [How R2 works](https://developers.cloudflare.com/r2/how-r2-works/) for details on how data is written to your bucket.
 

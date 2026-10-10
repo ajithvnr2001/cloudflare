@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-08-03-r2-sql-billing-enabled/
 title: Billing is now enabled for R2 SQL \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:06.208043+00:00
+fetched_at: 2026-10-10T14:38:33.767461+00:00
 ---
 
 # Billing is now enabled for R2 SQL · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Basin SQL](https://developers.cloudflare.com/basin-sql/)[Basin](https://developers.cloudflare.com/basin/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-08-03-r2-sql-billing-enabled/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Billing is now enabled for [R2 SQL](https://developers.cloudflare.com/basin-sql/) on non-enterprise accounts. R2 SQL usage beyond the included free tier will appear on your next invoice.
 

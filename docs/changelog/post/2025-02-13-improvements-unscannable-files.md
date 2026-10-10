@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-02-13-improvements-unscannable-files/
 title: Block files that are password-protected, compressed, or otherwise unscannable. \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:04.079445+00:00
+fetched_at: 2026-10-10T14:38:55.077572+00:00
 ---
 
 # Block files that are password-protected, compressed, or otherwise unscannable. · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Data Loss Prevention](https://developers.cloudflare.com/cloudflare-one/data-loss-prevention/)[Gateway](https://developers.cloudflare.com/cloudflare-one/traffic-policies/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-02-13-improvements-unscannable-files/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Gateway HTTP policies can now block files that are password-protected, compressed, or otherwise unscannable.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-03-06-step-context-available/
 title: Workflow steps now expose retry attempt number via step context \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:40.125962+00:00
+fetched_at: 2026-10-10T14:38:42.615041+00:00
 ---
 
 # Workflow steps now expose retry attempt number via step context · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workflows](https://developers.cloudflare.com/workflows/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-03-06-step-context-available/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare Workflows allows you to configure specific retry logic for each step in your workflow execution. Now, you can access **which** retry attempt is currently executing for calls to `step.do()`:
     

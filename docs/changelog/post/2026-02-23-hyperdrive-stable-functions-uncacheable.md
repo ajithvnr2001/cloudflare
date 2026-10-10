@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-02-23-hyperdrive-stable-functions-uncacheable/
 title: Hyperdrive no longer caches queries using STABLE PostgreSQL functions \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:38.113550+00:00
+fetched_at: 2026-10-10T14:38:43.376864+00:00
 ---
 
 # Hyperdrive no longer caches queries using STABLE PostgreSQL functions · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Hyperdrive](https://developers.cloudflare.com/hyperdrive/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-02-23-hyperdrive-stable-functions-uncacheable/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Hyperdrive now treats queries containing PostgreSQL `STABLE` functions as uncacheable, in addition to `VOLATILE` functions.
 

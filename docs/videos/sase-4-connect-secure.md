@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/videos/sase-4-connect-secure/
 title: SASE - Connect and secure from any network to anywhere | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:16:17.530460+00:00
+fetched_at: 2026-10-10T14:37:26.515307+00:00
 ---
 
 # SASE - Connect and secure from any network to anywhere | Cloudflare Docs

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/realtime/realtimekit/ui-kit/api-reference/react/rtkwaitingscreen/
 title: RtkWaitingScreen \u00b7 Cloudflare Realtime docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:14:30.824780+00:00
+fetched_at: 2026-10-10T14:37:36.279712+00:00
 ---
 
 # RtkWaitingScreen · Cloudflare Realtime docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:14:30.824780+00:00
 
 # RtkWaitingScreen
 
-Last updated Apr 21, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/realtime/realtimekit/ui-kit/api-reference/react/rtkwaitingscreen/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Apr 21, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewPropertiesUsage Examples Basic Usage With Properties
 

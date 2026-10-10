@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-14-cloudflare-mesh/
 title: Introducing Cloudflare Mesh \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:46.409590+00:00
+fetched_at: 2026-10-10T14:38:40.627170+00:00
 ---
 
 # Introducing Cloudflare Mesh · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-14-cloudflare-mesh/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Cloudflare Mesh](https://developers.cloudflare.com/mesh/) is now available ([blog post ↗︎](https://blog.cloudflare.com/mesh/)). Mesh connects your services and devices with post-quantum encrypted networking, allowing you to route traffic privately between servers, laptops, and phones over TCP, UDP, and ICMP.
 

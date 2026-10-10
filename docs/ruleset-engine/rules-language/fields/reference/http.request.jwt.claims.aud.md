@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/http.request.jwt.claims.aud/
 title: http.request.jwt.claims.aud \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:11.074266+00:00
+fetched_at: 2026-10-10T14:37:32.480110+00:00
 ---
 
 # http.request.jwt.claims.aud · Cloudflare Ruleset Engine docs

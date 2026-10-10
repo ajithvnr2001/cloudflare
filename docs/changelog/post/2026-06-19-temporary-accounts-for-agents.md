@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-19-temporary-accounts-for-agents/
 title: Temporary accounts for AI agent deployments \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:59.000288+00:00
+fetched_at: 2026-10-10T14:38:36.220386+00:00
 ---
 
 # Temporary accounts for AI agent deployments · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-19-temporary-accounts-for-agents/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 AI agents can now deploy Workers to Cloudflare without first requiring a user to sign up, open a browser-based OAuth flow, click through the dashboard, or create an API token. When an agent tries to deploy without Cloudflare credentials, Wrangler can tell it to rerun with `--temporary`, then deploy the Worker to a temporary preview account.
 

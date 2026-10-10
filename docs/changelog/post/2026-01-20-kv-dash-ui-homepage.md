@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-01-20-kv-dash-ui-homepage/
 title: New Workers KV Dashboard UI \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:34.307781+00:00
+fetched_at: 2026-10-10T14:38:44.759296+00:00
 ---
 
 # New Workers KV Dashboard UI · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [KV](https://developers.cloudflare.com/kv/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-01-20-kv-dash-ui-homepage/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Workers KV](https://developers.cloudflare.com/kv/) has an updated dashboard UI with new dashboard styling that makes it easier to navigate and see analytics and settings for a KV namespace.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/cloudflare-tunnel-sase/
 title: Cloudflare Tunnel for SASE Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:43.493620+00:00
+fetched_at: 2026-10-10T14:38:09.035154+00:00
 ---
 
 # Cloudflare Tunnel for SASE Changelog | Cloudflare Docs

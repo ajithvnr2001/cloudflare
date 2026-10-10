@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-06-03-shopify-o2o-improvements/
 title: Improved onboarding for Shopify merchants \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:13.436391+00:00
+fetched_at: 2026-10-10T14:38:51.880176+00:00
 ---
 
 # Improved onboarding for Shopify merchants · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [DNS](https://developers.cloudflare.com/dns/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-06-03-shopify-o2o-improvements/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Shopify merchants can now onboard to **O2O** automatically, without needing to contact support or community members.
 

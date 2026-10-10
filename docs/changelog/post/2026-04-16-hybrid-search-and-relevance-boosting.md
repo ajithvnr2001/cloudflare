@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-16-hybrid-search-and-relevance-boosting/
 title: AI Search now has hybrid search and relevance boosting \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:47.804401+00:00
+fetched_at: 2026-10-10T14:38:40.069358+00:00
 ---
 
 # AI Search now has hybrid search and relevance boosting · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Search](https://developers.cloudflare.com/ai-search/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-16-hybrid-search-and-relevance-boosting/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [AI Search](https://developers.cloudflare.com/ai-search/) now supports hybrid search and relevance boosting, giving you more control over how results are found and ranked.
 

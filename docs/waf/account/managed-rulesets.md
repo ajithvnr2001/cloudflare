@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/waf/account/managed-rulesets/
 title: Managed rulesets \u00b7 Cloudflare Web Application Firewall (WAF) docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:16:27.491105+00:00
+fetched_at: 2026-10-10T14:39:25.315830+00:00
 ---
 
 # Managed rulesets · Cloudflare Web Application Firewall (WAF) docs
@@ -18,7 +18,7 @@ fetched_at: 2026-10-08T07:16:27.491105+00:00
 
 # Managed rulesets
 
-Last updated Oct 2, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/waf/account/managed-rulesets/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 9, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewAccount-level deploymentCustomize the behavior of managed rulesets
 
@@ -40,6 +40,10 @@ Rules of managed rulesets have associated tags (such as `wordpress`) that allow 
 At the zone level, each [WAF managed ruleset](https://developers.cloudflare.com/waf/managed-rules/#available-managed-rulesets) can only be deployed once. At the account level, you can deploy each managed ruleset more than once. This allows you to apply the same ruleset with different configurations to different subsets of incoming traffic across the Enterprise zones in your account.
 
 For example, you could deploy the [Cloudflare OWASP Core Ruleset](https://developers.cloudflare.com/waf/managed-rules/reference/owasp-core-ruleset/) multiple times with different [paranoia levels](https://developers.cloudflare.com/waf/managed-rules/reference/owasp-core-ruleset/concepts/#paranoia-level) and a different action (_Managed Challenge_ action for PL3 and _Log_ action for PL4). Higher paranoia levels enable additional rules that are more likely to produce false positives.
+
+Note
+
+Avoid deploying the same managed ruleset at both the account level and the zone level. Account-level rulesets run before zone-level rulesets, so duplicated deployments evaluate the same request twice, and a zone-level exception will not prevent a match at the account level. Standardize your managed ruleset deployments at the account level, and deploy at the zone level only when a zone requires a specific configuration or exception.
 
 Example: Deploy OWASP with two different configurations
 

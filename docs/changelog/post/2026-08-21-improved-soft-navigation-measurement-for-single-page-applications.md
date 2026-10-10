@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-08-21-improved-soft-navigation-measurement-for-single-page-applications/
 title: Web Analytics improves soft navigation measurement for Single Page Applications (SPAs) \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:10.038681+00:00
+fetched_at: 2026-10-10T14:38:32.505292+00:00
 ---
 
 # Web Analytics improves soft navigation measurement for Single Page Applications (SPAs) · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare Web Analytics](https://developers.cloudflare.com/web-analytics/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-08-21-improved-soft-navigation-measurement-for-single-page-applications/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare Web Analytics (Real User Monitoring) is rolling out accuracy improvements to client-side soft navigations. **Update: this update is complete as of 2026-09-04.**
 

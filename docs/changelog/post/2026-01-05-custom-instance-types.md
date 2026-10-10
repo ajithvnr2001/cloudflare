@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-01-05-custom-instance-types/
 title: Custom container instance types now available for all users \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:32.855388+00:00
+fetched_at: 2026-10-10T14:38:45.383364+00:00
 ---
 
 # Custom container instance types now available for all users · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Containers](https://developers.cloudflare.com/containers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-01-05-custom-instance-types/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Custom instance types are now enabled for all [Cloudflare Containers](https://developers.cloudflare.com/containers) users. You can now specify specific vCPU, memory, and disk amounts, rather than being limited to pre-defined [instance types](https://developers.cloudflare.com/containers/platform/limits/#instance-types). Previously, only select Enterprise customers were able to customize their instance type.
 

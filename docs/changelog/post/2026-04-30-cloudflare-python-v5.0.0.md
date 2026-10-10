@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-30-cloudflare-python-v5.0.0/
 title: Cloudflare Python SDK v5.0.0 Released \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:50.459955+00:00
+fetched_at: 2026-10-10T14:38:39.251461+00:00
 ---
 
 # Cloudflare Python SDK v5.0.0 Released · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [SDK](https://developers.cloudflare.com/fundamentals/api/reference/sdks/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-30-cloudflare-python-v5.0.0/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Full Changelog: [v4.3.1...v5.0.0 ↗︎](https://github.com/cloudflare/cloudflare-python/compare/v4.3.1...v5.0.0)
 

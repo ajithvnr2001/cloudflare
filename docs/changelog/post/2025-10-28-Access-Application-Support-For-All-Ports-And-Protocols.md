@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-10-28-Access-Application-Support-For-All-Ports-And-Protocols/
 title: Access private hostname applications support all ports/protocols \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:27.272540+00:00
+fetched_at: 2026-10-10T14:38:47.399406+00:00
 ---
 
 # Access private hostname applications support all ports/protocols · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Access](https://developers.cloudflare.com/cloudflare-one/access-controls/policies/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-10-28-Access-Application-Support-For-All-Ports-And-Protocols/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Cloudflare Access for private hostname applications](https://developers.cloudflare.com/cloudflare-one/access-controls/applications/non-http/self-hosted-private-app/) can now secure traffic on all ports and protocols.
 

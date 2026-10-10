@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers-ai/models/gemma-2b-it-lora/
 title: gemma-2b-it-lora (Google) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:02.866076+00:00
+fetched_at: 2026-10-10T14:37:22.104312+00:00
 ---
 
 # gemma-2b-it-lora (Google) · Cloudflare AI docs · Cloudflare Workers AI docs
@@ -23,7 +23,7 @@ Beta
 
 Text Generation • Google
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers-ai/models/gemma-2b-it-lora/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `@cf/google/gemma-2b-it-lora`
 

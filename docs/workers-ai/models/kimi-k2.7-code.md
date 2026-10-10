@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers-ai/models/kimi-k2.7-code/
 title: kimi-k2.7-code (Moonshot AI) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:04.105381+00:00
+fetched_at: 2026-10-10T14:37:21.564645+00:00
 ---
 
 # kimi-k2.7-code (Moonshot AI) · Cloudflare AI docs · Cloudflare Workers AI docs
@@ -21,7 +21,7 @@ fetched_at: 2026-10-08T07:17:04.105381+00:00
 
 Text Generation • Moonshot AI
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers-ai/models/kimi-k2.7-code/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `@cf/moonshotai/kimi-k2.7-code`
 

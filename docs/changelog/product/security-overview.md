@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/security-overview/
 title: Security Overview Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:49.315272+00:00
+fetched_at: 2026-10-10T14:38:04.794028+00:00
 ---
 
 # Security Overview Changelog | Cloudflare Docs

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/videos/sase-3-secure-remote-access/
 title: SASE - Secure remote access to your critical infrastructure | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:16:17.038768+00:00
+fetched_at: 2026-10-10T14:37:26.232331+00:00
 ---
 
 # SASE - Secure remote access to your critical infrastructure | Cloudflare Docs

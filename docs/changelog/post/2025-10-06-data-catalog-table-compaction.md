@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-10-06-data-catalog-table-compaction/
 title: R2 Data Catalog table-level compaction \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:25.514300+00:00
+fetched_at: 2026-10-10T14:38:48.048142+00:00
 ---
 
 # R2 Data Catalog table-level compaction · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Basin Catalog](https://developers.cloudflare.com/basin-catalog/)[Basin](https://developers.cloudflare.com/basin/)[R2](https://developers.cloudflare.com/r2/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-10-06-data-catalog-table-compaction/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now enable compaction for individual [Apache Iceberg ↗︎](https://iceberg.apache.org/) tables in [R2 Data Catalog](https://developers.cloudflare.com/basin-catalog/), giving you fine-grained control over different workloads.
     

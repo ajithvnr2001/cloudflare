@@ -3,8 +3,5 @@
   "file": "changelog/post/2026-06-24-radar-ip-page-improvements.md",
   "title": "Precise IP location and richer AS details on the Cloudflare Radar IP page \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:59.365652+00:00",
-  "html_len": 63631,
-  "md_len": 2489,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:36.023769+00:00"
 }

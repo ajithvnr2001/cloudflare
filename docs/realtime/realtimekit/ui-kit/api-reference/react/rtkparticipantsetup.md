@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/realtime/realtimekit/ui-kit/api-reference/react/rtkparticipantsetup/
 title: RtkParticipantSetup \u00b7 Cloudflare Realtime docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:14:24.627603+00:00
+fetched_at: 2026-10-10T14:37:40.350560+00:00
 ---
 
 # RtkParticipantSetup · Cloudflare Realtime docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:14:24.627603+00:00
 
 # RtkParticipantSetup
 
-Last updated Apr 21, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/realtime/realtimekit/ui-kit/api-reference/react/rtkparticipantsetup/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Apr 21, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewPropertiesUsage Examples Basic Usage With Properties
 

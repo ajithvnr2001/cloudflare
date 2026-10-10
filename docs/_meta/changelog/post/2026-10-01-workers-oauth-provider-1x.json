@@ -3,8 +3,5 @@
   "file": "changelog/post/2026-10-01-workers-oauth-provider-1x.md",
   "title": "The best way to do MCP auth just got better: Workers OAuth Provider goes v1, with a new split API and full support for MCP 2026-07-28 \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:07:18.605353+00:00",
-  "html_len": 106981,
-  "md_len": 9378,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:29.669354+00:00"
 }

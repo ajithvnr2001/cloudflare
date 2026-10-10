@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/observability/logs/datasets/
 title: Datasets \u00b7 Cloudflare Observability docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:12:26.786545+00:00
+fetched_at: 2026-10-10T14:39:26.091081+00:00
 ---
 
 # Datasets · Cloudflare Observability docs
@@ -18,11 +18,13 @@ fetched_at: 2026-10-08T07:12:26.786545+00:00
 
 # Datasets
 
-Last updated Oct 2, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/observability/logs/datasets/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 9, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
-OverviewSupported datasetsPricing Included in the new Observability pricing
+OverviewSupported datasetsSampled analytics datasetsPricing Included in the new Observability pricing
 
 Cloudflare Observability supports logs from the products listed in the table. Turn on each dataset in the location shown under **Enablement**. Datasets enabled through [Log Explorer](https://developers.cloudflare.com/log-explorer/) appear in Logs once your account has Log Explorer and that dataset turned on. Event sizes are estimates and vary by record.
+
+You can also query sampled analytics datasets for your zones in Logs without turning anything on.
 
 ## Supported datasets
 
@@ -61,6 +63,23 @@ Dataset | Identifier | Enablement | Average event size | Default retention
 [Zaraz Events](https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/zone/zaraz_events/) | `zaraz_events` | [On Account](https://developers.cloudflare.com/log-explorer/manage-datasets/#enable-log-explorer) | 7.30 KB | 30 days  
 [Zero Trust Network Session Logs](https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/account/zero_trust_network_sessions/) | `zero_trust_network_sessions` | [On Account](https://developers.cloudflare.com/log-explorer/manage-datasets/#enable-log-explorer) | 1.21 KB | 30 days  
   
+## Sampled analytics datasets
+
+Logs also lists HTTP requests and firewall events from the [GraphQL Analytics API](https://developers.cloudflare.com/analytics/graphql-api/). These datasets need no enablement and have no additional charge. The following sampled analytics datasets are available:
+
+Dataset | GraphQL dataset | Availability | Retention  
+---|---|---|---  
+HTTP requests | `httpRequestsAdaptive` | All plans | At least 31 days  
+Firewall events | `firewallEventsAdaptive` | Pro, Business, and Enterprise | At least 31 days  
+  
+These datasets use [adaptive sampling](https://developers.cloudflare.com/analytics/graphql-api/sampling/). Results can omit individual events, and counts can be estimates. Available fields, exact retention, and how far back charts reach depend on your plan. Refer to [GraphQL Analytics API limits](https://developers.cloudflare.com/analytics/graphql-api/limits/) for details.
+
+To query these datasets for a zone, you need the Zone Analytics Read permission for that zone. Account administrators can grant it on the **Members** page.
+
+[ Go to **Members** ↗ ](https://dash.cloudflare.com/?to=/:account/members)
+
+For unsampled HTTP requests and firewall events, turn on those datasets through [Log Explorer](https://developers.cloudflare.com/log-explorer/manage-datasets/#enable-log-explorer). Log Explorer is a paid add-on. Refer to Pricing for the unsampled security dataset price.
+
 ## Pricing
 
 Beginning December 1, 2026, all Cloudflare logs and traces will use the same pricing model. Unsampled security datasets have a different price point of $1 per GB ingested and include 30-day retention. Queries, dashboards, alerts, and analytics do not incur additional charge.

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2024-10-01-ssh-with-access-for-infrastructure/
 title: Eliminate long-lived credentials and enhance SSH security with Cloudflare Access for Infrastructure \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:59.591386+00:00
+fetched_at: 2026-10-10T14:38:55.967475+00:00
 ---
 
 # Eliminate long-lived credentials and enhance SSH security with Cloudflare Access for Infrastructure · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Access](https://developers.cloudflare.com/cloudflare-one/access-controls/policies/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2024-10-01-ssh-with-access-for-infrastructure/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Organizations can now eliminate long-lived credentials from their SSH setup and enable strong multi-factor authentication for SSH access, similar to other Access applications, all while generating access and command logs.
 

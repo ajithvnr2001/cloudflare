@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-11-14-SSH-CA-enhancements/
 title: Generate Cloudflare Access SSH certificate authority (CA) directly from the Cloudflare dashboard \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:29.458559+00:00
+fetched_at: 2026-10-10T14:38:46.636184+00:00
 ---
 
 # Generate Cloudflare Access SSH certificate authority (CA) directly from the Cloudflare dashboard · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Access](https://developers.cloudflare.com/cloudflare-one/access-controls/policies/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-11-14-SSH-CA-enhancements/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 SSH with [Cloudflare Access for Infrastructure](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/use-cases/ssh/ssh-infrastructure-access/) allows you to use short-lived SSH certificates to eliminate SSH key management and reduce security risks associated with lost or stolen keys.
 

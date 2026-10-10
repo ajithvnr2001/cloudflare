@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers/framework-guides/web-apps/astro/
 title: Astro \u00b7 Cloudflare Workers docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:26.801472+00:00
+fetched_at: 2026-10-10T14:39:27.316263+00:00
 ---
 
 # Astro · Cloudflare Workers docs
@@ -22,7 +22,7 @@ Framework guides
 
 # Astro
 
-Last updated Aug 12, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers/framework-guides/web-apps/astro/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewWhat is Astro?Deploy a new Astro project on WorkersDeploy an existing Astro project on WorkersManual configuration If you have a static site If your site uses on demand renderingBindingsSessionsCustom 404 pagesAstro's build configurationNode.js requirements
 
@@ -158,7 +158,7 @@ In your project root, create a Wrangler configuration file with the following co
          {
          	"name": "my-astro-app",
          	// Set this to today's date
-         	"compatibility_date": "2026-10-08",
+         	"compatibility_date": "2026-10-10",
          	"assets": {
          		"directory": "./dist"
          	}
@@ -166,7 +166,7 @@ In your project root, create a Wrangler configuration file with the following co
          
          name = "my-astro-app"
          # Set this to today's date
-         compatibility_date = "2026-10-08"
+         compatibility_date = "2026-10-10"
          
          [assets]
          directory = "./dist"
@@ -193,9 +193,9 @@ npmyarnpnpm
          
          npx wrangler@latest deploy
          
-         yarn wrangler@latest deploy
+         yarn dlx wrangler@latest deploy
          
-         pnpm wrangler@latest deploy
+         pnpx wrangler@latest deploy
 
 
 
@@ -234,7 +234,7 @@ In your project root, create a Wrangler configuration file with the following co
          	"main": "./dist/_worker.js/index.js",
          	// Update to today's date
          	// Set this to today's date
-         	"compatibility_date": "2026-10-08",
+         	"compatibility_date": "2026-10-10",
          	"compatibility_flags": ["nodejs_compat"],
          	"assets": {
          		"binding": "ASSETS",
@@ -248,7 +248,7 @@ In your project root, create a Wrangler configuration file with the following co
          name = "my-astro-app"
          main = "./dist/_worker.js/index.js"
          # Set this to today's date
-         compatibility_date = "2026-10-08"
+         compatibility_date = "2026-10-10"
          compatibility_flags = [ "nodejs_compat" ]
          
          [assets]
@@ -283,9 +283,9 @@ npmyarnpnpm
          
          npx wrangler@latest deploy
          
-         yarn wrangler@latest deploy
+         yarn dlx wrangler@latest deploy
          
-         pnpm wrangler@latest deploy
+         pnpx wrangler@latest deploy
 
 
 

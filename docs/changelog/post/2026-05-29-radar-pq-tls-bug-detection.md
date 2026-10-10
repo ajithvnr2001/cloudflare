@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-29-radar-pq-tls-bug-detection/
 title: TLS bug detection in the Cloudflare Radar post-quantum checker \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:55.286849+00:00
+fetched_at: 2026-10-10T14:38:37.501196+00:00
 ---
 
 # TLS bug detection in the Cloudflare Radar post-quantum checker · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Radar](https://developers.cloudflare.com/radar/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-29-radar-pq-tls-bug-detection/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The [**Radar**](https://developers.cloudflare.com/radar/) [post-quantum TLS support checker ↗︎](https://radar.cloudflare.com/post-quantum#website-support) now also reports TLS bugs detected during the handshake test. When a scanned host exhibits compatibility issues, the results include details on the specific bugs detected, along with guidance on how to investigate and remediate each issue. The bugs section only appears for hosts where issues are found.
 

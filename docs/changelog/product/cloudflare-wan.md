@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/cloudflare-wan/
 title: Cloudflare WAN Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:43.375031+00:00
+fetched_at: 2026-10-10T14:38:08.839993+00:00
 ---
 
 # Cloudflare WAN Changelog | Cloudflare Docs

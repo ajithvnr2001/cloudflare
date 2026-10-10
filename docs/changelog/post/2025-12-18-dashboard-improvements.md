@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-12-18-dashboard-improvements/
 title: Workers for Platforms - Dashboard Improvements \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:32.159072+00:00
+fetched_at: 2026-10-10T14:38:45.658556+00:00
 ---
 
 # Workers for Platforms - Dashboard Improvements · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers for Platforms](https://developers.cloudflare.com/cloudflare-for-platforms/workers-for-platforms/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-12-18-dashboard-improvements/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Workers for Platforms](https://developers.cloudflare.com/cloudflare-for-platforms/workers-for-platforms/) lets you build multi-tenant platforms on [Cloudflare Workers](https://developers.cloudflare.com/workers/), allowing your end users to deploy and run their own code on your platform. It's designed for anyone building an AI vibe coding platform, e-commerce platform, website builder, or any product that needs to securely execute user-generated code at scale.
 

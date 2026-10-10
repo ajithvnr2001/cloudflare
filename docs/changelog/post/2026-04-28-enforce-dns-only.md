@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-28-enforce-dns-only/
 title: Account-level enforce DNS-only \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:49.758968+00:00
+fetched_at: 2026-10-10T14:38:39.382905+00:00
 ---
 
 # Account-level enforce DNS-only · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [DNS](https://developers.cloudflare.com/dns/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-28-enforce-dns-only/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now disable Cloudflare's reverse proxy across all zones in your account simultaneously using the new `enforce_dns_only` setting. When enabled, Cloudflare responds to DNS queries for all proxied records with your origin IP addresses instead of Cloudflare's anycast IPs. This account-level kill switch is designed for incident response scenarios where you need to quickly route traffic directly to your origin servers.
 

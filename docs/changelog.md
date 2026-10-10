@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/
 title: Changelogs | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:48.486569+00:00
+fetched_at: 2026-10-10T14:39:04.871253+00:00
 ---
 
 # Changelogs | Cloudflare Docs
@@ -231,6 +231,268 @@ No products found.
 
 [ View RSS feeds ](https://developers.cloudflare.com/fundamentals/new-features/available-rss-feeds/)[ Subscribe to RSS ](https://developers.cloudflare.com/changelog/rss/index.xml)
 
+Oct 10, 2026
+
+## [Cloudflare API MCP server serves Cloudflare skills](https://developers.cloudflare.com/changelog/post/2026-10-10-cloudflare-mcp-skills/)
+
+[Agents](https://developers.cloudflare.com/agents/)
+
+The [Cloudflare API MCP server](https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/#cloudflare-api-mcp-server) now serves [Cloudflare skills ↗︎](https://github.com/cloudflare/skills) through the [Skills over MCP extension ↗︎](https://modelcontextprotocol.io/extensions/skills/overview). MCP clients that support the extension discover the skills with `skills/list` and read their files at `skill://<name>/<path>`.
+
+To use them, add `https://mcp.cloudflare.com/mcp` to an [MCP client that supports the extension ↗︎](https://modelcontextprotocol.io/extensions/client-matrix).
+
+Oct 9, 2026
+
+## [Improved HTTP/3 client cancellation reporting](https://developers.cloudflare.com/changelog/post/2026-10-09-http3-499-reporting-improvement/)
+
+[Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)
+
+Cloudflare has improved how it handles and reports client-cancelled HTTP/3 requests across Free, Pro, Business, and Enterprise plans. Customers now get a clearer view of client behavior in Cloudflare analytics and, where available, logs.
+
+Previously, Cloudflare did not always stop an HTTP/3 request when the client cancelled its request stream. Some cancellations were already recorded as `499`, while others continued to the origin and showed the eventual upstream status.
+
+Cloudflare now stops affected requests sooner, reducing unnecessary origin work, and records them as `499`. Customers may notice more `499` status codes for HTTP/3 traffic. This reflects more consistent reporting of existing cancellations, not an increase in failed requests.
+
+Customers who use `499` status codes in availability calculations should consider excluding them from server-side error rates because they represent requests cancelled by clients.
+
+For more information, refer to [Error 499](https://developers.cloudflare.com/support/troubleshooting/http-status-codes/4xx-client-error/error-499/).
+
+Oct 9, 2026
+
+## [More efficient Markdown for Agents conversion](https://developers.cloudflare.com/changelog/post/2026-10-09-markdown-for-agents-in-process-conversion/)
+
+[Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)
+
+[Markdown for Agents](https://developers.cloudflare.com/fundamentals/reference/markdown-for-agents/) now converts HTML with an in-process streaming engine at the edge. It processes content as it arrives instead of buffering the HTML response and sending it to a separate conversion service. This reduces conversion overhead and memory use.
+
+This release also changes the conversion limit and response headers:
+
+  * Conversion supports up to 6 MiB (6,291,456 bytes) of decompressed HTML, increased from 2 MiB (2,097,152 bytes). The limit applies after decompression, not to the compressed response size.
+  * Converted responses no longer generate the `x-markdown-tokens` or `x-original-tokens` headers. Clients that use these values need to calculate token counts themselves.
+  * `Content-Length` is removed from converted responses rather than recalculated, because the Markdown body is streamed.
+
+
+
+For more information, refer to the [Markdown for Agents documentation](https://developers.cloudflare.com/fundamentals/reference/markdown-for-agents/).
+
+Oct 9, 2026
+
+## [R2 bandwidth by Cloudflare location](https://developers.cloudflare.com/changelog/post/2026-10-09-r2-bandwidth-by-location/)
+
+[R2](https://developers.cloudflare.com/r2/)
+
+You can now view R2 bandwidth by the Cloudflare location that served each request in the Cloudflare UI. This helps you see which locations consume the most bandwidth with options to select a specific bucket and download (read) vs upload (write) bandwidth.
+
+[ Go to **R2 overview** ↗ ](https://dash.cloudflare.com/?to=/:account/r2/metrics) ![R2 bandwidth by location chart showing throughput for the top five Cloudflare locations](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=665,height=427,format=webp/_astro/r2-bandwidth-by-location.JMiyoI-0.png)
+
+By default, the chart shows the top five locations by total bandwidth consumed during the selected time range. Use the **Top 5 locations** dropdown to select other locations, up to six at a time.
+
+For more information, refer to [R2 metrics and analytics](https://developers.cloudflare.com/r2/platform/metrics-analytics/).
+
+Oct 9, 2026
+
+## [Failed detections field available in Rules](https://developers.cloudflare.com/changelog/post/2026-10-09-failed-detections/)
+
+[WAF](https://developers.cloudflare.com/waf/)[Rules](https://developers.cloudflare.com/rules/)
+
+You can now use `cf.appsec.request.failed_detections` to control how your rules handle requests when a security detection reports a failure.
+
+The field is an `Array<String>` of detection IDs that reports failures from content scanning, WAF attack score, attack signature detection, leaked credentials detection, and AI prompt detections for personally identifiable information (PII), prompt injection, custom topics, and unsafe topics.
+
+The field does not alter the existing behavior of detections. Use it in rules to choose how to handle requests with reported failures.
+
+When no failures are reported, the field returns `[]`. You can use it on all plans, but your plan must still include the detections and rule features you want to use.
+
+Supported rules:
+
+  * Custom rules at the zone and account levels
+  * Rate limiting rules at the zone and account levels
+  * Request Header Transform Rules at the zone level
+
+
+
+Match any reported failure:
+    
+    
+    len(cf.appsec.request.failed_detections) gt 0
+
+Match a reported leaked credentials detection failure:
+    
+    
+    any(cf.appsec.request.failed_detections[*] eq "waf_credential_check")
+
+For more information, refer to the [Failed detections field reference](https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.appsec.request.failed_detections/).
+
+Oct 9, 2026
+
+## [Clef-omni adds audio and video input, Clef-flash is now cheaper, and Clef is faster](https://developers.cloudflare.com/changelog/post/2026-10-09-clef-omni-workers-ai/)
+
+[Workers AI](https://developers.cloudflare.com/workers-ai/)
+
+[`@cf/cloudflare/clef-omni`](https://developers.cloudflare.com/workers-ai/models/clef-omni/) is now available on Workers AI. Clef-omni is a decision model that takes audio (WAV or MP3) and video (MP4 or WebM) input alongside text and images. It joins [Clef](https://developers.cloudflare.com/workers-ai/models/clef/) and [Clef-flash](https://developers.cloudflare.com/workers-ai/models/clef-flash/) in the Clef family of open-weight decision models. We also cut the price of Clef-flash, so it now costs less than Jev, and made Clef faster.
+
+#### Clef-omni: one decision model for every modality
+
+Previously, making a decision about a voice recording or a video meant chaining models together: transcribe the speech, split the audio and visual tracks, then pass the results to a text decision model. Clef-omni reads every modality directly in one request. A video's soundtrack is aligned with its frames, so the model can reason over what is seen and heard at the same time.
+
+Clef-omni is built on a 30B-parameter mixture-of-experts (MoE) backbone with 3B active parameters. Like the rest of the Clef family, it does not generate text. It scores every allowed answer in a single pass, so decisions return quickly:
+
+  * Text requests: about 20 ms
+  * Image or audio inputs: under 100 ms
+  * A 21-second video clip with sound: about 300 ms
+
+
+
+Pass media as base64 data URLs in the `images`, `audio`, and `videos` fields:
+    
+    
+    const response = await env.AI.run("@cf/cloudflare/clef-omni", {
+    	model: "clef-omni",
+    	state:
+    		"Review the installation: a photo of the unit, an audio recording of it running, and a video of the fan.",
+    	images: ["data:image/png;base64,<base64-png>"],
+    	audio: ["data:audio/mpeg;base64,<base64-mp3>"],
+    	videos: ["data:video/mp4;base64,<base64-mp4>"],
+    	questions: {
+    		label_visible: {
+    			type: "noul",
+    			instructions:
+    				"Is the model and serial number label visible in the photo?",
+    		},
+    		sounds_normal: {
+    			type: "noul",
+    			instructions:
+    				"Does the unit sound like it is running smoothly, without rattling or grinding?",
+    		},
+    		fan_running: {
+    			type: "noul",
+    			instructions: "Is the fan running in the video?",
+    		},
+    	},
+    });
+    
+    
+    const response = await env.AI.run("@cf/cloudflare/clef-omni", {
+    	model: "clef-omni",
+    	state:
+    		"Review the installation: a photo of the unit, an audio recording of it running, and a video of the fan.",
+    	images: ["data:image/png;base64,<base64-png>"],
+    	audio: ["data:audio/mpeg;base64,<base64-mp3>"],
+    	videos: ["data:video/mp4;base64,<base64-mp4>"],
+    	questions: {
+    		label_visible: {
+    			type: "noul",
+    			instructions:
+    				"Is the model and serial number label visible in the photo?",
+    		},
+    		sounds_normal: {
+    			type: "noul",
+    			instructions:
+    				"Does the unit sound like it is running smoothly, without rattling or grinding?",
+    		},
+    		fan_running: {
+    			type: "noul",
+    			instructions: "Is the fan running in the video?",
+    		},
+    	},
+    });
+
+Clef-omni scores highest of the Clef family on BANKING77, CLINC150+OOS, and Amazon ESCI:
+
+Benchmark | Clef-omni | Clef | Clef-flash | Jev  
+---|---|---|---|---  
+BFCL (case exact) | 98.2 | 98.47 | **98.76** | 95.75  
+BANKING77 (macro-F1) | **94.8** | 94.20 | 90.93 | 79.74  
+CLINC150+OOS (macro-F1) | **97.7** | 97.43 | 66.77 | 89.27  
+Amazon ESCI (macro-F1) | **57.8** | 57.48 | 57.39 | 55.21  
+PhishNChips (accuracy) | 73.2 | **79.60** | 75.05 | 62.55  
+  
+#### Clef-flash is now cheaper
+
+Clef-flash now costs **$0.038 per million input tokens** , down from $0.090, which makes it cheaper than Jev. To offer this price, the hosted Clef-flash context window is now 24K tokens, down from 64K. Based on usage data, only 0.24% of requests exceed 24K input tokens. If you need a larger context window, use Clef, which keeps its 64K context window.
+
+The Clef-flash weights on Hugging Face are unchanged and support up to a 256K context window if you self-host.
+
+Model | Price | Context window  
+---|---|---  
+[`@cf/cloudflare/clef-flash`](https://developers.cloudflare.com/workers-ai/models/clef-flash/) | $0.038 per M input tokens | 24K tokens  
+[`@cf/cloudflare/clef`](https://developers.cloudflare.com/workers-ai/models/clef/) | $0.240 per M input tokens | 64K tokens  
+[`@cf/cloudflare/clef-omni`](https://developers.cloudflare.com/workers-ai/models/clef-omni/) | $0.150 per M input tokens | 64K tokens  
+  
+All Clef models convert image inputs to input tokens, and Clef-omni does the same for audio and video. For details on how each input type is tokenized, refer to the [Clef](https://developers.cloudflare.com/workers-ai/models/clef/), [Clef-flash](https://developers.cloudflare.com/workers-ai/models/clef-flash/), and [Clef-omni](https://developers.cloudflare.com/workers-ai/models/clef-omni/) model pages.
+
+#### Clef is now faster
+
+We optimized how Clef is served on Workers AI, so it now returns decisions up to 2x faster. The model weights are unchanged.
+
+Input size | Before: median / p95 (ms) | Now: median / p95 (ms) | Median speedup  
+---|---|---|---  
+~800 tokens | 262 / 438 | 152 / 351 | 1.7x  
+~3,400 tokens | 616 / 777 | 305 / 531 | 2.0x  
+~16,000 tokens | 2,721 / 3,250 | 1,635 / 1,805 | 1.7x  
+  
+Part of this speedup comes from moving Clef to [SGLang ↗︎](https://github.com/sgl-project/sglang). Clef support is coming to SGLang in version 0.5.22 ([PR #42721 ↗︎](https://github.com/sgl-project/sglang/pull/42721)). If you self-host Clef, launch commands are available in the [Clef collection on Hugging Face ↗︎](https://huggingface.co/collections/Cloudflare/clef).
+
+#### Get started
+
+Clef-omni follows the same System One API as Clef and Clef-flash, and works with [AI Gateway](https://developers.cloudflare.com/ai-gateway/). To try it, change the model ID to `@cf/cloudflare/clef-omni` and set the `model` selector to `clef-omni`.
+
+For more information, refer to the [Clef-omni model page](https://developers.cloudflare.com/workers-ai/models/clef-omni/) and [pricing](https://developers.cloudflare.com/workers-ai/platform/pricing/).
+
+Oct 8, 2026
+
+## [Create Workflow instance batches by count or list](https://developers.cloudflare.com/changelog/post/2026-10-08-create-batch-object-form/)
+
+[Workflows](https://developers.cloudflare.com/workflows/)[Workers](https://developers.cloudflare.com/workers/)
+
+[`createBatch()`](https://developers.cloudflare.com/workflows/build/workers-api/#createbatch) now accepts an options object that creates up to 100 Workflow instances in one call. The result lists the created instances and explains why any others were not created. To use this form in local development and get its types from `wrangler types`, use Wrangler 4.148.0 or later.
+
+To create instances that share the same options, pass `count`. Each instance receives a generated ID:
+    
+    
+    const result = await env.MY_WORKFLOW.createBatch({
+    	count: 10,
+    	params: { report: "daily" },
+    });
+    
+    
+    const result = await env.MY_WORKFLOW.createBatch({
+    	count: 10,
+    	params: { report: "daily" },
+    });
+
+To give each instance its own ID or options, pass `instances`:
+    
+    
+    const { created, errors } = await env.MY_WORKFLOW.createBatch({
+    	instances: [
+    		{ id: "order-1", params: { orderId: 1 } },
+    		{ id: "order-2", params: { orderId: 2 } },
+    	],
+    });
+    
+    for (const error of errors) {
+    	console.log(error.index, error.id, error.code, error.message);
+    }
+    
+    
+    const { created, errors } = await env.MY_WORKFLOW.createBatch({
+    	instances: [
+    		{ id: "order-1", params: { orderId: 1 } },
+    		{ id: "order-2", params: { orderId: 2 } },
+    	],
+    });
+    
+    for (const error of errors) {
+    	console.log(error.index, error.id, error.code, error.message);
+    }
+
+`created` contains the created instances. `errors` contains each entry that was not created, identified by its position in the input. IDs that already exist and IDs repeated within the batch are reported as errors instead of being skipped silently.
+
+Passing an array to `createBatch()` is deprecated. Existing code that uses the array form continues to work.
+
+For more information, refer to [`createBatch`](https://developers.cloudflare.com/workflows/build/workers-api/#createbatch).
+
 Oct 7, 2026
 
 ## [Cloudflare One Client for macOS (version 2026.8.2100.0)](https://developers.cloudflare.com/changelog/post/2026-10-07-warp-macos-ga/)
@@ -403,6 +665,18 @@ Enterprise customers can manage accounts in a single-tier Organization. MSSP/Dis
 Organization Roles remains in beta, and current product limitations still apply.
 
 For more information, refer to [Cloudflare Organizations](https://developers.cloudflare.com/fundamentals/organizations/) and [current limitations](https://developers.cloudflare.com/fundamentals/organizations/limitations/).
+
+Oct 7, 2026
+
+## [Updated unsafe topic detection for AI Security for Apps](https://developers.cloudflare.com/changelog/post/2026-10-07-ai-security-for-apps-unsafe-topic-detection/)
+
+[WAF](https://developers.cloudflare.com/waf/)
+
+AI Security for Apps now supports an updated set of categories for detecting unsafe topics in incoming prompts.
+
+The values available in [`cf.llm.prompt.unsafe_topic_categories`](https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.llm.prompt.unsafe_topic_categories/) have changed. Existing WAF custom rules remain valid, but rules that reference a removed or renamed category will no longer match that category. Review any rules that use this field and update their expressions to use the currently supported values.
+
+For category descriptions and configuration guidance, refer to [Unsafe topics](https://developers.cloudflare.com/waf/detections/ai-security-for-apps/unsafe-topics/).
 
 Oct 6, 2026
 
@@ -844,471 +1118,8 @@ To create a database with the `us` jurisdiction, run:
 
 For more information, refer to [D1 data location](https://developers.cloudflare.com/d1/configuration/data-location/).
 
-Oct 2, 2026
-
-## [Organizations support increased account and zone limits](https://developers.cloudflare.com/changelog/post/2026-10-02-organization-account-zone-limits/)
-
-[Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)[Organizations](https://developers.cloudflare.com/fundamentals/organizations/)
-
-Cloudflare Organizations now support up to **20,000 accounts** and **200,000 zones**. For MSSP/Distributors using sub-organizations, these limits are applied at the root Organization.
-
-If you require a higher limit, reach out to your account team. The new limits apply to enterprise and MSSP/Distributor Organizations. Legacy reseller partner and brand partner tenants retain their existing quota behavior.
-
-For more information, refer to [Account and zone limits](https://developers.cloudflare.com/fundamentals/organizations/limitations/#account-and-zone-limits).
-
-Oct 2, 2026
-
-## [Workers KV namespace jurisdictions are now generally available](https://developers.cloudflare.com/changelog/post/2026-10-02-kv-jurisdictions-ga/)
-
-[KV](https://developers.cloudflare.com/kv/)
-
-Jurisdictions for [Workers KV](https://developers.cloudflare.com/kv/) namespaces are now generally available. When you create a namespace, you can set a [jurisdiction](https://developers.cloudflare.com/kv/reference/data-location/) to make sure the namespace's data is only durably stored within that region. Jurisdictions can help you comply with data localization regulations such as GDPR or FedRAMP. Supported jurisdictions are `eu`, `us`, and `fedramp`.
-
-A jurisdiction can only be set when a namespace is created, using the Cloudflare dashboard, Wrangler, the `cf` CLI, or the REST API, and cannot be added or changed afterwards.
-    
-    
-    npx wrangler@latest kv namespace create <NAMESPACE_NAME> --jurisdiction=eu
-    
-    
-    cf kv namespaces create --title <NAMESPACE_NAME> --jurisdiction eu
-    
-    
-    curl "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/storage/kv/namespaces" \
-      --request POST \
-      --header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
-      --header "Content-Type: application/json" \
-      --data '{
-        "title": "<NAMESPACE_NAME>",
-        "jurisdiction": "eu"
-      }'
-
-Workers can still access a namespace restricted to a jurisdiction from anywhere in the world, and KV data can be cached outside the jurisdiction on Cloudflare's network. The jurisdiction only controls where the namespace's data is durably stored.
-
-To learn more, refer to [Data location](https://developers.cloudflare.com/kv/reference/data-location/).
-
-Oct 2, 2026
-
-## [hash_in_range() is globally available for HTTP products](https://developers.cloudflare.com/changelog/post/2026-10-02-hash-in-range-ga/)
-
-[Rules](https://developers.cloudflare.com/rules/)
-
-`hash_in_range()` is globally available for HTTP products on all plans. It hashes fields into an integer within a specified range. Use this result to select a portion of requests.
-
-Use `cf.random_seed` to select approximately 10% of requests at random:
-    
-    
-    hash_in_range(0, 100, cf.random_seed) < 10
-
-With Cloudflare for SaaS, use [custom metadata](https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/domain-support/custom-metadata/) to control rollout progression. Define `rollout_pct` as a custom key for each hostname. Set its value to an integer from 0 to 100. The expression selects approximately that percentage of requests:
-    
-    
-    hash_in_range(0, 100, cf.random_seed) < coalesce(lookup_json_integer(cf.hostname.metadata, "rollout_pct"), 0)
-
-If `rollout_pct` is missing, `coalesce()` supplies `0`. The rule then matches no requests.
-
-For details, refer to the [`hash_in_range()` function reference](https://developers.cloudflare.com/ruleset-engine/rules-language/functions/#hash_in_range).
-
-Oct 2, 2026
-
-## [Protect Quick Tunnels with email authentication](https://developers.cloudflare.com/changelog/post/2026-10-02-protected-quick-tunnels/)
-
-[Cloudflare Tunnel](https://developers.cloudflare.com/tunnel/)
-
-You can now restrict who can access a [Quick Tunnel](https://developers.cloudflare.com/tunnel/get-started/quick-tunnels/). Use the new `--allowed-mail` flag in `cloudflared` to require visitors to authenticate with a one-time PIN sent to their email before they reach your local service.
-    
-    
-    cloudflared tunnel --url http://localhost:8080 --allowed-mail alice@example.com
-
-![Protected Quick Tunnel demo](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1512,height=854,format=webp/_astro/protected-quick-tunnels.DlA306r_.gif)
-
-Previously, anyone with a `trycloudflare.com` URL could access the service behind it. Protected Quick Tunnels let you share a local development server, webhook receiver, or demo with specific people without creating a Cloudflare account or configuring a domain.
-
-You can allow:
-
-  * A single email address: `--allowed-mail alice@example.com`
-  * Multiple email addresses, by repeating the flag or using a comma-separated list: `--allowed-mail 'alice@example.com,bob@example.com'`
-  * Every address on a domain: `--allowed-mail '*@example.com'`
-
-
-
-Visitors do not need a Cloudflare account. Access ends for everyone when you stop the `cloudflared` process.
-
-To get started, [update `cloudflared`](https://developers.cloudflare.com/tunnel/downloads/) to the latest version and refer to [Restrict access by email](https://developers.cloudflare.com/tunnel/get-started/quick-tunnels/#restrict-access-by-email).
-
-Oct 1, 2026
-
-## [Introducing Clef: Cloudflare's first open-source decision models, now on Workers AI](https://developers.cloudflare.com/changelog/post/2026-10-01-clef-workers-ai/)
-
-[Workers AI](https://developers.cloudflare.com/workers-ai/)
-
-Meet [`@cf/cloudflare/clef`](https://developers.cloudflare.com/workers-ai/models/clef/) and [`@cf/cloudflare/clef-flash`](https://developers.cloudflare.com/workers-ai/models/clef-flash/), the first models trained by the Cloudflare Workers AI team, available on Workers AI today.
-
-Clef is a decision model, in the same family as [Typesafe's Jev ↗︎](https://typesafe.ai/blog/introducing-system-one-models-and-jev). Instead of generating text, it reads an input state and a set of typed questions, then returns a probability for every allowed answer. Your agent gets a structured decision it can act on immediately, for example: route the ticket, block the request, or escalate to a human. There is no free-form output to parse and no reasoning tokens to wait for.
-
-Both models are hosted on Workers AI as [Clef](https://developers.cloudflare.com/workers-ai/models/clef/) and [Clef-flash](https://developers.cloudflare.com/workers-ai/models/clef-flash/). We are also open-sourcing the weights under the Apache 2.0 license on Hugging Face: [Clef ↗︎](https://huggingface.co/Cloudflare/clef) and [Clef-flash ↗︎](https://huggingface.co/Cloudflare/clef-flash). Read the [launch blog post ↗︎](https://blog.cloudflare.com/clef-decision-models/) for the full story, including how we trained them.
-
-We are also launching a reinforcement learning (RL) fine-tuning service to help you tune Clef for your own workloads. [Sign up to work with us as a design partner ↗︎](https://www.cloudflare.com/resource/clef-rl-interest).
-
-#### Built for the hot path
-
-Clef is designed to be fast so decisions come back in milliseconds. Across our 43 benchmark runs, we achieved speeds where Clef is 2.5x faster than Jev at the median, and Clef-flash 13x faster.
-
-Latency | Clef | Clef-flash | Jev  
----|---|---|---  
-Median | 209.3 ms | **38.8 ms** | 524.1 ms  
-p95 | 238.6 ms | **122.4 ms** | 536.0 ms  
-  
-Hosting on Workers AI adds to that speed. Requests run on GPUs across Cloudflare's network, running close to your users, so the network round trip stays short. You can put Clef directly in the request path of your agent, then hand off to an LLM on Workers AI to take action.
-
-#### Leading the benchmarks
-
-Across 10 decision benchmarks, a Clef model scores highest on 7, ahead of Jev and other open decision models. A few highlights:
-
-Benchmark | Clef | Clef-flash | Jev  
----|---|---|---  
-BFCL (case exact) | 98.47 | **98.76** | 95.75  
-BANKING77 (macro-F1) | **94.20** | 90.93 | 79.74  
-CLINC150+OOS (macro-F1) | **97.43** | 66.77 | 89.27  
-Home appliances (case exact) | 82.95 | **97.73** | 52.27  
-  
-On Typesafe's own workflow evals, Clef beats Jev in 3 of 4 areas: invoice processing, customer service, and security incidents. The full results are on the [Hugging Face model card ↗︎](https://huggingface.co/Cloudflare/clef).
-
-#### Drop-in compatible with Jev
-
-Model | Size | Best for | Context window  
----|---|---|---  
-[`@cf/cloudflare/clef`](https://developers.cloudflare.com/workers-ai/models/clef/) | 27B | Highest-precision decisions | 64K tokens  
-[`@cf/cloudflare/clef-flash`](https://developers.cloudflare.com/workers-ai/models/clef-flash/) | 9B | Latency-critical, hot-path decisions | 64K tokens  
-  
-Clef follows the System One API, so you can switch an existing Jev integration to Clef by changing the endpoint and model. Ask up to 64 questions per request, in three types:
-
-  * **`noul`** : A yes/no question. Returns the probability that the answer is yes.
-  * **`choice`** : Pick one option from a set you define. Returns the chosen option, a probability per option, and a confidence value.
-  * **`score`** : Rate against an ordered rubric. Returns a probability-weighted score and a probability per level.
-
-
-    
-    
-    const response = await env.AI.run("@cf/cloudflare/clef", {
-    	model: "clef",
-    	state: "Checkout has been failing for every customer for the last hour.",
-    	questions: {
-    		urgent: {
-    			type: "noul",
-    			instructions: "Is this support request urgent?",
-    		},
-    		team: {
-    			type: "choice",
-    			instructions: "Which team should handle this request?",
-    			criteria: {
-    				billing: "Payments, invoices, and refunds",
-    				technical: "Outages, errors, and configuration",
-    				sales: "Plans and upgrades",
-    			},
-    		},
-    	},
-    });
-    
-    // response.answers.urgent.noul -> probability the request is urgent
-    // response.answers.team.choice -> highest-probability team
-    
-    
-    const response = await env.AI.run("@cf/cloudflare/clef", {
-    	model: "clef",
-    	state: "Checkout has been failing for every customer for the last hour.",
-    	questions: {
-    		urgent: {
-    			type: "noul",
-    			instructions: "Is this support request urgent?",
-    		},
-    		team: {
-    			type: "choice",
-    			instructions: "Which team should handle this request?",
-    			criteria: {
-    				billing: "Payments, invoices, and refunds",
-    				technical: "Outages, errors, and configuration",
-    				sales: "Plans and upgrades",
-    			},
-    		},
-    	},
-    });
-    
-    // response.answers.urgent.noul -> probability the request is urgent
-    // response.answers.team.choice -> highest-probability team
-
-#### What you can build with decision models
-
-  * **Support triage** : Decide whether a ticket is urgent and which team owns it, then route it without a human in the loop.
-  * **Threat intelligence** : Classify a website by category. Paired with [Browser Run](https://developers.cloudflare.com/browser-run/), Clef fetched, rendered, and classified a domain in 2.2 seconds, compared to 4.7 seconds for `gpt-oss-120b` in the same workflow.
-  * **Trust and safety** : Score user submissions against your own policy rubric and act on the probability.
-  * **Agent guardrails** : Let an agent check "should I take this action?" in tens of milliseconds before calling a tool.
-  * **Visual classification** : Pass up to four images alongside the state. Unlike text-only decision models, Clef has a vision encoder.
-
-
-
-#### Get started
-
-Use Clef through the [Workers AI binding](https://developers.cloudflare.com/workers-ai/configuration/bindings/) (`env.AI.run()`) or the REST API at `/ai/run`. You can also use [AI Gateway](https://developers.cloudflare.com/ai-gateway/) with these endpoints.
-
-For more information, refer to the [Clef model page](https://developers.cloudflare.com/workers-ai/models/clef/), the [Clef-flash model page](https://developers.cloudflare.com/workers-ai/models/clef-flash/), and [pricing](https://developers.cloudflare.com/workers-ai/platform/pricing/).
-
-Oct 1, 2026
-
-## [The best way to do MCP auth just got better: Workers OAuth Provider goes v1, with a new split API and full support for MCP 2026-07-28](https://developers.cloudflare.com/changelog/post/2026-10-01-workers-oauth-provider-1x/)
-
-[Agents](https://developers.cloudflare.com/agents/)[Workers](https://developers.cloudflare.com/workers/)
-
-[`@cloudflare/workers-oauth-provider` ↗︎](https://github.com/cloudflare/workers-oauth-provider) is now v1, with a new split API. One Worker acts as the authorization server: it signs users in and issues tokens. Your MCP server acts as the resource server, and can run in another Worker. It validates each token with the authorization server over a [Service Binding](https://developers.cloudflare.com/workers/runtime-apis/bindings/service-bindings/), without crossing the public Internet.
-
-  * It supports the [MCP 2026-07-28 authorization specification ↗︎](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization), including [Client ID Metadata Documents ↗︎](https://github.com/cloudflare/workers-oauth-provider/blob/main/docs/authorization-server.md#client-id-metadata-documents) and [issuer identification ↗︎](https://github.com/cloudflare/workers-oauth-provider/blob/main/docs/authorization-server.md#authorization-response-issuer). It still works with older clients, including those using [Dynamic Client Registration ↗︎](https://github.com/cloudflare/workers-oauth-provider/blob/main/docs/authorization-server.md#dynamic-client-registration).
-  * `insufficientScope()` gives you [step-up authorization ↗︎](https://github.com/cloudflare/workers-oauth-provider/blob/main/docs/authorization-server.md#scopes-and-step-up-authorization) in one line.
-  * The authorization server and the resource server can run in [different Workers ↗︎](https://github.com/cloudflare/workers-oauth-provider/blob/main/docs/resource-servers.md#separate-workers) with different [WAF](https://developers.cloudflare.com/waf/) and [rate limiting](https://developers.cloudflare.com/waf/rate-limiting-rules/) rules.
-  * One authorization server can issue tokens for [many MCP servers ↗︎](https://github.com/cloudflare/workers-oauth-provider/blob/main/docs/authorization-server.md#resources-and-token-audiences).
-  * A [migration skill ↗︎](https://github.com/cloudflare/workers-oauth-provider/blob/main/skills/migrate-to-1.0/SKILL.md) ships in the npm package so a coding agent can perform the upgrade.
-
-
-
-#### The split API
-    
-    
-    import {
-    	OAuthAuthorizationServer,
-    	OAuthResourceServer,
-    	insufficientScope,
-    } from "@cloudflare/workers-oauth-provider";
-    import { WorkerEntrypoint } from "cloudflare:workers";
-    
-    // auth-server Worker: signs users in and issues tokens for both MCP servers.
-    const authorizationServer = new OAuthAuthorizationServer({
-    	issuer: "https://auth.example.com",
-    	resources: [
-    		"https://calendar.example.com/mcp",
-    		"https://drive.example.com/mcp",
-    	],
-    	scopesSupported: ["calendar:read", "calendar:write", "offline_access"],
-    	clientIdMetadataDocumentEnabled: true,
-    });
-    
-    export class AuthServer extends WorkerEntrypoint {
-    	fetch(request) {
-    		if (new URL(request.url).pathname === "/authorize") {
-    			return showConsent(request, this.env);
-    		}
-    		return authorizationServer.fetch(request, this.env, this.ctx);
-    	}
-    
-    	validateToken(resource, token) {
-    		return authorizationServer.validateToken(resource, token, this.env);
-    	}
-    }
-    
-    // calendar MCP Worker: checks tokens with AuthServer over a Service Binding.
-    export const calendar = new OAuthResourceServer({
-    	resourceMetadata: {
-    		resource: "https://calendar.example.com/mcp",
-    		authorization_servers: ["https://auth.example.com"],
-    	},
-    	requiredScopes: ["calendar:read"],
-    	validateToken: (env) => env.AUTH_SERVER.validateToken,
-    	handler: {
-    		fetch(request, env, ctx) {
-    			if (
-    				request.method === "POST" &&
-    				!ctx.auth.scope.includes("calendar:write")
-    			) {
-    				return insufficientScope(ctx.auth, ["calendar:read", "calendar:write"]);
-    			}
-    			return handleMcp(request, ctx.props);
-    		},
-    	},
-    });
-    
-    
-    import {
-    	OAuthAuthorizationServer,
-    	OAuthResourceServer,
-    	insufficientScope,
-    } from "@cloudflare/workers-oauth-provider";
-    import { WorkerEntrypoint } from "cloudflare:workers";
-    
-    // auth-server Worker: signs users in and issues tokens for both MCP servers.
-    const authorizationServer = new OAuthAuthorizationServer<Env>({
-    	issuer: "https://auth.example.com",
-    	resources: [
-    		"https://calendar.example.com/mcp",
-    		"https://drive.example.com/mcp",
-    	],
-    	scopesSupported: ["calendar:read", "calendar:write", "offline_access"],
-    	clientIdMetadataDocumentEnabled: true,
-    });
-    
-    export class AuthServer extends WorkerEntrypoint<Env> {
-    	fetch(request: Request) {
-    		if (new URL(request.url).pathname === "/authorize") {
-    			return showConsent(request, this.env);
-    		}
-    		return authorizationServer.fetch(request, this.env, this.ctx);
-    	}
-    
-    	validateToken(resource: string, token: string) {
-    		return authorizationServer.validateToken(resource, token, this.env);
-    	}
-    }
-    
-    // calendar MCP Worker: checks tokens with AuthServer over a Service Binding.
-    export const calendar = new OAuthResourceServer<Env, AuthProps>({
-    	resourceMetadata: {
-    		resource: "https://calendar.example.com/mcp",
-    		authorization_servers: ["https://auth.example.com"],
-    	},
-    	requiredScopes: ["calendar:read"],
-    	validateToken: (env) => env.AUTH_SERVER.validateToken,
-    	handler: {
-    		fetch(request, env, ctx) {
-    			if (
-    				request.method === "POST" &&
-    				!ctx.auth.scope.includes("calendar:write")
-    			) {
-    				return insufficientScope(ctx.auth, ["calendar:read", "calendar:write"]);
-    			}
-    			return handleMcp(request, ctx.props);
-    		},
-    	},
-    });
-
-In the example, `env.AUTH_SERVER.validateToken` is that Service Binding call. The calendar Worker needs no KV namespace of its own.
-    
-    
-    {
-    	"name": "calendar-mcp",
-    	"main": "src/index.ts",
-    	// Set this to today's date
-    	"compatibility_date": "2026-10-08",
-    	"services": [
-    		{
-    			"binding": "AUTH_SERVER",
-    			"service": "auth-server",
-    			"entrypoint": "AuthServer",
-    		},
-    	],
-    }
-    
-    
-    name = "calendar-mcp"
-    main = "src/index.ts"
-    # Set this to today's date
-    compatibility_date = "2026-10-08"
-    
-    [[services]]
-    binding = "AUTH_SERVER"
-    service = "auth-server"
-    entrypoint = "AuthServer"
-
-`OAuthResourceServer` publishes the [RFC 9728 ↗︎](https://datatracker.ietf.org/doc/html/rfc9728) protected resource metadata that MCP clients use to find your authorization server. It answers requests without a token with a `401` challenge that points to that metadata. It also rejects tokens issued for any other resource.
-
-You can still use `OAuthProvider` as both the authorization server and the MCP server. For most 0.x deployments, the only required change is to add `resourceMetadata: { resource }`.
-
-#### Other updates and helpers
-
-  * [Consent page ↗︎](https://github.com/cloudflare/workers-oauth-provider/blob/main/docs/consent-page.md) and [upstream sign-in ↗︎](https://github.com/cloudflare/workers-oauth-provider/blob/main/docs/upstream-sign-in.md) helpers implement the MCP confused deputy protections.
-  * [Sliding refresh token expiry ↗︎](https://github.com/cloudflare/workers-oauth-provider/blob/main/docs/advanced-configuration.md#sliding-expiry) with `refreshTokenIdleTTL`.
-  * [Resumable KV cleanup ↗︎](https://github.com/cloudflare/workers-oauth-provider/blob/main/docs/advanced-configuration.md#kv-cleanup) with `purgeExpiredData()`.
-  * An [internal reason ↗︎](https://github.com/cloudflare/workers-oauth-provider/blob/main/docs/advanced-configuration.md#the-internal-reason) on every error passed to `onError`.
-
-
-
-#### Upgrade with the migration skill
-
-npmyarnpnpmbun
-    
-    
-    npm i @cloudflare/workers-oauth-provider@latest
-    
-    
-    yarn add @cloudflare/workers-oauth-provider@latest
-    
-    
-    pnpm add @cloudflare/workers-oauth-provider@latest
-    
-    
-    bun add @cloudflare/workers-oauth-provider@latest
-
-Point your coding agent at `node_modules/@cloudflare/workers-oauth-provider/skills/migrate-to-1.0/SKILL.md`, or follow the [migration guide ↗︎](https://github.com/cloudflare/workers-oauth-provider/blob/main/docs/migration-1.0.md).
-
-For both Workers in full, refer to the [split Workers example ↗︎](https://github.com/cloudflare/workers-oauth-provider/tree/main/examples/split-workers).
-
-Oct 1, 2026
-
-## [AI Search is generally available](https://developers.cloudflare.com/changelog/post/2026-10-01-ai-search-generally-available/)
-
-[AI Search](https://developers.cloudflare.com/ai-search/)
-
-AI Search is now generally available. Usage-based billing begins on November 1, 2026, with included monthly ingestion, storage, semantic query, and full-text query usage. Cloudflare will send a reminder email the week before billing begins.
-
-Refer to [Limits & pricing](https://developers.cloudflare.com/ai-search/platform/limits-pricing/) for rates and included usage.
-
-#### Hybrid search is on by default
-
-New AI Search instances use hybrid search by default. Hybrid search combines semantic vector retrieval with full-text matching. You can choose a different index method when you create an instance.
-
-Refer to [Hybrid search](https://developers.cloudflare.com/ai-search/configuration/indexing/hybrid-search/) for details.
-
-#### Workers AI embeddings and reranking are included
-
-Workers AI embedding and reranking calls made by AI Search are included in AI Search pricing. These calls no longer appear on your Workers AI bill or in your AI Gateway logs. Generation, query rewriting, and external providers continue to use your account and gateway.
-
-Refer to [Limits & pricing](https://developers.cloudflare.com/ai-search/platform/limits-pricing/) for details.
-
-#### Multimodal model and image support
-
-AI Search supports the `@cf/qwen/qwen3-vl-embedding-2b` and `google-ai-studio/gemini-embedding-2` multimodal embedding models. Search and chat requests can include images through the REST API and public endpoint.
-
-Refer to [Supported models](https://developers.cloudflare.com/ai-search/configuration/models/supported-models/) for the full list of embedding models.
-
-#### OCR availability and increased file limits
-
-Optical character recognition (OCR) is available on every account for scanned PDFs. Plain-text or code files and PDFs with OCR enabled can be up to 10 MiB. PDFs without OCR and other supported formats remain limited to 4 MiB.
-
-Refer to [Data source](https://developers.cloudflare.com/ai-search/configuration/data-source/#file-limits) for file limits and [Limits & pricing](https://developers.cloudflare.com/ai-search/platform/limits-pricing/) for OCR pricing.
-
-#### Source type inference
-
-When you create an AI Search instance, the `type` field is optional. AI Search infers a website source from an HTTP or HTTPS URL, or an R2 source from an existing bucket name.
-
-Refer to [Data source](https://developers.cloudflare.com/ai-search/configuration/data-source/) for details.
-
-Oct 1, 2026
-
-## [Artifacts is now in open beta](https://developers.cloudflare.com/changelog/post/2026-10-01-artifacts-open-beta/)
-
-[Artifacts](https://developers.cloudflare.com/artifacts/)[Workers](https://developers.cloudflare.com/workers/)
-
-[Artifacts](https://developers.cloudflare.com/artifacts/), Cloudflare's versioned file system that speaks Git, is now in open beta. Artifacts is built for scale, so you can create a repository per project, user, session, or task.
-
-With Artifacts, you can:
-
-  * **Deploy repositories to Workers** — Connect an Artifacts repository through [Workers Builds](https://developers.cloudflare.com/workers/ci-cd/builds/git-integration/artifacts-integration/). Pushes to the production branch deploy the updated Worker, while other branches create or update [Worker Previews](https://developers.cloudflare.com/workers/previews/).
-  * **Programmatically manage repositories** — Use an [Artifacts binding](https://developers.cloudflare.com/artifacts/api/workers-binding/) from a Worker to create or fork repos, inspect files and commits, read files by path, and issue repo-scoped Git tokens.
-  * **React to repository changes** — [Subscribe to events](https://developers.cloudflare.com/artifacts/guides/event-subscriptions/) when a repository is created, imported, forked, deleted, pushed to, cloned, or fetched.
-  * **Control where repository data is stored** — Choose to [store and process](https://developers.cloudflare.com/artifacts/guides/data-localization/) your data in the US or EU.
-  * **Monitor repository usage** — View total operations, pulls, pushes, errors, and error rates in the Cloudflare dashboard or [via API for analytics](https://developers.cloudflare.com/artifacts/observability/metrics/).
-
-
-
-Artifacts is available for customers on the Workers Paid plan. Cloudflare will begin [billing](https://developers.cloudflare.com/artifacts/platform/pricing/) for Artifacts on October 14, 2026.
-
-#### Build the next GitHub on Cloudflare
-
-We are hosting a competition to see who can build the next GitHub on Cloudflare using Workers and Artifacts.
-
-[Apply today ↗︎](https://www.cloudflare.com/git-competition/) — submissions are open until October 14, 2026.
-
-The first-place team will receive $25,000 in Cloudflare credits. The top three teams will be flown to San Francisco to present what they built at Cloudflare Connect.
-
-Get started with the [Artifacts documentation](https://developers.cloudflare.com/artifacts/).
-
 ← Prev
 
-1[2](https://developers.cloudflare.com/changelog/2/)…[53](https://developers.cloudflare.com/changelog/53/)
+1[2](https://developers.cloudflare.com/changelog/2/)…[54](https://developers.cloudflare.com/changelog/54/)
 
 [Next →](https://developers.cloudflare.com/changelog/2/)

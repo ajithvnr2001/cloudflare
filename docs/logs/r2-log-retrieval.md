@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/logs/r2-log-retrieval/
 title: Logs Engine \u00b7 Cloudflare Logs docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:12:16.664869+00:00
+fetched_at: 2026-10-10T14:37:58.691026+00:00
 ---
 
 # Logs Engine · Cloudflare Logs docs
@@ -17,7 +17,7 @@ fetched_at: 2026-10-08T07:12:16.664869+00:00
 
 # Logs Engine
 
-Last updated Apr 23, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/logs/r2-log-retrieval/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Apr 23, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewStore logs in R2Query logsAuthentication Required headersList files Query parametersRetrieve logs by time range Query parameters Example API request​Retrieve logs by Ray ID Index a time range Example API requestLookup a RayID Example API requestTroubleshooting
 

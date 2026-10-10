@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/images/
 title: Cloudflare Images Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:46.854356+00:00
+fetched_at: 2026-10-10T14:38:06.932306+00:00
 ---
 
 # Cloudflare Images Changelog | Cloudflare Docs

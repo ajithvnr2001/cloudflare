@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.llm.prompt.token_count/
 title: cf.llm.prompt.token_count \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:04.110910+00:00
+fetched_at: 2026-10-10T14:37:35.309275+00:00
 ---
 
 # cf.llm.prompt.token_count · Cloudflare Ruleset Engine docs

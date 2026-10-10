@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-01-30-kv-reduced-minimum-cachettl/
 title: Reduced minimum cache TTL for Workers KV to 30 seconds \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:35.368587+00:00
+fetched_at: 2026-10-10T14:38:44.393742+00:00
 ---
 
 # Reduced minimum cache TTL for Workers KV to 30 seconds · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [KV](https://developers.cloudflare.com/kv/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-01-30-kv-reduced-minimum-cachettl/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The minimum `cacheTtl` parameter for Workers KV has been reduced from 60 seconds to 30 seconds. This change applies to both `get()` and `getWithMetadata()` methods.
 

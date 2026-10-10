@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-10-10-increased-startup-time/
 title: Worker startup time limit increased to 1 second \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:25.928019+00:00
+fetched_at: 2026-10-10T14:38:47.860314+00:00
 ---
 
 # Worker startup time limit increased to 1 second · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-10-10-increased-startup-time/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now upload a Worker that takes up 1 second to parse and execute its global scope. Previously, startup time was limited to 400 ms.
 

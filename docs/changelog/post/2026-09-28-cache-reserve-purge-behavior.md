@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-28-cache-reserve-purge-behavior/
 title: Purge now forces a cache miss for Cache Reserve content \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:16.590586+00:00
+fetched_at: 2026-10-10T14:38:30.351213+00:00
 ---
 
 # Purge now forces a cache miss for Cache Reserve content · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cache / CDN](https://developers.cloudflare.com/cache/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-28-cache-reserve-purge-behavior/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Purge requests now force a cache miss for [Cache Reserve](https://developers.cloudflare.com/cache/advanced-configuration/cache-reserve/) content, regardless of purge type. Previously, purging by cache tag, hostname, prefix, or everything marked matching Cache Reserve content for revalidation. Purging by URL already removed content from Cache Reserve and is unchanged.
 

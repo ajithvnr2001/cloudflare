@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-05-23-graphql-api-explorer/
 title: New GraphQL Analytics API Explorer and MCP Server \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:12.881978+00:00
+fetched_at: 2026-10-10T14:38:52.173166+00:00
 ---
 
 # New GraphQL Analytics API Explorer and MCP Server · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Analytics](https://developers.cloudflare.com/analytics/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-05-23-graphql-api-explorer/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We’ve launched two powerful new tools to make the GraphQL Analytics API more accessible:
 

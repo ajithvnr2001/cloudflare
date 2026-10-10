@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.bot_management.ja4/
 title: cf.bot_management.ja4 \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:02.791368+00:00
+fetched_at: 2026-10-10T14:37:35.729408+00:00
 ---
 
 # cf.bot_management.ja4 · Cloudflare Ruleset Engine docs

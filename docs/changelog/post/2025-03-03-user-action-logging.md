@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-03-03-user-action-logging/
 title: Gain visibility into user actions in Zero Trust Browser Isolation sessions \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:06.041512+00:00
+fetched_at: 2026-10-10T14:38:54.318111+00:00
 ---
 
 # Gain visibility into user actions in Zero Trust Browser Isolation sessions · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Browser Isolation](https://developers.cloudflare.com/cloudflare-one/remote-browser-isolation/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-03-03-user-action-logging/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We're excited to announce that new logging capabilities for [Remote Browser Isolation (RBI)](https://developers.cloudflare.com/cloudflare-one/remote-browser-isolation/) through [Logpush](https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/account/) are available in Beta starting today!
 

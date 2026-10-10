@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/openai/gpt-4o-transcribe/
 title: GPT-4o Transcribe (OpenAI) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:59.657416+00:00
+fetched_at: 2026-10-10T14:39:11.939817+00:00
 ---
 
 # GPT-4o Transcribe (OpenAI) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:04:59.657416+00:00
 
 Automatic Speech Recognition • OpenAI
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/openai/gpt-4o-transcribe/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `openai/gpt-4o-transcribe`
 

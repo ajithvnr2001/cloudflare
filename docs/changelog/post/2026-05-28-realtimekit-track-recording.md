@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-28-realtimekit-track-recording/
 title: Record specific participant audio tracks in RealtimeKit \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:55.258504+00:00
+fetched_at: 2026-10-10T14:38:37.633777+00:00
 ---
 
 # Record specific participant audio tracks in RealtimeKit · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Realtime](https://developers.cloudflare.com/realtime/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-28-realtimekit-track-recording/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now record specific participant audio tracks in RealtimeKit with [track recording](https://developers.cloudflare.com/realtime/realtimekit/recording-guide/track-recording/). Track recording creates separate WebM files for each participant instead of a single composite recording, which is useful for post-processing, transcription, and regulated or content-sensitive workflows.
 

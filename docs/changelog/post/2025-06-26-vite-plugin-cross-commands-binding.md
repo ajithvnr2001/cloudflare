@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-06-26-vite-plugin-cross-commands-binding/
 title: Run and connect Workers in separate dev commands with the Cloudflare Vite plugin \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:15.224185+00:00
+fetched_at: 2026-10-10T14:38:51.274948+00:00
 ---
 
 # Run and connect Workers in separate dev commands with the Cloudflare Vite plugin · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-06-26-vite-plugin-cross-commands-binding/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Workers can now talk to each other across separate dev commands using service bindings and tail consumers, whether started with `vite dev` or `wrangler dev`.
 

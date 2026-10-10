@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/ip.src.city/
 title: ip.src.city \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:12.961311+00:00
+fetched_at: 2026-10-10T14:37:31.283679+00:00
 ---
 
 # ip.src.city · Cloudflare Ruleset Engine docs

@@ -3,8 +3,5 @@
   "file": "ruleset-engine/rules-language/fields/reference/cf.response.error_type.md",
   "title": "cf.response.error_type \u00b7 Cloudflare Ruleset Engine docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:15:04.372951+00:00",
-  "html_len": 92256,
-  "md_len": 1613,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:35.156760+00:00"
 }

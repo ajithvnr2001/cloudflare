@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-07-17-document-matching/
 title: New detection entry type: Document Matching for DLP \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:16.952918+00:00
+fetched_at: 2026-10-10T14:38:50.911278+00:00
 ---
 
 # New detection entry type: Document Matching for DLP · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Data Loss Prevention](https://developers.cloudflare.com/cloudflare-one/data-loss-prevention/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-07-17-document-matching/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now create [document-based](https://developers.cloudflare.com/cloudflare-one/data-loss-prevention/detection-entries/configure-detection-entries/#document-entries) detection entries in DLP by uploading example documents. Cloudflare will encrypt your documents and create a unique fingerprint of the file. This fingerprint is then used to identify similar documents or snippets within your organization's traffic and stored files.
 

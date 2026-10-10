@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-02-27-radar-pq-key-transparency/
 title: Post-Quantum Encryption and Key Transparency on Cloudflare Radar \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:39.094579+00:00
+fetched_at: 2026-10-10T14:38:42.928243+00:00
 ---
 
 # Post-Quantum Encryption and Key Transparency on Cloudflare Radar · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Radar](https://developers.cloudflare.com/radar/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-02-27-radar-pq-key-transparency/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [**Radar**](https://developers.cloudflare.com/radar/) now tracks post-quantum encryption support on origin servers, provides a tool to test any host for post-quantum compatibility, and introduces a Key Transparency dashboard for monitoring end-to-end encrypted messaging audit logs.
 

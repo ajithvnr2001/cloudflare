@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-03-24-oidc-claims-filtering-gateway-policies/
 title: OIDC Claims filtering now available in Gateway Firewall, Resolver, and Egress policies \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:42.859782+00:00
+fetched_at: 2026-10-10T14:38:41.646571+00:00
 ---
 
 # OIDC Claims filtering now available in Gateway Firewall, Resolver, and Egress policies · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Gateway](https://developers.cloudflare.com/cloudflare-one/traffic-policies/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-03-24-oidc-claims-filtering-gateway-policies/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare Gateway now supports [OIDC Claims](https://developers.cloudflare.com/cloudflare-one/traffic-policies/identity-selectors/#oidc-claims) as a selector in Firewall, Resolver, and Egress policies. Administrators can use custom OIDC claims from their identity provider to build fine-grained, identity-based traffic policies across all Gateway policy types.
 

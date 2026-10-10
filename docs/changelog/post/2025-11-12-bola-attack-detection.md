@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-11-12-bola-attack-detection/
 title: New BOLA Vulnerability Detection for API Shield \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:29.144025+00:00
+fetched_at: 2026-10-10T14:38:46.711301+00:00
 ---
 
 # New BOLA Vulnerability Detection for API Shield · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [API Shield](https://developers.cloudflare.com/api-shield/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-11-12-bola-attack-detection/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Now, API Shield automatically searches for and highlights **Broken Object Level Authorization (BOLA) attacks** on managed API endpoints. API Shield will highlight both BOLA enumeration attacks and BOLA pollution attacks, telling you what was attacked, by who, and for how long.
 

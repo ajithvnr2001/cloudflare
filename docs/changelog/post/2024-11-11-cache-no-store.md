@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2024-11-11-cache-no-store/
 title: Bypass caching for subrequests made from Cloudflare Workers, with Request.cache \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:59.845713+00:00
+fetched_at: 2026-10-10T14:38:55.874711+00:00
 ---
 
 # Bypass caching for subrequests made from Cloudflare Workers, with Request.cache · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2024-11-11-cache-no-store/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now use the [`cache`](https://developers.cloudflare.com/workers/runtime-apis/request/#options) property of the [`Request`](https://developers.cloudflare.com/workers/runtime-apis/request/) interface to bypass [Cloudflare's cache](https://developers.cloudflare.com/workers/reference/how-the-cache-works/) when making subrequests from [Cloudflare Workers](https://developers.cloudflare.com/workers), by setting its value to `no-store`.
 

@@ -1,11 +1,11 @@
 ---
 url: https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-management/schema-learning/
-title: Schema learning \u00b7 Cloudflare API Shield docs
+title: Learn request schemas \u00b7 Cloudflare API Shield docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:17.953003+00:00
+fetched_at: 2026-10-10T14:39:26.452721+00:00
 ---
 
-# Schema learning · Cloudflare API Shield docs
+# Learn request schemas · Cloudflare API Shield docs
 
 > Source: https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-management/schema-learning/
 
@@ -20,17 +20,17 @@ Management and Monitoring
 
 
 
-# Schema learning
+# Learn request schemas
 
-Last updated Sep 29, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-management/schema-learning/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 9, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
-OverviewStart profile learningMeet learning requirementsExport a schemaLearned schema contents
+OverviewStart profile learningMeet learning requirementsRun schema learning manually Review learning resultsExport a schemaLearned schema contents
 
 Note
 
 Schema Learning is the learned source for a Schema Profile. For the shared detection and mitigation model, refer to [Application Profiles](https://developers.cloudflare.com/waf/detections/application-profiles/).
 
-Schema Learning observes qualifying traffic for selected operations. It learns expected request fields and constraints for a Schema Profile.
+Learn expected request fields and constraints from qualifying operation traffic.
 
 ## Start profile learning
 
@@ -41,7 +41,7 @@ Schema Learning observes qualifying traffic for selected operations. It learns e
 
   3. After the profile becomes available, select **View details**.
 
-  4. Review the learned schema under **Security overview**.
+  4. Follow the steps to review learning results.
 
 
 
@@ -56,9 +56,54 @@ Learning runs weekly using qualifying traffic from the previous seven days. Only
 
 The field-learning threshold requires 1,000 qualifying requests. The boundary-learning threshold requires 10,000 qualifying requests.
 
-The first profile appears after the next weekly learning run. This can take up to seven days after meeting the relevant threshold.
+With scheduled learning, the first profile appears after the next weekly run. This can take up to seven days after meeting the relevant threshold. You can also request a learning run manually.
 
 For supported request components, constraints, and limitations, refer to [Schema Profiles](https://developers.cloudflare.com/waf/detections/application-profiles/schema-profiles/).
+
+## Run schema learning manually
+
+Request an ad-hoc learning run without waiting for the weekly schedule. For example, request a run after sending representative traffic during testing.
+
+The run covers the entire zone, rather than one operation. It uses observed traffic and does not generate requests. Operations must be selected for profile learning and meet the learning requirements.
+
+  1. In the Cloudflare dashboard, go to **Web Assets** > **Operations**.
+
+[ Go to **Web assets** ↗ ](https://dash.cloudflare.com/?to=/:account/:zone/security/web-assets)
+  2. Open the **More options** menu for the operations table.
+
+  3. Select **Ad-hoc learn schema** to open the **Schema learning** dialog.
+
+  4. Select **Run learning** to request a zone-wide run.
+
+
+
+
+The dialog shows the learning status and **Last completed run** for the zone. **Running** includes time waiting for processing. **Idle** means no run is active. **Waiting to retry** means Cloudflare is waiting to retry an existing run.
+
+The run button is unavailable while a run is active or waiting to retry. If the button shows **Retry in** , wait before requesting another run. The countdown limits manual requests and does not predict when learning finishes.
+
+If you have read-only access, the menu shows **Schema learning**. You can view the status but cannot request a run.
+
+### Review learning results
+
+Completion time depends on traffic volume. Individual operations can finish before the entire zone-wide run completes.
+
+  1. From the overflow menu for an operation, select **View details**.
+  2. In **Security overview** > **Schema validation** , select **View**.
+  3. Select **Learned schema**.
+  4. Review **Schema learning result** and **Last learning run** to check whether that operation has been processed.
+
+
+
+The result shows one of these outcomes:
+
+Outcome | Meaning  
+---|---  
+**Schema learned** | Cloudflare learned a schema for the operation.  
+**No usable traffic** | The run found no usable traffic for the operation.  
+**Learning failed** | The learning attempt for the operation failed.  
+  
+**No learning result recorded** means no result is available yet. Review the learned schema before enforcing its detection.
 
 ## Export a schema
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/reference-architecture/diagrams/sase/deploying-self-hosted-voip-services-for-hybrid-users/
 title: Deploy self-hosted VoIP services for hybrid users \u00b7 Cloudflare Reference Architecture docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:14:41.796054+00:00
+fetched_at: 2026-10-10T14:37:36.081805+00:00
 ---
 
 # Deploy self-hosted VoIP services for hybrid users · Cloudflare Reference Architecture docs
@@ -22,7 +22,7 @@ Reference Architecture Diagrams
 
 # Deploy self-hosted VoIP services for hybrid users
 
-Last updated Sep 16, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/reference-architecture/diagrams/sase/deploying-self-hosted-voip-services-for-hybrid-users/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Sep 16, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewIntroductionBi-directional VoIP traffic flowCall flow examples Remote user calling another remote user Remote user to on-premise userSummaryRelated resources
 

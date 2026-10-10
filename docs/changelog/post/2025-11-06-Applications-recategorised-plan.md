@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-11-06-Applications-recategorised-plan/
 title: Applications to be remapped to the new categories \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:28.397585+00:00
+fetched_at: 2026-10-10T14:38:47.123299+00:00
 ---
 
 # Applications to be remapped to the new categories · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Gateway](https://developers.cloudflare.com/cloudflare-one/traffic-policies/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-11-06-Applications-recategorised-plan/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We have previously added new application categories to better reflect their content and improve HTTP traffic management: refer to [Changelog](https://developers.cloudflare.com/cloudflare-one/changelog/gateway/#2025-10-28). While the new categories are live now, we want to ensure you have ample time to review and adjust any existing rules you have configured against old categories. The remapping of existing applications into these new categories will be completed by January 30, 2026. This timeline allows you a dedicated period to:
 

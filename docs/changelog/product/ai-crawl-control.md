@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/ai-crawl-control/
 title: AI Crawl Control Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:39.843909+00:00
+fetched_at: 2026-10-10T14:38:12.226037+00:00
 ---
 
 # AI Crawl Control Changelog | Cloudflare Docs

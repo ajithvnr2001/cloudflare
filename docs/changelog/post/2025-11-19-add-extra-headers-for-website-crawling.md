@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-11-19-add-extra-headers-for-website-crawling/
 title: AI Search support for crawling login protected website content \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:29.867120+00:00
+fetched_at: 2026-10-10T14:38:46.557405+00:00
 ---
 
 # AI Search support for crawling login protected website content · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Search](https://developers.cloudflare.com/ai-search/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-11-19-add-extra-headers-for-website-crawling/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [AI Search](https://developers.cloudflare.com/ai-search/) now supports [custom HTTP headers](https://developers.cloudflare.com/ai-search/configuration/data-source/website/authentication-headers/) for website crawling, solving a common problem where valuable content behind authentication or access controls could not be indexed.
 

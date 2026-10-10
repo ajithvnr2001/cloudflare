@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers-ai/models/indictrans2-en-indic-1B/
 title: indictrans2-en-indic-1B (ai4bharat) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:04.416623+00:00
+fetched_at: 2026-10-10T14:37:21.149213+00:00
 ---
 
 # indictrans2-en-indic-1B (ai4bharat) · Cloudflare AI docs · Cloudflare Workers AI docs
@@ -21,7 +21,7 @@ a
 
 Translation • ai4bharat
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers-ai/models/indictrans2-en-indic-1B/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `@cf/ai4bharat/indictrans2-en-indic-1B`
 
@@ -48,9 +48,8 @@ Unit Pricing| $0.342 per M input tokens, $0.342 per M output tokens
         const response = await env.AI.run(
           "@cf/ai4bharat/indictrans2-en-indic-1B",
           {
-            text: "I'll have an order of the moule frites",
-            source_lang: "english", // defaults to english
-            target_lang: "french",
+            text: "Hello, how are you?",
+            target_language: "hin_Deva",
           }
         );
     
@@ -69,9 +68,8 @@ Unit Pricing| $0.342 per M input tokens, $0.342 per M output tokens
         return response.json()
     
     output = run('@cf/ai4bharat/indictrans2-en-indic-1B', {
-      "text": "I'll have an order of the moule frites",
-      "source_lang": "english",
-      "target_lang": "french"
+      "text": "Hello, how are you?",
+      "target_language": "hin_Deva"
     })
     
     print(output)
@@ -80,7 +78,7 @@ Unit Pricing| $0.342 per M input tokens, $0.342 per M output tokens
     curl https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/run/@cf/ai4bharat/indictrans2-en-indic-1B  \
         -X POST  \
         -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"  \
-        -d '{ "text": "Ill have an order of the moule frites", "source_lang": "english", "target_lang": "french" }'
+        -d '{ "text": "Hello, how are you?", "target_language": "hin_Deva" }'
 
 ## Parameters
 

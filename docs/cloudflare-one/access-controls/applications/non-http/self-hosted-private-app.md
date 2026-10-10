@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/cloudflare-one/access-controls/applications/non-http/self-hosted-private-app/
 title: Secure a private IP or hostname \u00b7 Cloudflare One docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:08:20.294631+00:00
+fetched_at: 2026-10-10T14:39:29.917005+00:00
 ---
 
 # Secure a private IP or hostname · Cloudflare One docs
@@ -22,9 +22,9 @@ fetched_at: 2026-10-08T07:08:20.294631+00:00
 
 # Secure a private IP or hostname
 
-Last updated Sep 18, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/cloudflare-one/access-controls/applications/non-http/self-hosted-private-app/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
-OverviewPrerequisitesAdd your application to AccessAuthentication flow HTTPS applications Plaintext HTTP applications Other non-HTTP applicationsOrder of precedence Access vs Gateway policies Private hostname vs private IPLimitations Browser Isolation is not compatible with apps on non-443 ports Google Chrome restricts access to private hostnames
+OverviewPrerequisitesAdd your application to AccessAuthentication flow HTTPS applications Plaintext HTTP applications Other non-HTTP applicationsOrder of precedence Access vs Gateway policies Private hostname vs private IP Overlapping private application destinationsLimitations Browser Isolation is not compatible with apps on non-443 ports Google Chrome restricts access to private hostnames
 
 You can configure a self-hosted Access application to manage access to specific IPs or hostnames on your private network.
 
@@ -172,6 +172,25 @@ Users must pass the policies in your Access application before they are granted 
 ### Private hostname vs private IP
 
 An Access application defined by a private hostname takes precedence over an Access application defined by a private IP. For example, assume App-1 points to `wiki.internal.local` and App-2 points to `10.0.0.1`, but `wiki.internal.local` resolves to `10.0.0.1`. Users who go to `wiki.internal.local` will never match App-2; they will be allowed or blocked strictly based on App-1 Access policies (and Gateway policies).
+
+### Overlapping private application destinations
+
+When a request matches destinations in multiple self-hosted private applications, Access selects the application with the most specific matching destination. The application creation order and the order shown in the dashboard do not affect which application is selected.
+
+Access compares destination attributes in the following order:
+
+  1. **Hostname or IP specificity:** A matching private hostname takes precedence over any private IP or CIDR. Between matching hostnames, a hostname with more labels takes precedence. For hostnames with the same number of labels, exact labels take precedence over wildcard labels, and partial wildcards take precedence over a full `*` label. Between matching IPs and CIDRs, the destination with fewer IP addresses takes precedence. An exact IPv4 or IPv6 address is the most specific IP destination.
+  2. **Port specificity:** For otherwise equal destinations, a single port takes precedence over a port range. A smaller port range takes precedence over a larger range, and any port restriction takes precedence over a destination that applies to all ports.
+  3. **Virtual network specificity:** A destination restricted to a virtual network takes precedence over an otherwise equal destination that applies to all virtual networks. For example, assume App-1 matches `10.0.0.0/24` on all virtual networks and App-2 matches the same CIDR only on the `staging` virtual network. A user connected to `staging` matches App-2, while a user connected to a different virtual network matches App-1.
+  4. **Protocol specificity:** A destination restricted to TCP or UDP takes precedence over an otherwise equal destination that applies to both protocols.
+
+
+
+Destination specificity is evaluated before port specificity. For example, `10.0.1.0/24` on all ports takes precedence over `10.0.0.0/16` on a single port. Access evaluates policies only for the application selected by this matching order.
+
+Note
+
+This matching order applies to destinations configured on **Self-hosted and private** applications. It does not apply to [legacy private network applications](https://developers.cloudflare.com/cloudflare-one/access-controls/applications/non-http/legacy-private-network-app/).
 
 ## Limitations
 

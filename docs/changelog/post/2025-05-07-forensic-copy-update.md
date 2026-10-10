@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-05-07-forensic-copy-update/
 title: Send forensic copies to storage without DLP profiles \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:12.011520+00:00
+fetched_at: 2026-10-10T14:38:52.522151+00:00
 ---
 
 # Send forensic copies to storage without DLP profiles · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Data Loss Prevention](https://developers.cloudflare.com/cloudflare-one/data-loss-prevention/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-05-07-forensic-copy-update/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now [send DLP forensic copies](https://developers.cloudflare.com/cloudflare-one/data-loss-prevention/dlp-policies/logging-options/#send-dlp-forensic-copies-to-logpush-destination) to third-party storage for any HTTP policy with an `Allow` or `Block` action, without needing to include a DLP profile. This change increases flexibility for data handling and forensic investigation use cases.
 

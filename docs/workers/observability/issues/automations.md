@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers/observability/issues/automations/
 title: Set up an automation \u00b7 Cloudflare Workers docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:35.147115+00:00
+fetched_at: 2026-10-10T14:39:23.932804+00:00
 ---
 
 # Set up an automation · Cloudflare Workers docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:17:35.147115+00:00
 
 # Set up an automation
 
-Last updated Sep 30, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers/observability/issues/automations/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 10, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewTrigger typesSet up an automationDestinations Coding agents Generic webhooks Configure a generic webhookAgent access to CloudflareRun and review an automation
 
@@ -99,7 +99,7 @@ Generic webhooks use the standard Cloudflare Notifications webhook payload. For 
 
 An automation sends an issue to its destination. It does not give the destination permission to query your Cloudflare account.
 
-To let an agent investigate related logs and traces, configure the [Workers Observability MCP server](https://developers.cloudflare.com/workers/observability/mcp-server/) separately. Review the agent's proposed code and test changes before deploying them.
+To let an agent investigate related logs and traces, configure the [Cloudflare API MCP server](https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/#cloudflare-api-mcp-server) separately. Review the agent's proposed code and test changes before deploying them.
 
 Issue data can include error messages, stack traces, request metadata, logs, and application context. Before you configure a destination, review its access controls and data-handling policies. Do not include secrets, access tokens, or sensitive request content in telemetry. Handle application identifiers and personal data according to your privacy and data-handling policies.
 

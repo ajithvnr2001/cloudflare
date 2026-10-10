@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers/testing/vitest-integration/mock-outbound-requests/
 title: Mock outbound requests \u00b7 Cloudflare Workers docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:59.165345+00:00
+fetched_at: 2026-10-10T14:39:28.003499+00:00
 ---
 
 # Mock outbound requests · Cloudflare Workers docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:17:59.165345+00:00
 
 # Mock outbound requests
 
-Last updated Aug 20, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers/testing/vitest-integration/mock-outbound-requests/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewInstall dependenciesCreate a network mockMock an HTTP requestMock an outbound WebSocket
 
@@ -30,21 +30,21 @@ Use [`@msw/cloudflare` ↗︎](https://github.com/mswjs/cloudflare) to mock outb
 
 ## Install dependencies
 
-Install Mock Service Worker (MSW) version 2.14 or later and the Cloudflare integration:
+Install Mock Service Worker (MSW) version 3 or later and the Cloudflare integration:
 
 npmyarnpnpmbun
     
     
-    npm i -D msw@^2.14.0 @msw/cloudflare
+    npm i -D msw@^3.0.0 @msw/cloudflare
     
     
-    yarn add -D msw@^2.14.0 @msw/cloudflare
+    yarn add -D msw@^3.0.0 @msw/cloudflare
     
     
-    pnpm add -D msw@^2.14.0 @msw/cloudflare
+    pnpm add -D msw@^3.0.0 @msw/cloudflare
     
     
-    bun add -d msw@^2.14.0 @msw/cloudflare
+    bun add -d msw@^3.0.0 @msw/cloudflare
 
 ## Create a network mock
 
@@ -143,7 +143,10 @@ test/worker.test.jsjs
 test/worker.test.tsts
     
     
-    import { createExecutionContext, waitOnExecutionContext } from "cloudflare:test";
+    import {
+    	createExecutionContext,
+    	waitOnExecutionContext,
+    } from "cloudflare:test";
     import { env } from "cloudflare:workers";
     import { http, HttpResponse } from "msw";
     import { expect, it } from "vitest";

@@ -3,8 +3,5 @@
   "file": "ai/models/openai/gpt-5.6-luna.md",
   "title": "GPT-5.6 Luna (OpenAI) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:05:02.178627+00:00",
-  "html_len": 159328,
-  "md_len": 10146,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:39:09.715944+00:00"
 }

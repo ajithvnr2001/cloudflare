@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/waf/detections/malicious-uploads/
 title: Malicious uploads detection \u00b7 Cloudflare Web Application Firewall (WAF) docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:16:42.304067+00:00
+fetched_at: 2026-10-10T14:39:28.954649+00:00
 ---
 
 # Malicious uploads detection · Cloudflare Web Application Firewall (WAF) docs
@@ -18,7 +18,7 @@ fetched_at: 2026-10-08T07:16:42.304067+00:00
 
 # Malicious uploads detection
 
-Last updated Sep 18, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/waf/detections/malicious-uploads/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewHow it worksWhat is a content object?Scanned content Size limitCustom scan expressionsContent scanning fields
 
@@ -35,6 +35,10 @@ This feature is available to customers on an Enterprise plan with a paid add-on.
 Once you turn on this detection, Cloudflare inspects all incoming traffic and identifies content objects automatically.
 
 When Cloudflare detects one or more content objects in a request, it sends them to an antivirus (AV) scanner for analysis. The AV scanner is the same one used in [Cloudflare Zero Trust](https://developers.cloudflare.com/cloudflare-one/traffic-policies/http-policies/antivirus-scanning/).
+
+Note
+
+Cloudflare buffers upload content at the edge for scanning before forwarding it to your origin. For large uploads, if your origin receives the buffered content slowly, forwarding may take long enough for the connection to time out, causing the request to fail.
 
 Based on the scan results, the detection populates fields you can reference in rule expressions. For example, you can create a rule to block requests with malicious files, or a more specific rule that also matches on file size, file type, or URI path.
 

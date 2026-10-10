@@ -3,8 +3,5 @@
   "file": "workers-ai/models/bge-m3.md",
   "title": "bge-m3 (BAAI) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:17:01.499515+00:00",
-  "html_len": 136921,
-  "md_len": 4317,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:24.116167+00:00"
 }

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/download/support-lifecycle/
 title: Cloudflare One Client lifecycle and support policy \u00b7 Cloudflare One docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:10:02.426448+00:00
+fetched_at: 2026-10-10T14:39:25.410003+00:00
 ---
 
 # Cloudflare One Client lifecycle and support policy · Cloudflare One docs
@@ -22,7 +22,7 @@ Team and resources[Devices](https://developers.cloudflare.com/cloudflare-one/tea
 
 # Cloudflare One Client lifecycle and support policy
 
-Last updated Sep 17, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/download/support-lifecycle/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 9, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewCloudflare One Client lifecycle Desktop platforms Mobile platforms Feature deprecation policy Release scheduleSupported operating systems Windows macOS Debian Ubuntu Red Hat Enterprise Linux (RHEL) iOS and iPadOS Android ChromeOS
 
@@ -154,13 +154,18 @@ RHEL 9 | Pending full testing. Supported for Cloudflare Mesh until May 2027.
 
 The Cloudflare One Client supports the current major version of iOS and iPadOS as well as the two previous major versions. Devices must have the latest available update installed (for example, `17.7.2`) to receive support. This policy aligns with Apple's standard security update cycle, as well as the comparatively rapid release of new iOS and iPadOS versions compared to other mobile operating systems.
 
-As of December 2025, the following versions of iOS and iPadOS are supported:
+Note
+
+Starting with iOS and iPadOS 27, Apple introduced [Connectivity Assist ↗︎](https://support.apple.com/127686) on by default, which falls back to cellular network connectivity when Wi-Fi connectivity is failing. This means unless Connectivity Assist is actively turned off, then protections provided by Cloudflare One Client (and any other Zero Trust networking or VPN app) may be unintentionally bypassed when Wi-Fi connectivity exists but is slow. This is because Wi-Fi remains the active network connection, whereas turning Wi-Fi off entirely and using cellular network connectivity would result in expected functionality. To avoid this edge case, turn off Connectivity Assist.
+
+As of October 2026, the following versions of iOS and iPadOS are supported:
 
 iOS or iPadOS version | Supported until  
 ---|---  
+iOS and iPadOS 27 | Release of 2029 major version  
 iOS and iPadOS 26 | Release of 2028 major version  
 iOS and iPadOS 18 | Release of 2027 major version  
-iOS and iPadOS 17 | Release of 2026 major version  
+iOS and iPadOS 17 | November 2026  
   
 ### Android
 

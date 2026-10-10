@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/support/
 title: Support Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:50.408958+00:00
+fetched_at: 2026-10-10T14:38:04.432261+00:00
 ---
 
 # Support Changelog | Cloudflare Docs

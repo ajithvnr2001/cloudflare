@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-04-10-kv-bulk-reads/
 title: Read multiple keys from Workers KV with bulk reads \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:09.617537+00:00
+fetched_at: 2026-10-10T14:38:52.986812+00:00
 ---
 
 # Read multiple keys from Workers KV with bulk reads · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [KV](https://developers.cloudflare.com/kv/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-04-10-kv-bulk-reads/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now retrieve up to 100 keys in a single bulk read request made to Workers KV using the binding.
 

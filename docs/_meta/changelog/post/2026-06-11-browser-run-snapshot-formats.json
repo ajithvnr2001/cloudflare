@@ -3,8 +3,5 @@
   "file": "changelog/post/2026-06-11-browser-run-snapshot-formats.md",
   "title": "New formats parameter for the Browser Run /snapshot endpoint \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:57.577550+00:00",
-  "html_len": 75273,
-  "md_len": 3334,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:36.676422+00:00"
 }

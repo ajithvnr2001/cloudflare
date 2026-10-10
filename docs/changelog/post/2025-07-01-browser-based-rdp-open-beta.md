@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-07-01-browser-based-rdp-open-beta/
 title: Access RDP securely from your browser \u2014 now in open beta \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:15.631415+00:00
+fetched_at: 2026-10-10T14:38:51.173527+00:00
 ---
 
 # Access RDP securely from your browser — now in open beta · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Access](https://developers.cloudflare.com/cloudflare-one/access-controls/policies/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-07-01-browser-based-rdp-open-beta/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Browser-based RDP](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/use-cases/rdp/rdp-browser/) with [Cloudflare Access](https://developers.cloudflare.com/cloudflare-one/access-controls/policies/) is now available in open beta for all Cloudflare customers. It enables secure, remote Windows server access without VPNs or RDP clients.
 

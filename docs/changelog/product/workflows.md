@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/workflows/
 title: Workflows Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:56.200647+00:00
+fetched_at: 2026-10-10T14:37:59.452141+00:00
 ---
 
 # Workflows Changelog | Cloudflare Docs
@@ -230,6 +230,60 @@ Zaraz
 No products found.
 
 [ View RSS feeds ](https://developers.cloudflare.com/fundamentals/new-features/available-rss-feeds/)[ Subscribe to RSS ](https://developers.cloudflare.com/changelog/rss/index.xml)
+
+Oct 8, 2026
+
+## [Create Workflow instance batches by count or list](https://developers.cloudflare.com/changelog/post/2026-10-08-create-batch-object-form/)
+
+[Workflows](https://developers.cloudflare.com/workflows/)[Workers](https://developers.cloudflare.com/workers/)
+
+[`createBatch()`](https://developers.cloudflare.com/workflows/build/workers-api/#createbatch) now accepts an options object that creates up to 100 Workflow instances in one call. The result lists the created instances and explains why any others were not created. To use this form in local development and get its types from `wrangler types`, use Wrangler 4.148.0 or later.
+
+To create instances that share the same options, pass `count`. Each instance receives a generated ID:
+    
+    
+    const result = await env.MY_WORKFLOW.createBatch({
+    	count: 10,
+    	params: { report: "daily" },
+    });
+    
+    
+    const result = await env.MY_WORKFLOW.createBatch({
+    	count: 10,
+    	params: { report: "daily" },
+    });
+
+To give each instance its own ID or options, pass `instances`:
+    
+    
+    const { created, errors } = await env.MY_WORKFLOW.createBatch({
+    	instances: [
+    		{ id: "order-1", params: { orderId: 1 } },
+    		{ id: "order-2", params: { orderId: 2 } },
+    	],
+    });
+    
+    for (const error of errors) {
+    	console.log(error.index, error.id, error.code, error.message);
+    }
+    
+    
+    const { created, errors } = await env.MY_WORKFLOW.createBatch({
+    	instances: [
+    		{ id: "order-1", params: { orderId: 1 } },
+    		{ id: "order-2", params: { orderId: 2 } },
+    	],
+    });
+    
+    for (const error of errors) {
+    	console.log(error.index, error.id, error.code, error.message);
+    }
+
+`created` contains the created instances. `errors` contains each entry that was not created, identified by its position in the input. IDs that already exist and IDs repeated within the batch are reported as errors instead of being skipped silently.
+
+Passing an array to `createBatch()` is deprecated. Existing code that uses the array form continues to work.
+
+For more information, refer to [`createBatch`](https://developers.cloudflare.com/workflows/build/workers-api/#createbatch).
 
 Sep 27, 2026
 
@@ -1419,16 +1473,6 @@ You can then send a Workflow an event from an external service via HTTP or from 
     };
 
 Read the [GA announcement blog ↗︎](https://blog.cloudflare.com/workflows-is-now-generally-available/) to learn more about what landed as part of the Workflows GA.
-
-Feb 25, 2025
-
-## [Concurrent Workflow instances limits increased.](https://developers.cloudflare.com/changelog/post/2025-02-25-workflows-concurrency-increased/)
-
-[Workflows](https://developers.cloudflare.com/workflows/)
-
-[Workflows](https://developers.cloudflare.com/workflows/) now supports up to 4,500 concurrent (running) instances, up from the previous limit of 100. This limit will continue to increase during the Workflows open beta. This increase applies to all users on the Workers Paid plan, and takes effect immediately.
-
-Review the Workflows [limits documentation](https://developers.cloudflare.com/workflows/reference/limits) and/or dive into the [get started guide](https://developers.cloudflare.com/workflows/get-started/guide/) to start building on Workflows.
 
 ← Prev
 

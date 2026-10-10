@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-03-17-codemode-sdk-v0.2.1/
 title: @cloudflare/codemode v0.2.1: MCP barrel export, zero-dependency main entry point, and custom sandbox modules \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:40.825843+00:00
+fetched_at: 2026-10-10T14:38:42.408811+00:00
 ---
 
 # @cloudflare/codemode v0.2.1: MCP barrel export, zero-dependency main entry point, and custom sandbox modules · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Agents](https://developers.cloudflare.com/agents/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-03-17-codemode-sdk-v0.2.1/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The latest releases of [`@cloudflare/codemode` ↗︎](https://www.npmjs.com/package/@cloudflare/codemode) add a new MCP barrel export, remove `ai` and `zod` as required peer dependencies from the main entry point, and give you more control over the sandbox.
 

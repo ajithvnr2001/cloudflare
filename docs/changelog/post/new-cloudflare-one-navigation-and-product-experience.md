@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/new-cloudflare-one-navigation-and-product-experience/
 title: New Cloudflare One Navigation and Product Experience \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:20.388397+00:00
+fetched_at: 2026-10-10T14:38:28.262530+00:00
 ---
 
 # New Cloudflare One Navigation and Product Experience · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/new-cloudflare-one-navigation-and-product-experience/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The Zero Trust dashboard and navigation is receiving significant and exciting updates. The dashboard is being restructured to better support common tasks and workflows, and various pages have been moved and consolidated.
 

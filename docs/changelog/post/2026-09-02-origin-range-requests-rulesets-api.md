@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-02-origin-range-requests-rulesets-api/
 title: Configure Origin Range Requests with the Rulesets API \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:12.411347+00:00
+fetched_at: 2026-10-10T14:38:31.779250+00:00
 ---
 
 # Configure Origin Range Requests with the Rulesets API · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cache / CDN](https://developers.cloudflare.com/cache/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-02-origin-range-requests-rulesets-api/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The Rulesets API now supports Origin Range Requests in Cache Rules. This setting lets Cloudflare fetch large files from your origin in cache-aligned byte ranges. Cloudflare may expand a client range and issue several single-range origin requests.
 

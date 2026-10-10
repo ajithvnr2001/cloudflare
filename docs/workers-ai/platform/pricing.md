@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers-ai/platform/pricing/
 title: Pricing \u00b7 Cloudflare Workers AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:07.036737+00:00
+fetched_at: 2026-10-10T14:39:24.658360+00:00
 ---
 
 # Pricing · Cloudflare Workers AI docs
@@ -18,7 +18,7 @@ fetched_at: 2026-10-08T07:17:07.036737+00:00
 
 # Pricing
 
-Last updated Oct 1, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers-ai/platform/pricing/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 9, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewPay with AI Gateway creditsWhat are Neurons?LLM model pricingEmbeddings model pricingImage model pricingAudio model pricingOther model pricing
 
@@ -272,7 +272,8 @@ $0.342 per M output tokens | 31050 neurons per M input tokens
 $1.000 per M output tokens | 27273 neurons per M input tokens   
 90909 neurons per M output tokens  
 @cf/cloudflare/clef | $0.240 per M input tokens | 21818 neurons per M input tokens  
-@cf/cloudflare/clef-flash | $0.090 per M input tokens | 8182 neurons per M input tokens  
+@cf/cloudflare/clef-omni | $0.150 per M input tokens | 13636 neurons per M input tokens  
+@cf/cloudflare/clef-flash | $0.038 per M input tokens | 3455 neurons per M input tokens  
   
 [PreviousAgents ↗︎](https://developers.cloudflare.com/agents/)[NextData usage](https://developers.cloudflare.com/workers-ai/platform/data-usage/)
 

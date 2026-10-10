@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-17-dashboard-management/
 title: Manage Artifacts from the Cloudflare dashboard \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:58.373828+00:00
+fetched_at: 2026-10-10T14:38:36.410974+00:00
 ---
 
 # Manage Artifacts from the Cloudflare dashboard · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Artifacts](https://developers.cloudflare.com/artifacts/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-17-dashboard-management/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now configure [Artifacts](https://developers.cloudflare.com/artifacts/concepts/how-artifacts-works/) namespaces, repos, and tokens directly from the Cloudflare dashboard.
 

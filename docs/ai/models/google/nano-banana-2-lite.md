@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/google/nano-banana-2-lite/
 title: Nano Banana 2 Lite (Google) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:57.218396+00:00
+fetched_at: 2026-10-10T14:39:13.941630+00:00
 ---
 
 # Nano Banana 2 Lite (Google) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:04:57.218396+00:00
 
 Text-to-Image • Google
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/google/nano-banana-2-lite/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `google/nano-banana-2-lite`
 

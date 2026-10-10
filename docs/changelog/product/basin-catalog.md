@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/basin-catalog/
 title: Basin Catalog Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:41.286178+00:00
+fetched_at: 2026-10-10T14:38:11.522391+00:00
 ---
 
 # Basin Catalog Changelog | Cloudflare Docs

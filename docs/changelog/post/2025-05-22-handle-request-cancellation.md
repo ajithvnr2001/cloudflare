@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-05-22-handle-request-cancellation/
 title: Handle incoming request cancellation in Workers with Request.signal \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:12.866767+00:00
+fetched_at: 2026-10-10T14:38:52.103762+00:00
 ---
 
 # Handle incoming request cancellation in Workers with Request.signal · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-05-22-handle-request-cancellation/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 In Cloudflare Workers, you can now attach an event listener to [`Request`](https://developers.cloudflare.com/workers/runtime-apis/request/) objects, using the [`signal` property ↗︎](https://developer.mozilla.org/en-US/docs/Web/API/Request/signal). This allows you to perform tasks when the request to your Worker is canceled by the client. To use this feature, you must set the [`enable_request_signal`](https://developers.cloudflare.com/workers/configuration/compatibility-flags/#enable-requestsignal-for-incoming-requests) compatibility flag.
 

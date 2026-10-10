@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.llm.prompt.detected/
 title: cf.llm.prompt.detected \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:03.634721+00:00
+fetched_at: 2026-10-10T14:37:35.438823+00:00
 ---
 
 # cf.llm.prompt.detected · Cloudflare Ruleset Engine docs

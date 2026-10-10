@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-30-radar-cloud-observatory-connection-metrics/
 title: Cloud Observatory connection metrics improvements \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:50.849402+00:00
+fetched_at: 2026-10-10T14:38:39.102261+00:00
 ---
 
 # Cloud Observatory connection metrics improvements · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Radar](https://developers.cloudflare.com/radar/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-30-radar-cloud-observatory-connection-metrics/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The [Cloud Observatory ↗︎](https://radar.cloudflare.com/cloud-observatory) on [**Radar**](https://developers.cloudflare.com/radar/) now provides improved connection metric insights, offering new ways to explore TCP round-trip time, TCP handshake duration, TLS handshake duration, and response header receive duration across cloud provider origin servers.
 

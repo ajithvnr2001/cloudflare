@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/videos/sase-2-stop-your-own-vpn/
 title: SASE - Stop hosting your VPN service | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:16:17.649944+00:00
+fetched_at: 2026-10-10T14:37:26.944949+00:00
 ---
 
 # SASE - Stop hosting your VPN service | Cloudflare Docs

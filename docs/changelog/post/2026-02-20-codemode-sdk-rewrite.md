@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-02-20-codemode-sdk-rewrite/
 title: @cloudflare/codemode v0.1.0: a new runtime agnostic modular architecture \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:38.021124+00:00
+fetched_at: 2026-10-10T14:38:43.473820+00:00
 ---
 
 # @cloudflare/codemode v0.1.0: a new runtime agnostic modular architecture · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Agents](https://developers.cloudflare.com/agents/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-02-20-codemode-sdk-rewrite/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The [`@cloudflare/codemode` ↗︎](https://www.npmjs.com/package/@cloudflare/codemode) package has been rewritten into a modular, runtime-agnostic SDK.
 

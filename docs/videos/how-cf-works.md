@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/videos/how-cf-works/
 title: Understand how Cloudflare works | Cloudflare Docs
 method: crawl4ai+scrapegraph (scrapling: scrapling thin content (272 chars), fallback to crawl4ai)
-fetched_at: 2026-10-08T07:16:21.066117+00:00
+fetched_at: 2026-10-10T14:37:33.041695+00:00
 ---
 
 # Understand how Cloudflare works | Cloudflare Docs

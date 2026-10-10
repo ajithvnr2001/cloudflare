@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/realtime/realtimekit/core/api-reference/rtkself/
 title: RTKSelf \u00b7 Cloudflare Realtime docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:12:57.025007+00:00
+fetched_at: 2026-10-10T14:37:56.879374+00:00
 ---
 
 # RTKSelf · Cloudflare Realtime docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:12:57.025007+00:00
 
 # RTKSelf
 
-Last updated Jul 22, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/realtime/realtimekit/core/api-reference/rtkself/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Jul 22, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Overview meeting.self.peerId meeting.self.roomState meeting.self.permissions meeting.self.config meeting.self.roomJoined meeting.self.isPinned meeting.self.cleanupEvents() meeting.self.setName(name) meeting.self.setupTracks(options) meeting.self.enableAudio() meeting.self.enableVideo() meeting.self.updateVideoConstraints() meeting.self.enableScreenShare() meeting.self.updateScreenshareConstraints() meeting.self.disableAudio() meeting.self.disableVideo() meeting.self.disableScreenShare() meeting.self.getAllDevices() meeting.self.pin() meeting.self.unpin() meeting.self.hide() meeting.self.show() meeting.self.setDevice(device)
 

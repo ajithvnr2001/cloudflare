@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-12-03-reusable-access-policies/
 title: One-click Access protection for Workers now creates reusable Cloudflare Access policies \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:30.701471+00:00
+fetched_at: 2026-10-10T14:38:46.166732+00:00
 ---
 
 # One-click Access protection for Workers now creates reusable Cloudflare Access policies · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-12-03-reusable-access-policies/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Workers applications now use reusable [Cloudflare Access policies](https://developers.cloudflare.com/cloudflare-one/access-controls/policies/) to reduce duplication and simplify access management across multiple Workers.
 

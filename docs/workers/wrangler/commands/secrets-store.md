@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers/wrangler/commands/secrets-store/
 title: Secrets Store \u00b7 Cloudflare Workers docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:18:09.304878+00:00
+fetched_at: 2026-10-10T14:39:29.198406+00:00
 ---
 
 # Secrets Store · Cloudflare Workers docs
@@ -22,11 +22,11 @@ fetched_at: 2026-10-08T07:18:09.304878+00:00
 
 # Secrets Store
 
-Last updated Jun 25, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers/wrangler/commands/secrets-store/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Overviewsecrets-store secretsecrets-store store
 
-Interact with [Secret Store](https://developers.cloudflare.com/secrets-store/) using Wrangler.
+Interact with [Secrets Store](https://developers.cloudflare.com/secrets-store/) using Wrangler.
 
 ## `secrets-store secret`
 
@@ -360,9 +360,9 @@ The following is an example with the expected output:
     
     🔐 Getting secret... (ID: 13bc7498c6374a4e9d13be091c3c65f1)
     ✓ Select an account: › My account
-    | Name                        | ID                                  | StoreID                             | Comment | Scopes  | Status  | Created                | Modified               |
-    |-----------------------------|-------------------------------------|-------------------------------------|---------|---------|---------|------------------------|------------------------|
-    | ServiceA_key-1          | 13bc7498c6374a4e9d13be091c3c65f1    | 8f7a1cdced6342c18d223ece462fd88d    |         | workers | active  | 4/9/2025, 10:06:01 PM  | 4/15/2025, 09:13:05 AM |
+    | Name            | ID                                  | StoreID                             | Comment | Scopes  | Status  | Created                | Modified               |
+    |-----------------|-------------------------------------|-------------------------------------|---------|---------|---------|------------------------|------------------------|
+    | ServiceA_key-1  | 13bc7498c6374a4e9d13be091c3c65f1    | 8f7a1cdced6342c18d223ece462fd88d    |         | workers | active  | 4/9/2025, 10:06:01 PM  | 4/15/2025, 09:13:05 AM |
 
 ### `secrets-store secret delete`
 
@@ -719,7 +719,7 @@ The following is an example of using the `list` command to list stores.
     ┌─────────┬──────────────────────────────────┬──────────────────────────────────┬──────────────────────┬──────────────────────┐
     │ Name    │ ID                               │ AccountID                        │ Created              │ Modified             │
     ├─────────┼──────────────────────────────────┼──────────────────────────────────┼──────────────────────┼──────────────────────┤
-    │ default │ 8876bad33f164462bf0743fe8adf98f4 │ REDACTED │ 4/9/2025, 1:11:48 PM  │ 4/9/2025, 1:11:48 PM │
+    │ default │ 8876bad33f164462bf0743fe8adf98f4 │ REDACTED                         │ 4/9/2025, 1:11:48 PM │ 4/9/2025, 1:11:48 PM │
     └─────────┴──────────────────────────────────┴──────────────────────────────────┴──────────────────────┴──────────────────────┘
 
 [PreviousR2](https://developers.cloudflare.com/workers/wrangler/commands/r2/)[NextTunnel](https://developers.cloudflare.com/workers/wrangler/commands/tunnel/)

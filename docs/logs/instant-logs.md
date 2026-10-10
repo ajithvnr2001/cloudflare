@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/logs/instant-logs/
 title: Instant Logs \u00b7 Cloudflare Logs docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:12:09.559840+00:00
+fetched_at: 2026-10-10T14:39:29.244081+00:00
 ---
 
 # Instant Logs · Cloudflare Logs docs
@@ -17,9 +17,9 @@ fetched_at: 2026-10-08T07:12:09.559840+00:00
 
 # Instant Logs
 
-Last updated Aug 14, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/logs/instant-logs/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
-OverviewAvailabilityInstant Logs via Cloudflare DashboardInstant Logs via CLI 1\. Create an Instant Logs Job 2\. Connect to WebSocket Angle GrinderDatasets availableExportLimitsConnect with us
+OverviewAvailabilityInstant Logs via Cloudflare Dashboard Observability LogsInstant Logs via CLI 1\. Create an Instant Logs Job 2\. Connect to WebSocket Angle GrinderDatasets availableExportLimitsConnect with us
 
 Instant Logs allows Cloudflare customers to access a live stream of the traffic for their domain from the Cloudflare dashboard or from a command-line interface (CLI). Seeing data in real time allows you to investigate an attack, troubleshoot, debug or test out changes made to your network. Instant Logs is lightweight, simple to use and does not require any additional setup.
 
@@ -31,19 +31,20 @@ Availability | No | No | Yes | Yes
   
 ## Instant Logs via Cloudflare Dashboard
 
-  1. In the Cloudflare dashboard, go to the **Instant Logs** page.
+Dashboard navigation updated
 
-[ Go to **Instant Logs** ↗ ](https://dash.cloudflare.com/?to=/:account/:zone/analytics/instant-logs)
-  2. Select **Start streaming**.
+The **Analytics > Instant Logs** menu entry has moved. Instant Logs is now integrated into **Observability > Logs** as a live streaming mode. The standalone Instant Logs page remains accessible via direct link (refer to Instant Logs page (legacy)), but the Analytics navigation entry no longer appears in the dashboard.
 
-  3. (optional) Select **Add filter** to narrow down the events to be shown.
+### Observability Logs
+
+  1. In the Cloudflare dashboard, go to **Observability** > **Logs** for your zone.
+  2. Select the **three dot (...)** (actions) menu at the top of the logs table.
+  3. Select **Stream live logs**.
+  4. (optional) Select **Add filter** to narrow down the events shown.
 
 
 
-
-Fields supported in our [HTTP requests dataset](https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/zone/http_requests/) can be used when you add filters. Some fields with additional subscriptions required are not supported in the dashboard, you will need to use CLI instead.
-
-Once a filter is selected and the stream has started, only log lines that match the filter criteria will appear. Filters are not applied retroactively to logs already showing in the dashboard.
+Filters and columns from the Logs view carry over into the live stream. Filters that cannot be streamed display a message instead of being silently dropped.
 
 ## Instant Logs via CLI
 

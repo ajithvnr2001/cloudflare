@@ -3,8 +3,5 @@
   "file": "workers/testing/vitest-integration/mock-outbound-requests.md",
   "title": "Mock outbound requests \u00b7 Cloudflare Workers docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:17:59.165563+00:00",
-  "html_len": 215044,
-  "md_len": 5400,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:39:28.003774+00:00"
 }

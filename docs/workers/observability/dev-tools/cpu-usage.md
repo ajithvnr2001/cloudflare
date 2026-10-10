@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers/observability/dev-tools/cpu-usage/
 title: Profiling CPU usage \u00b7 Cloudflare Workers docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:34.663529+00:00
+fetched_at: 2026-10-10T14:39:28.899086+00:00
 ---
 
 # Profiling CPU usage · Cloudflare Workers docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:17:34.663529+00:00
 
 # Profiling CPU usage
 
-Last updated Sep 5, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers/observability/dev-tools/cpu-usage/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewTaking a profileAn Example ProfileAdditional Resources
 
@@ -30,7 +30,7 @@ If a Worker spends too much time performing CPU-intensive tasks, responses may b
 
 Profiling in DevTools can help you identify and fix code that uses too much CPU.
 
-Measuring execution time of specific functions in production can be difficult because Workers [only increment timers on I/O](https://developers.cloudflare.com/workers/reference/security-model/#step-1-disallow-timers-and-multi-threading) for security purposes. However, measuring CPU execution times is possible in local development with DevTools.
+Measuring execution time of specific functions in production can be difficult because Workers [only increment timers on I/O](https://developers.cloudflare.com/workers/reference/security-model/#step-1-disallow-timers-and-multi-threading) for security purposes. You can profile CPU usage locally with DevTools or [capture CPU profiles in production](https://developers.cloudflare.com/workers/observability/profiling-in-production/) through the Cloudflare dashboard.
 
 When using DevTools to monitor CPU usage, it may be difficult to replicate specific behavior you are seeing in production. To mimic production behavior, make sure the requests you send to the local Worker are similar to requests in production. This might mean sending a large volume of requests, making requests to specific routes, or using production-like data via [remote bindings](https://developers.cloudflare.com/workers/local-development/#remote-bindings).
 

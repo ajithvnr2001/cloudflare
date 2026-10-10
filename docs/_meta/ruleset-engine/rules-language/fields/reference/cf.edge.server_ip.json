@@ -3,8 +3,5 @@
   "file": "ruleset-engine/rules-language/fields/reference/cf.edge.server_ip.md",
   "title": "cf.edge.server_ip \u00b7 Cloudflare Ruleset Engine docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:15:03.450462+00:00",
-  "html_len": 89283,
-  "md_len": 1062,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:35.553288+00:00"
 }

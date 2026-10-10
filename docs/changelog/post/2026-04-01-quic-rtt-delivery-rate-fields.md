@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-01-quic-rtt-delivery-rate-fields/
 title: New QUIC RTT and delivery rate fields \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:44.095310+00:00
+fetched_at: 2026-10-10T14:38:41.243900+00:00
 ---
 
 # New QUIC RTT and delivery rate fields · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Rules](https://developers.cloudflare.com/rules/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-01-quic-rtt-delivery-rate-fields/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Two new fields are now available in rule expressions that surface Layer 4 transport telemetry from the client connection. Together with the existing [`cf.timings.client_tcp_rtt_msec`](https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/) field, these fields give you a complete picture of connection quality for both TCP and QUIC traffic — enabling transport-aware rules without requiring any client-side changes.
 

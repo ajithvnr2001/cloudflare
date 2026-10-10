@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-24-tf-migrate-tool-released/
 title: Automate migration from Cloudflare's Terraform v4 to v5 provider \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:48.958337+00:00
+fetched_at: 2026-10-10T14:38:39.614483+00:00
 ---
 
 # Automate migration from Cloudflare's Terraform v4 to v5 provider · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Terraform](https://developers.cloudflare.com/terraform/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-24-tf-migrate-tool-released/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We're excited to announce **tf-migrate** , a purpose-built CLI tool that simplifies migrating from Cloudflare Terraform Provider v4 to v5.
 

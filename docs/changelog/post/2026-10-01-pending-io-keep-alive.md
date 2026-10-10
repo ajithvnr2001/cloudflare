@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-10-01-pending-io-keep-alive/
 title: Pending I/O operations allow Durable Objects to continue long-running work without a connected client \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:18.300962+00:00
+fetched_at: 2026-10-10T14:38:29.708478+00:00
 ---
 
 # Pending I/O operations allow Durable Objects to continue long-running work without a connected client · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Durable Objects](https://developers.cloudflare.com/durable-objects/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-10-01-pending-io-keep-alive/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Durable Objects remain active while handling a request from a connected client. This change applies when no client is connected, such as when an agent continues a submitted job after its client disconnects.
 

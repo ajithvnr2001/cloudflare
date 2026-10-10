@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers/platform/limits/
 title: Limits \u00b7 Cloudflare Workers docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:38.394444+00:00
+fetched_at: 2026-10-10T14:39:27.123407+00:00
 ---
 
 # Limits · Cloudflare Workers docs
@@ -18,7 +18,7 @@ fetched_at: 2026-10-08T07:17:38.394444+00:00
 
 # Limits
 
-Last updated Sep 5, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers/platform/limits/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewAccount plan limitsRequest and response limitsCPU timeMemoryDurationDaily requestsSubrequests Worker-to-Worker subrequestsSimultaneous open connectionsEnvironment variablesWorker sizeWorker startup timeNumber of WorkersRoutes and domains Routes with wrangler dev --remoteCache API limitsLog sizeImage Resizing with WorkersStatic AssetsUnbound and Bundled plan limitsWall time limits by invocation typeRelated resources
 
@@ -337,6 +337,8 @@ Limit | Workers Free | Workers Paid
 ---|---|---  
 Workers per account | 100 | 5001  
   
+If you are building a platform where your end customers deploy their own sites or applications, use [Workers for Platforms](https://developers.cloudflare.com/cloudflare-for-platforms/workers-for-platforms/), which runs an unlimited number of user Workers.
+
 * * *
 
 ## Routes and domains

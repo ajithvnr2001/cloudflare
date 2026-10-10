@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-17-redirects-for-ai-training/
 title: Introducing Redirects for AI Training \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:47.761621+00:00
+fetched_at: 2026-10-10T14:38:40.050820+00:00
 ---
 
 # Introducing Redirects for AI Training · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Crawl Control](https://developers.cloudflare.com/ai-crawl-control/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-17-redirects-for-ai-training/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare's network now supports redirecting verified AI training crawlers to canonical URLs when they request deprecated or duplicate pages. When enabled via **AI Crawl Control** > **Quick Actions** , AI training crawlers that request a page with a canonical tag pointing elsewhere receive a 301 redirect to the canonical version. Humans, search engine crawlers, and AI Search agents continue to see the original page normally.
 

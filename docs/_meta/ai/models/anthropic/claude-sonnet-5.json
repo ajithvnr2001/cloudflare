@@ -3,8 +3,5 @@
   "file": "ai/models/anthropic/claude-sonnet-5.md",
   "title": "Claude Sonnet 5 (Anthropic) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:04:52.523633+00:00",
-  "html_len": 173079,
-  "md_len": 20170,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:39:17.110454+00:00"
 }

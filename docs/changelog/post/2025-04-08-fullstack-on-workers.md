@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-04-08-fullstack-on-workers/
 title: Full-stack frameworks are now Generally Available on Cloudflare Workers \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:08.727923+00:00
+fetched_at: 2026-10-10T14:38:53.247219+00:00
 ---
 
 # Full-stack frameworks are now Generally Available on Cloudflare Workers · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)[Workers for Platforms](https://developers.cloudflare.com/cloudflare-for-platforms/workers-for-platforms/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-04-08-fullstack-on-workers/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 ![Full-stack on Cloudflare Workers](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1200,height=675,format=webp/_astro/fullstack-on-workers.D7fotYu2.png)
 

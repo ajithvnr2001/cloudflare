@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-05-30-pages-build-image-v3/
 title: Cloudflare Pages builds now provide Node.js v22 by default \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:13.297409+00:00
+fetched_at: 2026-10-10T14:38:51.920509+00:00
 ---
 
 # Cloudflare Pages builds now provide Node.js v22 by default · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Pages](https://developers.cloudflare.com/pages/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-05-30-pages-build-image-v3/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 When you use the built-in build system that is part of [Cloudflare Pages](https://developers.cloudflare.com/pages/), the [Build Image](https://developers.cloudflare.com/pages/configuration/build-image/) now includes Node.js v22. Previously, Node.js v18 was provided by default, and Node.js v18 is now end-of-life (EOL).
 

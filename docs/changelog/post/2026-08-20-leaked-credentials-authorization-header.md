@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-08-20-leaked-credentials-authorization-header/
 title: Leaked credentials detection now scans Authorization headers \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:09.716861+00:00
+fetched_at: 2026-10-10T14:38:32.550998+00:00
 ---
 
 # Leaked credentials detection now scans Authorization headers · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [WAF](https://developers.cloudflare.com/waf/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-08-20-leaked-credentials-authorization-header/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Leaked credentials detection](https://developers.cloudflare.com/waf/detections/leaked-credentials/) now scans the `Authorization` request header for Basic Authentication credentials. Previously, the detection only inspected request bodies, query strings, and headers for well-known web applications or custom detection locations, which meant credentials sent through HTTP Basic Authentication were not covered by default.
 

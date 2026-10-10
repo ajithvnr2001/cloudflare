@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/google-tag-gateway/
 title: Google tag gateway for advertisers \u00b7 Google tag gateway for advertisers docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:11:28.217960+00:00
+fetched_at: 2026-10-10T14:39:28.180536+00:00
 ---
 
 # Google tag gateway for advertisers · Google tag gateway for advertisers docs
@@ -16,9 +16,9 @@ fetched_at: 2026-10-08T07:11:28.217960+00:00
 
 # Google tag gateway for advertisers
 
-Last updated Apr 17, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/google-tag-gateway/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
-OverviewPricingGet started Configure in Google Tag Manager Configure in the Cloudflare dashboardZone-level configuration Handle subdomain-specific logic with triggersRelated resources
+OverviewPricingGet started Configure in Google Tag Manager Configure in the Cloudflare dashboardVerify your setupZone-level configuration Handle subdomain-specific logic with triggersRelated resources
 
 Google tag gateway for advertisers allows website owners using Cloudflare as a CDN to get the most out of ad measurement tools with just a few clicks. It allows you to deploy Google scripts using your own domain, enhancing data privacy and improving signal measurement recovery. Unlike standard setups where tags are requested from a Google domain, Google tag gateway for advertisers loads the tag from your domain and sends measurement events to your domain, where they are forwarded to Google.
 
@@ -61,6 +61,19 @@ Your Cloudflare dashboard user must have one of the following [Account Roles](ht
 
 
 Now that you have authenticated into your Cloudflare account and configured GTM in first-party mode, your Google Tags will be loaded using `https://your-domain/measurement-path/...`and subsequent measurement requests will be served by Cloudflare.
+
+## Verify your setup
+
+To confirm that Google tag gateway for advertisers is working:
+
+  1. Make sure your Google Tag Manager container has at least one tag that fires.
+  2. Open [Tag Assistant ↗︎](https://tagassistant.google.com/) and enter your website URL to connect to it.
+  3. Navigate through your website to trigger tags.
+  4. In **Summary** > **Output** > **Hits Sent** , verify that hits are sent to your measurement path (`https://your-domain/measurement-path/...`).
+
+
+
+After a successful setup, the **Google tag gateway** screen in your Google tag settings shows an **Active** status.
 
 ## Zone-level configuration
 

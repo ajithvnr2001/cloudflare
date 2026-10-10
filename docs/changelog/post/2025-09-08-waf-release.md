@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-09-08-waf-release/
 title: WAF Release - 2025-09-08 \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:22.106950+00:00
+fetched_at: 2026-10-10T14:38:49.120994+00:00
 ---
 
 # WAF Release - 2025-09-08 · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [WAF](https://developers.cloudflare.com/waf/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-09-08-waf-release/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 **This week's update**
 

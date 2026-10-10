@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-02-24-zaraz-dash-placement/
 title: Zaraz moves to the \u201cTag Management\u201d category in the Cloudflare dashboard \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:04.373744+00:00
+fetched_at: 2026-10-10T14:38:54.566629+00:00
 ---
 
 # Zaraz moves to the “Tag Management” category in the Cloudflare dashboard · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Zaraz](https://developers.cloudflare.com/zaraz/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-02-24-zaraz-dash-placement/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 ![Zaraz at zone level to Tag management at account level](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1920,height=480,format=webp/_astro/zaraz-account-level.L5Bz9oN0.jpg)
 

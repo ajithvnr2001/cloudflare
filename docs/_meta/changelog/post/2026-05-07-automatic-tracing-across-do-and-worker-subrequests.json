@@ -3,8 +3,5 @@
   "file": "changelog/post/2026-05-07-automatic-tracing-across-do-and-worker-subrequests.md",
   "title": "Automatic tracing across Durable Object and Worker subrequests \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:51.955491+00:00",
-  "html_len": 64258,
-  "md_len": 2516,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:38.639562+00:00"
 }

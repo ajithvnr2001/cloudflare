@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-05-spend-limits/
 title: Control AI costs with spend limits \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:56.661745+00:00
+fetched_at: 2026-10-10T14:38:37.073343+00:00
 ---
 
 # Control AI costs with spend limits · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Gateway](https://developers.cloudflare.com/ai-gateway/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-05-spend-limits/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 AI Gateway now supports spend limits — cost-based budgets that track cumulative dollar spend and block requests when the budget is exceeded. Unlike rate limiting, which caps the number of requests, spend limits track actual cost based on token usage and model pricing.
 

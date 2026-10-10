@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product-group/docs-collections/
 title: Docs collections Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:36.296626+00:00
+fetched_at: 2026-10-10T14:38:16.258239+00:00
 ---
 
 # Docs collections Changelog | Cloudflare Docs
@@ -230,6 +230,40 @@ Zaraz
 No products found.
 
 [ View RSS feeds ](https://developers.cloudflare.com/fundamentals/new-features/available-rss-feeds/)[ Subscribe to RSS ](https://developers.cloudflare.com/changelog/rss/index.xml)
+
+Oct 9, 2026
+
+## [Improved HTTP/3 client cancellation reporting](https://developers.cloudflare.com/changelog/post/2026-10-09-http3-499-reporting-improvement/)
+
+[Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)
+
+Cloudflare has improved how it handles and reports client-cancelled HTTP/3 requests across Free, Pro, Business, and Enterprise plans. Customers now get a clearer view of client behavior in Cloudflare analytics and, where available, logs.
+
+Previously, Cloudflare did not always stop an HTTP/3 request when the client cancelled its request stream. Some cancellations were already recorded as `499`, while others continued to the origin and showed the eventual upstream status.
+
+Cloudflare now stops affected requests sooner, reducing unnecessary origin work, and records them as `499`. Customers may notice more `499` status codes for HTTP/3 traffic. This reflects more consistent reporting of existing cancellations, not an increase in failed requests.
+
+Customers who use `499` status codes in availability calculations should consider excluding them from server-side error rates because they represent requests cancelled by clients.
+
+For more information, refer to [Error 499](https://developers.cloudflare.com/support/troubleshooting/http-status-codes/4xx-client-error/error-499/).
+
+Oct 9, 2026
+
+## [More efficient Markdown for Agents conversion](https://developers.cloudflare.com/changelog/post/2026-10-09-markdown-for-agents-in-process-conversion/)
+
+[Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)
+
+[Markdown for Agents](https://developers.cloudflare.com/fundamentals/reference/markdown-for-agents/) now converts HTML with an in-process streaming engine at the edge. It processes content as it arrives instead of buffering the HTML response and sending it to a separate conversion service. This reduces conversion overhead and memory use.
+
+This release also changes the conversion limit and response headers:
+
+  * Conversion supports up to 6 MiB (6,291,456 bytes) of decompressed HTML, increased from 2 MiB (2,097,152 bytes). The limit applies after decompression, not to the compressed response size.
+  * Converted responses no longer generate the `x-markdown-tokens` or `x-original-tokens` headers. Clients that use these values need to calculate token counts themselves.
+  * `Content-Length` is removed from converted responses rather than recalculated, because the Markdown body is streamed.
+
+
+
+For more information, refer to the [Markdown for Agents documentation](https://developers.cloudflare.com/fundamentals/reference/markdown-for-agents/).
 
 Oct 7, 2026
 
@@ -821,85 +855,8 @@ Instant Bank Payments via Link is available to US-based self-serve accounts acro
 
 Bank-based Link payments appear in your billing history with the payment method shown as `link` and last four digits as `0000`. For details, refer to the [Instant Bank Payments via Link documentation](https://developers.cloudflare.com/billing/payment-methods/instant-bank-payments-link/).
 
-Apr 28, 2026
-
-## [Direct access to Support from the dashboard](https://developers.cloudflare.com/changelog/post/2026-04-28-direct-support-navigation/)
-
-[Support](https://developers.cloudflare.com/support/)
-
-#### Direct access to Support from the dashboard
-
-The **Support** button in the dashboard global navigation header now takes you directly to the [Cloudflare Support Portal ↗︎](https://support.cloudflare.com), eliminating the previous dropdown menu.
-
-This change ensures that when you need help, you spend less time navigating the UI and more time getting the answers you need.
-
-#### What changed?
-
-  * **Previous behavior** : Selecting **? Support** opened a dropdown menu with various links (Help Center, Cloudflare Community, etc.).
-  * **New behavior** : Selecting **Support** immediately redirects your current tab to the Support Portal.
-
-
-
-To learn more about the resources available to you, refer to the [Cloudflare Support documentation ↗︎](https://developers.cloudflare.com/support/contacting-cloudflare-support/).
-
-Apr 27, 2026
-
-## [Structured error responses for Cloudflare 5xx errors](https://developers.cloudflare.com/changelog/post/2026-04-27-structured-responses-for-5xx-errors/)
-
-[Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)
-
-Cloudflare-generated 5xx error responses now return structured JSON and Markdown when agents request them, matching the format already available for 1xxx errors. Responses follow [RFC 9457 (Problem Details for HTTP APIs) ↗︎](https://www.rfc-editor.org/rfc/rfc9457) and include a `Retry-After` HTTP header on retryable codes.
-
-#### Changes
-
-**5xx coverage.** Ten Cloudflare-generated error codes (500, 502, 504, 520-526) now serve structured responses. These are errors Cloudflare itself generates when it cannot reach or understand the origin server. Origin-generated 5xx responses that Cloudflare passes through are not affected.
-
-**Fault attribution.** The `error_category` field tells agents where the fault lies:
-
-  * `origin` (502, 504, 520-524) — the origin server is responsible. Transient; retry with the backoff in `retry_after`.
-  * `cloudflare` (500) — Cloudflare's fault, not the website or the request. Short retry.
-  * `ssl` (525, 526) — the origin's TLS configuration is broken. Do not retry.
-
-
-
-**Retry-After header.** Retryable codes (500, 502, 504, 520-524) include a `Retry-After` HTTP header matching the `retry_after` body field. Non-retryable codes (525, 526) do not include the header.
-
-#### Negotiation behavior
-
-Request header sent | Response format  
----|---  
-`Accept: application/json` | JSON (`application/json` content type)  
-`Accept: application/problem+json` | JSON (`application/problem+json` content type)  
-`Accept: application/json, text/markdown;q=0.9` | JSON  
-`Accept: text/markdown` | Markdown  
-`Accept: text/markdown, application/json` | Markdown (equal `q`, first-listed wins)  
-`Accept: */*` | HTML (default)  
-  
-#### Availability
-
-Available now for all zones on all plans.
-
-#### Get started
-
-Get JSON response for error 522:
-    
-    
-    curl -s --compressed -H "Accept: application/json" -A "TestAgent/1.0" -H "Accept-Encoding: gzip, deflate" "<YOUR_DOMAIN>/cdn-cgi/error/522" | jq .
-
-Check presence of the `Retry-After` HTTP header associated with the JSON response for error 521:
-    
-    
-    curl -s --compressed -D - -o /dev/null -H "Accept: application/json" -A "TestAgent/1.0" -H "Accept-Encoding: gzip, deflate" "<YOUR_DOMAIN>/cdn-cgi/error/521" | grep -i retry-after
-
-References:
-
-  * [RFC 9457 — Problem Details for HTTP APIs ↗︎](https://www.rfc-editor.org/rfc/rfc9457)
-  * [Cloudflare 5xx error documentation](https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-5xx-errors/)
-
-
-
 ← Prev
 
-1[2](https://developers.cloudflare.com/changelog/product-group/docs-collections/2/)[3](https://developers.cloudflare.com/changelog/product-group/docs-collections/3/)
+1[2](https://developers.cloudflare.com/changelog/product-group/docs-collections/2/)…[4](https://developers.cloudflare.com/changelog/product-group/docs-collections/4/)
 
 [Next →](https://developers.cloudflare.com/changelog/product-group/docs-collections/2/)

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-02-09-approximate-aggregation-functions/
 title: R2 SQL now supports approximate aggregation functions \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:36.242579+00:00
+fetched_at: 2026-10-10T14:38:44.193339+00:00
 ---
 
 # R2 SQL now supports approximate aggregation functions · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Basin SQL](https://developers.cloudflare.com/basin-sql/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-02-09-approximate-aggregation-functions/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 R2 SQL now supports five approximate aggregation functions for fast analysis of large datasets. These functions trade minor precision for improved performance on high-cardinality data.
 

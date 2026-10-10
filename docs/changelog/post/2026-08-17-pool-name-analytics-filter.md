@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-08-17-pool-name-analytics-filter/
 title: Load balancing analytics now filters by pool name \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:08.666653+00:00
+fetched_at: 2026-10-10T14:38:32.854019+00:00
 ---
 
 # Load balancing analytics now filters by pool name · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Load Balancing](https://developers.cloudflare.com/load-balancing/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-08-17-pool-name-analytics-filter/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Load balancing analytics now filters traffic data by pool name instead of pool ID, aligning the query behavior with the pool names displayed in the filter dropdown.
 

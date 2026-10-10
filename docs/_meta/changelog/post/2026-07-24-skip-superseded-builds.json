@@ -3,8 +3,5 @@
   "file": "changelog/post/2026-07-24-skip-superseded-builds.md",
   "title": "Workers Builds now skips superseded queued builds \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:07:04.731030+00:00",
-  "html_len": 59951,
-  "md_len": 895,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:34.322664+00:00"
 }

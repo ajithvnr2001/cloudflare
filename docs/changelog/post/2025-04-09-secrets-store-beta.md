@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-04-09-secrets-store-beta/
 title: Cloudflare Secrets Store now available in Beta \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:09.300347+00:00
+fetched_at: 2026-10-10T14:38:53.043269+00:00
 ---
 
 # Cloudflare Secrets Store now available in Beta · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Secrets Store](https://developers.cloudflare.com/secrets-store/)[SSL/TLS](https://developers.cloudflare.com/ssl/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-04-09-secrets-store-beta/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare Secrets Store is available today in Beta. You can now store, manage, and deploy account level secrets from a secure, centralized platform to your Workers.
 

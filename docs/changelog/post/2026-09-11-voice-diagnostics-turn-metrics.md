@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-11-voice-diagnostics-turn-metrics/
 title: Inspect Voice Agent turn latency and outcomes \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:13.587189+00:00
+fetched_at: 2026-10-10T14:38:31.292647+00:00
 ---
 
 # Inspect Voice Agent turn latency and outcomes · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Agents](https://developers.cloudflare.com/agents/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-11-voice-diagnostics-turn-metrics/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `@cloudflare/voice` v0.4.0 now lets you inspect where each Voice Agent turn spends time and how it ends.
     

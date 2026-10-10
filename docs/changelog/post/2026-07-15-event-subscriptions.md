@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-15-event-subscriptions/
 title: Subscribe to Email Sending events with Queues \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:03.493049+00:00
+fetched_at: 2026-10-10T14:38:34.869024+00:00
 ---
 
 # Subscribe to Email Sending events with Queues · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Email Service](https://developers.cloudflare.com/email-service/)[Queues](https://developers.cloudflare.com/queues/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-15-event-subscriptions/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now subscribe to **[Email Sending](https://developers.cloudflare.com/email-service/api/send-emails/) events** through [Queues event subscriptions](https://developers.cloudflare.com/queues/event-subscriptions/) and receive outbound transactional email lifecycle events on a queue. Each subscription is scoped to one sending domain — either the zone apex, such as `example.com`, or a verified sending subdomain, such as `send.example.com`.
 

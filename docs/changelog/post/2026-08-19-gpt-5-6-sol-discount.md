@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-08-19-gpt-5-6-sol-discount/
 title: Get 50% off GPT-5.6 Sol through AI Gateway \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:08.972499+00:00
+fetched_at: 2026-10-10T14:38:32.712629+00:00
 ---
 
 # Get 50% off GPT-5.6 Sol through AI Gateway · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Gateway](https://developers.cloudflare.com/ai-gateway/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-08-19-gpt-5-6-sol-discount/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 GPT-5.6 Sol is available through AI Gateway, and for a limited time you can use it at 50% off. If you are already using AI Gateway, point to the `openai/gpt-5.6-sol` model and the discounted pricing applies automatically — no promo code needed.
 

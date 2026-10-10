@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-01-ai-traffic-options/
 title: New options to manage AI traffic \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:00.322935+00:00
+fetched_at: 2026-10-10T14:38:35.690812+00:00
 ---
 
 # New options to manage AI traffic · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Bots](https://developers.cloudflare.com/bots/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-01-ai-traffic-options/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Not all AI traffic is the same. Now, all customers — including those on the Free plan — can manage AI crawlers based on what they actually do on your site. Cloudflare groups AI traffic into three behaviors you can control independently: [Search, Agent, and Training](https://developers.cloudflare.com/bots/concepts/bot/#ai-bots). This lets you keep the automated traffic that sends readers and revenue back to you, while blocking the traffic that only takes from your content.
 

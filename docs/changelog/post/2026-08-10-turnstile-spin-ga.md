@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-08-10-turnstile-spin-ga/
 title: Turnstile Spin is now generally available \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:07.510552+00:00
+fetched_at: 2026-10-10T14:38:33.256671+00:00
 ---
 
 # Turnstile Spin is now generally available · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Turnstile](https://developers.cloudflare.com/turnstile/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-08-10-turnstile-spin-ga/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Turnstile Spin](https://developers.cloudflare.com/turnstile/spin/) is now generally available with three setup paths for creating a Turnstile widget and wiring canonical server-side siteverify into your existing backend. Start in the dashboard, with Wrangler, or from your AI coding agent. All three paths create the same widget. You can complete the integration by hand or have your agent embed the widget, wire siteverify, and validate it.
 

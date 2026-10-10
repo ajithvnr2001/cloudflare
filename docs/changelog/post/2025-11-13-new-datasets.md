@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-11-13-new-datasets/
 title: Log Explorer adds 14 new datasets \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:29.647109+00:00
+fetched_at: 2026-10-10T14:38:46.691446+00:00
 ---
 
 # Log Explorer adds 14 new datasets · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Log Explorer](https://developers.cloudflare.com/log-explorer/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-11-13-new-datasets/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We've significantly enhanced Log Explorer by adding support for 14 additional Cloudflare product datasets.
 

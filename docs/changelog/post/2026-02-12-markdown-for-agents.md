@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-02-12-markdown-for-agents/
 title: Introducing Markdown for Agents \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:36.589533+00:00
+fetched_at: 2026-10-10T14:38:44.003223+00:00
 ---
 
 # Introducing Markdown for Agents · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-02-12-markdown-for-agents/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare's network now supports real-time content conversion at the source, for enabled zones using [content negotiation ↗︎](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Content_negotiation) headers. When AI systems request pages from any website that uses Cloudflare and has Markdown for Agents enabled, they can express the preference for `text/markdown` in the request: our network will automatically and efficiently convert the HTML to markdown, when possible, on the fly.
 

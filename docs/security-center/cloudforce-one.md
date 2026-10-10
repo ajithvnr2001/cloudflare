@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/security-center/cloudforce-one/
 title: Cloudforce One \u00b7 Cloudflare Security Center docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:29.416519+00:00
+fetched_at: 2026-10-10T14:39:28.214321+00:00
 ---
 
 # Cloudforce One · Cloudflare Security Center docs
@@ -17,7 +17,7 @@ fetched_at: 2026-10-08T07:15:29.416519+00:00
 
 # Cloudforce One
 
-Last updated May 20, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/security-center/cloudforce-one/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewAccess Cloudforce OneAnalyze threat events Identify the adversary Search for indicators Create WAF Rules and receive notificationsUse Cloudy to analyze threat eventsSubmit RFIs Upload and download attachmentImprove your security posture or recover from a past incidentRequest help for active attack
 
@@ -97,7 +97,7 @@ Search across global datasets for specific indicators, including:
 
 ### Create WAF Rules and receive notifications
 
-  * **Saved views** — Save custom filters for recurring threat event investigations.
+  * **Saved views** — Save custom filters for recurring threat event investigations. Saving a view does not notify you. To receive notifications, open **Manage Saved Views** and select **Add Alert** next to the view.
   * **Automated rules** — Generate security rules from threat data and push them to your Cloudflare [WAF](https://developers.cloudflare.com/waf/) or firewall.
   * **[STIX2 ↗︎](https://www.cloudflare.com/en-gb/learning/security/what-is-stix-and-taxii/) exports** — Export threat intelligence in STIX2 format for integration with third-party [SIEM ↗︎](https://www.cloudflare.com/en-gb/learning/security/what-is-siem/) (Security Information and Event Management) or SOAR (Security Orchestration, Automation, and Response) platforms.
 

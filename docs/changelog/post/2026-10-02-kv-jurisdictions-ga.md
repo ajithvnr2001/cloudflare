@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-10-02-kv-jurisdictions-ga/
 title: Workers KV namespace jurisdictions are now generally available \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:18.758950+00:00
+fetched_at: 2026-10-10T14:38:29.602851+00:00
 ---
 
 # Workers KV namespace jurisdictions are now generally available · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [KV](https://developers.cloudflare.com/kv/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-10-02-kv-jurisdictions-ga/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Jurisdictions for [Workers KV](https://developers.cloudflare.com/kv/) namespaces are now generally available. When you create a namespace, you can set a [jurisdiction](https://developers.cloudflare.com/kv/reference/data-location/) to make sure the namespace's data is only durably stored within that region. Jurisdictions can help you comply with data localization regulations such as GDPR or FedRAMP. Supported jurisdictions are `eu`, `us`, and `fedramp`.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/basin/get-started/prompting/
 title: Prompt an agent to build with Basin \u00b7 Cloudflare Basin docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:29.508135+00:00
+fetched_at: 2026-10-10T14:39:24.465878+00:00
 ---
 
 # Prompt an agent to build with Basin · Cloudflare Basin docs
@@ -18,7 +18,7 @@ fetched_at: 2026-10-08T07:05:29.508135+00:00
 
 # Prompt an agent to build with Basin
 
-Last updated Oct 1, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/basin/get-started/prompting/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 10, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewTry a first promptGive your agent current documentationChoose a data sourceMore example prompts Add telemetry to an existing Worker Measure D1 operations Track Queue processing Route an existing stream Ingest external JSON events Track R2 object activityReusable base promptVerify the result
 
@@ -37,7 +37,7 @@ For the full working procedure, follow the [Basin CLI guide](https://developers.
 
 ## Give your agent current documentation
 
-Connect the [Cloudflare documentation Model Context Protocol (MCP) server ↗︎](https://docs.mcp.cloudflare.com/mcp) to your editor or agent. It can retrieve current commands, binding fields, permissions, and limits. The [Cloudflare Observability MCP server ↗︎](https://observability.mcp.cloudflare.com/mcp) can help inspect Worker logs and exceptions. Neither connection grants account access or replaces checks of Basin Pipelines delivery and Basin SQL results.
+Connect the [Cloudflare documentation Model Context Protocol (MCP) server ↗︎](https://docs.mcp.cloudflare.com/mcp) to your editor or agent. It can retrieve current commands, binding fields, permissions, and limits. This connection does not grant account access or replace checks of Basin Pipelines delivery and Basin SQL results.
 
 Point your agent to the [Basin Pipelines](https://developers.cloudflare.com/basin-pipelines/), [Basin Catalog](https://developers.cloudflare.com/basin-catalog/), and [Basin SQL](https://developers.cloudflare.com/basin-sql/) documentation before it creates resources.
 

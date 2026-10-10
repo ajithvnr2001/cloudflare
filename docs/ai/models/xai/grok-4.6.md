@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/xai/grok-4.6/
 title: Grok 4.6 (xAI) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:07.826204+00:00
+fetched_at: 2026-10-10T14:39:05.832987+00:00
 ---
 
 # Grok 4.6 (xAI) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:05:07.826204+00:00
 
 Text Generation • xAI
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/xai/grok-4.6/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `xai/grok-4.6`
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-02-python-workers-web-framework-support/
 title: Python Workers now support WSGI web frameworks like Django and Flask \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:12.258711+00:00
+fetched_at: 2026-10-10T14:38:31.734898+00:00
 ---
 
 # Python Workers now support WSGI web frameworks like Django and Flask · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-02-python-workers-web-framework-support/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Python web frameworks following the [Web Server Gateway Interface (WSGI) ↗︎](https://peps.python.org/pep-3333/) or [Asynchronous Server Gateway Interface (ASGI) ↗︎](https://asgi.readthedocs.io/) specification can now be used in Python Workers.
 

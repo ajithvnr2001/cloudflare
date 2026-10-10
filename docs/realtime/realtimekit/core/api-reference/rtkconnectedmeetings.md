@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/realtime/realtimekit/core/api-reference/rtkconnectedmeetings/
 title: RTKConnectedMeetings \u00b7 Cloudflare Realtime docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:12:55.130528+00:00
+fetched_at: 2026-10-10T14:37:58.154126+00:00
 ---
 
 # RTKConnectedMeetings · Cloudflare Realtime docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:12:55.130528+00:00
 
 # RTKConnectedMeetings
 
-Last updated Jul 22, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/realtime/realtimekit/core/api-reference/rtkconnectedmeetings/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Jul 22, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Overview meeting.connectedMeetings.getConnectedMeetings() meeting.connectedMeetings.createMeetings(request) meeting.connectedMeetings.updateMeetings(request) meeting.connectedMeetings.deleteMeetings(meetingIds) meeting.connectedMeetings.moveParticipants(sourceMeetingId, destinationMeetingId, participantIds) meeting.connectedMeetings.moveParticipantsWithCustomPreset(sourceMeetingId, destinationMeetingId, participants)
 

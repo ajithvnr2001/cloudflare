@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-08-04-nodejs-compat-default/
 title: Node.js compatibility is now enabled by default \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:06.591289+00:00
+fetched_at: 2026-10-10T14:38:33.566680+00:00
 ---
 
 # Node.js compatibility is now enabled by default · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-08-04-nodejs-compat-default/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Workers now enable the `nodejs_compat` and `nodejs_compat_v2` compatibility flags by default for [compatibility dates](https://developers.cloudflare.com/workers/configuration/compatibility-dates/) of `2026-08-04` or later. These flags are not used for these compatibility dates because the compatibility date enables the same behavior.
 
@@ -37,7 +37,7 @@ To turn off Node.js compatibility completely, remove any `nodejs_compat` and `no
     {
       "$schema": "./node_modules/wrangler/config-schema.json",
       // Set this to today's date
-      "compatibility_date": "2026-10-08",
+      "compatibility_date": "2026-10-10",
       "compatibility_flags": [
         "no_nodejs_compat",
         "no_nodejs_compat_v2"
@@ -46,7 +46,7 @@ To turn off Node.js compatibility completely, remove any `nodejs_compat` and `no
     
     
     # Set this to today's date
-    compatibility_date = "2026-10-08"
+    compatibility_date = "2026-10-10"
     compatibility_flags = ["no_nodejs_compat", "no_nodejs_compat_v2"]
 
 For more information, refer to the [Node.js compatibility documentation](https://developers.cloudflare.com/workers/runtime-apis/nodejs/).

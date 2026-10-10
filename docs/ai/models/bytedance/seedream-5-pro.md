@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/bytedance/seedream-5-pro/
 title: Seedream 5 Pro (ByteDance) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:55.213136+00:00
+fetched_at: 2026-10-10T14:39:15.897936+00:00
 ---
 
 # Seedream 5 Pro (ByteDance) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:04:55.213136+00:00
 
 Text-to-Image • ByteDance
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/bytedance/seedream-5-pro/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `bytedance/seedream-5-pro`
 

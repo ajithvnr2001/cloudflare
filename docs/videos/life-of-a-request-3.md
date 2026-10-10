@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/videos/life-of-a-request-3/
 title: Life of a Request: The Finish Line - Serving the Content | Cloudflare Docs
 method: crawl4ai+scrapegraph (scrapling: scrapling thin content (401 chars), fallback to crawl4ai)
-fetched_at: 2026-10-08T07:16:37.649044+00:00
+fetched_at: 2026-10-10T14:37:32.219029+00:00
 ---
 
 # Life of a Request: The Finish Line - Serving the Content | Cloudflare Docs

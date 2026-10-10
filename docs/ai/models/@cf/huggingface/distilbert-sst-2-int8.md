@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/%40cf/huggingface/distilbert-sst-2-int8/
 title: distilbert-sst-2-int8 (HuggingFace) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:45.842407+00:00
+fetched_at: 2026-10-10T14:39:22.370082+00:00
 ---
 
 # distilbert-sst-2-int8 (HuggingFace) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:04:45.842407+00:00
 
 Text Classification • HuggingFace
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/%40cf/huggingface/distilbert-sst-2-int8/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `@cf/huggingface/distilbert-sst-2-int8`
 

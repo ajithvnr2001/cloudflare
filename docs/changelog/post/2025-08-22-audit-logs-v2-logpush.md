@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-08-22-audit-logs-v2-logpush/
 title: Audit logs (version 2) - Logpush Beta Release \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:20.132563+00:00
+fetched_at: 2026-10-10T14:38:49.811827+00:00
 ---
 
 # Audit logs (version 2) - Logpush Beta Release · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Audit Logs](https://developers.cloudflare.com/fundamentals/account/account-security/review-audit-logs/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-08-22-audit-logs-v2-logpush/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Audit Logs v2 dataset](https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/account/audit_logs_v2/) is now available via Logpush.
 

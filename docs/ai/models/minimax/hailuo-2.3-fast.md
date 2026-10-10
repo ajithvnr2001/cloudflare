@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/minimax/hailuo-2.3-fast/
 title: MiniMax Hailuo 2.3 Fast (MiniMax) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:58.434776+00:00
+fetched_at: 2026-10-10T14:39:13.138383+00:00
 ---
 
 # MiniMax Hailuo 2.3 Fast (MiniMax) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:04:58.434776+00:00
 
 Text-to-Video • MiniMax
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/minimax/hailuo-2.3-fast/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `minimax/hailuo-2.3-fast`
 

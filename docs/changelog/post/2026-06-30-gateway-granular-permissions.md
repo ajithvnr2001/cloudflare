@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-30-gateway-granular-permissions/
 title: New permissions and roles for Gateway policies and lists \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:00.306874+00:00
+fetched_at: 2026-10-10T14:38:35.835059+00:00
 ---
 
 # New permissions and roles for Gateway policies and lists · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Gateway](https://developers.cloudflare.com/cloudflare-one/traffic-policies/)[Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)[Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-30-gateway-granular-permissions/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now assign granular, resource-scoped roles for [Cloudflare Gateway](https://developers.cloudflare.com/cloudflare-one/traffic-policies/) firewall policies and [Zero Trust lists](https://developers.cloudflare.com/cloudflare-one/reusable-components/lists/). Administrators can delegate access to specific policy types or list management without granting account-wide or product-wide control.
 

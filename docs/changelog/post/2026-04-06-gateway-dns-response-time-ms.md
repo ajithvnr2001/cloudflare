@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-06-gateway-dns-response-time-ms/
 title: New ResponseTimeMs field in Gateway DNS Logpush dataset \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:44.826237+00:00
+fetched_at: 2026-10-10T14:38:41.069056+00:00
 ---
 
 # New ResponseTimeMs field in Gateway DNS Logpush dataset · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Logs](https://developers.cloudflare.com/logs/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-06-gateway-dns-response-time-ms/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare has added a new field to the [Gateway DNS](https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/account/gateway_dns/#responsetimems) Logpush dataset:
 

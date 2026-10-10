@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-18-wrangler-support/
 title: Manage Artifacts namespaces and repos with Wrangler CLI \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:53.643788+00:00
+fetched_at: 2026-10-10T14:38:38.104916+00:00
 ---
 
 # Manage Artifacts namespaces and repos with Wrangler CLI · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Artifacts](https://developers.cloudflare.com/artifacts/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-18-wrangler-support/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now manage [Artifacts](https://developers.cloudflare.com/artifacts/) namespaces, repos, and repo-scoped tokens directly from Wrangler CLI.
 

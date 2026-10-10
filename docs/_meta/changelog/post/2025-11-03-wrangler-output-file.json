@@ -3,8 +3,5 @@
   "file": "changelog/post/2025-11-03-wrangler-output-file.md",
   "title": "Capture Wrangler command output in structured format \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:28.039001+00:00",
-  "html_len": 60942,
-  "md_len": 1878,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:47.184834+00:00"
 }

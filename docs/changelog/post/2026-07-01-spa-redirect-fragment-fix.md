@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-01-spa-redirect-fragment-fix/
 title: Fix redirect URL fragment encoding for single-page applications \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:00.684454+00:00
+fetched_at: 2026-10-10T14:38:35.714241+00:00
 ---
 
 # Fix redirect URL fragment encoding for single-page applications · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Access](https://developers.cloudflare.com/cloudflare-one/access-controls/policies/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-01-spa-redirect-fragment-fix/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Access now correctly preserves URL fragment characters (`/`, `?`, `=`, `&`, `;`) when redirecting users back to an application after login. Previously, these characters were encoded with `encodeURIComponent`, which mangled fragment-based routes used by single-page applications (SPAs).
 

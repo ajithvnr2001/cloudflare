@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.tls_client_auth.cert_serial/
 title: cf.tls_client_auth.cert_serial \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:07.166669+00:00
+fetched_at: 2026-10-10T14:37:34.163921+00:00
 ---
 
 # cf.tls_client_auth.cert_serial · Cloudflare Ruleset Engine docs

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers-ai/models/deepseek-r1-distill-qwen-32b/
 title: deepseek-r1-distill-qwen-32b (DeepSeek) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:02.206281+00:00
+fetched_at: 2026-10-10T14:37:22.963860+00:00
 ---
 
 # deepseek-r1-distill-qwen-32b (DeepSeek) · Cloudflare AI docs · Cloudflare Workers AI docs
@@ -21,7 +21,7 @@ fetched_at: 2026-10-08T07:17:02.206281+00:00
 
 Text Generation • DeepSeek
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers-ai/models/deepseek-r1-distill-qwen-32b/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `@cf/deepseek-ai/deepseek-r1-distill-qwen-32b`
 

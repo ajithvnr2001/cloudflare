@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/images/storage/upload-images/upload-url/
 title: Upload via URL \u00b7 Cloudflare Images docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:11:38.025552+00:00
+fetched_at: 2026-10-10T14:37:58.722953+00:00
 ---
 
 # Upload via URL · Cloudflare Images docs
@@ -22,7 +22,7 @@ Storage
 
 # Upload via URL
 
-Last updated Apr 21, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/images/storage/upload-images/upload-url/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Apr 21, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Before you upload an image, check the list of [supported formats and dimensions](https://developers.cloudflare.com/images/get-started/limits) to confirm your image will be accepted.
 

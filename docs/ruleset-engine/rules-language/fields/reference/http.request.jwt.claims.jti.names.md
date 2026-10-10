@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/http.request.jwt.claims.jti.names/
 title: http.request.jwt.claims.jti.names \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:11.444389+00:00
+fetched_at: 2026-10-10T14:37:32.283172+00:00
 ---
 
 # http.request.jwt.claims.jti.names · Cloudflare Ruleset Engine docs

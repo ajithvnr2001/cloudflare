@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-10-01-workers-oauth-provider-1x/
 title: The best way to do MCP auth just got better: Workers OAuth Provider goes v1, with a new split API and full support for MCP 2026-07-28 \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:18.605140+00:00
+fetched_at: 2026-10-10T14:38:29.668283+00:00
 ---
 
 # The best way to do MCP auth just got better: Workers OAuth Provider goes v1, with a new split API and full support for MCP 2026-07-28 · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Agents](https://developers.cloudflare.com/agents/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-10-01-workers-oauth-provider-1x/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [`@cloudflare/workers-oauth-provider` ↗︎](https://github.com/cloudflare/workers-oauth-provider) is now v1, with a new split API. One Worker acts as the authorization server: it signs users in and issues tokens. Your MCP server acts as the resource server, and can run in another Worker. It validates each token with the authorization server over a [Service Binding](https://developers.cloudflare.com/workers/runtime-apis/bindings/service-bindings/), without crossing the public Internet.
 
@@ -148,7 +148,7 @@ In the example, `env.AUTH_SERVER.validateToken` is that Service Binding call. Th
     	"name": "calendar-mcp",
     	"main": "src/index.ts",
     	// Set this to today's date
-    	"compatibility_date": "2026-10-08",
+    	"compatibility_date": "2026-10-10",
     	"services": [
     		{
     			"binding": "AUTH_SERVER",
@@ -162,7 +162,7 @@ In the example, `env.AUTH_SERVER.validateToken` is that Service Binding call. Th
     name = "calendar-mcp"
     main = "src/index.ts"
     # Set this to today's date
-    compatibility_date = "2026-10-08"
+    compatibility_date = "2026-10-10"
     
     [[services]]
     binding = "AUTH_SERVER"

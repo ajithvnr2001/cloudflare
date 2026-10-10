@@ -3,8 +3,5 @@
   "file": "ruleset-engine/rules-language/fields/reference/http.request.body.size.md",
   "title": "http.request.body.size \u00b7 Cloudflare Ruleset Engine docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:15:10.300188+00:00",
-  "html_len": 89576,
-  "md_len": 1343,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:32.922010+00:00"
 }

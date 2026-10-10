@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-17-pqc-mldsa-aop-cots/
 title: Post-quantum ML-DSA certificates for Authenticated Origin Pulls and Custom Origin Trust Store \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:58.465314+00:00
+fetched_at: 2026-10-10T14:38:36.354111+00:00
 ---
 
 # Post-quantum ML-DSA certificates for Authenticated Origin Pulls and Custom Origin Trust Store · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [SSL/TLS](https://developers.cloudflare.com/ssl/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-17-pqc-mldsa-aop-cots/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare now accepts [ML-DSA ↗︎](https://csrc.nist.gov/pubs/fips/204/final) (FIPS 204) post-quantum certificates on the connection between Cloudflare's edge and your origin server. Combined with our existing [X25519MLKEM768](https://developers.cloudflare.com/ssl/post-quantum-cryptography/#hybrid-key-agreement) key agreement, this lets you establish end-to-end post-quantum authentication on the Cloudflare-to-origin connection.
 

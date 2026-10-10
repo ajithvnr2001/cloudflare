@@ -3,8 +3,5 @@
   "file": "changelog/post/2025-12-18-cached-request-classification.md",
   "title": "Improved accuracy of cached request classification in analytics \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:32.200520+00:00",
-  "html_len": 63502,
-  "md_len": 1891,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:45.643080+00:00"
 }

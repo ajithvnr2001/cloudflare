@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-01-20-auxiliary-workers/
 title: Use auxiliary Workers alongside full-stack frameworks \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:34.042399+00:00
+fetched_at: 2026-10-10T14:38:44.899279+00:00
 ---
 
 # Use auxiliary Workers alongside full-stack frameworks · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-01-20-auxiliary-workers/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Auxiliary Workers are now fully supported when using full-stack frameworks, such as [React Router](https://developers.cloudflare.com/workers/framework-guides/web-apps/react-router/) and [TanStack Start](https://developers.cloudflare.com/workers/framework-guides/web-apps/tanstack-start/), that integrate with the [Cloudflare Vite plugin](https://developers.cloudflare.com/workers/vite-plugin/reference/api/). They are included alongside the framework's build output in the build output directory. Note that this feature requires Vite 7 or above.
 

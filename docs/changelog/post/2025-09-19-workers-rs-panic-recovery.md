@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-09-19-workers-rs-panic-recovery/
 title: Panic Recovery for Rust Workers \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:23.967456+00:00
+fetched_at: 2026-10-10T14:38:48.680039+00:00
 ---
 
 # Panic Recovery for Rust Workers · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-09-19-workers-rs-panic-recovery/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 In [workers-rs ↗︎](https://github.com/cloudflare/workers-rs), Rust panics were previously non-recoverable. A panic would put the Worker into an invalid state, and further function calls could result in memory overflows or exceptions.
 

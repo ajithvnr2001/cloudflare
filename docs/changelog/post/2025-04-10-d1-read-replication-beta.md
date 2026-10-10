@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-04-10-d1-read-replication-beta/
 title: D1 Read Replication Public Beta \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:09.537769+00:00
+fetched_at: 2026-10-10T14:38:52.999274+00:00
 ---
 
 # D1 Read Replication Public Beta · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [D1](https://developers.cloudflare.com/d1/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-04-10-d1-read-replication-beta/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 D1 read replication is available in public beta to help lower average latency and increase overall throughput for read-heavy applications like e-commerce websites or content management tools.
 

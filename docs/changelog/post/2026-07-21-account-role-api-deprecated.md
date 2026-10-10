@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-21-account-role-api-deprecated/
 title: Account Role API deprecated \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:03.959058+00:00
+fetched_at: 2026-10-10T14:38:34.598985+00:00
 ---
 
 # Account Role API deprecated · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-21-account-role-api-deprecated/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The [Account Roles API](https://developers.cloudflare.com/api/resources/accounts/subresources/roles/) is deprecated and is being replaced by the [Permission Groups API](https://developers.cloudflare.com/api/resources/iam/subresources/permission_groups/). An end of life date has not yet been established.
 

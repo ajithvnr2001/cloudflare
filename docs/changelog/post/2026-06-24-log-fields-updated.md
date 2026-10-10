@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-24-log-fields-updated/
 title: New WebSocket Analytics Logpush dataset and updated fields \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:59.383177+00:00
+fetched_at: 2026-10-10T14:38:36.086297+00:00
 ---
 
 # New WebSocket Analytics Logpush dataset and updated fields · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Logs](https://developers.cloudflare.com/logs/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-24-log-fields-updated/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare has updated [Logpush datasets](https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/):
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/videos/china-network-acceleration/
 title: China network - CDN global acceleration for Mainland China | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:16:15.345550+00:00
+fetched_at: 2026-10-10T14:37:29.113803+00:00
 ---
 
 # China network - CDN global acceleration for Mainland China | Cloudflare Docs

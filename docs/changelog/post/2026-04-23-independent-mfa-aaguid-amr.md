@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-23-independent-mfa-aaguid-amr/
 title: AAGUID restrictions and AMR matching for Access independent MFA \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:48.772790+00:00
+fetched_at: 2026-10-10T14:38:39.695243+00:00
 ---
 
 # AAGUID restrictions and AMR matching for Access independent MFA · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Access](https://developers.cloudflare.com/cloudflare-one/access-controls/policies/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-23-independent-mfa-aaguid-amr/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Independent MFA](https://developers.cloudflare.com/cloudflare-one/access-controls/access-settings/independent-mfa/) in Cloudflare Access now supports two additional organization-level controls:
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-01-waf-release/
 title: WAF Release - 2026-07-01 \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:00.853644+00:00
+fetched_at: 2026-10-10T14:38:35.651139+00:00
 ---
 
 # WAF Release - 2026-07-01 · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [WAF](https://developers.cloudflare.com/waf/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-01-waf-release/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 This release adds targeted coverage for a path traversal flaw in Fortinet FortiSandbox (CVE-2026-39813) and transitions the Anomaly:Header:User-Agent - Fake Bing or MSN Bot rule action from Block to Disabled.
 

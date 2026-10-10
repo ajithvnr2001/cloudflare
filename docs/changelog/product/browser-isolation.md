@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/browser-isolation/
 title: Browser Isolation Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:42.124433+00:00
+fetched_at: 2026-10-10T14:38:10.978015+00:00
 ---
 
 # Browser Isolation Changelog | Cloudflare Docs

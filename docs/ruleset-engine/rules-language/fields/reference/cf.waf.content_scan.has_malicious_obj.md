@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.waf.content_scan.has_malicious_obj/
 title: cf.waf.content_scan.has_malicious_obj \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:07.861967+00:00
+fetched_at: 2026-10-10T14:37:33.875237+00:00
 ---
 
 # cf.waf.content_scan.has_malicious_obj · Cloudflare Ruleset Engine docs

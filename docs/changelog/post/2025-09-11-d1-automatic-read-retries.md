@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-09-11-d1-automatic-read-retries/
 title: D1 automatically retries read-only queries \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:22.460879+00:00
+fetched_at: 2026-10-10T14:38:48.959582+00:00
 ---
 
 # D1 automatically retries read-only queries · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [D1](https://developers.cloudflare.com/d1/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-09-11-d1-automatic-read-retries/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 D1 now detects read-only queries and automatically attempts up to two retries to execute those queries in the event of failures with retryable errors. You can access the number of execution attempts in the returned [response metadata](https://developers.cloudflare.com/d1/worker-api/return-object/#d1result) property `total_attempts`.
 

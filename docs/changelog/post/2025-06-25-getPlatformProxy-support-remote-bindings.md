@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-06-25-getPlatformProxy-support-remote-bindings/
 title: Remote bindings (beta) now works with Next.js \u2014 connect to remote resources (D1, KV, R2, etc.) during local development \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:15.067311+00:00
+fetched_at: 2026-10-10T14:38:51.417499+00:00
 ---
 
 # Remote bindings (beta) now works with Next.js — connect to remote resources (D1, KV, R2, etc.) during local development · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-06-25-getPlatformProxy-support-remote-bindings/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We [recently announced ↗︎](https://github.com/cloudflare/workers-sdk/discussions/9660) our public beta for [remote bindings](https://developers.cloudflare.com/workers/local-development/#remote-bindings), which allow you to connect to deployed resources running on your Cloudflare account (like [R2 buckets](https://developers.cloudflare.com/r2) or [D1 databases](https://developers.cloudflare.com/d1)) while running a local development session.
 

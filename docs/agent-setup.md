@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/agent-setup/
 title: Agent setup \u00b7 Agent setup docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:05.780336+00:00
+fetched_at: 2026-10-10T14:39:23.738945+00:00
 ---
 
 # Agent setup · Agent setup docs

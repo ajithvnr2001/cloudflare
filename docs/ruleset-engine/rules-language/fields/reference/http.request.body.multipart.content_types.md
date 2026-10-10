@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/http.request.body.multipart.content_types/
 title: http.request.body.multipart.content_types \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:09.956954+00:00
+fetched_at: 2026-10-10T14:37:33.146968+00:00
 ---
 
 # http.request.body.multipart.content_types · Cloudflare Ruleset Engine docs

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-08-12-agent-lee-take-home-code/
 title: Export the code Agent Lee generates \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:07.820635+00:00
+fetched_at: 2026-10-10T14:38:33.199317+00:00
 ---
 
 # Export the code Agent Lee generates · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Agent Lee](https://developers.cloudflare.com/agent-lee/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-08-12-agent-lee-take-home-code/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 When Agent Lee generates a project for you — a starter static site, a Worker, a scaffold — you can now take the source with you. Agent Lee packages the generated files into a temporary repository and gives you a one-time command to clone it to your own machine.
 

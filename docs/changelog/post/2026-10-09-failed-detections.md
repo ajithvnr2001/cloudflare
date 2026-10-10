@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-10-09-failed-detections/
 title: Failed detections field available in Rules \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-09T10:55:29.870784+00:00
+fetched_at: 2026-10-10T14:38:29.158287+00:00
 ---
 
 # Failed detections field available in Rules · Changelog

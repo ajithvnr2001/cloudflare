@@ -3,8 +3,5 @@
   "file": "workers-ai/models/distilbert-sst-2-int8.md",
   "title": "distilbert-sst-2-int8 (HuggingFace) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:17:02.286872+00:00",
-  "html_len": 120739,
-  "md_len": 2850,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:22.908033+00:00"
 }

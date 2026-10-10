@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/bots/botbase/
 title: BotBase \u00b7 Cloudflare bot solutions docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:32.919173+00:00
+fetched_at: 2026-10-10T14:39:27.895507+00:00
 ---
 
 # BotBase · Cloudflare bot solutions docs
@@ -17,7 +17,7 @@ fetched_at: 2026-10-08T07:05:32.919173+00:00
 
 # BotBase
 
-Last updated Jul 23, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/bots/botbase/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewAvailabilityAccessWhat you can doRequestsClassificationRadar's public-facing BotBase
 
@@ -39,6 +39,7 @@ To view BotBase, go to **Security Analytics** > **Bot analysis** > **BotBase**. 
   * Search and filter the directory to find a specific bot or group of bots.
   * Filter your own traffic to a specific bot to investigate its activity on your zone.
   * Copy a bot's detection ID to target it in [Security rules](https://developers.cloudflare.com/security/rules/).
+  * If you operate a bot, submit it for verification from the **Submission form** tab and track its review status from the **Submission history** tab. For more information, refer to [Becoming a Verified bot](https://developers.cloudflare.com/bots/concepts/bot/verified-bots/#becoming-a-verified-bot).
 
 
 

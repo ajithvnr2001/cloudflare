@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-08-12-blocked-content-rules/
 title: Block emails by content with blocked content rules \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:07.890492+00:00
+fetched_at: 2026-10-10T14:38:33.185393+00:00
 ---
 
 # Block emails by content with blocked content rules · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Email security](https://developers.cloudflare.com/cloudflare-one/email-security/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-08-12-blocked-content-rules/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare Email security now lets administrators write their own content-based blocking rules. A new **Blocked content** area under **Policies & rules** lets you define a plaintext string or a regular expression, choose whether to scan the message subject, body, or both, and automatically block any message that matches.
 

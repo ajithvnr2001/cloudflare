@@ -3,8 +3,5 @@
   "file": "ai/models/openai/gpt-5.5.md",
   "title": "GPT-5.5 (OpenAI) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:05:01.896940+00:00",
-  "html_len": 278218,
-  "md_len": 36302,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:39:10.492414+00:00"
 }

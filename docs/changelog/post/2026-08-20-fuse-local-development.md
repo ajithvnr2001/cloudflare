@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-08-20-fuse-local-development/
 title: Use FUSE in local Containers development \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:09.533857+00:00
+fetched_at: 2026-10-10T14:38:32.565145+00:00
 ---
 
 # Use FUSE in local Containers development · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Containers](https://developers.cloudflare.com/containers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-08-20-fuse-local-development/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Miniflare now automatically grants local Containers the Docker privileges required for Filesystem in Userspace (FUSE). This applies to `wrangler dev`, the Cloudflare Vite plugin, and direct Miniflare use.
 

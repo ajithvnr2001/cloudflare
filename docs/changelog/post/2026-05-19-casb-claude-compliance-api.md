@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-19-casb-claude-compliance-api/
 title: CASB adds support for Claude Compliance API \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:53.876646+00:00
+fetched_at: 2026-10-10T14:38:38.072862+00:00
 ---
 
 # CASB adds support for Claude Compliance API · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [CASB](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-19-casb-claude-compliance-api/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Cloudflare CASB](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/anthropic/) now integrates with the [Claude Compliance API ↗︎](https://support.claude.com/en/articles/13015708-access-the-compliance-api). This enhancement gives security teams visibility into Claude usage patterns, admin activity, and compliance-relevant events across their organization.
 

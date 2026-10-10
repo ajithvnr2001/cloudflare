@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-02-24-deleteall-deletes-alarms/
 title: deleteAll() now deletes Durable Object alarm \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:38.257333+00:00
+fetched_at: 2026-10-10T14:38:43.352326+00:00
 ---
 
 # deleteAll() now deletes Durable Object alarm · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Durable Objects](https://developers.cloudflare.com/durable-objects/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-02-24-deleteall-deletes-alarms/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `deleteAll()` now deletes a Durable Object alarm in addition to stored data for Workers with a compatibility date of `2026-02-24` or later. This change simplifies clearing a Durable Object's storage with a single API call.
 

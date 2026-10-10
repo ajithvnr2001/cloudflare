@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-03-06-oneclick-logpush/
 title: One-click Logpush Setup with R2 Object Storage \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:05.431427+00:00
+fetched_at: 2026-10-10T14:38:54.464580+00:00
 ---
 
 # One-click Logpush Setup with R2 Object Storage · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Logs](https://developers.cloudflare.com/logs/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-03-06-oneclick-logpush/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We’ve streamlined the [Logpush](https://developers.cloudflare.com/logs/logpush/) setup process by integrating R2 bucket creation directly into the Logpush workflow!
 

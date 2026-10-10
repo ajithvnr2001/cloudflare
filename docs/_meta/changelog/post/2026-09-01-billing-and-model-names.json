@@ -3,8 +3,5 @@
   "file": "changelog/post/2026-09-01-billing-and-model-names.md",
   "title": "AI Gateway consolidates monthly usage invoice line items and standardizes model names \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:07:11.970101+00:00",
-  "html_len": 63544,
-  "md_len": 1992,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:31.875244+00:00"
 }

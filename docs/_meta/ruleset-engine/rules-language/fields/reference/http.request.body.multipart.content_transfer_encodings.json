@@ -3,8 +3,5 @@
   "file": "ruleset-engine/rules-language/fields/reference/http.request.body.multipart.content_transfer_encodings.md",
   "title": "http.request.body.multipart.content_transfer_encodings \u00b7 Cloudflare Ruleset Engine docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:15:09.912567+00:00",
-  "html_len": 95112,
-  "md_len": 2571,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:33.069049+00:00"
 }

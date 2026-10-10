@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-11-25-flux-2-dev-workers-ai/
 title: Launching FLUX.2 [dev] on Workers AI \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:30.370921+00:00
+fetched_at: 2026-10-10T14:38:46.359922+00:00
 ---
 
 # Launching FLUX.2 [dev] on Workers AI · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers AI](https://developers.cloudflare.com/workers-ai/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-11-25-flux-2-dev-workers-ai/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We've partnered with Black Forest Labs (BFL) to bring their latest FLUX.2 [dev] model to Workers AI! This model excels in generating high-fidelity images with physical world grounding, multi-language support, and digital asset creation. You can also create specific super images with granular controls like JSON prompting.
 

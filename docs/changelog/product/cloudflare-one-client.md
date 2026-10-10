@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/cloudflare-one-client/
 title: Cloudflare One Client Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:42.738031+00:00
+fetched_at: 2026-10-10T14:38:09.846619+00:00
 ---
 
 # Cloudflare One Client Changelog | Cloudflare Docs

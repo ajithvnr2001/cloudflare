@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-18-cloudflare-fonts-error-handling-security/
 title: Cloudflare Fonts error handling and security improvements \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:58.602974+00:00
+fetched_at: 2026-10-10T14:38:36.383161+00:00
 ---
 
 # Cloudflare Fonts error handling and security improvements · Changelog
@@ -21,6 +21,6 @@ New updates and improvements at Cloudflare.
 
 [Speed](https://developers.cloudflare.com/speed/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-18-cloudflare-fonts-error-handling-security/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare Fonts now forwards `/cf-fonts` requests to your origin server when it encounters invalid paths or unexpected runtime errors, instead of returning 4xx or 5xx responses directly. This update also adds additional input validation to enhance security.

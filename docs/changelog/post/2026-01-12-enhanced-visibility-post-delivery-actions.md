@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-01-12-enhanced-visibility-post-delivery-actions/
 title: Enhanced visibility for post-delivery actions \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:33.502456+00:00
+fetched_at: 2026-10-10T14:38:45.293415+00:00
 ---
 
 # Enhanced visibility for post-delivery actions · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Email security](https://developers.cloudflare.com/cloudflare-one/email-security/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-01-12-enhanced-visibility-post-delivery-actions/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The Action Log now provides enriched data for post-delivery actions to improve troubleshooting. In addition to success confirmations, failed actions now display the targeted Destination folder and a specific failure reason within the Activity field.
 

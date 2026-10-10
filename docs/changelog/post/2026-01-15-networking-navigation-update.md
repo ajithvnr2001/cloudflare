@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-01-15-networking-navigation-update/
 title: Network Services navigation update \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:33.833470+00:00
+fetched_at: 2026-10-10T14:38:44.987988+00:00
 ---
 
 # Network Services navigation update · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Magic Transit](https://developers.cloudflare.com/magic-transit/)[Cloudflare Network Firewall](https://developers.cloudflare.com/cloudflare-network-firewall/)[Cloudflare WAN](https://developers.cloudflare.com/cloudflare-wan/)[Network Flow](https://developers.cloudflare.com/network-flow/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-01-15-networking-navigation-update/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The Network Services menu structure in Cloudflare's dashboard has been updated to reflect solutions and capabilities instead of product names. This will make it easier for you to find what you need and better reflects how our services work together.
 

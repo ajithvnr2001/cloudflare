@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-06-radar-tld-nameserver-performance/
 title: TLD Nameserver Performance in Cloudflare Radar \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:51.662819+00:00
+fetched_at: 2026-10-10T14:38:38.878894+00:00
 ---
 
 # TLD Nameserver Performance in Cloudflare Radar · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Radar](https://developers.cloudflare.com/radar/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-06-radar-tld-nameserver-performance/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [**Radar**](https://developers.cloudflare.com/radar/) now provides TLD authoritative nameserver performance insights, measuring response time (latency) as observed from Cloudflare's [1.1.1.1](https://developers.cloudflare.com/1.1.1.1/) resolver infrastructure when forwarding queries upstream to TLD nameservers.
 

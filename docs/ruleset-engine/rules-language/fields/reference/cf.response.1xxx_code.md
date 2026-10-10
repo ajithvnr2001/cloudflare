@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.response.1xxx_code/
 title: cf.response.1xxx_code \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:04.598538+00:00
+fetched_at: 2026-10-10T14:37:35.358513+00:00
 ---
 
 # cf.response.1xxx_code · Cloudflare Ruleset Engine docs

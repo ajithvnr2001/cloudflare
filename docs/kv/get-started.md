@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/kv/get-started/
 title: Getting started \u00b7 Cloudflare Workers KV docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:11:41.074664+00:00
+fetched_at: 2026-10-10T14:39:29.637624+00:00
 ---
 
 # Getting started · Cloudflare Workers KV docs
@@ -19,9 +19,9 @@ fetched_at: 2026-10-08T07:11:41.074664+00:00
 
 Create a basic key-value store which stores the notification configuration of all users in an application, where each user may have `enabled` or `disabled` notifications.
 
-Last updated Aug 25, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/kv/get-started/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
-OverviewQuick startPrerequisites1\. Create a Worker project2\. Create a KV namespace3\. Bind your Worker to your KV namespace4\. Interact with your KV namespace 4.1. Write a value 4.2. Get a value5\. Access your KV namespace from your Worker6\. Deploy your WorkerSummaryNext steps
+OverviewQuick startPrerequisites1\. Create a Worker project2\. Create a KV namespace KV Instant namespaces3\. Bind your Worker to your KV namespace4\. Interact with your KV namespace 4.1. Write a value 4.2. Get a value5\. Access your KV namespace from your Worker6\. Deploy your WorkerSummaryNext steps
 
 Workers KV provides low-latency, high-throughput global storage to your [Cloudflare Workers](https://developers.cloudflare.com/workers/) applications. Workers KV is ideal for storing user configuration data, routing data, A/B testing configurations and authentication tokens, and is well suited for read-heavy workloads.
 
@@ -80,6 +80,7 @@ For setup, select the following options:
      * For _Which template would you like to use?_ , choose `Worker only`.
      * For _Which language do you want to use?_ , choose `TypeScript`.
      * For _Do you want to use git for version control?_ , choose `Yes`.
+     * For _Do you want to add an AGENTS.md file to help AI coding tools understand Cloudflare APIs?_ , choose `Yes`.
      * For _Do you want to deploy your application?_ , choose `No` (we will be making some changes before deploying).
 
 This creates a new `kv-tutorial` directory, illustrated below.
@@ -175,6 +176,53 @@ For this tutorial, use the binding name `USERS_NOTIFICATION_CONFIG`.
 
 
 
+
+### KV Instant namespaces
+
+Note
+
+Workers KV Instant is currently in private beta. To enroll, contact your Cloudflare account team or [sign up ↗︎](https://www.cloudflare.com/resource/workers-kv-instant-beta/) and tell us about your use case.
+
+Use [Workers KV Instant](https://developers.cloudflare.com/kv/reference/kv-instant/) for small, read-heavy application configurations values that update infrequently and are proactively propagated across Cloudflare's network.
+
+To optionally create a KV Instant namespace named `APP_CONFIG` with [Wrangler](https://developers.cloudflare.com/workers/wrangler/), pass `--experimental-mode instant`:
+
+npmyarnpnpm
+    
+    
+    npx wrangler@latest kv namespace create APP_CONFIG --experimental-mode instant
+    
+    
+    yarn wrangler@latest kv namespace create APP_CONFIG --experimental-mode instant
+    
+    
+    pnpm wrangler@latest kv namespace create APP_CONFIG --experimental-mode instant
+
+To create the namespace with [Cloudflare CLI](https://developers.cloudflare.com/cf/), pass `--namespaceMode instant`:
+    
+    
+    cf kv namespaces create --title APP_CONFIG --namespaceMode instant
+
+Alternatively, create it through the API with `mode: "instant"`:
+
+Required API token permissions
+
+At least one of the following [token permissions](https://developers.cloudflare.com/fundamentals/api/reference/permissions/) is required:
+
+  * `Workers KV Storage Write`
+
+Create a namespacebash
+    
+    
+    curl "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/storage/kv/namespaces" \
+    	--request POST \
+    	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+    	--json '{
+    		"title": "APP_CONFIG",
+    		"mode": "instant"
+    	}'
+
+KV Instance namespaces have additional limitations compared to classic namespaces. Refer to [KV Instant limits](https://developers.cloudflare.com/kv/platform/limits/#kv-instant) and [API differences](https://developers.cloudflare.com/kv/reference/kv-instant/#compare-api-behavior) before choosing this mode.
 
 ## 3\. Bind your Worker to your KV namespace
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.llm.prompt.custom_topic_categories/
 title: cf.llm.prompt.custom_topic_categories \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:03.515056+00:00
+fetched_at: 2026-10-10T14:37:35.568873+00:00
 ---
 
 # cf.llm.prompt.custom_topic_categories · Cloudflare Ruleset Engine docs

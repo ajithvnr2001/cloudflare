@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-25-custom-span-apis/
 title: Workers tracing \u2014 new getActiveSpan(), recordException(), startSpan(), and setAttributes() APIs \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:16.245371+00:00
+fetched_at: 2026-10-10T14:38:30.533367+00:00
 ---
 
 # Workers tracing — new getActiveSpan(), recordException(), startSpan(), and setAttributes() APIs · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-25-custom-span-apis/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Custom spans](https://developers.cloudflare.com/workers/observability/traces/custom-spans/) in Workers now support more of the OpenTelemetry span API, so you can instrument more of your code and record errors directly on your spans.
 

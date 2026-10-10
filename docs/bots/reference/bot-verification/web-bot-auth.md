@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/
 title: Web Bot Auth \u00b7 Cloudflare bot solutions docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:34.589463+00:00
+fetched_at: 2026-10-10T14:39:27.873416+00:00
 ---
 
 # Web Bot Auth · Cloudflare bot solutions docs
@@ -22,7 +22,7 @@ Reference
 
 # Web Bot Auth
 
-Last updated Jul 1, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Overview1\. Generate a valid signing key2\. Host a key directory3\. Register your bot and key directory4\. (After verification) Sign your requests 4.1. Choose a set of components to sign 4.2. Calculate the JWK thumbprint 4.3. Construct the required headers 4.4. Add the headers to your bot's requestsTransitive trust and the Forwarded headerLimitationsTroubleshooting Failed message validation Use HTTP message signatures / Web Bot Auth on a zone without Cloudflare's verificationAdditional resources
 
@@ -132,6 +132,8 @@ You need to register your bot and its key directory to add your bot to the list 
 
 
 Cloudflare accepts all valid Ed25519 keys found in your key directory. In the event a key already exists in Cloudflare's registered database, Cloudflare will work with you to supply a new key, or rotate your existing key.
+
+You can track the status of your registration in the Cloudflare dashboard under [BotBase > Submission history ↗︎](https://dash.cloudflare.com/?to=/:account/application-security/botbase/history).
 
 After successful verification, you will be able to send verified requests.
 

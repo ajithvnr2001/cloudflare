@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2024-12-11-terraform-snippets/
 title: Terraform Support for Snippets \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:59.924411+00:00
+fetched_at: 2026-10-10T14:38:55.693491+00:00
 ---
 
 # Terraform Support for Snippets · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Rules](https://developers.cloudflare.com/rules/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2024-12-11-terraform-snippets/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Now, you can manage [Cloudflare Snippets](https://developers.cloudflare.com/rules/snippets/) with [Terraform](https://developers.cloudflare.com/terraform/). Use infrastructure-as-code to deploy and update Snippet code and rules without manual changes in the dashboard.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-04-04-playwright-beta/
 title: Playwright for Browser Rendering now available \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:08.200307+00:00
+fetched_at: 2026-10-10T14:38:53.482958+00:00
 ---
 
 # Playwright for Browser Rendering now available · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Browser Run](https://developers.cloudflare.com/browser-run/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-04-04-playwright-beta/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We're excited to share that you can now use Playwright's browser automation [capabilities ↗︎](https://playwright.dev/docs/api/class-playwright) from Cloudflare [Workers](https://developers.cloudflare.com/workers/).
 

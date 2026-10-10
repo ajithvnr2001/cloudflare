@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-30-warp-windows-beta/
 title: Cloudflare One Client for Windows (version 2026.8.2033.1) \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:17.819566+00:00
+fetched_at: 2026-10-10T14:38:29.936641+00:00
 ---
 
 # Cloudflare One Client for Windows (version 2026.8.2033.1) · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare One Client](https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-30-warp-windows-beta/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 A new Beta release for the Windows Cloudflare One Client is now available on the [beta releases downloads page](https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/download/beta-releases/).
 

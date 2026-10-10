@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-03-20-dns-analytics-cmb-eu/
 title: DNS Analytics for Customer Metadata Boundary set to EU region \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:41.791271+00:00
+fetched_at: 2026-10-10T14:38:42.122610+00:00
 ---
 
 # DNS Analytics for Customer Metadata Boundary set to EU region · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [DNS](https://developers.cloudflare.com/dns/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-03-20-dns-analytics-cmb-eu/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 DNS Analytics is now available for customers with [Customer Metadata Boundary](https://developers.cloudflare.com/data-localization/metadata-boundary/) (CMB) set to EU. Query your DNS analytics data while keeping metadata stored in the EU region.
 

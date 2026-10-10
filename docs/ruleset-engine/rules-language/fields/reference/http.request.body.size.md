@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/http.request.body.size/
 title: http.request.body.size \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:10.300010+00:00
+fetched_at: 2026-10-10T14:37:32.921739+00:00
 ---
 
 # http.request.body.size · Cloudflare Ruleset Engine docs

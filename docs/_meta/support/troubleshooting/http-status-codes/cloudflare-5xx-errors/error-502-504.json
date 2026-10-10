@@ -3,8 +3,5 @@
   "file": "support/troubleshooting/http-status-codes/cloudflare-5xx-errors/error-502-504.md",
   "title": "Error 502 or 504 \u00b7 Cloudflare Support docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:15:58.569162+00:00",
-  "html_len": 125213,
-  "md_len": 7481,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:39:28.559132+00:00"
 }

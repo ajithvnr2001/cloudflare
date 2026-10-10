@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2024-09-05-rules-templates/
 title: New Rules Templates for One-Click Rule Creation \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:59.538532+00:00
+fetched_at: 2026-10-10T14:38:56.003637+00:00
 ---
 
 # New Rules Templates for One-Click Rule Creation · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Rules](https://developers.cloudflare.com/rules/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2024-09-05-rules-templates/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Now, you can create **common rule configurations** in just **one click** using Rules Templates.
 

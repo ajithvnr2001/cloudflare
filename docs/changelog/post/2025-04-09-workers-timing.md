@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-04-09-workers-timing/
 title: CPU time and Wall time now published for Workers Invocations \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:09.459246+00:00
+fetched_at: 2026-10-10T14:38:53.021869+00:00
 ---
 
 # CPU time and Wall time now published for Workers Invocations · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-04-09-workers-timing/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now observe and investigate the CPU time and Wall time for every Workers Invocations.
 

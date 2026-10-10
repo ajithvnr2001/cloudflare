@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product-group/core-platform/
 title: Core platform Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:28.300987+00:00
+fetched_at: 2026-10-10T14:38:22.126184+00:00
 ---
 
 # Core platform Changelog | Cloudflare Docs
@@ -230,6 +230,74 @@ Zaraz
 No products found.
 
 [ View RSS feeds ](https://developers.cloudflare.com/fundamentals/new-features/available-rss-feeds/)[ Subscribe to RSS ](https://developers.cloudflare.com/changelog/rss/index.xml)
+
+Oct 9, 2026
+
+## [Improved HTTP/3 client cancellation reporting](https://developers.cloudflare.com/changelog/post/2026-10-09-http3-499-reporting-improvement/)
+
+[Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)
+
+Cloudflare has improved how it handles and reports client-cancelled HTTP/3 requests across Free, Pro, Business, and Enterprise plans. Customers now get a clearer view of client behavior in Cloudflare analytics and, where available, logs.
+
+Previously, Cloudflare did not always stop an HTTP/3 request when the client cancelled its request stream. Some cancellations were already recorded as `499`, while others continued to the origin and showed the eventual upstream status.
+
+Cloudflare now stops affected requests sooner, reducing unnecessary origin work, and records them as `499`. Customers may notice more `499` status codes for HTTP/3 traffic. This reflects more consistent reporting of existing cancellations, not an increase in failed requests.
+
+Customers who use `499` status codes in availability calculations should consider excluding them from server-side error rates because they represent requests cancelled by clients.
+
+For more information, refer to [Error 499](https://developers.cloudflare.com/support/troubleshooting/http-status-codes/4xx-client-error/error-499/).
+
+Oct 9, 2026
+
+## [More efficient Markdown for Agents conversion](https://developers.cloudflare.com/changelog/post/2026-10-09-markdown-for-agents-in-process-conversion/)
+
+[Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)
+
+[Markdown for Agents](https://developers.cloudflare.com/fundamentals/reference/markdown-for-agents/) now converts HTML with an in-process streaming engine at the edge. It processes content as it arrives instead of buffering the HTML response and sending it to a separate conversion service. This reduces conversion overhead and memory use.
+
+This release also changes the conversion limit and response headers:
+
+  * Conversion supports up to 6 MiB (6,291,456 bytes) of decompressed HTML, increased from 2 MiB (2,097,152 bytes). The limit applies after decompression, not to the compressed response size.
+  * Converted responses no longer generate the `x-markdown-tokens` or `x-original-tokens` headers. Clients that use these values need to calculate token counts themselves.
+  * `Content-Length` is removed from converted responses rather than recalculated, because the Markdown body is streamed.
+
+
+
+For more information, refer to the [Markdown for Agents documentation](https://developers.cloudflare.com/fundamentals/reference/markdown-for-agents/).
+
+Oct 9, 2026
+
+## [Failed detections field available in Rules](https://developers.cloudflare.com/changelog/post/2026-10-09-failed-detections/)
+
+[WAF](https://developers.cloudflare.com/waf/)[Rules](https://developers.cloudflare.com/rules/)
+
+You can now use `cf.appsec.request.failed_detections` to control how your rules handle requests when a security detection reports a failure.
+
+The field is an `Array<String>` of detection IDs that reports failures from content scanning, WAF attack score, attack signature detection, leaked credentials detection, and AI prompt detections for personally identifiable information (PII), prompt injection, custom topics, and unsafe topics.
+
+The field does not alter the existing behavior of detections. Use it in rules to choose how to handle requests with reported failures.
+
+When no failures are reported, the field returns `[]`. You can use it on all plans, but your plan must still include the detections and rule features you want to use.
+
+Supported rules:
+
+  * Custom rules at the zone and account levels
+  * Rate limiting rules at the zone and account levels
+  * Request Header Transform Rules at the zone level
+
+
+
+Match any reported failure:
+    
+    
+    len(cf.appsec.request.failed_detections) gt 0
+
+Match a reported leaked credentials detection failure:
+    
+    
+    any(cf.appsec.request.failed_detections[*] eq "waf_credential_check")
+
+For more information, refer to the [Failed detections field reference](https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.appsec.request.failed_detections/).
 
 Oct 7, 2026
 
@@ -674,82 +742,6 @@ Log Explorer has a refreshed dataset configuration experience in the Cloudflare 
 These controls are available when you add a dataset or select **Actions** > **Edit** for an enabled dataset.
 
 For more information, refer to [Configure fields and filters](https://developers.cloudflare.com/log-explorer/manage-datasets/#configure-fields-and-filters).
-
-Aug 26, 2026
-
-## [Delete Log Explorer datasets](https://developers.cloudflare.com/changelog/post/2026-08-26-dataset-deletion/)
-
-[Log Explorer](https://developers.cloudflare.com/log-explorer/)
-
-Cloudflare Log Explorer customers can now permanently delete account and zone datasets from the Cloudflare dashboard or API.
-
-Deletion protection is enabled by default to prevent accidental data loss. In the dashboard, go to [Manage datasets](https://developers.cloudflare.com/log-explorer/manage-datasets/), disable deletion protection for the dataset, select **Delete** , and enter the dataset name to confirm.
-
-To delete a dataset through the API, first set `deletion_protection` to `false` with the [Update an account or zone dataset](https://developers.cloudflare.com/api/resources/logs/subresources/log_explorer/subresources/datasets/methods/update/) method. Then use the [Delete an account or zone dataset](https://developers.cloudflare.com/api/resources/logs/subresources/log_explorer/subresources/datasets/methods/delete/) method.
-
-Dataset deletion is irreversible and runs asynchronously. You cannot recreate the same dataset while deletion is in progress.
-
-Aug 26, 2026
-
-## [Azure Functions-based Microsoft Sentinel connector deprecation](https://developers.cloudflare.com/changelog/post/2026-08-26-sentinel-functions-connector-deprecation/)
-
-[Logpush Connectors](https://developers.cloudflare.com/logs/logpush/logpush-job/enable-destinations/)[Logs](https://developers.cloudflare.com/logs/)
-
-Cloudflare Enterprise customers using the [Azure Functions-based Microsoft Sentinel connector ↗︎](https://marketplace.microsoft.com/en-us/product/cloudflare.cloudflare_sentinel?tab=Overview) must migrate to the [Cloudflare for Microsoft Sentinel Codeless Connector Framework (CCF) connector ↗︎](https://marketplace.microsoft.com/en-us/product/cloudflare.azure-sentinel-solution-cloudflare-ccf?tab=Overview) by 2026-09-14.
-
-Microsoft is deprecating the Azure Monitor HTTP Data Collector API. Support for the API ends on 2026-09-14. As a result, Cloudflare will no longer maintain the Azure Functions-based connector after that date.
-
-To migrate, follow the [Microsoft Sentinel integration setup guide](https://developers.cloudflare.com/analytics/analytics-integrations/sentinel/).
-
-#### Additional resources
-
-  * [Download Cloudflare's CCF Sentinel Solution ↗︎](https://marketplace.microsoft.com/en-us/product/azure-application/cloudflare.azure-sentinel-solution-cloudflare-ccf?tab=Overview)
-  * [Microsoft Sentinel data lake overview ↗︎](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-lake-overview)
-  * [About the CCF platform ↗︎](https://learn.microsoft.com/en-us/azure/sentinel/create-codeless-connector)
-
-
-
-For more information, refer to Microsoft's [Azure Monitor HTTP Data Collector API deprecation notice ↗︎](https://learn.microsoft.com/en-us/previous-versions/azure/azure-monitor/logs/data-collector-api?tabs=powershell).
-
-Aug 21, 2026
-
-## [Enriched 403 responses for the Cloudflare API](https://developers.cloudflare.com/changelog/post/2026-08-20-contextual-403s/)
-
-[Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)
-
-Cloudflare API `403 Forbidden` responses now include a `documentation_url` field that links directly to the API documentation for the endpoint that was denied. This gives developers, administrators, and agents an immediate path to the relevant docs with role information instead of guessing at which role or permission they are missing for that endpoint.
-
-**What's New**
-
-**Enriched 403 error responses** : When a Cloudflare API request is denied, the error response now includes a `documentation_url` field that points to the documentation for that specific endpoint. Contextual 403 responses are now available across nearly all Cloudflare product APIs.
-
-**Faster troubleshooting** : The linked API docs surface the roles required for each endpoint, making it easier to self-serve access issues.
-
-**Better support for tools and agents** : Agents can use the \documentation_url` field to immediately fetch the endpoint's documentation from the 403 error response, identify the accepted permissions for the denied action, and use that context to drive third-party approval workflows.`
-
-Example 403 response:
-    
-    
-    {
-      "success": false,
-      "errors": [
-        {
-          "code": 10000,
-          "message": "Forbidden",
-          "documentation_url": "https://developers.cloudflare.com/api/resources/workers/subresources/beta/subresources/workers/methods/list"
-        }
-      ],
-      "messages": [],
-      "result": null
-    }
-
-For more info:
-
-  * [Browse the Cloudflare API documentation](https://developers.cloudflare.com/api/)
-  * [Review Cloudflare roles](https://developers.cloudflare.com/fundamentals/manage-members/roles/)
-  * [Review API token permissions](https://developers.cloudflare.com/fundamentals/api/reference/permissions/)
-
-
 
 ← Prev
 

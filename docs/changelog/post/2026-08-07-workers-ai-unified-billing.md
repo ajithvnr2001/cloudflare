@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-08-07-workers-ai-unified-billing/
 title: Workers AI and AI Gateway unify model access and billing \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:07.457452+00:00
+fetched_at: 2026-10-10T14:38:33.348794+00:00
 ---
 
 # Workers AI and AI Gateway unify model access and billing · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Gateway](https://developers.cloudflare.com/ai-gateway/)[Workers AI](https://developers.cloudflare.com/workers-ai/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-08-07-workers-ai-unified-billing/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Workers AI and AI Gateway now provide a unified path for accessing models and managing inference traffic. Use the same AI binding and REST API to call models hosted on Workers AI or by supported third-party providers, with AI Gateway providing observability, logging, caching, security, and billing controls.
 

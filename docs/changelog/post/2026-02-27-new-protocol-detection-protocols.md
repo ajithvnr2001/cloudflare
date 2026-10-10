@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-02-27-new-protocol-detection-protocols/
 title: New protocols added for Gateway Protocol Detection (Beta) \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:39.171458+00:00
+fetched_at: 2026-10-10T14:38:43.087550+00:00
 ---
 
 # New protocols added for Gateway Protocol Detection (Beta) · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Gateway](https://developers.cloudflare.com/cloudflare-one/traffic-policies/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-02-27-new-protocol-detection-protocols/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Gateway [Protocol Detection](https://developers.cloudflare.com/cloudflare-one/traffic-policies/network-policies/protocol-detection/) now supports seven additional protocols in beta:
 

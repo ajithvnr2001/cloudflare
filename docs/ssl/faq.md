@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ssl/faq/
 title: SSL/TLS FAQ \u00b7 Cloudflare SSL/TLS docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:41.392834+00:00
+fetched_at: 2026-10-10T14:39:26.291965+00:00
 ---
 
 # SSL/TLS FAQ · Cloudflare SSL/TLS docs
@@ -17,9 +17,9 @@ fetched_at: 2026-10-08T07:15:41.392834+00:00
 
 # SSL/TLS FAQ
 
-Last updated Apr 16, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ssl/faq/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 9, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
-OverviewGeneral Does Cloudflare issue both RSA and ECDSA certificates? Are Cloudflare SSL certificates shared? If I have multiple Cloudflare certificates, which one is used? Why do I see a Cloudflare certificate when an SSL certificate is installed at my website?Certificate authorities (CAs) Which certificate authorities does Cloudflare use? Are there any CA limitations I should know about? I do not want to use the CAs that Cloudflare partners with. What can I do? I am missing the CAs that Cloudflare uses in my trust store. What should I do?CAA records What is CAA and how can I create one? How does Cloudflare evaluate CAA records? What are the dangers of setting CAA records? What CAA records do I need to allow issuance from Cloudflare CAs?Universal SSL I am using Universal SSL and I would like to use a different CA. How can I do that? Does Cloudflare issue both RSA and ECDSA certificates for Universal certificates?
+OverviewGeneral Does Cloudflare issue both RSA and ECDSA certificates? Are Cloudflare SSL certificates shared? If I have multiple Cloudflare certificates, which one is used? Why do I see a Cloudflare certificate when an SSL certificate is installed at my website?Certificate authorities (CAs) Which certificate authorities does Cloudflare use? Are there any CA limitations I should know about? I do not want to use the CAs that Cloudflare partners with. What can I do? I am missing the CAs that Cloudflare uses in my trust store. What should I do?CAA records What is CAA and how can I create one? How does Cloudflare evaluate CAA records? What are the dangers of setting CAA records? What CAA records do I need to allow issuance from Cloudflare CAs?Universal SSL I am using Universal SSL and I would like to use a different CA. How can I do that? Does Cloudflare issue both RSA and ECDSA certificates for Universal certificates? RSA certificate missing after upgrading from Free to a paid plan
 
 Refer to this page for frequently asked questions about Cloudflare SSL/TLS certificate offerings and the CAs that Cloudflare partners with.
 
@@ -105,6 +105,19 @@ If you are on a Business or Enterprise plan, you can [upload a certificate](http
 ### Does Cloudflare issue both RSA and ECDSA certificates for Universal certificates?
 
 Universal certificates on free zones only receive an ECDSA certificate. Paid zones receive an RSA and ECDSA certificate.
+
+### RSA certificate missing after upgrading from Free to a paid plan
+
+When you upgrade your zone from the Free plan to a paid plan, Cloudflare does not automatically re-issue your Universal SSL certificate. Your existing ECDSA-only certificate continues to serve until the certificate pack next renews. At renewal, Cloudflare issues both an RSA and an ECDSA certificate.
+
+If you need an RSA certificate before the next renewal, you can:
+
+  * [Order an advanced certificate](https://developers.cloudflare.com/ssl/edge-certificates/advanced-certificate-manager/) (requires the Advanced Certificate Manager add-on).
+  * [Disable Universal SSL](https://developers.cloudflare.com/ssl/edge-certificates/universal-ssl/disable-universal-ssl/) and then re-enable it. Cloudflare provisions a new certificate pack for your current plan, which on paid plans includes both RSA and ECDSA certificates. While Universal SSL is disabled and until the new certificate is issued, new TLS connections to your zone will fail unless another valid certificate covers your hostnames. Provisioning time is not guaranteed, so plan for this before using this option. Review [Disable Universal SSL](https://developers.cloudflare.com/ssl/edge-certificates/universal-ssl/disable-universal-ssl/) for settings, such as HSTS and Always Use HTTPS, that can cause errors while Universal SSL is disabled.
+
+
+
+For more details, refer to [Certificate type](https://developers.cloudflare.com/ssl/edge-certificates/universal-ssl/limitations/#certificate-type).
 
 [PreviousMixed content errors](https://developers.cloudflare.com/ssl/troubleshooting/mixed-content-errors/)[NextChangelog](https://developers.cloudflare.com/ssl/changelog/)
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-15-granular-worker-permissions/
 title: Grant teammates and agents access to specific Workers \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:13.872380+00:00
+fetched_at: 2026-10-10T14:38:31.244655+00:00
 ---
 
 # Grant teammates and agents access to specific Workers · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-15-granular-worker-permissions/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now grant access to specific Workers and choose from four roles to control the level of access you give teammates, agents, and CI/CD workflows.
 

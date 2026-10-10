@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/realtime/realtimekit/core/api-reference/rtkselfmedia/
 title: RTKSelfMedia \u00b7 Cloudflare Realtime docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:12:57.417713+00:00
+fetched_at: 2026-10-10T14:37:57.078504+00:00
 ---
 
 # RTKSelfMedia · Cloudflare Realtime docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:12:57.417713+00:00
 
 # RTKSelfMedia
 
-Last updated Jul 22, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/realtime/realtimekit/core/api-reference/rtkselfmedia/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Jul 22, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Overview meeting.self.audioTrack meeting.self.rawAudioTrack meeting.self.mediaPermissions meeting.self.videoTrack meeting.self.rawVideoTrack meeting.self.screenShareTracks meeting.self.audioEnabled meeting.self.videoEnabled meeting.self.screenShareEnabled meeting.self.addAudioMiddleware(audioMiddleware) meeting.self.removeAudioMiddleware(audioMiddleware) meeting.self.removeAllAudioMiddlewares() meeting.self.addVideoMiddleware(videoMiddleware) meeting.self.setVideoMiddlewareGlobalConfig(config) meeting.self.removeVideoMiddleware(videoMiddleware) meeting.self.removeAllVideoMiddlewares() meeting.self.getCurrentDevices() meeting.self.getAudioDevices() meeting.self.getVideoDevices() meeting.self.getSpeakerDevices() meeting.self.getDeviceById(deviceId, kind) meeting.self.setDevice(device)
 

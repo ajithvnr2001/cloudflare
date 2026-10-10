@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-08-05-agents-MCP-update/
 title: Agents SDK adds MCP Elicitation support, http-streamable support, task queues, email integration and more \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:18.563243+00:00
+fetched_at: 2026-10-10T14:38:50.438063+00:00
 ---
 
 # Agents SDK adds MCP Elicitation support, http-streamable support, task queues, email integration and more · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Agents](https://developers.cloudflare.com/agents/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-08-05-agents-MCP-update/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The latest releases of [@cloudflare/agents ↗︎](https://github.com/cloudflare/agents) brings major improvements to MCP transport protocols support and agents connectivity. Key updates include:
 

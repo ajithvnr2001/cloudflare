@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-06-09-transform-rule-subrequest-matching/
 title: Match Workers subrequests by upstream zone \u2014 cf.worker.upstream_zone now supported in Transform Rules \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:13.661629+00:00
+fetched_at: 2026-10-10T14:38:51.832912+00:00
 ---
 
 # Match Workers subrequests by upstream zone — cf.worker.upstream_zone now supported in Transform Rules · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Rules](https://developers.cloudflare.com/rules/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-06-09-transform-rule-subrequest-matching/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now use the [`cf.worker.upstream_zone`](https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.worker.upstream_zone/) field in [Transform Rules](https://developers.cloudflare.com/rules/transform/) to control rule execution based on whether a request originates from [Workers](https://developers.cloudflare.com/workers/), including subrequests issued by Workers in other zones.
 

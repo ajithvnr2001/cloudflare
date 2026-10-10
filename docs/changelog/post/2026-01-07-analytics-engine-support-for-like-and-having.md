@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-01-07-analytics-engine-support-for-like-and-having/
 title: Workers Analytics Engine SQL now supports filtering using HAVING and LIKE \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:32.880213+00:00
+fetched_at: 2026-10-10T14:38:45.418879+00:00
 ---
 
 # Workers Analytics Engine SQL now supports filtering using HAVING and LIKE · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers Analytics Engine](https://developers.cloudflare.com/analytics/analytics-engine/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-01-07-analytics-engine-support-for-like-and-having/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now use the `HAVING` clause and `LIKE` pattern matching operators in [Workers Analytics Engine ↗︎](https://developers.cloudflare.com/analytics/analytics-engine/).
 

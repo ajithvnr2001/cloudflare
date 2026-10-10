@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/pruna/p-video/
 title: P-Video (Pruna AI) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:04.951147+00:00
+fetched_at: 2026-10-10T14:39:07.695010+00:00
 ---
 
 # P-Video (Pruna AI) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:05:04.951147+00:00
 
 Text-to-Video • Pruna AI
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/pruna/p-video/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `pruna/p-video`
 

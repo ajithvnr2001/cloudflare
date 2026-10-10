@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/recraft/recraftv4-1-utility-vector/
 title: Recraft V4.1 Utility SVG (Recraft) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:05.649486+00:00
+fetched_at: 2026-10-10T14:39:07.340295+00:00
 ---
 
 # Recraft V4.1 Utility SVG (Recraft) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:05:05.649486+00:00
 
 Text-to-Image • Recraft
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/recraft/recraftv4-1-utility-vector/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `recraft/recraftv4-1-utility-vector`
 

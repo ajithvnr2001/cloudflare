@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-03-public-oauth-clients/
 title: Introducing self-managed OAuth clients \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:55.985948+00:00
+fetched_at: 2026-10-10T14:38:37.294528+00:00
 ---
 
 # Introducing self-managed OAuth clients · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-03-public-oauth-clients/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Today we are launching self-managed OAuth, enabling developers to build third-party applications that integrate with Cloudflare via OAuth. This provides a more secure, user-friendly, and manageable alternative to API tokens.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-04-07-autorag-open-beta/
 title: Create fully-managed RAG pipelines for your AI applications with AutoRAG \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:08.488346+00:00
+fetched_at: 2026-10-10T14:38:53.433419+00:00
 ---
 
 # Create fully-managed RAG pipelines for your AI applications with AutoRAG · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Search](https://developers.cloudflare.com/ai-search/)[Vectorize](https://developers.cloudflare.com/vectorize/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-04-07-autorag-open-beta/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [AutoRAG](https://developers.cloudflare.com/ai-search/) is now in open beta, making it easy for you to build fully-managed retrieval-augmented generation (RAG) pipelines without managing infrastructure. Just upload your docs to [R2](https://developers.cloudflare.com/r2/get-started/), and AutoRAG handles the rest: embeddings, indexing, retrieval, and response generation via API.
 

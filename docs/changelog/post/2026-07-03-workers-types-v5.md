@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-03-workers-types-v5/
 title: Simpler runtime types with @cloudflare/workers-types v5 \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:01.326658+00:00
+fetched_at: 2026-10-10T14:38:35.500907+00:00
 ---
 
 # Simpler runtime types with @cloudflare/workers-types v5 · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-03-workers-types-v5/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We have released version 5 of [`@cloudflare/workers-types` ↗︎](https://www.npmjs.com/package/@cloudflare/workers-types). This release simplifies the package to expose only the latest runtime types.
 

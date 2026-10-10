@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/minimax/h3-max/
 title: MiniMax H3 Max (MiniMax) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:58.119815+00:00
+fetched_at: 2026-10-10T14:39:12.859795+00:00
 ---
 
 # MiniMax H3 Max (MiniMax) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:04:58.119815+00:00
 
 Text-to-Video • MiniMax
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/minimax/h3-max/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `minimax/h3-max`
 

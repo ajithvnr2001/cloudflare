@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-28-models-require-workers-paid/
 title: Select models now require the Workers Paid plan \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:05.079626+00:00
+fetched_at: 2026-10-10T14:38:34.190640+00:00
 ---
 
 # Select models now require the Workers Paid plan · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers AI](https://developers.cloudflare.com/workers-ai/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-28-models-require-workers-paid/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We are limiting Workers Free plan access to a few resource-intensive models so we can prioritize capacity for the broader Workers AI user base. This helps everyone get a more reliable inference experience, with fewer `429` and `3040` (Out of Capacity) errors.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers/framework-guides/web-apps/more-web-frameworks/docusaurus/
 title: Docusaurus \u00b7 Cloudflare Workers docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:28.478699+00:00
+fetched_at: 2026-10-10T14:39:27.380911+00:00
 ---
 
 # Docusaurus · Cloudflare Workers docs
@@ -22,7 +22,7 @@ Framework guidesWeb applications
 
 # Docusaurus
 
-Last updated Apr 23, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers/framework-guides/web-apps/more-web-frameworks/docusaurus/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewWhat is Docusaurus?Deploy a new Docusaurus project on WorkersDeploy an existing Docusaurus project on Workers If you have a static siteUse bindings with Docusaurus
 
@@ -108,7 +108,7 @@ In your project root, create a Wrangler configuration file with the following co
          		"name": "my-docusaurus-app",
          		// Update to today's date
          		// Set this to today's date
-         		"compatibility_date": "2026-10-08",
+         		"compatibility_date": "2026-10-10",
          		"assets": {
          			"directory": "./build"
          		}
@@ -116,7 +116,7 @@ In your project root, create a Wrangler configuration file with the following co
          
          name = "my-docusaurus-app"
          # Set this to today's date
-         compatibility_date = "2026-10-08"
+         compatibility_date = "2026-10-10"
          
          [assets]
          directory = "./build"
@@ -143,9 +143,9 @@ npmyarnpnpm
          
          npx wrangler@latest deploy
          
-         yarn wrangler@latest deploy
+         yarn dlx wrangler@latest deploy
          
-         pnpm wrangler@latest deploy
+         pnpx wrangler@latest deploy
 
 
 

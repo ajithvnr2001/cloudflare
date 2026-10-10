@@ -3,8 +3,5 @@
   "file": "workers-ai/models/deepseek-v4-pro-0813.md",
   "title": "deepseek-v4-pro-0813 (DeepSeek) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:17:02.132572+00:00",
-  "html_len": 826252,
-  "md_len": 12559,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:23.952249+00:00"
 }

@@ -3,8 +3,5 @@
   "file": "workers/observability/dev-tools/memory-usage.md",
   "title": "Profiling Memory \u00b7 Cloudflare Workers docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:17:34.816183+00:00",
-  "html_len": 184650,
-  "md_len": 5097,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:39:28.610684+00:00"
 }

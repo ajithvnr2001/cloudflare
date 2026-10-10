@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-11-11-health-dashboards/
 title: Logpush Health Dashboards \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:28.791887+00:00
+fetched_at: 2026-10-10T14:38:46.890743+00:00
 ---
 
 # Logpush Health Dashboards · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Logs](https://developers.cloudflare.com/logs/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-11-11-health-dashboards/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We’re excited to introduce **Logpush Health Dashboards** , giving customers real-time visibility into the status, reliability, and performance of their [Logpush](https://developers.cloudflare.com/logs/logpush/) jobs. Health dashboards make it easier to detect delivery issues, monitor job stability, and track performance across destinations. The dashboards are divided into two sections:
 

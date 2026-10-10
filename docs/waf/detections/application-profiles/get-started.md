@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/waf/detections/application-profiles/get-started/
 title: Get started \u00b7 Cloudflare Web Application Firewall (WAF) docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:16:40.894133+00:00
+fetched_at: 2026-10-10T14:39:26.247838+00:00
 ---
 
 # Get started · Cloudflare Web Application Firewall (WAF) docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:16:40.894133+00:00
 
 # Get started
 
-Last updated Aug 19, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/waf/detections/application-profiles/get-started/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 9, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewReview learning requirementsLearn and review a profileUse an uploaded schema
 
@@ -40,7 +40,7 @@ An operation needs 1,000 qualifying requests for the field-learning threshold. I
 
 After meeting the field-learning threshold, Cloudflare can learn request fields. After meeting the boundary-learning threshold, Cloudflare can learn constraints such as numeric ranges and string lengths.
 
-The first profile appears after the next weekly learning run. This can take up to seven days after meeting the relevant threshold.
+With scheduled learning, the first profile appears after the next weekly run. This can take up to seven days after meeting the relevant threshold. You can also [request an ad-hoc schema learning run](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-management/schema-learning/#run-schema-learning-manually) for the entire zone.
 
 ## Learn and review a profile
 

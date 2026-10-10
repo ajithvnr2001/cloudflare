@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-09-11-new-results-table-view/
 title: New results table view \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:22.751087+00:00
+fetched_at: 2026-10-10T14:38:48.871907+00:00
 ---
 
 # New results table view · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Log Explorer](https://developers.cloudflare.com/log-explorer/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-09-11-new-results-table-view/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The results table view of **Log Search** has been updated with additional functionality and a more streamlined user experience. Users can now easily:
 

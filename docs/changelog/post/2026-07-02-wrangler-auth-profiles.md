@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-02-wrangler-auth-profiles/
 title: Work across multiple accounts with Wrangler auth profiles \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:01.195949+00:00
+fetched_at: 2026-10-10T14:38:35.484359+00:00
 ---
 
 # Work across multiple accounts with Wrangler auth profiles · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-02-wrangler-auth-profiles/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Wrangler CLI](https://developers.cloudflare.com/workers/wrangler/) now supports auth profiles: named logins that you scope to specific Cloudflare accounts and switch between automatically, based on the directory you are working in.
 

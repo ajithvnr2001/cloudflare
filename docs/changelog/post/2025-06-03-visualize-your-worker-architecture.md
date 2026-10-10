@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-06-03-visualize-your-worker-architecture/
 title: View an architecture diagram of your Worker directly in the Cloudflare dashboard \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:13.449828+00:00
+fetched_at: 2026-10-10T14:38:51.898514+00:00
 ---
 
 # View an architecture diagram of your Worker directly in the Cloudflare dashboard · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-06-03-visualize-your-worker-architecture/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now visualize, explore and modify your Worker’s architecture directly in the Cloudflare dashboard, making it easier to understand how your application connects to Cloudflare resources like [D1 databases](https://developers.cloudflare.com/d1), [Durable Objects](https://developers.cloudflare.com/durable-objects), [KV namespaces](https://developers.cloudflare.com/kv), and [more](https://developers.cloudflare.com/workers/runtime-apis/bindings/).
 

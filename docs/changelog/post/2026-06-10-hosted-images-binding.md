@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-10-hosted-images-binding/
 title: Manage hosted images with the Images binding \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:57.393704+00:00
+fetched_at: 2026-10-10T14:38:36.715885+00:00
 ---
 
 # Manage hosted images with the Images binding · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare Images](https://developers.cloudflare.com/images/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-10-hosted-images-binding/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Use the Images binding to upload, list, retrieve, update, and delete images stored in Images directly from your Worker without managing API tokens or making HTTP requests.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-10-02-deepgram-flux/
 title: New Deepgram Flux model available on Workers AI \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:25.199948+00:00
+fetched_at: 2026-10-10T14:38:48.146984+00:00
 ---
 
 # New Deepgram Flux model available on Workers AI · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers AI](https://developers.cloudflare.com/workers-ai/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-10-02-deepgram-flux/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Deepgram's newest Flux model [`@cf/deepgram/flux`](https://developers.cloudflare.com/workers-ai/models/flux/) is now available on Workers AI, hosted directly on Cloudflare's infrastructure. We're excited to be a launch partner with Deepgram and offer their new Speech Recognition model built specifically for enabling voice agents. Check out [Deepgram's blog ↗︎](https://deepgram.com/flux) for more details on the release.
 

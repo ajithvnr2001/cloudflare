@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-05-08-finalization-registry/
 title: Improved memory efficiency for WebAssembly Workers \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:11.487118+00:00
+fetched_at: 2026-10-10T14:38:52.379571+00:00
 ---
 
 # Improved memory efficiency for WebAssembly Workers · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-05-08-finalization-registry/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [FinalizationRegistry ↗︎](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/FinalizationRegistry) is now available in Workers. You can opt-in using the [`enable_weak_ref`](https://developers.cloudflare.com/workers/configuration/compatibility-flags/#enable-finalizationregistry-and-weakref) compatibility flag.
 

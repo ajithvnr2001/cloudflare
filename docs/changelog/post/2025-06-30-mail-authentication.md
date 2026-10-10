@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-06-30-mail-authentication/
 title: Mail authentication requirements for Email Routing \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:16.362851+00:00
+fetched_at: 2026-10-10T14:38:51.320979+00:00
 ---
 
 # Mail authentication requirements for Email Routing · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Email Service](https://developers.cloudflare.com/email-service/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-06-30-mail-authentication/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The Email Routing platform supports [SPF ↗︎](https://datatracker.ietf.org/doc/html/rfc7208) records and [DKIM (DomainKeys Identified Mail) ↗︎](https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail) signatures and honors these protocols when the sending domain has them configured. However, if the sending domain doesn't implement them, we still forward the emails to upstream mailbox providers.
 

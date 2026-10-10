@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-19-outbound-connections-keep-dos-alive/
 title: Outbound connections keep Durable Objects alive \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:59.120551+00:00
+fetched_at: 2026-10-10T14:38:36.231618+00:00
 ---
 
 # Outbound connections keep Durable Objects alive · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Durable Objects](https://developers.cloudflare.com/durable-objects/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-19-outbound-connections-keep-dos-alive/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Durable Objects now remain alive for the duration of active outbound connections created via [`connect()`](https://developers.cloudflare.com/workers/runtime-apis/tcp-sockets/) or an outbound WebSocket. Previously, a Durable Object would be evicted after 70-140 seconds of no incoming traffic, even if the object had an open outbound connection, which is a common pattern when streaming responses from a large language model (LLM) over TCP or an outbound WebSocket.
 

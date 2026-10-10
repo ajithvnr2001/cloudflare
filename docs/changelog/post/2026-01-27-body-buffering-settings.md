@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-01-27-body-buffering-settings/
 title: Control request and response body buffering in Configuration Rules \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:34.886819+00:00
+fetched_at: 2026-10-10T14:38:44.599615+00:00
 ---
 
 # Control request and response body buffering in Configuration Rules · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Rules](https://developers.cloudflare.com/rules/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-01-27-body-buffering-settings/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now control how Cloudflare buffers HTTP request and response bodies using two new settings in [Configuration Rules](https://developers.cloudflare.com/rules/configuration-rules/).
 

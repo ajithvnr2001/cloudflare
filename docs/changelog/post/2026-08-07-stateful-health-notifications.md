@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-08-07-stateful-health-notifications/
 title: Load Balancing health notifications now resolve automatically \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:07.192650+00:00
+fetched_at: 2026-10-10T14:38:33.421070+00:00
 ---
 
 # Load Balancing health notifications now resolve automatically · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Load Balancing](https://developers.cloudflare.com/load-balancing/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-08-07-stateful-health-notifications/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Load Balancing](https://developers.cloudflare.com/load-balancing/) health notifications are now stateful. When a pool or endpoint becomes unhealthy, the notification opens an incident in your alerting tool as before. When that same pool or endpoint recovers, the follow-up notification is matched to the original alert and resolves that incident automatically, so you no longer have to close it by hand.
 

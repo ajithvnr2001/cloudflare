@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-01-billing-and-model-names/
 title: AI Gateway consolidates monthly usage invoice line items and standardizes model names \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:11.968639+00:00
+fetched_at: 2026-10-10T14:38:31.874972+00:00
 ---
 
 # AI Gateway consolidates monthly usage invoice line items and standardizes model names · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Gateway](https://developers.cloudflare.com/ai-gateway/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-01-billing-and-model-names/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 AI Gateway monthly usage invoices, issued at the beginning of each month for the previous month's usage, now show a single total cost for each model. These invoices no longer break out input and output token quantities and unit prices into separate line items. This change does not apply to invoices for AI Gateway credit purchases.
 

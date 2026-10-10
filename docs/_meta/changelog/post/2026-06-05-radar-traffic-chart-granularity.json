@@ -3,8 +3,5 @@
   "file": "changelog/post/2026-06-05-radar-traffic-chart-granularity.md",
   "title": "Finer-grained chart granularity on Cloudflare Radar for longer time ranges \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:56.534711+00:00",
-  "html_len": 61827,
-  "md_len": 2198,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:37.174828+00:00"
 }

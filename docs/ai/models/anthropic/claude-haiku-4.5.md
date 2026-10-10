@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/anthropic/claude-haiku-4.5/
 title: Claude Haiku 4.5 (Anthropic) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:51.535714+00:00
+fetched_at: 2026-10-10T14:39:18.610835+00:00
 ---
 
 # Claude Haiku 4.5 (Anthropic) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:04:51.535714+00:00
 
 Text Generation • Anthropic
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/anthropic/claude-haiku-4.5/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `anthropic/claude-haiku-4.5`
 

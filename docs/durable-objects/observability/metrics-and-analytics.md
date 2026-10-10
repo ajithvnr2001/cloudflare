@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/durable-objects/observability/metrics-and-analytics/
 title: Metrics and analytics \u00b7 Cloudflare Durable Objects docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:11:09.430934+00:00
+fetched_at: 2026-10-10T14:39:28.530573+00:00
 ---
 
 # Metrics and analytics · Cloudflare Durable Objects docs
@@ -18,7 +18,7 @@ fetched_at: 2026-10-08T07:11:09.430934+00:00
 
 # Metrics and analytics
 
-Last updated Jun 29, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/durable-objects/observability/metrics-and-analytics/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewView metrics and analyticsMemory usageView logsQuery via the GraphQL API WebSocket metricsExample GraphQL query for Durable ObjectsAdditional resourcesFAQs How can I identify which Durable Object instance generated a log entry?
 
@@ -71,6 +71,8 @@ Memory usage is powered by the `durableObjectsPeriodicGroups` GraphQL dataset, w
 
 If you see memory usage trending upward over time, this may indicate a memory leak. Use [memory profiling with DevTools](https://developers.cloudflare.com/workers/observability/dev-tools/memory-usage/) locally to take heap snapshots and identify specific objects causing high memory consumption.
 
+To identify allocating code in a deployed Durable Object, [capture a Heap profile in production](https://developers.cloudflare.com/workers/observability/profiling-in-production/#profile-a-durable-object-dashboard).
+
 ## View logs
 
 You can view Durable Object logs from the Cloudflare dashboard. Logs are aggregated by the script name and the Durable Object class name.
@@ -95,7 +97,7 @@ To start using Durable Object logging:
 [ Go to **Durable Objects** ↗ ](https://dash.cloudflare.com/?to=/:account/workers/durable-objects)
   4. Select an existing Durable Object namespace.
 
-  5. Select the **Logs** tab.
+  5. Select the **Observability** tab.
 
 
 

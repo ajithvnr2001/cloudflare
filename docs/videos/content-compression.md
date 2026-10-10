@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/videos/content-compression/
 title: Content compression | Cloudflare Docs
 method: crawl4ai+scrapegraph (scrapling: scrapling thin content (284 chars), fallback to crawl4ai)
-fetched_at: 2026-10-08T07:16:22.574000+00:00
+fetched_at: 2026-10-10T14:37:32.434999+00:00
 ---
 
 # Content compression | Cloudflare Docs

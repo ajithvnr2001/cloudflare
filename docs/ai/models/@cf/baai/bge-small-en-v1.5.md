@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/%40cf/baai/bge-small-en-v1.5/
 title: bge-small-en-v1.5 (BAAI) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:44.523978+00:00
+fetched_at: 2026-10-10T14:39:23.305088+00:00
 ---
 
 # bge-small-en-v1.5 (BAAI) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:04:44.523978+00:00
 
 Text Embeddings • BAAI
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/%40cf/baai/bge-small-en-v1.5/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `@cf/baai/bge-small-en-v1.5`
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers/observability/dev-tools/memory-usage/
 title: Profiling Memory \u00b7 Cloudflare Workers docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:34.815932+00:00
+fetched_at: 2026-10-10T14:39:28.610357+00:00
 ---
 
 # Profiling Memory · Cloudflare Workers docs
@@ -22,13 +22,15 @@ fetched_at: 2026-10-08T07:17:34.815932+00:00
 
 # Profiling Memory
 
-Last updated Jun 25, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers/observability/dev-tools/memory-usage/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewTaking a snapshotAn Example SnapshotAdditional Resources
 
 Understanding Worker memory usage can help you optimize performance, avoid Out of Memory (OOM) errors when hitting [Worker memory limits](https://developers.cloudflare.com/workers/platform/limits/#memory), and fix memory leaks.
 
 You can profile memory usage with snapshots in DevTools. Memory snapshots let you view a summary of memory usage, see how much memory is allocated to different data types, and get details on specific objects in memory.
+
+To identify allocating code in a deployed Worker, [capture a Heap profile in production](https://developers.cloudflare.com/workers/observability/profiling-in-production/). Unlike a DevTools snapshot, this profile measures allocations, not retained memory.
 
 When using DevTools to profile memory, it may be difficult to replicate specific behavior you are seeing in production. To mimic production behavior, make sure the requests you send to the local Worker are similar to requests in production. This might mean sending a large volume of requests, making requests to specific routes, or using production-like data with the [\--remote flag](https://developers.cloudflare.com/workers/local-development/#remote-bindings).
 

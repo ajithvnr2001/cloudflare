@@ -3,8 +3,5 @@
   "file": "changelog/post/2025-04-23-autorag-metadata-filtering.md",
   "title": "Metadata filtering and multitenancy support in AutoRAG \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:10.874450+00:00",
-  "html_len": 63144,
-  "md_len": 2182,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:52.804993+00:00"
 }

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-14-domains-tab/
 title: New Domains tab in the Workers dashboard \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:53.344508+00:00
+fetched_at: 2026-10-10T14:38:38.212416+00:00
 ---
 
 # New Domains tab in the Workers dashboard · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-14-domains-tab/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 In your Worker's dashboard, there is now a dedicated **Domains** tab where you can purchase a new domain through Cloudflare Registrar and have it automatically connected, add an [existing domain](https://developers.cloudflare.com/workers/configuration/routing/custom-domains/), and manage all of your Worker's routing in one place.
 

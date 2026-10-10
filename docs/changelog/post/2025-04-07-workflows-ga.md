@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-04-07-workflows-ga/
 title: Workflows is now Generally Available \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:08.849355+00:00
+fetched_at: 2026-10-10T14:38:53.307046+00:00
 ---
 
 # Workflows is now Generally Available · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workflows](https://developers.cloudflare.com/workflows/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-04-07-workflows-ga/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Workflows](https://developers.cloudflare.com/workflows/) is now _Generally Available_ (or "GA"): in short, it's ready for production workloads. Alongside marking Workflows as GA, we've introduced a number of changes during the beta period, including:
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-08-26-access-mcp-oauth/
 title: Manage and restrict access to internal MCP servers with Cloudflare Access \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:20.703177+00:00
+fetched_at: 2026-10-10T14:38:49.621702+00:00
 ---
 
 # Manage and restrict access to internal MCP servers with Cloudflare Access · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Access](https://developers.cloudflare.com/cloudflare-one/access-controls/policies/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-08-26-access-mcp-oauth/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now control who within your organization has access to internal MCP servers, by putting internal MCP servers behind [Cloudflare Access](https://developers.cloudflare.com/cloudflare-one/access-controls/policies/).
 

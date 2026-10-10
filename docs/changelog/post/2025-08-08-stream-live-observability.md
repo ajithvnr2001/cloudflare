@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-08-08-stream-live-observability/
 title: Introducing observability and metrics for Stream Live Inputs \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:18.820837+00:00
+fetched_at: 2026-10-10T14:38:50.254549+00:00
 ---
 
 # Introducing observability and metrics for Stream Live Inputs · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Stream](https://developers.cloudflare.com/stream/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-08-08-stream-live-observability/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 New information about broadcast metrics and events is now available in [Cloudflare Stream](https://developers.cloudflare.com/stream/) in the Live Input details of the Dashboard.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-29-user-insights-task-analysis/
 title: Identify model overuse and potential savings with User Insights \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:17.048529+00:00
+fetched_at: 2026-10-10T14:38:30.151509+00:00
 ---
 
 # Identify model overuse and potential savings with User Insights · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Gateway](https://developers.cloudflare.com/ai-gateway/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-29-user-insights-task-analysis/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 AI Gateway User Insights now gives you more context about the traffic flowing through your gateway. It shows what users and agents are doing with AI, and where a selected model may be more capable than a task requires.
 

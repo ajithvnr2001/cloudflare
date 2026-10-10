@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-02-25-agents-sdk/
 title: Introducing the Agents SDK \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:04.935023+00:00
+fetched_at: 2026-10-10T14:38:54.588297+00:00
 ---
 
 # Introducing the Agents SDK · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Agents](https://developers.cloudflare.com/agents/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-02-25-agents-sdk/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We've released the [Agents SDK ↗︎](http://blog.cloudflare.com/build-ai-agents-on-cloudflare/), a package and set of tools that help you build and ship AI Agents.
 

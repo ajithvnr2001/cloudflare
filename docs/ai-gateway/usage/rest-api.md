@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai-gateway/usage/rest-api/
 title: REST API \u00b7 Cloudflare AI Gateway docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:35.239004+00:00
+fetched_at: 2026-10-10T14:39:25.116038+00:00
 ---
 
 # REST API · Cloudflare AI Gateway docs
@@ -18,7 +18,7 @@ fetched_at: 2026-10-08T07:04:35.239004+00:00
 
 # REST API
 
-Last updated Oct 7, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai-gateway/usage/rest-api/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 9, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewEndpointsAuthenticationModel naming/ai/run — universal endpoint Call a Workers AI model Background requests and webhooks/ai/v1/chat/completions — OpenAI compatible OpenAI SDK/ai/v1/responses — OpenAI Responses API/ai/v1/messages — Anthropic compatibleProvider tools and web searchSpecify a gatewayPer-request configurationRelated resources
 
@@ -40,6 +40,10 @@ Endpoint | Format | Use case | Third-Party Models | Workers AI Models (`@cf/`)
 Note
 
 The `/ai/v1/messages` endpoint strictly uses Anthropic's API schema and supports routing to Anthropic and other third-party models. Workers AI models (`@cf/`) do not support this schema. Use `/ai/run` or `/ai/v1/chat/completions` for Workers AI models, or `/ai/v1/responses` only for Workers AI models that support the Responses API, such as GPT-OSS.
+
+Note
+
+Claude Code sends requests using the Anthropic Messages API. It cannot use the OpenAI-compatible `/ai/v1/chat/completions` endpoint or the universal `/ai/run` endpoint directly. To route Claude Code through AI Gateway, use an Anthropic-compatible endpoint and configure it as described in [Claude Code](https://developers.cloudflare.com/ai-gateway/integrations/coding-agents/claude-code/). This supports Anthropic, Amazon Bedrock, and Google Vertex AI models, but not models available only through the OpenAI-compatible schema.
 
 ## Authentication
 

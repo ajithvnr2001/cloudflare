@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-02-cron-workflows/
 title: Schedule Workflow instances directly from your Workflow binding \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:55.968280+00:00
+fetched_at: 2026-10-10T14:38:37.282154+00:00
 ---
 
 # Schedule Workflow instances directly from your Workflow binding · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workflows](https://developers.cloudflare.com/workflows/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-02-cron-workflows/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now attach cron schedules directly to a Workflow binding in `wrangler.jsonc`. Each scheduled run creates a new Workflow instance automatically, so you do not need to define a separate Worker with a `scheduled` handler just to trigger your Workflow on an interval.
 

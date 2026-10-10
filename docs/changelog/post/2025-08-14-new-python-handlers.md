@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-08-14-new-python-handlers/
 title: Python Workers handlers now live in an entrypoint class \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:19.196166+00:00
+fetched_at: 2026-10-10T14:38:50.084212+00:00
 ---
 
 # Python Workers handlers now live in an entrypoint class · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-08-14-new-python-handlers/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We are changing how Python Workers are structured by default. Previously, handlers were defined at the top-level of a module as `on_fetch`, `on_scheduled`, etc. methods, but now they live in an entrypoint class.
 

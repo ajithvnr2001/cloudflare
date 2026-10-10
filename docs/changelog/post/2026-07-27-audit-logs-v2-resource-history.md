@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-27-audit-logs-v2-resource-history/
 title: Audit Logs v2 \u2014 Resource History \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:04.832203+00:00
+fetched_at: 2026-10-10T14:38:34.255059+00:00
 ---
 
 # Audit Logs v2 — Resource History · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Audit Logs](https://developers.cloudflare.com/fundamentals/account/account-security/review-audit-logs/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-27-audit-logs-v2-resource-history/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Audit Logs v2 now includes **Resource History**. For any audit log entry, you can see the sequence of previous changes to the same resource and view a side-by-side diff of what was modified.
 

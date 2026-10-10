@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-21-vpc-networks-cloudflare-wan/
 title: Reach Cloudflare WAN destinations from Workers VPC \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:54.267805+00:00
+fetched_at: 2026-10-10T14:38:37.835419+00:00
 ---
 
 # Reach Cloudflare WAN destinations from Workers VPC · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers VPC](https://developers.cloudflare.com/workers-vpc/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-21-vpc-networks-cloudflare-wan/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now use [VPC Network](https://developers.cloudflare.com/workers-vpc/configuration/vpc-networks/) bindings with `network_id: "cf1:network"` to reach your full private network from Workers, including:
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-01-23-New-2FA-Experience/
 title: New 2FA Experience for Login \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:34.571332+00:00
+fetched_at: 2026-10-10T14:38:44.720728+00:00
 ---
 
 # New 2FA Experience for Login · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-01-23-New-2FA-Experience/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 ![Screenshot of new 2FA enrollment experience](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=2721,height=1820,format=webp/_astro/2026-01-23-2fa-interstitial.TXFGNSth.png)
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-04-14-webrtc-beta-signed-urls/
 title: Signed URLs and Infrastructure Improvements on Stream Live WebRTC Beta \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:09.945009+00:00
+fetched_at: 2026-10-10T14:38:52.873872+00:00
 ---
 
 # Signed URLs and Infrastructure Improvements on Stream Live WebRTC Beta · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Stream](https://developers.cloudflare.com/stream/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-04-14-webrtc-beta-signed-urls/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare [Stream](https://developers.cloudflare.com/stream/) has completed an infrastructure upgrade for our [Live WebRTC beta](https://developers.cloudflare.com/stream/webrtc-beta/) support which brings increased scalability and improved playback performance to all customers. WebRTC allows broadcasting directly from a browser (or supported WHIP client) with ultra-low latency to tens of thousands of concurrent viewers across the globe.
 

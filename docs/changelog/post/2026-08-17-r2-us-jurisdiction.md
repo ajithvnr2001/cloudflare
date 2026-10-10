@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-08-17-r2-us-jurisdiction/
 title: New `us` jurisdiction for R2 \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:08.918386+00:00
+fetched_at: 2026-10-10T14:38:32.826143+00:00
 ---
 
 # New `us` jurisdiction for R2 · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [R2](https://developers.cloudflare.com/r2/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-08-17-r2-us-jurisdiction/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 R2 now supports a `us` [jurisdiction](https://developers.cloudflare.com/r2/reference/data-location/#jurisdictional-restrictions), which guarantees that bucket data is stored and processed within the United States. Use this jurisdiction when you need explicit US data residency guarantees.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-06-19-autorag-custom-metadata-and-context/
 title: View custom metadata in responses and guide AI-search with context in AutoRAG \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:14.570390+00:00
+fetched_at: 2026-10-10T14:38:51.518534+00:00
 ---
 
 # View custom metadata in responses and guide AI-search with context in AutoRAG · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Search](https://developers.cloudflare.com/ai-search/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-06-19-autorag-custom-metadata-and-context/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 In [AutoRAG](https://developers.cloudflare.com/ai-search/), you can now view your object's custom metadata in the response from [`/search`](https://developers.cloudflare.com/ai-search/api/search/workers-binding/) and [`/ai-search`](https://developers.cloudflare.com/ai-search/api/search/workers-binding/), and optionally add a `context` field in the custom metadata of an object to provide additional guidance for AI-generated answers.
 

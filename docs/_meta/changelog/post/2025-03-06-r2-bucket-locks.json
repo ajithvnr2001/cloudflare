@@ -3,8 +3,5 @@
   "file": "changelog/post/2025-03-06-r2-bucket-locks.md",
   "title": "Set retention polices for your R2 bucket with bucket locks \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:05.650005+00:00",
-  "html_len": 64383,
-  "md_len": 2356,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:54.180247+00:00"
 }

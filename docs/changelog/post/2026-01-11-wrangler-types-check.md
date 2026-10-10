@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-01-11-wrangler-types-check/
 title: Validate your generated types with `wrangler types --check` \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:33.093560+00:00
+fetched_at: 2026-10-10T14:38:45.401760+00:00
 ---
 
 # Validate your generated types with `wrangler types --check` · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-01-11-wrangler-types-check/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Wrangler now supports a `--check` flag for the `wrangler types` command. This flag validates that your generated types are up to date without writing any changes to disk.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-12-durable-objects-metrics-filter-by-id-name/
 title: Filter Durable Objects metrics by object ID or name \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:57.751591+00:00
+fetched_at: 2026-10-10T14:38:36.927537+00:00
 ---
 
 # Filter Durable Objects metrics by object ID or name · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Durable Objects](https://developers.cloudflare.com/durable-objects/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-12-durable-objects-metrics-filter-by-id-name/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now filter the **Metrics** tab for a Durable Objects namespace by an individual Durable Object's [ID](https://developers.cloudflare.com/durable-objects/api/id/) or [name](https://developers.cloudflare.com/durable-objects/api/id/#name) in the Cloudflare dashboard. Previously, metrics charts only showed aggregate, namespace-level data, making it difficult to isolate the behavior of a specific object.
 

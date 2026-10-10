@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/%40cf/leonardo/phoenix-1.0/
 title: phoenix-1.0 (Leonardo) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:45.956610+00:00
+fetched_at: 2026-10-10T14:39:22.168123+00:00
 ---
 
 # phoenix-1.0 (Leonardo) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:04:45.956610+00:00
 
 Text-to-Image • Leonardo
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/%40cf/leonardo/phoenix-1.0/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `@cf/leonardo/phoenix-1.0`
 

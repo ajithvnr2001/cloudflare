@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-01-botbase-attribution-business-insights/
 title: More visibility into bot traffic with BotBase and Business Insights \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:00.642878+00:00
+fetched_at: 2026-10-10T14:38:35.661216+00:00
 ---
 
 # More visibility into bot traffic with BotBase and Business Insights · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Bots](https://developers.cloudflare.com/bots/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-01-botbase-attribution-business-insights/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 With Content Independence Day 2026, [Enterprise Bot Management](https://developers.cloudflare.com/bots/get-started/bot-management/) customers get two new tools that make bot traffic far easier to see and reason about: [BotBase](https://developers.cloudflare.com/bots/botbase/), a searchable directory of every bot Cloudflare tracks, and [Business Insights](https://developers.cloudflare.com/bots/business-insights/), a dashboard that shows how much value each crawler sends back to your business.
 

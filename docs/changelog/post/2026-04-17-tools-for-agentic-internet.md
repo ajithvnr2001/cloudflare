@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-17-tools-for-agentic-internet/
 title: Tools to prepare your site for the agentic Internet \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:47.979345+00:00
+fetched_at: 2026-10-10T14:38:40.170900+00:00
 ---
 
 # Tools to prepare your site for the agentic Internet · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Crawl Control](https://developers.cloudflare.com/ai-crawl-control/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-17-tools-for-agentic-internet/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 AI Crawl Control now includes new tools to help you prepare your site for the agentic Internet—a web where AI agents are first-class citizens that discover and interact with content differently than human visitors.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2024-12-17-bgp-support-cni/
 title: Establish BGP peering over Direct CNI circuits \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:59.959150+00:00
+fetched_at: 2026-10-10T14:38:55.703192+00:00
 ---
 
 # Establish BGP peering over Direct CNI circuits · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Magic Transit](https://developers.cloudflare.com/magic-transit/)[Cloudflare WAN](https://developers.cloudflare.com/cloudflare-wan/)[Network Interconnect](https://developers.cloudflare.com/network-interconnect/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2024-12-17-bgp-support-cni/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Magic WAN and Magic Transit customers can use the Cloudflare dashboard to configure and manage BGP peering between their networks and their Magic routing table when using a Direct CNI on-ramp.
 

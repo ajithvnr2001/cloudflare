@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-06-17-workers-terraform-sdk-api-fixes/
 title: Automate Worker deployments with a simplified SDK and more reliable Terraform provider \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:14.487199+00:00
+fetched_at: 2026-10-10T14:38:51.581331+00:00
 ---
 
 # Automate Worker deployments with a simplified SDK and more reliable Terraform provider · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [D1](https://developers.cloudflare.com/d1/)[Workers](https://developers.cloudflare.com/workers/)[Workers for Platforms](https://developers.cloudflare.com/cloudflare-for-platforms/workers-for-platforms/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-06-17-workers-terraform-sdk-api-fixes/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 #### Simplified Worker Deployments with our SDKs
 

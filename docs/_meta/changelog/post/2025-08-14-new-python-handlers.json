@@ -3,8 +3,5 @@
   "file": "changelog/post/2025-08-14-new-python-handlers.md",
   "title": "Python Workers handlers now live in an entrypoint class \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:19.196378+00:00",
-  "html_len": 69672,
-  "md_len": 1694,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:50.084903+00:00"
 }

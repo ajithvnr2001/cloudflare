@@ -3,8 +3,5 @@
   "file": "changelog/post/2025-04-10-r2-data-catalog-beta.md",
   "title": "R2 Data Catalog is a managed Apache Iceberg data catalog built directly into R2 buckets \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:09.679434+00:00",
-  "html_len": 64449,
-  "md_len": 2346,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:52.916801+00:00"
 }

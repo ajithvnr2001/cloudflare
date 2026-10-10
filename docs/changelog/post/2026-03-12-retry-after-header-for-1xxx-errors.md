@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-03-12-retry-after-header-for-1xxx-errors/
 title: Retry-After HTTP header for retryable 1xxx errors \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:40.708844+00:00
+fetched_at: 2026-10-10T14:38:42.472909+00:00
 ---
 
 # Retry-After HTTP header for retryable 1xxx errors · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-03-12-retry-after-header-for-1xxx-errors/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare-generated 1xxx error responses now include a standard `Retry-After` HTTP header when the error is retryable. Agents and HTTP clients can read the recommended wait time from response headers alone — no body parsing required.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-03-20-websockets/
 title: AI Gateway launches Realtime WebSockets API \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:06.926089+00:00
+fetched_at: 2026-10-10T14:38:53.766209+00:00
 ---
 
 # AI Gateway launches Realtime WebSockets API · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Gateway](https://developers.cloudflare.com/ai-gateway/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-03-20-websockets/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We are excited to announce that [AI Gateway](https://developers.cloudflare.com/ai-gateway/) now supports real-time AI interactions with the new [Realtime WebSockets API](https://developers.cloudflare.com/ai-gateway/usage/websockets-api/realtime-api/).
 

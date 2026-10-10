@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers-ai/models/deepseek-v4-flash-0731/
 title: deepseek-v4-flash-0731 (DeepSeek) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:02.546672+00:00
+fetched_at: 2026-10-10T14:37:23.621210+00:00
 ---
 
 # deepseek-v4-flash-0731 (DeepSeek) · Cloudflare AI docs · Cloudflare Workers AI docs
@@ -21,7 +21,7 @@ fetched_at: 2026-10-08T07:17:02.546672+00:00
 
 Text Generation • DeepSeek
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers-ai/models/deepseek-v4-flash-0731/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `@cf/deepseek-ai/deepseek-v4-flash-0731`
 

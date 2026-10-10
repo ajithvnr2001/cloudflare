@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-04-17-pull-consumer-limits/
 title: Increased limits for Queues pull consumers \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:11.111924+00:00
+fetched_at: 2026-10-10T14:38:52.780814+00:00
 ---
 
 # Increased limits for Queues pull consumers · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Queues](https://developers.cloudflare.com/queues/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-04-17-pull-consumer-limits/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Queues pull consumers](https://developers.cloudflare.com/queues/configuration/pull-consumers/) can now pull and acknowledge up to **5,000 messages / second per queue**. Previously, pull consumers were rate limited to 1,200 requests / 5 minutes, aggregated across all queues.
 

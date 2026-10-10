@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-08-22-workflows-python-beta/
 title: Build durable multi-step applications in Python with Workflows (now in beta) \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:20.315268+00:00
+fetched_at: 2026-10-10T14:38:49.776508+00:00
 ---
 
 # Build durable multi-step applications in Python with Workflows (now in beta) · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workflows](https://developers.cloudflare.com/workflows/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-08-22-workflows-python-beta/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now build [Workflows](https://developers.cloudflare.com/workflows/) using Python. With Python Workflows, you get automatic retries, state persistence, and the ability to run multi-step operations that can span minutes, hours, or weeks using Python’s familiar syntax and the [Python Workers](https://developers.cloudflare.com/workers/languages/python/) runtime.
 

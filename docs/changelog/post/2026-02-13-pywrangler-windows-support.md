@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-02-13-pywrangler-windows-support/
 title: Better Windows support for Python Workers \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:37.250147+00:00
+fetched_at: 2026-10-10T14:38:43.651073+00:00
 ---
 
 # Better Windows support for Python Workers · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-02-13-pywrangler-windows-support/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Pywrangler ↗︎](https://github.com/cloudflare/workers-py?tab=readme-ov-file#pywrangler), the CLI tool for managing Python Workers and packages, now supports Windows, allowing you to develop and deploy Python Workers from Windows environments. Previously, Pywrangler was only available on macOS and Linux.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-03-27-rfc9440-mtls-fields/
 title: New RFC 9440 mTLS certificate fields in Workers \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:43.730510+00:00
+fetched_at: 2026-10-10T14:38:41.409279+00:00
 ---
 
 # New RFC 9440 mTLS certificate fields in Workers · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-03-27-rfc9440-mtls-fields/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Four new fields are now available on `request.cf.tlsClientAuth` in Workers for requests that include a mutual TLS (mTLS) client certificate. These fields encode the client certificate and its intermediate chain in [RFC 9440 ↗︎](https://www.rfc-editor.org/rfc/rfc9440) format — the same standard format used by the `Client-Cert` and `Client-Cert-Chain` HTTP headers — so your Worker can forward them directly to your origin without any custom parsing or encoding logic.
 

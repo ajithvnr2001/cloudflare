@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-01-20-ai-search-path-filtering/
 title: AI Search path filtering for website and R2 data sources \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:33.933805+00:00
+fetched_at: 2026-10-10T14:38:44.925947+00:00
 ---
 
 # AI Search path filtering for website and R2 data sources · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Search](https://developers.cloudflare.com/ai-search/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-01-20-ai-search-path-filtering/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [AI Search](https://developers.cloudflare.com/ai-search/) now includes [path filtering](https://developers.cloudflare.com/ai-search/configuration/indexing/path-filtering/) for both [website](https://developers.cloudflare.com/ai-search/configuration/data-source/website/#path-filtering) and [R2](https://developers.cloudflare.com/ai-search/configuration/data-source/r2/#path-filtering) data sources. You can now control which content gets indexed by defining include and exclude rules for paths.
 

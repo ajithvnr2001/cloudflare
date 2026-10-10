@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/waf/managed-rules/troubleshooting/
 title: Troubleshoot managed rules \u00b7 Cloudflare Web Application Firewall (WAF) docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:16:45.434688+00:00
+fetched_at: 2026-10-10T14:39:25.273543+00:00
 ---
 
 # Troubleshoot managed rules · Cloudflare Web Application Firewall (WAF) docs
@@ -18,7 +18,7 @@ fetched_at: 2026-10-08T07:16:45.434688+00:00
 
 # Troubleshoot managed rules
 
-Last updated Sep 9, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/waf/managed-rules/troubleshooting/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 9, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewTroubleshoot false positives Additional recommendationsTroubleshoot false negatives Additional recommendations
 
@@ -59,6 +59,10 @@ If you contact Cloudflare Support to verify whether a WAF managed rule triggers 
 `http.host eq "example.com" and starts_with(http.request.uri.path, "/admin")`
 
   * WAF managed rulesets are designed to inspect standard HTTP request content. Requests that upload binary content (for example, file uploads) can resemble attack payloads and cause false positives. To scan file uploads for malicious content, use [Malicious uploads detection](https://developers.cloudflare.com/waf/detections/malicious-uploads/) instead of relying on managed rules for that traffic.
+
+  * If you use [Zaraz](https://developers.cloudflare.com/zaraz/), the Cloudflare OWASP Core Ruleset can flag requests to the Zaraz endpoint (`/cdn-cgi/zaraz/`) as false positives. Add an [exception](https://developers.cloudflare.com/waf/managed-rules/waf-exceptions/) skipping the Cloudflare OWASP Core Ruleset for Zaraz requests. You can use an expression similar to the following:
+
+`starts_with(http.request.uri.path, "/cdn-cgi/zaraz/")`
 
 
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-16-rollback-options/
 title: Workflows rollback handlers now include step context \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:58.283354+00:00
+fetched_at: 2026-10-10T14:38:36.427418+00:00
 ---
 
 # Workflows rollback handlers now include step context · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workflows](https://developers.cloudflare.com/workflows/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-16-rollback-options/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Workflows](https://developers.cloudflare.com/workflows/) makes it easier to build reliable multi-step applications that can recover when downstream systems fail. Rollback handlers now receive the original [step context](https://developers.cloudflare.com/workflows/build/step-context/) via a `ctx` object for the step being rolled back. This includes `ctx.step.name`, `ctx.step.count`, `ctx.attempt`, and the step `config` with defaults applied.
 

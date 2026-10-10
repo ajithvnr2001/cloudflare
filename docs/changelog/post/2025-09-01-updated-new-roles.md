@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-09-01-updated-new-roles/
 title: Updated Email security roles \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:21.992645+00:00
+fetched_at: 2026-10-10T14:38:49.387631+00:00
 ---
 
 # Updated Email security roles · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Email security](https://developers.cloudflare.com/cloudflare-one/email-security/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-09-01-updated-new-roles/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 To provide more granular controls, we refined the [existing roles](https://developers.cloudflare.com/cloudflare-one/roles-permissions/#email-security-roles) for Email security and launched a new Email security role as well.
 

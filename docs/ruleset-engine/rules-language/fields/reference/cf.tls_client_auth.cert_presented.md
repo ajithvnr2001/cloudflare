@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.tls_client_auth.cert_presented/
 title: cf.tls_client_auth.cert_presented \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:06.763383+00:00
+fetched_at: 2026-10-10T14:37:34.303788+00:00
 ---
 
 # cf.tls_client_auth.cert_presented · Cloudflare Ruleset Engine docs

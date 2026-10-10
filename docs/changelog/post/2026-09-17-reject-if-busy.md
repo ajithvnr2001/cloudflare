@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-17-reject-if-busy/
 title: Reject busy synchronous inference requests \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:14.603071+00:00
+fetched_at: 2026-10-10T14:38:31.023293+00:00
 ---
 
 # Reject busy synchronous inference requests · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers AI](https://developers.cloudflare.com/workers-ai/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-17-reject-if-busy/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The `rejectIfBusy` option lets synchronous Workers AI inference requests fail when capacity is unavailable. Use it when your application should not wait in a capacity queue.
 

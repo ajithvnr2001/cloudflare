@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.edge.server_port/
 title: cf.edge.server_port \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:04.023853+00:00
+fetched_at: 2026-10-10T14:37:35.481008+00:00
 ---
 
 # cf.edge.server_port · Cloudflare Ruleset Engine docs

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-01-28-hyperdrive-automated-private-database-configuration/
 title: Automatic configuration for private databases on Hyperdrive \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:01.353051+00:00
+fetched_at: 2026-10-10T14:38:55.343167+00:00
 ---
 
 # Automatic configuration for private databases on Hyperdrive · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Hyperdrive](https://developers.cloudflare.com/hyperdrive/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-01-28-hyperdrive-automated-private-database-configuration/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Hyperdrive now automatically configures your Cloudflare Tunnel to connect to your private database.
 

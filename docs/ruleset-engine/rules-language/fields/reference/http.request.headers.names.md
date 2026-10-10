@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/http.request.headers.names/
 title: http.request.headers.names \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:11.044810+00:00
+fetched_at: 2026-10-10T14:37:32.638080+00:00
 ---
 
 # http.request.headers.names · Cloudflare Ruleset Engine docs

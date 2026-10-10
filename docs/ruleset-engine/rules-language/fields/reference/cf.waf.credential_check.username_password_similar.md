@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.waf.credential_check.username_password_similar/
 title: cf.waf.credential_check.username_password_similar \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:08.667313+00:00
+fetched_at: 2026-10-10T14:37:33.628787+00:00
 ---
 
 # cf.waf.credential_check.username_password_similar · Cloudflare Ruleset Engine docs

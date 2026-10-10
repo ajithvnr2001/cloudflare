@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-24-root-key-trust-anchor-sentinel/
 title: RFC 8509 root key trust anchor sentinel support \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:15.991779+00:00
+fetched_at: 2026-10-10T14:38:30.585959+00:00
 ---
 
 # RFC 8509 root key trust anchor sentinel support · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [1.1.1.1 (DNS Resolver)](https://developers.cloudflare.com/1.1.1.1/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-24-root-key-trust-anchor-sentinel/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 1.1.1.1 now supports [RFC 8509 ↗︎](https://datatracker.ietf.org/doc/html/rfc8509) root key trust anchor sentinels. They let you check whether the responding resolver trusts a DNSSEC root key ahead of a key rollover.
 

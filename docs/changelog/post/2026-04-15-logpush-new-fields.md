@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-15-logpush-new-fields/
 title: New TenantID and Firewall for AI fields in Logpush datasets \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:47.126186+00:00
+fetched_at: 2026-10-10T14:38:40.325001+00:00
 ---
 
 # New TenantID and Firewall for AI fields in Logpush datasets · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Logs](https://developers.cloudflare.com/logs/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-15-logpush-new-fields/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare has added new fields to multiple [Logpush datasets](https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/):
 

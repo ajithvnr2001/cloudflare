@@ -3,8 +3,5 @@
   "file": "reference-architecture/diagrams/sase/deploying-self-hosted-voip-services-for-hybrid-users.md",
   "title": "Deploy self-hosted VoIP services for hybrid users \u00b7 Cloudflare Reference Architecture docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:14:41.796304+00:00",
-  "html_len": 134311,
-  "md_len": 11125,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:36.082327+00:00"
 }

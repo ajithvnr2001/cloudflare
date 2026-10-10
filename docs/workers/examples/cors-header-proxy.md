@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers/examples/cors-header-proxy/
 title: CORS header proxy \u00b7 Cloudflare Workers docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:21.823673+00:00
+fetched_at: 2026-10-10T14:39:27.754847+00:00
 ---
 
 # CORS header proxy · Cloudflare Workers docs
@@ -20,7 +20,7 @@ fetched_at: 2026-10-08T07:17:21.823673+00:00
 
 Add the necessary CORS headers to a third party API response.
 
-Last updated Jul 6, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers/examples/cors-header-proxy/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 If you want to get started quickly, click on the button below.
 
@@ -346,7 +346,7 @@ This creates a repository in your GitHub account and deploys the application to 
     const app = new Hono();
     
     // Demo page handler
-    app.get("*", async (c) => {
+    app.get("*", async (c, next) => {
     	// Only handle non-proxy requests with this handler
     	if (c.req.path.startsWith(PROXY_ENDPOINT)) {
     		return next();

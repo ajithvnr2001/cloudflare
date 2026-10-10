@@ -3,8 +3,5 @@
   "file": "changelog/post/2026-04-06-gateway-dns-response-time-ms.md",
   "title": "New ResponseTimeMs field in Gateway DNS Logpush dataset \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:44.826403+00:00",
-  "html_len": 62605,
-  "md_len": 1216,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:41.069836+00:00"
 }

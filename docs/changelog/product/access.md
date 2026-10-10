@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/access/
 title: Access Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:38.815991+00:00
+fetched_at: 2026-10-10T14:38:13.090866+00:00
 ---
 
 # Access Changelog | Cloudflare Docs

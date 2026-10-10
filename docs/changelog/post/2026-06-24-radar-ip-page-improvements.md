@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-24-radar-ip-page-improvements/
 title: Precise IP location and richer AS details on the Cloudflare Radar IP page \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:59.365426+00:00
+fetched_at: 2026-10-10T14:38:36.023463+00:00
 ---
 
 # Precise IP location and richer AS details on the Cloudflare Radar IP page · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Radar](https://developers.cloudflare.com/radar/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-24-radar-ip-page-improvements/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [**Radar**](https://developers.cloudflare.com/radar/) now plots your IPv4 and IPv6 locations on the [IP page ↗︎](https://radar.cloudflare.com/ip), shows the Cloudflare data centers serving your connection, and includes more detail about the autonomous system (AS) your primary IP belongs to.
 

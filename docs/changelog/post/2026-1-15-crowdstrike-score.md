@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-1-15-crowdstrike-score/
 title: Support for CrowdStrike device scores in User Risk Scoring \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:17.990075+00:00
+fetched_at: 2026-10-10T14:38:29.836808+00:00
 ---
 
 # Support for CrowdStrike device scores in User Risk Scoring · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Risk Score](https://developers.cloudflare.com/cloudflare-one/team-and-resources/users/risk-score/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-1-15-crowdstrike-score/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare One has expanded its [User Risk Scoring] (/cloudflare-one/insights/risk-score/) capabilities by introducing two new behaviors for organizations using the [CrowdStrike integration] (/cloudflare-one/integrations/service-providers/crowdstrike/).
 

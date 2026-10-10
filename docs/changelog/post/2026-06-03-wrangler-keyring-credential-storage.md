@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-03-wrangler-keyring-credential-storage/
 title: Store Wrangler's OAuth credentials in your OS keychain \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:56.190517+00:00
+fetched_at: 2026-10-10T14:38:37.244836+00:00
 ---
 
 # Store Wrangler's OAuth credentials in your OS keychain · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-03-wrangler-keyring-credential-storage/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Wrangler](https://developers.cloudflare.com/workers/wrangler/) can now store the OAuth credentials returned by `wrangler login` in an [AES-256-GCM ↗︎](https://en.wikipedia.org/wiki/Galois/Counter_Mode)-encrypted file, with the encryption key held in your operating system keychain. The default behavior is unchanged — credentials still live in a plaintext TOML file unless you opt in.
 

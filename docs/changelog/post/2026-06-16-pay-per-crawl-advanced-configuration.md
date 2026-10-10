@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-16-pay-per-crawl-advanced-configuration/
 title: Pay Per Crawl advanced configuration \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:58.256757+00:00
+fetched_at: 2026-10-10T14:38:36.465888+00:00
 ---
 
 # Pay Per Crawl advanced configuration · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Crawl Control](https://developers.cloudflare.com/ai-crawl-control/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-16-pay-per-crawl-advanced-configuration/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now configure advanced Pay Per Crawl settings for your zone, including:
 

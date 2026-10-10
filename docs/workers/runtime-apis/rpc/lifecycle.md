@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers/runtime-apis/rpc/lifecycle/
 title: Workers RPC \u2014 Lifecycle \u00b7 Cloudflare Workers docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:48.521907+00:00
+fetched_at: 2026-10-10T14:39:26.944538+00:00
 ---
 
 # Workers RPC — Lifecycle · Cloudflare Workers docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:17:48.521907+00:00
 
 # Lifecycle
 
-Last updated Apr 23, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers/runtime-apis/rpc/lifecycle/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewLifetimes, Memory and Resource ManagementExplicit Resource Management How to use the using declaration in your WorkerAutomatic disposal and execution contexts End of event handler / execution context Stubs received as parameters in an RPC call Disposing RPC objects disposes stubs that are part of that objectDisposers and RpcTarget classesThe dup() method
 
@@ -106,7 +106,7 @@ For example, the Worker below does not make use of the `using` declaration, but 
     export default {
     	async fetch(request, env, ctx) {
     		let authResult = await env.AUTH_SERVICE.checkCookie(
-    			req.headers.get("Cookie"),
+    			request.headers.get("Cookie"),
     		);
     		if (!authResult.authorized) {
     			return new Response("Not authorized", { status: 403 });

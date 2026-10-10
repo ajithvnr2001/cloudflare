@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-03-07-cloudflare-one-device-health-monitoring/
 title: Cloudflare One Agent now supports Endpoint Monitoring \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:05.694993+00:00
+fetched_at: 2026-10-10T14:38:54.167969+00:00
 ---
 
 # Cloudflare One Agent now supports Endpoint Monitoring · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Digital Experience Monitoring](https://developers.cloudflare.com/cloudflare-one/insights/dex/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-03-07-cloudflare-one-device-health-monitoring/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Digital Experience Monitoring (DEX)](https://developers.cloudflare.com/cloudflare-one/insights/dex/) provides visibility into device, network, and application performance across your Cloudflare SASE deployment. The latest release of the Cloudflare One agent (v2025.1.861) now includes device endpoint monitoring capabilities to provide deeper visibility into end-user device performance which can be analyzed directly from the dashboard.
 

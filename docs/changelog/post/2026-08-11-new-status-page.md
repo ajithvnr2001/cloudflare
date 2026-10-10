@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-08-11-new-status-page/
 title: New Cloudflare Status page \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:08.243740+00:00
+fetched_at: 2026-10-10T14:38:33.237258+00:00
 ---
 
 # New Cloudflare Status page · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Support](https://developers.cloudflare.com/support/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-08-11-new-status-page/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The Cloudflare Status page at [www.cloudflarestatus.com ↗︎](https://www.cloudflarestatus.com/) has been rebuilt. It is available at the same address, and every previously documented [Status API ↗︎](https://www.cloudflarestatus.com/api) endpoint remains supported, so existing bookmarks, integrations, and monitoring continue to work.
 

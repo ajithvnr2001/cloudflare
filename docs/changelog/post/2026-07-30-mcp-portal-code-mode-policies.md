@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-30-mcp-portal-code-mode-policies/
 title: Admins can turn on Code Mode by default for MCP portal users \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:05.377571+00:00
+fetched_at: 2026-10-10T14:38:34.118756+00:00
 ---
 
 # Admins can turn on Code Mode by default for MCP portal users · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Access](https://developers.cloudflare.com/cloudflare-one/access-controls/policies/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-30-mcp-portal-code-mode-policies/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [MCP server portals](https://developers.cloudflare.com/cloudflare-one/access-controls/ai-controls/mcp-portals/) now support four Code Mode policies: _Off_ , _Opt-in_ , _On by default_ , and _Enforced_. Admins can choose whether Code Mode is unavailable, optional, enabled by default, or required for every session.
 

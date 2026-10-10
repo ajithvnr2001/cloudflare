@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-12-18-r2-data-catalog-snapshot-expiration/
 title: R2 Data Catalog now supports automatic snapshot expiration \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:32.334414+00:00
+fetched_at: 2026-10-10T14:38:45.694103+00:00
 ---
 
 # R2 Data Catalog now supports automatic snapshot expiration · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Basin Catalog](https://developers.cloudflare.com/basin-catalog/)[Basin](https://developers.cloudflare.com/basin/)[R2](https://developers.cloudflare.com/r2/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-12-18-r2-data-catalog-snapshot-expiration/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [R2 Data Catalog](https://developers.cloudflare.com/basin-catalog/) now supports automatic snapshot expiration for Apache Iceberg tables.
 

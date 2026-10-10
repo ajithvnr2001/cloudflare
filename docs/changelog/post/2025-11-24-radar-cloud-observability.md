@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-11-24-radar-cloud-observability/
 title: Cloud Services Observability in Cloudflare Radar \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:30.202292+00:00
+fetched_at: 2026-10-10T14:38:46.393747+00:00
 ---
 
 # Cloud Services Observability in Cloudflare Radar · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Radar](https://developers.cloudflare.com/radar/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-11-24-radar-cloud-observability/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [**Radar**](https://developers.cloudflare.com/radar/) introduces HTTP Origins insights, providing visibility into the status of traffic between Cloudflare's global network and cloud-based origin infrastructure.
 

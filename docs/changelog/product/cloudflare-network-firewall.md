@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/cloudflare-network-firewall/
 title: Cloudflare Network Firewall Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:42.621954+00:00
+fetched_at: 2026-10-10T14:38:09.985687+00:00
 ---
 
 # Cloudflare Network Firewall Changelog | Cloudflare Docs

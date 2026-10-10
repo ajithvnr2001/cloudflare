@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-13-sandbox-outbound-workers-tls-auth/
 title: Secure credential injection and dynamic egress policies for Sandboxes \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:46.230529+00:00
+fetched_at: 2026-10-10T14:38:40.664426+00:00
 ---
 
 # Secure credential injection and dynamic egress policies for Sandboxes · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Containers](https://developers.cloudflare.com/containers/)[Agents](https://developers.cloudflare.com/agents/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-13-sandbox-outbound-workers-tls-auth/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Outbound Workers for [Sandboxes](https://developers.cloudflare.com/sandbox/) and [Containers](https://developers.cloudflare.com/containers/) now support zero-trust credential injection, TLS interception, allow/deny lists, and dynamic per-instance egress policies. These features give platforms running agentic workloads full control over what leaves the sandbox, without exposing secrets to untrusted workloads, like user-generated code or coding agents.
 

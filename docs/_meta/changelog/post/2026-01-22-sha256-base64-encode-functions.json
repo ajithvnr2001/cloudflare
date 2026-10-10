@@ -3,8 +3,5 @@
   "file": "changelog/post/2026-01-22-sha256-base64-encode-functions.md",
   "title": "New cryptographic functions \u2014 encode_base64() and sha256() \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:34.631419+00:00",
-  "html_len": 68265,
-  "md_len": 2661,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:44.965636+00:00"
 }

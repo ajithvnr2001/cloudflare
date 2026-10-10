@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-06-09-workers-integrations-changes/
 title: Workers native integrations were removed from the Cloudflare dashboard \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:14.049460+00:00
+fetched_at: 2026-10-10T14:38:51.768876+00:00
 ---
 
 # Workers native integrations were removed from the Cloudflare dashboard · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-06-09-workers-integrations-changes/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Workers native integrations were [originally launched in May 2023 ↗︎](https://blog.cloudflare.com/announcing-database-integrations/) to connect to popular database and observability providers with your Worker in just a few clicks. We are changing how developers connect Workers to these external services. The **Integrations** tab in the dashboard has been removed in favor of a more direct, command-line-based approach using [Wrangler secrets](https://developers.cloudflare.com/workers/wrangler/commands/general/#secret).
 

@@ -3,8 +3,5 @@
   "file": "waf/detections/application-profiles/get-started.md",
   "title": "Get started \u00b7 Cloudflare Web Application Firewall (WAF) docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:16:40.894368+00:00",
-  "html_len": 143126,
-  "md_len": 4451,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:39:26.248121+00:00"
 }

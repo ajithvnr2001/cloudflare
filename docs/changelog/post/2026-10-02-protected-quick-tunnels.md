@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-10-02-protected-quick-tunnels/
 title: Protect Quick Tunnels with email authentication \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:19.047664+00:00
+fetched_at: 2026-10-10T14:38:29.409633+00:00
 ---
 
 # Protect Quick Tunnels with email authentication · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare Tunnel](https://developers.cloudflare.com/tunnel/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-10-02-protected-quick-tunnels/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now restrict who can access a [Quick Tunnel](https://developers.cloudflare.com/tunnel/get-started/quick-tunnels/). Use the new `--allowed-mail` flag in `cloudflared` to require visitors to authenticate with a one-time PIN sent to their email before they reach your local service.
     

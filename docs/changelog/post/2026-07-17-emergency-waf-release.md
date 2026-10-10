@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-17-emergency-waf-release/
 title: WAF Release - 2026-07-17 - Emergency \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:04.075542+00:00
+fetched_at: 2026-10-10T14:38:34.646116+00:00
 ---
 
 # WAF Release - 2026-07-17 - Emergency · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [WAF](https://developers.cloudflare.com/waf/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-17-emergency-waf-release/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 This emergency release adds a new managed rule to block active exploitation of a critical remote code execution (RCE) and SQL injection (SQLi) vulnerability found in popular web frameworks.
 

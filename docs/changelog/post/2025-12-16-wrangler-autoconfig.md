@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-12-16-wrangler-autoconfig/
 title: Configure your framework for Cloudflare automatically \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:32.291500+00:00
+fetched_at: 2026-10-10T14:38:45.793348+00:00
 ---
 
 # Configure your framework for Cloudflare automatically · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-12-16-wrangler-autoconfig/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Wrangler now supports automatic configuration for popular web frameworks in experimental mode, making it even easier to deploy to Cloudflare Workers.
 

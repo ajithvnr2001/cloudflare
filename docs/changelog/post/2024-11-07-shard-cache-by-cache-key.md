@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2024-11-07-shard-cache-by-cache-key/
 title: Shard cache using custom cache key values \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:59.801598+00:00
+fetched_at: 2026-10-10T14:38:55.893010+00:00
 ---
 
 # Shard cache using custom cache key values · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cache / CDN](https://developers.cloudflare.com/cache/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2024-11-07-shard-cache-by-cache-key/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Enterprise customers can now optimize cache hit ratios for content that varies by device, language, or referrer by **sharding cache** using up to ten values from previously restricted headers with [custom cache keys](https://developers.cloudflare.com/cache/how-to/cache-keys/).
 

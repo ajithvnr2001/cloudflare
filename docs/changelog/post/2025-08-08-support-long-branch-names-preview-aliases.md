@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-08-08-support-long-branch-names-preview-aliases/
 title: Workers per-branch preview URLs now support long branch names \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:18.868329+00:00
+fetched_at: 2026-10-10T14:38:50.220695+00:00
 ---
 
 # Workers per-branch preview URLs now support long branch names · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-08-08-support-long-branch-names-preview-aliases/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We've updated [preview URLs](https://developers.cloudflare.com/workers/versions-and-deployments/preview-urls/) for Cloudflare Workers to support long branch names.
 

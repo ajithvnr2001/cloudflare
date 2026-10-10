@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-09-08-custom-ike-id-ipsec-tunnels/
 title: Custom IKE ID for IPsec Tunnels \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:22.047387+00:00
+fetched_at: 2026-10-10T14:38:49.083435+00:00
 ---
 
 # Custom IKE ID for IPsec Tunnels · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare WAN](https://developers.cloudflare.com/cloudflare-wan/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-09-08-custom-ike-id-ipsec-tunnels/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Now, Magic WAN customers can configure a custom IKE ID for their IPsec tunnels. Customers that are using Magic WAN and a VeloCloud SD-WAN device together can utilize this new feature to create a high availability configuration.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-15-dex-consistent-last-seen-timestamps/
 title: Last seen timestamp for Cloudflare One Client devices is more consistent \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:47.029420+00:00
+fetched_at: 2026-10-10T14:38:40.436494+00:00
 ---
 
 # Last seen timestamp for Cloudflare One Client devices is more consistent · Changelog
@@ -21,6 +21,6 @@ New updates and improvements at Cloudflare.
 
 [Digital Experience Monitoring](https://developers.cloudflare.com/cloudflare-one/insights/dex/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-15-dex-consistent-last-seen-timestamps/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The last seen timestamp for [Cloudflare One Client](https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/) devices is now more consistent across the dashboard. IT teams will see more consistent information about the most recent client event between a device and Cloudflare's network.

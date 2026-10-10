@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-02-19-threat-events-graphs/
 title: Cloudforce One Threat events graphs are now visible in the dashboard \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:37.874080+00:00
+fetched_at: 2026-10-10T14:38:43.515063+00:00
 ---
 
 # Cloudforce One Threat events graphs are now visible in the dashboard · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Security Center](https://developers.cloudflare.com/security-center/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-02-19-threat-events-graphs/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We have introduced dynamic visualizations to the Threat Events dashboard to help you better understand the threat landscape and identify emerging patterns at a glance.
 

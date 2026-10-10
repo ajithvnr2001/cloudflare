@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-15-hyperdrive-pool-size-metrics/
 title: Hyperdrive exposes database connection pool size metrics \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:53.523280+00:00
+fetched_at: 2026-10-10T14:38:38.089038+00:00
 ---
 
 # Hyperdrive exposes database connection pool size metrics · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Hyperdrive](https://developers.cloudflare.com/hyperdrive/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-15-hyperdrive-pool-size-metrics/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now view the size of your Hyperdrive database connection pools, giving you the ability to self-diagnose connection issues. Using the Cloudflare dashboard or the `hyperdrivePoolSizesAdaptiveGroups` dataset in the [GraphQL Analytics API](https://developers.cloudflare.com/analytics/graphql-api/getting-started/), you can see `waitingClients`, `currentPoolSize`, `availablePoolSlots`, and `maxPoolSize` for each of your configurations.
 

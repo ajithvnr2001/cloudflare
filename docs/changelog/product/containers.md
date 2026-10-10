@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/containers/
 title: Containers Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:44.179477+00:00
+fetched_at: 2026-10-10T14:38:09.259384+00:00
 ---
 
 # Containers Changelog | Cloudflare Docs
@@ -402,7 +402,7 @@ The OpenAI Agents API gives your application access to Codex through an OpenAI-m
 
 OpenAI manages sessions, orchestration, context compaction, and recovery while your application provides tools and uses Cloudflare Containers as the execution environment.
 
-Cloudflare Containers can now provide self-hosted execution environments for the OpenAI Agents API. The open-source [OpenAI Agents API Workers template ↗︎](https://github.com/cloudflare/sandbox-sdk/tree/main/openai/agents-api) provides a reference implementation. The Worker maintains a Cloudflare Container for each Codex session, keeps active work running, reconnects on follow-up input, and shuts down automatically when idle.
+Cloudflare Containers can now provide self-hosted execution environments for the OpenAI Agents API. The open-source [OpenAI Agents API Workers template ↗︎](https://github.com/cloudflare/sandbox-sdk/tree/main/templates/openai-agents-api) provides a reference implementation. The Worker maintains a Cloudflare Container for each Codex session, keeps active work running, reconnects on follow-up input, and shuts down automatically when idle.
 
 You can configure the reference implementation to meet your needs by extending the Container to provide controlled access to data and the network or by integrating it with other Cloudflare products.
 

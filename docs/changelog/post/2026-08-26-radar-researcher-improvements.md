@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-08-26-radar-researcher-improvements/
 title: Radar Researcher adds richer sources and URL Scanner explanations \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:11.127507+00:00
+fetched_at: 2026-10-10T14:38:32.126672+00:00
 ---
 
 # Radar Researcher adds richer sources and URL Scanner explanations · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Radar](https://developers.cloudflare.com/radar/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-08-26-radar-researcher-improvements/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [**Cloudflare Radar**](https://developers.cloudflare.com/radar/) expands the [Radar Researcher ↗︎](https://radar.cloudflare.com/?prompt=) beta with richer sources and new ways to investigate Internet data.
 

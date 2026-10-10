@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/runwayml/aleph-2/
 title: RunwayML Aleph 2 (RunwayML) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:06.258177+00:00
+fetched_at: 2026-10-10T14:39:06.870094+00:00
 ---
 
 # RunwayML Aleph 2 (RunwayML) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:05:06.258177+00:00
 
 Text-to-Video • RunwayML
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/runwayml/aleph-2/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `runwayml/aleph-2`
 

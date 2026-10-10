@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-07-appliance-source-based-breakout/
 title: Source-based breakout and prioritization on Cloudflare One Appliance \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:51.843667+00:00
+fetched_at: 2026-10-10T14:38:38.651263+00:00
 ---
 
 # Source-based breakout and prioritization on Cloudflare One Appliance · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare One Appliance](https://developers.cloudflare.com/cloudflare-wan/configuration/appliance/)[Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)[Cloudflare WAN](https://developers.cloudflare.com/cloudflare-wan/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-07-appliance-source-based-breakout/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Breakout and traffic prioritization rules on the Cloudflare One Appliance can now match by **source** in addition to destination application. You can pin breakout or priority behavior to:
 

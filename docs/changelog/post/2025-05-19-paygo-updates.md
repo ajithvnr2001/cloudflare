@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-05-19-paygo-updates/
 title: Increased limits for Cloudflare for SaaS and Secrets Store free and Pay-as-you-go plans \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:12.429405+00:00
+fetched_at: 2026-10-10T14:38:52.185505+00:00
 ---
 
 # Increased limits for Cloudflare for SaaS and Secrets Store free and Pay-as-you-go plans · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [SSL/TLS](https://developers.cloudflare.com/ssl/)[Cloudflare for SaaS](https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/)[Secrets Store](https://developers.cloudflare.com/secrets-store/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-05-19-paygo-updates/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 With upgraded limits to [all free and paid plans ↗︎](https://www.cloudflare.com/plans/), you can now scale more easily with [Cloudflare for SaaS ↗︎](https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/) and [Secrets Store ↗︎](https://developers.cloudflare.com/secrets-store/).
 

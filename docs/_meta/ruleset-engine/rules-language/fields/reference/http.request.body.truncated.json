@@ -3,8 +3,5 @@
   "file": "ruleset-engine/rules-language/fields/reference/http.request.body.truncated.md",
   "title": "http.request.body.truncated \u00b7 Cloudflare Ruleset Engine docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:15:10.391980+00:00",
-  "html_len": 94020,
-  "md_len": 2312,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:32.858172+00:00"
 }

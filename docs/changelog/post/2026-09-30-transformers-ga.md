@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-30-transformers-ga/
 title: Transformers are now generally available \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:17.683560+00:00
+fetched_at: 2026-10-10T14:38:30.004749+00:00
 ---
 
 # Transformers are now generally available · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Logpush](https://developers.cloudflare.com/logs/logpush/)[Logs](https://developers.cloudflare.com/logs/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-30-transformers-ga/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Transformers are now generally available for supported Logpush datasets on Free, Pro, Business, and Enterprise plans. Use SQL to filter records, reshape fields, redact sensitive values, compute new fields, or add metadata before Logpush delivers each batch.
 

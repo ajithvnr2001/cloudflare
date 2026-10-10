@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-03-20-metrics-and-settings-dashboard/
 title: Observability for Workers VPC Services \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:42.010796+00:00
+fetched_at: 2026-10-10T14:38:41.960714+00:00
 ---
 
 # Observability for Workers VPC Services · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers VPC](https://developers.cloudflare.com/workers-vpc/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-03-20-metrics-and-settings-dashboard/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Each VPC Service now has a **Metrics** tab so you can monitor connection health and debug failures without leaving the dashboard.
 

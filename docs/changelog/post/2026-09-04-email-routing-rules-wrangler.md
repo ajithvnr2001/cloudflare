@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-04-email-routing-rules-wrangler/
 title: Manage Email Routing rules with Wrangler \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:12.454483+00:00
+fetched_at: 2026-10-10T14:38:31.747802+00:00
 ---
 
 # Manage Email Routing rules with Wrangler · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Email Service](https://developers.cloudflare.com/email-service/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-04-email-routing-rules-wrangler/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now manage Email Routing rules that route emails to Workers from your Wrangler configuration. Add literal addresses or a catch-all address to the top-level `addresses` field:
     
@@ -31,7 +31,7 @@ You can now manage Email Routing rules that route emails to Workers from your Wr
       "name": "invoice-handler",
       "main": "src/index.ts",
       // Set this to today's date
-      "compatibility_date": "2026-10-08",
+      "compatibility_date": "2026-10-10",
       "addresses": [
         "invoice@yourdomain.com"
       ]
@@ -41,7 +41,7 @@ You can now manage Email Routing rules that route emails to Workers from your Wr
     name = "invoice-handler"
     main = "src/index.ts"
     # Set this to today's date
-    compatibility_date = "2026-10-08"
+    compatibility_date = "2026-10-10"
     addresses = ["invoice@yourdomain.com"]
 
 When you run `wrangler deploy`, Wrangler creates rules for new addresses, updates existing rules managed by the Worker, and removes managed rules that are no longer in the configuration. Wrangler shows the planned changes and asks for confirmation before applying potentially destructive changes.

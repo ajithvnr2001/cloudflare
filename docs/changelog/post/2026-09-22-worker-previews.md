@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-22-worker-previews/
 title: Test every pull request in an isolated environment with Worker Previews \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:15.836361+00:00
+fetched_at: 2026-10-10T14:38:30.653202+00:00
 ---
 
 # Test every pull request in an isolated environment with Worker Previews · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-22-worker-previews/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now test every change you make in an isolated, production-like environment with [Worker Previews ↗︎](https://blog.cloudflare.com/worker-previews/). [Each Preview](https://developers.cloudflare.com/workers/previews/) runs under the same Worker with its own code, configuration, URL, and observability, isolated from production and every other Preview.
 

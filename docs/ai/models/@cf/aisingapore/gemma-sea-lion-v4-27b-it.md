@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/%40cf/aisingapore/gemma-sea-lion-v4-27b-it/
 title: gemma-sea-lion-v4-27b-it (aisingapore) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:44.421392+00:00
+fetched_at: 2026-10-10T14:39:23.670485+00:00
 ---
 
 # gemma-sea-lion-v4-27b-it (aisingapore) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ a
 
 Text Generation • aisingapore
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/%40cf/aisingapore/gemma-sea-lion-v4-27b-it/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `@cf/aisingapore/gemma-sea-lion-v4-27b-it`
 

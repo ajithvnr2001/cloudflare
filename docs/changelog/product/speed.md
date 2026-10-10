@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/speed/
 title: Speed Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:49.367879+00:00
+fetched_at: 2026-10-10T14:38:04.378661+00:00
 ---
 
 # Speed Changelog | Cloudflare Docs

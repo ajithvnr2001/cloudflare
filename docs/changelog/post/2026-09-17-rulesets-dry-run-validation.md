@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-17-rulesets-dry-run-validation/
 title: Validate Rulesets changes before deployment \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:14.858976+00:00
+fetched_at: 2026-10-10T14:38:30.996926+00:00
 ---
 
 # Validate Rulesets changes before deployment · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Rules](https://developers.cloudflare.com/rules/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-17-rulesets-dry-run-validation/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare Rules now validates ruleset changes before deployment, helping you catch invalid expressions, action parameters, permission issues, unavailable features, and quota limits without publishing the configuration.
 

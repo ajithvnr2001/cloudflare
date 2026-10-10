@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-23-traffic-destination-selector/
 title: Traffic Destination selector in Gateway policies \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:15.620142+00:00
+fetched_at: 2026-10-10T14:38:30.700899+00:00
 ---
 
 # Traffic Destination selector in Gateway policies · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Gateway](https://developers.cloudflare.com/cloudflare-one/traffic-policies/)[Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-23-traffic-destination-selector/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Gateway [HTTP](https://developers.cloudflare.com/cloudflare-one/traffic-policies/http-policies/) and [Network](https://developers.cloudflare.com/cloudflare-one/traffic-policies/network-policies/) policies now include a **Traffic Destination** selector that identifies how traffic exits Cloudflare. This allows administrators to write policies that target specific off-ramp methods - for example, applying different rules to traffic destined for the public Internet compared to traffic routed through Cloudflare Tunnel or Cloudflare WAN.
 

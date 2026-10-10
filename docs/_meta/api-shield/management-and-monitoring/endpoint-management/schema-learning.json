@@ -1,10 +1,7 @@
 {
   "url": "https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-management/schema-learning/",
   "file": "api-shield/management-and-monitoring/endpoint-management/schema-learning.md",
-  "title": "Schema learning \u00b7 Cloudflare API Shield docs",
+  "title": "Learn request schemas \u00b7 Cloudflare API Shield docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:05:17.953169+00:00",
-  "html_len": 112023,
-  "md_len": 4525,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:39:26.453025+00:00"
 }

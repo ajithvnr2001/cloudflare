@@ -3,8 +3,5 @@
   "file": "changelog/post/2026-05-18-local-dev-tunnels.md",
   "title": "Share local dev servers through Cloudflare Tunnel in Wrangler and Vite \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:53.553799+00:00",
-  "html_len": 63537,
-  "md_len": 2071,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:38.129035+00:00"
 }

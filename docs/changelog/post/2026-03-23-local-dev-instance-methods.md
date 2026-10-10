@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-03-23-local-dev-instance-methods/
 title: Workflow instances now support pause(), resume(), restart(), and terminate() methods in local development \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:42.322637+00:00
+fetched_at: 2026-10-10T14:38:41.741235+00:00
 ---
 
 # Workflow instances now support pause(), resume(), restart(), and terminate() methods in local development · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workflows](https://developers.cloudflare.com/workflows/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-03-23-local-dev-instance-methods/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Workflow instance methods `pause()`, `resume()`, `restart()`, and `terminate()` are now available in local development when using `wrangler dev`.
 

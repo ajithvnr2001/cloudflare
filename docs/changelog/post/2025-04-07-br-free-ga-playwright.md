@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-04-07-br-free-ga-playwright/
 title: Browser Rendering REST API is Generally Available, with new endpoints and a free tier \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:08.610759+00:00
+fetched_at: 2026-10-10T14:38:53.449513+00:00
 ---
 
 # Browser Rendering REST API is Generally Available, with new endpoints and a free tier · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Browser Run](https://developers.cloudflare.com/browser-run/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-04-07-br-free-ga-playwright/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We’re excited to announce Browser Rendering is now available on the [Workers Free plan ↗︎](https://www.cloudflare.com/plans/developer-platform/), making it even easier to prototype and experiment with web search and headless browser use-cases when building applications on Workers.
 

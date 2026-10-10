@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-08-ai-search-list-items-key-filter/
 title: Filter AI Search list items by exact object key \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:01.993452+00:00
+fetched_at: 2026-10-10T14:38:35.255470+00:00
 ---
 
 # Filter AI Search list items by exact object key · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Search](https://developers.cloudflare.com/ai-search/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-08-ai-search-list-items-key-filter/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 In [AI Search](https://developers.cloudflare.com/ai-search/), you can upload files to an instance, or connect a [data source](https://developers.cloudflare.com/ai-search/configuration/data-source/) such as an R2 bucket, to make your content searchable with natural language. Each file becomes an **item** identified by an object **key** (its filename or path). The [list items endpoint](https://developers.cloudflare.com/ai-search/api/items/rest-api/) returns the items in an instance.
 

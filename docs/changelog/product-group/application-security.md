@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product-group/application-security/
 title: Application security Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:24.202459+00:00
+fetched_at: 2026-10-10T14:38:25.207219+00:00
 ---
 
 # Application security Changelog | Cloudflare Docs
@@ -230,6 +230,52 @@ Zaraz
 No products found.
 
 [ View RSS feeds ](https://developers.cloudflare.com/fundamentals/new-features/available-rss-feeds/)[ Subscribe to RSS ](https://developers.cloudflare.com/changelog/rss/index.xml)
+
+Oct 9, 2026
+
+## [Failed detections field available in Rules](https://developers.cloudflare.com/changelog/post/2026-10-09-failed-detections/)
+
+[WAF](https://developers.cloudflare.com/waf/)[Rules](https://developers.cloudflare.com/rules/)
+
+You can now use `cf.appsec.request.failed_detections` to control how your rules handle requests when a security detection reports a failure.
+
+The field is an `Array<String>` of detection IDs that reports failures from content scanning, WAF attack score, attack signature detection, leaked credentials detection, and AI prompt detections for personally identifiable information (PII), prompt injection, custom topics, and unsafe topics.
+
+The field does not alter the existing behavior of detections. Use it in rules to choose how to handle requests with reported failures.
+
+When no failures are reported, the field returns `[]`. You can use it on all plans, but your plan must still include the detections and rule features you want to use.
+
+Supported rules:
+
+  * Custom rules at the zone and account levels
+  * Rate limiting rules at the zone and account levels
+  * Request Header Transform Rules at the zone level
+
+
+
+Match any reported failure:
+    
+    
+    len(cf.appsec.request.failed_detections) gt 0
+
+Match a reported leaked credentials detection failure:
+    
+    
+    any(cf.appsec.request.failed_detections[*] eq "waf_credential_check")
+
+For more information, refer to the [Failed detections field reference](https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.appsec.request.failed_detections/).
+
+Oct 7, 2026
+
+## [Updated unsafe topic detection for AI Security for Apps](https://developers.cloudflare.com/changelog/post/2026-10-07-ai-security-for-apps-unsafe-topic-detection/)
+
+[WAF](https://developers.cloudflare.com/waf/)
+
+AI Security for Apps now supports an updated set of categories for detecting unsafe topics in incoming prompts.
+
+The values available in [`cf.llm.prompt.unsafe_topic_categories`](https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.llm.prompt.unsafe_topic_categories/) have changed. Existing WAF custom rules remain valid, but rules that reference a removed or renamed category will no longer match that category. Review any rules that use this field and update their expressions to use the currently supported values.
+
+For category descriptions and configuration guidance, refer to [Unsafe topics](https://developers.cloudflare.com/waf/detections/ai-security-for-apps/unsafe-topics/).
 
 Oct 6, 2026
 
@@ -673,6 +719,18 @@ For setup steps, refer to [Add routes](https://developers.cloudflare.com/cloudfl
 
 Sep 1, 2026
 
+## [Updated PII detection for AI Security for Apps](https://developers.cloudflare.com/changelog/post/2026-09-01-ai-security-for-apps-pii-detection/)
+
+[WAF](https://developers.cloudflare.com/waf/)
+
+AI Security for Apps now supports an updated set of categories for detecting personally identifiable information (PII) in incoming prompts.
+
+The values available in [`cf.llm.prompt.pii_categories`](https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.llm.prompt.pii_categories/) have changed. Existing WAF custom rules remain valid, but rules that reference a removed or renamed category will no longer match that category. Review any rules that use this field and update their expressions to use the currently supported values.
+
+For the complete category list and configuration guidance, refer to [PII detection](https://developers.cloudflare.com/waf/detections/ai-security-for-apps/pii-detection/).
+
+Sep 1, 2026
+
 ## [WAF Release - 2026-09-01](https://developers.cloudflare.com/changelog/post/2026-09-01-waf-release/)
 
 [WAF](https://developers.cloudflare.com/waf/)
@@ -687,56 +745,6 @@ Ruleset| Rule ID| Legacy Rule ID| Description| Previous Action| New Action| Comm
 ---|---|---|---|---|---|---  
 Cloudflare Managed Ruleset| ...bcfa0966| N/A| SQLi - WHERE Comparison With WITH Clause| Log| Block| This is a new detection.  
   
-Aug 27, 2026
-
-## [Increased limits for JWT validation configurations](https://developers.cloudflare.com/changelog/post/2026-08-27-jwt-validation-limits/)
-
-[API Shield](https://developers.cloudflare.com/api-shield/)
-
-API Shield [JSON Web Token validation](https://developers.cloudflare.com/api-shield/security/jwt-validation/) now supports 32 token configurations per zone by default. Each token configuration can contain up to 16 keys.
-
-These increased limits support more JWT configurations and provide additional capacity for key rotation.
-
-Refer to [Configure JWT validation via the API](https://developers.cloudflare.com/api-shield/security/jwt-validation/api/) for configuration details.
-
-Aug 26, 2026
-
-## [WAF Release - 2026-08-26 - Emergency](https://developers.cloudflare.com/changelog/post/2026-08-26-emergency-waf-release/)
-
-[WAF](https://developers.cloudflare.com/waf/)
-
-This emergency release updates an existing Next.js remote code execution rule to identify CVE-2026-75604 and adds a new rule for remote code execution in the Next.js Image Optimizer via crafted AVIF images.
-
-**Key Findings**
-
-  * CVE-2026-75604 affects Windows-hosted Next.js applications using both the Pages Router and App Router without Cache Components and can lead to unauthenticated remote code execution.
-
-  * GHSA-2xp9-vwfh-vxw4 affects the Next.js Image Optimizer and can lead to unauthenticated remote code execution when it optimizes an attacker-controlled AVIF image.
-
-
-
-
-**Impact**
-
-Next.js recommends updating to version 16.3.3 or 15.5.24 to address these vulnerabilities.
-
-Ruleset| Rule ID| Legacy Rule ID| Description| Previous Action| New Action| Comments  
----|---|---|---|---|---|---  
-Cloudflare Managed Ruleset| ...2ca6cce3| N/A| Next.js - Remote Code Execution - CVE:CVE-2026-75604| Block| N/A| Rule metadata description refined. Detection unchanged.  
-Cloudflare Managed Ruleset| ...80256efe| N/A| Next.js - Image Optimizer Remote Code Execution via Crafted AVIF| N/A| Block| This is a new detection.  
-  
-Aug 25, 2026
-
-## [Symmetric key support for JWT validation](https://developers.cloudflare.com/changelog/post/2026-08-25-symmetric-jwt-validation/)
-
-[API Shield](https://developers.cloudflare.com/api-shield/)
-
-API Shield [JSON Web Token validation](https://developers.cloudflare.com/api-shield/security/jwt-validation/) now supports symmetric keys that use the `HS256`, `HS384`, and `HS512` algorithms. You can configure HMAC verification keys in the Cloudflare dashboard or with the Cloudflare API.
-
-Cloudflare never stores symmetric credentials in plaintext. API responses do not include the credential.
-
-Refer to [Configure JWT validation via the API](https://developers.cloudflare.com/api-shield/security/jwt-validation/api/#credentials) for supported key formats and credential requirements.
-
 ← Prev
 
 1[2](https://developers.cloudflare.com/changelog/product-group/application-security/2/)…[9](https://developers.cloudflare.com/changelog/product-group/application-security/9/)

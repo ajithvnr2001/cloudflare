@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-07-17-vite-plugin-vite-7-support/
 title: The Cloudflare Vite plugin now supports Vite 7 \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:17.079832+00:00
+fetched_at: 2026-10-10T14:38:50.859409+00:00
 ---
 
 # The Cloudflare Vite plugin now supports Vite 7 · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-07-17-vite-plugin-vite-7-support/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Vite 7 ↗︎](https://vite.dev/blog/announcing-vite7) is now supported in the Cloudflare Vite plugin. See the [Vite changelog ↗︎](https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md#700-2025-06-24) for a list of changes.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-28-mesh-ha-replica-ui/
 title: High availability replica management for Cloudflare Mesh \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:55.047906+00:00
+fetched_at: 2026-10-10T14:38:37.670473+00:00
 ---
 
 # High availability replica management for Cloudflare Mesh · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare Mesh](https://developers.cloudflare.com/mesh/)[Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-28-mesh-ha-replica-ui/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The [Cloudflare Mesh](https://developers.cloudflare.com/mesh/) dashboard now shows per-replica details for [high availability](https://developers.cloudflare.com/mesh/features/high-availability/) nodes. You can see which replica is active, view each replica's Mesh IP and connection details, and manually trigger failover — all from the node detail page.
 

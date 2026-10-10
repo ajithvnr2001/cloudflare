@@ -3,8 +3,5 @@
   "file": "changelog/post/2026-01-13-wrangler-types-multi-environment.md",
   "title": "`wrangler types` now generates types for all environments \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:33.561277+00:00",
-  "html_len": 64776,
-  "md_len": 1945,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:45.251308+00:00"
 }

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/openai/gpt-4.1-mini/
 title: GPT-4.1 mini (OpenAI) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:59.507274+00:00
+fetched_at: 2026-10-10T14:39:12.328180+00:00
 ---
 
 # GPT-4.1 mini (OpenAI) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:04:59.507274+00:00
 
 Text Generation • OpenAI
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/openai/gpt-4.1-mini/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `openai/gpt-4.1-mini`
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/email-service/
 title: Email Service Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:45.384220+00:00
+fetched_at: 2026-10-10T14:38:08.225093+00:00
 ---
 
 # Email Service Changelog | Cloudflare Docs
@@ -277,7 +277,7 @@ You can now manage Email Routing rules that route emails to Workers from your Wr
       "name": "invoice-handler",
       "main": "src/index.ts",
       // Set this to today's date
-      "compatibility_date": "2026-10-08",
+      "compatibility_date": "2026-10-10",
       "addresses": [
         "invoice@yourdomain.com"
       ]
@@ -287,7 +287,7 @@ You can now manage Email Routing rules that route emails to Workers from your Wr
     name = "invoice-handler"
     main = "src/index.ts"
     # Set this to today's date
-    compatibility_date = "2026-10-08"
+    compatibility_date = "2026-10-10"
     addresses = ["invoice@yourdomain.com"]
 
 When you run `wrangler deploy`, Wrangler creates rules for new addresses, updates existing rules managed by the Worker, and removes managed rules that are no longer in the configuration. Wrangler shows the planned changes and asks for confirmation before applying potentially destructive changes.

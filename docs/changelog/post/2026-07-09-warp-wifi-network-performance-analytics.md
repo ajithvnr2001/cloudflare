@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-09-warp-wifi-network-performance-analytics/
 title: Wi-Fi signal and network performance analytics for Cloudflare One Client devices \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:02.601542+00:00
+fetched_at: 2026-10-10T14:38:35.146623+00:00
 ---
 
 # Wi-Fi signal and network performance analytics for Cloudflare One Client devices · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Digital Experience Monitoring](https://developers.cloudflare.com/cloudflare-one/insights/dex/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-09-warp-wifi-network-performance-analytics/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Digital Experience Monitoring (DEX)](https://developers.cloudflare.com/cloudflare-one/insights/dex/) provides visibility into device, network, and application performance across your Cloudflare SASE deployment.
 

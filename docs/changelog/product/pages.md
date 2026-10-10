@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/pages/
 title: Pages Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:48.055822+00:00
+fetched_at: 2026-10-10T14:38:05.854050+00:00
 ---
 
 # Pages Changelog | Cloudflare Docs

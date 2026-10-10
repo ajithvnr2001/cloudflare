@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/ip.src.postal_code/
 title: ip.src.postal_code \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:13.809191+00:00
+fetched_at: 2026-10-10T14:37:30.547985+00:00
 ---
 
 # ip.src.postal_code · Cloudflare Ruleset Engine docs

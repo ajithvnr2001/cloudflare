@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-12-18-cached-request-classification/
 title: Improved accuracy of cached request classification in analytics \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:32.200338+00:00
+fetched_at: 2026-10-10T14:38:45.642792+00:00
 ---
 
 # Improved accuracy of cached request classification in analytics · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Analytics](https://developers.cloudflare.com/analytics/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-12-18-cached-request-classification/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The cached/uncached classification logic used in Zone Overview analytics has been updated to improve accuracy.
 

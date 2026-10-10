@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/glossary/
 title: Glossary | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:11:28.391963+00:00
+fetched_at: 2026-10-10T14:37:58.911269+00:00
 ---
 
 # Glossary | Cloudflare Docs

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers-ai/models/apertus-v1.5-8b/
 title: apertus-v1.5-8b (swiss-ai) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:01.263934+00:00
+fetched_at: 2026-10-10T14:37:24.251235+00:00
 ---
 
 # apertus-v1.5-8b (swiss-ai) · Cloudflare AI docs · Cloudflare Workers AI docs
@@ -21,7 +21,7 @@ s
 
 Text Generation • swiss-ai
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers-ai/models/apertus-v1.5-8b/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `@cf/swiss-ai/apertus-v1.5-8b`
 

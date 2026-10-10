@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-03-11-process-env-support/
 title: Access your Worker's environment variables from process.env \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:06.264330+00:00
+fetched_at: 2026-10-10T14:38:54.083998+00:00
 ---
 
 # Access your Worker's environment variables from process.env · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-03-11-process-env-support/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now access [environment variables](https://developers.cloudflare.com/workers/configuration/environment-variables/) and [secrets](https://developers.cloudflare.com/workers/configuration/secrets/) on [`process.env`](https://developers.cloudflare.com/workers/runtime-apis/nodejs/process/#processenv) when using the [`nodejs_compat` compatibility flag](https://developers.cloudflare.com/workers/configuration/compatibility-flags/#nodejs-compatibility-flag).
     

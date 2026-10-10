@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/bria/remove-background/
 title: Remove Background (bria) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:53.995177+00:00
+fetched_at: 2026-10-10T14:39:16.184258+00:00
 ---
 
 # Remove Background (bria) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ b
 
 Image-to-Image • bria
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/bria/remove-background/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `bria/remove-background`
 

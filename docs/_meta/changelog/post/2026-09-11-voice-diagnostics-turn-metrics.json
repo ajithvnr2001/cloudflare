@@ -3,8 +3,5 @@
   "file": "changelog/post/2026-09-11-voice-diagnostics-turn-metrics.md",
   "title": "Inspect Voice Agent turn latency and outcomes \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:07:13.587442+00:00",
-  "html_len": 85768,
-  "md_len": 4097,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:31.292995+00:00"
 }

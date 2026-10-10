@@ -3,8 +3,5 @@
   "file": "ruleset-engine/rules-language/fields/reference/cf.api_gateway.fallthrough_detected.md",
   "title": "cf.api_gateway.fallthrough_detected \u00b7 Cloudflare Ruleset Engine docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:15:02.633165+00:00",
-  "html_len": 91785,
-  "md_len": 1124,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:35.831740+00:00"
 }

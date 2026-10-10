@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/openai/gpt-image-2/
 title: GPT Image 2 (OpenAI) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:03.629069+00:00
+fetched_at: 2026-10-10T14:39:08.788829+00:00
 ---
 
 # GPT Image 2 (OpenAI) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:05:03.629069+00:00
 
 Text-to-Image • OpenAI
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/openai/gpt-image-2/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `openai/gpt-image-2`
 

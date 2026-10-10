@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers/languages/typescript/
 title: Write Cloudflare Workers in TypeScript \u00b7 Cloudflare Workers docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:33.104611+00:00
+fetched_at: 2026-10-10T14:39:26.054404+00:00
 ---
 
 # Write Cloudflare Workers in TypeScript · Cloudflare Workers docs
@@ -18,7 +18,7 @@ fetched_at: 2026-10-08T07:17:33.104611+00:00
 
 # TypeScript
 
-Last updated Jul 3, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers/languages/typescript/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 9, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Overview Resources
 
@@ -67,6 +67,8 @@ Note
 If you are running a version of Wrangler that is greater than `3.66.0` but below `4.0.0`, you will need to include the `--experimental-include-runtime` flag. During its experimental release, runtime types were output to a separate file (`.wrangler/types/runtime.d.ts` by default). If you have an older version of Wrangler, you can access runtime types through the `@cloudflare/workers-types` package.
 
 This will generate a `d.ts` file and (by default) save it to `worker-configuration.d.ts`. This will include `Env` types based on your Worker bindings _and_ runtime types based on your Worker's compatibility date and flags.
+
+`worker-configuration.d.ts` is generated and will be overwritten when you rerun `wrangler types`, so do not edit it manually. Define custom environment types in source-owned TypeScript, separate from the generated file. Use declaration merging with the public `Cloudflare.Env` interface.
 
 You should then add that file to your `tsconfig.json`'s `compilerOptions.types` array. If you have the `nodejs_compat` compatibility flag, you should also install `@types/node`.
 
@@ -194,7 +196,7 @@ We recommend you commit your generated types file for use in CI. You can run `wr
     - run: pnpm run build
     - run: pnpm test
 
-Alternatively, if you commit your generated types file and want to verify it stays up-to-date in CI, you can use the `--check` flag:
+Alternatively, if you commit your generated types file, use `--check` in CI:
     
     
     - run: npx wrangler types --check
@@ -211,7 +213,7 @@ Alternatively, if you commit your generated types file and want to verify it sta
     - run: pnpm run build
     - run: pnpm test
 
-This fails the CI job if the committed types file is out-of-date, prompting developers to regenerate and commit the updated types.
+`--check` compares the generated file's recorded environment/configuration hash and runtime header with the current Wrangler configuration and runtime inputs. It does not compare or validate the generated file body. It fails the CI job when the recorded inputs are out of date, prompting developers to regenerate and commit the updated types.
 
 ### Resources
 

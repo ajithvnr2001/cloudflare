@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-15-budget-alerts-default-on/
 title: Budget alerts now on by default for Pay-as-you-go accounts \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:58.021040+00:00
+fetched_at: 2026-10-10T14:38:36.574222+00:00
 ---
 
 # Budget alerts now on by default for Pay-as-you-go accounts · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Billing](https://developers.cloudflare.com/billing/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-15-budget-alerts-default-on/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We are turning on budget alerts by default for eligible Pay-as-you-go accounts. If your account does not already have a budget alert, Cloudflare will create one for you with a $10 account-level threshold. Your default alert will enable at the turn of your next billing cycle, so it will not fire based on usage you have already incurred.
 

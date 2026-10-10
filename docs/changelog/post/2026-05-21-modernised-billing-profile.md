@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-21-modernised-billing-profile/
 title: Modernized Billing Profile with new payment options \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:54.225302+00:00
+fetched_at: 2026-10-10T14:38:37.904109+00:00
 ---
 
 # Modernized Billing Profile with new payment options · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Billing](https://developers.cloudflare.com/billing/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-21-modernised-billing-profile/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The [Billing Profile](https://developers.cloudflare.com/billing/get-started/update-billing-info/) now has a modern UI and a single space that unifies billing information, payment method management and an enhanced subscriptions view under a single **Subscriptions** tab.
 

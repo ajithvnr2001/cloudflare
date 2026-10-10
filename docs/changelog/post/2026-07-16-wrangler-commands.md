@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-16-wrangler-commands/
 title: Manage Flagship from the command line with Wrangler \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:03.419545+00:00
+fetched_at: 2026-10-10T14:38:34.727957+00:00
 ---
 
 # Manage Flagship from the command line with Wrangler · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Flagship](https://developers.cloudflare.com/flagship/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-16-wrangler-commands/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 **[Wrangler](https://developers.cloudflare.com/workers/wrangler/)** now includes `wrangler flagship`, a command suite for managing [Flagship](https://developers.cloudflare.com/flagship/) apps and feature flags from your terminal.
 

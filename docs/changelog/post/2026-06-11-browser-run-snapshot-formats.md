@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-11-browser-run-snapshot-formats/
 title: New formats parameter for the Browser Run /snapshot endpoint \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:57.577266+00:00
+fetched_at: 2026-10-10T14:38:36.676123+00:00
 ---
 
 # New formats parameter for the Browser Run /snapshot endpoint · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Browser Run](https://developers.cloudflare.com/browser-run/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-11-browser-run-snapshot-formats/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Browser Run](https://developers.cloudflare.com/browser-run/)'s [`/snapshot` endpoint](https://developers.cloudflare.com/browser-run/quick-actions/snapshot/) now supports a `formats` parameter that lets you return multiple page formats in a single API call. Previously, `/snapshot` returned only HTML content and a screenshot. You can now also include Markdown and the accessibility tree in the same response.
 

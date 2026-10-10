@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-03-03-sandbox-watch-file-events/
 title: Real-time file watching in Sandboxes \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:39.530002+00:00
+fetched_at: 2026-10-10T14:38:42.830225+00:00
 ---
 
 # Real-time file watching in Sandboxes · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Agents](https://developers.cloudflare.com/agents/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-03-03-sandbox-watch-file-events/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Sandboxes](https://developers.cloudflare.com/sandbox/) now support real-time filesystem watching via `sandbox.watch()`. The method returns a [Server-Sent Events ↗︎](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events) stream backed by native inotify, so your Worker receives `create`, `modify`, `delete`, and `move` events as they happen inside the container.
 

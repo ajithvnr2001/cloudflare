@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-01-ai-security-for-apps-pii-detection/
 title: Updated PII detection for AI Security for Apps \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-09T10:55:29.974522+00:00
+fetched_at: 2026-10-10T14:38:31.884435+00:00
 ---
 
 # Updated PII detection for AI Security for Apps · Changelog

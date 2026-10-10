@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-03-24-docker-hub-images/
 title: Use Docker Hub images with Containers \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:42.696078+00:00
+fetched_at: 2026-10-10T14:38:41.704182+00:00
 ---
 
 # Use Docker Hub images with Containers · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Containers](https://developers.cloudflare.com/containers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-03-24-docker-hub-images/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Containers now support [Docker Hub ↗︎](https://hub.docker.com/) images. You can use a fully qualified Docker Hub image reference in your [Wrangler configuration ↗︎](https://developers.cloudflare.com/workers/wrangler/configuration/#containers) instead of first pushing the image to Cloudflare Registry.
     

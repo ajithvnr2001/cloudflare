@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-05-30-d1-rest-api-latency/
 title: 50-500ms Faster D1 REST API Requests \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:13.082888+00:00
+fetched_at: 2026-10-10T14:38:51.952854+00:00
 ---
 
 # 50-500ms Faster D1 REST API Requests · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [D1](https://developers.cloudflare.com/d1/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-05-30-d1-rest-api-latency/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Users using Cloudflare's [REST API](https://developers.cloudflare.com/api/resources/d1/) to query their D1 database can see lower end-to-end request latency now that D1 authentication is performed at the closest Cloudflare network data center that received the request. Previously, authentication required D1 REST API requests to proxy to Cloudflare's core, centralized data centers, which added network round trips and latency.
 

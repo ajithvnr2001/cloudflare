@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-06-05-open-next-size/
 title: Performance and size optimization for the Cloudflare adapter for Open Next \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:13.610789+00:00
+fetched_at: 2026-10-10T14:38:51.860357+00:00
 ---
 
 # Performance and size optimization for the Cloudflare adapter for Open Next · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-06-05-open-next-size/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 With the release of the Cloudflare adapter for Open Next v1.0.0 in May 2025, we already had followups plans [to improve performance and size ↗︎](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/#1-0-and-the-road-ahead).
 

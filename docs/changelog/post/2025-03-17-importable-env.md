@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-03-17-importable-env/
 title: Import `env` to access bindings in your Worker's global scope \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:06.325625+00:00
+fetched_at: 2026-10-10T14:38:54.020290+00:00
 ---
 
 # Import `env` to access bindings in your Worker's global scope · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-03-17-importable-env/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now access [bindings](https://developers.cloudflare.com/workers/runtime-apis/bindings/) from anywhere in your Worker by importing the `env` object from `cloudflare:workers`.
 

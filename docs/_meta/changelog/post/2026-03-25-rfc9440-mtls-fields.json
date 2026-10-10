@@ -3,8 +3,5 @@
   "file": "changelog/post/2026-03-25-rfc9440-mtls-fields.md",
   "title": "New mTLS certificate fields for Transform Rules \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:43.244758+00:00",
-  "html_len": 69708,
-  "md_len": 4411,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:41.553242+00:00"
 }

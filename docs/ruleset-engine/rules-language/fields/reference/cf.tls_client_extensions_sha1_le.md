@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.tls_client_extensions_sha1_le/
 title: cf.tls_client_extensions_sha1_le \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:07.485806+00:00
+fetched_at: 2026-10-10T14:37:34.052268+00:00
 ---
 
 # cf.tls_client_extensions_sha1_le · Cloudflare Ruleset Engine docs

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-02-12-quick-editor-dev-tools-deprecation/
 title: Quick Editor devtools replaced with log viewer \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:36.692672+00:00
+fetched_at: 2026-10-10T14:38:43.980781+00:00
 ---
 
 # Quick Editor devtools replaced with log viewer · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-02-12-quick-editor-dev-tools-deprecation/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare has deprecated the Workers Quick Editor dev tools inspector and replaced it with a lightweight log viewer.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.waf.score.xss/
 title: cf.waf.score.xss \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:10.561690+00:00
+fetched_at: 2026-10-10T14:37:33.493691+00:00
 ---
 
 # cf.waf.score.xss · Cloudflare Ruleset Engine docs

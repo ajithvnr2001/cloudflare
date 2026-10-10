@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers/previews/test-and-debug/
 title: Test and debug \u00b7 Cloudflare Workers docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:40.676560+00:00
+fetched_at: 2026-10-10T14:39:23.849268+00:00
 ---
 
 # Test and debug · Cloudflare Workers docs
@@ -18,7 +18,7 @@ fetched_at: 2026-10-08T07:17:40.676560+00:00
 
 # Test and debug
 
-Last updated Oct 2, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers/previews/test-and-debug/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 10, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewLogs and tracesTail WorkersMetricsBrowser evidenceExporting dataCurrent limitations
 
@@ -134,7 +134,7 @@ Useful fields include `scriptName` (Worker name), `previewSlug` (Preview name), 
 
 Per-Preview metrics are also visible in the dashboard under the Preview's **Metrics** tab.
 
-You can also query Preview observability data using the [Workers Observability MCP server ↗︎](https://github.com/cloudflare/mcp-server-cloudflare/tree/main/apps/workers-observability).
+You can also query Preview observability data using the [Cloudflare API MCP server](https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/#cloudflare-api-mcp-server).
 
 ## Browser evidence
 

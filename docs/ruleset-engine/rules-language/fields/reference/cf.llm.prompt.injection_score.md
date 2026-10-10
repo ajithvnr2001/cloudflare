@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.llm.prompt.injection_score/
 title: cf.llm.prompt.injection_score \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:03.669689+00:00
+fetched_at: 2026-10-10T14:37:35.376178+00:00
 ---
 
 # cf.llm.prompt.injection_score · Cloudflare Ruleset Engine docs

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/%40cf/qwen/qwq-32b/
 title: qwq-32b (Qwen) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:48.629049+00:00
+fetched_at: 2026-10-10T14:39:20.454712+00:00
 ---
 
 # qwq-32b (Qwen) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:04:48.629049+00:00
 
 Text Generation • Qwen
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/%40cf/qwen/qwq-32b/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `@cf/qwen/qwq-32b`
 

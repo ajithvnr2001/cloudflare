@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/realtime/realtimekit/core/api-reference/rtkmeta/
 title: RTKMeta \u00b7 Cloudflare Realtime docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:12:56.543038+00:00
+fetched_at: 2026-10-10T14:37:57.838434+00:00
 ---
 
 # RTKMeta · Cloudflare Realtime docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:12:56.543038+00:00
 
 # RTKMeta
 
-Last updated Jul 22, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/realtime/realtimekit/core/api-reference/rtkmeta/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Jul 22, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Overview meeting.meta.selfActiveTab meeting.meta.broadcastTabChanges meeting.meta.viewType meeting.meta.meetingStartedTimestamp meeting.meta.meetingTitle meeting.meta.sessionId meeting.meta.meetingId meeting.meta.setBroadcastTabChanges(broadcastTabChanges) meeting.meta.setSelfActiveTab(spotlightTab, tabChangeSource)
 

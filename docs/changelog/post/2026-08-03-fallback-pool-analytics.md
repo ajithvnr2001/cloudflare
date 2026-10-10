@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-08-03-fallback-pool-analytics/
 title: See fallback pool traffic separately in load balancing analytics \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:05.900431+00:00
+fetched_at: 2026-10-10T14:38:33.906845+00:00
 ---
 
 # See fallback pool traffic separately in load balancing analytics · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Load Balancing](https://developers.cloudflare.com/load-balancing/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-08-03-fallback-pool-analytics/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Load balancing analytics now shows traffic served by your [fallback pool](https://developers.cloudflare.com/load-balancing/understand-basics/health-details/#fallback-pools) separately from traffic routed to the same pool by normal steering.
 

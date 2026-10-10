@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-07-09-usage-tracking/
 title: Usage tracking \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:16.819391+00:00
+fetched_at: 2026-10-10T14:38:50.972230+00:00
 ---
 
 # Usage tracking · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Log Explorer](https://developers.cloudflare.com/log-explorer/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-07-09-usage-tracking/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Log Explorer](https://developers.cloudflare.com/log-explorer/) customers can now monitor their data ingestion volume to keep track of their billing. Monthly usage is displayed at the top of the [Log Search](https://developers.cloudflare.com/log-explorer/log-search/) and [Manage Datasets](https://developers.cloudflare.com/log-explorer/manage-datasets/) screens in Log Explorer.
 

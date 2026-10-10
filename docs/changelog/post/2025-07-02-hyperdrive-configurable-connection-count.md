@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-07-02-hyperdrive-configurable-connection-count/
 title: Hyperdrive now supports configuring the amount of database connections \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:16.135646+00:00
+fetched_at: 2026-10-10T14:38:51.117274+00:00
 ---
 
 # Hyperdrive now supports configuring the amount of database connections · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Hyperdrive](https://developers.cloudflare.com/hyperdrive/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-07-02-hyperdrive-configurable-connection-count/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now specify the number of connections your Hyperdrive configuration uses to connect to your origin database.
 

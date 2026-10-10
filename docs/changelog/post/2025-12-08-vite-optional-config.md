@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-12-08-vite-optional-config/
 title: Wrangler config is optional when using Vite plugin \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:31.253678+00:00
+fetched_at: 2026-10-10T14:38:46.022694+00:00
 ---
 
 # Wrangler config is optional when using Vite plugin · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-12-08-vite-optional-config/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 When using the [Cloudflare Vite plugin](https://developers.cloudflare.com/workers/vite-plugin/) to build and deploy Workers, a Wrangler configuration file is now optional for assets-only (static) sites. If no `wrangler.toml`, `wrangler.json`, or `wrangler.jsonc` file is found, the plugin generates sensible defaults for an assets-only site. The `name` is based on the `package.json` or the project directory name, and the `compatibility_date` uses the latest date supported by your installed Miniflare version.
 

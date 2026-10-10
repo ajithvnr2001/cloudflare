@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-08-gif-bmp-image-support/
 title: Workers AI toMarkdown and AI Search now supports GIF and BMP image conversion \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:01.965818+00:00
+fetched_at: 2026-10-10T14:38:35.278718+00:00
 ---
 
 # Workers AI toMarkdown and AI Search now supports GIF and BMP image conversion · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers AI](https://developers.cloudflare.com/workers-ai/)[AI Search](https://developers.cloudflare.com/ai-search/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-08-gif-bmp-image-support/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Workers AI [Markdown conversion](https://developers.cloudflare.com/workers-ai/features/markdown-conversion/) (`toMarkdown`) now supports `.gif` and `.bmp` image files, in addition to the JPEG, PNG, WebP, and SVG formats already supported.
 

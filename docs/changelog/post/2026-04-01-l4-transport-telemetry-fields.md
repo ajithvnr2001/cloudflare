@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-01-l4-transport-telemetry-fields/
 title: New L4 transport telemetry fields in Workers \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:44.143515+00:00
+fetched_at: 2026-10-10T14:38:41.321378+00:00
 ---
 
 # New L4 transport telemetry fields in Workers · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-01-l4-transport-telemetry-fields/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Three new properties are now available on `request.cf` in Workers that expose Layer 4 transport telemetry from the client connection. These properties let your Worker make decisions based on real-time connection quality signals — such as round-trip time and data delivery rate — without requiring any client-side changes.
 

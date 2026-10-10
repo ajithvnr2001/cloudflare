@@ -3,8 +3,5 @@
   "file": "ruleset-engine/rules-language/fields/reference/cf.tls_client_auth.cert_subject_dn_legacy.md",
   "title": "cf.tls_client_auth.cert_subject_dn_legacy \u00b7 Cloudflare Ruleset Engine docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:15:07.217430+00:00",
-  "html_len": 92425,
-  "md_len": 1367,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:34.188354+00:00"
 }

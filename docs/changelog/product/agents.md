@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/agents/
 title: Agents Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:39.756954+00:00
+fetched_at: 2026-10-10T14:38:13.609458+00:00
 ---
 
 # Agents Changelog | Cloudflare Docs
@@ -230,6 +230,16 @@ Zaraz
 No products found.
 
 [ View RSS feeds ](https://developers.cloudflare.com/fundamentals/new-features/available-rss-feeds/)[ Subscribe to RSS ](https://developers.cloudflare.com/changelog/rss/index.xml)
+
+Oct 10, 2026
+
+## [Cloudflare API MCP server serves Cloudflare skills](https://developers.cloudflare.com/changelog/post/2026-10-10-cloudflare-mcp-skills/)
+
+[Agents](https://developers.cloudflare.com/agents/)
+
+The [Cloudflare API MCP server](https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/#cloudflare-api-mcp-server) now serves [Cloudflare skills ↗︎](https://github.com/cloudflare/skills) through the [Skills over MCP extension ↗︎](https://modelcontextprotocol.io/extensions/skills/overview). MCP clients that support the extension discover the skills with `skills/list` and read their files at `skill://<name>/<path>`.
+
+To use them, add `https://mcp.cloudflare.com/mcp` to an [MCP client that supports the extension ↗︎](https://modelcontextprotocol.io/extensions/client-matrix).
 
 Oct 2, 2026
 
@@ -549,7 +559,7 @@ In the example, `env.AUTH_SERVER.validateToken` is that Service Binding call. Th
     	"name": "calendar-mcp",
     	"main": "src/index.ts",
     	// Set this to today's date
-    	"compatibility_date": "2026-10-08",
+    	"compatibility_date": "2026-10-10",
     	"services": [
     		{
     			"binding": "AUTH_SERVER",
@@ -563,7 +573,7 @@ In the example, `env.AUTH_SERVER.validateToken` is that Service Binding call. Th
     name = "calendar-mcp"
     main = "src/index.ts"
     # Set this to today's date
-    compatibility_date = "2026-10-08"
+    compatibility_date = "2026-10-10"
     
     [[services]]
     binding = "AUTH_SERVER"
@@ -2754,53 +2764,6 @@ To update to the latest version:
     
     
     npm i agents@latest @cloudflare/ai-chat@latest
-
-Feb 23, 2026
-
-## [Backup and restore API for Sandbox SDK](https://developers.cloudflare.com/changelog/post/2026-02-23-sandbox-backup-restore-api/)
-
-[Agents](https://developers.cloudflare.com/agents/)[R2](https://developers.cloudflare.com/r2/)[Containers](https://developers.cloudflare.com/containers/)
-
-[Sandboxes](https://developers.cloudflare.com/sandbox/) now support `createBackup()` and `restoreBackup()` methods for creating and restoring point-in-time snapshots of directories.
-
-This allows you to restore environments quickly. For instance, in order to develop in a sandbox, you may need to include a user's codebase and run a build step. Unfortunately `git clone` and `npm install` can take minutes, and you don't want to run these steps every time the user starts their sandbox.
-
-Now, after the initial setup, you can just call `createBackup()`, then `restoreBackup()` the next time this environment is needed. This makes it practical to pick up exactly where a user left off, even after days of inactivity, without repeating expensive setup steps.
-    
-    
-    const sandbox = getSandbox(env.Sandbox, "my-sandbox");
-    
-    // Make non-trivial changes to the file system
-    await sandbox.gitCheckout(endUserRepo, { targetDir: "/workspace" });
-    await sandbox.exec("npm install", { cwd: "/workspace" });
-    
-    // Create a point-in-time backup of the directory
-    const backup = await sandbox.createBackup({ dir: "/workspace" });
-    
-    // Store the handle for later use
-    await env.KV.put(`backup:${userId}`, JSON.stringify(backup));
-    
-    // ... in a future session...
-    
-    // Restore instead of re-cloning and reinstalling
-    await sandbox.restoreBackup(backup);
-
-Backups are stored in [R2](https://developers.cloudflare.com/r2) and can take advantage of [R2 object lifecycle rules](https://developers.cloudflare.com/sandbox/guides/backup-restore/#configure-r2-lifecycle-rules-for-automatic-cleanup) to ensure they do not persist forever.
-
-Key capabilities:
-
-  * **Persist and reuse across sandbox sessions** — Easily store backup handles in KV, D1, or Durable Object storage for use in subsequent sessions
-  * **Usable across multiple instances** — Fork a backup across many sandboxes for parallel work
-  * **Named backups** — Provide optional human-readable labels for easier management
-  * **TTLs** — Set time-to-live durations so backups are automatically removed from storage once they are no longer needed
-
-
-
-Note
-
-Backup and restore currently uses a FUSE overlay. Soon, native snapshotting at a lower level will be added to Containers and Sandboxes, improving speed and ergonomics. The current backup functionality provides a significant speed improvement over manually recreating a file system, but it will be further optimized in the future. The new snapshotting system will use a similar API, so changing to this system will be simple once it is available.
-
-To get started, refer to the [backup and restore guide](https://developers.cloudflare.com/sandbox/guides/backup-restore/) for setup instructions and usage patterns, or the [Backups API reference](https://developers.cloudflare.com/sandbox/api/backups/) for full method documentation.
 
 ← Prev
 

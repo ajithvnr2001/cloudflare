@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-10-27-RFI-Tokens-in-Dash/
 title: Cloudforce One RFI tokens are now visible in the dashboard \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:27.028198+00:00
+fetched_at: 2026-10-10T14:38:47.459113+00:00
 ---
 
 # Cloudforce One RFI tokens are now visible in the dashboard · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Security Center](https://developers.cloudflare.com/security-center/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-10-27-RFI-Tokens-in-Dash/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The Requests for Information (RFI) dashboard now shows users the number of tokens used by each submitted RFI to better understand usage of tokens and how they relate to each request submitted.
 

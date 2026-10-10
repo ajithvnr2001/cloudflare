@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/ip.src.is_in_european_union/
 title: ip.src.is_in_european_union \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:13.215500+00:00
+fetched_at: 2026-10-10T14:37:31.078875+00:00
 ---
 
 # ip.src.is_in_european_union · Cloudflare Ruleset Engine docs

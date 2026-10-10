@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-08-19-improved-wrangler-error-screen/
 title: Easier debugging in Workers with improved Wrangler error screen \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:19.906088+00:00
+fetched_at: 2026-10-10T14:38:49.802094+00:00
 ---
 
 # Easier debugging in Workers with improved Wrangler error screen · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-08-19-improved-wrangler-error-screen/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Wrangler's error screen has received several improvements to enhance your debugging experience!
 

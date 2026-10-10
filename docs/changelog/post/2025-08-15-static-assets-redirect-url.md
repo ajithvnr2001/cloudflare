@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-08-15-static-assets-redirect-url/
 title: Workers Static Assets: Corrected handling of double slashes in redirect rule paths \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:19.725999+00:00
+fetched_at: 2026-10-10T14:38:49.932891+00:00
 ---
 
 # Workers Static Assets: Corrected handling of double slashes in redirect rule paths · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-08-15-static-assets-redirect-url/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Static Assets](https://developers.cloudflare.com/workers/static-assets/): Fixed a bug in how [redirect rules ↗︎](https://developers.cloudflare.com/workers/static-assets/redirects/) defined in your Worker's `_redirects` file are processed.
 

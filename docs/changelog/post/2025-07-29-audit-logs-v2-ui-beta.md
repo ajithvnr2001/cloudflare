@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-07-29-audit-logs-v2-ui-beta/
 title: Audit logs (version 2) - UI Beta Release \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:17.804628+00:00
+fetched_at: 2026-10-10T14:38:50.558181+00:00
 ---
 
 # Audit logs (version 2) - UI Beta Release · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Audit Logs](https://developers.cloudflare.com/fundamentals/account/account-security/review-audit-logs/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-07-29-audit-logs-v2-ui-beta/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The Audit Logs v2 UI is now available to all Cloudflare customers in Beta. This release builds on the public [Beta of the Audit Logs v2 API](https://developers.cloudflare.com/changelog/product/audit-logs/) and introduces a redesigned user interface with powerful new capabilities to make it easier to investigate account activity.
 

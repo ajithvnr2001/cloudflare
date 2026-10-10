@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-27-terraform-support/
 title: Pipelines and R2 Data Catalog now supported in Terraform \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:49.313845+00:00
+fetched_at: 2026-10-10T14:38:39.438602+00:00
 ---
 
 # Pipelines and R2 Data Catalog now supported in Terraform · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Basin Pipelines](https://developers.cloudflare.com/basin-pipelines/)[Basin](https://developers.cloudflare.com/basin/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-27-terraform-support/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Cloudflare Pipelines](https://developers.cloudflare.com/basin-pipelines/) ingests streaming data via [Workers](https://developers.cloudflare.com/workers/) or HTTP endpoints, transforms it with SQL, and writes it to [R2](https://developers.cloudflare.com/r2/) as Apache Iceberg tables. [R2 Data Catalog](https://developers.cloudflare.com/basin-catalog/) manages those Iceberg tables, compaction, and compatibility with query engines like [R2 SQL](https://developers.cloudflare.com/basin-sql/), [Spark](https://developers.cloudflare.com/basin-catalog/config-examples/spark-scala/), and [DuckDB](https://developers.cloudflare.com/basin-catalog/config-examples/duckdb/).
 

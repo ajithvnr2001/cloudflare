@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-29-concurrent-session-connections/
 title: Connect multiple clients to one Browser Run session \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:16.823789+00:00
+fetched_at: 2026-10-10T14:38:30.271393+00:00
 ---
 
 # Connect multiple clients to one Browser Run session · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Browser Run](https://developers.cloudflare.com/browser-run/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-29-concurrent-session-connections/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Browser Run](https://developers.cloudflare.com/browser-run/) sessions now accept multiple concurrent connections. Before, a session accepted only one connection at a time, and other Workers had to wait until that connection closed. Now multiple Workers can connect to the same browser at the same time.
 

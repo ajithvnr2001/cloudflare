@@ -3,8 +3,5 @@
   "file": "workers-ai/models/flux-2-klein-9b.md",
   "title": "flux-2-klein-9b (Black Forest Labs) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:17:02.808824+00:00",
-  "html_len": 110962,
-  "md_len": 1601,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:22.581490+00:00"
 }

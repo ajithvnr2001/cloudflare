@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-20-radar-content-type-and-api-traffic/
 title: Content type distribution and API traffic share on Cloudflare Radar \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:54.126167+00:00
+fetched_at: 2026-10-10T14:38:37.995871+00:00
 ---
 
 # Content type distribution and API traffic share on Cloudflare Radar · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Radar](https://developers.cloudflare.com/radar/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-20-radar-content-type-and-api-traffic/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [**Radar**](https://developers.cloudflare.com/radar/) now includes two new charts on the [traffic page ↗︎](https://radar.cloudflare.com/traffic) that provide deeper insights into the composition of HTTP traffic: a content type distribution chart and an API traffic share chart.
 

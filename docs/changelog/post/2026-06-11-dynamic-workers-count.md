@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-11-dynamic-workers-count/
 title: Track Dynamic Workers usage from the dashboard and GraphQL API \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:57.681517+00:00
+fetched_at: 2026-10-10T14:38:36.964631+00:00
 ---
 
 # Track Dynamic Workers usage from the dashboard and GraphQL API · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-11-dynamic-workers-count/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 ![Dynamic Workers usage on the Workers overview page](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1476,height=1102,format=webp/_astro/dynamic-workers-count.BcGsgQ0m.png)
 

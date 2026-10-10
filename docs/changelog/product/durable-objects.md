@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/durable-objects/
 title: Durable Objects Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:44.698436+00:00
+fetched_at: 2026-10-10T14:38:08.473122+00:00
 ---
 
 # Durable Objects Changelog | Cloudflare Docs

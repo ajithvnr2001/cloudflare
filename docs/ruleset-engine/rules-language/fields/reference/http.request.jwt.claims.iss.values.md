@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/http.request.jwt.claims.iss.values/
 title: http.request.jwt.claims.iss.values \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:11.389036+00:00
+fetched_at: 2026-10-10T14:37:32.365502+00:00
 ---
 
 # http.request.jwt.claims.iss.values · Cloudflare Ruleset Engine docs

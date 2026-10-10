@@ -3,8 +3,5 @@
   "file": "waf/change-log/changelog/3.md",
   "title": "Changelog \u00b7 Cloudflare Web Application Firewall (WAF) docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:16:34.490149+00:00",
-  "html_len": 325269,
-  "md_len": 40927,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:25.906423+00:00"
 }

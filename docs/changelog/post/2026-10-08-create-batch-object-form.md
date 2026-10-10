@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-10-08-create-batch-object-form/
 title: Create Workflow instance batches by count or list \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-09T10:55:29.837089+00:00
+fetched_at: 2026-10-10T14:38:29.144920+00:00
 ---
 
 # Create Workflow instance batches by count or list · Changelog

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/multi-cloud-networking/
 title: Multi-Cloud Networking Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:47.897554+00:00
+fetched_at: 2026-10-10T14:38:06.278722+00:00
 ---
 
 # Multi-Cloud Networking Changelog | Cloudflare Docs

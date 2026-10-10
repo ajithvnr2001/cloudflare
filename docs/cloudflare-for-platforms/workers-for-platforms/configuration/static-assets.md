@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/cloudflare-for-platforms/workers-for-platforms/configuration/static-assets/
 title: Static assets \u00b7 Cloudflare for Platforms docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:08:04.940043+00:00
+fetched_at: 2026-10-10T14:39:25.722351+00:00
 ---
 
 # Static assets · Cloudflare for Platforms docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:08:04.940043+00:00
 
 # Static assets
 
-Last updated Apr 21, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/cloudflare-for-platforms/workers-for-platforms/configuration/static-assets/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 9, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Overview What you can build BenefitsDeploy static assets to User Workers 1\. Create an Upload Session 2\. Upload File Contents 3\. Deploy the User Worker with static assetsDeploying static assets with Wrangler 1\. Organize your files 2\. Deploy the User Worker with the static assets
 
@@ -42,7 +42,7 @@ Combine asset hosting with Cloudflare Workers to power dynamic, interactive appl
 
 #### Global caching for faster performance
 
-Cloudflare automatically caches static assets at data centers worldwide, reducing latency and improving load times by up to 2x for users everywhere.
+Cloudflare automatically caches static assets at data centers worldwide, reducing latency and improving load times.
 
 #### Scalability without infrastructure management
 
@@ -83,18 +83,12 @@ Before sending any file data, you need to tell Cloudflare which files you intend
 
 
 
-Asset Isolation Considerations
-
-Static assets uploaded to Workers for Platforms are associated with the namespace rather than with individual User Worker. If multiple User Workers exist under the same namespace, assets with identical hashes may be shared across them. **JWTs should therefore only be shared with trusted platform services and should never be distributed to end-users.**
-
-If strict isolation of assets is required, we recommend either salting with a random value each time, or incorporating an end-user identifier (for example, account ID or Worker script ID) within the hashing process, to ensure uniqueness. For example, `hash = slice(sha256(accountID + fileContents), 32)`.
-
 #### Example manifest (JSON)
     
     
     {
     	"/index.html": {
-    		"hash": "08f1dfda4574284ab3c21666d1ee8c7d4",
+    		"hash": "08f1dfda4574284ab3c21666d1ee8c7d",
     		"size": 1234
     	},
     	"/styles.css": {
@@ -127,7 +121,7 @@ In the request body, include a JSON object listing each file path along with its
       --data '{
         "manifest": {
           "/index.html": {
-            "hash": "08f1dfda4574284ab3c21666d1ee8c7d4",
+            "hash": "08f1dfda4574284ab3c21666d1ee8c7d",
             "size": 1234
           },
           "/styles.css": {
@@ -143,26 +137,20 @@ You can compute a SHA-256 digest of the file contents, then truncate or otherwis
 
 #### API Response
 
-If all the files are already stored on Cloudflare, the response will only return the JWT token. If new or updated files are needed, the response will return:
+The response returns:
 
   * `jwt`: An upload token (valid for 1 hour) which will be used in the API request to upload the file contents (Step 2).
   * `buckets`: An array of file-hash groups indicating which files to upload together. Files that have been recently uploaded will not appear in buckets, since Cloudflare already has them.
 
 
 
-Note
-
-This step alone does not store files on Cloudflare. You must upload the actual file data in the next step.
+If `buckets` is empty, use the returned `jwt` as the completion token and skip to step 3.
 
 ### 2\. Upload File Contents
 
-If the response to the Upload Session API returns `buckets`, that means you have new or changed files that need to be uploaded to Cloudflare.
+If the `buckets` array is not empty, you have new or changed files that need to be uploaded to Cloudflare.
 
 Use the [Workers Assets Upload API](https://developers.cloudflare.com/api/resources/workers/subresources/assets/subresources/upload/) to transmit the raw file bytes in base64-encoded format for any missing or changed files. Once uploaded, Cloudflare will store these files so they can then be attached to a User Worker.
-
-Caution
-
-Asset uniqueness is determined by the provided hash and are associated globally to their namespace rather than with each specific User Worker. If an asset has already been uploaded for that namespace earlier, Cloudflare will automatically omit sending this asset hash back in the `buckets` response to save you from re-uploading the same thing twice. This means that an asset can be shared between multiple User Workers if it shares the same hash unless you **explicitly make the hash unique**. If you require full isolation between assets across User Workers, incorporate a unique identifier within your asset hashing process (either salting it with something entirely random each time, or by including the end-user account ID or their Worker name to retain per-customer re-use).
 
 #### API Request Authentication
 
@@ -173,7 +161,7 @@ Include it as a Bearer token in the header:
     
     Authorization: Bearer <upload-session-token>
 
-This token is valid for one hour and must be supplied for each upload request to the Workers Assets Upload API.
+This token is valid for one hour and must be supplied for each upload request to the Workers Assets Upload API. End users can use this token to upload files directly to Cloudflare.
 
 #### File fields (multipart/form-data)
 
@@ -181,6 +169,7 @@ You must send the files as multipart/form-data with base64-encoded content:
 
   * Field name: The file hash (for example, `36b8be012ee77df5f269b11b975611d3`)
   * Field value: A Base64-encoded string of the file's raw bytes
+  * Part `Content-Type`: The file's MIME type, which is used when serving the asset
 
 
 
@@ -189,12 +178,14 @@ You must send the files as multipart/form-data with base64-encoded content:
 If your Upload Session response listed a single "bucket" containing two file hashes:
     
     
-    "buckets": [
-      [
-        "08f1dfda4574284ab3c21666d1ee8c7d4",
-        "36b8be012ee77df5f269b11b975611d3"
-      ]
-    ]
+    {
+    	"buckets": [
+    		[
+    			"08f1dfda4574284ab3c21666d1ee8c7d",
+    			"36b8be012ee77df5f269b11b975611d3"
+    		]
+    	]
+    }
 
 You can upload both files in one request, each as a form-data field:
     
@@ -202,16 +193,16 @@ You can upload both files in one request, each as a form-data field:
     curl -X POST \
       "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/assets/upload?base64=true" \
       -H "Authorization: Bearer <upload-session-token>" \
-      -F "08f1dfda4574284ab3c21666d1ee8c7d4=<BASE64_OF_INDEX_HTML>" \
-      -F "36b8be012ee77df5f269b11b975611d3=<BASE64_OF_STYLES_CSS>"
+      -F "08f1dfda4574284ab3c21666d1ee8c7d=$BASE64_OF_INDEX_HTML;type=text/html" \
+      -F "36b8be012ee77df5f269b11b975611d3=$BASE64_OF_STYLES_CSS;type=text/css"
 
   * `<upload-session-token>` is the token from step 1's assets-upload-session response
-  * `<BASE64_OF_INDEX_HTML>` is the Base64-encoded content of index.html
-  * `<BASE64_OF_STYLES_CSS>` is the Base64-encoded content of styles.css
+  * `$BASE64_OF_INDEX_HTML` is the Base64-encoded content of index.html
+  * `$BASE64_OF_STYLES_CSS` is the Base64-encoded content of styles.css
 
 
 
-If you have multiple buckets (for example, `[["hashA"], ["hashB"], ["hashC"]]`), you might need to repeat this process for each bucket, making one request per bucket group.
+If you have multiple buckets (for example, `[["hashA"], ["hashB"], ["hashC"]]`), repeat this process for each bucket, making one request per bucket group.
 
 Once every file in the manifest has been uploaded, a status code of `201` will be returned, with the `jwt` field present. This JWT is a final "completion" token which can be used to create a deployment of a Worker with this set of assets. This completion token is valid for 1 hour.
     
@@ -254,7 +245,6 @@ You can also specify any optional settings under the `assets.config` field to cu
 
   * The `"jwt": "<completion-token>"` links the newly uploaded files to the Worker
   * Including "html_handling" (or other fields under "config") is optional and can customize how static files are served
-  * If the user's Worker code has not changed, you can omit the code file or re-upload the same index.js
 
 
 
@@ -274,7 +264,7 @@ Create or update your [Wrangler configuration file](https://developers.cloudflar
     	"name": "my-static-site",
     	"main": "./src/index.js",
     	// Set this to today's date
-    	"compatibility_date": "2026-10-08",
+    	"compatibility_date": "2026-10-10",
     	"assets": {
     		"directory": "./public",
     		"binding": "ASSETS",
@@ -286,7 +276,7 @@ Create or update your [Wrangler configuration file](https://developers.cloudflar
     name = "my-static-site"
     main = "./src/index.js"
     # Set this to today's date
-    compatibility_date = "2026-10-08"
+    compatibility_date = "2026-10-10"
     
     [assets]
     directory = "./public"

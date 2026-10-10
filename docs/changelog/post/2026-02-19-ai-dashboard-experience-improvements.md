@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-02-19-ai-dashboard-experience-improvements/
 title: AI dashboard experience improvements \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:37.828051+00:00
+fetched_at: 2026-10-10T14:38:43.485616+00:00
 ---
 
 # AI dashboard experience improvements · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Gateway](https://developers.cloudflare.com/ai-gateway/)[Workers AI](https://developers.cloudflare.com/workers-ai/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-02-19-ai-dashboard-experience-improvements/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Workers AI](https://developers.cloudflare.com/workers-ai/) and [AI Gateway](https://developers.cloudflare.com/ai-gateway/) have received a series of dashboard improvements to help you get started faster and manage your AI workloads more easily.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers-ai/models/glm-5.3/
 title: glm-5.3 (Zhipu AI) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:05.259750+00:00
+fetched_at: 2026-10-10T14:37:21.813133+00:00
 ---
 
 # glm-5.3 (Zhipu AI) · Cloudflare AI docs · Cloudflare Workers AI docs
@@ -15,13 +15,13 @@ fetched_at: 2026-10-08T07:17:05.259750+00:00
 
 
 
-![Zhipu AI logo](https://developers.cloudflare.com/_astro/zai-org.Dj2vcayE.svg)
+![Zhipu AI logo](https://developers.cloudflare.com/_astro/zai.Dj2vcayE.svg)
 
 # glm-5.3
 
 Text Generation • Zhipu AI
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers-ai/models/glm-5.3/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `@cf/zai-org/glm-5.3`
 

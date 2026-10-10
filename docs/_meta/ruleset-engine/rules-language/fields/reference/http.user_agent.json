@@ -3,8 +3,5 @@
   "file": "ruleset-engine/rules-language/fields/reference/http.user_agent.md",
   "title": "http.user_agent \u00b7 Cloudflare Ruleset Engine docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:15:12.814538+00:00",
-  "html_len": 89854,
-  "md_len": 1153,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:31.549992+00:00"
 }

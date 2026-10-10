@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-15-agentlee-writeops-genui/
 title: Agent Lee adds Write Operations and Generative UI \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:46.807888+00:00
+fetched_at: 2026-10-10T14:38:40.488122+00:00
 ---
 
 # Agent Lee adds Write Operations and Generative UI · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Agents](https://developers.cloudflare.com/agents/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-15-agentlee-writeops-genui/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 #### Agent Lee adds Write Operations and Generative UI
 

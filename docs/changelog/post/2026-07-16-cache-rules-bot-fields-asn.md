@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-16-cache-rules-bot-fields-asn/
 title: Bot management fields and ASN support in Cache Rules \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:03.303879+00:00
+fetched_at: 2026-10-10T14:38:34.752372+00:00
 ---
 
 # Bot management fields and ASN support in Cache Rules · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Rules](https://developers.cloudflare.com/rules/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-16-cache-rules-bot-fields-asn/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 #### Bot management fields and ASN support in Cache Rules
 

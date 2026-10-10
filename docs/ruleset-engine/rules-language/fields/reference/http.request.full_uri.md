@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/http.request.full_uri/
 title: http.request.full_uri \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:10.634865+00:00
+fetched_at: 2026-10-10T14:37:32.786255+00:00
 ---
 
 # http.request.full_uri · Cloudflare Ruleset Engine docs

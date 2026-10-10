@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-01-d1-free-tier-limit-enforcement/
 title: D1 enforces free tier daily query limits \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:11.992544+00:00
+fetched_at: 2026-10-10T14:38:31.840646+00:00
 ---
 
 # D1 enforces free tier daily query limits · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [D1](https://developers.cloudflare.com/d1/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-01-d1-free-tier-limit-enforcement/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Beginning September 1, 2026, D1 queries on the [Workers Free plan](https://developers.cloudflare.com/workers/platform/pricing/#workers) will fail when an account exceeds the daily [row read or row write limits](https://developers.cloudflare.com/d1/platform/pricing/). Queries via the [Workers Binding API](https://developers.cloudflare.com/d1/worker-api/) and the [REST API](https://developers.cloudflare.com/d1/rest-api/) will return errors until the limit resets at midnight UTC. Stored data is not affected.
 

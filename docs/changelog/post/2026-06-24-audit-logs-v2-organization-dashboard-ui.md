@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-24-audit-logs-v2-organization-dashboard-ui/
 title: Audit Logs v2 \u2014 Organization-level audit logs in Cloudflare dashboard \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:59.420705+00:00
+fetched_at: 2026-10-10T14:38:36.111095+00:00
 ---
 
 # Audit Logs v2 — Organization-level audit logs in Cloudflare dashboard · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Audit Logs](https://developers.cloudflare.com/fundamentals/account/account-security/review-audit-logs/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-24-audit-logs-v2-organization-dashboard-ui/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now, as an [Organization](https://developers.cloudflare.com/fundamentals/organizations/) Super Administrator, view organization-level [audit logs](https://developers.cloudflare.com/fundamentals/account/account-security/audit-logs/) in the Cloudflare dashboard, in addition to the existing [API access](https://developers.cloudflare.com/fundamentals/account/account-security/audit-logs/#organization-activity-logs).
 

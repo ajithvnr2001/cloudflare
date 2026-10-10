@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-07-websocket-auto-reply-to-close/
 title: WebSockets now automatically reply to Close frames \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:45.422897+00:00
+fetched_at: 2026-10-10T14:38:40.960080+00:00
 ---
 
 # WebSockets now automatically reply to Close frames · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-07-websocket-auto-reply-to-close/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The Workers runtime now automatically sends a reciprocal Close frame when it receives a Close frame from the peer. The `readyState` transitions to `CLOSED` before the `close` event fires. This matches the [WebSocket specification ↗︎](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/close_event) and standard browser behavior.
 

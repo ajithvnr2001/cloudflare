@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-04-07-durable-objects-free-tier/
 title: Durable Objects on Workers Free plan \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:08.677369+00:00
+fetched_at: 2026-10-10T14:38:53.422505+00:00
 ---
 
 # Durable Objects on Workers Free plan · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Durable Objects](https://developers.cloudflare.com/durable-objects/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-04-07-durable-objects-free-tier/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Durable Objects can now be used with zero commitment on the [Workers Free plan](https://developers.cloudflare.com/workers/platform/pricing/) allowing you to build AI agents with [Agents SDK](https://developers.cloudflare.com/agents/), collaboration tools, and real-time applications like chat or multiplayer games.
 

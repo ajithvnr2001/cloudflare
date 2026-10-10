@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-09-new-dns-firewall-ux/
 title: New DNS Firewall UX with more dashboard settings \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:02.382982+00:00
+fetched_at: 2026-10-10T14:38:35.161542+00:00
 ---
 
 # New DNS Firewall UX with more dashboard settings · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [DNS](https://developers.cloudflare.com/dns/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-09-new-dns-firewall-ux/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The DNS Firewall page in the Cloudflare dashboard has been refreshed, bringing several settings that were previously API-only into the UI and modernizing how you view and manage your DNS Firewall clusters.
 

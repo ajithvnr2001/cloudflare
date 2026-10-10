@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/basin-sql/
 title: Basin SQL Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:41.458701+00:00
+fetched_at: 2026-10-10T14:38:11.193267+00:00
 ---
 
 # Basin SQL Changelog | Cloudflare Docs

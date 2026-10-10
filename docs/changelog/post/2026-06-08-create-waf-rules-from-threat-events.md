@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-08-create-waf-rules-from-threat-events/
 title: Create WAF rules directly from Threat Events saved views \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:57.296685+00:00
+fetched_at: 2026-10-10T14:38:37.026203+00:00
 ---
 
 # Create WAF rules directly from Threat Events saved views · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Security Center](https://developers.cloudflare.com/security-center/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-08-create-waf-rules-from-threat-events/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudforce One users can now turn [Threat Events indicators](https://developers.cloudflare.com/security-center/cloudforce-one/#analyze-threat-events) into active defense. With this update, users can instantly generate a WAF rule that matches the dynamic list of IP addresses returned by any of their **Saved Views**.
 

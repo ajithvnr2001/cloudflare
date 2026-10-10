@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/%40cf/deepgram/aura-2-es/
 title: aura-2-es (Deepgram) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:44.876014+00:00
+fetched_at: 2026-10-10T14:39:22.986292+00:00
 ---
 
 # aura-2-es (Deepgram) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:04:44.876014+00:00
 
 Text-to-Speech • Deepgram
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/%40cf/deepgram/aura-2-es/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `@cf/deepgram/aura-2-es`
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/xai/grok-imagine-video-1.5-preview/
 title: Grok Imagine Video 1.5 Preview (xAI) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:08.355013+00:00
+fetched_at: 2026-10-10T14:39:05.201030+00:00
 ---
 
 # Grok Imagine Video 1.5 Preview (xAI) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:05:08.355013+00:00
 
 Image-to-Video • xAI
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/xai/grok-imagine-video-1.5-preview/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `xai/grok-imagine-video-1.5-preview`
 

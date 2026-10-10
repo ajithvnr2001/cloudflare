@@ -3,8 +3,5 @@
   "file": "changelog/post/2026-03-03-step-limits-to-25k.md",
   "title": "Workflows step limit increased to 25,000 steps per instance \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:39.561377+00:00",
-  "html_len": 64495,
-  "md_len": 1632,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:42.849129+00:00"
 }

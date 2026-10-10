@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers/ci-cd/builds/build-image/
 title: Build image \u00b7 Cloudflare Workers docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:11.904017+00:00
+fetched_at: 2026-10-10T14:39:26.875655+00:00
 ---
 
 # Build image · Cloudflare Workers docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:17:11.904017+00:00
 
 # Build image
 
-Last updated Jul 30, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers/ci-cd/builds/build-image/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewSupported Tooling Runtime Tools and languagesAdvanced Settings Overriding Default Versions Skip dependency installPre-installed PackagesBuild EnvironmentBuild Image Policy Preinstalled Software Updates Best Practices
 
@@ -43,7 +43,7 @@ Tool | Default version | Environment variable | File
 **Go** | 1.24.3 | `GO_VERSION` |   
 **Node.js** | 24.18.0 | `NODE_VERSION` | .nvmrc, .node-version  
 **Python** | 3.13.3 | `PYTHON_VERSION` | .python-version, runtime.txt  
-**Ruby** | 3.4.4 | `RUBY_VERSION` | .ruby-version  
+**Ruby** | 3.4.7 | `RUBY_VERSION` | .ruby-version  
   
 The build image preinstalls Node.js 22.23.2 and 24.18.0.
 

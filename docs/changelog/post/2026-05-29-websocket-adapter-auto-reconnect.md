@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-29-websocket-adapter-auto-reconnect/
 title: Cloudflare's Realtime WebSocket adapter now auto-reconnects and buffers WebRTC media \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:55.609807+00:00
+fetched_at: 2026-10-10T14:38:37.408471+00:00
 ---
 
 # Cloudflare's Realtime WebSocket adapter now auto-reconnects and buffers WebRTC media · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Realtime](https://developers.cloudflare.com/realtime/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-29-websocket-adapter-auto-reconnect/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Cloudflare Realtime SFU](https://developers.cloudflare.com/realtime/sfu/) is a [WebRTC Selective Forwarding Unit that runs on Cloudflare's global network](https://developers.cloudflare.com/realtime/sfu/concepts/architecture/), so you can route live audio, video, and data between WebRTC clients around the world without managing SFU infrastructure or regions.
 

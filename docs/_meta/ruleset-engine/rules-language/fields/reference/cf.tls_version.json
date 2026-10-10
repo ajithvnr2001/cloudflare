@@ -3,8 +3,5 @@
   "file": "ruleset-engine/rules-language/fields/reference/cf.tls_version.md",
   "title": "cf.tls_version \u00b7 Cloudflare Ruleset Engine docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:15:07.707767+00:00",
-  "html_len": 91654,
-  "md_len": 965,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:33.944282+00:00"
 }

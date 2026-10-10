@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/fundamentals/
 title: Cloudflare Fundamentals Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:45.559714+00:00
+fetched_at: 2026-10-10T14:38:07.394135+00:00
 ---
 
 # Cloudflare Fundamentals Changelog | Cloudflare Docs
@@ -230,6 +230,40 @@ Zaraz
 No products found.
 
 [ View RSS feeds ](https://developers.cloudflare.com/fundamentals/new-features/available-rss-feeds/)[ Subscribe to RSS ](https://developers.cloudflare.com/changelog/rss/index.xml)
+
+Oct 9, 2026
+
+## [Improved HTTP/3 client cancellation reporting](https://developers.cloudflare.com/changelog/post/2026-10-09-http3-499-reporting-improvement/)
+
+[Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)
+
+Cloudflare has improved how it handles and reports client-cancelled HTTP/3 requests across Free, Pro, Business, and Enterprise plans. Customers now get a clearer view of client behavior in Cloudflare analytics and, where available, logs.
+
+Previously, Cloudflare did not always stop an HTTP/3 request when the client cancelled its request stream. Some cancellations were already recorded as `499`, while others continued to the origin and showed the eventual upstream status.
+
+Cloudflare now stops affected requests sooner, reducing unnecessary origin work, and records them as `499`. Customers may notice more `499` status codes for HTTP/3 traffic. This reflects more consistent reporting of existing cancellations, not an increase in failed requests.
+
+Customers who use `499` status codes in availability calculations should consider excluding them from server-side error rates because they represent requests cancelled by clients.
+
+For more information, refer to [Error 499](https://developers.cloudflare.com/support/troubleshooting/http-status-codes/4xx-client-error/error-499/).
+
+Oct 9, 2026
+
+## [More efficient Markdown for Agents conversion](https://developers.cloudflare.com/changelog/post/2026-10-09-markdown-for-agents-in-process-conversion/)
+
+[Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)
+
+[Markdown for Agents](https://developers.cloudflare.com/fundamentals/reference/markdown-for-agents/) now converts HTML with an in-process streaming engine at the edge. It processes content as it arrives instead of buffering the HTML response and sending it to a separate conversion service. This reduces conversion overhead and memory use.
+
+This release also changes the conversion limit and response headers:
+
+  * Conversion supports up to 6 MiB (6,291,456 bytes) of decompressed HTML, increased from 2 MiB (2,097,152 bytes). The limit applies after decompression, not to the compressed response size.
+  * Converted responses no longer generate the `x-markdown-tokens` or `x-original-tokens` headers. Clients that use these values need to calculate token counts themselves.
+  * `Content-Length` is removed from converted responses rather than recalculated, because the Markdown body is streamed.
+
+
+
+For more information, refer to the [Markdown for Agents documentation](https://developers.cloudflare.com/fundamentals/reference/markdown-for-agents/).
 
 Oct 7, 2026
 
@@ -843,71 +877,6 @@ References:
   * [Cloudflare 5xx error documentation](https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-5xx-errors/)
 
 
-
-Apr 27, 2026
-
-## [Resource Tagging enters public beta](https://developers.cloudflare.com/changelog/post/2026-04-27-resource-tagging-public-beta/)
-
-[Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)[Resource Tagging](https://developers.cloudflare.com/resource-tagging/)
-
-Resource Tagging is now in public beta and rolling out to all Cloudflare accounts over the coming days. You can attach custom key-value metadata to your Cloudflare resources and query across your entire account to find what you need.
-
-#### What's included
-
-  * **Broad resource type support** — Tag zones, custom hostnames, Cloudflare Tunnels, Workers, D1 databases, R2 buckets, KV namespaces, Durable Object namespaces, Queues, Stream videos, Images, Access applications, Gateway rules, AI Gateways, and more. Refer to the [full list of supported resource types](https://developers.cloudflare.com/resource-tagging/reference/resource-types/).
-  * **Powerful filtering** — Query tagged resources using AND/OR logic, negation, and key-only matching. Combine up to 20 filters per query to build precise resource views.
-  * **Account and zone-level endpoints** — Full CRUD operations across both scopes.
-  * **Token-based authentication** — Tagging supports [Account Owned Tokens](https://developers.cloudflare.com/fundamentals/api/get-started/account-owned-tokens/) that persist independently of individual users, so your automation keeps running through credential rotations and team changes.
-  * **Flexible role support** — Super Administrators, Workers Admins, and Tag Admins can all manage tags.
-
-
-
-#### API-first by design
-
-The API is the primary interface for Resource Tagging and the recommended path for all workflows — scripting tag assignments, building CI/CD pipelines, or integrating with your infrastructure-as-code toolchain.
-
-#### Dashboard UI
-
-You can also view and manage tagged resources directly in the Cloudflare dashboard. Navigate to **Manage Account** > **Resource Tagging** to see all tagged resources across your account, filter by resource name or tag, and add or edit tags inline.
-
-![Tagged Resources dashboard](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=2874,height=1234,format=webp/_astro/tagged-resources-dashboard.Dg5WvwiN.png)
-
-#### What's coming next
-
-In future releases, expect support for additional resource types across the Cloudflare platform, tag-based access control policies for scoping user permissions to tagged resources, billing and usage attribution by tag for breaking down costs by team, project, or environment, and Terraform provider support for managing tags declaratively.
-
-#### Current limitations
-
-  * `PUT` replaces all tags on a resource (no partial update). Use the [GET, merge, PUT workflow](https://developers.cloudflare.com/resource-tagging/how-to/manage-tags/#add-a-single-tag) to modify individual tags safely.
-  * `DELETE` removes all tags from a resource. To remove a single tag, PUT the remaining tags back.
-  * Querying tags for a resource that has never been tagged returns `500` instead of `404`. This is a known beta limitation.
-
-
-
-To get started, refer to the [Resource Tagging documentation](https://developers.cloudflare.com/resource-tagging/).
-
-Apr 21, 2026
-
-## [Network Overview page in the dashboard](https://developers.cloudflare.com/changelog/post/2026-04-21-network-overview-page/)
-
-[Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)
-
-A new **Network Overview** page in the Cloudflare dashboard gives you a single starting point for network security and connectivity products.
-
-From the Network Overview page, you can:
-
-  * **Connect resources with[Cloudflare Tunnel](https://developers.cloudflare.com/tunnel/)** \- Create tunnels to connect your infrastructure to Cloudflare without exposing it to the public Internet.
-  * **Monitor traffic with Network Flow** \- Get real-time visibility into traffic volume from your routers.
-  * **Configure Address Maps** \- Map dedicated static IPs or BYOIP prefixes to specific hostnames.
-  * **Explore Magic Transit and Cloudflare WAN** \- Set up DDoS protection for your networks and connectivity for your branch offices and data centers.
-
-
-
-To find it, go to [**Networking** ↗︎](https://dash.cloudflare.com/?to=/:account/magic-networks/overview) in the dashboard sidebar.
-
-If you already use [Magic Transit](https://developers.cloudflare.com/magic-transit/), [Cloudflare WAN](https://developers.cloudflare.com/cloudflare-wan/), or other Cloudflare network services products, your existing experience is unchanged.
-
-![Network Overview page in the Cloudflare dashboard](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1650,height=1362,format=webp/_astro/network-overview.4FLDtULW.png)
 
 ← Prev
 

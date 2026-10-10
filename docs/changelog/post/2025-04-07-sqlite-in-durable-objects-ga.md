@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-04-07-sqlite-in-durable-objects-ga/
 title: SQLite in Durable Objects GA with 10GB storage per object \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:08.775156+00:00
+fetched_at: 2026-10-10T14:38:53.378108+00:00
 ---
 
 # SQLite in Durable Objects GA with 10GB storage per object · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Durable Objects](https://developers.cloudflare.com/durable-objects/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-04-07-sqlite-in-durable-objects-ga/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 SQLite in Durable Objects is now generally available (GA) with 10GB SQLite database per Durable Object. Since the [public beta ↗︎](https://blog.cloudflare.com/sqlite-in-durable-objects/) in September 2024, we've added feature parity and robustness for the SQLite storage backend compared to the preexisting key-value (KV) storage backend for Durable Objects.
 

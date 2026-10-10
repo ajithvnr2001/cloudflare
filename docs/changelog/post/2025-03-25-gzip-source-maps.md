@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-03-25-gzip-source-maps/
 title: Source Maps are Generally Available \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:07.576897+00:00
+fetched_at: 2026-10-10T14:38:53.686556+00:00
 ---
 
 # Source Maps are Generally Available · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-03-25-gzip-source-maps/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Source maps are now Generally Available (GA). You can now be uploaded with a maximum gzipped size of 15 MB. Previously, the maximum size limit was 15 MB uncompressed.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/bria/fibo-generate-1.5/
 title: FIBO Generate 1.5 (bria) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:53.961941+00:00
+fetched_at: 2026-10-10T14:39:16.486575+00:00
 ---
 
 # FIBO Generate 1.5 (bria) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ b
 
 Text-to-Image • bria
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/bria/fibo-generate-1.5/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `bria/fibo-generate-1.5`
 

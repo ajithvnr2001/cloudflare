@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-04-pingora-powers-cache/
 title: Pingora now powers Cloudflare's cache \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:51.349718+00:00
+fetched_at: 2026-10-10T14:38:38.855115+00:00
 ---
 
 # Pingora now powers Cloudflare's cache · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cache / CDN](https://developers.cloudflare.com/cache/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-04-pingora-powers-cache/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare's cache now runs on a new proxy built on [Pingora ↗︎](https://github.com/cloudflare/pingora), the Rust-based framework that already serves a significant portion of Cloudflare's network traffic. The new proxy is faster, more memory-safe, and designed to evolve our cache architecture. It delivers immediate performance improvements and enables new caching capabilities.
 

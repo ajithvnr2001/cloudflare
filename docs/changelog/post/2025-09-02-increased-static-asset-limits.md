@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-09-02-increased-static-asset-limits/
 title: Increased static asset limits for Workers \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:21.413435+00:00
+fetched_at: 2026-10-10T14:38:49.373545+00:00
 ---
 
 # Increased static asset limits for Workers · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)[Workers for Platforms](https://developers.cloudflare.com/cloudflare-for-platforms/workers-for-platforms/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-09-02-increased-static-asset-limits/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now upload up to **100,000 static assets** per Worker version
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-09-16-remote-bindings-ga/
 title: Remote bindings GA - Connect to remote resources (D1, KV, R2, etc.) during local development \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:22.973547+00:00
+fetched_at: 2026-10-10T14:38:48.747981+00:00
 ---
 
 # Remote bindings GA - Connect to remote resources (D1, KV, R2, etc.) during local development · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-09-16-remote-bindings-ga/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Three months ago [we announced the public beta](https://developers.cloudflare.com/changelog/2025-06-18-remote-bindings-beta/) of [remote bindings](https://developers.cloudflare.com/workers/local-development/#remote-bindings) for local development. Now, we're excited to say that it's available for everyone in Wrangler, Vite, and Vitest without using an experimental flag!
 
@@ -35,7 +35,7 @@ To enable remote bindings, add `"remote" : true` to each binding that you want t
     {
     	"name": "my-worker",
     	// Set this to today's date
-    	"compatibility_date": "2026-10-08",
+    	"compatibility_date": "2026-10-10",
     
     	"r2_buckets": [
     		{
@@ -49,7 +49,7 @@ To enable remote bindings, add `"remote" : true` to each binding that you want t
     
     name = "my-worker"
     # Set this to today's date
-    compatibility_date = "2026-10-08"
+    compatibility_date = "2026-10-10"
     
     [[r2_buckets]]
     bucket_name = "screenshots-bucket"

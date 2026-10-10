@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/cf1-data-security-analytics-v1/
 title: Data Security Analytics in the Zero Trust dashboard \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:19.966422+00:00
+fetched_at: 2026-10-10T14:38:29.045402+00:00
 ---
 
 # Data Security Analytics in the Zero Trust dashboard · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Data Loss Prevention](https://developers.cloudflare.com/cloudflare-one/data-loss-prevention/)[CASB](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/)[Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/cf1-data-security-analytics-v1/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Zero Trust now includes **Data security analytics** , providing you with unprecedented visibility into your organization sensitive data.
 

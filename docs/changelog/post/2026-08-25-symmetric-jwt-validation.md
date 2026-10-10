@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-08-25-symmetric-jwt-validation/
 title: Symmetric key support for JWT validation \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:10.768395+00:00
+fetched_at: 2026-10-10T14:38:32.241804+00:00
 ---
 
 # Symmetric key support for JWT validation · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [API Shield](https://developers.cloudflare.com/api-shield/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-08-25-symmetric-jwt-validation/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 API Shield [JSON Web Token validation](https://developers.cloudflare.com/api-shield/security/jwt-validation/) now supports symmetric keys that use the `HS256`, `HS384`, and `HS512` algorithms. You can configure HMAC verification keys in the Cloudflare dashboard or with the Cloudflare API.
 

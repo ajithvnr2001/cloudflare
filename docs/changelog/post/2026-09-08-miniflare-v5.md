@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-08-miniflare-v5/
 title: Miniflare v5 prepares local development for the cf CLI \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:12.772429+00:00
+fetched_at: 2026-10-10T14:38:31.560837+00:00
 ---
 
 # Miniflare v5 prepares local development for the cf CLI · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-08-miniflare-v5/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Miniflare v5 prepares Cloudflare local development tooling for the upcoming `cf` CLI.
 

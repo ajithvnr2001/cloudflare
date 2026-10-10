@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-08-11-messagechannel/
 title: MessageChannel and MessagePort \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:18.958782+00:00
+fetched_at: 2026-10-10T14:38:50.244623+00:00
 ---
 
 # MessageChannel and MessagePort · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-08-11-messagechannel/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 A minimal implementation of the [MessageChannel API ↗︎](https://developer.mozilla.org/en-US/docs/Web/API/MessageChannel) is now available in Workers. This means that you can use `MessageChannel` to send messages between different parts of your Worker, but not across different Workers.
 

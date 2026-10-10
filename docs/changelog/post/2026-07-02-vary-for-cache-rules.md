@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-02-vary-for-cache-rules/
 title: Cache multiple versions of a URL with Vary \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:01.061554+00:00
+fetched_at: 2026-10-10T14:38:35.527291+00:00
 ---
 
 # Cache multiple versions of a URL with Vary · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cache / CDN](https://developers.cloudflare.com/cache/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-02-vary-for-cache-rules/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Your origin can serve different responses for the same URL — different languages based on `Accept-Language`, or different formats based on `Accept` — by returning a [`Vary` ↗︎](https://www.rfc-editor.org/rfc/rfc9110.html#name-vary) response header. Cloudflare's cache now honors that header directly in [Cache Rules](https://developers.cloudflare.com/cache/how-to/cache-rules/), so the same URL can hold multiple cached versions and each request is matched to the right one. Content that previously had to bypass cache to stay correct can now be cached, following standard [HTTP caching behavior ↗︎](https://www.rfc-editor.org/rfc/rfc9111.html#name-calculating-cache-keys-with).
 

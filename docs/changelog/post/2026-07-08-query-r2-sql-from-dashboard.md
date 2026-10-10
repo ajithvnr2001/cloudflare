@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-08-query-r2-sql-from-dashboard/
 title: Query R2 Data Catalog tables with R2 SQL from the dashboard \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:02.258546+00:00
+fetched_at: 2026-10-10T14:38:35.225029+00:00
 ---
 
 # Query R2 Data Catalog tables with R2 SQL from the dashboard · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Basin SQL](https://developers.cloudflare.com/basin-sql/)[Basin](https://developers.cloudflare.com/basin/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-08-query-r2-sql-from-dashboard/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now query your [R2 Data Catalog](https://developers.cloudflare.com/basin-catalog/) tables with [R2 SQL](https://developers.cloudflare.com/basin-sql/) directly from the Cloudflare dashboard, without installing a CLI or wiring up a client. This makes it easy to explore your [Apache Iceberg ↗︎](https://iceberg.apache.org/) data, validate queries, and inspect results in one place.
 

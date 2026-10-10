@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-28-mcp-portal-tool-prompt-aliases/
 title: Tool and prompt aliases for MCP server portals \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:55.025332+00:00
+fetched_at: 2026-10-10T14:38:37.680501+00:00
 ---
 
 # Tool and prompt aliases for MCP server portals · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Access](https://developers.cloudflare.com/cloudflare-one/access-controls/policies/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-28-mcp-portal-tool-prompt-aliases/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 When you connect third-party MCP servers through [MCP server portals](https://developers.cloudflare.com/cloudflare-one/access-controls/ai-controls/mcp-portals/), you have no control over how the server author named tools or wrote descriptions. Unclear names make it harder for AI agents to select the right tool and harder for users to understand what is available.
 

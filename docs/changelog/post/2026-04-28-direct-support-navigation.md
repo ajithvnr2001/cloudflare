@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-28-direct-support-navigation/
 title: Direct access to Support from the dashboard \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:50.081381+00:00
+fetched_at: 2026-10-10T14:38:39.359278+00:00
 ---
 
 # Direct access to Support from the dashboard · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Support](https://developers.cloudflare.com/support/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-28-direct-support-navigation/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 #### Direct access to Support from the dashboard
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2024-10-23-url-rewrites-wildcard/
 title: Simplified UI for URL Rewrites \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:59.663091+00:00
+fetched_at: 2026-10-10T14:38:55.914160+00:00
 ---
 
 # Simplified UI for URL Rewrites · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Rules](https://developers.cloudflare.com/rules/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2024-10-23-url-rewrites-wildcard/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 It’s now easy to create **wildcard-based[URL Rewrites](https://developers.cloudflare.com/rules/transform/url-rewrite/)**. No need for complex functions—just define your patterns and go.
 

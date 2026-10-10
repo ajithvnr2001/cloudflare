@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-20-new-dns-records-ux/
 title: New DNS records UX is rolling out \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:53.934546+00:00
+fetched_at: 2026-10-10T14:38:37.967673+00:00
 ---
 
 # New DNS records UX is rolling out · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [DNS](https://developers.cloudflare.com/dns/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-20-new-dns-records-ux/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Starting today, everyone can opt in to a refreshed DNS records page in the Cloudflare dashboard. Over the coming weeks, the new experience will become the default for Free plan users first, followed by paid plans.
 

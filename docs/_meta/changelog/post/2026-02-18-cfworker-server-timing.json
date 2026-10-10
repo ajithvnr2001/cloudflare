@@ -3,8 +3,5 @@
   "file": "changelog/post/2026-02-18-cfworker-server-timing.md",
   "title": "New cfWorker metric in Server-Timing header \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:37.705242+00:00",
-  "html_len": 66035,
-  "md_len": 2568,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:43.553032+00:00"
 }

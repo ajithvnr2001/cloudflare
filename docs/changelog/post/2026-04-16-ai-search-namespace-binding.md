@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-16-ai-search-namespace-binding/
 title: AI Search instances now include built-in storage and namespace Workers Bindings \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:47.388232+00:00
+fetched_at: 2026-10-10T14:38:40.214770+00:00
 ---
 
 # AI Search instances now include built-in storage and namespace Workers Bindings · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Search](https://developers.cloudflare.com/ai-search/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-16-ai-search-namespace-binding/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 New [AI Search](https://developers.cloudflare.com/ai-search/) instances created after today will work differently. New instances come with built-in storage and a vector index, so you can upload a file, have it indexed immediately, and search it right away.
 

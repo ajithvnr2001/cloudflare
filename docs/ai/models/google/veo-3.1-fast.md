@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/google/veo-3.1-fast/
 title: Veo 3.1 Fast (Google) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:57.496646+00:00
+fetched_at: 2026-10-10T14:39:13.604301+00:00
 ---
 
 # Veo 3.1 Fast (Google) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:04:57.496646+00:00
 
 Text-to-Video • Google
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/google/veo-3.1-fast/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `google/veo-3.1-fast`
 

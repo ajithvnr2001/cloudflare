@@ -3,8 +3,5 @@
   "file": "changelog/post/2025-04-11-new-models-faster-inference.md",
   "title": "Workers AI for Developer Week - faster inference, new models, async batch API, expanded LoRA support \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:10.763598+00:00",
-  "html_len": 67989,
-  "md_len": 6518,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:52.971174+00:00"
 }

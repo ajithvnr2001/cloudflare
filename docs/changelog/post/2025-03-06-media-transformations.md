@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-03-06-media-transformations/
 title: Introducing Media Transformations from Cloudflare Stream \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:05.671952+00:00
+fetched_at: 2026-10-10T14:38:54.363188+00:00
 ---
 
 # Introducing Media Transformations from Cloudflare Stream · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Stream](https://developers.cloudflare.com/stream/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-03-06-media-transformations/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Today, we are thrilled to announce Media Transformations, a new service that brings the magic of [Image Transformations](https://developers.cloudflare.com/images/optimization/transformations/overview/) to _short-form video files,_ wherever they are stored!
 

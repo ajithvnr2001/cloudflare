@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.tls_client_auth.cert_revoked/
 title: cf.tls_client_auth.cert_revoked \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:06.970312+00:00
+fetched_at: 2026-10-10T14:37:34.274655+00:00
 ---
 
 # cf.tls_client_auth.cert_revoked · Cloudflare Ruleset Engine docs

@@ -3,8 +3,5 @@
   "file": "ai/models/openai/gpt-6-sol.md",
   "title": "GPT-6 Sol (OpenAI) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:05:03.084755+00:00",
-  "html_len": 186017,
-  "md_len": 11005,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:39:09.457372+00:00"
 }

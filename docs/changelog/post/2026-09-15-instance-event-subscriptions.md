@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-15-instance-event-subscriptions/
 title: Stream Workflow instance events in your Worker or via the API with .subscribe() \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:13.934374+00:00
+fetched_at: 2026-10-10T14:38:31.181144+00:00
 ---
 
 # Stream Workflow instance events in your Worker or via the API with .subscribe() · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workflows](https://developers.cloudflare.com/workflows/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-15-instance-event-subscriptions/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now stream Workflow instance events via `WorkflowInstance.subscribe()` and the `GET /subscribe` API endpoint. Workers and HTTP clients can react to [workflow](https://developers.cloudflare.com/workflows/build/events-and-parameters/) and [step](https://developers.cloudflare.com/workflows/build/step-context/#workflowstepcontext) events, including attempts, sleeps, waits, and rollbacks, without polling for instance status.
 

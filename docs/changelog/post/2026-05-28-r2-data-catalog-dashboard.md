@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-28-r2-data-catalog-dashboard/
 title: R2 Data Catalog gets a dedicated dashboard experience \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:55.064638+00:00
+fetched_at: 2026-10-10T14:38:37.592352+00:00
 ---
 
 # R2 Data Catalog gets a dedicated dashboard experience · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Basin Catalog](https://developers.cloudflare.com/basin-catalog/)[Basin](https://developers.cloudflare.com/basin/)[R2](https://developers.cloudflare.com/r2/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-28-r2-data-catalog-dashboard/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [R2 Data Catalog](https://developers.cloudflare.com/basin-catalog/) is a managed [Apache Iceberg ↗︎](https://iceberg.apache.org/) data catalog built directly into your R2 bucket. It exposes a standard Iceberg REST catalog interface so you can connect query engines like [Spark](https://developers.cloudflare.com/basin-catalog/config-examples/spark-scala/), [Snowflake](https://developers.cloudflare.com/basin-catalog/config-examples/snowflake/), [DuckDB](https://developers.cloudflare.com/basin-catalog/config-examples/duckdb/), and [R2 SQL](https://developers.cloudflare.com/basin-sql/) to your data in R2.
 

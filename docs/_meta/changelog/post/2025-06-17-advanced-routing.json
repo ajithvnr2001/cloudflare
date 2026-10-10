@@ -3,8 +3,5 @@
   "file": "changelog/post/2025-06-17-advanced-routing.md",
   "title": "Control which routes invoke your Worker script for Single Page Applications \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:14.230011+00:00",
-  "html_len": 70366,
-  "md_len": 2618,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:51.671328+00:00"
 }

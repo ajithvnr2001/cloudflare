@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-27-pipeline-binding-stream-field/
 title: Pipeline binding configuration field renamed to stream \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:54.779966+00:00
+fetched_at: 2026-10-10T14:38:37.658873+00:00
 ---
 
 # Pipeline binding configuration field renamed to stream · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Basin Pipelines](https://developers.cloudflare.com/basin-pipelines/)[Basin](https://developers.cloudflare.com/basin/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-27-pipeline-binding-stream-field/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The `pipeline` field inside the `pipelines` binding configuration in your [Wrangler configuration file](https://developers.cloudflare.com/workers/wrangler/configuration/) has been renamed to `stream`. The old field is deprecated but still accepted.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/http.x_forwarded_for/
 title: http.x_forwarded_for \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:12.873179+00:00
+fetched_at: 2026-10-10T14:37:31.422900+00:00
 ---
 
 # http.x_forwarded_for · Cloudflare Ruleset Engine docs

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.client.bot/
 title: cf.client.bot \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:03.173451+00:00
+fetched_at: 2026-10-10T14:37:35.689944+00:00
 ---
 
 # cf.client.bot · Cloudflare Ruleset Engine docs

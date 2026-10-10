@@ -3,8 +3,5 @@
   "file": "ruleset-engine/rules-language/fields/reference/http.request.accepted_languages.md",
   "title": "http.request.accepted_languages \u00b7 Cloudflare Ruleset Engine docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:15:09.500974+00:00",
-  "html_len": 93851,
-  "md_len": 2295,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:33.215977+00:00"
 }

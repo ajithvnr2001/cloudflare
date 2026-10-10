@@ -3,8 +3,5 @@
   "file": "ruleset-engine/rules-language/fields/reference/cf.schema_validation.learned.path.violated_parameters.md",
   "title": "cf.schema_validation.learned.path.violated_parameters \u00b7 Cloudflare Ruleset Engine docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:15:04.467723+00:00",
-  "html_len": 92764,
-  "md_len": 1385,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:35.109398+00:00"
 }

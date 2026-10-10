@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-13-mcp-client-elicitation/
 title: Agents can respond to MCP elicitation requests \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:02.800907+00:00
+fetched_at: 2026-10-10T14:38:34.993572+00:00
 ---
 
 # Agents can respond to MCP elicitation requests · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Agents](https://developers.cloudflare.com/agents/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-13-mcp-client-elicitation/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Agents connected to Model Context Protocol (MCP) servers with [`addMcpServer`](https://developers.cloudflare.com/agents/model-context-protocol/apis/client-api/) can now handle [elicitation ↗︎](https://modelcontextprotocol.io/specification/2025-11-25/client/elicitation) requests.
 

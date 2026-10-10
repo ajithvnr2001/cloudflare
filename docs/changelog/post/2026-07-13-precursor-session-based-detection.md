@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-13-precursor-session-based-detection/
 title: Precursor introduces session-based bot detection \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:02.989165+00:00
+fetched_at: 2026-10-10T14:38:34.945904+00:00
 ---
 
 # Precursor introduces session-based bot detection · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Bots](https://developers.cloudflare.com/bots/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-13-precursor-session-based-detection/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Precursor is rolling out to all customers starting today. Precursor is client-side JavaScript that enables session-based bot detection.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.timings.origin_ttfb_msec/
 title: cf.timings.origin_ttfb_msec \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:05.694668+00:00
+fetched_at: 2026-10-10T14:37:34.670739+00:00
 ---
 
 # cf.timings.origin_ttfb_msec · Cloudflare Ruleset Engine docs

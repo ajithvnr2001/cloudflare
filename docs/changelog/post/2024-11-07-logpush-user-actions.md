@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2024-11-07-logpush-user-actions/
 title: Use Logpush for Email security user actions \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:59.704365+00:00
+fetched_at: 2026-10-10T14:38:55.855555+00:00
 ---
 
 # Use Logpush for Email security user actions · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Email security](https://developers.cloudflare.com/cloudflare-one/email-security/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2024-11-07-logpush-user-actions/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now send user action logs for Email security to an endpoint of your choice with Cloudflare Logpush.
 

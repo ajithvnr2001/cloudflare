@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-11-21-fuse-support-in-containers/
 title: Mount R2 buckets in Containers \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:29.964709+00:00
+fetched_at: 2026-10-10T14:38:46.409285+00:00
 ---
 
 # Mount R2 buckets in Containers · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Containers](https://developers.cloudflare.com/containers/)[R2](https://developers.cloudflare.com/r2/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-11-21-fuse-support-in-containers/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Containers](https://developers.cloudflare.com/containers/) now support mounting R2 buckets as FUSE (Filesystem in Userspace) volumes, allowing applications to interact with [R2](https://developers.cloudflare.com/r2/) using standard filesystem operations.
 

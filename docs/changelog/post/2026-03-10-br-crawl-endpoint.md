@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/
 title: Crawl entire websites with a single API call using Browser Rendering \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:40.319194+00:00
+fetched_at: 2026-10-10T14:38:42.670778+00:00
 ---
 
 # Crawl entire websites with a single API call using Browser Rendering · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Browser Run](https://developers.cloudflare.com/browser-run/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
  _Edit: this post has been edited to clarify crawling behavior with respect to site guidance._
 

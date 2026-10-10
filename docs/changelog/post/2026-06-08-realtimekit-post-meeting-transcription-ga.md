@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-08-realtimekit-post-meeting-transcription-ga/
 title: Post-meeting transcriptions are now Generally Available in RealtimeKit \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:56.927013+00:00
+fetched_at: 2026-10-10T14:38:37.012016+00:00
 ---
 
 # Post-meeting transcriptions are now Generally Available in RealtimeKit · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Realtime](https://developers.cloudflare.com/realtime/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-08-realtimekit-post-meeting-transcription-ga/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [RealtimeKit](https://developers.cloudflare.com/realtime/realtimekit/) lets you build products where people meet over live audio and video — such as HealthTech, EdTech, proctoring, and other real-time platforms — on Cloudflare's [global WebRTC infrastructure](https://developers.cloudflare.com/realtime/sfu/concepts/architecture/).
 

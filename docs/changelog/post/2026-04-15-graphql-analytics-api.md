@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-15-graphql-analytics-api/
 title: Privacy Proxy metrics now available via GraphQL Analytics API \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:47.081034+00:00
+fetched_at: 2026-10-10T14:38:40.382323+00:00
 ---
 
 # Privacy Proxy metrics now available via GraphQL Analytics API · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Privacy Proxy](https://developers.cloudflare.com/privacy-proxy/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-15-graphql-analytics-api/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Privacy Proxy metrics are now queryable through Cloudflare's [GraphQL Analytics API](https://developers.cloudflare.com/privacy-proxy/reference/metrics/graphql/), the new default method for accessing Privacy Proxy observability data. All metrics are available through a single endpoint:
     

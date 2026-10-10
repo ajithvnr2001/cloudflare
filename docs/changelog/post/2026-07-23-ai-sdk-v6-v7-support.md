@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-23-ai-sdk-v6-v7-support/
 title: Agents SDK packages support AI SDK v6 and v7 \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:04.501819+00:00
+fetched_at: 2026-10-10T14:38:34.358897+00:00
 ---
 
 # Agents SDK packages support AI SDK v6 and v7 · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Agents](https://developers.cloudflare.com/agents/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-23-ai-sdk-v6-v7-support/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The `agents`, `@cloudflare/ai-chat`, `@cloudflare/codemode`, and `@cloudflare/think` packages now support AI SDK v6 and v7. Existing applications can remain on v6 when updating these packages. Applications can also adopt v7 without changing the Cloudflare Agents APIs they use.
 

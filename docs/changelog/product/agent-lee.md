@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/agent-lee/
 title: Agent Lee Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:39.006118+00:00
+fetched_at: 2026-10-10T14:38:13.011816+00:00
 ---
 
 # Agent Lee Changelog | Cloudflare Docs

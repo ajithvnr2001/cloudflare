@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-28-dex-speed-test/
 title: Cloudflare One Client speed tests \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:49.566545+00:00
+fetched_at: 2026-10-10T14:38:39.514009+00:00
 ---
 
 # Cloudflare One Client speed tests · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Digital Experience Monitoring](https://developers.cloudflare.com/cloudflare-one/insights/dex/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-28-dex-speed-test/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 IT teams can now remotely run speed tests from the [Cloudflare One Client](https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/) to Cloudflare's network edge.
 

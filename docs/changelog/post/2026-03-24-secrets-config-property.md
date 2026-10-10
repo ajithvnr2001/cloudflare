@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-03-24-secrets-config-property/
 title: Declare required secrets in your Wrangler configuration \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:42.902011+00:00
+fetched_at: 2026-10-10T14:38:41.612382+00:00
 ---
 
 # Declare required secrets in your Wrangler configuration · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-03-24-secrets-config-property/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The new `secrets` configuration property lets you declare the secret names your Worker requires in your Wrangler configuration file. Required secrets are validated during local development and deploy, and used as the source of truth for type generation.
     

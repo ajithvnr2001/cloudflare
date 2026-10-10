@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-03-17-rerun-build/
 title: Retry Pages & Workers Builds Directly from GitHub \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:06.492249+00:00
+fetched_at: 2026-10-10T14:38:54.038773+00:00
 ---
 
 # Retry Pages & Workers Builds Directly from GitHub · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)[Pages](https://developers.cloudflare.com/pages/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-03-17-rerun-build/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now retry your Cloudflare Pages and Workers builds directly from GitHub. No need to switch to the Cloudflare Dashboard for a simple retry!
 

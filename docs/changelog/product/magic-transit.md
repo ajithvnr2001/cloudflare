@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/magic-transit/
 title: Magic Transit Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:47.321435+00:00
+fetched_at: 2026-10-10T14:38:06.337363+00:00
 ---
 
 # Magic Transit Changelog | Cloudflare Docs

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-07-30-mt-mwan-health-check-cmb-eu/
 title: Magic Transit and Magic WAN health check data is fully compatible with the CMB EU setting. \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:17.851150+00:00
+fetched_at: 2026-10-10T14:38:50.535655+00:00
 ---
 
 # Magic Transit and Magic WAN health check data is fully compatible with the CMB EU setting. · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Magic Transit](https://developers.cloudflare.com/magic-transit/)[Cloudflare WAN](https://developers.cloudflare.com/cloudflare-wan/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-07-30-mt-mwan-health-check-cmb-eu/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Today, we are excited to announce that all Magic Transit and Magic WAN customers with CMB EU ([Customer Metadata Boundary - Europe](https://developers.cloudflare.com/data-localization/metadata-boundary/)) enabled in their account will be able to access GRE, IPsec, and CNI health check and traffic volume data in the Cloudflare dashboard and via API.
 

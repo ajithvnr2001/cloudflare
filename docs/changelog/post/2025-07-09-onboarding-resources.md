@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-07-09-onboarding-resources/
 title: New onboarding guides for Zero Trust \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:16.685084+00:00
+fetched_at: 2026-10-10T14:38:50.940256+00:00
 ---
 
 # New onboarding guides for Zero Trust · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-07-09-onboarding-resources/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Use our brand new onboarding experience for Cloudflare Zero Trust. New and returning users can now engage with a **Get Started** tab with walkthroughs for setting up common use cases end-to-end.
 

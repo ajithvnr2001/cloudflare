@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-01-26-worker-binding-methods/
 title: AI Gateway Introduces New Worker Binding Methods \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:01.145599+00:00
+fetched_at: 2026-10-10T14:38:55.379052+00:00
 ---
 
 # AI Gateway Introduces New Worker Binding Methods · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Gateway](https://developers.cloudflare.com/ai-gateway/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-01-26-worker-binding-methods/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We have released new [Workers bindings API methods](https://developers.cloudflare.com/ai-gateway/usage/worker-binding-methods/), allowing you to connect Workers applications to AI Gateway directly. These methods simplify how Workers calls AI services behind your AI Gateway configurations, removing the need to use the REST API and manually authenticate.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/videos/china-network-inside-china/
 title: China network - How to speed up your web traffic inside mainland China | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:16:15.413657+00:00
+fetched_at: 2026-10-10T14:37:29.188906+00:00
 ---
 
 # China network - How to speed up your web traffic inside mainland China | Cloudflare Docs

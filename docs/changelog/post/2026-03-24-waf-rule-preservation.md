@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-03-24-waf-rule-preservation/
 title: Advanced WAF customization for AI Crawl Control blocks \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:43.011791+00:00
+fetched_at: 2026-10-10T14:38:41.591926+00:00
 ---
 
 # Advanced WAF customization for AI Crawl Control blocks · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Crawl Control](https://developers.cloudflare.com/ai-crawl-control/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-03-24-waf-rule-preservation/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 AI Crawl Control now supports extending the underlying WAF rule with custom modifications. Any changes you make directly in the WAF custom rules editor — such as adding path-based exceptions, extra user agents, or additional expression clauses — are preserved when you update crawler actions in AI Crawl Control.
 

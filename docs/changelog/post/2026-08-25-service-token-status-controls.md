@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-08-25-service-token-status-controls/
 title: Temporarily turn off Access service tokens \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:10.792216+00:00
+fetched_at: 2026-10-10T14:38:32.251259+00:00
 ---
 
 # Temporarily turn off Access service tokens · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Access](https://developers.cloudflare.com/cloudflare-one/access-controls/policies/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-08-25-service-token-status-controls/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare Access administrators can now temporarily turn off service tokens without deleting them. A disabled token cannot authenticate, but its configuration remains available so administrators can turn it on again later.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-09-ios-tap-to-type/
 title: Improved iOS tap-to-type experience for Browser Isolation \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:13.228514+00:00
+fetched_at: 2026-10-10T14:38:31.634476+00:00
 ---
 
 # Improved iOS tap-to-type experience for Browser Isolation · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Browser Isolation](https://developers.cloudflare.com/cloudflare-one/remote-browser-isolation/)[Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-09-ios-tap-to-type/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Browser Isolation](https://developers.cloudflare.com/cloudflare-one/remote-browser-isolation/) has improved the tap-to-type experience for users on iOS devices.
 

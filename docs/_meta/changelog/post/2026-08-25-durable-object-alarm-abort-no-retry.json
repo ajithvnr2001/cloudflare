@@ -3,8 +3,5 @@
   "file": "changelog/post/2026-08-25-durable-object-alarm-abort-no-retry.md",
   "title": "Prevent Durable Object alarm retries when using `ctx.abort()` \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:07:10.338460+00:00",
-  "html_len": 72286,
-  "md_len": 2412,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:32.297475+00:00"
 }

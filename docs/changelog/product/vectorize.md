@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/vectorize/
 title: Vectorize Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:50.458545+00:00
+fetched_at: 2026-10-10T14:38:03.766798+00:00
 ---
 
 # Vectorize Changelog | Cloudflare Docs

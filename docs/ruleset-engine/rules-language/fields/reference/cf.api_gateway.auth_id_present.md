@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.api_gateway.auth_id_present/
 title: cf.api_gateway.auth_id_present \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:02.815339+00:00
+fetched_at: 2026-10-10T14:37:35.846118+00:00
 ---
 
 # cf.api_gateway.auth_id_present · Cloudflare Ruleset Engine docs

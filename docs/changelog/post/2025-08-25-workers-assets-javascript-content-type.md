@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-08-25-workers-assets-javascript-content-type/
 title: Content type returned in Workers Assets for Javascript files is now `text/javascript` \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:20.683797+00:00
+fetched_at: 2026-10-10T14:38:49.662315+00:00
 ---
 
 # Content type returned in Workers Assets for Javascript files is now `text/javascript` · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-08-25-workers-assets-javascript-content-type/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 JavaScript asset responses have been updated to use the `text/javascript` Content-Type header instead of `application/javascript`. While both MIME types are widely supported by browsers, the HTML Living Standard explicitly recommends `text/javascript` as the preferred type going forward.
 

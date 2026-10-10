@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.waf.auth_detected/
 title: cf.waf.auth_detected \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:07.803560+00:00
+fetched_at: 2026-10-10T14:37:34.023675+00:00
 ---
 
 # cf.waf.auth_detected · Cloudflare Ruleset Engine docs

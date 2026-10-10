@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/sandbox/coding-agents/devin/
 title: Run Devin in a sandbox \u00b7 Cloudflare Sandboxes docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:16.205625+00:00
+fetched_at: 2026-10-10T14:39:26.680043+00:00
 ---
 
 # Run Devin in a sandbox · Cloudflare Sandboxes docs
@@ -18,7 +18,7 @@ fetched_at: 2026-10-08T07:15:16.205625+00:00
 
 # Run Devin in a sandbox
 
-Last updated Sep 30, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/sandbox/coding-agents/devin/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 9, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewPrerequisites Get your Devin credentialsDeploy with one clickCustomize and deploy manuallyRun a Devin sessionHow the template runs sessionsSecurityRelated resources
 
@@ -53,7 +53,7 @@ For more information about outposts, refer to the [Devin Outposts overview ↗�
 
 The **Deploy to Cloudflare** button creates the Worker, the cron trigger, the Durable Object namespace, and the container application.
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/sandbox-sdk/tree/main/devin)
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/sandbox-sdk/tree/main/templates/devin)
 
 Enter these values when the deployment flow prompts for them:
 
@@ -72,11 +72,11 @@ Deploy manually when you need to add dependencies, tools, or environment variabl
 
 npmyarnpnpm
          
-         npm create cloudflare@latest -- cloudflare-devin-outpost --template=cloudflare/sandbox-sdk/devin
+         npm create cloudflare@latest -- cloudflare-devin-outpost --template=cloudflare/sandbox-sdk/templates/devin
          
-         yarn create cloudflare cloudflare-devin-outpost --template=cloudflare/sandbox-sdk/devin
+         yarn create cloudflare cloudflare-devin-outpost --template=cloudflare/sandbox-sdk/templates/devin
          
-         pnpm create cloudflare@latest cloudflare-devin-outpost --template=cloudflare/sandbox-sdk/devin
+         pnpm create cloudflare@latest cloudflare-devin-outpost --template=cloudflare/sandbox-sdk/templates/devin
 
   2. Go to the project directory and log in to your Cloudflare account:
          
@@ -148,7 +148,7 @@ For more information, refer to [Sandbox security](https://developers.cloudflare.
 ## Related resources
 
   * [Devin Outposts overview ↗︎](https://docs.devin.ai/cloud/outposts/overview)
-  * [Devin Outpost template ↗︎](https://github.com/cloudflare/sandbox-sdk/tree/main/devin)
+  * [Devin Outpost template ↗︎](https://github.com/cloudflare/sandbox-sdk/tree/main/templates/devin)
   * [Containers](https://developers.cloudflare.com/containers/)
   * [Save and restore a sandbox with snapshots](https://developers.cloudflare.com/sandbox/files/save-and-restore-a-workspace/)
 

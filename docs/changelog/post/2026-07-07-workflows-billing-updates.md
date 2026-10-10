@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-07-workflows-billing-updates/
 title: Workflows pricing adds per-step billing. Step and storage billing to start no earlier than August 10, 2026. \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:01.803995+00:00
+fetched_at: 2026-10-10T14:38:35.316771+00:00
 ---
 
 # Workflows pricing adds per-step billing. Step and storage billing to start no earlier than August 10, 2026. · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workflows](https://developers.cloudflare.com/workflows/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-07-workflows-billing-updates/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Workflows](https://developers.cloudflare.com/workflows/) pricing now includes per-step billing. Requests and CPU time billing have been enabled since the initial public beta and is not changing.
 

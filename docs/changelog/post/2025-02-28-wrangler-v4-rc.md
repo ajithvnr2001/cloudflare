@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-02-28-wrangler-v4-rc/
 title: Use the latest JavaScript features with Wrangler CLI v4.0.0-rc.0 \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:05.023680+00:00
+fetched_at: 2026-10-10T14:38:54.389315+00:00
 ---
 
 # Use the latest JavaScript features with Wrangler CLI v4.0.0-rc.0 · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-02-28-wrangler-v4-rc/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We've released a release candidate of the next major version of [Wrangler](https://developers.cloudflare.com/workers/wrangler/), the CLI for Cloudflare Workers — `wrangler@4.0.0-rc.0`.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-12-01-build-image-policies-dev-plat/
 title: Build image policies for Workers Builds and Cloudflare Pages \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:30.467605+00:00
+fetched_at: 2026-10-10T14:38:46.199039+00:00
 ---
 
 # Build image policies for Workers Builds and Cloudflare Pages · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-12-01-build-image-policies-dev-plat/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We've published build image policies for [Workers Builds](https://developers.cloudflare.com/workers/ci-cd/builds/build-image/#build-image-policy) and [Cloudflare Pages](https://developers.cloudflare.com/pages/configuration/build-image/#build-image-policy), which establish:
 

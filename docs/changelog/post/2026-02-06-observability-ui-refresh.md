@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-02-06-observability-ui-refresh/
 title: Visualize data, share links, and create exports with the new Workers Observability dashboard \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:35.903395+00:00
+fetched_at: 2026-10-10T14:38:44.275251+00:00
 ---
 
 # Visualize data, share links, and create exports with the new Workers Observability dashboard · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-02-06-observability-ui-refresh/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The [Workers Observability dashboard ↗︎](https://dash.cloudflare.com/?to=/:account/workers-and-pages/observability/) has some major updates to make it easier to debug your application's issues and share findings with your team.
 

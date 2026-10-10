@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-07-websocket-analytics-dataset/
 title: New WebSocket Analytics Logpush dataset \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:01.639684+00:00
+fetched_at: 2026-10-10T14:38:35.332868+00:00
 ---
 
 # New WebSocket Analytics Logpush dataset · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Logs](https://developers.cloudflare.com/logs/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-07-websocket-analytics-dataset/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Enterprise customers can now push per-connection WebSocket analytics to any [Logpush destination](https://developers.cloudflare.com/logs/logpush/logpush-job/enable-destinations/) using the new `websocket_analytics` dataset. Each log record is emitted when a WebSocket connection closes and includes fields that were previously only available to Cloudflare engineers via internal tooling.
 

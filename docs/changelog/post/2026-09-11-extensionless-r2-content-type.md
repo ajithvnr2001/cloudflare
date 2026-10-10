@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-11-extensionless-r2-content-type/
 title: AI Search supports extensionless R2 objects with Content-Type metadata \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:13.449491+00:00
+fetched_at: 2026-10-10T14:38:31.366528+00:00
 ---
 
 # AI Search supports extensionless R2 objects with Content-Type metadata · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Search](https://developers.cloudflare.com/ai-search/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-11-extensionless-r2-content-type/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 AI Search can index R2 objects without filename extensions when they include supported `Content-Type` metadata. This supports object keys that do not include file extensions while preserving file-type validation during indexing.
 

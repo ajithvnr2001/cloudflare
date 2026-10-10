@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-08-06-zone-monitoring-improvements/
 title: Improvements to Monitoring Using Zone Settings \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:18.928835+00:00
+fetched_at: 2026-10-10T14:38:50.300351+00:00
 ---
 
 # Improvements to Monitoring Using Zone Settings · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Load Balancing](https://developers.cloudflare.com/load-balancing/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-08-06-zone-monitoring-improvements/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare Load Balancing Monitors support loading and applying settings for a specific zone to monitoring requests to origin endpoints. This feature has been migrated to new infrastructure to improve reliability, performance, and accuracy.
 

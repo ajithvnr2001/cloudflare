@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-13-local-explorer/
 title: Local Explorer for local resource data \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:46.110710+00:00
+fetched_at: 2026-10-10T14:38:40.710075+00:00
 ---
 
 # Local Explorer for local resource data · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-13-local-explorer/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Local Explorer is a browser-based interface and REST API for viewing and editing local resource data during development. It removes the need to write throwaway scripts or dig through `.wrangler/state` to understand what data your Worker has stored locally.
 

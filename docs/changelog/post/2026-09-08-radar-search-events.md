@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-08-radar-search-events/
 title: Radar search now includes Internet events \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:12.940782+00:00
+fetched_at: 2026-10-10T14:38:31.539699+00:00
 ---
 
 # Radar search now includes Internet events · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Radar](https://developers.cloudflare.com/radar/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-08-radar-search-events/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [**Cloudflare Radar**](https://developers.cloudflare.com/radar/) search now includes Internet events and outages alongside existing results. Search event descriptions or related entities, such as locations, ASes, bots, and top-level domains, to find relevant events and open the most relevant Radar view.
 

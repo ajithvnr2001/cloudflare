@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-03-04-new-markdown-conversion-options/
 title: New conversion options for Markdown Conversion \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:39.811898+00:00
+fetched_at: 2026-10-10T14:38:42.786680+00:00
 ---
 
 # New conversion options for Markdown Conversion · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers AI](https://developers.cloudflare.com/workers-ai/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-03-04-new-markdown-conversion-options/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now customize how the [Markdown Conversion](https://developers.cloudflare.com/workers-ai/features/markdown-conversion/) service processes different file types by passing a `conversionOptions` object.
 

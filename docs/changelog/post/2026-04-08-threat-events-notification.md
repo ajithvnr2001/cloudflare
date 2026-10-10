@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-08-threat-events-notification/
 title: Real-time alerts and daily digests for Threat Events \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:45.490882+00:00
+fetched_at: 2026-10-10T14:38:40.872094+00:00
 ---
 
 # Real-time alerts and daily digests for Threat Events · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Security Center](https://developers.cloudflare.com/security-center/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-08-threat-events-notification/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now automate your threat monitoring by setting up custom alerts in your saved views. Instead of manually checking the dashboard for updates, you can subscribe to notifications that trigger whenever new data matches your specific filter sets, like new activity associated to a particular threat actor or spikes in activity within your industry.
 

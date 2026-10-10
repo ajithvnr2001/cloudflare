@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/email-service/
 title: Cloudflare Email Service \u00b7 Cloudflare Email Service docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:11:12.342456+00:00
+fetched_at: 2026-10-10T14:39:29.538468+00:00
 ---
 
 # Cloudflare Email Service · Cloudflare Email Service docs
@@ -16,7 +16,7 @@ fetched_at: 2026-10-08T07:11:12.342456+00:00
 
 # Cloudflare Email Service
 
-Last updated Jun 9, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/email-service/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewFeaturesRelated productsMore resources
 
@@ -107,11 +107,7 @@ Add the bindings to your Wrangler configuration file:
     	],
     
     	// Email routing
-    	"email": [
-    		{
-    			"name": "EMAIL_HANDLER"
-    		}
-    	]
+    	"addresses": ["support@yourdomain.com"]
     }
     
     

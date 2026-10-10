@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers/examples/signing-requests/
 title: Sign requests \u00b7 Cloudflare Workers docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:26.021023+00:00
+fetched_at: 2026-10-10T14:39:27.505234+00:00
 ---
 
 # Sign requests · Cloudflare Workers docs
@@ -20,7 +20,7 @@ fetched_at: 2026-10-08T07:17:26.021023+00:00
 
 Verify a signed request using the HMAC and SHA-256 algorithms or return a 403.
 
-Last updated Apr 23, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers/examples/signing-requests/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewValidate signed requests using the WAF
 
@@ -264,7 +264,7 @@ The following Worker will:
     	SECRET_DATA: string;
     }
     
-    const app = new Hono();
+    const app = new Hono<{ Bindings: Env }>();
     
     // Handle URL generation requests
     app.get("/generate/*", async (c) => {
@@ -285,12 +285,13 @@ The following Worker will:
     	);
     
     	// Replace "/generate/" prefix with "/"
-    	let pathname = c.req.path.replace("/generate/", "/");
+    	const url = new URL(c.req.url);
+    	url.pathname = url.pathname.replace("/generate/", "/");
     
     	const timestamp = Math.floor(Date.now() / 1000);
     
     	// Data to authenticate: pathname + timestamp
-    	const dataToAuthenticate = `${pathname}${timestamp}`;
+    	const dataToAuthenticate = `${url.pathname}${timestamp}`;
     
     	// Sign the data
     	const mac = await crypto.subtle.sign(
@@ -305,7 +306,7 @@ The following Worker will:
     	// Add verification parameter to URL
     	url.searchParams.set("verify", `${timestamp}-${base64Mac}`);
     
-    	return c.text(`${pathname}${url.search}`);
+    	return c.text(url.toString());
     });
     
     // Handle verification for all other requests
@@ -364,7 +365,7 @@ The following Worker will:
     	}
     
     	// If verification passes, proxy the request to example.com
-    	return proxy(`https://example.com/${c.req.path}`, ...c.req);
+    	return proxy(`https://example.com${c.req.path}`, { ...c.req });
     });
     
     export default app;

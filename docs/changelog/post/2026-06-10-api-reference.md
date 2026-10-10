@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-10-api-reference/
 title: Flagship API reference now available \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:57.413151+00:00
+fetched_at: 2026-10-10T14:38:36.894520+00:00
 ---
 
 # Flagship API reference now available · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Flagship](https://developers.cloudflare.com/flagship/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-10-api-reference/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The **[Flagship API reference](https://developers.cloudflare.com/api/resources/flagship/)** is now available. You can use the Cloudflare API to create and update apps, and to create, update, delete, and list feature flags without using the dashboard.
 

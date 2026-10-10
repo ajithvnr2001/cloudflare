@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/xai/grok-4.20-0309-non-reasoning/
 title: Grok 4.20 Non-Reasoning (xAI) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:06.960864+00:00
+fetched_at: 2026-10-10T14:39:06.592196+00:00
 ---
 
 # Grok 4.20 Non-Reasoning (xAI) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:05:06.960864+00:00
 
 Text Generation • xAI
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/xai/grok-4.20-0309-non-reasoning/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `xai/grok-4.20-0309-non-reasoning`
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/realtime/realtimekit/core/api-reference/rtkstore/
 title: RTKStore \u00b7 Cloudflare Realtime docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:12:57.167829+00:00
+fetched_at: 2026-10-10T14:37:57.161260+00:00
 ---
 
 # RTKStore · Cloudflare Realtime docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:12:57.167829+00:00
 
 # RTKStore
 
-Last updated Jul 22, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/realtime/realtimekit/core/api-reference/rtkstore/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Jul 22, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Overview store.set(key, value, [sync], [emit]) ⇒ Promise.<void> store.bulkSet(data) ⇒ Promise.<void> store.update(key, value, [sync]) ⇒ Promise.<void> store.delete(key, [sync], [emit]) ⇒ Promise.<void> store.bulkDelete(data) ⇒ Promise.<void> store.get(key) ⇒ any store.getAll() ⇒ RTKStoreData store.clear() store.updateRateLimits(num, period) store.updateBulkRateLimits(num, period) store.subscribe(key, cb) ⇒ void store.unsubscribe(key, [cb]) ⇒ void store.populate(data)
 

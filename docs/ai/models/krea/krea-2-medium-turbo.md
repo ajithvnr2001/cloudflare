@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/krea/krea-2-medium-turbo/
 title: Krea 2 Medium Turbo (krea) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:58.168948+00:00
+fetched_at: 2026-10-10T14:39:13.346731+00:00
 ---
 
 # Krea 2 Medium Turbo (krea) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ k
 
 Text-to-Image • krea
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/krea/krea-2-medium-turbo/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `krea/krea-2-medium-turbo`
 

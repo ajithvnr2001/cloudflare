@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-11-21-new-cpu-pricing/
 title: New CPU Pricing for Containers and Sandboxes \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:30.122427+00:00
+fetched_at: 2026-10-10T14:38:46.460096+00:00
 ---
 
 # New CPU Pricing for Containers and Sandboxes · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Containers](https://developers.cloudflare.com/containers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-11-21-new-cpu-pricing/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Containers](https://developers.cloudflare.com/containers/) and [Sandboxes](https://developers.cloudflare.com/sandbox/) pricing for CPU time is now based on active usage only, instead of provisioned resources.
 

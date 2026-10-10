@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-02-images-binding-updates/
 title: New in Images: text rasterization and updates to the binding \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:12.280140+00:00
+fetched_at: 2026-10-10T14:38:31.686783+00:00
 ---
 
 # New in Images: text rasterization and updates to the binding · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare Images](https://developers.cloudflare.com/images/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-02-images-binding-updates/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We've added more ways to manage and manipulate images with the [Images binding](https://developers.cloudflare.com/images/optimization/binding/). Here's what's new:
 

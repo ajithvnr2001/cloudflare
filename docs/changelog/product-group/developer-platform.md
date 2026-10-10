@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product-group/developer-platform/
 title: Developer platform Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:30.044306+00:00
+fetched_at: 2026-10-10T14:38:21.586824+00:00
 ---
 
 # Developer platform Changelog | Cloudflare Docs
@@ -230,6 +230,200 @@ Zaraz
 No products found.
 
 [ View RSS feeds ](https://developers.cloudflare.com/fundamentals/new-features/available-rss-feeds/)[ Subscribe to RSS ](https://developers.cloudflare.com/changelog/rss/index.xml)
+
+Oct 10, 2026
+
+## [Cloudflare API MCP server serves Cloudflare skills](https://developers.cloudflare.com/changelog/post/2026-10-10-cloudflare-mcp-skills/)
+
+[Agents](https://developers.cloudflare.com/agents/)
+
+The [Cloudflare API MCP server](https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/#cloudflare-api-mcp-server) now serves [Cloudflare skills ↗︎](https://github.com/cloudflare/skills) through the [Skills over MCP extension ↗︎](https://modelcontextprotocol.io/extensions/skills/overview). MCP clients that support the extension discover the skills with `skills/list` and read their files at `skill://<name>/<path>`.
+
+To use them, add `https://mcp.cloudflare.com/mcp` to an [MCP client that supports the extension ↗︎](https://modelcontextprotocol.io/extensions/client-matrix).
+
+Oct 9, 2026
+
+## [R2 bandwidth by Cloudflare location](https://developers.cloudflare.com/changelog/post/2026-10-09-r2-bandwidth-by-location/)
+
+[R2](https://developers.cloudflare.com/r2/)
+
+You can now view R2 bandwidth by the Cloudflare location that served each request in the Cloudflare UI. This helps you see which locations consume the most bandwidth with options to select a specific bucket and download (read) vs upload (write) bandwidth.
+
+[ Go to **R2 overview** ↗ ](https://dash.cloudflare.com/?to=/:account/r2/metrics) ![R2 bandwidth by location chart showing throughput for the top five Cloudflare locations](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=665,height=427,format=webp/_astro/r2-bandwidth-by-location.JMiyoI-0.png)
+
+By default, the chart shows the top five locations by total bandwidth consumed during the selected time range. Use the **Top 5 locations** dropdown to select other locations, up to six at a time.
+
+For more information, refer to [R2 metrics and analytics](https://developers.cloudflare.com/r2/platform/metrics-analytics/).
+
+Oct 9, 2026
+
+## [Clef-omni adds audio and video input, Clef-flash is now cheaper, and Clef is faster](https://developers.cloudflare.com/changelog/post/2026-10-09-clef-omni-workers-ai/)
+
+[Workers AI](https://developers.cloudflare.com/workers-ai/)
+
+[`@cf/cloudflare/clef-omni`](https://developers.cloudflare.com/workers-ai/models/clef-omni/) is now available on Workers AI. Clef-omni is a decision model that takes audio (WAV or MP3) and video (MP4 or WebM) input alongside text and images. It joins [Clef](https://developers.cloudflare.com/workers-ai/models/clef/) and [Clef-flash](https://developers.cloudflare.com/workers-ai/models/clef-flash/) in the Clef family of open-weight decision models. We also cut the price of Clef-flash, so it now costs less than Jev, and made Clef faster.
+
+#### Clef-omni: one decision model for every modality
+
+Previously, making a decision about a voice recording or a video meant chaining models together: transcribe the speech, split the audio and visual tracks, then pass the results to a text decision model. Clef-omni reads every modality directly in one request. A video's soundtrack is aligned with its frames, so the model can reason over what is seen and heard at the same time.
+
+Clef-omni is built on a 30B-parameter mixture-of-experts (MoE) backbone with 3B active parameters. Like the rest of the Clef family, it does not generate text. It scores every allowed answer in a single pass, so decisions return quickly:
+
+  * Text requests: about 20 ms
+  * Image or audio inputs: under 100 ms
+  * A 21-second video clip with sound: about 300 ms
+
+
+
+Pass media as base64 data URLs in the `images`, `audio`, and `videos` fields:
+    
+    
+    const response = await env.AI.run("@cf/cloudflare/clef-omni", {
+    	model: "clef-omni",
+    	state:
+    		"Review the installation: a photo of the unit, an audio recording of it running, and a video of the fan.",
+    	images: ["data:image/png;base64,<base64-png>"],
+    	audio: ["data:audio/mpeg;base64,<base64-mp3>"],
+    	videos: ["data:video/mp4;base64,<base64-mp4>"],
+    	questions: {
+    		label_visible: {
+    			type: "noul",
+    			instructions:
+    				"Is the model and serial number label visible in the photo?",
+    		},
+    		sounds_normal: {
+    			type: "noul",
+    			instructions:
+    				"Does the unit sound like it is running smoothly, without rattling or grinding?",
+    		},
+    		fan_running: {
+    			type: "noul",
+    			instructions: "Is the fan running in the video?",
+    		},
+    	},
+    });
+    
+    
+    const response = await env.AI.run("@cf/cloudflare/clef-omni", {
+    	model: "clef-omni",
+    	state:
+    		"Review the installation: a photo of the unit, an audio recording of it running, and a video of the fan.",
+    	images: ["data:image/png;base64,<base64-png>"],
+    	audio: ["data:audio/mpeg;base64,<base64-mp3>"],
+    	videos: ["data:video/mp4;base64,<base64-mp4>"],
+    	questions: {
+    		label_visible: {
+    			type: "noul",
+    			instructions:
+    				"Is the model and serial number label visible in the photo?",
+    		},
+    		sounds_normal: {
+    			type: "noul",
+    			instructions:
+    				"Does the unit sound like it is running smoothly, without rattling or grinding?",
+    		},
+    		fan_running: {
+    			type: "noul",
+    			instructions: "Is the fan running in the video?",
+    		},
+    	},
+    });
+
+Clef-omni scores highest of the Clef family on BANKING77, CLINC150+OOS, and Amazon ESCI:
+
+Benchmark | Clef-omni | Clef | Clef-flash | Jev  
+---|---|---|---|---  
+BFCL (case exact) | 98.2 | 98.47 | **98.76** | 95.75  
+BANKING77 (macro-F1) | **94.8** | 94.20 | 90.93 | 79.74  
+CLINC150+OOS (macro-F1) | **97.7** | 97.43 | 66.77 | 89.27  
+Amazon ESCI (macro-F1) | **57.8** | 57.48 | 57.39 | 55.21  
+PhishNChips (accuracy) | 73.2 | **79.60** | 75.05 | 62.55  
+  
+#### Clef-flash is now cheaper
+
+Clef-flash now costs **$0.038 per million input tokens** , down from $0.090, which makes it cheaper than Jev. To offer this price, the hosted Clef-flash context window is now 24K tokens, down from 64K. Based on usage data, only 0.24% of requests exceed 24K input tokens. If you need a larger context window, use Clef, which keeps its 64K context window.
+
+The Clef-flash weights on Hugging Face are unchanged and support up to a 256K context window if you self-host.
+
+Model | Price | Context window  
+---|---|---  
+[`@cf/cloudflare/clef-flash`](https://developers.cloudflare.com/workers-ai/models/clef-flash/) | $0.038 per M input tokens | 24K tokens  
+[`@cf/cloudflare/clef`](https://developers.cloudflare.com/workers-ai/models/clef/) | $0.240 per M input tokens | 64K tokens  
+[`@cf/cloudflare/clef-omni`](https://developers.cloudflare.com/workers-ai/models/clef-omni/) | $0.150 per M input tokens | 64K tokens  
+  
+All Clef models convert image inputs to input tokens, and Clef-omni does the same for audio and video. For details on how each input type is tokenized, refer to the [Clef](https://developers.cloudflare.com/workers-ai/models/clef/), [Clef-flash](https://developers.cloudflare.com/workers-ai/models/clef-flash/), and [Clef-omni](https://developers.cloudflare.com/workers-ai/models/clef-omni/) model pages.
+
+#### Clef is now faster
+
+We optimized how Clef is served on Workers AI, so it now returns decisions up to 2x faster. The model weights are unchanged.
+
+Input size | Before: median / p95 (ms) | Now: median / p95 (ms) | Median speedup  
+---|---|---|---  
+~800 tokens | 262 / 438 | 152 / 351 | 1.7x  
+~3,400 tokens | 616 / 777 | 305 / 531 | 2.0x  
+~16,000 tokens | 2,721 / 3,250 | 1,635 / 1,805 | 1.7x  
+  
+Part of this speedup comes from moving Clef to [SGLang ↗︎](https://github.com/sgl-project/sglang). Clef support is coming to SGLang in version 0.5.22 ([PR #42721 ↗︎](https://github.com/sgl-project/sglang/pull/42721)). If you self-host Clef, launch commands are available in the [Clef collection on Hugging Face ↗︎](https://huggingface.co/collections/Cloudflare/clef).
+
+#### Get started
+
+Clef-omni follows the same System One API as Clef and Clef-flash, and works with [AI Gateway](https://developers.cloudflare.com/ai-gateway/). To try it, change the model ID to `@cf/cloudflare/clef-omni` and set the `model` selector to `clef-omni`.
+
+For more information, refer to the [Clef-omni model page](https://developers.cloudflare.com/workers-ai/models/clef-omni/) and [pricing](https://developers.cloudflare.com/workers-ai/platform/pricing/).
+
+Oct 8, 2026
+
+## [Create Workflow instance batches by count or list](https://developers.cloudflare.com/changelog/post/2026-10-08-create-batch-object-form/)
+
+[Workflows](https://developers.cloudflare.com/workflows/)[Workers](https://developers.cloudflare.com/workers/)
+
+[`createBatch()`](https://developers.cloudflare.com/workflows/build/workers-api/#createbatch) now accepts an options object that creates up to 100 Workflow instances in one call. The result lists the created instances and explains why any others were not created. To use this form in local development and get its types from `wrangler types`, use Wrangler 4.148.0 or later.
+
+To create instances that share the same options, pass `count`. Each instance receives a generated ID:
+    
+    
+    const result = await env.MY_WORKFLOW.createBatch({
+    	count: 10,
+    	params: { report: "daily" },
+    });
+    
+    
+    const result = await env.MY_WORKFLOW.createBatch({
+    	count: 10,
+    	params: { report: "daily" },
+    });
+
+To give each instance its own ID or options, pass `instances`:
+    
+    
+    const { created, errors } = await env.MY_WORKFLOW.createBatch({
+    	instances: [
+    		{ id: "order-1", params: { orderId: 1 } },
+    		{ id: "order-2", params: { orderId: 2 } },
+    	],
+    });
+    
+    for (const error of errors) {
+    	console.log(error.index, error.id, error.code, error.message);
+    }
+    
+    
+    const { created, errors } = await env.MY_WORKFLOW.createBatch({
+    	instances: [
+    		{ id: "order-1", params: { orderId: 1 } },
+    		{ id: "order-2", params: { orderId: 2 } },
+    	],
+    });
+    
+    for (const error of errors) {
+    	console.log(error.index, error.id, error.code, error.message);
+    }
+
+`created` contains the created instances. `errors` contains each entry that was not created, identified by its position in the input. IDs that already exist and IDs repeated within the batch are reported as errors instead of being skipped silently.
+
+Passing an array to `createBatch()` is deprecated. Existing code that uses the array form continues to work.
+
+For more information, refer to [`createBatch`](https://developers.cloudflare.com/workflows/build/workers-api/#createbatch).
 
 Oct 6, 2026
 
@@ -799,7 +993,7 @@ In the example, `env.AUTH_SERVER.validateToken` is that Service Binding call. Th
     	"name": "calendar-mcp",
     	"main": "src/index.ts",
     	// Set this to today's date
-    	"compatibility_date": "2026-10-08",
+    	"compatibility_date": "2026-10-10",
     	"services": [
     		{
     			"binding": "AUTH_SERVER",
@@ -813,7 +1007,7 @@ In the example, `env.AUTH_SERVER.validateToken` is that Service Binding call. Th
     name = "calendar-mcp"
     main = "src/index.ts"
     # Set this to today's date
-    compatibility_date = "2026-10-08"
+    compatibility_date = "2026-10-10"
     
     [[services]]
     binding = "AUTH_SERVER"
@@ -1450,178 +1644,6 @@ Sharing sessions means fewer new browsers to launch, less cold-start time, and f
 Concurrent connections require `@cloudflare/puppeteer` version 1.1.0 or later.
 
 Refer to [Reuse sessions](https://developers.cloudflare.com/browser-run/features/reuse-sessions/) for a full example.
-
-Sep 29, 2026
-
-## [Custom Container instance types no longer have a disk to memory ratio limit](https://developers.cloudflare.com/changelog/post/2026-09-29-remove-disk-to-memory-ratio/)
-
-[Containers](https://developers.cloudflare.com/containers/)
-
-[Containers](https://developers.cloudflare.com/containers/) custom instance types no longer limit disk based on memory. Previously, a custom instance type could have a maximum of 2 GB of disk for each 1 GiB of memory. You can now allocate up to the 20 GB disk maximum to any custom instance type.
-
-Use this to run workloads that need more disk than memory, such as workloads with large container images, datasets, or build caches. The maximum image size is the same as the instance disk space, so more disk also lets you deploy larger images.
-
-For example, a custom instance type with 1 vCPU and 3 GiB of memory was previously limited to 6 GB of disk. It can now use 20 GB:
-    
-    
-    {
-    	"containers": [
-    		{
-    			"image": "./Dockerfile",
-    			"instance_type": {
-    				"vcpu": 1,
-    				"memory_mib": 3072,
-    				"disk_mb": 20000,
-    			},
-    		},
-    	],
-    }
-    
-    
-    [[containers]]
-    image = "./Dockerfile"
-    
-      [containers.instance_type]
-      vcpu = 1
-      memory_mib = 3_072
-      disk_mb = 20_000
-
-The other custom instance type constraints do not change, including the minimum of 3 GiB of memory per vCPU. For the full list, refer to [Custom Instance Types](https://developers.cloudflare.com/containers/platform/limits/#custom-instance-types).
-
-Sep 29, 2026
-
-## [Identify Mesh, Workers VPC, and Cloudflare Tunnel replicas in network logs](https://developers.cloudflare.com/changelog/post/2026-09-29-mesh-workers-vpc-network-logs/)
-
-[Cloudflare Mesh](https://developers.cloudflare.com/mesh/)[Cloudflare Tunnel](https://developers.cloudflare.com/tunnel/)[Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)[Gateway](https://developers.cloudflare.com/cloudflare-one/traffic-policies/)[Workers VPC](https://developers.cloudflare.com/workers-vpc/)
-
-You can now tell a person on a laptop apart from a Mesh node or an AI agent running on Workers, without matching on connector email addresses or Mesh IP ranges — and see exactly which Cloudflare Tunnel and `cloudflared` replica received each session.
-
-[Gateway network logs](https://developers.cloudflare.com/cloudflare-one/insights/logs/dashboard-logs/gateway-logs/#network-logs) and [Zero Trust Network Session Logs](https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/account/zero_trust_network_sessions/) now identify two new kinds of traffic:
-
-  * **Mesh** — Traffic sent from or delivered to a [Cloudflare Mesh](https://developers.cloudflare.com/mesh/) node. Previously, Mesh nodes were logged the same way as devices running the [Cloudflare One Client](https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/), because Mesh nodes run the client in headless mode.
-  * **Workers VPC** — Traffic sent by a Worker through a [Workers VPC](https://developers.cloudflare.com/workers-vpc/) binding. Previously, Workers VPC sessions were not recorded in Network Session Logs.
-
-![Viewing Mesh and Workers VPC traffic in Gateway network logs](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1439,height=796,format=webp/_astro/2026-09-28-mesh-workers-vpc-network-logs.iGvLKYk7.gif)
-
-#### Gateway network logs
-
-To view these values in the dashboard, go to **Zero Trust** > **Insights & Logs** > **Logs** > **Network logs** , select **Columns** , and turn on **Traffic Source** and **Traffic Destination**. Both values also appear under **Network query details** when you open a log entry.
-
-#### Network Session Logs
-
-The `zero_trust_network_sessions` dataset, available through [Logpush](https://developers.cloudflare.com/cloudflare-one/insights/logs/logpush/), includes the following fields:
-
-Field | Description  
----|---  
-`OnrampType` | How the session entered Cloudflare One. Values: `CF1_CLIENT`, `MESH`, `WORKERS_VPC`, `MAGIC`, `OTHER`.  
-`Offramp` | Where the session was routed. Sessions routed to a Mesh node report `MESH`.  
-`SourceName` | Name of the Worker that started the session. Only populated for Workers VPC sessions.  
-`SourceID` | Stable identifier of the Worker that started the session. Only populated for Workers VPC sessions.  
-`DestinationReplicaID` | The replica that served the session, such as a specific replica of a Mesh node or a `cloudflared` replica of a Cloudflare Tunnel.  
-  
-For example, `OnrampType = 'WORKERS_VPC' AND Offramp = 'MESH'` returns every session where a Worker reached a service behind a Mesh node, and `SourceName` tells you which Worker it was.
-
-Redeploy your Workers
-
-`SourceName` and `SourceID` are only populated for Workers deployed after 29 September 2026. To include them for an existing Worker, redeploy it — for example, with `npx wrangler deploy`. No code changes are required.
-
-#### See which tunnel and replica received a session
-
-With `DestinationReplicaID`, you can now confirm which [Cloudflare Tunnel](https://developers.cloudflare.com/tunnel/) and which `cloudflared` replica received traffic for a specific session. Combine it with the existing `DestinationTunnelID` field to trace a session to an exact tunnel replica — or Mesh node replica — when you run multiple replicas for high availability. The replica ID matches the **Connector ID** shown in the dashboard, so you can [stream that replica's logs](https://developers.cloudflare.com/tunnel/observability/#remote-log-streaming) with `cloudflared tail --connector-id`.
-
-Sessions logged before this change are not backfilled. For all available fields, refer to [Zero Trust Network Session Logs](https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/account/zero_trust_network_sessions/).
-
-Sep 29, 2026
-
-## [Workers Cache — mark cached responses stale with invalidate()](https://developers.cloudflare.com/changelog/post/2026-09-29-workers-cache-invalidate/)
-
-[Workers](https://developers.cloudflare.com/workers/)
-
-[Workers Cache](https://developers.cloudflare.com/workers/cache/) now supports `invalidate()`, the soft counterpart of `purge()`. `purge()` deletes matching cached responses, so the next request is a cache miss. `invalidate()` keeps them but marks them stale, so the cache revalidates them with your Worker instead.
-
-To revalidate a response, the cache sends your Worker a conditional request built from the validators stored with it — for example, `If-None-Match` carrying the cached `ETag`. If your Worker answers `304 Not Modified`, the cache keeps the stored body. If your Worker answers with a full `200` response, that response replaces the cached one.
-
-`invalidate()` accepts the same options as `purge()`: `tags`, `pathPrefixes`, or `purgeEverything`. It follows the same per-entrypoint scoping and resolves to the same result object. Call it as `ctx.cache.invalidate()`, or import `cache` from `cloudflare:workers` and call `cache.invalidate()`.
-
-Use `invalidate()` when one call covers many cached responses but only some of them changed. Your Worker needs to emit `ETag` or `Last-Modified` and answer matching conditional requests with `304`. Each unchanged response then costs a validator check instead of a full regeneration:
-
-src/index.jsjs
-    
-    
-    export default {
-    	async fetch(request, env, ctx) {
-    		if (request.method === "POST") {
-    			// Write the updated catalog, then mark every cached product page stale.
-    			await syncCatalog(env, await request.json());
-    			await ctx.cache.invalidate({ tags: ["products"] });
-    			return new Response("Synced");
-    		}
-    
-    		const product = await getProduct(env, request);
-    		const etag = `"${product.revision}"`;
-    		const headers = {
-    			"Cache-Control": "public, max-age=86400",
-    			"Cache-Tag": "products",
-    			ETag: etag,
-    		};
-    
-    		// The product has not changed since it was cached. Answer 304, and the
-    		// cache keeps the body it already has.
-    		if (request.headers.get("If-None-Match") === etag) {
-    			return new Response(null, { status: 304, headers });
-    		}
-    
-    		return new Response(renderProductPage(product), { headers });
-    	},
-    };
-
-src/index.tsts
-    
-    
-    export default {
-    	async fetch(request, env, ctx): Promise<Response> {
-    		if (request.method === "POST") {
-    			// Write the updated catalog, then mark every cached product page stale.
-    			await syncCatalog(env, await request.json());
-    			await ctx.cache.invalidate({ tags: ["products"] });
-    			return new Response("Synced");
-    		}
-    
-    		const product = await getProduct(env, request);
-    		const etag = `"${product.revision}"`;
-    		const headers = {
-    			"Cache-Control": "public, max-age=86400",
-    			"Cache-Tag": "products",
-    			ETag: etag,
-    		};
-    
-    		// The product has not changed since it was cached. Answer 304, and the
-    		// cache keeps the body it already has.
-    		if (request.headers.get("If-None-Match") === etag) {
-    			return new Response(null, { status: 304, headers });
-    		}
-    
-    		return new Response(renderProductPage(product), { headers });
-    	},
-    } satisfies ExportedHandler<Env>;
-
-For more information, refer to [Invalidate cached responses](https://developers.cloudflare.com/workers/cache/purge/#invalidate-cached-responses).
-
-Sep 28, 2026
-
-## [Browser Run adds WebMCP to Kitesurf and moves to document.modelContext](https://developers.cloudflare.com/changelog/post/2026-09-28-webmcp-api/)
-
-[Browser Run](https://developers.cloudflare.com/browser-run/)
-
-[WebMCP](https://developers.cloudflare.com/browser-run/features/webmcp/) now works in [Kitesurf](https://developers.cloudflare.com/browser-run/kitesurf/) sessions as well as [Lab sessions](https://developers.cloudflare.com/browser-run/features/webmcp/#get-started). Both backends use the `document.modelContext` API from the [WebMCP Community Group draft ↗︎](https://webmachinelearning.github.io/webmcp/). Lab sessions no longer expose `navigator.modelContextTesting`.
-
-To list and run page tools:
-
-  * **Chrome DevTools** : Use the **Application** > **WebMCP** panel in the live view of a Lab session or in the [Kitesurf playground ↗︎](https://kitesurf.dev/).
-  * **AI agents** : Start [Chrome DevTools MCP](https://developers.cloudflare.com/browser-run/features/webmcp/#using-an-ai-agent) with the `--category-experimental-webmcp` flag to add the `list_webmcp_tools` and `execute_webmcp_tool` tools.
-  * **CDP clients** : Use the `WebMCP` CDP domain.
-
-
 
 ← Prev
 

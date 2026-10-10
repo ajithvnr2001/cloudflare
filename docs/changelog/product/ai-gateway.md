@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/ai-gateway/
 title: AI Gateway Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:39.972199+00:00
+fetched_at: 2026-10-10T14:38:12.333698+00:00
 ---
 
 # AI Gateway Changelog | Cloudflare Docs

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-11-07-automatic-tracing/
 title: Workers automatic tracing, now in open beta \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:28.489806+00:00
+fetched_at: 2026-10-10T14:38:47.075189+00:00
 ---
 
 # Workers automatic tracing, now in open beta · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-11-07-automatic-tracing/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Enable automatic tracing on your Workers, giving you detailed metadata and timing information for every operation your Worker performs.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-02-11-custom-errors-beta/
 title: Custom Errors (beta): Stored Assets & Account-level Rules \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:02.874114+00:00
+fetched_at: 2026-10-10T14:38:54.930863+00:00
 ---
 
 # Custom Errors (beta): Stored Assets & Account-level Rules · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Rules](https://developers.cloudflare.com/rules/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-02-11-custom-errors-beta/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We're introducing [Custom Errors](https://developers.cloudflare.com/rules/custom-errors/) (beta), which builds on our existing Custom Error Responses feature with new asset storage capabilities.
 

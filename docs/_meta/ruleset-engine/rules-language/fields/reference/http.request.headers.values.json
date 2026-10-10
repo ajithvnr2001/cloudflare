@@ -3,8 +3,5 @@
   "file": "ruleset-engine/rules-language/fields/reference/http.request.headers.values.md",
   "title": "http.request.headers.values \u00b7 Cloudflare Ruleset Engine docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:15:10.835626+00:00",
-  "html_len": 91632,
-  "md_len": 2410,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:32.658436+00:00"
 }

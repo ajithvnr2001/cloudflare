@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-30-rum-navigation-types/
 title: Web Analytics adds Navigation Type filtering and reporting \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:51.037254+00:00
+fetched_at: 2026-10-10T14:38:39.000330+00:00
 ---
 
 # Web Analytics adds Navigation Type filtering and reporting · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare Web Analytics](https://developers.cloudflare.com/web-analytics/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-30-rum-navigation-types/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare Web Analytics now supports **Navigation Type** reporting and filtering.
 

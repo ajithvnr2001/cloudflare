@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/gateway/
 title: Gateway Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:46.254429+00:00
+fetched_at: 2026-10-10T14:38:07.515821+00:00
 ---
 
 # Gateway Changelog | Cloudflare Docs

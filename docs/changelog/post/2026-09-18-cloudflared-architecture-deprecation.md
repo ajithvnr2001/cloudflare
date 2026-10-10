@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-18-cloudflared-architecture-deprecation/
 title: cloudflared to deprecate 32-bit Windows and Intel-based macOS builds in 2027 \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:14.967790+00:00
+fetched_at: 2026-10-10T14:38:30.964931+00:00
 ---
 
 # cloudflared to deprecate 32-bit Windows and Intel-based macOS builds in 2027 · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare Tunnel](https://developers.cloudflare.com/tunnel/)[Cloudflare Tunnel for SASE](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-18-cloudflared-architecture-deprecation/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Starting in 2027, Cloudflare will deprecate 32-bit Windows and Intel-based macOS builds of `cloudflared`. After the deprecation takes effect, Cloudflare will no longer publish new `cloudflared` releases for either architecture.
 

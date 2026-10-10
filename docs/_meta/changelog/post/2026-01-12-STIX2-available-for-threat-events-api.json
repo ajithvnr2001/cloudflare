@@ -3,8 +3,5 @@
   "file": "changelog/post/2026-01-12-STIX2-available-for-threat-events-api.md",
   "title": "Cloudflare Threat Events now support STIX2 format \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:33.189704+00:00",
-  "html_len": 64277,
-  "md_len": 1852,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:45.442336+00:00"
 }

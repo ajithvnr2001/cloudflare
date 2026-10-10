@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/bots/
 title: Bots Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:42.067391+00:00
+fetched_at: 2026-10-10T14:38:10.929148+00:00
 ---
 
 # Bots Changelog | Cloudflare Docs

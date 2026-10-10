@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/raw.http.request.uri/
 title: raw.http.request.uri \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:14.265940+00:00
+fetched_at: 2026-10-10T14:37:29.770420+00:00
 ---
 
 # raw.http.request.uri · Cloudflare Ruleset Engine docs

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-12-19-tanstack-start-prerendering/
 title: Static prerendering support for TanStack Start \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:32.553939+00:00
+fetched_at: 2026-10-10T14:38:45.595156+00:00
 ---
 
 # Static prerendering support for TanStack Start · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-12-19-tanstack-start-prerendering/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [TanStack Start ↗︎](https://tanstack.com/start/) apps can now prerender routes to static HTML at build time with access to build time environment variables and bindings, and serve them as [static assets](https://developers.cloudflare.com/workers/static-assets/). To enable prerendering, configure the `prerender` option of the TanStack Start plugin in your Vite config:
 

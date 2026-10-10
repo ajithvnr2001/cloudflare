@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-06-17-open-next-ssrf/
 title: SSRF vulnerability in @opennextjs/cloudflare proactively mitigated for all Cloudflare customers \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:14.653366+00:00
+fetched_at: 2026-10-10T14:38:51.555698+00:00
 ---
 
 # SSRF vulnerability in @opennextjs/cloudflare proactively mitigated for all Cloudflare customers · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-06-17-open-next-ssrf/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Mitigations have been put in place for all existing and future deployments of sites with the Cloudflare adapter for Open Next in response to an identified Server-Side Request Forgery (SSRF) vulnerability in the `@opennextjs/cloudflare` package.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/openai/gpt-5.6-terra/
 title: GPT-5.6 Terra (OpenAI) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:02.654421+00:00
+fetched_at: 2026-10-10T14:39:09.540206+00:00
 ---
 
 # GPT-5.6 Terra (OpenAI) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:05:02.654421+00:00
 
 Text Generation • OpenAI
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/openai/gpt-5.6-terra/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `openai/gpt-5.6-terra`
 

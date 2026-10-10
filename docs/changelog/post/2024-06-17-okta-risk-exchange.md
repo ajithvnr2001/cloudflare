@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2024-06-17-okta-risk-exchange/
 title: Exchange user risk scores with Okta \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:59.244879+00:00
+fetched_at: 2026-10-10T14:38:56.064005+00:00
 ---
 
 # Exchange user risk scores with Okta · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Risk Score](https://developers.cloudflare.com/cloudflare-one/team-and-resources/users/risk-score/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2024-06-17-okta-risk-exchange/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Beyond the controls in [Zero Trust](https://developers.cloudflare.com/cloudflare-one/), you can now [exchange user risk scores](https://developers.cloudflare.com/cloudflare-one/team-and-resources/users/risk-score/#send-risk-score-to-okta) with Okta to inform SSO-level policies.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-09-26-analytics-engine-sql-enhancements/
 title: Workers Analytics Engine adds supports for new SQL functions \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:24.319777+00:00
+fetched_at: 2026-10-10T14:38:48.410251+00:00
 ---
 
 # Workers Analytics Engine adds supports for new SQL functions · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers Analytics Engine](https://developers.cloudflare.com/analytics/analytics-engine/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-09-26-analytics-engine-sql-enhancements/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now perform more powerful queries directly in [Workers Analytics Engine ↗︎](https://developers.cloudflare.com/analytics/analytics-engine/) with a major expansion of our SQL function library.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/observability/traces/configuration/
 title: Configuration \u00b7 Cloudflare Observability docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:12:27.102319+00:00
+fetched_at: 2026-10-10T14:39:24.249887+00:00
 ---
 
 # Configuration · Cloudflare Observability docs
@@ -18,7 +18,7 @@ fetched_at: 2026-10-08T07:12:27.102319+00:00
 
 # Configuration
 
-Last updated Oct 2, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/observability/traces/configuration/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 9, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewHead samplingTrace rulesPersist tracesExport tracesPropagate trace context Incoming trace context Forward context to your origin
 
@@ -29,6 +29,12 @@ Configure [Cloudflare Traces](https://developers.cloudflare.com/observability/tr
 ## Head sampling
 
 **Default sample rate (%)** sets how many requests Cloudflare traces. For example, a rate of `10%` traces about 10 out of every 100 requests. Trace rules can use a different rate for requests that match a rule.
+
+Cloudflare makes the sampling decision when the request arrives. Once a request is selected for tracing, Cloudflare captures the full request path. There is no overhead with enabling tracing.
+
+Free plan daily limit
+
+Free accounts have a daily ingestion limit. When this limit is reached, Cloudflare stops ingesting new traces for the remainder of that day. Refer to [Cloudflare Observability pricing](https://developers.cloudflare.com/observability/pricing/) for limit details.
 
 ## Trace rules
 

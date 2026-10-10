@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-09-09-interactive-wrangler-assets/
 title: Deploy static sites to Workers without a configuration file \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:22.303598+00:00
+fetched_at: 2026-10-10T14:38:49.063288+00:00
 ---
 
 # Deploy static sites to Workers without a configuration file · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-09-09-interactive-wrangler-assets/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Deploying static site to Workers is now easier. When you run `wrangler deploy [directory]` or `wrangler deploy --assets [directory]` without an existing [configuration file](https://developers.cloudflare.com/workers/wrangler/configuration/), [Wrangler CLI](https://developers.cloudflare.com/workers/wrangler/) now guides you through the deployment process with interactive prompts.
 

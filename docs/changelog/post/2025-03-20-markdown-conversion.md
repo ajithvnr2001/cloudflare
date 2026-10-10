@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-03-20-markdown-conversion/
 title: Markdown conversion in Workers AI \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:06.908560+00:00
+fetched_at: 2026-10-10T14:38:53.829785+00:00
 ---
 
 # Markdown conversion in Workers AI · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers AI](https://developers.cloudflare.com/workers-ai/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-03-20-markdown-conversion/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Document conversion plays an important role when designing and developing AI applications and agents. Workers AI now provides the `toMarkdown` utility method that developers can use to for quick, easy, and convenient conversion and summary of documents in multiple formats to Markdown language.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/realtime/realtimekit/core/api-reference/rtkpip/
 title: RTKPip \u00b7 Cloudflare Realtime docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:12:55.921155+00:00
+fetched_at: 2026-10-10T14:37:57.640237+00:00
 ---
 
 # RTKPip · Cloudflare Realtime docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:12:55.921155+00:00
 
 # RTKPip
 
-Last updated Jul 22, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/realtime/realtimekit/core/api-reference/rtkpip/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Jul 22, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewModulesFunctions meeting.participants.pip.disable meeting.participants.pip.init([options]) meeting.participants.pip.disableSource(source) meeting.participants.pip.addSource(id, element, enabled, [displayText]) meeting.participants.pip.updateSource(id, source) meeting.participants.pip.removeSource(id) meeting.participants.pip.removePinnedSource(id) meeting.participants.pip.removeAllSources() meeting.participants.pip.enable()
 

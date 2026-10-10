@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-25-release-flows-workers-metrics/
 title: See every release and gradual deployment on Workers Metrics charts \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:16.384179+00:00
+fetched_at: 2026-10-10T14:38:30.444324+00:00
 ---
 
 # See every release and gradual deployment on Workers Metrics charts · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-25-release-flows-workers-metrics/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Workers Metrics](https://developers.cloudflare.com/workers/observability/metrics-and-analytics/) charts now show every release in the selected time range, including the full progression of [gradual deployments](https://developers.cloudflare.com/workers/versions-and-deployments/gradual-deployments/). This makes it easier to correlate changes in memory, CPU time, errors, or latency with the code that was serving traffic.
 

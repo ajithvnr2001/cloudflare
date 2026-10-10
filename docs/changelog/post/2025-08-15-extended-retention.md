@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-08-15-extended-retention/
 title: Extended retention \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:19.377531+00:00
+fetched_at: 2026-10-10T14:38:49.977021+00:00
 ---
 
 # Extended retention · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Log Explorer](https://developers.cloudflare.com/log-explorer/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-08-15-extended-retention/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Customers can now rely on Log Explorer to meet their log retention compliance requirements.
 

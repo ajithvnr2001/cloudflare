@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-03-03-radar-network-quality-test/
 title: Network Quality Test on Cloudflare Radar \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:39.426275+00:00
+fetched_at: 2026-10-10T14:38:42.915540+00:00
 ---
 
 # Network Quality Test on Cloudflare Radar · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Radar](https://developers.cloudflare.com/radar/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-03-03-radar-network-quality-test/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [**Radar**](https://developers.cloudflare.com/radar/) now includes a [Network Quality Test ↗︎](https://radar.cloudflare.com/speedtest) page. The tool measures Internet connection quality and performance, showing connection details such as IP address, server location, network (ASN), and IP version. For more detailed speed test results, the page links to [speed.cloudflare.com ↗︎](https://speed.cloudflare.com/).
 

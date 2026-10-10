@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-09-ai-search-content-selectors/
 title: Website Source CSS content selectors for precise content extraction in AI Search \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:45.679809+00:00
+fetched_at: 2026-10-10T14:38:40.847600+00:00
 ---
 
 # Website Source CSS content selectors for precise content extraction in AI Search · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Search](https://developers.cloudflare.com/ai-search/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-09-ai-search-content-selectors/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [AI Search](https://developers.cloudflare.com/ai-search/) now supports [CSS content selectors](https://developers.cloudflare.com/ai-search/configuration/data-source/website/content-selectors/) for website data sources. You can now define which parts of a crawled page are extracted and indexed by specifying CSS selectors paired with URL glob patterns.
 

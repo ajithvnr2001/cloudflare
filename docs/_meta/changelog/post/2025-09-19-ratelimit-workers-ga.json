@@ -3,8 +3,5 @@
   "file": "changelog/post/2025-09-19-ratelimit-workers-ga.md",
   "title": "Rate Limiting in Workers is now GA \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:23.242076+00:00",
-  "html_len": 62327,
-  "md_len": 1237,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:48.652058+00:00"
 }

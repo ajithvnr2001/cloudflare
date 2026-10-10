@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/http.request.body.truncated/
 title: http.request.body.truncated \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:10.391751+00:00
+fetched_at: 2026-10-10T14:37:32.857835+00:00
 ---
 
 # http.request.body.truncated · Cloudflare Ruleset Engine docs

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/recraft/recraftv3/
 title: Recraft V3 (Recraft) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:05.090214+00:00
+fetched_at: 2026-10-10T14:39:07.792626+00:00
 ---
 
 # Recraft V3 (Recraft) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:05:05.090214+00:00
 
 Text-to-Image • Recraft
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/recraft/recraftv3/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `recraft/recraftv3`
 

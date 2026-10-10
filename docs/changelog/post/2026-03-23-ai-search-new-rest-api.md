@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-03-23-ai-search-new-rest-api/
 title: New AI Search REST API endpoints for /search and /chat/completions \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:42.159193+00:00
+fetched_at: 2026-10-10T14:38:41.833357+00:00
 ---
 
 # New AI Search REST API endpoints for /search and /chat/completions · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Search](https://developers.cloudflare.com/ai-search/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-03-23-ai-search-new-rest-api/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [AI Search](https://developers.cloudflare.com/ai-search/) now offers new [REST API](https://developers.cloudflare.com/ai-search/api/search/rest-api/) endpoints for search and chat that use an OpenAI compatible format. This means you can use the familiar `messages` array structure that works with existing OpenAI SDKs and tools. The messages array also lets you pass previous messages within a session, so the model can maintain context across multiple turns.
 

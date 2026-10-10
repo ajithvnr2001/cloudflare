@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-02-27-br-rest-api-beta/
 title: New REST API is in open beta! \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:04.761200+00:00
+fetched_at: 2026-10-10T14:38:54.401532+00:00
 ---
 
 # New REST API is in open beta! · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Browser Run](https://developers.cloudflare.com/browser-run/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-02-27-br-rest-api-beta/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We've released a new REST API for [Browser Rendering](https://developers.cloudflare.com/browser-run/) in open beta, making interacting with browsers easier than ever. This new API provides endpoints for common browser actions, with more to be added in the future.
 

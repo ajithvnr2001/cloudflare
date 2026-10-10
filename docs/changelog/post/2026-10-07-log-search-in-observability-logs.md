@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-10-07-log-search-in-observability-logs/
 title: Query Log Explorer datasets from Observability Logs \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:19.528215+00:00
+fetched_at: 2026-10-10T14:38:29.281624+00:00
 ---
 
 # Query Log Explorer datasets from Observability Logs · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Log Explorer](https://developers.cloudflare.com/log-explorer/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-10-07-log-search-in-observability-logs/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Log Explorer datasets are now queried from the [Logs](https://developers.cloudflare.com/observability/logs/) page under **Observability** in the Cloudflare dashboard. The Logs page brings Log Explorer and Workers Observability datasets together with a shared filter builder, SQL editor, and visualizations.
 

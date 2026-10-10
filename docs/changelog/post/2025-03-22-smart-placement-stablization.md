@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-03-22-smart-placement-stablization/
 title: Smart Placement is smarter about running Workers and Pages Functions in the best locations \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:08.301795+00:00
+fetched_at: 2026-10-10T14:38:53.696167+00:00
 ---
 
 # Smart Placement is smarter about running Workers and Pages Functions in the best locations · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)[Pages](https://developers.cloudflare.com/pages/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-03-22-smart-placement-stablization/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Smart Placement](https://developers.cloudflare.com/workers/configuration/placement/) is a unique Cloudflare feature that can make decisions to move your Worker to run in a more optimal location (such as closer to a database). Instead of always running in the default location (the one closest to where the request is received), Smart Placement uses certain “heuristics” (rules and thresholds) to decide if a different location might be faster or more efficient.
 

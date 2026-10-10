@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product-group/application-performance/
 title: Application performance Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:23.793794+00:00
+fetched_at: 2026-10-10T14:38:26.031196+00:00
 ---
 
 # Application performance Changelog | Cloudflare Docs
@@ -230,6 +230,40 @@ Zaraz
 No products found.
 
 [ View RSS feeds ](https://developers.cloudflare.com/fundamentals/new-features/available-rss-feeds/)[ Subscribe to RSS ](https://developers.cloudflare.com/changelog/rss/index.xml)
+
+Oct 9, 2026
+
+## [Failed detections field available in Rules](https://developers.cloudflare.com/changelog/post/2026-10-09-failed-detections/)
+
+[WAF](https://developers.cloudflare.com/waf/)[Rules](https://developers.cloudflare.com/rules/)
+
+You can now use `cf.appsec.request.failed_detections` to control how your rules handle requests when a security detection reports a failure.
+
+The field is an `Array<String>` of detection IDs that reports failures from content scanning, WAF attack score, attack signature detection, leaked credentials detection, and AI prompt detections for personally identifiable information (PII), prompt injection, custom topics, and unsafe topics.
+
+The field does not alter the existing behavior of detections. Use it in rules to choose how to handle requests with reported failures.
+
+When no failures are reported, the field returns `[]`. You can use it on all plans, but your plan must still include the detections and rule features you want to use.
+
+Supported rules:
+
+  * Custom rules at the zone and account levels
+  * Rate limiting rules at the zone and account levels
+  * Request Header Transform Rules at the zone level
+
+
+
+Match any reported failure:
+    
+    
+    len(cf.appsec.request.failed_detections) gt 0
+
+Match a reported leaked credentials detection failure:
+    
+    
+    any(cf.appsec.request.failed_detections[*] eq "waf_credential_check")
+
+For more information, refer to the [Failed detections field reference](https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.appsec.request.failed_detections/).
 
 Oct 6, 2026
 
@@ -820,20 +854,6 @@ Vary in Cache Rules is available on all plans (Free, Pro, Business, and Enterpri
 #### Get started
 
 Configure Vary in the [Cloudflare dashboard ↗︎](https://dash.cloudflare.com/?to=/:account/:zone/caching/cache-rules) under **Caching** > **Cache Rules** , or through the [Rulesets API](https://developers.cloudflare.com/ruleset-engine/rulesets-api/). To learn how Vary affects cache keys and how each action works, refer to [Vary](https://developers.cloudflare.com/cache/concepts/vary/) and the [Cache Rules Vary setting](https://developers.cloudflare.com/cache/how-to/cache-rules/settings/#vary).
-
-Jun 23, 2026
-
-## [Regionalized IP Bindings for Regional Services](https://developers.cloudflare.com/changelog/post/2026-06-23-regionalized-ip-bindings/)
-
-[Data Localization Suite](https://developers.cloudflare.com/data-localization/)
-
-Regional Services now supports **Regionalized IP Bindings** , letting you regionalize traffic at the IP layer for prefixes you bring to Cloudflare through [Bring Your Own IP (BYOIP)](https://developers.cloudflare.com/byoip/).
-
-Where [Regional Hostnames](https://developers.cloudflare.com/data-localization/regional-services/regional-hostnames/) regionalize traffic by hostname, Regionalized IP Bindings let you bind a CIDR from one of your prefixes to a region — ideal for address-map deployments and any service you address by IP rather than hostname. Cloudflare then terminates TLS and processes traffic to those addresses only within the data centers in that region.
-
-Regionalized IP Bindings requires the Regional Services and Regional Services for BYOIP entitlements. Contact your account team to enable them.
-
-To get started, refer to [Regionalized IP Bindings](https://developers.cloudflare.com/data-localization/regional-services/ip-bindings/).
 
 ← Prev
 

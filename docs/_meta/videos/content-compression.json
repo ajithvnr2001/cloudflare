@@ -3,8 +3,5 @@
   "file": "videos/content-compression.md",
   "title": "Content compression | Cloudflare Docs",
   "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (284 chars), fallback to crawl4ai)",
-  "fetched_at": "2026-10-08T07:16:22.596351+00:00",
-  "html_len": 97842,
-  "md_len": 355,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:32.435499+00:00"
 }

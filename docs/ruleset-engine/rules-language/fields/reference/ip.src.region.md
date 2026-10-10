@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/ip.src.region/
 title: ip.src.region \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:13.381854+00:00
+fetched_at: 2026-10-10T14:37:30.696256+00:00
 ---
 
 # ip.src.region · Cloudflare Ruleset Engine docs

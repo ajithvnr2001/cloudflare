@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/alibaba/hh1.1-t2v/
 title: HappyHorse 1.1 T2V (Alibaba) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:49.950285+00:00
+fetched_at: 2026-10-10T14:39:18.971508+00:00
 ---
 
 # HappyHorse 1.1 T2V (Alibaba) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:04:49.950285+00:00
 
 Text-to-Video • Alibaba
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/alibaba/hh1.1-t2v/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `alibaba/hh1.1-t2v`
 

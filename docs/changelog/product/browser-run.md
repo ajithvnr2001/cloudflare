@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/browser-run/
 title: Browser Run Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:42.383571+00:00
+fetched_at: 2026-10-10T14:38:10.893950+00:00
 ---
 
 # Browser Run Changelog | Cloudflare Docs

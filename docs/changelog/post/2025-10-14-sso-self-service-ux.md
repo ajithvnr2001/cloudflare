@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-10-14-sso-self-service-ux/
 title: Single sign-on now manageable in the user experience \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:26.220319+00:00
+fetched_at: 2026-10-10T14:38:47.747906+00:00
 ---
 
 # Single sign-on now manageable in the user experience · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-10-14-sso-self-service-ux/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 ![Screenshot of new user experience for managing SSO](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1378,height=877,format=webp/_astro/2025-10-14-sso-configuration-ux.DLkIKSax.png)
 

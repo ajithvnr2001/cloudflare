@@ -3,8 +3,5 @@
   "file": "ai/models/openai/gpt-4o-transcribe.md",
   "title": "GPT-4o Transcribe (OpenAI) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:04:59.657695+00:00",
-  "html_len": 127393,
-  "md_len": 5910,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:39:11.940108+00:00"
 }

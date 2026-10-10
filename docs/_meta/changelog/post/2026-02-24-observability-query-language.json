@@ -3,8 +3,5 @@
   "file": "changelog/post/2026-02-24-observability-query-language.md",
   "title": "Write structured queries to filter and search your Workers logs and traces \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:38.392854+00:00",
-  "html_len": 62441,
-  "md_len": 2686,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:43.269714+00:00"
 }

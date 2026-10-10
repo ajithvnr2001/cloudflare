@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-05-07-url-scanner-geoegress/
 title: URL Scanner now supports geo-specific scanning \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:11.417216+00:00
+fetched_at: 2026-10-10T14:38:52.473676+00:00
 ---
 
 # URL Scanner now supports geo-specific scanning · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Security Center](https://developers.cloudflare.com/security-center/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-05-07-url-scanner-geoegress/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Enterprise customers can now choose the geographic location from which a URL scan is performed — either via [Security Center](https://developers.cloudflare.com/security-center/investigate/) in the Cloudflare dashboard or via the [URL Scanner API](https://developers.cloudflare.com/api/resources/url_scanner/subresources/scans/methods/create/).
 

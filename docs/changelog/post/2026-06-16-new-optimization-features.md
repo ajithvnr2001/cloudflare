@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-16-new-optimization-features/
 title: New optimization features in Images \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:58.667974+00:00
+fetched_at: 2026-10-10T14:38:36.596978+00:00
 ---
 
 # New optimization features in Images · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare Images](https://developers.cloudflare.com/images/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-16-new-optimization-features/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 These updates introduce new features for optimizing and manipulating with Images:
 

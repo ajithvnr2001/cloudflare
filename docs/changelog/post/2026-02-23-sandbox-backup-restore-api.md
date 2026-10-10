@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-02-23-sandbox-backup-restore-api/
 title: Backup and restore API for Sandbox SDK \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:38.236598+00:00
+fetched_at: 2026-10-10T14:38:43.413670+00:00
 ---
 
 # Backup and restore API for Sandbox SDK · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Agents](https://developers.cloudflare.com/agents/)[R2](https://developers.cloudflare.com/r2/)[Containers](https://developers.cloudflare.com/containers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-02-23-sandbox-backup-restore-api/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Sandboxes](https://developers.cloudflare.com/sandbox/) now support `createBackup()` and `restoreBackup()` methods for creating and restoring point-in-time snapshots of directories.
 

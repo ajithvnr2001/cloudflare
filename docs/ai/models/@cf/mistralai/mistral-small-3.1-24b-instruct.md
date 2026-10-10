@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/%40cf/mistralai/mistral-small-3.1-24b-instruct/
 title: mistral-small-3.1-24b-instruct (MistralAI) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:46.841398+00:00
+fetched_at: 2026-10-10T14:39:21.245150+00:00
 ---
 
 # mistral-small-3.1-24b-instruct (MistralAI) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:04:46.841398+00:00
 
 Text Generation • MistralAI
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/%40cf/mistralai/mistral-small-3.1-24b-instruct/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `@cf/mistralai/mistral-small-3.1-24b-instruct`
 

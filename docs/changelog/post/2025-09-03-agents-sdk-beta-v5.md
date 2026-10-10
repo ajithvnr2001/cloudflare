@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-09-03-agents-sdk-beta-v5/
 title: Agents SDK v0.1.0 and workers-ai-provider v2.0.0 with AI SDK v5 support \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:21.552024+00:00
+fetched_at: 2026-10-10T14:38:49.334081+00:00
 ---
 
 # Agents SDK v0.1.0 and workers-ai-provider v2.0.0 with AI SDK v5 support · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Agents](https://developers.cloudflare.com/agents/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-09-03-agents-sdk-beta-v5/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We've shipped a new release for the [Agents SDK ↗︎](https://github.com/cloudflare/agents) bringing full compatibility with [AI SDK v5 ↗︎](https://ai-sdk.dev/docs/introduction) and introducing automatic message migration that handles all legacy formats transparently.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/http.host/
 title: http.host \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:09.257390+00:00
+fetched_at: 2026-10-10T14:37:33.344466+00:00
 ---
 
 # http.host · Cloudflare Ruleset Engine docs

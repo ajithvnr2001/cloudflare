@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-10-28-raising-limits/
 title: Increased Workflows instance and concurrency limits \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:28.092200+00:00
+fetched_at: 2026-10-10T14:38:47.363418+00:00
 ---
 
 # Increased Workflows instance and concurrency limits · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workflows](https://developers.cloudflare.com/workflows/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-10-28-raising-limits/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We've raised the [Cloudflare Workflows](https://developers.cloudflare.com/workflows/) account-level limits for all accounts on the [Workers paid plan](https://developers.cloudflare.com/workers/platform/pricing/):
 

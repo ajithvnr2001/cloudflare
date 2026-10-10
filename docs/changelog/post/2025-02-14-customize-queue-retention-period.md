@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-02-14-customize-queue-retention-period/
 title: Customize queue message retention periods \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:03.313280+00:00
+fetched_at: 2026-10-10T14:38:54.786784+00:00
 ---
 
 # Customize queue message retention periods · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Queues](https://developers.cloudflare.com/queues/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-02-14-customize-queue-retention-period/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now customize a queue's message retention period, from a minimum of 60 seconds to a maximum of 14 days. Previously, it was fixed to the default of 4 days.
 

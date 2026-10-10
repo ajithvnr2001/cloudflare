@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-26-agents-sdk-v0.17.0/
 title: Agents SDK adds background sub-agents and a unified turn entry point \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:00.484190+00:00
+fetched_at: 2026-10-10T14:38:35.897527+00:00
 ---
 
 # Agents SDK adds background sub-agents and a unified turn entry point · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Agents](https://developers.cloudflare.com/agents/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-26-agents-sdk-v0.17.0/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The latest release of the [Agents SDK ↗︎](https://github.com/cloudflare/agents) makes it easier to run long work in the background, drive turns through one entry point, and keep chat agents working through deploys, evictions, and reconnects.
 

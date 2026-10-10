@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-17-javascript-rpc-session-spans/
 title: Workers traces now automatically include JavaScript RPC session spans \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:14.573014+00:00
+fetched_at: 2026-10-10T14:38:31.008971+00:00
 ---
 
 # Workers traces now automatically include JavaScript RPC session spans · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)[Durable Objects](https://developers.cloudflare.com/durable-objects/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-17-javascript-rpc-session-spans/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Workers traces can now follow JavaScript RPC calls across Worker boundaries and into Durable Objects. Previously, a trace stopped at the caller's RPC boundary. The dashboard now shows the caller-side session and method calls alongside the callee invocation, nested calls, and callbacks into another Worker.
 

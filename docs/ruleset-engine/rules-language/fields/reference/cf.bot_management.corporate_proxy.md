@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.bot_management.corporate_proxy/
 title: cf.bot_management.corporate_proxy \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:02.391138+00:00
+fetched_at: 2026-10-10T14:37:36.018327+00:00
 ---
 
 # cf.bot_management.corporate_proxy · Cloudflare Ruleset Engine docs

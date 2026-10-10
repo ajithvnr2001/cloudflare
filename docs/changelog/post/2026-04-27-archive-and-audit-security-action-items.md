@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-27-archive-and-audit-security-action-items/
 title: Archive and audit security action items \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:49.034082+00:00
+fetched_at: 2026-10-10T14:38:39.628275+00:00
 ---
 
 # Archive and audit security action items · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Security Overview](https://developers.cloudflare.com/security/overview/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-27-archive-and-audit-security-action-items/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 #### Archive and audit security action items
 

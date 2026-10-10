@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-05-14-python-worker-durable-object/
 title: Durable Objects are now supported in Python Workers \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:12.363332+00:00
+fetched_at: 2026-10-10T14:38:52.218658+00:00
 ---
 
 # Durable Objects are now supported in Python Workers · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)[Durable Objects](https://developers.cloudflare.com/durable-objects/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-05-14-python-worker-durable-object/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now create [Durable Objects](https://developers.cloudflare.com/durable-objects/) using [Python Workers](https://developers.cloudflare.com/workers/languages/python/). A Durable Object is a special kind of Cloudflare Worker which uniquely combines compute with storage, enabling stateful long-running applications which run close to your users. For more info see [here](https://developers.cloudflare.com/durable-objects/concepts/what-are-durable-objects/).
 

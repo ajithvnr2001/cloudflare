@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/sponsorships/
 title: Sponsorships | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:36.267347+00:00
+fetched_at: 2026-10-10T14:37:29.613685+00:00
 ---
 
 # Sponsorships | Cloudflare Docs

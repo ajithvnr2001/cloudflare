@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-05-radar-traffic-chart-granularity/
 title: Finer-grained chart granularity on Cloudflare Radar for longer time ranges \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:56.534478+00:00
+fetched_at: 2026-10-10T14:38:37.174572+00:00
 ---
 
 # Finer-grained chart granularity on Cloudflare Radar for longer time ranges · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Radar](https://developers.cloudflare.com/radar/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-05-radar-traffic-chart-granularity/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [**Radar**](https://developers.cloudflare.com/radar/) now provides finer-grained traffic charts for longer time ranges. Previously, selecting a 1-3 month view on HTTP and NetFlows charts defaulted to weekly aggregation, which was too coarse to surface meaningful trends. Views longer than 3 months defaulted to monthly aggregation, returning as few as 7 data points for a 6-month range.
 

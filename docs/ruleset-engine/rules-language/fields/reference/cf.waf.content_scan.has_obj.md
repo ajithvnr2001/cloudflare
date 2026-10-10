@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.waf.content_scan.has_obj/
 title: cf.waf.content_scan.has_obj \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:08.001760+00:00
+fetched_at: 2026-10-10T14:37:33.905838+00:00
 ---
 
 # cf.waf.content_scan.has_obj · Cloudflare Ruleset Engine docs

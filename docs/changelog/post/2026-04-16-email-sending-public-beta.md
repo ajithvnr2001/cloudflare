@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-16-email-sending-public-beta/
 title: Email Sending now in public beta \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:47.940192+00:00
+fetched_at: 2026-10-10T14:38:40.250569+00:00
 ---
 
 # Email Sending now in public beta · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Email Service](https://developers.cloudflare.com/email-service/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-16-email-sending-public-beta/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 **[Email Sending](https://developers.cloudflare.com/email-service/api/send-emails/)** is now in public beta. Send transactional emails directly from Workers (`env.EMAIL.send()`) or the REST API, with support for HTML, plain text, attachments, inline images, and custom headers. Email Sending joins [Email Routing ↗︎](https://blog.cloudflare.com/introducing-email-routing/) under the new **Cloudflare Email Service** — a single service for sending and receiving email on the Cloudflare developer platform.
 

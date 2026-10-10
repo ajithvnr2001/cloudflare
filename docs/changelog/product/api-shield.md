@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/api-shield/
 title: API Shield Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:41.021666+00:00
+fetched_at: 2026-10-10T14:38:11.716406+00:00
 ---
 
 # API Shield Changelog | Cloudflare Docs

@@ -3,8 +3,5 @@
   "file": "workers/previews/test-and-debug.md",
   "title": "Test and debug \u00b7 Cloudflare Workers docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:17:40.676750+00:00",
-  "html_len": 202863,
-  "md_len": 6931,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:39:23.850749+00:00"
 }

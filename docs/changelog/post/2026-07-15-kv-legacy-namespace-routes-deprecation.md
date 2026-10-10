@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-15-kv-legacy-namespace-routes-deprecation/
 title: Deprecate legacy Workers KV namespace API routes \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:03.321594+00:00
+fetched_at: 2026-10-10T14:38:34.849532+00:00
 ---
 
 # Deprecate legacy Workers KV namespace API routes · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [KV](https://developers.cloudflare.com/kv/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-15-kv-legacy-namespace-routes-deprecation/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The legacy Workers KV API routes under `/accounts/{account_id}/workers/namespaces/*` are deprecated as of July 15, 2026, and will stop working on October 15, 2026. Migrate to the documented [Workers KV API](https://developers.cloudflare.com/api/resources/kv/) routes under `/accounts/{account_id}/storage/kv/namespaces/*` before that date.
 

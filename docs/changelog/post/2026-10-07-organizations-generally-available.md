@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-10-07-organizations-generally-available/
 title: Cloudflare Organizations is generally available \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:19.673579+00:00
+fetched_at: 2026-10-10T14:38:29.343420+00:00
 ---
 
 # Cloudflare Organizations is generally available · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)[Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)[Gateway](https://developers.cloudflare.com/cloudflare-one/traffic-policies/)[Organizations](https://developers.cloudflare.com/fundamentals/organizations/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-10-07-organizations-generally-available/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare Organizations is now generally available for Enterprise customers and MSSP/Distributor partners.
 

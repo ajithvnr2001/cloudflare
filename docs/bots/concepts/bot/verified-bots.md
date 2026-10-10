@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/bots/concepts/bot/verified-bots/
 title: Verified bots \u00b7 Cloudflare bot solutions docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:33.293088+00:00
+fetched_at: 2026-10-10T14:39:27.797412+00:00
 ---
 
 # Verified bots · Cloudflare bot solutions docs
@@ -22,9 +22,9 @@ Concepts
 
 # Verified bots
 
-Last updated Jul 1, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/bots/concepts/bot/verified-bots/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
-OverviewClassificationBecoming a Verified bot Breach of policyLegacy categoriesAvailability
+OverviewClassificationBecoming a Verified bot Track your submission Breach of policyLegacy categoriesAvailability
 
 A Verified bot is a bot or agent that Cloudflare has confirmed is **transparent about who it is and what it does** : it represents itself honestly and does not abuse the access that honesty earns. Examples include search engine crawlers, monitoring services, and user-driven agents.
 
@@ -74,10 +74,21 @@ Because an **intermediary** acts on behalf of many different end users, the oper
 
 ## Becoming a Verified bot
 
-You can request for your bot or agent to be added to Cloudflare's bots and agents directory by filling out an [online application ↗︎](https://dash.cloudflare.com/?to=/:account/configurations/verified-bots) in the Cloudflare dashboard.
+You can request for your bot or agent to be added to Cloudflare's bots and agents directory by filling out the [BotBase submission form ↗︎](https://dash.cloudflare.com/?to=/:account/application-security/botbase/form) in the Cloudflare dashboard.
 
 Once Cloudflare approves a Verified bot, it should appear in [BotBase](https://developers.cloudflare.com/bots/botbase/), shared through [Cloudflare Radar's bots and agents directory ↗︎](https://radar.cloudflare.com/verified-bots).
 
+### Track your submission
+
+After submitting, track your application's progress in the Cloudflare dashboard under [BotBase > Submission history ↗︎](https://dash.cloudflare.com/?to=/:account/application-security/botbase/history).
+
+Status | Meaning  
+---|---  
+Waiting For Review | Cloudflare has received your submission and it is queued for review.  
+Accepted | Your bot was approved and will appear in BotBase and Radar's bots and agents directory.  
+Rejected | Your submission was declined. The dashboard does not show the rejection reason — [contact Cloudflare Support](https://developers.cloudflare.com/support/contacting-cloudflare-support/) for details.  
+Cancelled | The submission was withdrawn.  
+  
 The bot must be Verified using one of the following validation methods:
 
   * [Web Bot Auth](https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/)

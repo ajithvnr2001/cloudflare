@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-01-07-d1-faster-query/
 title: 40-60% Faster D1 Worker API Requests \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:02.259125+00:00
+fetched_at: 2026-10-10T14:38:55.575142+00:00
 ---
 
 # 40-60% Faster D1 Worker API Requests · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [D1](https://developers.cloudflare.com/d1/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-01-07-d1-faster-query/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Users making [D1](https://developers.cloudflare.com/d1/) requests via the [Workers API](https://developers.cloudflare.com/d1/worker-api/) can see up to a 60% end-to-end latency improvement due to the removal of redundant network round trips needed for each request to a D1 database.
 

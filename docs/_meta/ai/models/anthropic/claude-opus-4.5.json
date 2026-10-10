@@ -3,8 +3,5 @@
   "file": "ai/models/anthropic/claude-opus-4.5.md",
   "title": "Claude Opus 4.5 (Anthropic) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:04:51.658026+00:00",
-  "html_len": 203498,
-  "md_len": 30480,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:39:18.706051+00:00"
 }

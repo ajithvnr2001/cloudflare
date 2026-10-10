@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-13-markdown-conversion-text-output/
 title: Plain text output for Markdown Conversion \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:02.774835+00:00
+fetched_at: 2026-10-10T14:38:35.008269+00:00
 ---
 
 # Plain text output for Markdown Conversion · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers AI](https://developers.cloudflare.com/workers-ai/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-13-markdown-conversion-text-output/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The [Markdown Conversion](https://developers.cloudflare.com/workers-ai/features/markdown-conversion/) service now supports a new `output` conversion option that controls the format of the converted content.
 

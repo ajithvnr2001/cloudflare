@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-08-26-mcp-server-portals/
 title: MCP server portals \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:20.781071+00:00
+fetched_at: 2026-10-10T14:38:49.572201+00:00
 ---
 
 # MCP server portals · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Access](https://developers.cloudflare.com/cloudflare-one/access-controls/policies/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-08-26-mcp-server-portals/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 ![MCP server portal](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1557,height=420,format=webp/_astro/mcp-server-portal.BOKqTCoI.png)
 

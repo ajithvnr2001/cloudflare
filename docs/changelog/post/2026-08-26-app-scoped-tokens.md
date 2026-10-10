@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-08-26-app-scoped-tokens/
 title: Create app-scoped API tokens for Flagship \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:10.852982+00:00
+fetched_at: 2026-10-10T14:38:32.172375+00:00
 ---
 
 # Create app-scoped API tokens for Flagship · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Flagship](https://developers.cloudflare.com/flagship/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-08-26-app-scoped-tokens/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now create **app-scoped API tokens** for [Flagship](https://developers.cloudflare.com/flagship/). These tokens grant access only to the Flagship apps you select, instead of every app in the account.
 

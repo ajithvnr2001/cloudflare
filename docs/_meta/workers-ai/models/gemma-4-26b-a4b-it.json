@@ -3,8 +3,5 @@
   "file": "workers-ai/models/gemma-4-26b-a4b-it.md",
   "title": "gemma-4-26b-a4b-it (Google) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:17:03.520885+00:00",
-  "html_len": 823112,
-  "md_len": 11852,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:22.559497+00:00"
 }

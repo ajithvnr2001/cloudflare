@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/flagship/
 title: Flagship Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:45.444442+00:00
+fetched_at: 2026-10-10T14:38:08.127837+00:00
 ---
 
 # Flagship Changelog | Cloudflare Docs

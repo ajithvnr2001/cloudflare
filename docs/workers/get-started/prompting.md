@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers/get-started/prompting/
 title: Prompting \u00b7 Cloudflare Workers docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:30.854588+00:00
+fetched_at: 2026-10-10T14:39:24.438307+00:00
 ---
 
 # Prompting · Cloudflare Workers docs
@@ -18,7 +18,7 @@ fetched_at: 2026-10-08T07:17:30.854588+00:00
 
 # Prompting
 
-Last updated Jul 28, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers/get-started/prompting/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 10, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewTeach your agent about WorkersExample promptsUse a prompt Additional usesUse docs in your editorAdditional resources
 
@@ -28,7 +28,7 @@ You can create Workers applications from simple prompts in your favorite agent o
 
 Connect the [`cloudflare-docs` ↗︎](https://github.com/cloudflare/mcp-server-cloudflare/tree/main/apps/docs-ai-search) MCP (Model Context Protocol) server to teach your agent about Workers. Add the server URL `https://docs.mcp.cloudflare.com/mcp` to your agent configuration ([learn more](https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/)).
 
-You can also connect the [`cloudflare-observability` ↗︎](https://github.com/cloudflare/mcp-server-cloudflare/tree/main/apps/workers-observability) MCP server (`https://observability.mcp.cloudflare.com/mcp`). This helps your agent check logs, look for exceptions, and automatically fix issues.
+You can also connect the [Cloudflare API MCP server](https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/#cloudflare-api-mcp-server) (`https://mcp.cloudflare.com/mcp`). This helps your agent check logs, look for exceptions, and automatically fix issues.
 
 ## Example prompts
     

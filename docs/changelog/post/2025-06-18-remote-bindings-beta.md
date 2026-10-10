@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-06-18-remote-bindings-beta/
 title: Remote bindings public beta - Connect to remote resources (D1, KV, R2, etc.) during local development \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:14.604751+00:00
+fetched_at: 2026-10-10T14:38:51.480705+00:00
 ---
 
 # Remote bindings public beta - Connect to remote resources (D1, KV, R2, etc.) during local development · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-06-18-remote-bindings-beta/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Today [we announced the public beta ↗︎](https://github.com/cloudflare/workers-sdk/discussions/9660) of [remote bindings](https://developers.cloudflare.com/workers/local-development/#remote-bindings) for local development. With remote bindings, you can now connect to deployed resources like [R2 buckets](https://developers.cloudflare.com/r2/) and [D1 databases](https://developers.cloudflare.com/d1/) while running Worker code on your local machine. This means you can test your local code changes against real data and services, without the overhead of deploying for each iteration.
 
@@ -33,7 +33,7 @@ To enable remote mode, add `"experimental_remote" : true` to each binding that y
     {
     	"name": "my-worker",
     	// Set this to today's date
-    	"compatibility_date": "2026-10-08",
+    	"compatibility_date": "2026-10-10",
     
     	"r2_buckets": [
     		{
@@ -47,7 +47,7 @@ To enable remote mode, add `"experimental_remote" : true` to each binding that y
     
     name = "my-worker"
     # Set this to today's date
-    compatibility_date = "2026-10-08"
+    compatibility_date = "2026-10-10"
     
     [[r2_buckets]]
     bucket_name = "screenshots-bucket"

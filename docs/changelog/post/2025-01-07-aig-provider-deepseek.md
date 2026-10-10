@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-01-07-aig-provider-deepseek/
 title: AI Gateway adds DeepSeek as a Provider \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:01.634524+00:00
+fetched_at: 2026-10-10T14:38:55.598658+00:00
 ---
 
 # AI Gateway adds DeepSeek as a Provider · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Gateway](https://developers.cloudflare.com/ai-gateway/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-01-07-aig-provider-deepseek/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [**AI Gateway**](https://developers.cloudflare.com/ai-gateway/) now supports [**DeepSeek**](https://developers.cloudflare.com/ai-gateway/usage/providers/deepseek/), including their cutting-edge DeepSeek-V3 model. With this addition, you have even more flexibility to manage and optimize your AI workloads using AI Gateway. Whether you're leveraging DeepSeek or other providers, like OpenAI, Anthropic, or [Workers AI](https://developers.cloudflare.com/workers-ai/), AI Gateway empowers you to:
 

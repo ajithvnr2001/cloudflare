@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-11-09-cloudflare-env-variable/
 title: Select Wrangler environments using the CLOUDFLARE_ENV environment variable \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:28.588586+00:00
+fetched_at: 2026-10-10T14:38:47.040669+00:00
 ---
 
 # Select Wrangler environments using the CLOUDFLARE_ENV environment variable · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-11-09-cloudflare-env-variable/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Wrangler now supports using the `CLOUDFLARE_ENV` [environment variable](https://developers.cloudflare.com/workers/wrangler/system-environment-variables/#supported-environment-variables) to select the active [environment](https://developers.cloudflare.com/workers/wrangler/environments/) for your Worker commands. This provides a more flexible way to manage environments, especially when working with build tools and CI/CD pipelines.
 

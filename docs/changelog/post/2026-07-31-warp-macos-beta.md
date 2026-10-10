@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-31-warp-macos-beta/
 title: Cloudflare One Client for macOS (version 2026.7.1210.1) \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:05.733071+00:00
+fetched_at: 2026-10-10T14:38:33.869659+00:00
 ---
 
 # Cloudflare One Client for macOS (version 2026.7.1210.1) · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare One Client](https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-31-warp-macos-beta/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 A new Beta release for the macOS Cloudflare One Client is now available on the [beta releases downloads page](https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/download/beta-releases/).
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/realtime/realtimekit/core/api-reference/rtkthemepreset/
 title: RTKThemePreset \u00b7 Cloudflare Realtime docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:12:58.565367+00:00
+fetched_at: 2026-10-10T14:37:56.268173+00:00
 ---
 
 # RTKThemePreset · Cloudflare Realtime docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:12:58.565367+00:00
 
 # RTKThemePreset
 
-Last updated Jul 22, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/realtime/realtimekit/core/api-reference/rtkthemepreset/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Jul 22, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Overview meeting.self.config.setupScreen meeting.self.config.waitingRoom meeting.self.config.controlBar meeting.self.config.header meeting.self.config.pipMode meeting.self.config.viewType meeting.self.config.livestreamViewerQualities meeting.self.config.maxVideoStreams meeting.self.config.maxScreenShareCount meeting.self.config.plugins meeting.self.config.disabledPlugins
 

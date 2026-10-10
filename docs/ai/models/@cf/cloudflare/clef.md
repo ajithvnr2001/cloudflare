@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/%40cf/cloudflare/clef/
 title: clef (Cloudflare) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:44.921100+00:00
+fetched_at: 2026-10-10T14:39:23.198121+00:00
 ---
 
 # clef (Cloudflare) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:04:44.921100+00:00
 
 Text Generation • Cloudflare
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/%40cf/cloudflare/clef/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `@cf/cloudflare/clef`
 
@@ -41,6 +41,25 @@ More information| [link ↗](https://huggingface.co/Cloudflare/clef)
 Vision| Yes  
 Unit Pricing| $0.24 per M input tokens  
   
+How media inputs are billed
+
+Clef models convert media inputs to input tokens and bill them at the model's input token rate. Clef models do not charge for output tokens. For per-model rates, refer to [pricing](https://developers.cloudflare.com/workers-ai/platform/pricing/).
+
+Images are tokenized as follows:
+
+  1. **Resize** : The image keeps its aspect ratio, but: 
+     * Each side is rounded to a multiple of 32 pixels.
+     * If the area is under about 65,000 pixels (256x256), it is scaled up to reach that.
+     * If the area is over about 1 megapixel, it is scaled down to fit.
+  2. **Count patches** : Each 32x32-pixel block is one token: `tokens = (width / 32) x (height / 32)`.
+  3. **Add markers** : 3 tokens are added to mark where the image starts and ends.
+
+
+
+Each image is capped at 1,024 tokens.
+
+Media tokens count toward the model's context window, together with the questions. If they exceed the context window, the request fails. Otherwise, the text `state` is truncated to fit the remaining space.
+
 ## Usage
     
     

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/typesafe/jev/
 title: Jev (typesafe) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:07.916181+00:00
+fetched_at: 2026-10-10T14:39:06.063475+00:00
 ---
 
 # Jev (typesafe) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ t
 
 Text Generation • typesafe
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/typesafe/jev/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `typesafe/jev`
 

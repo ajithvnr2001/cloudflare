@@ -3,8 +3,5 @@
   "file": "ruleset-engine/rules-language/fields/reference/http.cookie.md",
   "title": "http.cookie \u00b7 Cloudflare Ruleset Engine docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:15:09.179289+00:00",
-  "html_len": 89338,
-  "md_len": 983,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:33.420755+00:00"
 }

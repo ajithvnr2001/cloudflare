@@ -3,8 +3,5 @@
   "file": "changelog/post/2025-06-17-open-next-ssrf.md",
   "title": "SSRF vulnerability in @opennextjs/cloudflare proactively mitigated for all Cloudflare customers \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:14.653547+00:00",
-  "html_len": 67347,
-  "md_len": 3489,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:51.555954+00:00"
 }

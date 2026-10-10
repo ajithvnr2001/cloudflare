@@ -3,8 +3,5 @@
   "file": "ruleset-engine/rules-language/fields/reference/cf.waf.content_scan.obj_sizes.md",
   "title": "cf.waf.content_scan.obj_sizes \u00b7 Cloudflare Ruleset Engine docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:15:08.232441+00:00",
-  "html_len": 92369,
-  "md_len": 1413,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:33.732323+00:00"
 }

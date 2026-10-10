@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-10-24-automatic-resource-provisioning/
 title: Automatic resource provisioning for KV, R2, and D1 \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:26.940971+00:00
+fetched_at: 2026-10-10T14:38:47.522614+00:00
 ---
 
 # Automatic resource provisioning for KV, R2, and D1 · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-10-24-automatic-resource-provisioning/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Previously, if you wanted to develop or deploy a worker with attached resources, you'd have to first manually create the desired resources. Now, if your Wrangler configuration file includes a KV namespace, D1 database, or R2 bucket that does not yet exist on your account, you can develop locally and deploy your application seamlessly, without having to run additional commands.
 

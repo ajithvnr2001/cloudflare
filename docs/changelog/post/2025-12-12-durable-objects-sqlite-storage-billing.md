@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-12-12-durable-objects-sqlite-storage-billing/
 title: Billing for SQLite Storage \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:31.856524+00:00
+fetched_at: 2026-10-10T14:38:45.908229+00:00
 ---
 
 # Billing for SQLite Storage · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Durable Objects](https://developers.cloudflare.com/durable-objects/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-12-12-durable-objects-sqlite-storage-billing/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Storage billing for SQLite-backed Durable Objects will be enabled in January 2026, with a target date of January 7, 2026 (no earlier).
 

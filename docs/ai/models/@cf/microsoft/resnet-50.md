@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/%40cf/microsoft/resnet-50/
 title: resnet-50 (Microsoft) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:46.705247+00:00
+fetched_at: 2026-10-10T14:39:21.610213+00:00
 ---
 
 # resnet-50 (Microsoft) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:04:46.705247+00:00
 
 Image Classification • Microsoft
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/%40cf/microsoft/resnet-50/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `@cf/microsoft/resnet-50`
 

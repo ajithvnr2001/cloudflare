@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-03-18-scim-audit-logging/
 title: SCIM audit logging Support \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:41.308956+00:00
+fetched_at: 2026-10-10T14:38:42.312168+00:00
 ---
 
 # SCIM audit logging Support · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-03-18-scim-audit-logging/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare dashboard SCIM provisioning operations are now captured in [Audit Logs v2](https://developers.cloudflare.com/fundamentals/account/account-security/audit-logs/), giving you visibility into user and group changes made by your identity provider.
 

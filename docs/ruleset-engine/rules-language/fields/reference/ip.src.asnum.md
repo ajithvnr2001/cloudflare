@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/ip.src.asnum/
 title: ip.src.asnum \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:12.932630+00:00
+fetched_at: 2026-10-10T14:37:31.375699+00:00
 ---
 
 # ip.src.asnum · Cloudflare Ruleset Engine docs

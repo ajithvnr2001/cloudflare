@@ -3,8 +3,5 @@
   "file": "waf/custom-rules/create-dashboard.md",
   "title": "Create a custom rule in the dashboard \u00b7 Cloudflare Web Application Firewall (WAF) docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:16:36.644022+00:00",
-  "html_len": 138844,
-  "md_len": 3215,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:39:28.334860+00:00"
 }

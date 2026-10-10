@@ -3,8 +3,5 @@
   "file": "changelog/post/2026-08-07-radar-as-connectivity-upstreams.md",
   "title": "AS-level connectivity and upstream providers on Cloudflare Radar \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:07:07.209625+00:00",
-  "html_len": 69733,
-  "md_len": 5275,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:33.368862+00:00"
 }

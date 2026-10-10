@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-08-unified-routing-iplist-ids-sip/
 title: IP lists, IDS, and SIP rules supported in Unified Routing \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:02.297179+00:00
+fetched_at: 2026-10-10T14:38:35.240208+00:00
 ---
 
 # IP lists, IDS, and SIP rules supported in Unified Routing · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare Network Firewall](https://developers.cloudflare.com/cloudflare-network-firewall/)[Magic Transit](https://developers.cloudflare.com/magic-transit/)[Cloudflare WAN](https://developers.cloudflare.com/cloudflare-wan/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-08-unified-routing-iplist-ids-sip/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Cloudflare Advanced Network Firewall](https://developers.cloudflare.com/cloudflare-network-firewall/) IP lists, IDS, and SIP rules are now supported for accounts using [Unified Routing](https://developers.cloudflare.com/cloudflare-wan/reference/traffic-steering/#unified-routing) mode. These features require a Cloudflare Advanced Network Firewall subscription.
 

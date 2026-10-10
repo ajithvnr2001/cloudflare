@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.schema_validation.learned.headers.violated_parameters/
 title: cf.schema_validation.learned.headers.violated_parameters \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:04.440624+00:00
+fetched_at: 2026-10-10T14:37:35.215746+00:00
 ---
 
 # cf.schema_validation.learned.headers.violated_parameters · Cloudflare Ruleset Engine docs

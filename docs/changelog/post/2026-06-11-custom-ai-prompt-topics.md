@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-11-custom-ai-prompt-topics/
 title: Define custom topics for AI prompt protection \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:57.628384+00:00
+fetched_at: 2026-10-10T14:38:36.939108+00:00
 ---
 
 # Define custom topics for AI prompt protection · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Data Loss Prevention](https://developers.cloudflare.com/cloudflare-one/data-loss-prevention/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-11-custom-ai-prompt-topics/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now define custom topics for AI prompt protection. Predefined [AI prompt topics](https://developers.cloudflare.com/cloudflare-one/data-loss-prevention/detection-entries/configure-detection-entries/#ai-prompt-topics) cover common content and intent categories such as PII, source code, and jailbreak attempts. Custom topics let you detect unique or proprietary concepts that are not included in predefined categories.
 

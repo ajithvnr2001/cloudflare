@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-29-log-fields-updated/
 title: Updated fields across multiple Logpush datasets in Cloudflare Logs \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:55.274161+00:00
+fetched_at: 2026-10-10T14:38:37.561368+00:00
 ---
 
 # Updated fields across multiple Logpush datasets in Cloudflare Logs · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Logs](https://developers.cloudflare.com/logs/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-29-log-fields-updated/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare has updated [Logpush datasets](https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/):
 

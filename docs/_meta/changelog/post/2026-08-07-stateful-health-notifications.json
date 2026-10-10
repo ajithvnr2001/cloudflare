@@ -3,8 +3,5 @@
   "file": "changelog/post/2026-08-07-stateful-health-notifications.md",
   "title": "Load Balancing health notifications now resolve automatically \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:07:07.192860+00:00",
-  "html_len": 61768,
-  "md_len": 2358,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:33.421385+00:00"
 }

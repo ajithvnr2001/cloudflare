@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-12-terraform-v5.20.0-provider/
 title: Terraform v5.20.0 now available \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:57.882113+00:00
+fetched_at: 2026-10-10T14:38:36.648225+00:00
 ---
 
 # Terraform v5.20.0 now available · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Terraform](https://developers.cloudflare.com/terraform/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-12-terraform-v5.20.0-provider/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare's Terraform v5 Provider makes it easy for developers to manage their Cloudflare infrastructure using a configuration as code approach. It releases every [2-3 weeks ↗︎](https://github.com/cloudflare/terraform-provider-cloudflare/issues/5774) to ensure that you can always manage the latest features in the platform. This week, we launched Terraform v5.20.0, which adds 24 new resources, bumps the underlying Go SDK to cloudflare-go v7, and includes a range of bug fixes and state upgraders based on community feedback.
 

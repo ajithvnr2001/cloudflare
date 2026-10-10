@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-13-r2-data-catalog-manifest-optimization/
 title: R2 Data Catalog compaction now optimizes manifest files \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:02.937579+00:00
+fetched_at: 2026-10-10T14:38:34.955567+00:00
 ---
 
 # R2 Data Catalog compaction now optimizes manifest files · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Basin Catalog](https://developers.cloudflare.com/basin-catalog/)[Basin](https://developers.cloudflare.com/basin/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-13-r2-data-catalog-manifest-optimization/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [R2 Data Catalog](https://developers.cloudflare.com/basin-catalog/), a managed [Apache Iceberg ↗︎](https://iceberg.apache.org/) catalog built into R2, now automatically optimizes manifest files as part of [compaction](https://developers.cloudflare.com/basin-catalog/table-maintenance/).
 

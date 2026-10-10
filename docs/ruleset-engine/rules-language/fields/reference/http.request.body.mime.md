@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/http.request.body.mime/
 title: http.request.body.mime \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:09.675709+00:00
+fetched_at: 2026-10-10T14:37:33.185889+00:00
 ---
 
 # http.request.body.mime · Cloudflare Ruleset Engine docs

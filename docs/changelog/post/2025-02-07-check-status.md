@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-02-07-check-status/
 title: Check status of Email security or Area 1 \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:02.845587+00:00
+fetched_at: 2026-10-10T14:38:54.900633+00:00
 ---
 
 # Check status of Email security or Area 1 · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Email security](https://developers.cloudflare.com/cloudflare-one/email-security/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-02-07-check-status/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Concerns about performance for Email security or Area 1? You can now check the operational status of both on the [Cloudflare Status page ↗︎](https://www.cloudflarestatus.com/).
 

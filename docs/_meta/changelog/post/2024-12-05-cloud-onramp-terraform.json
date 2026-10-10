@@ -3,8 +3,5 @@
   "file": "changelog/post/2024-12-05-cloud-onramp-terraform.md",
   "title": "Generate customized terraform files for building cloud network on-ramps \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:00.470533+00:00",
-  "html_len": 67152,
-  "md_len": 1670,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:55.819406+00:00"
 }

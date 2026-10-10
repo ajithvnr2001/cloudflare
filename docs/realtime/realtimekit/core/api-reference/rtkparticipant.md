@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/realtime/realtimekit/core/api-reference/rtkparticipant/
 title: RTKParticipant \u00b7 Cloudflare Realtime docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:12:55.409100+00:00
+fetched_at: 2026-10-10T14:37:57.772567+00:00
 ---
 
 # RTKParticipant · Cloudflare Realtime docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:12:55.409100+00:00
 
 # RTKParticipant
 
-Last updated Jul 22, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/realtime/realtimekit/core/api-reference/rtkparticipant/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Jul 22, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Overview participant.id participant.userId participant.name participant.picture participant.customParticipantId participant.device participant.videoTrack participant.audioTrack participant.screenShareTracks participant.videoEnabled participant.audioEnabled participant.screenShareEnabled participant.producers participant.manualProducerConfig participant.supportsRemoteControl participant.presetName participant.stageStatus participant.isPinned participant.pin() participant.unpin() participant.disableAudio() participant.kick() participant.disableVideo() participant.registerVideoElement(videoElem) participant.deregisterVideoElement([videoElem])
 

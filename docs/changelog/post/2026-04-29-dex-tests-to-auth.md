@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-29-dex-tests-to-auth/
 title: Digital experience tests to authenticated resources and enhanced configuration \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:50.237547+00:00
+fetched_at: 2026-10-10T14:38:39.311081+00:00
 ---
 
 # Digital experience tests to authenticated resources and enhanced configuration · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Digital Experience Monitoring](https://developers.cloudflare.com/cloudflare-one/insights/dex/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-29-dex-tests-to-auth/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Digital experience tests](https://developers.cloudflare.com/cloudflare-one/insights/dex/tests/) now support testing applications protected by Cloudflare Access or third-party authentication. All authentication secrets are managed via [Cloudflare Secret Store](https://developers.cloudflare.com/secrets-store/).
 

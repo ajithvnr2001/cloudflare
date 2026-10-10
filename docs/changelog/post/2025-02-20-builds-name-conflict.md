@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-02-20-builds-name-conflict/
 title: Autofix Worker name configuration errors at build time \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:04.101726+00:00
+fetched_at: 2026-10-10T14:38:54.692869+00:00
 ---
 
 # Autofix Worker name configuration errors at build time · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-02-20-builds-name-conflict/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 ![Auto-fixing Workers Name in Git Repo](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=2416,height=1128,format=webp/_astro/gh-auto-pr-name.BHTtigEg.png)
 

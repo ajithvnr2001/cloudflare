@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-03-bulk-secrets-api/
 title: New Workers bulk secrets API endpoint \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:55.861977+00:00
+fetched_at: 2026-10-10T14:38:37.257265+00:00
 ---
 
 # New Workers bulk secrets API endpoint · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-03-bulk-secrets-api/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now create, update, or delete multiple secrets for your Worker in a single request using the [bulk secrets endpoint](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/secrets/methods/bulk_update/).
 

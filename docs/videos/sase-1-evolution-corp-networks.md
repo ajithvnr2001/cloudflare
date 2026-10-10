@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/videos/sase-1-evolution-corp-networks/
 title: SASE - The evolution of corporate networks | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:16:17.422470+00:00
+fetched_at: 2026-10-10T14:37:26.839834+00:00
 ---
 
 # SASE - The evolution of corporate networks | Cloudflare Docs

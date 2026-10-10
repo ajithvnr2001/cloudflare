@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/http.cookie/
 title: http.cookie \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:09.179053+00:00
+fetched_at: 2026-10-10T14:37:33.419921+00:00
 ---
 
 # http.cookie · Cloudflare Ruleset Engine docs

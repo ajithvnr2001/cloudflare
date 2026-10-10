@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.web_asset.labels/
 title: cf.web_asset.labels \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:09.144286+00:00
+fetched_at: 2026-10-10T14:37:33.392129+00:00
 ---
 
 # cf.web_asset.labels · Cloudflare Ruleset Engine docs

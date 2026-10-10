@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-08-26-dataset-deletion/
 title: Delete Log Explorer datasets \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:10.831692+00:00
+fetched_at: 2026-10-10T14:38:32.196935+00:00
 ---
 
 # Delete Log Explorer datasets · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Log Explorer](https://developers.cloudflare.com/log-explorer/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-08-26-dataset-deletion/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare Log Explorer customers can now permanently delete account and zone datasets from the Cloudflare dashboard or API.
 

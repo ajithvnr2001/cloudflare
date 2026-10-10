@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product-group/ai/
 title: AI Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:20.919868+00:00
+fetched_at: 2026-10-10T14:38:28.514135+00:00
 ---
 
 # AI Changelog | Cloudflare Docs
@@ -230,6 +230,132 @@ Zaraz
 No products found.
 
 [ View RSS feeds ](https://developers.cloudflare.com/fundamentals/new-features/available-rss-feeds/)[ Subscribe to RSS ](https://developers.cloudflare.com/changelog/rss/index.xml)
+
+Oct 10, 2026
+
+## [Cloudflare API MCP server serves Cloudflare skills](https://developers.cloudflare.com/changelog/post/2026-10-10-cloudflare-mcp-skills/)
+
+[Agents](https://developers.cloudflare.com/agents/)
+
+The [Cloudflare API MCP server](https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/#cloudflare-api-mcp-server) now serves [Cloudflare skills ↗︎](https://github.com/cloudflare/skills) through the [Skills over MCP extension ↗︎](https://modelcontextprotocol.io/extensions/skills/overview). MCP clients that support the extension discover the skills with `skills/list` and read their files at `skill://<name>/<path>`.
+
+To use them, add `https://mcp.cloudflare.com/mcp` to an [MCP client that supports the extension ↗︎](https://modelcontextprotocol.io/extensions/client-matrix).
+
+Oct 9, 2026
+
+## [Clef-omni adds audio and video input, Clef-flash is now cheaper, and Clef is faster](https://developers.cloudflare.com/changelog/post/2026-10-09-clef-omni-workers-ai/)
+
+[Workers AI](https://developers.cloudflare.com/workers-ai/)
+
+[`@cf/cloudflare/clef-omni`](https://developers.cloudflare.com/workers-ai/models/clef-omni/) is now available on Workers AI. Clef-omni is a decision model that takes audio (WAV or MP3) and video (MP4 or WebM) input alongside text and images. It joins [Clef](https://developers.cloudflare.com/workers-ai/models/clef/) and [Clef-flash](https://developers.cloudflare.com/workers-ai/models/clef-flash/) in the Clef family of open-weight decision models. We also cut the price of Clef-flash, so it now costs less than Jev, and made Clef faster.
+
+#### Clef-omni: one decision model for every modality
+
+Previously, making a decision about a voice recording or a video meant chaining models together: transcribe the speech, split the audio and visual tracks, then pass the results to a text decision model. Clef-omni reads every modality directly in one request. A video's soundtrack is aligned with its frames, so the model can reason over what is seen and heard at the same time.
+
+Clef-omni is built on a 30B-parameter mixture-of-experts (MoE) backbone with 3B active parameters. Like the rest of the Clef family, it does not generate text. It scores every allowed answer in a single pass, so decisions return quickly:
+
+  * Text requests: about 20 ms
+  * Image or audio inputs: under 100 ms
+  * A 21-second video clip with sound: about 300 ms
+
+
+
+Pass media as base64 data URLs in the `images`, `audio`, and `videos` fields:
+    
+    
+    const response = await env.AI.run("@cf/cloudflare/clef-omni", {
+    	model: "clef-omni",
+    	state:
+    		"Review the installation: a photo of the unit, an audio recording of it running, and a video of the fan.",
+    	images: ["data:image/png;base64,<base64-png>"],
+    	audio: ["data:audio/mpeg;base64,<base64-mp3>"],
+    	videos: ["data:video/mp4;base64,<base64-mp4>"],
+    	questions: {
+    		label_visible: {
+    			type: "noul",
+    			instructions:
+    				"Is the model and serial number label visible in the photo?",
+    		},
+    		sounds_normal: {
+    			type: "noul",
+    			instructions:
+    				"Does the unit sound like it is running smoothly, without rattling or grinding?",
+    		},
+    		fan_running: {
+    			type: "noul",
+    			instructions: "Is the fan running in the video?",
+    		},
+    	},
+    });
+    
+    
+    const response = await env.AI.run("@cf/cloudflare/clef-omni", {
+    	model: "clef-omni",
+    	state:
+    		"Review the installation: a photo of the unit, an audio recording of it running, and a video of the fan.",
+    	images: ["data:image/png;base64,<base64-png>"],
+    	audio: ["data:audio/mpeg;base64,<base64-mp3>"],
+    	videos: ["data:video/mp4;base64,<base64-mp4>"],
+    	questions: {
+    		label_visible: {
+    			type: "noul",
+    			instructions:
+    				"Is the model and serial number label visible in the photo?",
+    		},
+    		sounds_normal: {
+    			type: "noul",
+    			instructions:
+    				"Does the unit sound like it is running smoothly, without rattling or grinding?",
+    		},
+    		fan_running: {
+    			type: "noul",
+    			instructions: "Is the fan running in the video?",
+    		},
+    	},
+    });
+
+Clef-omni scores highest of the Clef family on BANKING77, CLINC150+OOS, and Amazon ESCI:
+
+Benchmark | Clef-omni | Clef | Clef-flash | Jev  
+---|---|---|---|---  
+BFCL (case exact) | 98.2 | 98.47 | **98.76** | 95.75  
+BANKING77 (macro-F1) | **94.8** | 94.20 | 90.93 | 79.74  
+CLINC150+OOS (macro-F1) | **97.7** | 97.43 | 66.77 | 89.27  
+Amazon ESCI (macro-F1) | **57.8** | 57.48 | 57.39 | 55.21  
+PhishNChips (accuracy) | 73.2 | **79.60** | 75.05 | 62.55  
+  
+#### Clef-flash is now cheaper
+
+Clef-flash now costs **$0.038 per million input tokens** , down from $0.090, which makes it cheaper than Jev. To offer this price, the hosted Clef-flash context window is now 24K tokens, down from 64K. Based on usage data, only 0.24% of requests exceed 24K input tokens. If you need a larger context window, use Clef, which keeps its 64K context window.
+
+The Clef-flash weights on Hugging Face are unchanged and support up to a 256K context window if you self-host.
+
+Model | Price | Context window  
+---|---|---  
+[`@cf/cloudflare/clef-flash`](https://developers.cloudflare.com/workers-ai/models/clef-flash/) | $0.038 per M input tokens | 24K tokens  
+[`@cf/cloudflare/clef`](https://developers.cloudflare.com/workers-ai/models/clef/) | $0.240 per M input tokens | 64K tokens  
+[`@cf/cloudflare/clef-omni`](https://developers.cloudflare.com/workers-ai/models/clef-omni/) | $0.150 per M input tokens | 64K tokens  
+  
+All Clef models convert image inputs to input tokens, and Clef-omni does the same for audio and video. For details on how each input type is tokenized, refer to the [Clef](https://developers.cloudflare.com/workers-ai/models/clef/), [Clef-flash](https://developers.cloudflare.com/workers-ai/models/clef-flash/), and [Clef-omni](https://developers.cloudflare.com/workers-ai/models/clef-omni/) model pages.
+
+#### Clef is now faster
+
+We optimized how Clef is served on Workers AI, so it now returns decisions up to 2x faster. The model weights are unchanged.
+
+Input size | Before: median / p95 (ms) | Now: median / p95 (ms) | Median speedup  
+---|---|---|---  
+~800 tokens | 262 / 438 | 152 / 351 | 1.7x  
+~3,400 tokens | 616 / 777 | 305 / 531 | 2.0x  
+~16,000 tokens | 2,721 / 3,250 | 1,635 / 1,805 | 1.7x  
+  
+Part of this speedup comes from moving Clef to [SGLang ↗︎](https://github.com/sgl-project/sglang). Clef support is coming to SGLang in version 0.5.22 ([PR #42721 ↗︎](https://github.com/sgl-project/sglang/pull/42721)). If you self-host Clef, launch commands are available in the [Clef collection on Hugging Face ↗︎](https://huggingface.co/collections/Cloudflare/clef).
+
+#### Get started
+
+Clef-omni follows the same System One API as Clef and Clef-flash, and works with [AI Gateway](https://developers.cloudflare.com/ai-gateway/). To try it, change the model ID to `@cf/cloudflare/clef-omni` and set the `model` selector to `clef-omni`.
+
+For more information, refer to the [Clef-omni model page](https://developers.cloudflare.com/workers-ai/models/clef-omni/) and [pricing](https://developers.cloudflare.com/workers-ai/platform/pricing/).
 
 Oct 6, 2026
 
@@ -725,7 +851,7 @@ In the example, `env.AUTH_SERVER.validateToken` is that Service Binding call. Th
     	"name": "calendar-mcp",
     	"main": "src/index.ts",
     	// Set this to today's date
-    	"compatibility_date": "2026-10-08",
+    	"compatibility_date": "2026-10-10",
     	"services": [
     		{
     			"binding": "AUTH_SERVER",
@@ -739,7 +865,7 @@ In the example, `env.AUTH_SERVER.validateToken` is that Service Binding call. Th
     name = "calendar-mcp"
     main = "src/index.ts"
     # Set this to today's date
-    compatibility_date = "2026-10-08"
+    compatibility_date = "2026-10-10"
     
     [[services]]
     binding = "AUTH_SERVER"
@@ -1385,38 +1511,6 @@ The updated invoice includes one line item: `anthropic/claude-haiku-4.5`: $0.16.
 AI Gateway has also standardized model names across invoices and logs. Model variants that previously appeared with provider-specific version suffixes now use a consistent `provider/model` identifier.
 
 For more information, refer to the [Unified Billing documentation](https://developers.cloudflare.com/ai-gateway/features/unified-billing/) and [AI Gateway logging documentation](https://developers.cloudflare.com/ai-gateway/observability/logging/).
-
-Aug 31, 2026
-
-## [Crawl endpoint now respects the Content Signals `use` directive](https://developers.cloudflare.com/changelog/post/2026-08-31-crawl-content-use/)
-
-[Browser Run](https://developers.cloudflare.com/browser-run/)
-
-The [`/crawl`](https://developers.cloudflare.com/browser-run/quick-actions/crawl-endpoint/) endpoint now respects the `use` directive of the [Content Signals ↗︎](https://contentsignals.org/) standard, letting site owners express the maximum level at which their content may be used.
-
-You can declare your intended level with the new `contentUse` parameter. Allowed values, from least to most permissive, are `reference` and `full`, and the default is `full`. If a target site's `robots.txt` sets a `use` level that is more restrictive than your declared `contentUse`, the crawl request is rejected with a `400` error.
-    
-    
-    curl -X POST 'https://api.cloudflare.com/client/v4/accounts/{account_id}/browser-rendering/crawl' \
-      -H 'Authorization: Bearer <apiToken>' \
-      -H 'Content-Type: application/json' \
-      -d '{
-        "url": "https://example.com",
-        "contentUse": "reference",
-        "formats": ["markdown"]
-      }'
-
-For more information, refer to [Content Signals](https://developers.cloudflare.com/browser-run/quick-actions/crawl-endpoint/#content-signals) in the `/crawl` endpoint documentation.
-
-Aug 30, 2026
-
-## [AI Search now supports GLM-5.3 Flash](https://developers.cloudflare.com/changelog/post/2026-08-30-glm-5.3-flash/)
-
-[AI Search](https://developers.cloudflare.com/ai-search/)
-
-[AI Search](https://developers.cloudflare.com/ai-search/) now supports [`@cf/zai-org/glm-5.3-flash`](https://developers.cloudflare.com/workers-ai/models/glm-5.3-flash/) for text generation. The model has a 1,048,576-token context window and runs on Workers AI.
-
-To configure the model for an AI Search instance, refer to [Supported models](https://developers.cloudflare.com/ai-search/configuration/models/supported-models/).
 
 ← Prev
 

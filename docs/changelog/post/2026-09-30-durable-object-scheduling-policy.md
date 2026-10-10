@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-30-durable-object-scheduling-policy/
 title: New scheduling policy for Containers to configure image and instance from Durable Objects \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:17.400008+00:00
+fetched_at: 2026-10-10T14:38:30.054685+00:00
 ---
 
 # New scheduling policy for Containers to configure image and instance from Durable Objects · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Containers](https://developers.cloudflare.com/containers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-30-durable-object-scheduling-policy/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Containers](https://developers.cloudflare.com/containers/) now support the `durable_object` scheduling policy in public beta. This policy lets a Durable Object select the image and instance size for a Container at runtime instead of using one centrally managed configuration for the application.
 

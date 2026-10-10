@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-02-25-radar-aspa-insights/
 title: RPKI ASPA Deployment Insights on Cloudflare Radar \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:38.785547+00:00
+fetched_at: 2026-10-10T14:38:43.236463+00:00
 ---
 
 # RPKI ASPA Deployment Insights on Cloudflare Radar · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Radar](https://developers.cloudflare.com/radar/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-02-25-radar-aspa-insights/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [**Radar**](https://developers.cloudflare.com/radar/) now includes [Autonomous System Provider Authorization (ASPA) ↗︎](https://datatracker.ietf.org/doc/draft-ietf-sidrops-aspa-verification/) deployment insights, providing visibility into the adoption and verification of ASPA objects across the global routing ecosystem.
 

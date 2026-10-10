@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/waf/custom-rules/create-dashboard/
 title: Create a custom rule in the dashboard \u00b7 Cloudflare Web Application Firewall (WAF) docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:16:36.643777+00:00
+fetched_at: 2026-10-10T14:39:28.334578+00:00
 ---
 
 # Create a custom rule in the dashboard · Cloudflare Web Application Firewall (WAF) docs
@@ -18,7 +18,7 @@ fetched_at: 2026-10-08T07:16:36.643777+00:00
 
 # Create a custom rule in the dashboard
 
-Last updated Aug 3, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/waf/custom-rules/create-dashboard/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewConfigure a custom response for blocked requests
 
@@ -33,6 +33,8 @@ OverviewConfigure a custom response for blocked requests
   4. Under **When incoming requests match** , use the **Field** drop-down list to choose an HTTP property. For each request, the value of the property you choose for **Field** is compared to the value you specify for **Value** using the operator selected in **Operator**.
 
   5. Under **Then take action** , select the rule action in the **Choose action** dropdown. For example, selecting _Block_ tells Cloudflare to refuse requests that match the conditions you specified.
+
+To validate a new rule before enforcing it, use the _Log_ action (Enterprise plans only). On plans where _Log_ is not available, start with _Managed Challenge_ , review the matched requests in [Security Events](https://developers.cloudflare.com/waf/analytics/security-events/), and then switch to _Block_.
 
   6. (Optional) If you selected the _Block_ action, you can configure a custom response.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/ip.src.lat/
 title: ip.src.lat \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:13.141576+00:00
+fetched_at: 2026-10-10T14:37:30.753951+00:00
 ---
 
 # ip.src.lat · Cloudflare Ruleset Engine docs

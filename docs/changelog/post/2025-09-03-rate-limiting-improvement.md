@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-09-03-rate-limiting-improvement/
 title: Introducing new headers for rate limiting on Cloudflare's API \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:21.610419+00:00
+fetched_at: 2026-10-10T14:38:49.272670+00:00
 ---
 
 # Introducing new headers for rate limiting on Cloudflare's API · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-09-03-rate-limiting-improvement/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare's API now supports rate limiting headers using the pattern developed by the [IETF draft on rate limiting ↗︎](https://ietf-wg-httpapi.github.io/ratelimit-headers/draft-ietf-httpapi-ratelimit-headers.html). This allows API consumers to know how many more calls are left until the rate limit is reached, as well as how long you will need to wait until more capacity is available.
 

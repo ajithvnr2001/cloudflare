@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-09-17-update-preview-url-setting/
 title: Preview URLs now default to opt-in \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:23.073358+00:00
+fetched_at: 2026-10-10T14:38:48.778692+00:00
 ---
 
 # Preview URLs now default to opt-in · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-09-17-update-preview-url-setting/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 To prevent the accidental exposure of applications, we've updated how [Worker preview URLs](https://developers.cloudflare.com/workers/versions-and-deployments/preview-urls/) (`<PREVIEW>-<WORKER_NAME>.<SUBDOMAIN>.workers.dev`) are handled. We made this change to ensure preview URLs are only active when intentionally configured, improving the default security posture of your Workers.
 

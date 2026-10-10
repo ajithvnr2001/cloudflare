@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-29-hyperdrive-vpc-private-databases/
 title: Hyperdrive support for private databases with Workers VPC \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:50.110626+00:00
+fetched_at: 2026-10-10T14:38:39.207543+00:00
 ---
 
 # Hyperdrive support for private databases with Workers VPC · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Hyperdrive](https://developers.cloudflare.com/hyperdrive/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-29-hyperdrive-vpc-private-databases/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now connect Hyperdrive to a private database through a [Workers VPC service](https://developers.cloudflare.com/workers-vpc/). This is the recommended way to connect Hyperdrive to a private database that is not exposed to the public Internet.
 

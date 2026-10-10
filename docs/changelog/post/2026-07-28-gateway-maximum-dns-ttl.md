@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-28-gateway-maximum-dns-ttl/
 title: Control Cloudflare Gateway DNS caching with a maximum TTL setting \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:04.935204+00:00
+fetched_at: 2026-10-10T14:38:34.144713+00:00
 ---
 
 # Control Cloudflare Gateway DNS caching with a maximum TTL setting · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)[Gateway](https://developers.cloudflare.com/cloudflare-one/traffic-policies/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-28-gateway-maximum-dns-ttl/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now set a maximum time-to-live (TTL) for DNS responses returned by Gateway. When an upstream DNS record has a TTL that exceeds the configured maximum, Gateway caps it to your specified value. This ensures that DNS policy changes - such as blocking a newly identified malicious domain - take effect faster across all clients.
 

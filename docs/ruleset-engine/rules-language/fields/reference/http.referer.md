@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/http.referer/
 title: http.referer \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:09.209379+00:00
+fetched_at: 2026-10-10T14:37:33.252762+00:00
 ---
 
 # http.referer · Cloudflare Ruleset Engine docs

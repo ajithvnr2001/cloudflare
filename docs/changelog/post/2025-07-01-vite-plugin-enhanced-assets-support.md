@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-07-01-vite-plugin-enhanced-assets-support/
 title: Enhanced support for static assets with the Cloudflare Vite plugin \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:16.565632+00:00
+fetched_at: 2026-10-10T14:38:51.136393+00:00
 ---
 
 # Enhanced support for static assets with the Cloudflare Vite plugin · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-07-01-vite-plugin-enhanced-assets-support/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now use any of Vite's [static asset handling ↗︎](https://vite.dev/guide/assets) features in your Worker as well as in your frontend. These include importing assets as URLs, importing as strings and importing from the `public` directory as well as inlining assets.
 

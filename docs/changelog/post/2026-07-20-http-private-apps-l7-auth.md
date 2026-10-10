@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-20-http-private-apps-l7-auth/
 title: Browser-based login for plaintext HTTP private applications \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:03.799007+00:00
+fetched_at: 2026-10-10T14:38:34.588219+00:00
 ---
 
 # Browser-based login for plaintext HTTP private applications · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Access](https://developers.cloudflare.com/cloudflare-one/access-controls/policies/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-20-http-private-apps-l7-auth/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare Access now uses the standard browser-based login flow for [private applications](https://developers.cloudflare.com/cloudflare-one/access-controls/applications/non-http/self-hosted-private-app/) served over plaintext HTTP on port `80`.
 

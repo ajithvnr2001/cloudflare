@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/observability/traces/
 title: Traces \u00b7 Cloudflare Observability docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:12:26.834604+00:00
+fetched_at: 2026-10-10T14:39:24.686326+00:00
 ---
 
 # Traces · Cloudflare Observability docs
@@ -17,9 +17,9 @@ fetched_at: 2026-10-08T07:12:26.834604+00:00
 
 # Traces
 
-Last updated Oct 2, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/observability/traces/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 9, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
-OverviewEnable tracingInspect a trace
+OverviewEnable tracingInspect a traceFrequently asked questions Does tracing add latency to my requests Why is there a gap in my trace Why is there no outbound connection span How do I capture the trace for a specific request Can I sample only slow requests or errors Are request header values captured in spans Are span names a stable interface
 
 Cloudflare Traces show how production requests move through Cloudflare and record traces from actual traffic on your domain. Each trace contains [spans](https://developers.cloudflare.com/observability/traces/spans/) for supported steps in the request path, such as [Rules](https://developers.cloudflare.com/rules/), request routing, [Cache](https://developers.cloudflare.com/cache/), [Workers](https://developers.cloudflare.com/workers/), and origin connections. A span records how long an operation took, its outcome, and related attributes, which helps you see where a request slowed down or failed.
 
@@ -50,6 +50,36 @@ Select a span to open its details. The detail panel shows the span status, servi
 Cloudflare Trace
 
 [Cloudflare Trace](https://developers.cloudflare.com/rules/trace-request/) simulates how Cloudflare configurations would handle a request. It does not show actual production traffic.
+
+## Frequently asked questions
+
+### Does tracing add latency to my requests
+
+No. Tracing has no measurable overhead on request processing. Requests that are not sampled skip tracing entirely.
+
+### Why is there a gap in my trace
+
+A Worker in the request path may not have Workers tracing enabled. Enable it using `observability.traces.enabled = true` in your [Wrangler configuration](https://developers.cloudflare.com/workers/observability/traces/#how-to-enable-tracing).
+
+### Why is there no outbound connection span
+
+If the response was served from cache, Cloudflare did not contact your origin. Check the `cloudflare.cache.status` attribute on the `cache` span to confirm it was a HIT rather than an origin connection.
+
+### How do I capture the trace for a specific request
+
+Filter by Ray ID in the dashboard with `cloudflare.ray_id = "<ray>"`. To guarantee a particular request is captured regardless of the default sample rate, create a [trace rule](https://developers.cloudflare.com/observability/traces/configuration/#trace-rules) that matches a custom debug header and sets the sample rate to 100%.
+
+### Can I sample only slow requests or errors
+
+Not yet. Sampling is [head-based ↗︎](https://opentelemetry.io/docs/concepts/sampling/#head-sampling) — the decision happens when a request arrives, before the outcome is known. Tail-based sampling is not currently supported.
+
+### Are request header values captured in spans
+
+Header names and the operations performed on them are captured. Header values are not captured. URLs and query strings are captured.
+
+### Are span names a stable interface
+
+No. Span names and structure may change as the product evolves. Do not build hard dependencies on the exact shape of Cloudflare-emitted spans.
 
 [PreviousDatasets](https://developers.cloudflare.com/observability/logs/datasets/)[NextConfiguration](https://developers.cloudflare.com/observability/traces/configuration/)
 

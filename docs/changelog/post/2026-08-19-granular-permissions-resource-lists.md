@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-08-19-granular-permissions-resource-lists/
 title: Access resource lists now support resource-scoped roles \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:09.177086+00:00
+fetched_at: 2026-10-10T14:38:32.742402+00:00
 ---
 
 # Access resource lists now support resource-scoped roles · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Access](https://developers.cloudflare.com/cloudflare-one/access-controls/policies/)[Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-08-19-granular-permissions-resource-lists/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Members with only resource-scoped Access roles can now open Access resource list pages in the Cloudflare dashboard and call list endpoints in the API. They no longer need an additional account-scoped read-only role to list resources.
 

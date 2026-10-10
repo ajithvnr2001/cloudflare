@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-08-19-vitest-plugin/
 title: @cloudflare/vitest-pool-workers is now @cloudflare/vitest-plugin \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:09.311760+00:00
+fetched_at: 2026-10-10T14:38:32.770921+00:00
 ---
 
 # @cloudflare/vitest-pool-workers is now @cloudflare/vitest-plugin · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-08-19-vitest-plugin/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Version 1 of the Workers Vitest integration is published as [`@cloudflare/vitest-plugin` ↗︎](https://www.npmjs.com/package/@cloudflare/vitest-plugin). The package was formerly named `@cloudflare/vitest-pool-workers`.
 

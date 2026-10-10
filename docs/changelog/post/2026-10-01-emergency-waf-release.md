@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-10-01-emergency-waf-release/
 title: WAF Release - 2026-10-01 - Emergency \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:18.333953+00:00
+fetched_at: 2026-10-10T14:38:29.727518+00:00
 ---
 
 # WAF Release - 2026-10-01 - Emergency · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [WAF](https://developers.cloudflare.com/waf/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-10-01-emergency-waf-release/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 This update provides immediate defense against a vulnerability affecting Citrix NetScaler ADC and Gateway appliances, deploying protection against improper input validation vectors.
 

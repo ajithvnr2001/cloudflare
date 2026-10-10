@@ -3,8 +3,5 @@
   "file": "changelog/post/2025-07-02-hyperdrive-configurable-connection-count.md",
   "title": "Hyperdrive now supports configuring the amount of database connections \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:16.135887+00:00",
-  "html_len": 60839,
-  "md_len": 1563,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:51.117617+00:00"
 }

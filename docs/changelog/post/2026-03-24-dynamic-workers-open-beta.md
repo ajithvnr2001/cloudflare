@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-03-24-dynamic-workers-open-beta/
 title: Dynamic Workers, now in open beta \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:42.846991+00:00
+fetched_at: 2026-10-10T14:38:41.678558+00:00
 ---
 
 # Dynamic Workers, now in open beta · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-03-24-dynamic-workers-open-beta/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Dynamic Workers](https://developers.cloudflare.com/dynamic-workers/) are now in [open beta ↗︎](https://blog.cloudflare.com/dynamic-workers/) for all paid Workers users. You can now have a Worker spin up other Workers, called Dynamic Workers, at runtime to execute code on-demand in a secure, sandboxed environment. Dynamic Workers start in milliseconds, making them well suited for fast, secure code execution at scale.
 

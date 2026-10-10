@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-01-20-cloudflare-typescript-v6.0.0-beta.1/
 title: Cloudflare Typescript SDK v6.0.0-beta.1 now available \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:34.230216+00:00
+fetched_at: 2026-10-10T14:38:44.877303+00:00
 ---
 
 # Cloudflare Typescript SDK v6.0.0-beta.1 now available · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)[SDK](https://developers.cloudflare.com/fundamentals/api/reference/sdks/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-01-20-cloudflare-typescript-v6.0.0-beta.1/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 > **Disclaimer:** Please note that v6.0.0-beta.1 is in Beta and we are still testing it for stability.
 

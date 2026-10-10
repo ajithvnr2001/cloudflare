@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workflows/build/workers-api/
 title: Workers API \u00b7 Cloudflare Workflows docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:18:15.142268+00:00
+fetched_at: 2026-10-10T14:39:28.837786+00:00
 ---
 
 # Workers API · Cloudflare Workflows docs
@@ -18,7 +18,7 @@ fetched_at: 2026-10-08T07:18:15.142268+00:00
 
 # Workers API
 
-Last updated Sep 28, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workflows/build/workers-api/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewWorkflowEntrypoint runWorkflowEventWorkflowStep stepWorkflowStepConfigRollback optionsWorkflowStepContextWorkflow step limitsDefault instance retentionDeclare Workflows in exports Call a Workflow through ctx.exportsNonRetryableErrorCall Workflows from Workers Bind from Pages Cross-script callsWorkflow create createBatch deleteBatch getWorkflowInstanceCreateOptionsWorkflowInstance id status pause resume restart terminate delete sendEvent subscribe InstanceStatus
 
@@ -445,7 +445,7 @@ Key each entry by the name of the class that extends `WorkflowEntrypoint`. Set `
     	"name": "billing-worker",
     	"main": "src/index.ts",
     	// Set this to today's date
-    	"compatibility_date": "2026-10-08",
+    	"compatibility_date": "2026-10-10",
     	"exports": {
     		"MyWorkflow": {
     			"type": "workflow",
@@ -460,7 +460,7 @@ Key each entry by the name of the class that extends `WorkflowEntrypoint`. Set `
     name = "billing-worker"
     main = "src/index.ts"
     # Set this to today's date
-    compatibility_date = "2026-10-08"
+    compatibility_date = "2026-10-10"
     
     [exports.MyWorkflow]
     type = "workflow"
@@ -585,7 +585,7 @@ For example, to bind to a Workflow called `workflows-starter` and to make it ava
     	"name": "workflows-starter",
     	"main": "src/index.ts",
     	// Set this to today's date
-    	"compatibility_date": "2026-10-08",
+    	"compatibility_date": "2026-10-10",
     	"workflows": [
     		{
     			// name of your workflow
@@ -603,7 +603,7 @@ For example, to bind to a Workflow called `workflows-starter` and to make it ava
     name = "workflows-starter"
     main = "src/index.ts"
     # Set this to today's date
-    compatibility_date = "2026-10-08"
+    compatibility_date = "2026-10-10"
     
     [[workflows]]
     name = "workflows-starter"
@@ -628,7 +628,7 @@ For example, if your Workflow is defined in a Worker script named `billing-worke
     	"name": "web-api-worker",
     	"main": "src/index.ts",
     	// Set this to today's date
-    	"compatibility_date": "2026-10-08",
+    	"compatibility_date": "2026-10-10",
     	"workflows": [
     		{
     			// name of your workflow
@@ -649,7 +649,7 @@ For example, if your Workflow is defined in a Worker script named `billing-worke
     name = "web-api-worker"
     main = "src/index.ts"
     # Set this to today's date
-    compatibility_date = "2026-10-08"
+    compatibility_date = "2026-10-10"
     
     [[workflows]]
     name = "billing-workflow"
@@ -744,29 +744,130 @@ To provide an optional type parameter to the `Workflow`, pass a type argument wi
 
 ### createBatch
 
-Create (trigger) a batch of new instance of the given Workflow, up to 100 instances at a time.
+Create (trigger) a batch of new instances of the given Workflow, up to 100 instances at a time.
 
 This is useful when you are scheduling multiple instances at once. A call to `createBatch` is treated the same as a call to `create` (for a single instance) and allows you to work within the [instance creation limit](https://developers.cloudflare.com/workflows/reference/limits/).
 
+  * `createBatch(options: WorkflowBatchCreateOptions): Promise<WorkflowBatchCreateResult>`
+    * `options` \- either a `count` of instances to create with shared options, or a list of `instances`, each with its own options.
+
+
+
+Note
+
+To use this form of `createBatch` in local development and get its types from `wrangler types`, use Wrangler 4.148.0 or later.
+
+To create instances that share the same options, pass `count` with optional `params` and `retention`. Each instance receives a generated ID:
+    
+    
+    // Create 3 Workflow instances with generated IDs and the same params
+    const result = await env.MY_WORKFLOW.createBatch({
+    	count: 3,
+    	params: { hello: "world" },
+    });
+    
+    
+    // Create 3 Workflow instances with generated IDs and the same params
+    const result = await env.MY_WORKFLOW.createBatch({
+    	count: 3,
+    	params: { hello: "world" },
+    });
+
+To give each instance its own ID or options, pass `instances`. Each entry accepts the same [`WorkflowInstanceCreateOptions`](https://developers.cloudflare.com/workflows/build/workers-api/#workflowinstancecreateoptions) as `create`:
+    
+    
+    // Create 3 Workflow instances, each with its own ID and params
+    const result = await env.MY_WORKFLOW.createBatch({
+    	instances: [
+    		{ id: "id-abc123", params: { hello: "world-0" } },
+    		{ id: "id-def456", params: { hello: "world-1" } },
+    		{ id: "id-ghi789", params: { hello: "world-2" } },
+    	],
+    });
+    
+    
+    // Create 3 Workflow instances, each with its own ID and params
+    const result = await env.MY_WORKFLOW.createBatch({
+    	instances: [
+    		{ id: "id-abc123", params: { hello: "world-0" } },
+    		{ id: "id-def456", params: { hello: "world-1" } },
+    		{ id: "id-ghi789", params: { hello: "world-2" } },
+    	],
+    });
+
+`options` takes one of the following shapes:
+    
+    
+    type WorkflowBatchCreateOptions =
+    	| {
+    			count: number;
+    			params?: unknown;
+    			retention?: {
+    				successRetention?: WorkflowRetentionDuration;
+    				errorRetention?: WorkflowRetentionDuration;
+    			};
+    	  }
+    	| {
+    			instances: WorkflowInstanceCreateOptions[];
+    	  };
+
+`count` must be an integer from 1 to 100. `instances` must contain from 1 to 100 entries. You cannot pass both `count` and `instances` in the same call.
+
+The operation returns the created instances and per-instance errors:
+    
+    
+    type WorkflowBatchCreateResult = {
+    	created: WorkflowInstance[];
+    	errors: {
+    		index: number;
+    		id?: string;
+    		code: number;
+    		message: string;
+    	}[];
+    };
+
+`created` contains a `WorkflowInstance` for each created instance, in input order. `errors` contains the entries that were not created. Each error includes the position of the entry in the input (`index`), its `id` if one was provided, and an error code and message.
+
+Unlike [`create`](https://developers.cloudflare.com/workflows/build/workers-api/#create), `createBatch` does not throw when an ID is already in use. Instead, it reports the entry in `errors` with one of the following codes:
+
+Code | Description  
+---|---  
+`10405` | An instance with this ID already exists.  
+`10415` | An earlier entry in the same batch uses this ID. Only the first entry with the ID is created.  
+  
+If any entry has invalid options, such as an invalid ID or retention duration, the call throws an error before it creates any instances.
+
+#### Migrate from the array form
+
+Caution
+
+Passing an array to `createBatch` is deprecated. Use the `instances` option instead.
+
   * `createBatch(batch: WorkflowInstanceCreateOptions[]): Promise<WorkflowInstance[]>`
-    * `batch` \- list of Options to pass when creating an instance, including a user-provided ID and payload parameters.
 
 
 
-Each element of the `batch` list is expected to include both `id` and `params` properties:
+The array form returns an array of `WorkflowInstance`. It skips IDs that already exist or repeat within the batch, and excludes them from the returned array without reporting an error.
+
+To migrate, pass the array as `instances` and read the instances from `created`:
     
     
-    // Create a new batch of 3 Workflow instances, each with its own ID and pass params to the Workflow instances
-    const listOfInstances = [
-    	{ id: "id-abc123", params: { hello: "world-0" } },
-    	{ id: "id-def456", params: { hello: "world-1" } },
-    	{ id: "id-ghi789", params: { hello: "world-2" } },
-    ];
-    let instances = await env.MY_WORKFLOW.createBatch(listOfInstances);
-
-Returns an array of `WorkflowInstance`.
-
-Unlike [`create`](https://developers.cloudflare.com/workflows/build/workers-api/#create), this operation is idempotent and will not fail if an ID is already in use. If an existing instance with the same ID is still within its [retention limit](https://developers.cloudflare.com/workflows/reference/limits/), it will be skipped and excluded from the returned array.
+    // Deprecated: array form
+    const instances = await env.MY_WORKFLOW.createBatch(listOfInstances);
+    
+    // Object form
+    const { created, errors } = await env.MY_WORKFLOW.createBatch({
+    	instances: listOfInstances,
+    });
+    
+    
+    // Deprecated: array form
+    const instances = await env.MY_WORKFLOW.createBatch(listOfInstances);
+    
+    // Object form
+    const { created, errors } = await env.MY_WORKFLOW.createBatch({
+    	instances: listOfInstances,
+    });
 
 ### deleteBatch
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.tls_client_auth.cert_not_before/
 title: cf.tls_client_auth.cert_not_before \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:06.679149+00:00
+fetched_at: 2026-10-10T14:37:34.330145+00:00
 ---
 
 # cf.tls_client_auth.cert_not_before · Cloudflare Ruleset Engine docs

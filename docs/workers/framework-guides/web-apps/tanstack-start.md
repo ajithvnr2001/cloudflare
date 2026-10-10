@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers/framework-guides/web-apps/tanstack-start/
 title: TanStack Start \u00b7 Cloudflare Workers docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:29.688612+00:00
+fetched_at: 2026-10-10T14:39:28.145865+00:00
 ---
 
 # TanStack Start · Cloudflare Workers docs
@@ -22,7 +22,7 @@ Framework guides
 
 # TanStack Start
 
-Last updated Sep 4, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers/framework-guides/web-apps/tanstack-start/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewCreate a new applicationConfigure an existing applicationDeployCustom entrypoints Test scheduled handlers locallyBindings Use R2 in a server functionStatic prerendering Prerendering data sources
 
@@ -43,7 +43,7 @@ npmyarnpnpm
     
     pnpm wrangler deploy
 
-Learn more about [automatic project configuration](https://developers.cloudflare.com/workers/framework-guides/automatic-configuration/).
+For more information, refer to [Automatic project configuration](https://developers.cloudflare.com/workers/framework-guides/automatic-configuration/).
 
 TanStack StartDetected
 
@@ -51,11 +51,7 @@ Generated configuration
 
 wrangler.jsonc
 
-main:.output/server/index.mjs
-
-wrangler.jsonc
-
-assets:directory: .output/public
+main:@tanstack/react-start/server-entry
 
 wrangler.jsonc
 
@@ -105,15 +101,17 @@ If you have an existing TanStack Start application, configure it to run on Cloud
 
 npmyarnpnpmbun
          
-         npm i @cloudflare/vite-plugin wrangler -- -D
+         npm i -D @cloudflare/vite-plugin wrangler
          
-         yarn add @cloudflare/vite-plugin wrangler -D
+         yarn add -D @cloudflare/vite-plugin wrangler
          
-         pnpm add @cloudflare/vite-plugin wrangler -D
+         pnpm add -D @cloudflare/vite-plugin wrangler
          
-         bun add @cloudflare/vite-plugin wrangler -D
+         bun add -d @cloudflare/vite-plugin wrangler
 
   2. Add the Cloudflare plugin to your Vite configuration:
+
+If your Vite configuration includes another deployment adapter, such as `nitro()`, remove the adapter and its import before adding the Cloudflare Vite plugin.
 
 vite.config.jsjs
          
@@ -151,7 +149,7 @@ vite.config.tsts
          	"$schema": "node_modules/wrangler/config-schema.json",
          	"name": "<YOUR_PROJECT_NAME>",
          	// Set this to today's date
-         	"compatibility_date": "2026-10-08",
+         	"compatibility_date": "2026-10-10",
          	"compatibility_flags": ["nodejs_compat"],
          	"main": "@tanstack/react-start/server-entry",
          	"observability": {
@@ -162,7 +160,7 @@ vite.config.tsts
          "$schema" = "node_modules/wrangler/config-schema.json"
          name = "<YOUR_PROJECT_NAME>"
          # Set this to today's date
-         compatibility_date = "2026-10-08"
+         compatibility_date = "2026-10-10"
          compatibility_flags = [ "nodejs_compat" ]
          main = "@tanstack/react-start/server-entry"
          
@@ -220,6 +218,21 @@ npmyarnpnpm
 
 TanStack Start uses `@tanstack/react-start/server-entry` as your default entrypoint. Create a custom server entrypoint to add additional Workers handlers such as [Queues](https://developers.cloudflare.com/queues/) and [Cron Triggers](https://developers.cloudflare.com/workers/configuration/cron-triggers/). This is also where you can add additional exports such as [Durable Objects](https://developers.cloudflare.com/durable-objects/) and [Workflows](https://developers.cloudflare.com/workflows/).
 
+Note
+
+If you are using TypeScript, generate Workers types before adding a custom entrypoint:
+
+npmyarnpnpm
+    
+    
+    npm run cf-typegen
+    
+    
+    yarn run cf-typegen
+    
+    
+    pnpm run cf-typegen
+
   1. Create a custom server entrypoint file:
 
 src/server.jsjs
@@ -233,7 +246,7 @@ src/server.jsjs
          	fetch: handler.fetch,
          
          	// Handle Queue messages
-         	async queue(batch, env, ctx) {
+         	async queue(batch, _env, _ctx) {
          		for (const message of batch.messages) {
          			console.log("Processing message:", message.body);
          			message.ack();
@@ -241,7 +254,7 @@ src/server.jsjs
          	},
          
          	// Handle Cron Triggers
-         	async scheduled(event, env, ctx) {
+         	async scheduled(event, _env, _ctx) {
          		console.log("Cron triggered:", event.cron);
          	},
          };
@@ -254,21 +267,21 @@ src/server.tsts
          export { MyDurableObject } from "./my-durable-object";
          
          export default {
-         	fetch: handler.fetch,
+             fetch: handler.fetch,
          
-         	// Handle Queue messages
-         	async queue(batch, env, ctx) {
-         		for (const message of batch.messages) {
-         			console.log("Processing message:", message.body);
-         			message.ack();
-         		}
-         	},
+             // Handle Queue messages
+             async queue(batch, _env, _ctx) {
+                 for (const message of batch.messages) {
+                     console.log("Processing message:", message.body);
+                     message.ack();
+                 }
+             },
          
-         	// Handle Cron Triggers
-         	async scheduled(event, env, ctx) {
-         		console.log("Cron triggered:", event.cron);
-         	},
-         };
+             // Handle Cron Triggers
+             async scheduled(event, _env, _ctx) {
+                 console.log("Cron triggered:", event.cron);
+             },
+         } satisfies ExportedHandler<Env>;
 
   2. Update your Wrangler configuration to point to your custom entrypoint:
          
@@ -292,14 +305,10 @@ Example: Using Workflows
 
 Export a Workflow class from your custom entrypoint to run durable, multi-step tasks:
 
-app/server.jsjs
+src/server.jsjs
     
     
-    import {
-    	WorkflowEntrypoint,
-    	WorkflowStep,
-    	WorkflowEvent,
-    } from "cloudflare:workers";
+    import { WorkflowEntrypoint, WorkflowStep } from "cloudflare:workers";
     
     export class MyWorkflow extends WorkflowEntrypoint {
     	async run(event, step) {
@@ -315,14 +324,11 @@ app/server.jsjs
     	}
     }
 
-app/server.tsts
+src/server.tsts
     
     
-    import {
-    	WorkflowEntrypoint,
-    	WorkflowStep,
-    	WorkflowEvent,
-    } from "cloudflare:workers";
+    import { WorkflowEntrypoint, WorkflowStep } from "cloudflare:workers";
+    import type { WorkflowEvent } from "cloudflare:workers";
     
     export class MyWorkflow extends WorkflowEntrypoint<Env> {
     	async run(event: WorkflowEvent<{ input: string }>, step: WorkflowStep) {
@@ -376,29 +382,42 @@ Add a service binding to call another Worker's RPC methods from your TanStack St
     binding = "AUTH_SERVICE"
     service = "auth-worker"
 
+The target Worker must expose RPC methods by extending [`WorkerEntrypoint`](https://developers.cloudflare.com/workers/runtime-apis/bindings/service-bindings/rpc/). Generate types for both Workers by passing both Wrangler configuration files:
+
+npmyarnpnpm
+    
+    
+    npx wrangler types -c ./wrangler.jsonc -c ../auth-worker/wrangler.jsonc
+    
+    
+    yarn wrangler types -c ./wrangler.jsonc -c ../auth-worker/wrangler.jsonc
+    
+    
+    pnpm wrangler types -c ./wrangler.jsonc -c ../auth-worker/wrangler.jsonc
+
 Call the bound Worker's methods from a server function:
 
-app/routes/index.jsxjs
+src/routes/index.jsxjs
     
     
     import { createServerFn } from "@tanstack/react-start";
     import { env } from "cloudflare:workers";
     
     const verifyUser = createServerFn()
-    	.inputValidator((token) => token)
+    	.validator((token) => token)
     	.handler(async ({ data: token }) => {
     		const result = await env.AUTH_SERVICE.verify(token);
     		return result;
     	});
 
-app/routes/index.tsxts
+src/routes/index.tsxts
     
     
     import { createServerFn } from "@tanstack/react-start";
     import { env } from "cloudflare:workers";
     
     const verifyUser = createServerFn()
-    	.inputValidator((token: string) => token)
+    	.validator((token: string) => token)
     	.handler(async ({ data: token }) => {
     		const result = await env.AUTH_SERVICE.verify(token);
     		return result;
@@ -410,7 +429,7 @@ Your TanStack Start application can be fully integrated with the Cloudflare Deve
 
 Access bindings by [importing the `env` object](https://developers.cloudflare.com/workers/runtime-apis/bindings/#importing-env-as-a-global) in your server-side code:
 
-app/routes/index.jsxjs
+src/routes/index.jsxjs
     
     
     import { createFileRoute } from "@tanstack/react-router";
@@ -424,14 +443,14 @@ app/routes/index.jsxjs
     
     const getData = createServerFn().handler(() => {
     	// Access bindings via env
-    	// For example: env.MY_KV, env.MY_BUCKET, env.AI, etc.
+    	// For example: env.MY_KV, env.MY_BUCKET, or env.AI
     });
     
     function RouteComponent() {
     	// ...
     }
 
-app/routes/index.tsxts
+src/routes/index.tsxts
     
     
     import { createFileRoute } from "@tanstack/react-router";
@@ -445,7 +464,7 @@ app/routes/index.tsxts
     
     const getData = createServerFn().handler(() => {
     	// Access bindings via env
-    	// For example: env.MY_KV, env.MY_BUCKET, env.AI, etc.
+    	// For example: env.MY_KV, env.MY_BUCKET, or env.AI
     });
     
     function RouteComponent() {
@@ -492,7 +511,7 @@ Add an [R2 bucket binding](https://developers.cloudflare.com/r2/api/workers/work
 
 Access the bucket in a server function:
 
-app/routes/index.jsxjs
+src/routes/index.jsjs
     
     
     import { createServerFn } from "@tanstack/react-start";
@@ -512,7 +531,7 @@ app/routes/index.jsxjs
     		return object ? await object.text() : null;
     	});
 
-app/routes/index.tsxts
+src/routes/index.tsts
     
     
     import { createServerFn } from "@tanstack/react-start";
@@ -577,10 +596,6 @@ vite.config.tsts
     });
 
 For more options, refer to [TanStack Start static prerendering ↗︎](https://tanstack.com/start/latest/docs/framework/react/guide/static-prerendering).
-
-Note
-
-Requires `@tanstack/react-start` v1.138.0 or later.
 
 ### Prerendering data sources
 

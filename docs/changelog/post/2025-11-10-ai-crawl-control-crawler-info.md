@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-11-10-ai-crawl-control-crawler-info/
 title: Crawler drilldowns with extended actions menu \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:28.719922+00:00
+fetched_at: 2026-10-10T14:38:46.848467+00:00
 ---
 
 # Crawler drilldowns with extended actions menu · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Crawl Control](https://developers.cloudflare.com/ai-crawl-control/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-11-10-ai-crawl-control-crawler-info/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 AI Crawl Control now supports per-crawler drilldowns with an extended actions menu and status code analytics. Drill down into Metrics, Cloudflare Radar, and Security Analytics, or export crawler data for use in [WAF custom rules](https://developers.cloudflare.com/waf/custom-rules/), [Redirect Rules](https://developers.cloudflare.com/rules/url-forwarding/), and robots.txt files.
 

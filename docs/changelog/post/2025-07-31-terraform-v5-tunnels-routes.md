@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-07-31-terraform-v5-tunnels-routes/
 title: Terraform V5 support for tunnels and routes \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:17.789495+00:00
+fetched_at: 2026-10-10T14:38:50.525242+00:00
 ---
 
 # Terraform V5 support for tunnels and routes · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare WAN](https://developers.cloudflare.com/cloudflare-wan/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-07-31-terraform-v5-tunnels-routes/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The Cloudflare Terraform provider resources for Cloudflare WAN tunnels and routes now support Terraform provider version 5. Customers using infrastructure-as-code workflows can manage their tunnel and route configuration with the latest provider version.
 

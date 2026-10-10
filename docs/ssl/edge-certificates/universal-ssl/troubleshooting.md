@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ssl/edge-certificates/universal-ssl/troubleshooting/
 title: Troubleshooting Universal SSL \u00b7 Cloudflare SSL/TLS docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:41.323410+00:00
+fetched_at: 2026-10-10T14:39:26.164111+00:00
 ---
 
 # Troubleshooting Universal SSL · Cloudflare SSL/TLS docs
@@ -22,9 +22,9 @@ fetched_at: 2026-10-08T07:15:41.323410+00:00
 
 # Troubleshooting
 
-Last updated Apr 16, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ssl/edge-certificates/universal-ssl/troubleshooting/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 9, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
-OverviewResolve a timed out stateDelete certificatesOther issues
+OverviewResolve a timed out stateDelete certificatesRSA certificate not available after plan upgradeOther issues
 
 ## Resolve a timed out state
 
@@ -42,6 +42,19 @@ To resolve timeout issues, try one or more of the following options:
 ## Delete certificates
 
 You can [use the API](https://developers.cloudflare.com/api/resources/ssl/subresources/certificate_packs/methods/delete/) to delete certificates that you no longer want listed on the Cloudflare dashboard.
+
+## RSA certificate not available after plan upgrade
+
+If you upgraded your zone from Free to a paid plan and your Universal SSL certificate includes only an ECDSA certificate (no RSA certificate), this is expected behavior. Cloudflare does not automatically re-issue the Universal SSL certificate when you change your plan.
+
+Your RSA certificate will be issued when the certificate pack next renews. To get an RSA certificate sooner, you can:
+
+  * [Order an advanced certificate](https://developers.cloudflare.com/ssl/edge-certificates/advanced-certificate-manager/) (requires the Advanced Certificate Manager add-on).
+  * [Disable Universal SSL](https://developers.cloudflare.com/ssl/edge-certificates/universal-ssl/disable-universal-ssl/) and then re-enable it. Cloudflare provisions a new certificate pack for your current plan, which on paid plans includes both RSA and ECDSA certificates. While Universal SSL is disabled and until the new certificate is issued, new TLS connections to your zone will fail unless another valid certificate covers your hostnames. Provisioning time is not guaranteed, so plan for this before using this option. Review [Disable Universal SSL](https://developers.cloudflare.com/ssl/edge-certificates/universal-ssl/disable-universal-ssl/) for settings, such as HSTS and Always Use HTTPS, that can cause errors while Universal SSL is disabled.
+
+
+
+For details, refer to [Certificate type](https://developers.cloudflare.com/ssl/edge-certificates/universal-ssl/limitations/#certificate-type).
 
 ## Other issues
 

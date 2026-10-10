@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/%40cf/ibm-granite/granite-4.0-h-micro/
 title: granite-4.0-h-micro (IBM) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:45.904089+00:00
+fetched_at: 2026-10-10T14:39:22.554444+00:00
 ---
 
 # granite-4.0-h-micro (IBM) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:04:45.904089+00:00
 
 Text Generation • IBM
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/%40cf/ibm-granite/granite-4.0-h-micro/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `@cf/ibm-granite/granite-4.0-h-micro`
 

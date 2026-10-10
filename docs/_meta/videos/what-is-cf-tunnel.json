@@ -2,9 +2,6 @@
   "url": "https://developers.cloudflare.com/videos/what-is-cf-tunnel/",
   "file": "videos/what-is-cf-tunnel.md",
   "title": "What is Cloudflare Tunnel? | Cloudflare Docs",
-  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (315 chars), fallback to crawl4ai)",
-  "fetched_at": "2026-10-08T07:16:41.425144+00:00",
-  "html_len": 97966,
-  "md_len": 377,
-  "depth": 0
+  "method": "httpx+scrapegraph (scrapling: scrapling thin content (315 chars), fallback to crawl4ai | crawl4ai: BrowserType.launch: Target page, context or browser has been closed)",
+  "fetched_at": "2026-10-10T14:37:28.263126+00:00"
 }

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-12-11-builds-event-subscriptions/
 title: Get notified when your Workers builds succeed or fail \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:31.619702+00:00
+fetched_at: 2026-10-10T14:38:45.833088+00:00
 ---
 
 # Get notified when your Workers builds succeed or fail · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)[Queues](https://developers.cloudflare.com/queues/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-12-11-builds-event-subscriptions/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now receive notifications when your Workers' builds start, succeed, fail, or get cancelled using [Event Subscriptions](https://developers.cloudflare.com/queues/event-subscriptions/).
 

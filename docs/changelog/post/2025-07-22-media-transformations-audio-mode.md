@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-07-22-media-transformations-audio-mode/
 title: Audio mode for Media Transformations \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:17.423665+00:00
+fetched_at: 2026-10-10T14:38:50.698825+00:00
 ---
 
 # Audio mode for Media Transformations · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Stream](https://developers.cloudflare.com/stream/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-07-22-media-transformations-audio-mode/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We now support `audio` mode! Use this feature to extract audio from a source video, outputting an M4A file to use in downstream workflows like [AI inference](https://developers.cloudflare.com/workers-ai/), content moderation, or transcription.
 

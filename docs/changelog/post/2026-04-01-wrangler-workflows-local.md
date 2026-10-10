@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-01-wrangler-workflows-local/
 title: All Wrangler commands for Workflows now support local development \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:44.395857+00:00
+fetched_at: 2026-10-10T14:38:41.223452+00:00
 ---
 
 # All Wrangler commands for Workflows now support local development · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workflows](https://developers.cloudflare.com/workflows/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-01-wrangler-workflows-local/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 All `wrangler workflows` commands now accept a `--local` flag to target a Workflow running in a local `wrangler dev` session instead of the production API.
 

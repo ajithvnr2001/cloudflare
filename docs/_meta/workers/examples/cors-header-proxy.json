@@ -3,8 +3,5 @@
   "file": "workers/examples/cors-header-proxy.md",
   "title": "CORS header proxy \u00b7 Cloudflare Workers docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:17:21.823942+00:00",
-  "html_len": 280700,
-  "md_len": 24975,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:39:27.755212+00:00"
 }

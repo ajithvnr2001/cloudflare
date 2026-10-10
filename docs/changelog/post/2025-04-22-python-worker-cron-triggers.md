@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-04-22-python-worker-cron-triggers/
 title: Cron triggers are now supported in Python Workers \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:10.331851+00:00
+fetched_at: 2026-10-10T14:38:52.751952+00:00
 ---
 
 # Cron triggers are now supported in Python Workers · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-04-22-python-worker-cron-triggers/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now create Python Workers which are executed via a cron trigger.
 

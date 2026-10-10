@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-27-transformation-flows/
 title: Transformation flows in Images \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:54.856235+00:00
+fetched_at: 2026-10-10T14:38:37.718129+00:00
 ---
 
 # Transformation flows in Images · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare Images](https://developers.cloudflare.com/images/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-27-transformation-flows/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 ![Custom flow configuration panel](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=1654,height=1398,format=webp/_astro/custom-flow.DeAGR8BY.png)
 

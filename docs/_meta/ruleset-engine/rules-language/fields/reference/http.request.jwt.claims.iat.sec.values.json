@@ -3,8 +3,5 @@
   "file": "ruleset-engine/rules-language/fields/reference/http.request.jwt.claims.iat.sec.values.md",
   "title": "http.request.jwt.claims.iat.sec.values \u00b7 Cloudflare Ruleset Engine docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:15:11.309585+00:00",
-  "html_len": 92235,
-  "md_len": 1486,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:32.516578+00:00"
 }

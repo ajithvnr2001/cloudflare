@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/ssl/
 title: ssl \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:14.560955+00:00
+fetched_at: 2026-10-10T14:37:29.516095+00:00
 ---
 
 # ssl · Cloudflare Ruleset Engine docs

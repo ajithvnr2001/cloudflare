@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.tls_client_auth.cert_rfc9440_too_large/
 title: cf.tls_client_auth.cert_rfc9440_too_large \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:07.117812+00:00
+fetched_at: 2026-10-10T14:37:34.252476+00:00
 ---
 
 # cf.tls_client_auth.cert_rfc9440_too_large · Cloudflare Ruleset Engine docs

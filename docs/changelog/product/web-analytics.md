@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/web-analytics/
 title: Cloudflare Web Analytics Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:51.556579+00:00
+fetched_at: 2026-10-10T14:38:02.573467+00:00
 ---
 
 # Cloudflare Web Analytics Changelog | Cloudflare Docs

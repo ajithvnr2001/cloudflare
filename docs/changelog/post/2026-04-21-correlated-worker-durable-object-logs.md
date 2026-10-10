@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-21-correlated-worker-durable-object-logs/
 title: Container logs page now includes relevant Worker and Durable Object logs \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:48.504737+00:00
+fetched_at: 2026-10-10T14:38:39.895531+00:00
 ---
 
 # Container logs page now includes relevant Worker and Durable Object logs · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Containers](https://developers.cloudflare.com/containers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-21-correlated-worker-durable-object-logs/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The Container logs page now displays related [Worker](https://developers.cloudflare.com/workers/) and [Durable Object](https://developers.cloudflare.com/durable-objects/) logs alongside container logs. This co-locates all relevant log events for a container application in one place, making it easier to trace requests and debug issues.
 

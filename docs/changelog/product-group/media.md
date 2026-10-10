@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product-group/media/
 title: Media Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:36.989798+00:00
+fetched_at: 2026-10-10T14:38:15.310647+00:00
 ---
 
 # Media Changelog | Cloudflare Docs

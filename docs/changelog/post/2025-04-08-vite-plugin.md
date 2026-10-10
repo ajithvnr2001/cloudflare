@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-04-08-vite-plugin/
 title: The Cloudflare Vite plugin is now Generally Available \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:09.185709+00:00
+fetched_at: 2026-10-10T14:38:53.187147+00:00
 ---
 
 # The Cloudflare Vite plugin is now Generally Available · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-04-08-vite-plugin/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The [Cloudflare Vite plugin](https://developers.cloudflare.com/workers/vite-plugin/) has [reached v1.0 ↗︎](https://blog.cloudflare.com/introducing-the-cloudflare-vite-plugin) and is now Generally Available ("GA").
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.llm.prompt.unsafe_topic_categories/
 title: cf.llm.prompt.unsafe_topic_categories \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:04.004788+00:00
+fetched_at: 2026-10-10T14:37:35.245716+00:00
 ---
 
 # cf.llm.prompt.unsafe_topic_categories · Cloudflare Ruleset Engine docs

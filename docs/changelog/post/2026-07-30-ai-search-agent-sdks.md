@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-30-ai-search-agent-sdks/
 title: Use AI Search with the Agents SDK, AI SDK, and LangChain \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:05.485876+00:00
+fetched_at: 2026-10-10T14:38:34.050480+00:00
 ---
 
 # Use AI Search with the Agents SDK, AI SDK, and LangChain · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Search](https://developers.cloudflare.com/ai-search/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-30-ai-search-agent-sdks/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now use [AI Search](https://developers.cloudflare.com/ai-search/) directly from popular agent frameworks, adding grounded retrieval to an existing app instead of calling the REST API by hand. The new [Agents](https://developers.cloudflare.com/ai-search/agent-sdks/) section has guides for the [Vercel AI SDK](https://developers.cloudflare.com/ai-search/agent-sdks/ai-sdk/), [LangChain](https://developers.cloudflare.com/ai-search/agent-sdks/langchain/), and the [Cloudflare Agents SDK](https://developers.cloudflare.com/ai-search/agent-sdks/agents-sdk/). The AI SDK integration is a new package, and the LangChain integration is a new retriever in the existing `langchain-cloudflare` package.
 

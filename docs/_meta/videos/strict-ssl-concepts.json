@@ -2,9 +2,6 @@
   "url": "https://developers.cloudflare.com/videos/strict-ssl-concepts/",
   "file": "videos/strict-ssl-concepts.md",
   "title": "SSL/TLS concepts | Cloudflare Docs",
-  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (201 chars), fallback to crawl4ai)",
-  "fetched_at": "2026-10-08T07:16:40.576363+00:00",
-  "html_len": 97519,
-  "md_len": 275,
-  "depth": 0
+  "method": "httpx+scrapegraph (scrapling: scrapling thin content (201 chars), fallback to crawl4ai | crawl4ai: crawl4ai failed: Unexpected error in _crawl_web at line 778 in _crawl_web (../../../../../opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/crawl4ai/async_crawler_strategy.py):\nError: Failed on navigating ACS-GOTO:\nPage.goto: net::ERR_ABORTED; maybe frame was detached?\nCall log:\n  - navigating to \"https://developers.cloudflare.com/videos/strict-ssl-concepts/\", waiting until \"domcontentloaded\"\n\n\nCode context:\n 773                                   tag=\"GOTO\",\n 774                                   params={\"url\": url},\n 775                               )\n 776                               response = None\n 777                           else:\n 778 \u2192                             raise RuntimeError(f\"Failed on navigating ACS-GOTO:\\n{str(e)}\")\n 779   \n 780                       # \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n 781                       # Walk the redirect chain.  Playwright returns only the last\n 782                       # hop, so we trace the `request.redirected_from` links until the\n 783                       # first response that differs from the final one and surface its)",
+  "fetched_at": "2026-10-10T14:37:28.806746+00:00"
 }

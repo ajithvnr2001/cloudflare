@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-09-11-increased-version-rollback-limit/
 title: Worker version rollback limit increased from 10 to 100 \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:22.637269+00:00
+fetched_at: 2026-10-10T14:38:48.900417+00:00
 ---
 
 # Worker version rollback limit increased from 10 to 100 · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-09-11-increased-version-rollback-limit/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The number of recent versions available for a Worker rollback has been increased from 10 to 100.
 

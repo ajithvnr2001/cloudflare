@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/http.request.method/
 title: http.request.method \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:11.950836+00:00
+fetched_at: 2026-10-10T14:37:32.021824+00:00
 ---
 
 # http.request.method · Cloudflare Ruleset Engine docs

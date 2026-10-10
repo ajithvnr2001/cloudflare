@@ -2,9 +2,6 @@
   "url": "https://developers.cloudflare.com/videos/set-up-access-policies/",
   "file": "videos/set-up-access-policies.md",
   "title": "Set up Cloudflare Access policies for your tunnel | Cloudflare Docs",
-  "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (298 chars), fallback to crawl4ai)",
-  "fetched_at": "2026-10-08T07:16:41.109937+00:00",
-  "html_len": 94742,
-  "md_len": 342,
-  "depth": 0
+  "method": "httpx+scrapegraph (scrapling: scrapling thin content (298 chars), fallback to crawl4ai | crawl4ai: crawl4ai failed: Unexpected error in _crawl_web at line 632 in wrap_api_call (../../../../../opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/playwright/_impl/_connection.py):\nError: BrowserContext.new_page: Target page, context or browser has been closed\n\nCode context:\n 627           )\n 628           self._api_zone.set(parsed_st)\n 629           try:\n 630               return await cb()\n 631           except Exception as error:\n 632 \u2192             raise rewrite_error(error, f\"{parsed_st['apiName']}: {error}\") from None\n 633           finally:\n 634               self._api_zone.set(None)\n 635   \n 636       def wrap_api_call_sync(\n 637           self, cb: Callable[[], Any], is_internal: bool = False, title: str = None)",
+  "fetched_at": "2026-10-10T14:37:28.807976+00:00"
 }

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-10-01-stream-ingest-limit-increase/
 title: Basin Pipelines ingest limit increased to 1 GB/s \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:19.188762+00:00
+fetched_at: 2026-10-10T14:38:29.697890+00:00
 ---
 
 # Basin Pipelines ingest limit increased to 1 GB/s · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Basin Pipelines](https://developers.cloudflare.com/basin-pipelines/)[Basin](https://developers.cloudflare.com/basin/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-10-01-stream-ingest-limit-increase/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Each [Basin Pipelines stream](https://developers.cloudflare.com/basin-pipelines/streams/) can now ingest up to 1 GB/s, increased from 5 MB/s.
 

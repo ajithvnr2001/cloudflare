@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/black-forest-labs/flux-video-upscale/
 title: FLUX Video Upscale (Black Forest Labs) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:53.674107+00:00
+fetched_at: 2026-10-10T14:39:16.724456+00:00
 ---
 
 # FLUX Video Upscale (Black Forest Labs) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:04:53.674107+00:00
 
 video-to-video • Black Forest Labs
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/black-forest-labs/flux-video-upscale/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `black-forest-labs/flux-video-upscale`
 

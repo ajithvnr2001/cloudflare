@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-08-13-datachannels-reliability-ordering/
 title: Control Realtime SFU DataChannel delivery \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:08.274442+00:00
+fetched_at: 2026-10-10T14:38:33.084777+00:00
 ---
 
 # Control Realtime SFU DataChannel delivery · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Realtime](https://developers.cloudflare.com/realtime/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-08-13-datachannels-reliability-ordering/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Cloudflare Realtime SFU](https://developers.cloudflare.com/realtime/sfu/) is a [WebRTC selective forwarding unit](https://developers.cloudflare.com/realtime/sfu/concepts/architecture/) that runs on Cloudflare's global network. It forwards audio, video, and application data between WebRTC clients without requiring you to manage SFU infrastructure or regions.
 

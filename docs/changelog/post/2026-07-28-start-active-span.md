@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-28-start-active-span/
 title: Workers tracing \u2014 write custom spans with new startActiveSpan() and span.end() runtime APIs \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:05.264314+00:00
+fetched_at: 2026-10-10T14:38:34.170335+00:00
 ---
 
 # Workers tracing — write custom spans with new startActiveSpan() and span.end() runtime APIs · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-28-start-active-span/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The Workers runtime now provides built-in `tracing.startActiveSpan()` and `span.end()` APIs, allowing you to write custom spans for operations that last beyond a single callback — for example, instrumenting a stream pipeline where the span should stay open until the stream is fully consumed.
 

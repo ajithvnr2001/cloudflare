@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/realtime/realtimekit/core/api-reference/rtkparticipants/
 title: RTKParticipants \u00b7 Cloudflare Realtime docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:12:55.809679+00:00
+fetched_at: 2026-10-10T14:37:58.240405+00:00
 ---
 
 # RTKParticipants · Cloudflare Realtime docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:12:55.809679+00:00
 
 # RTKParticipants
 
-Last updated Jul 22, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/realtime/realtimekit/core/api-reference/rtkparticipants/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Jul 22, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Overview meeting.participants.waitlisted meeting.participants.joined meeting.participants.active meeting.participants.videoSubscribed meeting.participants.audioSubscribed meeting.participants.pinned meeting.participants.all meeting.participants.pip meeting.participants.viewMode meeting.participants.currentPage meeting.participants.lastActiveSpeaker meeting.participants.selectedPeers meeting.participants.count meeting.participants.maxActiveParticipantsCount meeting.participants.pageCount meeting.participants.setMaxActiveParticipantsCount(limit) meeting.participants.acceptWaitingRoomRequest(id) meeting.participants.acceptAllWaitingRoomRequest(userIds) meeting.participants.rejectWaitingRoomRequest(id) meeting.participants.setViewMode(viewMode) meeting.participants.subscribe(peerIds, [kinds]) meeting.participants.unsubscribe(peerIds, [kinds]) meeting.participants.setPage(page) meeting.participants.disableAllAudio(allowUnmute) meeting.participants.disableAllVideo() meeting.participants.kickAll() meeting.participants.broadcastMessage(type, payload, target) meeting.participants.getAllJoinedPeers(searchQuery, limit, offset) meeting.participants.getParticipantsInMeetingPreJoin()
 

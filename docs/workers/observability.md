@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers/observability/
 title: Observability \u00b7 Cloudflare Workers docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:34.051636+00:00
+fetched_at: 2026-10-10T14:39:24.042799+00:00
 ---
 
 # Observability · Cloudflare Workers docs
@@ -17,7 +17,7 @@ fetched_at: 2026-10-08T07:17:34.051636+00:00
 
 # Observability
 
-Last updated Oct 2, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers/observability/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 10, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewLogsTracesIssuesMetrics and analyticsQuery BuilderExporting dataDebuggingAdditional resources
 
@@ -77,15 +77,19 @@ Get readable stack traces that map back to your original source code.
 
 Use Chrome DevTools for breakpoints, CPU profiling, and memory debugging during local development.
 
+### [Profiling in production](https://developers.cloudflare.com/workers/observability/profiling-in-production/)
+
+Capture CPU and allocation profiles for deployed Workers and Durable Objects.
+
 ### [Local observability](https://developers.cloudflare.com/workers/local-development/local-explorer/)
 
 Capture traces, spans, and logs from your Workers locally.
 
 ## Additional resources
 
-### [MCP server](https://github.com/cloudflare/mcp-server-cloudflare/tree/main/apps/workers-observability)
+### [MCP server](https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/#cloudflare-api-mcp-server)
 
-Query Workers observability data using the Model Context Protocol.
+Query Workers observability data with the Cloudflare API MCP server.
 
 ### [Third-party integrations](https://developers.cloudflare.com/workers/observability/third-party-integrations/)
 

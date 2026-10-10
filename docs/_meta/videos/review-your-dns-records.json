@@ -3,8 +3,5 @@
   "file": "videos/review-your-dns-records.md",
   "title": "Review your DNS records | Cloudflare Docs",
   "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (222 chars), fallback to crawl4ai)",
-  "fetched_at": "2026-10-08T07:16:39.951080+00:00",
-  "html_len": 97606,
-  "md_len": 293,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:32.168422+00:00"
 }

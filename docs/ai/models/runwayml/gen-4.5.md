@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/runwayml/gen-4.5/
 title: RunwayML Gen-4.5 (RunwayML) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:05.977185+00:00
+fetched_at: 2026-10-10T14:39:06.821431+00:00
 ---
 
 # RunwayML Gen-4.5 (RunwayML) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:05:05.977185+00:00
 
 Text-to-Video • RunwayML
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/runwayml/gen-4.5/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `runwayml/gen-4.5`
 

@@ -3,8 +3,5 @@
   "file": "ruleset-engine/rules-language/fields/reference/cf.llm.prompt.detected.md",
   "title": "cf.llm.prompt.detected \u00b7 Cloudflare Ruleset Engine docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:15:03.636428+00:00",
-  "html_len": 91728,
-  "md_len": 1225,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:35.440107+00:00"
 }

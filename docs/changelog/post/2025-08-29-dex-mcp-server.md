@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-08-29-dex-mcp-server/
 title: DEX MCP Server \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:21.080873+00:00
+fetched_at: 2026-10-10T14:38:49.443419+00:00
 ---
 
 # DEX MCP Server · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Digital Experience Monitoring](https://developers.cloudflare.com/cloudflare-one/insights/dex/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-08-29-dex-mcp-server/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Digital Experience Monitoring (DEX)](https://developers.cloudflare.com/cloudflare-one/insights/dex/) provides visibility into device connectivity and performance across your Cloudflare SASE deployment.
 

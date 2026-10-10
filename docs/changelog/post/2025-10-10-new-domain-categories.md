@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-10-10-new-domain-categories/
 title: New domain categories added \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:25.917150+00:00
+fetched_at: 2026-10-10T14:38:47.824734+00:00
 ---
 
 # New domain categories added · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Gateway](https://developers.cloudflare.com/cloudflare-one/traffic-policies/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-10-10-new-domain-categories/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We have added three new domain categories under the Technology parent category, to better reflect online content and improve DNS filtering.
 

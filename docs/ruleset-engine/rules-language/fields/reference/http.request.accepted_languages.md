@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/http.request.accepted_languages/
 title: http.request.accepted_languages \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:09.500745+00:00
+fetched_at: 2026-10-10T14:37:33.215641+00:00
 ---
 
 # http.request.accepted_languages · Cloudflare Ruleset Engine docs

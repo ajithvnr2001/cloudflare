@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/videos/warp-2-diagnostic-logs/
 title: WARP - Understand Cloudflare WARP through diagnostic logs | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:16:20.025145+00:00
+fetched_at: 2026-10-10T14:37:25.504603+00:00
 ---
 
 # WARP - Understand Cloudflare WARP through diagnostic logs | Cloudflare Docs

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/rules/transform/request-header-modification/reference/fields-functions/
 title: Available fields and functions \u00b7 Cloudflare Rules docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:14:57.296388+00:00
+fetched_at: 2026-10-10T14:39:26.133121+00:00
 ---
 
 # Available fields and functions · Cloudflare Rules docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:14:57.296388+00:00
 
 # Available fields and functions
 
-Last updated Aug 25, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/rules/transform/request-header-modification/reference/fields-functions/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 9, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The available fields when setting an HTTP request header value using an expression are the following:
 
@@ -35,6 +35,14 @@ The available fields when setting an HTTP request header value using an expressi
   * `cf.edge.client_tcp`
   * `cf.edge.l4.delivery_rate`
   * `cf.hostname.metadata`
+  * `cf.llm.prompt.custom_topic_categories`
+  * `cf.llm.prompt.detected`
+  * `cf.llm.prompt.injection_score`
+  * `cf.llm.prompt.pii_categories`
+  * `cf.llm.prompt.pii_detected`
+  * `cf.llm.prompt.token_count`
+  * `cf.llm.prompt.unsafe_topic_categories`
+  * `cf.llm.prompt.unsafe_topic_detected`
   * `cf.zone.name`
   * `cf.random_seed`
   * `cf.ray_id`
@@ -103,6 +111,7 @@ The available fields when setting an HTTP request header value using an expressi
   * `cf.waf.credential_check.*`
   * `cf.waf.score`
   * `cf.waf.score.*`
+  * `cf.appsec.request.failed_detections`
 
 
 

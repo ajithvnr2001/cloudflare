@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-18-container-exec/
 title: exec() is now available for Containers \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:58.706053+00:00
+fetched_at: 2026-10-10T14:38:36.328381+00:00
 ---
 
 # exec() is now available for Containers · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Containers](https://developers.cloudflare.com/containers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-18-container-exec/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `exec()` is now available for [Containers](https://developers.cloudflare.com/containers/). Use `this.ctx.container.exec()` to start processes inside a running Container, stream standard input and output, inspect exit codes, and signal each process.
 

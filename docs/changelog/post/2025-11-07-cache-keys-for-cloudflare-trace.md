@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-11-07-cache-keys-for-cloudflare-trace/
 title: Inspect Cache Keys with Cloudflare Trace \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:28.616388+00:00
+fetched_at: 2026-10-10T14:38:47.054072+00:00
 ---
 
 # Inspect Cache Keys with Cloudflare Trace · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cache / CDN](https://developers.cloudflare.com/cache/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-11-07-cache-keys-for-cloudflare-trace/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now see the exact cache key generated for any request directly in Cloudflare Trace. This visibility helps you troubleshoot cache hits and misses, and verify that your Custom Cache Keys — configured via Cache Rules or Page Rules — are working as intended.
 

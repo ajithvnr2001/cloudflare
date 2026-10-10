@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers/testing/vitest-integration/write-your-first-test/
 title: Write your first test \u00b7 Cloudflare Workers docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:59.364103+00:00
+fetched_at: 2026-10-10T14:39:26.808843+00:00
 ---
 
 # Write your first test · Cloudflare Workers docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:17:59.364103+00:00
 
 # Write your first test
 
-Last updated Aug 20, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers/testing/vitest-integration/write-your-first-test/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewPrerequisitesDefine Vitest configurationDefine typesWriting tests Unit tests Integration testsRelated resources
 
@@ -129,6 +129,7 @@ src/index.jsjs
     
     export default {
     	async fetch(request, env, ctx) {
+    		const { pathname } = new URL(request.url);
     		if (pathname === "/404") {
     			return new Response("Not found", { status: 404 });
     		}
@@ -141,6 +142,7 @@ src/index.tsts
     
     export default {
     	async fetch(request, env, ctx): Promise<Response> {
+    		const { pathname } = new URL(request.url);
     		if (pathname === "/404") {
     			return new Response("Not found", { status: 404 });
     		}
@@ -169,7 +171,7 @@ test/unit.spec.jsjs
     const IncomingRequest = Request;
     
     describe("Hello World worker", () => {
-    	it("responds with Hello World!", async () => {
+    	it("responds with not found and proper status for /404", async () => {
     		const request = new IncomingRequest("http://example.com/404");
     		// Create an empty context to pass to `worker.fetch()`
     		const ctx = createExecutionContext();
@@ -198,7 +200,7 @@ test/unit.spec.tsts
     const IncomingRequest = Request<unknown, IncomingRequestCfProperties>;
     
     describe("Hello World worker", () => {
-    	it("responds with Hello World!", async () => {
+    	it("responds with not found and proper status for /404", async () => {
     		const request = new IncomingRequest("http://example.com/404");
     		// Create an empty context to pass to `worker.fetch()`
     		const ctx = createExecutionContext();

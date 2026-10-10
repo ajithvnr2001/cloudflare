@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/videos/create-api-tokens/
 title: Create an API token | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:16:16.148778+00:00
+fetched_at: 2026-10-10T14:37:28.925264+00:00
 ---
 
 # Create an API token | Cloudflare Docs

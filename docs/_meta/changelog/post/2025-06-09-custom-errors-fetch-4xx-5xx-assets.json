@@ -3,8 +3,5 @@
   "file": "changelog/post/2025-06-09-custom-errors-fetch-4xx-5xx-assets.md",
   "title": "More flexible fallback handling \u2014 Custom Errors now support fetching assets returned with 4xx or 5xx status codes \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:13.690775+00:00",
-  "html_len": 61233,
-  "md_len": 1908,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:51.969480+00:00"
 }

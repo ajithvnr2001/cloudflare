@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-12-URL-scanner-report-agent-readiness/
 title: Agent Readiness scores now available in URL Scanner via the Cloudflare Dashboard \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:52.734410+00:00
+fetched_at: 2026-10-10T14:38:38.380051+00:00
 ---
 
 # Agent Readiness scores now available in URL Scanner via the Cloudflare Dashboard · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Security Center](https://developers.cloudflare.com/security-center/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-12-URL-scanner-report-agent-readiness/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We’ve added a new **Agent Readiness** tab to URL Scanner reports accessible via the Cloudflare dashboard. This feature evaluates your site against emerging AI standards and provides six specialized scores to help you optimize for the next generation of AI agents and automated discovery.
 

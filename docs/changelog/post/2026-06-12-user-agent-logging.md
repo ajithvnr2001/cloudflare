@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-12-user-agent-logging/
 title: View the user agent of requests in AI Gateway logs \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:57.806903+00:00
+fetched_at: 2026-10-10T14:38:36.951194+00:00
 ---
 
 # View the user agent of requests in AI Gateway logs · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Gateway](https://developers.cloudflare.com/ai-gateway/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-12-user-agent-logging/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 AI Gateway logs now capture the user agent of the client that made each request, making it easier to identify which SDK, library, or application sent the traffic flowing through your gateway. For example, you can tell apart requests coming from `openai-python` versus a custom application or a Cloudflare Worker.
 

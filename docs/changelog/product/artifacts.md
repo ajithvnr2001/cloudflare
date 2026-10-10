@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/artifacts/
 title: Artifacts Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:41.094151+00:00
+fetched_at: 2026-10-10T14:38:11.950771+00:00
 ---
 
 # Artifacts Changelog | Cloudflare Docs

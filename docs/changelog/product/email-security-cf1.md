@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/email-security-cf1/
 title: Email security Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:45.028641+00:00
+fetched_at: 2026-10-10T14:38:08.071718+00:00
 ---
 
 # Email security Changelog | Cloudflare Docs

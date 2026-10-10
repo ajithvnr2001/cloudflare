@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-04-15-workers-api-fixes/
 title: Fixed and documented Workers Routes and Secrets API \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:10.466521+00:00
+fetched_at: 2026-10-10T14:38:52.847232+00:00
 ---
 
 # Fixed and documented Workers Routes and Secrets API · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)[Workers for Platforms](https://developers.cloudflare.com/cloudflare-for-platforms/workers-for-platforms/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-04-15-workers-api-fixes/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 #### Workers Routes API
 

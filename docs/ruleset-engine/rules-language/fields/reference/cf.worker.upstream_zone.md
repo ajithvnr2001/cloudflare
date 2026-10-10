@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.worker.upstream_zone/
 title: cf.worker.upstream_zone \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:08.975800+00:00
+fetched_at: 2026-10-10T14:37:33.372447+00:00
 ---
 
 # cf.worker.upstream_zone · Cloudflare Ruleset Engine docs

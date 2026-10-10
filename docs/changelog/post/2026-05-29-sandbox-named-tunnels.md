@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-29-sandbox-named-tunnels/
 title: Share sandbox previews through Cloudflare Tunnel \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:55.403403+00:00
+fetched_at: 2026-10-10T14:38:37.482226+00:00
 ---
 
 # Share sandbox previews through Cloudflare Tunnel · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Agents](https://developers.cloudflare.com/agents/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-29-sandbox-named-tunnels/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Sandboxes](https://developers.cloudflare.com/sandbox/) can expose a service running inside the container on a public preview URL through the `sandbox.tunnels` namespace. The SDK uses `cloudflared` inside the sandbox so you can share a running service without configuring `exposePort()` or a custom domain.
 

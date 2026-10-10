@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-05-union-intersect-except-select-distinct/
 title: R2 SQL now supports UNION, INTERSECT, EXCEPT, and SELECT DISTINCT \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:56.957051+00:00
+fetched_at: 2026-10-10T14:38:37.110076+00:00
 ---
 
 # R2 SQL now supports UNION, INTERSECT, EXCEPT, and SELECT DISTINCT · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Basin SQL](https://developers.cloudflare.com/basin-sql/)[Basin](https://developers.cloudflare.com/basin/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-05-union-intersect-except-select-distinct/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [R2 SQL](https://developers.cloudflare.com/basin-sql/) now supports set operations (`UNION`, `INTERSECT`, `EXCEPT`) and `SELECT DISTINCT`, expanding the range of analytical queries you can run directly on [Apache Iceberg ↗︎](https://iceberg.apache.org/) tables in [R2 Data Catalog](https://developers.cloudflare.com/basin-catalog/).
 

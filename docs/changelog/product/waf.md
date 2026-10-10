@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/waf/
 title: WAF Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:51.100771+00:00
+fetched_at: 2026-10-10T14:38:03.566098+00:00
 ---
 
 # WAF Changelog | Cloudflare Docs
@@ -231,6 +231,52 @@ No products found.
 
 [ View RSS feeds ](https://developers.cloudflare.com/fundamentals/new-features/available-rss-feeds/)[ Subscribe to RSS ](https://developers.cloudflare.com/changelog/rss/index.xml)
 
+Oct 9, 2026
+
+## [Failed detections field available in Rules](https://developers.cloudflare.com/changelog/post/2026-10-09-failed-detections/)
+
+[WAF](https://developers.cloudflare.com/waf/)[Rules](https://developers.cloudflare.com/rules/)
+
+You can now use `cf.appsec.request.failed_detections` to control how your rules handle requests when a security detection reports a failure.
+
+The field is an `Array<String>` of detection IDs that reports failures from content scanning, WAF attack score, attack signature detection, leaked credentials detection, and AI prompt detections for personally identifiable information (PII), prompt injection, custom topics, and unsafe topics.
+
+The field does not alter the existing behavior of detections. Use it in rules to choose how to handle requests with reported failures.
+
+When no failures are reported, the field returns `[]`. You can use it on all plans, but your plan must still include the detections and rule features you want to use.
+
+Supported rules:
+
+  * Custom rules at the zone and account levels
+  * Rate limiting rules at the zone and account levels
+  * Request Header Transform Rules at the zone level
+
+
+
+Match any reported failure:
+    
+    
+    len(cf.appsec.request.failed_detections) gt 0
+
+Match a reported leaked credentials detection failure:
+    
+    
+    any(cf.appsec.request.failed_detections[*] eq "waf_credential_check")
+
+For more information, refer to the [Failed detections field reference](https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.appsec.request.failed_detections/).
+
+Oct 7, 2026
+
+## [Updated unsafe topic detection for AI Security for Apps](https://developers.cloudflare.com/changelog/post/2026-10-07-ai-security-for-apps-unsafe-topic-detection/)
+
+[WAF](https://developers.cloudflare.com/waf/)
+
+AI Security for Apps now supports an updated set of categories for detecting unsafe topics in incoming prompts.
+
+The values available in [`cf.llm.prompt.unsafe_topic_categories`](https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.llm.prompt.unsafe_topic_categories/) have changed. Existing WAF custom rules remain valid, but rules that reference a removed or renamed category will no longer match that category. Review any rules that use this field and update their expressions to use the currently supported values.
+
+For category descriptions and configuration guidance, refer to [Unsafe topics](https://developers.cloudflare.com/waf/detections/ai-security-for-apps/unsafe-topics/).
+
 Oct 6, 2026
 
 ## [WAF Release - 2026-10-06](https://developers.cloudflare.com/changelog/post/2026-10-06-waf-release/)
@@ -426,6 +472,18 @@ In **Security Analytics** > **Attack Analysis** , you can review matching signat
 Attack Signature Detection uses the same signature definitions as [Cloudflare Managed Rules](https://developers.cloudflare.com/waf/managed-rules/), but it does not inherit your Managed Rules actions, overrides, or deployment configuration. Managed Rules remain the recommended baseline protection during Early Access.
 
 Contact your Cloudflare account team to request access. For more information, refer to [Attack Signature Detection](https://developers.cloudflare.com/waf/detections/attack-signature-detection/).
+
+Sep 1, 2026
+
+## [Updated PII detection for AI Security for Apps](https://developers.cloudflare.com/changelog/post/2026-09-01-ai-security-for-apps-pii-detection/)
+
+[WAF](https://developers.cloudflare.com/waf/)
+
+AI Security for Apps now supports an updated set of categories for detecting personally identifiable information (PII) in incoming prompts.
+
+The values available in [`cf.llm.prompt.pii_categories`](https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.llm.prompt.pii_categories/) have changed. Existing WAF custom rules remain valid, but rules that reference a removed or renamed category will no longer match that category. Review any rules that use this field and update their expressions to use the currently supported values.
+
+For the complete category list and configuration guidance, refer to [PII detection](https://developers.cloudflare.com/waf/detections/ai-security-for-apps/pii-detection/).
 
 Sep 1, 2026
 
@@ -716,61 +774,8 @@ Cloudflare Managed Ruleset| ...ed933fcc| N/A| Generic Rules - SQLi | N/A| Block|
 Cloudflare Free Ruleset| ...b5ec246a| N/A| Generic Rules - Unauthenticated RCE | N/A| Block| This is a new detection.  
 Cloudflare Free Ruleset| ...33697a1a| N/A| Generic Rules - SQLi | N/A| Block| This is a new detection.  
   
-Jul 14, 2026
-
-## [WAF Release - 2026-07-14](https://developers.cloudflare.com/changelog/post/2026-07-14-waf-release/)
-
-[WAF](https://developers.cloudflare.com/waf/)
-
-This release introduces new rules targeting critical infrastructure vulnerabilities. These include an unauthenticated memory disclosure flaw in Citrix NetScaler ADC and Gateway (CVE-2026-8451) and a high-severity pre-authentication remote code execution (RCE) vulnerability in Progress Kemp LoadMaster (CVE-2026-8037).
-
-**Key Findings**
-
-  * CVE-2026-8451: An insufficient input validation vulnerability affects Citrix NetScaler ADC and NetScaler Gateway appliances configured as a SAML Identity Provider (IdP). Remote, unauthenticated attackers can exploit this flaw by sending malformed requests to trigger a memory overread, allowing them to leak chunks of sensitive data from adjacent appliance memory.
-
-  * CVE-2026-8037: A critical OS command injection vulnerability in Progress Kemp LoadMaster load balancers allows unauthenticated remote attackers to achieve remote code execution (RCE).
-
-
-Ruleset| Rule ID| Legacy Rule ID| Description| Previous Action| New Action| Comments  
----|---|---|---|---|---|---  
-Cloudflare Managed Ruleset| ...76973ac4| N/A| Citrix Netscaler ADC - Insufficient Input Validation - CVE:CVE-2026-8451| Log| Block| This is a new detection.  
-Cloudflare Managed Ruleset| ...10233f36| N/A| Progress Kemp LoadMaster - Remote Code Execution - CVE:CVE-2026-8037| Log| Block| This is a new detection.  
-  
-Jul 1, 2026
-
-## [WAF Release - 2026-07-01](https://developers.cloudflare.com/changelog/post/2026-07-01-waf-release/)
-
-[WAF](https://developers.cloudflare.com/waf/)
-
-This release adds targeted coverage for a path traversal flaw in Fortinet FortiSandbox (CVE-2026-39813) and transitions the Anomaly:Header:User-Agent - Fake Bing or MSN Bot rule action from Block to Disabled.
-
-**Key Findings**
-
-  * CVE-2026-39813: A path traversal vulnerability in Fortinet FortiSandbox allows remote, unauthenticated attackers to read arbitrary files from the underlying filesystem due to insufficient validation of user-supplied input paths.
-
-Ruleset| Rule ID| Legacy Rule ID| Description| Previous Action| New Action| Comments  
----|---|---|---|---|---|---  
-Cloudflare Managed Ruleset| ...d84c92c9| N/A| Fortinet FortiSandbox - Path Traversal - CVE:CVE-2026-39813| Log| Block| This is a new detection.  
-Cloudflare Managed Ruleset| ...c12cf9c8| N/A| Anomaly:Header:User-Agent - Fake Bing or MSN Bot| Enabled| Disabled| We are changing the action for this rule from BLOCK to Disabled  
-  
-Jun 23, 2026
-
-## [WAF Release - 2026-06-23](https://developers.cloudflare.com/changelog/post/2026-06-23-waf-release/)
-
-[WAF](https://developers.cloudflare.com/waf/)
-
-This week's release introduces new managed protection to address a critical pre-authentication OS command injection vulnerability in Ivanti Sentry (CVE-2026-10520).
-
-**Key Findings**
-
-  * CVE-2026-10520: An OS command injection vulnerability in Ivanti Sentry allows remote, unauthenticated attackers to execute arbitrary system commands with root privileges. The flaw stems from improper sanitization of input strings parsed during internal configuration handling.
-
-Ruleset| Rule ID| Legacy Rule ID| Description| Previous Action| New Action| Comments  
----|---|---|---|---|---|---  
-Cloudflare Managed Ruleset| ...242fdf83| N/A| Ivanti Sentry - Command Injection - CVE:CVE-2026-10520| Log| Block| This is a new detection.  
-  
 ← Prev
 
-1[2](https://developers.cloudflare.com/changelog/product/waf/2/)…[5](https://developers.cloudflare.com/changelog/product/waf/5/)
+1[2](https://developers.cloudflare.com/changelog/product/waf/2/)…[6](https://developers.cloudflare.com/changelog/product/waf/6/)
 
 [Next →](https://developers.cloudflare.com/changelog/product/waf/2/)

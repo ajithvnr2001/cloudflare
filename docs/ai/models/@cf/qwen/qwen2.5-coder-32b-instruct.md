@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/%40cf/qwen/qwen2.5-coder-32b-instruct/
 title: qwen2.5-coder-32b-instruct (Qwen) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:47.902841+00:00
+fetched_at: 2026-10-10T14:39:20.866071+00:00
 ---
 
 # qwen2.5-coder-32b-instruct (Qwen) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:04:47.902841+00:00
 
 Text Generation • Qwen
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/%40cf/qwen/qwen2.5-coder-32b-instruct/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `@cf/qwen/qwen2.5-coder-32b-instruct`
 

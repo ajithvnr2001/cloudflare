@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-02-17-docker-in-docker/
 title: Docker-in-Docker support added to Containers and Sandboxes \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:37.544146+00:00
+fetched_at: 2026-10-10T14:38:43.618025+00:00
 ---
 
 # Docker-in-Docker support added to Containers and Sandboxes · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Containers](https://developers.cloudflare.com/containers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-02-17-docker-in-docker/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Sandboxes](https://developers.cloudflare.com/sandbox/) and [Containers](https://developers.cloudflare.com/containers/) now support running Docker for "Docker-in-Docker" setups. This is particularly useful when your end users or [agents](https://developers.cloudflare.com/agents) want to run a full sandboxed development environment.
 

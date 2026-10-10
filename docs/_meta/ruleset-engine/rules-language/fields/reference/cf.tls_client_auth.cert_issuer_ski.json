@@ -3,8 +3,5 @@
   "file": "ruleset-engine/rules-language/fields/reference/cf.tls_client_auth.cert_issuer_ski.md",
   "title": "cf.tls_client_auth.cert_issuer_ski \u00b7 Cloudflare Ruleset Engine docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:15:06.640203+00:00",
-  "html_len": 92233,
-  "md_len": 1287,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:34.358347+00:00"
 }

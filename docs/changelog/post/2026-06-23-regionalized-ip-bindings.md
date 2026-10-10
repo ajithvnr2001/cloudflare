@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-23-regionalized-ip-bindings/
 title: Regionalized IP Bindings for Regional Services \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:59.136584+00:00
+fetched_at: 2026-10-10T14:38:36.169793+00:00
 ---
 
 # Regionalized IP Bindings for Regional Services · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Data Localization Suite](https://developers.cloudflare.com/data-localization/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-23-regionalized-ip-bindings/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Regional Services now supports **Regionalized IP Bindings** , letting you regionalize traffic at the IP layer for prefixes you bring to Cloudflare through [Bring Your Own IP (BYOIP)](https://developers.cloudflare.com/byoip/).
 

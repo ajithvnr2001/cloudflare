@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-09-28-webcrypto-modern-algorithms/
 title: Web Crypto adds ML-KEM and ML-DSA support \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:16.624478+00:00
+fetched_at: 2026-10-10T14:38:30.255632+00:00
 ---
 
 # Web Crypto adds ML-KEM and ML-DSA support · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-09-28-webcrypto-modern-algorithms/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The Workers Web Crypto API now supports ML-KEM-768, ML-KEM-1024, ML-DSA-44, ML-DSA-65, and ML-DSA-87. ML-KEM establishes shared secrets, while ML-DSA signs and verifies data.
 

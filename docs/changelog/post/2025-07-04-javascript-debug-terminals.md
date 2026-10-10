@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-07-04-javascript-debug-terminals/
 title: Workers now supports JavaScript debug terminals in VSCode, Cursor and Windsurf IDEs \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:16.256969+00:00
+fetched_at: 2026-10-10T14:38:51.094410+00:00
 ---
 
 # Workers now supports JavaScript debug terminals in VSCode, Cursor and Windsurf IDEs · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-07-04-javascript-debug-terminals/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Workers now support breakpoint debugging using VSCode's built-in [JavaScript Debug Terminals ↗︎](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_javascript-debug-terminal). All you have to do is open a JS debug terminal (`Cmd + Shift + P` and then type `javascript debug`) and run `wrangler dev` (or `vite dev`) from within the debug terminal. VSCode will automatically connect to your running Worker (even if you're running multiple Workers at once!) and start a debugging session.
 

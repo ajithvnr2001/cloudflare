@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2024-09-24-magic-network-monitoring/
 title: Try out Magic Network Monitoring \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:59.612743+00:00
+fetched_at: 2026-10-10T14:38:55.990138+00:00
 ---
 
 # Try out Magic Network Monitoring · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Network Flow](https://developers.cloudflare.com/network-flow/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2024-09-24-magic-network-monitoring/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The free version of Magic Network Monitoring (MNM) is now available to everyone with a Cloudflare account by default.
 

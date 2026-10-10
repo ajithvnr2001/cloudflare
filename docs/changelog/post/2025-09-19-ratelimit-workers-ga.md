@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-09-19-ratelimit-workers-ga/
 title: Rate Limiting in Workers is now GA \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:23.241862+00:00
+fetched_at: 2026-10-10T14:38:48.651765+00:00
 ---
 
 # Rate Limiting in Workers is now GA · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-09-19-ratelimit-workers-ga/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Rate Limiting within Cloudflare Workers](https://developers.cloudflare.com/workers/runtime-apis/bindings/rate-limit/) is now Generally Available (GA).
 

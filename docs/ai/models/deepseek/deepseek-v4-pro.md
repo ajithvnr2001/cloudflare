@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/deepseek/deepseek-v4-pro/
 title: DeepSeek V4 Pro (deepseek) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:55.162501+00:00
+fetched_at: 2026-10-10T14:39:15.767426+00:00
 ---
 
 # DeepSeek V4 Pro (deepseek) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ d
 
 Text Generation • deepseek
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/deepseek/deepseek-v4-pro/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `deepseek/deepseek-v4-pro`
 

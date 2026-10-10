@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-26-bypass-status-for-uncacheable-responses/
 title: BYPASS status now returned for uncacheable responses \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:54.348451+00:00
+fetched_at: 2026-10-10T14:38:37.866636+00:00
 ---
 
 # BYPASS status now returned for uncacheable responses · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cache / CDN](https://developers.cloudflare.com/cache/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-26-bypass-status-for-uncacheable-responses/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare now returns a `BYPASS` [cache status](https://developers.cloudflare.com/cache/concepts/cache-responses/) whenever a response is not cacheable, instead of the previous mix of `BYPASS` and `MISS` that depended on why Cloudflare chose not to cache the response.
 

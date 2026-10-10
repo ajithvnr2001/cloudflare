@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-18-cloudflare-idp-default/
 title: Cloudflare identity provider is now the default for new accounts \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:58.632551+00:00
+fetched_at: 2026-10-10T14:38:36.372889+00:00
 ---
 
 # Cloudflare identity provider is now the default for new accounts · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)[Access](https://developers.cloudflare.com/cloudflare-one/access-controls/policies/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-18-cloudflare-idp-default/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 When you create a new Zero Trust organization, Cloudflare now adds the [Cloudflare identity provider](https://developers.cloudflare.com/cloudflare-one/integrations/identity-providers/cloudflare/) as your default login method. Previously, new organizations started with [one-time PIN (OTP)](https://developers.cloudflare.com/cloudflare-one/integrations/identity-providers/one-time-pin/).
 

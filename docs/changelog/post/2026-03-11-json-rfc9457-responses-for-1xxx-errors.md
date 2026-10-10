@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-03-11-json-rfc9457-responses-for-1xxx-errors/
 title: JSON responses and RFC 9457 support for Cloudflare 1xxx errors \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:40.390881+00:00
+fetched_at: 2026-10-10T14:38:42.564806+00:00
 ---
 
 # JSON responses and RFC 9457 support for Cloudflare 1xxx errors · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-03-11-json-rfc9457-responses-for-1xxx-errors/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare-generated 1xxx errors now return structured JSON when clients send `Accept: application/json` or `Accept: application/problem+json`. JSON responses follow [RFC 9457 (Problem Details for HTTP APIs) ↗︎](https://www.rfc-editor.org/rfc/rfc9457), so any HTTP client that understands Problem Details can parse the base members without Cloudflare-specific code.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/dns/
 title: DNS Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:44.839154+00:00
+fetched_at: 2026-10-10T14:38:08.716294+00:00
 ---
 
 # DNS Changelog | Cloudflare Docs

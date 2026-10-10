@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/ssl/
 title: SSL/TLS Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:49.650576+00:00
+fetched_at: 2026-10-10T14:38:04.217865+00:00
 ---
 
 # SSL/TLS Changelog | Cloudflare Docs

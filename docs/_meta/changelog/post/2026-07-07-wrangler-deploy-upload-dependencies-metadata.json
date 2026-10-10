@@ -3,8 +3,5 @@
   "file": "changelog/post/2026-07-07-wrangler-deploy-upload-dependencies-metadata.md",
   "title": "Send npm package dependency metadata with Worker uploads \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:07:01.782452+00:00",
-  "html_len": 69439,
-  "md_len": 1891,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:35.361888+00:00"
 }

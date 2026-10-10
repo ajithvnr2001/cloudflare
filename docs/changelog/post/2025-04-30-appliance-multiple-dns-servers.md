@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-04-30-appliance-multiple-dns-servers/
 title: Cloudflare One Appliance supports multiple DNS server IPs \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:10.950000+00:00
+fetched_at: 2026-10-10T14:38:52.586728+00:00
 ---
 
 # Cloudflare One Appliance supports multiple DNS server IPs · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare One Appliance](https://developers.cloudflare.com/cloudflare-wan/configuration/appliance/)[Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)[Cloudflare WAN](https://developers.cloudflare.com/cloudflare-wan/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-04-30-appliance-multiple-dns-servers/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare One Appliance DHCP server settings now support specifying multiple DNS server IP addresses in the DHCP pool.
 

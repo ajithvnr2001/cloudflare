@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/raw.http.response.headers.values/
 title: raw.http.response.headers.values \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:14.503760+00:00
+fetched_at: 2026-10-10T14:37:29.644136+00:00
 ---
 
 # raw.http.response.headers.values · Cloudflare Ruleset Engine docs

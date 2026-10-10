@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-02-09-analytics-enhancements/
 title: Analytics enhancements \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:35.988918+00:00
+fetched_at: 2026-10-10T14:38:44.220751+00:00
 ---
 
 # Analytics enhancements · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Crawl Control](https://developers.cloudflare.com/ai-crawl-control/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-02-09-analytics-enhancements/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 AI Crawl Control metrics have been enhanced with new views, improved filtering, and better data visualization.
 

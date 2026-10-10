@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-13-rum-405-method-not-allowed/
 title: /cdn-cgi/rum endpoint now returns 405 for non-POST requests \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:53.213775+00:00
+fetched_at: 2026-10-10T14:38:38.282548+00:00
 ---
 
 # /cdn-cgi/rum endpoint now returns 405 for non-POST requests · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare Web Analytics](https://developers.cloudflare.com/web-analytics/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-13-rum-405-method-not-allowed/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The `/cdn-cgi/rum` beacon endpoint now returns `405 Method Not Allowed` for non-POST requests instead of `404 Not Found`. The response includes an `Allow: POST, OPTIONS` header per [RFC 9110 §15.5.6 ↗︎](https://www.rfc-editor.org/rfc/rfc9110#section-15.5.6).
 

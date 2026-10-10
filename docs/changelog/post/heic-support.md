@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/heic-support/
 title: HEIC support in Cloudflare Images \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:20.131294+00:00
+fetched_at: 2026-10-10T14:38:29.087332+00:00
 ---
 
 # HEIC support in Cloudflare Images · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare Images](https://developers.cloudflare.com/images/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/heic-support/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can use Images to ingest HEIC images and serve them in supported output formats like AVIF, WebP, JPEG, and PNG.
 

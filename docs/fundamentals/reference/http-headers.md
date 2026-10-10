@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/fundamentals/reference/http-headers/
 title: Cloudflare HTTP headers \u00b7 Cloudflare Fundamentals docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:11:25.926810+00:00
+fetched_at: 2026-10-10T14:39:25.170505+00:00
 ---
 
 # Cloudflare HTTP headers · Cloudflare Fundamentals docs
@@ -18,7 +18,7 @@ fetched_at: 2026-10-08T07:11:25.926810+00:00
 
 # Cloudflare HTTP headers
 
-Last updated May 5, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/fundamentals/reference/http-headers/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 9, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewRequest headers Accept-Encoding CF-Connecting-IP CF-Connecting-IPv6 CF-EW-Via CF-Pseudo-IPv4 True-Client-IP (Enterprise plan only) X-Forwarded-For X-Forwarded-Proto Cf-Ray CF-IPCountry CF-Visitor CDN-Loop CF-Connecting-O2O CF-Worker Connection Considerations for SpectrumResponse headers Removed response headers Added response headers
 
@@ -48,7 +48,9 @@ In same-zone Worker subrequests, the value of `CF-Connecting-IP` reflects the va
 
 In cross-zone subrequests from one Cloudflare zone to another Cloudflare zone, the `CF-Connecting-IP` value will be set to the Worker client IP address `'2a06:98c0:3600::103'` for security reasons.
 
-For Worker subrequests destined for a non-Cloudflare customer zone, the `CF-Connecting-IP` and `x-real-ip` headers will both reflect the client's IP address, with only the `x-real-ip` header able to be altered.
+For Worker subrequests destined for a non-Cloudflare customer zone, the Worker script controls the client IP headers: both `CF-Connecting-IP` and `x-real-ip` can be altered by the Worker. If the subrequest forwards the original request's headers unchanged, both headers reflect the client's IP address.
+
+To authenticate that traffic originates from your own zone, use zone-level or per-hostname [Authenticated Origin Pulls](https://developers.cloudflare.com/ssl/origin-configuration/authenticated-origin-pull/) with your own certificate, or [Cloudflare Tunnel](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/).
 
 When no Worker subrequest is triggered, `cf-connecting-ip` reflects the client's IP address and the `x-real-ip` header is stripped.
 

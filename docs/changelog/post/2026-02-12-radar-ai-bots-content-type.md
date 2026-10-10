@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-02-12-radar-ai-bots-content-type/
 title: Content Type Dimension for AI Bots in Cloudflare Radar \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:36.973131+00:00
+fetched_at: 2026-10-10T14:38:43.947789+00:00
 ---
 
 # Content Type Dimension for AI Bots in Cloudflare Radar · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Radar](https://developers.cloudflare.com/radar/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-02-12-radar-ai-bots-content-type/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [**Radar**](https://developers.cloudflare.com/radar/) now includes content type insights for AI bot and crawler traffic. The new `content_type` dimension and filter shows the distribution of content types returned to AI crawlers, grouped by MIME type category.
 

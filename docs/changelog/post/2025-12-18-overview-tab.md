@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-12-18-overview-tab/
 title: New AI Crawl Control Overview tab \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:32.409809+00:00
+fetched_at: 2026-10-10T14:38:45.632472+00:00
 ---
 
 # New AI Crawl Control Overview tab · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Crawl Control](https://developers.cloudflare.com/ai-crawl-control/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-12-18-overview-tab/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The **Overview** tab is now the default view in AI Crawl Control. The previous default view with controls for individual AI crawlers is available in the **Crawlers** tab.
 

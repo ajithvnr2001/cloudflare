@@ -3,8 +3,5 @@
   "file": "workers-ai/models/granite-4.0-h-micro.md",
   "title": "granite-4.0-h-micro (IBM) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:17:03.612676+00:00",
-  "html_len": 158478,
-  "md_len": 7142,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:21.283676+00:00"
 }

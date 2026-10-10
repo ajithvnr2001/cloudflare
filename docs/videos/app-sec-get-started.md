@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/videos/app-sec-get-started/
 title: Application Security - Get started guide | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:16:15.395345+00:00
+fetched_at: 2026-10-10T14:37:29.158165+00:00
 ---
 
 # Application Security - Get started guide | Cloudflare Docs

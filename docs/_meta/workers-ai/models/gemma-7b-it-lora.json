@@ -3,8 +3,5 @@
   "file": "workers-ai/models/gemma-7b-it-lora.md",
   "title": "gemma-7b-it-lora (Google) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:17:02.954144+00:00",
-  "html_len": 157945,
-  "md_len": 6823,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:22.328356+00:00"
 }

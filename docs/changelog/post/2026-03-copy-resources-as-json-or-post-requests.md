@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-03-copy-resources-as-json-or-post-requests/
 title: Copy Cloudflare One resources as JSON or POST requests \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:43.985942+00:00
+fetched_at: 2026-10-10T14:38:41.393411+00:00
 ---
 
 # Copy Cloudflare One resources as JSON or POST requests · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-03-copy-resources-as-json-or-post-requests/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now copy Cloudflare One resources as JSON or as a ready-to-use API POST request directly from the dashboard. This makes it simple to transition workflows into API calls, automation scripts, or infrastructure-as-code pipelines.
 

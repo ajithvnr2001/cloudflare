@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/videos/load-balancing/
 title: How to set up a load balancer | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:16:16.556626+00:00
+fetched_at: 2026-10-10T14:37:27.163104+00:00
 ---
 
 # How to set up a load balancer | Cloudflare Docs

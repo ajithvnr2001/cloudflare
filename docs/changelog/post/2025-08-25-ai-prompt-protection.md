@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-08-25-ai-prompt-protection/
 title: New DLP topic based detection entries for AI prompt protection \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:20.386139+00:00
+fetched_at: 2026-10-10T14:38:49.712531+00:00
 ---
 
 # New DLP topic based detection entries for AI prompt protection · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Data Loss Prevention](https://developers.cloudflare.com/cloudflare-one/data-loss-prevention/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-08-25-ai-prompt-protection/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You now have access to a comprehensive suite of capabilities to secure your organization's use of generative AI. AI prompt protection introduces four key features that work together to provide deep visibility and granular control.
 

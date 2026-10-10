@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-20-durable-objects-total-storage-metrics/
 title: View total SQLite storage for Durable Object namespaces \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:04.054142+00:00
+fetched_at: 2026-10-10T14:38:34.557036+00:00
 ---
 
 # View total SQLite storage for Durable Object namespaces · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Durable Objects](https://developers.cloudflare.com/durable-objects/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-20-durable-objects-total-storage-metrics/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now monitor the total SQLite storage used by a Durable Object namespace over time in the Cloudflare dashboard. The new **Total storage** chart shows the maximum storage reported during each hour. This helps you identify storage growth, validate data cleanup, and investigate unexpected usage.
 

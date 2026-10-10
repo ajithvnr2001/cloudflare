@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-30-declarative-do-class-exports/
 title: Declare Durable Object class lifecycle with `exports` \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:00.284608+00:00
+fetched_at: 2026-10-10T14:38:35.783129+00:00
 ---
 
 # Declare Durable Object class lifecycle with `exports` · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Durable Objects](https://developers.cloudflare.com/durable-objects/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-30-declarative-do-class-exports/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 A new declarative [`exports`](https://developers.cloudflare.com/durable-objects/reference/durable-objects-migrations/) field in your Wrangler configuration file replaces the imperative [`migrations`](https://developers.cloudflare.com/durable-objects/reference/durable-object-class-migrations-legacy/) array for managing Durable Object class lifecycle. Instead of writing an ordered list of migration steps with unique tags, you declare each Durable Object class your Worker exports and Cloudflare compares that against what's already deployed to determine what Durable Object state needs to be created, renamed, or deleted.
 

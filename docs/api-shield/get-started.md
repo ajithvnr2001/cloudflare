@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/api-shield/get-started/
 title: Get started with API Shield \u00b7 Cloudflare API Shield docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:17.446632+00:00
+fetched_at: 2026-10-10T14:39:26.628908+00:00
 ---
 
 # Get started with API Shield · Cloudflare API Shield docs
@@ -17,7 +17,7 @@ fetched_at: 2026-10-08T07:05:17.446632+00:00
 
 # Get started with API Shield
 
-Last updated Sep 29, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/api-shield/get-started/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 9, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewSession identifiers To set up session identifiersCreate a Schema ProfileEnable the Sensitive Data Detection ruleset and accompanying rulesManage operationsAdd rate limits to your most sensitive endpointsExport a learned schemaView and configure Sequence AnalyticsAdditional configuration Set up JSON Web Tokens (JWT) validation Set up GraphQL malicious query protection Mutual TLS (mTLS) authentication
 
@@ -92,6 +92,8 @@ Web Assets continuously discovers operations from traffic. An operation represen
 You can also add operations manually under **Web Assets** > **Operations**. Discovery and manual creation only add inventory entries.
 
 To start Schema Learning, select **Learn profile** from the operation overflow menu. Review the learned schema through **View details** > **Security overview**.
+
+After collecting enough qualifying traffic, you can [request an ad-hoc schema learning run](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-management/schema-learning/#run-schema-learning-manually) for the entire zone.
 
 For the complete workflow and traffic thresholds, refer to [Get started with Application Profiles](https://developers.cloudflare.com/waf/detections/application-profiles/get-started/).
 

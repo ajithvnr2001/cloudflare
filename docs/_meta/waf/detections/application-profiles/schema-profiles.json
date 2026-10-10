@@ -3,8 +3,5 @@
   "file": "waf/detections/application-profiles/schema-profiles.md",
   "title": "Schema Profiles \u00b7 Cloudflare Web Application Firewall (WAF) docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:16:41.644911+00:00",
-  "html_len": 137751,
-  "md_len": 4768,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:39:26.412795+00:00"
 }

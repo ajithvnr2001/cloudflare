@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product-group/storage/
 title: Storage Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:37.841927+00:00
+fetched_at: 2026-10-10T14:38:14.650711+00:00
 ---
 
 # Storage Changelog | Cloudflare Docs
@@ -230,6 +230,20 @@ Zaraz
 No products found.
 
 [ View RSS feeds ](https://developers.cloudflare.com/fundamentals/new-features/available-rss-feeds/)[ Subscribe to RSS ](https://developers.cloudflare.com/changelog/rss/index.xml)
+
+Oct 9, 2026
+
+## [R2 bandwidth by Cloudflare location](https://developers.cloudflare.com/changelog/post/2026-10-09-r2-bandwidth-by-location/)
+
+[R2](https://developers.cloudflare.com/r2/)
+
+You can now view R2 bandwidth by the Cloudflare location that served each request in the Cloudflare UI. This helps you see which locations consume the most bandwidth with options to select a specific bucket and download (read) vs upload (write) bandwidth.
+
+[ Go to **R2 overview** ↗ ](https://dash.cloudflare.com/?to=/:account/r2/metrics) ![R2 bandwidth by location chart showing throughput for the top five Cloudflare locations](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=665,height=427,format=webp/_astro/r2-bandwidth-by-location.JMiyoI-0.png)
+
+By default, the chart shows the top five locations by total bandwidth consumed during the selected time range. Use the **Top 5 locations** dropdown to select other locations, up to six at a time.
+
+For more information, refer to [R2 metrics and analytics](https://developers.cloudflare.com/r2/platform/metrics-analytics/).
 
 Oct 2, 2026
 
@@ -873,31 +887,8 @@ The profile runs locally, so its duration will differ from startup time on Cloud
 
 Available in Wrangler version 4.116.0 or later. For more information, refer to [`wrangler check startup`](https://developers.cloudflare.com/workers/wrangler/commands/workers/#startup).
 
-Jul 24, 2026
-
-## [Sippy now supports Azure Blob Storage and S3-compatible storage providers](https://developers.cloudflare.com/changelog/post/2026-07-24-r2-sippy-azure-s3-compatible-support/)
-
-[R2](https://developers.cloudflare.com/r2/)
-
-[Sippy](https://developers.cloudflare.com/r2/data-migration/sippy/) can now incrementally migrate data from Azure Blob Storage and any S3-compatible object storage provider to [Cloudflare R2](https://developers.cloudflare.com/r2/), in addition to Amazon S3 and Google Cloud Storage. Sippy copies objects to R2 as your application requests them, so you can start serving data from R2 without first moving your entire dataset or paying migration-specific egress fees.
-
-#### Enable Sippy
-
-Run the following command and follow the prompts to select and configure your source storage provider:
-    
-    
-    npx wrangler r2 bucket sippy enable "<BUCKET_NAME>"
-
-For Azure Blob Storage, provide your storage account name, container name, and either an account key or a shared access signature (SAS) token with read and list permissions. For an S3-compatible provider, provide the S3 API endpoint URL and read-only Access Key ID and Secret Access Key.
-
-![Azure Blob Storage source configuration in the R2 dashboard](https://developers.cloudflare.com/cdn-cgi/image/onerror=redirect,width=400,height=650,format=webp/_astro/sippy-azure-source-configuration.j9uacYgX.png)
-
-After you enable Sippy, requests for objects that are not yet in R2 are served from your source bucket and copied to R2. Subsequent requests for those objects are served from R2.
-
-For setup instructions and credential requirements, refer to the [Sippy documentation](https://developers.cloudflare.com/r2/data-migration/sippy/).
-
 ← Prev
 
-1[2](https://developers.cloudflare.com/changelog/product-group/storage/2/)…[5](https://developers.cloudflare.com/changelog/product-group/storage/5/)
+1[2](https://developers.cloudflare.com/changelog/product-group/storage/2/)…[6](https://developers.cloudflare.com/changelog/product-group/storage/6/)
 
 [Next →](https://developers.cloudflare.com/changelog/product-group/storage/2/)

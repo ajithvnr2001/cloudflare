@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/raw.http.request.uri.args.values/
 title: raw.http.request.uri.args.values \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:14.004402+00:00
+fetched_at: 2026-10-10T14:37:30.036032+00:00
 ---
 
 # raw.http.request.uri.args.values · Cloudflare Ruleset Engine docs

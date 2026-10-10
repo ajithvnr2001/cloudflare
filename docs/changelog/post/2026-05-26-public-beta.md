@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-26-public-beta/
 title: Flagship now in public beta \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:54.535304+00:00
+fetched_at: 2026-10-10T14:38:37.893738+00:00
 ---
 
 # Flagship now in public beta · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Flagship](https://developers.cloudflare.com/flagship/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-26-public-beta/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 **[Flagship](https://developers.cloudflare.com/flagship/)** is now in public beta. Evaluate feature flags directly from Cloudflare Workers with no outbound HTTP calls, using globally distributed flag configuration backed by Workers KV and Durable Objects. Flagship supports typed flag values, targeting rules, percentage rollouts, audit history, and OpenFeature-compatible SDKs.
 

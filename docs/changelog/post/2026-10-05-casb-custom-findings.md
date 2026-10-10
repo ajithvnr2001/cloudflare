@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-10-05-casb-custom-findings/
 title: Detect organization-specific risks with CASB custom finding types \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:19.120519+00:00
+fetched_at: 2026-10-10T14:38:29.306552+00:00
 ---
 
 # Detect organization-specific risks with CASB custom finding types · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [CASB](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-10-05-casb-custom-findings/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Cloudflare CASB](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/) now supports [**custom finding types**](https://developers.cloudflare.com/cloudflare-one/cloud-and-saas-findings/custom-finding-types/), giving security teams full control over the security conditions CASB detects across their SaaS and cloud integrations.
 

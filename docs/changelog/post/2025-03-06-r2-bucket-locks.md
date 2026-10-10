@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-03-06-r2-bucket-locks/
 title: Set retention polices for your R2 bucket with bucket locks \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:05.648823+00:00
+fetched_at: 2026-10-10T14:38:54.180015+00:00
 ---
 
 # Set retention polices for your R2 bucket with bucket locks · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [R2](https://developers.cloudflare.com/r2/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-03-06-r2-bucket-locks/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now use [bucket locks](https://developers.cloudflare.com/r2/buckets/bucket-locks/) to set retention policies on your [R2 buckets](https://developers.cloudflare.com/r2/buckets/) (or specific prefixes within your buckets) for a specified period — or indefinitely. This can help ensure compliance by protecting important data from accidental or malicious deletion.
 

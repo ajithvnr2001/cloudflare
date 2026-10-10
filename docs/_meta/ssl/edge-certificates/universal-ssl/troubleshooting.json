@@ -3,8 +3,5 @@
   "file": "ssl/edge-certificates/universal-ssl/troubleshooting.md",
   "title": "Troubleshooting Universal SSL \u00b7 Cloudflare SSL/TLS docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:15:41.323626+00:00",
-  "html_len": 123307,
-  "md_len": 2695,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:39:26.164366+00:00"
 }

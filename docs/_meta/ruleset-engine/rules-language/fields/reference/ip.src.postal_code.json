@@ -3,8 +3,5 @@
   "file": "ruleset-engine/rules-language/fields/reference/ip.src.postal_code.md",
   "title": "ip.src.postal_code \u00b7 Cloudflare Ruleset Engine docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:15:13.809401+00:00",
-  "html_len": 91724,
-  "md_len": 992,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:30.550881+00:00"
 }

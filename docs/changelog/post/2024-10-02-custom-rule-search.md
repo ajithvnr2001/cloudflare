@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2024-10-02-custom-rule-search/
 title: Search for custom rules using rule name and/or ID \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:59.628220+00:00
+fetched_at: 2026-10-10T14:38:55.945464+00:00
 ---
 
 # Search for custom rules using rule name and/or ID · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare Network Firewall](https://developers.cloudflare.com/cloudflare-network-firewall/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2024-10-02-custom-rule-search/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The Magic Firewall dashboard now allows you to search custom rules using the rule name and/or ID.
 

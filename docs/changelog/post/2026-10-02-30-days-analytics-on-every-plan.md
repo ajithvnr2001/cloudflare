@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-10-02-30-days-analytics-on-every-plan/
 title: 30 days of analytics data on every plan \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:18.541448+00:00
+fetched_at: 2026-10-10T14:38:29.575253+00:00
 ---
 
 # 30 days of analytics data on every plan · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Analytics](https://developers.cloudflare.com/analytics/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-10-02-30-days-analytics-on-every-plan/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Every plan now gets at least 30 days of analytics data. Adaptive analytics datasets, such as HTTP requests, security events, and DNS analytics, retain at least 31 days of data for Free and Pro domains, and you can query up to 30 days in a single request. Previously, Free and Pro domains could see between 24 hours and 8 days of history depending on the dataset.
 

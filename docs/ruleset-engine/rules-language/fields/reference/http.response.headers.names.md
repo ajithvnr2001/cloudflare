@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/http.response.headers.names/
 title: http.response.headers.names \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:12.792304+00:00
+fetched_at: 2026-10-10T14:37:31.515961+00:00
 ---
 
 # http.response.headers.names · Cloudflare Ruleset Engine docs

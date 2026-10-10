@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-02-manage-sync-jobs/
 title: Manage AI Search sync jobs with Wrangler CLI \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:00.977961+00:00
+fetched_at: 2026-10-10T14:38:35.549826+00:00
 ---
 
 # Manage AI Search sync jobs with Wrangler CLI · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Search](https://developers.cloudflare.com/ai-search/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-02-manage-sync-jobs/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 When you connect a [data source](https://developers.cloudflare.com/ai-search/configuration/data-source/) to your [AI Search](https://developers.cloudflare.com/ai-search/) instance, AI Search runs sync jobs to keep your index up to date with your content. You can now manage those jobs directly from [Wrangler](https://developers.cloudflare.com/ai-search/wrangler-commands/).
 

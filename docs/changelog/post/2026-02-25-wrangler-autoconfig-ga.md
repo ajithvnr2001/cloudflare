@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-02-25-wrangler-autoconfig-ga/
 title: No config? No problem. Just `wrangler deploy` \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:38.846327+00:00
+fetched_at: 2026-10-10T14:38:43.224522+00:00
 ---
 
 # No config? No problem. Just `wrangler deploy` · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-02-25-wrangler-autoconfig-ga/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now deploy any existing project to Cloudflare Workers — even without a Wrangler configuration file — and `wrangler deploy` will _just work_.
 

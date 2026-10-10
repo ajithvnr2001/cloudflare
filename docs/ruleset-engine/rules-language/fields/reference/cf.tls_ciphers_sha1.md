@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.tls_ciphers_sha1/
 title: cf.tls_ciphers_sha1 \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:05.900540+00:00
+fetched_at: 2026-10-10T14:37:34.686278+00:00
 ---
 
 # cf.tls_ciphers_sha1 · Cloudflare Ruleset Engine docs

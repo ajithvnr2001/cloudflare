@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-09-25-pipelines-sql/
 title: Pipelines now supports SQL transformations and Apache Iceberg \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:24.601071+00:00
+fetched_at: 2026-10-10T14:38:48.350023+00:00
 ---
 
 # Pipelines now supports SQL transformations and Apache Iceberg · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Basin Pipelines](https://developers.cloudflare.com/basin-pipelines/)[Basin](https://developers.cloudflare.com/basin/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-09-25-pipelines-sql/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Today, we are launching the new [Cloudflare Pipelines](https://developers.cloudflare.com/basin-pipelines/): a streaming data platform that ingests events, transforms them with [SQL](https://developers.cloudflare.com/basin-pipelines/sql-reference/select-statements/), and writes to [R2](https://developers.cloudflare.com/r2/) as [Apache Iceberg ↗︎](https://iceberg.apache.org/) tables or Parquet files.
 

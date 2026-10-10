@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-09-deprecating-sandbox-sdk-features/
 title: Deprecating Sandbox SDK features \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:57.121065+00:00
+fetched_at: 2026-10-10T14:38:36.917035+00:00
 ---
 
 # Deprecating Sandbox SDK features · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Sandboxes](https://developers.cloudflare.com/sandbox/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-09-deprecating-sandbox-sdk-features/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Sandbox SDK 1.0 preview
 

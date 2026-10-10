@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-02-11-vite-plugin-child-environments/
 title: Improved React Server Components support in the Cloudflare Vite plugin \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:36.544114+00:00
+fetched_at: 2026-10-10T14:38:44.032559+00:00
 ---
 
 # Improved React Server Components support in the Cloudflare Vite plugin · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-02-11-vite-plugin-child-environments/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The Cloudflare Vite plugin now integrates seamlessly [@vitejs/plugin-rsc ↗︎](https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-rsc), the official Vite plugin for [React Server Components ↗︎](https://react.dev/reference/rsc/server-components).
 

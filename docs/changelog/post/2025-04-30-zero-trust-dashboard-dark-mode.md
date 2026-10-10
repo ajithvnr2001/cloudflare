@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-04-30-zero-trust-dashboard-dark-mode/
 title: Dark Mode for Zero Trust Dashboard \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:10.968630+00:00
+fetched_at: 2026-10-10T14:38:52.562524+00:00
 ---
 
 # Dark Mode for Zero Trust Dashboard · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare One](https://developers.cloudflare.com/cloudflare-one/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-04-30-zero-trust-dashboard-dark-mode/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The [Cloudflare Zero Trust dashboard ↗︎](https://one.dash.cloudflare.com/) now supports Cloudflare's native dark mode for all accounts and plan types.
 

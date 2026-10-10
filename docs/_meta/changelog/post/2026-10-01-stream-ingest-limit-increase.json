@@ -3,8 +3,5 @@
   "file": "changelog/post/2026-10-01-stream-ingest-limit-increase.md",
   "title": "Basin Pipelines ingest limit increased to 1 GB/s \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:07:19.188991+00:00",
-  "html_len": 62840,
-  "md_len": 1348,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:29.698188+00:00"
 }

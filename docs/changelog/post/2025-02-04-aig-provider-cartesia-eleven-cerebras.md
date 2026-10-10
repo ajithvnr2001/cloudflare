@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-02-04-aig-provider-cartesia-eleven-cerebras/
 title: AI Gateway adds Cerebras, ElevenLabs, and Cartesia as new providers \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:03.261387+00:00
+fetched_at: 2026-10-10T14:38:55.054132+00:00
 ---
 
 # AI Gateway adds Cerebras, ElevenLabs, and Cartesia as new providers · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Gateway](https://developers.cloudflare.com/ai-gateway/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-02-04-aig-provider-cartesia-eleven-cerebras/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [AI Gateway](https://developers.cloudflare.com/ai-gateway/) has added three new providers: [Cartesia](https://developers.cloudflare.com/ai-gateway/usage/providers/cartesia/), [Cerebras](https://developers.cloudflare.com/ai-gateway/usage/providers/cerebras/), and [ElevenLabs](https://developers.cloudflare.com/ai-gateway/usage/providers/elevenlabs/), giving you more even more options for providers you can use through AI Gateway. Here's a brief overview of each:
 

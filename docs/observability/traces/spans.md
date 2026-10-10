@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/observability/traces/spans/
 title: Spans \u00b7 Cloudflare Observability docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:12:27.729206+00:00
+fetched_at: 2026-10-10T14:39:24.075457+00:00
 ---
 
 # Spans · Cloudflare Observability docs
@@ -18,9 +18,9 @@ fetched_at: 2026-10-08T07:12:27.729206+00:00
 
 # Spans
 
-Last updated Oct 2, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/observability/traces/spans/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 9, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
-OverviewSpan referenceRuleset phase spansWorkers runtime spans
+OverviewSpan referenceRuleset phase spansWorkers runtime spansFeatures without spans
 
 A span represents one operation within a trace. Each span records when an operation started and how long it took. Related spans form a hierarchy that shows how a request moved through Cloudflare.
 
@@ -70,6 +70,16 @@ Refer to [Workers spans and attributes](https://developers.cloudflare.com/worker
 Note
 
 [Workers tracing](https://developers.cloudflare.com/workers/observability/traces/) needs to be enabled to see Workers spans in a Cloudflare Trace.
+
+## Features without spans
+
+Some Cloudflare features do not yet have dedicated spans. Requests processed by these features still appear in traces, but without span-level detail for that processing.
+
+  * DDoS protection rules
+  * Cloudflare Access
+  * Cloudflare Tunnel
+
+
 
 [PreviousConfiguration](https://developers.cloudflare.com/observability/traces/configuration/)[NextWorkers tracing ↗︎](https://developers.cloudflare.com/workers/observability/traces/)
 

@@ -3,8 +3,5 @@
   "file": "changelog/product/cloudflare-network-firewall.md",
   "title": "Cloudflare Network Firewall Changelog | Cloudflare Docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:07:42.622166+00:00",
-  "html_len": 173281,
-  "md_len": 15611,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:09.986060+00:00"
 }

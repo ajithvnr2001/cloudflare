@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-03-15-durable-object-id-name/
 title: Access Durable Object name via `ctx.id.name` \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:41.500556+00:00
+fetched_at: 2026-10-10T14:38:42.376380+00:00
 ---
 
 # Access Durable Object name via `ctx.id.name` · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Durable Objects](https://developers.cloudflare.com/durable-objects/)[Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-03-15-durable-object-id-name/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 When your Worker accesses a Durable Object via `idFromName()` or `getByName()`, the same name is now available on `ctx.id.name` inside the object — no need to pass it through method arguments or persist it in storage. This brings the runtime behavior in line with the [Workers runtime types](https://developers.cloudflare.com/workers/languages/typescript/).
 

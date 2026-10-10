@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/support/third-party-software/content-management-system-cms/wordpresscom-and-cloudflare/
 title: WordPress.com and Cloudflare \u00b7 Cloudflare Support docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:51.939556+00:00
+fetched_at: 2026-10-10T14:37:29.388235+00:00
 ---
 
 # WordPress.com and Cloudflare · Cloudflare Support docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:15:51.939556+00:00
 
 # WordPress.com and Cloudflare
 
-Last updated Apr 23, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/support/third-party-software/content-management-system-cms/wordpresscom-and-cloudflare/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Apr 23, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewGetting started with WordPress.com and CloudflareEnabling additional Cloudflare productsCloudflare Web Analytics (Free) Cloudflare WordPressAutomatic Platform Optimization for WordPress.com ($5/month, included with Pro and Business plans) Requirements Install and enable APOTroubleshooting How do I verify that Cloudflare is now my DNS provider on record? How can I confirm APO is up and running? How can I verify APO and the WordPress.com integration works?
 

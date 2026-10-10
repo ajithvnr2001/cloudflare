@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/rules/
 title: Rules Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:49.590935+00:00
+fetched_at: 2026-10-10T14:38:05.242828+00:00
 ---
 
 # Rules Changelog | Cloudflare Docs
@@ -230,6 +230,40 @@ Zaraz
 No products found.
 
 [ View RSS feeds ](https://developers.cloudflare.com/fundamentals/new-features/available-rss-feeds/)[ Subscribe to RSS ](https://developers.cloudflare.com/changelog/rss/index.xml)
+
+Oct 9, 2026
+
+## [Failed detections field available in Rules](https://developers.cloudflare.com/changelog/post/2026-10-09-failed-detections/)
+
+[WAF](https://developers.cloudflare.com/waf/)[Rules](https://developers.cloudflare.com/rules/)
+
+You can now use `cf.appsec.request.failed_detections` to control how your rules handle requests when a security detection reports a failure.
+
+The field is an `Array<String>` of detection IDs that reports failures from content scanning, WAF attack score, attack signature detection, leaked credentials detection, and AI prompt detections for personally identifiable information (PII), prompt injection, custom topics, and unsafe topics.
+
+The field does not alter the existing behavior of detections. Use it in rules to choose how to handle requests with reported failures.
+
+When no failures are reported, the field returns `[]`. You can use it on all plans, but your plan must still include the detections and rule features you want to use.
+
+Supported rules:
+
+  * Custom rules at the zone and account levels
+  * Rate limiting rules at the zone and account levels
+  * Request Header Transform Rules at the zone level
+
+
+
+Match any reported failure:
+    
+    
+    len(cf.appsec.request.failed_detections) gt 0
+
+Match a reported leaked credentials detection failure:
+    
+    
+    any(cf.appsec.request.failed_detections[*] eq "waf_credential_check")
+
+For more information, refer to the [Failed detections field reference](https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.appsec.request.failed_detections/).
 
 Oct 2, 2026
 
@@ -982,25 +1016,6 @@ What’s new:
 
 
 Try it now in [Rules > Snippets ↗︎](https://dash.cloudflare.com/?to=/:account/:zone/rules/snippets).
-
-Jan 9, 2025
-
-## [New Rules Overview Interface](https://developers.cloudflare.com/changelog/post/2025-01-09-rules-overview/)
-
-[Rules](https://developers.cloudflare.com/rules/)
-
-**Rules Overview** gives you a single page to manage all your [Cloudflare Rules](https://developers.cloudflare.com/rules/).
-
-What you can do:
-
-  * **See all your rules in one place** – No more clicking around.
-  * **Find rules faster** – Search by name.
-  * **Understand execution order** – See how rules run in sequence.
-  * **Debug easily** – Use [Trace](https://developers.cloudflare.com/rules/trace-request/) without switching tabs.
-
-
-
-Check it out in [Rules > Overview ↗︎](https://dash.cloudflare.com/?to=/:account/:zone/rules/overview).
 
 ← Prev
 

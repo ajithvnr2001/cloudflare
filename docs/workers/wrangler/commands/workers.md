@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers/wrangler/commands/workers/
 title: Workers \u00b7 Cloudflare Workers docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:18:10.624932+00:00
+fetched_at: 2026-10-10T14:39:25.980723+00:00
 ---
 
 # Workers · Cloudflare Workers docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:18:10.624932+00:00
 
 # Workers
 
-Last updated Sep 22, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers/wrangler/commands/workers/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 9, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Overviewinitdevdeploypreviewdeletesecretversionstriggersdeploymentsrollbacktypes Multi-environment support Optionscheck startup
 
@@ -2330,9 +2330,10 @@ To generate types for only a specific environment, use the `--env` flag.
     * If `true`, (the default) Wrangler generates literal and union types for bindings (e.g. `myVar: 'my dev variable' | 'my prod variable'`).
     * If `false`, Wrangler generates generic types (e.g. `myVar: string`). This is useful when variables change frequently, especially when working across multiple environments.
   * `--check` `boolean` optional
-    * Check if the generated types at the specified path are up-to-date without regenerating them.
+    * Compare the generated file's recorded environment/configuration hash and runtime header with the current Wrangler configuration and runtime inputs.
+    * This does not compare or validate the generated file body or regenerate the file.
     * Exits with code 0 if types are up-to-date, or code 1 if types are out-of-date.
-    * Useful for CI/CD pipelines and pre-commit hooks to ensure types have been regenerated after configuration changes.
+    * Useful for CI/CD pipelines and pre-commit hooks to detect input changes that require regeneration.
   * `--config`, `-c` `string[]` optional
     * Path(s) to [Wrangler configuration file](https://developers.cloudflare.com/workers/wrangler/configuration/). If the Worker you are generating types for has service bindings or bindings to Durable Objects, you can also provide the paths to those configuration files so that the generated `Env` type will include RPC types. For example, given a Worker with a service binding, `wrangler types -c wrangler.toml -c ../bound-worker/wrangler.toml` will generate an `Env` type like this:
     

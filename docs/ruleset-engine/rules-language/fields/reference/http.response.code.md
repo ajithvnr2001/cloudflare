@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/http.response.code/
 title: http.response.code \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:12.654173+00:00
+fetched_at: 2026-10-10T14:37:31.671022+00:00
 ---
 
 # http.response.code · Cloudflare Ruleset Engine docs

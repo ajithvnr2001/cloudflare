@@ -3,8 +3,5 @@
   "file": "videos/life-of-a-request-3.md",
   "title": "Life of a Request: The Finish Line - Serving the Content | Cloudflare Docs",
   "method": "crawl4ai+scrapegraph (scrapling: scrapling thin content (401 chars), fallback to crawl4ai)",
-  "fetched_at": "2026-10-08T07:16:37.649242+00:00",
-  "html_len": 98316,
-  "md_len": 435,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:37:32.219491+00:00"
 }

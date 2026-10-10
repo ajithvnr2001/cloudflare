@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-11-21-builds-env-var-increase/
 title: Environment variable limits increase for Workers Builds \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:29.891203+00:00
+fetched_at: 2026-10-10T14:38:46.521530+00:00
 ---
 
 # Environment variable limits increase for Workers Builds · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-11-21-builds-env-var-increase/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Workers Builds](https://developers.cloudflare.com/workers/ci-cd/builds/) now supports up to 64 environment variables, and each environment variable can be up to 5 KB in size. The previous limit was 5 KB total across all environment variables.
 

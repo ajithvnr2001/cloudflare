@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-30-r2-empty-bucket-folder-delete/
 title: Empty buckets and delete folders from the R2 dashboard \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:50.788658+00:00
+fetched_at: 2026-10-10T14:38:39.072057+00:00
 ---
 
 # Empty buckets and delete folders from the R2 dashboard · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [R2](https://developers.cloudflare.com/r2/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-30-r2-empty-bucket-folder-delete/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now empty an entire [R2](https://developers.cloudflare.com/r2/) bucket or delete folders directly from the dashboard. Emptying a bucket is required before you can delete it. Previously, this required scripting or configuring [lifecycle rules](https://developers.cloudflare.com/r2/buckets/object-lifecycles/). Now, the dashboard can handle it in a single action.
 

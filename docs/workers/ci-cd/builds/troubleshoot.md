@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers/ci-cd/builds/troubleshoot/
 title: Troubleshooting builds \u00b7 Cloudflare Workers docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:13.412182+00:00
+fetched_at: 2026-10-10T14:39:28.301050+00:00
 ---
 
 # Troubleshooting builds · Cloudflare Workers docs
@@ -22,9 +22,9 @@ fetched_at: 2026-10-08T07:17:13.412182+00:00
 
 # Troubleshooting builds
 
-Last updated Apr 23, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers/ci-cd/builds/troubleshoot/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 8, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
-OverviewKnown issues or limitations Workers name requirement Missing Wrangler configuration file Incorrect account_id Stale API token Build timed out Git integration issuesFor additional support
+OverviewKnown issues or limitations Workers name requirement Missing Wrangler configuration file Incorrect account_id Stale API token Build timed out Build succeeds but the site returns a 404 or blank page Git integration issuesFor additional support
 
 This guide explains how to identify and resolve build errors, as well as troubleshoot common issues in the Workers Builds deployment process.
 
@@ -71,6 +71,16 @@ The API Token dropdown in Build Configuration settings may show stale tokens tha
 `Build was timed out`
 
 There is a maximum build duration of 20 minutes. If a build exceeds this time, then the build will be terminated and the above error log is shown. For more details, see [Workers Builds limits](https://developers.cloudflare.com/workers/ci-cd/builds/limits-and-pricing/).
+
+### Build succeeds but the site returns a 404 or blank page
+
+If the build and deployment succeed but requests to your Worker return a `404` or an empty page, the deployed Worker is likely serving a directory that does not contain your built site. Check that:
+
+  * The build command in **Settings** > **Build** > **Build Configuration** runs your framework's build step (for example, `npm run build`).
+  * The [`assets.directory`](https://developers.cloudflare.com/workers/static-assets/binding/#directory) in your Wrangler configuration file points to the folder your build writes to (for example, `./dist` or `./build`).
+  * For a single-page application, [`assets.not_found_handling`](https://developers.cloudflare.com/workers/static-assets/routing/single-page-application/) is set to `single-page-application` so that client-side routes do not return `404`.
+
+
 
 ### Git integration issues
 

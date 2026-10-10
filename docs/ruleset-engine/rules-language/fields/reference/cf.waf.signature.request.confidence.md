@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.waf.signature.request.confidence/
 title: cf.waf.signature.request.confidence \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:08.867289+00:00
+fetched_at: 2026-10-10T14:37:33.326263+00:00
 ---
 
 # cf.waf.signature.request.confidence · Cloudflare Ruleset Engine docs

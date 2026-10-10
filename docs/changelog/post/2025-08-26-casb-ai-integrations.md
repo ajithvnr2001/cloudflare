@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-08-26-casb-ai-integrations/
 title: New CASB integrations for ChatGPT, Claude, and Gemini \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:20.762062+00:00
+fetched_at: 2026-10-10T14:38:49.632856+00:00
 ---
 
 # New CASB integrations for ChatGPT, Claude, and Gemini · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [CASB](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-08-26-casb-ai-integrations/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Cloudflare CASB ↗︎](https://www.cloudflare.com/zero-trust/products/casb/) now supports three of the most widely used GenAI platforms — **OpenAI ChatGPT** , **Anthropic Claude** , and **Google Gemini**. These API-based integrations give security teams agentless visibility into posture, data, and compliance risks across their organization’s use of generative AI.
 

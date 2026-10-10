@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-03-18-api-posture-management/
 title: New API Posture Management for API Shield \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:06.683024+00:00
+fetched_at: 2026-10-10T14:38:53.944927+00:00
 ---
 
 # New API Posture Management for API Shield · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [API Shield](https://developers.cloudflare.com/api-shield/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-03-18-api-posture-management/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Now, API Shield **automatically** labels your API inventory with API-specific risks so that you can track and manage risks to your APIs.
 

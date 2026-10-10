@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-03-19-kimi-k2-5-workers-ai/
 title: Moonshot AI Kimi K2.5 now available on Workers AI \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:41.604061+00:00
+fetched_at: 2026-10-10T14:38:42.177559+00:00
 ---
 
 # Moonshot AI Kimi K2.5 now available on Workers AI · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers AI](https://developers.cloudflare.com/workers-ai/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-03-19-kimi-k2-5-workers-ai/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Workers AI is officially in the big models game. [`@cf/moonshotai/kimi-k2.5`](https://developers.cloudflare.com/workers-ai/models/kimi-k2.5/) is the first frontier-scale open-source model on our AI inference platform — a large model with a full 256k context window, multi-turn tool calling, vision inputs, and structured outputs. By bringing a frontier-scale model directly onto the Cloudflare Developer Platform, you can now run the entire agent lifecycle on a single, unified platform.
 

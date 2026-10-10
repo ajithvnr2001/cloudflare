@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-06-30-graceful-byoip-withdrawal/
 title: Graceful withdrawal of BYOIP prefixes \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:15.253267+00:00
+fetched_at: 2026-10-10T14:38:51.307129+00:00
 ---
 
 # Graceful withdrawal of BYOIP prefixes · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Magic Transit](https://developers.cloudflare.com/magic-transit/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-06-30-graceful-byoip-withdrawal/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Magic Transit customers can now configure AS prepending on their BYOIP prefixes advertised at the Cloudflare edge. This allows for smoother traffic migration and minimizes packet loss when changing providers.
 

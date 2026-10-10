@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-30-improved-wal-throughput/
 title: Reduced end-to-end latency for vector changes \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:00.360591+00:00
+fetched_at: 2026-10-10T14:38:35.674913+00:00
 ---
 
 # Reduced end-to-end latency for vector changes · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Vectorize](https://developers.cloudflare.com/vectorize/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-30-improved-wal-throughput/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We have greatly improved the throughput of the Vectorize [write-ahead log (WAL) ↗︎](https://blog.cloudflare.com/building-vectorize-a-distributed-vector-database-on-cloudflare-developer-platform/#the-wal). As a result, we have significantly reduced the end-to-end latency for a vector change to become queryable: median latency has dropped from 2 minutes to under 30 seconds, and p99 latency from 5 minutes to under 2 minutes.
 

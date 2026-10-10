@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-24-ai-search-similarity-cache-controls/
 title: Control AI Search similarity cache freshness \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:59.587374+00:00
+fetched_at: 2026-10-10T14:38:36.146852+00:00
 ---
 
 # Control AI Search similarity cache freshness · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Search](https://developers.cloudflare.com/ai-search/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-24-ai-search-similarity-cache-controls/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [AI Search](https://developers.cloudflare.com/ai-search/) now gives you more control over [similarity cache](https://developers.cloudflare.com/ai-search/configuration/retrieval/cache/) freshness. Similarity cache helps reduce latency and inference cost by reusing responses for semantically similar queries.
 

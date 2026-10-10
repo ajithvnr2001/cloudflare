@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/%40cf/mistral/mistral-7b-instruct-v0.2-lora/
 title: mistral-7b-instruct-v0.2-lora (MistralAI) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:46.891746+00:00
+fetched_at: 2026-10-10T14:39:21.200513+00:00
 ---
 
 # mistral-7b-instruct-v0.2-lora (MistralAI) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:04:46.891746+00:00
 
 Text Generation • MistralAI
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/%40cf/mistral/mistral-7b-instruct-v0.2-lora/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `@cf/mistral/mistral-7b-instruct-v0.2-lora`
 

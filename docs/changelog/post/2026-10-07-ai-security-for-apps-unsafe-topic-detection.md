@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-10-07-ai-security-for-apps-unsafe-topic-detection/
 title: Updated unsafe topic detection for AI Security for Apps \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-09T10:55:29.820143+00:00
+fetched_at: 2026-10-10T14:38:29.241845+00:00
 ---
 
 # Updated unsafe topic detection for AI Security for Apps · Changelog

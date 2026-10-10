@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-management/
 title: Endpoint Management \u00b7 Cloudflare API Shield docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:17.993044+00:00
+fetched_at: 2026-10-10T14:39:26.594784+00:00
 ---
 
 # Endpoint Management · Cloudflare API Shield docs
@@ -18,7 +18,7 @@ fetched_at: 2026-10-08T07:05:17.993044+00:00
 
 # Endpoint Management
 
-Last updated Sep 29, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-management/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 9, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewAccess Review discovered operations Add operations from Schema validation Add operations manually Edit operations Start profile learning Delete operations manuallyOperation analysisUsing the Cloudflare APISensitive Data DetectionLimitations
 
@@ -121,6 +121,8 @@ Start profiling only after reviewing the operation identity.
 
 
 For learning requirements, analytics, and enforcement, refer to [Application Profiles](https://developers.cloudflare.com/waf/detections/application-profiles/).
+
+To request a zone-wide learning run without waiting for the weekly schedule, refer to [Run schema learning manually](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-management/schema-learning/#run-schema-learning-manually).
 
 ### Delete operations manually
 

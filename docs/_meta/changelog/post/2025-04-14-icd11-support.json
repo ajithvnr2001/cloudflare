@@ -3,8 +3,5 @@
   "file": "changelog/post/2025-04-14-icd11-support.md",
   "title": "New predefined detection entry for ICD-11 \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:09.822944+00:00",
-  "html_len": 62499,
-  "md_len": 1340,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:52.902764+00:00"
 }

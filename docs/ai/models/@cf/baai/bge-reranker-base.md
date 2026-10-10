@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/%40cf/baai/bge-reranker-base/
 title: bge-reranker-base (BAAI) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:04:49.862161+00:00
+fetched_at: 2026-10-10T14:39:23.360446+00:00
 ---
 
 # bge-reranker-base (BAAI) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:04:49.862161+00:00
 
 Text Classification • BAAI
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/%40cf/baai/bge-reranker-base/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `@cf/baai/bge-reranker-base`
 

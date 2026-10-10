@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-24-r2-sippy-azure-s3-compatible-support/
 title: Sippy now supports Azure Blob Storage and S3-compatible storage providers \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:04.635186+00:00
+fetched_at: 2026-10-10T14:38:34.333207+00:00
 ---
 
 # Sippy now supports Azure Blob Storage and S3-compatible storage providers · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [R2](https://developers.cloudflare.com/r2/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-24-r2-sippy-azure-s3-compatible-support/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Sippy](https://developers.cloudflare.com/r2/data-migration/sippy/) can now incrementally migrate data from Azure Blob Storage and any S3-compatible object storage provider to [Cloudflare R2](https://developers.cloudflare.com/r2/), in addition to Amazon S3 and Google Cloud Storage. Sippy copies objects to R2 as your application requests them, so you can start serving data from R2 without first moving your entire dataset or paying migration-specific egress fees.
 

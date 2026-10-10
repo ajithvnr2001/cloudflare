@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/videos/app-sec-dashboard/
 title: Application Security - Dashboard walkthrough | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:16:15.686886+00:00
+fetched_at: 2026-10-10T14:37:29.249649+00:00
 ---
 
 # Application Security - Dashboard walkthrough | Cloudflare Docs

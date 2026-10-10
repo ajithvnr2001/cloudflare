@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ruleset-engine/rules-language/fields/reference/cf.bot_management.js_detection.passed/
 title: cf.bot_management.js_detection.passed \u00b7 Cloudflare Ruleset Engine docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:15:02.758327+00:00
+fetched_at: 2026-10-10T14:37:35.788306+00:00
 ---
 
 # cf.bot_management.js_detection.passed · Cloudflare Ruleset Engine docs

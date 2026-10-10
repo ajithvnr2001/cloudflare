@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-02-auto-retry-upstream-failures/
 title: Automatically retry on upstream provider failures on AI Gateway \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:44.415989+00:00
+fetched_at: 2026-10-10T14:38:41.164907+00:00
 ---
 
 # Automatically retry on upstream provider failures on AI Gateway · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [AI Gateway](https://developers.cloudflare.com/ai-gateway/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-02-auto-retry-upstream-failures/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 AI Gateway now supports automatic retries at the gateway level. When an upstream provider returns an error, your gateway retries the request based on the retry policy you configure, without requiring any client-side changes.
 

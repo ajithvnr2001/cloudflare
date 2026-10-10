@@ -3,8 +3,5 @@
   "file": "changelog/post/2026-01-11-wrangler-types-check.md",
   "title": "Validate your generated types with `wrangler types --check` \u00b7 Changelog",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:06:33.093781+00:00",
-  "html_len": 63318,
-  "md_len": 1555,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:38:45.402089+00:00"
 }

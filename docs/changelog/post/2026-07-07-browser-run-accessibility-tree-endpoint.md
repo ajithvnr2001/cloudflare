@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-07-07-browser-run-accessibility-tree-endpoint/
 title: New Browser Run endpoint for accessibility trees \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:01.571203+00:00
+fetched_at: 2026-10-10T14:38:35.378612+00:00
 ---
 
 # New Browser Run endpoint for accessibility trees · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Browser Run](https://developers.cloudflare.com/browser-run/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-07-07-browser-run-accessibility-tree-endpoint/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 [Browser Run](https://developers.cloudflare.com/browser-run/) now supports a standalone `/accessibilityTree` endpoint, giving agent and automation workflows direct access to the browser's accessibility tree for a rendered webpage.
 

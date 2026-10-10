@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-02-12-configurable-multiplexing-http2-to-origin/
 title: Configurable multiplexing HTTP/2 to Origin \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:02.950153+00:00
+fetched_at: 2026-10-10T14:38:54.861792+00:00
 ---
 
 # Configurable multiplexing HTTP/2 to Origin · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cache / CDN](https://developers.cloudflare.com/cache/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-02-12-configurable-multiplexing-http2-to-origin/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now configure HTTP/2 multiplexing settings for origin connections on Enterprise plans. This feature allows you to optimize how Cloudflare manages concurrent requests over HTTP/2 connections to your origin servers, improving cache efficiency and reducing connection overhead.
 

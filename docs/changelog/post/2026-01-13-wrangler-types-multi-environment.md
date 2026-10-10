@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-01-13-wrangler-types-multi-environment/
 title: `wrangler types` now generates types for all environments \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:33.561019+00:00
+fetched_at: 2026-10-10T14:38:45.250987+00:00
 ---
 
 # `wrangler types` now generates types for all environments · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-01-13-wrangler-types-multi-environment/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 The `wrangler types` command now generates TypeScript types for bindings from **all environments** defined in your Wrangler configuration file by default.
 

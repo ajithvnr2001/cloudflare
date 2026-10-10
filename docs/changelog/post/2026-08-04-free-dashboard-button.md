@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-08-04-free-dashboard-button/
 title: Create Free accounts from the dashboard \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:06.437985+00:00
+fetched_at: 2026-10-10T14:38:33.668682+00:00
 ---
 
 # Create Free accounts from the dashboard · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-08-04-free-dashboard-button/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now create standalone Free accounts directly from the Cloudflare dashboard using the new **Create Account** button. This feature is currently available to all users.
 

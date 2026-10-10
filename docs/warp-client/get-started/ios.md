@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/warp-client/get-started/ios/
 title: iOS mobile client \u00b7 Cloudflare WARP client docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:16:51.848683+00:00
+fetched_at: 2026-10-10T14:37:24.412011+00:00
 ---
 
 # iOS mobile client · Cloudflare WARP client docs
@@ -18,7 +18,7 @@ fetched_at: 2026-10-08T07:16:51.848683+00:00
 
 # iOS
 
-Last updated May 7, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/warp-client/get-started/ios/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated May 7, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewSet up 1.1.1.1: Faster InternetEncrypt only DNS queriesEnable 1.1.1.1 for FamiliesHow to remove the application
 

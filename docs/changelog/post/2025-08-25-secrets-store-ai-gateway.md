@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-08-25-secrets-store-ai-gateway/
 title: Manage and deploy your AI provider keys through Bring Your Own Key (BYOK) with AI Gateway, now powered by Cloudflare Secrets Store \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:20.410409+00:00
+fetched_at: 2026-10-10T14:38:49.649952+00:00
 ---
 
 # Manage and deploy your AI provider keys through Bring Your Own Key (BYOK) with AI Gateway, now powered by Cloudflare Secrets Store · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Secrets Store](https://developers.cloudflare.com/secrets-store/)[AI Gateway](https://developers.cloudflare.com/ai-gateway/)[SSL/TLS](https://developers.cloudflare.com/ssl/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-08-25-secrets-store-ai-gateway/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Cloudflare Secrets Store is now integrated with AI Gateway, allowing you to store, manage, and deploy your AI provider keys in a secure and seamless configuration through [Bring Your Own Key ↗︎](https://developers.cloudflare.com/ai-gateway/configuration/bring-your-own-keys/). Instead of passing your AI provider keys directly in every request header, you can centrally manage each key with Secrets Store and deploy in your gateway configuration using only a reference, rather than passing the value in plain text.
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-07-28-br-pricing/
 title: Introducing pricing for the Browser Rendering API \u2014 $0.09 per browser hour \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:17.613539+00:00
+fetched_at: 2026-10-10T14:38:50.640413+00:00
 ---
 
 # Introducing pricing for the Browser Rendering API — $0.09 per browser hour · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Browser Run](https://developers.cloudflare.com/browser-run/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-07-28-br-pricing/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 We’ve launched pricing for [Browser Rendering](https://developers.cloudflare.com/browser-run/), including a free tier and a pay-as-you-go model that scales with your needs. Starting **August 20, 2025** , Cloudflare will begin billing for Browser Rendering.
 

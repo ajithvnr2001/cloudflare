@@ -3,8 +3,5 @@
   "file": "ai/models/openai/gpt-4.1.md",
   "title": "GPT-4.1 (OpenAI) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:05:00.516496+00:00",
-  "html_len": 261659,
-  "md_len": 34799,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:39:12.080397+00:00"
 }

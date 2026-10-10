@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-06-30-memory-usage-metrics/
 title: Track memory usage for Workers and Durable Objects in the dashboard \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:00.598161+00:00
+fetched_at: 2026-10-10T14:38:35.753249+00:00
 ---
 
 # Track memory usage for Workers and Durable Objects in the dashboard · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)[Durable Objects](https://developers.cloudflare.com/durable-objects/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-06-30-memory-usage-metrics/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now monitor how much memory your [Workers](https://developers.cloudflare.com/workers/) and [Durable Objects](https://developers.cloudflare.com/durable-objects/) consume across invocations with the new **Memory Usage** chart in the Workers Metrics tab, broken down by P50, P90, P99, and P999 percentiles.
 

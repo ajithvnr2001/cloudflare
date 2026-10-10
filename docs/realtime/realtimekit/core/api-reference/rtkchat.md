@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/realtime/realtimekit/core/api-reference/rtkchat/
 title: RTKChat \u00b7 Cloudflare Realtime docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:12:54.985578+00:00
+fetched_at: 2026-10-10T14:37:58.030909+00:00
 ---
 
 # RTKChat · Cloudflare Realtime docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:12:54.985578+00:00
 
 # RTKChat
 
-Last updated Jul 22, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/realtime/realtimekit/core/api-reference/rtkchat/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Jul 22, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Overview meeting.chat.messages meeting.chat.setMaxTextLimit(limit) meeting.chat.updateRateLimits(num, period) meeting.chat.sendTextMessage(message, [peerIds]) meeting.chat.sendCustomMessage(message, [peerIds]) meeting.chat.sendImageMessage(image, [peerIds]) meeting.chat.sendFileMessage(file, [peerIds]) meeting.chat.sendMessage(message, [participantIds]) meeting.chat.editTextMessage(messageId, message) meeting.chat.editImageMessage(messageId, image) meeting.chat.editFileMessage(messageId, file) meeting.chat.editMessage(messageId, message) meeting.chat.deleteMessage(messageId) meeting.chat.pin(id) meeting.chat.unpin(id) meeting.chat.fetchPublicMessages(options) meeting.chat.fetchPrivateMessages(options) meeting.chat.fetchPinnedMessages(options)
 

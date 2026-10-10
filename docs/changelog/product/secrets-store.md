@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/secrets-store/
 title: Secrets Store Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:49.426125+00:00
+fetched_at: 2026-10-10T14:38:04.916476+00:00
 ---
 
 # Secrets Store Changelog | Cloudflare Docs
@@ -289,7 +289,7 @@ Define environment variables and secrets store bindings in your Wrangler configu
       "name": "my-worker",
       "main": "./src/index.ts",
     	// Set this to today's date
-    	"compatibility_date": "2026-10-08",
+    	"compatibility_date": "2026-10-10",
       "vars": {
         "API_HOST": "https://example.com",
       },
@@ -306,7 +306,7 @@ Define environment variables and secrets store bindings in your Wrangler configu
     name = "my-worker"
     main = "./src/index.ts"
     # Set this to today's date
-    compatibility_date = "2026-10-08"
+    compatibility_date = "2026-10-10"
     
     [vars]
     API_HOST = "https://example.com"

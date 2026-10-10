@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-07-01-workers-deploy-button-supports-environment-variables-and-secrets/
 title: Deploy to Cloudflare buttons now support Worker environment variables, secrets, and Secrets Store secrets \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:16.070903+00:00
+fetched_at: 2026-10-10T14:38:51.083916+00:00
 ---
 
 # Deploy to Cloudflare buttons now support Worker environment variables, secrets, and Secrets Store secrets · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Workers](https://developers.cloudflare.com/workers/)[Secrets Store](https://developers.cloudflare.com/secrets-store/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-07-01-workers-deploy-button-supports-environment-variables-and-secrets/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Any template which uses [Worker environment variables](https://developers.cloudflare.com/workers/configuration/environment-variables/), [secrets](https://developers.cloudflare.com/workers/configuration/secrets/), or [Secrets Store secrets](https://developers.cloudflare.com/secrets-store/) can now be deployed using a [Deploy to Cloudflare button](https://developers.cloudflare.com/workers/platform/deploy-buttons/).
 
@@ -32,7 +32,7 @@ Define environment variables and secrets store bindings in your Wrangler configu
       "name": "my-worker",
       "main": "./src/index.ts",
     	// Set this to today's date
-    	"compatibility_date": "2026-10-08",
+    	"compatibility_date": "2026-10-10",
       "vars": {
         "API_HOST": "https://example.com",
       },
@@ -49,7 +49,7 @@ Define environment variables and secrets store bindings in your Wrangler configu
     name = "my-worker"
     main = "./src/index.ts"
     # Set this to today's date
-    compatibility_date = "2026-10-08"
+    compatibility_date = "2026-10-10"
     
     [vars]
     API_HOST = "https://example.com"

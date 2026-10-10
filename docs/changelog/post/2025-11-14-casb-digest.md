@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-11-14-casb-digest/
 title: New SaaS Security weekly digests with API CASB \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:29.569561+00:00
+fetched_at: 2026-10-10T14:38:46.604281+00:00
 ---
 
 # New SaaS Security weekly digests with API CASB · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [CASB](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-11-14-casb-digest/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now stay on top of your SaaS security posture with the new **CASB Weekly Digest** notification. This opt-in email digest is delivered to your inbox every Monday morning and provides a high-level summary of your organization's Cloudflare API CASB findings from the previous week.
 

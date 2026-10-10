@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2025-02-14-introducing-dvr-for-stream-live/
 title: Rewind, Replay, Resume: Introducing DVR for Stream Live \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:03.587704+00:00
+fetched_at: 2026-10-10T14:38:54.833439+00:00
 ---
 
 # Rewind, Replay, Resume: Introducing DVR for Stream Live · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Stream](https://developers.cloudflare.com/stream/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2025-02-14-introducing-dvr-for-stream-live/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Previously, all viewers watched "the live edge," or the latest content of the broadcast, synchronously. If a viewer paused for more than a few seconds, the player would automatically "catch up" when playback started again. Seeking through the broadcast was only available once the recording was available after it concluded.
 

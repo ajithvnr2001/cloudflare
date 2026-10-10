@@ -3,8 +3,5 @@
   "file": "waf/managed-rules/troubleshooting.md",
   "title": "Troubleshoot managed rules \u00b7 Cloudflare Web Application Firewall (WAF) docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:16:45.434876+00:00",
-  "html_len": 147700,
-  "md_len": 8109,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:39:25.273900+00:00"
 }

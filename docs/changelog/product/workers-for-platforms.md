@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/product/workers-for-platforms/
 title: Workers for Platforms Changelog | Cloudflare Docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:07:52.378298+00:00
+fetched_at: 2026-10-10T14:38:02.323017+00:00
 ---
 
 # Workers for Platforms Changelog | Cloudflare Docs

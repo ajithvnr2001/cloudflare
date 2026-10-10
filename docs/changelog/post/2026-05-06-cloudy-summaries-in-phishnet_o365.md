@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-05-06-cloudy-summaries-in-phishnet_o365/
 title: Cloudy Summaries in PhishNet O365 \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:51.488644+00:00
+fetched_at: 2026-10-10T14:38:38.963817+00:00
 ---
 
 # Cloudy Summaries in PhishNet O365 · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Email security](https://developers.cloudflare.com/cloudflare-one/email-security/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-05-06-cloudy-summaries-in-phishnet_o365/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 PhishNet users can now access **Cloudy summaries** directly within the email investigation experience. When reviewing a message in PhishNet, users will see an AI-generated summary that provides additional context and key details about the email.
 

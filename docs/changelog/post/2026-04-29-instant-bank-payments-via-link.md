@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-04-29-instant-bank-payments-via-link/
 title: Instant Bank Payments via Link \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:50.415648+00:00
+fetched_at: 2026-10-10T14:38:39.301327+00:00
 ---
 
 # Instant Bank Payments via Link · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [Cloudflare Fundamentals](https://developers.cloudflare.com/fundamentals/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-04-29-instant-bank-payments-via-link/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now pay for Cloudflare services directly from your bank account using [Instant Bank Payments via Link](https://developers.cloudflare.com/billing/payment-methods/instant-bank-payments-link/).
 

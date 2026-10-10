@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/waf/detections/application-profiles/schema-profiles/
 title: Schema Profiles \u00b7 Cloudflare Web Application Firewall (WAF) docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:16:41.644721+00:00
+fetched_at: 2026-10-10T14:39:26.412437+00:00
 ---
 
 # Schema Profiles · Cloudflare Web Application Firewall (WAF) docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:16:41.644721+00:00
 
 # Schema Profiles
 
-Last updated Aug 19, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/waf/detections/application-profiles/schema-profiles/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Oct 9, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 OverviewLearn from traffic Meet traffic requirements Review learned content Consider limitationsUse an uploaded schema
 
@@ -46,7 +46,7 @@ The field-learning threshold requires 1,000 qualifying requests. The boundary-le
 
 The field-learning threshold allows Cloudflare to learn request fields. The boundary-learning threshold allows Cloudflare to learn constraints such as numeric ranges and string lengths.
 
-The first profile appears after the next weekly learning run. This can take up to seven days after meeting the relevant threshold.
+With scheduled learning, the first profile appears after the next weekly run. This can take up to seven days after meeting the relevant threshold. You can also [request an ad-hoc schema learning run](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-management/schema-learning/#run-schema-learning-manually) for the entire zone.
 
 ### Review learned content
 
@@ -66,7 +66,7 @@ Profiles can validate integers, strings, universally unique identifiers (UUIDs),
 
 Successful traffic can include bots, scanners, or malicious requests. Review the learned profile before enforcing its detection.
 
-Each weekly run can update a profile as qualifying traffic changes. For a fixed schema, [export the learned schema](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-management/schema-learning/#export-a-schema) as OpenAPI and [upload it for validation](https://developers.cloudflare.com/api-shield/security/schema-validation/#upload-a-schema).
+Weekly and manual runs can update a profile as qualifying traffic changes. For a fixed schema, [export the learned schema](https://developers.cloudflare.com/api-shield/management-and-monitoring/endpoint-management/schema-learning/#export-a-schema) as OpenAPI and [upload it for validation](https://developers.cloudflare.com/api-shield/security/schema-validation/#upload-a-schema).
 
 ### Consider limitations
 

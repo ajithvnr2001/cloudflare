@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/ai/models/openai/gpt-6-astra/
 title: GPT-6 Astra (OpenAI) \u00b7 Cloudflare AI docs \u00b7 Cloudflare AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:05:02.820882+00:00
+fetched_at: 2026-10-10T14:39:09.385091+00:00
 ---
 
 # GPT-6 Astra (OpenAI) · Cloudflare AI docs · Cloudflare AI docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:05:02.820882+00:00
 
 Text Generation • OpenAI
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/ai/models/openai/gpt-6-astra/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `openai/gpt-6-astra`
 

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/changelog/post/2026-02-20-cloudy-in-casb/
 title: Understand CASB findings instantly with Cloudy Summaries \u00b7 Changelog
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:06:38.049798+00:00
+fetched_at: 2026-10-10T14:38:43.452786+00:00
 ---
 
 # Understand CASB findings instantly with Cloudy Summaries · Changelog
@@ -21,7 +21,7 @@ New updates and improvements at Cloudflare.
 
 [CASB](https://developers.cloudflare.com/cloudflare-one/integrations/cloud-and-saas/)
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/changelog/post/2026-02-20-cloudy-in-casb/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 You can now easily understand your SaaS security posture findings and why they were detected with **Cloudy Summaries in CASB**. This feature integrates Cloudflare's Cloudy AI directly into your CASB Posture Findings to automatically generate clear, plain-language summaries of complex security misconfigurations, third-party app risks, and data exposures.
 
