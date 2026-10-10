@@ -14,7 +14,7 @@ import crawl_cloudflare as C
 
 DOCS = C.OUT_ROOT
 STATE = C.STATE_FILE
-REFRESH_CAP = 150  # max stale-page refetches per run (newest first)
+REFRESH_CAP = 30  # max stale-page refetches per run (newest first; keeps daily Actions cheap)
 
 def canon_dev(u):
     abs_u, _ = urldefrag(urljoin("https://developers.cloudflare.com", u.strip()))
