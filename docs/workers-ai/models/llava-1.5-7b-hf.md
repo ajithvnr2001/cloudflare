@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers-ai/models/llava-1.5-7b-hf/
 title: llava-1.5-7b-hf (llava-hf) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:05.303632+00:00
+fetched_at: 2026-10-10T14:27:16.088943+00:00
 ---
 
 # llava-1.5-7b-hf (llava-hf) · Cloudflare AI docs · Cloudflare Workers AI docs
@@ -23,7 +23,7 @@ Beta
 
 Image-to-Text • llava-hf
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers-ai/models/llava-1.5-7b-hf/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `@cf/llava-hf/llava-1.5-7b-hf`
 

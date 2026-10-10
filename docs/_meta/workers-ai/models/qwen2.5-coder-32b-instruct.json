@@ -3,8 +3,5 @@
   "file": "workers-ai/models/qwen2.5-coder-32b-instruct.md",
   "title": "qwen2.5-coder-32b-instruct (Qwen) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:17:06.011207+00:00",
-  "html_len": 158385,
-  "md_len": 7110,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:27:15.666197+00:00"
 }

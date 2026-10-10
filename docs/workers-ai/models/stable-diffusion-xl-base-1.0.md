@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers-ai/models/stable-diffusion-xl-base-1.0/
 title: stable-diffusion-xl-base-1.0 (Stability.ai) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:06.641218+00:00
+fetched_at: 2026-10-10T14:27:15.182357+00:00
 ---
 
 # stable-diffusion-xl-base-1.0 (Stability.ai) · Cloudflare AI docs · Cloudflare Workers AI docs
@@ -23,7 +23,7 @@ Beta
 
 Text-to-Image • Stability.ai
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers-ai/models/stable-diffusion-xl-base-1.0/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `@cf/stabilityai/stable-diffusion-xl-base-1.0`
 

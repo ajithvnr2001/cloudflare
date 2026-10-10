@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers-ai/models/llama-3.2-3b-instruct/
 title: llama-3.2-3b-instruct (Meta) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:04.661114+00:00
+fetched_at: 2026-10-10T14:27:16.451496+00:00
 ---
 
 # llama-3.2-3b-instruct (Meta) · Cloudflare AI docs · Cloudflare Workers AI docs
@@ -21,7 +21,7 @@ fetched_at: 2026-10-08T07:17:04.661114+00:00
 
 Text Generation • Meta
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers-ai/models/llama-3.2-3b-instruct/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `@cf/meta/llama-3.2-3b-instruct`
 

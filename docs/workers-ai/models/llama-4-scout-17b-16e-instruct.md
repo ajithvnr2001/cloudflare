@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers-ai/models/llama-4-scout-17b-16e-instruct/
 title: llama-4-scout-17b-16e-instruct (Meta) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:04.777499+00:00
+fetched_at: 2026-10-10T14:27:16.283928+00:00
 ---
 
 # llama-4-scout-17b-16e-instruct (Meta) · Cloudflare AI docs · Cloudflare Workers AI docs
@@ -21,7 +21,7 @@ fetched_at: 2026-10-08T07:17:04.777499+00:00
 
 Text Generation • Meta
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers-ai/models/llama-4-scout-17b-16e-instruct/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `@cf/meta/llama-4-scout-17b-16e-instruct`
 

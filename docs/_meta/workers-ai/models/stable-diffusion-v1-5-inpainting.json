@@ -3,8 +3,5 @@
   "file": "workers-ai/models/stable-diffusion-v1-5-inpainting.md",
   "title": "stable-diffusion-v1-5-inpainting (RunwayML) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:17:06.845952+00:00",
-  "html_len": 121951,
-  "md_len": 3181,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:27:15.099673+00:00"
 }

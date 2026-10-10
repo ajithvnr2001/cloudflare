@@ -3,8 +3,5 @@
   "file": "workers-ai/models/llama-4-scout-17b-16e-instruct.md",
   "title": "llama-4-scout-17b-16e-instruct (Meta) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:17:04.777734+00:00",
-  "html_len": 254558,
-  "md_len": 9677,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:27:16.284329+00:00"
 }

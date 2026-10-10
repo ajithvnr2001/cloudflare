@@ -3,8 +3,5 @@
   "file": "workers-ai/models/whisper-large-v3-turbo.md",
   "title": "whisper-large-v3-turbo (OpenAI) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:17:06.488938+00:00",
-  "html_len": 139014,
-  "md_len": 3168,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:27:15.047384+00:00"
 }

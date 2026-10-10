@@ -3,8 +3,5 @@
   "file": "workers-ai/models/qwen3-embedding-0.6b.md",
   "title": "qwen3-embedding-0.6b (Qwen) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:17:06.153398+00:00",
-  "html_len": 129511,
-  "md_len": 3590,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:27:15.585694+00:00"
 }

@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers/runtime-apis/bindings/mtls/
 title: mTLS \u00b7 Cloudflare Workers docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:41.611061+00:00
+fetched_at: 2026-10-10T14:27:15.154914+00:00
 ---
 
 # mTLS · Cloudflare Workers docs
@@ -22,7 +22,7 @@ fetched_at: 2026-10-08T07:17:41.611061+00:00
 
 # mTLS
 
-Last updated Apr 23, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers/runtime-apis/bindings/mtls/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Last updated Apr 23, 2026|Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 Overview Interface
 

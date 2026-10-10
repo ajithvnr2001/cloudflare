@@ -3,8 +3,5 @@
   "file": "workers-ai/models/qwq-32b.md",
   "title": "qwq-32b (Qwen) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs",
   "method": "scrapling+scrapegraph",
-  "fetched_at": "2026-10-08T07:17:06.216179+00:00",
-  "html_len": 156831,
-  "md_len": 6881,
-  "depth": 0
+  "fetched_at": "2026-10-10T14:27:15.422965+00:00"
 }

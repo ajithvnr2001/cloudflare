@@ -2,7 +2,7 @@
 url: https://developers.cloudflare.com/workers-ai/models/stable-diffusion-xl-lightning/
 title: stable-diffusion-xl-lightning (ByteDance) \u00b7 Cloudflare AI docs \u00b7 Cloudflare Workers AI docs
 method: scrapling+scrapegraph
-fetched_at: 2026-10-08T07:17:06.528274+00:00
+fetched_at: 2026-10-10T14:27:15.018340+00:00
 ---
 
 # stable-diffusion-xl-lightning (ByteDance) · Cloudflare AI docs · Cloudflare Workers AI docs
@@ -23,7 +23,7 @@ Beta
 
 Text-to-Image • ByteDance
 
-Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/workers-ai/models/stable-diffusion-xl-lightning/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
+Copy as Markdown|[View as Markdown](https://developers.cloudflare.com/index.md)|[Agent setup](https://developers.cloudflare.com/agent-setup/)
 
 `@cf/bytedance/stable-diffusion-xl-lightning`
 
