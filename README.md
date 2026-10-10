@@ -2,7 +2,7 @@
 
 Crawls **https://developers.cloudflare.com/** completely (sitemap + `llms.txt` + subdomains) and saves clean markdown docs. Three stacks combined: **Scrapling** (fast fetch) → **Crawl4AI** (JS fallback) → **ScrapeGraphAI** (HTML→MD, local, no LLM key needed).
 
-## Results (verified 2026-10-08)
+## Results (verified)
 
 > Last verified: 2026-10-10 — see `docs/_last_verified.json` (rewritten daily by GitHub Actions).
 
