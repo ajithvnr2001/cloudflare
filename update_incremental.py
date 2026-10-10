@@ -125,6 +125,16 @@ async def main():
             _mp.write_text(json.dumps(_m, indent=2))
         except Exception as e:
             print("stamp manifest skip:", e)
+        try:  # keep README verification date fresh (committed by Actions)
+            for _rp in [C.REPO_ROOT / "README.md", C.REPO_ROOT / "guide_code" / "README.md"]:
+                if _rp.exists():
+                    _t = _rp.read_text()
+                    _t2 = re.sub(r"Last verified: \d{4}-\d{2}-\d{2}", f"Last verified: {_stamp['date']}", _t)
+                    if _t2 != _t:
+                        _rp.write_text(_t2)
+                        print(f"readme date -> {_stamp['date']} ({_rp})")
+        except Exception as e:
+            print("readme stamp skip:", e)
         print(f"stamped {_stamp['date']} (new={total_new} refresh={len(refresh)})")
     if a.force:
         targets = [canon_dev(a.force) if "developers" in a.force else C.normalize_url(a.force)]
